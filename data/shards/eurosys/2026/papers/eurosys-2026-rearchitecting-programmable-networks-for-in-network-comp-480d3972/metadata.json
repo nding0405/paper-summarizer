@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "eurosys-2026-rearchitecting-programmable-networks-for-in-network-comp-480d3972",
   "title": "Rearchitecting Programmable Networks For In-Network Computing: From Hardware To Language",
+  "abstract": "In-network computing (INC) offers orders-of-magnitude performance gains for various applications. However, the existing pipeline-based switch architecture, though well-suited for stateless packet forwarding, imposes three constraints on stateful INC applications: (i) control-plane table management, (ii) scarce memory resources under per-stage layout, and (iii) a strict memory access model. To address these constraints, this paper provides a full-stack solution, covering a programmable chipset Solar-NP, a programming language NPC, and a complete toolchain XuanWu. First, Solar-NP adopts a run-to-completion-based (RTC-based) architecture with three new hardware features: data-plane table management, a hierarchical memory pool, and built-in data structures with atomic access guarantees. Second, to fully exploit the hardware features, our language NPC introduces a new abstraction, namely operation-action table (OAT), that allows table manipulations in the data plane. Finally, our XuanWu toolchain provides various utility software covering the complete workflow of developing, testing, debugging, and deployment. To show the power of our solution, we implement three types of INC cases, including in-network control, in-network telemetry, and in-network storage. Experimental results demonstrate that our solution allows more operations to be offloaded and achieves higher performance than today's pipeline-based solutions.",
+  "abstract_source_id": "src-abstract-eurosys-2026-480d3972",
   "venue": "eurosys",
   "year": 2026,
   "track_or_session": null,
@@ -369,6 +371,19 @@
       "official": false,
       "supports": [
         "Publisher-deposited proceedings identity and print publication date."
+      ]
+    },
+    {
+      "id": "src-abstract-eurosys-2026-480d3972",
+      "url": "https://api.openalex.org/works/doi:10.1145/3767295.3769344?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Rearchitecting Programmable Networks For In-Network Computing: From Hardware To Language",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:21:25Z",
+      "content_hash": "sha256:4890c9e1361901363857cb124125d82c0577e8d19c69c5c73036a87f38a24f43",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

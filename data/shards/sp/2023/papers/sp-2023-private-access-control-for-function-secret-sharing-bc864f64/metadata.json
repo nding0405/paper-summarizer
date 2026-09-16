@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2023-private-access-control-for-function-secret-sharing-bc864f64",
   "title": "Private Access Control for Function Secret Sharing",
+  "abstract": "Function Secret Sharing (FSS; Eurocrypt 2015) allows a dealer to share a function f with two or more evaluators. Given secret shares of a function f, the evaluators can locally compute secret shares of f (x) for any input x, without learning information about f in the process.In this paper, we initiate the study of access control for FSS. Given the shares of f, the evaluators can ensure that the dealer is authorized to share the provided function. For a function family $\\mathcal{F}$ and an access control list defined over the family, the evaluators receiving the shares of $f \\in \\mathcal{F}$ can efficiently check that the dealer knows the access key for f.This model enables new applications of FSS, such as: (1) anonymous authentication in a multi-party setting, (2) access control in private databases, and (3) authentication and spam prevention in anonymous communication systems.Our definitions and constructions abstract and improve the concrete efficiency of several recent systems that implement ad-hoc mechanisms for access control over FSS. The main building block behind our efficiency improvement is a discrete-logarithm zero-knowledge proof-of-knowledge over secret-shared elements, which may be of independent interest.We evaluate our constructions and show a 50–70× reduction in computational overhead compared to existing access control techniques used in anonymous communication. In other applications, such as private databases, the processing cost of introducing access control is only 1.5–3×, when amortized over databases with 500,000 or more items.",
+  "abstract_source_id": "src-abstract-sp-2023-bc864f64",
   "venue": "sp",
   "year": 2023,
   "track_or_session": "Session 3C: Cryptographic protocols",
@@ -172,6 +174,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2023-bc864f64",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Private Access Control for Function Secret Sharing",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:27Z",
+      "content_hash": "sha256:2c3c9cbfdcc9ef58a970a66aadb81bbaf8238409ab69d65565522a11e421be99",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

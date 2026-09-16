@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "atc-2024-wingfuzz-implementing-continuous-fuzzing-for-dbmss-041e43db",
   "title": "WingFuzz: Implementing Continuous Fuzzing for DBMSs",
+  "abstract": "Database management systems (DBMSs) are critical components within software ecosystems, and their security and stability are paramount. In recent years, fuzzing has emerged as a prominent automated testing technique, effectively identifying vulnerabilities in various DBMSs. Nevertheless, many of these fuzzers require specific adaptation for a DBMS with a particular version. Employing these techniques to test enterprise-level DBMSs continuously poses challenges due to the diverse specifications of DBMSs and the code changes in their rapid version evolution.\n\nIn this paper, we present the industry practice of implementing continuous DBMS fuzzing on enterprise-level DBMSs like ClickHouse. We summarize three main obstacles in implementing, namely the diverse SQL grammar in test case generation, the ongoing evolution of codebase in continuous testing, and the disturbance of noises during anomaly analysis. We propose WingFuzz, which utilizes specification-based mutator generation, corpus-driven evolving code fuzzing, and noise-resilient anomaly assessment to address them. By working with the engineers in continuous DBMS fuzzing, we have found a total of 236 previously undiscovered bugs in 12 widely-used enterprise-level DBMSs including ClickHouse, DamengDB, and TenDB. Due to its favorable test results, our efforts received recognition and cooperation invitations from some DBMS vendors. For example, ClickHouse’s CTO praised: \"Which tool did you use to find this test case? We need to integrate it into our CI.\" and WingFuzz has been successfully integrated into its development process.",
+  "abstract_source_id": "src-abstract-atc-2024-041e43db",
   "venue": "atc",
   "year": 2024,
   "track_or_session": "Correctness",
@@ -201,6 +203,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-atc-2024-041e43db",
+      "url": "https://www.usenix.org/conference/atc24/presentation/liang",
+      "kind": "paper-page",
+      "title": "WingFuzz: Implementing Continuous Fuzzing for DBMSs",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T21:59:21Z",
+      "content_hash": "sha256:ee69cffda370f17f903dcef8ad3601cc379bb078f5c2f57b733d1b3520b0a3d1",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

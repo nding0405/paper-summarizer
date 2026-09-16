@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2025-peek-a-walk-leaking-secrets-via-page-walk-side-channels-df6243f2",
   "title": "Peek-a-Walk: Leaking Secrets via Page Walk Side Channels",
+  "abstract": "Microarchitectural side-channel attacks are an insidious threat to program security. An emerging class of these attacks constructs gadgets that dereference the contents of data memory directly. This is caused by optimizations, such as speculative execution and data-memory prefetching, that can guess (incorrectly) that the program is performing a pointer chase. In theory, this is devastating for security, as dereferencing a secret seemingly leaks it over memory-based side channels, e.g., through the cache. In practice, it is not. Since most secrets do not look like valid pointers, their dereference typically fails and does not leak anything. In this paper, we introduce the page walk side channel (PWSC), a new attack that can leak information even when an invalid pointer is dereferenced. In particular, given a 64-bit secret that passes the address canonicality check, PWSC can leak all remaining bits of the secret except for the low-order 6 bits, without making any assumptions on what these bits look like. We demonstrate how PWSC amplifies leakage in scenarios exploiting speculative execution and data-memory prefetching. For speculative execution, we show that PWSC, combined with Intel's LAM feature, can be exploited to leak nearly all of physical memory and that even without LAM, PWSC can be used to leak Dilithium secret keys. For data-memory prefetching, we reverse engineer the semantics of Intel's data-memory dependent prefetcher (DMP) and show how this DMP and PWSC can be combined to break security in an intra-process sandbox setting.",
+  "abstract_source_id": "src-abstract-sp-2025-df6243f2",
   "venue": "sp",
   "year": 2025,
   "track_or_session": "Cycle 1",
@@ -196,6 +198,19 @@
       "official": true,
       "supports": [
         "DOI, authors, affiliations, abstract, publication date, pages, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2025-df6243f2",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Peek-a-Walk: Leaking Secrets via Page Walk Side Channels",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:47Z",
+      "content_hash": "sha256:d48e5e27e72297ce02860f066764bd9c5cd6e8191e2ebf4b4f15da0fffb6959f",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

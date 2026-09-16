@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sigcomm-2025-nezha-smartnic-based-virtual-switch-load-sharing-506d9225",
   "title": "Nezha: SmartNIC-based Virtual Switch Load Sharing",
+  "abstract": "Cloud providers use SmartNIC-accelerated virtual switches (vSwitches) to offer rich network functions (NFs) for tenant VMs. Constrained by limited SmartNIC resources, it is a challenge to provide sufficient network performance for high-demand VMs. Meanwhile, we observed a significant number of idle vSwitches in the data center, which led us to consider leveraging them to build a remote resource pool for high-demand virtual NICs (vNICs). In this work, we propose Nezha, a distributed vSwitch load sharing system. Nezha reuses the existing idle SmartNICs to handle the excess load from the local SmartNIC without adding new devices. Nezha offloads stateless rule/flow tables to the remote, while keeping states locally. This eliminates the need for state synchronization, facilitating load sharing and failover. The deployment cost of Nezha is only a small fraction of that required to deploy new devices. Data collected from production show that our CPS capability bottleneck has shifted from the vSwitch to the VM kernel stack, with #concurrent flows and #vNICs increased by up to 50.4x and 40x, respectively.",
+  "abstract_source_id": "src-abstract-sigcomm-2025-506d9225",
   "venue": "sigcomm",
   "year": 2025,
   "track_or_session": "Hardware",
@@ -444,6 +446,19 @@
         "DOI and ACM publisher landing/PDF links",
         "publisher-deposited ORCIDs when available",
         "proceedings page range and online publication date"
+      ]
+    },
+    {
+      "id": "src-abstract-sigcomm-2025-506d9225",
+      "url": "https://api.openalex.org/works/doi:10.1145/3718958.3750466?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Nezha: SmartNIC-based Virtual Switch Load Sharing",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:23:29Z",
+      "content_hash": "sha256:0a8cddd2b2e734e456e413fdf9e351b05bda4740676cc030d4a185882d53a139",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

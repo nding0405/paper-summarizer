@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2023-cheesecloth-zero-knowledge-proofs-of-real-world-vulnerab-2109d59a",
   "title": "Cheesecloth: Zero-Knowledge Proofs of Real World Vulnerabilities",
+  "abstract": "Currently, when a security analyst discovers a vulnerability in critical software system, they must navigate a fraught dilemma: immediately disclosing the vulnerability to the public could harm the system's users; whereas disclosing the vulnerability only to the software's vendor lets the vendor disregard or deprioritize the security risk, to the detriment of unwittingly-affected users.\n\nA compelling recent line of work aims to resolve this by using Zero Knowledge (ZK) protocols that let analysts prove that they know a vulnerability in a program, without revealing the details of the vulnerability or the inputs that exploit it. In principle, this could be achieved by generic ZK techniques. In practice, ZK vulnerability proofs to date have been restricted in scope and expressibility, due to challenges related to generating proof statements that model real-world software at scale and to directly formulating violated properties.\n\nThis paper presents Cheesecloth, a novel proof statement compiler, which proves practical vulnerabilities in ZK by soundly-but-aggressively preprocessing programs on public inputs, selectively revealing information about executed control segments, and formalizing information leakage using a novel storage-labeling scheme. Cheesecloth's practicality is demonstrated by generating ZK proofs of well-known vulnerabilities in (previous versions of) critical software, including the Heartbleed information leakage in OpenSSL and a memory vulnerability in the FFmpeg graphics framework.",
+  "abstract_source_id": "src-abstract-usenix-security-2023-2109d59a",
   "venue": "usenix-security",
   "year": 2023,
   "track_or_session": "Vulnerabilities and Threat Detection",
@@ -154,6 +156,19 @@
       "official": true,
       "supports": [
         "authors, affiliations when published, abstract, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2023-2109d59a",
+      "url": "https://www.usenix.org/conference/usenixsecurity23/presentation/cuellar",
+      "kind": "paper-page",
+      "title": "Cheesecloth: Zero-Knowledge Proofs of Real World Vulnerabilities",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:10:12Z",
+      "content_hash": "sha256:d6d56d7502f949e68008f7b86349d58c7a4111eb318c4b748a0f2f82b6f3937c",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

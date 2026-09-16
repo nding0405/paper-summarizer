@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-dmguard-safeguarding-kernels-from-physical-page-use-afte-4a6ca2ec",
   "title": "DMGuard: Safeguarding Kernels from Physical-Page Use-After-Free Vulnerabilities",
+  "abstract": "Modern kernels depend on the integrity of page tables to enforce advanced security measures. Although these defenses have effectively mitigated various attacks including memory corruption, adversaries have shifted their focus to compromise the page table itself to bypass existing protections. Such threats are exacerbated by the rise of heterogeneous address translation domains including separate CPU, GPU, and IOMMU page tables, which impose heavy demands on synchronization and coherence management. When a virtual address remains mapped to a physical page that has already been freed or reallocated, attackers can exploit this to access arbitrary physical memory. We call this physical-page use-after-free, distinct from traditional heap use-after-free that operates on virtual addresses.\n\nIn this paper, we present DMGuard, the first runtime mitigation that comprehensively addresses physical-page use-after-free vulnerabilities across diverse translation domains. DMGuard leverages a lightweight, lockless mechanism to manage a state machine of physical pages to ensure no dangling mappings exist in the page tables. Evaluation of DMGuard on Android devices demonstrates that it effectively blocks all known physical-page use-after-free vulnerabilities with negligible performance overheads, demonstrating the practicality and effectiveness against emerging attacks.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-4a6ca2ec",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "System Security 1",
@@ -134,6 +136,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-4a6ca2ec",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/kim-juhee-dmguard",
+      "kind": "paper-page",
+      "title": "DMGuard: Safeguarding Kernels from Physical-Page Use-After-Free Vulnerabilities",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:23:42Z",
+      "content_hash": "sha256:01fdd16608e008226f590de915c1e28bfd9e5b5eb136f4d753440552992bf287",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2025-connecting-the-extra-dots-contexts-correlating-external-7bfeb66d",
   "title": "CONnecting The EXtra doTS (CONTEXTS): Correlating External Information about Point of Interest for Attack Investigation",
+  "abstract": "Provenance analysis is one of the go-to solutions today for human analysts to investigate security incidents. To assist analysts in managing the sheer size of provenance graphs, many pruning solutions have been proposed. Such solutions rely on graph-theory features, anomaly detection, and other techniques to identify nodes and edges that are irrelevant to the detected incident. Despite differences in their methodologies, those solutions typically share a common approach when it comes to the detected incident, i.e., they merely regard the incident as an abstract starting point, without tapping into it further. However, we observe that this may lead to missed opportunities for pruning, since the incident is typically associated with external information, e.g., knowledge about the exploit or the vulnerability, which may provide extra contextual insights for effective pruning. Based on such an observation, we propose Contexts, a solution that complements existing pruning approaches by leveraging external information about the incident. Specifically, the solution extracts contextual information from external sources, maps such information to provenance graph nodes, and then correlates those nodes to form a subgraph relevant to the incident. Our implementation and experiments based on real-world attacks demonstrate its effectiveness, e.g., working as the pre-processor of an existing pruning approach, it helps to reduce the false positives from more than 150k to less than ten, and as a standalone pruning solution, Contextsachieves 100% TPR for 19 out of 20 attacks, with an FPR below 0.6% for 16 out of 20 attacks. Finally, its real-world practicality is illustrated through a user study where 94.4% of participants agreed with its usefulness in attack investigation.",
+  "abstract_source_id": "src-abstract-sp-2025-7bfeb66d",
   "venue": "sp",
   "year": 2025,
   "track_or_session": "Cycle 2",
@@ -175,6 +177,19 @@
       "official": true,
       "supports": [
         "DOI, authors, affiliations, abstract, publication date, pages, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2025-7bfeb66d",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Connecting the Extra Dots (Contexts): Correlating External Information about Point of Interest for Attack Investigation",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:42Z",
+      "content_hash": "sha256:d62dac834635b4cd1890a53da454ceae7aaa151189662d990ac591dfd5cb6b3e",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2024-crescent-emulating-heterogeneous-production-network-at-s-d7c38e27",
   "title": "Crescent: Emulating Heterogeneous Production Network at Scale",
+  "abstract": "This paper presents the design, implementation, evaluation, and deployment of Crescent , ByteDance’s network emulation platform, for preventing change-induced network incidents. Inspired by prior art such as CrystalNet, Crescent achieves high fidelity by running switch vendor images inside containers. But, we explore a different route to scaling up the emulator with unique challenges. First, we analyze our past network incidents to reveal the difficulty in identifying a safe emulation boundary. Instead of emulating the entire network, we exploit the inherent symmetry and modularity of data center network architectures to strike a balance between coverage and resource cost. Second, we study the node-to-host assignment by formulating it as a graph partitioning problem. Evaluation results show that our partitioning algorithm reduces the testbed bootup time by up to 20× compared with random partitioning. Third, we developed an incremental approach to modify the emulated network on the fly. This approach can be 30× faster than creating a new testbed of the same scale. Crescent has been actively used for three and a half years, which led to a significant reduction in change-induced network incidents. We also share Crescent ’s success in many other use cases and the critical lessons learned from its deployment.",
+  "abstract_source_id": "src-abstract-nsdi-2024-d7c38e27",
   "venue": "nsdi",
   "year": 2024,
   "track_or_session": "Networking at Scale",
@@ -160,6 +162,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2024-d7c38e27",
+      "url": "https://www.usenix.org/conference/nsdi24/presentation/gao-zhaoyu",
+      "kind": "paper-page",
+      "title": "Crescent: Emulating Heterogeneous Production Network at Scale",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:03:03Z",
+      "content_hash": "sha256:9c87090600c7a0186e526b46e6d40641499ffc0110eee216a589614de482b634",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

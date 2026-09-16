@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-pangolin-fuzzing-multilingual-iot-firmware-with-llm-driv-071bc660",
   "title": "PANGOLIN: Fuzzing Multilingual IoT Firmware with LLM-Driven Code Analysis",
+  "abstract": "Multilingual IoT typically refers to the use of multiple languages to implement its web services, such as C, Python, Lua, etc. While some user-accessible interfaces are visualized through the frontend for interaction, a large number of interfaces remain hidden and are not exposed to the frontend in multilingual IoT. Additionally, their parameters often exhibit complex hierarchical structures. Effectively extracting interface specifications from multilingual devices for vulnerability discovery is an urgent problem that remains unresolved. In this paper, we present PANGOLIN, a novel fuzzing solution designed for multilingual IoT devices. First, we utilize LLMs to analyze API dispatching mechanisms and identify interfaces. Then, we introduce an LLM agent to perform cross-language analysis and generate input parameter specifications. Lastly, we utilize response-driven feedback to correct parameter specifications. This knowledge enables semantics-aware fuzzing that can explore deeper code paths and discover more vulnerabilities. PANGOLIN successfully discovered 68 previously unknown vulnerabilities, i.e., 2.96X more than SOTA tool LABRADOR. Notably, 45 of these vulnerabilities were found in hidden interfaces, whereas EAGLEYE was only able to identify 4 such cases. As of the time of writing, all vulnerabilities have been reported to vendors and acknowledged, with 31 vulnerability IDs assigned.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-071bc660",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Security and Privacy for Web, Mobile, and Emerging Technologies 1",
@@ -261,6 +263,19 @@
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening",
         "prepublication PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-071bc660",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/jia-zhipeng",
+      "kind": "paper-page",
+      "title": "PANGOLIN: Fuzzing Multilingual IoT Firmware with LLM-Driven Code Analysis",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:24:57Z",
+      "content_hash": "sha256:ba520e7736a61ab11e2246c548de555d42e936245b6540a32554d5e06308e8b5",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

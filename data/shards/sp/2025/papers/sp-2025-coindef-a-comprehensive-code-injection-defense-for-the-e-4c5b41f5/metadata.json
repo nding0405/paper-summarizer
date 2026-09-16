@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2025-coindef-a-comprehensive-code-injection-defense-for-the-e-4c5b41f5",
   "title": "COINDEF: A Comprehensive Code Injection Defense for the Electron Framework",
+  "abstract": "The increasing popularity of cross-platform frameworks like Electron underscores the appeal of using familiar web technologies for desktop application development. Electron fuses the web and native environments into one single executable. However, this fusion creates unique vulnerabilities and significantly expands the attack surfaces for Electron applications, rendering traditional web defenses ineffective, as they are not designed to operate across both web and native contexts simultaneously. To address these challenges, we propose Coindef, a centralized defense mechanism that enforces the structural integrity of Abstract Syntax Trees (ASTs) with execution context. Coindef operates within the JavaScript engine, providing rapid, tamper-proof, and comprehensive mitigation against code injection attacks to Electron applications. Coindef employs hybrid profiling to collect AST structural profiles, establishing a baseline of expected behavior. Then, Coindef enforces these profiles for code as it is interpreted at runtime. In an evaluation of Coindef on 20 representative real-world applications, we demonstrate its effectiveness in blocking exploits, incurring a 3.96% runtime overhead during application startup and negligible overhead during user interaction. Comparing Coindef to state-of-the-art defenses for Electron applications, we show that Coindef offers comprehensive protection against sophisticated code injection attacks through DOM manipulations and dynamic code execution.",
+  "abstract_source_id": "src-abstract-sp-2025-4c5b41f5",
   "venue": "sp",
   "year": 2025,
   "track_or_session": "Cycle 2",
@@ -175,6 +177,19 @@
       "official": true,
       "supports": [
         "DOI, authors, affiliations, abstract, publication date, pages, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2025-4c5b41f5",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "CoinDef: A Comprehensive Code Injection Defense for the Electron Framework",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:42Z",
+      "content_hash": "sha256:d62dac834635b4cd1890a53da454ceae7aaa151189662d990ac591dfd5cb6b3e",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

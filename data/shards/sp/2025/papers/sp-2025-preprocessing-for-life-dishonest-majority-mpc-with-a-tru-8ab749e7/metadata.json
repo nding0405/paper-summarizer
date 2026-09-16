@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2025-preprocessing-for-life-dishonest-majority-mpc-with-a-tru-8ab749e7",
   "title": "Preprocessing for Life: Dishonest-Majority MPC with a Trusted or Untrusted Dealer",
+  "abstract": "We put forth a new paradigm for secure multi-party computation (MPC) in the preprocessing model, where a feasible one-time setup can enable a lifetime of efficient online secure computations. Our protocols match the security guarantees and low costs of the cheapest category of MPC solutions, namely 3-party protocols (3PC) secure against a single malicious party, with the qualitative advantages that one party communicates data sublinear in the circuit size, and can go offline after its initial messages. This “2+ 1“-party structure can alternatively be instantiated between 2 parties with the aid of an (untrusted) dealer. Within such existing protocols, we provide comparable online performance while improving the storage and offline dealer-to-party communication requirements by more than 3 orders of magnitude. At the technical level, we build on the Fully Linear Interactive Oracle Proof (FLIOP)-based protocol design of Boyle et al. (CRYPTO 2021). We provide an extensive assortment of algorithmic and implementation-level optimizations, design efficient distributed proofs of well-formedness of complex FLIOP correlations, and make them circuit-independent. We implement and benchmark our end-to-end system against the state of the art in the 2+1 regime, a dealer-aided variant of SPDZ for Boolean circuits. We additionally extend our techniques to the $(n+1)$ party setting, where a dealer aids general dishonest-majority MPC, and provide a variant of the protocol which further achieves security with “identifiable abort.”",
+  "abstract_source_id": "src-abstract-sp-2025-8ab749e7",
   "venue": "sp",
   "year": 2025,
   "track_or_session": "Cycle 1",
@@ -154,6 +156,19 @@
       "official": true,
       "supports": [
         "DOI, authors, affiliations, abstract, publication date, pages, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2025-8ab749e7",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Preprocessing for Life: Dishonest-Majority MPC with a Trusted or Untrusted Dealer",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:52Z",
+      "content_hash": "sha256:b15ce02bcc49da611fdd791ecc56741e7d91d84154b58c1a7f72a5c6902e6e46",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

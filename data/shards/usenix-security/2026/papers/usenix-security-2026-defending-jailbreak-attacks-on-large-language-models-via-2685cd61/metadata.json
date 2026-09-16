@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-defending-jailbreak-attacks-on-large-language-models-via-2685cd61",
   "title": "Defending Jailbreak Attacks on Large Language Models via Manifold Trajectory Kinetics",
+  "abstract": "Jailbreak prompts can bypass alignment guardrails in large language models (LLMs) and elicit unsafe outputs, making reliable deployment-time detection critical. Prior detection approaches largely rely on static detection of internal states (e.g., raw inputs, gradients, or hidden features). We show that such static signals may overlook how risk emerges and evolves during model processing, and can be brittle under two challenging cases: (i) pseudo-malicious prompts that are benign by intent but contain safety-related keywords, and (ii) adaptive attacks that explicitly optimize against the deployed detector. To overcome this limitation, we shift our perspective from static analysis of detection signals to analyzing their dynamic evolution along model depth, examining how the neighborhood structure of the underlying data manifold changes across layers. We present Manifold Trajectory Kinetics (MTK), which treats an LLM as a kinetic system transforming inputs into outputs and detects jailbreaks by tracking how a prompt's neighborhood structure evolves across layers. Benign prompts remain close to benign neighborhoods throughout inference, whereas jailbreak prompts exhibit a characteristic trajectory that begins near malicious seeds and later strategically shifts toward benign neighborhoods to evade refusal. Across four LLMs and ten jailbreak attacks, MTK achieves strong robustness to both failure modes: on pseudo-malicious prompts, it attains a jailbreak true positive rate of 95% at a false positive rate of 5% on benign prompts and 2% on pseudomalicious prompts, and under adaptive attacks, it maintains an average true positive rate of 85%. We further demonstrate the superior performance of MTK for jailbreak detection in vision-language models. Our code is available at https://github.com/Rookie143/mtk .",
+  "abstract_source_id": "src-abstract-usenix-security-2026-2685cd61",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Security of ML 3",
@@ -281,6 +283,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-2685cd61",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/zhang-hangtao",
+      "kind": "paper-page",
+      "title": "Defending Jailbreak Attacks on Large Language Models via Manifold Trajectory Kinetics",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:23:38Z",
+      "content_hash": "sha256:df6085aa6247e376d8e5de6f7d3ac3d0a0db481164c38c417f7e1fa9f9daaf3f",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

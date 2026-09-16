@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2025-disassembly-as-weighted-interval-scheduling-with-learned-cceee26a",
   "title": "Disassembly as Weighted Interval Scheduling with Learned Weights",
+  "abstract": "Disassembly is the first step of a variety of binary analysis and transformation techniques, such as reverse engineering, or binary rewriting. Recent disassembly approaches consist of three phases: an exploration phase, that overapproximates the binary's code; an analysis phase, that assigns weights to candidate instructions or basic blocks; and a conflict resolution phase, that downselects the final set of instructions. We present a disassembly algorithm that generalizes this pattern for a wide range of architectures, namely x86, x64, arm32, and aarch64. Our algorithm presents a novel conflict resolution method that reduces disassembly to weighted interval scheduling. Additionally, we present a weight assignment algorithm that allows us to learn optimal weights for the various disassembly heuristics in the analysis phase. Learned weights outperform manually tuned weights in most cases while reducing the number of necessary heuristics by 40% (by setting their weights to zero). Our implementation, built on top of Ddisasm, outperforms state-of-the-art disassemblers in several metrics and achieves the largest proportion of perfectly disassembled binaries by a wide margin in all evaluated datasets.",
+  "abstract_source_id": "src-abstract-sp-2025-cceee26a",
   "venue": "sp",
   "year": 2025,
   "track_or_session": "Cycle 2",
@@ -175,6 +177,19 @@
       "official": true,
       "supports": [
         "DOI, authors, affiliations, abstract, publication date, pages, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2025-cceee26a",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Disassembly as Weighted Interval Scheduling with Learned Weights",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:47Z",
+      "content_hash": "sha256:d48e5e27e72297ce02860f066764bd9c5cd6e8191e2ebf4b4f15da0fffb6959f",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "eurosys-2023-groundhog-efficient-request-isolation-in-faas-6c6ab66f",
   "title": "Groundhog: Efficient Request Isolation in FaaS",
+  "abstract": "Security is a core responsibility for Function-as-a-Service (FaaS) providers. The prevailing approach isolates concurrent executions of functions in separate containers. However, successive invocations of the same function commonly reuse the runtime state of a previous invocation in order to avoid container cold-start delays. Although efficient, this container reuse has security implications for functions that are invoked on behalf of differently privileged users or administrative domains: bugs in a function's implementation --- or a third-party library/runtime it depends on --- may leak private data from one invocation of the function to a subsequent one.",
+  "abstract_source_id": "src-abstract-eurosys-2023-6c6ab66f",
   "venue": "eurosys",
   "year": 2023,
   "track_or_session": null,
@@ -146,6 +148,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-eurosys-2023-6c6ab66f",
+      "url": "https://api.openalex.org/works/doi:10.1145/3552326.3567503?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Groundhog: Efficient Request Isolation in FaaS",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:18:34Z",
+      "content_hash": "sha256:f393d8cdd3dd97b17c8b0db73c3aec3cc8e3cdfd64b8ad93b03cf157741b0a42",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

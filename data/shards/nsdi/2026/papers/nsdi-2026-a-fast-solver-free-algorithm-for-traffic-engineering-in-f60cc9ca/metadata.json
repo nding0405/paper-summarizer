@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2026-a-fast-solver-free-algorithm-for-traffic-engineering-in-f60cc9ca",
   "title": "A Fast Solver-Free Algorithm for Traffic Engineering in Large-Scale Data Center Network",
+  "abstract": "Rapid growth of data center networks (DCNs) poses significant challenges for large-scale traffic engineering (TE). Existing acceleration strategies, which rely on commercial solvers or deep learning, face scalability issues and struggle with degrading performance or long computational time.\n\nUnlike existing algorithms adopting parallel strategies, we propose Sequential Source-Destination Optimization (SSDO), a sequential solver-free algorithm for intra-DCN TE. SSDO decomposes the problem into subproblems, each focused on adjusting the split ratios for a specific source-destination (SD) demand while keeping others fixed. To enhance the efficiency of subproblem optimization, we design a Balanced Binary Search Method (BBSM), which identifies the most balanced split ratios among multiple solutions that minimize Maximum Link Utilization (MLU). SSDO dynamically updates the sequence of SDs based on real-time utilization, which accelerates convergence and enhances solution quality.\n\nWe evaluate SSDO primarily on Meta DCNs, and additionally on two WAN topologies as auxiliary demonstrations of generality. In a Meta topology, SSDO achieves a 65% and 60% reduction in normalized MLU compared to TEAL and POP, two state-of-the-art TE acceleration methods, while delivering a 12× speedup over POP. These results demonstrate the superior performance of SSDO in large-scale TE.",
+  "abstract_source_id": "src-abstract-nsdi-2026-f60cc9ca",
   "venue": "nsdi",
   "year": 2026,
   "track_or_session": "Networked Resources, Virtualized",
@@ -181,6 +183,19 @@
         "proceedings page range and page count",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2026-f60cc9ca",
+      "url": "https://www.usenix.org/conference/nsdi26/presentation/mao",
+      "kind": "paper-page",
+      "title": "A Fast Solver-Free Algorithm for Traffic Engineering in Large-Scale Data Center Network",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:04:47Z",
+      "content_hash": "sha256:bce5e0e38a940fb27eea58aeef98d50245eb1bc72a3e0d94aaa2879232b52d3d",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "fast-2026-unicom-a-universally-high-performant-i-o-completion-mech-333f693a",
   "title": "UnICom: A Universally High-Performant I/O Completion Mechanism for Modern Computer Systems",
+  "abstract": "Modern computer systems are increasingly equipped with dozens to hundreds of cores, while high-performance Solid-State Drives (SSDs), enabled by NVMe and emerging technologies such as CXL-SSDs, provide massive I/O bandwidth and microsecond-scale latency. Yet, software overhead in the I/O stack remains a critical bottleneck, often contributing up to 50% of total I/O latency. Existing I/O completion mechanisms fall short: polling achieves low latency but wastes CPU cycles, whereas interrupts conserve CPU resources but incur significant wake-up overhead. This paper presents UnICom (Universal I/O Completion), a new I/O completion mechanism that unifies the benefits of polling and interrupts while avoiding their drawbacks. The key insight is that a kernel trap is negligible compared to disk I/O latency, yet enables access to kernel infrastructure for efficiency and security. Building on this, UnICom introduces three core techniques: TagSched, a lightweight tag-guided scheduling mechanism that minimizes sleep and wake-up overhead; TagPoll, a centralized kernel-level I/O completion thread that consolidates polling across threads and processes; and SKIP, a kernel-assisted direct-access mechanism that eliminates complex user-space permission management. Together, these techniques enable efficient multi-process support and direct SSD access while bypassing much of the kernel I/O stack. We implement UnICom in the Linux kernel and evaluate it against ext4, BypassD, and io_uring. Across all experiments, UnICom consistently delivers high I/O performance, matching or exceeding the best of polling and interrupts under both low and high CPU utilization.",
+  "abstract_source_id": "src-abstract-fast-2026-333f693a",
   "venue": "fast",
   "year": 2026,
   "track_or_session": "OS",
@@ -202,6 +204,19 @@
         "proceedings page range and page count",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-fast-2026-333f693a",
+      "url": "https://www.usenix.org/conference/fast26/presentation/pan",
+      "kind": "paper-page",
+      "title": "UnICom: A Universally High-Performant I/O Completion Mechanism for Modern Computer Systems",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:01:45Z",
+      "content_hash": "sha256:0c68f62644cc7b2f47dfa45e1212fbccb0f2a837d0f76b08f17f3af7d5cecf45",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2024-distserve-disaggregating-prefill-and-decoding-for-goodpu-93bf9eab",
   "title": "DistServe: Disaggregating Prefill and Decoding for Goodput-optimized Large Language Model Serving",
+  "abstract": "DistServe improves the performance of large language models (LLMs) serving by disaggregating the prefill and decoding computation. Existing LLM serving systems colocate the two phases and batch the computation of prefill and decoding across all users and requests. We find that this strategy not only leads to strong prefill-decoding interferences but also couples the resource allocation and parallelism plans for both phases. LLM applications often emphasize individual latency for each phase: time to first token (TTFT) for the prefill phase and time per output token (TPOT) of each request for the decoding phase. In the presence of stringent latency requirements, existing systems have to prioritize one latency over the other, or over-provision compute resources to meet both.\n\nDistServe assigns prefill and decoding computation to different GPUs, hence eliminating prefill-decoding interferences. Given the application's TTFT and TPOT requirements, DistServe co-optimizes the resource allocation and parallelism strategy tailored for each phase. DistServe also places the two phases according to the serving cluster's bandwidth to minimize the communication caused by disaggregation. As a result, DistServe significantly improves LLM serving performance in terms of the maximum rate that can be served within both TTFT and TPOT constraints on each GPU. Our evaluations show that on various popular LLMs, applications, and latency requirements, DistServe can serve 7.4× more requests or 12.6× tighter SLO, compared to state-of-the-art systems, while staying within latency constraints for > 90% of requests.",
+  "abstract_source_id": "src-abstract-osdi-2024-93bf9eab",
   "venue": "osdi",
   "year": 2024,
   "track_or_session": "Low-Latency LLM Serving",
@@ -243,6 +245,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2024-93bf9eab",
+      "url": "https://www.usenix.org/conference/osdi24/presentation/zhong-yinmin",
+      "kind": "paper-page",
+      "title": "DistServe: Disaggregating Prefill and Decoding for Goodput-optimized Large Language Model Serving",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:07:00Z",
+      "content_hash": "sha256:7474b72301ea5bd689d37e68c822aa0c3c40a8a9f3f95f9147514981b6d97f13",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

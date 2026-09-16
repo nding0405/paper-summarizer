@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sigcomm-2025-software-based-live-migration-for-rdma-5d944d48",
   "title": "Software-based Live Migration for RDMA",
+  "abstract": "Live migration is critical to ensure services are not interrupted during host maintenance in data centers. On the other hand, RDMA has been widely adopted in data centers, and has attracted both academia and industry for years. However, live migration of RDMA is not supported in today's data centers. Although modifying RDMA NICs (RNICs) to be aware of live migration has been proposed for years, there is no sign of supporting it on commodity RNICs. This paper proposes MigrRDMA, a software-based RDMA live migration that does not rely on any extra hardware support. MigrRDMA provides a software indirection layer to achieve transparent switching to new RDMA communications. Unlike previous RDMA virtualization that provides sharing and isolation, MigrRDMA's indirection layer focuses on keeping the RDMA states on the migration source and destination identical from the perspective of applications. We implemented MigrRDMA prototype over Mellanox RNICs. Our evaluation shows that MigrRDMA adds little downtime when migrating a container with live RDMA connections running at line rate. Besides, the MigrRDMA virtualization layer only adds 3% ~ 9% extra overheads in the data path. When migrating Hadoop tasks, MigrRDMA only incurs an extra 3-second job completion time.",
+  "abstract_source_id": "src-abstract-sigcomm-2025-5d944d48",
   "venue": "sigcomm",
   "year": 2025,
   "track_or_session": "Datacenter Networking",
@@ -150,6 +152,19 @@
         "DOI and ACM publisher landing/PDF links",
         "publisher-deposited ORCIDs when available",
         "proceedings page range and online publication date"
+      ]
+    },
+    {
+      "id": "src-abstract-sigcomm-2025-5d944d48",
+      "url": "https://api.openalex.org/works/doi:10.1145/3718958.3750487?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Software-based Live Migration for RDMA",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:23:35Z",
+      "content_hash": "sha256:00193c4635ae87705d2133a57ca5432167bf4af10f2b26c71a4a672d24318098",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2023-evstore-storage-and-caching-capabilities-for-scaling-emb-f0c28c6c",
   "title": "EVStore: Storage and Caching Capabilities for Scaling Embedding Tables in Deep Recommendation Systems",
+  "abstract": "Modern recommendation systems, primarily driven by deep-learning models, depend on fast model inferences to be useful. To tackle the sparsity in the input space, particularly for categorical variables, such inferences are made by storing increasingly large embedding vector (EV) tables in memory. A core challenge is that the inference operation has an all-or-nothing property: each inference requires multiple EV table lookups, but if any memory access is slow, the whole inference request is slow. In our paper, we design, implement and evaluate EVStore, a 3-layer EV table lookup system that harnesses both structural regularity in inference operations and domain-specific approximations to provide optimized caching, yielding up to 23% and 27% reduction on the average and p90 latency while quadrupling throughput at 0.2% loss in accuracy. Finally, we show that at a minor cost of accuracy, EVStore can reduce the Deep Recommendation System (DRS) memory usage by up to 94%, yielding potentially enormous savings for these costly, pervasive systems.",
+  "abstract_source_id": "src-abstract-asplos-2023-f0c28c6c",
   "venue": "asplos",
   "year": 2023,
   "track_or_session": "Session 1A: Systems for ML",
@@ -209,6 +211,19 @@
       "official": false,
       "supports": [
         "Indexed abstract used with the official technical-session context for relevance classification, plus alternate-copy and explicitly printed ancillary links."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2023-f0c28c6c",
+      "url": "https://api.openalex.org/works/doi:10.1145/3575693.3575718?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "EVStore: Storage and Caching Capabilities for Scaling Embedding Tables in Deep Recommendation Systems",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T21:59:27Z",
+      "content_hash": "sha256:c7cc65431d74f00417dde3a935fc1819258771355727a3f46755a693e021b3bc",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

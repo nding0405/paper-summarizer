@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2026-fast-pointer-nullification-for-use-after-free-prevention-c2a2a7ec",
   "title": "Fast Pointer Nullification for Use-After-Free Prevention",
+  "abstract": "Low-level programming languages like C and C++ offer dynamic memory management capabilities but are vulnerable to Use-After-Free (UAF) vulnerabilities due to improper deallocation handling. These vulnerabilities, arising from accessing memory through dangling pointers, pose significant risks. While various defense mechanisms have been proposed, existing solutions often face challenges such as high performance overhead, excessive memory usage, or inadequate security guarantees, limiting their practicality. Pointer Nullification (PN) has gained attention as a promising UAF mitigation technique by tracking pointers and nullifying them upon buffer deallocation. However, existing PN techniques incur inefficiencies due to precisely associating each pointer with its target buffer, leading to expensive metadata lookups. Moreover, they overlook spatial locality in pointer storage, resulting in a larger number of registrations than necessary. This paper introduces Fast Pointer Nullification (FPN), a new PN-based defense that organizes metadata at the region level to eliminate costly search operations and uses block-based registration to efficiently capture pointer locality. Experiments on SPEC CPU benchmarks and real-world applications demonstrate that FPN provides strong security guarantees while significantly reducing performance and memory overhead compared to prior PN techniques.",
+  "abstract_source_id": "src-abstract-ndss-2026-c2a2a7ec",
   "venue": "ndss",
   "year": 2026,
   "track_or_session": "Fall submission cycle",
@@ -139,6 +141,19 @@
       "official": false,
       "supports": [
         "independent proceedings identity reconciliation"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2026-c2a2a7ec",
+      "url": "https://www.ndss-symposium.org/ndss-paper/fast-pointer-nullification-for-use-after-free-prevention/",
+      "kind": "paper-page",
+      "title": "Fast Pointer Nullification for Use-After-Free Prevention",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:22:00Z",
+      "content_hash": "sha256:54b1ee87744b7defb03bf00657d233cdde5cc01da5acdea416b6e80b6f16af0e",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

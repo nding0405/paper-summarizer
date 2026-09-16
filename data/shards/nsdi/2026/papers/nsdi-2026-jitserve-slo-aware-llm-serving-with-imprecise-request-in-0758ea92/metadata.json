@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2026-jitserve-slo-aware-llm-serving-with-imprecise-request-in-0758ea92",
   "title": "JITServe: SLO-aware LLM Serving with Imprecise Request Information",
+  "abstract": "The integration of Large Language Models (LLMs) into applications ranging from interactive chatbots to multi-agent systems has introduced a wide spectrum of service-level objectives (SLOs) for responsiveness. These include latency-sensitive requests emphasizing per-token latency in streaming chat, deadline-sensitive requests requiring rapid full responses to trigger external tools, and compound requests with evolving dependencies across multiple LLM calls. Despite—or perhaps, because of—this workload diversity and unpredictable request information (e.g., response lengths and dependencies), existing request schedulers have focused on aggregate performance, unable to ensure application-level SLO needs.\n\nThis paper presents JITServe, the first SLO-aware LLM serving system designed to maximize service goodput (e.g., the number of tokens meeting request SLOs) across diverse workloads . JITServe novelly schedules requests using imprecise request information and gradually relaxes this conservatism by refining request information estimates as generation progresses. It applies a grouped margin goodput maximization algorithm to allocate just enough serving bandwidth to satisfy each request's SLO just-in-time (JIT), maximizing residual capacity for others, while deciding the composition of requests in a batch to maximize efficiency and goodput with provable guarantees. Our evaluation across diverse realistic workloads, including chat, deep research, and agentic pipelines, shows that JITServe improves service goodput by 1.4×–6.3×, alternatively achieving 28.5%–83.2% resource savings, compared to state-of-the-art designs.",
+  "abstract_source_id": "src-abstract-nsdi-2026-0758ea92",
   "venue": "nsdi",
   "year": 2026,
   "track_or_session": "Learning at Line Rate",
@@ -209,6 +211,19 @@
         "proceedings page range and page count",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2026-0758ea92",
+      "url": "https://www.usenix.org/conference/nsdi26/presentation/zhang-wei",
+      "kind": "paper-page",
+      "title": "JITServe: SLO-aware LLM Serving with Imprecise Request Information",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:05:31Z",
+      "content_hash": "sha256:5fab1292e525fd5d9788bef79ecee92bfed0f19d38a192d0b4ebe12979a0d845",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

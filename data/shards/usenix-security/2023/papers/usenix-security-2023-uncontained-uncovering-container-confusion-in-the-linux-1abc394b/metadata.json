@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2023-uncontained-uncovering-container-confusion-in-the-linux-1abc394b",
   "title": "Uncontained: Uncovering Container Confusion in the Linux Kernel",
+  "abstract": "Type confusion bugs are a common source of security problems whenever software makes use of type hierarchies, as an inadvertent downcast to an incompatible type is hard to detect at compile time and easily leads to memory corruption at runtime. Where existing research mostly studies type confusion in the context of object-oriented languages such as C++, we analyze how similar bugs affect complex C projects such as the Linux kernel. In particular, structure embedding emulates type inheritance between typed structures. Downcasting in such cases consists of determining the containing structure from the embedded one, and, like its C++ counterpart, may well lead to bad casting to an incompatible type.\n\nIn this paper, we present uncontained, a systematic, two-pronged solution to discover type confusion vulnerabilities resulting from incorrect downcasting on structure embeddings—which we call container confusion. First, we design a novel sanitizer to dynamically detect such issues and evaluate it on the Linux kernel, where we find as many as 11 container confusion bugs. Using the patterns in the bugs detected by the sanitizer, we then develop a static analyzer to find similar bugs in code that dynamic analysis fails to reach and detect another 78 bugs. We reported and proposed patches for all the bugs (with 102 patches already merged and 6 CVEs assigned), cooperating with the Linux kernel maintainers towards safer design choices for container manipulation.",
+  "abstract_source_id": "src-abstract-usenix-security-2023-1abc394b",
   "venue": "usenix-security",
   "year": 2023,
   "track_or_session": "Kernel Analysis",
@@ -154,6 +156,19 @@
       "official": true,
       "supports": [
         "authors, affiliations when published, abstract, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2023-1abc394b",
+      "url": "https://www.usenix.org/conference/usenixsecurity23/presentation/koschel",
+      "kind": "paper-page",
+      "title": "Uncontained: Uncovering Container Confusion in the Linux Kernel",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:13:32Z",
+      "content_hash": "sha256:0a96ff14cc3c801e6d746ba7d83ede4f3c9942fd2f47c66fde05f23bd7f28a2a",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2023-beehive-sub-second-elasticity-for-web-services-with-semi-07a004f0",
   "title": "BeeHive: Sub-second Elasticity for Web Services with Semi-FaaS Execution",
+  "abstract": "Function-as-a-service (FaaS), an emerging cloud computing paradigm, is expected to provide strong elasticity due to its promise to auto-scale fine-grained functions rapidly. Although appealing for applications with good parallelism and dynamic workload, this paper shows that it is non-trivial to adapt existing monolithic applications (like web services) to FaaS due to their complexity. To bridge the gap between complicated web services and FaaS, this paper proposes a runtime-based Semi-FaaS execution model, which dynamically extracts time-consuming code snippets (closures) from applications and offloads them to FaaS platforms for execution. It further proposes BeeHive, an offloading framework for Semi-FaaS, which relies on the managed runtime to provide a fallback-based execution model and addresses the performance issues in traditional offloading mechanisms for FaaS. Meanwhile, the runtime system of BeeHive selects offloading candidates in a user-transparent way and supports efficient object sharing, memory management, and failure recovery in a distributed environment. The evaluation using various web applications suggests that the Semi-FaaS execution supported by BeeHive can reach sub-second resource provisioning on commercialized FaaS platforms like AWS Lambda, which is up to two orders of magnitude better than other alternative scaling approaches in cloud computing.",
+  "abstract_source_id": "src-abstract-asplos-2023-07a004f0",
   "venue": "asplos",
   "year": 2023,
   "track_or_session": "Session 2C: Clouds/Datacenters",
@@ -188,6 +190,19 @@
       "official": false,
       "supports": [
         "Indexed abstract used with the official technical-session context for relevance classification, plus alternate-copy and explicitly printed ancillary links."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2023-07a004f0",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1145%2F3575693.3575752?fields=title,abstract",
+      "kind": "semantic-scholar",
+      "title": "BeeHive: Sub-second Elasticity for Web Services with Semi-FaaS Execution",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T21:58:54Z",
+      "content_hash": "sha256:6a76f4385126baaead86ad2a5d4ece8728f771881b2d9dbec9f92ab86d5cfabf",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

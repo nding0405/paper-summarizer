@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sigcomm-2026-trie-structure-guided-compression-allocation-and-mapping-6c0676f1",
   "title": "Trie-Structure-Guided Compression, Allocation, and Mapping for Storage-Efficient IPv6 Lookup Pipelines",
+  "abstract": "The rapid growth of IPv6 forwarding information bases (FIBs) strains high-speed routers. While trie-based algorithmic longest-prefix matching (ALPM) pipelines are widely deployed, existing designs emphasize trie compression but neglect pipeline memory utilization, limiting scalability under long IPv6 prefixes and imbalanced distributions. We present SCAMP-Trie, a trie-structure-guided approach that jointly addresses trie compression, node mapping, and pipeline memory allocation for storage-efficient IPv6 lookup. We propose a trie-based pipelined lookup model (TPLM) that captures the coupling among these dimensions through a unified storage efficiency metric. Leveraging the observation that nodes farther from leaf nodes are less frequent, we introduce an inverse-distance-based mapping principle, realized via a warning-line-based dynamic mapping algorithm and a metaheuristic search framework. To support flexible mapping while preserving compression, we codesign node structures including flexible child indexing, sub-trie next-hop compression, and half-size node storage. Evaluated on 36 real-world FIBs across four network scenarios, SCAMP-Trie improves average storage utilization by 4.0X and prefix capacity by 3.0~67.3X under the same memory budget. An FPGA prototype achieves 768 Gbps line-rate forwarding for 256-byte packets with a 240k-entry FIB, using only 41% of on-chip memory and 1% of logic.",
+  "abstract_source_id": "src-abstract-6c0676f1",
   "venue": "sigcomm",
   "year": 2026,
   "track_or_session": "Research Session 15: Programmable Switches & Data-Plane Hardware — Research Paper",
@@ -233,6 +235,19 @@
       "official": true,
       "supports": [
         "official main-paper scope and track definitions"
+      ]
+    },
+    {
+      "id": "src-abstract-6c0676f1",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/search/match?query=Trie-Structure-Guided%20Compression%2C%20Allocation%2C%20and%20Mapping%20for%20Storage-Efficient%20IPv6%20Lookup%20Pipelines&fields=title,abstract",
+      "kind": "semantic-scholar",
+      "title": "Trie-Structure-Guided Compression, Allocation, and Mapping for Storage-Efficient IPv6 Lookup Pipelines",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T23:08:17Z",
+      "content_hash": "sha256:f43bb03bbf685bd6aa5d6287e3d97f72ab74c7e48ba36c814ac0dcdcfd696cf4",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sigcomm-2024-a-general-and-efficient-approach-to-verifying-traffic-lo-e76b410e",
   "title": "A General and Efficient Approach to Verifying Traffic Load Properties under Arbitrary k Failures",
+  "abstract": "This paper presents YU, the first verification system for checking traffic load properties under arbitrary failure scenarios that can scale to production Wide Area Networks (WANs). Building a practical YU requires us to address two challenges in terms of generality and efficiency. The state-of-the-art efforts either assume shortest-path-based forwarding (e.g., QARC) or only target single-failure reasoning (e.g., Jingubang). As a result, the former inherently cannot generalize to widely used protocols (e.g., SR and iBGP) that are beyond shortest-path forwarding, while the latter cannot efficiently handle arbitrary failure scenarios. For the generality challenge, we propose an approach inspired by symbolic execution, called symbolic traffic execution, to model the forwarding behavior of a range of practically deployed protocols (e.g., eBGP, iBGP, iGP, and SR) under failure scenarios. For the efficiency challenge, we propose diverse equivalence classification techniques (i.e., k-failure-equivalence and link-local-equivalence reduction) to reduce the symbolic traffic execution overhead caused by both the large size of the production WAN and the huge number of traffic flows traversing it. YU has been used in the daily verification of our WAN for several months and has successfully identified potential failure scenarios that would lead to traffic load violations.",
+  "abstract_source_id": "src-abstract-sigcomm-2024-e76b410e",
   "venue": "sigcomm",
   "year": 2024,
   "track_or_session": "Proving the network — Research Track",
@@ -318,6 +320,19 @@
         "publisher-deposited ORCIDs when available",
         "proceedings page range and online publication date",
         "empty publisher relation metadata for alternate-version checks"
+      ]
+    },
+    {
+      "id": "src-abstract-sigcomm-2024-e76b410e",
+      "url": "https://api.openalex.org/works/doi:10.1145/3651890.3672246?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "A General and Efficient Approach to Verifying Traffic Load Properties under Arbitrary k Failures",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:23:02Z",
+      "content_hash": "sha256:e744dfed092782ffea66116e2431ae503bbe35fbfc829293b600f9feddb9b736",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

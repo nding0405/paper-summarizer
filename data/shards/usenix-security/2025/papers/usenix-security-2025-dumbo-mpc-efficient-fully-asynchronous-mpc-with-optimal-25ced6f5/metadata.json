@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-dumbo-mpc-efficient-fully-asynchronous-mpc-with-optimal-25ced6f5",
   "title": "Dumbo-MPC: Efficient Fully Asynchronous MPC with Optimal Resilience",
+  "abstract": "Fully asynchronous multi-party computation (AMPC) has superior robustness in realizing privacy and guaranteed output delivery (G.O.D.) against asynchronous adversaries that can arbitrarily delay communications. However, none of these protocols are truly practical, as they either have sub-optimal resilience, incur cumbersome communication cost, or suffer from an online phase with extra cryptographic overhead. The only attempting implementation—HoneyBadgerMPC (hbMPC)—merely ensures G.O.D. in some implausible optimistic cases due to a non-robust offline pre-processing phase.\n\nWe propose Dumbo-MPC a concretely efficient AMPC-as-a-service design with all-phase G.O.D. and optimal resilience against t < n/3 malicious parties (where n is the total number of parties). Similar to hbMPC, Dumbo-MPC has a robust (almost) information-theoretic online phase that can efficiently perform online computations, given pre-processed multiplication triples. To achieve all-phase G.O.D., we design a novel dual-mode offline protocol that can robustly pre-process multiplication triples in asynchrony. The offline phase features O(n) per-triple communication in the optimistic case, followed by a fully asynchronous fallback to a pessimistic path to securely restore G.O.D. in the bad case. To (concretely) efficiently implement the pessimistic path, we devise a concretely efficient zk-proof for the product relationship of secret shares over compact KZG polynomial commitments, which enables us to reduce the degree of two secret shares' product from 2t to t and could be of independent interest.\n\nWe also implement and extensively evaluate Dumbo-MPC (particularly its offline phase) in varying network settings with up to 31 AWS servers. To our knowledge, we provide the first AMPC implementation with all-phase G.O.D. A recent asynchronous triple generation protocol from Groth and Shoup (GS23) is also implemented and experimentally compared. When n = 31, Dumbo-MPC generates 94 triples/sec (almost twice as many as GS23) in the pessimistic case and 349 triples/sec (about 6X of GS23) in the good case.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-25ced6f5",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Crypto 1: Zero Knowledge and Multi-Party Computation",
@@ -175,6 +177,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-25ced6f5",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/su-yuan",
+      "kind": "paper-page",
+      "title": "Dumbo-MPC: Efficient Fully Asynchronous MPC with Optimal Resilience",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:19:28Z",
+      "content_hash": "sha256:83147c46a3c01e942c23a625961c4035129088a6b8e9cd76d1e4df5f11999253",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

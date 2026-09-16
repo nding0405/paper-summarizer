@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2023-spada-accelerating-sparse-matrix-multiplication-with-ada-b3db707a",
   "title": "SPADA: Accelerating Sparse Matrix Multiplication with Adaptive Dataflow",
+  "abstract": "Sparse matrix-matrix multiplication (SpGEMM) is widely used in many scientific and deep learning applications. The highly irregular structures of SpGEMM limit its performance and efficiency on conventional computation platforms, and thus motivate a large body of specialized hardware designs. Existing SpGEMM accelerators only support specific types of rigid execution dataflow such as inner/output-product or row-based schemes. Each dataflow is only optimized for certain sparse patterns and fails to generalize with robust performance to the widely diverse SpGEMM workloads across various domains. We propose Spada, a combination of three novel techniques for SpGEMM accelerators to efficiently adapt to various sparse patterns. First, we describe a window-based adaptive dataflow that can be flexibly adapted to different modes to best match the data distributions and realize different reuse benefits. Then, our hardware architecture efficiently supports this dataflow template, with flexible, fast, and low-cost reconfigurability and effective load balancing features. Finally, we use a profiling-guided approach to detect the sparse pattern and determine the optimized dataflow mode to use, based on the key observations of sparse pattern similarity in nearby matrix regions. Our evaluation results demonstrate that Spada is able to match or exceed the best among three state-of-the-art SpGEMM accelerators, and avoid the performance degradation of the others if data distribution and dataflow mismatch. It achieves an average 1.44× speedup across a wide range of sparse matrices and compressed neural network models.",
+  "abstract_source_id": "src-abstract-asplos-2023-b3db707a",
   "venue": "asplos",
   "year": 2023,
   "track_or_session": "Session 4C: Tensor Computation",
@@ -209,6 +211,19 @@
       "official": false,
       "supports": [
         "Indexed abstract used with the official technical-session context for relevance classification, plus alternate-copy and explicitly printed ancillary links."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2023-b3db707a",
+      "url": "https://api.openalex.org/works/doi:10.1145/3575693.3575706?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Spada: Accelerating Sparse Matrix Multiplication with Adaptive Dataflow",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T21:59:44Z",
+      "content_hash": "sha256:b40a00cf2bb1c13f6e6c9e5cb9c9569713e3580d820ed64392319a83f33235b1",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

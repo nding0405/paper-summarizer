@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2026-mimir-masked-image-modeling-for-mutual-information-based-9daa6874",
   "title": "MIMIR: Masked Image Modeling for Mutual Information-based Adversarial Robustness",
+  "abstract": "Vision Transformers (ViTs) have emerged as a fundamental architecture and serve as the backbone of modern vision-language models. Despite their impressive performance, ViTs exhibit notable vulnerability to evasion attacks, necessitating the development of specialized Adversarial Training (AT) strategies tailored to their unique architecture.\n\nWhile a direct solution might involve applying existing AT methods to ViTs, our analysis reveals significant incompatibilities, particularly with state-of-the-art (SOTA) approaches such as Generalist (CVPR 2023) and DBAT (USENIX Security 2024).\n\nThis paper presents a systematic investigation of adversarial robustness in ViTs and provides a novel theoretical Mutual Information (MI) analysis in its autoencoder-based self-supervised pre-training.\n\nSpecifically, we show that MI between the adversarial example and its latent representation in ViT-based autoencoders should be constrained via derived MI bounds.\n\nBuilding on this insight, we propose a self-supervised AT method, MIMIR, that employs an MI penalty to facilitate adversarial pre-training by masked image modeling with autoencoders.\n\nExtensive experiments on CIFAR-10, Tiny-ImageNet, and ImageNet-1K show that MIMIR can consistently provide improved natural and robust accuracy, where MIMIR outperforms SOTA AT results on ImageNet-1K.\n\nNotably, MIMIR demonstrates superior robustness against unforeseen attacks and common corruption data and can also withstand adaptive attacks where the adversary possesses full knowledge of the defense mechanism.\n\nOur code and trained models are publicly available at: https://github.com/xiaoyunxxy/MIMIR.",
+  "abstract_source_id": "src-abstract-ndss-2026-9daa6874",
   "venue": "ndss",
   "year": 2026,
   "track_or_session": "Fall submission cycle",
@@ -160,6 +162,19 @@
       "official": false,
       "supports": [
         "independent proceedings identity reconciliation"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2026-9daa6874",
+      "url": "https://www.ndss-symposium.org/ndss-paper/mimir-masked-image-modeling-for-mutual-information-based-adversarial-robustness/",
+      "kind": "paper-page",
+      "title": "MIMIR: Masked Image Modeling for Mutual Information-based Adversarial Robustness",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:22:30Z",
+      "content_hash": "sha256:15c58d179fb4859c4500d3f7e80e1aaf5e860633180ec171c053b51caee1a833",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2024-zombie-middleboxes-that-dont-snoop-fd6854fc",
   "title": "Zombie: Middleboxes that Don’t Snoop",
+  "abstract": "Zero-knowledge middleboxes (ZKMBs) are a recent paradigm in which clients get privacy and middleboxes enforce policy: clients prove in zero knowledge that the plaintext underlying their encrypted traffic complies with network policies, such as DNS filtering. However, prior work had impractically poor performance and was limited in functionality.\n\nThis work presents Zombie, the first system built using the ZKMB paradigm. Zombie introduces techniques that push ZKMBs to the verge of practicality: preprocessing (to move the bulk of proof generation to idle times between requests), asynchrony (to remove proving and verifying costs from the critical path), and batching (to amortize some of the verification work). Zombie’s choices, together with these techniques, reduce client and middlebox overhead by ≈ 3.5×, lowering the critical path overhead for a DNS filtering application on commodity hardware to less than 300ms or, in the asynchronous configuration, to 0.\n\nAs an additional contribution that is likely of independent interest, Zombie introduces a portfolio of techniques to encode regular expressions in probabilistic (and zero-knowledge) proofs. These techniques significantly improve performance over a standard baseline, asymptotically and concretely. Zombie builds on this portfolio to support policies based on regular expressions, such as data loss prevention.",
+  "abstract_source_id": "src-abstract-nsdi-2024-fd6854fc",
   "venue": "nsdi",
   "year": 2024,
   "track_or_session": "Cloud Systems",
@@ -181,6 +183,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2024-fd6854fc",
+      "url": "https://www.usenix.org/conference/nsdi24/presentation/zhang-collin",
+      "kind": "paper-page",
+      "title": "Zombie: Middleboxes that Don’t Snoop",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:03:55Z",
+      "content_hash": "sha256:4d9413f57cbd372fafe64af5c144313fea233aeb757e7e54dc46536b7ecb4a98",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

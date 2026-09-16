@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2023-sparsetir-composable-abstractions-for-sparse-compilation-64a2db27",
   "title": "SparseTIR: Composable Abstractions for Sparse Compilation in Deep Learning",
+  "abstract": "Sparse tensors are rapidly becoming critical components of modern deep learning workloads. However, developing high-performance sparse operators can be difficult and tedious, and existing vendor libraries cannot satisfy the escalating demands from new operators. Sparse tensor compilers simplify the development of operators, but efficient sparse compilation for deep learning remains challenging because a single sparse format cannot maximize hardware efficiency, and single-shot compilers cannot keep up with latest hardware and system advances. In this paper, we observe that the key to addressing both these challenges is to leverage composable formats and composable transformations. We propose SparseTIR, a sparse tensor compilation abstraction that offers composable formats and composable transformations for deep learning workloads. SparseTIR constructs a search space over these composable components for performance tuning. With these improvements, SparseTIR obtains consistent performance speedups vs vendor libraries on GPUs for single operators: 1.20-2.34x for GNN operators, 1.05-2.98x for sparse attention operators, and 0.56-7.45x for sparse convolution operators. SparseTIR also accelerates end-to-end GNNs by 1.08-1.52x for GraphSAGE training, and 4.20-40.18x for RGCN inference.",
+  "abstract_source_id": "src-abstract-asplos-2023-64a2db27",
   "venue": "asplos",
   "year": 2023,
   "track_or_session": "Session 4C: Tensor Computation",
@@ -186,6 +188,19 @@
       "official": true,
       "supports": [
         "Author-deposited archival software or evaluation artifact associated with the conference paper."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2023-64a2db27",
+      "url": "https://api.openalex.org/works/doi:10.1145/3582016.3582047?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "SparseTIR: Composable Abstractions for Sparse Compilation in Deep Learning",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T21:59:44Z",
+      "content_hash": "sha256:f4bd0530acf736acd27332e3f71a038f3c5900f8ad4751898fde8deecb4b6613",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

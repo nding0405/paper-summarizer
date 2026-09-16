@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "fast-2023-fisc-a-large-scale-cloud-native-oriented-file-system-d7c376e5",
   "title": "Fisc: A Large-scale Cloud-native-oriented File System",
+  "abstract": "The wide adoption of Cloud Native shifts the boundary between cloud users and CSPs (Cloud Service Providers) from VM-based infrastructure to container-based applications. However, traditional file systems face challenges. First, the traditional file system (eg, Tectonic, Colossus, HDFS) clients are sophisticated and compete with the scarce resources in the application containers. Second, it is challenging for CSP to help the I/O pass from the containers to the storage clusters while guaranteeing their security, availability, and performance.\n\nTo provide file system service for cloud-native applications, we design \\system{}, a cloud-native-oriented file system. \\system{}~ introduces four key designs: 1) a lightweight file system client in the container, 2) a DPU-based virtio-\\system{}~device to implement the hardware offloading, 3) a storage-aware mechanism to address the I/O to the storage node to improve the I/O's availability and realizes local read, 4) a full path QoS mechanism to guarantee the QoS of hybrid deployed applications. \\system{} has been deployed in production for over three years. It now serves cloud-native applications running over 3 million cores. Results show that \\system{}~client only consumes 80% CPU resources compared to the traditional file system client. The production environment shows that the online searching task's latency is less than 500 $\\mu$s when accessing the remote storage cluster.",
+  "abstract_source_id": "src-abstract-fast-2023-d7c376e5",
   "venue": "fast",
   "year": 2023,
   "track_or_session": "File Systems",
@@ -665,6 +667,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-fast-2023-d7c376e5",
+      "url": "https://www.usenix.org/conference/fast23/presentation/li-qiang-fisc",
+      "kind": "paper-page",
+      "title": "Fisc: A Large-scale Cloud-native-oriented File System",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:00:28Z",
+      "content_hash": "sha256:b05b28ad280bef3703034977cb8c8085a5e3edf10142252b08c42453358b1a3e",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

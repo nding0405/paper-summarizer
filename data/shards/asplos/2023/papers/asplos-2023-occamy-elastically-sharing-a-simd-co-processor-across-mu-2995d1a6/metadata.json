@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2023-occamy-elastically-sharing-a-simd-co-processor-across-mu-2995d1a6",
   "title": "OCCAMY: Elastically Sharing a SIMD Co-Processor Across Multiple CPU Cores",
+  "abstract": "SIMD extensions are widely adopted in multi-core processors to exploit data-level parallelism. However, when co-running workloads on different cores, compute-intensive workloads cannot take advantage of the underutilized SIMD lanes allocated to memoryintensive workloads, reducing the overall performance. This paper proposes Occamy, a SIMD co-processor that can be shared by multiple CPU cores, so that their co-running workloads can spatially share its SIMD lanes. The key idea is to enable elastic spatial sharing by dynamically partitioning all the SIMD lanes across different workloads based on their phase behaviors, so that each workload may execute in variable-length SIMD mode. We also introduce an Occamy compiler to support such variable-length vectorization by analyzing such phase behaviors and generating the vectorized code that works with varying vector lengths. We demonstrate that Occamy can improve SIMD utilization, and consequently, performance over three representative SIMD architectures, with negligible chip area cost.",
+  "abstract_source_id": "src-abstract-asplos-2023-2995d1a6",
   "venue": "asplos",
   "year": 2023,
   "track_or_session": "Session 3B: Accelerators A",
@@ -335,6 +337,19 @@
       "official": false,
       "supports": [
         "Indexed abstract used with the official technical-session context for relevance classification, plus alternate-copy and explicitly printed ancillary links."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2023-2995d1a6",
+      "url": "https://api.openalex.org/works/doi:10.1145/3582016.3582046?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Occamy: Elastically Sharing a SIMD Co-processor across Multiple CPU Cores",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T21:59:37Z",
+      "content_hash": "sha256:05555552f30b79ad65c8a5d5bcd3f12b15016c1066b66f477ed59acb47159235",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2023-bolt-sub-rtt-congestion-control-for-ultra-low-latency-c2ed7c41",
   "title": "Bolt: Sub-RTT Congestion Control for Ultra-Low Latency",
+  "abstract": "Data center networks are inclined towards increasing line rates to 200Gbps and beyond to satisfy the performance requirements of applications such as NVMe and distributed ML. With larger Bandwidth Delay Products (BDPs), an increasing number of transfers fit within a few BDPs. These transfers are not only more performance-sensitive to congestion, but also bring more challenges to congestion control (CC) as they leave little time for CC to make the right decisions. Therefore, CC is under more pressure than ever before to achieve minimal queuing and high link utilization, leaving no room for imperfect control decisions.\n\nWe identify that for CC to make quick and accurate decisions, the use of precise congestion signals and minimization of the control loop delay are vital. We address these issues by designing Bolt, an attempt to push congestion control to its theoretical limits by harnessing the power of programmable data planes. Bolt is founded on three core ideas, (i) Sub-RTT Control (SRC) reacts to congestion faster than RTT control loop delay, (ii) Proactive Ramp-Up (PRU) foresees flow completions in the future to promptly occupy released bandwidth, and (iii) Supply matching (SM) explicitly matches bandwidth demand with supply to maximize utilization. Our experiments in testbed and simulations demonstrate that Bolt reduces 99th-p latency by 80% and improves 99th-p flow completion time by up to 3× compared to Swift and HPCC while maintaining near line-rate utilization even at 400Gbps.",
+  "abstract_source_id": "src-abstract-nsdi-2023-c2ed7c41",
   "venue": "nsdi",
   "year": 2023,
   "track_or_session": "Congestion Control",
@@ -140,6 +142,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2023-c2ed7c41",
+      "url": "https://www.usenix.org/conference/nsdi23/presentation/arslan",
+      "kind": "paper-page",
+      "title": "Bolt: Sub-RTT Congestion Control for Ultra-Low Latency",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:01:52Z",
+      "content_hash": "sha256:4728b4219fc1f44ebd3ab5bfa181c6fbd371b3f1bda7738f2fffd1b520989906",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

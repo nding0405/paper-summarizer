@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2024-from-chatbots-to-phishbots-phishing-scam-generation-in-c-220006e2",
   "title": "From Chatbots to Phishbots?: Phishing Scam Generation in Commercial Large Language Models",
+  "abstract": "The advanced capabilities of Large Language Models (LLMs) have made them invaluable across various applications, from conversational agents and content creation to data analysis, research, and innovation. However, their effectiveness and accessibility also render them susceptible to abuse for generating malicious content, including phishing attacks. This study explores the potential of using four popular commercially available LLMs, i.e., ChatGPT (GPT 3.5 Turbo), GPT 4, Claude, and Bard, to generate functional phishing attacks using a series of malicious prompts. We discover that these LLMs can generate both phishing websites and emails that can convincingly imitate well-known brands and also deploy a range of evasive tactics that are used to elude detection mechanisms employed by anti-phishing systems. These attacks can be generated using unmodified or \"vanilla\" versions of these LLMs without requiring any prior adversarial exploits such as jailbreaking. We evaluate the performance of the LLMs towards generating these attacks and find that they can also be utilized to create malicious prompts that, in turn, can be fed back to the model to generate phishing scams - thus massively reducing the prompt-engineering effort required by attackers to scale these threats. As a countermeasure, we build a BERT-based automated detection tool that can be used for the early detection of malicious prompts to prevent LLMs from generating phishing content. Our model is transferable across all four commercial LLMs, attaining an average accuracy of 96% for phishing website prompts and 94% for phishing email prompts. We also disclose the vulnerabilities to the concerned LLMs, with Google acknowledging it as a severe issue. Our detection model is available for use at Hugging Face, as well as a ChatGPT Actions plugin.",
+  "abstract_source_id": "src-abstract-sp-2024-220006e2",
   "venue": "sp",
   "year": 2024,
   "track_or_session": "Winter cycle",
@@ -159,6 +161,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2024-220006e2",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "From Chatbots to Phishbots?: Phishing Scam Generation in Commercial Large Language Models",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:32Z",
+      "content_hash": "sha256:be7515012a8c1ea1211f38a27ea4d2aa9cff6e0faac9417a2f58b1d64e91280e",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

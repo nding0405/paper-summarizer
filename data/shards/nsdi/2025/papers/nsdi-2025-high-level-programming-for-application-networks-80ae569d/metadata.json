@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2025-high-level-programming-for-application-networks-80ae569d",
   "title": "High-level Programming for Application Networks",
+  "abstract": "Application networks facilitate communication between the microservices of cloud applications. They are built today using service meshes with low-level specifications that make it difficult to express application-specific functionality (e.g., access control based on RPC fields), and they can more than double the RPC latency. We develop AppNet, a framework that makes it easy to build expressive and high-performance application networks. Developers specify rich RPC processing in a high-level language with generalized match-action rules and built-in state management. We compile the specifications to high-performance code after optimizing where (e.g., client, server) and how (e.g., RPC library, proxy) each RPC processing element runs. The optimization uses symbolic abstraction and execution to judge if different runtime configurations of possibly-stateful RPC processing elements are semantically equivalent for arbitrary RPC streams. Our experiments show that AppNet can express common application network function in only 7-28 lines of code. Its optimizations lower RPC processing latency by up to 82%.",
+  "abstract_source_id": "src-abstract-nsdi-2025-80ae569d",
   "venue": "nsdi",
   "year": 2025,
   "track_or_session": "Middleboxes",
@@ -287,6 +289,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2025-80ae569d",
+      "url": "https://www.usenix.org/conference/nsdi25/presentation/zhu",
+      "kind": "paper-page",
+      "title": "High-level Programming for Application Networks",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:04:14Z",
+      "content_hash": "sha256:88f2ce61163e8a9bdf29e49a4d0f6a0baabe301b9acea4b663506d48d7b3f62d",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

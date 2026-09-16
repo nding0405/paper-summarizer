@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2024-efficient-and-generic-microarchitectural-hash-function-r-e5311824",
   "title": "Efficient and Generic Microarchitectural Hash-Function Recovery",
+  "abstract": "Modern CPUs use a variety of undocumented microarchitectural hash functions to efficiently distribute data within microarchitectural structures such as caches. A well-known function is the cache slice function that distributes cache lines to the slices of the last-level cache. Knowing these functions considerally improves microarchitectural attacks, such as Prime+Probe or Rowhammer. However, while several such linear functions have been reverse-engineered, there is no generic or automated approach for reverse-engineering non-linear functions, which are common with modern CPUs.In this paper, we introduce a novel generic approach for automatically reverse-engineering a wide range of microarchitectural hash functions. Our approach combines techniques initially used for logic-gate minimization and from computer algebra to infer the hash functions based on input-output pairs observed via side channels. With our framework, we infer 3 previously unknown non-linear hash functions on both AMD and Intel CPUs, including the new Alder Lake hybrid-CPU architecture. We verify our approach by reproducing known hash functions and evaluating side-channel attacks that rely on these functions, resulting in success rates above 97.65 %. We stress the need to design such functions with both performance and security in mind and discuss alternative designs that can be used in future CPUs.",
+  "abstract_source_id": "src-abstract-sp-2024-e5311824",
   "venue": "sp",
   "year": 2024,
   "track_or_session": "Spring cycle",
@@ -159,6 +161,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2024-e5311824",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Efficient and Generic Microarchitectural Hash-Function Recovery",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:32Z",
+      "content_hash": "sha256:be7515012a8c1ea1211f38a27ea4d2aa9cff6e0faac9417a2f58b1d64e91280e",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

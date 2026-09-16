@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "fast-2023-practical-design-considerations-for-wide-locally-recover-173c3921",
   "title": "Practical Design Considerations for Wide Locally Recoverable Codes (LRCs)",
+  "abstract": "Most of the data in large-scale storage clusters is erasure coded. At exascale, optimizing erasure codes for low storage overhead, efficient reconstruction, and easy deployment is of critical importance. Locally recoverable codes (LRCs) have deservedly gained central importance in this field, because they can balance many of these requirements. In our work we study wide LRCs; LRCs with large number of blocks per stripe and low storage overhead. These codes are a natural next step for practitioners to unlock higher storage savings, but they come with their own challenges. Of particular interest is their reliability , since wider stripes are prone to more simultaneous failures.\n\nWe conduct a practically-minded analysis of several popular and novel LRCs. We find that wide LRC reliability is a subtle phenomenon that is sensitive to several design choices, some of which are overlooked by theoreticians, and others by practitioners. Based on these insights, we construct novel LRCs called Uniform Cauchy LRCs , which show excellent performance in simulations, and a 33% improvement in reliability on unavailability events observed by a wide LRC deployed in a Google storage cluster. We also show that these codes are easy to deploy in a manner that improves their robustness to common maintenance events. Along the way, we also give a remarkably simple and novel construction of distance optimal LRCs (other constructions are also known), which may be of interest to theory-minded readers.",
+  "abstract_source_id": "src-abstract-fast-2023-173c3921",
   "venue": "fast",
   "year": 2023,
   "track_or_session": "Coding and Cloud Storage",
@@ -140,6 +142,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-fast-2023-173c3921",
+      "url": "https://www.usenix.org/conference/fast23/presentation/kadekodi",
+      "kind": "paper-page",
+      "title": "Practical Design Considerations for Wide Locally Recoverable Codes (LRCs)",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:00:38Z",
+      "content_hash": "sha256:dd8f4d34f6d9cca110e1e993d92aaf1f61abc9f0b624d228fa87f634b28b762a",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

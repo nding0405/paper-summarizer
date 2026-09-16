@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "fast-2026-ucache-a-customizable-unikernel-based-io-cache-486d97c0",
   "title": "uCache: A Customizable Unikernel-based IO Cache",
+  "abstract": "Data-intensive cloud applications require high-performance IO caching to fully leverage modern storage systems like NVMe SSDs and cloud storage. Today’s developers face a dilemma: choose a simple, but often slow, OS-level IO cache, or a fast, but complex, userspace cache. This trade-off forces developers to sacrifice either performance or simplicity. This paper introduces uCache, a novel IO cache that resolves this fundamental tension. Leveraging a unikernel-based libOS architecture, uCache seamlessly integrates application-specific knowledge directly into the OS-level cache. It combines an mmap-like memory surface with an explicit, conventional interface, offering fine-grained control over cache behavior. This design allows for the seamless integration of application-specific semantics within the OS-level cache itself—a capability previously confined to complex userspace solutions; thus, ensuring scalability, performance, and adaptability. The core of uCache’s flexibility is the uVFS abstraction, which enables direct adaptation to diverse IO backends while maintaining filesystem compatibility without the performance overheads of the traditional OS IO stack. Our evaluation demonstrates that uCache effectively merges the simplicity of OS-level caches with the performance and flexibility of userspace solutions. For out-of-memory workloads, uCache achieves performance on par with kernel-bypass IO libraries, proving it can eliminate the IO caching bottleneck for data-intensive applications.",
+  "abstract_source_id": "src-abstract-fast-2026-486d97c0",
   "venue": "fast",
   "year": 2026,
   "track_or_session": "OS",
@@ -139,6 +141,19 @@
         "proceedings page range and page count",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-fast-2026-486d97c0",
+      "url": "https://www.usenix.org/conference/fast26/presentation/meignan-masson",
+      "kind": "paper-page",
+      "title": "uCache: A Customizable Unikernel-based IO Cache",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:01:44Z",
+      "content_hash": "sha256:1a961ed2c37a8d1f3b51137d60b5dfb74eb86f8efceb8c3735741ffc292e0a49",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

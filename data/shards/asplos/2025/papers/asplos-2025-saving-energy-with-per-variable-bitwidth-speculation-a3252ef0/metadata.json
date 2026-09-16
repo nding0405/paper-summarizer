@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2025-saving-energy-with-per-variable-bitwidth-speculation-a3252ef0",
   "title": "Saving Energy with Per-Variable Bitwidth Speculation",
+  "abstract": "Tiny devices have become ubiquitous in people's daily lives. Their applications dictate tight energy budgets, but also require reasonable performance to meet user expectations. To this end, the hardware of tiny devices has been highly optimized, making further optimizations difficult. In this work, we identify a missed opportunity: the bitwidth selection of program variables. Today's compilers directly translate the bitwidth specified in the source code to the binary. However, we observe that most variables do not utilize the full bitwidth specified in the source code for the majority of execution. To leverage this opportunity, we propose BitSpec : a system that performs fine-grained speculation on the bitwidth of program variables. BitSpec is implemented as a compiler-architecture co-design, where the compiler transparently reduces the bitwidth of program variables to their expected needs and the hardware monitors speculative variables, reporting misspeculation to the software, which re-executes at the original bitwidth, ensuring correctness. BitSpec reduces energy consumption by 9.9% on average, up to 28.2% .",
+  "abstract_source_id": "src-abstract-asplos-2025-a3252ef0",
   "venue": "asplos",
   "year": 2025,
   "track_or_session": "Session 5B: Microarchitecture",
@@ -209,6 +211,19 @@
       "official": false,
       "supports": [
         "Indexed abstract and open-access links used for relevance classification and ancillary-link discovery."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2025-a3252ef0",
+      "url": "https://api.openalex.org/works/doi:10.1145/3676641.3716271?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Saving Energy with Per-Variable Bitwidth Speculation",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:03:52Z",
+      "content_hash": "sha256:8cb5de0d10eb58fb0285e8b682b306c61d2b6a8b561fcdbf24014e1791a59d82",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

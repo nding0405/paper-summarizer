@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2023-checking-passwords-on-leaky-computers-a-side-channel-ana-1e2b8bc5",
   "title": "Checking Passwords on Leaky Computers: A Side Channel Analysis of Chrome's Password Leak Detect Protocol",
+  "abstract": "The scale and frequency of password database compromises has led to widespread and persistent credential stuffing attacks, in which attackers attempt to use credentials leaked from one service to compromise accounts with other services. In response, browser vendors have integrated password leakage detection tools, which automatically check the user's credentials against a list of compromised accounts upon each login, warning the user to change their password if a match is found. In particular, Google Chrome uses a centralized leakage detection service designed by Thomas et al. (USENIX Security '19) that aims to both preserve the user's privacy and hide the server's list of compromised credentials.\n\nIn this paper, we show that Chrome's implementation of this protocol is vulnerable to several microarchitectural side-channel attacks that violate its security properties. Specifically, we demonstrate attacks against Chrome's use of the memory-hard hash function scrypt, its hash-to-elliptic curve function, and its modular inversion algorithm. While prior work discussed the theoretical possibility of side-channel attacks on scrypt, we develop new techniques that enable this attack in practice, allowing an attacker to recover the user's password with a single guess when using a dictionary attack. For modular inversion, we present a novel cryptanalysis of the Binary Extended Euclidian Algorithm (BEEA) that extracts its inputs given a single, noisy trace, thereby allowing a malicious server to learn information about a client's password.",
+  "abstract_source_id": "src-abstract-usenix-security-2023-1e2b8bc5",
   "venue": "usenix-security",
   "year": 2023,
   "track_or_session": "Browsers",
@@ -238,6 +240,19 @@
       "official": true,
       "supports": [
         "authors, affiliations when published, abstract, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2023-1e2b8bc5",
+      "url": "https://www.usenix.org/conference/usenixsecurity23/presentation/kwong",
+      "kind": "paper-page",
+      "title": "Checking Passwords on Leaky Computers: A Side Channel Analysis of Chrome's Password Leak Detect Protocol",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:10:12Z",
+      "content_hash": "sha256:6864a2b25e26f5c0b75f410634c1d0095b1edb29410f99341ad5d9b6d1d32a06",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

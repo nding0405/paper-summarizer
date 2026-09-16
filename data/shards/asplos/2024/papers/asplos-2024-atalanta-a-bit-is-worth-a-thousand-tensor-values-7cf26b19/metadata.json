@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2024-atalanta-a-bit-is-worth-a-thousand-tensor-values-7cf26b19",
   "title": "Atalanta: A Bit is Worth a “Thousand” Tensor Values",
+  "abstract": "Atalanta is a lossless, hardware/software co-designed compression technique for the tensors of fixed-point quantized deep neural networks. Atalanta increases effective memory capacity, reduces off-die traffic, and/or helps to achieve the desired performance/energy targets while using smaller off-die memories during inference. Atalanta is architected to deliver nearly identical coding efficiency compared to Arithmetic Coding while avoiding its complexity, overhead, and bandwidth limitations. Indicatively, the Atalanta decoder and encoder units each use less than 50B of internal storage. In hardware, Atalanta is implemented as an assist over any machine learning accelerator transparently compressing/decompressing tensors just before the off-die memory controller. This work shows the performance and energy efficiency of Atalanta when implemented in a 65nm technology node. Atalanta reduces data footprint of weights and activations to 60% and 48% respectively on average over a wide set of 8-bit quantized models and complements a wide range of quantization methods. Integrated with a Tensorcore-based accelerator, Atalanta boosts the speedup and energy efficiency to 1.44× and 1.37×, respectively. Atalanta is effective at compressing the stashed activations during training for fixed-point inference.",
+  "abstract_source_id": "src-abstract-asplos-2024-7cf26b19",
   "venue": "asplos",
   "year": 2024,
   "track_or_session": "Session 3D: ML Quantization and Memory Optimizations",
@@ -269,6 +271,19 @@
       "official": false,
       "supports": [
         "Indexed alternate-version and institutional-copy links; not used as the authoritative relevance source."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2024-7cf26b19",
+      "url": "https://api.openalex.org/works/doi:10.1145/3620665.3640356?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Atalanta: A Bit is Worth a “Thousand” Tensor Values",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T21:59:54Z",
+      "content_hash": "sha256:d1a4c390e43feba8a433c9431ff6dc189ec7841f07392bf5128d424660db72a1",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

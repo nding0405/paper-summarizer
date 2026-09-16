@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "eurosys-2026-swiftfl-enabling-speculative-training-for-on-device-fede-1ba32a87",
   "title": "SwiftFL: Enabling Speculative Training for On-Device Federated Deep Learning",
+  "abstract": "Federated deep learning (FDL) is a promising privacy-preserving approach for training deep neural networks on distributed datasets without raw data sharing. But the classical synchronous FDL faces straggler problem: slow trainers severely impede overall efficiency. Inspired by speculative execution techniques in modern processors, this paper proposes SwiftFL, a novel and efficient speculative training system for FDL. Instead of simply waiting for slower trainer, SwiftFL proactively updates the global model with predicted gradients, enabling faster trainers to speculatively initiate the next training round. Furthermore, a gradient compensation technique is proposed to correct mispredicted training without re-training. Finally, to overcome the model-drift problem caused by fast trainers perform more local training rounds, we propose a client selection strategy. This strategy determines whether trainers should perform speculative training by striking a balance between two metrics: model drift degree and local training efficiency. In the evaluation, we compare SwiftFL with four state-of-the-art FDL systems and demonstrate that SwiftFL achieves an average speedup of 6.08× while maintaining consistent final model accuracy.",
+  "abstract_source_id": "src-abstract-eurosys-2026-1ba32a87",
   "venue": "eurosys",
   "year": 2026,
   "track_or_session": null,
@@ -243,6 +245,19 @@
       "official": false,
       "supports": [
         "Publisher-deposited proceedings identity and print publication date."
+      ]
+    },
+    {
+      "id": "src-abstract-eurosys-2026-1ba32a87",
+      "url": "https://api.openalex.org/works/doi:10.1145/3767295.3803605?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "SwiftFL: Enabling Speculative Training for On-Device Federated Deep Learning",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:22:07Z",
+      "content_hash": "sha256:aecf3d1c58dfcf66cf15a3484793e5e9d70cee23a3e04b1e76270fca94bf530a",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

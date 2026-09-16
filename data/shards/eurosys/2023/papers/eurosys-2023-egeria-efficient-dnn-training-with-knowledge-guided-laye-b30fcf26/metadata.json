@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "eurosys-2023-egeria-efficient-dnn-training-with-knowledge-guided-laye-b30fcf26",
   "title": "Egeria: Efficient DNN Training with Knowledge-Guided Layer Freezing",
+  "abstract": "Training deep neural networks (DNNs) is time-consuming. While most existing solutions try to overlap/schedule computation and communication for efficient training, this paper goes one step further by skipping computing and communication through DNN layer freezing. Our key insight is that the training progress of internal DNN layers differs significantly, and front layers often become well-trained much earlier than deep layers. To explore this, we first introduce the notion of training plasticity to quantify the training progress of internal DNN layers. Then we design Egeria, a knowledge-guided DNN training system that employs semantic knowledge from a reference model to accurately evaluate individual layers' training plasticity and safely freeze the converged ones, saving their corresponding backward computation and communication. Our reference model is generated on the fly using quantization techniques and runs forward operations asynchronously on available CPUs to minimize the overhead. In addition, Egeria caches the intermediate outputs of the frozen layers with prefetching to further skip the forward computation. Our implementation and testbed experiments with popular vision and language models show that Egeria achieves 19%-43% training speedup w.r.t. the state-of-the-art without sacrificing accuracy.",
+  "abstract_source_id": "src-abstract-eurosys-2023-b30fcf26",
   "venue": "eurosys",
   "year": 2023,
   "track_or_session": null,
@@ -167,6 +169,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-eurosys-2023-b30fcf26",
+      "url": "https://api.openalex.org/works/doi:10.1145/3552326.3587451?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Egeria: Efficient DNN Training with Knowledge-Guided Layer Freezing",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:18:32Z",
+      "content_hash": "sha256:7257a1d8b1ed773b4838f8bd0d911a450e7729d9ca88786e6a40e715c779180a",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

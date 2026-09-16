@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2026-libra-flexible-request-partitioning-and-scheduling-for-s-8b9e63cd",
   "title": "Libra: Flexible Request Partitioning and Scheduling for Serving Unbalanced and Dynamic LLM Workloads",
+  "abstract": "LLM inference must meet strict latency SLOs while maximizing throughput. Yet, real-world variability in prompt and response lengths skews compute-intensive prefill and memory-bound decode phases, making both colocated (even with chunked prefill) and disaggregated deployments unable to simultaneously deliver low tail latency and high throughput.\n\nWe introduce Libra, a high performance LLM serving system that maximizes goodput under SLO constraints even when handling imbalanced and dynamic workloads. At the core of Libra is a micro-request based flexible partitioning and scheduling (FPS) abstraction. The abstraction splits each request at any token boundary into multiple cooperating segments. Libra then designs a two-level scheduling framework that balances micro-request load across unified GPU instances. The framework consists of a global scheduler that selects per-request split points, and a local scheduler on each GPU instance to form SLO-aware batches. Finally, Libra uses chunked KV cache transfers to support cross-instance micro-request execution. On real-world traces, Libra improves goodput by up to 1.91× and 1.61×, increases serving capacity from 1.15× to 3.07×, and improves serving performance by up to 74.2% in a hybrid workload under strict SLOs and A100/H100 GPUs compared to state-of-the-art colocated and disaggregated baselines.",
+  "abstract_source_id": "src-abstract-nsdi-2026-8b9e63cd",
   "venue": "nsdi",
   "year": 2026,
   "track_or_session": "Scalable Storage Systems",
@@ -202,6 +204,19 @@
         "proceedings page range and page count",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2026-8b9e63cd",
+      "url": "https://www.usenix.org/conference/nsdi26/presentation/ruan-libra",
+      "kind": "paper-page",
+      "title": "Libra: Flexible Request Partitioning and Scheduling for Serving Unbalanced and Dynamic LLM Workloads",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:05:36Z",
+      "content_hash": "sha256:8544fe6489aefc73656a164740cf158d13588745080dd497e95fea2b30374b5d",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

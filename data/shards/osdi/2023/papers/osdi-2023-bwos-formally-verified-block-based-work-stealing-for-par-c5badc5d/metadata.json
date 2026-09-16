@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2023-bwos-formally-verified-block-based-work-stealing-for-par-c5badc5d",
   "title": "BWoS: Formally Verified Block-based Work Stealing for Parallel Processing",
+  "abstract": "Work stealing is a widely-used scheduling technique for parallel processing on multicore. Each core owns a queue of tasks and avoids idling by stealing tasks from other queues. Prior work mostly focuses on balancing workload among cores, disregarding whether stealing may adversely impact the owner's performance or hinder synchronization optimizations. Real-world industrial runtimes for parallel processing heavily rely on work-stealing queues for scalability, and such queues can become bottlenecks to their performance.\n\nWe present Block-based Work Stealing (BWoS), a novel and pragmatic design that splits per-core queues into multiple blocks. Thieves and owners rarely operate on the same blocks, greatly removing interferences and enabling aggressive optimizations on the owner's synchronization with thieves. Furthermore, BWoS enables a novel probabilistic stealing policy that guarantees thieves steal from longer queues with higher probability. In our evaluation, using BWoS improves performance by up to 1.25x in the Renaissance macrobenchmark when applied to Java GC, provides average 1.26x speedup in JSON processing when applied to Go runtime, and improves maximum throughput of Hyper HTTP server by 1.12x when applied to Rust Tokio runtime. In microbenchmarks, it provides 8-11x better performance than state-of-the-art designs. We have formally verified and optimized BWoS on weak memory models with a model-checking-based framework.",
+  "abstract_source_id": "src-abstract-osdi-2023-c5badc5d",
   "venue": "osdi",
   "year": 2023,
   "track_or_session": "Verify Your Bits",
@@ -285,6 +287,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2023-c5badc5d",
+      "url": "https://www.usenix.org/conference/osdi23/presentation/wang-jiawei",
+      "kind": "paper-page",
+      "title": "BWoS: Formally Verified Block-based Work Stealing for Parallel Processing",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:06:22Z",
+      "content_hash": "sha256:d59df33102c3f07b93dc06efdcdd1009e262816f377a96352924efd54377fb44",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

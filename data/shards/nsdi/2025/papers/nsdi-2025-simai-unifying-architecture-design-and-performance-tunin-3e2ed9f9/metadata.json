@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2025-simai-unifying-architecture-design-and-performance-tunin-3e2ed9f9",
   "title": "SimAI: Unifying Architecture Design and Performance Tuning for Large-Scale Large Language Model Training with Scalability and Precision",
+  "abstract": "The large number of GPUs required for a single LLM training significantly hinders the validation of new designs, tunings, and optimizations, calling for the occurrence of efficient simulators. Existing simulators, however, only target a specific granularity of the entire training, intrinsically leading to imprecision. This paper presents SimAI, a unified simulator aiming at precisely and efficiently simulating the LLM training procedure at scale. Through selective and high-fidelity integration of the training frameworks, the kernel computation, and the collective communication library into the simulating procedure, SimAI achieves high precision in simulations. SimAI further conducts multi-thread acceleration and implements lock-free global context-sharing to accelerate the execution speed. The effectiveness of SimAI is validated by its performance results, which show an average of 98.1% alignment to real-world results under various test scenarios and affirm its robustness and adaptability from small-scale labs to large-scale industrial environments. SimAI delivers meaningful guidelines for new host designs and parameter settings, directly benefiting in-production LLM training. We also share experiences and lessons learned during the evolution of SimAI. SimAI is open sourced at https://github.com/aliyun/SimAI .",
+  "abstract_source_id": "src-abstract-nsdi-2025-3e2ed9f9",
   "venue": "nsdi",
   "year": 2025,
   "track_or_session": "LLM Training and Resilience",
@@ -435,6 +437,19 @@
         "official BibTeX",
         "presentation media links",
         "explicit artifact, code, or project links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2025-3e2ed9f9",
+      "url": "https://www.usenix.org/conference/nsdi25/presentation/wang-xizheng-simai",
+      "kind": "paper-page",
+      "title": "SimAI: Unifying Architecture Design and Performance Tuning for Large-Scale Large Language Model Training with Scalability and Precision",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:04:36Z",
+      "content_hash": "sha256:c7905df751c38b009af6cef00d16a2d147c162560c4018fe29177fe67c454531",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

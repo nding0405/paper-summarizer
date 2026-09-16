@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "atc-2025-weaver-efficient-multi-llm-serving-with-attention-offloa-7fe757d4",
   "title": "Weaver: Efficient Multi-LLM Serving with Attention Offloading",
+  "abstract": "LLM serving platforms typically provide services for tens to hundreds of different models, where a small number of hot models receive the majority of the requests, while most other models remain cold. Yet, current serving systems can not efficiently handle such workloads: Using dedicated instances for hot and cold models makes the GPU memory underutilized, and multiplexing different models with model parallelism introduces communication overhead.\n\nWe propose a mechanism called workload weaving , which offloads attention operators of hot models to running cold models, achieving high GPU memory utilization with low communication cost. To mitigate the blocking caused by running cold models, we propose WEAVER with two key techniques: (i) GPU-driven dynamic control flow, which delegates the control logic of offloading to GPUs, letting the offloaded operators bypass pending kernels in the GPU hardware queue; (ii) operator splitting, which carefully divides the large kernels of cold models into smaller ones to mitigate the head-of-line blocking. Our evaluation using real-world LLM trace demonstrates that WEAVER improves the throughput of hot models by up to 77% while maintaining the same or lower TPOT. For the cold model, WEAVER incurs a modest overhead (3-5ms).",
+  "abstract_source_id": "src-abstract-atc-2025-7fe757d4",
   "venue": "atc",
   "year": 2025,
   "track_or_session": "Serving Intelligence: Efficient LLM Inference at the Edge and Cloud",
@@ -180,6 +182,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-atc-2025-7fe757d4",
+      "url": "https://www.usenix.org/conference/atc25/presentation/gao",
+      "kind": "paper-page",
+      "title": "Weaver: Efficient Multi-LLM Serving with Attention Offloading",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:00:22Z",
+      "content_hash": "sha256:a7e34f9291d7300cd28db4a08366219ccfc380a1044947be3c374f79b4a086a1",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

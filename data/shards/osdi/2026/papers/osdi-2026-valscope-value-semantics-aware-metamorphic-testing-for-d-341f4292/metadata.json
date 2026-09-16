@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2026-valscope-value-semantics-aware-metamorphic-testing-for-d-341f4292",
   "title": "ValScope: Value-Semantics-Aware Metamorphic Testing for Detecting Logical Bugs in DBMSs",
+  "abstract": "Database Management Systems (DBMSs) are crucial for data processing in many large-scale applications. However, detecting logical bugs in DBMSs remains challenging, as defining what constitutes a correct query result is inherently difficult. Metamorphic testing (MT) addresses this issue by checking relations between systematically transformed queries. However, existing MT approaches mainly rely on equivalent or set-semantic relations, and thus fail to detect subtle bugs that preserve the result set while corrupting value semantics, such as faulty aggregation, ordering, or numeric computation.\n\nIn this paper, we propose a unified SQL query approximation model that integrates set-semantic and value-semantic reasoning. Beyond result set inclusion or equivalence, our model captures how value-level changes affect query correctness. Based on this model, we develop ValScope, which generates and mutates SQL queries using predefined mutators and performs approximation propagation analysis to reason about global semantic effects. We evaluate ValScope on 6 widely used DBMSs and uncover 67 unique logical bugs, many of which were missed by prior approaches. The results show that ValScope substantially broadens the spectrum of detectable logical bugs beyond existing MT techniques.",
+  "abstract_source_id": "src-abstract-osdi-2026-341f4292",
   "venue": "osdi",
   "year": 2026,
   "track_or_session": "Testing, Debugging, Root Causing",
@@ -125,6 +127,19 @@
       "official": true,
       "supports": [
         "Official proceedings availability and canonical conference versions."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2026-341f4292",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/lin-li",
+      "kind": "paper-page",
+      "title": "ValScope: Value-Semantics-Aware Metamorphic Testing for Detecting Logical Bugs in DBMSs",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:09:13Z",
+      "content_hash": "sha256:14152480ffcb5f508191e1c1dd4c445e25e55c1eef06f5f2a1a60b2518ecbcd7",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2026-pd3-prefetching-data-with-dpus-for-disaggregated-memory-5333a010",
   "title": "PD3: Prefetching Data with DPUs for Disaggregated Memory",
+  "abstract": "We introduce PD3, a memory disaggregation solution that \"avoids\" cache misses, via prefetching, on compute servers and thus all their associated overhead. Unlike a traditional prefetcher that may pollute the cache or miss preloading opportunities due to false positives and false negatives, PD3 prevents mis-predictions with network support and minimal yet critical application information. Enabling PD3 is data processing units or DPUs, which allow (1) parsing user requests before they are processed by the compute server, (2) fetching data from remote memory on the shortest path, (3) offloading expensive RDMA and DMA operations from the host, and (4) incorporating application knowledge to faithfully predict cache misses and take actions accordingly. Designing PD3 requires reconciling DPU resource constraints and scaling requirements of cloud data systems, as well as achieving high efficiency with a myriad of performance optimizations. Our experimental results on real hardware, applications, and workloads show that with nominal compute-local memory, PD3 eliminates the performance gap between memory-disaggregated applications and their monolithic counterparts.",
+  "abstract_source_id": "src-abstract-nsdi-2026-5333a010",
   "venue": "nsdi",
   "year": 2026,
   "track_or_session": "Scalable Storage Systems",
@@ -202,6 +204,19 @@
         "proceedings page range and page count",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2026-5333a010",
+      "url": "https://www.usenix.org/conference/nsdi26/presentation/sankhe",
+      "kind": "paper-page",
+      "title": "PD3: Prefetching Data with DPUs for Disaggregated Memory",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:05:49Z",
+      "content_hash": "sha256:76e8e666a71a9df90ad9f92cc17486f6f59ae9b1c1f84cd334bb4683b053be55",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2026-specontext-enabling-efficient-long-context-reasoning-wit-e4dec0d2",
   "title": "SpeContext: Enabling Efficient Long-context Reasoning with Speculative Context Sparsity in LLMs",
+  "abstract": "In this paper, we point out that the objective of the retrieval algorithms is to align with the LLM, which is similar to the objective of knowledge distillation in LLMs. We analyze the similarity in information focus between the distilled language model(DLM) and the original LLM from the perspective of information theory, and thus propose a novel paradigm that leverages a DLM as the retrieval algorithm. Based on the insight, we present SpeContext, an algorithm and system co-design for long-context reasoning. (1) At the algorithm level, SpeContext proposes lightweight retrieval head based on the head-level attention weights of DLM, achieving > 90% parameters reduction by pruning the redundancy. (2) At the system level, SpeContext designs an asynchronous prefetch dataflow via the elastic loading strategy, effectively overlapping KV cache retrieval with the LLM computation. (3) At the compilation level, SpeContext constructs the theoretical memory model and implements an adaptive memory management system to achieve acceleration by maximizing GPU memory utilization. We deploy and evaluate SpeContext in two resourceconstrained environments, cloud and edge. Extensive experiments show that, compared with the Huggingface framework, SpeContext achieves up to 24.89x throughput improvement in cloud and 10.06x speedup in edge with negligible accuracy loss, pushing the Pareto frontier of accuracy and throughput.",
+  "abstract_source_id": "src-abstract-asplos-2026-e4dec0d2",
   "venue": "asplos",
   "year": 2026,
   "track_or_session": "Session 2B: Speculative Decoding",
@@ -215,6 +217,19 @@
       "official": false,
       "supports": [
         "Indexed abstract used for strict relevance classification and indexed arXiv identifier where available."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2026-e4dec0d2",
+      "url": "https://api.openalex.org/works?filter=title.search:SpeContext%3A%20Enabling%20Efficient%20Long-context%20Reasoning%20with%20Speculative%20Context%20Sparsity%20in%20LLMs&select=id,title,abstract_inverted_index&per-page=3&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "SpeContext: Enabling Efficient Long-context Reasoning with Speculative Context Sparsity in LLMs",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:06:38Z",
+      "content_hash": "sha256:b76efb9d6fc555c6c6c4595cfdccc6cb0154cf59d4c4a9c204494150b5b581dc",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

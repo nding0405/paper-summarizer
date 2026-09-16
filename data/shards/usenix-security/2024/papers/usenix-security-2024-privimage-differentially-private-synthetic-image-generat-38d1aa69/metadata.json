@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2024-privimage-differentially-private-synthetic-image-generat-38d1aa69",
   "title": "PrivImage: Differentially Private Synthetic Image Generation using Diffusion Models with Semantic-Aware Pretraining",
+  "abstract": "Differential Privacy (DP) image data synthesis, which leverages the DP technique to generate synthetic data to replace the sensitive data, allowing organizations to share and utilize synthetic images without privacy concerns. Previous methods incorporate the advanced techniques of generative models and pre-training on a public dataset to produce exceptional DP image data, but suffer from problems of unstable training and massive computational resource demands. This paper proposes a novel DP image synthesis method, termed PRIVIMAGE, which meticulously selects pre-training data, promoting the efficient creation of DP datasets with high fidelity and utility. PRIVIMAGE first establishes a semantic query function using a public dataset. Then, this function assists in querying the semantic distribution of the sensitive dataset, facilitating the selection of data from the public dataset with analogous semantics for pre-training. Finally, we pre-train an image generative model using the selected data and then fine-tune this model on the sensitive dataset using Differentially Private Stochastic Gradient Descent (DP-SGD). PRIVIMAGE allows us to train a lightly parameterized generative model, reducing the noise in the gradient during DP-SGD training and enhancing training stability. Extensive experiments demonstrate that PRIVIMAGE uses only 1% of the public dataset for pre-training and 7.6% of the parameters in the generative model compared to the state-of-the-art method, whereas achieves superior synthetic performance and conserves more computational resources. On average, PRIVIMAGE achieves 6.8% lower FID and 13.2% higher Classification Accuracy than the state-of-the-art method. The replication package and datasets can be accessed online.",
+  "abstract_source_id": "src-abstract-usenix-security-2024-38d1aa69",
   "venue": "usenix-security",
   "year": 2024,
   "track_or_session": "Differential Privacy II",
@@ -175,6 +177,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2024-38d1aa69",
+      "url": "https://www.usenix.org/conference/usenixsecurity24/presentation/li-kecen",
+      "kind": "paper-page",
+      "title": "PrivImage: Differentially Private Synthetic Image Generation using Diffusion Models with Semantic-Aware Pretraining",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:16:48Z",
+      "content_hash": "sha256:50b2fc03b8bc108d7facb3cedf9f548ef01c191462f8f6a7bfcb4e36d94dd5b7",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

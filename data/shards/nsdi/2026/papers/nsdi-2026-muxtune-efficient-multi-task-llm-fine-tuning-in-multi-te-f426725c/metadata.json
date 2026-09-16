@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2026-muxtune-efficient-multi-task-llm-fine-tuning-in-multi-te-f426725c",
   "title": "MuxTune: Efficient Multi-Task LLM Fine-Tuning in Multi-Tenant Datacenters via Spatial-Temporal Backbone Multiplexing",
+  "abstract": "Parameter-Efficient Fine-Tuning (PEFT) is widely applied as the backend of fine-tuning APIs for large language model (LLM) customization in datacenters. Service providers deploy separate instances for individual PEFT tasks, giving rise to prominent resource inefficiencies, including (1) GPU underutilization from small-scale, PEFT-native operators and (2) device stalls from communication delays and data dependencies in parallelized execution. To address these issues, this paper presents MuxTune, a fine-tuning system that enables resource-efficient concurrent execution of multiple PEFT tasks. The key idea is to multiplex the backbone across independent tasks in a spatial-temporal manner for improved utilization and reduced stalls. Building on flexible, modularized backbone sharing via unified PEFT representations, MuxTune proposes hierarchical co-scheduling scheme with task, operator, and data-level optimizations. Specifically, it fuses tasks through a hybrid of spatial and temporal multiplexing, and orchestrates multi-task operator execution in two-tiered hybrid parallelism. Additionally, MuxTune employs chunk-based data alignment to mitigate inter-task ineffective tokens. Experimental results demonstrate that MuxTune achieves up to 2.33× higher throughput and 5.29× memory reduction compared to three state-of-the-art baselines.",
+  "abstract_source_id": "src-abstract-nsdi-2026-f426725c",
   "venue": "nsdi",
   "year": 2026,
   "track_or_session": "Clouds, Carefully Engineered",
@@ -202,6 +204,19 @@
         "proceedings page range and page count",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2026-f426725c",
+      "url": "https://www.usenix.org/conference/nsdi26/presentation/xue-chunyu",
+      "kind": "paper-page",
+      "title": "MuxTune: Efficient Multi-Task LLM Fine-Tuning in Multi-Tenant Datacenters via Spatial-Temporal Backbone Multiplexing",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:05:43Z",
+      "content_hash": "sha256:50c0e346c5617f7d51680844fe81730959831d5243648209321ac39b5f2a14c7",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

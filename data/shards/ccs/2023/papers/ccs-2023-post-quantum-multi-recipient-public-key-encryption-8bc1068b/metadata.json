@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2023-post-quantum-multi-recipient-public-key-encryption-8bc1068b",
   "title": "Post-Quantum Multi-Recipient Public Key Encryption",
+  "abstract": "A multi-message multi-recipient PKE (mmPKE) encrypts a batch of messages, in one go, to a corresponding set of independently chosen receiver public keys. The resulting ''multi-recipient ciphertext'' can be then be reduced (by any 3rd party) to a shorter, receiver specific, ''invidual ciphertext.'' Finally, to recover the i-th message in the batch from their indvidual ciphertext the i-th receiver only needs their own decryption key. A special case of mmPKE is multi-recipient PKE (mPKE) where all receivers are sent the same message. By treating (m)mPKE and their KEM counterparts as a stand-alone primitives we allow for more efficient constructions than trivially composing individual PKE/KEM instances. This is especially valuable in the post-quantum setting, where PKE/KEM ciphertexts and public keys tend to be far larger than their classic counterparts.",
+  "abstract_source_id": "src-abstract-ccs-2023-8bc1068b",
   "venue": "ccs",
   "year": 2023,
   "track_or_session": "Advanced Public Key Encryption (Applied Cryptography)",
@@ -206,6 +208,19 @@
       "official": false,
       "supports": [
         "published title, author order, and page span"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2023-8bc1068b",
+      "url": "https://api.openalex.org/works/doi:10.1145/3576915.3623185?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Post-Quantum Multi-Recipient Public Key Encryption",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:08:00Z",
+      "content_hash": "sha256:b886f5d54dc12cf01106e4ecc36fc4ba3e410e83cd889844efde724f273e0995",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

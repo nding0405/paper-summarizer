@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2023-low-cost-privilege-separation-with-compile-time-compartm-43cef5e0",
   "title": "Low-Cost Privilege Separation with Compile Time Compartmentalization for Embedded Systems",
+  "abstract": "Embedded systems are pervasive and find various applications all around us. These systems run on low-power microcontrollers with real-time constraints. Developers often sacrifice security to meet these constraints by running the entire software stack with the same privilege. Existing work has utilized compartmentalization to mitigate the situation but suffers from a high overhead due to extensive runtime checking to achieve isolation between different compartments in the system, resulting in a rare adoption. In this paper, we present Compartmentalized Real-Time C (CRT-C), a low-cost compile-time compartmentalization mechanism for embedded systems to achieve privilege separation in a linear address space using specialized programming language dialects. Each programming dialect restricts the programming capabilities of a part of a program, formalizing different compartments within the program. CRT-C uses static analysis to identify various compartments in firmware and realizes the least privilege in the system by enforcing compartment-specific policies. We design and implement a new compiler to compile CRT-C to generate compartmentalized firmware that is ready to run on commodity embedded systems. We evaluate CRT-C with two Real-Time Operating Systems (RTOSs): FreeRTOS and Zephyr. Our evaluation shows that CRT-C can provide compartmentalization to embedded systems to thwart various attacks while incurring an average runtime overhead of 2.63% and memory overhead of 1.75%. CRT-C provides a practical solution to both retrofit legacy and secure new applications for embedded systems.",
+  "abstract_source_id": "src-abstract-sp-2023-43cef5e0",
   "venue": "sp",
   "year": 2023,
   "track_or_session": "Session 11A: Software isolation",
@@ -151,6 +153,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2023-43cef5e0",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Low-Cost Privilege Separation with Compile Time Compartmentalization for Embedded Systems",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:22Z",
+      "content_hash": "sha256:1bed15e4c1c4d6e59eecfd74eeffd17f506467abd5cdd4e0f536f68bd1e694ee",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2025-os-rendering-service-made-parallel-with-out-of-order-exe-92da448c",
   "title": "OS Rendering Service Made Parallel with Out-of-Order Execution and In-Order Commit",
+  "abstract": "Rendering service is an indispensable OS service on smart-device OSes like Android, iOS and OpenHarmony. However, the recent shift towards highly scalable display scenarios, such as foldable and multiple screens, has notably amplified the rendering workload, leading to low frame rates that degrade user experience. Yet, rendering services predominantly follow a sequential model, which is notoriously hard to parallelize due to the complex state dependency, drawing order dependency, and interface dependency. This paper observes that a significant portion of the rendering procedure is potentially parallelizable through proper state pre-untangling and drawing order post-preserving. To this end, this paper introduces Spars, a scalable parallelized OS rendering service inspired by the out-of-order execution with in-order commit in computer architecture. Spars revolutionizes the rendering procedure by initially generating self-contained rendering tasks through in-order preparation, executing such tasks in an out-of-order manner to maximize multi-core parallelism, and subsequently committing the tasks in-order to enforce drawing order dependencies. Evaluation results on state-of-the-art single-screen, dual-fold, and tri-fold smartphones (Mate 70, X5, XT) as well as one-chip-multiple-screen configurations show an average frame rate improvement of 1.76×–1.91×. Moreover, Spars is able to decrease the device power consumption by 3.0% or increase the budget of graphics primitives by 2.31× for more appealing visual effects with the same stable frame rate.",
+  "abstract_source_id": "src-abstract-osdi-2025-92da448c",
   "venue": "osdi",
   "year": 2025,
   "track_or_session": "Kernel and Operating Systems II",
@@ -243,6 +245,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2025-92da448c",
+      "url": "https://www.usenix.org/conference/osdi25/presentation/wu-yuanpei",
+      "kind": "paper-page",
+      "title": "OS Rendering Service Made Parallel with Out-of-Order Execution and In-Order Commit",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:07:41Z",
+      "content_hash": "sha256:321d8487da9da428f3fff86b0f81898dccc0f7a30246e921e800e4cb4a9996df",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

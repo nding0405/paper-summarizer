@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2023-deep-perceptual-hashing-algorithms-with-hidden-dual-purp-c732f05d",
   "title": "Deep perceptual hashing algorithms with hidden dual purpose: when client-side scanning does facial recognition",
+  "abstract": "End-to-end encryption (E2EE) provides strong technical protections to individuals from interferences. Governments and law enforcement agencies around the world have however raised concerns that E2EE also allows illegal content to be shared undetected. Client-side scanning (CSS), using perceptual hashing (PH) to detect known illegal content before it is shared, is seen as a promising solution to prevent the diffusion of illegal content while preserving encryption. While these proposals raise strong privacy concerns, proponents of the solutions have argued that the risk is limited as the technology has a limited scope: detecting known illegal content. In this paper, we show that modern perceptual hashing algorithms are actually fairly flexible pieces of technology and that this flexibility could be used by an adversary to add a secondary hidden feature to a client-side scanning system. More specifically, we show that an adversary providing the PH algorithm can \"hide\" a secondary purpose of face recognition of a target individual alongside its primary purpose of image copy detection. We first propose a procedure to train a dual-purpose deep perceptual hashing model by jointly optimizing for both the image copy detection and the targeted facial recognition task. Second, we extensively evaluate our dual-purpose model and show it to be able to reliably identify a target individual 67% of the time while not impacting its performance at detecting illegal content. We also show that our model is neither a general face detection nor a facial recognition model, allowing its secondary purpose to be hidden. Finally, we show that the secondary purpose can be enabled by adding a single illegal looking image to the database. Taken together, our results raise concerns that a deep perceptual hashing-based CSS system could turn billions of user devices into tools to locate targeted individuals.",
+  "abstract_source_id": "src-abstract-sp-2023-c732f05d",
   "venue": "sp",
   "year": 2023,
   "track_or_session": "Session 2A: Trust and safety",
@@ -172,6 +174,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2023-c732f05d",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Deep perceptual hashing algorithms with hidden dual purpose: when client-side scanning does facial recognition",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:22Z",
+      "content_hash": "sha256:1bed15e4c1c4d6e59eecfd74eeffd17f506467abd5cdd4e0f536f68bd1e694ee",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

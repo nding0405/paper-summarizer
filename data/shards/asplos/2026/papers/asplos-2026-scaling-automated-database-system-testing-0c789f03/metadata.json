@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2026-scaling-automated-database-system-testing-0c789f03",
   "title": "Scaling Automated Database System Testing",
+  "abstract": "Recently, various automated testing approaches have been proposed that use specialized test oracles to find hundreds of logic bugs in mature, widely-used Database Management Systems (DBMSs). These test oracles require database and query generators, which must account for the often significant differences between the SQL dialects of these systems. Since it can take weeks to implement such generators, many DBMS developers are unlikely to invest the time to adopt such automated testing approaches. In short, existing approaches fail to scale to the plethora of DBMSs. In this work, we present both a vision and a platform, SQLancer++, to apply test oracles to any SQL-based DBMS that supports a subset of common SQL features. Our technical core contribution is a novel architecture for an adaptive SQL statement generator. This adaptive SQL generator generates SQL statements with various features, some of which might not be supported by the given DBMS, and then learns through interaction with the DBMS, which of these are understood by the DBMS. Thus, over time, the generator will generate mostly valid SQL statements. We evaluated SQLancer++ across 18 DBMSs and discovered a total of 196 unique, previously unknown bugs, of which 180 were fixed after we reported them. While SQLancer++ is the first major step towards scaling automated DBMS testing, various follow-up challenges remain.",
+  "abstract_source_id": "src-abstract-asplos-2026-0c789f03",
   "venue": "asplos",
   "year": 2026,
   "track_or_session": "Session 7C: Testing & Fuzzing",
@@ -110,6 +112,19 @@
       "official": false,
       "supports": [
         "Indexed abstract used for strict relevance classification and indexed arXiv identifier where available."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2026-0c789f03",
+      "url": "https://api.openalex.org/works/doi:10.1145/3779212.3790215?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Scaling Automated Database System Testing",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:06:18Z",
+      "content_hash": "sha256:19d0d23b09704606b58eda4ba6b77ba9ebe10506b68f9d7db5481b9270da8eac",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

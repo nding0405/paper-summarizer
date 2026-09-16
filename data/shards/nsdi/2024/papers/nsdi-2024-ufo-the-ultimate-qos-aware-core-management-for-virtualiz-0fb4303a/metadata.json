@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2024-ufo-the-ultimate-qos-aware-core-management-for-virtualiz-0fb4303a",
   "title": "UFO: The Ultimate QoS-Aware Core Management for Virtualized and Oversubscribed Public Clouds",
+  "abstract": "Public clouds typically adopt (1) multi-tenancy to increase server utilization; (2) virtualization to provide isolation between different tenants; (3) oversubscription of resources to further increase resource efficiency. However, prior work all focuses on optimizing one or two elements, and fails to considerately bring QoS-aware multi-tenancy, virtualization and resource oversubscription together.\n\nWe find three challenges when the three elements coexist. First, the double scheduling symptoms are 10x worse with latency-critical (LC) workloads which are comprised of numerous sub-millisecond tasks and are significantly different from conventional batch applications. Second, inner-VM resource contention also exists between threads of the same VM when running LC applications, calling for inner-VM core isolation. Third, no application-level performance metrics can be obtained by the host to guide resource management in realistic public clouds.\n\nTo address these challenges, we propose a QoS-aware core manager dubbed UFO to specifically support co-location of multiple LC workloads in virtualized and oversubscribed public cloud environments. UFO solves the three above-mentioned challenges, by (1) coordinating the guest and host CPU cores (vCPU-pCPU coordination), and (2) doing fine-grained inner-VM resource isolation, to push core management in realistic public clouds to the extreme. Compared with the state-of-the-art core manager, it saves up to 50% (average of 22%) of physical cores under the same co-location scenario.",
+  "abstract_source_id": "src-abstract-nsdi-2024-0fb4303a",
   "venue": "nsdi",
   "year": 2024,
   "track_or_session": "Cloud Scheduling",
@@ -139,6 +141,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2024-0fb4303a",
+      "url": "https://www.usenix.org/conference/nsdi24/presentation/peng",
+      "kind": "paper-page",
+      "title": "UFO: The Ultimate QoS-Aware Core Management for Virtualized and Oversubscribed Public Clouds",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:03:52Z",
+      "content_hash": "sha256:539f939125d2a71efe15cbf95dc81c37d025c84ae3e6cd6a9067f5211524cd67",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

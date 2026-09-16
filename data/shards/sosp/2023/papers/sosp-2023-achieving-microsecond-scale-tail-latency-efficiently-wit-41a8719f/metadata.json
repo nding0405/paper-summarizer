@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sosp-2023-achieving-microsecond-scale-tail-latency-efficiently-wit-41a8719f",
   "title": "Achieving Microsecond-Scale Tail Latency Efficiently with Approximate Optimal Scheduling",
+  "abstract": "Datacenter applications expect microsecond-scale service times and tightly bound tail latency, with future workloads expected to be even more demanding. To address this challenge, state-of-the-art runtimes employ theoretically optimal scheduling policies, namely a single request queue and strict preemption. We present Concord, a runtime that demonstrates how forgoing this design---while still closely approximating it---enables a significant improvement in application throughput while maintaining tight tail-latency SLOs. We evaluate Concord on microbenchmarks and Google's LevelDB key-value store; compared to the state of the art, Concord improves application throughput by up to 52% on microbenchmarks and by up to 83% on LevelDB, while meeting the same tail-latency SLOs. Unlike the state of the art, Concord is application agnostic and does not rely on the nonstandard use of hardware, which makes it immediately de-ployable in the public cloud. Concord is publicly available at https://dslab.epfl.ch/research/concord.",
+  "abstract_source_id": "src-abstract-sosp-2023-41a8719f",
   "venue": "sosp",
   "year": 2023,
   "track_or_session": "Session 8: Datacenter",
@@ -146,6 +148,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-sosp-2023-41a8719f",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Achieving Microsecond-Scale Tail Latency Efficiently with Approximate Optimal Scheduling",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:12Z",
+      "content_hash": "sha256:aa9c23a45f6ec9973f40e6c9520c69d42bb49fc1f526891570edfdb1976cff82",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

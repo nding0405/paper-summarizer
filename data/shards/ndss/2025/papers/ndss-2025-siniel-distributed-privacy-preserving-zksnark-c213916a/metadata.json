@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2025-siniel-distributed-privacy-preserving-zksnark-c213916a",
   "title": "Siniel: Distributed Privacy-Preserving zkSNARK",
+  "abstract": "Zero-knowledge Succinct Non-interactive Argument of Knowledge (zkSNARK) is a powerful cryptographic primitive, in which a prover convinces a verifier that a given statement is true without leaking any additional information. However, existing zkSNARKs suffer from high computation overhead in the proof generation. This limits the applications of zkSNARKs, such as private payments, private smart contracts, and anonymous credentials. Private delegation has become a prominent way to accelerate proof generation.\n\nIn this work, we propose Siniel, an efficient private delegation framework for zkSNARKs constructed from polynomial interactive oracle proof (PIOP) and polynomial commitment scheme (PCS). Our protocol allows a computationally limited prover (a.k.a. delegator) to delegate its expensive prover computation to several workers without leaking any information about the private witness. Most importantly, compared with the recent work EOS (USENIX'23), the state-of-the-art zkSNARK prover delegation framework, a prover in Siniel needs not to engage in the MPC protocol after sending its shares of private witness. This means that a Siniel prover can outsource the entire computation to the workers.\n\nWe compare Siniel with EOS and show significant performance advantages of the former. The experimental results show that, under low bandwidth conditions (10MBps), Siniel saves about 16% time for delegators than that of EOS, whereas under high bandwidth conditions (1000MBps), Siniel saves about 80% than EOS.",
+  "abstract_source_id": "src-abstract-ndss-2025-c213916a",
   "venue": "ndss",
   "year": 2025,
   "track_or_session": "Fall submission cycle",
@@ -273,6 +275,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2025-c213916a",
+      "url": "https://www.ndss-symposium.org/ndss-paper/siniel-distributed-privacy-preserving-zksnark/",
+      "kind": "paper-page",
+      "title": "Siniel: Distributed Privacy-Preserving zkSNARK",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:20:33Z",
+      "content_hash": "sha256:6a25f3a4b3f7e77122876bf84ff588ec5350a0aecdcbb7c3e36ec837671324a4",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

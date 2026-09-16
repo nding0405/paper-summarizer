@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2023-balanceproofs-maintainable-vector-commitments-with-fast-55379edf",
   "title": "BalanceProofs: Maintainable Vector Commitments with Fast Aggregation",
+  "abstract": "We present BalanceProofs, the first vector commitment that is maintainable (i.e., supporting sublinear updates) while also enjoying fast proof aggregation and verification. The basic version of BalanceProofs has O ( √n log n ) update time and O ( √n ) query time and its constant-size aggregated proofs can be produced and verified in milliseconds. In particular, BalanceProofs improves the aggregation time and aggregation verification time of the only known maintainable and aggregatable vector commitment scheme, Hyperproofs (USENIX SECURITY 2022), by up to 1000× and up to 100× respectively. Fast verification of aggregated proofs is particularly useful for applications such as stateless cryptocurrencies (and was a major bottleneck for Hyperproofs), where an aggregated proof of balances is produced once but must be verified multiple times and by a large number of nodes. As a limitation, the updating time in BalanceProofs compared to Hyperproofs is roughly 6× slower, but always stays in the range from 10 to 18 milliseconds. We finally study useful tradeoffs in BalanceProofs between (aggregate) proof size, update time and (aggregate) proof computation and verification, by introducing a bucketing technique, and present an extensive evaluation as well as a comparison to Hyperproofs.",
+  "abstract_source_id": "src-abstract-usenix-security-2023-55379edf",
   "venue": "usenix-security",
   "year": 2023,
   "track_or_session": "Privacy Preserving Crypto Blocks",
@@ -112,6 +114,19 @@
       "official": true,
       "supports": [
         "authors, affiliations when published, abstract, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2023-55379edf",
+      "url": "https://www.usenix.org/conference/usenixsecurity23/presentation/wang-weijie",
+      "kind": "paper-page",
+      "title": "BalanceProofs: Maintainable Vector Commitments with Fast Aggregation",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:09:59Z",
+      "content_hash": "sha256:93c4c620b9829b4121b34b81052329d558775865ad6b47c0356d84caf0c5a699",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

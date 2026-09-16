@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sosp-2023-snowcat-efficient-kernel-concurrency-testing-using-a-lea-ff107f11",
   "title": "Snowcat: Efficient Kernel Concurrency Testing using a Learned Coverage Predictor",
+  "abstract": "Random-based approaches and heuristics are commonly used in kernel concurrency testing due to the massive scale of modern kernels and corresponding interleaving space. The lack of accurate and scalable approaches to analyze concurrent kernel executions makes existing testing approaches heavily rely on expensive dynamic executions to measure the effectiveness of a new test. Unfortunately, the high cost incurred by dynamic executions limits the breadth of the exploration and puts latency pressure on finding effective concurrent test inputs and schedules, hindering the overall testing effectiveness. This paper proposes Snowcat, a kernel concurrency testing framework that generates effective test inputs and schedules using a learned kernel block-coverage predictor. Using a graph neural network, the coverage predictor takes a concurrent test input and scheduling hints and outputs a prediction on whether certain important code blocks will be executed. Using this predictor, Snowcat can skip concurrent tests that are likely to be fruitless and prioritize the promising ones for actual dynamic execution. After testing the Linux kernel for over a week, Snowcat finds ~17% more potential data races, by prioritizing tests of more fruitful schedules than existing work would have chosen. Snowcat can also find effective test inputs that expose new concurrency bugs with higher probability (1.4×~2.6×), or reproduce known bugs more quickly (15×) than state-of-art testing tools. More importantly, Snowcat is shown to be more efficient at reaching a desirable level of race coverage in the continuous setting, as the Linux kernel evolves from version to version. In total, Snowcat discovered 17 new concurrency bugs in Linux kernel 6.1, of which 13 are confirmed and 6 are fixed.",
+  "abstract_source_id": "src-abstract-sosp-2023-ff107f11",
   "venue": "sosp",
   "year": 2023,
   "track_or_session": "Session 1: Kernel Design and Testing",
@@ -167,6 +169,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-sosp-2023-ff107f11",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Snowcat: Efficient Kernel Concurrency Testing using a Learned Coverage Predictor",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:12Z",
+      "content_hash": "sha256:aa9c23a45f6ec9973f40e6c9520c69d42bb49fc1f526891570edfdb1976cff82",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

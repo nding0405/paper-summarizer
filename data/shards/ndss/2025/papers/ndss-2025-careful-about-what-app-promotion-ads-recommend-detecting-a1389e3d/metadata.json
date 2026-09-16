@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2025-careful-about-what-app-promotion-ads-recommend-detecting-a1389e3d",
   "title": "Careful About What App Promotion Ads Recommend! Detecting and Explaining Malware Promotion via App Promotion Graph",
+  "abstract": "In Android apps, their developers frequently place app promotion ads, namely advertisements to promote other apps. Unfortunately, the inadequate vetting of ad content allows malicious developers to exploit app promotion ads as a new distribution channel for malware.\n\nTo help detect malware distributed via app promotion ads, in this paper, we propose a novel approach, named ADGPE, that synergistically integrates app user interface (UI) exploration with graph learning to automatically collect app promotion ads, detect malware promoted by these ads, and explain the promotion mechanisms employed by the detected malware.\n\nOur evaluation on 18, 627 app promotion ads demonstrates the substantial risks in the app promotion ecosystem. The probability for encountering malware when downloading from app promotion ads is hundreds of times higher than from the Google Play. Popular ad networks such as Google AdMob, Unity Ads, and Applovin are exploited by malicious developers to spread a variety of malware: aggressive adware, rogue security software, trojan, and fleeceware. Our UI exploration technique can find 24% more app promotion ads within the same time compared to the state-of-the-art techniques. We also demonstrate our technique’s usage in investigating underground economy by collecting app promotion ads in the wild. Leveraging the found app promotion relations, our malware detection model achieves a 5.17% gain in F1 score, improving the F1 score of state-of-art techniques from 90.14% to 95.31%. Our malware detection model also detects 28 apps that were initially labeled as benign apps by VirusTotal but labeled by it as malware/potentially unwanted apps (PUAs) six months later. Our path inference model unveils two malware promotion mechanisms: custom-made ad-based promotion via hardcoded ads and ad library-based promotion via interactions with ad servers (e.g., AdMob and Applovin). These findings uncover the critical security risks of app promotion ads and demonstrate the effectiveness of ADGPE in combining dynamic program analysis with graph learning to study the app promotion ad-based malware distribution.",
+  "abstract_source_id": "src-abstract-ndss-2025-a1389e3d",
   "venue": "ndss",
   "year": 2025,
   "track_or_session": "Summer submission cycle",
@@ -231,6 +233,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2025-a1389e3d",
+      "url": "https://www.ndss-symposium.org/ndss-paper/careful-about-what-app-promotion-ads-recommend-detecting-and-explaining-malware-promotion-via-app-promotion-graph/",
+      "kind": "paper-page",
+      "title": "Careful About What App Promotion Ads Recommend! Detecting and Explaining Malware Promotion via App Promotion Graph",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:19:14Z",
+      "content_hash": "sha256:c60c45bbf7443f8733c4d83aa3c6ed24476433af2eddbafec951485b6bdca5ab",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

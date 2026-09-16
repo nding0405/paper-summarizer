@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2024-detecting-voice-cloning-attacks-via-timbre-watermarking-4d460656",
   "title": "Detecting Voice Cloning Attacks via Timbre Watermarking",
+  "abstract": "Nowadays, it is common to release audio content to the public, for social sharing or commercial purposes. However, with the rise of voice cloning technology, attackers have the potential to easily impersonate a specific person by utilizing his publicly released audio without any permission. Therefore, it becomes significant to detect any potential misuse of the released audio content and protect its timbre from being impersonated.\n\nTo this end, we introduce a novel concept, \"Timbre Watermarking\", which embeds watermark information into the target individual's speech, eventually defeating the voice cloning attacks. However, there are two challenges: 1) robustness: the attacker can remove the watermark with common speech preprocessing before launching voice cloning attacks; 2) generalization: there are a variety of voice cloning approaches for the attacker to choose, making it hard to build a general defense against all of them.\n\nTo address these challenges, we design an end-to-end voice cloning-resistant detection framework. The core idea of our solution is to embed the watermark into the frequency domain, which is inherently robust against common data processing methods. A repeated embedding strategy is adopted to further enhance the robustness. To acquire generalization across different voice cloning attacks, we modulate their shared process and integrate it into our framework as a distortion layer. Experiments demonstrate that the proposed timbre watermarking can defend against different voice cloning attacks, exhibit strong resistance against various adaptive attacks (e.g., reconstruction-based removal attacks, watermark overwriting attacks), and achieve practicality in real-world services such as PaddleSpeech, Voice-Cloning-App, and so-vits-svc. In addition, ablation studies are also conducted to verify the effectiveness of our design. Some audio samples are available at https://timbrewatermarking.github.io/samples.",
+  "abstract_source_id": "src-abstract-ndss-2024-4d460656",
   "venue": "ndss",
   "year": 2024,
   "track_or_session": "Fall submission cycle",
@@ -189,6 +191,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2024-4d460656",
+      "url": "https://www.ndss-symposium.org/ndss-paper/detecting-voice-cloning-attacks-via-timbre-watermarking/",
+      "kind": "paper-page",
+      "title": "Detecting Voice Cloning Attacks via Timbre Watermarking",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:17:53Z",
+      "content_hash": "sha256:4461ac88c825a93f9418d3480f91d31a215e050408b474d16db32a4dda4cba83",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

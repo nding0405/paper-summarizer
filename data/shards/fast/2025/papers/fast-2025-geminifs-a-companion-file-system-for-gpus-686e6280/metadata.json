@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "fast-2025-geminifs-a-companion-file-system-for-gpus-686e6280",
   "title": "GeminiFS: A Companion File System for GPUs",
+  "abstract": "GPU-centric storage solutions enable direct access from the GPU to the storage device via NVMe queues, completely bypassing the CPU. These solutions alleviate the problems of previous CPU-centric solutions that relied on the host CPU to initiate data storage access, such as high CPU-GPU synchronization overheads, I/O traffic amplification, and high CPU processing latency. However, the state-of-the-art GPU-centric solutions have no file abstraction or management functionalities (e.g., fine-grained isolation and access control) of traditional host file systems, and cannot satisfy the needs of GPU-accelerated machine learning (ML) applications like GNN and LLM which require fast file access and data sharing. Therefore, existing GPU-centric storage solutions are inefficient and inconvenient when being applied in practical ML scenarios.\n\nThis paper presents a companion file system (called GeminiFS) for GPUs. GeminiFS offers a file system interface to GPU programs that enables direct file-based access to NVMe storage, which is managed by the host file system. GeminiFS realizes metadata synchronization between the host and GPU file systems by embedding the metadata directly into the files. We extend the existing NVMe driver to allow the CPU and the GPU to set up their control planes in parallel for the storage device. Moreover, GeminiFS provides a GPU-friendly, software-defined page cache to fully utilize the internal bandwidth of the GPU. We further offer a convenient library (libGemini) tailored for GPU programmers, which abstracts away various underlying complexities thereby reducing programming complexity. Extensive evaluation shows that GeminiFS significantly outperforms the state-of-the-art storage solutions for large-scale ML workloads.",
+  "abstract_source_id": "src-abstract-fast-2025-686e6280",
   "venue": "fast",
   "year": 2025,
   "track_or_session": "Machine Learning and Storage",
@@ -245,6 +247,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-fast-2025-686e6280",
+      "url": "https://www.usenix.org/conference/fast25/presentation/qiu",
+      "kind": "paper-page",
+      "title": "GeminiFS: A Companion File System for GPUs",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:01:05Z",
+      "content_hash": "sha256:c15106423db99ef82240d76d830f65905392feda9deb1048035014c988759980",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2025-understanding-stragglers-in-large-model-training-using-w-dd66843f",
   "title": "Understanding Stragglers in Large Model Training Using What-if Analysis",
+  "abstract": "Large language model (LLM) training is one of the most demanding distributed computations today, often requiring thousands of GPUs with frequent synchronization across machines. Such a workload pattern makes it susceptible to stragglers, where the training can be stalled by few slow workers. At ByteDance we find stragglers are not trivially always caused by hardware failures, but can arise from multiple complex factors. This work aims to present a comprehensive study on the straggler issues in LLM training, using a five-month trace collected from our ByteDance LLM training cluster. The core methodology is what-if analysis that simulates the scenario without any stragglers and contrasts with the actual case. We use this method to study the following questions: (1) how often do stragglers affect training jobs, and what effect do they have on job performance; (2) do stragglers exhibit temporal or spatial patterns; and (3) what are the potential root causes for stragglers?",
+  "abstract_source_id": "src-abstract-osdi-2025-dd66843f",
   "venue": "osdi",
   "year": 2025,
   "track_or_session": "Distributed Systems and Data Centers II",
@@ -411,6 +413,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2025-dd66843f",
+      "url": "https://www.usenix.org/conference/osdi25/presentation/lin-jinkun",
+      "kind": "paper-page",
+      "title": "Understanding Stragglers in Large Model Training Using What-if Analysis",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:07:53Z",
+      "content_hash": "sha256:9a22f185409d4bb3173c0c80da8fcc3447688aa16dd73cc6a3103f13a42514ca",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

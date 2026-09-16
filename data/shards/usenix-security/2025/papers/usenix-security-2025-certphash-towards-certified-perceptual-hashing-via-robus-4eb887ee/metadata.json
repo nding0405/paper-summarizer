@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-certphash-towards-certified-perceptual-hashing-via-robus-4eb887ee",
   "title": "CertPHash: Towards Certified Perceptual Hashing via Robust Training",
+  "abstract": "Perceptual hashing (PHash) systems—e.g., Apple's NeuralHash, Microsoft's PhotoDNA, and Facebook's PDQ—are widely employed to screen illicit content. Such systems generate hashes of image files and match them against a database of known hashes linked to illicit content for filtering. One important drawback of PHash systems is that they are vulnerable to adversarial perturbation attacks leading to hash evasion or collision. It is desirable to bring provable guarantees to PHash systems to certify their robustness under evasion or collision attacks. However, to the best of our knowledge, there are no existing certified PHash systems, and more importantly, the training of certified PHash systems is challenging because of the unique definition of model utility and the existence of both evasion and collision attacks.\n\nIn this paper, we propose CertPHash, the first certified PHash system with robust training. CertPHash includes three different optimization terms, anti-evasion, anti-collision, and functionality. The anti-evasion term establishes an upper bound on the hash deviation caused by input perturbations, the anti-collision term sets a lower bound on the distance between a perturbed hash and those from other inputs, and the functionality term ensures that the system remains reliable and effective throughout robust training. Our results demonstrate that CertPHash not only achieves non-vacuous certification for both evasion and collision with provable guarantees but is also robust against empirical attacks. Furthermore, CertPHash demonstrates strong performance in real-world illicit content detection tasks.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-4eb887ee",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Authentication",
@@ -154,6 +156,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-4eb887ee",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/yang-yuchen",
+      "kind": "paper-page",
+      "title": "CertPHash: Towards Certified Perceptual Hashing via Robust Training",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:19:02Z",
+      "content_hash": "sha256:0faca408c31d7b3143b2cf5b4486003fab576d53cfabeccc031f6c823766f00c",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "atc-2025-burst-computing-quick-sudden-massively-parallel-processi-a62ab830",
   "title": "Burst Computing: Quick, Sudden, Massively Parallel Processing on Serverless Resources",
+  "abstract": "We present burst computing, a novel serverless solution tailored for burst-parallel jobs. Unlike Function-as-a-Service (FaaS), burst computing establishes job-level isolation using a novel group invocation primitive to launch large groups of workers with guaranteed simultaneity.\n\nResource allocation is optimized by packing workers into fewer containers, which accelerates their initialization and enables locality. Locality significantly reduces remote communication compared to FaaS and, combined with simultaneity, it allows workers to communicate synchronously with message passing and group collectives.\n\nConsequently, applications unfeasible in FaaS are now possible. We implement burst computing atop OpenWhisk and provide a communication middleware that seamlessly leverages locality with zero-copy messaging. Evaluation shows reduced job invocation and communication latency for a 2× speed-up in TeraSort and a 98.5% reduction in remote communication in PageRank (13× speed-up) compared to standard FaaS.",
+  "abstract_source_id": "src-abstract-atc-2025-a62ab830",
   "venue": "atc",
   "year": 2025,
   "track_or_session": "Cloud Computing: Speed, Scale, and Serverless",
@@ -180,6 +182,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-atc-2025-a62ab830",
+      "url": "https://www.usenix.org/conference/atc25/presentation/barcelona-pons",
+      "kind": "paper-page",
+      "title": "Burst Computing: Quick, Sudden, Massively Parallel Processing on Serverless Resources",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T21:59:28Z",
+      "content_hash": "sha256:15a2d8afadb64e2678dc522a7d4753fbef6831f2b103c0f28af5214281000730",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

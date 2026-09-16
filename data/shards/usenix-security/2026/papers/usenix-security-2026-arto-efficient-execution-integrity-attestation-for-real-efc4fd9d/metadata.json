@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-arto-efficient-execution-integrity-attestation-for-real-efc4fd9d",
   "title": "ARTO: Efficient Execution Integrity Attestation for Real-Time Operation of Cyber-Physical Systems",
+  "abstract": "Real-time embedded systems are prevalent in cyber-physical applications such as drones and autonomous vehicles. Due to their high complexity, the environmental uncertainties, and the openness to remote control, these systems are vulnerable to control-flow hijacking and data-only attacks that compromise runtime integrity and reliability. Traditional control-flow integrity (CFI) and data-flow integrity (DFI) approaches impose excessive overhead, while the control-flow attestation (CFA) allows detection latency incompatible with real-time constraints. This paper presents ARTO, the first control-flow and data-flow protection approach that integrates the control-flow attestation to provide strong security with competitive runtime overhead. Through the prover-side path segmentation and hash-based validation result caching, ARTO provides partial context-sensitive protection at minimal runtime cost, offloading complete context-sensitive detection to the remote verifier. Furthermore, ARTO implements an equivalence-class-based data-flow protection that combines the address-based target check for memory reads with the value-based checks to protect critical variables, stronger than the SOTA operation integrity enforcement in validating the read source for critical variables. Extensive evaluations on robotic vehicle autopilots confirm ARTO's efficacy in mitigating both control-flow and data-only attacks while maintaining runtime overhead within real-time limits, outperforming SOTA CFA and operation-integrity enforcement methods in operation execution time.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-efc4fd9d",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Hardware Security 3",
@@ -155,6 +157,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-efc4fd9d",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/zhao-ruizhe",
+      "kind": "paper-page",
+      "title": "ARTO: Efficient Execution Integrity Attestation for Real-Time Operation of Cyber-Physical Systems",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:23:02Z",
+      "content_hash": "sha256:d71325cef933dd698897dabd6d1e6cebc95aac79d046d1eed283ba947a2faaf8",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

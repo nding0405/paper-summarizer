@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2026-mdk-rethinking-the-data-center-memory-reclamation-proble-042a1616",
   "title": "MDK: Rethinking the Data Center Memory Reclamation Problem",
+  "abstract": "The traditional memory management problem maximizes application performance when constrained by a fixed-size memory. Today’s data centers face a different problem: their goal is to maximize the number of jobs on a server without violating performance Service Level Objectives (SLOs). Since a key constraint for placing additional jobs is memory, data center systems proactively reclaim memory from running jobs to create space for new jobs. This difference fundamentally flips the optimization problem that memory management policies need to address.\n\nDesigning practical policies requires a set of tools: 1) an optimal policy that provides a bound on what any policy can achieve, 2) metrics to compare policies, and 3) efficient techniques for evaluating potential policies. However, we find that foundational tools from the traditional setting, such as the optimal policy OPT, Miss Ratio Curves (MRCs), and efficient ways to generate MRCs, do not apply in this new setting. The data center setting demands a new set of tools.\n\nWe present the Memory Designer’s Kit, MDK, a framework for designing and evaluating data center memory management policies. MDK includes an offline provably optimal policy; Memory Performance Curves (MPCs), which show how memory savings vary when constrained by performance; and an efficient technique that is up to 208× faster than simulation for producing MPCs. We demonstrate MDK’s utility by developing three data center policies that improve average memory savings by up to 10% relative to a state-of-the-art policy.",
+  "abstract_source_id": "src-abstract-osdi-2026-042a1616",
   "venue": "osdi",
   "year": 2026,
   "track_or_session": "Memory Tiering and CXL",
@@ -209,6 +211,19 @@
       "official": true,
       "supports": [
         "Official proceedings availability and canonical conference versions."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2026-042a1616",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/patel",
+      "kind": "paper-page",
+      "title": "MDK: Rethinking the Data Center Memory Reclamation Problem",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:08:34Z",
+      "content_hash": "sha256:fdef889edaa1cf2963d7bdd510dc6ef908d5a23fb1c517c20d34306cf02de398",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

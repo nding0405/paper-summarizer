@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2026-unum-a-new-framework-for-network-control-93b46fae",
   "title": "UNUM: A New Framework for Network Control",
+  "abstract": "Modern network control tasks, such as congestion control and adaptive bitrate streaming, require accurate state estimation to adapt to heterogeneous and dynamic network conditions. Current approaches, whether manually engineered or machine learning (ML)-based, often rely on instantaneous or running-average metrics, resulting in imprecise approximations of the true network state. This hinders their ability to capture latent factors, such as application workloads or path dynamics, and adapt to non-stationary environments.\n\nWe present Unum, a new framework powered by a unified network state embedder leveraging Transformers' self-attention mechanism and diverse training datasets to learn rich, latent state representations. Unum processes historical RTT-timescale network statistics, models complete current state, and predicts future states using pre-trained embeddings from diverse network scenarios. We develop techniques to augment state-of-the-art controllers with Unum embeddings. Through experiments over real and synthetic settings, we show that using Unum state embeddings improves control performance across tasks, including congestion control and adaptive bitrate streaming.",
+  "abstract_source_id": "src-abstract-nsdi-2026-93b46fae",
   "venue": "nsdi",
   "year": 2026,
   "track_or_session": "All Your Networks Are Belong to ML",
@@ -202,6 +204,19 @@
         "proceedings page range and page count",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2026-93b46fae",
+      "url": "https://www.usenix.org/conference/nsdi26/presentation/chen-jiayi",
+      "kind": "paper-page",
+      "title": "UNUM: A New Framework for Network Control",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:06:14Z",
+      "content_hash": "sha256:cd57ee670bb1908d6e02ce7f7fdaee93050e6032fb476774946a0cc28dca66db",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

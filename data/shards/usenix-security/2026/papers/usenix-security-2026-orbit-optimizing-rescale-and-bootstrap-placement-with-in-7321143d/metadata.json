@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-orbit-optimizing-rescale-and-bootstrap-placement-with-in-7321143d",
   "title": "Orbit: Optimizing Rescale and Bootstrap Placement with Integer Linear Programming Techniques for Secure Inference",
+  "abstract": "Fully Homomorphic Encryption (FHE) allows computation on encrypted data without decrypting it. In theory, FHE makes privacy-preserving machine learning possible. In practice, however, it remains impractically slow for real workloads. A major source of slowdown is bootstrap operations; in CKKS, a popular FHE scheme for tensor workloads, the slowdown is compounded by scale management and rescale operations.\n\nFHE compilers for machine learning inference aim to make bootstrap placement and scale management efficient and easy by compiling high-level tensor programs into optimized CKKS computations. Unfortunately, existing approaches miss crucial optimization opportunities because they overlook a key property of CKKS programs: bootstrap and rescale placement are fundamentally coupled through the level budget. In this paper, we present Orbit, an FHE compiler that jointly optimizes bootstrap and rescale placement through a novel Integer Linear Programming (ILP) formulation that reasons about both ciphertext level and scale constraints. To make this formulation tractable for structured tensor workloads, particularly convolutional neural networks, we introduce three techniques that reduce ILP complexity while preserving optimality. Across five workloads and multiple cryptographic parameter configurations, Orbit achieves a geometric mean speedup of 19% over DaCapo, 73% over Orion, and 52% over ReSBM, keeps compilation under 6 minutes, and retains model accuracy within 0.3% of plaintext execution.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-7321143d",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Applications of Cryptography 1",
@@ -176,6 +178,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-7321143d",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/zhou",
+      "kind": "paper-page",
+      "title": "Orbit: Optimizing Rescale and Bootstrap Placement with Integer Linear Programming Techniques for Secure Inference",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:24:55Z",
+      "content_hash": "sha256:cd0e2d570302d0331b6e31aef3a65979c73b2b227126e68dde926a174e2ac44d",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

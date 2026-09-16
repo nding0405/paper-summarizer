@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2026-secret-state-leakage-attacks-and-their-impacts-on-emv-co-bb26fd79",
   "title": "Secret State Leakage Attacks and their Impacts on EMV Contactless Payment Apps",
+  "abstract": "This paper analyzes the security of EMV contactless mobile payment (ECM) apps, virtualization of physical EMV chip cards, in a less explored but relevant threat model. In this threat model, a local adversary such as the legitimate ECM app user (possibly, with root privileges) launches attacks to expose the EMV protocol's internal secret states from the app. Such secret leakage combined with the attacker's capability to modify the ECM app behavior can be exploitable for potentially self-serving purposes (e.g., double-spending). To formally study such secret state leakage attacks (SecStLeak) and their impacts, we pose the minimal satisfying cut-set identification problem for the EMV contactless protocol design where the goal is identifying the minimal number of the protocol's secret state fields whose leakage can entail different attacks. We solve this problem by proposing a meta-level protocol analysis approach. Our analysis identified 4 minimal sets of secret state fields that ECM app developers must protect to prevent such attacks. We analyzed 136 Android ECM apps and identified all secret fields for 2 of the 4 minimal sets across 24 apps. In addition, one can leak a third minimal set in 3 of the 24 apps. The potential impact is significant, with these 24 apps having 82 M downloads, 6 coming from developing countries, and 3 operating in a country without support for Google Wallet. To establish our findings' real-world applicability, we demonstrate a core guarantee-violating end-to-end attack on a real ECM app in an isolated test environment. This successful exploitation motivated us to study how developers in the real world protect the secret state fields belonging to the 4 minimal sets to thwart SecStLeak attacks. We observe that a majority of these apps, contrary to EMV standard's recommendation, rely on circumventable, sub-optimal software-only defenses.",
+  "abstract_source_id": "src-abstract-sp-2026-bb26fd79",
   "venue": "sp",
   "year": 2026,
   "track_or_session": "Cycle 2",
@@ -175,6 +177,19 @@
       "official": true,
       "supports": [
         "DOI, published-order authors and affiliations, abstract, publication date, page span, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2026-bb26fd79",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Secret State Leakage Attacks and Their Impacts on EMV Contactless Payment Apps",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:58:02Z",
+      "content_hash": "sha256:4204efad9387253e2c70bd18217fac7c5220b9cd43ecd6179fdc27c5a043343e",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2024-rethinking-the-security-threats-of-stale-dns-glue-record-b0408b12",
   "title": "Rethinking the Security Threats of Stale DNS Glue Records",
+  "abstract": "The Domain Name System (DNS) fundamentally relies on glue records to provide authoritative nameserver IP addresses, enabling essential in-domain delegation. While previous studies have identified potential security risks associated with glue records, the exploitation of these records, especially in the context of out-domain delegation, remains unclear due to their inherently low trust level and the diverse ways in which resolvers handle them. This paper undertakes the first systematic exploration of the potential threats posed by DNS glue records, uncovering significant real-world security risks. We empirically identify that 23.18% of glue records across 1,096 TLDs are outdated yet still served in practice. More concerningly, through reverse engineering 9 mainstream DNS implementations (e.g., BIND 9 and Microsoft DNS), we reveal manipulable behaviors associated with glue records. The convergence of these systemic issues allows us to propose the novel threat model that could enable large-scale domain hijacking and denial-of-service attacks. Furthermore, our analysis determines over 193,558 exploitable records exist, placing more than 6 million domains at risk. Additional measurement studies on global open resolvers demonstrate that 90% of them use unvalidated and outdated glue records, including OpenDNS and AliDNS. Our responsible disclosure has already prompted mitigation efforts by affected stakeholders. Microsoft DNS, PowerDNS, OpenDNS, and Alibaba Cloud DNS have acknowledged our reported vulnerability. In summary, this work highlights that glue records constitute a forgotten foundation of DNS architecture requiring renewed security prioritization",
+  "abstract_source_id": "src-abstract-usenix-security-2024-b0408b12",
   "venue": "usenix-security",
   "year": 2024,
   "track_or_session": "Network Security II: Attacks",
@@ -217,6 +219,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2024-b0408b12",
+      "url": "https://www.usenix.org/conference/usenixsecurity24/presentation/zhang-yunyi-rethinking",
+      "kind": "paper-page",
+      "title": "Rethinking the Security Threats of Stale DNS Glue Records",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:17:00Z",
+      "content_hash": "sha256:6a3534b392cf38595408356656f088d35d31f8fb2a29d2ae7864d628a335f5e0",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

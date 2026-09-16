@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2026-the-abstention-protocol-rca-for-clos-fabrics-operational-d38bcf68",
   "title": "The Abstention Protocol: RCA for Clos Fabrics (Operational Systems)",
+  "abstract": "Root cause analysis (RCA) in large datacenter networks is challenging because telemetry is noisy, partial, and asynchronous. Score-based approaches degrade under these conditions, often yielding unstable or incorrect attributions.\n\nWe present CoreSec , a production RCA system that replaces weighted fusion with a PAM-style abstention algebra. Telemetry agents are composed using control flags that yield deterministic decisions and explicit abstention when evidence is ambiguous. CoreSec combines this algebra with topology-aware configurations that capture failure surfaces across Clos fabrics and converge monotonically as evidence accumulates.\n\nDeployed at hyperscale, CoreSec provides stable and explainable RCA behavior across diverse environments without retuning. Our experience shows that structured composition with abstention forms a practical foundation for automated RCA in real-world cloud networks.",
+  "abstract_source_id": "src-abstract-osdi-2026-d38bcf68",
   "venue": "osdi",
   "year": 2026,
   "track_or_session": "Testing, Debugging, Root Causing",
@@ -104,6 +106,19 @@
       "official": true,
       "supports": [
         "Official proceedings availability and canonical conference versions."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2026-d38bcf68",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/gaikwad",
+      "kind": "paper-page",
+      "title": "The Abstention Protocol: RCA for Clos Fabrics (Operational Systems)",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:09:05Z",
+      "content_hash": "sha256:044da079aae8c8049764a8c58d267ed287ab654afc99a2d91f63864b72364cc0",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

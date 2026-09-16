@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "eurosys-2026-charm-chiplet-heterogeneity-aware-runtime-mapping-system-03d15376",
   "title": "CHARM: Chiplet Heterogeneity-Aware Runtime Mapping System",
+  "abstract": "The growing disparity between CPU core counts and available memory bandwidth has intensified memory contention in servers. This particularly affects highly parallelizable applications, which must achieve efficient cache utilization to maintain performance as CPU core counts grow. Optimizing cache utilization, however, is complex for recent chiplet-based CPUs, whose partitioned L3 caches lead to varying latencies and bandwidths, even within a single NUMA domain. Classical NUMA optimizations and task scheduling fail to address the performance issues of chiplet-based CPUs. We describe Chiplet Heterogeneity Aware Runtime Mapping (CHARM), a new runtime system designed for chiplet-based CPUs. CHARM combines chiplet-aware task scheduling heuristics, hardware-aware memory allocation, and fine-grained performance monitoring to optimize workload execution. It implements a lightweight concurrency model that combines user-level threading features, such as individual stacks, per-task scheduling, and state management, with coroutine-like behavior, allowing tasks to suspend and resume execution at defined points while efficiently managing task migration across chiplets. Our evaluation across diverse scenarios shows CHARM's effectiveness in optimizing the performance of memory-intensive parallel applications.",
+  "abstract_source_id": "src-abstract-eurosys-2026-03d15376",
   "venue": "eurosys",
   "year": 2026,
   "track_or_session": null,
@@ -159,6 +161,19 @@
       "official": false,
       "supports": [
         "Publisher-deposited proceedings identity and print publication date."
+      ]
+    },
+    {
+      "id": "src-abstract-eurosys-2026-03d15376",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "CHARM: Chiplet Heterogeneity-Aware Runtime Mapping System",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:12Z",
+      "content_hash": "sha256:aa9c23a45f6ec9973f40e6c9520c69d42bb49fc1f526891570edfdb1976cff82",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

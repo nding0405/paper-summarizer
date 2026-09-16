@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2025-ml-cube-accelerating-module-lattice-based-cryptography-u-487d8f92",
   "title": "ML-Cube: Accelerating Module-Lattice-Based Cryptography using Machine Learning Accelerators with a Memory-Less Design",
+  "abstract": "The rapid advancement of AI technologies has led to a dramatic surge in computational demands, driving significant breakthroughs in ML accelerators. The powerful performance of these accelerators has attracted the attention of cryptography researchers, and recent studies have begun to explore their use in accelerating cryptographic operations. However, treating these accelerators as black boxes leads to high latency, and strict concurrency requirements, which hinder their practical deployment. In this paper, we go beyond the black-box treatment of ML accelerators and introduce ML-Cube (ML3), a novel memory-less framework that leverages ML accelerators to implement module-lattice-based PQC, FIPS 203 ML-KEM, and FIPS 204 ML-DSA. The performance benefits of ML-Cube arise from our thorough analysis of ML accelerator internals. Rather than treating the accelerators as black boxes, we dissect their operating mechanisms and design tailored mathematical transformations for cryptographic acceleration. This enables memory-less (I)NTT and polynomial multiplication that minimizes external memory dependencies and reduces latency. We further address the high latency and excessive parallelism demands of traditional SIMT-based implementations by fully parallelizing both ML-KEM and ML-DSA schemes. Our experiments show that our Tensor Core-based (I)NTT achieves a 2.03x--3.56x speedup over a highly-optimized CUDA-core implementation. Moreover, our memory-less polynomial multiplication attains a 10x speedup, and the full ML-KEM reaches up to a 3.58x speedup with only less than one-tenth of the latency compared with SOTA approach (CHES '24). Additionally, our enhanced ML-DSA implementation offers a 30% to 55% throughput improvement over the previous SOTA methods (TDSC '24) under the server-oriented model. Importantly, by confining core computations within registers, our approach inherently mitigates memory disclosure and cache-based side-channel attacks, thereby enhancing overall security.",
+  "abstract_source_id": "src-abstract-ccs-2025-487d8f92",
   "venue": "ccs",
   "year": 2025,
   "track_or_session": "Cycle 2",
@@ -253,6 +255,19 @@
         "published-order authors",
         "publication-time affiliations",
         "publication date and page span"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2025-487d8f92",
+      "url": "https://api.openalex.org/works/doi:10.1145/3719027.3765130?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "ML-Cube: Accelerating Module-Lattice-Based Cryptography using Machine Learning Accelerators with a Memory-Less Design",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:15:11Z",
+      "content_hash": "sha256:ae3819cb4c50de44e9cdf26a1c4de22c8bcdade076e1ae64efb00a1d691c48a2",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

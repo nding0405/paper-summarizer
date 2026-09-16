@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2026-augmented-shuffle-differential-privacy-protocols-for-lar-03bde753",
   "title": "Augmented Shuffle Differential Privacy Protocols for Large-Domain Categorical and Key-Value Data",
+  "abstract": "Shuffle DP (Differential Privacy) protocols provide high accuracy and privacy by introducing a shuffler who randomly shuffles data in a distributed system. However, most shuffle DP protocols are vulnerable to two attacks: collusion attacks by the data collector and users and data poisoning attacks. A recent study addresses this issue by introducing an augmented shuffle DP protocol, where users do not add noise and the shuffler performs random sampling and dummy data addition. However, it focuses on frequency estimation over categorical data with a small domain and cannot be applied to a large domain due to prohibitively high communication and computational costs.\n\nIn this paper, we fill this gap by introducing a novel augmented shuffle DP protocol called the FME (Filtering-with-Multiple-Encryption) protocol. Our FME protocol uses a hash function to filter out unpopular items and then accurately calculates frequencies for popular items. To perform this within one round of interaction between users and the shuffler, our protocol carefully communicates within a system using multiple encryption. We also apply our FME protocol to more advanced KV (Key-Value) statistics estimation with an additional technique to reduce bias. For both categorical and KV data, we prove that our protocol provides computational DP, high robustness to the above two attacks, accuracy, and efficiency. We show the effectiveness of our proposals through comparisons with twelve existing protocols.",
+  "abstract_source_id": "src-abstract-ndss-2026-03bde753",
   "venue": "ndss",
   "year": 2026,
   "track_or_session": "Summer submission cycle",
@@ -139,6 +141,19 @@
       "official": false,
       "supports": [
         "independent proceedings identity reconciliation"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2026-03bde753",
+      "url": "https://www.ndss-symposium.org/ndss-paper/augmented-shuffle-differential-privacy-protocols-for-large-domain-categorical-and-key-value-data/",
+      "kind": "paper-page",
+      "title": "Augmented Shuffle Differential Privacy Protocols for Large-Domain Categorical and Key-Value Data",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:21:17Z",
+      "content_hash": "sha256:4e30514711ebc6fbcbc93a31d74874423eb7776c4dfca2a84187fd46ec01d255",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

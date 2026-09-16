@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2023-un-rocking-drones-foundations-of-acoustic-injection-atta-e1bc247a",
   "title": "Un-Rocking Drones: Foundations of Acoustic Injection Attacks and Recovery Thereof",
+  "abstract": "Drones equipped with microelectromechanical system (MEMS) inertial measurement unit (IMU) sensors are exposed to acoustic injection attacks. These attacks resonate sensors, compromising their output and causing drones to crash. Several mitigation strategies have been proposed; however, they are limited in terms of practicality as they cannot make the drone fly to its planned destination in the event of an attack.\n\nTo remedy this, we aim at recovering the compromised sensor values for the practical mitigation of acoustic injection attacks. To achieve this, we first constructed a realistic testbed and delved into the implications of resonant MEMS sensors on drones. We discovered that sampling jitter, which refers to the inconsistent timing delay in retrieving sensor values, has a significant impact on drone crashes during the attack. Note that while any real-time system needs to satisfy its real-time requirements, it does have sampling jitter owing to manufacturing errors or scheduling/operational overheads. The sampling jitter is negligible in terms of real-time requirements; however, we found that it became critical for drones being attacked. This is because the sampling jitter spreads the resonant sensor signals into the in-band range of the drones’ control logic, thereby neutralizing the drones’ safety mechanisms, such as a low-pass filter.\n\nConsidering the resonant signals affected by sampling jitter as noise, we developed a novel mitigation strategy that leverages a noise reduction technique, namely a denoising autoencoder. This approach recovers benign sensor signals from compromised ones for the resonant MEMS IMU sensors, without requiring other supplementary sensors. We implemented this prototype, termed UNROCKER , and demonstrated its capability through a series of experiments reflecting real-world scenarios. To facilitate future research, we released our source code and experimental data.",
+  "abstract_source_id": "src-abstract-ndss-2023-e1bc247a",
   "venue": "ndss",
   "year": 2023,
   "track_or_session": "Cyber-Physical Systems Security I",
@@ -189,6 +191,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2023-e1bc247a",
+      "url": "https://www.ndss-symposium.org/ndss-paper/un-rocking-drones-foundations-of-acoustic-injection-attacks-and-recovery-thereof/",
+      "kind": "paper-page",
+      "title": "Un-Rocking Drones: Foundations of Acoustic Injection Attacks and Recovery Thereof",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:17:31Z",
+      "content_hash": "sha256:630af493f6f7d7ad66c6b2ed42590ec494d8d96561081dfda30956988ea32850",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

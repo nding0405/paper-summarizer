@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2024-fuzzcache-optimizing-web-application-fuzzing-through-sof-4584b7b7",
   "title": "FuzzCache: Optimizing Web Application Fuzzing Through Software-Based Data Cache",
+  "abstract": "Fuzzing has shown great promise in detecting vulnerabilities in server-side web applications. In this work, we introduce an innovative software-based data cache mechanism that complements and improves all existing web application fuzzing tools. Our key observation is that a great proportion of execution time (e.g., 50%) of web applications is spent on fetching data from two major sources: database and network; our in-depth investigation reveals that the same data is often repeatedly fetched across fuzzing trials. We thus design a new solution, FuzzCache, that stores the data into software-based caches, mitigating the need for repeated and expensive data fetches. FuzzCache exposes the cached data across fuzzing trials through inter-process shared memory segments. It also, as the first work, incorporates just-in-time compilation to avoid the performance overhead associated with interpreting PHP code in real time, thereby enhancing execution efficiency.",
+  "abstract_source_id": "src-abstract-ccs-2024-4584b7b7",
   "venue": "ccs",
   "year": 2024,
   "track_or_session": "Cycle 1",
@@ -117,6 +119,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2024-4584b7b7",
+      "url": "https://api.openalex.org/works/doi:10.1145/3658644.3670278?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "FuzzCache: Optimizing Web Application Fuzzing Through Software-Based Data Cache",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:10:07Z",
+      "content_hash": "sha256:e6c9b577986f64c286d9e8cd88fe448e1026f7305680c12b448a043d1f2c9291",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

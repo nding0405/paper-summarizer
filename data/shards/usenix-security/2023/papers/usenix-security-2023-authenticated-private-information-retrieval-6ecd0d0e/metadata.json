@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2023-authenticated-private-information-retrieval-6ecd0d0e",
   "title": "Authenticated private information retrieval",
+  "abstract": "This paper introduces protocols for authenticated private information retrieval. These schemes enable a client to fetch a record from a remote database server such that (a) the server does not learn which record the client reads, and (b) the client either obtains the \"authentic\" record or detects server misbehavior and safely aborts. Both properties are crucial for many applications. Standard private-information-retrieval schemes either do not ensure this form of output authenticity, or they require multiple database replicas with an honest majority. In contrast, we offer multi-server schemes that protect security as long as at least one server is honest. Moreover, if the client can obtain a short digest of the database out of band, then our schemes require only a single server. Performing an authenticated private PGP-public-key lookup on an OpenPGP key server's database of 3.5 million keys (3 GiB), using two non-colluding servers, takes under 1.2 core-seconds of computation, essentially matching the time taken by unauthenticated private information retrieval. Our authenticated single-server schemes are 30-100× more costly than state-of-the-art unauthenticated single-server schemes, though they achieve incomparably stronger integrity properties.",
+  "abstract_source_id": "src-abstract-usenix-security-2023-6ecd0d0e",
   "venue": "usenix-security",
   "year": 2023,
   "track_or_session": "Private Record Access",
@@ -154,6 +156,19 @@
       "official": true,
       "supports": [
         "authors, affiliations when published, abstract, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2023-6ecd0d0e",
+      "url": "https://www.usenix.org/conference/usenixsecurity23/presentation/colombo",
+      "kind": "paper-page",
+      "title": "Authenticated private information retrieval",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:09:53Z",
+      "content_hash": "sha256:c1eae8585a8599656a9d840460093a61f138bb62ca89204db6f9f8facce1d72f",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

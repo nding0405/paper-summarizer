@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "atc-2025-crosspipe-towards-optimal-pipeline-schedules-for-cross-d-fd8714ec",
   "title": "CrossPipe: Towards Optimal Pipeline Schedules for Cross-Datacenter Training",
+  "abstract": "Training large language models (LLMs) now requires resources that exceed a single datacenter, making cross-datacenter strategies increasingly crucial. We present CrossPipe, a framework designed to optimize model training across geographically distributed datacenters by explicitly modeling and mitigating the impact of network latency and limited bandwidth. It enables unified analysis and optimization incorporating both pipeline parallelism (PP) and opportunities for overlapping data parallelism (DP) communication. CrossPipe generates optimized pipeline schedules using either solver-based optimal or fast near-optimal greedy algorithms, built upon a flexible execution engine that separates scheduling logic from communication details. Our evaluation shows that CrossPipe reduces training time by up to 33.6% compared to traditional pipeline schedules under identical memory constraints. When memory constraints are relaxed, CrossPipe maintains strong performance despite communication delays, approaching the efficiency of idealized schedules without delays. CrossPipe offers improved scalability and resource utilization, particularly in environments with high network latency or limited bandwidth.",
+  "abstract_source_id": "src-abstract-atc-2025-fd8714ec",
   "venue": "atc",
   "year": 2025,
   "track_or_session": "Scaling Complex Models: Distribution, Heterogeneity, and Efficiency",
@@ -159,6 +161,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-atc-2025-fd8714ec",
+      "url": "https://www.usenix.org/conference/atc25/presentation/chen-tiancheng",
+      "kind": "paper-page",
+      "title": "CrossPipe: Towards Optimal Pipeline Schedules for Cross-Datacenter Training",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T21:59:33Z",
+      "content_hash": "sha256:e0c39f344b983c8c91635f230b8ee3e93c68b66ccfed0229d13677e4b4511605",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

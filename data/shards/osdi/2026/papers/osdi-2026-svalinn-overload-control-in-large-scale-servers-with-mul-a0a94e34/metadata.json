@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2026-svalinn-overload-control-in-large-scale-servers-with-mul-a0a94e34",
   "title": "Svalinn: Overload Control in Large-Scale Servers with Multiple Resource Bottlenecks",
+  "abstract": "Modern overload controllers treat application binaries as monoliths and react to aggregate performance, a misconception we call the single-queue fallacy . Real applications have diverse, data-dependent execution paths that stress different resources. Reacting to overall performance forces the controller to focus on the most bottlenecked resource while leaving others underutilized.\n\nWe present Svalinn, a modular overload controller designed to maximize utilization across multiple potential bottlenecks such as CPU, memory bandwidth, and contended locks. Svalinn separates throughput control and latency control. A credit-based admission controller regulates offered load to maximize a user-defined utility function. Per-bottleneck controllers then enforce latency targets using Active Queue Management (AQM) policies. While AQM is straightforward for resources with explicit software queues, managing memory-bandwidth-intensive operations is challenging due to the absence of such queues. To handle this case, we introduce m s emaphore, which adaptively limits the number of concurrent memory-bandwidth-intensive requests to achieve high memory-bandwidth utilization using the minimum necessary CPU cores. We integrate Svalinn into four applications and two runtimes and show that it improves goodput by up to 6.51× without compromising latency.",
+  "abstract_source_id": "src-abstract-osdi-2026-a0a94e34",
   "venue": "osdi",
   "year": 2026,
   "track_or_session": "Tooling Potpourri",
@@ -125,6 +127,19 @@
       "official": true,
       "supports": [
         "Official proceedings availability and canonical conference versions."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2026-a0a94e34",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/pardeshi",
+      "kind": "paper-page",
+      "title": "Svalinn: Overload Control in Large-Scale Servers with Multiple Resource Bottlenecks",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:09:03Z",
+      "content_hash": "sha256:bea19006743956541a8497a34b61010dae137276274b53f5f62b006ad3c57045",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

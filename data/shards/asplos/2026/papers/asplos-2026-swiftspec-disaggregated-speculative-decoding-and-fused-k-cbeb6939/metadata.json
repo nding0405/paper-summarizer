@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2026-swiftspec-disaggregated-speculative-decoding-and-fused-k-cbeb6939",
   "title": "SwiftSpec: Disaggregated Speculative Decoding and Fused Kernels for Low-Latency LLM Inference",
+  "abstract": "Low-latency, single-request decoding of large language models is critical for interactive systems with tight SLA demands. Prior work reduces latency through speculative decoding (combining a small draft model with a larger target model), but the draft model remains on the critical path, and communication overhead limits scaling across GPUs due to the small batch size associated with single-request decoding. To address these limitations, this paper introduces SwiftSpec: a system architecture that disaggregates draft and target models across homogeneous GPUs within a single node and utilizes NCCL-low-latency primitives directly to improve the performance of core GEMM and attention kernels. Our implementation includes 3k lines of custom CUDA for fused kernels and an evolving tree cache for KV-cache consistency and maximized reuse between draft and target models. On a single 8×H800 GPU node, SwiftSpec achieves 347 tokens/s for Llama-3-70B---1.3× faster than NVIDIA's own benchmarks on a higher-performance 8×H200 setup---and averages 1.75× faster decoding than state-of-the-art speculative decoding across five model families and six datasets. Specifically, we find that for Llama-3-70B SwiftSpec is significantly faster across all 480 tested queries, showing 1.7× speedup over the best open-source baseline for 95th percentile requests. Code for SwiftSpec will be available at https://github.com/ByteDance-Seed/SwiftSpec",
+  "abstract_source_id": "src-abstract-asplos-2026-cbeb6939",
   "venue": "asplos",
   "year": 2026,
   "track_or_session": "Session 2B: Speculative Decoding",
@@ -230,6 +232,19 @@
       "official": false,
       "supports": [
         "Indexed abstract used for strict relevance classification and indexed arXiv identifier where available."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2026-cbeb6939",
+      "url": "https://api.openalex.org/works/doi:10.1145/3779212.3790246?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "SwiftSpec: Disaggregated Speculative Decoding and Fused Kernels for Low-Latency LLM Inference",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:06:39Z",
+      "content_hash": "sha256:84bb8160422df1245939d154fc1434cc30a253f88bc11de46fffce440da60104",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

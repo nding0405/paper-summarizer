@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2024-labrador-response-guided-directed-fuzzing-for-black-box-64cdc73e",
   "title": "LABRADOR: Response Guided Directed Fuzzing for Black-box IoT Devices",
+  "abstract": "Fuzzing is a popular solution to finding vulnerabilities in software including IoT firmware. However, due to the challenges of emulating or rehosting firmware, some IoT devices (e.g., enterprise-level devices) can only be fuzzed in a black-box manner, which makes fuzzers blind and inefficient due to missing feedbacks (e.g., code coverage or distance). In this paper, we present a novel response guided directed fuzzing solution Labrador, able to test black-box IoT devices efficiently. Specifically, we leverage the network response to infer the execution trace of firmware and deduce the code coverage of testing. Second, we leverage the test case (i.e., request) and its response to estimate the distance to the target sensitive code (i.e., sink). Lastly, we further leverage the distance to guide test case mutation, which efficiently drives directed fuzzing toward candidate vulnerable code. We have implemented a prototype of Labrador and evaluated it on 14 different enterprise-level IoT devices. Results showed that Labrador significantly outperforms state-of-the-art (SOTA) solutions. It finds 44X more vulnerabilities than SNIPUZZ, BOOFUZZ and FIRM-AFL and 8.57X more vulnerabilities than SaTC. In total, it discovered 79 unknown vulnerabilities, of which 61 were assigned with CVEs.",
+  "abstract_source_id": "src-abstract-sp-2024-64cdc73e",
   "venue": "sp",
   "year": 2024,
   "track_or_session": "Summer cycle",
@@ -222,6 +224,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2024-64cdc73e",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Labrador: Response Guided Directed Fuzzing for Black-box IoT Devices",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:32Z",
+      "content_hash": "sha256:be7515012a8c1ea1211f38a27ea4d2aa9cff6e0faac9417a2f58b1d64e91280e",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

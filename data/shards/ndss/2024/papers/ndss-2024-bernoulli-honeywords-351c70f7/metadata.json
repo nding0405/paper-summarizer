@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2024-bernoulli-honeywords-351c70f7",
   "title": "Bernoulli Honeywords",
+  "abstract": "Decoy passwords, or \"honeywords,\" planted in a credential database can alert a site to its breach if ever submitted in a login attempt. To be effective, some honeywords must appear at least as likely to be user-chosen passwords as the real ones, and honeywords must be very difficult to guess without having breached the database, to prevent false breach alarms. These goals have proved elusive, however, for heuristic honeyword generation algorithms. In this paper we explore an alternative strategy in which the defender treats honeyword selection as a Bernoulli process in which each possible password (except the user-chosen one) is selected as a honeyword independently with some fixed probability. We show how Bernoulli honeywords can be integrated into two existing system designs for leveraging honeywords: one based on a honeychecker that stores the secret index of the user-chosen password in the list of account passwords, and another that does not leverage secret state at all. We show that Bernoulli honeywords enable analytic derivation of false breach-detection probabilities irrespective of what information the attacker gathers about the sites' users; that their true and false breach-detection probabilities demonstrate compelling efficacy; and that Bernoulli honeywords can even enable performance improvements in modern honeyword system designs.",
+  "abstract_source_id": "src-abstract-ndss-2024-351c70f7",
   "venue": "ndss",
   "year": 2024,
   "track_or_session": "Summer submission cycle",
@@ -105,6 +107,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2024-351c70f7",
+      "url": "https://www.ndss-symposium.org/ndss-paper/bernoulli-honeywords/",
+      "kind": "paper-page",
+      "title": "Bernoulli Honeywords",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:17:42Z",
+      "content_hash": "sha256:8003ae310911e0d570b5a225e775fd7d10c5a35bedc8e4a1df13345a56290c3d",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-genhuzz-an-efficient-generative-hardware-fuzzer-ce786280",
   "title": "GenHuzz: An Efficient Generative Hardware Fuzzer",
+  "abstract": "Hardware security is crucial for ensuring trustworthy computing systems. However, the growing complexity of hardware designs has introduced new vulnerabilities that are challenging and expensive to address after fabrication. Hardware fuzz testing, particularly whitebox fuzzing, is promising for scalable and adaptable hardware vulnerability detection. Despite its potential, existing hardware fuzzers face significant challenges, including the complexity of input semantics, limited feedback utilization, and the need for extensive test cases.\n\nTo address these limitations, we propose GenHuzz, a novel white-box hardware fuzzing framework that reframes fuzzing as an optimization problem by optimizing the fuzzing policy to generate more subtle and effective test cases for vulnerability and bug detection. GenHuzz utilizes a language model-based fuzzer to intelligently generate RISC-V assembly instructions, which are then dynamically optimized through a Hardware-Guided Reinforcement Learning framework incorporating real-time feedback from the hardware. GenHuzz is uniquely capable of understanding and exploiting complex interdependencies between instructions, enabling the discovery of deeper bugs and vulnerabilities. Our evaluation of three RISC-V cores demonstrates that GenHuzz achieves significantly higher hardware coverage with fewer test cases than four state-of-the-art fuzzers. GenHuzz detects all known bugs reported in existing studies with fewer test cases. Furthermore, it uncovers 10 new vulnerabilities, 5 of which are the most severe hardware vulnerabilities ever detected by a hardware fuzzer targeting the same cores, with CVSS v3 severity scores exceeding 7.3 out of 10.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-ce786280",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Embedded and Hardware Security",
@@ -154,6 +156,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-ce786280",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/wu-lichao",
+      "kind": "paper-page",
+      "title": "GenHuzz: An Efficient Generative Hardware Fuzzer",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:20:04Z",
+      "content_hash": "sha256:fcae158c8a6ef3a8b83f94eac9671e05b465b0fc78bf30d0830cf8ffa9dc00da",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

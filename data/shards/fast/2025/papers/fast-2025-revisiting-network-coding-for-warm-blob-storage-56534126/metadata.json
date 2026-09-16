@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "fast-2025-revisiting-network-coding-for-warm-blob-storage-56534126",
   "title": "Revisiting Network Coding for Warm Blob Storage",
+  "abstract": "Minimum-storage regenerating (MSR) codes are repair-optimal erasure codes that minimize the bandwidth for repairing a failed node, while minimizing the storage redundancy necessary for fault tolerance. Recent studies in the literature, both from coding theory and systems communities, mainly examine MSR codes in systematic form, which keeps the original data blocks as part of the encoded blocks for direct access. However, systematic MSR codes manage encoded blocks at the sub-block granularity and access non-contiguous sub-blocks during repairs to achieve bandwidth optimality. Thus, their actual repair performance is impaired by non-contiguous I/Os, especially when the block size is small. In this paper, we explore how non-systematic MSR codes, which generate purely coded blocks based on random linear coding in the classical network coding theory, can improve I/O efficiency in repair for practical warm blob (binary large object) storage systems that are dominated by a large fraction of small blobs. To this end, we design NCBlob, a network-coding-based warm blob storage system that encodes small blobs non-systematic MSR codes to achieve high repair performance, while leveraging the access locality of small blobs to maintain high normal read performance. Experiments on Alibaba Cloud show that NCBlob reduces the single-block repair time by up to 45.0%, and the full-node repair time by up to 38.4%, with as low as 2.1% read throughput loss, compared with state-of-the-art systematic MSR codes.",
+  "abstract_source_id": "src-abstract-fast-2025-56534126",
   "venue": "fast",
   "year": 2025,
   "track_or_session": "Cloud Storage",
@@ -182,6 +184,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-fast-2025-56534126",
+      "url": "https://www.usenix.org/conference/fast25/presentation/gan",
+      "kind": "paper-page",
+      "title": "Revisiting Network Coding for Warm Blob Storage",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:01:15Z",
+      "content_hash": "sha256:4571388cd09153fdb4e0de0c7463b3930fc5312e63d4e37a3416f728d231d31f",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

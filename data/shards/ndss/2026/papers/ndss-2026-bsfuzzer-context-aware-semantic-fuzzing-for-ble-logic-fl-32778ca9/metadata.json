@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2026-bsfuzzer-context-aware-semantic-fuzzing-for-ble-logic-fl-32778ca9",
   "title": "BSFuzzer: Context-Aware Semantic Fuzzing for BLE Logic Flaw Detection",
+  "abstract": "Bluetooth Low Energy (BLE) has become a foundational communication standard for modern connected devices. However, its complex design introduces subtle logic flaws, such as misinterpreted fields or invalid state transitions, that can enable authentication bypass, unauthorized control, or Denial-of-Service (DoS) attacks. These issues often evade conventional fuzzing and formal analysis.\n\nTo address this gap, we propose BSFuzzer, a black-box, context-aware semantic fuzzing framework guided by the Bluetooth Core Specification. BSFuzzer uses a Large Language Model (LLM) agent to semantically parse the Bluetooth specification, extracting state machines and packet semantics from text, diagrams, and context. It then generates two types of mutations: field-level violations of protocol rules and state-level disruptions of key transitions. These are composed into structured test sequences and executed on target devices. The LLM agent is further used to verify responses against expected behaviors, enabling detection of subtle logic flaws beyond the reach of traditional fuzzers.\n\nWe evaluated BSFuzzer on 19 real-world BLE devices, including 9 System-on-Chip (SoC) modules and 10 smartphones. It uncovered 36 security issues, including 34 previously unknown bugs, 9 of which have received CVE identifiers. Two critical flaws were recognized by a major vendor through bug bounty programs.\n\nThe experimental results indicate that BSFuzzer attains high accuracy in both LLM-based specification analysis (up to 97%) and response validation (up to 85.8%), demonstrating its effectiveness in semantic extraction and enhancing fuzzing performance. Compared to four state-of-the-art BLE vulnerability detection tools, BSFuzzer achieved 9.34% higher code coverage and exposed a broader class of vulnerabilities, demonstrating its effectiveness in uncovering deep interpretation inconsistencies in BLE protocol implementations.",
+  "abstract_source_id": "src-abstract-ndss-2026-32778ca9",
   "venue": "ndss",
   "year": 2026,
   "track_or_session": "Fall submission cycle",
@@ -307,6 +309,19 @@
       "official": false,
       "supports": [
         "independent proceedings identity reconciliation"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2026-32778ca9",
+      "url": "https://www.ndss-symposium.org/ndss-paper/bsfuzzer-context-aware-semantic-fuzzing-for-ble-logic-flaw-detection/",
+      "kind": "paper-page",
+      "title": "BSFuzzer: Context-Aware Semantic Fuzzing for BLE Logic Flaw Detection",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:21:28Z",
+      "content_hash": "sha256:905230d801302c3fd62cc995e27653a9da61a071b46c4e2af36b4282c4f53010",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

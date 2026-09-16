@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-retrofit-continual-learning-with-controlled-forgetting-f-7b8b4030",
   "title": "Retrofit: Continual Learning with Controlled Forgetting for Binary Security Detection and Analysis",
+  "abstract": "Binary security has increasingly relied on deep learning to reason about malware behavior and program semantics. However, the performance often degrades as threat landscapes evolve and code representations shift. While continual learning (CL) offers a natural solution through sequential updates, most existing approaches rely on data replay or unconstrained updates, limiting their applicability and effectiveness in data-sensitive security environments. We propose RETROFIT, which regulates knowledge retention and adaptation with controlled forgetting at each update, without requiring historical data. Our key idea is to consolidate previously trained and newly fine-tuned models, serving as teachers of legacy and emergent knowledge, through retrospective-free parameter merging. Forgetting control is achieved by 1) constraining parameter changes to low-rank and sparse subspaces for approximate orthogonality, and 2) employing a confidence-guided arbitration mechanism to dynamically aggregate knowledge from both teachers.\n\nOur evaluation on two representative applications demonstrates that RETROFIT consistently mitigates forgetting while maintaining adaptability. In malware detection under temporal drift, it substantially improves the retention score, from 20.2% to 38.6% over CL baselines, and exceeds the oracle upper bound on new data. In binary summarization across decompilation levels, where analyzing stripped binaries is especially challenging, RETROFIT achieves over 2x the BLEU score of transfer learning used in prior work and surpasses all baselines in cross-representation generalization.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-7b8b4030",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Software Security 2",
@@ -218,6 +220,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-7b8b4030",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/he-yiling",
+      "kind": "paper-page",
+      "title": "Retrofit: Continual Learning with Controlled Forgetting for Binary Security Detection and Analysis",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:25:14Z",
+      "content_hash": "sha256:d768bf43f94a37ef1c467399777f27ebffe63df414b81787c272be7aed51dc40",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2025-state-compute-replication-parallelizing-high-speed-state-105849af",
   "title": "State-Compute Replication: Parallelizing High-Speed Stateful Packet Processing",
+  "abstract": "With the slowdown of Moore’s law, CPU-oriented packet processing in software will be significantly outpaced by emerging line speeds of network interface cards (NICs). Single-core packet-processing throughput has saturated.\n\nWe consider the problem of high-speed packet processing with multiple CPU cores. The key challenge is state—memory that multiple packets must read and update. The prevailing method to scale throughput with multiple cores involves state sharding, processing all packets that update the same state, e.g., flow, at the same core. However, given the skewed nature of realistic flow size distributions, this method is untenable, since total throughput is limited by single-core performance.\n\nThis paper introduces state-compute replication, a principle to scale the throughput of a single stateful flow across multiple cores using replication. Our design leverages a packet history sequencer running on a NIC or top-of-the-rack switch to enable multiple cores to update state without explicit synchronization. Our experiments with realistic data center and wide-area Internet traces show that state-compute replication can scale total packet-processing throughput linearly with cores, independent of flow size distributions, across a range of realistic packet-processing programs.",
+  "abstract_source_id": "src-abstract-nsdi-2025-105849af",
   "venue": "nsdi",
   "year": 2025,
   "track_or_session": "Middleboxes",
@@ -245,6 +247,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2025-105849af",
+      "url": "https://www.usenix.org/conference/nsdi25/presentation/xu-qiongwen",
+      "kind": "paper-page",
+      "title": "State-Compute Replication: Parallelizing High-Speed Stateful Packet Processing",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:04:38Z",
+      "content_hash": "sha256:39c0fa989c7992911a964f56cc42c707d053d62d620682027d29b58feee2fd9d",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

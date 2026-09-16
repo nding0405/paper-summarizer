@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2024-block-ciphers-in-idealized-models-automated-proofs-and-n-f7c5d3b2",
   "title": "Block Ciphers in Idealized Models: Automated Proofs and New Security Results",
+  "abstract": "We develop and implement AlgoROM, a tool to systematically analyze the security of a wide class of symmetric primitives in idealized models of computation. The schemes that we consider are those that can be expressed over an alphabet consisting of XOR and function symbols for hash functions, permutations, or block ciphers. We implement our framework in OCaml and apply it to a number of prominent constructions, which include the Luby-Rackoff (LR), key-alternating Feistel (KAF), and iterated Even-Mansour (EM) ciphers, as well as substitution-permutation networks (SPN). The security models we consider are (S)PRP, and strengthenings thereof under related-key (RK), key-dependent message (KD), and more generally key-correlated (KC) attacks. Using AlgoROM, we are able to reconfirm a number of classical and previously established security theorems, and in one case we identify a gap in a proof from the literature (Connolly et al., ToSC'19). However, most results that we prove with AlgoROM are new. In particular, we obtain new positive results for LR, KAF, EM, and SPN in the above models. Our results better reflect the configurations actually implemented in practice, as they use a single idealized primitive. In contrast to many existing tools, our automated proofs do not operate in symbolic models, but rather in the standard probabilistic model for cryptography.",
+  "abstract_source_id": "src-abstract-ccs-2024-f7c5d3b2",
   "venue": "ccs",
   "year": 2024,
   "track_or_session": "Cycle 2",
@@ -138,6 +140,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2024-f7c5d3b2",
+      "url": "https://api.openalex.org/works/doi:10.1145/3658644.3690222?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Block Ciphers in Idealized Models: Automated Proofs and New Security Results",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:09:04Z",
+      "content_hash": "sha256:40bbe868645efc64966cd78b7c517da626003ad8b3cf42d6c32e48d27121d90d",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

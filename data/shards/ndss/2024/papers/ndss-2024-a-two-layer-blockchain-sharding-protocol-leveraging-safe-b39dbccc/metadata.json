@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2024-a-two-layer-blockchain-sharding-protocol-leveraging-safe-b39dbccc",
   "title": "A Two-Layer Blockchain Sharding Protocol Leveraging Safety and Liveness for Enhanced Performance",
+  "abstract": "Sharding is a critical technique that enhances the scalability of blockchain technology. However, existing protocols often assume adversarial nodes in a general term without considering the different types of attacks, which limits transaction throughput at runtime because attacks on liveness could be mitigated. There have been attempts to increase transaction throughput by separately handling the attacks; however, they have security vulnerabilities. This paper introduces Reticulum, a novel sharding protocol that overcomes these limitations and achieves enhanced scalability in a blockchain network without security vulnerabilities.\n\nReticulum employs a two-phase design that dynamically adjusts transaction throughput based on runtime adversarial attacks on either or both liveness and safety. It consists of ‘control’ and ‘process’ shards in two layers corresponding to the two phases. Process shards are subsets of control shards, with each process shard expected to contain at least one honest node with high confidence. Conversely, control shards are expected to have a majority of honest nodes with high confidence. Reticulum leverages unanimous voting in the first phase to involve fewer nodes in accepting/rejecting a block, allowing more parallel process shards. The control shard finalizes the decision made in the first phase and serves as a lifeline to resolve disputes when they surface.\n\nExperiments demonstrate that the unique design of Reticulum empowers high transaction throughput and robustness in the face of different types of attacks in the network, making it superior to existing sharding protocols for blockchain networks.",
+  "abstract_source_id": "src-abstract-ndss-2024-b39dbccc",
   "venue": "ndss",
   "year": 2024,
   "track_or_session": "Fall submission cycle",
@@ -168,6 +170,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2024-b39dbccc",
+      "url": "https://www.ndss-symposium.org/ndss-paper/a-two-layer-blockchain-sharding-protocol-leveraging-safety-and-liveness-for-enhanced-performance/",
+      "kind": "paper-page",
+      "title": "A Two-Layer Blockchain Sharding Protocol Leveraging Safety and Liveness for Enhanced Performance",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:17:35Z",
+      "content_hash": "sha256:f55c503e07e38084032eb221f70d0df20fa4474098dfb7c792211c948b57a367",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

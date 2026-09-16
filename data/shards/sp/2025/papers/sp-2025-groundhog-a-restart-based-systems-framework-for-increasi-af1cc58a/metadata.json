@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2025-groundhog-a-restart-based-systems-framework-for-increasi-af1cc58a",
   "title": "Groundhog: A Restart-based Systems Framework for Increasing Availability in Threshold Cryptosystems",
+  "abstract": "Threshold cryptosystems (TCs), developed to eliminate single points of failure in applications such as key management-as-a-service, signature schemes, encrypted data storage and even blockchain applications, rely on the assumption that an adversary does not corrupt more than a fixed number of nodes in a network. This assumption, once broken, can lead to the entire system being compromised. In this paper, we present a systems-level solution, viz., a reboot-based framework, Groundhog, that adds a layer of resiliency on top of threshold cryptosystems (as well as others); our framework ensures the system can be protected against malicious (mobile) adversaries that can corrupt up all but one device in the network. Groundhog ensures that a sufficient number of honest devices is always available to ensure the availability of the entire system. Our framework is general-izable to multiple threshold cryptosystems - we demonstrate this by integrating it with two well-known TC protocols - the Distributed Symmetric key Encryption system (DiSE) and the Boneh, Lynn and Shacham Distributed Signatures (BLS) system. In fact, Groundhog may have applicability in systems beyond those based on threshold cryptography - we demonstrate this on a simpler cryptographic protocol that we developed named PassAround11In fact, this protocol was suggested by a USENIX Security reviewer that we then refined, implemented and evaluated in conjunction with Groundhog (see §6). . We developed a (generalizable) container-based framework that can be used to combine Groundhog (and its guarantees) with cryptographic protocols and evaluated our system using, ($a$) case studies of real world attacks as well as ($b$) extensive measurements by implementing the aforementioned DiSE, BLS and PassAround protocols on Groundhog. We show that Groundhog is able to guarantee high availability with minimal overheads (less than 7%). In some instances, Groundhog actually improves the performance of the TC schemes!22While it seems counter-intuitive, we explain the reasoning in §5.",
+  "abstract_source_id": "src-abstract-sp-2025-af1cc58a",
   "venue": "sp",
   "year": 2025,
   "track_or_session": "Cycle 1",
@@ -175,6 +177,19 @@
       "official": true,
       "supports": [
         "DOI, authors, affiliations, abstract, publication date, pages, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2025-af1cc58a",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Groundhog: A Restart-Based Systems Framework for Increasing Availability in Threshold Cryptosystems",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:47Z",
+      "content_hash": "sha256:d48e5e27e72297ce02860f066764bd9c5cd6e8191e2ebf4b4f15da0fffb6959f",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2026-dvla-dynamic-vm-lifetime-aware-scheduling-for-drifting-l-fcad6a66",
   "title": "DVLA: Dynamic VM Lifetime Aware Scheduling for Drifting Lifetime Distributions and Long-Lived VM Placement Debt (Operational Systems)",
+  "abstract": "Efficient Virtual Machine (VM) scheduling is critical for maximizing resource utilization in cloud computing. However, state-of-the-art lifetime-aware schedulers face two critical issues in real-world deployments. First, their static policies are brittle against the significant spatial and temporal drifts of VM lifetime distributions . Second, and more insidiously, their placement strategies inadvertently scatter long-lived VMs, creating a persistent long-lived VM placement debt . This debt, compounded by inevitable prediction errors, pins down machines and cripples cluster-wide resource reclamation, and cannot be repaid by online scheduling alone.\n\nTo address these challenges, we present Dynamic VM Lifetime Aware scheduling (DVLA) , an end-to-end system that synergistically combines online scheduling with offline rectification. DVLA comprises four key components: (1) a Hierarchical Lifetime Prediction Model that delivers multi-horizon predictions to inform both initial placement and offline optimization; (2) a Dynamic Affinity Grouping strategy that adapts to workload distribution drifts in real time; (3) a Debt-Aware Placement Policy (DAPP) that proactively consolidates long-lived VMs to minimize debt creation at the source; and (4) a Placement Debt Rectification Engine (PDRE) that employs strategic live migrations to amortize accumulated debt offline. Extensive trace-driven simulations and a large-scale production deployment at Alibaba Cloud demonstrate that DVLA consistently outperforms state-of-the-art methods, achieving an additional 0.6 percentage points in packing density. This translates to saving thousands of machines in production, delivering substantial cost reductions.",
+  "abstract_source_id": "src-abstract-osdi-2026-fcad6a66",
   "venue": "osdi",
   "year": 2026,
   "track_or_session": "Fleet and Cluster Scheduling",
@@ -293,6 +295,19 @@
       "official": true,
       "supports": [
         "Official proceedings availability and canonical conference versions."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2026-fcad6a66",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/zhang-zhengtong",
+      "kind": "paper-page",
+      "title": "DVLA: Dynamic VM Lifetime Aware Scheduling for Drifting Lifetime Distributions and Long-Lived VM Placement Debt (Operational Systems)",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:08:13Z",
+      "content_hash": "sha256:19224c6fd11ada3ea6297e16f6ed6b4e23eb0b236e9de13334179177fafad97b",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

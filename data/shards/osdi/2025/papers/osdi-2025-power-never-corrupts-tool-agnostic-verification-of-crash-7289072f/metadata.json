@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2025-power-never-corrupts-tool-agnostic-verification-of-crash-7289072f",
   "title": "PoWER Never Corrupts: Tool-Agnostic Verification of Crash Consistency and Corruption Detection",
+  "abstract": "Storage systems must maintain integrity even after rare and difficult-to-test-for conditions like power losses and media errors. Formal verification presents a promising avenue to ensure storage systems are resilient, but current approaches involve significant complexity and rely on verification constructs or forms of logic beyond what most verifiers natively support. In this paper, we present two new verification techniques that rely only on standard constructs provided by most verification tools such as Hoare logic, ghost variables, and quantifiers. First, we introduce PoWER (Preconditions on Writes Enforcing Recoverability), a novel approach to verifying crash consistency that encodes its requirements in the preconditions of storage API methods. Second, we present a new model of media corruption for provable corruption detection on any type of storage device. To demonstrate the power of these new techniques, we use them to build two verified storage systems using two different verification frameworks. We build and verify the key-value (KV) store CapybaraKV using Verus and the notary server CapybaraNS using Dafny. Both systems are built for persistent memory (PM), which we target due to new challenges it presents to building resilient storage systems. We develop new techniques to address these challenges, including the corruption-detecting Boolean , a new primitive for atomic checksum updates. Both systems verify in under a minute, and CapybaraKV achieves performance competitive with similar unverified PM KV stores.",
+  "abstract_source_id": "src-abstract-osdi-2025-7289072f",
   "venue": "osdi",
   "year": 2025,
   "track_or_session": "File and Storage Systems",
@@ -222,6 +224,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2025-7289072f",
+      "url": "https://www.usenix.org/conference/osdi25/presentation/leblanc",
+      "kind": "paper-page",
+      "title": "PoWER Never Corrupts: Tool-Agnostic Verification of Crash Consistency and Corruption Detection",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:07:44Z",
+      "content_hash": "sha256:c2c35824ad7779fd1566be5f09bf076c133914428a0a33b0a0fc68994f6b4217",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

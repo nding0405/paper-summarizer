@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2024-elephants-do-not-forget-differential-privacy-with-state-8cce8ab6",
   "title": "Elephants Do Not Forget: Differential Privacy with State Continuity for Privacy Budget",
+  "abstract": "Current implementations of differentially-private (DP) systems either lack support to track the global privacy budget consumed on a dataset, or fail to faithfully maintain the state continuity of this budget. We show that failure to maintain a privacy budget enables an adversary to mount replay, rollback and fork attacks --- obtaining answers to many more queries than what a secure system would allow. As a result the attacker can reconstruct secret data that DP aims to protect --- even if DP code runs in a Trusted Execution Environment (TEE). We propose ElephantDP, a system that aims to provide the same guarantees as a trusted curator in the global DP model would, albeit set in an untrusted environment. Our system relies on a state continuity module to provide protection for the privacy budget and a TEE to faithfully execute DP code and update the budget. To provide security, our protocol makes several design choices including the content of the persistent state and the order between budget updates and query answers. We prove that ElephantDP provides liveness (i.e., the protocol can restart from a correct state and respond to queries as long as the budget is not exceeded) and DP confidentiality (i.e., an attacker learns about a dataset as much as it would from interacting with a trusted curator). Our implementation and evaluation of the protocol use Intel SGX as a TEE to run the DP code and a network of TEEs to maintain state continuity. Compared to an insecure baseline, we observe 1.1--3.2× overheads and lower relative overheads for complex DP queries.",
+  "abstract_source_id": "src-abstract-ccs-2024-8cce8ab6",
   "venue": "ccs",
   "year": 2024,
   "track_or_session": "Cycle 1",
@@ -201,6 +203,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2024-8cce8ab6",
+      "url": "https://api.openalex.org/works/doi:10.1145/3658644.3670281?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Elephants Do Not Forget: Differential Privacy with State Continuity for Privacy Budget",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:10:02Z",
+      "content_hash": "sha256:3093bc06e3198dde676f6e6a47572e6d6d57400cfb1fd84d429f1264d6e1b73b",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

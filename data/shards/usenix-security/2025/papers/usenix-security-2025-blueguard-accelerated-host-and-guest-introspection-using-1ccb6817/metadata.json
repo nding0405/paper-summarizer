@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-blueguard-accelerated-host-and-guest-introspection-using-1ccb6817",
   "title": "BlueGuard: Accelerated Host and Guest Introspection Using DPUs",
+  "abstract": "Virtual Machine Introspection (VMI) is an essential technique for monitoring the runtime state of a virtual machine. VMI systems are widely used by major cloud providers as they enable a range of applications, such as malware detection. Unfortunately, existing VMI systems suffer from several shortcomings: they either compete with the introspected VMs for shared CPU resources or report poor performance. Further, they cannot introspect hypervisors or bare metal machines.\n\nWe propose BlueGuard, a system that leverages the physically isolated Data Processing Unit (DPU) commonly found on data center servers to efficiently run full system introspection by both host and guest introspection (HGI).\n\nBlueGuard facilitates the creation of hardware-accelerated HGI applications and frees the CPU while providing performance isolation. As a beneficial side effect, BlueGuard is capable of introspecting even bare metal servers that are usually out of scope for VMI systems. Furthermore, BlueGuard abstracts the DPU accelerators and provides kernel bypassing, non-blocking memory access, and user-level threading to achieve µs-scale introspection latency. Finally, we introduce delta introspection to accelerate the detection of state changes with BlueGuard and demonstrate the ability to isolate infected machines on a network layer.\n\nWe implement and extensively evaluate BlueGuard on an NVIDIA BlueField-2 DPU. Our system achieves a 4.3x detection speedup compared to prior work and is capable of monitoring tens of VMs concurrently without hindering the host performance.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-1ccb6817",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "System Security 1: Threat Detection, Exploitation, and Adaptive Defenses",
@@ -238,6 +240,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-1ccb6817",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/orenbach",
+      "kind": "paper-page",
+      "title": "BlueGuard: Accelerated Host and Guest Introspection Using DPUs",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:18:54Z",
+      "content_hash": "sha256:325495f7ba2f145b3510c74107fee1adfec4c85d9f51ecf1c350a052964748b9",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

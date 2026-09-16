@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2025-smaug-modular-augmentation-of-llvm-for-mpc-c78306cd",
   "title": "Smaug: Modular Augmentation of LLVM for MPC",
+  "abstract": "Secure multi-party computation (MPC) is a crucial tool for privacy-preserving computation, but it is getting in-creasingly complicated due to recent advancements and opti-mizations. Programming tools for MPC allow programmers to develop MPC applications without mastering all cryptography. However, most existing MPC programming tools fail to attract real users due to the lack of documentation, maintenance, and the ability to compose with legacy codebases. In this work, we build Smaug, a modular extension of LLVM. Smaug seamlessly brings all LLVM support to MPC programmers, including error messaging, documentation, code optimization, and frontend support to compile from various languages to LLVM intermediate representation (IR). Smaug can efficiently convert non-oblivious LLVM IR to their oblivious counterparts while applying popular optimizations as LLVM code trans-formations. With benchmarks written in C++ and Rust and backends for Yao and GMW protocols, we observe that Smaug performs as well as (and sometimes much better than) prior tools using domain-specific languages with similar backends. Finally, we use Smaug to compile open-source projects that implement Minesweeper and Blackjack, producing usable two-party games with ease.",
+  "abstract_source_id": "src-abstract-sp-2025-c78306cd",
   "venue": "sp",
   "year": 2025,
   "track_or_session": "Cycle 2",
@@ -91,6 +93,19 @@
       "official": true,
       "supports": [
         "DOI, authors, affiliations, abstract, publication date, pages, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2025-c78306cd",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Smaug: Modular Augmentation of LLVM for MPC",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:52Z",
+      "content_hash": "sha256:b15ce02bcc49da611fdd791ecc56741e7d91d84154b58c1a7f72a5c6902e6e46",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

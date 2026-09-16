@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2023-gleefuzz-fuzzing-webgl-through-error-message-guided-muta-7c15497b",
   "title": "GLeeFuzz: Fuzzing WebGL Through Error Message Guided Mutation",
+  "abstract": "WebGL is a set of standardized JavaScript APIs for GPU accelerated graphics. Security of the WebGL interface is paramount because it exposes remote and unsandboxed access to the underlying graphics stack (including the native GL libraries and GPU drivers) in the host OS. Unfortunately, applying state-of-the-art fuzzing techniques to the WebGL interface for vulnerability discovery is challenging because of (1) its huge input state space, and (2) the infeasibility of collecting code coverage across concurrent processes, closed-source libraries, and device drivers in the kernel.\n\nOur fuzzing technique, GLeeFuzz, guides input mutation by error messages instead of code coverage. Our key observation is that browsers emit meaningful error messages to aid developers in debugging their WebGL programs. Error messages indicate which part of the input fails (e.g., incomplete arguments, invalid arguments, or unsatisfied dependencies between API calls). Leveraging error messages as feedback, the fuzzer effectively expands coverage by focusing mutation on erroneous parts of the input. We analyze Chrome’s WebGL implementation to identify the dependencies between error-emitting statements and rejected parts of the input, and use this information to guide input mutation. We evaluate our GLeeFuzz prototype on Chrome, Firefox, and Safari on diverse desktop and mobile OSes. We discovered 7 vulnerabilities, 4 in Chrome, 2 in Safari, and 1 in Firefox. The Chrome vulnerabilities allow a remote attacker to freeze the GPU and possibly execute remote code at the browser privilege.",
+  "abstract_source_id": "src-abstract-usenix-security-2023-7c15497b",
   "venue": "usenix-security",
   "year": 2023,
   "track_or_session": "x-Fuzz and Fuzz-x",
@@ -154,6 +156,19 @@
       "official": true,
       "supports": [
         "authors, affiliations when published, abstract, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2023-7c15497b",
+      "url": "https://www.usenix.org/conference/usenixsecurity23/presentation/peng",
+      "kind": "paper-page",
+      "title": "GLeeFuzz: Fuzzing WebGL Through Error Message Guided Mutation",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:11:14Z",
+      "content_hash": "sha256:dcb1171651a79cc7efad5ae8a80a6f8b790407b564261f1d3f73a2c77a9d2c67",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

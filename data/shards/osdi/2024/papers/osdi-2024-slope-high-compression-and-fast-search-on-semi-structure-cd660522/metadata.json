@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2024-slope-high-compression-and-fast-search-on-semi-structure-cd660522",
   "title": "μSlope: High Compression and Fast Search on Semi-Structured Logs",
+  "abstract": "Internet-scale services can produce a large amount of logs. Such logs are increasingly appearing in semi-structured formats such as JSON. At Uber, the amount of semi-structured log data can exceed 10PB/day. It is prohibitively expensive to store and analyze them. As a result, logs are only kept searchable for a few days.\n\nThis paper proposes μSlope, a system that losslessly compresses semi-structured log data, and allows search without full decompression. It concisely represents the schema structures, and only keeps this representation stored once per dataset instead of interspersing it with each record. It further \"structurizes\" the semi-structured data by grouping the records with the same schema structure into the same table, so that each table is well structured. Our evaluation shows that μSlope achieves 21.9:1 to 186.8:1 compression ratio, which is at least a few times higher than any existing semi-structured data management systems (SSDMS); The compression ratio is even 2.34x as much as Zstandard and the search speed is on 5.77x of other SSDMSes.",
+  "abstract_source_id": "src-abstract-osdi-2024-cd660522",
   "venue": "osdi",
   "year": 2024,
   "track_or_session": "Cloud Computing",
@@ -264,6 +266,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2024-cd660522",
+      "url": "https://www.usenix.org/conference/osdi24/presentation/wang-rui",
+      "kind": "paper-page",
+      "title": "μSlope: High Compression and Fast Search on Semi-Structured Logs",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:07:21Z",
+      "content_hash": "sha256:c4036bf810ca27a963458da5a5085b3f5256246ffd4572ebb83e52ae774e96d4",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

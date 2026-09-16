@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "eurosys-2026-aep-achieving-hierarchical-fault-tolerance-in-dsm-throug-0ee39e31",
   "title": "AEP: Achieving Hierarchical Fault Tolerance in DSM Through Atomic Execution Protection",
+  "abstract": "Recent advances in CXL 3.0 have revitalized Distributed Shared Memory (DSM), enabling zero-copy sharing across machine nodes at near-NUMA latency and making shared-memory communication practical for distributed applications. However, DSM memory allocators remain vulnerable to partial failures: client crashes during critical, non-atomic memory operations can corrupt metadata and stall the entire system. Existing solutions either block all clients during recovery or impose heavy runtime overhead due to distributed fault-tolerance protocols. We propose Atomic Execution Protection (AEP), a kernel-assisted fault tolerance mechanism that guarantees atomic completion of user-space critical operations by deferring termination until protected regions finish. AEP tolerates intra-node partial failures without costly distributed coordination. To extend beyond a single node, we further design AEP-DSM, a hierarchical DSM allocator that combines AEP-protected node-level allocators with cross-node coordination. Our Linux AEP prototype integrated with a cross-node DSM consistency protocol (CXL-SHM) achieves near-native local performance and improves throughput by up to 13.3x over state-of-the-art DSM allocators.",
+  "abstract_source_id": "src-abstract-eurosys-2026-0ee39e31",
   "venue": "eurosys",
   "year": 2026,
   "track_or_session": null,
@@ -264,6 +266,19 @@
       "official": false,
       "supports": [
         "Publisher-deposited proceedings identity and print publication date."
+      ]
+    },
+    {
+      "id": "src-abstract-eurosys-2026-0ee39e31",
+      "url": "https://api.openalex.org/works/doi:10.1145/3767295.3803602?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "AEP: Achieving Hierarchical Fault Tolerance in DSM Through Atomic Execution Protection",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:19:44Z",
+      "content_hash": "sha256:0c73e0383f15c47b713c4934920fbf1ed9ecff055f48cac9f7b1fbb5540f775b",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

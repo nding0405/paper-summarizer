@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2023-vbase-unifying-online-vector-similarity-search-and-relat-c99e2abb",
   "title": "VBASE: Unifying Online Vector Similarity Search and Relational Queries via Relaxed Monotonicity",
+  "abstract": "Approximate similarity queries on high-dimensional vector indices have become the cornerstone for many critical online services. An increasing need for more sophisticated vector queries requires integrating vector search systems with relational databases. However, high-dimensional vector indices do not exhibit monotonicity, a critical property of conventional indices. The lack of monotonicity forces existing vector systems to rely on monotonicity-preserving tentative indices, set up temporarily for a target vector's TopK nearest neighbors, to facilitate queries. This leads to suboptimal performance due to the difficulty to predict the optimal K.\n\nThis paper presents VBase, a system that efficiently supports complex queries of both approximate similarity search and relational operators. VBase identifies a common property, relaxed monotonicity, to unify two seemingly incompatible systems. This common property allows VBase to circumvent the constraints of a TopK-only interface to achieve significantly higher efficiency, while provably preserving the semantics of TopK-based solutions. Evaluation results show VBase offers up to three orders-of-magnitude higher performance than state-of-the-art vector systems on complex online vector queries. VBase further enables analytical similarity queries that previous vector systems do not, and shows 7,000× speedup with 99.9% accuracy of exact queries.",
+  "abstract_source_id": "src-abstract-osdi-2023-c99e2abb",
   "venue": "osdi",
   "year": 2023,
   "track_or_session": "Query Your Bits",
@@ -327,6 +329,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2023-c99e2abb",
+      "url": "https://www.usenix.org/conference/osdi23/presentation/zhang-qianxi",
+      "kind": "paper-page",
+      "title": "VBASE: Unifying Online Vector Similarity Search and Relational Queries via Relaxed Monotonicity",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:06:52Z",
+      "content_hash": "sha256:c9ca7ae9bfc2649007a0fa8b8f037b7eefab1a62740581e60d86a6d600bd0897",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

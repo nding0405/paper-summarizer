@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-ariadne-navigating-through-the-labyrinth-of-data-driven-0711c255",
   "title": "Ariadne: Navigating through the Labyrinth of Data-Driven Customization Inconsistencies in Android",
+  "abstract": "Vendor customization of the Android framework is known to introduce security concerns. One type of customization is data-driven, involving changes to access-controlled framework variables, which we call data holders. Analyzing the security of data-driven customization has not been explored in prior work because it faces several challenges as it requires modeling implicit access control (AC) relations among Java objects and their corresponding operation semantics. Existing Android AC inconsistency detection approaches struggle to discover data-driven AC inconsistencies.\n\nWe propose a novel approach, Ariadne, to address these challenges by (1) constructing an abstract representation, the AC dependency graph, to model AC relationships among framework data holders, and (2) using it to detect missing AC enforcement in data holders and their corresponding APIs. Using two AOSP and 11 custom ROMs, we show that Ariadne detects 30 unique data-driven AC inconsistencies which cannot be detected by existing approaches. Therefore Ariadne can offer more comprehensive protection by effectively complementing existing AC inconsistency detection approaches.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-0711c255",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "System Security 3: Mobile Platforms",
@@ -133,6 +135,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-0711c255",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/vyas",
+      "kind": "paper-page",
+      "title": "Ariadne: Navigating through the Labyrinth of Data-Driven Customization Inconsistencies in Android",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:18:39Z",
+      "content_hash": "sha256:514f7c28a01915ccc70324de6da00335e2abca1e3ee717a01a5f3ae4a8369ced",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

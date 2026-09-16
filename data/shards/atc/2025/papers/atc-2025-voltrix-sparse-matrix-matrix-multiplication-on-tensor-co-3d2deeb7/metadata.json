@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "atc-2025-voltrix-sparse-matrix-matrix-multiplication-on-tensor-co-3d2deeb7",
   "title": "Voltrix: Sparse Matrix-Matrix Multiplication on Tensor Cores with Asynchronous and Balanced Kernel Optimization",
+  "abstract": "Sparse Matrix-Matrix Multiplication (SpMM) is crucial in scientific computing and machine learning. Despite advancements in GPU architectures, efficiently leveraging Tensor Cores for SpMM remains challenging. The core issue is the mismatch between the inherently sparse nature of the matrices and the dense computational patterns. Existing methods struggle with substantial overheads in loading data to computation units and cannot adequately manage data imbalance across computations, thereby limiting the high computational throughput potential of Tensor Cores.\n\nIn this paper, we introduce Voltrix-SpMM, a revolutionary GPU kernel design that overcomes these challenges. First, we implement an asynchronous data loading pipeline that employs a bit-wise compressed format for sparse matrices and bulk memory copy instructions for dense matrices. This innovative design enables efficient data access and incorporates a warp-specialized producer-consumer model to seamlessly overlap data loading with computation. Second, we develop a persistent and I/O co-balanced kernel mechanism that features a two-stage partition strategy to achieve balance between input and output. Implemented with CUDA 12.6, Voltrix-SpMM substantially improves performance, delivering an average speedups of 36.5x and 1.8x over Tensor Core-based TC-GNN and DTC-SpMM respectively, and an average 1.7x speedup over the CUDA Core-based RoDe, fully unleashing the power of Tensor Cores for SpMM.",
+  "abstract_source_id": "src-abstract-atc-2025-3d2deeb7",
   "venue": "atc",
   "year": 2025,
   "track_or_session": "Optimizing ML Execution: Compilers, Pipelines, and Runtimes",
@@ -180,6 +182,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-atc-2025-3d2deeb7",
+      "url": "https://www.usenix.org/conference/atc25/presentation/xia",
+      "kind": "paper-page",
+      "title": "Voltrix: Sparse Matrix-Matrix Multiplication on Tensor Cores with Asynchronous and Balanced Kernel Optimization",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:00:22Z",
+      "content_hash": "sha256:8777d77e6cc1a2cd8321fdc2202c3bbf6704b6d08855296ce7b58fd150221476",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

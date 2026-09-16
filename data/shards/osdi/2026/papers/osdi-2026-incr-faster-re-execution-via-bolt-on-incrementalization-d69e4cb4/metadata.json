@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2026-incr-faster-re-execution-via-bolt-on-incrementalization-d69e4cb4",
   "title": "Incr: Faster Re-Execution via Bolt-On Incrementalization",
+  "abstract": "While most software development is incremental, most execution environments are not: even small program modifications fail to take advantage of prior executions, at worst requiring full re-execution of all computational stages in the modified program. Such full re-execution decelerates software development and debugging, especially in dynamic polyglot environments such as the Unix and Linux shell. This paper presents Incr, a system that accelerates the re-execution of unmodified shell programs by automatically incrementalizing their execution. Incr analyzes and tracks interdependencies to detect and store key intermediate results, reusing them on subsequent re-executions whenever possible. Incr’s effect analysis supports correct re-execution even for non-idempotent computations, and several static and dynamic optimizations reduce the runtime and storage overheads of incrementalization. Applied to diverse real-world scenarios, Incr accelerates re-execution by an average of 34.2× and a maximum of 373.3×—all while requiring no developer annotations or code modifications and remaining behaviorally indistinguishable on over 10,000 test cases.",
+  "abstract_source_id": "src-abstract-osdi-2026-d69e4cb4",
   "venue": "osdi",
   "year": 2026,
   "track_or_session": "Program Analysis",
@@ -146,6 +148,19 @@
       "official": true,
       "supports": [
         "Official proceedings availability and canonical conference versions."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2026-d69e4cb4",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/xie-yizheng",
+      "kind": "paper-page",
+      "title": "Incr: Faster Re-Execution via Bolt-On Incrementalization",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:08:26Z",
+      "content_hash": "sha256:4353a45d640d05976786afaa68e194c13914205737dcf881c85bb72b914a58da",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

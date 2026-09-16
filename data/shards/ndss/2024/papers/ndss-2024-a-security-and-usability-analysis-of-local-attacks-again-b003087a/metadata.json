@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2024-a-security-and-usability-analysis-of-local-attacks-again-b003087a",
   "title": "A Security and Usability Analysis of Local Attacks Against FIDO2",
+  "abstract": "The FIDO2 protocol aims to strengthen or replace password authentication using public-key cryptography. FIDO2 has primarily focused on defending against attacks from afar by remote attackers that compromise a password or attempt to phish the user. In this paper, we explore threats from local attacks on FIDO2 that have received less attention---a malicious browser extension or cross-site scripting (XSS), and attackers gaining physical access to an HSK. Our systematic analysis of current implementations of FIDO2 reveals four underlying flaws, and we demonstrate the feasibility of seven attacks that exploit those flaws. The flaws include (1) Lack of confidentiality/integrity of FIDO2 messages accessible to browser extensions, (2) Broken clone detection algorithm, (3) Potential for user misunderstanding from social engineering and notification/error messages, and (4) Cookie life cycle. We build malicious browser extensions and demonstrate the attacks on ten popular web servers that use FIDO2. We also show that many browser extensions have sufficient permissions to conduct the attacks if they were compromised. A static and dynamic analysis of current browser extensions finds no evidence of the attacks in the wild. We conducted two user studies confirming that participants do not detect the attacks with current error messages, email notifications, and UX responses to the attacks. We provide an improved clone detection algorithm and recommendations for relying parties that detect or prevent some of the attacks.",
+  "abstract_source_id": "src-abstract-ndss-2024-b003087a",
   "venue": "ndss",
   "year": 2024,
   "track_or_session": "Fall submission cycle",
@@ -105,6 +107,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2024-b003087a",
+      "url": "https://www.ndss-symposium.org/ndss-paper/a-security-and-usability-analysis-of-local-attacks-against-fido2/",
+      "kind": "paper-page",
+      "title": "A Security and Usability Analysis of Local Attacks Against FIDO2",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:17:35Z",
+      "content_hash": "sha256:7586145f7440f0324bac4aadf04eb5658f4f3ea039e1594b712f8c51259b062e",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

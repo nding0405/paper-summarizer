@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2025-augmented-shuffle-protocols-for-accurate-and-robust-freq-96ad81d3",
   "title": "Augmented Shuffle Protocols for Accurate and Robust Frequency Estimation under Differential Privacy",
+  "abstract": "The shuffle model of DP (Differential Privacy) provides high utility by introducing a shuffler that randomly shuffles noisy data sent from users. However, recent studies show that existing shuffle protocols suffer from the following two major drawbacks. First, they are vulnerable to local data poisoning attacks, which manipulate the statistics about input data by sending crafted data, especially when the privacy budget $\\varepsilon$ is small. Second, the actual value of $\\varepsilon$ is increased by collusion attacks by the data collector and users. In this paper, we address these two issues by thoroughly exploring the potential of the augmented shuffle model, which allows the shuffler to perform additional operations, such as random sampling and dummy data addition. Specifically, we propose a generalized framework for local-noise-free protocols in which users send (encrypted) input data to the shuffler without adding noise. We show that this generalized protocol provides DP and is robust to the above two attacks if a simpler mechanism that performs the same process on binary input data provides DP. Based on this framework, we propose three concrete protocols providing DP and robustness against the two attacks. Our first protocol generates the number of dummy values for each item from a binomial distribution and provides higher utility than several state-of-the-art existing shuffle protocols. Our second protocol significantly improves the utility of our first protocol by introducing a novel dummy-count distribution: asymmetric two-sided geometric distribution. Our third protocol is a special case of our second protocol and provides pure ∊-DP. We show the effectiveness of our protocols through theoretical analysis and comprehensive experiments.",
+  "abstract_source_id": "src-abstract-sp-2025-96ad81d3",
   "venue": "sp",
   "year": 2025,
   "track_or_session": "Cycle 1",
@@ -112,6 +114,19 @@
       "official": true,
       "supports": [
         "DOI, authors, affiliations, abstract, publication date, pages, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2025-96ad81d3",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Augmented Shuffle Protocols for Accurate and Robust Frequency Estimation Under Differential Privacy",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:42Z",
+      "content_hash": "sha256:d62dac834635b4cd1890a53da454ceae7aaa151189662d990ac591dfd5cb6b3e",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

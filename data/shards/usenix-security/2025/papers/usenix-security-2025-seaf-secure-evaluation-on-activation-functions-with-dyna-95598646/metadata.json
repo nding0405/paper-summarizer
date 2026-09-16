@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-seaf-secure-evaluation-on-activation-functions-with-dyna-95598646",
   "title": "SEAF: Secure Evaluation on Activation Functions with Dynamic Precision for Secure Two-Party Inference",
+  "abstract": "Secure evaluation of non-linear functions is one of the most expensive operations in secure two-party computation, particularly for activation functions in privacy preserving machine learning (PPML). This work introduces SEAF, a novel framework for efficient Secure Evaluation on Activation Functions. SEAF is based on the linear approximation approach, but enhances it by introducing two key innovations: Trun-Eq based interval test protocols and linear approximation with dynamic precision, which have the potential for broader applicability. Furthermore, we classify common activation functions into several categories, and present specialized methodsa to evaluate them using our enhanced techniques. Our implementation of SEAF demonstrates 3.5 x to 5.9 x speedup on activation functions Tanh and Sigmoid compared to SirNN (S&P '21). When applied on GELU, SEAF outperforms Iron (NeurIPS '22) by more than 10 x and Bolt (S&P '24) by up to 3.4 x. For end-to-end secure inference on BERT, the original GELU accounts for 31.3% and 22.5% of the total runtime in Iron and Bolt, respectively. In contrast, our optimized GELU reduces these proportions to 4.3% and 9.8%, eliminating GELU as a bottleneck in secure inference.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-95598646",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Crypto 2: Private Information Retrieval and Computation",
@@ -133,6 +135,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-95598646",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/guo-hao-seaf",
+      "kind": "paper-page",
+      "title": "SEAF: Secure Evaluation on Activation Functions with Dynamic Precision for Secure Two-Party Inference",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:21:36Z",
+      "content_hash": "sha256:0363b374a86979da85f2215855a0d6d925557a705a0b6cf89de3f6ddac2ff0fb",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

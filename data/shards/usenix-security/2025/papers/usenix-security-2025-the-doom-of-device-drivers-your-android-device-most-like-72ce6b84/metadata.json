@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-the-doom-of-device-drivers-your-android-device-most-like-72ce6b84",
   "title": "The Doom of Device Drivers: Your Android Device (Most Likely) has N-Day Kernel Vulnerabilities",
+  "abstract": "Android's security landscape is constantly evolving to counter increasingly sophisticated attacks, with the kernel as a prime focus. Past device compromises required complex exploit chains pivoting to privileged contexts before targeting the kernel. Recently, however, the trend has been to exploit kernel GPU drivers accessible to untrusted apps to bypass privileged pivoting. While significant efforts have been made to secure GPU drivers, the broader risks of untrusted apps compromising Android devices remain underexplored at a large scale.\n\nIn this paper, we perform the first comprehensive analysis of kernel drivers accessible to untrusted apps on a representative set of 131 Android devices. Using our mostly automated approach to recover access control policies from device firmwares, we identify a significant attack surface beyond GPUs, comprising 11 drivers. From public information about these drivers, such as git repositories, we reconstruct 50 known vulnerabilities, including highly critical issues that allow exploit primitives such as use-after-free and out-of-bounds writes. Our subsequent vulnerability patch inclusion analysis reveals that many of these vulnerabilities remain unpatched, acting as n-days at the time of analysis or for extended periods: More than 59 % of the analyzed devices can be exploited by highly critical n-day vulnerabilities.\n\nWe uncover novel insights into the disparity in patch timelines and vendor practices. Our findings show that malicious actors can exploit n-day vulnerabilities accessible to untrusted apps, bypassing the need for complex zero-day vulnerabilities. We conclude that urgent action must be taken to improve overall Android security.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-72ce6b84",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "System Security 3: Mobile Platforms",
@@ -154,6 +156,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-72ce6b84",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/maar-doom",
+      "kind": "paper-page",
+      "title": "The Doom of Device Drivers: Your Android Device (Most Likely) has N-Day Kernel Vulnerabilities",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:22:14Z",
+      "content_hash": "sha256:430cc877b601a1124c73f878ddbe669a8ea7c97d1dbd832668cdd7d233a9ee07",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

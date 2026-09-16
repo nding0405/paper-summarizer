@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2023-forming-faster-firmware-fuzzers-f8fcc218",
   "title": "Forming Faster Firmware Fuzzers",
+  "abstract": "A recent trend for assessing the security of an embedded system’s firmware is rehosting, the art of running the firmware in a virtualized environment, rather than on the original hardware platform. One significant use case for firmware rehosting is fuzzing to dynamically uncover security vulnerabilities.\n\nHowever, state-of-the-art implementations suffer from high emulator-induced overhead, leading to less-than-optimal execution speeds. Instead of emulation, we propose near-native rehosting: running embedded firmware as a Linux userspace process on a high-performance system that shares the instruction set family with the targeted device. We implement this approach with SAFIREFUZZ, a throughput-optimized rehosting and fuzzing framework for ARM Cortex-M firmware. SAFIREFUZZ takes monolithic binary-only firmware images and uses high-level emulation (HLE) and dynamic binary rewriting to run them on far more powerful hardware with low overhead. By replicating experiments of HALucinator, the state-of-the-art HLE-based rehosting system for binary firmware, we show that SAFIREFUZZ can provide a 690x throughput increase on average during 24-hour fuzzing campaigns while covering up to 30% more basic blocks.",
+  "abstract_source_id": "src-abstract-usenix-security-2023-f8fcc218",
   "venue": "usenix-security",
   "year": 2023,
   "track_or_session": "Fuzzing Firmware and Drivers",
@@ -125,6 +127,19 @@
       "official": false,
       "supports": [
         "page span when the official page omits BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2023-f8fcc218",
+      "url": "https://www.usenix.org/conference/usenixsecurity23/presentation/seidel",
+      "kind": "paper-page",
+      "title": "Forming Faster Firmware Fuzzers",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:11:05Z",
+      "content_hash": "sha256:d489398c52677c97bd32bcbd1f9a007c1816792a78458741660c6fa6ac8ef138",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

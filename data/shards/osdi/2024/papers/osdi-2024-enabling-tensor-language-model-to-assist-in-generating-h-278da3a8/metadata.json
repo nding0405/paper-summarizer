@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2024-enabling-tensor-language-model-to-assist-in-generating-h-278da3a8",
   "title": "Enabling Tensor Language Model to Assist in Generating High-Performance Tensor Programs for Deep Learning",
+  "abstract": "Obtaining high-performance tensor programs with high efficiency continues to be a substantial challenge. Approaches that favor efficiency typically limit their exploration space through heuristic constraints, which often lack generalizability. Conversely, approaches targeting high performance tend to create an expansive exploration space but employ ineffective exploration strategies.\n\nWe propose a tensor program generation framework for deep learning applications. Its core idea involves maintaining an expansive space to ensure high performance while performing powerful exploration with the help of language models to generate tensor programs efficiently. We thus transform the tensor program exploration task into a language model generation task. To facilitate this, we explicitly design the language model-friendly tensor language that records decision information to represent tensor programs. During the compilation of target workloads, the tensor language model (TLM) combines knowledge from offline learning and previously made decisions to probabilistically sample the best decision in the current decision space. This approach allows more informed space exploration than random sampling commonly used in previously proposed approaches.\n\nExperimental results indicate that TLM excels in delivering both efficiency and performance. Compared to fully tuned Ansor/MetaSchedule, TLM matches their performance with a compilation speedup of 61×. Furthermore, when evaluated against Roller, with the same compilation time, TLM improves the performance by 2.25×. Code available at https://github.com/zhaiyi000/tlm .",
+  "abstract_source_id": "src-abstract-osdi-2024-278da3a8",
   "venue": "osdi",
   "year": 2024,
   "track_or_session": "Deep Learning",
@@ -306,6 +308,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2024-278da3a8",
+      "url": "https://www.usenix.org/conference/osdi24/presentation/zhai",
+      "kind": "paper-page",
+      "title": "Enabling Tensor Language Model to Assist in Generating High-Performance Tensor Programs for Deep Learning",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:07:03Z",
+      "content_hash": "sha256:5a71b05f00e170e5fe03cb9d2d02df9531f651269e009dcb0ed0e8ee28e39633",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

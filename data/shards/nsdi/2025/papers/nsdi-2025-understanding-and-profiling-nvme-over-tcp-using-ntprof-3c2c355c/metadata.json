@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2025-understanding-and-profiling-nvme-over-tcp-using-ntprof-3c2c355c",
   "title": "Understanding and Profiling NVMe-over-TCP Using ntprof",
+  "abstract": "NVMe-over-TCP (NVMe/TCP) is an emerging remote storage protocol, increasingly adopted in enterprises and clouds. It establishes a high-performance reliable data channel between clients and storage targets to deliver block I/Os. Understanding and analyzing the protocol execution details and how well storage workloads run atop are pivotal for system developers and infrastructure engineers. However, our community lacks such a profiling utility, whereas existing solutions are ad-hoc, tedious, and heuristic-driven. Realizing it is challenging due to the unpredictable I/O workload profile, intricate system layer interaction, and deep execution pipeline.\n\nThis paper presents ntprof, a systematic, informative, and lightweight NVMe/TCP profiler. Our key idea is to view the NVMe/TCP storage substrate as a lossless switched network and apply network monitoring techniques. We model each on-path system module as a software switch, equip it with a programmable profiling agent on the data plane, and develop a proactive query interface for statistics collection and analysis. ntprof, comprising a kernel module and a user-space utility, allows developers to define various profiling tasks, incurs marginal overhead when co-locating with applications, and generates performance reports based on prescribed specifications. We build ntprof atop Linux kernel 5.15.143 and apply it in six cases, i.e., end-to-end latency breakdown, interference analysis, SW/HW bottleneck localization, and application performance diagnostic. ntprof is available at https://github.com/netlab-wisconsin/ntprof .",
+  "abstract_source_id": "src-abstract-nsdi-2025-3c2c355c",
   "venue": "nsdi",
   "year": 2025,
   "track_or_session": "Storage",
@@ -99,6 +101,19 @@
         "official BibTeX",
         "presentation media links",
         "explicit artifact, code, or project links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2025-3c2c355c",
+      "url": "https://www.usenix.org/conference/nsdi25/presentation/kang",
+      "kind": "paper-page",
+      "title": "Understanding and Profiling NVMe-over-TCP Using ntprof",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:04:41Z",
+      "content_hash": "sha256:ae9d2a118747f5927eb92c07fb25d0c646bde5ffbf7d78915c5c121d1485f881",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

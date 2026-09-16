@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2025-towards-energy-efficient-5g-vran-servers-98015e29",
   "title": "Towards Energy Efficient 5G vRAN Servers",
+  "abstract": "We study the problem of improving energy efficiency in virtualized radio access network (vRAN) servers, focusing on CPUs. Two distinct characteristics of vRAN software—strict real-time sub-millisecond deadlines and its proprietary black-box nature—preclude the use of existing general-purpose CPU energy management techniques. This paper presents RENC, a system that saves energy by adjusting CPU frequency in response to sub-second variations in cellular workloads, using the following techniques. First, despite large fluctuations in vRAN CPU load at sub-ms timescales, RENC establishes safe low-load intervals, e.g., by coupling Media Access Control (MAC) layer rate limiting with CPU frequency changes. This prevents high traffic during low-power operation, which would otherwise cause deadline misses. Second, we design techniques to compute CPU frequencies that are safe for these low-load intervals, achieved by measuring the slack in vRAN threads' deadlines using Linux eBPF hooks, or minor binary rewriting of the vRAN software. Third, we demonstrate the need to handle CPU load spikes triggered by control operations, such as new users attaching to the network. Our evaluation in a state-of-the-art vRAN testbed shows that our techniques reduces a vRAN server's CPU power consumption by up to 45% (29% server-wide).",
+  "abstract_source_id": "src-abstract-nsdi-2025-98015e29",
   "venue": "nsdi",
   "year": 2025,
   "track_or_session": "Cellular and Wireless",
@@ -207,6 +209,19 @@
       "official": true,
       "supports": [
         "institution-provided BibTeX used because the USENIX paper page omits it"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2025-98015e29",
+      "url": "https://www.usenix.org/conference/nsdi25/presentation/kalia",
+      "kind": "paper-page",
+      "title": "Towards Energy Efficient 5G vRAN Servers",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:04:41Z",
+      "content_hash": "sha256:19aca233d17ffb2b4771e85d56904494066ce09cba12db819e7924cb7754714e",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

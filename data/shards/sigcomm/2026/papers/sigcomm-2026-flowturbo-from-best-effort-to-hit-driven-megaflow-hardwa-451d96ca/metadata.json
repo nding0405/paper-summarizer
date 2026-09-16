@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sigcomm-2026-flowturbo-from-best-effort-to-hit-driven-megaflow-hardwa-451d96ca",
   "title": "FlowTurbo: From Best-Effort to Hit-Driven MegaFlow Hardware Offloading in Open vSwitch",
+  "abstract": "Offloading fast-path MegaFlows in Open vSwitch to hardware accelerators is a common approach for accelerating packet forwarding in modern cloud data centers. However, due to the limited capabilities of current hardware accelerators, existing solutions still rely on coarse-grained, best-effort offloading, which struggles with dynamic, large-scale traffic and results in inefficient resource utilization and limited performance gains. We present FlowTurbo, a self-adaptive, system-level offloading approach that implements hit-driven MegaFlow hardware offloading by jointly optimizing software rule scheduling and hardware rule lookup. The core innovations of FlowTurbo are threefold: (1) a traffic-aware, hit-driven MegaFlow offloading framework that selectively migrates hotspot wildcard rules to hardware; (2) a domain-specific, hardware-friendly sketch for MegaFlow rules that tracks rule hotness and enables the scheduler to make timely and precise offloading decisions; and (3) a domain-specific, algorithm-hardware co-designed packet classification accelerator that supports both line-rate rule matching and online rule updates. We implemented FlowTurbo on Open vSwitch and prototyped its hardware accelerator on a Xilinx Alveo U200. Evaluation using multiple real-world traffic traces shows that FlowTurbo achieves an average acceleration coverage of 89.4%, and the hardware accelerator delivers a maximum throughput of 400 MOPS while consuming only 3.3% of FPGA logic resources.",
+  "abstract_source_id": "src-abstract-sigcomm-2026-451d96ca",
   "venue": "sigcomm",
   "year": 2026,
   "track_or_session": "Research Session 6: Cloud Networking: DPUs, SmartNICs & Gateways — Research Paper",
@@ -317,6 +319,19 @@
       "official": true,
       "supports": [
         "official main-paper scope and track definitions"
+      ]
+    },
+    {
+      "id": "src-abstract-sigcomm-2026-451d96ca",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/search/match?query=FlowTurbo%3A%20From%20Best-Effort%20to%20Hit-Driven%20MegaFlow%20Hardware%20Offloading%20in%20Open%20vSwitch&fields=title,abstract",
+      "kind": "semantic-scholar",
+      "title": "FlowTurbo: From Best-Effort to Hit-Driven MegaFlow Hardware Offloading in Open vSwitch",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T23:01:27Z",
+      "content_hash": "sha256:2fc2cd6e0565e722a96910d44711b9f7c2b77d49512a20fb2b40e44406d1d6f4",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

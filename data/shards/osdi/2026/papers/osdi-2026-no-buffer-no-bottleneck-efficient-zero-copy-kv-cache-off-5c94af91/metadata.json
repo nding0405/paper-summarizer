@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2026-no-buffer-no-bottleneck-efficient-zero-copy-kv-cache-off-5c94af91",
   "title": "No Buffer, No Bottleneck: Efficient Zero-Copy KV Cache Offloading for Long-Context LLMs",
+  "abstract": "Long-context large language models (LLMs) store computed attention key and value (KV) matrices from previous decoding steps to avoid full-sequence recomputation. While this reuse reduces computation, the KV cache grows linearly with sequence length, exerting significant pressure on GPU memory capacity. Existing offloading stores KV blocks in CPU memory but requires extra GPU buffers, wasting GPU memory and doubling CPU–GPU transfers, which creates capacity and bandwidth bottlenecks. We present DirectKV, to our knowledge, the first zero-copy KV cache offloading system for modern heterogeneous CPU–GPU platforms such as NVIDIA GH200/GB200 with high-bandwidth NVLink-C2C interconnects. By leveraging NVLink-C2C instead of PCIe, DirectKV makes CPU memory a practical extension of GPU KV-cache capacity during long-context inference. DirectKV eliminates the GPU staging buffer (no buffer) by enabling GPU kernels to directly access CPU-resident KV cache, and substantially reduces the CPU– GPU data-movement bottleneck (no bottleneck) through CPU-memory-aware CUDA kernels tailored for heterogeneous CPU–GPU platforms. It further fuses KV generation with attention computation into a single CUDA kernel and employs warp-level pipelining to overlap KV fetching, computation, and write-back, thereby hiding stalls caused by CPU memory access. On GH200, DirectKV reduces CPU–GPU transfer volume by up to 50%, cuts GPU memory usage by 43%, and improves end-to-end performance by up to 1.2× compared to existing solutions.",
+  "abstract_source_id": "src-abstract-osdi-2026-5c94af91",
   "venue": "osdi",
   "year": 2026,
   "track_or_session": "KV Cache and Long Context",
@@ -104,6 +106,19 @@
       "official": true,
       "supports": [
         "Official proceedings availability and canonical conference versions."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2026-5c94af91",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/luo",
+      "kind": "paper-page",
+      "title": "No Buffer, No Bottleneck: Efficient Zero-Copy KV Cache Offloading for Long-Context LLMs",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:08:40Z",
+      "content_hash": "sha256:80a4c8d22af896e5ae3320f98c13ffdddb8e22073ae512716a9309b90c53afd2",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

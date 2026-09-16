@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2023-finding-all-cross-site-needles-in-the-dom-stack-a-compre-2ddd5ee2",
   "title": "Finding All Cross-Site Needles in the DOM Stack: A Comprehensive Methodology for the Automatic XS-Leak Detection in Web Browsers",
+  "abstract": "Cross-Site Leaks (XS-Leaks) are a class of vulnerabilities that allow a web attacker to infer user state from a target web application cross-origin. Fixing XS-Leaks is a cat-and-mouse game: once a published vulnerability is fixed, a variant is discovered. To end this game, we propose a methodology to find all leak techniques for a given state-dependent resource and a set of inclusion method. We translate a website's DOM at runtime into a directed graph. We execute this translation twice, once for each state. The outputs are two slightly different graphs. We then get the set of all leak techniques by computing these two graphs' differences. The remaining nodes and edges differ between the two states, and the corresponding DOM properties and objects can be observed cross-origin.",
+  "abstract_source_id": "src-abstract-ccs-2023-2ddd5ee2",
   "venue": "ccs",
   "year": 2023,
   "track_or_session": "Attacking the web (Web Security)",
@@ -193,6 +195,19 @@
       "official": false,
       "supports": [
         "published title, author order, and page span"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2023-2ddd5ee2",
+      "url": "https://api.openalex.org/works/doi:10.1145/3576915.3616598?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Finding All Cross-Site Needles in the DOM Stack: A Comprehensive Methodology for the Automatic XS-Leak Detection in Web Browsers",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:07:42Z",
+      "content_hash": "sha256:8af03c5749cd17c0cd4438e1f5ddab042f109df9bd86a56efb0a27dd0a8648f7",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

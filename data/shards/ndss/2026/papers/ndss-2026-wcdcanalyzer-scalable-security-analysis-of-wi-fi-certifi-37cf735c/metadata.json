@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2026-wcdcanalyzer-scalable-security-analysis-of-wi-fi-certifi-37cf735c",
   "title": "WCDCAnalyzer: Scalable Security Analysis of Wi-Fi Certified Device Connectivity Protocols",
+  "abstract": "The Wi-Fi Alliance has developed several device connectivity protocols—such as Wi-Fi Direct, Wi-Fi EasyConnect, and Wi-Fi EasyMesh—that are integral to billions of devices worldwide. Given their widespread adoption, ensuring the security and privacy of these protocols is critical. However, existing research has not comprehensively examined the security and privacy aspects of these protocols’ designs. To address this gap, we introduce WCDCAnalyzer (Wi-Fi Certified Device Connectivity Analyzer), a formal analysis framework designed to evaluate the security and privacy of these widely used Wi-Fi Certified Device Connectivity Protocols. One of the significant challenges in formally verifying the Wi-Fi Direct protocol is the scalability problem caused by the state explosion resulting from the protocol’s large scale and complexity, which leads to an exponential increase in memory usage. To address this challenge, we develop a systematic decomposition method following the compositional reasoning paradigm and integrate it into WCDCAnalyzer. This allows WCDCAnalyzer to automatically decompose a given protocol into several sub-protocols, verify each sub-protocol separately, and combine the results. Our design is a practical application of compositional reasoning based on rigorous foundations, and we provide detailed algorithms showing how this reasoning approach can be applied to cryptographic protocol verification. Using WCDCAnalyzer, we analyze these protocols and newly discover 10 vulnerabilities, including authentication bypass, privacy leakage, and DoS attacks. The vulnerabilities and associated practical attacks have been validated on commercial devices and acknowledged by the Wi-Fi Alliance.",
+  "abstract_source_id": "src-abstract-ndss-2026-37cf735c",
   "venue": "ndss",
   "year": 2026,
   "track_or_session": "Summer submission cycle",
@@ -139,6 +141,19 @@
       "official": false,
       "supports": [
         "independent proceedings identity reconciliation"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2026-37cf735c",
+      "url": "https://www.ndss-symposium.org/ndss-paper/wcdcanalyzer-scalable-security-analysis-of-wi-fi-certified-device-connectivity-protocols/",
+      "kind": "paper-page",
+      "title": "WCDCAnalyzer: Scalable Security Analysis of Wi-Fi Certified Device Connectivity Protocols",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:23:37Z",
+      "content_hash": "sha256:f385451b515616121f6b157511fabad8fdb2347dd4e8ce13fb444f59577b9785",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

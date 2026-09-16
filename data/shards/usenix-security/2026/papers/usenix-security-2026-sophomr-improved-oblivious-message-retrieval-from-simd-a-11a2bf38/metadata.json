@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-sophomr-improved-oblivious-message-retrieval-from-simd-a-11a2bf38",
   "title": "SophOMR: Improved Oblivious Message Retrieval from SIMD-Aware Homomorphic Compression",
+  "abstract": "Privacy-preserving blockchains and private messaging services that ensure receiver-privacy face a significant UX challenge: each client must scan every payload posted on the public bulletin board to avoid missing messages intended for them. Oblivious Message Retrieval (OMR) addresses this issue by securely outsourcing this expensive scanning process to a service provider using Homomorphic Encryption (HE).\n\nIn this work, we propose a new OMR scheme that substantially improves upon the previous state-of-the-art, PerfOMR (USENIX Security'24). Our implementation demonstrates reductions of 3.4x in runtime, 2.2x in digest size, and 1.5x in key size, in a scenario with 65536 payloads (each 612 bytes), of which up to 50 are pertinent. At the core of these improvements is a new homomorphic compression mechanism, where ciphertexts of length proportional to the number of total payloads are compressed into a digest whose length is proportional to the upper bound on the number of pertinent payloads. Unlike previous approaches, our scheme fully exploits the native homomorphic SIMD structure of the underlying HE scheme, significantly enhancing efficiency. In the setting described above, our compression scheme achieves 7.5x speedup compared to PerfOMR.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-11a2bf38",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Privacy Anonymity 4",
@@ -93,6 +95,19 @@
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening",
         "prepublication PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-11a2bf38",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/lee-keewoo",
+      "kind": "paper-page",
+      "title": "SophOMR: Improved Oblivious Message Retrieval from SIMD-Aware Homomorphic Compression",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:25:39Z",
+      "content_hash": "sha256:77d76bb0c2d64495159ffe11fee3d62e6e24bb4f481d804f8ba6a910d858fecd",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

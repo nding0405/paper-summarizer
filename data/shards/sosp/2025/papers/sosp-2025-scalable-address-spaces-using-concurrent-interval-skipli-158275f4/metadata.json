@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sosp-2025-scalable-address-spaces-using-concurrent-interval-skipli-158275f4",
   "title": "Scalable Address Spaces using Concurrent Interval Skiplist",
+  "abstract": "A kernel's address space design can significantly bottleneck multi-threaded applications, as address space operations such as mmap() and munmap() are serialized by coarsegrained locks like Linux's mmap_lock. Such locks have long been known as one of the most intractable contention points in memory management. While prior works have attempted to address this issue, they either fail to sufficiently parallelize operations or are impractical for real-world kernels. We present the first scalable and practical address space design that parallelizes critical operations. We identify key scalability bottlenecks—many of which extend beyond address spaces—and address them with targeted solutions. At its core is the concurrent interval skiplist, a new data structure that integrates mapping and locking for parallel interval operations. We implement our design on Linux 6.8 and evaluate it on a dual-socket 48-core machine. Our results show a significant throughput improvement of 13.1× for an mmap() microbenchmark, 4.49× for LevelDB, 3.19× for the Apache web server, 1.47× for Metis MapReduce, and 1.27× for Psearchy text indexing.",
+  "abstract_source_id": "src-abstract-sosp-2025-158275f4",
   "venue": "sosp",
   "year": 2025,
   "track_or_session": null,
@@ -125,6 +127,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-sosp-2025-158275f4",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Scalable Address Spaces using Concurrent Interval Skiplist",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:19Z",
+      "content_hash": "sha256:b613162f9e7d53fac5fe410aff94d06ac71f23c6c31e2e9cc362b51e87d1bb79",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

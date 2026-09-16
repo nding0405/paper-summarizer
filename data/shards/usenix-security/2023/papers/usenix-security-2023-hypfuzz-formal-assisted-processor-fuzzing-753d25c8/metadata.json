@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2023-hypfuzz-formal-assisted-processor-fuzzing-753d25c8",
   "title": "HyPFuzz: Formal-Assisted Processor Fuzzing",
+  "abstract": "Recent research has shown that hardware fuzzers can effectively detect security vulnerabilities in modern processors. However, existing hardware fuzzers do not fuzz well the hard-to-reach design spaces. Consequently, these fuzzers cannot effectively fuzz security-critical control- and data-flow logic in the processors, hence missing security vulnerabilities.\n\nTo tackle this challenge, we present HyPFuzz, a hybrid fuzzer that leverages formal verification tools to help fuzz the hard-to-reach part of the processors. To increase the effectiveness of HyPFuzz, we perform optimizations in time and space. First, we develop a scheduling strategy to prevent under- or over-utilization of the capabilities of formal tools and fuzzers. Second, we develop heuristic strategies to select points in the design space for the formal tool to target.\n\nWe evaluate HyPFuzz on five widely-used open-source processors. HyPFuzz detected all the vulnerabilities detected by the most recent processor fuzzer and found three new vulnerabilities that were missed by previous extensive fuzzing and formal verification. This led to two new common vulnerabilities and exposures (CVE) entries. HyPFuzz also achieves 11.68× faster coverage than the most recent processor fuzzer.",
+  "abstract_source_id": "src-abstract-usenix-security-2023-753d25c8",
   "venue": "usenix-security",
   "year": 2023,
   "track_or_session": "x-Fuzz",
@@ -196,6 +198,19 @@
       "official": true,
       "supports": [
         "authors, affiliations when published, abstract, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2023-753d25c8",
+      "url": "https://www.usenix.org/conference/usenixsecurity23/presentation/chen-chen",
+      "kind": "paper-page",
+      "title": "HyPFuzz: Formal-Assisted Processor Fuzzing",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:11:32Z",
+      "content_hash": "sha256:5a2346ea4493d2d7d210f0427654bf804a4391733e7cdef1de9495c2360e0b04",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

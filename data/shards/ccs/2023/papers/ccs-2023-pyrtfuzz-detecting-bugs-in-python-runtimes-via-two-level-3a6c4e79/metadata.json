@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2023-pyrtfuzz-detecting-bugs-in-python-runtimes-via-two-level-3a6c4e79",
   "title": "PyRTFuzz: Detecting Bugs in Python Runtimes via Two-Level Collaborative Fuzzing",
+  "abstract": "Given the widespread use of Python and its sustaining impact, the security and reliability of the Python runtime system is highly and broadly critical. Yet with real-world bugs in Python runtimes being continuously and increasingly reported, technique/tool support for automated detection of such bugs is still largely lacking. In this paper, we present PyRTFuzz, a novel fuzzing technique/tool for holistically testing Python runtimes including the language interpreter and its runtime libraries. PyRTFuzz combines generationand mutation-based fuzzing at the compiler- and application-testing level, respectively, as enabled by static/dynamic analysis for extracting runtime API descriptions, a declarative, specification language for valid and diverse Python code generation, and a custom type-guided mutation strategy for format/structure-aware application input generation. We implemented PyRTFuzz for the primary Python implementation (CPython) and applied it to three versions of the runtime. Our experiments revealed 61 new, demonstrably exploitable bugs including those in the interpreter and most in the runtime libraries. Our results also demonstrated the promising scalability and cost-effectiveness of PyRTFuzz and its great potential for further bug discovery. The two-level collaborative fuzzing methodology instantiated in PyRTFuzz may also apply to other language runtimes especially those of interpreted languages.",
+  "abstract_source_id": "src-abstract-ccs-2023-3a6c4e79",
   "venue": "ccs",
   "year": 2023,
   "track_or_session": "Fuzzing II (targets) (Software Security)",
@@ -193,6 +195,19 @@
       "official": false,
       "supports": [
         "published title, author order, and page span"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2023-3a6c4e79",
+      "url": "https://api.openalex.org/works/doi:10.1145/3576915.3623166?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "PyRTFuzz: Detecting Bugs in Python Runtimes via Two-Level Collaborative Fuzzing",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:08:03Z",
+      "content_hash": "sha256:5b243ca7999d9cb313ad3cd02d2a2888e8bd8a1938e7e97b377d69441daaeb42",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

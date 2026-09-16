@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2025-rajomon-decentralized-and-coordinated-overload-control-f-cf71e271",
   "title": "Rajomon: Decentralized and Coordinated Overload Control for Latency-Sensitive Microservices",
+  "abstract": "Microservices are increasingly central for cloud applications due to their flexibility and support for rapid integration and deployment. However, applications often experience overload or sudden traffic surges that exceed service capacity, resulting in increased latency or service failures. Moreover, microservices are decentralized, interdependent, and multiplexed, exacerbating risks from overload.\n\nWe present RAJOMON, a market-based overload control system for large microservice graphs. RAJOMON controls overload through distributed rate-limiting and load shedding. Clients attach tokens to requests and services charge a price for each API, dropping requests with insufficient tokens. Tokens and prices propagate through the entire call graph, piggybacking on requests and responses. Thus, RAJOMON is the first decentralized, end-to-end overload control system.\n\nWe implement and evaluate RAJOMON on a setup of up to 140 cores and on a variety of applications from academia and industry. Experiments indicate RAJOMON protects microservice goodput and tail latency from substantial demand spikes, even in the case of mixed request types and deeper service graphs. For high-load scenarios, RAJOMON reduces tail latency by 78% and increases goodput by 45% when compared against state-of-the-art overload control for microservices.",
+  "abstract_source_id": "src-abstract-nsdi-2025-cf71e271",
   "venue": "nsdi",
   "year": 2025,
   "track_or_session": "Data Centers Queuing and Routing",
@@ -224,6 +226,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2025-cf71e271",
+      "url": "https://www.usenix.org/conference/nsdi25/presentation/xing",
+      "kind": "paper-page",
+      "title": "Rajomon: Decentralized and Coordinated Overload Control for Latency-Sensitive Microservices",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:04:31Z",
+      "content_hash": "sha256:b3fa064c4b056a914daf560d65425335b39ecfe037264d3043cc119251e58cc4",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

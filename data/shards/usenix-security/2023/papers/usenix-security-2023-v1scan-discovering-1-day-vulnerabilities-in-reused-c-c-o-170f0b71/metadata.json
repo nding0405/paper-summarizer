@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2023-v1scan-discovering-1-day-vulnerabilities-in-reused-c-c-o-170f0b71",
   "title": "V1SCAN: Discovering 1-day Vulnerabilities in Reused C/C++ Open-source Software Components Using Code Classification Techniques",
+  "abstract": "We present V1SCAN, an effective approach for discovering 1-day vulnerabilities in reused C/C++ open-source software (OSS) components. Reusing third-party OSS has many benefits, but can put the entire software at risk owing to the vulnerabilities they propagate. In mitigation, several techniques for detecting propagated vulnerabilities, which can be classified into version- and code-based approaches, have been proposed. However, state-of-the-art techniques unfortunately produce many false positives or negatives when OSS projects are reused with code modifications.\n\nIn this paper, we show that these limitations can be addressed by improving version- and code-based approaches and synergistically combining them. By classifying reused code from OSS components, V1SCAN only considers vulnerabilities contained in the target program and filters out unused vulnerable code, thereby reducing false alarms produced by version-based approaches. V1SCAN improves the coverage of code-based approaches by classifying vulnerable code and then detecting vulnerabilities propagated with code changes in various code locations. Evaluation on GitHub popular C/C++ software showed that V1SCAN outperformed state-of-the-art vulnerability detection approaches by discovering 50% more vulnerabilities than they detected. In addition, V1SCAN reduced the false positive rate of the simple integration of existing version- and code-based approaches from 71% to 4% and the false negative rate from 33% to 7%. With V1SCAN, developers can detect propagated vulnerabilities with high accuracy, maintaining a secure software supply chain.",
+  "abstract_source_id": "src-abstract-usenix-security-2023-170f0b71",
   "venue": "usenix-security",
   "year": 2023,
   "track_or_session": "Vulnerabilities and Threat Detection",
@@ -133,6 +135,19 @@
       "official": true,
       "supports": [
         "authors, affiliations when published, abstract, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2023-170f0b71",
+      "url": "https://www.usenix.org/conference/usenixsecurity23/presentation/woo",
+      "kind": "paper-page",
+      "title": "V1SCAN: Discovering 1-day Vulnerabilities in Reused C/C++ Open-source Software Components Using Code Classification Techniques",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:13:38Z",
+      "content_hash": "sha256:40920e9d511c7baf4d7d22a8ab6de15fad5af48d62870ee475fa8e1970e1d4f0",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2024-sequence-abstractions-for-flexible-line-rate-network-mon-17fc1e96",
   "title": "Sequence Abstractions for Flexible, Line-Rate Network Monitoring",
+  "abstract": "We develop FLM, a high-level language that enables network operators to write programs that recognize and react to specific packet sequences. To be able to examine every packet, our compilation procedure can transform FLM programs into P4 code that can run on programmable switch ASICs. It first splits FLM programs into a state management component and a classical regular expression, then generates an efficient implementation of the regular expression using SMT-based program synthesis. Our experiments find that FLM can express 15 sequence monitoring tasks drawn from prior literature. Our compiler can convert all of these programs to run on switch hardware in way that fit within available pipeline stages and consume less than 15% additional header fields and instruction words when run alongside switch programs.",
+  "abstract_source_id": "src-abstract-nsdi-2024-17fc1e96",
   "venue": "nsdi",
   "year": 2024,
   "track_or_session": "Programming the Network: Part 2",
@@ -160,6 +162,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2024-17fc1e96",
+      "url": "https://www.usenix.org/conference/nsdi24/presentation/johnson",
+      "kind": "paper-page",
+      "title": "Sequence Abstractions for Flexible, Line-Rate Network Monitoring",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:03:40Z",
+      "content_hash": "sha256:f0161c965e743066a613120e000440812f2255dd4d764591ad8b9af783a1fc1a",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

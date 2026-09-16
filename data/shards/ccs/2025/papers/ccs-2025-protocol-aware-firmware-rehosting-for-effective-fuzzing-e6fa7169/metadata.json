@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2025-protocol-aware-firmware-rehosting-for-effective-fuzzing-e6fa7169",
   "title": "Protocol-Aware Firmware Rehosting for Effective Fuzzing of Embedded Network Stacks",
+  "abstract": "One of the biggest attack surfaces of embedded systems is their network interfaces, which enable communication with other devices.Unlike their general-purpose counterparts, embedded systems are designed for specialized use cases, resulting in unique and diverse communication stacks.Unfortunately, current approaches for evaluating the security of these embedded network stacks require manual effort or access to hardware, and they generally focus only on small parts of the embedded system.A promising alternative is firmware rehosting, which enables fuzz testing of the entire firmware by generically emulating the physical hardware.However, existing rehosting methods often struggle to meaningfully explore network stacks due to their complex, multi-layered input formats.This limits their ability to uncover deeply nested software faults.To address this problem, we introduce a novel method to automatically detect and handle the use of network protocols in firmware called Pemu.By automatically deducing the available network protocols, Pemu can transparently generate valid network packets that encapsulate fuzzing data, allowing the fuzzing input to flow directly into deeper layers of the firmware logic.Our approach thus enables a deeper, more targeted, and layer-by-layer analysis of firmware components that were previously difficult or impossible to test.Our evaluation demonstrates that Pemu consistently improves the code coverage of three existing rehosting tools for embedded network stacks.Furthermore, our fuzzer rediscovered several known vulnerabilities and identified five previously unknown software faults, highlighting its effectiveness in uncovering deeply nested bugs in network-exposed code.",
+  "abstract_source_id": "src-abstract-ccs-2025-e6fa7169",
   "venue": "ccs",
   "year": 2025,
   "track_or_session": "Cycle 2",
@@ -169,6 +171,19 @@
         "published-order authors",
         "publication-time affiliations",
         "publication date and page span"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2025-e6fa7169",
+      "url": "https://api.openalex.org/works/doi:10.1145/3719027.3765125?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Protocol-Aware Firmware Rehosting for Effective Fuzzing of Embedded Network Stacks",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:15:44Z",
+      "content_hash": "sha256:6390a2ee9dfb370ac5f794a7a0eee18471bc2411ed032f490e53833b4fa5eba1",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

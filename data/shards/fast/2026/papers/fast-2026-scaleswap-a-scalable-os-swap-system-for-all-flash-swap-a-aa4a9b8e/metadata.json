@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "fast-2026-scaleswap-a-scalable-os-swap-system-for-all-flash-swap-a-aa4a9b8e",
   "title": "ScaleSwap: A Scalable OS Swap System for All-Flash Swap Arrays",
+  "abstract": "This paper presents a scalable OS swap system, ScaleSwap, designed to enhance core and SSD scalability on all-flash swap arrays. Specifically, ScaleSwap first enables a one-to-one swap model where each core exclusively manages its own swap resources, enabling core-centric swap in/out operations. Second, ScaleSwap devises opportunistic inter-core swap assistance, allowing each core to delegate swap metadata access to other cores as needed. Finally, ScaleSwap adopts core-affinity page and LRU management to mitigate LRU lock contention during swap in/out operations. We implement ScaleSwap in the Linux kernel and evaluate its performance on a 128-core machine with an all-flash swap array comprising eight NVMe SSDs. Our evaluation shows that ScaleSwap achieves up to 3.4× higher throughput and up to 11.5× lower average latency than the Linux swap system. Furthermore, ScaleSwap outperforms two prior systems, TMO and ExtMEM, by up to 64% and 5×, respectively.",
+  "abstract_source_id": "src-abstract-fast-2026-aa4a9b8e",
   "venue": "fast",
   "year": 2026,
   "track_or_session": "SSDs and CXL",
@@ -139,6 +141,19 @@
         "proceedings page range and page count",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-fast-2026-aa4a9b8e",
+      "url": "https://www.usenix.org/conference/fast26/presentation/ahn",
+      "kind": "paper-page",
+      "title": "ScaleSwap: A Scalable OS Swap System for All-Flash Swap Arrays",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:01:40Z",
+      "content_hash": "sha256:e22342f38d8d7979a0ccf7babc075071254eff36c4c649f520215e5513431a15",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

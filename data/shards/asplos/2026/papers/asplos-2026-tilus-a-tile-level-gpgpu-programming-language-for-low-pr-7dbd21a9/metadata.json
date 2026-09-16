@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2026-tilus-a-tile-level-gpgpu-programming-language-for-low-pr-7dbd21a9",
   "title": "Tilus: A Tile-Level GPGPU Programming Language for Low-Precision Computation",
+  "abstract": "Serving Large Language Models (LLMs) is critical for AI-powered applications, yet it demands substantial computational resources, particularly in memory bandwidth and computational throughput. Low-precision computation has emerged as a key technique to improve efficiency while reducing resource consumption. Existing approaches for generating low-precision kernels are limited to weight bit widths that are powers of two and suffer from suboptimal performance because of high-level GPU programming abstractions. These abstractions restrict critical optimizations, such as fine-grained register management and optimized memory access patterns, that are essential for efficient low-precision computations. In this paper, we introduce Tilus, a domain-specific language designed for General-Purpose GPU (GPGPU) computing that supports low-precision data types with arbitrary bit widths from 1 to 8 while maintaining GPU programmability. Tilus features a thread-block-level programming model, a hierarchical memory space, a novel algebraic layout system, and extensive support for diverse low-precision data types. Tilus programs are compiled into highly efficient GPU programs through automatic vectorization and instruction selection. Extensive experiments demonstrate that Tilus efficiently supports a full spectrum of low-precision data types, and outperforms state-of-the-art low-precision kernels. Compared to existing compilers such as Triton and Ladder, as well as hand-optimized kernels such as QuantLLM and Marlin, Tilus achieves performance improvements of: 1.75x, 2.61x, 1.29x and 1.03x, respectively. We open-source Tilus at https://github.com/NVIDIA/tilus.",
+  "abstract_source_id": "src-abstract-asplos-2026-7dbd21a9",
   "venue": "asplos",
   "year": 2026,
   "track_or_session": "Session 5A: Generative Model Serving",
@@ -249,6 +251,19 @@
       "official": false,
       "supports": [
         "Author-deposited archival artifact matched by title, authors, linked DOI, or accompanying paper description."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2026-7dbd21a9",
+      "url": "https://api.openalex.org/works/doi:10.1145/3760250.3762219?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Tilus: A Tile-Level GPGPU Programming Language for Low-Precision Computation",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:06:59Z",
+      "content_hash": "sha256:f680934f6c06d887126abe1e01182431df33aefdc43a62659360ccb2e42a4eb9",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

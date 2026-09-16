@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2023-morfuzz-fuzzing-processor-via-runtime-instruction-morphi-7bca4317",
   "title": "MorFuzz: Fuzzing Processor via Runtime Instruction Morphing enhanced Synchronizable Co-simulation",
+  "abstract": "Modern processors are too complex to be bug free. Recently, a few hardware fuzzing techniques have shown promising results in verifying processor designs. However, due to the complexity of processors, they suffer from complex input grammar, deceptive mutation guidance, and model implementation differences. Therefore, how to effectively and efficiently verify processors is still an open problem.\n\nThis paper proposes MorFuzz, a novel processor fuzzer that can efficiently discover software triggerable hardware bugs. The core idea behind MorFuzz is to use runtime information to generate instruction streams with valid formats and meaningful semantics. MorFuzz designs a new input structure to provide multi-level runtime mutation primitives and proposes the instruction morphing technique to mutate instruction dynamically. Besides, we also extend the co-simulation framework to various microarchitectures and develop the state synchronization technique to eliminate implementation differences. We evaluate MorFuzz on three popular open-source RISC-V processors: CVA6, Rocket, BOOM, and discover 17 new bugs (with 13 CVEs assigned). Our evaluation shows MorFuzz achieves 4.4× and 1.6× more state coverage than the state-of-the-art fuzzer, DifuzzRTL, and the famous constrained instruction generator, riscv-dv.",
+  "abstract_source_id": "src-abstract-usenix-security-2023-7bca4317",
   "venue": "usenix-security",
   "year": 2023,
   "track_or_session": "x-Fuzz",
@@ -175,6 +177,19 @@
       "official": true,
       "supports": [
         "authors, affiliations when published, abstract, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2023-7bca4317",
+      "url": "https://www.usenix.org/conference/usenixsecurity23/presentation/xu-jinyan",
+      "kind": "paper-page",
+      "title": "MorFuzz: Fuzzing Processor via Runtime Instruction Morphing enhanced Synchronizable Co-simulation",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:12:05Z",
+      "content_hash": "sha256:d6a74e7e0fba30d2092fb35a4eb19c6b18dca49e151f0009b169e08a05ff8ed5",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

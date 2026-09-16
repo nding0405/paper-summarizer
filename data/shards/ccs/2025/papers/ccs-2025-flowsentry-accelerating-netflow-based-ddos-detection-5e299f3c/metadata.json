@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2025-flowsentry-accelerating-netflow-based-ddos-detection-5e299f3c",
   "title": "FlowSentry: Accelerating NetFlow-based DDoS Detection",
+  "abstract": "Distributed Denial of Service (DDoS) attacks threaten the stability of online services by overwhelming them with excessive traffic. NetFlow-based DDoS detection systems are widely adopted by Internet Service Providers (ISPs) in upstream multi-point detection scenarios to provide robust detection for volumetric DDoS attacks. However, these systems face inherent delays, as NetFlow detection is non-instantaneous—routers aggregate and summarize flow records over a period before reporting, which impacts timely detection. Existing research primarily focuses on optimizing the NetFlow reporting mechanism at the router side. Unfortunately, the need for either software or hardware upgrades for routers would incur a high deployment cost, which is impractical for ISPs in the short term. In this paper, we propose FlowSentry, a novel NetFlow detection framework to accelerate DDoS attack identification at the server side. The system operates on a dual-layer filtering paradigm to handle the high-frequency NetFlow records, incorporating two core technologies: ADWindow and STAnalyzer. ADWindow is a sketch-based sliding window mechanism designed to retain possibly anomalous flow information, filtering out benign flows to reduce the computational overhead. STAnalyzer leverages the cross-router traffic correlation to efficiently infer abnormal growth patterns of potential malicious traffic based on partially reported flow records, thus significantly reducing the detection delay. Our extensive experiments in simulated backbone network environments demonstrate that FlowSentry achieves better detection accuracy while reducing the detection delay by up to 65.63% compared to existing methods.",
+  "abstract_source_id": "src-abstract-ccs-2025-5e299f3c",
   "venue": "ccs",
   "year": 2025,
   "track_or_session": "Cycle 1",
@@ -211,6 +213,19 @@
         "published-order authors",
         "publication-time affiliations",
         "publication date and page span"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2025-5e299f3c",
+      "url": "https://api.openalex.org/works/doi:10.1145/3719027.3744800?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "FlowSentry: Accelerating NetFlow-based DDoS Detection",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:14:38Z",
+      "content_hash": "sha256:18c8a77cb3c1bba44f0b4fd2d9df29af086d1a756b03b39926dd38b780b94f19",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

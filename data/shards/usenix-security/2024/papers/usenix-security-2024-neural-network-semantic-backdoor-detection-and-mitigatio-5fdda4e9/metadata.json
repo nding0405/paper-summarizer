@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2024-neural-network-semantic-backdoor-detection-and-mitigatio-5fdda4e9",
   "title": "Neural Network Semantic Backdoor Detection and Mitigation: A Causality-Based Approach",
+  "abstract": "Different from ordinary backdoors in neural networks which are introduced with artificial triggers (e.g., certain specific patch) and/or by tampering the samples, semantic backdoors are introduced by simply manipulating the semantic, e.g., by labeling green cars as frogs in the training set. By focusing on samples with rare semantic features (such as green cars), the accuracy of the model is often minimally affected. Since the attacker is not required to modify the input sample during training nor inference time, semantic backdoors are challenging to detect and remove. Existing backdoor detection and mitigation techniques are shown to be ineffective with respect to semantic backdoors. In this work, we propose a method to systematically detect and remove semantic backdoors. Specifically we propose SODA (Semantic BackdOor Detection and MitigAtion) with the key idea of conducting lightweight causality analysis to identify potential semantic backdoor based on how hidden neurons contribute to the predictions and to remove the backdoor by adjusting the responsible neurons' contribution towards the correct predictions through optimization. SODA is evaluated with 21 neural networks trained on 6 benchmark datasets and 2 kinds of semantic backdoor attacks for each dataset. The results show that it effectively detects and removes semantic backdoors and preserves the accuracy of the neural networks.",
+  "abstract_source_id": "src-abstract-usenix-security-2024-5fdda4e9",
   "venue": "usenix-security",
   "year": 2024,
   "track_or_session": "ML V: Backdoor Defense",
@@ -133,6 +135,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2024-5fdda4e9",
+      "url": "https://www.usenix.org/conference/usenixsecurity24/presentation/sun-bing",
+      "kind": "paper-page",
+      "title": "Neural Network Semantic Backdoor Detection and Mitigation: A Causality-Based Approach",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:16:22Z",
+      "content_hash": "sha256:1c24d43bbba38fdb83b5aa494241efe6f6927ed6be6e7505a7c9fe3ed4262e3b",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

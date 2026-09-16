@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2026-the-secrets-must-not-flow-scaling-security-verification-66c95208",
   "title": "The Secrets Must Not Flow: Scaling Security Verification to Large Codebases",
+  "abstract": "Existing program verifiers can prove advanced properties about security protocol implementations, but are difficult to scale to large codebases because of the manual effort required. We develop a novel methodology called Diodon that addresses this challenge by splitting the codebase into the protocol implementation (the Core) and the remainder (the Application). This split allows us to apply powerful semiautomated verification techniques to the security-critical Core, while fully-automatic static analyses scale the verification to the entire codebase by ensuring that the Application cannot invalidate the security properties proved for the Core. The static analyses achieve that by proving I/O independence, i.e., that the I/O operations within the Application are independent of the Core's security-relevant data (such as keys), and that the Application meets the Core's requirements. We have proved Diodon sound by first showing that we can safely allow the Application to perform I/O independent of the security protocol, and second that manual verification and static analyses soundly compose. We evaluate Diodon on two case studies: an implementation of the signed Diffie-Hellman key exchange and a large ($100 \\mathrm{k}+\\text{LoC}$) production Go codebase implementing a key exchange protocol for which we obtained secrecy and injective agreement guarantees by verifying a Core of about 1 % of the code with the auto-active program verifier Gobra in less than three person months.",
+  "abstract_source_id": "src-abstract-sp-2026-66c95208",
   "venue": "sp",
   "year": 2026,
   "track_or_session": "Cycle 1",
@@ -175,6 +177,19 @@
       "official": true,
       "supports": [
         "DOI, published-order authors and affiliations, abstract, publication date, page span, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2026-66c95208",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "The Secrets Must Not Flow: Scaling Security Verification to Large Codebases",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:58:06Z",
+      "content_hash": "sha256:5353b9384fd86d54ad3dc674f6041a164ea560a1a98a9c02cc1bb37e317e508e",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

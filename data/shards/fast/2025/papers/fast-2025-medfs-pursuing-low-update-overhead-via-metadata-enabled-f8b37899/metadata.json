@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "fast-2025-medfs-pursuing-low-update-overhead-via-metadata-enabled-f8b37899",
   "title": "MedFS: Pursuing Low Update Overhead via Metadata-Enabled Delta Compression for Log-structured File System on Mobile Device",
+  "abstract": "The increasing deployment of data-intensive applications on mobile devices poses a formidable challenge in designing flash-based file systems tailored to these needs. Studies have shown that adopting delta compression in log-structured file systems is promising for such an environment as it can effectively reduce the write stress and improve flash longevity. Unfortunately, delta compression suffers from large maintenance overhead. While prior works have introduced non-volatile memory buffer or battery-backed DRAM to mitigate this, they are less appealing for cost-sensitive mobile devices.\n\nThis paper introduces MedFS, a Metadata-enabled delta compression on log-structured File System for mobile devices, to achieve a good design trade-off in log-structured file systems employing delta compression. Through a comprehensive analysis of mobile applications and file update patterns, we develop delta-inlining technique, which consolidates delta updates within the inline area of the file's inode block. By leveraging the inherent inode structure and automatically flushing dirty inodes to storage, we effectively address the maintenance overhead associated with delta compression. Additionally, we propose a complementary delta maintenance strategy that selectively manages delta chunks in the data area, overcoming the space constraints of the inline area. Experimental results show that MedFS significantly reduces the write traffic by 55.1% on average, leading to the prolonged storage endurance by 122.7% and improved I/O performance by up to 37.3% over existing work.",
+  "abstract_source_id": "src-abstract-fast-2025-f8b37899",
   "venue": "fast",
   "year": 2025,
   "track_or_session": "Compression and Deduplication",
@@ -224,6 +226,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-fast-2025-f8b37899",
+      "url": "https://www.usenix.org/conference/fast25/presentation/wu",
+      "kind": "paper-page",
+      "title": "MedFS: Pursuing Low Update Overhead via Metadata-Enabled Delta Compression for Log-structured File System on Mobile Device",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:01:10Z",
+      "content_hash": "sha256:a42a675e464fdc10d31877527263b7194f1db6c7e869f3523474e5e8341c5a0a",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-patcher-post-hoc-patching-of-backdoored-large-language-m-74d0e94c",
   "title": "Patcher: Post-Hoc Patching of Backdoored Large Language Models",
+  "abstract": "Large language models remain vulnerable to jailbreak backdoor attacks, where adversaries poison safety alignment data to embed hidden triggers that bypass safety mechanisms. Existing defenses often require comprehensive attack information or multiple triggered examples, making them impractical when defenders only observe a single reported failure case without knowing whether it stems from a backdoor attack or a natural alignment bug. This paper presents Patcher, a post-hoc defense framework that repairs backdoored language models using only a single reported failure case and the model parameters. Patcher operates in two stages. First, it localizes backdoor triggers by computing response-conditioned gradient-based saliency scores and applying adaptive clustering to separate triggers from benign context. Second, it patches the model through a constrained fine-tuning objective that breaks the trigger-response association while preserving benign-task utility and robustness to non-triggered jailbreak attacks through KL-divergence constraints. We conduct extensive evaluations across multiple backdoor attack strategies and demonstrate that Patcher successfully localizes triggers and neutralizes backdoors while maintaining model utility. We further show robustness against adaptive attacks designed to evade our defense. This work represents a significant step toward practical defenses against training-time attacks in deployed language models.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-74d0e94c",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Security of ML 1",
@@ -155,6 +157,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-74d0e94c",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/gao-anjun",
+      "kind": "paper-page",
+      "title": "Patcher: Post-Hoc Patching of Backdoored Large Language Models",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:24:59Z",
+      "content_hash": "sha256:1d4c324ee51e7edf0352a0b8f057df2de4841d477f9843b5ef4d55727af26841",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

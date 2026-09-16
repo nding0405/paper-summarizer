@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2023-understanding-the-impact-of-host-networking-elements-on-6e9e995b",
   "title": "Understanding the impact of host networking elements on traffic bursts",
+  "abstract": "Conventional host networking features various traffic shaping layers (e.g., buffers, schedulers, and pacers) with complex interactions and wide implications for performance metrics. These interactions can lead to large bursts at various time scales. Understanding the nature of traffic bursts is important for optimal resource provisioning, congestion control, buffer sizing, and traffic prediction but is challenging due to the complexity and feature velocity in host networking.\n\nWe develop Valinor, a traffic measurement framework that consists of eBPF hooks and measurement modules in a programmable network. Valinor offers visibility into traffic burstiness over a wide span of timescales (nanosecond- to secondscale) at multiple vantage points. We deploy Valinor to analyze the burstiness of various classes of congestion control algorithms, qdiscs, Linux process scheduling, NIC packet scheduling, and hardware offloading. Our analysis counters the assumption that burstiness is primarily a function of the application layer and preserved by protocol stacks, and highlights the pronounced role of lower layers in the formation and suppression of bursts. We also show the limitations of canonical burst countermeasures (e.g., TCP pacing and qdisc scheduling) due to the intervening nature of segmentation offloading and fixed-function NIC scheduling. Finally, we demonstrate that, far from a universal invariant, burstiness varies significantly across host stacks. Our findings underscore the need for a measurement framework such as Valinor for regular burst analysis.",
+  "abstract_source_id": "src-abstract-nsdi-2023-6e9e995b",
   "venue": "nsdi",
   "year": 2023,
   "track_or_session": "Congestion Control",
@@ -119,6 +121,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2023-6e9e995b",
+      "url": "https://www.usenix.org/conference/nsdi23/presentation/sharafzadeh",
+      "kind": "paper-page",
+      "title": "Understanding the impact of host networking elements on traffic bursts",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:02:43Z",
+      "content_hash": "sha256:dfc58a9d55807fbde2650ac5fa777a2935bda8d81d97fe12ef3d5c2adf1a99be",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-barracuda-edge-gpus-do-leak-dnn-weights-280c9b1c",
   "title": "BarraCUDA: Edge GPUs do Leak DNN Weights",
+  "abstract": "Over the last decade, applications of neural networks have spread to every aspect of our lives. A large number of companies base their businesses on building products that use neural networks for tasks such as face recognition, machine translation, and self-driving cars. Much of the intellectual property underpinning these products is encoded in the exact parameters of the neural networks. Consequently, protecting these is of utmost priority to businesses. At the same time, many of these products need to operate under a strong threat model, in which the adversary has unfettered physical control of the product. In this work, we present BarraCUDA, a novel attack on general-purpose Graphics Processing Units (GPUs) that can extract parameters of neural networks running on the popular Nvidia Jetson devices. BarraCUDA relies on the observation that the convolution operation, used during inference, must be computed as a sequence of partial sums, each leaking one or a few parameters. Using correlation electromagnetic analysis with these partial sums, BarraCUDA can recover parameters of real-world convolutional neural networks.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-280c9b1c",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Hardware Security 2",
@@ -154,6 +156,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-280c9b1c",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/horvath",
+      "kind": "paper-page",
+      "title": "BarraCUDA: Edge GPUs do Leak DNN Weights",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:18:49Z",
+      "content_hash": "sha256:5739f40a290f10916bba909fe4a3e597a54e510022b99412aa2f06c4f0286511",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

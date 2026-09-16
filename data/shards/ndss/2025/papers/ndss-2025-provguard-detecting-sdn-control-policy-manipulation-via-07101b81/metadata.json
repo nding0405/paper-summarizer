@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2025-provguard-detecting-sdn-control-policy-manipulation-via-07101b81",
   "title": "ProvGuard: Detecting SDN Control Policy Manipulation via Contextual Semantics of Provenance Graphs",
+  "abstract": "Software-Defined Networking (SDN) improves network flexibility by decoupling control functions (control plane) from forwarding devices (data plane). However, the logically centralized control plane is vulnerable to Control Policy Manipulation (CPM), which introduces incorrect policies by manipulating the controller's network view. Current methods for anomaly detection and configuration verification have limitations in detecting CPM attacks because they focus solely on the data plane. Certain covert CPM attacks are indistinguishable from normal behavior without analyzing the causality of the controller's decisions. In this paper, we propose ProvGuard, a provenance graph-based detection framework that identifies CPM attacks by monitoring controller activities. ProvGuard leverages static analysis to identify data-plane-related controller operations and guide controller instrumentation, constructing a provenance graph from captured control plane activities. ProvGuard reduces redundancies and extracts paths in the provenance graph as contexts to capture concise and long-term features. Suspicious behaviors are flagged by identifying paths that cause prediction errors beyond the normal range, based on a sequence-to-sequence prediction model. We implemented a prototype of ProvGuard on the Floodlight controller. Our approach successfully identified all four typical CPM attacks that previous methods could not fully address and provided valuable insights for investigating attack behaviors.",
+  "abstract_source_id": "src-abstract-ndss-2025-07101b81",
   "venue": "ndss",
   "year": 2025,
   "track_or_session": "Fall submission cycle",
@@ -283,6 +285,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2025-07101b81",
+      "url": "https://www.ndss-symposium.org/ndss-paper/provguard-detecting-sdn-control-policy-manipulation-via-contextual-semantics-of-provenance-graphs/",
+      "kind": "paper-page",
+      "title": "ProvGuard: Detecting SDN Control Policy Manipulation via Contextual Semantics of Provenance Graphs",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:20:12Z",
+      "content_hash": "sha256:c6352aa1816c96f26619483fdefde3095e9f42ea7752206de1bbb2adc1da8fea",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

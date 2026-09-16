@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2026-prompt-injection-attack-to-tool-selection-in-llm-agents-6ca23ef6",
   "title": "Prompt Injection Attack to Tool Selection in LLM Agents",
+  "abstract": "Tool selection is a key component of LLM agents. A popular approach follows a two-step process - retrieval and selection - to pick the most appropriate tool from a tool library for a given task. In this work, we introduce ToolHijacker , a novel prompt injection attack targeting tool selection in no-box scenarios. ToolHijacker injects a malicious tool document into the tool library to manipulate the LLM agent’s tool selection process, compelling it to consistently choose the attacker’s malicious tool for an attacker-chosen target task. Specifically, we formulate the crafting of such tool documents as an optimization problem and propose a two-phase optimization strategy to solve it. Our extensive experimental evaluation shows that ToolHijacker is highly effective, significantly outperforming existing manual-based and automated prompt injection attacks when applied to tool selection. Moreover, we explore various defenses, including prevention-based defenses (StruQ and SecAlign) and detection-based defenses (known-answer detection, DataSentinel, perplexity detection, and perplexity windowed detection). Our experimental results indicate that these defenses are insufficient, highlighting the urgent need for developing new defense strategies.",
+  "abstract_source_id": "src-abstract-ndss-2026-6ca23ef6",
   "venue": "ndss",
   "year": 2026,
   "track_or_session": "Summer submission cycle",
@@ -202,6 +204,19 @@
       "official": false,
       "supports": [
         "independent proceedings identity reconciliation"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2026-6ca23ef6",
+      "url": "https://www.ndss-symposium.org/ndss-paper/prompt-injection-attack-to-tool-selection-in-llm-agents/",
+      "kind": "paper-page",
+      "title": "Prompt Injection Attack to Tool Selection in LLM Agents",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:22:55Z",
+      "content_hash": "sha256:63928665dd0b83da9d88e19a50142d6c4bebe00a1305e29f17ce0c635d39a017",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

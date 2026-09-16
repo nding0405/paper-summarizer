@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-leuvenshtein-efficient-fhe-based-edit-distance-computati-d16d2163",
   "title": "Leuvenshtein: Efficient FHE-based Edit Distance Computation with Single Bootstrap per Cell",
+  "abstract": "This paper presents a novel approach to calculating the Levenshtein (edit) distance within the framework of Fully Homomorphic Encryption (FHE), specifically targeting third-generation schemes like TFHE. Edit distance computations are essential in applications across finance and genomics, such as DNA sequence alignment. We introduce an optimised algorithm that significantly reduces the cost of edit distance calculations called Leuvenshtein. This algorithm specifically reduces the number of programmable bootstraps (PBS) needed per cell of the calculation, lowering it from approximately 94 operations—required by the conventional Wagner-Fisher algorithm—to just 1. Additionally, we propose an efficient method for performing equality checks on characters, reducing ASCII character comparisons to only 2 PBS operations. Finally, we explore the potential for further performance improvements by utilising preprocessing when one of the input strings is unencrypted. Our Leuvenshtein achieves up to 278x faster performance compared to the best available TFHE implementation and up to 39x faster than an optimised implementation of the Wagner-Fisher algorithm. Moreover, when offline preprocessing is possible due to the presence of one unencrypted input on the server side, an additional 3x speedup can be achieved.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-d16d2163",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Crypto 5: HE, MPC, Oblivious Computation",
@@ -154,6 +156,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-d16d2163",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/legiest",
+      "kind": "paper-page",
+      "title": "Leuvenshtein: Efficient FHE-based Edit Distance Computation with Single Bootstrap per Cell",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:20:33Z",
+      "content_hash": "sha256:080e4721b999301ec45562255552c756821676ec149028ee850aa8f47597cae6",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

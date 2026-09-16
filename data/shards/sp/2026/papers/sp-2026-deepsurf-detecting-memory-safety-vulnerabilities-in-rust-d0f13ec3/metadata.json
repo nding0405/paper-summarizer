@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2026-deepsurf-detecting-memory-safety-vulnerabilities-in-rust-d0f13ec3",
   "title": "deepSURF: Detecting Memory Safety Vulnerabilities in Rust Through Fuzzing LLM-Augmented Harnesses",
+  "abstract": "Although Rust ensures memory safety by default, it also permits the use of unsafe code, which can introduce memory safety vulnerabilities if misused. Unfortunately, existing tools for detecting memory bugs in Rust typically exhibit limited detection capabilities, inadequately handle Rust-specific types, or rely heavily on manual intervention. To address these limitations, we present deepSURF, a tool that integrates static analysis with Large Language Model (LLM)-guided fuzzing harness generation to effectively identify memory safety vulnerabilities in Rust libraries, specifically targeting unsafe code. deepSURF introduces a novel approach for handling generics by substituting them with custom types and generating tailored implementations for the required traits, enabling the fuzzer to simulate user-defined behaviors within the fuzzed library. Additionally, deepSURF employs LLMs to augment fuzzing harnesses dynamically, facilitating exploration of complex API interactions and significantly increasing the likelihood of exposing memory safety vulnerabilities. We evaluated deepSURF on 63 real-world Rust crates, successfully rediscovering 30 known memory safety bugs and uncovering 12 previously-unknown vulnerabilities (out of which $\\mathbf{1 1}$ have been assigned RustSec IDs and 3 have been patched), demonstrating clear improvements over state-of-the-art tools.",
+  "abstract_source_id": "src-abstract-sp-2026-d0f13ec3",
   "venue": "sp",
   "year": 2026,
   "track_or_session": "Cycle 1",
@@ -91,6 +93,19 @@
       "official": true,
       "supports": [
         "DOI, published-order authors and affiliations, abstract, publication date, page span, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2026-d0f13ec3",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "deepSURF: Detecting Memory Safety Vulnerabilities in Rust Through Fuzzing LLM-Augmented Harnesses",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:57Z",
+      "content_hash": "sha256:303a9b5e5ef8908a3cfe67f02eb8a87be978a5fe3281c7ecec8c0cdb512517e0",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

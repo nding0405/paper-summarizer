@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "eurosys-2023-aggregate-vm-why-reduce-or-evict-vms-resources-when-you-9b8be5a1",
   "title": "Aggregate VM: Why Reduce or Evict VM’s Resources When You Can Borrow Them From Other Nodes?",
+  "abstract": "Hardware resource fragmentation is a common issue in data centers. Traditional solutions based on migration or overcommitment are unacceptably slow, and modern commercial or research solutions like Spot VM may reduce or evict VM's resources anytime. We propose an alternative solution that does not suffer from these drawbacks, the Aggregate VM. We introduce a new distributed hypervisor design, the resource-borrowing hypervisor, which creates Aggregate VMs: distributed VMs that temporarily aggregate fragmented resources belonging to different host machines, which require mobility of virtual CPUs, memory and IO devices. We implement a prototype, FragVisor, which runs guest software transparently. We also propose minimal modifications to the guest OS that can enable significant performance gains. We evaluate FragVisor over a set of microbenchmarks and IaaS-style real applications. Although Aggregate VMs are not a perfect fit for every type of applications, some workloads enjoy significant speedups compared to overcommitted scenarios (up to 3.9x with 4 distributed vCPUs). We further demonstrate that FragVisor is faster than a state-of-the-art competitor, GiantVM (up to 2.5x).",
+  "abstract_source_id": "src-abstract-eurosys-2023-9b8be5a1",
   "venue": "eurosys",
   "year": 2023,
   "track_or_session": null,
@@ -209,6 +211,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-eurosys-2023-9b8be5a1",
+      "url": "https://api.openalex.org/works/doi:10.1145/3552326.3587452?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Aggregate VM: Why Reduce or Evict VM's Resources When You Can Borrow Them From Other Nodes?",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:18:29Z",
+      "content_hash": "sha256:27756bc89d6bd8877c272ed1564cd0103732d88be199d2d5da01778596474ffa",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

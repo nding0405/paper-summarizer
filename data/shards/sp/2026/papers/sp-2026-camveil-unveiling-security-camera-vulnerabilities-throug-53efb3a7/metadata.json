@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2026-camveil-unveiling-security-camera-vulnerabilities-throug-53efb3a7",
   "title": "Camveil: Unveiling Security Camera Vulnerabilities through Multi-Protocol Coordinated Fuzzing",
+  "abstract": "Security cameras are widely deployed in safetycritical environments, supporting real-time video streaming and device control via protocols such as RTSP, ONVIF, and HTTP. Vulnerabilities in these systems can lead to frozen video feeds or surveillance failures, potentially resulting in property or safety losses. While fuzzing is a useful technique for discovering vulnerabilities, existing protocol and IoT fuzzers typically treat each protocol independently, overlooking the cross-protocol dependencies present in real-world cameras. To address this gap, we propose CAMVEIL, a fuzzing framework designed to uncover vulnerabilities in security cameras through multi-protocol coordinated fuzzing. The key insight is that certain protocols can modify the internal state of the camera, indirectly affecting the behavior of other protocols, making some vulnerabilities only discoverable through state-dependent, cross-protocol interaction. To exercise such interactions, CAMVEIL builds a protocol-aware camera status model that abstracts internal camera states and defines their dependencies across protocols. Guided by this model, CAMVEIL generates coordinated test sequences to explore interleaved protocol behaviors. Additionally, it integrates a logic-aware monitoring component that continuously analyzes response packets to detect semantic inconsistencies or abnormal control flows. Using this approach, CAMVEIL has discovered 22 previously unknown vulnerabilities across 9 industrial camera models from Hikvision, Honeywell, TP-Link, FOSCAM, EZVIZ, and Santachi. These flaws could allow attackers to disrupt live video streams or disable camera functionality, potentially causing critical surveillance failures.",
+  "abstract_source_id": "src-abstract-sp-2026-53efb3a7",
   "venue": "sp",
   "year": 2026,
   "track_or_session": "Cycle 1",
@@ -175,6 +177,19 @@
       "official": true,
       "supports": [
         "DOI, published-order authors and affiliations, abstract, publication date, page span, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2026-53efb3a7",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Camveil: Unveiling Security Camera Vulnerabilities Through Multi-Protocol Coordinated Fuzzing",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:57Z",
+      "content_hash": "sha256:303a9b5e5ef8908a3cfe67f02eb8a87be978a5fe3281c7ecec8c0cdb512517e0",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

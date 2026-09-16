@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2025-wlb-llm-workload-balanced-4d-parallelism-for-large-langu-fe91d596",
   "title": "WLB-LLM: Workload-Balanced 4D Parallelism for Large Language Model Training",
+  "abstract": "In this work, we present WLB-LLM , a W ork L oad- B alanced 4D Parallelism for L arge L anguage M odel Training. We first thoroughly analyze the workload imbalance issue in LLM training and identify two primary sources of imbalance at the pipeline parallelism and context parallelism levels. Then, to address the imbalance issue, at the pipeline parallelism level, WLB-LLM incorporates a workload-aware variable-length document packing method to balance the computation and communication workload across micro-batches. Additionally, at the context parallelism level, WLB-LLM introduces a novel fine-grained per-document sharding strategy, ensuring each worker within a context parallelism group has an identical workload. Comprehensive experiments under different model scales demonstrate that WLB-LLM significantly mitigates the workload imbalance during 4D parallelism LLM training and achieves an average speedup of 1.23× when applying WLB-LLM in our internal LLM training framework.",
+  "abstract_source_id": "src-abstract-osdi-2025-fe91d596",
   "venue": "osdi",
   "year": 2025,
   "track_or_session": "AI + Systems III",
@@ -327,6 +329,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2025-fe91d596",
+      "url": "https://www.usenix.org/conference/osdi25/presentation/wang-zheng",
+      "kind": "paper-page",
+      "title": "WLB-LLM: Workload-Balanced 4D Parallelism for Large Language Model Training",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:07:55Z",
+      "content_hash": "sha256:2b9b76973a134836961230bf9651bdfd087c38c493be5501f9506cc00947f3c4",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

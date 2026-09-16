@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "atc-2023-lpns-scalable-and-latency-predictable-local-storage-virt-8e00a039",
   "title": "LPNS: Scalable and Latency-Predictable Local Storage Virtualization for Unpredictable NVMe SSDs in Clouds",
+  "abstract": "Latency predictability of storage is one important QoS target of the public clouds. Although modern storage virtualization techniques are devoted to providing fast and scalable storage for clouds, these works usually concentrate exclusively on giving high IOPS throughput without eliminating the device-level interference between multi-tenant virtualized devices and providing latency predictability for cloud tenants when the cloud infrastructures virtualize millions of the current commercially-available but unpredictable NVMe SSDs\n\nTo resolve this issue, we propose a novel local storage virtualization system called LPNS to provide latency-predictable QoS control for hybrid-deployed local cloud storage, including virtualized machines, containers, and bare-metal cloud services. The OS-level NVMe virtualization LPNS designs reliable self-feedback control, flexible I/O queue and command scheduling, scalable polling design, and involves a deterministic network calculus-based formalization method to give upper bounds to virtualized device latency. The evaluation demonstrates that LPNS can achieve up to 18.72× latency optimization of the mainstream NVMe virtualization with strong latency bounds. LPNS can also increase up to 1.45× additional throughput and a better latency bound than the state-of-the-art storage latency control systems.",
+  "abstract_source_id": "src-abstract-atc-2023-8e00a039",
   "venue": "atc",
   "year": 2023,
   "track_or_session": "Virtual Machines",
@@ -159,6 +161,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-atc-2023-8e00a039",
+      "url": "https://www.usenix.org/conference/atc23/presentation/peng",
+      "kind": "paper-page",
+      "title": "LPNS: Scalable and Latency-Predictable Local Storage Virtualization for Unpredictable NVMe SSDs in Clouds",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T21:58:03Z",
+      "content_hash": "sha256:48975b23bc08bbfabb35458a61c6851c0280e082328e689bbc21119fd67c1382",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

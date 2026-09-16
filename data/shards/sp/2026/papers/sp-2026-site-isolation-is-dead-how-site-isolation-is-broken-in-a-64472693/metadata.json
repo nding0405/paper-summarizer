@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2026-site-isolation-is-dead-how-site-isolation-is-broken-in-a-64472693",
   "title": "Site Isolation is Dead: How Site Isolation is Broken in Agentic Browsers and Extensions",
+  "abstract": "Site isolation is a cornerstone of modern web browser security. By strictly separating renderer processes that render untrusted webpages across different origins, it prevents malicious websites from accessing sensitive data belonging to other websites, thus underpinning the integrity of web services. However, as browsers increasingly integrate large language models (LLMs) and web agents to automate complex user tasks, these agents should often perform LLM-driven operations across isolation boundaries, thereby introducing new security risks. Despite this shift, no previous studies have investigated how agentic browsers implement security mechanisms to protect LLM-driven agent operations from untrusted web content. In this work, we analyze the security designs of two open-source agentic browsers and seven agentic extensions, identifying a common architectural pattern: privileged processes manage user prompts and agent operations, while untrusted renderer processes are isolated, with inter-process communication (IPC) channels serving as their bridge. Building on this observation, we present two novel end-to-end attacks that exploit these IPC channels to perform (1) malicious prompt injections and (2) LLM-related data exfiltration. These attacks allow adversaries to interact with other websites or access sensitive user data through web agents, which have been considered challenging under strict site isolation. Our evaluation shows that all tested agentic browsers and extensions are vulnerable to these attacks, revealing that existing implementations often fail to properly account for IPC channels. We conclude with actionable defense guidelines for strengthening site isolation in agentic browsers and extensions. To the best of our knowledge, our work presents the first systematic study of the (in)security of site isolation in agentic browsers and extensions.",
+  "abstract_source_id": "src-abstract-sp-2026-64472693",
   "venue": "sp",
   "year": 2026,
   "track_or_session": "Cycle 2",
@@ -196,6 +198,19 @@
       "official": true,
       "supports": [
         "DOI, published-order authors and affiliations, abstract, publication date, page span, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2026-64472693",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Site Isolation is Dead: How Site Isolation is Broken in Agentic Browsers and Extensions",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:58:06Z",
+      "content_hash": "sha256:5353b9384fd86d54ad3dc674f6041a164ea560a1a98a9c02cc1bb37e317e508e",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

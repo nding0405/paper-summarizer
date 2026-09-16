@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2023-userspace-bypass-accelerating-syscall-intensive-applicat-f1445d08",
   "title": "Userspace Bypass: Accelerating Syscall-intensive Applications",
+  "abstract": "Context switching between kernel mode and user mode often causes prominent overhead, which slows down applications with frequent system calls (or syscalls), e.g., those with high I/O demand. The overhead is further amplified by security mechanisms like Linux kernel page-table isolation (KPTI). To accelerate such applications, many efforts have been put in removing syscalls from the I/O paths, mainly by combining drivers and applications in the same space or batching syscalls. Nonetheless, such solutions require developers to refactor their applications or even update hardware, which impedes their broad adoption.\n\nIn this paper, we propose another approach, userspace bypass (UB), to accelerate syscall-intensive applications, by transparently moving userspace instructions into kernel. Userspace bypass requires no modification to userspace binaries or code and achieves full binary compatibility. Specifically, to avoid overhead caused by frequent syscalls, kernel identifies the short userspace execution path between consecutive system calls, and converts the instructions in the path into code blocks with Software-Based Fault Isolation (SFI) guarantee. According to our evaluation, I/O micro-benchmark can be accelerated by 30.3 – 88.3%, Redis GET Requests Per Second (RPS) can be improved by 4.4 – 10.8% for 1B – 4KiB data sizes, when the application is executed in a virtualized setting with KPTI turned on. The performance boost will be reduced when KPTI is turned off.",
+  "abstract_source_id": "src-abstract-osdi-2023-f1445d08",
   "venue": "osdi",
   "year": 2023,
   "track_or_session": "Make Your Bits Go Faster",
@@ -180,6 +182,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2023-f1445d08",
+      "url": "https://www.usenix.org/conference/osdi23/presentation/zhou-zhe",
+      "kind": "paper-page",
+      "title": "Userspace Bypass: Accelerating Syscall-intensive Applications",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:06:51Z",
+      "content_hash": "sha256:05d4d1e8041aefd893acbd170fec44a1686d05c623db0200455674d20fccfee1",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2024-manipulating-openflow-link-discovery-packet-forwarding-f-72f45e43",
   "title": "Manipulating OpenFlow Link Discovery Packet Forwarding for Topology Poisoning",
+  "abstract": "Software-defined networking (SDN) is a centralized, dynamic, and programmable network management technology that enables flexible traffic control and scalability. SDN facilitates network administration through a centralized view of the underlying physical topology; tampering with this topology view can result in catastrophic damage to network management and security. To underscore this issue, we introduce Marionette, a new topology poisoning technique that manipulates OpenFlow link discovery packet forwarding to alter topology information. Our approach exposes an overlooked yet widespread attack vector, distinguishing itself from traditional link fabrication attacks that tamper, spoof, or relay discovery packets at the data plane. Unlike localized attacks observed in existing methods, our technique introduces a globalized topology poisoning attack that leverages control privileges. Marionette implements a reinforcement learning algorithm to compute a poisoned topology target, and injects flow entries to achieve a long-lived stealthy attack. Our evaluation shows that Marionette successfully attacks five open-source controllers and nine OpenFlow-based discovery protocols. Marionette overcomes the state-of-the-art topology poisoning defenses, showcasing a new class of topology poisoning that initiates on the control plane. This security vulnerability was ethically disclosed to OpenDaylight, and CVE-2024-37018 has been assigned.",
+  "abstract_source_id": "src-abstract-ccs-2024-72f45e43",
   "venue": "ccs",
   "year": 2024,
   "track_or_session": "Cycle 2",
@@ -180,6 +182,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2024-72f45e43",
+      "url": "https://api.openalex.org/works/doi:10.1145/3658644.3690345?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Manipulating OpenFlow Link Discovery Packet Forwarding for Topology Poisoning",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:10:59Z",
+      "content_hash": "sha256:b30c0a958f683ef5b8e8859f103262737115ab208c012ca39c79be7640a2729f",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

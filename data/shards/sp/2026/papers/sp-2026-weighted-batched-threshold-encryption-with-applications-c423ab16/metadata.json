@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2026-weighted-batched-threshold-encryption-with-applications-c423ab16",
   "title": "Weighted Batched Threshold Encryption with Applications to Mempool Privacy",
+  "abstract": "A Batched Threshold Encryption (BTE) scheme enables a committee of servers to perform lightweight (in terms of communication and computation) threshold decryption of an arbitrary batch of ciphertexts from a larger pool, while ensuring the privacy of ciphertexts that are outside the batch. Such a primitive has a direct application in designing encrypted mempools for MEV protection in modern blockchains. Bormet et al. (USENIX 2025) recently proposed a BTE scheme called “BEAT-MEV” which is concretely efficient for small to moderate batch sizes. In this work, we improve and extend the BEAT-MEV scheme in multiple ways. First, we improve the computational cost from quadratic to quasilinear in the batch size thus making it practical for large batch sizes. This improvement is achieved by substituting the key-homomorphic punctured PRF used in BEAT-MEV with an FFT-friendly alternative. Second, we extend the ideas in their scheme to the weighted setting, where each server in the committee has an associated 'weight' value (e.g. stake weight of validators in PoS blockchains), while crucially ensuring that the communication cost remains independent of the weights. In contrast, BEAT-MEV with naive virtualization would incur communication cost linear in the total weight. Third, to handle the small failure rate inherent in BEAT-MEV scheme due to index collisions across different clients at the time of encryption, we propose a generalization of their suggested approach which offers an option to tradeoff between ciphertext size and server communication cost. We implement and evaluate our scheme and compare it with BEAT-MEV to demonstrate our concrete improvement. In the unweighted setting, we improve the computational cost (without increasing the communication cost) by $\\approx 6 \\times$ for a batch size of 512 ciphertexts. In the weighted setting, we improve the communication cost (without compromising computation time), over BEAT-MEV with naive virtualization, by $\\approx 50 \\times$ for 100 validators with total stake weight 5000 distributed as per the latest Solana stake distribution.",
+  "abstract_source_id": "src-abstract-sp-2026-c423ab16",
   "venue": "sp",
   "year": 2026,
   "track_or_session": "Cycle 2",
@@ -217,6 +219,19 @@
       "official": true,
       "supports": [
         "DOI, published-order authors and affiliations, abstract, publication date, page span, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2026-c423ab16",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Weighted Batched Threshold Encryption With Applications to Mempool Privacy",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:58:06Z",
+      "content_hash": "sha256:5353b9384fd86d54ad3dc674f6041a164ea560a1a98a9c02cc1bb37e317e508e",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

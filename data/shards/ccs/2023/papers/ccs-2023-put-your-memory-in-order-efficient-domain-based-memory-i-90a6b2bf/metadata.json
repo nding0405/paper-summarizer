@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2023-put-your-memory-in-order-efficient-domain-based-memory-i-90a6b2bf",
   "title": "Put Your Memory in Order: Efficient Domain-based Memory Isolation for WASM Applications",
+  "abstract": "Memory corruption vulnerabilities can have more serious consequences in WebAssembly than in native applications. Therefore, we present \\tool, the first WebAssembly runtime with memory isolation. Our insight is to use MPK hardware for efficient memory protection in WebAssembly. However, MPK and WebAssembly have different memory models: MPK protects virtual memory pages, while WebAssembly uses linear memory that has no pages. Mapping MPK APIs to WebAssembly causes memory bloating and low running efficiency. To solve this, we propose \\acfdilm, which protects linear memory at function-level granularity. We implemented \\acdilm into the official WebAssembly runtime to build \\tool. Our evaluation shows that \\tool can prevent memory corruption in real projects with a 1.77% average overhead and negligible memory cost.",
+  "abstract_source_id": "src-abstract-ccs-2023-90a6b2bf",
   "venue": "ccs",
   "year": 2023,
   "track_or_session": "Defenses (Software Security)",
@@ -277,6 +279,19 @@
       "official": false,
       "supports": [
         "published title, author order, and page span"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2023-90a6b2bf",
+      "url": "https://api.openalex.org/works/doi:10.1145/3576915.3623205?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Put Your Memory in Order: Efficient Domain-based Memory Isolation for WASM Applications",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:08:03Z",
+      "content_hash": "sha256:23f3a73862c384e320a23615edc6e4d3f42d8409d85167040271baed4233cb98",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2026-rteaal-sim-using-tensor-algebra-to-represent-and-acceler-914e774e",
   "title": "RTeAAL Sim: Using Tensor Algebra to Represent and Accelerate RTL Simulation",
+  "abstract": "RTL simulation on CPUs remains a persistent bottleneck in hardware design. State-of-the-art simulators embed the circuit directly into the simulation binary, resulting in long compilation times and execution that is fundamentally CPU frontend-bound, with severe instruction-cache pressure. This work proposes RTeAAL Sim, which reformulates RTL simulation as a sparse tensor algebra problem. By representing RTL circuits as tensors and simulation as a sparse tensor algebra kernel, RTeAAL Sim decouples simulation behavior from binary size and makes RTL simulation amenable to well-studied tensor algebra optimizations. We demonstrate that a prototype of our tensor-based simulator, even with a subset of these optimizations, already mitigates the compilation overhead and frontend pressure and achieves performance competitive with the highly optimized Verilator simulator across multiple CPUs and ISAs.",
+  "abstract_source_id": "src-abstract-asplos-2026-914e774e",
   "venue": "asplos",
   "year": 2026,
   "track_or_session": "Session 6B: Hardware Design Languages",
@@ -152,6 +154,19 @@
       "official": false,
       "supports": [
         "Indexed abstract used for strict relevance classification and indexed arXiv identifier where available."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2026-914e774e",
+      "url": "https://api.openalex.org/works/doi:10.1145/3779212.3790214?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "RTeAAL Sim: Using Tensor Algebra to Represent and Accelerate RTL Simulation",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:06:18Z",
+      "content_hash": "sha256:bd58a5221a727f43fd1873709795a34a5010bbc02d1e1da5642fe7ab52384792",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

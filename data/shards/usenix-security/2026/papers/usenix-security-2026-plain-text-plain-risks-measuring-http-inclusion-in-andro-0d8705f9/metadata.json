@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-plain-text-plain-risks-measuring-http-inclusion-in-andro-0d8705f9",
   "title": "Plain Text, Plain Risks: Measuring HTTP Inclusion in Android WebViews at Scale",
+  "abstract": "While the widespread adoption of HTTPS and browser-based visual warnings for HTTP content has largely mitigated machine-in-the-middle (MitM) attacks on the traditional Web, the mobile ecosystem presents a different situation. Web content embedded via the Android WebView component commonly lacks these built-in visual security indicators and grants apps granular control over transport-layer security. This flexibility raises a critical question: does the mobile-Web ecosystem keep up with the advancements of the modern Web?\n\nIn this paper, we perform the first large-scale analysis of HTTP inclusion in WebViews across 189,779 Google Play apps. Despite Android's default policy of blocking HTTP traffic, we find that 33.74% of apps explicitly opt out. Dynamic analysis of 35,000 apps reveals that 69.96% of apps that opt out also relax the Mixed Content Policy, and we observe active HTTP traffic in 2,790. The security impact of these configurations is severe. We identify high-profile apps with 10M+ installations vulnerable to attacks ranging from phishing to full app takeover. Furthermore, we identify a major ad library transmitting cleartext ads, exposing billions of users to MitM attacks. We conclude with a qualitative developer study revealing that insecure practices are frequently driven by the requirements of third-party ad libraries and misconceptions regarding WebView's security configuration modes.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-0d8705f9",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Security and Privacy for Web, Mobile, and Emerging Technologies 2",
@@ -134,6 +136,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-0d8705f9",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/beer",
+      "kind": "paper-page",
+      "title": "Plain Text, Plain Risks: Measuring HTTP Inclusion in Android WebViews at Scale",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:25:02Z",
+      "content_hash": "sha256:cbc824c44109a6c8fde2c1f223d9265c3dea6fbbfc1c36104f04e9e3ae46fb0b",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

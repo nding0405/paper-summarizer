@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2025-secalign-defending-against-prompt-injection-with-prefere-65ec3aac",
   "title": "SecAlign: Defending Against Prompt Injection with Preference Optimization",
+  "abstract": "Large language models (LLMs) are becoming increasingly prevalent in modern software systems, interfacing between the user and the Internet to assist with tasks that require advanced language understanding. To accomplish these tasks, the LLM often uses external data sources such as user documents, web retrieval, results from API calls, etc. This opens up new avenues for attackers to manipulate the LLM via prompt injection. Adversarial prompts can be injected into external data sources to override the system's intended instruction and instead execute a malicious instruction. To mitigate this vulnerability, we propose a new defense called SecAlign based on the technique of preference optimization. Our defense first constructs a preference dataset with prompt-injected inputs, secure outputs (ones that respond to the legitimate instruction), and insecure outputs (ones that respond to the injection). We then perform preference optimization on this dataset to teach the LLM to prefer the secure output over the insecure one. This provides the first known method that reduces the success rates of various prompt injections to <10%, even against attacks much more sophisticated than ones seen during training. This indicates our defense generalizes well against unknown and yet-to-come attacks. Also, SecAlign models are still practical with similar utility to the one before defensive training in our evaluations. Our code is at https://github.com/facebookresearch/SecAlign",
+  "abstract_source_id": "src-abstract-ccs-2025-65ec3aac",
   "venue": "ccs",
   "year": 2025,
   "track_or_session": "Cycle 1",
@@ -190,6 +192,19 @@
         "published-order authors",
         "publication-time affiliations",
         "publication date and page span"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2025-65ec3aac",
+      "url": "https://api.openalex.org/works?filter=title.search:SecAlign%3A%20Defending%20Against%20Prompt%20Injection%20with%20Preference%20Optimization&select=id,title,abstract_inverted_index&per-page=3&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "SecAlign: Defending Against Prompt Injection with Preference Optimization",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:16:44Z",
+      "content_hash": "sha256:32836c9943e76f36f952e3f0865a88c2c560b202af0a974ca942df81ac1ffa74",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

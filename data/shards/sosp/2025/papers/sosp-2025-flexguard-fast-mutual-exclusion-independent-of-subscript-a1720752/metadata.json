@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sosp-2025-flexguard-fast-mutual-exclusion-independent-of-subscript-a1720752",
   "title": "FlexGuard: Fast Mutual Exclusion Independent of Subscription",
+  "abstract": "Performance-oriented applications require efficient locks to harness the computing power of multicore architectures. While fast, spinlock algorithms suffer severe performance degradation when thread counts exceed available hardware capacity, i.e., in oversubscribed scenarios. Existing solutions rely on imprecise heuristics for blocking, leading to suboptimal performance. We present FlexGuard, the first approach that systematically switches from busy-waiting to blocking precisely when a lock-holding thread is preempted. Flex-Guard achieves this by communicating with the OS scheduler via eBPF, unlike prior approaches. FlexGuard matches or improves performance in LevelDB, a memory-optimized database index, PARSEC's Dedup, and SPLASH2X's Raytrace and Streamcluster, boosting throughput by 1–6× in non-oversubscribed and up to 5× in oversubscribed scenarios.",
+  "abstract_source_id": "src-abstract-sosp-2025-a1720752",
   "venue": "sosp",
   "year": 2025,
   "track_or_session": null,
@@ -167,6 +169,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-sosp-2025-a1720752",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "FlexGuard: Fast Mutual Exclusion Independent of Subscription",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:19Z",
+      "content_hash": "sha256:b613162f9e7d53fac5fe410aff94d06ac71f23c6c31e2e9cc362b51e87d1bb79",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

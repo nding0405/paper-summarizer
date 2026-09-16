@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "eurosys-2024-neuroflux-memory-efficient-cnn-training-using-adaptive-l-2bc48b0a",
   "title": "NeuroFlux: Memory-Efficient CNN Training Using Adaptive Local Learning",
+  "abstract": "Efficient on-device Convolutional Neural Network (CNN) training in resource-constrained mobile and edge environments is an open challenge. Backpropagation is the standard approach adopted, but it is GPU memory intensive due to its strong inter-layer dependencies that demand intermediate activations across the entire CNN model to be retained in GPU memory. This necessitates smaller batch sizes to make training possible within the available GPU memory budget, but in turn, results in substantially high and impractical training time. We introduce NeuroFlux, a novel CNN training system tailored for memory-constrained scenarios. We develop two novel opportunities: firstly, adaptive auxiliary networks that employ a variable number of filters to reduce GPU memory usage, and secondly, block-specific adaptive batch sizes, which not only cater to the GPU memory constraints but also accelerate the training process. NeuroFlux segments a CNN into blocks based on GPU memory usage and further attaches an auxiliary network to each layer in these blocks. This disrupts the typical layer dependencies under a new training paradigm - 'adaptive local learning'. Moreover, NeuroFlux adeptly caches intermediate activations, eliminating redundant forward passes over previously trained blocks, further accelerating the training process. The results are twofold when compared to Backpropagation: on various hardware platforms, NeuroFlux demonstrates training speed-ups of 2.3× to 6.1× under stringent GPU memory budgets, and NeuroFlux generates streamlined models that have 10.9× to 29.4× fewer parameters.",
+  "abstract_source_id": "src-abstract-eurosys-2024-2bc48b0a",
   "venue": "eurosys",
   "year": 2024,
   "track_or_session": null,
@@ -104,6 +106,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-eurosys-2024-2bc48b0a",
+      "url": "https://api.openalex.org/works/doi:10.1145/3627703.3650067?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "NeuroFlux: Memory-Efficient CNN Training Using Adaptive Local Learning",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:18:53Z",
+      "content_hash": "sha256:c021eb3043f799296330640e4ebb8bc196dd7cff9ae174e7d24eb642f9b654ed",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

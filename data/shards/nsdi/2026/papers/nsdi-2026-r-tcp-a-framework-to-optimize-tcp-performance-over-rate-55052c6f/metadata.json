@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2026-r-tcp-a-framework-to-optimize-tcp-performance-over-rate-55052c6f",
   "title": "R-TCP: A Framework to Optimize TCP Performance Over Rate-Limiting Networks",
+  "abstract": "Many mobile operators provide subscription plans that include a data quota for full-speed access, beyond which the service will be throttled to a low data rate — rate-limited service. This is designed to control costs and to motivate users to upgrade. Our recent measurements in a country-scale service suggested that the proportion of TCP flows subjected to rate limiting can be as high as 28%. More importantly, TCP flows under rate limiting can exhibit excessive retransmission rates, exceeding 20% in many cases. The extra bandwidth costs incurred by the retransmissions for large service providers are very significant, not to mention bandwidth wastage. This work develops a novel R-TCP framework to mitigate the excessive retransmissions problems in various TCP designs (e.g., Cubic and BBR) under rate limiting networks. R-TCP is specifically designed and optimized for sender-side kernel implementation with minimal overheads. It has been implemented into Linux where extensive experiments in real-world networks and applications show that it can substantially reduce excessive retransmissions by up to 88% with negligible tradeoff in goodput and application-layer performance.",
+  "abstract_source_id": "src-abstract-nsdi-2026-55052c6f",
   "venue": "nsdi",
   "year": 2026,
   "track_or_session": "Managing Complexity at Scale",
@@ -139,6 +141,19 @@
         "proceedings page range and page count",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2026-55052c6f",
+      "url": "https://www.usenix.org/conference/nsdi26/presentation/zhu",
+      "kind": "paper-page",
+      "title": "R-TCP: A Framework to Optimize TCP Performance Over Rate-Limiting Networks",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:05:55Z",
+      "content_hash": "sha256:211aefc7e4db7bd68d0eed8d3bbdf77f851058726d5588c42d333d90ddd71c0c",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

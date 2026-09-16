@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-bridging-the-gap-in-vision-language-models-in-identifyin-55d028c7",
   "title": "Bridging the Gap in Vision Language Models in Identifying Unsafe Concepts Across Modalities",
+  "abstract": "Vision-language models (VLMs) are increasingly applied to identify unsafe or inappropriate images due to their internal ethical standards and powerful reasoning abilities. However, it is still unclear whether they can recognize various unsafe concepts when presented in different modalities, such as text and images. To address this, we first compile the UnsafeConcepts dataset, featuring 75 unsafe concepts, i.e., \"Swastika,\" \"Sexual Harassment,\" and \"Assaults,\" along with associated 1.5K images. We then conduct a systematic evaluation of VLMs' perception (concept recognition) and alignment (ethical reasoning) capabilities. We assess eight popular VLMs and find that, although most VLMs accurately perceive unsafe concepts, they sometimes mistakenly classify these concepts as safe. We also identify a consistent modality gap among open-source VLMs in distinguishing between visual and textual unsafe concepts. To bridge this gap, we introduce a simplified reinforcement learning (RL)-based approach using proximal policy optimization (PPO) to strengthen the ability to identify unsafe concepts from images. Our approach uses reward scores based directly on VLM responses, bypassing the need for collecting human-annotated preference data to train a new reward model. Experimental results show that our approach effectively enhances VLM alignment on images while preserving general capabilities. It outperforms baselines such as supervised fine-tuning (SFT) and direct preference optimization (DPO). We hope our dataset, evaluation findings, and proposed alignment solution contribute to the community's efforts in advancing safe VLMs.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-55d028c7",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "ML and AI Security 1: Images",
@@ -112,6 +114,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-55d028c7",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/qu-yiting",
+      "kind": "paper-page",
+      "title": "Bridging the Gap in Vision Language Models in Identifying Unsafe Concepts Across Modalities",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:18:58Z",
+      "content_hash": "sha256:8eac207973b93ef122687ad82ba094a09e1c5137b6ca9075b19b4617da99542f",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

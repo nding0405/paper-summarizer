@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sigcomm-2026-synchronizing-with-the-scheduler-dual-loop-congestion-co-2e8fd6c3",
   "title": "Synchronizing with the Scheduler: Dual-Loop Congestion Control for 5G Uplink on Commodity Devices",
+  "abstract": "Current end-to-end congestion-control feedback is too slow to track rapid wireless dynamics in cellular networks. We identify Grant-to-Buffer Ratio (GBR)—the ratio of base-station uplink grants to mobile-reported demand—as a millisecond-scale RAN signal of uplink resource scarcity. Measurements across AT&T, Verizon, and T-Mobile LTE/5G FDD/TDD deployments show that GBR tracks base-station uplink load and reveals congestion earlier than end-to-end feedback. Because GBR is derived from the mandatory BSR-grant exchange, it requires no base-station changes and captures scheduler decisions at their native timescale. We then design GBR-CC, a dual-loop controller that updates the sender rate on each GBR sample, using GBR for fast adaptation and end-to-end delay trends as a conservative fallback. This design lets the sender react before queues inflate while still handling non-radio bottlenecks through the outer loop. GBR-CC runs on commodity mobile devices without extra hardware or external tools. Experiments on commercial cellular networks show that GBR-CC improves average throughput over GCC by 50%, while reducing median playout latency by 32–53% and freeze rate by 60%; compared with BBR, it improves average throughput by 5% and halves median RTT.",
+  "abstract_source_id": "src-abstract-2e8fd6c3",
   "venue": "sigcomm",
   "year": 2026,
   "track_or_session": "Research Session 4: Cellular & RAN Systems — Research Paper",
@@ -191,6 +193,19 @@
       "official": true,
       "supports": [
         "official main-paper scope and track definitions"
+      ]
+    },
+    {
+      "id": "src-abstract-2e8fd6c3",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/search/match?query=Synchronizing%20with%20the%20Scheduler%3A%20Dual-Loop%20Congestion%20Control%20for%205G%20Uplink%20on%20Commodity%20Devices&fields=title,abstract",
+      "kind": "semantic-scholar",
+      "title": "Synchronizing with the Scheduler: Dual-Loop Congestion Control for 5G Uplink on Commodity Devices",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T23:06:55Z",
+      "content_hash": "sha256:f50a8fed72e1fc5f819ab566493459966a3ae0a43ede188c34a0f35a0d9c8114",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

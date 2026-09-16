@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "atc-2024-streambox-a-lightweight-gpu-sandbox-for-serverless-infer-ce116592",
   "title": "StreamBox: A Lightweight GPU SandBox for Serverless Inference Workflow",
+  "abstract": "The dynamic workload and latency sensitivity of DNN inference drive a trend toward exploiting serverless computing for scalable DNN inference serving. Usually, GPUs are spatially partitioned to serve multiple co-located functions. However, existing serverless inference systems isolate functions in separate monolithic GPU runtimes (e.g., CUDA context), which is too heavy for short-lived and fine-grained functions, leading to a high startup latency, a large memory footprint, and expensive inter-function communication. In this paper, we present StreamBox, a new lightweight GPU sandbox for serverless inference workflow. StreamBox unleashes the potential of streams and efficiently realizes them for serverless inference by implementing fine-grain and auto-scaling memory management, allowing transparent and efficient intra-GPU communication across functions, and enabling PCIe bandwidth sharing among concurrent streams. Our evaluations over real-world workloads show that StreamBox reduces the GPU memory footprint by up to 82% and improves throughput by 6.7X compared to state-of-the-art serverless inference systems.",
+  "abstract_source_id": "src-abstract-atc-2024-ce116592",
   "venue": "atc",
   "year": 2024,
   "track_or_session": "Cloud Computing",
@@ -243,6 +245,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-atc-2024-ce116592",
+      "url": "https://www.usenix.org/conference/atc24/presentation/wu-hao",
+      "kind": "paper-page",
+      "title": "StreamBox: A Lightweight GPU SandBox for Serverless Inference Workflow",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T21:59:06Z",
+      "content_hash": "sha256:ee63c4fb692373b7347ee341061db1d0651b07276051f333afe30e4e05ef0e0d",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

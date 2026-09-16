@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2026-moonbright-a-gpu-memory-allocator-with-device-side-page-b8f04a6d",
   "title": "MoonBright: A GPU Memory Allocator with Device-Side Page Table Materialization and Deferred TLB Coherence",
+  "abstract": "Modern GPU workloads increasingly rely on dynamic and fine-grained memory allocation, yet GPU memory management remains CPU-centric. In current GPU runtimes, allocation metadata updates, page-table construction, translation-state propagation, and TLB shootdowns are largely serialized through the host control path, introducing substantial latency. We present MoonBright, a GPU memory allocator that enables device-side page-table materialization and deferred TLB coherence on commodity GPUs. MoonBright keeps validation and allocation metadata on the host, but moves bulk page-table construction to the GPU, turning translation updates into data-parallel device-memory operations. To avoid costly TLB shootdowns on the common path, MoonBright assigns fresh virtual addresses to new mappings, ensuring that no stale same-address TLB entries can exist. Our evaluation shows that MoonBright reduces allocation latency, improves LLM inference performance, and mitigates allocator-level external fragmentation across diverse workloads. Unlike application-specific memory managers, MoonBright requires no GPU hardware modifications and runs on commodity NVIDIA and AMD GPUs with software-only changes. MoonBright is publicly available at https://github.com/MoonBright-project .",
+  "abstract_source_id": "src-abstract-osdi-2026-b8f04a6d",
   "venue": "osdi",
   "year": 2026,
   "track_or_session": "Accelerator and Device Virtualization",
@@ -377,6 +379,19 @@
       "official": true,
       "supports": [
         "Official proceedings availability and canonical conference versions."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2026-b8f04a6d",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/zhang-yangyu",
+      "kind": "paper-page",
+      "title": "MoonBright: A GPU Memory Allocator with Device-Side Page Table Materialization and Deferred TLB Coherence",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:08:37Z",
+      "content_hash": "sha256:6ff37bd59fb5182e3de54247fae830555282954256e5fddd8154f63d290a6e8f",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

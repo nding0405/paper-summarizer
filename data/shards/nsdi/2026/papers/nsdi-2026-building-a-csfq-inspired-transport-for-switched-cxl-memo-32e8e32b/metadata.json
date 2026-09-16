@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2026-building-a-csfq-inspired-transport-for-switched-cxl-memo-32e8e32b",
   "title": "Building A CSFQ-Inspired Transport for Switched CXL Memory Pooling",
+  "abstract": "Emerging switched CXL memory pooling systems, albeit promising, suffer from significant performance interference due to the shared but performance-uncontrolled data path among concurrent memory streams between a host core and a remote DIMM. We systematically characterize a memory pooling appliance based on the XConn’s Apollo CXL switch, and identify three issues: intra-host contention, in-fabric congestion, and unmanaged host-remote DIMM interaction.\n\nThis paper presents a new transport layer, MemChannel , which provides the mchannel abstraction to manage end-to-end fabric bandwidth among competing memory flows and enable application-specific traffic for switched CXL memory pooling. Under the hood, our key idea is to build a Sender-Driven Fabric-Informed transport protocol—inspired by Core-Stateless Fair Queueing (CSFQ)—that admits just the right amount of CXL requests to each mchannel based on the estimated Core ↔ DIMM CXL bandwidth availability. To grapple with the ramifications of CXL-induced idiosyncrasies, MemChannel introduces a couple of techniques: time-based rate control, host-side admission control, cross-host bookkeeping, new congestion signals, rate estimation based on the fluid model, and delay-based link capacity adjustment. We build MemChannel from scratch and support unmodified applications. Our evaluations over switched memory pooling demonstrate the effectiveness of MemChannel from performance isolation, scalability, and multi-tenancy perspectives.",
+  "abstract_source_id": "src-abstract-nsdi-2026-32e8e32b",
   "venue": "nsdi",
   "year": 2026,
   "track_or_session": "From Silicon to Networked Systems",
@@ -118,6 +120,19 @@
         "proceedings page range and page count",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2026-32e8e32b",
+      "url": "https://www.usenix.org/conference/nsdi26/presentation/guo-zerui",
+      "kind": "paper-page",
+      "title": "Building A CSFQ-Inspired Transport for Switched CXL Memory Pooling",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:04:53Z",
+      "content_hash": "sha256:48db5454aa89872ca55bb7aacbcb7064320148a7dca03b2474df5677df3dfb42",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

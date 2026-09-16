@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2025-cxlfork-fast-remote-fork-over-cxl-fabrics-61517fe6",
   "title": "CXLfork: Fast Remote Fork over CXL Fabrics",
+  "abstract": "The shared and distributed memory capabilities of the emerging Compute Express Link (CXL) interconnect urge us to rethink the traditional interfaces of system software. In this paper, we explore one such interface: remote fork using CXL-attached shared memory for cluster-wide process cloning. We present CXLfork, a remote fork interface that realizes close to zero-serialization, zero-copy process cloning across nodes over CXL fabrics. CXLfork utilizes globally-shared CXL memory for cluster-wide deduplication of process states. It also enables fine-grained control of state tiering between local and CXL memory. We use CXLfork to develop CXL-porter, an efficient horizontal autoscaler for serverless functions deployed on CXL fabrics. CXLfork minimizes cold-start overhead without sacrificing local memory. CXLfork attains restore latency close to that of a local fork, outperforming state-of-practice by 2.26x on average, and reducing local memory consumption by 87% on average.",
+  "abstract_source_id": "src-abstract-asplos-2025-61517fe6",
   "venue": "asplos",
   "year": 2025,
   "track_or_session": "Session 2B: Distributed Computing",
@@ -188,6 +190,19 @@
       "official": false,
       "supports": [
         "Indexed abstract and open-access links used for relevance classification and ancillary-link discovery."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2025-61517fe6",
+      "url": "https://api.openalex.org/works/doi:10.1145/3676641.3715988?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "CXLfork: Fast Remote Fork over CXL Fabrics",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:01:05Z",
+      "content_hash": "sha256:2666ca1aa810dbc5dc63d6bcc7eacb0f15021f5d65eaba506657006669ac6fd7",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

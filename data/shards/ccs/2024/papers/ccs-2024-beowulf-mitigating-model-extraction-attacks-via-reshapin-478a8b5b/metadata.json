@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2024-beowulf-mitigating-model-extraction-attacks-via-reshapin-478a8b5b",
   "title": "Beowulf: Mitigating Model Extraction Attacks Via Reshaping Decision Regions",
+  "abstract": "Machine Learning as a Service (MLaaS) enables resource-constrained users to access well-trained models through a publicly accessible Application Programming Interface (API) on a pay-per-query basis.Nevertheless, model owners may face the potential threats of model extraction attacks where malicious users replicate valuable commercial models based on query results.Existing defenses against model extraction attacks, however, either sacrifice prediction accuracy or fail to thwart more advanced attacks.In this paper, we propose a novel model extraction defense, dubbed Beowulf 1 , which draws inspiration from theoretical findings that models with complex and narrow decision regions are difficult to be reproduced.Rather than arbitrarily altering decision regions, which may jeopardize the predictive capacity of the victim model, we introduce a dummy class, carefully synthesized using both random and adversarial noises.The random noise broadens the coverage of the dummy class, and the adversarial noise impacts decision regions near decision boundaries with normal classes.To further improve the model utility, we propose to employ data augmentation methods to seamlessly integrate the dummy class and the normal classes.Extensive evaluations on CIFAR-10, GTSRB, CIFAR-100, and ImageNette datasets * Yanjiao Chen and Qian Wang are corresponding authors.",
+  "abstract_source_id": "src-abstract-ccs-2024-478a8b5b",
   "venue": "ccs",
   "year": 2024,
   "track_or_session": "Cycle 1",
@@ -222,6 +224,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2024-478a8b5b",
+      "url": "https://api.openalex.org/works/doi:10.1145/3658644.3670267?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Beowulf: Mitigating Model Extraction Attacks Via Reshaping Decision Regions",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:09:03Z",
+      "content_hash": "sha256:e87aff01baa4423583deaf61b1ba23e7b0c7a94975e5e49be968504f1cd041c8",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

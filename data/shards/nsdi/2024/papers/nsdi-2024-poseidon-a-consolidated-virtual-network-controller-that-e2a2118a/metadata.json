@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2024-poseidon-a-consolidated-virtual-network-controller-that-e2a2118a",
   "title": "POSEIDON: A Consolidated Virtual Network Controller that Manages Millions of Tenants via Config Tree",
+  "abstract": "As the cloud rapidly expands in scale, the virtual network controller must manage an increasing number of devices with higher update frequencies. Furthermore, the emergence of cloud-native services has substantially intensified program-triggered updates, leading to more frequent API invocations. To enhance performance and extensibility, we propose Poseidon, a novel virtual network control framework. Specifically, to reduce operational expenses (OpEx), we have consolidated the common functions of multiple service controllers into a single controller. To manage heterogeneous devices and eliminate the multi-table lookup complexity due to config dependencies, we introduce Trident, a tree-based service- and device-independent abstraction, so that config dependency calculation can be replaced by more efficient tree traversal. After deploying Poseidon on Alibaba Cloud, we observed a 21x increase in the throughput of virtual network configuration tasks, along with a 4.4x decrease in the P99 API processing latency. Poseidon completes the task of enabling hundreds of Elastic IP addresses (EIPs) 1.8 to 55 times faster than Vendors A and B, both of which are among the top 5 providers, for identical network configuration jobs.",
+  "abstract_source_id": "src-abstract-nsdi-2024-e2a2118a",
   "venue": "nsdi",
   "year": 2024,
   "track_or_session": "Networking at Scale",
@@ -538,6 +540,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2024-e2a2118a",
+      "url": "https://www.usenix.org/conference/nsdi24/presentation/lyu",
+      "kind": "paper-page",
+      "title": "POSEIDON: A Consolidated Virtual Network Controller that Manages Millions of Tenants via Config Tree",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:03:34Z",
+      "content_hash": "sha256:3223133252332688ebd86ef39999bd0c8b689c791a05b2faa81b20b4c7ef810c",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

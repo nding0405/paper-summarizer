@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2023-clepsydracache-preventing-cache-attacks-with-time-based-15a9ca1f",
   "title": "ClepsydraCache -- Preventing Cache Attacks with Time-Based Evictions",
+  "abstract": "In the recent past, we have witnessed the shift towards attacks on the microarchitectural CPU level. In particular, cache side-channels play a predominant role as they allow an attacker to exfiltrate secret information by exploiting the CPU microarchitecture. These subtle attacks exploit the architectural visibility of conflicting cache addresses. In this paper, we present ClepsydraCache, which mitigates state-of-the-art cache attacks using a novel combination of cache decay and index randomization. Each cache entry is linked with a Time-To-Live (TTL) value. We propose a new dynamic scheduling mechanism of the TTL which plays a fundamental role in preventing those attacks while maintaining performance. ClepsydraCache efficiently protects against the latest cache attacks such as Prime+(Prune+)Probe. We present a full prototype in gem5 and lay out a proof-of-concept hardware design of the TTL mechanism, which demonstrates the feasibility of deploying ClepsydraCache in real-world systems.",
+  "abstract_source_id": "src-abstract-usenix-security-2023-15a9ca1f",
   "venue": "usenix-security",
   "year": 2023,
   "track_or_session": "Cache Attacks",
@@ -217,6 +219,19 @@
       "official": true,
       "supports": [
         "authors, affiliations when published, abstract, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2023-15a9ca1f",
+      "url": "https://www.usenix.org/conference/usenixsecurity23/presentation/thoma",
+      "kind": "paper-page",
+      "title": "ClepsydraCache -- Preventing Cache Attacks with Time-Based Evictions",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:10:14Z",
+      "content_hash": "sha256:a5fea73b0e2082c11e63c0195f4801aa24af913619072b012f8959fcc139abe9",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

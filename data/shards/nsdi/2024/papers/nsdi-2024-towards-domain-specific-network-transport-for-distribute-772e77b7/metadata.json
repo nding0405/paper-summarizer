@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2024-towards-domain-specific-network-transport-for-distribute-772e77b7",
   "title": "Towards Domain-Specific Network Transport for Distributed DNN Training",
+  "abstract": "The nature of machine learning (ML) applications exposes rich characteristics to underlying network transport, yet little work has been done so far to systematically exploit these properties in transport layer design. This paper takes the initiative to pursue a domain-specific network transport, called MLT, for distributed DNN training that fully embraces several unique characteristics of machine learning.\n\nAt its heart, MLT employs three simple-yet-effective techniques to form a 3-step progressive scheme against long tail latency caused by transient packet drops and queueing. First, it leverages the independencies among gradient updates to enable per-packet load balancing to minimize network hotspots without worrying about packet re-ordering. Then, if hotspot arises, it performs priority queueing/dropping by differentiating gradients based on their layers and magnitudes to optimize model convergence and accuracy. Lastly, if drop occurs, it enables bounded-loss tolerance—a certain amount of gradient losses tolerated by the DNN training without affecting the final model performance.\n\nMLT is readily deployable with commodity switches and imposes minimal modifications on popular DNN training libraries (e.g., TensorFlow, MXNet and PyTorch) and communication routines (e.g., PS and Ring All-reduce). We show, via both testbed experiments and simulations, that MLT can effectively optimize network tail latency and achieve up to 62.2% better end-to-end training time over prior work.",
+  "abstract_source_id": "src-abstract-nsdi-2024-772e77b7",
   "venue": "nsdi",
   "year": 2024,
   "track_or_session": "ML Scheduling",
@@ -265,6 +267,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2024-772e77b7",
+      "url": "https://www.usenix.org/conference/nsdi24/presentation/wang-hao",
+      "kind": "paper-page",
+      "title": "Towards Domain-Specific Network Transport for Distributed DNN Training",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:03:50Z",
+      "content_hash": "sha256:60cc5c4afba3accab938f4aba2362f411dd42530ae93fb550a5f9e2daf2724e7",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

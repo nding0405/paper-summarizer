@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "fast-2024-ionia-high-performance-replication-for-modern-disk-based-030dfff9",
   "title": "IONIA: High-Performance Replication for Modern Disk-based KV Stores",
+  "abstract": "We introduce IONIA, a novel replication protocol tailored for modern SSD-based write-optimized key-value (WO-KV) stores. Unlike existing replication approaches, IONIA carefully exploits the unique characteristics of SSD-based WO-KV stores. First, it exploits their interface characteristics to defer parallel execution to the background, enabling high-throughput yet one round trip (RTT) writes. IONIA also exploits SSD-based KV-stores’ performance characteristics to scalably read at any replica without enforcing writes to all replicas, thus providing scalability without compromising write availability; further, it does so while completing most reads in 1RTT. IONIA is the first protocol to achieve these properties, and it does so through its storage-aware design. We evaluate IONIA extensively to show that it achieves the above properties under a variety of workloads.",
+  "abstract_source_id": "src-abstract-fast-2024-030dfff9",
   "venue": "fast",
   "year": 2024,
   "track_or_session": "Key-Value Systems",
@@ -202,6 +204,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-fast-2024-030dfff9",
+      "url": "https://www.usenix.org/conference/fast24/presentation/xu",
+      "kind": "paper-page",
+      "title": "IONIA: High-Performance Replication for Modern Disk-based KV Stores",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:00:47Z",
+      "content_hash": "sha256:ba21c43c58de185ae450a7b27e232940887502f193827a9e6668c722b0bd3819",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-butterfly-scalable-multi-party-circuit-psi-via-triplet-z-7b51e945",
   "title": "Butterfly: Scalable Multi-Party Circuit-PSI via Triplet Zero-Sharing",
+  "abstract": "Multi-party circuit private set intersection (MP-CPSI) enables m parties to compute the intersection of their private sets in secret-shared form, facilitating secure downstream computations. However, existing protocols face severe efficiency bottlenecks: they either rely on generic circuit-based approaches (e.g., Sort-Compare-Shuffle) that incur prohibitive non-linear complexity, or they aggregate pairwise two-party protocols using full-scale m-party MPC, where the communication cost scales super-linearly with the number of participants.\n\nIn this work, we propose Butterfly, a highly scalable MP-CPSI protocol that achieves the communication cost of each party independent of the number of parties m and linear in the set size n. Our construction reduces the general m-party problem to an honest-majority three-party committee via a novel dual-execution blueprint and triplet zero-sharing, leveraging only efficient key-value stores (KVS) and symmetric-key operations. Furthermore, our protocol decouples the complexity of downstream generic computations from m, allowing the subsequent circuits to be evaluated using efficient generic honest-majority three-party computations among the committee (the \"body\"), while the other m-3 clients (the \"wings\") achieve only one-shot communication and are dropout-tolerant. The security of our protocol relies on the non-collusion assumption among the committee and is secure against any adversary corrupting arbitrary clients and at most one committee party. We further provide an efficient extension of our protocol to support associated payloads, enabling downstream complex analytics with practical efficiency.\n\nCompared to the state-of-the-art baselines without non-collusion assumptions, our protocol achieves up to 10130× and 3231× reductions in communication and running time, respectively, for m=30. In the special case of m=3, our protocol requires 4× less communication and runs 14× faster than the honest-majority baseline in the same model. We separately evaluate our protocol in large-scale settings, which runs in just 2.66 (resp. 65.5) seconds under a 10Gbps (resp. 200Mbps) network for 120 parties each holding 2 20 items, incurring only 1405 MB communication costs in total.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-7b51e945",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Applications of Cryptography 3",
@@ -134,6 +136,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-7b51e945",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/liu-ranyang",
+      "kind": "paper-page",
+      "title": "Butterfly: Scalable Multi-Party Circuit-PSI via Triplet Zero-Sharing",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:23:18Z",
+      "content_hash": "sha256:d9a7671a6636f033d62ebc595a7092e39d588ebc83a3219aba9b94705be143f7",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

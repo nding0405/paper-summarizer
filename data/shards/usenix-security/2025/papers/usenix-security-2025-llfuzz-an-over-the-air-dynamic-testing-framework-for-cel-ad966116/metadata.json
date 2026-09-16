@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-llfuzz-an-over-the-air-dynamic-testing-framework-for-cel-ad966116",
   "title": "LLFuzz: An Over-the-Air Dynamic Testing Framework for Cellular Baseband Lower Layers",
+  "abstract": "Memory corruptions in cellular basebands are critical because they can be remotely exploited over-the-air, resulting in severe consequences such as remote code execution, denial of service, and information leakage. While previous research has made significant contributions to detecting memory corruptions in basebands, particularly in layer 3 protocols (e.g., NAS and RRC), the lower layers have received comparatively less attention, with only a few works exploring them in a limited and non-systematic manner.\n\nIn this paper, we present Lower-Layer Fuzzer (LLFuzz), a novel over-the-air dynamic testing framework that discovers memory corruptions in baseband lower layers. LLFuzz systematically targets lower layers, which are the PDCP, RLC, MAC, and PHY layers of the cellular stack. Testing these layers presents unique challenges due to their multiple channels and packet structures that can be dynamically configurable. To address these complexities, LLFuzz implements a channel-driven, configuration-aware fuzzing approach to systematically explore multiple channels. During the testing process, LLFuzz actively modifies layer-specific configurations through signaling messages to trigger and test diverse packet structures, particularly those rarely used in commercial networks. Moreover, LLFuzz leverages 3GPP specifications to generate test cases tailored to the packet structures of the lower layers. This ensures that the test cases are syntactically valid and capable of reaching the target layers without being prematurely discarded. In our evaluation of 15 commercial basebands from five major vendors, LLFuzz uncovered nine previously unknown memory corruptions: two in PDCP, two in RLC, and five in MAC layers. These findings demonstrate LLFuzz's effectiveness in finding critical memory corruptions in baseband lower layers.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-ad966116",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Network Security 3: BLE and Cellular",
@@ -154,6 +156,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-ad966116",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/hoang",
+      "kind": "paper-page",
+      "title": "LLFuzz: An Over-the-Air Dynamic Testing Framework for Cellular Baseband Lower Layers",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:20:35Z",
+      "content_hash": "sha256:8cb02d321f2cb551340b6032580c2a35af22b472417a5d246096944c97be331a",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

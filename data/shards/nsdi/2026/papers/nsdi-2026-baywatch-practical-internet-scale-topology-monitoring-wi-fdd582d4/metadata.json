@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2026-baywatch-practical-internet-scale-topology-monitoring-wi-fdd582d4",
   "title": "BayWatch: Practical Internet-Scale Topology Monitoring with Dynamic Bayesian Estimation",
+  "abstract": "Internet topology monitoring is important for understanding topology dynamics. While a few commercial services have been provided to monitor the specified topology, academic research on Internet-scale topology monitoring still lags behind with two key limitations: 1) topology incompleteness caused by simplified assumption of uniform load-balancing responses (LBR) distribution; 2) low probing efficiency due to the lack of temporal awareness.\n\nIn this paper, we introduce BayWatch, a practical Internet-scale topology monitoring system that overcomes these limitations based on a Dynamic Bayesian Network (DBN). Leveraging the Markov property of packet forwarding, BayWatch models it as a sequence of state transitions over time within the DBN, so as to estimate the true LBR distribution and predict its temporal evolution. Internet-wide measurement results demonstrate that benefiting from the estimated LBR distribution, BayWatch can discover 2.4×/2.8× more nodes/links than the state-of-the-art algorithm, D-Miner, while the temporal awareness reduces the number of probes by 6.3× with negligible topology completeness loss. Moreover, we demonstrate that BayWatch can help detect anomalies using a real-world network outage event.",
+  "abstract_source_id": "src-abstract-nsdi-2026-fdd582d4",
   "venue": "nsdi",
   "year": 2026,
   "track_or_session": "Measuring at Scale",
@@ -244,6 +246,19 @@
         "proceedings page range and page count",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2026-fdd582d4",
+      "url": "https://www.usenix.org/conference/nsdi26/presentation/guan-zhongxu",
+      "kind": "paper-page",
+      "title": "BayWatch: Practical Internet-Scale Topology Monitoring with Dynamic Bayesian Estimation",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:04:50Z",
+      "content_hash": "sha256:95fd961da96abb789f07297e43732a19f27adfca010f4455aca4106a8368417c",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

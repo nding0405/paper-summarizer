@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2026-svdefense-effective-defense-against-gradient-inversion-a-41ff881b",
   "title": "SVDefense: Effective Defense against Gradient Inversion Attacks via Singular Value Decomposition",
+  "abstract": "Federated learning (FL) enables collaborative model training without sharing raw data but is vulnerable to gradient inversion attacks (GIAs), where adversaries reconstruct private data from shared gradients. Existing defenses either incur impractical computational overhead for embedded platforms or fail to achieve privacy protection and good model utility at the same time. Moreover, many defenses can be easily bypassed by adaptive adversaries who have obtained the defense details. To address these limitations, we propose SVDefense , a novel defense framework against GIAs that leverages the truncated Singular Value Decomposition (SVD) to obfuscate gradient updates. SVDefense introduces three key innovations, a Self-Adaptive Energy Threshold that adapts to client vulnerability, a Channel-Wise Weighted Approximation that selectively preserves essential gradient information for effective model training while enhancing privacy protection, and a Layer-Wise Weighted Aggregation for effective model aggregation under class imbalance. Our extensive evaluation shows that SVDefense outperforms existing defenses across multiple applications, including image classification, human activity recognition, and keyword spotting, by offering robust privacy protection with minimal impact on model accuracy. Furthermore, SVDefense is practical for deployment on various resource-constrained embedded platforms. We will make our code publicly available upon paper acceptance.",
+  "abstract_source_id": "src-abstract-ndss-2026-41ff881b",
   "venue": "ndss",
   "year": 2026,
   "track_or_session": "Summer submission cycle",
@@ -139,6 +141,19 @@
       "official": false,
       "supports": [
         "independent proceedings identity reconciliation"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2026-41ff881b",
+      "url": "https://www.ndss-symposium.org/ndss-paper/svdefense-effective-defense-against-gradient-inversion-attacks-via-singular-value-decomposition/",
+      "kind": "paper-page",
+      "title": "SVDefense: Effective Defense against Gradient Inversion Attacks via Singular Value Decomposition",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:23:15Z",
+      "content_hash": "sha256:1c1e35cc2ea2386fe4a103ea33c8ef56ef49667bff3f13ee60173c941aa086b6",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2024-enclavefuzz-finding-vulnerabilities-in-sgx-applications-cf890534",
   "title": "EnclaveFuzz: Finding Vulnerabilities in SGX Applications",
+  "abstract": "Intel's Software Guard Extensions (SGX) offers an isolated execution environment, known as an enclave, where everything outside the enclave is considered potentially malicious, including non-enclave memory region, peripherals, and the operating system. Despite its robust attack model, the code running within enclaves is still prone to common memory corruption vulnerabilities. Moreover, such an attack model may introduce new threats or amplify existing ones. For instance, any direct memory access to untrusted memory from within an enclave can lead to Time-of-Check-Time-of-Use (TOCTOU) bugs since attackers are capable of controlling the whole untrusted memory. Moreover, null-pointer dereference may have a more severe security impact since the zero page controlled by the operating system is also considered malicious. Current fuzzing solutions, such as SGXFuzz and FuzzSGX, have limitations detecting such SGX-specific vulnerabilities.\n\nIn this paper, we propose EnclaveFuzz, a multi-dimension structure-aware fuzzing framework that analyzes enclave sources to extract input structures and correlations, then generates fuzz harnesses that can produce valid inputs to pass sanity checks. To conduct multi-dimensional fuzzing, EnclaveFuzz creates data for all three input dimensions of an enclave, including both parameters and return values that enter an enclave, as well as direct untrusted memory access from within an enclave. To detect more types of vulnerabilities, we design a new sanitizer to detect both SGX-specific vulnerabilities and typical memory corruption vulnerabilities. Lastly, we provide a custom SDK to accelerate the fuzzing process and execute the enclave without the need for special hardware. To verify the effectiveness of our solution, we applied our work to test 20 real-world open-source enclaves and found 162 bugs in 14 of them.",
+  "abstract_source_id": "src-abstract-ndss-2024-cf890534",
   "venue": "ndss",
   "year": 2024,
   "track_or_session": "Fall submission cycle",
@@ -228,6 +230,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2024-cf890534",
+      "url": "https://www.ndss-symposium.org/ndss-paper/enclavefuzz-finding-vulnerabilities-in-sgx-applications/",
+      "kind": "paper-page",
+      "title": "EnclaveFuzz: Finding Vulnerabilities in SGX Applications",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:17:59Z",
+      "content_hash": "sha256:f92890d7f48e7a5d790d5c208f7598578cee3b4de3d677c43aeb1eeb0a3aed11",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

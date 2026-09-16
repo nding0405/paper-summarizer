@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2026-on-the-security-risks-of-memory-adaptation-and-augmentat-60f4c906",
   "title": "On the Security Risks of Memory Adaptation and Augmentation in Data-plane DoS Mitigation",
+  "abstract": "Data-plane programmability in commodity switches is reshaping the landscape of denial-of-service (DoS) defense by enabling adaptive, line-rate mitigation strategies. Recent systems like Cerberus [1] augment limited switch memory with control-plane support to rapidly respond to evolving attacks. In this paper, we reveal a subtle yet critical vulnerability in this model; that is, the very mechanisms that enable the defense system’s agility and scalability can be subverted by a new class of coordinated DoS attacks. We present Heracles, the first attack to exploit hardware-level constraints in programmable switches to orchestrate precise resource contention across dataplane and control-plane memory. By leveraging side-channel timing signals, Heracles triggers synchronized augmentation, memory squeezing, and time-window exploitation, which are three orthogonal contention strategies that significantly degrade or even completely disable the DoS mitigation capabilities. We implement and test Heracles against real Tofino hardware and show that it can reliably disrupt DoS defenses across diverse DoS attack profiles, even when using loosely (1–2 second) time-synchronized attack sources. To mitigate this threat, we propose Shield, a multi-layered DoS mitigation sketch architecture that decouples memory operations across control- and data-plane layers, effectively mitigating the Heracles attack while preserving both line-rate performance and detection accuracy.",
+  "abstract_source_id": "src-abstract-ndss-2026-60f4c906",
   "venue": "ndss",
   "year": 2026,
   "track_or_session": "Fall submission cycle",
@@ -181,6 +183,19 @@
       "official": false,
       "supports": [
         "independent proceedings identity reconciliation"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2026-60f4c906",
+      "url": "https://www.ndss-symposium.org/ndss-paper/on-the-security-risks-of-memory-adaptation-and-augmentation-in-data-plane-dos-mitigation/",
+      "kind": "paper-page",
+      "title": "On the Security Risks of Memory Adaptation and Augmentation in Data-plane DoS Mitigation",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:22:39Z",
+      "content_hash": "sha256:fa112b282bec406f56f5c6a858ce33d4e38451897af76d7e1d22820ce5f785cb",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

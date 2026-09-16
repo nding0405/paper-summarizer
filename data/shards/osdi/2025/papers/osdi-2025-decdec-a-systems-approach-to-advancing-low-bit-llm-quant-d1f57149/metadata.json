@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2025-decdec-a-systems-approach-to-advancing-low-bit-llm-quant-d1f57149",
   "title": "DecDEC: A Systems Approach to Advancing Low-Bit LLM Quantization",
+  "abstract": "Quantization of Large Language Models (LLMs) has recently gained popularity, particularly for on-device settings with limited hardware resources. While efficient, quantization inevitably degrades model quality, especially in aggressive low-bit settings such as 3-bit and 4-bit precision. In this paper, we propose DecDEC, an inference scheme that improves the quality of low-bit LLMs while preserving the key benefits of quantization: GPU memory savings and latency reduction. DecDEC stores the residual matrix—the difference between full-precision and quantized weights—in CPU, and dynamically fetches the residuals for only a small portion of the weights. This portion corresponds to the salient channels, marked by activation outliers, with the fetched residuals helping to correct quantization errors in these channels. Salient channels are identified dynamically at each decoding step by analyzing the input activations---this enables adaptation to the dynamic nature of activation distribution, thus maximizing the effectiveness of error compensation. We demonstrate the effectiveness of DecDEC by augmenting state-of-the-art quantization methods. For example, DecDEC reduces the perplexity of a 3-bit Llama-3-8B-Instruct model from 10.15 to 9.12—outperforming its 3.5-bit counterpart—while adding less than 0.0003% to GPU memory usage and incurring only a 1.7% inference slowdown on NVIDIA RTX 4050 Mobile.",
+  "abstract_source_id": "src-abstract-osdi-2025-d1f57149",
   "venue": "osdi",
   "year": 2025,
   "track_or_session": "AI + Systems III",
@@ -159,6 +161,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2025-d1f57149",
+      "url": "https://www.usenix.org/conference/osdi25/presentation/park-yeonhong",
+      "kind": "paper-page",
+      "title": "DecDEC: A Systems Approach to Advancing Low-Bit LLM Quantization",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:07:28Z",
+      "content_hash": "sha256:038f125331848208bd54b1cbc904331c6794082dbe30c74fb7f94200b0b6aab0",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

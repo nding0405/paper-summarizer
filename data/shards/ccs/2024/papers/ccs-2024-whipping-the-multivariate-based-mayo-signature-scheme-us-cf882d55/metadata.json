@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2024-whipping-the-multivariate-based-mayo-signature-scheme-us-cf882d55",
   "title": "Whipping the Multivariate-based MAYO Signature Scheme using Hardware Platforms",
+  "abstract": "NIST issued a new call in 2023 to diversify the portfolio of quantum-resistant digital signature schemes since the current portfolio relies on lattice problems. The MAYO scheme, which builds on the Unbalanced Oil and Vinegar (UOV) problem, is a promising candidate for this new call. MAYO introduces emulsifier maps and a novel 'whipping' technique to significantly reduce the key sizes compared to previous UOV schemes. This paper provides a comprehensive analysis of the implementation aspects of MAYO and proposes several optimization techniques that we use to implement a high-speed hardware accelerator. The first optimization technique is the partial unrolling of the emulsification process to increase parallelization. The second proposed optimization is a novel memory structure enabling the parallelization of significant bottlenecks in the MAYO scheme. In addition to this, we present a flexible transposing technique for the data format used in MAYO that can be expanded to other UOV-based schemes. We use these techniques to design the first high-speed ASIC and FPGA accelerator that supports all operations of the MAYO scheme for different NIST security levels. Compared with state-of-the-art, like HaMAYO [24] and UOV [7], our FPGA design shows a performance benefit of up to three orders of magnitude in both latency and area-time-product. Furthermore, we lower the BRAM consumption by up to 2.8 × compared to these FPGA implementations. Compared to high-end CPU implementations, our ASIC design allows between 2.81× and 60.14× higher throughputs. This increases the number of signing operations per second from 483 to 13424, thereby fostering performant deployment of the MAYO scheme in time-critical applications.",
+  "abstract_source_id": "src-abstract-ccs-2024-cf882d55",
   "venue": "ccs",
   "year": 2024,
   "track_or_session": "Cycle 2",
@@ -180,6 +182,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2024-cf882d55",
+      "url": "https://api.openalex.org/works/doi:10.1145/3658644.3690258?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Whipping the Multivariate-based MAYO Signature Scheme using Hardware Platforms",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:12:29Z",
+      "content_hash": "sha256:0311361dce6873db830ad41830b991c954b4655b4c943cddf10c3896fb6adf0f",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

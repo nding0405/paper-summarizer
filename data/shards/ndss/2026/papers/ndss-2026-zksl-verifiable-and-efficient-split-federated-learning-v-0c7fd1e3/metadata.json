@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2026-zksl-verifiable-and-efficient-split-federated-learning-v-0c7fd1e3",
   "title": "ZKSL: Verifiable and Efficient Split Federated Learning via Asynchronous Zero-Knowledge Proofs",
+  "abstract": "In Vertical Federated Learning (VFL), prior work has primarily focused on protecting data privacy, while overlooking the risk that participants may manipulate local model execution to mount integrity attacks. Integrating zero-knowledge proofs (ZKPs) into the training process can ensure that each party's computations are verifiable without revealing private data. However, directly encoding deep model training as a monolithic ZKP circuit is impractical due to: (i) complex circuit design and high overhead from frequent parameter commitments, (ii) expensive proof generation for embeddings(cross-party information interface), and (iii) synchronous proof generation that blocks iterative training rounds. To address these challenges, we present ZKSL, an efficient and asynchronous VFL framework that achieves verifiable training under a malicious threat model. ZKSL partitions deep neural networks into layer-wise circuits and generates their proofs in parallel, ensuring input–output consistency via emph{Privacy-Commitment PLONK} (PC-PLONK), a lightweight extension that supports low-cost, iteration-by-iteration parameter commitments. For embedding layers, ZKSL adopts a probabilistic verification technique that reduces proof complexity from ${O(Nnd)}$ to ${O(nd)}$. Furthermore, ZKSL incorporates an asynchronous compute–prove scheduling mechanism to decouple proof generation from training iterations, effectively mitigating pipeline stalls. Experimental results on DeepFM and CNN models show that ZKSL reduces proof generation time by up to 73% while maintaining 99.4% accuracy, demonstrating superior scalability and practicality for real-world federated learning.",
+  "abstract_source_id": "src-abstract-ndss-2026-0c7fd1e3",
   "venue": "ndss",
   "year": 2026,
   "track_or_session": "Fall submission cycle",
@@ -328,6 +330,19 @@
       "official": false,
       "supports": [
         "independent proceedings identity reconciliation"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2026-0c7fd1e3",
+      "url": "https://www.ndss-symposium.org/ndss-paper/zksl-verifiable-and-efficient-split-federated-learning-via-asynchronous-zero-knowledge-proofs/",
+      "kind": "paper-page",
+      "title": "ZKSL: Verifiable and Efficient Split Federated Learning via Asynchronous Zero-Knowledge Proofs",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:23:42Z",
+      "content_hash": "sha256:f27d717ce1709b3f9f2f85b6af6eb9f525783bf6a99ca160f091f841f7694858",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "fast-2025-opimq-order-preserving-io-stack-for-multi-queue-block-de-02e75137",
   "title": "OPIMQ: Order Preserving IO stack for Multi-Queue Block Device",
+  "abstract": "In this work, we address the issue of ensuring the storage order in the multi-queue IO stack and propose OPIMQ , an Order-Preserving IO Stack for Multi-Queue Block Devices. OPIMQ consists of four key components: Epoch Pinning , Dual-Stream Write , Order-Preserving Mapping Table Update and Sibling-aware Delayed Mapping . With Epoch Pinning, we can preserve intra-stream order dependency across different queues. With Dual-Stream Write, we can preserve the inter-stream order dependency across different threads. With Order-Preserving Mapping Table Update, FTL can update the mapping table with respect to the storage order. With Sibling-Aware Delayed Mapping, FTL can update the mapping table only when the dual-stream write satisfies the storage order in both streams. Linux IO stack with OPIMQ outperforms the vanilla Linux IO stack by 2.9×, 2.8×, and 2.9× under Filebench varmail, dbench, and sysbench, respectively. The order-preserving FTL accompanies a 1.1% performance penalty in address translation compared to legacy FTL.",
+  "abstract_source_id": "src-abstract-fast-2025-02e75137",
   "venue": "fast",
   "year": 2025,
   "track_or_session": "Security, Integrity, and Consistency",
@@ -161,6 +163,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-fast-2025-02e75137",
+      "url": "https://www.usenix.org/conference/fast25/presentation/kim-jieun",
+      "kind": "paper-page",
+      "title": "OPIMQ: Order Preserving IO stack for Multi-Queue Block Device",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:01:12Z",
+      "content_hash": "sha256:30d80a9213ad71bc4be599beaefc9c595b3746696c7011b88ef40f6831787fc9",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

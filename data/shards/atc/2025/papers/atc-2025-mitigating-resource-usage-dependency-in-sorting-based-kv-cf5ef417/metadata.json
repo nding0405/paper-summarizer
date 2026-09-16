@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "atc-2025-mitigating-resource-usage-dependency-in-sorting-based-kv-cf5ef417",
   "title": "Mitigating Resource Usage Dependency in Sorting-based KV Stores on Hybrid Storage Devices via Operation Decoupling",
+  "abstract": "LSM-tree-based key-value (KV) stores mainly employ sorting-based operations (e.g., flush and compaction) to manage the KV pairs on disk. Through analysis and experiments with RocksDB, we identify that the sorting operations cause critical issues of operation coupling, including intertwined resource consumption within an operation, interdependencies and contention among operations. These coupling problems lead to dependency in resource usage and are particularly exacerbated on hybrid storage devices, causing significant resource fragmentation and increased write stalls. Existing approaches to mitigating write stalls rely on either fixed differentiated data management or superficial scheduling of data sorting operations, but they fail to fundamentally address the resource usage dependency caused by operation coupling.\n\nIn this paper, we propose DecouKV, designed to alleviate resource usage dependency and enhance resource utilization on hybrid storage devices through operation decoupling. Specifically, DecouKV decouples data sorting operations into CPU-intensive index merge tasks and I/O-intensive data append and data flush tasks by separating indexes from data files, managing indexes with a mergeable skip list-based structure and managing data with append-only files. Furthermore, we propose an elastic scheme for tuning level capacity and introduce a parameterized queue-based task scheduling strategy to maximize resource utilization. We implement DecouKV and conduct experimental evaluations. Compared to RocksDB, as well as state-of-the-art systems such as MatrixKV, PrismDB, SplitDB and ADOC, DecouKV improves CPU utilization by 25.4%-32.3%, increases throughput by 2.3-4.9×, and reduces tail latency by 74.3%-91.4% under write-intensive workloads. DecouKV also achieves a modest throughput improvement of 1.2-2.3× under read-intensive workloads.",
+  "abstract_source_id": "src-abstract-atc-2025-cf5ef417",
   "venue": "atc",
   "year": 2025,
   "track_or_session": "Storage Innovations: Logs, Tiers, and Modern Flash",
@@ -180,6 +182,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-atc-2025-cf5ef417",
+      "url": "https://www.usenix.org/conference/atc25/presentation/zhang-qingyang",
+      "kind": "paper-page",
+      "title": "Mitigating Resource Usage Dependency in Sorting-based KV Stores on Hybrid Storage Devices via Operation Decoupling",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T21:59:56Z",
+      "content_hash": "sha256:17a4b7544248cad3f5397b29a4b860f21d7717f3890902e98704c5f95d01d1a5",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

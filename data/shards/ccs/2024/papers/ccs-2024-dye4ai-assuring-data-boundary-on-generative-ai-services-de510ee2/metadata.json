@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2024-dye4ai-assuring-data-boundary-on-generative-ai-services-de510ee2",
   "title": "Dye4AI: Assuring Data Boundary on Generative AI Services",
+  "abstract": "Generative artificial intelligence (AI) is versatile for various applications, but security and privacy concerns with third-party AI vendors hinder its broader adoption in sensitive scenarios. Hence, it is essential for users to validate the AI trustworthiness and ensure the security of data boundaries. In this paper, we present a dye testing system named Dye4AI, which injects crafted trigger data into human-AI dialogue and observes AI responses towards specific prompts to diagnose data flow in AI model evolution. Our dye testing procedure contains 3 stages: trigger generation, trigger insertion, and trigger retrieval. First, to retain both uniqueness and stealthiness, we design a new trigger that transforms a pseudo-random number to a intelligible format. Second, with a custom-designed three-step conversation strategy, we insert each trigger item into dialogue and confirm the model memorizes the new trigger knowledge in the current session. Finally, we routinely try to recover triggers with specific prompts in new sessions, as triggers can present in new sessions only if AI vendors leverage user data for model fine-tuning. Extensive experiments on six LLMs demonstrate our dye testing scheme is effective in ensuring the data boundary, even for models with various architectures and parameter sizes. Also, larger and premier models tend to be more suitable for Dye4AI, e.g., trigger can be retrieved in OpenLLaMa-13B even with only 2 insertions per trigger item. Moreover, we analyze the prompt selection in dye testing, providing insights for future testing systems on generative AI services.",
+  "abstract_source_id": "src-abstract-ccs-2024-de510ee2",
   "venue": "ccs",
   "year": 2024,
   "track_or_session": "Cycle 1",
@@ -138,6 +140,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2024-de510ee2",
+      "url": "https://api.openalex.org/works/doi:10.1145/3658644.3670299?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Dye4AI: Assuring Data Boundary on Generative AI Services",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:10:01Z",
+      "content_hash": "sha256:5da820d1b28f0fab75ca2001f66d4f71c597cf210d969739e9508c78b38cf7f3",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

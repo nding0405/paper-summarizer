@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "eurosys-2026-prediction-informed-power-management-for-general-purpose-14331cc7",
   "title": "Prediction-Informed Power Management for General-Purpose Compute Servers",
+  "abstract": "This paper presents PIP (Prediction-Informed Power), a power control framework for general-purpose compute servers. PIP introduces two key innovations: (1) a machine learning-based power model that predicts the impact of hypothetical CPU throttling actions before execution, and (2) a prediction-informed control loop that selects CPU configurations to maximize performance and power utilization based on these predictions. By leveraging finegrained runtime CPU metrics, PIP can accurately estimate counterfactual power usage, allowing the control system to align power demand with the budget more quickly. Unlike traditional reactive approaches, PIP maintains effective control under frequent budget fluctuations, achieving safe oversubscription by up to 70%. Our evaluation on diverse application workloads, none of which are included in the model's training set, shows that PIP yields up to a 3.2× speedup over a state-of-the-art feedback-based system for single-application runs, and up to a 3.4× speedup for multi-application scenarios under power constraints.",
+  "abstract_source_id": "src-abstract-eurosys-2026-14331cc7",
   "venue": "eurosys",
   "year": 2026,
   "track_or_session": null,
@@ -138,6 +140,19 @@
       "official": false,
       "supports": [
         "Publisher-deposited proceedings identity and print publication date."
+      ]
+    },
+    {
+      "id": "src-abstract-eurosys-2026-14331cc7",
+      "url": "https://api.openalex.org/works/doi:10.1145/3767295.3803617?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Prediction-Informed Power Management for General-Purpose Compute Servers",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:21:24Z",
+      "content_hash": "sha256:2538bb34081b833f6012799330d6751648fa0d082dbbab3cd37f2ce44335ca30",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

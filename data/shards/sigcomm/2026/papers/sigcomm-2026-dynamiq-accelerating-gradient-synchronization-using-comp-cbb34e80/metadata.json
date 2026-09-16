@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sigcomm-2026-dynamiq-accelerating-gradient-synchronization-using-comp-cbb34e80",
   "title": "DynamiQ: Accelerating Gradient Synchronization using Compressed Multi-hop All-reduce",
+  "abstract": "Multi-hop all-reduce is the de facto backbone of large model training. As the training scale increases, the network often becomes a bottleneck, motivating the reduction of the volume of transmitted data. Accordingly, recent systems have demonstrated significant acceleration of the training process using gradient quantization. However, these systems are not optimized for multi-hop aggregation, where entries are partially summed multiple times along their aggregation topology. We present DynamiQ, a quantization framework that bridges the gap between quantization best practices and multi-hop aggregation. DynamiQ introduces novel techniques to better represent partial sums, co-designed with a decompress-accumulate-recompress fused kernel to facilitate fast execution. We extend PyTorch DDP to support DynamiQ over NCCL P2P, and across different LLMs, tasks, and scales, we demonstrate consistent improvement of up to 34.2% over the best among state-of-the-art methods such as Omni-Reduce, THC, and emerging standards such as MXFP4, MXFP6, and MXFP8. Further, DynamiQ is the only evaluated method that consistently reaches near-baseline accuracy (e.g., 99.9% of the BF16 baseline) and does so while significantly accelerating the training.",
+  "abstract_source_id": "src-abstract-sigcomm-2026-cbb34e80",
   "venue": "sigcomm",
   "year": 2026,
   "track_or_session": "Research Session 3: Collective Communication Algorithms — Research Paper",
@@ -149,6 +151,19 @@
       "official": true,
       "supports": [
         "official main-paper scope and track definitions"
+      ]
+    },
+    {
+      "id": "src-abstract-sigcomm-2026-cbb34e80",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/search/match?query=DynamiQ%3A%20Accelerating%20Gradient%20Synchronization%20using%20Compressed%20Multi-hop%20All-reduce&fields=title,abstract",
+      "kind": "semantic-scholar",
+      "title": "DynamiQ: Accelerating Gradient Synchronization using Compressed Multi-hop All-reduce",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T23:00:37Z",
+      "content_hash": "sha256:6475a6fe2b69eb9a77927b0d3223c686440a97b9e0cbf77aa1e6c481e85650a5",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

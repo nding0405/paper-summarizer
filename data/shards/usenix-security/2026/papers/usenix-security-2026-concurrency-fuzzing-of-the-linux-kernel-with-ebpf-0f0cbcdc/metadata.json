@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-concurrency-fuzzing-of-the-linux-kernel-with-ebpf-0f0cbcdc",
   "title": "Concurrency Fuzzing of the Linux Kernel with eBPF",
+  "abstract": "Concurrency is indispensable for modern software systems to meet performance and scalability demands, yet concurrency bugs remain notoriously difficult to detect and reproduce. Controlled Concurrency Testing (CCT) mitigates this challenge by systematically exploring thread interleavings through scheduling control. However, existing CCT approaches for OS kernels largely rely on external enforcement mechanisms, such as custom hypervisors or invasive kernel patches, resulting in substantial overhead and limited maintainability and extensibility. In this work, we present SECT, the first kernel-native concurrency fuzzing framework that rethinks scheduling as a first-class exploration mechanism. SECT introduces a novel CCT scheduler with temporal isolation scheduling and embeds programmable scheduling policies directly into the kernel dispatch path via eBPF, enabling fine-grained control over thread interleavings without customized hypervisors or extensive kernel core modification. In addition, SECT provides a preemption-safe instrumentation mechanism for injecting scheduling points at critical kernel events and incorporates a two-phase fuzzing workflow to jointly explore both sequential and concurrent behaviors. Our evaluation demonstrates that SECT achieves 38% more branches, 57% overhead reduction and 11.4× speed-up in bug exposure compared to the state-of-the-art kernel concurrency fuzzers. Moreover, SECT discovers eight previously unknown concurrency-related bugs in the Linux kernel, five of which have already been confirmed and fixed by developers.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-0f0cbcdc",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "System Security 3",
@@ -155,6 +157,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-0f0cbcdc",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/xu-jiacheng",
+      "kind": "paper-page",
+      "title": "Concurrency Fuzzing of the Linux Kernel with eBPF",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:23:27Z",
+      "content_hash": "sha256:75f9e22899a05ccf7d3507845dd127bb047d4cf5ad1a9cbcf4f5cf59aa3ea488",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

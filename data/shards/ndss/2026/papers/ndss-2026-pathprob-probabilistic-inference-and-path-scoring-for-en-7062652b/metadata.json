@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2026-pathprob-probabilistic-inference-and-path-scoring-for-en-7062652b",
   "title": "PathProb: Probabilistic Inference and Path Scoring for Enhanced and Flexible BGP Route Leak Detection",
+  "abstract": "The Border Gateway Protocol (BGP) lacks inherent security, leaving the Internet vulnerable to severe threats like route leaks. Existing detection methods suffer from limitations such as rigid binary classification, high false positives, and sparse authoritative AS relationship data. To address these challenges, this paper proposes PathProb—a novel paradigm that flexibly identifies route leaks by calculating topology-aware probability distributions for AS links and computing legitimacy scores for AS paths. Our approach integrates Monte Carlo methods with an Integer Linear Programming formulation of routing policies to derive these solutions efficiently.\n\nWe comprehensively evaluate PathProb using real-world BGP routing traces and route leak incidents. Results show our inference model outperforms state-of-the-art approaches with a high-confidence validation dataset. PathProb detects real-world route leaks with 98.45% recall while simultaneously reducing false positives by 4.29 ∼ 20.08 percentage points over stateof-the-art alternatives. Additionally, PathProb’s path legitimacy scoring enables network administrators to dynamically adjust route leak detection thresholds—tailoring security posture to their specific false alarm tolerance and security needs. Finally, PathProb offers seamless compatibility with emerging route leak mitigation mechanisms, such as Autonomous System Provider Authorization (ASPA), enabling flexible integration to enhance leak detection capabilities.",
+  "abstract_source_id": "src-abstract-ndss-2026-7062652b",
   "venue": "ndss",
   "year": 2026,
   "track_or_session": "Fall submission cycle",
@@ -246,6 +248,19 @@
       "official": false,
       "supports": [
         "independent proceedings identity reconciliation"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2026-7062652b",
+      "url": "https://www.ndss-symposium.org/ndss-paper/pathprob-probabilistic-inference-and-path-scoring-for-enhanced-and-flexible-bgp-route-leak-detection/",
+      "kind": "paper-page",
+      "title": "PathProb: Probabilistic Inference and Path Scoring for Enhanced and Flexible BGP Route Leak Detection",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:22:45Z",
+      "content_hash": "sha256:6953917a7dbb8a5ea7838433bf069ebb02fb77d8ee84fc09e1ad6d2776d4bf6b",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

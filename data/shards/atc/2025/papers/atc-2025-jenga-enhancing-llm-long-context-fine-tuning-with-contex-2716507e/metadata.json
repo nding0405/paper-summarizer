@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "atc-2025-jenga-enhancing-llm-long-context-fine-tuning-with-contex-2716507e",
   "title": "JENGA: Enhancing LLM Long-Context Fine-tuning with Contextual Token Sparsity",
+  "abstract": "The escalating demand for long-context applications has intensified the necessity of extending the LLM context windows. Despite recent fine-tuning approaches successfully expanding context lengths, their high memory footprints, especially for activations, present a critical practical limitation. Current parameter-efficient fine-tuning methods prioritize reducing parameter update overhead over addressing activation memory constraints. Similarly, existing sparsity mechanisms improve computational efficiency but overlook activation memory optimization due to the phenomenon of Shadowy Activation .\n\nIn this paper, we propose JENGA, the first LLM fine-tuning system that explores and exploits a new token-level sparsity mechanism inherent in long-context scenarios, termed Contextual Token Sparsity . JENGA minimizes redundant token involvement by assessing the informativeness of token embeddings while preserving model accuracy. Specifically, JENGA introduces three key techniques: (1) Token Elimination, dynamically identifying and excluding redundant tokens across varying inputs and layers. (2) Pattern Prediction, utilizing well-trained predictors to approximate token sparsity patterns with minimal overhead. (3) Kernel Optimization, employing permutation-free and segment-based strategies to boost system performance. We implement JENGA as an end-to-end fine-tuning system compatible with various LLM architectures and other optimization techniques. Comprehensive evaluations demonstrate that JENGA reduces memory consumption by up to 1.93× and achieves up to 1.36× speedups, outperforming state-of-the-art fine-tuning systems.",
+  "abstract_source_id": "src-abstract-atc-2025-2716507e",
   "venue": "atc",
   "year": 2025,
   "track_or_session": "Accelerating ML Training: Parallelism, Tuning, and Modalities",
@@ -201,6 +203,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-atc-2025-2716507e",
+      "url": "https://www.usenix.org/conference/atc25/presentation/wang-tuowei",
+      "kind": "paper-page",
+      "title": "JENGA: Enhancing LLM Long-Context Fine-tuning with Contextual Token Sparsity",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T21:59:50Z",
+      "content_hash": "sha256:3e30f91977fb0cb0c0bddcf6346a1c3857f26c12f2c0747c96ef97425a825fd5",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

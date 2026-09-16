@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2023-enhancing-global-network-monitoring-with-magnifier-3f294a6d",
   "title": "Enhancing Global Network Monitoring with Magnifier",
+  "abstract": "Monitoring where traffic enters and leaves a network is a routine task for network operators. In order to scale with Tbps of traffic, large Internet Service Providers (ISPs) mainly use traffic sampling for such global monitoring. Sampling either provides a sparse view or generates unreasonable overhead. While sampling can be tailored and optimized to specific contexts, this coverage–overhead trade-off is unavoidable.\n\nRather than optimizing sampling, we propose to \"magnify\" the sampling coverage by complementing it with mirroring. Magnifier enhances the global network view using a two-step approach: based on sampling data, it first infers traffic ingress and egress points using a heuristic, then it uses mirroring to validate these inferences efficiently. The key idea behind Magnifier is to use negativemirroring rules; i.e., monitor where traffic should not go. We implement Magnifier on commercial routers and demonstrate that it indeed enhances the global network view with negligible traffic overhead. Finally, we observe that monitoring based on our heuristics also allows to detect other events, such as certain failures and DDoS attacks.",
+  "abstract_source_id": "src-abstract-nsdi-2023-3f294a6d",
   "venue": "nsdi",
   "year": 2023,
   "track_or_session": "Real Networks",
@@ -140,6 +142,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2023-3f294a6d",
+      "url": "https://www.usenix.org/conference/nsdi23/presentation/buhler",
+      "kind": "paper-page",
+      "title": "Enhancing Global Network Monitoring with Magnifier",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:02:03Z",
+      "content_hash": "sha256:04acc3208e6762adf48f1681f774c7372d2dca1d6f8c74745cc845a6ab658049",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

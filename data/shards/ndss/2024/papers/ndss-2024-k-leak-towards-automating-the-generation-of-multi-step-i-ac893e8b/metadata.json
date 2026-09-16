@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2024-k-leak-towards-automating-the-generation-of-multi-step-i-ac893e8b",
   "title": "K-LEAK: Towards Automating the Generation of Multi-Step Infoleak Exploits against the Linux Kernel",
+  "abstract": "The severity of information leak (infoleak for short) in OS kernels cannot be underestimated, and various exploitation techniques have been proposed to achieve infoleak in OS kernels. Among them, memory-error-based infoleak is powerful and widely used in real-world exploits. However, existing approaches to finding memory-error-based infoleak lack the systematic reasoning about its search space and do not fully explore the search space. Consequently, they fail to exploit a large number of memory errors in the kernel. According to a theoretical modeling of memory errors, the actual search space of such approach is huge, as multiple steps could be involved in the exploitation process, and virtually any memory error can be exploited to achieve infoleak. To bridge the gap between the theory and reality, we propose a framework K-LEAK to facilitate generating memory-error-based infoleak exploits in the Linux kernel. K-LEAK considers infoleak exploit generation as a data-flow search problem. By modeling unintended data flows introduced by memory errors, and how existing memory errors can create new memory errors, K-LEAK can systematically search for infoleak data-flow paths in a multi-step manner. We implement a prototype of K-LEAK and evaluate it with memory errors from syzbot and CVEs. The evaluation results demonstrate the effectiveness of K-LEAK in generating diverse infoleak exploits using various multi-step strategies.",
+  "abstract_source_id": "src-abstract-ndss-2024-ac893e8b",
   "venue": "ndss",
   "year": 2024,
   "track_or_session": "Fall submission cycle",
@@ -147,6 +149,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2024-ac893e8b",
+      "url": "https://www.ndss-symposium.org/ndss-paper/k-leak-towards-automating-the-generation-of-multi-step-infoleak-exploits-against-the-linux-kernel/",
+      "kind": "paper-page",
+      "title": "K-LEAK: Towards Automating the Generation of Multi-Step Infoleak Exploits against the Linux Kernel",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:18:16Z",
+      "content_hash": "sha256:2d382aa3dee1d3427c1da74eef87e33913d47fe79fb27605aa9c7acfaebd6ba8",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

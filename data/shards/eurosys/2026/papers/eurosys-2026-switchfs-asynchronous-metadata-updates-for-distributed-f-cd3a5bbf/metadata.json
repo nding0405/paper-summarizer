@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "eurosys-2026-switchfs-asynchronous-metadata-updates-for-distributed-f-cd3a5bbf",
   "title": "SwitchFS: Asynchronous Metadata Updates for Distributed Filesystems with In-Network Coordination",
+  "abstract": "Distributed filesystem metadata updates are typically synchronous. This creates inherent challenges for access efficiency, load balancing, and directory contention, especially under dynamic and skewed workloads. This paper argues that synchronous updates are overly conservative. We propose SwitchFS with asynchronous metadata updates that allow operations to return early and defer directory updates until reads, both hiding latency and amortizing overhead. The key challenge lies in efficiently maintaining the synchronous POSIX semantics of metadata updates. To address this, SwitchFS is co-designed with a programmable switch, leveraging the limited on-switch resources to track directory states with negligible overhead. This allows SwitchFS to aggregate and apply delayed updates efficiently, using batching and consolidation before directory reads. Evaluation shows that SwitchFS achieves up to 13.34× and 3.85× higher throughput, and 61.6% and 57.3% lower latency than two state-of-the-art distributed filesystems, Emulated-InfiniFS and Emulated-CFS, respectively, under skewed workloads. For real-world workloads, SwitchFS improves end-to-end throughput by 21.1×, 1.1×, and 0.3× over CephFS, Emulated-InfiniFS, and Emulated-CFS, respectively.",
+  "abstract_source_id": "src-abstract-eurosys-2026-cd3a5bbf",
   "venue": "eurosys",
   "year": 2026,
   "track_or_session": null,
@@ -201,6 +203,19 @@
       "official": false,
       "supports": [
         "Publisher-deposited proceedings identity and print publication date."
+      ]
+    },
+    {
+      "id": "src-abstract-eurosys-2026-cd3a5bbf",
+      "url": "https://api.openalex.org/works/doi:10.1145/3767295.3769349?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "SwitchFS: Asynchronous Metadata Updates for Distributed Filesystems with In-Network Coordination",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:22:07Z",
+      "content_hash": "sha256:5fd0672b4d67566fa22045a513a44c6ed1bb48a70c994133bd97fa4e6ea91050",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

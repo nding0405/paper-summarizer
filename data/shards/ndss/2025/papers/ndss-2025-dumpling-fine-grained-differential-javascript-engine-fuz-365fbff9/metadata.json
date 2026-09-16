@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2025-dumpling-fine-grained-differential-javascript-engine-fuz-365fbff9",
   "title": "DUMPLING: Fine-grained Differential JavaScript Engine Fuzzing",
+  "abstract": "Web browsers are ubiquitous and execute untrusted JavaScript (JS) code. JS engines optimize frequently executed code through just-in-time (JIT) compilation. Subtly conflicting assumptions between optimizations frequently result in JS engine vulnerabilities. Attackers can take advantage of such diverging assumptions and use the flexibility of JS to craft exploits that produce a miscalculation, remove bounds checks in JIT compiled code, and ultimately gain arbitrary code execution. Classical fuzzing approaches for JS engines only detect bugs if the engine crashes or a runtime assertion fails. Differential fuzzing can compare interpreted code against optimized JIT compiled code to detect differences in execution. Recent approaches probe the execution states of JS programs through ad-hoc JS functions that read the value of variables at runtime. However, these approaches have limited capabilities to detect diverging executions and inhibit\n\noptimizations during JIT compilation, thus leaving JS engines under-tested.\n\nWe propose DUMPLING, a differential fuzzer that compares the full state of optimized and unoptimized execution for arbitrary JS programs. Instead of instrumenting the JS input, DUMPLING instruments the JS engine itself, enabling deep and precise introspection. These extracted fine-grained execution states, coined as (frame) dumps, are extracted at a high frequency even in the middle of JIT compiled functions. DUMPLING finds eight new bugs in the thoroughly tested V8 engine, where previous differential fuzzing approaches struggled to discover new bugs. We receive $11,000 from Google’s Vulnerability Rewards Program for reporting the vulnerabilities found by DUMPLING.",
+  "abstract_source_id": "src-abstract-ndss-2025-365fbff9",
   "venue": "ndss",
   "year": 2025,
   "track_or_session": "Fall submission cycle",
@@ -168,6 +170,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2025-365fbff9",
+      "url": "https://www.ndss-symposium.org/ndss-paper/dumpling-fine-grained-differential-javascript-engine-fuzzing/",
+      "kind": "paper-page",
+      "title": "DUMPLING: Fine-grained Differential JavaScript Engine Fuzzing",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:19:31Z",
+      "content_hash": "sha256:88f56b9c7e0446cc0cf3693b07ded39459839c43808879551f1744dfeec2bec5",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

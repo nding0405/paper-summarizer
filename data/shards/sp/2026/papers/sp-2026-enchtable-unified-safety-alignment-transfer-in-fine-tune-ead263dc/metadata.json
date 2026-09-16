@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2026-enchtable-unified-safety-alignment-transfer-in-fine-tune-ead263dc",
   "title": "EnchTable: Unified Safety Alignment Transfer in Fine-tuned Large Language Models",
+  "abstract": "Nowadays, many machine learning models are finetuned from large language models (LLMs) to achieve high performance in specialized domains such as code generation, biomedical analysis, and mathematical problem solving. However, researchers have shown that such fine-tuning process often introduces a critical vulnerability: the systematic degradation of safety alignment, which undermines ethical guidelines and increases the risk of harmful outputs. Addressing this challenge, we introduce EnchTable, a novel and unified framework designed to transfer and maintain safety alignment in downstream LLMs without requiring extensive retraining. EnchTable leverages a Neural Tangent Kernel (NTK)based safety vector distillation method to decouple safety constraints from task-specific reasoning, ensuring compatibility across diverse model architectures and sizes. Additionally, our interference-aware merging technique effectively balances the trade-offs between safety and utility, minimizing performance compromises across various task domains. We have implemented a fully functional prototype of EnchTable on three different task domains and three distinct LLM architectures, and evaluated its performance through extensive experiments on eleven diverse datasets, assessing both downstream utility and model safety. Our evaluations include assessments of LLMs from different vendors, demonstrating the generalization capability of EnchTable. Furthermore, EnchTable exhibits robust resistance to both static and dynamic jailbreaking attacks, outperforming vendor-released safety models in mitigating adversarially designed prompts. Comparative analyses with six parameter modification methods and two inference-time alignment baselines reveal that EnchTable achieves significantly lower unsafe rate and higher utility score and universal applicability across different task domains. Additionally, we validate that EnchTable can be seamlessly integrated into various deployment pipelines without significant overhead.",
+  "abstract_source_id": "src-abstract-sp-2026-ead263dc",
   "venue": "sp",
   "year": 2026,
   "track_or_session": "Cycle 1",
@@ -175,6 +177,19 @@
       "official": true,
       "supports": [
         "DOI, published-order authors and affiliations, abstract, publication date, page span, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2026-ead263dc",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "ENCHTABLE: Unified Safety Alignment Transfer in Fine-Tuned Large Language Models",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:57Z",
+      "content_hash": "sha256:303a9b5e5ef8908a3cfe67f02eb8a87be978a5fe3281c7ecec8c0cdb512517e0",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

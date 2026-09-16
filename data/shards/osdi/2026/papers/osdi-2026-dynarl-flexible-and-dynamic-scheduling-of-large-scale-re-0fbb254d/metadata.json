@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2026-dynarl-flexible-and-dynamic-scheduling-of-large-scale-re-0fbb254d",
   "title": "DynaRL: Flexible and Dynamic Scheduling of Large-Scale Reinforcement Learning Training",
+  "abstract": "Modern reinforcement learning (RL) workloads, powering large language models, long‑horizon reasoning, and agentic systems, exhibit extreme dynamicity due to heavy‑tailed rollouts, irregular multi‑turn tool interactions, and time‑varying bottlenecks. Static resource allocations in today’s distributed RL systems leave large fractions of compute idle and prolong training. This paper presents DynaRL, the first RL system that dynamically reallocates computation, memory, and communication resources across heterogeneous RL components. DynaRL models the entire RL pipeline with a dynamic hypergraph that serves as a centralized, continuously-evolving control surface. Supported by a unified resource migration interface and context‑aware data routing, the scheduler reallocates GPUs from overprovisioned components to the current bottleneck via a combination of a multi-level scheduling algorithm and fine-grained resource migration. Comprehensive evaluation demonstrates that DynaRL improves end-to-end throughput on math-reasoning and agentic RL workloads by up to 1.98×, with negligible online scheduling overhead.",
+  "abstract_source_id": "src-abstract-osdi-2026-0fbb254d",
   "venue": "osdi",
   "year": 2026,
   "track_or_session": "RL Training at Scale",
@@ -398,6 +400,19 @@
       "official": true,
       "supports": [
         "Official proceedings availability and canonical conference versions."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2026-0fbb254d",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/wang-yuanqing",
+      "kind": "paper-page",
+      "title": "DynaRL: Flexible and Dynamic Scheduling of Large-Scale Reinforcement Learning Training",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:08:13Z",
+      "content_hash": "sha256:cfda404464525674d357b6bd47419f7ef03e110fca6fbf2a8a9d2f15b230dfb9",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

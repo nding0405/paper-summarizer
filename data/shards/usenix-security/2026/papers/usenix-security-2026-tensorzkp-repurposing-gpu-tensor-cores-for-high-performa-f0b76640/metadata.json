@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-tensorzkp-repurposing-gpu-tensor-cores-for-high-performa-f0b76640",
   "title": "TensorZKP: Repurposing GPU Tensor Cores for High-Performance Zero-Knowledge Proofs",
+  "abstract": "GPU Tensor Cores, specialized hardware units designed to accelerate matrix multiplication, have served as the primary engine behind the AI revolution. Given the exponential performance gains they have delivered, aligning cryptographic implementations with this hardware evolution is critical. This is particularly acute for zero-knowledge proofs (ZKPs), a cryptographic primitive that currently grapples with high proof generation costs. Existing GPU implementations for ZKPs rely exclusively on general-purpose SIMT cores, leaving the massive computational power of Tensor Cores untapped.\n\nIn this paper, we introduce TensorZKP, the first GPU framework to harness Tensor Cores for ZKP acceleration. Since Tensor Cores are designed for low-precision matrix multiplication, mapping ZKP's arithmetic to this hardware is non-trivial. To bridge this gap, we develop Tensor-Core-compatible finite field arithmetic and reformulate ZKP modules, specifically sum-check protocols and Spielman code, into matrix multiplication tasks. Furthermore, we design an asynchronous warp-specialized framework that pipelines memory access, Tensor Core matrix operations, and SIMT-based modular reductions. We instantiate these optimizations with HyperPlonk as the Polynomial Interactive Oracle Proof (PIOP) and Brakedown as the Polynomial Commitment Scheme (PCS) to enable end-to-end proof generation.\n\nThe evaluation results show that TensorZKP exhibits remarkable efficiency. At a 2^25 scale, the underlying building blocks complete in 0.85 ms for inner product, 0.91 ms for scalar-vector multiplication, 4.04 ms for degree-2 sum-check, and 11.58 ms for the encoder. For a circuit with 2^25 multiplication gates, TensorZKP achieves a proof generation time of only 215.28 milliseconds, representing a 955× speedup over the CPU baseline and a 36.2× improvement over state-of-the-art SIMT-based GPU implementations.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-f0b76640",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Applications of Cryptography 6",
@@ -218,6 +220,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-f0b76640",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/lu-tao",
+      "kind": "paper-page",
+      "title": "TensorZKP: Repurposing GPU Tensor Cores for High-Performance Zero-Knowledge Proofs",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:25:47Z",
+      "content_hash": "sha256:b30f86a5fba26897889c999a5534b7a68fb61b9b4d7dce0c92f4de64aab22d08",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

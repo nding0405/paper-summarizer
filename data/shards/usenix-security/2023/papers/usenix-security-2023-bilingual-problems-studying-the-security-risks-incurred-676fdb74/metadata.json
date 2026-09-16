@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2023-bilingual-problems-studying-the-security-risks-incurred-676fdb74",
   "title": "Bilingual Problems: Studying the Security Risks Incurred by Native Extensions in Scripting Languages",
+  "abstract": "Scripting languages are continuously gaining popularity due to their ease of use and the flourishing software ecosystems surrounding them. These languages offer crash and memory safety by design. Thus, developers do not need to understand and prevent low-level security issues like the ones plaguing the C code. However, scripting languages often allow native extensions, a way for custom C/C++ code to be invoked directly from the high-level language. While this feature promises several benefits, such as increased performance or the reuse of legacy code, it can also break the language’s guarantees, e.g., crash safety.\n\nIn this work, we first provide a comparative analysis of the security risks of native extension APIs in three popular scripting languages. Additionally, we discuss a novel methodology for studying the misuse of the native extension API. We then perform an in-depth study of npm, an ecosystem that is most exposed to threats introduced by native extensions. We show that vulnerabilities in extensions can be exploited in their embedding library by producing reads of uninitialized memory, hard crashes, or memory leaks in 33 npm packages simply by invoking their API with well-crafted inputs. Moreover, we identify six open-source web applications in which a weak adversary can deploy such exploits remotely. Finally, we were assigned seven security advisories for the work presented in this paper, most labeled as high severity.",
+  "abstract_source_id": "src-abstract-usenix-security-2023-676fdb74",
   "venue": "usenix-security",
   "year": 2023,
   "track_or_session": "More Web and Mobile Security",
@@ -133,6 +135,19 @@
       "official": true,
       "supports": [
         "authors, affiliations when published, abstract, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2023-676fdb74",
+      "url": "https://www.usenix.org/conference/usenixsecurity23/presentation/staicu",
+      "kind": "paper-page",
+      "title": "Bilingual Problems: Studying the Security Risks Incurred by Native Extensions in Scripting Languages",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:10:02Z",
+      "content_hash": "sha256:d8f347f1a46d71187bae73e3ddcd225491f6b623e316d5c0006ceddb664084a3",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

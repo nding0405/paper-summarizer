@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "eurosys-2026-lifefuzz-lifecycle-guided-fuzzing-for-windows-driver-cro-847a6fdf",
   "title": "LifeFuzz: Lifecycle-Guided Fuzzing for Windows Driver Cross-Handler Vulnerabilities",
+  "abstract": "Third-party Windows drivers expose a critical attack surface. However, vulnerabilities that require cross-handler I/O Control (IOCTL) sequences remain hard to find, despite their prevalence, and often lead to privilege escalation. Static analysis suffers from high false positives, path explosion, and complex resource modeling. Meanwhile, dynamic fuzzers often exercise handlers in isolation or combine them randomly, leaving implicit state dependencies unchecked. To address the gap, we present LifeFuzz, a lifecycle-guided fuzzing framework that models global-variable lifecycles to construct dependency-respecting IOCTL sequences. Specifically, it identifies variable operations across handlers, preserves seeds that affect driver state, and then combines them into meaningful sequences. Consequently, LifeFuzz explores deep paths unreachable for existing fuzzers. We evaluate LifeFuzz on 26 Windows WDM drivers. It discovers 86 vulnerabilities, including 32 cross-handler cases, with six assigned CVE IDs. Moreover, it finds 357% more cross-handler vulnerabilities than msFuzz and achieves 19.2% higher average coverage. Overall, 37% of discovered vulnerabilities require cross-handler interactions, thereby validating lifecycle-aware, cross-handler fuzzing for driver security.",
+  "abstract_source_id": "src-abstract-eurosys-2026-847a6fdf",
   "venue": "eurosys",
   "year": 2026,
   "track_or_session": null,
@@ -222,6 +224,19 @@
       "official": false,
       "supports": [
         "Publisher-deposited proceedings identity and print publication date."
+      ]
+    },
+    {
+      "id": "src-abstract-eurosys-2026-847a6fdf",
+      "url": "https://api.openalex.org/works/doi:10.1145/3767295.3803624?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "LifeFuzz: Lifecycle-Guided Fuzzing for Windows Driver Cross-Handler Vulnerabilities",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:20:41Z",
+      "content_hash": "sha256:3e2d2e11daa1b33bf48b9a470d3c4ba299990aa1c5dfddcc352eadfd519ddd8f",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

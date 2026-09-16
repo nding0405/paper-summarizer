@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2026-towards-high-goodput-llm-serving-with-prefill-decode-mul-23c36e57",
   "title": "Towards High-Goodput LLM Serving with Prefill-decode Multiplexing",
+  "abstract": "Large Language Model (LLM) serving must meet stringent Service Level Objectives (SLOs) for both the prefill and decode phases. Some existing solutions disaggregate the two phases, causing potential resource idleness or compute redundancy. Others split the prefill phase into chunks and fuse it with decode iteration, creating a dilemma between SLO compliance and high utilization. To address these issues, an efficient serving system should dynamically adapt compute allocation, decouple compute from memory management, and execute prefill and decode independently. We present MuxWise, an LLM serving framework that adopts a new paradigm, intra-GPU prefill-decode multiplexing, to meet these requirements. To fully exploit the paradigm, MuxWise integrates a bubble-less multiplex engine, a contention-tolerant estimator, and an SLO-aware dispatcher. Evaluation shows that MuxWise improves peak throughput under SLO guarantees by an average of 2.20x (up to 3.06x) over state-of-the-art baselines.",
+  "abstract_source_id": "src-abstract-asplos-2026-23c36e57",
   "venue": "asplos",
   "year": 2026,
   "track_or_session": "Session 1A: LLM Serving: Throughput Optimization",
@@ -278,6 +280,19 @@
       "official": false,
       "supports": [
         "Indexed abstract used for strict relevance classification and indexed arXiv identifier where available."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2026-23c36e57",
+      "url": "https://api.openalex.org/works?filter=title.search:Towards%20High-Goodput%20LLM%20Serving%20with%20Prefill-decode%20Multiplexing&select=id,title,abstract_inverted_index&per-page=3&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Towards High-Goodput LLM Serving with Prefill-decode Multiplexing",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:07:00Z",
+      "content_hash": "sha256:d12d6ac9d2add6b0a0d1f7ff9a227c47bc5527e922da0fcc9af2b3a968f8cc2a",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

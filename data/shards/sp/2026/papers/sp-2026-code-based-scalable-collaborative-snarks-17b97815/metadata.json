@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2026-code-based-scalable-collaborative-snarks-17b97815",
   "title": "Code-based Scalable Collaborative SNARKs",
+  "abstract": "We propose the first collaborative SNARK based on error-correcting codes that is scalable, i.e., the proof computation overhead is distributed among the $N$ provers. As a starting point, we introduce the notion of $(t, l)$-zero-knowledge collaborative codes that ensure that, when collaboratively computing a codeword over a distributed message, no coalition of up to $t$ corrupted parties learns any additional information about the message, even having queried up to $l$ codeword positions. We show that tensor codes consisting of the composition of two Reed-Solomon codes satisfy our definition, while also being foldable. We then propose a collaborative interactive oracle proof of proximity (coIOPP) for testing codeword closeness in our code, show how it can be made a zero-knowledge IOPP using randomness logarithmic in the size of the message (as opposed to linear with prior approaches), and we use it to construct a coIOPP for multi-linear polynomial evaluation. To compile our coIOPPs into non-interactive arguments, we prove that a natural extension of the compiler of Ben-Sasson-ChiesaSpooner (TCC 2016) in the collaborative setting preserves round-by-round (knowledge) soundness against quantum adversaries, which may be of independent interest for future work in collaborative SNARKs. Finally, we use an optimized collaborative version of the Spartan PIOP to build the first transparent and post-quantum secure scalable collaborative SNARK. Our experimental evaluation demonstrates that our scheme consistently outperforms the best existing (non-postquantum secure) scalable collaborative SNARKs, both in end-to-end prover time and in total communication among provers, for all tested configurations.",
+  "abstract_source_id": "src-abstract-sp-2026-17b97815",
   "venue": "sp",
   "year": 2026,
   "track_or_session": "Cycle 2",
@@ -112,6 +114,19 @@
       "official": true,
       "supports": [
         "DOI, published-order authors and affiliations, abstract, publication date, page span, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2026-17b97815",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Code-Based Scalable Collaborative SNARKs",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:57Z",
+      "content_hash": "sha256:303a9b5e5ef8908a3cfe67f02eb8a87be978a5fe3281c7ecec8c0cdb512517e0",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

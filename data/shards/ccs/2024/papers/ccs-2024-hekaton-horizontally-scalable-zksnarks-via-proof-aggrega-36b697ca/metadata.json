@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2024-hekaton-horizontally-scalable-zksnarks-via-proof-aggrega-36b697ca",
   "title": "Hekaton: Horizontally-Scalable zkSNARKs Via Proof Aggregation",
+  "abstract": "Zero-knowledge Succinct Non-interactive ARguments of Knowledge (zkSNARKs) allow a prover to convince a verifier of the correct execution of a large computation in private and easily-verifiable manner.These properties make zkSNARKs a powerful tool for adding accountability, scalability, and privacy to numerous systems such as blockchains and verifiable key directories.Unfortunately, existing zkSNARKs are unable to scale to large computations due to time and space complexity requirements for the prover algorithm.As a result, they cannot handle real-world instances of the aforementioned applications.In this work, we introduce Hekaton, a zkSNARK that overcomes these barriers and can efficiently handle arbitrarily large computations.We construct Hekaton via a new \"distribute-and-aggregate\" framework that breaks up large computations into small chunks, proves these chunks in parallel in a distributed system, and then aggregates the resulting chunk proofs into a single succinct proof.Underlying this framework is a new technique for efficiently handling data that is shared between chunks that we believe could be of independent interest.We implement a distributed prover for Hekaton, and evaluate its performance on a compute cluster.Our experiments show that Hekaton achieves strong horizontal scalability (proving time decreases linearly as we increase the number of nodes in the cluster), and is able to prove large computations quickly: it can prove computations of size 2 35 gates in under an hour, which is much faster than prior work.Finally, we also apply Hekaton to two applications of realworld interest: proofs of batched insertion for a verifiable key directory and proving correctness of RAM computations.In both cases, Hekaton is able to scale to handle realistic workloads with better efficiency than prior work.",
+  "abstract_source_id": "src-abstract-ccs-2024-36b697ca",
   "venue": "ccs",
   "year": 2024,
   "track_or_session": "Cycle 2",
@@ -180,6 +182,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2024-36b697ca",
+      "url": "https://api.openalex.org/works/doi:10.1145/3658644.3690282?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Hekaton: Horizontally-Scalable zkSNARKs Via Proof Aggregation",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:10:10Z",
+      "content_hash": "sha256:6f9952707e28d09e91d2fb56fac3b2795befb55563ece6254377fbeb79497621",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

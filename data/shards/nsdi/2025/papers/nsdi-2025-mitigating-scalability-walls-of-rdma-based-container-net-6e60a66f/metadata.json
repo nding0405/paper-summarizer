@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2025-mitigating-scalability-walls-of-rdma-based-container-net-6e60a66f",
   "title": "Mitigating Scalability Walls of RDMA-based Container Networks",
+  "abstract": "As a state-of-the-art technique, RDMA-offloaded container networks (RCNs) can provide high-performance data communications among containers. Nevertheless, this seems to be subject to the RCN scale—when there are millions of containers simultaneously running in a data center, the performance decreases sharply and unexpectedly. In particular, we observe that most performance issues are related to RDMA NICs (RNICs), whose design and implementation defects might constitute the \"scalability wall\" of the RCN. To validate the conjecture, however, we are challenged by the limited visibility into the internals of today's RNICs. To address the dilemma, a more pragmatic approach is to infer the most likely causes of the performance issues according to the common abstractions of an RNIC's components and functionalities.\n\nSpecifically, we conduct combinatorial causal testing to efficiently reason about an RNIC's architecture model, effectively approximate its performance model, and thereby proactively optimize the NF (network function) offloading schedule. We embody the design into a practical system dubbed ScalaCN. Evaluation on production workloads shows that the end-to-end network bandwidth increases by 1.4× and the packet forwarding latency decreases by 31%, after resolving 82% of the causes inferred by ScalaCN. We report the performance issues of RNICs and the most likely causes to relevant vendors, all of which have been encouragingly confirmed; we are now closely working with the vendors to fix them.",
+  "abstract_source_id": "src-abstract-nsdi-2025-6e60a66f",
   "venue": "nsdi",
   "year": 2025,
   "track_or_session": "RDMA",
@@ -308,6 +310,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2025-6e60a66f",
+      "url": "https://www.usenix.org/conference/nsdi25/presentation/liu-wei",
+      "kind": "paper-page",
+      "title": "Mitigating Scalability Walls of RDMA-based Container Networks",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:04:19Z",
+      "content_hash": "sha256:62c6fb4871b861f3876e686403ce349572dfe9c8bdfba5f7acbe3b35858df2f4",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

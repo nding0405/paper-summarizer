@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2026-secure-vickrey-auctions-for-online-advertising-734e7fe7",
   "title": "Secure Vickrey Auctions for Online Advertising",
+  "abstract": "Online advertising is an essential part of the web ecosystem. When a user’s browser lands on a webpage, advertisers bid for the ad space. An auction algorithm (e.g., Vickrey/second-price auction) is executed to determine the winner and the price; ideally, only this information is revealed, and everything else (i.e., the losing bids and the bidder identities) is kept private. However, achieving these privacy goals under a malicious security model, while operating under stringent performance requirements for online advertising, is challenging.\n\nObsidian enables secure Vickrey auctions for online advertising with three ideas: a new Multiparty Computation (MPC)-friendly encoding scheme that decouples bid values from bidders’ identities; a novel use of function secret sharing to shift the cost of encoding validation to an offline phase; and a lightweight ring signature scheme to anonymously verify bidders. Obsidian outperforms generic MPC and homomorphic encryption approaches by orders of magnitude. Moreover, it also surpasses the state-of-the-art system, Addax, which is tailored to ad auctions under a weaker (covert) threat model and leaks more information.",
+  "abstract_source_id": "src-abstract-nsdi-2026-734e7fe7",
   "venue": "nsdi",
   "year": 2026,
   "track_or_session": "Security in Networked Systems",
@@ -139,6 +141,19 @@
         "proceedings page range and page count",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2026-734e7fe7",
+      "url": "https://www.usenix.org/conference/nsdi26/presentation/bhatnagar",
+      "kind": "paper-page",
+      "title": "Secure Vickrey Auctions for Online Advertising",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:06:00Z",
+      "content_hash": "sha256:24125fa637e4a1aa34f321b6da6b65d0540516e070f4e3a86a5358c794730713",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

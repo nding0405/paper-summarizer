@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2024-shesha-multi-head-microarchitectural-leakage-discovery-i-918a8257",
   "title": "Shesha: Multi-head Microarchitectural Leakage Discovery in new-generation Intel Processors",
+  "abstract": "Transient execution attacks have been one of the widely explored microarchitectural side channels since the discovery of Spectre and Meltdown. However, much of the research has been driven by manual discovery of new transient paths through well-known speculative events. Although a few attempts exist in literature on automating transient leakage discovery, such tools focus on finding variants of known transient attacks and explore a small subset of instruction set. Further, they take a random fuzzing approach that does not scale as the complexity of search space increases. In this work, we identify that the search space of bad speculation is disjointedly fragmented into equivalence classes and then use this observation to develop a framework named Shesha, inspired by Particle Swarm Optimization, which exhibits faster convergence rates than state-of-the-art fuzzing techniques for automatic discovery of transient execution attacks. We then use Shesha to explore the vast search space of extensions to the x86 Instruction Set Architecture (ISAs), thereby focusing on previously unexplored avenues of bad speculation. As such, we report five previously unreported transient execution paths in Instruction Set Extensions (ISEs) on new generation of Intel processors. We then perform extensive reverse engineering of each of the transient execution paths and provide root-cause analysis. Using the discovered transient execution paths, we develop attack building blocks to exhibit exploitable transient windows. Finally, we demonstrate data leakage from Fused Multiply-Add instructions through SIMD buffer and extract victim data from various cryptographic implementations.",
+  "abstract_source_id": "src-abstract-usenix-security-2024-918a8257",
   "venue": "usenix-security",
   "year": 2024,
   "track_or_session": "Side Channel I: Transient Execution",
@@ -112,6 +114,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2024-918a8257",
+      "url": "https://www.usenix.org/conference/usenixsecurity24/presentation/chakraborty",
+      "kind": "paper-page",
+      "title": "Shesha: Multi-head Microarchitectural Leakage Discovery in new-generation Intel Processors",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:17:11Z",
+      "content_hash": "sha256:c729d848f187040dd0815b9be7a0c812de9d7e7b4f595a795c27c5036d0064cc",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

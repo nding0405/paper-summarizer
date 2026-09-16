@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2025-eva-efficient-privacy-preserving-proof-of-authenticity-f-9c422a3e",
   "title": "Eva: Efficient Privacy-Preserving Proof of Authenticity for Lossily Encoded Videos",
+  "abstract": "With the increasing usage of fake videos in misinformation campaigns, proving the provenance of an edited video becomes critical, in particular, without revealing the original footage. We formalize the notion and security model of proofs of video authenticity and give the first cryptographic video authentication protocol Eva, which supports lossy codecs and arbitrary edits and is proven secure under well-established cryptographic assumptions. Compared to previous cryptographic methods for image authentication, Eva is not only capable of handling significantly larger amounts of data originating from the complex lossy video encoding but also achieves linear prover time, constant RAM usage, and constant proof size with respect to video size. These improvements have optimal theoretic complexity and are enabled by our two new theoretical advancements of integrating lookup arguments with folding-based incrementally verifiable computation (IVC) and compressing IVC proof efficiently, which may be of independent interest. For our implementation of Eva, we then integrate them with the Nova folding scheme, which we call Loua. As for concrete performance, we additionally utilize various optimizations such as tailored circuit design and GPU acceleration to make Eva highly practical: for a 2-minute HD (1280 × 720) video encoded in H.264 at 30 frames per second, Eva generates a 448 B proof in about 2.4 hours on consumer-grade hardware at 2.6 µs per pixel, surpassing state-of-the-art cryptographic image authentication schemes by more than an order of magnitude in terms of prover time and proof size.",
+  "abstract_source_id": "src-abstract-sp-2025-9c422a3e",
   "venue": "sp",
   "year": 2025,
   "track_or_session": "Cycle 2",
@@ -154,6 +156,19 @@
       "official": true,
       "supports": [
         "DOI, authors, affiliations, abstract, publication date, pages, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2025-9c422a3e",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Eva: Efficient Privacy-Preserving Proof of Authenticity for Lossily Encoded Videos",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:47Z",
+      "content_hash": "sha256:d48e5e27e72297ce02860f066764bd9c5cd6e8191e2ebf4b4f15da0fffb6959f",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

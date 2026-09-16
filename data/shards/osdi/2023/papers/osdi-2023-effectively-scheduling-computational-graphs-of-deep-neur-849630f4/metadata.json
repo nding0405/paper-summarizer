@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2023-effectively-scheduling-computational-graphs-of-deep-neur-849630f4",
   "title": "Effectively Scheduling Computational Graphs of Deep Neural Networks toward Their Domain-Specific Accelerators",
+  "abstract": "Fully exploiting the computing power of an accelerator specialized for deep neural networks (DNNs) calls for the synergy between network and hardware architectures, but existing approaches partition a computational graph of DNN into multiple sub-graphs by abstracting away hardware architecture and assign resources to each sub-graph, not only producing redundant off-core data movements but also under-utilizing the hardware resources of a domain-specific architecture (DSA).\n\nThis paper introduces a systematic approach for effectively scheduling DNN computational graphs on DSA platforms. By fully taking into account hardware architecture when partitioning a computational graph into coarse-grained sub-graphs, our work enables the synergy between network and hardware architectures, addressing several challenges of prior work: (1) it produces larger but fewer kernels, converting a large number of off-core data movements into on-core data exchanges; (2) it exploits the imbalanced memory usage distribution across DNN network architecture, better saturating the DSA memory hierarchy; (3) it enables across-layer instruction scheduling not studied before, further exploiting the parallelism across different specialized compute units.\n\nResults of seven DNN inference models on a DSA platform show that our work outperforms TVM and AStitch by 11.15× and 6.16×, respectively, and obtains throughput competitive to the vendor-crafted implementation. A case study on GPU also demonstrates that generating kernels for our sub-graphs can surpass CUTLASS with and without convolution fusion by 1.06× and 1.23×, respectively.",
+  "abstract_source_id": "src-abstract-osdi-2023-849630f4",
   "venue": "osdi",
   "year": 2023,
   "track_or_session": "Train Your Bits I",
@@ -243,6 +245,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2023-849630f4",
+      "url": "https://www.usenix.org/conference/osdi23/presentation/zhao",
+      "kind": "paper-page",
+      "title": "Effectively Scheduling Computational Graphs of Deep Neural Networks toward Their Domain-Specific Accelerators",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:06:28Z",
+      "content_hash": "sha256:7a196f006c8d68960cbaa1c71aa114b6d84e90209765fef7df3dd8e7cde95694",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

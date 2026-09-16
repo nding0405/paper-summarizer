@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2026-fault-escaping-improving-robustness-of-dpu-enhanced-plat-c283282b",
   "title": "Fault Escaping: Improving Robustness of DPU Enhanced Platform with Mutual Assisted VM Recovery",
+  "abstract": "Modern cloud servers achieve significant performance improvements by exploiting data processing units (DPUs) to offload virtualization overhead.Unlike traditional monolithic hypervisors, this offloading approach splits VM state and distributes hypervisor functions across the DPU and the Host, transforming the cloud server from a single system into a sophisticated orchestration of multiple self-managed processing units.However, the failure rate of these systems has significantly increased, as errors from either the DPU or the Host can crash the entire machine.All these changes necessitate a comprehensive revamp of current VM fault tolerance and isolation mechanisms.This paper explores a novel approach to VM fault tolerance by treating the split hypervisors on the DPU SoC and the Host as redundant peers.We propose a fault-escaping scheme that enables VMs to escape from a failing SoC or Host.With hybrid synchronization, the entire VM state becomes fully accessible on either the SoC or the Host with minimum synchronization overhead (in kilobytes).Instead of recovering the failed hypervisor, this scheme migrates the verified VM state, allowing the VM to escape from the failure",
+  "abstract_source_id": "src-abstract-asplos-2026-c283282b",
   "venue": "asplos",
   "year": 2026,
   "track_or_session": "Session 9C: Reliability & Fault Tolerance",
@@ -440,6 +442,19 @@
       "official": false,
       "supports": [
         "Indexed abstract used for strict relevance classification and indexed arXiv identifier where available."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2026-c283282b",
+      "url": "https://api.openalex.org/works/doi:10.1145/3676642.3736124?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Fault Escaping: Improving Robustness of DPU Enhanced Platform with Mutual Assisted VM Recovery",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:05:27Z",
+      "content_hash": "sha256:5e7ce36249e65115bf076783586c1f910f064135a7a3fddf6cdafe81277df4ef",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

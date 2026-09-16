@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2024-beyond-the-surface-uncovering-the-unprotected-components-1c769cf3",
   "title": "Beyond the Surface: Uncovering the Unprotected Components of Android Against Overlay Attack",
+  "abstract": "Overlay is a notable user interface feature in the Android system, which allows an app to draw over other apps' windows. While overlay enhances user experience and allows concurrent app interaction, it has been extensively abused for malicious purposes, such as \"tapjacking\", leading to so-called overlay attacks. In order to combat this threat, Google introduced a dedicated window flag SYSTEM_FLAG_HIDE_NON_SYSTEM_OVERLAY_WINDOWS to protect critical system apps' windows against overlay attacks. Unfortunately, the adequacy of such protection in the Android system remains unstudied, with a noticeable absence of clear usage guidelines.\n\nTo bridge the gap, in this paper, we conduct the first systematic study on the unprotected windows of system apps against overlay attacks. We propose a comprehensive guideline and then design and develop a new tool named OverlayChecker to identify the missing protections in Android system apps. To verify the uncovered issues, we also design and create Proof-of-Concept apps. After applying OverlayChecker to 8 commercial Android systems on 4 recently released Android versions, we totally discovered 49 vulnerable system apps' windows. We reported our findings to the mobile vendors, including Google, Samsung, Vivo, Xiaomi, and Honor. At the time of writing, 15 of them have been confirmed. 5 CVEs have been assigned, and 3 of them are rated high severity. We also received bug bounty rewards from these mobile vendors.",
+  "abstract_source_id": "src-abstract-ndss-2024-1c769cf3",
   "venue": "ndss",
   "year": 2024,
   "track_or_session": "Fall submission cycle",
@@ -189,6 +191,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2024-1c769cf3",
+      "url": "https://www.ndss-symposium.org/ndss-paper/beyond-the-surface-uncovering-the-unprotected-components-of-android-against-overlay-attack/",
+      "kind": "paper-page",
+      "title": "Beyond the Surface: Uncovering the Unprotected Components of Android Against Overlay Attack",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:17:43Z",
+      "content_hash": "sha256:2c64e0d6ce38a0ba0db42a84f58d021687ff5a2d7b925557072d44744013c283",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

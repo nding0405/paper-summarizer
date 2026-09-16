@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "atc-2025-poby-smartnic-accelerated-image-provisioning-for-coldsta-ac4da59e",
   "title": "Poby: SmartNIC-accelerated Image Provisioning for Coldstart in Clouds",
+  "abstract": "Coldstart introduces a significant latency penalty in cloud computing. While several previous works have proposed mechanisms such as warm start, fast snapshot recovery, lightweight isolation, and fast image download to avoid or mitigate this issue, image provisioning remains underexplored despite being critical.\n\nIn this paper, we propose Poby, a software-hardware collaborative system that offloads and accelerates critical operations of image provisioning using SmartNICs. Specifically, Poby embodies a disaggregated architecture that offloads different image provisioning operations to the appropriate hardware such as embedded CPUs and domain-specific hardware accelerators for optimal performance. It uses a pipeline-based, data-driven workflow to eliminate delays caused by the serial execution of image provisioning operations. Moreover, it contains a distributed image provisioning scheme to alleviate the performance bottlenecks of conventional centralized registries. We implement the entire Poby system using BlueField SmartNICs and evaluate its performance using various microservice and FaaS benchmark suites. The results demonstrate that Poby outperforms two industry-standard container platforms, containerd and iSulad, with speedups of 13.2× and 8.0×, respectively. In addition, compared to iSulad, it reduces host CPU usage by 87.5%.",
+  "abstract_source_id": "src-abstract-atc-2025-ac4da59e",
   "venue": "atc",
   "year": 2025,
   "track_or_session": "Cloud Computing: Speed, Scale, and Serverless",
@@ -243,6 +245,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-atc-2025-ac4da59e",
+      "url": "https://www.usenix.org/conference/atc25/presentation/chang",
+      "kind": "paper-page",
+      "title": "Poby: SmartNIC-accelerated Image Provisioning for Coldstart in Clouds",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:00:03Z",
+      "content_hash": "sha256:885ecdb8652f0b24a9fba08a83308c77ed97f738f71bf814ed40d51ec7153918",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

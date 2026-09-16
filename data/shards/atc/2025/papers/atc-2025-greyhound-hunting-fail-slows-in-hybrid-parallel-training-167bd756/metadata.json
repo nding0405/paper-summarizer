@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "atc-2025-greyhound-hunting-fail-slows-in-hybrid-parallel-training-167bd756",
   "title": "GREYHOUND: Hunting Fail-Slows in Hybrid-Parallel Training at Scale",
+  "abstract": "Fail-slows, or stragglers, are common problems in largescale hybrid-parallel training that runs on a large fleet of GPU servers for an extended period of time. Yet, these problems are not well studied. In this paper, we first present a characterization study on a shared production cluster with over 10,000 GPUs. We find that fail-slows manifest as transient stragglers caused by slow computations or communications due to contention, device degradation, or network congestion, lasting from sub-minutes to nearly ten hours, and delaying large training jobs by 1.34× on average. The current practice is to manually detect fail-slows and treat them as fail-stops by means of checkpoint-and-restart failover, which is time-consuming. In this paper, we propose GREYHOUND, a system that rapidly identifies slow GPUs and/or communication links, and effectively tackles them with a novel multi-level mitigation mechanism, all without human intervention. GREYHOUND correctly detects fail-slows in a production cluster with over 99% accuracy. Testbed experiment on 256 H800 GPUs further shows it effectively handles (manually injected) stragglers, improving end-to-end throughput by 1.58×.",
+  "abstract_source_id": "src-abstract-atc-2025-167bd756",
   "venue": "atc",
   "year": 2025,
   "track_or_session": "Resilient Systems: Failure Detection, Consistency, and Scalability",
@@ -285,6 +287,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-atc-2025-167bd756",
+      "url": "https://www.usenix.org/conference/atc25/presentation/wu-tianyuan",
+      "kind": "paper-page",
+      "title": "GREYHOUND: Hunting Fail-Slows in Hybrid-Parallel Training at Scale",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T21:59:44Z",
+      "content_hash": "sha256:5723d615dd2c6539f56feb605aa7b894da327a838d700886d7fb783b63045246",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

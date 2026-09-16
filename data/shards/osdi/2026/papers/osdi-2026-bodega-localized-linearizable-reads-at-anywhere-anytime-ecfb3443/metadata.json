@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2026-bodega-localized-linearizable-reads-at-anywhere-anytime-ecfb3443",
   "title": "Bodega: Localized Linearizable Reads at Anywhere Anytime via Roster Leases",
+  "abstract": "We present Bodega, the first consensus protocol that serves linearizable reads locally from any desired node, regardless of interfering writes. Bodega attains this capability via a new notion of cluster metadata called the roster, which is a generalization of leadership; it tracks arbitrary subsets of replicas as responder nodes for local reads. A consistent agreement on the roster is established through roster leases, an all-to-all leasing mechanism that generalizes existing all-to-one leasing approaches (Leader Leases, Quorum Leases), unlocking a new point in the protocol design space. Bodega further employs optimistic holding and early accept notifications optimizations to minimize interruption from interfering writes, and smart roster coverage and lightweight heartbeats to maximize practicality. Bodega is a non-intrusive extension to classic consensus; it imposes no special requirements on writes other than a responder-covering quorum.\n\nWe implement Bodega and related works in Summerset, a protocol-generic replicated key-value store written in async Rust. We compare it to previous protocols (Leader Leases, EPaxos, PQR, and Quorum Leases) and two production coordination services (etcd and ZooKeeper). Bodega speeds up average client read requests by 5.6x∼13.1x on real WAN clusters versus previous approaches under moderate write interference, and closely matches the performance of sequentially-consistent etcd and ZooKeeper deployments across YCSB workloads. Bodega supports fast proactive roster changes and delivers on-par write performance. Our Summerset codebase is open-sourced at https://github.com/josehu07/summerset/tree/bodega-artifact .",
+  "abstract_source_id": "src-abstract-osdi-2026-ecfb3443",
   "venue": "osdi",
   "year": 2026,
   "track_or_session": "Consensus and Byzantine Fault Tolerance",
@@ -125,6 +127,19 @@
       "official": true,
       "supports": [
         "Official proceedings availability and canonical conference versions."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2026-ecfb3443",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/hu-guanzhou",
+      "kind": "paper-page",
+      "title": "Bodega: Localized Linearizable Reads at Anywhere Anytime via Roster Leases",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:08:03Z",
+      "content_hash": "sha256:a346007953821beaacd2995c9d95b425a62ac54ce621f5b923c77c611358dc96",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

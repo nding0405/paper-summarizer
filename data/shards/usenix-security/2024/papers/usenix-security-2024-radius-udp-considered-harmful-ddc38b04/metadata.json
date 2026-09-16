@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2024-radius-udp-considered-harmful-ddc38b04",
   "title": "RADIUS/UDP Considered Harmful",
+  "abstract": "The RADIUS protocol is the de facto standard lightweight protocol for authentication, authorization, and accounting (AAA) for networked devices. It is used to support remote access for diverse use cases including network routers, industrial control systems, VPNs, enterprise Wi-Fi including the Eduroam network, Linux Pluggable Authentication Modules, and mobile roaming and Wi-Fi offload.\n\nWe have discovered a protocol vulnerability in RADIUS that has been present for decades. Our attack allows a man-in-the-middle attacker to authenticate itself to a device using RADIUS for user authentication, or to assign itself arbitrary network privileges. Our attack exploits an MD5 chosen-prefix collision on the ad hoc RADIUS packet authentication construction to produce Access-Accept and Access-Reject packets with identical Response Authenticators, allowing our attacker to transform a reject into an accept without knowledge of the shared secret between RADIUS client and server.\n\nWe optimize the MD5 chosen-prefix attack to produce collisions online in less than five minutes, and show how to fit the collision blocks within RADIUS attributes that will be echoed back from the server. We demonstrate our attack in a variety of settings against popular RADIUS implementations. It is our hope that this attack will provide the impetus for vendors and the IETF to deprecate RADIUS over UDP, and to require RADIUS to run over secure channels with modern cryptographic privacy and integrity guarantees.",
+  "abstract_source_id": "src-abstract-usenix-security-2024-ddc38b04",
   "venue": "usenix-security",
   "year": 2024,
   "track_or_session": "Crypto IX: Attacks",
@@ -196,6 +198,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2024-ddc38b04",
+      "url": "https://www.usenix.org/conference/usenixsecurity24/presentation/goldberg",
+      "kind": "paper-page",
+      "title": "RADIUS/UDP Considered Harmful",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:16:55Z",
+      "content_hash": "sha256:387d335fbf92fc688fe1c6618e82386196b23b944ce22c9d58140e42bc50caee",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

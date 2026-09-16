@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2023-security-verification-of-low-trust-architectures-914cab21",
   "title": "Security Verification of Low-Trust Architectures",
+  "abstract": "Low-trust architectures work on, from the viewpoint of software, always-encrypted data, and significantly reduce the amount of hardware trust to a small software-free enclave component. In this paper, we perform a complete formal verification of a specific low-trust architecture, the Sequestered Encryption (SE) architecture, to show that the design is secure against direct data disclosures and digital side channels for all possible programs. We first define the security requirements of the ISA of SE low-trust architecture. Looking upwards, this ISA serves as an abstraction of the hardware for the software, and is used to show how any program comprising these instructions cannot leak information, including through digital side channels. Looking downwards this ISA is a specification for the hardware, and is used to define the proof obligations for any RTL implementation arising from the ISA-level security requirements. These cover both functional and digital side-channel leakage. Next, we show how these proof obligations can be successfully discharged using commercial formal verification tools. We demonstrate the efficacy of our RTL security verification technique for seven different correct and buggy implementations of the SE architecture.",
+  "abstract_source_id": "src-abstract-ccs-2023-914cab21",
   "venue": "ccs",
   "year": 2023,
   "track_or_session": "Secure Hardware (Hardware, Side Channels, and CyberPhysical Systems)",
@@ -235,6 +237,19 @@
       "official": false,
       "supports": [
         "published title, author order, and page span"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2023-914cab21",
+      "url": "https://api.openalex.org/works/doi:10.1145/3576915.3616643?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Security Verification of Low-Trust Architectures",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:08:23Z",
+      "content_hash": "sha256:20fb2e47fd6f147e43d0ddb4cc57314b34f64a4f25d2150dfc6629c2aa61aee4",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

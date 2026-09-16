@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2023-dish-dynamic-shell-script-distribution-752dfd89",
   "title": "DiSh: Dynamic Shell-Script Distribution",
+  "abstract": "Shell scripting remains prevalent for automation and data-processing tasks, partly due to its dynamic features—e.g., expansion, substitution—and language agnosticism—i.e., the ability to combine third-party commands implemented in any programming language. Unfortunately, these characteristics hinder automated shell-script distribution, often necessary for dealing with large datasets that do not fit on a single computer. This paper introduces DiSh, a system that distributes the execution of dynamic shell scripts operating on distributed filesystems. DiSh is designed as a shim that applies program analyses and transformations to leverage distributed computing, while delegating all execution to the underlying shell available on each computing node. As a result, DiSh does not require modifications to shell scripts and maintains compatibility with existing shells and legacy functionality. We evaluate DiSh against several options available to users today: (i) Bash, a single-node shell-interpreter baseline, (ii) PaSh, a state-of-the-art automated-parallelization system, and (iii) Hadoop Streaming, a MapReduce system that supports language-agnostic third-party components. Combined, our results demonstrate that DiSh offers significant performance gains, requires no developer effort, and handles arbitrary dynamic behaviors pervasive in real-world shell scripts.",
+  "abstract_source_id": "src-abstract-nsdi-2023-752dfd89",
   "venue": "nsdi",
   "year": 2023,
   "track_or_session": "Distributed Systems",
@@ -140,6 +142,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2023-752dfd89",
+      "url": "https://www.usenix.org/conference/nsdi23/presentation/mustafa",
+      "kind": "paper-page",
+      "title": "DiSh: Dynamic Shell-Script Distribution",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:01:58Z",
+      "content_hash": "sha256:0fdd4d13a7c4b4c5a9e5338ee13d688196ab526942ac391a3e76c218142c8474",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

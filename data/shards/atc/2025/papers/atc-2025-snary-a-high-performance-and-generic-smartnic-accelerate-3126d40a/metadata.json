@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "atc-2025-snary-a-high-performance-and-generic-smartnic-accelerate-3126d40a",
   "title": "SNARY: A High-Performance and Generic SmartNIC-accelerated Retrieval System",
+  "abstract": "Industrial large-scale recommendation systems mostly follow a two-stage paradigm: retrieval and ranking stages. The retrieval stage aims to select thousands of relevant candidates from a vast corpus with millions or more items, and thus often becomes the performance bottleneck. Offloading the retrieval stage to hardware is a promising solution. Nevertheless, previous solutions either fail to achieve optimal performance or lack the sufficient generality to support fuzzy search, which has been widely used in modern retrieval systems to improve their scalability and efficiency.\n\nIn this paper, we present SNARY, a generic SmartNIC-accelerated retrieval system, to facilitate both exact and fuzzy search. Specifically, SNARY utilizes High-Bandwidth Memory (HBM) for corpus storing and scanning and designs two types of search engines: a data parallelism exact search, and a Locality-Sensitive Hashing (LSH)-based fuzzy search. Furthermore, SNARY employs a pipeline-based approach to select Top-K items and streams the data flow of the whole system. We have implemented SNARY on Xilinx commercial SmartNICs. Experimental results show SNARY achieves a 20.91%-83.88% lower latency and a 1.26×-18.27× higher latency-bounded throughput in exact search scenarios, and achieves a 85.13%-87.40%lower latency and a 20.18×-23.81× higher latency-bounded throughput in fuzzy search scenarios in comparison with the state-of-the-art hardware-based solutions.",
+  "abstract_source_id": "src-abstract-atc-2025-3126d40a",
   "venue": "atc",
   "year": 2025,
   "track_or_session": "The Programmable Data Plane: SmartNICs and Beyond",
@@ -243,6 +245,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-atc-2025-3126d40a",
+      "url": "https://www.usenix.org/conference/atc25/presentation/gan",
+      "kind": "paper-page",
+      "title": "SNARY: A High-Performance and Generic SmartNIC-accelerated Retrieval System",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:00:12Z",
+      "content_hash": "sha256:5ea020368004b0c3b865cbac4a7b4756806b2a1f401efbf6ec6cad2ddd16e078",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

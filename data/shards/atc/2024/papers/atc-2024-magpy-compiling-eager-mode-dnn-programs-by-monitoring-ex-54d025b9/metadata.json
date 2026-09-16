@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "atc-2024-magpy-compiling-eager-mode-dnn-programs-by-monitoring-ex-54d025b9",
   "title": "MAGPY: Compiling Eager Mode DNN Programs by Monitoring Execution States",
+  "abstract": "Real-world deep learning programs are often developed with dynamic programming languages like Python, which usually have complex features, such as built-in functions and dynamic typing. These programs typically execute in eager mode, where tensor operators run without compilation, resulting in poor performance. Conversely, deep learning compilers rely on operator-based computation graphs to optimize program execution. However, complexities in dynamic languages often prevent the conversion of these programs into complete operator graphs, leading to sub-optimal performance.\n\nTo address this challenge, we introduce MAGPY to optimize the generation of operator graphs from deep learning programs. MAGPY generates more complete operator graphs by collecting key runtime information through monitoring program execution. MAGPY provides a reference graph to record program execution states and leverages reference relationships to identify state changes that can impact program outputs. This approach significantly reduces analysis complexity, leading to more complete operator graphs. Experimental results demonstrate that MAGPY accelerates complex deep learning programs by up to 2.88× (1.55× on average), and successfully instantiates 93.40% of 1191 real user programs into complete operator graphs.",
+  "abstract_source_id": "src-abstract-atc-2024-54d025b9",
   "venue": "atc",
   "year": 2024,
   "track_or_session": "ML-System Co-Design",
@@ -201,6 +203,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-atc-2024-54d025b9",
+      "url": "https://www.usenix.org/conference/atc24/presentation/zhang-chen",
+      "kind": "paper-page",
+      "title": "MAGPY: Compiling Eager Mode DNN Programs by Monitoring Execution States",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T21:58:49Z",
+      "content_hash": "sha256:490eed0dec128b7d6aafe26649778a8645e52cdbf210b302fc571a8e9d91f0b9",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2024-neupims-npu-pim-heterogeneous-acceleration-for-batched-l-3c798946",
   "title": "NeuPIMs: NPU-PIM Heterogeneous Acceleration for Batched LLM Inferencing",
+  "abstract": "Modern transformer-based Large Language Models (LLMs) are constructed with a series of decoder blocks. Each block comprises three key components: (1) QKV generation, (2) multi-head attention, and (3) feed-forward networks. In batched processing, QKV generation and feed-forward networks involve compute-intensive matrix-matrix multiplications (GEMM), while multi-head attention requires bandwidth-heavy matrix-vector multiplications (GEMV). Machine learning accelerators like TPUs or NPUs are proficient in handling GEMM but are less efficient for GEMV computations. Conversely, Processing-in-Memory (PIM) technology is tailored for efficient GEMV computation, while it lacks the computational power to handle GEMM effectively.",
+  "abstract_source_id": "src-abstract-asplos-2024-3c798946",
   "venue": "asplos",
   "year": 2024,
   "track_or_session": "Session 6B: Processing-In-Memory (PIM) for ML",
@@ -270,6 +272,19 @@
       "official": false,
       "supports": [
         "Indexed alternate-version and institutional-copy links; not used as the authoritative relevance source."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2024-3c798946",
+      "url": "https://api.openalex.org/works/doi:10.1145/3620666.3651380?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "NeuPIMs: NPU-PIM Heterogeneous Acceleration for Batched LLM Inferencing",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:00:22Z",
+      "content_hash": "sha256:b3af17863af12208d4eab9c4226d4558f8a0c9a2d443cf81483e0422cc18bf49",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

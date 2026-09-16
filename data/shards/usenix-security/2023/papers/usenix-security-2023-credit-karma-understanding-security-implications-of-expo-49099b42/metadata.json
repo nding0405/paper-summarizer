@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2023-credit-karma-understanding-security-implications-of-expo-49099b42",
   "title": "Credit Karma: Understanding Security Implications of Exposed Cloud Services through Automated Capability Inference",
+  "abstract": "The increasing popularity of mobile applications (apps) has led to a rapid increase in demand for backend services, such as notifications, data storage, authentication, etc., hosted in cloud platforms. This has induced the attackers to consistently target such cloud services, resulting in a rise in data security incidents. In this paper, we focus on one of the main reasons why cloud services become increasingly vulnerable: (over-)privileges in cloud credentials. We propose a systematic approach to recover cloud credentials from apps, infer their capabilities in cloud, and verify if the capabilities exceed the legitimate needs of the apps. We further look into the security implications of the leaked capabilities, demonstrating how seemingly benevolent, unprivileged capabilities, when combined, can lead to unexpected, severe security problems. A large-scale study of ~1.3 million apps over two types of cloud services, notification and storage, on three popular cloud platforms, AWS, Azure, and Alibaba Cloud, shows that ~27.3% of apps that use cloud services expose over-privileged cloud credentials. Moreover, a majority of over-privileged cloud credentials (~64.8%) potentially lead to data attacks. During the study, we also uncover new types of attacks enabled by regular cloud credentials, such as spear-phishing through push notification and targeted user data pollution. We have made responsible disclosures to both app vendors and cloud providers and start seeing the impact---over 300 app vendors already fixed the problems.",
+  "abstract_source_id": "src-abstract-usenix-security-2023-49099b42",
   "venue": "usenix-security",
   "year": 2023,
   "track_or_session": "Cloud Insecurity",
@@ -133,6 +135,19 @@
       "official": true,
       "supports": [
         "authors, affiliations when published, abstract, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2023-49099b42",
+      "url": "https://www.usenix.org/conference/usenixsecurity23/presentation/wang-xueqiang-karma",
+      "kind": "paper-page",
+      "title": "Credit Karma: Understanding Security Implications of Exposed Cloud Services through Automated Capability Inference",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:10:20Z",
+      "content_hash": "sha256:e7c0a594d8b72f5ba9fd04cab65f4423162f0cb9030be6b5670b7c554d98e374",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

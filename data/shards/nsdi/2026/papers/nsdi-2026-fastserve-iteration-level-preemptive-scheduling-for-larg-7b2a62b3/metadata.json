@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2026-fastserve-iteration-level-preemptive-scheduling-for-larg-7b2a62b3",
   "title": "FastServe: Iteration-Level Preemptive Scheduling for Large Language Model Inference",
+  "abstract": "Large language models (LLMs) power a new generation of interactive AI applications exemplified by ChatGPT. The interactive nature of these applications demands low latency for LLM inference. Existing LLM serving systems use run-tocompletion processing for inference jobs, which suffers from head-of-line blocking and long latency.\n\nWe present FastServe, a distributed LLM serving system which exploits the autoregressive pattern of LLM inference to enable preemption at the granularity of each output token. FastServe uses preemptive scheduling to minimize latency with a novel skip-join Multi-Level Feedback Queue scheduler. Based on the new semi information-agnostic setting of LLM inference, the scheduler leverages the input length information to assign an appropriate initial queue for each arrival job to join. Queues with higher priority than the one the job joins are skipped to reduce demotions. We design an efficient GPU memory management mechanism that proactively offloads and uploads intermediate state between GPU memory and host memory for LLM inference. Evaluation shows that compared to the state-of-the-art solution vLLM, FastServe improves the throughput by up to 6.1×.",
+  "abstract_source_id": "src-abstract-nsdi-2026-7b2a62b3",
   "venue": "nsdi",
   "year": 2026,
   "track_or_session": "All Your Networks Are Belong to ML",
@@ -244,6 +246,19 @@
         "proceedings page range and page count",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2026-7b2a62b3",
+      "url": "https://www.usenix.org/conference/nsdi26/presentation/wu-bingyang",
+      "kind": "paper-page",
+      "title": "FastServe: Iteration-Level Preemptive Scheduling for Large Language Model Inference",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:05:16Z",
+      "content_hash": "sha256:86735e49537a013590eb895c453bb84369d1aaaffa97ea57bce8aa9977372b5e",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

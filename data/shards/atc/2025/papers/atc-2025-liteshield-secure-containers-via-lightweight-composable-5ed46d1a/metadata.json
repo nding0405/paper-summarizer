@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "atc-2025-liteshield-secure-containers-via-lightweight-composable-5ed46d1a",
   "title": "LITESHIELD: Secure Containers via Lightweight, Composable Userspace μKernel Services",
+  "abstract": "This paper introduces LITESHIELD, a new userspace isolation architecture for secure containers that reexamines the boundary between user applications and system services. LITESHIELD decouples traditional guest kernel functionality into modular userspace microkernel (µkernel) services that interact with guest applications via low-latency, shared-memory-based inter-process communication (IPC). By serving most Linux syscalls in userspace, LITESHIELD enforces a significantly reduced user-to-host interface, with just 22 syscalls, achieving strong isolation comparable to virtual machines (VMs) while avoiding the complexity of hypervisors and hardware virtualization. LITESHIELD further provides a POSIX-compatible runtime with fine-grained syscall interception to support legacy applications and enables composable µkernel services that can integrate specialized userspace components (e.g., networking and filesystems). Our implementation demonstrates that LITESHIELD delivers strong isolation with performance comparable to traditional containers.",
+  "abstract_source_id": "src-abstract-atc-2025-5ed46d1a",
   "venue": "atc",
   "year": 2025,
   "track_or_session": "Virtualization and Isolation: Security, Sharing, and Performance",
@@ -159,6 +161,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-atc-2025-5ed46d1a",
+      "url": "https://www.usenix.org/conference/atc25/presentation/manakkal",
+      "kind": "paper-page",
+      "title": "LITESHIELD: Secure Containers via Lightweight, Composable Userspace μKernel Services",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T21:59:53Z",
+      "content_hash": "sha256:3d6472a33d534a9c4a81c4d9c835739eb4fd01635af912a8f50aba6b51c16b9c",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

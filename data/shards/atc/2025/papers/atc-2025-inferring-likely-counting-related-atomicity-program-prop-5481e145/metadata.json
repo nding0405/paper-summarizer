@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "atc-2025-inferring-likely-counting-related-atomicity-program-prop-5481e145",
   "title": "Inferring Likely Counting-related Atomicity Program Properties for Persistent Memory",
+  "abstract": "Persistent Memory (PM) technologies provide fast, byte-addressable access to durable storage but face crash consistency challenges, motivating extensive work of testing and verification of PM programs. Central to PM testing tools is the specification of program properties for object persistence order and atomicity. Although several methods have been proposed for inferring PM program properties, most focus on ordering properties, offering limited support for atomicity properties.\n\nThis paper explores a class of important atomicity properties between the container-like arrays and their logical size variables, referred to as the counting correlation, which are common in PM programs but exceed the capability of existing approaches. We propose invariants to capture the necessary behaviors of counting-correlated variables, utilize symbolic range analysis to extract PM program behaviors, and encode them into SMT constraints. These constraints are checked against the invariants to infer likely PM program properties. We demonstrate the utility of the inferred properties by leveraging them for PM bug detection, which discovers 14 atomicity bugs (including 11 new bugs) in real-world PM programs.",
+  "abstract_source_id": "src-abstract-atc-2025-5481e145",
   "venue": "atc",
   "year": 2025,
   "track_or_session": "Finding Faults: Concurrency, Numerics, and Kernel Fuzzing",
@@ -159,6 +161,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-atc-2025-5481e145",
+      "url": "https://www.usenix.org/conference/atc25/presentation/zhang-yunmo",
+      "kind": "paper-page",
+      "title": "Inferring Likely Counting-related Atomicity Program Properties for Persistent Memory",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T21:59:48Z",
+      "content_hash": "sha256:9ec8018850ec9c5554fc2a64b01a36f20f48e961c35a5b0a922696437ab188c1",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

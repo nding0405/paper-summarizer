@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-semantics-over-syntax-uncovering-pre-authentication-5g-b-1eeae22b",
   "title": "Semantics Over Syntax: Uncovering Pre-Authentication 5G Baseband Vulnerabilities",
+  "abstract": "Modern 5G user equipment (UE) processes Radio Resource Control (RRC) configuration messages during early control-plane exchanges, before authentication and integrity protection are established. Prior work for testing 5G UEs has largely focused on constructing syntactically invalid inputs. In contrast, we show that syntactically valid but semantically inconsistent messages, which violate specification-level field constraints or cross-field dependencies, can drive baseband implementations into invalid states, triggering assertion failures or modem crashes. These findings reveal semantic inconsistencies in pre-authentication signaling as a critical yet underexplored attack surface in 5G UE implementations. To address this gap, we present Constraint-Guided Semantic Testing (CONSET), a framework that systematically extracts specification-level constraints and leverages them to generate targeted semantic violations for testing 5G UEs. CONSET decodes RRC messages into structured fields, derives schema-based rules, infers cross-field dependencies using a Large Language Model (LLM) in an evidence-bounded manner, and produces syntactically valid test cases that intentionally violate semantic constraints. We evaluate CONSET on both commercial and open-source 5G UEs. On commercial smartphones, it uncovers 7 previously unknown vulnerabilities through responsible disclosure, including 3 high-severity CVEs, affecting 64 chipset models and over 542 commercially available smartphone models. On the open-source OAI UE, CONSET additionally triggers 46 distinct crash sites.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-1eeae22b",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Network Security 1",
@@ -156,6 +158,19 @@
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening",
         "prepublication PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-1eeae22b",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/huang-qiqing",
+      "kind": "paper-page",
+      "title": "Semantics Over Syntax: Uncovering Pre-Authentication 5G Baseband Vulnerabilities",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:25:23Z",
+      "content_hash": "sha256:7a01980f1f318c2380ea5e40ec67bdf585e760d0e8ddc4868ac5c139d39c8340",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

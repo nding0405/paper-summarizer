@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sigcomm-2026-dorado-scaling-smartnic-session-tables-on-commodity-ddrs-2112914c",
   "title": "Dorado: Scaling SmartNIC Session Tables on Commodity DDRs",
+  "abstract": "FPGA-based SmartNICs are widely deployed for cloud network function acceleration, but their memory subsystem is under increasing pressure because of large session tables. Conventional wisdom suggests that high packet processing performance relies on advanced memories (e.g., SRAM, HBM), but those are costly to add at cloud scale. Dorado is a novel design that scales SmartNIC session tables entirely on inexpensive DDR modules. At the heart of Dorado are three new techniques that extract commodity DDR performance by restructuring session table layout, decomposing processing pipelines to reduce locking, and scheduling memory accesses to minimize stalls. Our testbed results show that Dorado improves packet processing rates by 33%, even with fewer hardware resources. Further, we have deployed Dorado to millions of servers, processing network traffic from billions of users on a large public cloud for over three years. Our production results show that Dorado can accommodate up to 16M session entries, reduce memory cost by 80%, while enabling 50Mpps line-rate processing.",
+  "abstract_source_id": "src-abstract-sigcomm-2026-2112914c",
   "venue": "sigcomm",
   "year": 2026,
   "track_or_session": "Research Session 6: Cloud Networking: DPUs, SmartNICs & Gateways — Research Paper",
@@ -380,6 +382,19 @@
       "official": true,
       "supports": [
         "official main-paper scope and track definitions"
+      ]
+    },
+    {
+      "id": "src-abstract-sigcomm-2026-2112914c",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/search/match?query=Dorado%3A%20Scaling%20SmartNIC%20Session%20Tables%20on%20Commodity%20DDRs&fields=title,abstract",
+      "kind": "semantic-scholar",
+      "title": "Dorado: Scaling SmartNIC Session Tables on Commodity DDRs",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T23:00:07Z",
+      "content_hash": "sha256:a2fa4292fdb36f59ca71684990081d6b2e64dd0ea0fe62acdbef1db7cc79331b",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

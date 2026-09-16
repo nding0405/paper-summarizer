@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "fast-2024-elect-enabling-erasure-coding-tiering-for-lsm-tree-based-c26ef1ab",
   "title": "ELECT: Enabling Erasure Coding Tiering for LSM-tree-based Storage",
+  "abstract": "Given the skewed nature of practical key-value (KV) storage workloads, distributed KV stores can adopt a tiered approach to support fast data access in a hot tier and persistent storage in a cold tier. To provide data availability guarantees for the hot tier, existing distributed KV stores often rely on replication and incur prohibitively high redundancy overhead. Erasure coding provides a low-cost redundancy alternative, but incurs high access performance overhead. We present ELECT, a distributed KV store that enables erasure coding tiering based on the log-structured merge tree (LSM-tree), by adopting a hybrid redundancy approach that carefully combines replication and erasure coding with respect to the LSM-tree layout. ELECT incorporates hotness awareness and selectively converts data from replication to erasure coding in the hot tier and offloads data from the hot tier to the cold tier. It also provides a tunable approach to balance the trade-off between storage savings and access performance through a single user-configurable parameter. We implemented ELECT atop Cassandra, which is replication-based. Experiments on Alibaba Cloud show that ELECT achieves significant storage savings in the hot tier, while maintaining high performance and data availability guarantees, compared with Cassandra.",
+  "abstract_source_id": "src-abstract-fast-2024-c26ef1ab",
   "venue": "fast",
   "year": 2024,
   "track_or_session": "Cloud Storage",
@@ -181,6 +183,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-fast-2024-c26ef1ab",
+      "url": "https://www.usenix.org/conference/fast24/presentation/ren",
+      "kind": "paper-page",
+      "title": "ELECT: Enabling Erasure Coding Tiering for LSM-tree-based Storage",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:00:45Z",
+      "content_hash": "sha256:e6685454107474e915d984ac8636f52f7deafdc2a6053a9aa8fa75a0bb477a3e",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

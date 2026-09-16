@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2025-truman-constructing-device-behavior-models-from-os-drive-b7d3a93f",
   "title": "Truman: Constructing Device Behavior Models from OS Drivers to Fuzz Virtual Devices",
+  "abstract": "Virtual devices are a large attack surface of hypervisors. Vulnerabilities in virtual devices may enable attackers to jailbreak hypervisors or even endanger co-located virtual machines. While fuzzing has discovered vulnerabilities in virtual devices across both open-source and closed-source hypervisors, the efficiency of these virtual device fuzzers remains limited because they are unaware of the complex behaviors of virtual devices in general. We present Truman, a novel universal fuzzing engine that automatically infers dependencies from open-source OS drivers to construct device behavior models (DBMs) for virtual device fuzzing, regardless of whether target virtual devices are open-source or binaries. The DBM includes inter- and intra-message dependencies and fine-grained state dependency of virtual device messages. Based on the DBM, Truman generates and mutates quality seeds that satisfy the dependencies encoded in the DBM. We evaluate the prototype of Truman on the latest version of hypervisors. In terms of coverage, Truman outperformed start-of-the-art fuzzers for 19/29 QEMU devices and obtained a relative coverage boost of 34% compared to Morphuzz for virtio devices. Additionally, Truman discovered 54 new bugs in QEMU, VirtualBox, VMware Workstation Pro, and Parallels, with 6 CVEs assigned.",
+  "abstract_source_id": "src-abstract-ndss-2025-b7d3a93f",
   "venue": "ndss",
   "year": 2025,
   "track_or_session": "Fall submission cycle",
@@ -275,6 +277,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2025-b7d3a93f",
+      "url": "https://www.ndss-symposium.org/ndss-paper/truman-constructing-device-behavior-models-from-os-drivers-to-fuzz-virtual-devices/",
+      "kind": "paper-page",
+      "title": "Truman: Constructing Device Behavior Models from OS Drivers to Fuzz Virtual Devices",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:20:49Z",
+      "content_hash": "sha256:23127b5d71666edc18fe5b4b16d55b6fae25ecb73203b4be8141e431a86be26a",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

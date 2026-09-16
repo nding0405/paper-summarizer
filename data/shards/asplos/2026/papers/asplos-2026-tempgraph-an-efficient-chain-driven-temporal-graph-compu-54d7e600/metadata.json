@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2026-tempgraph-an-efficient-chain-driven-temporal-graph-compu-54d7e600",
   "title": "TempGraph: An Efficient Chain-driven Temporal Graph Computing Framework on the GPU",
+  "abstract": "Tackling temporal path problems in temporal graphs is essential for time-sensitive applications. Although many solutions have been proposed to handle temporal path problems, due to the intrinsic time constraints, these solutions require the vertices of the temporal graph to be sequentially handled along the time-dependent chains (i.e., the temporal dependencies between these vertices) to form the temporal path. This sequential temporal nature poses the challenges of poor parallelism and slow convergence speed, preventing existing solutions from fully leveraging the massive parallelism and high internal bandwidth of GPU to handle temporal path problems. To overcome these challenges, this paper proposes TempGraph, an efficient chain-driven GPU-based temporal graph computing framework. Specifically, it transforms the temporal graph into a set of disjoint time-dependent chains that can elegantly expose the temporal dependency between the vertices while facilitating the fast path exploration along these chains over GPU. Furthermore, TempGraph employs a novel Generate-Activate-Compute execution model to decouple the temporal dependency between different chains through maintaining a set of shortcuts for them, which enables multiple chains to be concurrently handled by massive GPU threads, achieving fast convergence speed and high parallelism on the GPU. Experiments on an A100 GPU show that TempGraph outperforms the state-of-the-art GPU-based solutions by 3.0-16.2×. Besides, TempGraph on an A100 GPU gains 33.9-368.9× speedups compared to the cutting-edge CPU-based system TeGraph on a 128-core CPU machine.",
+  "abstract_source_id": "src-abstract-asplos-2026-54d7e600",
   "venue": "asplos",
   "year": 2026,
   "track_or_session": "Session 6C: Graph & Sparse Computing",
@@ -335,6 +337,19 @@
       "official": false,
       "supports": [
         "Indexed abstract used for strict relevance classification and indexed arXiv identifier where available."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2026-54d7e600",
+      "url": "https://api.openalex.org/works/doi:10.1145/3676642.3736116?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "TempGraph: An Efficient Chain-driven Temporal Graph Computing Framework on the GPU",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:06:57Z",
+      "content_hash": "sha256:33580fe302b66cbab12c9422aa8139d1946c63729d90884cd23233e3950a9adf",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

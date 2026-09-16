@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2026-unshaken-by-weak-embedding-robust-probabilistic-watermar-506b7a11",
   "title": "Unshaken by Weak Embedding: Robust Probabilistic Watermarking for Dataset Copyright Protection",
+  "abstract": "In modern Data-as-a-Service (DaaS) ecosystems, data curators such as data brokerage companies aggregate high-quality data from many contributors and monetize it for deep learning model providers. However, malicious curators can sell valuable data but not inform their original contributors, which violates individual benefits and the law. Intrusive watermarking is one of the state-of-the-art (SOTA) techniques for protecting data copyright, and it detects whether a suspicious model carries the predefined pattern. However, these approaches face numerous limitations: struggle to work under low watermark injection rates (≤ 1.0%); performance degradation; false positives; not robust against watermarking cleansing.\n\nThis work proposes an innovative intrusive watermarking approach, dubbed DIP (Data Intelligence Probabilistic Watermarking), to support dataset ownership verification while addressing the limitations above. It applies a distribution-aware sample selection algorithm, embeds probabilistic associations between watermarked samples and multiple outputs, and adopts a two-fold verification framework that leverages both inference results and their distribution as watermark signals. Extensive experiments on 4 image and 5 text datasets demonstrate that DIP maintains the model’s performance, and achieves an average watermark success rate of 89.4% at a 1% injection budget. We further validate that DIP is orthogonal to various watermarked data designs and can seamlessly integrate their strengths. Moreover, DIP proves effective across diverse modalities (image and text) and tasks (regression), with strong performance on generation tasks in large language models. DIP exhibits robustness against various adversarial environments, including 3 based on data augmentation, 3 on data cleansing, 4 on robust training and 3 on collusion-based watermark removal, while existing SOTAs fail. The source code is released at https://github.com/SixLab6/DIP.",
+  "abstract_source_id": "src-abstract-ndss-2026-506b7a11",
   "venue": "ndss",
   "year": 2026,
   "track_or_session": "Fall submission cycle",
@@ -244,6 +246,19 @@
       "official": false,
       "supports": [
         "independent proceedings identity reconciliation"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2026-506b7a11",
+      "url": "https://www.ndss-symposium.org/ndss-paper/unshaken-by-weak-embedding-robust-probabilistic-watermarking-for-dataset-copyright-protection/",
+      "kind": "paper-page",
+      "title": "Unshaken by Weak Embedding: Robust Probabilistic Watermarking for Dataset Copyright Protection",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:23:30Z",
+      "content_hash": "sha256:e7850e38fafb8d9ca6855956f9d6ca4c1f0f37e7be37e8073c620422637a3d43",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

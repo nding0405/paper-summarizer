@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "fast-2023-patronus-high-performance-and-protective-remote-memory-8ce6f936",
   "title": "Patronus: High-Performance and Protective Remote Memory",
+  "abstract": "RDMA-enabled remote memory (RM) systems are gaining popularity with improved memory utilization and elasticity. However, since it is commonly believed that fine-grained RDMA permission management is impractical, existing RM systems forgo memory protection, an indispensable property in a real-world deployment. In this paper, we propose PATRONUS, an RM system that can simultaneously offer protection and high performance. PATRONUS introduces a fast permission management mechanism by exploiting advanced RDMA hardware features with a set of elaborate software techniques. Moreover, to retain the high performance under exception scenarios (e.g., client failures, illegal access), PATRONUS attaches microsecond-scaled leases to permission and reserves spare RDMA resources for fast recovery. We evaluate PATRONUS over two one-sided data structures and two function-as-a-service (FaaS) applications. The experiment shows that the protection only brings 2.4% to 27.7% overhead among all the workloads, and our system performs at most ×5.2 than the best competitor.",
+  "abstract_source_id": "src-abstract-fast-2023-8ce6f936",
   "venue": "fast",
   "year": 2023,
   "track_or_session": "Remote Memory",
@@ -161,6 +163,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-fast-2023-8ce6f936",
+      "url": "https://www.usenix.org/conference/fast23/presentation/yan",
+      "kind": "paper-page",
+      "title": "Patronus: High-Performance and Protective Remote Memory",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:00:37Z",
+      "content_hash": "sha256:406ac19d8e907e0a85617e35ab0c5d1d83da7ef7ee26d0b08a9470497fa2b185",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

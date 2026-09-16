@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "eurosys-2025-hybridflow-a-flexible-and-efficient-rlhf-framework-7db09bfb",
   "title": "HybridFlow: A Flexible and Efficient RLHF Framework",
+  "abstract": "Reinforcement Learning from Human Feedback (RLHF) is widely used in Large Language Model (LLM) alignment. Traditional RL can be modeled as a dataflow, where each node represents computation of a neural network (NN) and each edge denotes data dependencies between the NNs. RLHF complicates the dataflow by expanding each node into a distributed LLM training or generation program, and each edge into a many-to-many multicast. Traditional RL frameworks execute the dataflow using a single controller to instruct both intra-node computation and inter-node communication, which can be inefficient in RLHF due to large control dispatch overhead for distributed intra-node computation. Existing RLHF systems adopt a multi-controller paradigm, which can be inflexible due to nesting distributed computation and data communication. We propose HybridFlow, which combines single-controller and multi-controller paradigms in a hybrid manner to enable flexible representation and efficient execution of the RLHF data flow. We carefully design a set of hierarchical APIs that decouple and encapsulate computation and data dependencies in the complex RLHF dataflow, allowing efficient operation orchestration to implement RLHF algorithms and flexible mapping of the computation onto various devices. We further design a 3D-HybridEngine for efficient actor model resharding between training and generation phases, with zero memory redundancy and significantly reduced communication overhead. Our experimental results demonstrate 1.53x~20.57× throughput improvement when running various RLHF algorithms using HybridFlow, as compared with state-of-the-art baselines. HybridFlow source code is available at https://github.com/volcengine/verl",
+  "abstract_source_id": "src-abstract-eurosys-2025-7db09bfb",
   "venue": "eurosys",
   "year": 2025,
   "track_or_session": "Session-9.2: LLM Training - Location: Rotterdam hall 1B - Chair: Jacob Gorm Hansen",
@@ -251,6 +253,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-eurosys-2025-7db09bfb",
+      "url": "https://api.openalex.org/works/doi:10.1145/3689031.3696075?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "HybridFlow: A Flexible and Efficient RLHF Framework",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:19:26Z",
+      "content_hash": "sha256:a27a150092be7e92b2d807e0fdad3951aaa1c40faff1e71cc57f213a9f5e48a1",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2023-fishfuzz-catch-deeper-bugs-by-throwing-larger-nets-86c3eb95",
   "title": "FISHFUZZ: Catch Deeper Bugs by Throwing Larger Nets",
+  "abstract": "Fuzzers effectively explore programs to discover bugs. Greybox fuzzers mutate seed inputs and observe their execution. Whenever a seed reaches new behavior (e.g., new code or higher execution frequency), it is stored for further mutation. Greybox fuzzers directly measure exploration and, by repeating execution of the same targets with large amounts of mutated seeds, passively exploit any lingering bugs. Directed greybox fuzzers (DGFs) narrow the search to few code locations but so far generalize distance to all targets into a single score and do not prioritize targets dynamically.\n\nFISHFUZZ introduces an input prioritization strategy that builds on three concepts: (i) a novel multi-distance metric whose precision is independent of the number of targets, (ii) a dynamic target ranking to automatically discard exhausted targets, and (iii) a smart queue culling algorithm, based on hyperparameters, that alternates between exploration and exploitation. FISHFUZZ enables fuzzers to seamlessly scale among thousands of targets and prioritize seeds toward interesting locations, thus achieving more comprehensive program testing. To demonstrate generality, we implement FISHFUZZ over two well-established greybox fuzzers (AFL and AFL++). We evaluate FISHFUZZ by leveraging all sanitizer labels as targets. Extensively comparing FISHFUZZ against modern DGFs and coverage-guided fuzzers demonstrates that FISHFUZZ reaches higher coverage compared to the direct competitors, finds up to 282% more bugs compared with baseline fuzzers and reproduces 68.3% existing bugs faster. FISHFUZZ also discovers 56 new bugs (38 CVEs) in 47 programs.",
+  "abstract_source_id": "src-abstract-usenix-security-2023-86c3eb95",
   "venue": "usenix-security",
   "year": 2023,
   "track_or_session": "x-Fuzz",
@@ -238,6 +240,19 @@
       "official": true,
       "supports": [
         "authors, affiliations when published, abstract, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2023-86c3eb95",
+      "url": "https://www.usenix.org/conference/usenixsecurity23/presentation/zheng",
+      "kind": "paper-page",
+      "title": "FISHFUZZ: Catch Deeper Bugs by Throwing Larger Nets",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:11:02Z",
+      "content_hash": "sha256:71e339c1937b0f3babfe8d3aaf3b4102d52201819cfacf34fa35f57cbeae68b4",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

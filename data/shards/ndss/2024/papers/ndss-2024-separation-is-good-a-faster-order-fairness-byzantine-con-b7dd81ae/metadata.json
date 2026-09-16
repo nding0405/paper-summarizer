@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2024-separation-is-good-a-faster-order-fairness-byzantine-con-b7dd81ae",
   "title": "Separation is Good: A Faster Order-Fairness Byzantine Consensus",
+  "abstract": "Order-fairness has been introduced recently as a new property for Byzantine Fault-Tolerant (BFT) consensus protocol to prevent unilaterally deciding the final order of transactions, which allows mitigating the threat of adversarial transaction order manipulation attacks (e.g., front-running) in blockchain networks and decentralized finance (DeFi). However, existing leader-based order-fairness protocols (which do not rely on synchronized clocks) still suffer from poor performance since they strongly couple fair ordering with consensus processes. In this paper, we propose SpeedyFair, a high-performance order-fairness consensus protocol, which is motivated by our insight that the ordering of transactions does not rely on the execution results of transactions in previous proposals (after consensus). SpeedyFair achieves its efficiency through a decoupled design that performs fair ordering individually and consecutively, separating from consensus. In addition, by decoupling fair ordering from consensus, SpeedyFair enables parallelizing the order/verify mode that was originally executed serially in the consensus process, which further speeds up the performance. We implement a prototype of SpeedyFair on the top of the Hotstuff protocol. Extensive experimental results demonstrate that SpeedyFair significantly outperforms the state-of-the-art order-fairness protocol (i.e., Themis), which achieves a throughput of 1.5×-2.45× greater than Themis while reducing latency by 35%-59%.",
+  "abstract_source_id": "src-abstract-ndss-2024-b7dd81ae",
   "venue": "ndss",
   "year": 2024,
   "track_or_session": "Fall submission cycle",
@@ -147,6 +149,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2024-b7dd81ae",
+      "url": "https://www.ndss-symposium.org/ndss-paper/separation-is-good-a-faster-order-fairness-byzantine-consensus/",
+      "kind": "paper-page",
+      "title": "Separation is Good: A Faster Order-Fairness Byzantine Consensus",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:18:40Z",
+      "content_hash": "sha256:1300139634ab0336e67ddcf7a9e169f770af10e50c3412257bdf81875aa7bc5b",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

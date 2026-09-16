@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2025-ladder-multi-objective-backdoor-attack-via-evolutionary-f1f69d9c",
   "title": "LADDER: Multi-Objective Backdoor Attack via Evolutionary Algorithm",
+  "abstract": "Current black-box backdoor attacks in convolutional neural networks formulate attack objective(s) as textit{single-objective} optimization problems in textit{single domain}.\n\nDesigning triggers in single domain harms semantics and trigger robustness as well as introduces visual and spectral anomaly.\n\nThis work proposes a multi-objective black-box backdoor attack in dual domains via evolutionary algorithm (LADDER), the first instance of achieving multiple attack objectives simultaneously by optimizing triggers without requiring prior knowledge about victim model.\n\nIn particular, we formulate LADDER as a multi-objective optimization problem (MOP) and solve it via multi-objective evolutionary algorithm (MOEA).\n\nMOEA maintains a population of triggers with trade-offs among attack objectives and uses non-dominated sort to drive triggers toward optimal solutions.\n\nWe further apply preference-based selection to MOEA to exclude impractical triggers.\n\nLADDER investigates a new dual-domain perspective for trigger stealthiness by minimizing the anomaly between clean and poisoned samples in the spectral domain.\n\nLastly, the robustness against preprocessing operations is achieved by pushing triggers to low-frequency regions.\n\nExtensive experiments comprehensively showcase that LADDER achieves attack effectiveness of at least 99%, attack robustness with 90.23% (50.09% higher than state-of-the-art attacks on average), superior natural stealthiness (1.12$times$ to 196.74$times$ improvement) and excellent spectral stealthiness (8.45$times$ enhancement) as compared to current stealthy attacks by the average $l_2$-norm across 5 public datasets.",
+  "abstract_source_id": "src-abstract-ndss-2025-f1f69d9c",
   "venue": "ndss",
   "year": 2025,
   "track_or_session": "Fall submission cycle",
@@ -168,6 +170,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2025-f1f69d9c",
+      "url": "https://www.ndss-symposium.org/ndss-paper/ladder-multi-objective-backdoor-attack-via-evolutionary-algorithm/",
+      "kind": "paper-page",
+      "title": "LADDER: Multi-Objective Backdoor Attack via Evolutionary Algorithm",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:19:51Z",
+      "content_hash": "sha256:5f9ab51566c1177f95386406d0e94f340e2718fbfcbfae0f307434996f8cfd7d",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

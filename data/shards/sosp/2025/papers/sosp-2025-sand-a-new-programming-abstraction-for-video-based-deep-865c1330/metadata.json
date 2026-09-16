@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sosp-2025-sand-a-new-programming-abstraction-for-video-based-deep-865c1330",
   "title": "SAND: A New Programming Abstraction for Video-based Deep Learning",
+  "abstract": "Video-based deep learning (VDL) is increasingly used across diverse applications and has become highly popular, but it faces significant challenges in preprocessing highly compressed video data. Preprocessing pipelines are complex, requiring extensive engineering effort, and introduce computational bottlenecks, with latency exceeding GPU training time. Existing solutions partially mitigate these issues but remain inefficient and resource-constrained. We present SAND, a framework for VDL that integrates system-level optimizations to simplify the preprocessing pipeline and maximize resource efficiency. First, SAND introduces a view abstraction that encapsulates key preprocessing stages into virtualized objects, eliminating the need for users to manage individual objects. Second, SAND maximizes reuse opportunities through efficient system-level object management, reducing the preprocessing overhead and improving GPU utilization. Evaluation across multiple VDL applications and diverse environments, including Ray-based hyperparameter search and distributed data parallel training, shows GPU utilization improvements of up to 12.3× and 2.9× over CPU and GPU baselines, respectively, while reducing preprocessing code complexity from hundreds or thousands of lines to fewer than 10.",
+  "abstract_source_id": "src-abstract-sosp-2025-865c1330",
   "venue": "sosp",
   "year": 2025,
   "track_or_session": null,
@@ -209,6 +211,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-sosp-2025-865c1330",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "SAND: A New Programming Abstraction for Video-based Deep Learning",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:19Z",
+      "content_hash": "sha256:b613162f9e7d53fac5fe410aff94d06ac71f23c6c31e2e9cc362b51e87d1bb79",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

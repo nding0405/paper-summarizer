@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2024-d-dse-distinct-dynamic-searchable-encryption-resisting-v-56e723f0",
   "title": "d-DSE: Distinct Dynamic Searchable Encryption Resisting Volume Leakage in Encrypted Databases",
+  "abstract": "Dynamic Searchable Encryption (DSE) has emerged as a solution to efficiently handle and protect large-scale data storage in encrypted databases (EDBs). Volume leakage poses a significant threat, as it enables adversaries to reconstruct search queries and potentially compromise the security and privacy of data. Padding strategies are common countermeasures for the leakage, but they significantly increase storage and communication costs. In this work, we develop a new perspective on handling volume leakage. We start with distinct search and further explore a new concept called distinct DSE (d-DSE).\n\nWe also define new security notions, in particular Distinct with Volume-Hiding security, as well as forward and backward privacy, for the new concept. Based on d-DSE, we construct the d-DSE designed EDB with related constructions for distinct keyword (d-KW-dDSE), keyword (KW-dDSE), and join queries (JOIN-dDSE) and update queries in encrypted databases. We instantiate a concrete scheme BF-SRE, employing Symmetric Revocable Encryption. We conduct extensive experiments on real-world datasets, such as Crime, Wikipedia, and Enron, for performance evaluation. The results demonstrate that our scheme is practical in data search and with comparable computational performance to the SOTA DSE scheme (MITRA*, AURA) and padding strategies (SEAL, ShieldDB). Furthermore, our proposal sharply reduces the communication cost as compared to padding strategies, with roughly 6.36 to 53.14x advantage for search queries.",
+  "abstract_source_id": "src-abstract-usenix-security-2024-56e723f0",
   "venue": "usenix-security",
   "year": 2024,
   "track_or_session": "Crypto II: Searchable Encryption",
@@ -175,6 +177,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2024-56e723f0",
+      "url": "https://www.usenix.org/conference/usenixsecurity24/presentation/liu-dongli",
+      "kind": "paper-page",
+      "title": "d-DSE: Distinct Dynamic Searchable Encryption Resisting Volume Leakage in Encrypted Databases",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:14:35Z",
+      "content_hash": "sha256:f4da55a277052ff416aa6e77f9014238c064c942684c62634d22d25065385068",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2026-break-on-through-to-the-other-side-pooling-memory-elasti-66f5264b",
   "title": "Break On Through to the Other Side: Pooling Memory Elastically with RamRyder",
+  "abstract": "Cloud vendors offer diverse infrastructure services by flexibly allocating resources, such as compute, storage, and networking, across virtual machines. However, memory allocation is still less flexible: the vendors allocate memory capacity in a fixed ratio to virtual CPUs and provide no mechanism for allocating memory bandwidth. Recent data show that this can lead to underutilization of both capacity and bandwidth when an application’s demands diverge or change over time. To address these challenges, we propose RamRyder, a software-defined elastic memory system for cloud virtual machines that allows the system to allocate memory bandwidth and capacity (mostly) independently. RamRyder controls the mapping between memory pages in the guest OS and the underlying memory channels, providing performance isolation between virtual machines and allowing dynamic changes to bandwidth and capacity allocation. RamRyder improves average capacity and bandwidth utilization by 28.6% and 43.2%, respectively, across the cluster while delivering performance comparable to the best case with exclusive access.",
+  "abstract_source_id": "src-abstract-osdi-2026-66f5264b",
   "venue": "osdi",
   "year": 2026,
   "track_or_session": "Memory Tiering and CXL",
@@ -167,6 +169,19 @@
       "official": true,
       "supports": [
         "Official proceedings availability and canonical conference versions."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2026-66f5264b",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/zhou-yanbo",
+      "kind": "paper-page",
+      "title": "Break On Through to the Other Side: Pooling Memory Elastically with RamRyder",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:08:04Z",
+      "content_hash": "sha256:e1fccaa896a121da5bcfd578d63e7845b15adc0ae7f6d9f52438073fe4a6e1e0",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

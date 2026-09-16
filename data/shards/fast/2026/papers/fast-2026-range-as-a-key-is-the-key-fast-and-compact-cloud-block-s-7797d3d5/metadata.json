@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "fast-2026-range-as-a-key-is-the-key-fast-and-compact-cloud-block-s-7797d3d5",
   "title": "\"Range as a Key\" is the Key! Fast and Compact Cloud Block Store Index with RASK",
+  "abstract": "In cloud block store, indexing is on the critical path of I/O operations and typically resides in memory. With the scaling of users and the emergence of denser storage media, the index has become a primary memory consumer, causing memory strain. Our extensive analysis of production traces reveals that write requests exhibit a strong tendency to target continuous block ranges in cloud storage systems. Thus, compared to current per-block indexing, our insight is that we should directly index block ranges (i.e., range-as-a-key) to save memory .\n\nIn this paper, we propose RASK, a memory-efficient and high-performance tree-structured index that natively indexes ranges. While range-as-a-key offers the potential to save memory and improve performance, realizing this idea is challenging due to the range overlap and range fragmentation issues. To handle range overlap efficiently, RASK introduces the log-structured leaf, combined with range-tailored search and garbage collection. To reduce range fragmentation, RASK employs range-aware split and merge mechanisms. Our evaluations on four production traces show that RASK reduces memory footprint by up to 98.9% and increases throughput by up to 31.0× compared to ten state-of-the-art indexes.",
+  "abstract_source_id": "src-abstract-fast-2026-7797d3d5",
   "venue": "fast",
   "year": 2026,
   "track_or_session": "Indexing",
@@ -160,6 +162,19 @@
         "proceedings page range and page count",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-fast-2026-7797d3d5",
+      "url": "https://www.usenix.org/conference/fast26/presentation/zhao",
+      "kind": "paper-page",
+      "title": "\"Range as a Key\" is the Key! Fast and Compact Cloud Block Store Index with RASK",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:01:39Z",
+      "content_hash": "sha256:d216c06d93ad4b538e0a976367907cca1f3b0d1ca81a4bc4eeba36ade4f6472c",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

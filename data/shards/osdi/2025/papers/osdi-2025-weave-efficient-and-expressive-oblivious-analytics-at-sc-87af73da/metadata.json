@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2025-weave-efficient-and-expressive-oblivious-analytics-at-sc-87af73da",
   "title": "Weave: Efficient and Expressive Oblivious Analytics at Scale",
+  "abstract": "Many distributed analytics applications that are offloaded to the cloud operate on sensitive data. Even when the computations for such analytics workloads are confined to trusted hardware enclaves and all stored data and network communications are encrypted, several studies have shown that they are still vulnerable to access pattern attacks. Prior efforts towards preventing access pattern leakage often incur network and compute overheads that are logarithmic in dataset size, while also limiting the functionality of supported analytics jobs.\n\nWe present Weave, an efficient, expressive, and secure analytics platform that scales to large datasets. Weaveemploys a combination of noise injection and hardware memory isolation via enclave page caches to reduce the network and compute overheads for oblivious analytics to a constant factor. Weave also employs several optimizations and extensions that exploit dataset and workload-specific properties to ensure performance at scale without compromising on functionality. Our evaluations show that Weave reduces the end-to-end execution time for a wide range of analytics jobs on large real-world datasets by 4--10× compared to prior state-of-the-art while providing strong obliviousness guarantees.",
+  "abstract_source_id": "src-abstract-osdi-2025-87af73da",
   "venue": "osdi",
   "year": 2025,
   "track_or_session": "Privacy and Security",
@@ -138,6 +140,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2025-87af73da",
+      "url": "https://www.usenix.org/conference/osdi25/presentation/soleimani",
+      "kind": "paper-page",
+      "title": "Weave: Efficient and Expressive Oblivious Analytics at Scale",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:07:54Z",
+      "content_hash": "sha256:fc96e8d9d72df3d058464470c28f1fbd1bf884bab96556599591ce76bd5104ad",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

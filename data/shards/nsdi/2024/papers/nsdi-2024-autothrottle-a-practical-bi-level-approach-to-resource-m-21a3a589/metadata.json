@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2024-autothrottle-a-practical-bi-level-approach-to-resource-m-21a3a589",
   "title": "Autothrottle: A Practical Bi-Level Approach to Resource Management for SLO-Targeted Microservices",
+  "abstract": "Achieving resource efficiency while preserving end-user experience is non-trivial for cloud application operators. As cloud applications progressively adopt microservices, resource managers are faced with two distinct levels of system behavior: end-to-end application latency and per-service resource usage. Translating between the two levels, however, is challenging because user requests traverse heterogeneous services that collectively (but unevenly) contribute to the end-to-end latency. We present Autothrottle , a bi-level resource management framework for microservices with latency SLOs (service-level objectives). It architecturally decouples application SLO feedback from service resource control, and bridges them through the notion of performance targets. Specifically, an application-wide learning-based controller is employed to periodically set performance targets—expressed as CPU throttle ratios—for per-service heuristic controllers to attain. We evaluate Autothrottle on three microservice applications, with workload traces from production scenarios. Results show superior CPU savings, up to 26.21% over the best-performing baseline and up to 93.84% over all baselines.",
+  "abstract_source_id": "src-abstract-nsdi-2024-21a3a589",
   "venue": "nsdi",
   "year": 2024,
   "track_or_session": "Serverless",
@@ -160,6 +162,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2024-21a3a589",
+      "url": "https://www.usenix.org/conference/nsdi24/presentation/wang-zibo",
+      "kind": "paper-page",
+      "title": "Autothrottle: A Practical Bi-Level Approach to Resource Management for SLO-Targeted Microservices",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:02:55Z",
+      "content_hash": "sha256:fe3663f47fbf15e4be4d3fc3e34564e9c0652645bc026ebf6038e7975bb2b605",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

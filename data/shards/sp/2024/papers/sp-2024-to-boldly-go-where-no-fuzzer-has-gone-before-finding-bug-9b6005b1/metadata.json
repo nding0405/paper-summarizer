@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2024-to-boldly-go-where-no-fuzzer-has-gone-before-finding-bug-9b6005b1",
   "title": "To Boldly Go Where No Fuzzer Has Gone Before: Finding Bugs in Linux' Wireless Stacks through VirtIO Devices",
+  "abstract": "The security of Linux kernel interfaces is paramount in preventing over-the-air, proximity, or other network attacks. The Linux kernel is fuzzed continuously to detect newly introduced bugs. Despite their long runtime, existing fuzzers fail to detect critical bugs, as they are unaware of physical device semantics and difficult to adapt to new devices. This paper proposes a novel fuzzer called VirtFuzz, which is based on Virtual I/O (VirtIO) device drivers. A proxy mechanism enables data collection from physical device interaction. These collected inputs are then used to fuzz through a virtual device. Using our universal VirtIO device, VirtFuzz is generic and can be easily adapted to various Linux VirtIO kernel drivers and their related subsystems. We use this approach to fuzz the Linux Bluetooth and Wireless LAN (WLAN) stacks. To demonstrate the adaptability of our approach, we additionally provide implementations to fuzz the networking and input stack. We find 31 new, manually confirmed bugs, with 6 Common Vulnerabilities and Exposuress (CVEs) assigned.",
+  "abstract_source_id": "src-abstract-sp-2024-9b6005b1",
   "venue": "sp",
   "year": 2024,
   "track_or_session": "Spring cycle",
@@ -138,6 +140,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2024-9b6005b1",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "To Boldly Go Where No Fuzzer Has Gone Before: Finding Bugs in Linux’ Wireless Stacks through VirtIO Devices",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:42Z",
+      "content_hash": "sha256:d62dac834635b4cd1890a53da454ceae7aaa151189662d990ac591dfd5cb6b3e",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

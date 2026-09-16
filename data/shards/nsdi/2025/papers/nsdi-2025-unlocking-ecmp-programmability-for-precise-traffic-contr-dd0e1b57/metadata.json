@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2025-unlocking-ecmp-programmability-for-precise-traffic-contr-dd0e1b57",
   "title": "Unlocking ECMP Programmability for Precise Traffic Control",
+  "abstract": "ECMP (equal-cost multi-path) has become a fundamental mechanism in data centers, which distributes flows along multiple equivalent paths based on their hash values. Randomized distribution optimizes for the aggregate case, spreading load across flows over time. However, there exists a class of important Precise Traffic Control (PTC) tasks that are at odds with ECMP randomness. For instance, if an end host perceives that its flows are traversing a problematic switch/link, it often needs to change their paths before a fix can be rolled out. With randomized hashing, existing solutions resort to modifying flow tuples; since hashing mechanisms are unknown and they vary across switches/vendors, it may take many trials before yielding a new path. Many other similar cases exist where precise and timely response is critical to the network.\n\nWe propose programmable ECMP (P-ECMP), a programming model, compiler, and runtime that provides precise traffic control. P-ECMP leverages an oft-ignored feature, ECMP groups, which allows for a constrained set of capabilities that are nonetheless sufficiently expressive for our tasks. An operator supplies high-level descriptions of their topology and policies, and our compiler generates PTC configurations for each switch. End hosts can reconfigure specific flows to use different PTC policies precisely and quickly, addressing a range of important use cases. We have evaluated P-ECMP using simulation at scale, and deployed one use case to a real-world data center that serves live user traffic.",
+  "abstract_source_id": "src-abstract-nsdi-2025-dd0e1b57",
   "venue": "nsdi",
   "year": 2025,
   "track_or_session": "Data Plane Programmability 1",
@@ -287,6 +289,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2025-dd0e1b57",
+      "url": "https://www.usenix.org/conference/nsdi25/presentation/liu-yadong",
+      "kind": "paper-page",
+      "title": "Unlocking ECMP Programmability for Precise Traffic Control",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:04:42Z",
+      "content_hash": "sha256:b5f6046ac834a190297ce3e272f90e6b0eb713f66e72b07c320e15f92ec1078f",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

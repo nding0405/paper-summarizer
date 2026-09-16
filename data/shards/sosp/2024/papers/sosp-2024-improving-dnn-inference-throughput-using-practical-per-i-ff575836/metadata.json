@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sosp-2024-improving-dnn-inference-throughput-using-practical-per-i-ff575836",
   "title": "Improving DNN Inference Throughput Using Practical, Per-Input Compute Adaptation",
+  "abstract": "Machine learning inference platforms continue to face high request rates and strict latency constraints. Existing solutions largely focus on compressing models to substantially lower compute costs (and time) with mild accuracy degradations. This paper explores an alternate (but complementary) technique that trades off accuracy and resource costs on a perinput granularity: early exit models, which selectively allow certain inputs to exit a model from an intermediate layer. Though intuitive, early exits face fundamental deployment challenges, largely owing to the effects that exiting inputs have on batch size (and resource utilization) throughout model execution. We present E3, the first system that makes early exit models practical for realistic inference deployments. Our key insight is to split and replicate blocks of layers in models in a manner that maintains a constant batch size throughout execution, all the while accounting for resource requirements and communication overheads. Evaluations with NLP and vision models show that E3 can deliver up to 1.74× improvement in goodput (for a fixed cost) or 1.78× reduction in cost (for a fixed goodput). Additionally, E3's goodput wins generalize to autoregressive LLMs (2.8--3.8×) and compressed models (1.67×).",
+  "abstract_source_id": "src-abstract-sosp-2024-ff575836",
   "venue": "sosp",
   "year": 2024,
   "track_or_session": "Session 9: ML Serving 11:00 - 12:30 Session Chair: Ram Alagappan",
@@ -188,6 +190,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-sosp-2024-ff575836",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Improving DNN Inference Throughput Using Practical, Per-Input Compute Adaptation",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:19Z",
+      "content_hash": "sha256:b613162f9e7d53fac5fe410aff94d06ac71f23c6c31e2e9cc362b51e87d1bb79",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

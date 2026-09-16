@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sigcomm-2026-presto-a-match-action-tcp-stack-for-the-terabit-era-25d3f341",
   "title": "Presto: A Match-Action TCP Stack for the Terabit Era",
+  "abstract": "We present Presto, the first TCP stack that delivers ASIC-class performance and energy efficiency on programmable Reconfigurable Match-Action Table (RMT) pipelines, providing flexibility while retaining standard TCP semantics and POSIX socket compatibility. The key challenge in designing Presto is reconciling TCP's complex, dependent state updates with RMT's unidirectional, lock-step execution model. To overcome this challenge, Presto introduces three novel techniques: optimistic concurrency (speculative updates validated downstream), pseudo-segment injection (circular dependency resolution without stalls), and bump-in-the-wire processing (singlepass segment handling). Together, these enable TCP retransmission, reassembly, flow, and congestion control, as a pipeline of simple match-action operations. Our Intel Tofino 2 prototype demonstrates Presto's scalability to terabit speeds, flexibility, and robustness to network dynamics. Presto matches RDMA performance and efficiency for both RPC and streaming workloads (including NVMe-oF with SPDK), while maintaining TCP/POSIX compatibility. Presto saves up to 16 host CPU cores versus state-of-the-art kernel-bypass TCP, while achieving 5× lower 99.99p tail latency and 2× better throughput-per-watt for key-value stores. At scale, Presto drives nearly 1 Bpps at 20 μs RPC tail latency. Unlike fixed-function offloads, Presto supports transport evolution through in-data-path extensions (selective ACKs, congestion control variants, application co-design for shared logs). Finally, Presto generalizes to FPGA SmartNICs, outperforming Tonic's monolithic design by 3× under equal timing.",
+  "abstract_source_id": "src-abstract-25d3f341",
   "venue": "sigcomm",
   "year": 2026,
   "track_or_session": "Research Session 15: Programmable Switches & Data-Plane Hardware — Research Paper",
@@ -128,6 +130,19 @@
       "official": true,
       "supports": [
         "official main-paper scope and track definitions"
+      ]
+    },
+    {
+      "id": "src-abstract-25d3f341",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/search/match?query=Presto%3A%20A%20Match-Action%20TCP%20Stack%20for%20the%20Terabit%20Era&fields=title,abstract",
+      "kind": "semantic-scholar",
+      "title": "Presto: A Match-Action TCP Stack for the Terabit Era",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T23:05:19Z",
+      "content_hash": "sha256:7ca9990f1a05871f028885f5c8d1e2974aa40665c5eb6b7eed23f2be42c2a2a0",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

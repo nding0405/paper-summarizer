@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2023-alphaexp-an-expert-system-for-identifying-security-sensi-02d2f3ab",
   "title": "AlphaEXP: An Expert System for Identifying Security-Sensitive Kernel Objects",
+  "abstract": "Memory corruption vulnerabilities are often exploited to corrupt sensitive objects and launch attacks. An efficient way to mitigate such threats is identifying and protecting such sensitive objects against corruption. However, it is still an open question that what objects are security sensitive and how sensitive they are. In this paper, we present the first expert system based solution AlphaEXP to identify security sensitive objects, in a specific and important target—the Linux kernel. It works by simulating an adversary to assess whether an object could be abused to get unintended capabilities and contribute to exploitation, and marks it as sensitive if so. Specifically, AlphaEXP first constructs a knowledge graph to represent the facts of the kernel, including objects, functions, and their relationships etc. Then, it explores the knowledge graph to infer potential attack paths for given vulnerabilities, and marks objects used in the attack paths as sensitive. Lastly, it evaluates the feasibility of the attack paths in a customized emulating system, and classifies the sensitivity of objects accordingly. We have built a prototype of AlphaEXP and evaluated it on 84 synthesized representative vulnerabilities and 19 real world vulnerabilities to identify sensitive kernel objects. AlphaEXP successfully generates attack paths for most of these vulnerabilities, and finds 50 objects that could be abused to get writing capability, 81 objects with reading capability, and 112 objects with execution capability. AlphaEXP classifies them into 12 levels of sensitivity.",
+  "abstract_source_id": "src-abstract-usenix-security-2023-02d2f3ab",
   "venue": "usenix-security",
   "year": 2023,
   "track_or_session": "OSes and Security",
@@ -238,6 +240,19 @@
       "official": true,
       "supports": [
         "authors, affiliations when published, abstract, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2023-02d2f3ab",
+      "url": "https://www.usenix.org/conference/usenixsecurity23/presentation/wang-ruipeng",
+      "kind": "paper-page",
+      "title": "AlphaEXP: An Expert System for Identifying Security-Sensitive Kernel Objects",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:09:40Z",
+      "content_hash": "sha256:240fe33f61b95132857b01220fd1c8034c980b29eea82beaa31212c7c8313d65",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

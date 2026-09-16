@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2026-scalable-off-chain-auctions-cb84d9fd",
   "title": "Scalable Off-Chain Auctions",
+  "abstract": "Blockchain auction plays an important role in the price discovery of digital assets (e.g. NFTs). However, despite their importance, implementing auctions directly on blockchains such as Ethereum incurs scalability issues. In particular, the on-chain transactions scale poorly with the number of bidders, leading to network congestion, increased transaction fees, and slower transaction confirmation time. This lack of scalability significantly hampers the ability of the system to handle large-scale, high-speed auctions that are common in today’s economy.\n\nIn this work, we build a protocol where an auctioneer can conduct sealed bid auctions that run entirely off-chain when parties behave honestly, and in the event that k bidders deviate (e.g., do not open their sealed bid) from an n-party auction protocol, then the on-chain complexity is only O(k). This improves over existing solutions that require O(n) on-chain complexity, even if a single bidder deviates from the protocol. In the event of a malicious auctioneer, our protocol still guarantees that the auction will successfully terminate. We implement our protocol and show that it offers significant efficiency improvements compared to existing on-chain solutions. Our use of zkSnark to achieve scalability also ensures that the on-chain contract and other participants do not learn anything about the bidders’ identities and their respective bids, except for the winner and the winning bid amount.",
+  "abstract_source_id": "src-abstract-ndss-2026-cb84d9fd",
   "venue": "ndss",
   "year": 2026,
   "track_or_session": "Summer submission cycle",
@@ -265,6 +267,19 @@
       "official": false,
       "supports": [
         "independent proceedings identity reconciliation"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2026-cb84d9fd",
+      "url": "https://www.ndss-symposium.org/ndss-paper/scalable-off-chain-auction/",
+      "kind": "paper-page",
+      "title": "Scalable Off-Chain Auctions",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:23:06Z",
+      "content_hash": "sha256:9cd87068fe00973b73c82b51a5651fe7ca2b92de73ddab59a7bb00c133ee7871",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2024-validating-the-ebpf-verifier-via-state-embedding-128fc130",
   "title": "Validating the eBPF Verifier via State Embedding",
+  "abstract": "This paper introduces state embedding , a novel and highly effective technique for validating the correctness of the eBPF verifier, a critical component for Linux kernel security. To check whether a program is safe to execute, the verifier must track over-approximated program states along each potential control-flow path; any concrete state not contained in the tracked approximation may invalidate the verifier's conclusion. Our key insight is that one can effectively detect logic bugs in the verifier by embedding a program with certain approximation-correctness checks expected to be validated by the verifier. Indeed, for a program deemed safe by the verifier, our approach embeds concrete states via eBPF program constructs as correctness checks. By construction, the resulting state-embedded program allows the verifier to validate whether the embedded concrete states are correctly approximated by itself; any validation failure therefore reveals a logic bug in the verifier. We realize state embedding as a practical tool and apply it to test the eBPF verifier. Our evaluation results highlight its effectiveness. Despite the extensive scrutiny and testing undertaken on the eBPF verifier, our approach, within one month, uncovered 15 previously unknown logic bugs, 10 of which have already been fixed. Many of the detected bugs are severe, e.g. , two are exploitable and can lead to local privilege escalation.",
+  "abstract_source_id": "src-abstract-osdi-2024-128fc130",
   "venue": "osdi",
   "year": 2024,
   "track_or_session": "Formal Verification",
@@ -117,6 +119,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2024-128fc130",
+      "url": "https://www.usenix.org/conference/osdi24/presentation/sun-hao",
+      "kind": "paper-page",
+      "title": "Validating the eBPF Verifier via State Embedding",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:07:24Z",
+      "content_hash": "sha256:224a9b0ad1edec2d1461194eee2a4514b1bfc572cc551dabc6459c1e6954ff2c",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

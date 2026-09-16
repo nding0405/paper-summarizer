@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2023-objectseeker-certifiably-robust-object-detection-against-60aaad7b",
   "title": "ObjectSeeker: Certifiably Robust Object Detection against Patch Hiding Attacks via Patch-agnostic Masking",
+  "abstract": "Object detectors, which are widely deployed in security-critical systems such as autonomous vehicles, have been found vulnerable to patch hiding attacks. An attacker can use a single physically-realizable adversarial patch to make the object detector miss the detection of victim objects and undermine the functionality of object detection applications. In this paper, we propose ObjectSeeker for certifiably robust object detection against patch hiding attacks. The key insight in ObjectSeeker is patch-agnostic masking: we aim to mask out the entire adversarial patch without knowing the shape, size, and location of the patch. This masking operation neutralizes the adversarial effect and allows any vanilla object detector to safely detect objects on the masked images. Remarkably, we can evaluate ObjectSeeker’s robustness in a certifiable manner: we develop a certification procedure to formally determine if ObjectSeeker can detect certain objects against any white-box adaptive attack within the threat model, achieving certifiable robustness. Our experiments demonstrate a significant (~10%-40% absolute and ~2-6× relative) improvement in certifiable robustness over the prior work, as well as high clean performance (∼1% drop compared with undefended models). 1",
+  "abstract_source_id": "src-abstract-sp-2023-60aaad7b",
   "venue": "sp",
   "year": 2023,
   "track_or_session": "Session 5B: Machine learning assurance",
@@ -172,6 +174,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2023-60aaad7b",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "ObjectSeeker: Certifiably Robust Object Detection against Patch Hiding Attacks via Patch-agnostic Masking",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:22Z",
+      "content_hash": "sha256:1bed15e4c1c4d6e59eecfd74eeffd17f506467abd5cdd4e0f536f68bd1e694ee",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

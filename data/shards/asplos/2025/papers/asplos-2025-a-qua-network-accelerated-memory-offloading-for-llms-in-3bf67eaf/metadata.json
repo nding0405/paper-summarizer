@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2025-a-qua-network-accelerated-memory-offloading-for-llms-in-3bf67eaf",
   "title": "Aqua: Network-Accelerated Memory Offloading for LLMs in Scale-Up GPU Domains",
+  "abstract": "Inference on large-language models (LLMs) is constrained by GPU memory capacity. A sudden increase in the number of inference requests to a cloud-hosted LLM can deplete GPU memory, leading to contention between multiple prompts for limited resources. Modern LLM serving engines deal with the challenge of limited GPU memory using admission control, which causes them to be unresponsive during request bursts. We propose that preemptive scheduling of prompts in time slices is essential for ensuring responsive LLM inference, especially under conditions of high load and limited GPU memory. However, preempting prompt inference incurs a high paging overhead, which reduces inference throughput. We present Aqua, a GPU memory management framework that significantly reduces the overhead of paging inference state; achieving both responsive and high throughput inference even under bursty request patterns. We evaluate Aqua by hosting several state-of-the-art large generative ML models of different modalities on servers with 8 Nvidia H100 80G GPUs. Aqua improves the responsiveness of LLM inference by 20X compared to the state-of-the-art. It improves LLM inference throughput over a single long prompt by 4X.",
+  "abstract_source_id": "src-abstract-asplos-2025-3bf67eaf",
   "venue": "asplos",
   "year": 2025,
   "track_or_session": "Session 10A: GPGPU",
@@ -125,6 +127,19 @@
       "official": false,
       "supports": [
         "Indexed abstract and open-access links used for relevance classification and ancillary-link discovery."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2025-3bf67eaf",
+      "url": "https://api.openalex.org/works/doi:10.1145/3676641.3715983?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "A qua : Network-Accelerated Memory Offloading for LLMs in Scale-Up GPU Domains",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:00:39Z",
+      "content_hash": "sha256:5e29e0a455ce8d5c57377cb6db95f7d13151aa6a57a4fdac7fdf6907fb7aca98",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

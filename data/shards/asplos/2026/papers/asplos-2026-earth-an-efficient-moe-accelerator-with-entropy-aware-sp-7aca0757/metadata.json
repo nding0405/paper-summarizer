@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2026-earth-an-efficient-moe-accelerator-with-entropy-aware-sp-7aca0757",
   "title": "EARTH: An Efficient MoE Accelerator with Entropy-Aware Speculative Prefetch and Result Reuse",
+  "abstract": "Mixture-of-Experts (MoE) models significantly reduce computation in large language models by activating only a subset of experts per input token, but they introduce severe memory bottlenecks due to the large number of expert parameters. Existing offloading and prefetching strategies either incur accuracy loss, prohibitively high memory traffic, or high decoding overhead, limiting deployment on resource-constrained hardware. In this work, we present EARTH, a hardware–software co-design that addresses these challenges through three key innovations. First, we propose a dual-entropy encoding scheme that decomposes each expert into a high-information base and a delta component, enabling compact storage while preserving accuracy via adaptive precision management. Second, we introduce a delta-aware speculative prefetching and reuse mechanism that preloads base components of predicted experts and selectively fetches deltas, reusing previously computed delta patterns to reduce memory traffic and redundant computation. Third, we design a hardware accelerator that is co-designed to efficiently support this encoding and prefetching strategy, optimizing execution order, parallelism, and memory utilization. Across representative MoE workloads, EARTH reduces data movement overhead, improves prefetch efficiency, and achieves up to 2.10× speedup compared to state-of-the-art baselines, while maintaining high model accuracy.",
+  "abstract_source_id": "src-abstract-asplos-2026-7aca0757",
   "venue": "asplos",
   "year": 2026,
   "track_or_session": "Session 2B: Speculative Decoding",
@@ -230,6 +232,19 @@
       "official": false,
       "supports": [
         "Indexed abstract used for strict relevance classification and indexed arXiv identifier where available."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2026-7aca0757",
+      "url": "https://api.openalex.org/works/doi:10.1145/3779212.3790155?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "EARTH: An Efficient MoE Accelerator with Entropy-Aware Speculative Prefetch and Result Reuse",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:05:25Z",
+      "content_hash": "sha256:db0a34db2640fade2d62f26f88d57eb415dfaedf65ef72aeb202792321e5ab2f",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

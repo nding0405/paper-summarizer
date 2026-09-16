@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2026-sketchpipe-toward-accurate-sketch-based-network-measurem-02f7ad19",
   "title": "SketchPipe: Toward Accurate Sketch-based Network Measurement on Multi-Pipeline Switches with Splitless Sketch Placement",
+  "abstract": "Sketches compactly measure traffic statistics with limited resource usage and are compatible with high-speed multi-pipeline switches. Existing solutions place sketches on multi-pipeline switches via array-split placement that splits each sketch array into several identical slices and places each slice on a specific pipeline. However, they incur two issues that drop measurement accuracy: (1) Different slices in different pipelines redundantly measure the same flows, wasting scarce switch resources. (2) Some slices receive much higher traffic loads than other slices. Hence, the data of different slices are highly varied, making their analysis inaccurate. We propose SketchPipe, a framework that offers accurate sketch-based measurement for multi-pipeline switches. The key ideas are two-fold. First, SketchPipe places each sketch array exclusively on a pipeline. Second, it caches the flow keys of normal packets while using synthetic state packets to asynchronously transfer cached keys to sketch arrays. As such, it avoids splitting arrays to enable accurate measurement while avoiding affecting normal packet processing. Our experiments on 12.8 Tbps Tofino2 switches show that SketchPipe improves accuracy by up to two orders of magnitude for various sketches and network monitoring applications.",
+  "abstract_source_id": "src-abstract-nsdi-2026-02f7ad19",
   "venue": "nsdi",
   "year": 2026,
   "track_or_session": "Measuring at Scale",
@@ -328,6 +330,19 @@
         "proceedings page range and page count",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2026-02f7ad19",
+      "url": "https://www.usenix.org/conference/nsdi26/presentation/chen-xiang",
+      "kind": "paper-page",
+      "title": "SketchPipe: Toward Accurate Sketch-based Network Measurement on Multi-Pipeline Switches with Splitless Sketch Placement",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:06:01Z",
+      "content_hash": "sha256:dd3597a4144a9d342ca8cc4344555057d959252152d783bbbe05cfda969eb853",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

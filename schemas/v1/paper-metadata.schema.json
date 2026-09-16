@@ -38,6 +38,22 @@
       "type": "string",
       "minLength": 1
     },
+    "abstract": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "minLength": 1,
+      "description": "Published abstract text; null until collected."
+    },
+    "abstract_source_id": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^src-[a-z0-9][a-z0-9-]*$",
+      "description": "ID of the sources entry the abstract was read from."
+    },
     "venue": {
       "type": "string",
       "pattern": "^[a-z0-9-]+$"
@@ -48,17 +64,31 @@
       "maximum": 2026
     },
     "track_or_session": {
-      "type": ["string", "null"]
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "paper_type": {
-      "enum": ["main-track", "other-archival", "excluded-non-main", "unknown"]
+      "enum": [
+        "main-track",
+        "other-archival",
+        "excluded-non-main",
+        "unknown"
+      ]
     },
     "publication_date": {
-      "type": ["string", "null"],
+      "type": [
+        "string",
+        "null"
+      ],
       "format": "date"
     },
     "page_count": {
-      "type": ["integer", "null"],
+      "type": [
+        "integer",
+        "null"
+      ],
       "minimum": 1
     },
     "venue_year_completion_status": {
@@ -85,7 +115,10 @@
         ],
         "properties": {
           "author_id": {
-            "type": ["string", "null"]
+            "type": [
+              "string",
+              "null"
+            ]
           },
           "name": {
             "type": "string",
@@ -96,7 +129,10 @@
             "minimum": 1
           },
           "orcid": {
-            "type": ["string", "null"],
+            "type": [
+              "string",
+              "null"
+            ],
             "pattern": "^\\d{4}-\\d{4}-\\d{4}-\\d{3}[\\dX]$"
           },
           "affiliations": {
@@ -124,38 +160,65 @@
       ],
       "properties": {
         "doi": {
-          "type": ["string", "null"]
+          "type": [
+            "string",
+            "null"
+          ]
         },
         "official_page": {
-          "type": ["string", "null"],
+          "type": [
+            "string",
+            "null"
+          ],
           "format": "uri"
         },
         "official_pdf": {
-          "type": ["string", "null"],
+          "type": [
+            "string",
+            "null"
+          ],
           "format": "uri"
         },
         "artifact": {
-          "type": ["string", "null"],
+          "type": [
+            "string",
+            "null"
+          ],
           "format": "uri"
         },
         "code": {
-          "type": ["string", "null"],
+          "type": [
+            "string",
+            "null"
+          ],
           "format": "uri"
         },
         "project": {
-          "type": ["string", "null"],
+          "type": [
+            "string",
+            "null"
+          ],
           "format": "uri"
         },
         "slides": {
-          "type": ["string", "null"],
+          "type": [
+            "string",
+            "null"
+          ],
           "format": "uri"
         },
         "video": {
-          "type": ["string", "null"],
+          "type": [
+            "string",
+            "null"
+          ],
           "format": "uri"
         },
         "bibtex": {
-          "type": ["string", "null"]
+          "type": [
+            "string",
+            "null"
+          ]
         }
       }
     },
@@ -164,10 +227,20 @@
       "items": {
         "type": "object",
         "additionalProperties": false,
-        "required": ["kind", "url", "relationship"],
+        "required": [
+          "kind",
+          "url",
+          "relationship"
+        ],
         "properties": {
           "kind": {
-            "enum": ["arxiv", "journal", "workshop", "project-copy", "other"]
+            "enum": [
+              "arxiv",
+              "journal",
+              "workshop",
+              "project-copy",
+              "other"
+            ]
           },
           "url": {
             "type": "string",

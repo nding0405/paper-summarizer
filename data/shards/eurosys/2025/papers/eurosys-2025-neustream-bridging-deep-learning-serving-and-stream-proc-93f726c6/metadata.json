@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "eurosys-2025-neustream-bridging-deep-learning-serving-and-stream-proc-93f726c6",
   "title": "NeuStream: Bridging Deep Learning Serving and Stream Processing",
+  "abstract": "Modern Deep Neural Network (DNN) exhibits a pattern where multiple sub-models are executed, guided by control flows such as loops and switch/merge operations. This dynamic nature introduces complexities in batching the requests of such DNNs for efficient execution on GPUs. In this paper, we present NeuStream, a programming model and runtime system for serving deep learning workloads using stream processing. NeuStream decomposes the inference workflow into modules and forms them into a streaming processing system where a request flows through. Based on such abstraction, NeuStream is able to batch requests at fine-grained module granularity. To maximize serving goodput, NeuStream exploits a two-level scheduling approach to decide the best batching requests and resource allocation for each module while satisfying service level objectives (SLOs). Our evaluation of NeuStream on a set of modern DNNs like Large Language Models (LLM) and diffusion models, etc., shows that NeuStream significantly improves goodput compared to state-of-the-art DNN serving systems.",
+  "abstract_source_id": "src-abstract-eurosys-2025-93f726c6",
   "venue": "eurosys",
   "year": 2025,
   "track_or_session": "Session-5.1: Graph and Stream processing - Location: Mees - Chair: Baptiste Lepers",
@@ -230,6 +232,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-eurosys-2025-93f726c6",
+      "url": "https://api.openalex.org/works/doi:10.1145/3689031.3717489?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "NeuStream: Bridging Deep Learning Serving and Stream Processing",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:19:30Z",
+      "content_hash": "sha256:d8fd1f69fc7e1eef4233f8d4031dbcd9ddb04af2e5f16dcc0a81ad711bbc378c",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

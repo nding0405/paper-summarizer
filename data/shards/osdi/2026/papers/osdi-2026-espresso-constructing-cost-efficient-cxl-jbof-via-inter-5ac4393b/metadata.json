@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2026-espresso-constructing-cost-efficient-cxl-jbof-via-inter-5ac4393b",
   "title": "Espresso: Constructing Cost-Efficient CXL JBOF via Inter-SSD Computing Resource Sharing",
+  "abstract": "Enterprise SSDs integrate substantial computing resources (e.g., ARM processor and onboard DRAM) to handle I/O bursts. However, these resources significantly raise SSD monetary cost and suffer severely underutilized in JBOF deployments due to the sporadic nature of I/O bursts. In this paper, we present Espresso , a cost-efficient JBOF design that provisions only moderate computing resources per SSD at low monetary cost, while delivering demanded I/O performance through efficient inter-SSD resource sharing. Specifically, Espresso first disaggregates SSD architecture into functionally distinct components, enabling fine-grained SSD internal resource management. Espresso then employs a decentralized scheme to manage these disaggregated resources and harvests the computing resources of idle SSDs to assist busy SSDs in handling I/O bursts. This idea is facilitated by the cache-coherent CXL fabric, with which the busy SSDs can directly utilize the harvested computing resources to accelerate metadata processing. The evaluation results show that Espresso can improve SSD resource utilization by 50.4% and reduce monetary cost by 19.0% with negligible performance degradation, compared to the state-of-the-art JBOF designs.",
+  "abstract_source_id": "src-abstract-osdi-2026-5ac4393b",
   "venue": "osdi",
   "year": 2026,
   "track_or_session": "Disaggregated Memory Systems",
@@ -377,6 +379,19 @@
       "official": true,
       "supports": [
         "Official proceedings availability and canonical conference versions."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2026-5ac4393b",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/yi",
+      "kind": "paper-page",
+      "title": "Espresso: Constructing Cost-Efficient CXL JBOF via Inter-SSD Computing Resource Sharing",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:08:17Z",
+      "content_hash": "sha256:be9054e1553654830f2c4422de3e3b7ce48b56b1a0375a17119313d7826bbde0",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

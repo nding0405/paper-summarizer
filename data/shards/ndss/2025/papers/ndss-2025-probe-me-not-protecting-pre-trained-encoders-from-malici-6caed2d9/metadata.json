@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2025-probe-me-not-protecting-pre-trained-encoders-from-malici-6caed2d9",
   "title": "Probe-Me-Not: Protecting Pre-trained Encoders from Malicious Probing",
+  "abstract": "Adapting pre-trained deep learning models to customized tasks has become a popular choice for developers to cope with limited computational resources and data volume. More specifically, probing--training a classifier on a pre-trained encoder--has been widely adopted in transfer learning, which helps to prevent overfitting and catastrophic forgetting. However, such generalizability of pre-trained encoders raises concerns about the potential misuse of probing for harmful applications, such as discriminatory speculation and warfare applications. In this work, we introduce EncoderLock, a novel applicability authorization method designed to protect pre-trained encoders from malicious probing, i.e., yielding poor performance on specified prohibited domains while maintaining their utility in authorized ones. Achieving this balance is challenging because of the opposite optimization objectives and the variety of downstream heads that adversaries can utilize adaptively. To address these challenges, EncoderLock employs two techniques: domain-aware weight selection and updating to restrict applications on prohibited domains/tasks, and self-challenging training scheme that iteratively strengthens resistance against any potential downstream classifiers that adversaries may apply. Moreover, recognizing the potential lack of data from prohibited domains in practical scenarios, we introduce three EncoderLock variants with different levels of data accessibility: supervised (prohibited domain data with labels), unsupervised (prohibited domain data without labels), and zero-shot (no data or labels available). Extensive experiments across fifteen domains and three model architectures demonstrate EncoderLock's effectiveness over baseline methods using non-transferable learning. Additionally, we verify EncoderLock's effectiveness and practicality with a real-world pre-trained Vision Transformer (ViT) encoder from Facebook. These results underscore the valuable contributions EncoderLock brings to the development of responsible AI.",
+  "abstract_source_id": "src-abstract-ndss-2025-6caed2d9",
   "venue": "ndss",
   "year": 2025,
   "track_or_session": "Fall submission cycle",
@@ -189,6 +191,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2025-6caed2d9",
+      "url": "https://www.ndss-symposium.org/ndss-paper/probe-me-not-protecting-pre-trained-encoders-from-malicious-probing/",
+      "kind": "paper-page",
+      "title": "Probe-Me-Not: Protecting Pre-trained Encoders from Malicious Probing",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:20:10Z",
+      "content_hash": "sha256:a69ccb647ff5fee663e7347fb3a8462f0a991008aad9516a6105c15a62c08c5f",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

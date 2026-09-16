@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2023-d-dae-defense-penetrating-model-extraction-attacks-a68fd0be",
   "title": "D-DAE: Defense-Penetrating Model Extraction Attacks",
+  "abstract": "Recent studies show that machine learning models are vulnerable to model extraction attacks, where the adversary builds a substitute model that achieves almost the same performance of a black-box victim model simply via querying the victim model. To defend against such attacks, a series of methods have been proposed to disrupt the query results before returning them to potential attackers, greatly degrading the performance of existing model extraction attacks.In this paper, we make the first attempt to develop a defense-penetrating model extraction attack framework, named D-DAE, which aims to break disruption-based defenses. The linchpins of D-DAE are the design of two modules, i.e., disruption detection and disruption recovery, which can be integrated with generic model extraction attacks. More specifically, after obtaining query results from the victim model, the disruption detection module infers the defense mechanism adopted by the defender. We design a meta-learning-based disruption detection algorithm for learning the fundamental differences between the distributions of disrupted and undisrupted query results. The algorithm features a good generalization property even if we have no access to the original training dataset of the victim model. Given the detected defense mechanism, the disruption recovery module tries to restore a clean query result from the disrupted query result with well-designed generative models. Our extensive evaluations on MNIST, FashionMNIST, CIFAR-10, GTSRB, and ImageNette datasets demonstrate that D-DAE can enhance the substitute model accuracy of the existing model extraction attacks by as much as 82.24% in the face of 4 state-of-the-art defenses and combinations of multiple defenses. We also verify the effectiveness of D-DAE in penetrating unknown defenses in real-world APIs hosted by Microsoft Azure and Face++.",
+  "abstract_source_id": "src-abstract-sp-2023-a68fd0be",
   "venue": "sp",
   "year": 2023,
   "track_or_session": "Session 2B: Machine learning privacy",
@@ -193,6 +195,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2023-a68fd0be",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "D-DAE: Defense-Penetrating Model Extraction Attacks",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:22Z",
+      "content_hash": "sha256:1bed15e4c1c4d6e59eecfd74eeffd17f506467abd5cdd4e0f536f68bd1e694ee",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

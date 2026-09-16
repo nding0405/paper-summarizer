@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "atc-2025-logcrisp-fast-aggregated-analysis-on-large-scale-compres-2e180f0d",
   "title": "LogCrisp: Fast Aggregated Analysis on Large-scale Compressed Logs by Enabling Two-Phase Pattern Extraction and Vectorized Queries",
+  "abstract": "Cloud providers generate logs at massive scales, often requiring dense compression using log patterns. Meanwhile, aggregated analysis on logs is essential for various applications. However, performing aggregated analysis on highly compressed logs presents two fundamental challenges: 1) it is hard to extract a set of log patterns that have both a global description and high filtering effectiveness; 2) executing full-text queries on numerically encoded data is challenging.\n\nThis paper proposes a two-phase pattern extraction paradigm. Such a paradigm decouples messages within patterns into Sketch (global pattern structure) and Specs (local fine-grained pattern specifications). The Sketch is extracted in an offline phase to provide a comprehensive global description, while the Specs are customized in the online phase to enhance pattern filtering effectiveness. Additionally, this paper proposes an efficient prefix/suffix vectorized query algorithm for numerically encoded data, which leverages AVX SIMD instructions to convert full-text queries into high-performance range/point queries.\n\nWe implement and integrate all these techniques into a system called LogCrisp, which is evaluated using nearly 7TB of logs from both production environments and public datasets. Experimental results show that LogCrisp achieves an order of magnitude lower analysis latency, 3.8× higher ingestion speed, and an almost identical compression ratio, compared with state-of-the-art works.",
+  "abstract_source_id": "src-abstract-atc-2025-2e180f0d",
   "venue": "atc",
   "year": 2025,
   "track_or_session": "Storage Innovations: Logs, Tiers, and Modern Flash",
@@ -159,6 +161,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-atc-2025-2e180f0d",
+      "url": "https://www.usenix.org/conference/atc25/presentation/wei",
+      "kind": "paper-page",
+      "title": "LogCrisp: Fast Aggregated Analysis on Large-scale Compressed Logs by Enabling Two-Phase Pattern Extraction and Vectorized Queries",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T21:59:53Z",
+      "content_hash": "sha256:05829c4c8c498193fc1b7ee34e48520d8de64173cef7dd87ac4e2f42811e7e6d",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-floss-fast-linear-online-secret-shared-shuffling-adeb46c5",
   "title": "FLOSS: Fast Linear Online Secret-Shared Shuffling",
+  "abstract": "Randomly permuting secret data vectors is a core building block in many privacy-preserving protocols, including those for analytics, advertising, and communication. Existing approaches either rely on computation-heavy public key cryptography and zero-knowledge proofs or scale poorly for large vectors due to use of a quasilinear-sized permutation network. This work presents a preprocessing approach to enable fast linear-time online shuffles in the malicious-secure two-party computation (2PC) setting. We propose FLOSS, a 2PC protocol for securely computing any interactive arithmetic permutation circuit, a notion we introduce to capture how higher level protocols are built on secret-shared field arithmetic and permutations. We show how secret-shared sorting (a subprotocol in data analytics) can be described as an arithmetic permutation circuit, and can thus be compiled to an efficient online 2PC protocol using FLOSS. Our implementation and evaluation confirm FLOSS performs online shuffles fast: shuffling 2^20 elements in under 500ms, greater than 800× faster than state-of-the-art alternatives.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-adeb46c5",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Applications of Cryptography 3",
@@ -134,6 +136,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-adeb46c5",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/chang-ian",
+      "kind": "paper-page",
+      "title": "FLOSS: Fast Linear Online Secret-Shared Shuffling",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:24:01Z",
+      "content_hash": "sha256:29b552bfac5d35be36ce5fd0259c52bab908a63bc95f705ecfffe4c7632622c1",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

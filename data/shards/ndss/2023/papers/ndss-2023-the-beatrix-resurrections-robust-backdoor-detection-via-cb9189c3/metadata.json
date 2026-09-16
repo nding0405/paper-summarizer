@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2023-the-beatrix-resurrections-robust-backdoor-detection-via-cb9189c3",
   "title": "The “Beatrix” Resurrections: Robust Backdoor Detection via Gram Matrices",
+  "abstract": "Deep Neural Networks (DNNs) are susceptible to backdoor attacks during training. The model corrupted in this way functions normally, but when triggered by certain patterns in the input, produces a predefined target label. Existing defenses usually rely on the assumption of the universal backdoor setting in which poisoned samples share the same uniform trigger. However, recent advanced backdoor attacks show that this assumption is no longer valid in dynamic backdoors where the triggers vary from input to input, thereby defeating the existing defenses.\n\nIn this work, we propose a novel technique, Beatrix (backdoor detection via Gram matrix). Beatrix utilizes Gram matrix to capture not only the feature correlations but also the appropriately high-order information of the representations. By learning class-conditional statistics from activation patterns of normal samples, Beatrix can identify poisoned samples by capturing the anomalies in activation patterns. To further improve the performance in identifying target labels, Beatrix leverages kernel-based testing without making any prior assumptions on representation distribution. We demonstrate the effectiveness of our method through extensive evaluation and comparison with state-of-the-art defensive techniques. The experimental results show that our approach achieves an F1 score of 91.1% in detecting dynamic backdoors, while the state of the art can only reach 36.9%.",
+  "abstract_source_id": "src-abstract-ndss-2023-cb9189c3",
   "venue": "ndss",
   "year": 2023,
   "track_or_session": "ML and AI II",
@@ -189,6 +191,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2023-cb9189c3",
+      "url": "https://www.ndss-symposium.org/ndss-paper/the-beatrix-resurrections-robust-backdoor-detection-via-gram-matrices/",
+      "kind": "paper-page",
+      "title": "The “Beatrix” Resurrections: Robust Backdoor Detection via Gram Matrices",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:17:28Z",
+      "content_hash": "sha256:a851c3b60aec002ebd950081161b28f0824e05dbc1276959496b721a3401f908",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

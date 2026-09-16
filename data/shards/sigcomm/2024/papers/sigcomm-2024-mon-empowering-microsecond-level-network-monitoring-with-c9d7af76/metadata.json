@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sigcomm-2024-mon-empowering-microsecond-level-network-monitoring-with-c9d7af76",
   "title": "μMon: Empowering Microsecond-level Network Monitoring with Wavelets",
+  "abstract": "Network monitoring is essential for network management and optimization. In modern data centers, fluctuations in flow rates and network congestion events (e.g., microbursts) typically manifest on a microsecond timescale. However, the time granularity of network monitoring systems has not been refined correspondingly to efficiently capture these behaviors. Attaining the monitoring granularity at the microsecond scale can greatly facilitate network performance analysis and management, but poses considerable challenges regarding memory, bandwidth, and deployment costs. We propose μMon, a novel microsecond-level network monitoring system for data centers. The key of μMon is WaveSketch, an innovative algorithm that measures and compresses flow rate curves using in-dataplane wavelet transform. WaveSketch allows for more accurate characterization of application traffic patterns and aids in profiling transport algorithms. Furthermore, by combining the fine-grained flow rate measurements with network-collected congestion information, μMon can 'replay' congestion events to analyze their cause and impact. We evaluate μMon through testbed deployment and simulations at a granularity of 8.192 μs. The evaluation results demonstrate that μMon can achieve a 90% accuracy in microsecond-level rate measurements with an average of 5 Mbps bandwidth overhead per host. Additionally, it can capture 99% heavy congestion events with 31--82 Mbps bandwidth overhead per switch.",
+  "abstract_source_id": "src-abstract-sigcomm-2024-c9d7af76",
   "venue": "sigcomm",
   "year": 2024,
   "track_or_session": "Measuring the data center and the Internet — Research Track",
@@ -234,6 +236,19 @@
         "publisher-deposited ORCIDs when available",
         "proceedings page range and online publication date",
         "empty publisher relation metadata for alternate-version checks"
+      ]
+    },
+    {
+      "id": "src-abstract-sigcomm-2024-c9d7af76",
+      "url": "https://api.openalex.org/works/doi:10.1145/3651890.3672236?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "μMon: Empowering Microsecond-level Network Monitoring with Wavelets",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:23:08Z",
+      "content_hash": "sha256:c4c87e9ca8b9bb7d2386e3e3ff9c5129256ba2d4fa1b1f12c3b4e2fafaa31a0b",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sigcomm-2026-from-nimitz-to-netpila-the-evolution-of-production-scale-17785192",
   "title": "From Nimitz to NetPila: The Evolution of Production-Scale Container Network",
+  "abstract": "This paper describes two generations of production container networks deployed for over five years. Our first-generation network, Nimitz, used VxLAN for overlay-underlay mapping, providing flexibility and scalability from 2019-2022. However, with the rise of large-scale services (e.g., AI training and inference), Nimitz hit the C100K problem: beyond O(100K) containers, address mapping overhead and complex packet processing caused significant performance degradation. To overcome this, we built NetPila, a second-generation design that uses simple, practical IPv6 addressing to remove VxLAN encapsulation and overlay-underlay mapping tables. By embedding container addresses in the 128-bit IPv6 space, NetPila integrates the container network with the physical network, reducing packet-processing complexity and improving scalability. NetPila now supports millions of containers per tenant for production AI training and inference. We present the design, lessons, and deployment results of both generations.",
+  "abstract_source_id": "src-abstract-sigcomm-2026-17785192",
   "venue": "sigcomm",
   "year": 2026,
   "track_or_session": "Experience Session 4: Cloud Data Planes & Network Virtualization — Experience Paper",
@@ -254,6 +256,19 @@
       "official": true,
       "supports": [
         "official main-paper scope and track definitions"
+      ]
+    },
+    {
+      "id": "src-abstract-sigcomm-2026-17785192",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/search/match?query=From%20Nimitz%20to%20NetPila%3A%20The%20Evolution%20of%20Production-Scale%20Container%20Network&fields=title,abstract",
+      "kind": "semantic-scholar",
+      "title": "From Nimitz to NetPila: The Evolution of Production-Scale Container Network",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T23:01:37Z",
+      "content_hash": "sha256:028c78282eca897107ad372096b3d20992bfeb0d8c12efbe82e5e514f500b4e3",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

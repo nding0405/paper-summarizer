@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2025-odrp-on-demand-remote-paging-with-programmable-rdma-55c81419",
   "title": "ODRP: On-Demand Remote Paging with Programmable RDMA",
+  "abstract": "Memory disaggregation with OS swapping is becoming popular for next-generation datacenters. RDMA is a promising technique for achieving this. However, RDMA does not support dynamic memory management in the data path. Current systems rely on RDMA’s control path operations, which are designed for coarse-grained memory management. This results in a trade-off between performance and memory utilization and also requires significant CPU usage, which is a limited resource on memory nodes.\n\nThis paper introduces On-Demand Remote Paging, the first system that smartly chains native RDMA data path primitives to offload all memory access and management operations onto the RDMA-capable NIC (RNIC). However, efficiently implementing these operations is challenging due to the limited capability of RNIC. ODRP leverages the semantics of OS swapping and adopts a client-assisted principle to address the efficiency and functionality challenges. Compared to the state-of-the-art system, ODRP can achieve significantly better memory utilization, no CPU usage while introducing only a 0.8% to 14.6% performance overhead in real-world applications.",
+  "abstract_source_id": "src-abstract-nsdi-2025-55c81419",
   "venue": "nsdi",
   "year": 2025,
   "track_or_session": "RDMA",
@@ -182,6 +184,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2025-55c81419",
+      "url": "https://www.usenix.org/conference/nsdi25/presentation/wang-zixuan",
+      "kind": "paper-page",
+      "title": "ODRP: On-Demand Remote Paging with Programmable RDMA",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:04:22Z",
+      "content_hash": "sha256:39a58d5bcf6cfab17846a7fa4418620be07eec211c2cb446c23175a9eaa767df",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

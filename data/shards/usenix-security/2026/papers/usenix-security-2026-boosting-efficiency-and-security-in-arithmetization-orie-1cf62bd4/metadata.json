@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-boosting-efficiency-and-security-in-arithmetization-orie-1cf62bd4",
   "title": "Boosting Efficiency and Security in Arithmetization-Oriented Hashing for Zero-Knowledge Proof Systems",
+  "abstract": "Cryptographic compression functions are a core component of vector commitment schemes, including Merkle tree commitments, which are widely used in modern ZK-SNARK and STARK frameworks. Arithmetization-Oriented (AO) compression functions minimize multiplicative complexity over the framework's native field F_p, making them significantly more efficient than bit-oriented designs in algebraic circuits. To date, AO compression functions have been almost exclusively constructed by applying the Sponge mode to an AO permutation.\n\nIn this work, we introduce two novel approaches for building permutation-based AO compression modes: the PA family, based on a Permutation with feedforward Addition, and PAX, as an eXtension of the PA family. We formally establish that, in contrast to the Sponge construction, our modes achieve optimal collision and preimage resistance. We also prove that PAX is indifferentiable from a random oracle, further strengthening its security and composability guarantees. We further show that variable-input-length hash functions can be safely instantiated from the PA(X) modes by applying appropriate domain extenders.\n\nBeyond their strong security guarantees, our modes provide a framework that unifies and extends the description of several recently proposed modes that have been studied via cryptanalysis but do not come with provable security guarantees, including Jive and Trunc, as used in the AO designs Anemoi and Poseidon2.\n\nFinally, through extensive experimental evaluation, we compare the concrete efficiency improvement that our modes offer compared to the Sponge approach over two popular AO permutation designs, Poseidon permutation and Rescue. For 128 bits of collision resistance, our modes can achieve up to a 2x speed-up over Sponge for equivalent compression rates in a software implementation. When considering R1CS arithmetization in the Groth16 framework, the PA(X) preimage-verification circuit can be 10% faster than Sponge. In the Plonky2 framework, PA(X) can achieve up to a 60% speed-up.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-1cf62bd4",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Applications of Cryptography 6",
@@ -134,6 +136,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-1cf62bd4",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/andreeva",
+      "kind": "paper-page",
+      "title": "Boosting Efficiency and Security in Arithmetization-Oriented Hashing for Zero-Knowledge Proof Systems",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:23:12Z",
+      "content_hash": "sha256:9d4ffa77ee2470a867e69b811b7ab7d977f4fbd73b9b00d52d9a16e163d73065",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

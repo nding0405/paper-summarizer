@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2024-dpi-ensuring-strict-differential-privacy-for-infinite-da-50dde9e8",
   "title": "DPI: Ensuring Strict Differential Privacy for Infinite Data Streaming",
+  "abstract": "Streaming data, crucial for applications like crowd-sourcing analytics, behavior studies, and real-time monitoring, faces significant privacy risks due to the large and diverse data linked to individuals. In particular, recent efforts to release data streams, using the rigorous privacy notion of differential privacy (DP), have encountered issues with unbounded privacy leakage. This challenge limits their applicability to only a finite number of time slots (\"finite data stream\") or relaxation to protecting the events (\"event or w-event DP\") rather than all the records of users. A persistent challenge is managing the sensitivity of outputs to inputs in situations where users contribute many activities and data distributions evolve over time. In this paper, we present a novel technique for Differentially Private data streaming over Infinite disclosure (DPI) that effectively bounds the total privacy leakage of each user in infinite data streams while enabling accurate data collection and analysis. Furthermore, we also maximize the accuracy of DPI via a novel boosting mechanism. Finally, extensive experiments across various streaming applications and real datasets (e.g., COVID-19, Network Traffic, and USDA Production), show that DPI maintains high utility for infinite data streams in diverse settings. Code for DPI is available at https://github.com/ShuyaFeng/DPI.",
+  "abstract_source_id": "src-abstract-sp-2024-50dde9e8",
   "venue": "sp",
   "year": 2024,
   "track_or_session": "Summer cycle",
@@ -201,6 +203,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2024-50dde9e8",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "DPI: Ensuring Strict Differential Privacy for Infinite Data Streaming",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:32Z",
+      "content_hash": "sha256:be7515012a8c1ea1211f38a27ea4d2aa9cff6e0faac9417a2f58b1d64e91280e",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

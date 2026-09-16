@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-silicon-heist-ransom-attacks-for-cloud-fpgas-via-privile-c8749028",
   "title": "Silicon Heist: (Ransom) Attacks for Cloud FPGAs via Privilege Escalation",
+  "abstract": "Cloud-based FPGAs have become a billion-dollar industry, allowing users to deploy custom hardware designs with the scalability and flexibility of cloud infrastructure. Running user designs on hardware owned by the cloud service provider (CSP) introduces risks, including intentional hardware damage and Denial-of-Service (DoS) attacks against the host. To mitigate these risks, CSPs enforce security mechanisms that restrict user designs and prevent unauthorized behavior. We present a novel privilege escalation path on AMD FPGAs using (i) the Internal Configuration Access Port (ICAP) to circumvent provider defenses, (ii) incrementally escalate attacker capabilities to remote JTAG access, and (iii) investigate the resulting threat vectors.\n\nAny typical cloud customer can maliciously acquire such ICAP access to reconfigure parts of the FPGA fabric without restrictions – re-enabling traditional cloud FPGA attacks. Through the ICAP, a user can ultimately gain remote control of the hardware's low-level JTAG interface, which enables access to the device's eFuses. This access, in turn, allows attackers to irreversibly program encryption settings, thereby disabling future reconfiguration and locking the CSPs out of their own devices. An attacker could leverage such escalated privileges for a ransomware attack in which cloud providers must pay a ransom for decryption keys to regain control of their devices – effectively introducing the first ransomware for FPGAs. Following the investigation of this novel privilege escalation path, we demonstrate its feasibility on Amazon's EC2 F1 and F2 instances and explore the impact of enabled attack vectors. We thereby expose the neglected threat of unsecured low-level hardware components in cloud environments.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-c8749028",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Hardware Security 5",
@@ -177,6 +179,19 @@
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening",
         "prepublication PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-c8749028",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/klix",
+      "kind": "paper-page",
+      "title": "Silicon Heist: (Ransom) Attacks for Cloud FPGAs via Privilege Escalation",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:25:28Z",
+      "content_hash": "sha256:90535ff43c844180fe7887e7ba14a92ea40243e334b488fb71ddc7b6e6528c41",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

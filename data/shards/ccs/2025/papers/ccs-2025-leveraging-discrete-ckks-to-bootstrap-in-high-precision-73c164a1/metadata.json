@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2025-leveraging-discrete-ckks-to-bootstrap-in-high-precision-73c164a1",
   "title": "Leveraging Discrete CKKS to Bootstrap in High Precision",
+  "abstract": "The CKKS fully homomorphic encryption (FHE) scheme enables computations on vectors of approximate complex numbers. A moderate precision of ≈ 20 bits often suffices but, in many applications, a higher precision is required for functionality and/or security. Indeed, to obtain IND-CPA-D security [Li-Micciancio; Eurocrypt'21], secure threshold-FHE [Asharov et al; Eurocrypt'12] and circuit privacy [Gentry; STOC'09], all known approaches require a precision that supports noise flooding. This may lead to a precision of ≈ 80 bits, or more. High-precision CKKS is hard to achieve, notably because of bootstrapping. The main difficulty is modulus consumption: every homomorphic multiplication consumes some, out of an overall modulus budget. Unfortunately, in high precision, most known bootstrapping algorithms consume so much modulus that one needs to increase the parameters to increase the budget. The state-of-the-art approach, Meta-BTS [Bae et al; CCS'22], performs moderate-precision bootstrapping several times to enable high-precision bootstrapping, with similar modulus consumption as the base bootstrapping it builds upon. It however damages latency.",
+  "abstract_source_id": "src-abstract-ccs-2025-73c164a1",
   "venue": "ccs",
   "year": 2025,
   "track_or_session": "Cycle 2",
@@ -148,6 +150,19 @@
         "published-order authors",
         "publication-time affiliations",
         "publication date and page span"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2025-73c164a1",
+      "url": "https://api.openalex.org/works/doi:10.1145/3719027.3765080?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Leveraging Discrete CKKS to Bootstrap in High Precision",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:15:07Z",
+      "content_hash": "sha256:b960c5e1a1d0bc69cc20a68fa6e4fe1c54a76a6cc0e6f0cb0bbc63edf8708517",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -12,7 +12,7 @@ agent-owned JSON stage files
       └── review queue
       │
       ▼
-atomic SQLite merge
+validated export
       │
       ├── static JSON search export
       ├── CSV / BibTeX exports
@@ -35,12 +35,12 @@ static client-side website
 - Local user notes and shortlists remain in the browser unless explicitly
   exported.
 
-## Atomic database build
+## Export
 
-The merge command creates a temporary SQLite file, applies ordered migrations,
-imports validated fragments in stable path order, runs integrity checks, and
-atomically replaces the requested output. A failed build leaves the prior
-database untouched.
+`make export` validates every shard and writes `site/data/papers.json` (one
+compact card per paper) and `site/data/venue-years.json` (the coverage
+manifest). The WAR packages both; Tomcat loads them once at startup. There is
+no database.
 
 ## Static-first frontend
 

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-mhot-height-optimized-authenticated-data-structure-for-b-c7a80832",
   "title": "MHOT: Height-Optimized Authenticated Data Structure for Blockchain State Commitment",
+  "abstract": "State root computation dominates (~78%) blockchain block processing time. Ethereum's canonical authenticated data structure, i.e., Merkle Patricia Trie (MPT), suffers from severe tree-height growth and is vulnerable to Nurgle attacks (S&P'24), where adversaries inflate path depth via hash collisions and degrade system performance at negligible cost. Existing defenses increase node fanout (span) to bound tree height, but higher span inflates proof size exponentially. Prior work mitigates this trade-off using vector commitments, at the cost of trusted setup or expensive verification.\n\nWe present MHOT, a height-optimal authenticated data structure for blockchain state commitment that preserves standard hash-based verification without trusted setup. Unlike MPT's fixed-prefix indexing, which couples span and fanout exponentially, MHOT indexes by discriminative bits that actually distinguish keys, achieving adaptive span with linear fanout coupling and provably minimal height. To prevent high fanout from inflating proofs, we introduce hierarchical proofs, a two-layer Merkle construction that reduces per-node proof overhead from O(k) to O(logk).\n\nOn Ethereum mainnet workloads, MHOT achieves up to 9× higher write throughput, 4× lower write amplification, and 2× smaller proofs than MPT. Under Nurgle attacks, even when the adversary consumes an entire block's gas budget, MHOT maintains a 0% attack success rate (v.s., 99.97% for MPT). Our results, somewhat surprisingly, show that height optimality (not new crypto primitives!) is the key abstraction for scalable and attack-resilient blockchain state commitment.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-c7a80832",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Applications of Cryptography 2",
@@ -176,6 +178,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-c7a80832",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/xie",
+      "kind": "paper-page",
+      "title": "MHOT: Height-Optimized Authenticated Data Structure for Blockchain State Commitment",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:24:44Z",
+      "content_hash": "sha256:305f98f49edd339024ef6ec7224a3b0da13fe108af4915dbf10185053d49dc28",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2023-unforgeability-in-stochastic-gradient-descent-cb192c53",
   "title": "Unforgeability in Stochastic Gradient Descent",
+  "abstract": "Stochastic Gradient Descent (SGD) is a popular training algorithm, a cornerstone of modern machine learning systems. Several security applications benefit from determining if SGD executions are forgeable, i.e., whether the model parameters seen at a given step are obtainable by more than one distinct set of data samples. In this paper, we present the first attempt at proving impossibility of such forgery. We furnish a set of conditions, which are efficiently checkable on concrete checkpoints seen during training runs, under which checkpoints are provably unforgeable at that step. Our experiments show that the conditions are somewhat mild and hence always satisfied at checkpoints sampled in our experiments. Our results sharply contrast prior findings at a high level: We show that checkpoints we find to be provably unforgeable have been deemed to be forgeable using the same methodology and experimental setup suggested in prior work. This discrepancy arises because of unspecified subtleties in definitions. We experimentally confirm that the distinction matters, i.e., small errors amplify during training to produce significantly observable difference in final models trained. We hope our results serve as a cautionary note on the role of algebraic precision in forgery definitions and related security arguments.",
+  "abstract_source_id": "src-abstract-ccs-2023-cb192c53",
   "venue": "ccs",
   "year": 2023,
   "track_or_session": "Machine Learning Attacks II (Machine Learning and Security)",
@@ -193,6 +195,19 @@
       "official": false,
       "supports": [
         "published title, author order, and page span"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2023-cb192c53",
+      "url": "https://api.openalex.org/works/doi:10.1145/3576915.3623093?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Unforgeability in Stochastic Gradient Descent",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:08:34Z",
+      "content_hash": "sha256:3a2f1b0c26108df6a3b01e473073d35da2aaaff03c3149dddb02734a7189ece0",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

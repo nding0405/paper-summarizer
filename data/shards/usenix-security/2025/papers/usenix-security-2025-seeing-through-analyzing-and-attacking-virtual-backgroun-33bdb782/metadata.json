@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-seeing-through-analyzing-and-attacking-virtual-backgroun-33bdb782",
   "title": "Seeing Through: Analyzing and Attacking Virtual Backgrounds in Video Calls",
+  "abstract": "Video calls have become an essential part of remote work. They enable employees to collaborate from different locations, including their home. Transmitting video from the personal living environment, however, poses a privacy risk: Colleagues may gain insight into private information through details in the background. To limit this risk, video conferencing services implement virtual backgrounds that conceal the real environment during a video call. Unfortunately, this protection suffers from imperfections and pixels from the environment occasionally become visible.\n\nIn this paper, we investigate this privacy leak. We analyze the virtual background techniques used in two major video conferencing services (Zoom and Google) and determine how pixels of the environment leak. Based on this analysis, we propose a reconstruction attack: This attack removes the virtual background by re-purposing the video conferencing software and uses semantic segmentation to filter out the video caller. As a result, only pixels leaking from the environment remain and can be aggregated into a reconstructed image.\n\nWe examine the efficacy of this attack in a quantitative and qualitative evaluation. In comparison to previous studies, our attack recovers at least 53% more leaked pixels from a video call, exposing larger areas of the environment. We thus conclude that virtual backgrounds currently do not provide an adequate protection in practice.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-33bdb782",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Privacy 3: Attacks",
@@ -196,6 +198,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-33bdb782",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/weissberg",
+      "kind": "paper-page",
+      "title": "Seeing Through: Analyzing and Attacking Virtual Backgrounds in Video Calls",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:21:39Z",
+      "content_hash": "sha256:4b3b3f21d396bf5ce7dc83354cd454f742249f06cf2f224aba3676708f0cca1b",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

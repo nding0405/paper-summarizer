@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-static-detection-of-toctou-bugs-caused-by-kernel-races-736f4fa4",
   "title": "Static Detection of TOCTOU Bugs Caused by Kernel Races",
+  "abstract": "The TOCTOU (Time Of Check to Time Of Use) bug is a well-known security issue in kernel code, because it bypasses security checks and leads to unexpected behaviors that can cause serious problems like system crashes and privilege escalation. According to our study on Linux kernel patches, kernel race is the most common root cause of kernel TOCTOU bugs. However, due to the complexity of kernel concurrency logic and non-determinism of thread scheduling, there is still no systematic approach that focuses on detecting TOCTOU bugs caused by kernel races.\n\nIn this paper, we design KERAT, the first systematic static approach for detecting TOCTOU bugs caused by kernel races. Indeed, such TOCTOU bugs are introduced by atomicity violations about the check-use operations of specific shared variables. Thus, KERAT performs bug detection by statically mining and checking the atomicity rules about shared variables from kernel code. Specifically, KERAT has two key techniques: (1) an atomicity-rule mining method to effectively identify which lock should protect the check-use operations of which shared variable; and (2) a state-based validation strategy to detect TOCTOU bugs that violate the mined atomicity rules based on state machines encoding of common bug patterns. We have evaluated KERAT on Linux-6.8 and FreeBSD-14.1, and found 351 real bugs. Among these bugs, 287 are identified as harmful, and 65 of them have been confirmed by kernel developers. 10 bugs have received CVE IDs.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-736f4fa4",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "System Security 1",
@@ -135,6 +137,19 @@
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening",
         "prepublication PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-736f4fa4",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/han",
+      "kind": "paper-page",
+      "title": "Static Detection of TOCTOU Bugs Caused by Kernel Races",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:25:42Z",
+      "content_hash": "sha256:ea44dc1942125735d2a8c843c5c5df02bfad434430bbabbcb7cfdf8722128fe9",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

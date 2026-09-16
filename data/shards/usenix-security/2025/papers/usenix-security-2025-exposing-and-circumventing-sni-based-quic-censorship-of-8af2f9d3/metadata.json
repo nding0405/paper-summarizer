@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-exposing-and-circumventing-sni-based-quic-censorship-of-8af2f9d3",
   "title": "Exposing and Circumventing SNI-based QUIC Censorship of the Great Firewall of China",
+  "abstract": "Despite QUIC handshake packets being encrypted, the Great Firewall of China (GFW) has begun blocking QUIC connections to specific domains since April 7, 2024. In this work, we measure and characterize the GFW's censorship of QUIC to understand how and what it blocks. Our measurements reveal that the GFW decrypts QUIC Initial packets at scale, applies heuristic filtering rules, and uses a blocklist distinct from its other censorship mechanisms. We expose a critical flaw in this new system: the computational overhead of decryption reduces its effectiveness under moderate traffic loads. We also demonstrate that this censorship mechanism can be weaponized to block UDP traffic between arbitrary hosts in China and the rest of the world. We collaborate with various open-source communities to integrate circumvention strategies into Mozilla Firefox, the quic-go library, and all major QUIC-based circumvention tools.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-8af2f9d3",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Network Security 1: Censorship, Evasion, and Trustworthy Infrastructure",
@@ -196,6 +198,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-8af2f9d3",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/zohaib",
+      "kind": "paper-page",
+      "title": "Exposing and Circumventing SNI-based QUIC Censorship of the Great Firewall of China",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:19:47Z",
+      "content_hash": "sha256:9b2d939122e7761b6b2636615d42e8def1ecd7d4ca7fe417f4aa5c5c96acf048",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

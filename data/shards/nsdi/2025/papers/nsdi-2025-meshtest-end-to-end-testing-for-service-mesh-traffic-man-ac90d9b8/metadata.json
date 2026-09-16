@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2025-meshtest-end-to-end-testing-for-service-mesh-traffic-man-ac90d9b8",
   "title": "MeshTest: End-to-End Testing for Service Mesh Traffic Management",
+  "abstract": "We present MeshTest, the first end-to-end testing framework for traffic management of service mesh. The key idea of MeshTest is to automatically generate input configurations with end-to-end semantics, and then create real test request suites on each input. There are two technical challenges. First, the input space of service mesh configurations is large and complex. The input configurations should be carefully orchestrated to form end-to-end service flow paths. Second, the abstract output network behavior cannot be directly checked for correctness, and we need to generate a set of real requests that are capable of checking possible behaviors. To address these challenges, we model the service flows of traffic management in service mesh, and propose a novel Service Flow Exploration technique to enumerate all possible configuration resources and interactions between them in the input configuration. We design and implement MeshTest, which contains an automatic input configuration generator based on Service Flow Exploration and a Service Mesh Oracle which leverages formal methods to generate test request suites. MeshTest has found 23 new bugs (19 confirmed and 10 fixed) in two popular service mesh systems, Istio and Linkerd.",
+  "abstract_source_id": "src-abstract-nsdi-2025-ac90d9b8",
   "venue": "nsdi",
   "year": 2025,
   "track_or_session": "Failure and Diagnosis",
@@ -140,6 +142,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2025-ac90d9b8",
+      "url": "https://www.usenix.org/conference/nsdi25/presentation/zheng-naiqian",
+      "kind": "paper-page",
+      "title": "MeshTest: End-to-End Testing for Service Mesh Traffic Management",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:04:18Z",
+      "content_hash": "sha256:3723c166056362b1bbcbe61879e5715ca301fcf397cec4c4294fa5053a2f9571",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

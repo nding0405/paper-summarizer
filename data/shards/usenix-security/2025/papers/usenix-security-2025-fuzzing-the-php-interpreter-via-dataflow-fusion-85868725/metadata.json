@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-fuzzing-the-php-interpreter-via-dataflow-fusion-85868725",
   "title": "Fuzzing the PHP Interpreter via Dataflow Fusion",
+  "abstract": "PHP, a dominant scripting language in web development, powers a vast range of websites, from personal blogs to major platforms. While existing research primarily focuses on PHP application-level security issues like code injection, memory errors within the PHP interpreter have been largely overlooked. These memory errors, prevalent due to the PHP interpreter's extensive C codebase, pose significant risks to the confidentiality, integrity, and availability of PHP servers. This paper introduces FlowFusion, the first automatic fuzzing framework to detect memory errors in the PHP interpreter. FlowFusion leverages dataflow as an efficient representation of test cases maintained by PHP developers, merging two or more test cases to produce fused test cases with more complex code semantics. Moreover, FlowFusion employs strategies such as test mutation, interface fuzzing, and environment crossover to increase bug finding. In our evaluation, FlowFusion found 158 unknown bugs in the PHP interpreter, with 125 fixed and 11 confirmed. Comparing FlowFusion against the official test suite and a naive test concatenation approach, FlowFusion can detect new bugs that these methods miss, while also achieving greater code coverage. FlowFusion also outperformed state-of-the-art fuzzers AFL++ and Polyglot, covering 24% more lines of code after 24 hours of fuzzing. FlowFusion has gained wide recognition among PHP developers and is now integrated into the official PHP toolchain.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-85868725",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Software Security 3: Fuzzing",
@@ -196,6 +198,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-85868725",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/jiang-yuancheng",
+      "kind": "paper-page",
+      "title": "Fuzzing the PHP Interpreter via Dataflow Fusion",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:20:00Z",
+      "content_hash": "sha256:40ea82c3ceb9840cd2433ec917656e6ad96e69560e9d66a6112b0a2c7eb3224f",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2023-treesync-authenticated-group-management-for-messaging-la-4a735b31",
   "title": "TreeSync: Authenticated Group Management for Messaging Layer Security",
+  "abstract": "Messaging Layer Security (MLS), currently undergoing standardization at the IETF, is an asynchronous group messaging protocol that aims to be efficient for large dynamic groups, while providing strong guarantees like forward secrecy (FS) and post-compromise security (PCS). While prior work on MLS has extensively studied its group key establishment component (called TreeKEM), many flaws in early designs of MLS have stemmed from its group integrity and authentication mechanisms that are not as well-understood. In this work, we identify and formalize TreeSync: a sub-protocol of MLS that specifies the shared group state, defines group management operations, and ensures consistency, integrity, and authentication for the group state across all members.\n\nWe present a precise, executable, machine-checked formal specification of TreeSync, and show how it can be composed with other components to implement the full MLS protocol. Our specification is written in F* and serves as a reference implementation of MLS; it passes the RFC test vectors and is interoperable with other MLS implementations. Using the DY* symbolic protocol analysis framework, we formalize and prove the integrity and authentication guarantees of TreeSync, under minimal security assumptions on the rest of MLS. Our analysis identifies a new attack and we propose several changes that have been incorporated in the latest MLS draft. Ours is the first testable, machine-checked, formal specification for MLS, and should be of interest to both developers and researchers interested in this upcoming standard.",
+  "abstract_source_id": "src-abstract-usenix-security-2023-4a735b31",
   "venue": "usenix-security",
   "year": 2023,
   "track_or_session": "Secure Messaging",
@@ -133,6 +135,19 @@
       "official": true,
       "supports": [
         "authors, affiliations when published, abstract, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2023-4a735b31",
+      "url": "https://www.usenix.org/conference/usenixsecurity23/presentation/wallez",
+      "kind": "paper-page",
+      "title": "TreeSync: Authenticated Group Management for Messaging Layer Security",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:13:25Z",
+      "content_hash": "sha256:2f70a53a04baef59fda6998acc433dc0f836c342b04a82fda4d71f553eca5fad",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

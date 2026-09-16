@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2023-fine-grained-poisoning-attack-to-local-differential-priv-97e19767",
   "title": "Fine-grained Poisoning Attack to Local Differential Privacy Protocols for Mean and Variance Estimation",
+  "abstract": "Although local differential privacy (LDP) protects individual users' data from inference by an untrusted data curator, recent studies show that an attacker can launch a data poisoning attack from the user side to inject carefully-crafted bogus data into the LDP protocols in order to maximally skew the final estimate by the data curator.\n\nIn this work, we further advance this knowledge by proposing a new fine-grained attack, which allows the attacker to fine-tune and simultaneously manipulate mean and variance estimations that are popular analytical tasks for many real-world applications. To accomplish this goal, the attack leverages the characteristics of LDP to inject fake data into the output domain of the local LDP instance. We call our attack the output poisoning attack (OPA). We observe a security-privacy consistency where a small privacy loss enhances the security of LDP, which contradicts the known security-privacy trade-off from prior work. We further study the consistency and reveal a more holistic view of the threat landscape of data poisoning attacks on LDP. We comprehensively evaluate our attack against a baseline attack that intuitively provides false input to LDP. The experimental results show that OPA outperforms the baseline on three real-world datasets. We also propose a novel defense method that can recover the result accuracy from polluted data collection and offer insight into the secure LDP design.",
+  "abstract_source_id": "src-abstract-usenix-security-2023-97e19767",
   "venue": "usenix-security",
   "year": 2023,
   "track_or_session": "Poisoning",
@@ -154,6 +156,19 @@
       "official": true,
       "supports": [
         "authors, affiliations when published, abstract, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2023-97e19767",
+      "url": "https://www.usenix.org/conference/usenixsecurity23/presentation/li-xiaoguang",
+      "kind": "paper-page",
+      "title": "Fine-grained Poisoning Attack to Local Differential Privacy Protocols for Mean and Variance Estimation",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:11:01Z",
+      "content_hash": "sha256:f15a9d6c59ff797aab7707aeed8c0768a0348b9e03eada66528d4d0e6eab3c06",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

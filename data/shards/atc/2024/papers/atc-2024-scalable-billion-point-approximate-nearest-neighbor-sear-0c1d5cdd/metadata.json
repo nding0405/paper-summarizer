@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "atc-2024-scalable-billion-point-approximate-nearest-neighbor-sear-0c1d5cdd",
   "title": "Scalable Billion-point Approximate Nearest Neighbor Search Using SmartSSDs",
+  "abstract": "Approximate nearest neighbor search (ANNS) in high-dimensional vector spaces has become increasingly crucial in database and machine learning applications. Most previous ANNS algorithms require TB-scale memory to store indices of billion-scale datasets, making their deployment extremely expensive for high-performance search. The emerging SmartSSD technology offers an opportunity to achieve scalable ANNS via near data processing (NDP). However, there remain challenges to directly adopt existing ANNS algorithms on multiple SmartSSDs.\n\nIn this paper, we present SmartANNS, a SmartSSD-empowered billion-scale ANNS solution based on a hierarchical indexing methodology. We propose several novel designs to achieve near-linear scaling with multiple SmartSSDs. First, we propose a \"host CPUs + SmartSSDs'' cooperative architecture incorporated with hierarchical indices to significantly reduce data accesses and computations on SmartSSDs. Second, we propose dynamic task scheduling based on optimized data layout to achieve both load balancing and data reusing for multiple SmartSSDs. Third, we further propose a learning-based shard pruning algorithm to eliminate unnecessary computations on SmartSSDs. We implement SmartANNS using Samsung’s commercial SmartSSDs. Experimental results show that SmartANNS can improve query per second (QPS) by up to 10.7× compared with the state-of-the-art SmartSSD-based ANNS solution—CSDANNS. Moreover, SmartANNS can achieve near-linear performance scalability for large-scale datasets using multiple SmartSSDs.",
+  "abstract_source_id": "src-abstract-atc-2024-0c1d5cdd",
   "venue": "atc",
   "year": 2024,
   "track_or_session": "Storage 2",
@@ -201,6 +203,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-atc-2024-0c1d5cdd",
+      "url": "https://www.usenix.org/conference/atc24/presentation/tian",
+      "kind": "paper-page",
+      "title": "Scalable Billion-point Approximate Nearest Neighbor Search Using SmartSSDs",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T21:59:02Z",
+      "content_hash": "sha256:11d5bda97e4ab9b761a65d0b5d8837840774831f8470c095b9bf38e758f66e72",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

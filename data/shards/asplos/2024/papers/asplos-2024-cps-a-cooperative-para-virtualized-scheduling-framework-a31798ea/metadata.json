@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2024-cps-a-cooperative-para-virtualized-scheduling-framework-a31798ea",
   "title": "CPS: A Cooperative Para-virtualized Scheduling Framework for Manycore Machines",
+  "abstract": "Today's cloud platforms offer large virtual machine (VM) instances with multiple virtual CPUs (vCPU) on manycore machines. These machines typically have a deep memory hierarchy to enhance communication between cores. Although previous researches have primarily focused on addressing the performance scalability issues caused by the double scheduling problem in virtualized environments, they mainly concentrated on solving the preemption problem of synchronization primitives and the traditional NUMA architecture. This paper specifically targets a new aspect of scalability issues caused by the absence of runtime hypervisor-internal states (RHS). We demonstrate two typical RHS problems, namely the invisible pCPU (physical CPU) load and dynamic cache group mapping. These RHS problems result in a collapse in VM performance and low CPU utilization because the guest VM lacks visibility into the latest runtime internal states maintained by the hypervisor, such as pCPU load and vCPU-pCPU mappings. Consequently, the guest VM makes inefficient scheduling decisions.",
+  "abstract_source_id": "src-abstract-asplos-2024-a31798ea",
   "venue": "asplos",
   "year": 2024,
   "track_or_session": "Session 11B: Scheduling",
@@ -253,6 +255,19 @@
       "official": false,
       "supports": [
         "Indexed alternate-version and institutional-copy links; not used as the authoritative relevance source."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2024-a31798ea",
+      "url": "https://api.openalex.org/works/doi:10.1145/3623278.3624762?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "CPS: A Cooperative Para-virtualized Scheduling Framework for Manycore Machines",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:00:00Z",
+      "content_hash": "sha256:fea58e61cf5c96b8e8f8832f18cf1c339bb0fccd46dc85ce2982e057dde99de1",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

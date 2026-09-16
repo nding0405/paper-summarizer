@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2024-boosting-practical-control-flow-integrity-with-complete-b19afc88",
   "title": "Boosting Practical Control-Flow Integrity with Complete Field Sensitivity and Origin Awareness",
+  "abstract": "Control-flow integrity (CFI) is a strong and efficient defense mechanism against memory-corruption attacks.The practical versions of CFI, which have been integrated into compilers, employ static analysis to collect all possibly valid target functions of indirect calls.They are however less effective because the static analysis is imprecise.While more precise CFI techniques have been proposed, such as dynamic CFI, they are not yet practical due to issues on performance, compatibility, and deployability.We believe that to be practical, CFI based on static analysis is still the promising direction.However, these years have not seen much progress on the effectiveness of such practical CFI.This paper aims to boost the effectiveness of practical CFI by dramatically optimizing the target-function sets (aka equivalence class or EC) of indirect calls.We first identify two fundamental limitations that lead to the imprecision of static indirect-call analysis: incomplete field sensitivity due to variable field indexes and the unawareness of the origins of point-to targets.We then propose two novel analysis techniques, complete field sensitivity and origin awareness, which handle variable field indexes and distinguish target origins.The techniques dramatically reduce the size of target functions.To enforce the origin awareness, we further employ Intel Memory Protection Keys to safely store the origin information.We implement our techniques as a system called ECCut.The evaluation results show that compared to the mainline LLVM CFI, ECCut achieves a substantial reduction of 94.8% and 90.3% in the average and the largest EC sizes.While compared to the state-of-the-art origin-aware CFI (i.e., OS-CFI), ECCut reduces the average and the largest EC sizes by 90.2% and 89.3% respectively.Additionally,",
+  "abstract_source_id": "src-abstract-ccs-2024-b19afc88",
   "venue": "ccs",
   "year": 2024,
   "track_or_session": "Cycle 1",
@@ -180,6 +182,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2024-b19afc88",
+      "url": "https://api.openalex.org/works/doi:10.1145/3658644.3670308?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Boosting Practical Control-Flow Integrity with Complete Field Sensitivity and Origin Awareness",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:09:05Z",
+      "content_hash": "sha256:68a99f3220922c1e8dea4bef488a74ccf13eadd267fb4c9e7afc804a6a7787e2",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

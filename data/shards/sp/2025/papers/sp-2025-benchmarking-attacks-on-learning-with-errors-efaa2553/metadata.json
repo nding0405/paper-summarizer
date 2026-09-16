@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2025-benchmarking-attacks-on-learning-with-errors-efaa2553",
   "title": "Benchmarking Attacks on Learning with Errors",
+  "abstract": "Lattice cryptography schemes based on the learning with errors (LWE) hardness assumption have been standardized by NIST for use as post-quantum cryptosystems, and by HomomorphicEncryption.org for performing encrypted computations on sensitive data. Thus, understanding their concrete security is critical. Most work on LWE security focuses on theoretical estimates of attack performance, which is important but may overlook attack nuances arising in real-world implementations. The sole existing concrete benchmarking effort, the Darmstadt Lattice Challenge, does not include benchmarks relevant to the standardized LWE parameter choices-such as small secret and small error distributions, and Ring-LWE (RLWE) and Module-LWE (MLWE) variants. To improve our understanding of concrete LWE security, we provide the first benchmarks for LWE secret recovery on standardized parameters, for small and low-weight (sparse) secrets. We evaluate four LWE attacks in these settings to serve as a baseline: the Search-LWE attacks uSVP [9], SALSA [51], and Cool&Cruel [44], and the Decision-LWE attack: Dual Hybrid Meet-in-the-Middle (MitM) [21]. We extend the SALSA and Cool&Cruel attacks in significant ways, and implement and scale up MitM attacks for the first time. For example, we recover hamming weight 9 - 11 binomial secrets for KYBER $(\\kappa=2)$ parameters in 28 - 36 hours with SALSA and Cool&Cruel, while we find that MitM can solve Decision-LWE instances for hamming weights up to 4 in under an hour for Kyber parameters, while uSVP attacks do not recover any secrets after running for more than 1100 hours. We also compare concrete performance against theoretical estimates. Finally, we open source the code to enable future research.",
+  "abstract_source_id": "src-abstract-sp-2025-efaa2553",
   "venue": "sp",
   "year": 2025,
   "track_or_session": "Cycle 1",
@@ -154,6 +156,19 @@
       "official": true,
       "supports": [
         "DOI, authors, affiliations, abstract, publication date, pages, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2025-efaa2553",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Benchmarking Attacks on Learning with Errors",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:42Z",
+      "content_hash": "sha256:d62dac834635b4cd1890a53da454ceae7aaa151189662d990ac591dfd5cb6b3e",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

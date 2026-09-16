@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2024-certificate-transparency-revisited-the-public-inspection-395068f9",
   "title": "Certificate Transparency Revisited: The Public Inspections on Third-party Monitors",
+  "abstract": "The certificate transparency (CT) framework has been deployed to improve the accountability of the TLS certificate ecosystem. However, the current implementation of CT does not enforce or guarantee the correct behavior of third-party monitors, which are essential components of the CT framework, and raises security and reliability concerns. For example, recent studies reported that 5 popular third-party CT monitors cannot always return the complete set of certificates inquired by users, which fundamentally impairs the protection that CT aims to offer. This work revisits the CT design and proposes an additional component of the CT framework, CT watchers. A watcher acts as an inspector of third-party CT monitors to detect any misbehavior by inspecting the certificate search services of a third-party monitor and detecting any inconsistent results returned by multiple monitors. It also semi-automatically analyzes potential causes of the inconsistency, e.g., a monitor’s misconfiguration, implementation flaws, etc. We implemented a prototype of the CT watcher and conducted a 52-day trial operation and several confirmation experiments involving 8.26M unique certificates of about 6,000 domains. From the results returned by 6 active third-party monitors in the wild, the prototype detected 14 potential design or implementation issues of these monitors, demonstrating its effectiveness in public inspections on third-party monitors and the potential to improve the overall reliability of CT.",
+  "abstract_source_id": "src-abstract-ndss-2024-395068f9",
   "venue": "ndss",
   "year": 2024,
   "track_or_session": "Fall submission cycle",
@@ -231,6 +233,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2024-395068f9",
+      "url": "https://www.ndss-symposium.org/ndss-paper/certificate-transparency-revisited-the-public-inspections-on-third-party-monitors/",
+      "kind": "paper-page",
+      "title": "Certificate Transparency Revisited: The Public Inspections on Third-party Monitors",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:17:46Z",
+      "content_hash": "sha256:afb915307ba0a13d7a949924f1c487699f438215ec7a33c344bed6b590ff2efe",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

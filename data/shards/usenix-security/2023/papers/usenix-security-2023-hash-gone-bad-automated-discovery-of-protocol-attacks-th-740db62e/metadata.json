@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2023-hash-gone-bad-automated-discovery-of-protocol-attacks-th-740db62e",
   "title": "Hash Gone Bad: Automated discovery of protocol attacks that exploit hash function weaknesses",
+  "abstract": "Most cryptographic protocols use cryptographic hash functions as a building block. The security analyses of these protocols typically assume that the hash functions are perfect (such as in the random oracle model). However, in practice, most widely deployed hash functions are far from perfect -- and as a result, the analysis may miss attacks that exploit the gap between the model and the actual hash function used.\n\nWe develop the first methodology to systematically discover attacks on security protocols that exploit weaknesses in widely deployed hash functions. We achieve this by revisiting the gap between theoretical properties of hash functions and the weaknesses of real-world hash functions, from which we develop a lattice of threat models. For all of these threat models, we develop fine-grained symbolic models.\n\nOur methodology's fine-grained models cannot be directly encoded in existing state-of-the-art analysis tools by just using their equational reasoning. We therefore develop extensions for the two leading tools, Tamarin and Proverif. In extensive case studies using our methodology, the extended tools rediscover all attacks that were previously reported for these protocols and discover several new variants.",
+  "abstract_source_id": "src-abstract-usenix-security-2023-740db62e",
   "venue": "usenix-security",
   "year": 2023,
   "track_or_session": "Attacks on Cryptography",
@@ -175,6 +177,19 @@
       "official": true,
       "supports": [
         "authors, affiliations when published, abstract, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2023-740db62e",
+      "url": "https://www.usenix.org/conference/usenixsecurity23/presentation/cheval",
+      "kind": "paper-page",
+      "title": "Hash Gone Bad: Automated discovery of protocol attacks that exploit hash function weaknesses",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:11:20Z",
+      "content_hash": "sha256:38ca845cdff86a9f149d34b662700b1bc79536a5834702c15002fe967437fe8b",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

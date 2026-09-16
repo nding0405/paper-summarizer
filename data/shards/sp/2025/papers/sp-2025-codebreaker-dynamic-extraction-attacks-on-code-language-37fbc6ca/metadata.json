@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2025-codebreaker-dynamic-extraction-attacks-on-code-language-37fbc6ca",
   "title": "Codebreaker: Dynamic Extraction Attacks on Code Language Models",
+  "abstract": "With the rapid adoption of LLM-based code assistants to enhance programming experiences, concerns over extraction attacks targeting private training data have intensified. These attacks specifically aim to extract Personal Information (PI) embedded within the training data of code generation models (CodeLLMs). Existing methods, using either manual or semi-automated techniques, have successfully extracted sensitive data from these CodeLLMs. However, the limited amount of data currently retrieved by extraction attacks risks significantly underestimating the true extent of training data leakage. In this paper, we propose an automatic PI data extraction attack framework against LLM-based code assistants, named Codebreaker. This framework is built on two core components: (i) the introduction of semantic entropy, which evaluates the likelihood of a prompt triggering the model to respond with training data; and (ii) an automatic dynamic mutation mechanism that seamlessly integrates with Codebreaker, reinforcing the iterative process across the framework and promoting greater interconnection between different PI elements within a single response. This boosts reasoning diversity, model memorization, and finally attack performance. Using six series of open-source CodeLLMs (i.e., CodeParrot, StarCoder2, Code Llama, CodeGemma, DeepSeek-Coder, DeepSeek-V3) and two commercial code assistants (i.e., CodeFuse and GPT), we demonstrate the effectiveness of our proposed framework: (i) Codebreaker outperforms all current state-of-the-art extraction attacks by 6.22% ~ 44.9% (averaging 21.79%); (ii) when PI within a single response originates from the same GitHub repository, our framework - considering multiple interconnections in the response - exceeds others by 3.88% ~ 32.37% (averaging 15.31%). Furthermore, we discuss potential defenses, highlighting the urgent need for stronger measures to prevent PI leakage at the base model level.",
+  "abstract_source_id": "src-abstract-sp-2025-37fbc6ca",
   "venue": "sp",
   "year": 2025,
   "track_or_session": "Cycle 2",
@@ -217,6 +219,19 @@
       "official": true,
       "supports": [
         "DOI, authors, affiliations, abstract, publication date, pages, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2025-37fbc6ca",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Codebreaker: Dynamic Extraction Attacks on Code Language Models",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:42Z",
+      "content_hash": "sha256:d62dac834635b4cd1890a53da454ceae7aaa151189662d990ac591dfd5cb6b3e",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

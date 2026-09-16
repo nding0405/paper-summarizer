@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-do-you-need-a-receipt-anonymous-credential-revocation-at-fa3fd407",
   "title": "Do You Need a Receipt? Anonymous Credential Revocation at Continental Scale via Private Record Certification",
+  "abstract": "A key challenge in digital credential systems is revocation, that is, the ability to invalidate credentials post-issuance and verify their status upon presentation. While anonymous credentials enhance privacy over classical credentials (e.g., by providing unlinkability), they complicate revocation. Existing revocation schemes for anonymous credentials often suffer from high client or verifier computation, long delays before revocation takes effect (e.g., epoch-based settings), or require updates to all users with each revocation.\n\nWe present an efficient, real-time revocation system for anonymous credentials with decentralized revocation authorities based on a novel primitive called Private Record Certification (PRC). PRC enables users to obtain a certificate for a record stored in a server-managed database without the servers learning which record was requested. This primitive is of independent interest, and we construct it by combining techniques from private information retrieval and secure multi-party computation. Our revocation scheme outsources its computation to the revocation authorities and has minimal overhead for clients and verifiers, while ensuring the communication costs are sublinear in the number of credentials. We build a prototype and demonstrate that our system achieves sub-second real-time latency for PRC requests, at a scale of over 1 billion credentials, with an online operational cost of 2.5$ per server for processing 1 million PRC requests.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-fa3fd407",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Privacy Anonymity 4",
@@ -155,6 +157,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-fa3fd407",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/edalatnejad",
+      "kind": "paper-page",
+      "title": "Do You Need a Receipt? Anonymous Credential Revocation at Continental Scale via Private Record Certification",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:23:45Z",
+      "content_hash": "sha256:6b1e94a36d7af8396d6723317121371faf71a91aaf2caf461874f391c14aa421",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

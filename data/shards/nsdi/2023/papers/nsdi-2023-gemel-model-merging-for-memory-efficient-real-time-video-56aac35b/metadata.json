@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2023-gemel-model-merging-for-memory-efficient-real-time-video-56aac35b",
   "title": "Gemel: Model Merging for Memory-Efficient, Real-Time Video Analytics at the Edge",
+  "abstract": "Video analytics pipelines have steadily shifted to edge deployments to reduce bandwidth overheads and privacy violations, but in doing so, face an ever-growing resource tension. Most notably, edge-box GPUs lack the memory needed to concurrently house the growing number of (increasingly complex) models for real-time inference. Unfortunately, existing solutions that rely on time/space sharing of GPU resources are insufficient as the required swapping delays result in unacceptable frame drops and accuracy loss. We present model merging, a new memory management technique that exploits architectural similarities between edge vision models by judiciously sharing their layers (including weights) to reduce workload memory costs and swapping delays. Our system, Gemel, efficiently integrates merging into existing pipelines by (1) leveraging several guiding observations about per-model memory usage and inter-layer dependencies to quickly identify fruitful and accuracy-preserving merging configurations, and (2) altering edge inference schedules to maximize merging benefits. Experiments across diverse workloads reveal that Gemel reduces memory usage by up to 60.7%, and improves overall accuracy by 8-39% relative to time or space sharing alone.",
+  "abstract_source_id": "src-abstract-nsdi-2023-56aac35b",
   "venue": "nsdi",
   "year": 2023,
   "track_or_session": "Video",
@@ -224,6 +226,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2023-56aac35b",
+      "url": "https://www.usenix.org/conference/nsdi23/presentation/padmanabhan",
+      "kind": "paper-page",
+      "title": "Gemel: Model Merging for Memory-Efficient, Real-Time Video Analytics at the Edge",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:02:08Z",
+      "content_hash": "sha256:3cfc6e62d156d4938ad37a7c952150a3966ce138bea00f89a7b98abe421bcc05",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

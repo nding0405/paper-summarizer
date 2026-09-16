@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2024-cancal-towards-real-time-and-lightweight-ransomware-dete-80361953",
   "title": "CanCal: Towards Real-time and Lightweight Ransomware Detection and Response in Industrial Environments",
+  "abstract": "Ransomware attacks have emerged as one of the most significant cybersecurity threats. Despite numerous methods proposed for detecting and defending against ransomware, existing approaches face two fundamental limitations in large-scale industrial applications: (1) Behavior-based detection engines suffer from the enormous overhead of monitoring all processes and resource constraints for model inference, failing to meet the requirements for real-time detection; (2) Decoy-based detection engines generate an overwhelming number of false positives in large-scale industrial clusters, leading to intolerable disruptions to critical processes and excessive inspection efforts from security analysts. To address these challenges, we propose CanCal, a real-time and lightweight ransomware detection system. Specifically, instead of indiscriminately analyzing all processes, CanCal selectively filters suspicious processes by the monitoring layers and then performs in-depth behavioral analysis to isolate ransomware activities from benign operations, minimizing alert fatigue while ensuring lightweight computational and storage overhead. The experimental results on a large-scale industrial environment (1,761 ransomware, ~ 3 million events, continuous test over 5 months) indicate that CanCal achieves a remarkable 99.65% true positive rate on 555,678 unknown ransomware behavior events, with near-zero false positives. CanCal is as effective as state-of-the-art techniques while enabling rapid inference within 30ms and real-time response within a maximum of 3 seconds. CanCal dramatically reduces average CPU utilization by 91.04% (from 6.7% to 0.6%) and peak CPU utilization by 76.69% (from 26.6% to 6.2%), while avoiding 76.50% (from 3,192 to 750) of the inspection efforts from security analysts. By the time of this writing, CanCal has been integrated into a commercial product and successfully deployed on 3.32 million endpoints for over a year. From March 2023 to April 2024, CanCal successfully detected and thwarted 61 ransomware attacks. A detailed manual forensic analysis of 27 ransomware attacks from March to June 2023 (including 13 n-day exploits and 5 high-risk zero-day attacks) demonstrates the effectiveness of CanCal in combating sophisticated and unknown ransomware threats in real-world scenarios.",
+  "abstract_source_id": "src-abstract-ccs-2024-80361953",
   "venue": "ccs",
   "year": 2024,
   "track_or_session": "Cycle 2",
@@ -180,6 +182,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2024-80361953",
+      "url": "https://api.openalex.org/works/doi:10.1145/3658644.3690269?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "CanCal: Towards Real-time and Lightweight Ransomware Detection and Response in Industrial Environments",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:09:07Z",
+      "content_hash": "sha256:1929f80103140a24402bc4b91ccc9640d2d73a001f231c1c065f207021f8a8a5",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

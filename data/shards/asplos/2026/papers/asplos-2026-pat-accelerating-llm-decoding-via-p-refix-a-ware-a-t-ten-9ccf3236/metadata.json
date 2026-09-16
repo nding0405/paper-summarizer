@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2026-pat-accelerating-llm-decoding-via-p-refix-a-ware-a-t-ten-9ccf3236",
   "title": "PAT: Accelerating LLM Decoding via P refix- A ware A t tention with Resource Efficient Multi-Tile Kernel",
+  "abstract": "LLM serving is increasingly dominated by decode attention, which is a memory-bound operation due to massive KV cache loading from global memory. Meanwhile, real-world workloads exhibit substantial, hierarchical shared prefixes across requests (e.g., system prompts, tools/templates, RAG). Existing attention implementations fail to fully exploit prefix sharing: one-query-per-CTA execution repeatedly loads shared prefix KV cache, while one-size-fits-all tiling leaves on-chip resources idle and exacerbates bubbles for uneven KV lengths. These choices amplify memory bandwidth pressure and stall memory-bound decode attention.",
+  "abstract_source_id": "src-abstract-asplos-2026-9ccf3236",
   "venue": "asplos",
   "year": 2026,
   "track_or_session": "Session 1B: LLM Serving: Latency & Scheduling",
@@ -278,6 +280,19 @@
       "official": false,
       "supports": [
         "Indexed abstract used for strict relevance classification and indexed arXiv identifier where available."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2026-9ccf3236",
+      "url": "https://api.openalex.org/works/doi:10.1145/3779212.3790200?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "PAT: Accelerating LLM Decoding via P refix- A ware A t tention with Resource Efficient Multi-Tile Kernel",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:05:39Z",
+      "content_hash": "sha256:a00d243ffa846a5076c9759629e4b342aeaf85fbc7d07c8d9fddeba45df3c60a",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2024-caravan-practical-online-learning-of-in-network-ml-model-5482879c",
   "title": "Caravan: Practical Online Learning of In-Network ML Models with Labeling Agents",
+  "abstract": "Recent work on in-network machine learning (ML) anticipates offline models to operate well in modern networking environments. However, upon deployment, these models struggle to cope with fluctuating traffic patterns and network conditions and, therefore, must be validated and updated frequently in an online fashion.\n\nThis paper presents CARAVAN, a practical online learning system for in-network ML models. We tackle two primary challenges in facilitating online learning for networking: (a) the automatic labeling of evolving traffic and (b) the efficient monitoring and detection of model performance degradation to trigger retraining. CARAVAN repurposes existing systems (e.g., heuristics, access control lists, and foundation models)— not directly suitable for such dynamic environments—into high-quality labeling sources for generating labeled data for online learning. CARAVAN also introduces a new metric, accuracy proxy, to track model degradation and potential drift to efficiently trigger retraining. Our evaluations show that CARAVAN's labeling strategy enables in-network ML models to closely follow the changes in the traffic dynamics with a 30.3% improvement in F1 score (on average), compared to offline models. Moreover, CARAVAN sustains comparable inference accuracy to that of a continuous-learning system while consuming 61.3% less GPU compute time (on average) via accuracy proxy and retraining triggers.",
+  "abstract_source_id": "src-abstract-osdi-2024-5482879c",
   "venue": "osdi",
   "year": 2024,
   "track_or_session": "Deep Learning",
@@ -222,6 +224,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2024-5482879c",
+      "url": "https://www.usenix.org/conference/osdi24/presentation/zhang-qizheng",
+      "kind": "paper-page",
+      "title": "Caravan: Practical Online Learning of In-Network ML Models with Labeling Agents",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:06:57Z",
+      "content_hash": "sha256:0badda818181b71571285c074f614df87c750e73b56b616582136e700c253e4b",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

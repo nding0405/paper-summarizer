@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sigcomm-2026-theseus-runtime-adaptive-gpu-collective-communication-wi-dbe8789f",
   "title": "Theseus: Runtime-Adaptive GPU Collective Communication with Hot-Swappable Schedules",
+  "abstract": "Current GPU Collective Communication Libraries (CCLs) employ predefined schedules optimized for stable environments. Their supported schedules and selection logic are fixed at communicator initialization, which fails to account for evolving runtime conditions, such as workload characteristics and hardware health status. Consequently, long-running GPU jobs experience suboptimal performance after hours or days of execution, which translates into longer job completion times and wasted GPU cluster resources. To address this problem, we present Theseus, a novel CCL backend that provides schedule-level runtime adaptivity. It admits user-defined schedules and selection policies. As runtime conditions change, Theseus selects suitable schedules using cluster-wide runtime attributes beyond CCL-internal metrics. Moreover, it hot-swaps from the previous schedule consistently across GPUs with low overhead. Theseus acts as a drop-in replacement to facilitate integration. We evaluate Theseus extensively on various GPU workloads with intuitive policies. Compared with NCCL, Theseus achieves up to 1.61X speedup of communication time in stable environments and 2.46X in dynamic environments. It improves end-to-end job completion time by up to 1.84X while incurring comparable or lower overhead.",
+  "abstract_source_id": "src-abstract-dbe8789f",
   "venue": "sigcomm",
   "year": 2026,
   "track_or_session": "Research Session 3: Collective Communication Algorithms — Research Paper",
@@ -338,6 +340,19 @@
       "official": true,
       "supports": [
         "official main-paper scope and track definitions"
+      ]
+    },
+    {
+      "id": "src-abstract-dbe8789f",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/search/match?query=Theseus%3A%20Runtime-Adaptive%20GPU%20Collective%20Communication%20with%20Hot-Swappable%20Schedules&fields=title,abstract",
+      "kind": "semantic-scholar",
+      "title": "Theseus: Runtime-Adaptive GPU Collective Communication with Hot-Swappable Schedules",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T23:07:46Z",
+      "content_hash": "sha256:5c43f628e39444042fb173c50d717c827cae8cd1860770e965c2355cf157da28",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2026-roundrole-unlocking-the-efficiency-of-multi-party-comput-eeaa9402",
   "title": "RoundRole: Unlocking the Efficiency of Multi-party Computation with Bandwidth-aware Execution",
+  "abstract": "In privacy-preserving distributed computation systems like secure multi-party computation (MPC), cross-party communication is the primary bottleneck. Over the past two decades, numerous remarkable protocols have been proposed to reduce the overall communication complexity, substantially narrowing the gap between MPC and plaintext computations. However, these advances often overlook a crucial aspect: the asymmetric communication pattern. This imbalance results in significant bandwidth wastage, thereby “locking” the performance.\n\nIn this paper, we propose RoundRole, a bandwidth-aware execution optimization for secret-sharing MPC. The key idea is to decouple the logical roles, which determine the communication patterns, from the physical nodes, which determine the bandwidth. By partitioning the overall protocol into parallel tasks and strategically mapping each logical role to a physical node for each task, RoundRole effectively allocates the communication workload in accordance with the inherent protocol communication volume and the physical bandwidth. This execution-level optimization fully leverages network resources and \"unlocks\" the efficiency. We integrate RoundRole on top of ABY3, one of the widely used open-source MPC frameworks. Extensive evaluations across nine protocols under six diverse network settings (with homogeneous and heterogeneous bandwidths) demonstrate significant performance improvements, achieving up to 7.1x speedups.",
+  "abstract_source_id": "src-abstract-ndss-2026-eeaa9402",
   "venue": "ndss",
   "year": 2026,
   "track_or_session": "Fall submission cycle",
@@ -202,6 +204,19 @@
       "official": false,
       "supports": [
         "independent proceedings identity reconciliation"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2026-eeaa9402",
+      "url": "https://www.ndss-symposium.org/ndss-paper/roundrole-unlocking-the-efficiency-of-multi-party-computation-with-bandwidth-aware-execution/",
+      "kind": "paper-page",
+      "title": "RoundRole: Unlocking the Efficiency of Multi-party Computation with Bandwidth-aware Execution",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:23:03Z",
+      "content_hash": "sha256:f25bdab401ebfa020d0ce41f7dbfe9f16b4862fa710f534e9475d1e90add6f32",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

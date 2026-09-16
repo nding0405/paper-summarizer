@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "eurosys-2025-enabling-virtual-priority-in-data-center-congestion-cont-a5df8621",
   "title": "Enabling Virtual Priority in Data Center Congestion Control",
+  "abstract": "In data center networks, various types of traffic with strict performance requirements operate simultaneously, necessitating effective isolation and scheduling through priority queues. However, most switches support only around ten priority queues. Virtual priority can address this limitation by emulating multi-priority queues on a single physical queue, but existing solutions often require complex switch-level scheduling and hardware changes. Our key insight is that virtual priority can be achieved by carefully managing bandwidth contention in a physical queue, which is traditionally handled by congestion control (CC) algorithms. Hence, the virtual priority mechanism needs to be tightly coupled with CC. In this paper, we propose PrioPlus, a CC enhancement algorithm that can be integrated with existing congestion control schemes to enable virtual priority transmission. PrioPlus assigns specific delay ranges to different priority levels, ensuring that flows transmit only when the delay is within the assigned range, effectively meeting virtual priority requirements. Compared to Swift CC with physical priority queues, PrioPlus provides strict priority for high-priority flows without impacting performance sensibly. Meanwhile, it benefits low-priority flows from 25% to 41% as its priority-aware design enhances CC's ability to fully utilize available bandwidth once higher-priority traffic completes. As a result, in coflow and model training scenarios, PrioPlus improves job completion times by 21% and 33%, respectively, compared to Swift with physical priority queues.",
+  "abstract_source_id": "src-abstract-eurosys-2025-a5df8621",
   "venue": "eurosys",
   "year": 2025,
   "track_or_session": "Session-3.2: Network/Network Congestion Control - Location: Diamond - Chair: Kai Chen",
@@ -377,6 +379,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-eurosys-2025-a5df8621",
+      "url": "https://api.openalex.org/works/doi:10.1145/3689031.3717463?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Enabling Virtual Priority in Data Center Congestion Control",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:19:06Z",
+      "content_hash": "sha256:b542136bf822fc454ce6910ba3347cb43d4119a61d2c7783bf5b4ae3ed1894fd",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

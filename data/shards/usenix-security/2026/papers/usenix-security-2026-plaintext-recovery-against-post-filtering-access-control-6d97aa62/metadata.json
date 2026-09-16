@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-plaintext-recovery-against-post-filtering-access-control-6d97aa62",
   "title": "Plaintext Recovery Against Post-Filtering Access Control",
+  "abstract": "Fine-grained access control (FGAC) mechanisms such as row-level security (RLS) and document-level security (DLS) are widely deployed in databases to restrict access to data stored in physical indexing structures shared by multiple users (e.g., in multi-tenant databases, or in the implementation of least-privilege within an organization). FGAC implementations often use post-filtering where untrusted queries run over all data and private results are redacted afterwards. Prior work shows this approach can lead to side-channels that enable attackers to test if a chosen value exists in unseen data. While damaging, prior attacks do not enable the efficient recovery of rich, high-entropy data like full records or text documents.\n\nWe show these side-channels are more damaging than previously thought. Using rich query interfaces (e.g., range, prefix, and conjunctive predicates), we amplify existence leakage into reconstruction attacks. We do this in two settings:\n\nPostgreSQL (RLS timing). We exploit a timing side-channel and expressive SQL queries (e.g., ranges, conjunctions) to enumerate unknown attribute values and, in turn, full records via binary search over large domains. Elasticsearch/OpenSearch (DLS scoring). We exploit scoring and prefix-expansion side-channels to recover indexed terms from documents. In some cases, we can extract n-grams in the corpus to recover approximate text. Our results show that FGAC side-channels must be evaluated in the presence of rich predicates, which can turn membership tests into scalable reconstruction of high-entropy records.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-6d97aa62",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "System Security 2",
@@ -92,6 +94,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "explicit notice that the abstract remains under embargo"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-6d97aa62",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/espiritu",
+      "kind": "paper-page",
+      "title": "Plaintext Recovery Against Post-Filtering Access Control",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:25:03Z",
+      "content_hash": "sha256:4c2abda3b55335474df96d19e1ed241c77dd5aa1b8b1b8042abb644172d804a8",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

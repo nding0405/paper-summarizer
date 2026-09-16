@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2024-sod-2-statically-optimizing-dynamic-deep-neural-network-0972f8f8",
   "title": "SoD 2 : Statically Optimizing Dynamic Deep Neural Network Execution",
+  "abstract": "Though many compilation and runtime systems have been developed for DNNs in recent years, the focus has largely been on static DNNs. Dynamic DNNs, where tensor shapes and sizes and even the set of operators used are dependent upon the input and/or execution, are becoming common. This paper presents SoD2, a comprehensive framework for optimizing Dynamic DNNs. The basis of our approach is a classification of common operators that form DNNs, and the use of this classification towards a Rank and Dimension Propagation (RDP) method. This framework statically determines the shapes of operators as known constants, symbolic constants, or operations on these. Next, using RDP we enable a series of optimizations, like fused code generation, execution (order) planning, and even runtime memory allocation plan generation. By evaluating the framework on 10 emerging Dynamic DNNs and comparing it against several existing systems, we demonstrate both reductions in execution latency and memory requirements, with RDP-enabled key optimizations responsible for much of the gains. Our evaluation results show that SoD2 runs up to 3.9× faster than these systems while saving up to 88% peak memory consumption.",
+  "abstract_source_id": "src-abstract-asplos-2024-0972f8f8",
   "venue": "asplos",
   "year": 2024,
   "track_or_session": "Session 10C: ML Sparsity and Dynamic Shapes",
@@ -144,6 +146,19 @@
       "official": false,
       "supports": [
         "Indexed alternate-version and institutional-copy links; not used as the authoritative relevance source."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2024-0972f8f8",
+      "url": "https://api.openalex.org/works/doi:10.1145/3617232.3624869?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "SoD 2 : Statically Optimizing Dynamic Deep Neural Network Execution",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:00:33Z",
+      "content_hash": "sha256:5225fd6b77e11274166704416958b5d31c88ba1a6cbef1a511e4a1c0d00d9eb8",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

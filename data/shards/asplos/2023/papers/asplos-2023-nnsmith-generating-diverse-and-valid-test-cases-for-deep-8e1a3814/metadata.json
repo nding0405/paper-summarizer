@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2023-nnsmith-generating-diverse-and-valid-test-cases-for-deep-8e1a3814",
   "title": "NNSmith: Generating Diverse and Valid Test Cases for Deep Learning Compilers",
+  "abstract": "Deep-learning (DL) compilers such as TVM and TensorRT are increasingly being used to optimize deep neural network (DNN) models to meet performance, resource utilization and other requirements. Bugs in these compilers can result in models whose semantics differ from the original ones, producing incorrect results that corrupt the correctness of downstream applications. However, finding bugs in these compilers is challenging due to their complexity. In this work, we propose a new fuzz testing approach for finding bugs in deep-learning compilers. Our core approach consists of (i) generating diverse yet valid DNN test models that can exercise a large part of the compiler's transformation logic using light-weight operator specifications; (ii) performing gradient-based search to find model inputs that avoid any floating-point exceptional values during model execution, reducing the chance of missed bugs or false alarms; and (iii) using differential testing to identify bugs. We implemented this approach in NNSmith which has found 72 new bugs for TVM, TensorRT, ONNXRuntime, and PyTorch to date. Of these 58 have been confirmed and 51 have been fixed by their respective project maintainers.",
+  "abstract_source_id": "src-abstract-asplos-2023-8e1a3814",
   "venue": "asplos",
   "year": 2023,
   "track_or_session": "Session 2A: Compiler Techniques & Optimization",
@@ -215,6 +217,19 @@
       "official": false,
       "supports": [
         "Indexed abstract used with the official technical-session context for relevance classification, plus alternate-copy and explicitly printed ancillary links."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2023-8e1a3814",
+      "url": "https://api.openalex.org/works/doi:10.1145/3575693.3575707?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "NNSmith: Generating Diverse and Valid Test Cases for Deep Learning Compilers",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T21:59:36Z",
+      "content_hash": "sha256:048534bfc293f95350059af3793d4076ea6d7648c8c5586016b288651c86c141",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-scribe-low-memory-snarks-via-read-write-streaming-296b9668",
   "title": "Scribe: Low-memory SNARKs via Read-Write Streaming",
+  "abstract": "Succinct non-interactive arguments of knowledge (SNARKs) enable a prover to produce a short and efficiently verifiable proof of the validity of an arbitrary NP statement. Recent constructions of efficient SNARKs have led to interest in using them for a wide range of applications, but unfortunately, deployment of SNARKs in these applications faces a key bottleneck: SNARK provers require a prohibitive amount of time and memory to generate proofs for even moderately large statements. While there has been progress in reducing prover time, prover memory remains an issue.\n\nIn this work, we describe Scribe, a new low-memory SNARK that can efficiently prove large statements even on cheap consumer devices such as smartphones by leveraging a plentiful, but heretofore unutilized, resource: disk storage. Instead of storing its (large) intermediate state in RAM, Scribe's prover instead stores it on disk. To ensure that accesses to state are efficient, we design Scribe's prover in a read-write streaming model of computation that allows the prover to read and modify its state only in a streaming manner.\n\nWe implement and evaluate Scribe's prover, and show that, on commodity hardware, it can easily scale to circuits with 2 28 gates while using less than 750MB of memory and incurring only minimal proving latency overhead (10%) compared to a state-of-the-art memory-intensive baseline (HyperPlonk [EUROCRYPT 2023]) that requires much more memory.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-296b9668",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Applications of Cryptography 6",
@@ -156,6 +158,19 @@
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening",
         "prepublication PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-296b9668",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/baweja",
+      "kind": "paper-page",
+      "title": "Scribe: Low-memory SNARKs via Read-Write Streaming",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:25:17Z",
+      "content_hash": "sha256:2e35f52c087b9b06a4f611104bcb221586b79ba4abdaf8d66d3f0f196b387022",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

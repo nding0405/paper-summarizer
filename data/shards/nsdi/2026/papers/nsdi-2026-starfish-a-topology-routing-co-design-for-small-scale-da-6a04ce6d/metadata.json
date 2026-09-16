@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2026-starfish-a-topology-routing-co-design-for-small-scale-da-6a04ce6d",
   "title": "Starfish: A Topology-Routing Co-Design for Small-Scale Data Centers",
+  "abstract": "Most data centers today operate at scales much smaller than hyperscalers, i.e., hosting only hundreds to a few thousand servers, yet their design has received disproportionately little attention in the literature. Leaf-spine is nearly ubiquitous in small-scale data centers, but presents a fundamental tradeoff: provisioning full non-blocking capacity is costly, while oversubscription reduces cost but under-serves bursty, skewed workloads. Recent expander-based designs could, in theory, offer better performance but face substantial deployment hurdles, including lacking a practical routing scheme.\n\nWe introduce Starfish, a topology-routing co-design tailored to small-scale data centers, that delivers high performance, fault tolerance, and ease of deployment. Starfish’s topology, DRing, increases per-server egress capacity by spreading servers across all switches, reduces latency–even under failure scenarios–by exposing diverse near-shortest paths, and eases deployment by organizing switches into uniform blocks. Starfish’s routing leverages structural properties of DRing and effectively adapts to traffic patterns using standard hardware and protocols. Notably, Starfish’s routing also generalizes to expander-based topologies.\n\nEvaluation shows that Starfish supports 56% more traffic on average than leaf-spine built with the same equipment across real-world traces. This demonstrates that small-scale data centers today can realistically achieve higher performance with their existing equipment. Starfish’s routing also enables an expander-based design to support 52% more traffic on average than leaf-spine. More broadly, this work takes a first step towards a distinct design space for small-scale data centers.",
+  "abstract_source_id": "src-abstract-nsdi-2026-6a04ce6d",
   "venue": "nsdi",
   "year": 2026,
   "track_or_session": "Clouds, Carefully Engineered",
@@ -174,6 +176,19 @@
       "supports": [
         "canonical author line and publication-time affiliations",
         "resolution of conflicting citation metadata or an explicitly absent affiliation"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2026-6a04ce6d",
+      "url": "https://www.usenix.org/conference/nsdi26/presentation/zhou-starfish",
+      "kind": "paper-page",
+      "title": "Starfish: A Topology-Routing Co-Design for Small-Scale Data Centers",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:06:05Z",
+      "content_hash": "sha256:d25d134c0f6fcd416b1c4dfe82bf140d34bb1d785d67d6a2a631dd655db33195",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

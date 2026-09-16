@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2025-bpsniff-continuously-surveilling-private-blood-pressure-187f6e76",
   "title": "BPSniff: Continuously Surveilling Private Blood Pressure Information in the Metaverse via Unrestricted Inbuilt Motion Sensors",
+  "abstract": "Blood pressure (BP) is one of the most essential biomarkers for various diseases. It is considered protected health information under HIPAA and usually needs the user's consent for access. In this work, we uncover an insidious privacy breach in metaverse usage: private BP information can be covertly obtained from unrestricted motion sensors in virtual reality (VR) headsets. The insight is that the motion sensors can capture the subtle vibrations induced by the blood waves in the major arteries. Such vibrations are highly correlated with users' cardiac cycles and BP. As adversaries can continuously obtain motion sensor data from VR headsets without users' consent, they can derive and collect users' BP information in metaverse apps or websites, leading to more severe consequences, such as discrimination, exploitation, and targeted harassment. To demonstrate this severe privacy leakage in the meta-verse, we develop a practical attack, BPSniff, which can reconstruct fine-grained blood flow patterns and derive BP based on motion sensor data from users' VR headsets. BP-Sniff is the first practical attack revealing the BP leakage in the metaverse without using dedicated equipment. Unlike previous mobile sensing approaches that require user-specific calibration, BPSniff bypasses this constraint, enabling truly stealthy passive BP attacks at scale. Our attack first employs a variational autoencoder to reconstruct high-fidelity blood flow patterns from VR headset motion sensor data. We then develop an Adam-optimized long short-term memory (LSTM) regression model that leverages BP-related fiducial features from successive blood flow patterns to continuously estimate the user's BP. We evaluate BPSniff through extensive experiments and a longitudinal study of 8 weeks, involving 37 participants and two VR headset models. The results show that BPSniff can achieve low mean errors of 1.75 mmHg for systolic blood pressure (SBP) and 1.34 mmHg for diastolic blood pressure (DBP), which are comparable to commercial BP monitors and satisfy the standard (i.e., mean error ≤ 5.0 mmHg) specified by FDA's AAMI protocol.",
+  "abstract_source_id": "src-abstract-sp-2025-187f6e76",
   "venue": "sp",
   "year": 2025,
   "track_or_session": "Cycle 1",
@@ -175,6 +177,19 @@
       "official": true,
       "supports": [
         "DOI, authors, affiliations, abstract, publication date, pages, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2025-187f6e76",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "BPSniff: Continuously Surveilling Private Blood Pressure Information in the Metaverse via Unrestricted Inbuilt Motion Sensors",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:42Z",
+      "content_hash": "sha256:d62dac834635b4cd1890a53da454ceae7aaa151189662d990ac591dfd5cb6b3e",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

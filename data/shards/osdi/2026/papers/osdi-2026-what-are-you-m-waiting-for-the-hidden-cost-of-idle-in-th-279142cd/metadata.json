@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2026-what-are-you-m-waiting-for-the-hidden-cost-of-idle-in-th-279142cd",
   "title": "What Are You (M)Waiting For: The Hidden Cost of Idle in the Hyperscale Cloud (Operational Systems)",
+  "abstract": "Oversubscription is central to large-scale clouds: multiplexing virtual CPUs (vCPUs) over fewer physical CPUs (pCPUs) improves utilization and sales density, but meeting strict latency Service Level Objectives (SLOs) requires precise control over idle behavior. In 1:1 settings, idle-passthrough—especially mwait -passthrough—works well: by allowing guests to initiate hardware idle transitions directly, it eliminates idle-induced Virtual Machine (VM) exits and achieves near–bare-metal latency.\n\nIn production oversubscribed environments, however, passthrough breaks down. Because the hypervisor cannot observe mwait idleness, a vCPU never yields its pCPU, causing idle vCPU to monopolize cores and driving up contention, steal time ratios, live migrations, and SLO alarms across regions. Controlled experiments reproduce these production symptoms: even an idle vCPU executing mwait can raise colocated tail latency by up to 3×.\n\nWe present mwait -sched, a virtualization-aware redesign of mwait handling that reconciles bare-metal-like idle latency with predictable pCPU multiplexing. mwait -sched integrates deterministic timer-based emulation, fine-grained idle-interval classification, and a scalable multi-address mwait -proxy that restores idle visibility without frequent VM exits. Across nine representative workloads, it reduces P99 (99 th percentile) latency by 30–50% and reduces steal ratio by 30–40%. At hyperscale, across globally distributed production regions comprising ∼3.2M pCPUs, it reduces high-contention steal events by over 80%, cuts daily live migrations by 30–50%, and raises oversubscription ratio from 1.0% to 20.3%, effectively adding ∼600,000 vCPUs of sellable capacity.",
+  "abstract_source_id": "src-abstract-osdi-2026-279142cd",
   "venue": "osdi",
   "year": 2026,
   "track_or_session": "Kernel Scheduling and Tail Latency",
@@ -335,6 +337,19 @@
       "official": true,
       "supports": [
         "Official proceedings availability and canonical conference versions."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2026-279142cd",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/wang-yun",
+      "kind": "paper-page",
+      "title": "What Are You (M)Waiting For: The Hidden Cost of Idle in the Hyperscale Cloud (Operational Systems)",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:09:16Z",
+      "content_hash": "sha256:1f0e0d44a5fcfabbcfb27fc3a846e6f9deba0b4c5b63763f9d004ac756ae676a",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

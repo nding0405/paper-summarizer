@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2026-janus-cross-world-cooperative-nested-virtualization-for-49d717dd",
   "title": "JANUS: Cross-World, Cooperative Nested Virtualization for Secure Containers",
+  "abstract": "Secure containers such as Kata Containers strengthen isolation by running each container inside a lightweight VM. On today’s virtualized clouds, this creates an unavoidable form of nested virtualization with dominant cost in memory virtualization. Existing approaches entangle CPU virtualization and three-level page-table management across hypervisors, forcing frequent cross-world synchronization and producing severe overheads for mixed memory-access workloads.\n\nWe present JANUS, a cross-world, cooperative nested virtualization architecture that cleanly separates CPU and memory virtualization responsibilities. JANUS performs all guest world switches entirely within the guest hypervisor through a lightweight switcher mechanism, while delegating all memory translation to the host hypervisor. This separation removes the host from the critical path of CPU events and eliminates the intermediate shadow or nested page tables that burden existing designs. JANUS introduces several key techniques, including VMFUNC-based EPTP switching for trap-free transitions between guest and nested-guest address spaces; a shadow-root mechanism that protects world-switch integration while allowing direct updates to the nested guest’s page tables; and in-guest virtualization exception handling that enables the guest hypervisor to resolve second-level faults with only a single lightweight host interaction. Evaluations demonstrate that JANUS delivers an average performance improvement of 144% over PVM and 28.6% over KVM-based nested virtualization for real-world applications, and imposes less than 5% overhead compared to native containers in production deployment. JANUS demonstrates that rethinking nested virtualization around cross-world cooperation yields strong isolation with near-native container performance.",
+  "abstract_source_id": "src-abstract-osdi-2026-49d717dd",
   "venue": "osdi",
   "year": 2026,
   "track_or_session": "Confidential Computing",
@@ -482,6 +484,19 @@
       "official": true,
       "supports": [
         "Official proceedings availability and canonical conference versions."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2026-49d717dd",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/lai",
+      "kind": "paper-page",
+      "title": "JANUS: Cross-World, Cooperative Nested Virtualization for Secure Containers",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:08:28Z",
+      "content_hash": "sha256:3423ad3ee6b7c7876b107beb5292ff3bab867665f12bf7f850bb47bde590d6dd",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

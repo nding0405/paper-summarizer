@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-misty-registry-an-empirical-study-of-flawed-domain-regis-a3799802",
   "title": "Misty Registry: An Empirical Study of Flawed Domain Registry Operation",
+  "abstract": "Domain registries manage the entire lifecycle of domain names within TLDs and interact with domain registrars through the Extensible Provisioning Protocol (EPP) specification. Although they adhere to standard policies, EPP implementations and operational practices can vary between registries. Even minor operational flaws at registries can expose their managed resources to abuse. However, registry operations' closed and opaque nature has limited understanding of these practices and their potential threats. In this study, we systematically analyzed the security of EPP operations across TLD registries. By analyzing the entire domain lifecycle and mapping operations to corresponding domain statuses, we discovered that registry operations are attributed to overlapping statuses and complex triggering factors. To uncover flaws in registry operations, we employed diverse data sources, including TLD zone files, historical domain registration data, and real-time registrar interfaces for comprehensive domain statuses. The analysis combined static and dynamic techniques, allowing us to externally assess domain existence and registration status, thereby revealing the inner workings of registry policies. Eventually, we discovered three novel EPP implementation deficiencies that pose domain abuse risks in major registries, including Identity Digital, Google, and Nominet. Evidence has shown that adversaries are covertly exploiting these vulnerabilities. Our experiments reveal that over 1.6 million domain names, spanning more than 50% of TLDs (e.g., .app and .top), are vulnerable due to these flawed operations. To address these issues, we responsibly disclosed the problem to the affected registries and assisted in implementing a solution. We believe that these registry operation issues require increased attention from the community.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-a3799802",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Network Security 4: Internet and Beyond",
@@ -196,6 +198,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-a3799802",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/zhang-mingming",
+      "kind": "paper-page",
+      "title": "Misty Registry: An Empirical Study of Flawed Domain Registry Operation",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:20:46Z",
+      "content_hash": "sha256:878b4d87f27b40615c7aa0133eb71e7fa7b2d4105a2ab91d06fd39e2350b64dd",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

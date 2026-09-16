@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2024-muses-efficient-multi-user-searchable-encrypted-database-58412fc2",
   "title": "MUSES: Efficient Multi-User Searchable Encrypted Database",
+  "abstract": "Searchable encrypted systems enable privacy-preserving keyword search on encrypted data. Symmetric systems achieve high efficiency (e.g., sublinear search), but they mostly support single-user search. Although systems based on public-key or hybrid models support multi-user search, they incur inherent security weaknesses (e.g., keyword-guessing vulnerabilities) and scalability limitations due to costly public-key operations (e.g., pairing). More importantly, most encrypted search designs leak statistical information (e.g., search, result, and volume patterns) and thus are vulnerable to devastating leakage-abuse attacks. Some pattern-hiding schemes were proposed. However, they incur significant user bandwidth/computation costs, and thus are not desirable for large-scale outsourced databases with resource-constrained users.\n\nIn this paper, we propose MUSES, a new multi-user encrypted search platform that addresses the functionality, security, and performance limitations in the existing encrypted search designs. Specifically, MUSES permits multi-user functionalities (reader/writer separation, permission revocation) and hides all statistical information (including search, result, and volume patterns) while featuring minimal user overhead. In MUSES, we demonstrate a unique incorporation of various emerging distributed cryptographic protocols including Distributed Point Function, Distributed PRF, and Oblivious Linear Group Action. We also introduce novel distributed protocols for oblivious counting and shuffling on arithmetic shares for the general multi-party setting with a dishonest majority, which can be found useful in other applications. Our experimental results showed that the keyword search by MUSES is two orders of magnitude faster with up to 12× lower user bandwidth cost than the state-of-the-art.",
+  "abstract_source_id": "src-abstract-usenix-security-2024-58412fc2",
   "venue": "usenix-security",
   "year": 2024,
   "track_or_session": "Crypto II: Searchable Encryption",
@@ -133,6 +135,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2024-58412fc2",
+      "url": "https://www.usenix.org/conference/usenixsecurity24/presentation/le",
+      "kind": "paper-page",
+      "title": "MUSES: Efficient Multi-User Searchable Encrypted Database",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:16:19Z",
+      "content_hash": "sha256:10465a9878c616b2d1564aadd9c6d2eee7a949bf8769fd753be55a321aae9710",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

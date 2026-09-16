@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2025-ind-cpa-d-of-relaxed-functional-bootstrapping-a-new-atta-ca472d1d",
   "title": "IND-CPA-D of Relaxed Functional Bootstrapping: A New Attack, A General Fix, and A Stronger Model",
+  "abstract": "Fully homomorphic encryption (FHE) is a powerful and widely used primitive in lots of real-world applications. Recently, Li and Micciancio [Eurocrypt'21] introduced IND-CPA-D security, which strengthens the standard IND-CPA security by allowing the attacker to access a decryption oracle for honestly generated ciphertexts. Recently, Jung et al. [CCS'24] and Checri et al. [Crypto'24] have shown that even exact FHE schemes like FHEW/TFHE/BGV/BFV may still not be IND-CPA-D secure, by exploiting the bootstrapping failure. However, such attacks can be mitigated by setting negligible bootstrapping failure probability. On the other hand, Liu and Wang [Asiacrypt'24] proposed relaxed functional bootstrapping, which has orders of magnitude performance improvement and furthermore allows a free function evaluation during bootstrapping. These efficiency advantages make it a competitive choice in many applications. In this work, we show that the underlying secret key could be recovered within 10 minutes against all existing relaxed functional bootstrapping constructions, and even within 1 minute for some of them. Moreover, our attack works even with a negligible bootstrapping failure probability. Additionally, we propose a general fix that mitigates all the existing modulus-switching-error-based attacks in the IND-CPA-D model. This is achieved by constructing a new modulus switching procedure with essentially no overhead. Lastly, we show that IND-CPA-D may not be sufficient even for passive adversary model. Thus, we extend this model to IND-CPA-D with randomness (IND-CPA-DR).",
+  "abstract_source_id": "src-abstract-ccs-2025-ca472d1d",
   "venue": "ccs",
   "year": 2025,
   "track_or_session": "Cycle 2",
@@ -127,6 +129,19 @@
         "published-order authors",
         "publication-time affiliations",
         "publication date and page span"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2025-ca472d1d",
+      "url": "https://api.openalex.org/works/doi:10.1145/3719027.3765170?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "IND-CPA-D of Relaxed Functional Bootstrapping: A New Attack, A General Fix, and A Stronger Model",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:15:04Z",
+      "content_hash": "sha256:b311e50fecb50b65f759b4f164944d4ecf2ae415cb90c64174b9da1cb24092b0",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

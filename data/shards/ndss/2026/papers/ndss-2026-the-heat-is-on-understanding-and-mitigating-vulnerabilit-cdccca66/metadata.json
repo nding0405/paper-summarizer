@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2026-the-heat-is-on-understanding-and-mitigating-vulnerabilit-cdccca66",
   "title": "The Heat is On: Understanding and Mitigating Vulnerabilities of Thermal Image Perception in Autonomous Systems",
+  "abstract": "Thermal cameras are increasingly considered a viable solution in autonomous systems to ensure perception in low-visibility conditions. Specialized optics and advanced signal processing are integrated into thermal-based perception pipelines of self-driving cars, robots, and drones to capture relative temperature changes and allow the detection of living beings and objects where conventional visible-light cameras struggle, such as during nighttime, fog, or heavy rain. However, it remains unclear whether the security and trustworthiness of thermal-based perception systems are comparable to those of conventional cameras. Our research exposes and mitigates three novel vulnerabilities in thermal image processing, specifically within equalization, calibration, and lensing mechanisms, that are inherent to thermal cameras. These vulnerabilities can be triggered by heat sources naturally present or maliciously placed in the environment, altering the perceived relative temperature, or generating time-controlled artifacts that can undermine the correct functioning of obstacle avoidance.\n\nWe systematically analyze vulnerabilities across three thermal cameras used in autonomous systems (FLIR Boson, InfiRay T2S, FPV XK-C130), assessing their impact on three fine-tuned thermal object detectors and two visible-thermal fusion models for autonomous driving. Our results show a mean average precision drop of 50% in pedestrian detection and 45% in fusion models, caused by flaws in the equalization process. Real-world driving tests at speeds up to 40 km/h show pedestrian misdetection rates up to 100% and the creation of false obstacles with a 91% success rate, persisting minutes after the attack ends. To address these issues, we propose and evaluate three novel threat-aware signal processing algorithms that dynamically detect and suppress attacker-induced artifacts. Our findings shed light on the reliability of thermal-based perception processes, to raise awareness of the limitations of such technology when used for obstacle avoidance.",
+  "abstract_source_id": "src-abstract-ndss-2026-cdccca66",
   "venue": "ndss",
   "year": 2026,
   "track_or_session": "Summer submission cycle",
@@ -202,6 +204,19 @@
       "official": false,
       "supports": [
         "independent proceedings identity reconciliation"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2026-cdccca66",
+      "url": "https://www.ndss-symposium.org/ndss-paper/the-heat-is-on-understanding-and-mitigating-vulnerabilities-of-thermal-image-perception-in-autonomous-systems/",
+      "kind": "paper-page",
+      "title": "The Heat is On: Understanding and Mitigating Vulnerabilities of Thermal Image Perception in Autonomous Systems",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:23:19Z",
+      "content_hash": "sha256:96ef488f2d1594ba0b660b29ddb6b5e0821b7832316d393ab974577ba25e033c",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-lost-in-the-mists-of-time-expirations-in-dns-footprints-0c0bf283",
   "title": "Lost in the Mists of Time: Expirations in DNS Footprints of Mobile Apps",
+  "abstract": "Compared to the traditional desktop setting where web applications (apps) are live by nature, mobile apps are similar to binary programs that are installed on devices, in that they remain static until they are updated. However, they can also contain live, dynamic components if they interface with the web. This may lead to a confusing scenario, in which a mobile app itself has not been updated, but changes in dynamic components have caused changes in the overall app behavior.\n\nIn this work, we present the ﬁrst large-scale analysis of mobile app dependencies through a dual perspective accounting for time and version updates, with a focus on expired domains. First, we detail a methodology to build a representative corpus comprising 77,206 versions of 15,124 unique Android apps. Next, we extract the unique eTLD+1 domain dependencies — the \"DNS footprint\" — of each APK by monitoring the network trafﬁc produced with a dynamic, UI-guided test input generator and report on the footprint of a typical app. Using these footprints, combined with a methodology that deduces potential periods of vulnerability for individual APKs by leveraging passive DNS, we characterize how apps may have been affected by expired domains throughout time. Our ﬁndings indicate that the threat of expired domains in app dependencies is nontrivial at scale, affecting hundreds of apps and thousands of APKs, occasionally affecting apps that rank within the top ten of their categories, apps that have hundreds of millions of downloads, or apps that were the latest version. Furthermore, we uncovered 41 immediately registrable domains that were found in app footprints during our analyses, and provide evidence in the form of case studies as to their potential for abuse. We also ﬁnd that even the most security-conscious users cannot protect themselves against the risk of their using an app that has an expired dependency, even if they can update their apps instantaneously.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-0c0bf283",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Web and Mobile Security",
@@ -112,6 +114,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-0c0bf283",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/so",
+      "kind": "paper-page",
+      "title": "Lost in the Mists of Time: Expirations in DNS Footprints of Mobile Apps",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:20:37Z",
+      "content_hash": "sha256:b26d0f995933a6469562ea36a37c45dc8795ccbafe31bf4e4c89684256d227a0",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-zero-knowledge-about-encryption-a-comparative-security-a-4029fe48",
   "title": "Zero Knowledge (About) Encryption: A Comparative Security Analysis of Three Cloud-based Password Managers",
+  "abstract": "Zero Knowledge Encryption is a term widely used by vendors of cloud-based password managers. Although it has no strict technical meaning, the term conveys the idea that the server, who stores encrypted password vaults on behalf of users, is unable to learn anything about the contents of those vaults. The security claims made by vendors imply that this should hold even if the server is fully malicious. This threat model is justified in practice by the high sensitivity of vault data, which makes password manager servers an attractive target for breaches (as evidenced by a history of attacks).\n\nWe examine the extent to which security against a fully malicious server holds true for three leading vendors who make the Zero Knowledge Encryption claim: Bitwarden, LastPass and Dashlane. Collectively, they have more than 60 million users and 23% market share. We present 12 distinct attacks against Bitwarden, 7 against LastPass and 6 against Dashlane. The attacks range in severity, from integrity violations of targeted user vaults to the complete compromise of all the vaults associated with an organisation. The majority of the attacks allow recovery of passwords. We have disclosed our findings to the vendors and remediation is underway.\n\nOur attacks showcase the importance of considering the malicious server threat model for cloud-based password managers. Despite vendors' attempts to achieve security in this setting, we uncover several common design anti-patterns and cryptographic misconceptions that resulted in vulnerabilities. We discuss possible mitigations and also reflect more broadly on what can be learned from our analysis by developers of end-to-end encrypted systems.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-4029fe48",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Applications of Cryptography 4",
@@ -135,6 +137,19 @@
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening",
         "prepublication PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-4029fe48",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/scarlata",
+      "kind": "paper-page",
+      "title": "Zero Knowledge (About) Encryption: A Comparative Security Analysis of Three Cloud-based Password Managers",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:26:24Z",
+      "content_hash": "sha256:5cbfa65a749d8da88707fb5986442eb057e6e3163a24a39f60595020a99e1ccd",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

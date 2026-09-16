@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2026-starfighterson-the-general-applicability-of-x-wing-ad6de1d0",
   "title": "Starfighters—On the General Applicability of X-Wing",
+  "abstract": "In this work, we present a comprehensive analysis of QSF, the KEM combiner used by X-Wing (Communications in Cryptology 1(1), 2024). While the X-Wing paper focuses on the application of QSF to ML-KEM-768 and X25519, we discuss the combiner's applicability to other post-quantum KEMs and ECDH instantiations. In particular, we establish the compatibility of QSF to KEMs based on variants of the FujisakiOkamoto transform by proving ciphertext second-preimage resistance (C2PRI) for these variants. Building on these results, we show that QSF is compatible with, to the best of our knowledge, all post-quantum KEMs currently standardized or considered for standardization-including ML-KEM, (e)FrodoKEM, HQC, Classic McEliece, and various NTRU variants. Notably, this means these schemes can be used with QSF to construct PQ/T hybrid KEMs. In addition, we introduce QSI, a variant of QSF that combines two KEMs by hashing their shared keys, yielding a KEM that is IND-CCA-secure as long as one constituent KEM is IND-CCA-secure and the other is C2PRI-secure. We establish the same compatibility results for QSI as for QSF. Finally, we analyze both QSF and QSI regarding (their preservation of) the recently introduced family of binding properties for KEMs.",
+  "abstract_source_id": "src-abstract-sp-2026-ad6de1d0",
   "venue": "sp",
   "year": 2026,
   "track_or_session": "Cycle 2",
@@ -154,6 +156,19 @@
       "official": true,
       "supports": [
         "DOI, published-order authors and affiliations, abstract, publication date, page span, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2026-ad6de1d0",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Starfighters-On the General Applicability of X-Wing",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:58:06Z",
+      "content_hash": "sha256:5353b9384fd86d54ad3dc674f6041a164ea560a1a98a9c02cc1bb37e317e508e",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

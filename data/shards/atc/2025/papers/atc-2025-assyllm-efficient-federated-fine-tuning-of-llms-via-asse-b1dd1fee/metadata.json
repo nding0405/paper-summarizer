@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "atc-2025-assyllm-efficient-federated-fine-tuning-of-llms-via-asse-b1dd1fee",
   "title": "AssyLLM: Efficient Federated Fine-tuning of LLMs via Assembling Pre-trained Blocks",
+  "abstract": "Federated Learning (FL) provides a promising way to fine-tune Large Language Models (LLMs) to downstream mobile tasks while preserving data privacy. However, the intensive memory footprint prevents large amount of edge devices from contributing to the fine-tuning process with their own private data.\n\nTo this end, we introduce AssyLLM, an innovative framework that conducts fine-tuning in a memory-efficient manner through directly assembling the pre-trained transformer blocks. The core idea of AssyLLM is to decompose a pre-trained LLM into discrete blocks. These blocks are iteratively selected based on the local corpus distributed across various devices, and subsequently assembled to form a novel LLM tailored for downstream tasks. In this way, high fine-tuning efficiency can be achieved through avoiding the backpropagation process adopted in traditional fine-tuning approaches. Specifically, AssyLLM features four core components: 1) Block Comparator, 2) Elastic Adapter, 3) Block Quanter, and 4) Block Swapper. Block Comparator is designed to assess the compatibility between two blocks, facilitating the selection of appropriate blocks for assembling.\n\nAfter that, Elastic Adapter creates customized adapter configurations that address the specific structural differences between the blocks for seamless concatenation between the selected blocks. Meanwhile, Block Quanter is proposed to adjust precision of related weights based on the block output activation in order to reduce the extra memory overhead caused by retaining the candidate blocks while preserving the performance of the assembled model. Moreover, in order to further increase the scalability of the candidate blocks for better fine-tuning performance while guaranteeing fine-tuning progress, Block Swapper is designed to optimize the swapping pipeline by incorporating block correlation metrics. AssyLLM is comprehensively evaluated on multiple benchmark datasets of varying complexity. Compared to traditional methods, AssyLLM improves accuracy by up to 18.26%, achieves up to 30.04x speedup, and significantly reduces memory consumption by up to 92%.",
+  "abstract_source_id": "src-abstract-atc-2025-b1dd1fee",
   "venue": "atc",
   "year": 2025,
   "track_or_session": "Intelligent Resource Management: Federation, Colocation, and ML for Systems",
@@ -138,6 +140,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-atc-2025-b1dd1fee",
+      "url": "https://www.usenix.org/conference/atc25/presentation/zhan",
+      "kind": "paper-page",
+      "title": "AssyLLM: Efficient Federated Fine-tuning of LLMs via Assembling Pre-trained Blocks",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T21:59:25Z",
+      "content_hash": "sha256:8be5ba6a246d1d407dab0d7529bcf789d4fd53b2df06794b727112a61c98c89d",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

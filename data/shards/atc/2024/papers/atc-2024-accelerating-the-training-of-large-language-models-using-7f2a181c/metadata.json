@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "atc-2024-accelerating-the-training-of-large-language-models-using-7f2a181c",
   "title": "Accelerating the Training of Large Language Models using Efficient Activation Rematerialization and Optimal Hybrid Parallelism",
+  "abstract": "Recent advancements in training large-scale models have centered on optimizing activation strategies and exploring various parallel training options. One research avenue focuses on enhancing activation-related operations, such as offloading and recomputing. However, there is room for further refinement in these strategies to improve the balance between computation and memory utilization. Another line of work explores different training parallelisms, which often require extensive parameter tuning and achieve suboptimal combinations of parallel options.\n\nTo tackle these challenges, this paper introduces a novel method for losslessly accelerating the training of large language models. Specifically, two efficient activation rematerialization strategies are proposed: Pipeline-Parallel-Aware Offloading, which maximizes the utilization of host memory for storing activations, and Compute-Memory Balanced Checkpointing, which seeks a practical equilibrium between activation memory and computational efficiency. Additionally, the paper presents an extremely efficient searching method for optimizing parameters for hybrid parallelism, considering both offloading and checkpointing to achieve optimal performance. The efficacy of the proposed method is demonstrated through extensive experiments on public benchmarks with diverse model sizes and context window sizes. For example, the method significantly increases Model FLOPs Utilization (MFU) from 32.3% to 42.7% for a 175B Llama-like model with a context window size of 32,768 on 256 NVIDIA H800.",
+  "abstract_source_id": "src-abstract-atc-2024-7f2a181c",
   "venue": "atc",
   "year": 2024,
   "track_or_session": "ML Training",
@@ -243,6 +245,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-atc-2024-7f2a181c",
+      "url": "https://www.usenix.org/conference/atc24/presentation/yuan",
+      "kind": "paper-page",
+      "title": "Accelerating the Training of Large Language Models using Efficient Activation Rematerialization and Optimal Hybrid Parallelism",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T21:58:24Z",
+      "content_hash": "sha256:94d74d5f9c3dd016fdbdd606912e74564e9bb05293c4b26a3b6aec3bcd2f5f28",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

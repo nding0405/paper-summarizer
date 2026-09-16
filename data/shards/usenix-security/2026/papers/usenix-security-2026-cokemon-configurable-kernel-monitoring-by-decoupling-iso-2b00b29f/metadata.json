@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-cokemon-configurable-kernel-monitoring-by-decoupling-iso-2b00b29f",
   "title": "CoKeMon: Configurable Kernel Monitoring by Decoupling Isolation",
+  "abstract": "Monolithic OSes such as Linux are susceptible to security vulnerabilities. This has led to a line of research to detect and prevent runtime kernel exploitation, e.g., with kernel integrity measurement, page table monitoring, event logging. Prior works are either purpose-built for one type of monitoring or make invasive changes to the kernel. This motivates the need for a design that can accommodate various monitors on a need basis. As a first step, we identify five key requirements that such a solution must satisfy: selective permissions, non-privileged management, static isolation boundaries, architecturally-supported atomic switching, and device support. It is challenging to satisfy all of the requirements while preserving security. To address this, our insight is to decouple the isolation enforcement from the monitor management, which allows us to use native hardware techniques with ease. We demonstrate the feasibility of such a design on Arm platform by modifying ~300 LoC in the firmware and ~500 LoC in the Linux kernel. We implement three monitoring use-cases to demonstrate the versatility of COKEMON and report performance overhead ranging from 0% to 13%.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-2b00b29f",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "System Security 1",
@@ -92,6 +94,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-2b00b29f",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/thorens",
+      "kind": "paper-page",
+      "title": "CoKeMon: Configurable Kernel Monitoring by Decoupling Isolation",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:23:24Z",
+      "content_hash": "sha256:5a209cbbf57fab5049f8de84d54cdd9c7fa910e66f89a79acec08fb185684e83",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

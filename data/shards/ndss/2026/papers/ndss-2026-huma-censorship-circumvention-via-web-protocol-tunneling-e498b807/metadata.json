@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2026-huma-censorship-circumvention-via-web-protocol-tunneling-e498b807",
   "title": "Huma: Censorship Circumvention via Web Protocol Tunneling with Deferred Traffic Replacement",
+  "abstract": "As Internet censorship grows pervasive, users often rely on covert channels to evade surveillance and access restricted content. Web protocol tunneling tools use websites as proxies, encapsulating covert data within web protocols to blend with legitimate traffic to avoid detection. However, existing tools are prone to detection via traffic analysis, enabling censors to identify the use of such tools via fingerprinting attacks or due to the generation of abnormal browsing patterns.\n\nWe present Huma, a new web protocol tunneling tool that addresses existing detection concerns. By deferring covert data transmissions, Huma allows a website participating in circumvention to first respond with unmodified content, while responses embedding covert data are prepared in the background and delivered during the client's next request, thus avoiding timing anomalies that facilitate fingerprinting. By relying on an overt user simulator modeled after realistic browsing activity, Huma also follows users' expected browsing behaviors. Lastly, Huma prevents adversary-controlled websites from tying communication endpoints together, enabling straightforward extensions to enable covert communications in Intranet censorship scenarios.",
+  "abstract_source_id": "src-abstract-ndss-2026-e498b807",
   "venue": "ndss",
   "year": 2026,
   "track_or_session": "Fall submission cycle",
@@ -118,6 +120,19 @@
       "official": false,
       "supports": [
         "independent proceedings identity reconciliation"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2026-e498b807",
+      "url": "https://www.ndss-symposium.org/ndss-paper/huma-censorship-circumvention-via-web-protocol-tunneling-with-deferred-traffic-replacement/",
+      "kind": "paper-page",
+      "title": "Huma: Censorship Circumvention via Web Protocol Tunneling with Deferred Traffic Replacement",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:22:10Z",
+      "content_hash": "sha256:a4c5956de833fdc01535ce403c216b88b6c23c51c8a45560e94f8ab56b9d14e7",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

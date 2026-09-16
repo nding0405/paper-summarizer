@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2023-doing-more-with-less-orchestrating-serverless-applicatio-2f2af495",
   "title": "Doing More with Less: Orchestrating Serverless Applications without an Orchestrator",
+  "abstract": "Standalone orchestrators simplify the development of serverless applications by providing higher-level programming interfaces, coordinating function interactions and ensuring exactly-once execution. However, they limit application flexibility and are expensive to use. We show that these specialized orchestration services are unnecessary. Instead, application-level orchestration, deployed as a library, can support the same programming interfaces, complex interactions and execution guarantees, utilizing only basic serverless components that are already universally supported and billed at a fine-grained per-use basis. Furthermore, application-level orchestration affords applications more flexibility and reduces costs for both providers and users.\n\nTo demonstrate this, we present Unum, an application-level serverless orchestration system. Unum introduces an intermediate representation that partitions higher-level application definitions at compile-time and provides orchestration as a runtime library that executes in-situ with user-defined FaaS functions. On unmodified serverless infrastructures, Unum functions coordinate and ensure correctness in a decentralized manner by leveraging strongly consistent data stores.\n\nCompared with AWS Step Functions, a state-of-the-art standalone orchestrator, our evaluation shows that Unum performs well, costs significantly less and grants applications greater flexibility to employ application-specific patterns and optimizations. For a representative set of applications, Unum runs as much as 2x faster and costs 9x cheaper.",
+  "abstract_source_id": "src-abstract-nsdi-2023-2f2af495",
   "venue": "nsdi",
   "year": 2023,
   "track_or_session": "Serverless and Network Functions",
@@ -140,6 +142,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2023-2f2af495",
+      "url": "https://www.usenix.org/conference/nsdi23/presentation/liu-david",
+      "kind": "paper-page",
+      "title": "Doing More with Less: Orchestrating Serverless Applications without an Orchestrator",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:01:59Z",
+      "content_hash": "sha256:9ca90aa720e5285abf5ec42d6a0e8f93a7bdfa8221593b207c5d2b4bd029515c",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

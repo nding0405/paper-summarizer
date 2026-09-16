@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2026-qtpu-hybrid-tensor-networks-for-quantum-classical-accele-aad60329",
   "title": "qTPU: Hybrid Tensor Networks for Quantum-Classical Acceleration",
+  "abstract": "Classical accelerators (GPUs, TPUs) excel at high-performance computing but cannot efficiently represent problems that scale exponentially, such as highly entangled quantum states. Quantum processors (QPUs) address these intractable problems but are constrained by noise, high error rates, and low throughput. This necessitates hybrid quantum-classical execution: computationally complex kernels are offloaded to QPUs, while scalable computation runs on classical accelerators.\n\nDespite this clear need for hybrid systems, we currently lack a concise programming paradigm for expressing and optimizing them. Developers must manually partition and orchestrate applications across quantum and classical hardware through ad hoc approaches that produce fragmented, inflexible workflows. This prevents holistic optimization across the quantum-classical interface and limits scalability.\n\nTo this end, we introduce the hybrid tensor network (hTN) abstraction—a unified representation capturing quantum-classical computation—realized in qTPU, an end-to-end system comprising: the qTPU programming model for declarative hybrid computation specification; the qTPU compiler for holistic hTN optimization balancing classical cost against quantum error; and the qTPU runtime for scalable execution across heterogeneous QPUs and classical accelerators.\n\nOur evaluation demonstrates that qTPU achieves 3–4 orders of magnitude lower classical overhead, up to 7.2× lower quantum error rates, up to 53× faster compilation, and over 20× end-to-end speedups across hybrid ML, circuit knitting, and quantum error mitigation.",
+  "abstract_source_id": "src-abstract-osdi-2026-aad60329",
   "venue": "osdi",
   "year": 2026,
   "track_or_session": "Wild Cards",
@@ -167,6 +169,19 @@
       "official": true,
       "supports": [
         "Official proceedings availability and canonical conference versions."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2026-aad60329",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/tornow",
+      "kind": "paper-page",
+      "title": "qTPU: Hybrid Tensor Networks for Quantum-Classical Acceleration",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:08:47Z",
+      "content_hash": "sha256:1af084dd6a3a32d3ba1282a4a6f878416e95367ebe55383d0615d0a1d488d34b",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

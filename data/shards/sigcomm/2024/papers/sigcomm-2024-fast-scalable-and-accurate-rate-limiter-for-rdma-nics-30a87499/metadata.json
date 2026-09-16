@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sigcomm-2024-fast-scalable-and-accurate-rate-limiter-for-rdma-nics-30a87499",
   "title": "Fast, Scalable, and Accurate Rate Limiter for RDMA NICs",
+  "abstract": "RDMA NICs desire a rate limiter that is accurate, scalable, and fast: to precisely enforce the policies such as congestion control and traffic isolation, to support a large number of flows, and to sustain high packet rates. Prior works such as SENIC and PIEO can achieve accuracy and scalability, but they are not fast enough, thus fail to fulfill the performance requirement of RNICs, due primarily to their monolithic design and one-packet-per-sorting transmission. We present Tassel, a hierarchical rate limiter for RDMA NICs that can deliver high packet rates by enabling multiple-packet-per-sorting transmission, while preserving accuracy and scalability. At its heart, Tassel renovates the workflow of the rate limiter hierarchically: by first applying scalable rate limiting to the flows to be scheduled, followed by accurate rate limiting to the packets to be transmitted, while leveraging adaptive batching and packet filtering to improve the performance of these two steps. We integrate Tassel into the RNIC architecture by replacing the original QP scheduler module and implement the prototype of Tassel using FPGA. Experimental results show that Tassel delivers 125 Mpps packet rate, outperforming SENIC and PIEO by 3.6×, while supporting 16 K flows with low resource usage, 7.5% - 25.6% as compared to SENIC and PIEO, and preserving high accuracy, precisely enforcing rate limits from 100 Kbps to 100 Gbps.",
+  "abstract_source_id": "src-abstract-sigcomm-2024-30a87499",
   "venue": "sigcomm",
   "year": 2024,
   "track_or_session": "Accelerating the datacenter edge — Research Track",
@@ -255,6 +257,19 @@
         "publisher-deposited ORCIDs when available",
         "proceedings page range and online publication date",
         "empty publisher relation metadata for alternate-version checks"
+      ]
+    },
+    {
+      "id": "src-abstract-sigcomm-2024-30a87499",
+      "url": "https://api.openalex.org/works/doi:10.1145/3651890.3672215?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Fast, Scalable, and Accurate Rate Limiter for RDMA NICs",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:23:06Z",
+      "content_hash": "sha256:4310ff1ac45826724d0f2aedb6e35fe0120fb41a2218dbb408f844dd9216d2d4",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

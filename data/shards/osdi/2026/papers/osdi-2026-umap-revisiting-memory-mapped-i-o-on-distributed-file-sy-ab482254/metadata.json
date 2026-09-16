@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2026-umap-revisiting-memory-mapped-i-o-on-distributed-file-sy-ab482254",
   "title": "Umap: Revisiting Memory-Mapped I/O on Distributed File Systems for Efficient Matrix Access (Operational Systems)",
+  "abstract": "Our production experience in large-scale data-processing pipelines shows that, despite its attractive programming model, memory-mapped I/O ( mmap-IO ) on distributed file systems (DFS) exhibits severe operational pathologies—livelocks during write-heavy phases, chronically low multi-threaded throughput, and high memory footprints that may trigger out-of-memory kills in containerized environments.\n\nOur measurements further show that mmap-IO on DFS is 3×–10× slower than on local file systems (LFS) for matrix random-access workloads, primarily because page-granularity network I/O underutilizes high-speed networks and deferred write-back behavior incurs expensive distributed flushes and metadata operations. We present umap, a DFS-agnostic runtime that delivers near-in-memory matrix-access performance on DFS via network-efficient communication, a concurrency-aware cache protocol with linear scalability, and lazy-expansion cache management.\n\nDeployed in production for over 18 months, umap has eliminated livelocks and out-of-memory-induced job failures while improving throughput by up to 6.7× across diverse matrix-access workloads. Our experience shows that rethinking mmap-IO’s interaction with DFS is essential for robust, predictable performance in modern large-scale clusters.",
+  "abstract_source_id": "src-abstract-osdi-2026-ab482254",
   "venue": "osdi",
   "year": 2026,
   "track_or_session": "Filesystems and I/O Acceleration",
@@ -146,6 +148,19 @@
       "official": true,
       "supports": [
         "Official proceedings availability and canonical conference versions."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2026-ab482254",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/he-yongchao",
+      "kind": "paper-page",
+      "title": "Umap: Revisiting Memory-Mapped I/O on Distributed File Systems for Efficient Matrix Access (Operational Systems)",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:09:11Z",
+      "content_hash": "sha256:3001842d5a916494a78fc6183acda4704b406719d0a4fc36e8da999b7ee827c2",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

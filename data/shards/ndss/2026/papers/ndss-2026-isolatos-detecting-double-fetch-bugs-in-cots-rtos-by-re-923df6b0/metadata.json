@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2026-isolatos-detecting-double-fetch-bugs-in-cots-rtos-by-re-923df6b0",
   "title": "IsolatOS: Detecting Double Fetch Bugs in COTS RTOS by Re-enabling Kernel Isolation",
+  "abstract": "Real-time operating systems (RTOS) often expose double-fetch vulnerabilities when the kernel reads the same userspace memory location multiple times without ensuring consistency between fetches. Conventional static analysis cannot inspect proprietary, commercial off-the-shelf (COTS) RTOS kernels, and dynamic heuristics, which rely on broad time-window thresholds, suffer from high false positive rates and heavy emulation overhead. To address these challenges, we present ISOLATOS, the first hardware-supported framework for detecting doublefetch bugs in COTS RTOS. By leveraging modern CPU kernelisolation features, ISOLATOS enables kernel isolation so that cross-boundary accesses can be captured by triggering page faults. ISOLATOS then records page-fault metadata on each usermemory fetch. Finally, multiple fetches in the same system call are determined as a double-fetch bug, based on the lifecycle of system calls that ISOLATOS instruments into COTS RTOS. We evaluate ISOLATOS on three widely used RTOS, including QNX, VxWorks, and seL4, and demonstrate a 79.3× reduction in runtime overhead compared to state-of-the-art emulation-based detectors. ISOLATOS also detects double-fetch bugs with lower false positive rates than other tools. Our approach uncovers 43 previously unknown vulnerabilities in COTS RTOS (41 confirmed by vendors, 2 CVEs assigned). Additionally, we have demonstrated the real-world impact of our findings in automotive systems by exploiting them.",
+  "abstract_source_id": "src-abstract-ndss-2026-923df6b0",
   "venue": "ndss",
   "year": 2026,
   "track_or_session": "Summer submission cycle",
@@ -265,6 +267,19 @@
       "official": false,
       "supports": [
         "independent proceedings identity reconciliation"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2026-923df6b0",
+      "url": "https://www.ndss-symposium.org/ndss-paper/isolatos-detecting-double-fetch-bugs-in-cots-rtos-by-re-enabling-kernel-isolation/",
+      "kind": "paper-page",
+      "title": "IsolatOS: Detecting Double Fetch Bugs in COTS RTOS by Re-enabling Kernel Isolation",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:22:17Z",
+      "content_hash": "sha256:848249a85437d6a33c4a81fd3e96e2d895b8e69f65fbccbca99b1a6e6ff1d736",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

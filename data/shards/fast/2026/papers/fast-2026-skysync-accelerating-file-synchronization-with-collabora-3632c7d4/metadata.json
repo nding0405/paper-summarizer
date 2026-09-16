@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "fast-2026-skysync-accelerating-file-synchronization-with-collabora-3632c7d4",
   "title": "SkySync: Accelerating File Synchronization with Collaborative Delta Generation",
+  "abstract": "File synchronization (sync) is of increasing significance for not only intra-cloud but also inter-cloud applications and services, as cloud computing is evolving into the Sky computing paradigm with the illusion of utility computing on an infrastructure of multiple geographically-distributed clouds. However, existing file sync schemes, mainly including fixed-sized chunking (FSC) based sync and content-defined-chunking (CDC) based sync, heavily rely on complex algorithms for generating the delta data. These algorithms perform costly processing operations including (i) file chunking, (ii) chunk checksum computation, and (iii) chunk searching, which incur high computational overhead thus lowering sync performance. This paper presents SkySync, a novel file sync scheme based on collaborative delta generation. Our insight is that the conventional storage layer has already maintained rich metadata (like checksums and cryptographic digests) for management purpose, e.g., to verify integrity and detect errors. Therefore, we leverage the existent metadata of the storage layer to obtain the chunk checksums with simple adaptation and combination, thus effectively reducing the computational overhead. We further streamline the chunk searching process by reusing checksum data produced during prior computations. We have implemented the FSC-based and CDC-based SkySync schemes by enhancing the communication protocol of the state-of-the-art rsync and dsync, respectively. Evaluation results show that compared to the existing file sync schemes (rsync and dsync), SkySync significantly reduces the computational overhead by up to 89.3% and improves the client and server sync performance by 1.1× ∼2×, while maintaining a consistent level of network traffic.",
+  "abstract_source_id": "src-abstract-fast-2026-3632c7d4",
   "venue": "fast",
   "year": 2026,
   "track_or_session": "Cloud Technologies II",
@@ -181,6 +183,19 @@
         "proceedings page range and page count",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-fast-2026-3632c7d4",
+      "url": "https://www.usenix.org/conference/fast26/presentation/zhang-zhihao",
+      "kind": "paper-page",
+      "title": "SkySync: Accelerating File Synchronization with Collaborative Delta Generation",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:01:42Z",
+      "content_hash": "sha256:799147a8b1fdc0693f4350026b92e7b9a30254b97f92aab9c0477e7f7e94273f",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

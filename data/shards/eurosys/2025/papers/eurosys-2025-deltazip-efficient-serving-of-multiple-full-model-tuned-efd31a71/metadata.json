@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "eurosys-2025-deltazip-efficient-serving-of-multiple-full-model-tuned-efd31a71",
   "title": "DeltaZip: Efficient Serving of Multiple Full-Model-Tuned LLMs",
+  "abstract": "Fine-tuning large language models (LLMs) greatly improves model quality for downstream tasks. However, serving many fine-tuned LLMs concurrently is challenging due to the sporadic, bursty, and varying request patterns of different LLMs. To bridge this gap, we present DeltaZip, an LLM serving system that efficiently serves multiple full-parameter fine-tuned models concurrently by aggressively compressing model deltas by up to 10× while maintaining high model quality. The key insight behind this design is that fine-tuning results in small-magnitude changes to the pre-trained model. By co-designing the serving system with the compression algorithm, DeltaZip achieves 2× to 12× improvement in throughput compared to the state-of-the-art systems.",
+  "abstract_source_id": "src-abstract-eurosys-2025-efd31a71",
   "venue": "eurosys",
   "year": 2025,
   "track_or_session": "Session-1.2: LLM Serving - Location: Rotterdam hall 1B - Chair: Thaleia Doudali",
@@ -125,6 +127,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-eurosys-2025-efd31a71",
+      "url": "https://api.openalex.org/works/doi:10.1145/3689031.3717468?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "DeltaZip: Efficient Serving of Multiple Full-Model-Tuned LLMs",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:19:04Z",
+      "content_hash": "sha256:4812104a944c6446ffc83c5096508603bbf0ecfc603b2ab933fe99bcdfd6e64c",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

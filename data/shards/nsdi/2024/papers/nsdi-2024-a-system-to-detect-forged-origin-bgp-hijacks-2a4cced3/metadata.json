@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2024-a-system-to-detect-forged-origin-bgp-hijacks-2a4cced3",
   "title": "A System to Detect Forged-Origin BGP Hijacks",
+  "abstract": "Despite global efforts to secure Internet routing, attackers still successfully exploit the lack of strong BGP security mechanisms. This paper focuses on an attack vector that is frequently used: Forged-origin hijacks, a type of BGP hijack where the attacker manipulates the AS path to make it immune to RPKI-ROV filters and appear as legitimate routing updates from a BGP monitoring standpoint. Our contribution is DFOH, a system that quickly and consistently detects forged-origin hijacks in the whole Internet. Detecting forged-origin hijacks boils down to inferring whether the AS path in a BGP route is legitimate or has been manipulated. We demonstrate that current state-of-art approaches to detect BGP anomalies are insufficient to deal with forged-origin hijacks. We identify the key properties that make the inference of forged AS paths challenging, and design DFOH to be robust against real-world factors. Our inference pipeline includes two key ingredients: (i) a set of strategically selected features, and (ii) a training scheme adapted to topological biases. DFOH detects 90.9% of the forged-origin hijacks within only ≈5min. In addition, it only reports ≈17.5 suspicious cases every day for the whole Internet, a small number that allows operators to investigate the reported cases and take countermeasures.",
+  "abstract_source_id": "src-abstract-nsdi-2024-2a4cced3",
   "venue": "nsdi",
   "year": 2024,
   "track_or_session": "Security",
@@ -160,6 +162,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2024-2a4cced3",
+      "url": "https://www.usenix.org/conference/nsdi24/presentation/holterbach",
+      "kind": "paper-page",
+      "title": "A System to Detect Forged-Origin BGP Hijacks",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:02:48Z",
+      "content_hash": "sha256:a00b61274124e06287ab2334b335c44691e36292caa88865c4ae91a4f19ac7bb",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

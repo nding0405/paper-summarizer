@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2024-on-kernel-s-safety-in-the-spectre-era-and-kaslr-is-forma-150ac7ec",
   "title": "On Kernel's Safety in the Spectre Era (And KASLR is Formally Dead)",
+  "abstract": "The efficacy of address space layout randomization has been formally demonstrated in a shared-memory model by Abadi et al., contingent on specific assumptions about victim programs. However, modern operating systems, implementing layout randomization in the kernel, diverge from these assumptions and operate on a separate memory model with communication through system calls. In this work, we relax Abadi et al.'s language assumptions while demonstrating that layout randomization offers a comparable safety guarantee in a system with memory separation. However, in practice, speculative execution and side-channels are recognized threats to layout randomization. We show that kernel safety cannot be restored for attackers capable of using side-channels and speculative execution and introduce a new condition, that allows us to formally prove kernel safety in the Spectre era. Our research demonstrates that under this condition, the system remains safe without relying on layout randomization. We also demonstrate that our condition can be sensibly weakened, leading to enforcement mechanisms that can guarantee kernel safety for safe system calls in the Spectre era.",
+  "abstract_source_id": "src-abstract-ccs-2024-150ac7ec",
   "venue": "ccs",
   "year": 2024,
   "track_or_session": "Cycle 1",
@@ -138,6 +140,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2024-150ac7ec",
+      "url": "https://api.openalex.org/works/doi:10.1145/3658644.3670332?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "On Kernel's Safety in the Spectre Era (And KASLR is Formally Dead)",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:11:06Z",
+      "content_hash": "sha256:3974aa64a7ced11b7093003f42590b210cc60254f616870e9fba665df3682226",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

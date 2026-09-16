@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2026-revisiting-pq-wireguard-a-comprehensive-security-analysi-646d2c0a",
   "title": "Revisiting PQ WireGuard: A Comprehensive Security Analysis With a New Design Using Reinforced KEMs",
+  "abstract": "WireGuard is a VPN based on the Noise protocol, known for its high performance, small code base, and unique security features. Recently, Hülsing et al. (IEEE S&P'21) presented post-quantum (PQ) WireGuard, replacing the DiffieHellman (DH) key exchange underlying the Noise protocol with key-encapsulation mechanisms (KEMs). Since WireGuard requires the handshake message to fit in one UDP packet of size roughly 1200 B, they combined Classic McEliece and a modified variant of Saber. However, as Classic McEliece public keys are notoriously large, this comes at the cost of severely increasing the server's memory requirement. This hinders deployment, especially in environments with constraints on memory (allocation), such as a kernel-level implementations. In this work, we revisit PQ WireGuard and improve it on three fronts: design, (computational) security, and efficiency. As KEMs are semantically but not syntactically the same as DH key exchange, there are many (in hindsight) ad-hoc design choices being made, further amplified by the recent finding on the binding issues with PQ KEMs (Cremers et al., CCS'24). We redesign PQ WireGuard addressing these issues, and prove it secure in a new computational model by fixing and capturing new security features that were not modeled by Hülsing et al. We further propose reinforced KEM as a natural building block for key exchange protocols, enabling a PQ WireGuard construction where the server no longer needs to store Classical McEliece keys, reducing public key memory by 190 to $390 \\times$. In essence, we develop a new way to compress two ML-KEM like ciphertexts which may be of an independent interest.",
+  "abstract_source_id": "src-abstract-sp-2026-646d2c0a",
   "venue": "sp",
   "year": 2026,
   "track_or_session": "Cycle 1",
@@ -133,6 +135,19 @@
       "official": true,
       "supports": [
         "DOI, published-order authors and affiliations, abstract, publication date, page span, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2026-646d2c0a",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Revisiting PQ Wireguard: A Comprehensive Security Analysis with a New Design Using Reinforced KEMs",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:58:02Z",
+      "content_hash": "sha256:4204efad9387253e2c70bd18217fac7c5220b9cd43ecd6179fdc27c5a043343e",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

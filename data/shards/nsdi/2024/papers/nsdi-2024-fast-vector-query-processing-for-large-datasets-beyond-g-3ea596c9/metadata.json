@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2024-fast-vector-query-processing-for-large-datasets-beyond-g-3ea596c9",
   "title": "Fast Vector Query Processing for Large Datasets Beyond GPU Memory with Reordered Pipelining",
+  "abstract": "Vector query processing powers a wide range of AI applications. While GPUs are optimized for massive vector operations, today's practice relies on CPUs to process queries for large vector datasets, due to limited GPU memory.\n\nWe present RUMMY, the first GPU-accelerated vector query processing system that achieves high performance and supports large vector datasets beyond GPU memory. The core of RUMMY is a novel reordered pipelining technique that exploits the characteristics of vector query processing to efficiently pipeline data transmission from host memory to GPU memory and query processing in GPU. Specifically, it leverages three ideas: (i) cluster-based retrofitting to eliminate redundant data transmission across queries in a batch, (ii) dynamic kernel padding with cluster balancing to maximize spatial and temporal GPU utilization for GPU computation, and (iii) query-aware reordering and grouping to optimally overlap transmission and computation. We also tailor GPU memory management for vector queries to reduce GPU memory fragmentation and cache misses. We evaluate RUMMY with a variety of billion-scale benchmarking datasets. The experimental results show that RUMMY outperforms IVF-GPU with CUDA unified memory by up to 135×. Compared to the CPU-based solution (with 64 vCPUs), RUMMY (with one NVIDIA A100 GPU) achieves up to 23.1× better performance and is up to 37.7× more cost-effective.",
+  "abstract_source_id": "src-abstract-nsdi-2024-3ea596c9",
   "venue": "nsdi",
   "year": 2024,
   "track_or_session": "Clouds but Faster",
@@ -160,6 +162,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2024-3ea596c9",
+      "url": "https://www.usenix.org/conference/nsdi24/presentation/zhang-zili-pipelining",
+      "kind": "paper-page",
+      "title": "Fast Vector Query Processing for Large Datasets Beyond GPU Memory with Reordered Pipelining",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:03:09Z",
+      "content_hash": "sha256:60832fb687d66d112d9c11cccba48b93eda7cac90807ebaa3d38f5f7ddf0183e",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

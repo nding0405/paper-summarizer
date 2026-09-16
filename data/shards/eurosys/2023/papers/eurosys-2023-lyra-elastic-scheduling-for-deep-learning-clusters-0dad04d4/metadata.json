@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "eurosys-2023-lyra-elastic-scheduling-for-deep-learning-clusters-0dad04d4",
   "title": "Lyra: Elastic Scheduling for Deep Learning Clusters",
+  "abstract": "Organizations often build separate training and inference clusters for deep learning, and use separate schedulers to manage them. This leads to problems for both: inference clusters have low utilization when the traffic load is low; training jobs often experience long queuing due to a lack of resources. We introduce Lyra, a new cluster scheduler to address these problems. Lyra introduces capacity loaning to loan idle inference servers for training jobs. It further exploits elastic scaling that scales a training job's resource allocation to better utilize loaned servers. Capacity loaning and elastic scaling create new challenges to cluster management. When the loaned servers need to be returned, we need to minimize job preemptions; when more GPUs become available, we need to allocate them to elastic jobs and minimize the job completion time (JCT). Lyra addresses these combinatorial problems with principled heuristics. It introduces the notion of server preemption cost, which it greedily reduces during server reclaiming. It further relies on the JCT reduction value defined for each additional worker of an elastic job to solve the scheduling problem as a multiple-choice knapsack problem. Prototype implementation on a 64-GPU testbed and large-scale simulation with 15-day traces of over 50,000 production jobs show that Lyra brings 1.53x and 1.48x reductions in average queuing time and JCT, and improves cluster usage by up to 25%.",
+  "abstract_source_id": "src-abstract-eurosys-2023-0dad04d4",
   "venue": "eurosys",
   "year": 2023,
   "track_or_session": null,
@@ -188,6 +190,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-eurosys-2023-0dad04d4",
+      "url": "https://api.openalex.org/works/doi:10.1145/3552326.3587445?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Lyra: Elastic Scheduling for Deep Learning Clusters",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:18:35Z",
+      "content_hash": "sha256:f8f45aa2b520f25effac78314843e02e81d876828d838dbdd6da932884a1e51a",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

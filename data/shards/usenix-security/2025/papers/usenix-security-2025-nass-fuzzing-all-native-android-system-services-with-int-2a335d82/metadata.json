@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-nass-fuzzing-all-native-android-system-services-with-int-2a335d82",
   "title": "NASS: Fuzzing All Native Android System Services with Interface Awareness and Coverage",
+  "abstract": "Compromised or malicious apps remain a primary security concern for Android. As Android tightens its app sandbox and further reduces the kernel's attack surface, native Android system services emerge as a promising target for privilege escalation.\n\nBugs in these native system services, triggerable from the app sandbox via RPC (Remote Procedure Calls), may facilitate privilege escalation. We identify the attack surface exposed by proprietary native system services and propose NASS, an approach to effectively fuzz proprietary real-world RPC servers to detect bugs triggerable via RPC. NASS addresses the challenge of extracting coverage from complex intertwined real-world RPC servers. Furthermore, NASS leverages our novel technique deserialization-guided interface extraction to recover the RPC interface definition from proprietary RPC servers. NASS' techniques all build on common RPC design principles, which broadly apply to RPC frameworks.\n\nWe implement NASS for Android's Binder RPC framework. NASS outperforms prior work regarding interface extraction, target exploration and bug finding capabilities, even without access to source code. NASS has identified 12 unique bugs in up-to-date Google, Samsung, Xiaomi, and OnePlus devices, with five CVEs assigned so far.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-2a335d82",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "System Security 3: Mobile Platforms",
@@ -112,6 +114,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-2a335d82",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/mao",
+      "kind": "paper-page",
+      "title": "NASS: Fuzzing All Native Android System Services with Interface Awareness and Coverage",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:20:49Z",
+      "content_hash": "sha256:759f3a300c414c9ca86af5c8654c72769edd48698e0df6c3bc1431f2ecce1506",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

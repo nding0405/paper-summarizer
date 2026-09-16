@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2026-adversarial-hubness-in-multi-modal-retrieval-b275ef70",
   "title": "Adversarial Hubness in Multi-Modal Retrieval",
+  "abstract": "Hubness is a phenomenon in high-dimensional vector spaces where a point from the natural distribution is unusually close to many other points. This is a well-known problem in information retrieval that causes some items to accidentally (and incorrectly) appear relevant to many queries. In this paper, we investigate how attackers can exploit hubness to turn any image or audio input in a multi-modal retrieval system into an adversarial hub. Adversarial hubs can be used to inject universal adversarial content (e.g., spam) that will be retrieved in response to thousands of different queries, and also for targeted attacks on queries related to specific, attacker-chosen concepts. We present a method for creating adversarial hubs and evaluate them on benchmark multi-modal retrieval datasets and an image-to-image retrieval system implemented by Pinecone, a popular vector database. For example, in text-caption-to-image retrieval, a single adversarial hub, generated using 100 random queries, is retrieved as the top-1 most relevant image for more than 21,000 out of 25,000 test queries (by contrast, the most common natural hub is the top-1 response to only 102 queries), demonstrating the strong generalization capabilities of adversarial hubs. We also investigate whether techniques for mitigating natural hubness can also mitigate adversarial hubs, and show that they are not effective against hubs that target queries related to specific concepts.",
+  "abstract_source_id": "src-abstract-sp-2026-b275ef70",
   "venue": "sp",
   "year": 2026,
   "track_or_session": "Cycle 2",
@@ -154,6 +156,19 @@
       "official": true,
       "supports": [
         "DOI, published-order authors and affiliations, abstract, publication date, page span, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2026-b275ef70",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Adversarial Hubness in Multi-Modal Retrieval",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:57Z",
+      "content_hash": "sha256:303a9b5e5ef8908a3cfe67f02eb8a87be978a5fe3281c7ecec8c0cdb512517e0",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

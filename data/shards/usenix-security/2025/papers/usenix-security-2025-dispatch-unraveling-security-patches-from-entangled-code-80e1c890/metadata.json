@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-dispatch-unraveling-security-patches-from-entangled-code-80e1c890",
   "title": "DISPATCH: Unraveling Security Patches from Entangled Code Changes",
+  "abstract": "Security patches are crucial for preserving the integrity, confidentiality, and availability of computing resources. However, their deployment can be significantly postponed when intertwined with non-security patches. Existing code change decomposition methods are primarily designed for code review, focusing on connecting related parts. However, they often include irrelevant statements in a bloated security patch, complicating security patch detection, verification, and deployment. In this paper, we develop a patch decomposition system named DISPATCH for unraveling individual security patches from entangled code changes. We first introduce a graph representation named PatchGraph to capture the fine-grained code modifications by retaining changed syntax and dependency. Next, we perform a two-stage patch dependency analysis to group the changed statements addressing the same vulnerability into individual security patches. The first stage focuses on the statement level, where boundaries are defined to exclude unrelated statements. The second stage analyzes the unvisited dependencies, ensuring the patch's applicability by maintaining syntactic correctness and function completeness. In the evaluation across four popular software repositories (i.e., OpenSSL, Linux Kernel, ImageMagick, and Nginx), DISPATCH can unravel individual security patches from entangled ones with over 91.9% recall, outperforming existing methods by at least 20% in accuracy.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-80e1c890",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Software Security 2: Patching and Repair",
@@ -175,6 +177,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-80e1c890",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/sun-shiyu",
+      "kind": "paper-page",
+      "title": "DISPATCH: Unraveling Security Patches from Entangled Code Changes",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:19:22Z",
+      "content_hash": "sha256:1db42a6ed94a73b2b21398a89e316438cfe061875fe6314c731ab26ccce8531a",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

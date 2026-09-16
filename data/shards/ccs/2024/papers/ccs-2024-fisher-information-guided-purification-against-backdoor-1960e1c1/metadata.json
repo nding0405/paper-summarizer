@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2024-fisher-information-guided-purification-against-backdoor-1960e1c1",
   "title": "Fisher Information guided Purification against Backdoor Attacks",
+  "abstract": "Studies on backdoor attacks in recent years suggest that an adversary can compromise the integrity of a deep neural network (DNN) by manipulating a small set of training samples.Our analysis shows that such manipulation can make the backdoor model converge to a bad local minima, i.e., sharper minima as compared to a benign model.Intuitively, the backdoor can be purified by re-optimizing the model to smoother minima.However, a naïve adoption of any optimization targeting smoother minima can lead to sub-optimal purification techniques hampering the clean test accuracy.Hence, to effectively obtain such re-optimization, inspired by our novel perspective establishing the connection between backdoor removal and loss smoothness, we propose Fisher Information guided Purification (FIP), a novel backdoor purification framework.Proposed FIP consists of a couple of novel regularizers that aid the model in suppressing the backdoor effects and retaining the acquired knowledge of clean data distribution throughout the backdoor removal procedure through exploiting the knowledge of Fisher Information Matrix (FIM).In addition, we introduce an efficient variant of FIP, dubbed as Fast FIP, which reduces the number of tunable parameters significantly and obtains an impressive runtime gain of almost 5×.Extensive experiments show that the proposed method achieves state-of-the-art (SOTA) performance on a wide range of backdoor defense benchmarks: 5 different tasks-Image Recognition, Object Detection, Video Action Recognition, 3D point Cloud, Language Generation; 11 different datasets including ImageNet, PASCAL VOC, UCF101; diverse model architectures spanning both CNN and vision transformer; 14 different backdoor attacks, e.g., Dynamic, WaNet, LIRA, ISSBA, etc.Our code is available in this GitHub Repository.",
+  "abstract_source_id": "src-abstract-ccs-2024-1960e1c1",
   "venue": "ccs",
   "year": 2024,
   "track_or_session": "Cycle 2",
@@ -180,6 +182,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2024-1960e1c1",
+      "url": "https://api.openalex.org/works/doi:10.1145/3658644.3690250?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Fisher Information guided Purification against Backdoor Attacks",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:10:05Z",
+      "content_hash": "sha256:ca199c80c51863f041520679a94197de1cdd6273c65f43262d5cde3d56222626",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2024-drr-a-decentralized-scalable-and-auditable-architecture-142286ae",
   "title": "dRR: A Decentralized, Scalable, and Auditable Architecture for RPKI Repository",
+  "abstract": "Although Resource Public Key Infrastructure (RPKI) is critical for securing inter-domain routing, we find that its key component, the RPKI Repository, is under studied. We conduct the first data-driven analysis of the existing RPKI Repository infrastructure, including a survey of worldwide AS administrators and a large-scale measurement of the existing RPKI Repository. Based on the findings of this study, we identify three key problems. Firstly, misbehaving RPKI authorities can easily manipulate RPKI objects, and Internet Number Resources (INRs) holders and Relying Parties (RPs) can neither prevent malicious behaviors of misbehaving authorities nor hold them accountable. Secondly, RPKI Repository is sensitive to failures: An attack or downtime of any Publication Point (PP) will prevent RPs from obtaining complete RPKI object views. Finally, we identify scalability issues with the current RPKI Repository, which are expected to worsen with the further deployment of Route Origin Authorization (ROA).\n\nTo address these problems, we propose dRR, an architecture that enhances the security, robustness, and scalability of the RPKI Repository while being compatible with standard RPKI. By introducing two new entities: Certificate Servers (CSs) and Monitors, dRR forms a decentralized federation of CSs, which enables the RPKI Repository to proactively defend against malicious behavior from authorities and to tolerate PPs' failures. dRR is also scalable for future large-scale deployment. We present the design of dRR in detail and implement a prototype of dRR on a global Internet testbed spanning 15 countries. Experimental results show that, although new security features are introduced, dRR only incurs negligible latency for certificate issuance and revocation. The throughput of certificate updates achieved by dRR is 450 times higher than the current maximum RPKI certificate update frequency.",
+  "abstract_source_id": "src-abstract-ndss-2024-142286ae",
   "venue": "ndss",
   "year": 2024,
   "track_or_session": "Fall submission cycle",
@@ -168,6 +170,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2024-142286ae",
+      "url": "https://www.ndss-symposium.org/ndss-paper/drr-a-decentralized-scalable-and-auditable-architecture-for-rpki-repository/",
+      "kind": "paper-page",
+      "title": "dRR: A Decentralized, Scalable, and Auditable Architecture for RPKI Repository",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:17:55Z",
+      "content_hash": "sha256:53eecce1cda4fadaca98c437e6a81e6d5204cee445a93e383683987bc674c043",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

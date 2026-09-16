@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2026-mugi-value-level-parallelism-for-efficient-llms-02757213",
   "title": "Mugi: Value Level Parallelism For Efficient LLMs",
+  "abstract": "Value level parallelism (VLP) has been proposed to improve the efficiency of large-batch, low-precision general matrix multiply (GEMM) between symmetric activations and weights. In transformer based large language models (LLMs), there exist more sophisticated operations beyond activation-weight GEMM. In this paper, we explore how VLP benefits LLMs. First, we generalize VLP for nonlinear approximations, outperforming existing nonlinear approximations in end-to-end LLM accuracy, performance, and efficiency. Our VLP approximation follows a value-centric approach, where important values are assigned with greater accuracy. Second, we optimize VLP for small-batch GEMMs with asymmetric inputs efficiently, which leverages timely LLM optimizations, including weight-only quantization, key-value (KV) cache quantization, and group query attention. Finally, we design a new VLP architecture, Mugi, to encapsulate the innovations above and support full LLM workloads, while providing better performance, efficiency and sustainability. Our experimental results show that Mugi can offer significant improvements on throughput and energy efficiency, up to $45\\times$ and $668\\times$ for nonlinear softmax operations, and $2.07\\times$ and $3.11\\times$ for LLMs, and also decrease operational carbon for LLM operation by $1.45\\times$ and embodied carbon by $1.48\\times$.",
+  "abstract_source_id": "src-abstract-asplos-2026-02757213",
   "venue": "asplos",
   "year": 2026,
   "track_or_session": "Session 3A: LLM Attention & KV Cache",
@@ -165,6 +167,19 @@
       "official": false,
       "supports": [
         "Author-deposited archival artifact matched by title, authors, linked DOI, or accompanying paper description."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2026-02757213",
+      "url": "https://api.openalex.org/works/doi:10.1145/3779212.3790189?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Mugi: Value Level Parallelism For Efficient LLMs",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:05:36Z",
+      "content_hash": "sha256:2cae54230a74ca4d69fb35e9c7cd96c650fb00189988cd930537ade93863a544",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

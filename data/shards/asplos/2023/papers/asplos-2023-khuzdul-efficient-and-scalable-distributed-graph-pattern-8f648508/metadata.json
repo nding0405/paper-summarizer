@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2023-khuzdul-efficient-and-scalable-distributed-graph-pattern-8f648508",
   "title": "Khuzdul: Efficient and Scalable Distributed Graph Pattern Mining Engine",
+  "abstract": "This paper proposes Khuzdul, a distributed execution engine with a well-defined abstraction that can be integrated with existing single-machine graph pattern mining (GPM) systems to provide efficiency and scalability at the same time. The key novelty is the extendable embedding abstraction which can express pattern enumeration algorithms, allow fine-grained task scheduling, and enable low-cost GPM-specific data reuse to reduce communication cost. The effective BFS-DFS hybrid exploration generates sufficient concurrent tasks for communication-computation overlapping with bounded memory consumption. Two scalable distributed GPM systems are implemented by porting Automine and GraphPi on Khuzdul. Our evaluation shows that Khuzdul based systems significantly outperform state-of-the-art distributed GPM systems with partitioned graphs by up to 75.5× (on average 19.0×), achieve similar or even better performance compared with the fastest distributed GPM systems with replicated graph, and scale to massive graphs with more than one hundred billion edges with a commodity cluster.",
+  "abstract_source_id": "src-abstract-asplos-2023-8f648508",
   "venue": "asplos",
   "year": 2023,
   "track_or_session": "Session 8C: Graphs B",
@@ -104,6 +106,19 @@
       "official": false,
       "supports": [
         "Indexed abstract used with the official technical-session context for relevance classification, plus alternate-copy and explicitly printed ancillary links."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2023-8f648508",
+      "url": "https://api.openalex.org/works/doi:10.1145/3575693.3575743?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Khuzdul: Efficient and Scalable Distributed Graph Pattern Mining Engine",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T21:59:33Z",
+      "content_hash": "sha256:d4a37546b256b4aa30968c7c69f117bc77b6392091c5ddaae4bc194c8d63d103",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sigcomm-2026-simplifying-prioritization-and-scheduling-with-p2cs-e840d491",
   "title": "Simplifying Prioritization and Scheduling with P2CS",
+  "abstract": "Modern datacenter networks host diverse services and workloads with varying quality-of-service (QoS) requirements, yet are constrained by hardware limitations. Most notably, the small number of physical priority queues available in commodity switches. Existing scheduling mechanisms, whether end-host or in-network based, struggle to scale under these constraints due to their reliance on global priority information or complex queue management. This paper presents P2CS (Priority-based Probabilistic Congestion Signaling), a lightweight and scalable approach that enables fine-grained traffic prioritization using only a single FIFO queue. P2CS combines priority-aware probabilistic congestion signaling, priority-aware packet dropping, and simple switch-side arbitration to enforce prioritization across flows. P2CS supports a range of scheduling objectives, and requires minimal software changes making it readily deployable in today's datacenter infrastructure. Evaluation on representative workloads, including multi-tenant ML training, HPC, and mixed spray/ECMP traffic, demonstrates that P2CS achieves performance comparable to in-network mechanisms while significantly reducing complexity and cost.",
+  "abstract_source_id": "src-abstract-e840d491",
   "venue": "sigcomm",
   "year": 2026,
   "track_or_session": "Research Session 12: Host Networking & Packet Processing — Research Paper",
@@ -128,6 +130,19 @@
       "official": true,
       "supports": [
         "official main-paper scope and track definitions"
+      ]
+    },
+    {
+      "id": "src-abstract-e840d491",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/search/match?query=Simplifying%20Prioritization%20and%20Scheduling%20with%20P2CS&fields=title,abstract",
+      "kind": "semantic-scholar",
+      "title": "Simplifying Prioritization and Scheduling with P2CS",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T23:06:40Z",
+      "content_hash": "sha256:f051a59d07487a4ce054bf040d03a4a8a137cefa2d16bb5f40f3799f199b3389",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2024-towards-precise-reporting-of-cryptographic-misuses-ee68bdc2",
   "title": "Towards Precise Reporting of Cryptographic Misuses",
+  "abstract": "In the last decade, a series of papers were published on using static analysis to detect cryptographic API misuse. In each paper, apps are checked against a set of rules to see if violations exist. A common theme among these papers is that rule violations are plentiful, often at the scale of thousands. Interestingly, while much effort went into tackling false negatives, curiously, not much has been said on (1) whether the misuse alarms are indeed correct and meaningful, and (2) what can future work improve upon apart from finding more misuses.\n\nIn this paper, we take a deep dive into the rule violations reported by various academic papers as well as the rules, models and implementations of their detectors, in an attempt to (1) explain the gap between their misuse alarms and actual vulnerabilities, and (2) shed light on possible directions for improving the precision and usability of misuse detectors. Results of our analysis suggest that the small-scale inspections done by previous work had some unfortunate blind-spots, leaving problems in their rules, models, and implementations unnoticed, which in turn led to unnecessary overestimation of misuses (and vulnerabilities). To facilitate future research on the topic, we distill these avoidable false alarms into high-level patterns that capture their root causes, and discuss design, evaluation and reporting strategies that can improve the precision of misuse findings. Furthermore, to demonstrate the generalizability of these false alarm patterns and improvement directions, we also investigate a popular industry detector and a dynamic detector, and discuss how some of the false alarm patterns do and do not apply to them. Our findings suggest that the problem of precisely reporting cryptographic misuses still has much room for future work to improve upon.",
+  "abstract_source_id": "src-abstract-ndss-2024-ee68bdc2",
   "venue": "ndss",
   "year": 2024,
   "track_or_session": "Fall submission cycle",
@@ -168,6 +170,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2024-ee68bdc2",
+      "url": "https://www.ndss-symposium.org/ndss-paper/towards-precise-reporting-of-cryptographic-misuses/",
+      "kind": "paper-page",
+      "title": "Towards Precise Reporting of Cryptographic Misuses",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:18:49Z",
+      "content_hash": "sha256:8963508d9dda3bcd986dcf5cc4af1e4261c46ebc1f7f99561bc1e7e370ef7b69",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

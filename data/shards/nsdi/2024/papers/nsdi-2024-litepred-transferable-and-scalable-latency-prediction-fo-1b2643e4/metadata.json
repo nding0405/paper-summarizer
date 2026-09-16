@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2024-litepred-transferable-and-scalable-latency-prediction-fo-1b2643e4",
   "title": "LitePred: Transferable and Scalable Latency Prediction for Hardware-Aware Neural Architecture Search",
+  "abstract": "Hardware-Aware Neural Architecture Search (NAS) has demonstrated success in automating the design of affordable deep neural networks (DNNs) for edge platforms by incorporating inference latency in the search process. However, accurately and efficiently predicting DNN inference latency on diverse edge platforms remains a significant challenge. Current approaches require several days to construct new latency predictors for each one platform, which is prohibitively time-consuming and impractical.\n\nIn this paper, we propose LitePred, a lightweight approach for accurately predicting DNN inference latency on new platforms with minimal adaptation data by transferring existing predictors. LitePred builds on two key techniques: (i) a Variational Autoencoder (VAE) data sampler to sample high-quality training and adaptation data that conforms to the model distributions in NAS search spaces, overcoming the out-of-distribution challenge; and (ii) a latency distribution-based similarity detection method to identify the most similar pre-existing latency predictors for the new target platform, reducing adaptation data required while achieving high prediction accuracy. Extensive experiments on 85 edge platforms and 6 NAS search spaces demonstrate the effectiveness of our approach, achieving an average latency prediction accuracy of 99.3% with less than an hour of adaptation cost. Compared with SOTA platform-specific methods, LitePred achieves up to 5.3% higher accuracy with a significant 50.6× reduction in profiling cost. Code and predictors are available at https://github.com/microsoft/Moonlit/tree/main/LitePred .",
+  "abstract_source_id": "src-abstract-nsdi-2024-1b2643e4",
   "venue": "nsdi",
   "year": 2024,
   "track_or_session": "Cloud Scheduling",
@@ -245,6 +247,19 @@
         "official BibTeX",
         "presentation media links",
         "explicit artifact, code, or project links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2024-1b2643e4",
+      "url": "https://www.usenix.org/conference/nsdi24/presentation/feng-chengquan",
+      "kind": "paper-page",
+      "title": "LitePred: Transferable and Scalable Latency Prediction for Hardware-Aware Neural Architecture Search",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:03:20Z",
+      "content_hash": "sha256:83cf18f03016b6900b7bd76fc49bf46838803c49d525cb8c99502295ed6e9c8a",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

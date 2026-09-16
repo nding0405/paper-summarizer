@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-xssky-detecting-xss-vulnerabilities-through-local-path-p-32671c7a",
   "title": "XSSky: Detecting XSS Vulnerabilities through Local Path-Persistent Fuzzing",
+  "abstract": "The Cross-Site Scripting (XSS) vulnerability is one of the most prevalent security issues in PHP web applications. To detect XSS vulnerabilities, existing dynamic techniques are commonly hindered by insufficient code exploration capabilities and non-trivial execution environment setup. Comparably, static techniques offer more flexible detection of target code by identifying vulnerable source-sink paths. However, these paths would probably be guarded by custom sanitizers (i.e., implemented to filter malicious inputs). Without establishing reliable sanitizer modeling and analysis techniques, existing work can hardly achieve satisfactory effectiveness.\n\nIn light of this, we propose a static sanitizer-tolerant XSS detector, named XSSky. Our key insight is that concrete malicious inputs, which evade sanitizers and trigger XSS vulnerabilities, serve as strong proof of a vulnerability's existence. Based on this idea, XSSky attempts to deterministically curate malicious inputs for potentially vulnerable source-sink paths using a path-persistent fuzzing strategy. Specifically, XSSky first converts each given source-sink path into locally executable Programs Under Test (PUTs). Then it uses XSS-oriented exploit primitives and PHP interpreter feedback to generate malicious inputs to efficiently confirm the existence of vulnerabilities. Evaluation results show that XSSky successfully detected 60 previously unknown XSS vulnerabilities (including 31 caused by sanitizer evasion) across 20 popular PHP web applications. Compared with several existing state-of-the-art techniques, XSSky achieved a precision improvement of 11.48%~642.49% and a recall improvement of 87.51%~172.70%. Furthermore, XSSky identified 18 unique vulnerabilities that none of the baselines could detect.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-32671c7a",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Web Security",
@@ -238,6 +240,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-32671c7a",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/shi-youkun",
+      "kind": "paper-page",
+      "title": "XSSky: Detecting XSS Vulnerabilities through Local Path-Persistent Fuzzing",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:22:48Z",
+      "content_hash": "sha256:6a04b82b2a9d95d8647eef6f51dbe474c41ef9a9b9848a422a67c1eb3881cc52",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

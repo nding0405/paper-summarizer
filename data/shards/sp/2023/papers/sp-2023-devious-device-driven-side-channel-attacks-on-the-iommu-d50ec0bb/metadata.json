@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2023-devious-device-driven-side-channel-attacks-on-the-iommu-d50ec0bb",
   "title": "DevIOus: Device-Driven Side-Channel Attacks on the IOMMU",
+  "abstract": "Modern computer systems take advantage of Input/Output Memory Management Unit (IOMMU) to protect memory from DMA attacks, or to achieve strong isolation in virtualization. Despite its promising benefits, the IOMMU could be a new source of security threats. Like the MMU, the IOMMU also has Translation Lookaside Buffer (TLB) named IOTLB, an address translation cache that keeps the recent translations. Accordingly, the IOTLB can be a target of a timing side-channel attack, revealing victim’s secret. In this paper, we present DevIOus, a novel device-driven side-channel attack exploiting the IOTLB. DevIOus employs DMA-capable PCIe devices, such as GPU and RDMA-enabled NIC (RNIC), to deliver the attack. Thus, our attack has no influence on CPU caches or TLB in a victim’s machine. Implementing DevIOus is not trivial as microarchitectural internals of the IOTLB of Intel processors are hidden. We overcome this by reverse-engineering the IOTLB and disclose its hidden architectural properties. Based on this, we construct two IOTLB-based timing attack primitives using a GPU and an RNIC. Then, we demonstrate practical attacks that target co-located VMs under hardware-assisted isolation, and remote machines connected over the RDMA network. We also discuss possible mitigations against the proposed side-channel attack.",
+  "abstract_source_id": "src-abstract-sp-2023-d50ec0bb",
   "venue": "sp",
   "year": 2023,
   "track_or_session": "Session 8C: Side-channel attacks",
@@ -214,6 +216,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2023-d50ec0bb",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "DevIOus: Device-Driven Side-Channel Attacks on the IOMMU",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:22Z",
+      "content_hash": "sha256:1bed15e4c1c4d6e59eecfd74eeffd17f506467abd5cdd4e0f536f68bd1e694ee",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

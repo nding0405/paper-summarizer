@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2025-secure-ip-address-allocation-at-cloud-scale-94dd6082",
   "title": "Secure IP Address Allocation at Cloud Scale",
+  "abstract": "Public clouds necessitate dynamic resource allocation and sharing. However, the dynamic allocation of IP addresses can be abused by adversaries to source malicious traffic, bypass rate limiting systems, and even capture traffic intended for other cloud tenants. As a result, both the cloud provider and their customers are put at risk, and defending against these threats requires a rigorous analysis of tenant behavior, adversarial strategies, and cloud provider policies. In this paper, we develop a practical defense for IP address allocation through such an analysis. We first develop a statistical model of cloud tenant deployment behavior based on literature and measurement of deployed systems. Through this, we analyze IP allocation policies under existing and novel threat models. In response to our stronger proposed threat model, we design IP scan segmentation, an IP allocation policy that protects the address pool against adversarial scanning even when an adversary is not limited by number of cloud tenants. Through empirical evaluation on both synthetic and real-world allocation traces, we show that IP scan segmentation reduces adversaries' ability to rapidly allocate addresses, protecting both address space reputation and cloud tenant data. In this way, we show that principled analysis and implementation of cloud IP address allocation can lead to substantial security gains for tenants and their users.",
+  "abstract_source_id": "src-abstract-ndss-2025-94dd6082",
   "venue": "ndss",
   "year": 2025,
   "track_or_session": "Summer submission cycle",
@@ -231,6 +233,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2025-94dd6082",
+      "url": "https://www.ndss-symposium.org/ndss-paper/secure-ip-address-allocation-at-cloud-scale/",
+      "kind": "paper-page",
+      "title": "Secure IP Address Allocation at Cloud Scale",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:20:29Z",
+      "content_hash": "sha256:617ed9742c19ac8e6d7d53b29a26ed89541469e2339ed3204db1f615bf2d9b77",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

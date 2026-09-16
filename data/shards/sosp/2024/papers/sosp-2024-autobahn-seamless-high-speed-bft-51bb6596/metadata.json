@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sosp-2024-autobahn-seamless-high-speed-bft-51bb6596",
   "title": "Autobahn: Seamless High Speed BFT",
+  "abstract": "Today's practical, high performance Byzantine Fault Tolerant (BFT) consensus protocols operate in the partial synchrony model. However, existing protocols are inefficient when deployments are indeed partially synchronous. They deliver either low latency during fault-free, synchronous periods (good intervals) or robust recovery from events that interrupt progress (blips). At one end, traditional, view-based BFT protocols optimize for latency during good intervals, but, when blips occur, can suffer from performance degradation (hangovers) that can last beyond the return of a good interval. At the other end, modern DAG-based BFT protocols recover more gracefully from blips, but exhibit lackluster latency during good intervals. To close the gap, this work presents Autobahn, a novel high-throughput BFT protocol that offers both low latency and seamless recovery from blips. By combining a highly parallel asynchronous data dissemination layer with a low-latency, partially synchronous consensus mechanism, Autobahn (i) avoids the hangovers incurred by traditional BFT protocols and (ii) matches the throughput of state of the art DAG-based BFT protocols while cutting their latency in half, matching the latency of traditional BFT protocols.",
+  "abstract_source_id": "src-abstract-sosp-2024-51bb6596",
   "venue": "sosp",
   "year": 2024,
   "track_or_session": "Welcome and Session 1: Distributed Systems 8:30 - 10:30 Session Chair: Wyatt Lloyd",
@@ -167,6 +169,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-sosp-2024-51bb6596",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Autobahn: Seamless high speed BFT",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:12Z",
+      "content_hash": "sha256:aa9c23a45f6ec9973f40e6c9520c69d42bb49fc1f526891570edfdb1976cff82",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

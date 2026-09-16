@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-gdma-fully-automated-dma-rehosting-via-iterative-type-ov-14df86d8",
   "title": "GDMA: Fully Automated DMA Rehosting via Iterative Type Overlays",
+  "abstract": "Embedded systems are the critical interface between the physical and the digital world, where security breaches can lead to significant harm. In recent years, rehosting has proven to be an effective method for dynamic security testing of embedded systems. However, existing approaches largely ignore the automated rehosting of Direct Memory Access (DMA), a key mechanism for receiving untrusted data. The only fully automated DMA rehosting approach considers just one out of six common DMA mechanisms, leaving significant gaps in the security analysis of firmware.\n\nIn this work, we introduce GDMA, a comprehensive solution for fully automated DMA rehosting. GDMA successfully emulates all six DMA configuration mechanisms by analyzing emulation traces to identify the two critical DMA usage steps: DMA configuration and DMA buffer usage. More specifically, it first collects type information on MMIO registers that consistently behave like pointers. We organize this information in type trees, which capture relationships between MMIO registers and the memory regions they reference. GDMA then overlays and merges these trees to iteratively distill a DMA configuration. By applying this configuration in a generic DMA peripheral, GDMA enables effective testing of DMA-dependent firmware. We evaluate GDMA on a total of 114 firmware images. Compared to the state of the art, GDMA is the first to successfully emulate all samples of the state-of-the-art benchmark, reaching 3x the DMA mechanism coverage. We also introduce a fully reproducible data set to systematically evaluate DMA rehosting of all six mechanisms. GDMA successfully rehosts all of these, which is a factor of 6x compared to existing methods. Finally, we evaluate GDMA on various DMA-enabled firmware and discover 6 new bugs with 6 assigned CVEs following a coordinated disclosure.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-14df86d8",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Embedded and Hardware Security",
@@ -238,6 +240,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-14df86d8",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/scharnowski",
+      "kind": "paper-page",
+      "title": "GDMA: Fully Automated DMA Rehosting via Iterative Type Overlays",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:20:01Z",
+      "content_hash": "sha256:92cac1054fc8ff77750f2342baaade77d41b4089e98b5993a33ad3835a77f0b0",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

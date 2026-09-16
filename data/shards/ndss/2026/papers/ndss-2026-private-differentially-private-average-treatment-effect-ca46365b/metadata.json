@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2026-private-differentially-private-average-treatment-effect-ca46365b",
   "title": "PrivATE: Differentially Private Average Treatment Effect Estimation for Observational Data",
+  "abstract": "Causal inference plays a crucial role in scientific research across multiple disciplines. Estimating causal effects, particularly the average treatment effect (ATE), from observational data has garnered significant attention. However, computing the ATE from real-world observational data poses substantial privacy risks to users. Differential privacy, which offers strict theoretical guarantees, has emerged as a standard approach for privacy-preserving data analysis. However, existing differentially private ATE estimation works rely on specific assumptions, provide limited privacy protection, or fail to offer comprehensive information protection.\n\nTo this end, we introduce PrivATE, a practical ATE estimation framework that ensures differential privacy. In fact, various scenarios require varying levels of privacy protection. For example, only test scores are generally sensitive information in education evaluation, while all types of medical record data are usually private. To accommodate different privacy requirements, we design two levels (i.e., label-level and sample-level) of privacy protection in PrivATE. By deriving an adaptive matching limit, PrivATE effectively balances noise-induced error and matching error, leading to a more accurate estimate of ATE. Our evaluation validates the effectiveness of PrivATE. PrivATE outperforms the baselines on all datasets and privacy budgets.",
+  "abstract_source_id": "src-abstract-ndss-2026-ca46365b",
   "venue": "ndss",
   "year": 2026,
   "track_or_session": "Fall submission cycle",
@@ -265,6 +267,19 @@
       "official": false,
       "supports": [
         "independent proceedings identity reconciliation"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2026-ca46365b",
+      "url": "https://www.ndss-symposium.org/ndss-paper/private-differentially-private-average-treatment-effect-estimation-for-observational-data/",
+      "kind": "paper-page",
+      "title": "PrivATE: Differentially Private Average Treatment Effect Estimation for Observational Data",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:22:52Z",
+      "content_hash": "sha256:23d25819bff68c85d7a5ac69db720a73cea816afa73f439a6fc55a76497fc4a9",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

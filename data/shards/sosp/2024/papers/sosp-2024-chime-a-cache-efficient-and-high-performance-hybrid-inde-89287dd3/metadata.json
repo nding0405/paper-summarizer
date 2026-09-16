@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sosp-2024-chime-a-cache-efficient-and-high-performance-hybrid-inde-89287dd3",
   "title": "CHIME: A Cache-Efficient and High-Performance Hybrid Index on Disaggregated Memory",
+  "abstract": "Disaggregated memory (DM) is a widely discussed datacenter architecture in academia and industry. It decouples computing and memory resources from monolithic servers into two network-connected resource pools. Range indexes are widely adopted by storage systems on DM to efficiently locate and query remote data. However, existing range indexes on DM suffer from either high computing-side cache consumption or high memory-side read amplifications. In this paper, we propose CHIME, a hybrid index combining B+ trees with hopscotch hashing, to achieve low cache consumption and low read amplifications simultaneously. There are three challenges in constructing CHIME on DM, i.e., the complicated optimistic synchronization, the extra metadata access, and the read amplifications introduced by hopscotch hashing. CHIME leverages 1) a three-level optimistic synchronization scheme to synchronize read and write operations with various granularities, 2) an access-aggregated metadata management technique to eliminate extra metadata accesses by piggybacking and replicating metadata, and 3) an effective hotness-aware speculative read mechanism to mitigate the read amplifications of hopscotch hashing. Experimental results show that CHIME outperforms the state-of-the-art range indexes on DM by up to 5.1× with the same cache size and achieves similar performance with up to 8.7× lower cache consumption.",
+  "abstract_source_id": "src-abstract-sosp-2024-89287dd3",
   "venue": "sosp",
   "year": 2024,
   "track_or_session": "Session 2: Memory 11:00 - 12:30 Session Chair: Sudarsun Kannan",
@@ -188,6 +190,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-sosp-2024-89287dd3",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "CHIME: A Cache-Efficient and High-Performance Hybrid Index on Disaggregated Memory",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:12Z",
+      "content_hash": "sha256:aa9c23a45f6ec9973f40e6c9520c69d42bb49fc1f526891570edfdb1976cff82",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

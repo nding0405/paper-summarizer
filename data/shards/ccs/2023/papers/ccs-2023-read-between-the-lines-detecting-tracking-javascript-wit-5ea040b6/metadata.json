@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2023-read-between-the-lines-detecting-tracking-javascript-wit-5ea040b6",
   "title": "Read Between the Lines: Detecting Tracking JavaScript with Bytecode Classification",
+  "abstract": "Browsers and extensions that aim to block online ads and tracking scripts predominantly rely on rules from filter lists for determining which resource requests must be blocked. These filter lists are often manually curated by a community of online users. However, due to the arms race between blockers and ad-supported websites, these rules must continuously get updated so as to adapt to novel bypassing techniques and modified requests, thus rendering the detection and rule-generation process cumbersome and reactive (which can result in major delays between propagation and detection). In this paper, we address the detection problem by proposing an automated pipeline that detects tracking and advertisement JavaScript resources with high accuracy, designed to incur minimal false positives and overhead. Our method models script detection as a text classification problem, where JavaScript resources are documents containing bytecode sequences. Since bytecode is directly obtained from the JavaScript interpreter, our technique is resilient against commonly used bypassing methods, such as URL randomization or code obfuscation. We experiment with both deep learning and traditional ML-based approaches for bytecode classification and show that our approach identifies ad/tracking scripts with 97.08% accuracy, significantly outperforming cutting-edge systems in terms of both precision and the level of required features. Our experimental analysis further highlights our system's capabilities, by demonstrating how it can augment filter lists by uncovering ad/tracking scripts that are currently unknown, as well as proactively detecting scripts that have been erroneously added by list curators.",
+  "abstract_source_id": "src-abstract-ccs-2023-5ea040b6",
   "venue": "ccs",
   "year": 2023,
   "track_or_session": "Tracking the web (Web Security)",
@@ -130,6 +132,19 @@
       "official": false,
       "supports": [
         "published title, author order, and page span"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2023-5ea040b6",
+      "url": "https://api.openalex.org/works/doi:10.1145/3576915.3616637?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Read Between the Lines: Detecting Tracking JavaScript with Bytecode Classification",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:08:03Z",
+      "content_hash": "sha256:d1473618f7883b297fa84567e0e6e6ccccb091b3374b40befe5c8970acd2b94a",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

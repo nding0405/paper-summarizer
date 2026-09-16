@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-sliding-into-the-flight-deck-s-dms-practical-message-att-04aa19cc",
   "title": "Sliding into the Flight Deck's DMs: Practical Message Attacks on CPDLC",
+  "abstract": "The Controller–Pilot Data Link Communications (CPDLC) system has become integral to modern air traffic management, particularly in high-density or oceanic airspace where voice communication is limited or unavailable. Designed to increase operational efficiency, CPDLC is an alternative to traditional VHF voice communication with standardized digital messages for altitude changes, heading adjustments, free-text messages, and frequency handovers. However, CPDLC does not implement encryption and relies primarily on protocol complexity and obscurity as a barrier to misuse.\n\nIn this work, we present a full-stack security analysis of CPDLC and showcase several vulnerabilities that allow hijacking ATC-Pilot link with rogue ground station attacks and large-scale denial of service attacks that are capable of disabling CPDLC services for all aircraft in radio range. As a proof-of-concept, we also introduce cpdlc-gs, a first SDR based full-stack CPDLC ground-station implementation capable of injecting uplink messages to issue fake CPDLC flight instructions and effective denial of service attacks.\n\nFurthermore, to evaluate cpdlc-gs, together with air navigation service providers and avionics manufacturers, we develop a novel, fully-functional test environment with real, certifiable hardware from Universal Avionics. Through such a setup we conceptualize and validate several attacks and demonstrate that even isolated rogue stations can pose a substantial threat, especially when pilots are under high workload or in degraded communication scenarios. Overall, we argue that the heavy reliance and global adoption of CPDLC make it a high value target, and that the lagging aviation datalink security standard- ization process needs to be urgently addressed",
+  "abstract_source_id": "src-abstract-usenix-security-2026-04aa19cc",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "System Security 3",
@@ -134,6 +136,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-04aa19cc",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/ziazi",
+      "kind": "paper-page",
+      "title": "Sliding into the Flight Deck's DMs: Practical Message Attacks on CPDLC",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:25:30Z",
+      "content_hash": "sha256:e129f07c5841aaa6c40e5da333580d26ef89dc65c48bad404c78a335a78e0587",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

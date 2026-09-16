@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-attriguard-defeating-indirect-prompt-injection-in-llm-ag-d9b2fe2e",
   "title": "AttriGuard: Defeating Indirect Prompt Injection in LLM Agents via Causal Attribution of Tool Invocations",
+  "abstract": "LLM agents are highly vulnerable to Indirect Prompt Injection (IPI), where adversaries embed malicious directives in untrusted tool outputs to hijack execution. Most existing defenses treat IPI as an input-level semantic discrimination problem, which often fails to generalize to unseen payloads. We propose a new paradigm, action-level causal attribution, which secures agents by asking why a particular tool call is produced. The central goal is to distinguish tool calls supported by the user's intent from those causally driven by untrusted observations. We instantiate this paradigm with AttriGuard, a runtime defense based on parallel counterfactual tests. For each proposed tool call, AttriGuard verifies its necessity by re-executing the agent under a control-attenuated view of external observations. Technically, AttriGuard combines teacher-forced shadow replay to prevent attribution confounding, hierarchical control attenuation to suppress diverse control channels while preserving task-relevant information, and a fuzzy survival criterion that is robust to LLM stochasticity. Across four LLMs and two agent benchmarks, AttriGuard achieves 0% ASR under static attacks with negligible utility loss and moderate overhead. Importantly, it remains resilient under adaptive optimization-based attacks in settings where leading defenses degrade significantly.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-d9b2fe2e",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Security of ML 2",
@@ -197,6 +199,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-d9b2fe2e",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/he-yu",
+      "kind": "paper-page",
+      "title": "AttriGuard: Defeating Indirect Prompt Injection in LLM Agents via Causal Attribution of Tool Invocations",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:23:05Z",
+      "content_hash": "sha256:54a24a86a34de65cfc8b49451dda31971d125e1af2294bfd944e1c383d7aeffd",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

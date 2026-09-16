@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2024-lurking-in-the-shadows-unveiling-stealthy-backdoor-attac-faa4bbae",
   "title": "Lurking in the shadows: Unveiling Stealthy Backdoor Attacks against Personalized Federated Learning",
+  "abstract": "Federated Learning (FL) is a collaborative machine learning technique where multiple clients work together with a central server to train a global model without sharing their private data. However, the distribution shift across non-IID datasets of clients poses a challenge to this one-model-fits-all method hindering the ability of the global model to effectively adapt to each client's unique local data. To echo this challenge, personalized FL (PFL) is designed to allow each client to create personalized local models tailored to their private data.\n\nWhile extensive research has scrutinized backdoor risks in FL, it has remained underexplored in PFL applications. In this study, we delve deep into the vulnerabilities of PFL to backdoor attacks. Our analysis showcases a tale of two cities. On the one hand, the personalization process in PFL can dilute the backdoor poisoning effects injected into the personalized local models. Furthermore, PFL systems can also deploy both server-end and client-end defense mechanisms to strengthen the barrier against backdoor attacks. On the other hand, our study shows that PFL fortified with these defense methods may offer a false sense of security. We propose PFedBA, a stealthy and effective backdoor attack strategy applicable to PFL systems. PFedBA ingeniously aligns the backdoor learning task with the main learning task of PFL by optimizing the trigger generation process. Our comprehensive experiments demonstrate the effectiveness of PFedBA in seamlessly embedding triggers into personalized local models. PFedBA yields outstanding attack performance across 10 state-of-the-art PFL algorithms, defeating the existing 6 defense mechanisms. Our study sheds light on the subtle yet potent backdoor threats to PFL systems, urging the community to bolster defenses against emerging backdoor challenges.",
+  "abstract_source_id": "src-abstract-usenix-security-2024-faa4bbae",
   "venue": "usenix-security",
   "year": 2024,
   "track_or_session": "ML VIII: Backdoors and Federated Learning",
@@ -217,6 +219,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2024-faa4bbae",
+      "url": "https://www.usenix.org/conference/usenixsecurity24/presentation/lyu",
+      "kind": "paper-page",
+      "title": "Lurking in the shadows: Unveiling Stealthy Backdoor Attacks against Personalized Federated Learning",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:16:07Z",
+      "content_hash": "sha256:be1560db07e5c7ab5857d9f329be0dd5879dfea66b73bc83508a86e1661cde4d",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

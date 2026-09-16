@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2026-repa-re-configurable-p-im-for-the-joint-a-cceleration-of-2427d90d",
   "title": "REPA: Re configurable P IM for the Joint A cceleration of KV Cache Offloading and Processing",
+  "abstract": "The use of KV cache in LLM inference leads to large memory footprint and sub-optimal decoding performance. Prior studies typically address one of these two limitations by either offloading or stage-split inference. In this paper, we explore and reveal the possibility of a joint solution, and propose REPA, a GPU-PIM hybrid system to prototype this idea. We leverage reconfigurable ReRAM PIM to achieve fast KV cache persistence, and balance the requirement of processing speed and memory capacity. To fully unleash the parallelization potential of REPA, we propose optimizations in (1) architecture, (2) data mapping and (3) pipelining: (1) We propose bulk-wise memory instructions and multi-level controllers to enable finer-grained parallelism in the PIM device. (2) We propose locality-aware data mapping to make the best of the aforementioned architectural optimization, and reduce long-range data transfer on chip. (3) We adopt sub-batch pipelining to reduce idleness in batches, and propose transfer overlapping to shadow the KV cache transfer by computation. Experimental results show that REPA exhibits high inference speed, energy efficiency and integratability. It is 1.5--6.5× faster, and 8--10× more efficient than NVIDIA A100. It also outperforms state-of-the-art DRAM PIM systems by up to 1.4× for long context inference. When integrated into existing offloading systems, REPA achieves 1.4--2.0× offloading speed, and 1.2--1.4× end-to-end speedup, showcasing its high potential for fast KV cache offloading and processing.",
+  "abstract_source_id": "src-abstract-asplos-2026-2427d90d",
   "venue": "asplos",
   "year": 2026,
   "track_or_session": "Session 3A: LLM Attention & KV Cache",
@@ -146,6 +148,19 @@
       "official": false,
       "supports": [
         "Indexed abstract used for strict relevance classification and indexed arXiv identifier where available."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2026-2427d90d",
+      "url": "https://api.openalex.org/works/doi:10.1145/3779212.3790212?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "REPA: Re configurable P IM for the Joint A cceleration of KV Cache Offloading and Processing",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:06:01Z",
+      "content_hash": "sha256:f5a0a1c7068c67c7d065e14d22de754511518ae6aa964b5db715090a4a037e70",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2024-zerofake-zero-shot-detection-of-fake-images-generated-an-ebe9c340",
   "title": "ZeroFake: Zero-Shot Detection of Fake Images Generated and Edited by Text-to-Image Generation Models",
+  "abstract": "The text-to-image generation model has attracted significant interest from both academic and industrial communities. These models can generate the images based on the given prompt descriptions. Their potent capabilities, while beneficial, also present risks. Previous efforts relied on the approach of training binary classifiers to detect the generated fake images, which is inefficient, lacking in generalizability, and non-robust. In this paper, we propose the novel zero-shot detection method, called ZeroFake, to distinguish fake images apart from real ones by utilizing a perturbation-based DDIM inversion technique. ZeroFake is inspired by the findings that fake images are more robust than real images during the process of DDIM inversion and reconstruction. Specifically, for a given image, ZeroFake first generates noise with DDIM inversion guided by adversary prompts. Then, ZeroFake reconstructs the image from the generated noise. Subsequently, it compares the reconstructed image with the original image to determine whether it is fake or real. By exploiting the differential response of fake and real images to the adversary prompts during the inversion and reconstruction process, our model offers a more robust and efficient method to detect fake images without the extensive data and training costs. Extensive results demonstrate that the proposed ZeroFake can achieve great performance in fake image detection, fake artwork detection, and fake edited image detection. We further illustrate the robustness of the proposed ZeroFake by showcasing its resilience against potential adversary attacks. We hope that our solution can better assist the community in achieving the arrival of a more efficient and fair AGI.",
+  "abstract_source_id": "src-abstract-ccs-2024-ebe9c340",
   "venue": "ccs",
   "year": 2024,
   "track_or_session": "Cycle 2",
@@ -180,6 +182,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2024-ebe9c340",
+      "url": "https://api.openalex.org/works/doi:10.1145/3658644.3690297?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "ZeroFake: Zero-Shot Detection of Fake Images Generated and Edited by Text-to-Image Generation Models",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:12:30Z",
+      "content_hash": "sha256:576321b34a37c927952722236460179d29dc55571fa16ad76c85afd92e8aa94a",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

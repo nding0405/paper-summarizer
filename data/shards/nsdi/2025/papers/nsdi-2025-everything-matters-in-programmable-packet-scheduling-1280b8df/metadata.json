@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2025-everything-matters-in-programmable-packet-scheduling-1280b8df",
   "title": "Everything Matters in Programmable Packet Scheduling",
+  "abstract": "Operators can deploy any scheduler they desire on existing switches through programmable packet schedulers: they tag packets with ranks (which indicate their priority) and schedule them in the order of these ranks. The ideal programmable scheduler is the Push-In First-Out (PIFO) queue, which schedules packets in a perfectly sorted order by \"pushing\" packets into any position of the queue based on their ranks. However, it is hard to implement PIFO queues in hardware due to their need to sort packets at line rate (based on their ranks).\n\nRecent proposals approximate PIFO behaviors on existing data-planes. While promising, they fail to simultaneously capture both of the necessary behaviors of PIFO queues: their scheduling behavior and admission control . We introduce PACKS, an approximate PIFO scheduler that addresses this problem. PACKS runs on top of a set of priority queues and uses packet-rank information and queue-occupancy levels during enqueue to determine whether to admit each incoming packet and to which queue it should be mapped.\n\nWe fully implement PACKS in P4 and evaluate it on real workloads. We show that PACKS better-approximates PIFO than state-of-the-art approaches. Specifically, PACKS reduces the rank inversions by up to 7× and 15× with respect to SP-PIFO and AIFO, and the number of packet drops by up to 60% compared to SP-PIFO. Under pFabric ranks, PACKS reduces the mean FCT across small flows by up to 33% and 2.6×, compared to SP-PIFO and AIFO. We also show that PACKS runs at line rate on existing hardware (Intel Tofino).",
+  "abstract_source_id": "src-abstract-nsdi-2025-1280b8df",
   "venue": "nsdi",
   "year": 2025,
   "track_or_session": "Data Plane Programmability 2",
@@ -182,6 +184,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2025-1280b8df",
+      "url": "https://www.usenix.org/conference/nsdi25/presentation/alcoz",
+      "kind": "paper-page",
+      "title": "Everything Matters in Programmable Packet Scheduling",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:04:09Z",
+      "content_hash": "sha256:0af1f93f05138cd9e3f9e2e4db9a5c80733ecd5f550c83390454df7b2034ac0d",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2026-batch-me-if-you-can-coverage-guided-rpki-fuzzing-at-scal-b03b815f",
   "title": "Batch Me If You Can: Coverage-guided RPKI Fuzzing at Scale",
+  "abstract": "The Resource Public Key Infrastructure (RPKI) has become essential to secure inter-domain routing. Despite its critical role, RPKI software remains largely untested beyond shallow parsing. Existing fuzzers, like AFL++ or libFuzzer, do not work well for RPKI as they assume a single, self-contained input per execution, while RPKI repositories contain hundreds of interdependent cryptographically linked objects. Existing fuzzers fail to handle this complexity and lack the ability for precise coverage attribution in multi-object repositories, breaking feedback-based exploration and thereby missing most severe vulnerabilities in RPKI validation. In this paper, we overcome these limitations through novel fuzzing techniques, including continuous sampling and using functions as side-channels for per-object coverage attribution in large input repositories. We further show how parsing inputs to a labeled tree allows structural and semantic mutations while preserving cryptographic validity in mutated repositories. We implement our new techniques into a powerful fuzzing tool called CAT, combining non-sequential fuzzing with our template-agnostic ASN. 1 mutation engine to achieve 66x throughput improvement over sequential fuzzing and exploring 24 - 47% more unique code paths compared to libFuzzer and previous work. Evaluating CAT on RPKI validators uncovered 21 previously unknown vulnerabilities with 8 CVEs already assigned (CVSS 7.5-9.8). These include a buffer overflow, Denial-ofService (DoS), and exploitable repository-poisoning logic flaws. We open-source CAT to enable reproducibility, further research, and adaptation of our methods to other complex cryptography-based protocols such as DNSSEC and TLS.",
+  "abstract_source_id": "src-abstract-sp-2026-b03b815f",
   "venue": "sp",
   "year": 2026,
   "track_or_session": "Cycle 2",
@@ -91,6 +93,19 @@
       "official": true,
       "supports": [
         "DOI, published-order authors and affiliations, abstract, publication date, page span, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2026-b03b815f",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Batch Me If You Can: Coverage-Guided RPKI Fuzzing at Scale",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:57Z",
+      "content_hash": "sha256:303a9b5e5ef8908a3cfe67f02eb8a87be978a5fe3281c7ecec8c0cdb512517e0",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

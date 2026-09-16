@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2026-platypus-restricting-cross-module-transitions-to-mitigat-562ba6da",
   "title": "PLaTypus: Restricting Cross-Module Transitions to Mitigate Code-Reuse Attacks",
+  "abstract": "Numerous techniques have been proposed to thwart code reuse attacks, yet practical adoption remains limited due to compatibility and deployment challenges. In the current and foreseeable Intel architecture landscape, the main line of defense against such attacks is Intel CET-a hardwareenforced control-flow integrity mechanism integrated into recent Intel x86-64 CPUs. However, despite its hardware-backed protections and widespread adoption, CET still provides only partial security: it continues to allow hijacked function pointers to invoke arbitrary functions across module boundaries, a capability that remains fundamental to many modern exploits. This paper proposes PLATYPUS, a novel defense on top of Intel CET to address this limitation. PLATYPUS enforces execution jails using lightweight address masking to ensure indirect control transfers remain within module boundaries. Cross-DSO function calls are only permitted via necessary PLT stubs specific to each DSO. The evaluation on our LLVM-based prototype, spanning 19 applications and 16 shared libraries (including glibc), demonstrates that PLATYPUS reduces indirectly accessible cross-DSO functions by over 98 %. Performance testing with complex applications like Nginx and Redis shows that PLATYPUS incurs no more than 0.5 % overhead.",
+  "abstract_source_id": "src-abstract-sp-2026-562ba6da",
   "venue": "sp",
   "year": 2026,
   "track_or_session": "Cycle 2",
@@ -112,6 +114,19 @@
       "official": true,
       "supports": [
         "DOI, published-order authors and affiliations, abstract, publication date, page span, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2026-562ba6da",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "PLaTypus: Restricting Cross-Module Transitions to Mitigate Code-Reuse Attacks",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:58:02Z",
+      "content_hash": "sha256:4204efad9387253e2c70bd18217fac7c5220b9cd43ecd6179fdc27c5a043343e",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

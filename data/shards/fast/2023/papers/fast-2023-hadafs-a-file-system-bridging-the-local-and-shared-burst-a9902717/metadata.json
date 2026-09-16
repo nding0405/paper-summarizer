@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "fast-2023-hadafs-a-file-system-bridging-the-local-and-shared-burst-a9902717",
   "title": "HadaFS: A File System Bridging the Local and Shared Burst Buffer for Exascale Supercomputers",
+  "abstract": "Current supercomputers introduce SSDs to form a Burst Buffer (BB) layer to meet the HPC application’s growing I/O requirements. BBs can be divided into two types by deployment location. One is the local BB, which is known for its scalability and performance. The other is the shared BB, which has the advantage of data sharing and deployment costs. How to unify the advantages of the local BB and the shared BB is a key issue in the HPC community.\n\nWe propose a novel BB file system named HadaFS that provides the advantages of local BB deployments to shared BB deployments. First, HadaFS offers a new Localized Triage Architecture (LTA) to solve the problem of ultra-scale expansion and data sharing. Then, HadaFS proposes a full-path indexing approach with three metadata synchronization strategies to solve the problem of complex metadata management of traditional file systems and mismatch with the application I/O behaviors. Moreover, HadaFS integrates a data management tool named Hadash, which supports efficient data query in the BB and accelerates data migration between the BB and traditional HPC storage. HadaFS has been deployed on the Sunway New-generation Supercomputer (SNS), serving hundreds of applications and supporting a maximum of 600,000-client scaling.",
+  "abstract_source_id": "src-abstract-fast-2023-a9902717",
   "venue": "fast",
   "year": 2023,
   "track_or_session": "File Systems",
@@ -266,6 +268,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-fast-2023-a9902717",
+      "url": "https://www.usenix.org/conference/fast23/presentation/he",
+      "kind": "paper-page",
+      "title": "HadaFS: A File System Bridging the Local and Shared Burst Buffer for Exascale Supercomputers",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:00:30Z",
+      "content_hash": "sha256:a6b842a27af556565e3d4bc7f4afa0da80ff2f49766fc6df3e1cd9316be5bc4c",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

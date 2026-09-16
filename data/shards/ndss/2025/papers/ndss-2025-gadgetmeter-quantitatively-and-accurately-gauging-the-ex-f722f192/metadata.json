@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2025-gadgetmeter-quantitatively-and-accurately-gauging-the-ex-f722f192",
   "title": "GadgetMeter: Quantitatively and Accurately Gauging the Exploitability of Speculative Gadgets",
+  "abstract": "Since their emergence in 2018, speculative execution attacks have proven difficult to fully prevent without substantial performance overhead. This is because most mitigations hurt modern processors' speculative nature, which is essential to many optimization techniques. To address this, numerous scanners have been developed to identify vulnerable code snippets (speculative gadgets) within software applications, allowing mitigations to be applied selectively and thereby minimizing performance degradation.\n\nIn this paper, we show that existing speculative gadget scanners lack accuracy, often misclassifying gadgets due to limited modeling of timing properties. Instead, we identify another fundamental condition intrinsic to all speculative attacks—the timing requirement as a race condition inside the gadget. Specifically, the attacker must optimize the race condition between speculated authorization and secret leakage to successfully exploit the gadget. Therefore, we introduce GadgetMeter, a framework designed to quantitatively gauge the exploitability of speculative gadgets based on their timing property. We systematically explore the attacker's power to optimize the race condition inside gadgets (windowing power). A Directed Acyclic Instruction Graph is used to model timing conditions and static analysis and runtime testing are combined to optimize attack patterns and quantify gadget vulnerability. We use GadgetMeter to evaluate gadgets in a wide range of software, including six real-world applications and the Linux kernel. Our result shows that GadgetMeter can accurately identify exploitable speculative gadgets and quantify their vulnerability level, identifying 471 gadgets reported by GadgetMeter works as unexploitable.",
+  "abstract_source_id": "src-abstract-ndss-2025-f722f192",
   "venue": "ndss",
   "year": 2025,
   "track_or_session": "Fall submission cycle",
@@ -168,6 +170,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2025-f722f192",
+      "url": "https://www.ndss-symposium.org/ndss-paper/gadgetmeter-quantitatively-and-accurately-gauging-the-exploitability-of-speculative-gadgets/",
+      "kind": "paper-page",
+      "title": "GadgetMeter: Quantitatively and Accurately Gauging the Exploitability of Speculative Gadgets",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:19:38Z",
+      "content_hash": "sha256:6d4c5164838ec560522b0c39212e76d6f5fa5c905b4967196dcffbfced508838",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

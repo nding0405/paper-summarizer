@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2024-fcert-certifiably-robust-few-shot-classification-with-fo-a7e8943a",
   "title": "FCert: Certifiably Robust Few-Shot Classification with Foundation Models",
+  "abstract": "Few-shot classification with foundation models (e.g., CLIP, DINOv2, PaLM-2) enables users to build an accurate classifier with a few labeled training samples (called support samples) for a classification task. However, an attacker could perform data poisoning attacks by manipulating some support samples such that the classifier makes the attacker-desired, arbitrary prediction for a testing input. Empirical defenses cannot provide formal robustness guarantees, leading to a cat-and-mouse game between the attacker and defender. Existing certified defenses are designed for traditional supervised learning, resulting in sub-optimal performance when extended to few-shot classification. In our work, we propose FCert, the first certified defense against data poisoning attacks to few-shot classification. We show our FCert provably predicts the same label for a testing input under arbitrary data poisoning attacks when the total number of poisoned support samples is bounded. We perform extensive experiments on benchmark few-shot classification datasets with foundation models released by OpenAI, Meta, and Google in both vision and text domains. Our experimental results show our FCert: 1) maintains classification accuracy without attacks, 2) outperforms existing state-of-the-art certified defenses for data poisoning attacks, and 3) is efficient and general.",
+  "abstract_source_id": "src-abstract-sp-2024-a7e8943a",
   "venue": "sp",
   "year": 2024,
   "track_or_session": "Winter cycle",
@@ -138,6 +140,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2024-a7e8943a",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "FCert: Certifiably Robust Few-Shot Classification in the Era of Foundation Models",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:32Z",
+      "content_hash": "sha256:be7515012a8c1ea1211f38a27ea4d2aa9cff6e0faac9417a2f58b1d64e91280e",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

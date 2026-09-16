@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "fast-2024-baleen-ml-admission-prefetching-for-flash-caches-227486d6",
   "title": "Baleen: ML Admission & Prefetching for Flash Caches",
+  "abstract": "Flash caches are used to reduce peak backend load for throughput-constrained data center services, reducing the total number of backend servers required. Bulk storage systems are a large-scale example, backed by high-capacity but low-throughput hard disks, and using flash caches to provide a more cost-effective storage layer underlying everything from blobstores to data warehouses.\n\nHowever, flash caches must address the limited write endurance of flash by limiting the long-term average flash write rate to avoid premature wearout. To do so, most flash caches must use admission policies to filter cache insertions and maximize the workload-reduction value of each flash write.\n\nThe Baleen flash cache uses coordinated ML admission and prefetching to reduce peak backend load. After learning painful lessons with our early ML policy attempts, we exploit a new cache residency model (which we call episodes ) to guide model training. We focus on optimizing for an end-to-end system metric ( Disk-head Time ) that measures backend load more accurately than IO miss rate or byte miss rate. Evaluation using Meta traces from seven storage clusters shows that Baleen reduces Peak Disk-head Time (and hence the number of backend hard disks required) by 12% over state-of-the-art policies for a fixed flash write rate constraint. Baleen-TCO, which chooses an optimal flash write rate, reduces our estimated total cost of ownership (TCO) by 17%. Code and traces are available at https://www.pdl.cmu.edu/CILES/ .",
+  "abstract_source_id": "src-abstract-fast-2024-227486d6",
   "venue": "fast",
   "year": 2024,
   "track_or_session": "AI and Storage",
@@ -265,6 +267,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-fast-2024-227486d6",
+      "url": "https://www.usenix.org/conference/fast24/presentation/wong",
+      "kind": "paper-page",
+      "title": "Baleen: ML Admission & Prefetching for Flash Caches",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:00:43Z",
+      "content_hash": "sha256:be31e1f865a91a99550173deae0352c1ca5c576a9bb0f57cb0bcc60bfef34e93",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

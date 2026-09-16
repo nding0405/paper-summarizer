@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2025-preference-poisoning-attacks-on-reward-model-learning-867c7a19",
   "title": "Preference Poisoning Attacks on Reward Model Learning",
+  "abstract": "Learning reward models from pairwise comparisons is a fundamental component in a number of domains, in-cluding autonomous control, conversational agents, and rec-ommendation systems, as part of a broad goal of aligning automated decisions with user preferences. These approaches entail collecting preference information from people, with feedback often provided anonymously. Since preferences are subjective, there is no gold standard to compare against; yet, reliance of high-impact systems on preference learning creates a strong motivation for malicious actors to skew data collected in this fashion to their ends. We investigate the nature and extent of this vulnerability by considering an attacker who can flip a small subset of preference comparisons to either promote or demote a target outcome. We propose two classes of algorithmic approaches for these attacks: a gradient-based framework, and several variants of rank-by-distance methods. Next, we evaluate the efficacy of best attacks in both these classes in successfully achieving malicious goals on datasets from three domains: autonomous control, recommendation system, and textual prompt-response preference learning. We find that the best attacks are often highly successful, achieving in the most extreme case 100% success rate with only 0.3% of the data poisoned. However, which attack is best can vary significantly across domains. In addition, we observe that the simpler and more scalable rank-by-distance approaches are often competitive with, and on occasion significantly outper-form, gradient-based methods. Finally, we show that state-of-the-art defenses against other classes of poisoning attacks exhibit limited efficacy in our setting.",
+  "abstract_source_id": "src-abstract-sp-2025-867c7a19",
   "venue": "sp",
   "year": 2025,
   "track_or_session": "Cycle 1",
@@ -175,6 +177,19 @@
       "official": true,
       "supports": [
         "DOI, authors, affiliations, abstract, publication date, pages, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2025-867c7a19",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Preference Poisoning Attacks on Reward Model Learning",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:52Z",
+      "content_hash": "sha256:b15ce02bcc49da611fdd791ecc56741e7d91d84154b58c1a7f72a5c6902e6e46",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

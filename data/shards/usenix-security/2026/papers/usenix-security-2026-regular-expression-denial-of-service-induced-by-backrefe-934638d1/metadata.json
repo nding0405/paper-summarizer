@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-regular-expression-denial-of-service-induced-by-backrefe-934638d1",
   "title": "Regular Expression Denial of Service Induced by Backreferences",
+  "abstract": "This paper presents the a systematic and theoretical study of denial-of-service vulnerabilities in Regular Expressions with Backreferences (REwB). We introduce the Two-Phase Memory Automaton (2PMFA), an automaton model that precisely captures REwB semantics. Using this model, we derive necessary conditions under which backreferences induce super-linear backtracking runtime, even when sink ambiguity is linear, a regime where existing detectors report no vulnerability. Based on these conditions, we identify three vulnerability patterns and validate them in practice. Using the Snort intrusion detection ruleset, our evaluation identifies 48 previously unknown REwB vulnerabilities with quadratic or worse runtime. We further demonstrate practical exploits against Snort, including slowing rule evaluation by 0.6-1.2 seconds and bypassing alerts by triggering PCRE's matching limit.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-934638d1",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Software Security 1",
@@ -176,6 +178,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-934638d1",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/liu-yichen",
+      "kind": "paper-page",
+      "title": "Regular Expression Denial of Service Induced by Backreferences",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:25:11Z",
+      "content_hash": "sha256:82e625cb8541e4e074d7ce20f395a62f0fa12045b16a16bf2ad5e7139f4c903a",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

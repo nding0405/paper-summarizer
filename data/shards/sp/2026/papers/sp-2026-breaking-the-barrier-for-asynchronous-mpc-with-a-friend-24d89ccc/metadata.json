@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2026-breaking-the-barrier-for-asynchronous-mpc-with-a-friend-24d89ccc",
   "title": "Breaking the Barrier for Asynchronous MPC with a Friend",
+  "abstract": "Multiparty computation (MPC) is a topic of growing interest for privacy-preserving computation tasks. A few MPC libraries have been developed, and newer protocols are regularly proposed to reduce the latency overhead, improve scalability, and achieve strong termination guarantees. However, most current MPC protocols are designed and implemented assuming network synchrony: in theory, they assume that all messages are delivered within a known time bound, while for experimental analysis, most assume all nodes to be honest, such that the time bounds are never deployed. While deploying MPC systems in the wild and trying to minimize the latency, network synchrony is indeed a strong assumption to make: natural adverse network conditions can break the safety and/or liveness of the protocol due to simply delayed messages. Asynchronous MPC (AMPC) protocols can overcome the challenge as they do not assume fixed time bounds for message delivery delays; however, AMPC faces a natural threshold barrier of $\\mathbf{2} \\boldsymbol{/} \\mathbf{3 r d}$ honest majority and introduces significant computation and/or communication overheads. This work aims to achieve the best-of-both network models by designing a practical AMPC protocol that has stronger resilience guarantees matching those for synchronous MPC. We achieve this by adopting the emerging helper-aided model, and designing protocols that achieve fairness not only in the simple honest majority setting but also in the dishonest majority setting. Our protocols follow the standard preprocessing-online paradigm, enabling a lightweight and fast input-dependent online phase. In the honest majority setting, our protocol relies solely on lightweight cryptographic operations. In the dishonest majority setting, the protocol requires oblivious transfer (OT) during preprocessing, which we prove is necessary in this setting. We implement our constructions and provide a thorough performance comparison with state-of-theart MPC protocols in the helper-aided model. Our experiments demonstrate that our protocols substantially outperform the state-of-the-art helper-aided MPC scheme, while being significantly more resilient to network delays.",
+  "abstract_source_id": "src-abstract-sp-2026-24d89ccc",
   "venue": "sp",
   "year": 2026,
   "track_or_session": "Cycle 1",
@@ -196,6 +198,19 @@
       "official": true,
       "supports": [
         "DOI, published-order authors and affiliations, abstract, publication date, page span, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2026-24d89ccc",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Breaking the Barrier for Asynchronous MPC with a Friend",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:57Z",
+      "content_hash": "sha256:303a9b5e5ef8908a3cfe67f02eb8a87be978a5fe3281c7ecec8c0cdb512517e0",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

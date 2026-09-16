@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "eurosys-2024-volley-accelerating-write-read-orders-in-disaggregated-s-70815c11",
   "title": "Volley: Accelerating Write-Read Orders in Disaggregated Storage",
+  "abstract": "Modern data centers deploy disaggregated storage systems (e.g., NVMe over Fabrics, NVMe-oF) for fine-grained resource elasticity and high resource utilization. A client-side writeback cache is used to absorb writes and buffer frequently accessed data, thereby eliminating unnecessary remote storage accesses and improving performance. Yet, a cache miss on the full cache triggers an evict-and-fetch operation which evicts the old entries before new data blocks are fetched. Existing systems perform the evict-and-fetch operation by sequentially executing write and read I/O operations, which reduces the concurrency and makes it challenging to fully utilize the fast network and storage devices.",
+  "abstract_source_id": "src-abstract-eurosys-2024-70815c11",
   "venue": "eurosys",
   "year": 2024,
   "track_or_session": null,
@@ -146,6 +148,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-eurosys-2024-70815c11",
+      "url": "https://api.openalex.org/works/doi:10.1145/3627703.3650090?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Volley: Accelerating Write-Read Orders in Disaggregated Storage",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:18:59Z",
+      "content_hash": "sha256:58a6e4bbc622b88a2fa5f0753c87ab7b87c1c70c93445f5eb263e0c76119b4fe",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

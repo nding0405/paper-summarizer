@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2025-m5-mastering-page-migration-and-memory-management-for-cx-a6bb74cd",
   "title": "M5: Mastering Page Migration and Memory Management for CXL-based Tiered Memory Systems",
+  "abstract": "CXL has emerged as a promising memory interface that can cost-effectively expand the capacity and bandwidth of a memory system, complementing the traditional DDR interface. However, CXL DRAM presents 2-3x longer access latency than DDR DRAM, forming a tiered-memory system that demands an effective and efficient page-migration solution. Although many page-migration solutions have been proposed for past tiered-memory systems, they have achieved limited success. To tackle the challenge of managing tiered-memory systems, this work first presents a CXL-driven profiling solution to precisely and transparently count the number of accesses to every 4KB page and 64B word in CXL DRAM. Second, using the profiling solution, this work uncovers that (1) widely used CPU-driven page-migration solutions often identify warm pages as hot pages, and (2) certain applications have sparse hot pages, where only a small percentage of words in each of these pages are frequently accessed. Besides, this work demonstrates that the performance overhead of identifying hot pages is sometimes high enough to degrade application performance. Lastly, this work presents M5, a platform designed to facilitate the development of effective CXL-driven page-migration solutions, providing hardware-based hot-page and hot-word trackers in the CXL controller. On average, M5 can identify 47% hotter pages and offer 14% higher performance than the best CPU-driven page-migration solution, even with a simple policy.",
+  "abstract_source_id": "src-abstract-asplos-2025-a6bb74cd",
   "venue": "asplos",
   "year": 2025,
   "track_or_session": "Session 5D: CXL Storage",
@@ -356,6 +358,19 @@
       "official": false,
       "supports": [
         "Indexed abstract and open-access links used for relevance classification and ancillary-link discovery."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2025-a6bb74cd",
+      "url": "https://api.openalex.org/works/doi:10.1145/3676641.3711999?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "M5: Mastering Page Migration and Memory Management for CXL-based Tiered Memory Systems",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:02:11Z",
+      "content_hash": "sha256:1bf99caed5a1de839f7b5de65e438f85c86d7d7c9d353f6cfe622e3ade1f87f9",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

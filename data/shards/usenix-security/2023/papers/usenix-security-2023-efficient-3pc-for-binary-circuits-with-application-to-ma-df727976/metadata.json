@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2023-efficient-3pc-for-binary-circuits-with-application-to-ma-df727976",
   "title": "Efficient 3PC for Binary Circuits with Application to Maliciously-Secure DNN Inference",
+  "abstract": "In this work, we focus on maliciously secure 3PC for binary circuits with honest majority. While the state-of-the-art (Boyle et al. CCS 2019) has already achieved the same amortized communication as the best-known semi-honest protocol (Araki et al. CCS 2016), they suffer from a large computation overhead: when comparing with the best-known implementation result (Furukawa et al. Eurocrypt 2017) which requires 9× communication cost of Araki et al., the protocol by Boyle et al. is around 4.5× slower than that of Furukawa et al.\n\nIn this paper, we design a maliciously secure 3PC protocol that matches the same communication as Araki et al. with comparable concrete efficiency as Furukawa et al. To obtain our result, we manage to apply the distributed zero-knowledge proofs (Boneh et al. Crypto 2019) for verifying computations over Z 2 by using prime fields and explore the algebraic structure of prime fields to make the computation of our protocol friendly for native CPU computation.\n\nExperiment results show that our protocol is around 3.5× faster for AES circuits than Boyle et al. We also applied our protocol to the binary part (e.g. comparison and truncation) of secure deep neural network inference, and results show that we could reduce the time cost of achieving malicious security in the binary part by more than 67%.\n\nBesides our main contribution, we also find a hidden security issue in many of the current probabilistic truncation protocols, which may be of independent interest.",
+  "abstract_source_id": "src-abstract-usenix-security-2023-df727976",
   "venue": "usenix-security",
   "year": 2023,
   "track_or_session": "Distributed Secure Computations",
@@ -175,6 +177,19 @@
       "official": true,
       "supports": [
         "authors, affiliations when published, abstract, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2023-df727976",
+      "url": "https://www.usenix.org/conference/usenixsecurity23/presentation/li-yun",
+      "kind": "paper-page",
+      "title": "Efficient 3PC for Binary Circuits with Application to Maliciously-Secure DNN Inference",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:10:42Z",
+      "content_hash": "sha256:fef0f0eb0a81d63a0ebf2a9a3684d0dbf13b797a72d6481672fc3f66ae53d834",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

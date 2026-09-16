@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-arbitrary-threshold-fully-homomorphic-encryption-with-lo-bcc4986f",
   "title": "Arbitrary-Threshold Fully Homomorphic Encryption with Lower Complexity",
+  "abstract": "Threshold fully homomorphic encryption (ThFHE) enables multiple parties to compute functions over their sensitive data without leaking data privacy. Most of existing ThFHE schemes are restricted to full threshold and require the participation of all parties to output computing results. Compared with these full-threshold schemes, arbitrary threshold (ATh)-FHE schemes are robust to non-participants and can be a promising solution to many real-world applications. However, existing AThFHE schemes are either inefficient to be applied with a large number of parties and a large data size, or insufficient to tolerate all types of non-participants. In this paper, we propose an AThFHE scheme to handle all types of non-participants with lower complexity over existing schemes. At the core of our scheme is the reduction from AThFHE construction to the design of a new primitive called approximate secret sharing (ApproxSS). Particularly, we formulate ApproxSS and prove the correctness and security of AThFHE on top of arbitrary-threshold (ATh)-ApproxSS's properties. Such a reduction reveals that existing AThFHE schemes implicitly design ATh-ApproxSS following a similar idea called \"noisy share\". Nonetheless, their ATh-ApproxSS design has high complexity and become the performance bottleneck. By developing ATASSES, an ATh-ApproxSS scheme based on a novel \"encrypted share'' idea, we reduce the computation (resp. communication) complexity from O(N^2K) to O(N^2+K) (resp. from O(NK) to O(N+K)). We not only theoretically prove the (approximate) correctness and security of ATASSES, but also empirically evaluate its efficiency against existing baselines. Particularly, when applying to a system with one thousand parties, ATASSES achieves a speedup of 3.83x – 15.4x over baselines.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-bcc4986f",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Crypto 5: HE, MPC, Oblivious Computation",
@@ -91,6 +93,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-bcc4986f",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/chang-yijia-encryption",
+      "kind": "paper-page",
+      "title": "Arbitrary-Threshold Fully Homomorphic Encryption with Lower Complexity",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:18:37Z",
+      "content_hash": "sha256:af6561051c2d4028e098241035bca538b2a47f807f9267ea185cbd44b7e1ab44",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

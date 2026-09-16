@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2023-boosting-the-performance-of-high-assurance-cryptography-9e1503e0",
   "title": "Boosting the Performance of High-Assurance Cryptography: Parallel Execution and Optimizing Memory Access in Formally-Verified Line-Point Zero-Knowledge",
+  "abstract": "Despite the notable advances in the development of high-assurance, verified implementations of cryptographic protocols, such implementations typically face significant performance overheads, particularly due to the penalties induced by formal verification and automated extraction of executable code. In this paper, we address some core performance challenges facing computer-aided cryptography by presenting a formal treatment for accelerating such verified implementations based on multiple generic optimizations covering parallelism and memory access. We illustrate our techniques for addressing such performance bottlenecks using the Line-Point Zero-Knowledge (LPZK) protocol as a case study. Our starting point is a new verified implementation of LPZK that we formalize and synthesize using EasyCrypt; our first implementation is developed to reduce the proof effort and without considering the performance of the extracted executable code. We then show how such (automatically) extracted code can be optimized in three different ways to obtain a 3000x speedup and thus matching the performance of the manual implementation of LPZK of lpzkv2.[13] We obtain such performance gains by first modifying the algorithmic specifications, then by adopting a provably secure parallel execution model, and finally by optimizing the memory access structures. All optimizations are first formally verified inside EasyCrypt, and then executable code is automatically synthesized from each step of the formalization. For each optimization, we analyze performance gains resulting from it and also address challenges facing the computer-aided security proofs thereof, and challenges facing automated synthesis of executable code with such an optimization.",
+  "abstract_source_id": "src-abstract-ccs-2023-9e1503e0",
   "venue": "ccs",
   "year": 2023,
   "track_or_session": "Verified Cryptographic Implementations (Formal Methods and Programming Languages)",
@@ -214,6 +216,19 @@
       "official": false,
       "supports": [
         "published title, author order, and page span"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2023-9e1503e0",
+      "url": "https://api.openalex.org/works/doi:10.1145/3576915.3616583?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Boosting the Performance of High-Assurance Cryptography: Parallel Execution and Optimizing Memory Access in Formally-Verified Line-Point Zero-Knowledge",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:07:27Z",
+      "content_hash": "sha256:1c6e206df8b314916adf065c685ed2e6c6deb7585573e5cd05295e7189fd73d9",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

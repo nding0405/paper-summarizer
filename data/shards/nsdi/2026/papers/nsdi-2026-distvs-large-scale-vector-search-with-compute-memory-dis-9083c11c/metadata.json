@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2026-distvs-large-scale-vector-search-with-compute-memory-dis-9083c11c",
   "title": "DistVS: Large-scale Vector Search with Compute-Memory Disaggregation",
+  "abstract": "Similarity-based vector search, also known as ANNS, underlies many important applications such as content search, recommender system, and retrieval-augmented generation (RAG). However, vector search has a high storage demand due to large datasets and incurs costly IOs for its fine-grained access to the vectors and index. We observe that a compute-memory disaggregation architecture can tackle these challenges and design the DistVS system with a three-tier storage layout. In particular, the compute servers keep the small but low-precision compressed vectors, a more capacious memory server stores larger high-precision compressed vectors along with the index, while the full-precision exact vectors are kept on SSDs. The idea is to progressively prune the vector accesses along the low-high-full precisions from the compute servers to the SSDs, aligning with the storage hierarchy of memory-network-disk with gradually larger capacity but higher IO cost. To effectively utilize the three vector previsions, we design an algorithm called PRESS to conduct vector search. To improve performance, DistVS incorporates system optimizations including asynchronous execution, RDMA IO batching, and decoupled re-ranking. We compare DistVS with state-of-the-art disk-based and distributed vector search systems and show that DistVS consistently outperforms them and usually improves their query throughput by over 40%.",
+  "abstract_source_id": "src-abstract-nsdi-2026-9083c11c",
   "venue": "nsdi",
   "year": 2026,
   "track_or_session": "Storage Systems and Architecture",
@@ -265,6 +267,19 @@
         "proceedings page range and page count",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2026-9083c11c",
+      "url": "https://www.usenix.org/conference/nsdi26/presentation/yin",
+      "kind": "paper-page",
+      "title": "DistVS: Large-scale Vector Search with Compute-Memory Disaggregation",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:05:09Z",
+      "content_hash": "sha256:9674de62ee36e66b3d7472d12d1389744b9443f1eeb7ec250f191403190a9beb",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

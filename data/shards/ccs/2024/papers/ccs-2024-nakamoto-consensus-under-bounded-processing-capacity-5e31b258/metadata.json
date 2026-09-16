@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2024-nakamoto-consensus-under-bounded-processing-capacity-5e31b258",
   "title": "Nakamoto Consensus under Bounded Processing Capacity",
+  "abstract": "For Nakamoto's longest-chain consensus protocol, whose proof-of-work (PoW) and proof-of-stake (PoS) variants power major blockchains such as Bitcoin and Cardano, we revisit the classic problem of the security--performance tradeoff: Given a network of nodes with finite communication- and computation-resources, against what fraction of adversary power is Nakamoto consensus (NC) secure for a given block production rate? State-of-the-art analyses of NC fail to answer this question, because their bounded-delay model does not capture the rate limits to nodes' processing of blocks, which cause congestion when blocks are released in quick succession. We develop a new analysis technique to prove a refined security--performance tradeoff for PoW NC in a bounded-capacity model. In this model, we show that, in contrast to the classic bounded-delay model, Nakamoto's private attack is no longer the worst attack, and a new attack we call the teasing strategy, that exploits congestion, is strictly worse. In PoS, equivocating blocks can exacerbate congestion, making traditional PoS NC insecure except at very low block production rates. To counter such equivocation spamming, we present a variant of PoS NC we call Blanking NC (BlaNC), which achieves the same resilience as PoW NC.",
+  "abstract_source_id": "src-abstract-ccs-2024-5e31b258",
   "venue": "ccs",
   "year": 2024,
   "track_or_session": "Cycle 1",
@@ -180,6 +182,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2024-5e31b258",
+      "url": "https://api.openalex.org/works/doi:10.1145/3658644.3670347?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Nakamoto Consensus under Bounded Processing Capacity",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:11:03Z",
+      "content_hash": "sha256:951a7a731b64026519566e03607fa0d260f3627f53b0be2e8abaeb0349c1dc21",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

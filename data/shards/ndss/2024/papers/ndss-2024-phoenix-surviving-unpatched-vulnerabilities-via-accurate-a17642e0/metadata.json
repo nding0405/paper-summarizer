@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2024-phoenix-surviving-unpatched-vulnerabilities-via-accurate-a17642e0",
   "title": "Phoenix: Surviving Unpatched Vulnerabilities via Accurate and Efficient Filtering of Syscall Sequences",
+  "abstract": "Known, but unpatched vulnerabilities represent one of the most concerning threats for businesses today. The average time-to-patch of zero-day vulnerabilities remains around 100 days in recent years. The lack of means to mitigate an unpatched vulnerability may force businesses to temporarily shut down their services, which can lead to significant financial loss. Existing solutions for filtering system calls unused by a container can effectively reduce the general attack surface, but cannot prevent a specific vulnerability that shares the same system calls with the container. On the other hand, existing provenance analysis solutions can help identify a sequence of system calls behind the vulnerability, although they do not provide a direct solution for filtering such a sequence. To bridge such a research gap, we propose Phoenix , a solution for preventing exploits of unpatched vulnerabilities by accurately and efficiently filtering sequences of system calls identified through provenance analysis. To achieve this, Phoenix cleverly combines the efficiency of Seccomp filters with the accuracy of Ptrace-based deep argument inspection, and it provides the novel capability of filtering system call sequences through a dynamic Seccomp design. Our implementation and experiments show that Phoenix can effectively mitigate real-world vulnerabilities which evade existing solutions, while introducing negligible delay (less than 4%) and less overhead (e.g., 98% less CPU consumption than existing solution).",
+  "abstract_source_id": "src-abstract-ndss-2024-a17642e0",
   "venue": "ndss",
   "year": 2024,
   "track_or_session": "Fall submission cycle",
@@ -168,6 +170,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2024-a17642e0",
+      "url": "https://www.ndss-symposium.org/ndss-paper/phoenix-surviving-unpatched-vulnerabilities-via-accurate-and-efficient-filtering-of-syscall-sequences/",
+      "kind": "paper-page",
+      "title": "Phoenix: Surviving Unpatched Vulnerabilities via Accurate and Efficient Filtering of Syscall Sequences",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:18:30Z",
+      "content_hash": "sha256:b1a743c9289b553b951b37a3bfbc3b430927cae53c0dfe3d732ec479e93dacaf",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

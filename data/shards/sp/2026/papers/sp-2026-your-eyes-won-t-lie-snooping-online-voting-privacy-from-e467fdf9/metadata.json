@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2026-your-eyes-won-t-lie-snooping-online-voting-privacy-from-e467fdf9",
   "title": "Your Eyes Won't Lie: Snooping Online Voting Privacy from User Webcam",
+  "abstract": "Voting within video conferences has gained popularity among organizations for its convenience and efficiency, promoting voting participation by removing physical boundaries. During online voting events, participants typically enable their web cameras to formally engage, prove their identities, and demonstrate that they are voting without coercion. Moreover, many Internet voting platforms start video streaming the voter throughout the process to provide continuous authentication, prevent voter fraud, and ensure no external parties influence voting decisions. However, when participants interact with an online voting platform by reading prompts, making selections, and submitting ballots, their eye movements captured by the webcam may already disclose their secret choices. This paper investigates privacy leakage from eye movements during video streaming, specifically in the context of online voting and online form selections. We find that existing webcam-based methods (also dedicated eye-trackers) cannot discern users' onscreen selections from their eye gazes, even under ideal camera calibration. Since on-screen choices may be separated by only a small distance (e.g., 1 cm), such inference requires sub-centimeter gaze localization, which in turn demands sub-pixel-level angular eye-movement accuracy from the webcam, given the eye-camera distance (e.g., 50 cm). Thus, this work addresses the challenge of inferring on-screen choices by capturing how users look, rather than where they look. We show that eye motion behaviors captured by a webcam can leak on-screen selection secrets, although the screen itself is not visible in the video frame. The key insight is that, as users align the mouse with their chosen checkbox and confirm their selection, subtle eye motions occur in coordination with hand movements. To capture the eye-based voting behaviors, we derive the gaze direction and rotation features to recognize the voting actions, including reading questions, browsing options, electing choices, and confirming. Based on the voting action periods, we use the facial landmarks for calibrating the eye behavioral features and a pre-trained general eye motion model to reduce the noise caused by head orientations, facial movements, and low-quality webcam streams. Further, we develop a transformer model to infer voting choices based on the eye-behavioral features. Experiments show that our method achieves up to 96.6% accuracy in inferring web-based voting forms and up to 94.2% accuracy for video conference polls.",
+  "abstract_source_id": "src-abstract-sp-2026-e467fdf9",
   "venue": "sp",
   "year": 2026,
   "track_or_session": "Cycle 2",
@@ -112,6 +114,19 @@
       "official": true,
       "supports": [
         "DOI, published-order authors and affiliations, abstract, publication date, page span, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2026-e467fdf9",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Your Eyes Won't Lie: Snooping Online Voting Privacy from User Webcam",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:58:06Z",
+      "content_hash": "sha256:5353b9384fd86d54ad3dc674f6041a164ea560a1a98a9c02cc1bb37e317e508e",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

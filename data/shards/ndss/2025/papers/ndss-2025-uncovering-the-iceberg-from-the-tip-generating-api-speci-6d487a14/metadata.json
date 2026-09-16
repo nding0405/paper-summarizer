@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2025-uncovering-the-iceberg-from-the-tip-generating-api-speci-6d487a14",
   "title": "Uncovering the iceberg from the tip: Generating API Specifications for Bug Detection via Specification Propagation Analysis",
+  "abstract": "Modern software often provides diverse APIs to facilitate development. Certain APIs, when used, can affect variables and require post-handling, such as error checks and resource releases. Developers should adhere to their usage specifications when using these APIs. Failure to do so can cause serious security threats, such as memory corruption and system crashes. Detecting such misuse depends on comprehensive API specifications, as violations of these specifications indicate API misuse. Previous studies have proposed extracting API specifications from various artifacts, including API documentation, usage patterns, and bug patches. However, these artifacts are frequently incomplete or unavailable for many APIs. As a result, the lack of specifications for uncovered APIs causes many false negatives in bug detection.\n\nIn this paper, we introduce the idea of API Specification Propagation, which suggests that API specifications propagate through hierarchical API call chains. In particular, modern software often adopts a hierarchical API design, where high-level APIs build on low-level ones. When high-level APIs wrap low-level ones, they may inherit the corresponding specifications. Based on this idea, we present APISpecGen, which uses known specifications as seeds and performs bidirectional propagation analysis to generate specifications for new APIs. Specifically, given the seed specifications, APISpecGen infers which APIs the specifications might propagate to or originate from. To further generate specifications for the inferred APIs, APISpecGen combines API usage and validates them using data-flow analysis based on the seed specifications. Besides, APISpecGen iteratively uses the generated specifications as new seeds to cover more APIs. For efficient and accurate analysis, APISpecGen focuses only on code relevant to the specifications, ignoring irrelevant semantics. We implemented APISpecGen and evaluated it for specification generation and API misuse detection. With 6 specifications as seeds, APISpecGen generated 7332 specifications. Most of the generated specifications could not be covered by state-of-the-art work due to the quality of their sources. With the generated specifications, APISpecGen detected 186 new bugs in the Linux kernel, 113 of them have been confirmed by the developers, with 8 CVEs assigned.",
+  "abstract_source_id": "src-abstract-ndss-2025-6d487a14",
   "venue": "ndss",
   "year": 2025,
   "track_or_session": "Fall submission cycle",
@@ -199,6 +201,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2025-6d487a14",
+      "url": "https://www.ndss-symposium.org/ndss-paper/uncovering-the-iceberg-from-the-tip-generating-api-specifications-for-bug-detection-via-specification-propagation-analysis/",
+      "kind": "paper-page",
+      "title": "Uncovering the iceberg from the tip: Generating API Specifications for Bug Detection via Specification Propagation Analysis",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:20:53Z",
+      "content_hash": "sha256:8550fb9ed4689795916d28d5478df785687db20e28d5a81b461c1eecf7e49391",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

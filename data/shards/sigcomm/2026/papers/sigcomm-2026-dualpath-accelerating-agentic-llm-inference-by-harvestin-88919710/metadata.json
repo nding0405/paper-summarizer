@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sigcomm-2026-dualpath-accelerating-agentic-llm-inference-by-harvestin-88919710",
   "title": "DualPath: Accelerating Agentic LLM Inference by Harvesting Disaggregated KV-Cache Storage I/O",
+  "abstract": "The performance of multi-turn, agentic LLM inference is increasingly dominated by KV-Cache storage I/O rather than computation. In prevalent disaggregated architectures, loading the massive KV-Cache from external storage creates a fundamental imbalance: storage NICs on prefill engines become bandwidth-saturated, while those on decoding engines remain idle. This asymmetry severely constrains overall system throughput. We present DualPath, an inference system that breaks this bottleneck by introducing dual-path KV-Cache loading. Beyond the traditional storage-to-prefill path, DualPath enables a novel storage-to-decode path, in which the KV-Cache is loaded into decoding engines and then efficiently transferred to prefill engines via RDMA over the compute network. DualPath combines this optimized data path — which inherently avoids network congestion and avoids interference with latency-critical model execution communications — with a global scheduler that dynamically balances load across prefill and decode engines. Our evaluation on three models with production agentic workloads demonstrates that DualPath improves offline inference throughput by up to 1.87x on our in-house inference system. It can also improve online serving throughput by an average factor of 1.96x without violating SLO.",
+  "abstract_source_id": "src-abstract-sigcomm-2026-88919710",
   "venue": "sigcomm",
   "year": 2026,
   "track_or_session": "Research Session 1: LLM Inference & Serving — Research Paper",
@@ -233,6 +235,19 @@
       "official": true,
       "supports": [
         "official main-paper scope and track definitions"
+      ]
+    },
+    {
+      "id": "src-abstract-sigcomm-2026-88919710",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/search/match?query=DualPath%3A%20Accelerating%20Agentic%20LLM%20Inference%20by%20Harvesting%20Disaggregated%20KV-Cache%20Storage%20I/O&fields=title,abstract",
+      "kind": "semantic-scholar",
+      "title": "DualPath: Accelerating Agentic LLM Inference by Harvesting Disaggregated KV-Cache Storage I/O",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T23:00:12Z",
+      "content_hash": "sha256:d4db0364a288c82901c28bbc24635b218d22933cc37943a5aca4401cf582545d",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

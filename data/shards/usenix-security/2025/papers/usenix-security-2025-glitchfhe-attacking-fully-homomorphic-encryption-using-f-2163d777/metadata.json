@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-glitchfhe-attacking-fully-homomorphic-encryption-using-f-2163d777",
   "title": "GlitchFHE: Attacking Fully Homomorphic Encryption Using Fault Injection",
+  "abstract": "Fully homomorphic encryption (FHE) enables outsourced computation on encrypted data, thereby ensuring confidentiality by design. However, a critical vulnerability remains for FHE: cloud-based adversaries could tamper with the encrypted data itself, undermining the integrity of FHE applications. Fault-injection attacks (FIAs) are particularly concerning, as they allow attackers to directly manipulate the encrypted data during computation within FHE hardware.\n\nHere, we present the first in-depth study of FIAs on FHE accelerators. We identify and overcome key challenges for such attacks, namely (i) understanding when and where to glitch encrypted data across different FHE applications and formats, (ii) limiting the number of required faults, and (iii) controlling the errors' impact on the final, decrypted output. We develop GlitchFHE, an analytical framework that guides toward such adversarial security assessment of FHE applications against FIAs. We run through a set of timely and relevant case studies, covering established applications like image processing, neural networks, and polynomial evaluation, for the prominent CKKS and BFV schemes, both at the analytical/software level and the physical/real-world level. Ultimately, we show that attacks on data integrity are a serious threat for FHE. Our work is equally relevant for real-world attackers and to educate FHE developers on this largely overlooked threat. We release GlitchFHE and our case studies at https://doi.org/10.5281/zenodo.15615934 .",
+  "abstract_source_id": "src-abstract-usenix-security-2025-2163d777",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Crypto 5: HE, MPC, Oblivious Computation",
@@ -175,6 +177,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-2163d777",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/mankali",
+      "kind": "paper-page",
+      "title": "GlitchFHE: Attacking Fully Homomorphic Encryption Using Fault Injection",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:20:06Z",
+      "content_hash": "sha256:0a3eb284bf996d7f74b07c5f1a6678e81437219e6f1b9e8d1e13c4ccbe9a7cd9",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

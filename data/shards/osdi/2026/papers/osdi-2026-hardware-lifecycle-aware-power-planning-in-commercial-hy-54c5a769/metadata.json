@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2026-hardware-lifecycle-aware-power-planning-in-commercial-hy-54c5a769",
   "title": "Hardware Lifecycle-Aware Power Planning in Commercial Hyperscale Datacenters (Operational Systems)",
+  "abstract": "Modern commercial datacenters operate with heterogeneous hardware, deploying new servers to meet the growing compute demands while retaining older servers due to budgetary and environmental constraints. Datacenter planners can use daily performance and power profiling data to continually refine power budgets for legacy hardware. By contrast, power planning for new hardware must begin as early as the pre-silicon stage of server development when such data is not yet available. This paper presents our practical experience in power planning for Meta’s datacenters over the past decade, emphasizing heterogeneous hardware, and shares strategies for future power planning and management.\n\nTo plan power more efficiently, we begin with a comprehensive power characterization study for hyperscale workloads in Meta’s datacenters, using live production traffic data spanning millions of servers across multiple hardware generations. Building on characterization insights, we present a hardware lifecycle-aware rack power budgeting methodology accounting for both the hardware and workload heterogeneity. This methodology has been deployed at scale in Meta’s datacenters for over a decade, enabling an average power oversubscription of approximately 20% across the fleet.\n\nThough effective, the current power planning approach requires production-level power telemetry, which is typically unavailable during the early stages of hardware development. To address this challenge, we develop PowerSight, a machine learning-based model to predict system power without relying on power sensor data. We demonstrate practical use cases of PowerSight for improving power planning in future system deployments. To the best of our knowledge, this is the first comprehensive study to formally introduce the concept of hardware lifecycles in commercial datacenters, along with tailored power budgeting strategies for each phase.",
+  "abstract_source_id": "src-abstract-osdi-2026-54c5a769",
   "venue": "osdi",
   "year": 2026,
   "track_or_session": "Power, Energy, Sustainability",
@@ -230,6 +232,19 @@
       "official": true,
       "supports": [
         "Official proceedings availability and canonical conference versions."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2026-54c5a769",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/li-ruihao",
+      "kind": "paper-page",
+      "title": "Hardware Lifecycle-Aware Power Planning in Commercial Hyperscale Datacenters (Operational Systems)",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:08:21Z",
+      "content_hash": "sha256:1f4e9fad1c0e490ac87b11959db08241bdba4cf66c23c110ccd92cc1757e601d",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

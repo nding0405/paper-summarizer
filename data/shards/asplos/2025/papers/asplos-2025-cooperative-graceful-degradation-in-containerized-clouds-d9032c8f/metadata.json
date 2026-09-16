@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2025-cooperative-graceful-degradation-in-containerized-clouds-d9032c8f",
   "title": "Cooperative Graceful Degradation in Containerized Clouds",
+  "abstract": "Cloud resilience is crucial for cloud operators and the myriad of applications that rely on the cloud. Today, we lack a mechanism that enables cloud operators to perform graceful degradation of applications while satisfying the application's availability requirements. In this paper, we put forward a vision for automated cloud resilience management with cooperative graceful degradation between applications and cloud operators. First, we investigate techniques for graceful degradation and identify an opportunity for cooperative graceful degradation in public clouds. Second, leveraging criticality tags on containers, we propose diagonal scaling---turning off non-critical containers during capacity crunch scenarios---to maximize the availability of critical services. Third, we design Phoenix, an automated cloud resilience management system that maximizes critical service availability of applications while also considering operator objectives, thereby improving the overall resilience of the infrastructure during failures. We experimentally show that the Phoenix controller running atop Kubernetes can improve critical service availability by up to 2× during large-scale failures. Phoenix can handle failures in a cluster of 100,000 nodes within 10 seconds. We also develop AdaptLab, an open-source resilience benchmarking framework that can emulate realistic cloud environments with real-world application dependency graphs.",
+  "abstract_source_id": "src-abstract-asplos-2025-d9032c8f",
   "venue": "asplos",
   "year": 2025,
   "track_or_session": "Session 2A: Cloud Computing 1",
@@ -110,6 +112,19 @@
       "official": false,
       "supports": [
         "Indexed abstract and open-access links used for relevance classification and ancillary-link discovery."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2025-d9032c8f",
+      "url": "https://api.openalex.org/works/doi:10.1145/3669940.3707244?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Cooperative Graceful Degradation in Containerized Clouds",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:00:47Z",
+      "content_hash": "sha256:4eef1146177f9cd013a1a5f6cedfb501628f0bf8552836435245d5635521141c",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

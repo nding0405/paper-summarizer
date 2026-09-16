@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2025-tooth-toward-optimal-balance-of-video-qoe-and-redundancy-c89aab39",
   "title": "Tooth: Toward Optimal Balance of Video QoE and Redundancy Cost by Fine-Grained FEC in Cloud Gaming Streaming",
+  "abstract": "Despite the rapid rise of cloud gaming, real-world evaluations of its quality of experience (QoE) remain scarce. To fill this gap, we conduct a large-scale measurement campaign, analyzing over 60,000 sessions on an operational cloud gaming platform. We find that current cloud gaming streaming suffers from substantial bandwidth wastage and severe interaction stalls simultaneously. In-depth investigation reveals the underlying reason, i.e., existing streaming adopts coarse-grained Forward Error Correction (FEC) encoding, without considering the adverse impact of frame length variation, which results in over-protection of large frames (i.e., bandwidth waste) and under-protection of smaller ones (i.e., interaction stalls). To remedy the problem, we propose Tooth, a per-frame adaptive FEC that aims to achieve the optimal balance between satisfactory QoE and efficient bandwidth usage. To build Tooth, we design a dual-module FEC encoding strategy, which takes full consideration of both frame length variation and network dynamics, and hence determines an appropriate FEC redundancy rate for each frame. Moreover, we also circumvent the formidable per-frame FEC computational overhead by designing a lightweight Tooth, so as to meet the rigid latency bound of real-time cloud gaming. We implement, deploy, and evaluate Tooth in the operational cloud gaming system. Extensive field tests demonstrate that Tooth significantly outperforms existing state-of-the-art FEC methods, reducing stall rates by 40.2% to 85.2%, enhancing video bitrates by 11.4% to 29.2%, and lowering bandwidth costs by 54.9% to 75.0%.",
+  "abstract_source_id": "src-abstract-nsdi-2025-c89aab39",
   "venue": "nsdi",
   "year": 2025,
   "track_or_session": "Video and Cloud Gaming",
@@ -287,6 +289,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2025-c89aab39",
+      "url": "https://www.usenix.org/conference/nsdi25/presentation/an",
+      "kind": "paper-page",
+      "title": "Tooth: Toward Optimal Balance of Video QoE and Redundancy Cost by Fine-Grained FEC in Cloud Gaming Streaming",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:04:40Z",
+      "content_hash": "sha256:3abd7336d9cd6f5834c2de5ec2efd94bb1a39162c10d1cb750956567fcc7e381",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

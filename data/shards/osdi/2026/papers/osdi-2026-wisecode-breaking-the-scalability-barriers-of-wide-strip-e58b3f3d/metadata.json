@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2026-wisecode-breaking-the-scalability-barriers-of-wide-strip-e58b3f3d",
   "title": "WiseCode: Breaking the Scalability Barriers of Wide-Stripe Vector Codes",
+  "abstract": "Wide-stripe erasure codes, with tens to over a hundred data chunks per stripe, offer high reliability at low storage overhead. Existing wide-stripe designs that are based on scalar codes (e.g., LRCs in Google and Azure) reduce repair traffic but increase storage overhead . Although vector codes are theoretically optimal in both metrics, they face severe scalability barriers in wide-stripe deployments.\n\nWe present WiseCode, the first practical and scalable wide-stripe vector-coding approach that achieves both efficient repair and ultra-low storage overhead. WiseCode overcomes three key scalability barriers through innovations in coding structure, coefficient selection, and coding algorithms. It introduces a template-unfold structure design that avoids sub-packetization blowup, a repetition-minimized search strategy that reduces coefficient search cost, and a two-stage coding algorithm that enables efficient encoding and decoding.\n\nEvaluations on Ceph with ∼100-wide stripes and 1.04–1.06 storage overhead show that WiseCode increases repair throughput by 1.41×–2.18× compared to Google’s UCLRCs at equal storage overhead, and also delivers higher throughput even at 2% lower storage overhead. WiseCode retains this advantage when combined with advanced repair-scheduling methods, consistently outperforming UCLRCs.",
+  "abstract_source_id": "src-abstract-osdi-2026-e58b3f3d",
   "venue": "osdi",
   "year": 2026,
   "track_or_session": "Durable and Trustworthy Storage",
@@ -125,6 +127,19 @@
       "official": true,
       "supports": [
         "Official proceedings availability and canonical conference versions."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2026-e58b3f3d",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/cai",
+      "kind": "paper-page",
+      "title": "WiseCode: Breaking the Scalability Barriers of Wide-Stripe Vector Codes",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:09:18Z",
+      "content_hash": "sha256:25dee7e389d384b91209921b11ecee6a6572e28a295c4baa63219dceb6c6e50c",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

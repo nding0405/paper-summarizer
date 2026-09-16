@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2024-swing-short-cutting-rings-for-higher-bandwidth-allreduce-33602244",
   "title": "Swing: Short-cutting Rings for Higher Bandwidth Allreduce",
+  "abstract": "The allreduce collective operation accounts for a significant fraction of the runtime of workloads running on distributed systems. One factor determining its performance is the number of hops between communicating nodes, especially on networks like torus, where a higher number of hops implies multiple messages being forwarded on the same link, thus reducing the allreduce bandwidth. Torus networks are widely used on systems optimized for machine learning workloads (e.g., Google TPUs and Amazon Trainium devices), as well as on some of the Top500 supercomputers. To improve allreduce performance on torus networks we introduce Swing, a new algorithm that reduces the number of hops between communicating nodes by swinging between torus directions. Our analysis and experimental evaluation show that Swing outperforms by up to 3x existing allreduce algorithms for vectors ranging from 32B to 128MiB, on different types of torus and torus-like topologies, regardless of their shape and size.",
+  "abstract_source_id": "src-abstract-nsdi-2024-33602244",
   "venue": "nsdi",
   "year": 2024,
   "track_or_session": "ML Scheduling",
@@ -139,6 +141,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2024-33602244",
+      "url": "https://www.usenix.org/conference/nsdi24/presentation/de-sensi",
+      "kind": "paper-page",
+      "title": "Swing: Short-cutting Rings for Higher Bandwidth Allreduce",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:03:46Z",
+      "content_hash": "sha256:7db009934bac2e08fa959470a72f0e7fec9771905ed665cd2a722aabe2a31029",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

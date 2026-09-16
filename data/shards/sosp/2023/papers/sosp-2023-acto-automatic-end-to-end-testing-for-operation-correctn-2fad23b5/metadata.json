@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sosp-2023-acto-automatic-end-to-end-testing-for-operation-correctn-2fad23b5",
   "title": "Acto: Automatic End-to-End Testing for Operation Correctness of Cloud System Management",
+  "abstract": "Cloud systems are increasingly being managed by operation programs termed operators, which automate tedious, human-based operations. Operators of modern management platforms like Kubernetes, Twine, and ECS implement declarative interfaces based on the state-reconciliation principle. An operation declares a desired system state and the operator automatically reconciles the system to that declared state. Operator correctness is critical, given the impacts on system operations---bugs in operator code put systems in un-desired or error states, with severe consequences. However, validating operator correctness is challenging due to the enormous system-state space and complex operation interface. A correct operator must not only satisfy correctness properties of its own code, but it must also maintain managed systems in desired states. Unfortunately, end-to-end testing of operators significantly falls short. We present Acto, the first automatic end-to-end testing technique for cloud system operators. Acto uses a state-centric approach to test an operator together with a managed system. Acto continuously instructs an operator to reconcile a system to different states and checks if the system successfully reaches those desired states. Acto models operations as state transitions and systematically realizes state-transition sequences to exercise supported operations in different scenarios. Acto's oracles automatically check whether a system's state is as desired. To date, Acto has helped find 56 serious new bugs (42 were confirmed and 30 have been fixed) in eleven Kubernetes operators with few false alarms.",
+  "abstract_source_id": "src-abstract-sosp-2023-2fad23b5",
   "venue": "sosp",
   "year": 2023,
   "track_or_session": "Session 2: Reliability",
@@ -230,6 +232,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-sosp-2023-2fad23b5",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Acto: Automatic End-to-End Testing for Operation Correctness of Cloud System Management",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:12Z",
+      "content_hash": "sha256:aa9c23a45f6ec9973f40e6c9520c69d42bb49fc1f526891570edfdb1976cff82",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

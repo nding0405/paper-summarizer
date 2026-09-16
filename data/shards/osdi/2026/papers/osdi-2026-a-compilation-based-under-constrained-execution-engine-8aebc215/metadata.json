@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2026-a-compilation-based-under-constrained-execution-engine-8aebc215",
   "title": "A Compilation-Based Under-Constrained Execution Engine",
+  "abstract": "Software bugs continue to pose significant challenges to the security and correctness of computer systems. Finding and eliminating bugs for large-scale software systems, such as the Linux kernel, remains a difficult task. Static analyses can cover the whole codebase, but often produce too many false positives. Whole program dynamic testing is precise but has limited code coverage, and could require special environments. Due to the modular design of large software systems, a promising alternative is to instantiate an execution environment for individual components in isolation, and then apply precise dynamic analyses to these components. Unfortunately, existing execution engines that support such under-constrained execution are all interpreter-based, thus suffering from poor scalability. In this paper, we introduce UCSan, a compilation-based under-constrained execution engine that can compile an arbitrary set of C/C++ functions into a self-contained executable without manual modifications. To demonstrate the scalability and versatility of UCSan, we showcase combining UCSan with a compilation-based concolic execution engine to conduct under-constrained symbolic execution. Our evaluation shows that the resulting analysis engine is up to 15.06x faster on Linux kernel analysis tasks than the KLEE-based engine. This enhanced scalability not only improves the bug detection effectiveness but also enables its application across a broader range of software systems.",
+  "abstract_source_id": "src-abstract-osdi-2026-8aebc215",
   "venue": "osdi",
   "year": 2026,
   "track_or_session": "Program Analysis",
@@ -167,6 +169,19 @@
       "official": true,
       "supports": [
         "Official proceedings availability and canonical conference versions."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2026-8aebc215",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/yin",
+      "kind": "paper-page",
+      "title": "A Compilation-Based Under-Constrained Execution Engine",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:07:56Z",
+      "content_hash": "sha256:10934258f1a7eb4e8d364ff0816115ba77078b5199d66d485c85e20fa7b52c79",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

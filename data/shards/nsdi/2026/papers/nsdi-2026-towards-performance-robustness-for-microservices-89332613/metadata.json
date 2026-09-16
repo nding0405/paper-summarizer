@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2026-towards-performance-robustness-for-microservices-89332613",
   "title": "Towards Performance Robustness for Microservices",
+  "abstract": "Microservices are foundational to modern distributed applications, enabling modular design and scalability. However, they face performance variability due to environmental factors like workload burstiness, resource contention, and shared dependencies. Existing microservice controllers, such as autoscalers and admission controllers, struggle to ensure good performance, often causing several Service Level Objective (SLO) violations. We argue that this is because controller decision-making is uninformed, lacking guidance about robustness to environmental factors.\n\nWe propose the concept of run-time \"performance robustness certificates\" (PERCs) to address this limitation. A PERC provides statistical bounds on tail latencies of specific request types under a range of environmental perturbations. We show how to leverage a queueing-theoretic model of microservice performance to quickly derive actionable {PeRC}s. We introduce Galileo, a framework that integrates PERCs with two state-of-the-art learned controllers to guide robust actions toward meeting SLOs. Experimental results with real-world benchmarks validate the effectiveness of PERCs in ensuring robust microservice performance.",
+  "abstract_source_id": "src-abstract-nsdi-2026-89332613",
   "venue": "nsdi",
   "year": 2026,
   "track_or_session": "The Care and Feeding of Networked Systems",
@@ -216,6 +218,19 @@
       "supports": [
         "canonical author line and publication-time affiliations",
         "resolution of conflicting citation metadata or an explicitly absent affiliation"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2026-89332613",
+      "url": "https://www.usenix.org/conference/nsdi26/presentation/saxena",
+      "kind": "paper-page",
+      "title": "Towards Performance Robustness for Microservices",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:06:12Z",
+      "content_hash": "sha256:1444b273112425544504972ffedf586ed6b9fd1de7501f9a48962bdcdb01a158",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

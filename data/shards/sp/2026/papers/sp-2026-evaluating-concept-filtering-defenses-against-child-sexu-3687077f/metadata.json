@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2026-evaluating-concept-filtering-defenses-against-child-sexu-3687077f",
   "title": "Evaluating Concept Filtering Defenses against Child Sexual Abuse Material Generation by Text-to-Image Models",
+  "abstract": "We evaluate the effectiveness of filtering child images from training datasets of text-to-image models to prevent model misuse to create child sexual abuse material (CSAM). First, we capture the complexity of preventing CSAM generation using a game-based security definition. Second, we show that current detection methods cannot remove all children from a dataset. Third, using an ethical proxy for CSAM (a child wearing glasses), we show that even when only a small percentage of child images are left in the training dataset after filtering, there exist prompting strategies that generate a child wearing glasses using only a few more queries than when the model is trained on the unfiltered data. Fine-tuning the filtered model on child images further reduces the additional query overhead. We also show that re-introducing a concept is possible via fine-tuning even if filtering is perfect. Our results show that current child filtering methods offer limited protection to closed-weight models and no protection to open-weight models, while reducing the generality of the model by hindering the generation of childrelated concepts or changing their representation. We conclude by outlining challenges in conducting evaluations that establish robust evidence on the impact of concept filtering defenses for CSAM. 22Source code: https://github.com/spring-epfl/t2i-child-filtering.",
+  "abstract_source_id": "src-abstract-sp-2026-3687077f",
   "venue": "sp",
   "year": 2026,
   "track_or_session": "Cycle 2",
@@ -217,6 +219,19 @@
       "official": true,
       "supports": [
         "DOI, published-order authors and affiliations, abstract, publication date, page span, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2026-3687077f",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Evaluating Concept Filtering Defenses against Child Sexual Abuse Material Generation by Text-to-Image Models",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:57Z",
+      "content_hash": "sha256:303a9b5e5ef8908a3cfe67f02eb8a87be978a5fe3281c7ecec8c0cdb512517e0",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

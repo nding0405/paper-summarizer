@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-cta-clip-then-aggregate-a-differentially-private-learnin-b6bfee5c",
   "title": "CTA: Clip-then-Aggregate, a Differentially Private Learning Algorithm for Graph Data",
+  "abstract": "Graph learning has become a fundamental tool for modeling relational data in applications such as social networks and recommender systems, yet it often involves individuals' private features or interactions. Differential privacy (DP) provides a rigorous framework for protecting sensitive data, but its application to graph learning is challenging due to complex inter-node dependencies induced by message aggregation. Despite this broad influence, the per-neighbor impact of a node is typically small. Nevertheless, most existing private graph learning methods are built upon the DP-SGD framework, whose reliance on global gradient clipping prevents the precise capture of these influences and overestimates the true gradient sensitivity.\n\nTo address these challenges, we propose CTA, a differentially private graph learning algorithm that enables end-to-end training while perturbing only model gradients with tightly characterized sensitivity. CTA adopts a clip-then-aggregate design in both the forward and backward passes of model training. In the forward pass, CTA clips node embeddings before aggregation. Crucially, in the backward pass, instead of clipping each gradient as a whole, CTA separately clips and bounds two gradient components and then aggregates them to form the final model gradients. This design allows CTA to capture fine-grained gradient variations induced by graph aggregation and derive tighter gradient sensitivity bounds. Extensive experiments on real-world datasets demonstrate that CTA consistently outperforms existing private graph learning methods across a wide range of settings.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-b6bfee5c",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Privacy of ML 2",
@@ -71,6 +73,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-b6bfee5c",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/wei-jianxin",
+      "kind": "paper-page",
+      "title": "CTA: Clip-then-Aggregate, a Differentially Private Learning Algorithm for Graph Data",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:23:33Z",
+      "content_hash": "sha256:4fb56ac731c5e7dc017c18ed0cae5c49e0ad5d36e1fe32f52e78ca4d694eb06d",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

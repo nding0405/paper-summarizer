@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2026-tetriserve-efficiently-serving-mixed-dit-workloads-87a9ba28",
   "title": "TetriServe: Efficiently Serving Mixed DiT Workloads",
+  "abstract": "Diffusion Transformer (DiT) models excel at generating high-quality images through iterative denoising steps, but serving them under strict Service Level Objectives (SLOs) is challenging due to their high computational cost, particularly at larger resolutions. Existing serving systems use fixed-degree sequence parallelism, which is inefficient for heterogeneous workloads with mixed resolutions and deadlines, leading to poor GPU utilization and low SLO attainment. In this paper, we propose step-level sequence parallelism to dynamically adjust the degree of parallelism of individual requests according to their deadlines. We present TetriServe, a DiT serving system that implements this strategy for highly efficient image generation. Specifically, TetriServe introduces a novel round-based scheduling mechanism that improves SLO attainment by (1) discretizing time into fixed rounds to make deadline-aware scheduling tractable, (2) adapting parallelism at the step level and minimizing GPU hour consumption, and (3) jointly packing requests to minimize late completions. Extensive evaluation on state-of-the-art DiT models shows that TetriServe achieves up to 32% higher SLO attainment compared to existing solutions without degrading image quality.",
+  "abstract_source_id": "src-abstract-asplos-2026-87a9ba28",
   "venue": "asplos",
   "year": 2026,
   "track_or_session": "Session 5A: Generative Model Serving",
@@ -236,6 +238,19 @@
       "official": false,
       "supports": [
         "Indexed abstract used for strict relevance classification and indexed arXiv identifier where available."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2026-87a9ba28",
+      "url": "https://api.openalex.org/works?filter=title.search:TetriServe%3A%20Efficiently%20Serving%20Mixed%20DiT%20Workloads&select=id,title,abstract_inverted_index&per-page=3&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "TetriServe: Efficiently Serving Mixed DiT Workloads",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:06:58Z",
+      "content_hash": "sha256:ecf10f9777e0eb3950b8cb9d23a1bf29929cb07ccae6d1b947dfa9bd72d97511",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

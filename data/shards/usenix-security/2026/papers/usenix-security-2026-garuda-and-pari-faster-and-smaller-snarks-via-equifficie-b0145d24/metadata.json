@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-garuda-and-pari-faster-and-smaller-snarks-via-equifficie-b0145d24",
   "title": "Garuda and Pari: Faster and Smaller SNARKs via Equifficient Polynomial Commitments",
+  "abstract": "SNARKs are powerful cryptographic primitives that allow a prover to produce a succinct proof of a computation. Two key goals of SNARK research are to minimize the size of the proof and to minimize the time required to generate it. In this work, we present new SNARK constructions that push the frontier on both of these goals.\n\nOur first construction, Pari, is a SNARK that achieves the smallest proof size amongst all known SNARKs. Specifically, Pari achieves a proof size of just two group elements and two field elements, which, when instantiated with the BLS12-381 curve, totals just 160 bytes. This is smaller than the sizes for Groth16 [Groth, EUROCRYPT '16] and Polymath [Lipmaa, CRYPTO '24]. Pari also achieves the lowest known gas cost for on-chain SNARK verification, reducing the gas cost by 6% compared to Groth16 and 17% compared to FFLONK.\n\nOur second construction, Garuda, is a SNARK that reduces proof generation time by supporting, for the first time, arbitrary \"custom\" gates and free linear gates (in terms of cryptographic costs). These benefits enable significant prover-time savings compared to state-of-the-art SNARKs.\n\nBoth constructions rely on a new cryptographic primitive: \"equifficient\" polynomial commitment (EPC) schemes that enforce that committed polynomials have the same representation in particular bases. We provide both rigorous security definitions for this primitive as well as efficient constructions for univariate and multilinear polynomials.\n\nOur constructions are obtained via a new compiler that obtains a succinct argument by combining polynomial IOPs with our EPC schemes.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-b0145d24",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Applications of Cryptography 6",
@@ -114,6 +116,19 @@
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening",
         "prepublication PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-b0145d24",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/dellepere",
+      "kind": "paper-page",
+      "title": "Garuda and Pari: Faster and Smaller SNARKs via Equifficient Polynomial Commitments",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:24:08Z",
+      "content_hash": "sha256:005adb5220400bab8280b0b1e222ba9711c9798824804d1f29783cb8452f479f",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

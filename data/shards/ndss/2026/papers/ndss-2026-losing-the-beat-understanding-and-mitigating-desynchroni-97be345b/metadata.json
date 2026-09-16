@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2026-losing-the-beat-understanding-and-mitigating-desynchroni-97be345b",
   "title": "Losing the Beat: Understanding and Mitigating Desynchronization Risks in Container Isolation",
+  "abstract": "The isolation offered by containers today is achieved through leveraging Linux namespaces and cgroups in a highly coordinated way. This foundation for container protection, however, has been shaken by the evolution of computing paradigms, particularly the emergence of serverless computing with strong demands for resource sharing across namespaces. Such sharing weakens the container’s isolation model, inducing namespace-cgroup desynchronization (NCD) vulnerabilities, as discovered in our research. In this paper, we present a study on such risks, aiming at identifying their root causes and understanding their implications. Our research reveals that popular container tools all suffer from NCD risks, as evidenced by our discovery of four new vulnerabilities and one bug. Fundamentally, namespace sharing expands a container’s isolation boundary, which may contravene the restrictions set by the cgroups, thereby undermining the combined protection provided by both mechanisms. This contention often cannot be reconciled by existing container tools.\n\nTo address this challenge and meet the demands for namespace sharing, we propose a kernel-level solution to unify the fragmented responsibilities of namespaces and cgroups in monitoring the resources for container instances. Our design bonds the resource management handled by namespaces with the resource restrictions enforced by cgroups, and identifies the collaborative policies that they should follow. The analysis and evaluation demonstrate that our approach effectively mitigates the NCD risks, as well as incurs a negligible cost to the Linux kernel, mainstream container tools, and real-world applications, maintaining full compatibility with these systems.",
+  "abstract_source_id": "src-abstract-ndss-2026-97be345b",
   "venue": "ndss",
   "year": 2026,
   "track_or_session": "Summer submission cycle",
@@ -202,6 +204,19 @@
       "official": false,
       "supports": [
         "independent proceedings identity reconciliation"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2026-97be345b",
+      "url": "https://www.ndss-symposium.org/ndss-paper/losing-the-beat-understanding-and-mitigating-desynchronization-risks-in-container-isolation/",
+      "kind": "paper-page",
+      "title": "Losing the Beat: Understanding and Mitigating Desynchronization Risks in Container Isolation",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:22:27Z",
+      "content_hash": "sha256:a10fc4db2a79be25b65ffcd6a5f639882189fb2a6f4b3146d62a8d5290b5503e",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

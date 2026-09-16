@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2023-redsec-running-encrypted-discretized-neural-networks-in-618cd4bd",
   "title": "REDsec: Running Encrypted Discretized Neural Networks in Seconds",
+  "abstract": "Machine learning as a service (MLaaS) has risen to become a prominent technology due to the large development time, amount of data, hardware costs, and level of expertise required to develop a machine learning model. However, privacy concerns prevent the adoption of MLaaS for applications with sensitive data. A promising privacy preserving solution is to use fully homomorphic encryption (FHE) to perform the ML computations. Recent advancements have lowered computational costs by several orders of magnitude, opening doors for secure practical applications to be developed. In this work, we introduce the REDsec framework that optimizes FHE-based private machine learning inference by leveraging ternary neural networks. Such neural networks, whose weights are constrained to {-1,0,1}, have special properties that we exploit to operate efficiently in the homomorphic domain. REDsec introduces novel features, including a new data re-use scheme that enables bidirectional bridging between the integer and binary domains for the first time in FHE. This enables us to implement very efficient binary operations for multiplication and activations, as well as efficient integer domain additions. Our approach is complemented by a new GPU acceleration library, dubbed (RED)cuFHE, which supports both binary and integer operations on multiple GPUs. REDsec brings unique benefits by supporting user-defined models as input (bring-your-own-network), automation of plaintext training, and efficient evaluation of private inference leveraging TFHE. In our analysis, we perform inference experiments with the MNIST, CIFAR-10, and ImageNet datasets and report performance improvements compared to related works.",
+  "abstract_source_id": "src-abstract-ndss-2023-618cd4bd",
   "venue": "ndss",
   "year": 2023,
   "track_or_session": "Cloud and Edge Computing",
@@ -126,6 +128,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2023-618cd4bd",
+      "url": "https://www.ndss-symposium.org/ndss-paper/redsec-running-encrypted-discretized-neural-networks-in-seconds/",
+      "kind": "paper-page",
+      "title": "REDsec: Running Encrypted Discretized Neural Networks in Seconds",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:17:21Z",
+      "content_hash": "sha256:b8b6a50d05289b9382604f8502f2bfa1c922fa64c276c3501c9bb5ac5d3e6585",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

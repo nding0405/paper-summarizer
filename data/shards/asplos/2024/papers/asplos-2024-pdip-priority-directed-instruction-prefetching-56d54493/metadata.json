@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2024-pdip-priority-directed-instruction-prefetching-56d54493",
   "title": "PDIP: Priority Directed Instruction Prefetching",
+  "abstract": "Modern server workloads have large code footprints which are prone to front-end bottlenecks due to instruction cache capacity misses. Even with the aggressive fetch directed instruction prefetching (FDIP), implemented in modern processors, there are still significant front-end stalls due to I-Cache misses. A major portion of misses that occur on a BPU-predicted path are tolerated by FDIP without causing stalls. Prior work on instruction prefetching, however, has not been designed to work with FDIP processors. Their singular goal is reducing I-Cache misses, whereas FDIP processors are designed to tolerate them. Designing an instruction prefetcher that works in conjunction with FDIP requires identifying the fraction of cache misses that impact front-end performance (that are not fully hidden by FDIP), and only targeting them.",
+  "abstract_source_id": "src-abstract-asplos-2024-56d54493",
   "venue": "asplos",
   "year": 2024,
   "track_or_session": "Session 8A: Caching and Prefetching",
@@ -222,6 +224,19 @@
       "official": false,
       "supports": [
         "Indexed alternate-version and institutional-copy links; not used as the authoritative relevance source."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2024-56d54493",
+      "url": "https://api.openalex.org/works/doi:10.1145/3620665.3640394?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "PDIP: Priority Directed Instruction Prefetching",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:00:24Z",
+      "content_hash": "sha256:7dbe629254d45d00b7bad8046f5df34b22c54a7cff0d7b12dbfe89d7e002df7b",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

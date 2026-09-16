@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2026-occupy-probe-cross-privilege-branch-target-buffer-side-c-b888694b",
   "title": "OCCUPY+PROBE: Cross-Privilege Branch Target Buffer Side-Channel Attacks at Instruction Granularity",
+  "abstract": "In recent years, the Branch Target Buffer (BTB) has raised significant concerns in system security research.\n\nAs this component is logically or physically shared in certain attack scenarios, it is abused by adversaries to construct side-channels that leak sensitive branch information of victim processes.\n\nHowever, existing BTB side-channel attacks either fail to leak kernel control-flow information from user mode due to the cross-privilege isolation mechanism, or suffer from limited spatial resolution in branch monitoring.\n\nIn this paper, we propose Occupy+Probe, a novel eviction-based BTB side-channel attack that bridges these gaps by successfully exposing kernel control-flow behaviors directly from user mode.\n\nOur approach begins with an in-depth reverse engineering of the offset-related BTB update mechanism on Intel processors, and reveals that textit{BTB entries created in user mode can be directly replaced by kernel-mode entries, irrespective of the underlying replacement policy and the hardware isolation}, which forms the foundation of Occupy+Probe.\n\nIn contrast to existing BTB side-channel attacks, Occupy+Probe eliminates the need for entry sharing between the attacker and the victim.\n\nMoreover, it achieves instruction-level granularity in branch monitoring, surpassing the spatial resolution of existing eviction-based BTB side-channels.\n\nWe experimentally demonstrate that Occupy+Probe can leak control-flow information across privilege boundaries with high spatial resolution on various Intel processors.\n\nFurthermore, we validate the practical effectiveness of Occupy+Probe through a detailed case study targeting the Linux Kernel Crypto API, showcasing its potential to compromise critical kernel operations.\n\nAdditionally, compared to prior eviction-based BTB side-channels, Occupy+Probe demonstrates a unique capability to extract tag values of kernel branches, which can be exploited to break KASLR.",
+  "abstract_source_id": "src-abstract-ndss-2026-b888694b",
   "venue": "ndss",
   "year": 2026,
   "track_or_session": "Summer submission cycle",
@@ -181,6 +183,19 @@
       "official": false,
       "supports": [
         "independent proceedings identity reconciliation"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2026-b888694b",
+      "url": "https://www.ndss-symposium.org/ndss-paper/occupyprobe-cross-privilege-branch-target-buffer-side-channel-attacks-at-instruction-granularity/",
+      "kind": "paper-page",
+      "title": "OCCUPY+PROBE: Cross-Privilege Branch Target Buffer Side-Channel Attacks at Instruction Granularity",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:22:37Z",
+      "content_hash": "sha256:d3d1f347603b498df44d6ef5edc0bed0e96c457d398edbccae81650b18169e50",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

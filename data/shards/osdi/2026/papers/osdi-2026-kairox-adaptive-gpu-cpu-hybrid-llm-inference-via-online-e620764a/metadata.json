@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2026-kairox-adaptive-gpu-cpu-hybrid-llm-inference-via-online-e620764a",
   "title": "Kairox: Adaptive GPU-CPU Hybrid LLM Inference via Online Neuron Balancing",
+  "abstract": "Hybrid LLM inference systems exploit both GPU and CPU for computation and memory but are bottlenecked by the CPU’s lower computational capabilities. Recent approaches leverage activation sparsity by offline partitioning FFN neurons into \"hot\" (frequently activated) and \"cold\" (rarely activated) sets. This approach retains critical computations on the GPU, yet static partitioning struggles to adapt to runtime activation changes, leading to suboptimal throughput.\n\nWe present Kairox, an adaptive GPU-CPU hybrid inference system that addresses these limitations through online neuron balancing, a mechanism that dynamically redistributes neurons between the GPU and CPU based on activation patterns. To realize this, Kairox introduces a Live Pipeline designed to prefetch neurons by predicting next-layer activation patterns. Furthermore, leveraging activation locality, we develop a Temporal Activation Momentum cache policy to prioritize neurons with sustained utility while minimizing transient, wasteful transfers. Finally, an Adaptive Neuron Balancer modulates the balancing intensity according to runtime resource conditions, maintaining an optimal equilibrium between competing system bottlenecks. For standard completion on consumer-grade PCs, Kairox improves end-to-end throughput by up to 7.57×, 3.70×, 6.35×, and 3.76× over llama.cpp, PowerInfer, Neuralink, and Q-Infer, respectively. Across all evaluated settings, it achieves geomean speedups of 3.15× and 3.93× over llama.cpp on two representative PCs and around 2.1× over the three sparse baselines.",
+  "abstract_source_id": "src-abstract-osdi-2026-e620764a",
   "venue": "osdi",
   "year": 2026,
   "track_or_session": "Resource-Efficient LLM Serving",
@@ -230,6 +232,19 @@
       "official": true,
       "supports": [
         "Official proceedings availability and canonical conference versions."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2026-e620764a",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/jiang-yapeng",
+      "kind": "paper-page",
+      "title": "Kairox: Adaptive GPU-CPU Hybrid LLM Inference via Online Neuron Balancing",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:08:29Z",
+      "content_hash": "sha256:5dd02bf3666b3357d1abd21d216edc9500b0bf4dcdcaeb278717d1df083969d8",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

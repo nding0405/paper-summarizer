@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2023-high-order-masking-of-lattice-signatures-in-quasilinear-55e2a036",
   "title": "High-Order Masking of Lattice Signatures in Quasilinear Time",
+  "abstract": "In recent years, lattice-based signature schemes have emerged as the most prominent post-quantum solutions, as illustrated by NIST’s selection of Falcon and Dilithium for standardization. Both schemes enjoy good performance characteristics. However, their efficiency dwindles in the presence of side-channel protections, particularly masking – perhaps the strongest generic side-channel countermeasure. Masking at order d-1 requires randomizing all sensitive intermediate variables into d shares. With existing schemes, signature generation complexity grows quadratically with the number of shares, making high-order masking prohibitively slow.In this paper, we turn the problem upside-down: We design a lattice-based signature scheme specifically for side-channel resistance and optimize the masked efficiency as a function of the number of shares. Our design avoids costly operations such as conversions between arithmetic and boolean encodings (A2B/B2A), masked rejection sampling, and does not require a masked SHAKE implementation or other symmetric primitives. The resulting scheme is called Raccoon and belongs to the family of Fiat-Shamir with aborts lattice-based signatures. Raccoon is the first lattice-based signature whose key generation and signing running time has only an O(d log(d)) overhead, with d being the number of shares.Our Reference C implementation confirms that Raccoon’s performance is comparable to other state-of-the-art signature schemes, except that increasing the number of shares has a near-linear effect on its latency. We also present an FPGA implementation and perform a physical leakage assessment to verify its basic security properties.",
+  "abstract_source_id": "src-abstract-sp-2023-55e2a036",
   "venue": "sp",
   "year": 2023,
   "track_or_session": "Session 4C: Cryptographic proof techniques",
@@ -172,6 +174,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2023-55e2a036",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "High-Order Masking of Lattice Signatures in Quasilinear Time",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:22Z",
+      "content_hash": "sha256:1bed15e4c1c4d6e59eecfd74eeffd17f506467abd5cdd4e0f536f68bd1e694ee",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

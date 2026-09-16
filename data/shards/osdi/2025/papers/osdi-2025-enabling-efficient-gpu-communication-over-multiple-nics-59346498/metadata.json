@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2025-enabling-efficient-gpu-communication-over-multiple-nics-59346498",
   "title": "Enabling Efficient GPU Communication over Multiple NICs with FuseLink",
+  "abstract": "Machine learning (ML) clusters stack multiple network interface cards (NICs) within each server to improve inter-server GPU communication bandwidth. However, existing systems fall short in fully utilizing NICs because of static GPU-NIC bindings. This leads to bottlenecks at hot-spot NICs when handling imbalanced communication in ML tasks. For example, large language model serving instances may have different communication demands across NICs; expert-parallel training tasks have imbalanced all-to-all traffic; and the embedding transmission volumes during recommendation model training vary across GPUs. To fully utilize all NICs, we propose FuseLink to enable efficient GPU communication over multiple NICs. FuseLink extends inter-server network by integrating high-speed intra-server connections, and leverages GPUs to efficiently relay traffic to idle NICs. We implement FuseLink and integrate it into NCCL, so that ML applications can benefit from FuseLink seamlessly without code modifications. Compared to NCCL, we demonstrate that FuseLink achieves up to 212GBps bandwidth between two inter-server GPUs and accelerates ML tasks with dynamic traffic patterns. Specifically, it reduces the latencies of first-token generation in LLM model servings by 1.04-2.73×, improves the training throughput of mixture-of-experts model by up to 1.3×, and accelerates deep learning recommendation model training by up to 1.2×.",
+  "abstract_source_id": "src-abstract-osdi-2025-59346498",
   "venue": "osdi",
   "year": 2025,
   "track_or_session": "Distributed Systems and Data Centers I",
@@ -411,6 +413,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2025-59346498",
+      "url": "https://www.usenix.org/conference/osdi25/presentation/ren",
+      "kind": "paper-page",
+      "title": "Enabling Efficient GPU Communication over Multiple NICs with FuseLink",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:07:32Z",
+      "content_hash": "sha256:2cbcd776ed5cd1ba5d1e711e92c9e2ea205caa02a9b7509e80207bd656a75b09",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

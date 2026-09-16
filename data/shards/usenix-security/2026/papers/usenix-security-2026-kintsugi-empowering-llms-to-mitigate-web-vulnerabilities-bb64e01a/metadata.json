@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-kintsugi-empowering-llms-to-mitigate-web-vulnerabilities-bb64e01a",
   "title": "Kintsugi: Empowering LLMs to Mitigate Web Vulnerabilities via Runtime Policy Injection",
+  "abstract": "The \"response gap\" between vulnerability detection and patching leaves web applications exposed to high-impact exploits such as remote code execution, command injection, and server-side request forgery. Current mitigations are flawed: code fixes often break functionality, while global runtime policies produce excessive false positives. We propose Kintsugi, an automated runtime containment system that provides temporary protection for exploits that manifest as diverging syscall behaviors at the OS level. Kintsugi uses a three-stage pipeline: First, by performing differential syscall analysis on normal and malicious requests, it locates a few vulnerability-related functions. Subsequently, leveraging LLMs, it precisely delineates the boundaries of the specific code snippets causing the malicious behavior within these functions and establishes policy trigger points. Finally, by analyzing the execution profiles from normal requests, it derives a deterministic, least-privilege syscall whitelist to serve as the runtime policy. This policy is enforced at the kernel level via eBPF and cgroups and is dynamically activated only when the request's execution flow enters the protected code snippet. Evaluation on 27 real-world CVEs across PHP, Python, and Java shows that Kintsugi effectively neutralizes diverse exploits and their variants while preserving original application functionality. Kintsugi achieves an average response time of 7.6 minutes. While the enforcement of surgical policies introduces a modest average latency overhead of 9.2% on targeted APIs, the impact on concurrent non-vulnerable traffic remains minimal, with an average throughput (RPS) drop of only 2.21%.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-bb64e01a",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Security and Privacy for Web, Mobile, and Emerging Technologies 1",
@@ -176,6 +178,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-bb64e01a",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/peng-yihao",
+      "kind": "paper-page",
+      "title": "Kintsugi: Empowering LLMs to Mitigate Web Vulnerabilities via Runtime Policy Injection",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:24:28Z",
+      "content_hash": "sha256:212da543a118539b01567b6e90029418f8680e83b751f724bd8ae9601ece8d97",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

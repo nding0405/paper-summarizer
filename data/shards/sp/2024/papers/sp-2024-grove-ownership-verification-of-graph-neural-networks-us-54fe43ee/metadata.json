@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2024-grove-ownership-verification-of-graph-neural-networks-us-54fe43ee",
   "title": "GrOVe: Ownership Verification of Graph Neural Networks using Embeddings",
+  "abstract": "Graph neural networks (GNNs) have emerged as a state-of-the-art approach to model and draw inferences from large scale graph-structured data in various application settings such as social networking. The primary goal of a GNN is to learn an embedding for each graph node in a dataset that encodes both the node features and the local graph structure around the node.Prior work has shown that GNNs are prone to model extraction attacks. Model extraction attacks and defenses have been explored extensively in other non-graph settings. While detecting or preventing model extraction appears to be difficult, deterring them via effective ownership verification techniques offer a potential defense. In non-graph settings, fingerprinting models, or the data used to build them, have shown to be a promising approach toward ownership verification.We present GrOVe, a state-of-the-art GNN model fingerprinting scheme that, given a target model and a suspect model, can reliably determine if the suspect model was trained independently of the target model or if it is a surrogate of the target model obtained via model extraction. We show that GrOVe can distinguish between surrogate and independent models even when the independent model uses the same training dataset and architecture as the original target model.Using six benchmark datasets and three model architectures, we show that GrOVe consistently achieves low falsepositive and false-negative rates. We demonstrate that GrOVe is robust against known fingerprint evasion techniques while remaining computationally efficient.",
+  "abstract_source_id": "src-abstract-sp-2024-54fe43ee",
   "venue": "sp",
   "year": 2024,
   "track_or_session": "Spring cycle",
@@ -138,6 +140,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2024-54fe43ee",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "GrOVe: Ownership Verification of Graph Neural Networks using Embeddings",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:32Z",
+      "content_hash": "sha256:be7515012a8c1ea1211f38a27ea4d2aa9cff6e0faac9417a2f58b1d64e91280e",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-breaking-the-blindfold-deep-learning-based-blind-side-ch-c79a5c6e",
   "title": "Breaking the Blindfold: Deep Learning-based Blind Side-channel Analysis",
+  "abstract": "Physical side-channel analysis (SCA) operates on the foundational assumption of access to known plaintext or ciphertext. However, this assumption can be easily invalidated in various scenarios, ranging from common encryption modes like Offset CodeBook (OCB) to complex hardware implementations, where such data may be inaccessible. Blind SCA addresses this challenge by operating without the knowledge of plaintext or ciphertext. Unfortunately, prior such approaches have shown limited success in practical settings.\n\nThis paper introduces the Deep Learning-based Blind Side-channel Analysis (DL-BSCA) framework, leveraging deep neural networks to recover secret keys in blind SCA settings. In addition, we propose a novel labeling method, Multi-point Cluster-based (MC) labeling, accounting for dependencies between leakage variables by exploiting multiple sample points for each variable, improving the accuracy of trace labeling. We validate our approach across four datasets, including symmetric key algorithms (AES and Ascon) and a post-quantum cryptography algorithm, Kyber, with platforms ranging from high-leakage 8-bit AVR XMEGA to noisy 32-bit ARM STM32F4. Notably, previous methods failed to recover the key on the same datasets. We demonstrate the first successful blind SCA on a desynchronization countermeasure enabled by DL-BSCA and MC labeling. All experiments are validated with real-world SCA measurements, highlighting the practicality and effectiveness of our approach.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-c79a5c6e",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Hardware Security 3: Side-Channel and Fault Injection Attacks",
@@ -154,6 +156,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-c79a5c6e",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/rezaeezade",
+      "kind": "paper-page",
+      "title": "Breaking the Blindfold: Deep Learning-based Blind Side-channel Analysis",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:18:57Z",
+      "content_hash": "sha256:fc852c3e37a9f911cbddf9bd8f2a899187d016d8935914e4d881a625c07e0c5f",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

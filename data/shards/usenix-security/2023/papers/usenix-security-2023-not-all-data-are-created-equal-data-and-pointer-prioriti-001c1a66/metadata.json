@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2023-not-all-data-are-created-equal-data-and-pointer-prioriti-001c1a66",
   "title": "Not All Data are Created Equal: Data and Pointer Prioritization for Scalable Protection Against Data-Oriented Attacks",
+  "abstract": "Data-oriented attacks are becoming increasingly realistic and effective against the state-of-the-art defenses in most operating systems. These attacks manipulate memory-resident data objects (data and pointers) without changing the control flow of a program. Software and hardware-based countermeasures for protecting data and pointers suffer from performance bottlenecks due to excessive instrumentation of all data objects. In this work, we propose a Data and Pointer Prioritization (DPP) framework utilizing rule-based heuristics to identify sensitive memory objects automatically from an application and protect only those sensitive data utilizing existing countermeasures. We evaluate the correctness of our framework using the Linux Flaw Project dataset, Juliet Test Suite, and five real-world programs (used for demonstrating data-oriented attacks). Our experiments show that DPP can identify vulnerable data objects from our tested applications by prioritizing as few as only 3–4% of total data objects. Our evaluation of the SPEC CPU2017 Integer benchmark suite shows that DPP-enabled AddressSanitizer (ASan) can improve performance (in terms of throughput) by ∼1.6x and reduce run-time overhead by ∼70% compared to the default ASan while protecting all the prioritized data objects.",
+  "abstract_source_id": "src-abstract-usenix-security-2023-001c1a66",
   "venue": "usenix-security",
   "year": 2023,
   "track_or_session": "Programs, Code, and Binaries",
@@ -175,6 +177,19 @@
       "official": true,
       "supports": [
         "authors, affiliations when published, abstract, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2023-001c1a66",
+      "url": "https://www.usenix.org/conference/usenixsecurity23/presentation/ahmed-salman",
+      "kind": "paper-page",
+      "title": "Not All Data are Created Equal: Data and Pointer Prioritization for Scalable Protection Against Data-Oriented Attacks",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:12:13Z",
+      "content_hash": "sha256:7b85dd32e7a601a1cee3728a26010785cf57e63fc9f867b098f135c7465470ff",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

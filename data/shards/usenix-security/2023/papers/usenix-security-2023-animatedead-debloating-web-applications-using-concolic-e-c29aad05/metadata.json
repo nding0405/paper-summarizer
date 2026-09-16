@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2023-animatedead-debloating-web-applications-using-concolic-e-c29aad05",
   "title": "AnimateDead: Debloating Web Applications Using Concolic Execution",
+  "abstract": "Year over year, modern web applications evolve to cater to the needs of many users and support various runtime environments. The ever-growing need to appeal to as many users as possible and the reliance on third-party dependencies comes at the price of code-bloat. Previous research has highlighted the benefits of debloating mechanisms which produce smaller applications, customized to the real needs of their users with significant security improvements.\n\nRecognizing the limitations of dynamic and static debloating schemes (including high runtime overhead and lack of accuracy), we propose a hybrid approach based on concolic execution. We developed AnimateDead, a PHP emulator capable of concolic execution and designed a distributed analysis framework around it.\n\nBy using the readily available web server logs as application entry points, we perform concolic reachability analysis and extract the code-coverage of target web applications in an abstract environment, which allows our results to generalize for all user inputs and database states. We demonstrate that debloating via concolic execution improves the security of web applications by shrinking the size of their code by an average of 47% and reducing critical API calls by 55%, while removing 35-65% of vulnerabilities for historic CVEs. We show that via concolic execution, we can debloat web applications with comparable security improvements of dynamic debloating schemes without suffering from the runtime overhead, and the need for a training phase. Moreover, AnimateDead-debloated web applications reduce the likelihood of breakage by allowing users to perform all actions reachable from the analyzed entry points.",
+  "abstract_source_id": "src-abstract-usenix-security-2023-c29aad05",
   "venue": "usenix-security",
   "year": 2023,
   "track_or_session": "Web Security",
@@ -154,6 +156,19 @@
       "official": true,
       "supports": [
         "authors, affiliations when published, abstract, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2023-c29aad05",
+      "url": "https://www.usenix.org/conference/usenixsecurity23/presentation/azad",
+      "kind": "paper-page",
+      "title": "AnimateDead: Debloating Web Applications Using Concolic Execution",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:09:43Z",
+      "content_hash": "sha256:6eb7e07d2e8fdff0c2dc2ab68191fe592243df65a8533b3ffdea63f526dca742",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

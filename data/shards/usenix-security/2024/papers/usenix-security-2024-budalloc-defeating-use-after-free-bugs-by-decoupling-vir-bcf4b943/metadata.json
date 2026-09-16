@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2024-budalloc-defeating-use-after-free-bugs-by-decoupling-vir-bcf4b943",
   "title": "BUDAlloc: Defeating Use-After-Free Bugs by Decoupling Virtual Address Management from Kernel",
+  "abstract": "Use-after-free bugs are an important class of vulnerabilities that often pose serious security threats. To prevent or detect use-after-free bugs, one-time allocators have recently gained attention for their better performance scalability and immediate detection of use-after-free bugs compared to garbage collection approaches. This paper introduces BUDAlloc, a one-time-allocator for detecting and protecting use-after-free bugs in unmodified binaries. The core idea is co-designing a user-level allocator and kernel by separating virtual and physical address management. The user-level allocator manages virtual address layout, eliminating the need for system calls when creating virtual alias, which is essential for reducing internal fragmentation caused by the one-time-allocator. BUDAlloc customizes the kernel page fault handler with eBPF for batching unmap requests when freeing objects. In SPEC CPU 2017, BUDAlloc achieves a 15% performance improvement over DangZero and reduces memory overhead by 61% compared to FFmalloc.",
+  "abstract_source_id": "src-abstract-usenix-security-2024-bcf4b943",
   "venue": "usenix-security",
   "year": 2024,
   "track_or_session": "System Security I: OS",
@@ -175,6 +177,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2024-bcf4b943",
+      "url": "https://www.usenix.org/conference/usenixsecurity24/presentation/ahn",
+      "kind": "paper-page",
+      "title": "BUDAlloc: Defeating Use-After-Free Bugs by Decoupling Virtual Address Management from Kernel",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:14:20Z",
+      "content_hash": "sha256:297b55cc654f011b405c63d9f2d842a4f5a1e9adc0030ad4a7d69fd3f83d1c61",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

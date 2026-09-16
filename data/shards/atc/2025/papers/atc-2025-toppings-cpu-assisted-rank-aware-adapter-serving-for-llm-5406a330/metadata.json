@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "atc-2025-toppings-cpu-assisted-rank-aware-adapter-serving-for-llm-5406a330",
   "title": "Toppings: CPU-Assisted, Rank-Aware Adapter Serving for LLM Inference",
+  "abstract": "Low-Rank Adaptation (LoRA) is a popular approach that adapts a base large language model (LLM) to domain-specific tasks by adding lightweight trainable adapters. In this paper, we present Toppings, a system that efficiently serves many LoRA adapters derived from a common base model. Toppings pins the base model on GPUs and dynamically loads the requested LoRA adapters from host memory as new requests arrive. In view of the high GPU loading overhead, which not only delays the time-to-first-token of the newly arrived request but also interrupts the ongoing decoding of all inflight queries when continuous batching is in use, Toppings proposes a CPU-assisted LoRA serving approach. It simultaneously uses CPUs to compute the lightweight adaption for prefilling as the requested LoRA adapter is being loaded onto GPUs; it then switches to the GPUs after loading completes to resume the remaining computation. Toppings develops a highly optimized synchronization mechanism and pipeline loading scheme to efficiently coordinate LoRA computation on the CPUs and GPUs. Toppings further designs a rank-aware scheduling algorithm that optimally schedules heterogeneous LoRA requests to maximize the SLO attainment. Compared with the state-of-the-art LoRA serving systems, Toppings improves the average request serving latency by up to 1.7× and achieves an SLO attainment of up to 99%.",
+  "abstract_source_id": "src-abstract-atc-2025-5406a330",
   "venue": "atc",
   "year": 2025,
   "track_or_session": "Serving Intelligence: Efficient LLM Inference at the Edge and Cloud",
@@ -264,6 +266,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-atc-2025-5406a330",
+      "url": "https://www.usenix.org/conference/atc25/presentation/li-suyi-toppings",
+      "kind": "paper-page",
+      "title": "Toppings: CPU-Assisted, Rank-Aware Adapter Serving for LLM Inference",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:00:17Z",
+      "content_hash": "sha256:7fa7ff15d035e1a0ec576612999b93516c372bc9a205093a3d12e3229848114c",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

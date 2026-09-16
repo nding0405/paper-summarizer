@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2026-megalon-efficient-data-sharing-for-partly-coherent-cxl-m-b5afef81",
   "title": "MEGALON: Efficient Data Sharing for Partly Coherent CXL Memory",
+  "abstract": "CXL allows multiple hosts to share memory. However, the hardware is expected to provide cache coherence only for a small region of CXL memory and it is difficult for hosts to share data in the non-coherent region. Recent work proposes using the small coherent region (SCR) to track coherence metadata and enables coherent and correct sharing of data in the software. We find that this approach suffers from poor performance for large datasets as it cannot fit the metadata in SCR. We propose MEGALON, a new data-sharing approach for CXL that uses a novel split approach, where big but infrequently updated metadata is logically shared via replication, and only small and heavily updated metadata is shared via SCR. This enables MEGALON to support much larger datasets with high performance. MEGALON augments the split approach with novel techniques enabled by a CXL shared log that unlock high performance under many workloads.",
+  "abstract_source_id": "src-abstract-osdi-2026-b5afef81",
   "venue": "osdi",
   "year": 2026,
   "track_or_session": "A Coherent, Consistent Session on Caching",
@@ -230,6 +232,19 @@
       "official": true,
       "supports": [
         "Official proceedings availability and canonical conference versions."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2026-b5afef81",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/hu-jiyu",
+      "kind": "paper-page",
+      "title": "MEGALON: Efficient Data Sharing for Partly Coherent CXL Memory",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:08:34Z",
+      "content_hash": "sha256:4e17f47dba0f3e6a8c8c5e252fc01667e71ccc5c13b9f0f8359d581767a5ab5b",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

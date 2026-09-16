@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2025-one-video-to-steal-them-all-3d-printing-ip-theft-through-60528e98",
   "title": "One Video to Steal Them All: 3D-Printing IP Theft through Optical Side-Channels",
+  "abstract": "The 3D printing industry is rapidly growing and increasingly adopted across various sectors, including manufacturing, healthcare, and defense. However, the operational setup often involves hazardous environments, necessitating remote monitoring through cameras and other sensors, which opens the door to cyber-based attacks. In this paper, we show that an adversary with access to video recordings of the 3D printing process can reverse-engineer the underlying 3D print instructions. Our model tracks the printer nozzle's movements during the printing process and maps the corresponding trajectory into G-code instructions. Further, it identifies the correct parameters, such as feed rate and extrusion rate, leading us to be able to successfully perform IP theft. To validate the success of IP theft, we design an equivalence checker that quantitatively compares two sets of 3D print instructions, evaluating their similarity in producing objects that are alike in shape, external appearance, and internal structure. Our equivalence checker, unlike other simple distance-based metrics such as normalized mean square error, is rotational as well as translational invariant. This is necessary to capture shifts in the base/start position of the reverse-engineered instructions relative to the actual 3D print instructions that can happen due to different camera positions. Our model achieves an average accuracy of 90.87% and generates 30.20% fewer instructions compared to the current state-of-the-art methods that produce instructions that either lead to faulty or incorrect (in terms of difference in shape and internal structure) 3D prints. Additionally, we use our model to reverse-engineer the 3D print instructions from a video recording and print a fully-functional counterfeit object.",
+  "abstract_source_id": "src-abstract-ccs-2025-60528e98",
   "venue": "ccs",
   "year": 2025,
   "track_or_session": "Cycle 1",
@@ -232,6 +234,19 @@
         "published-order authors",
         "publication-time affiliations",
         "publication date and page span"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2025-60528e98",
+      "url": "https://api.openalex.org/works/doi:10.1145/3719027.3744837?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "One Video to Steal Them All: 3D-Printing IP Theft through Optical Side-Channels",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:15:37Z",
+      "content_hash": "sha256:29af8013716577bb5dd648f2f246f85146d95bee7e40bc7caa61d1280f9400f2",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "eurosys-2023-palette-load-balancing-locality-hints-for-serverless-fun-6c948f19",
   "title": "Palette Load Balancing: Locality Hints for Serverless Functions",
+  "abstract": "Function-as-a-Service (FaaS) serverless computing enables a simple programming model with almost unbounded elasticity. Unfortunately, current FaaS platforms achieve this flexibility at the cost of lower performance for data-intensive applications compared to a serverful deployment. The ability to have computation close to data is a key missing feature. We introduce Palette load balancing, which offers FaaS applications a simple mechanism to express locality to the platform, through hints we term \"colors\". Palette maintains the serverless nature of the service - users are still not allocating resources - while allowing the platform to place successive invocations related to each other on the same executing node. We compare a prototype of the Palette load balancer to a state-of-the-art locality-oblivious load balancer on representative examples of three applications. For a serverless web application with a local cache, Palette improves the hit ratio by 6x. For a serverless version of Dask, Palette improves run times by 46% and 40% on Task Bench and TPC-H, respectively. On a serverless version of NumS, Palette improves run times by 37%. These improvements largely bridge the gap to serverful implementation of the same systems.",
+  "abstract_source_id": "src-abstract-eurosys-2023-6c948f19",
   "venue": "eurosys",
   "year": 2023,
   "track_or_session": null,
@@ -251,6 +253,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-eurosys-2023-6c948f19",
+      "url": "https://api.openalex.org/works/doi:10.1145/3552326.3567496?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Palette Load Balancing: Locality Hints for Serverless Functions",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:18:38Z",
+      "content_hash": "sha256:231d295ff34a7853c1b45cd4be80e5fbd74047b3c7c60556bc076572b33190a5",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

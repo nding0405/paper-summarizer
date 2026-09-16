@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2025-how-to-design-secure-honey-vault-schemes-e41279fd",
   "title": "How to Design Secure Honey Vault Schemes",
+  "abstract": "Password vaults enable a user to store multiple passwords with a single master password.Honey encryption (HE) protected password vaults (called honey vaults), are promising in resisting offline master password guessing attacks.Trial-decrypted with incorrect master passwords, honey vaults are designed to yield plausible-looking decoy vaults to confuse attackers, forcing them to perform online verifications to know whether a decrypted vault is the real one.In this paper, we demonstrate how to design secure honey vault schemes in a principled approach.We first identify three major types of vulnerabilities, and propose three critical design criteria based on rigorous theories, with each aiming to address one type of vulnerability.These criteria are: (1) Employing an accurate password probability model (PPM) in the natural language encoder (NLE, a key component of a honey vault) to resist distribution-aware distinguishing attacks; (2) Employing sequence-based PPMs for unique passwords, and sufficiently concise reuse models to resist encoding attacks (USENIX SEC'19); (3) Hiding a user's real-vault-related (i.e., adaptive) PPM to resist extraction attacks (USENIX SEC'21).To meet these key criteria, we propose VaultGuard with an innovative NLE and HE-Adaptive to honey-encrypt a user's real vault and the adaptive PPM, respectively.Our NLE eliminates the first and second vulnerabilities, while HE-Adaptive addresses the third.Security evaluations on real-world data reveal that our VaultGuard can significantly enhance honey vault security, forcing attackers to perform 1.10∼3.98times online verifications.We also provide an efficient proof-of-concept VaultGuard implementation on the client side.We believe this work provides general principles and actionable guidelines for designing secure honey vault schemes.",
+  "abstract_source_id": "src-abstract-ccs-2025-e41279fd",
   "venue": "ccs",
   "year": 2025,
   "track_or_session": "Cycle 2",
@@ -148,6 +150,19 @@
         "published-order authors",
         "publication-time affiliations",
         "publication date and page span"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2025-e41279fd",
+      "url": "https://api.openalex.org/works/doi:10.1145/3719027.3765162?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "How to Design Secure Honey Vault Schemes",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:15:02Z",
+      "content_hash": "sha256:6b928c1485b08e92c4b9c78acca1a83165d77028c083b68acd8c55d153c4fd71",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2026-forge-mitigating-synchronization-amplification-for-memor-5c5ee36a",
   "title": "FORGE: Mitigating Synchronization Amplification for Memory-Disaggregated Caching Systems",
+  "abstract": "Disaggregated Memory (DM) architectures offer caching systems the potential for elastic scaling and improved resource utilization by decoupling compute and memory. However, this advantage is undermined by costly cross-node synchronization, which exacerbates the overheads of critical cache operations, including hotness tracking, eviction coordination, and memory defragmentation. To address this challenge, we present FORGE, a caching system tailored for DM that prioritizes synchronization efficiency. FORGE groups cached objects based on similarity and performs group-level synchronizations to amortize overheads. It evicts cold groups via a contention-free and hotness-aware FIFO queue, efficiently sustaining high hit ratios while mitigating memory fragmentation. Leveraging the predictability of FIFO evictions, FORGE adopts a lazy synchronization strategy that updates hotness metrics just-in-time for eviction and offloads this process to on-chip memory in RDMA NICs for acceleration. Extensive evaluations on YCSB and real-world workloads demonstrate that FORGE achieves up to 4.5× higher throughput, 4.0×/7.5× lower P50/P99 latency, and an average of 1.14× higher cache hit ratio compared with state-of-the-art systems.",
+  "abstract_source_id": "src-abstract-osdi-2026-5c5ee36a",
   "venue": "osdi",
   "year": 2026,
   "track_or_session": "Disaggregated Memory Systems",
@@ -167,6 +169,19 @@
       "official": true,
       "supports": [
         "Official proceedings availability and canonical conference versions."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2026-5c5ee36a",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/yang-zhijun",
+      "kind": "paper-page",
+      "title": "FORGE: Mitigating Synchronization Amplification for Memory-Disaggregated Caching Systems",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:08:20Z",
+      "content_hash": "sha256:0dcebb472374ba2149e9b8f5faf542a8275834272fdc574aa2842ef4ccfd6c20",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

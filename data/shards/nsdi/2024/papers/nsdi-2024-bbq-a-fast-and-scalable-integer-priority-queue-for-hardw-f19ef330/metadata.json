@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2024-bbq-a-fast-and-scalable-integer-priority-queue-for-hardw-f19ef330",
   "title": "BBQ: A Fast and Scalable Integer Priority Queue for Hardware Packet Scheduling",
+  "abstract": "The need for fairness, strong isolation, and fine-grained control over network traffic in multi-tenant cloud settings has engendered a rich literature on packet scheduling in switches and programmable hardware. Recent proposals for hardware scheduling primitives (e.g., PIFO, PIEO, BMW-Tree) have enabled run-time programmable packet schedulers, considerably expanding the suite of scheduling policies that can be applied to network traffic. However, no existing solution can be practically deployed on modern switches and NICs because they either do not scale to the number of elements required by these devices or fail to deliver good throughput, thus requiring an impractical number of replicas.\n\nIn this work, we ask: is it possible to achieve priority packet scheduling at line-rate while supporting a large number of flows? Our key insight is to leverage a scheduling primitive used previously in software – called Hierarchical Find First Set – and port this to a highly pipeline-parallel hardware design. We present the architecture and implementation of the Bitmapped Bucket Queue (BBQ), a hardware-based integer priority queue that supports a wide range of scheduling policies (via a PIFO-like abstraction). BBQ, for the first time, supports hundreds of thousands of concurrent flows while guaranteeing 100 Gbps line rate (148.8 Mpps) on FPGAs and 1 Tbps (1,488 Mpps) line rate on ASICs. We demonstrate this by implementing BBQ on a commodity FPGA where it is capable of supporting over 100K flows and 32K priorities at 300 MHz, 3× the packet rate of similar hardware priority queue designs. On ASIC, we can synthesize 100K elements at 3.1 GHz using a 7nm process.",
+  "abstract_source_id": "src-abstract-nsdi-2024-f19ef330",
   "venue": "nsdi",
   "year": 2024,
   "track_or_session": "Programming the Network: Part 1",
@@ -118,6 +120,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2024-f19ef330",
+      "url": "https://www.usenix.org/conference/nsdi24/presentation/atre",
+      "kind": "paper-page",
+      "title": "BBQ: A Fast and Scalable Integer Priority Queue for Hardware Packet Scheduling",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:02:56Z",
+      "content_hash": "sha256:2f8603d36fff14e41f4a98255f2be48658eb1cb3b920e9f3362e8c3a10326295",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

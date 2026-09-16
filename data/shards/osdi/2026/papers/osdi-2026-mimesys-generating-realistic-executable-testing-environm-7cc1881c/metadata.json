@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2026-mimesys-generating-realistic-executable-testing-environm-7cc1881c",
   "title": "Mimesys: Generating Realistic Executable Testing Environments from Resource Usage Traces",
+  "abstract": "Testing applications under realistic resource contention is challenging because production workloads are often inaccessible due to privacy and proprietary concerns. Existing approaches either use simplistic resource stressors that fail to capture temporal dynamics and multi-resource interactions, rely on limited benchmark suites, or require exhaustive per-application profiling. This paper explores an alternative direction: Synthesizing executable workloads from resource usage traces to reproduce realistic colocation scenarios.\n\nWe present Mimesys, a system that transforms time-series resource usage traces into executable workloads that emulate resource contention patterns. Mimesys represents emulated workloads as compositions of resource stressors and employs a diffusion-based generative model to learn the inverse mapping from traces to stressor compositions. We introduce two key ideas: state-aware conditioning that conditions generation on both target traces and prior system state to capture temporal dependencies, and execution-driven alignment that adapts the model to real application patterns using direct execution feedback without requiring ground-truth labels. Our evaluation shows that Mimesys achieves up to 5.5× higher trace similarity and reproduces application performance under contention 2.6× more accurately than baselines.",
+  "abstract_source_id": "src-abstract-osdi-2026-7cc1881c",
   "venue": "osdi",
   "year": 2026,
   "track_or_session": "Fleet and Cluster Scheduling",
@@ -167,6 +169,19 @@
       "official": true,
       "supports": [
         "Official proceedings availability and canonical conference versions."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2026-7cc1881c",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/kim-donghyun",
+      "kind": "paper-page",
+      "title": "Mimesys: Generating Realistic Executable Testing Environments from Resource Usage Traces",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:08:36Z",
+      "content_hash": "sha256:9f2b8cb80cf21e4e0551f1853deab37512ca6419ac7f10257f876c272b1f9f52",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

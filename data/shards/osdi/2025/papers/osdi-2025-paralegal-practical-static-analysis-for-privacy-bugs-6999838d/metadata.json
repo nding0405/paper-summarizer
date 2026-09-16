@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2025-paralegal-practical-static-analysis-for-privacy-bugs-6999838d",
   "title": "Paralegal: Practical Static Analysis for Privacy Bugs",
+  "abstract": "Finding privacy bugs in software today usually requires onerous manual audits. Code analysis tools could help, but existing tools aren’t sufficiently practical and ergonomic to be used.\n\nParalegal is a static analysis tool to find privacy bugs in Rust programs. Key to Paralegal’s practicality is its distribution of work between the program analyzer, privacy engineers, and application developers. Privacy engineers express a high-level privacy policy over markers, which application developers then apply to source code entities. Paralegal extracts a Program Dependence Graph (PDG) from the program, leveraging Rust’s ownership type system to model the behavior of library code. Paralegal augments the PDG with the developers’ markers and checks privacy policies against the marked PDG.\n\nIn an evaluation on eight real-world applications, Paralegal found real privacy bugs, including two previously unknown ones. Paralegal supports a broader range of policies than information flow control (IFC) and CodeQL, a widely-used code analysis engine. Paralegal is fast enough to deploy interactively, and its markers are easy to maintain as code evolves.",
+  "abstract_source_id": "src-abstract-osdi-2025-6999838d",
   "venue": "osdi",
   "year": 2025,
   "track_or_session": "Privacy and Security",
@@ -264,6 +266,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2025-6999838d",
+      "url": "https://www.usenix.org/conference/osdi25/presentation/adam",
+      "kind": "paper-page",
+      "title": "Paralegal: Practical Static Analysis for Privacy Bugs",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:07:42Z",
+      "content_hash": "sha256:53e319c39cdb3863f320c4941a33bd82eff8cbfd9d111bd88306085f537ad355",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

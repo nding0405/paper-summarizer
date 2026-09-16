@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2024-beebox-hardening-bpf-against-transient-execution-attacks-ba28a453",
   "title": "BeeBox: Hardening BPF against Transient Execution Attacks",
+  "abstract": "The Berkeley Packet Filter (BPF) has emerged as the de-facto standard for carrying out safe and performant, user-specified computation(s) in kernel space. However, BPF also increases the attack surface of the OS kernel disproportionately, especially under the presence of transient execution vulnerabilities. In this work, we present BeeBox: a new security architecture that hardens BPF against transient execution attacks, allowing the OS kernel to expose eBPF functionality to unprivileged users and applications. At a high level, BeeBox sandboxes the BPF runtime against speculative code execution in an SFI-like manner. Moreover, by using a combination of static analyses and domain-specific properties, BeeBox selectively elides enforcement checks, improving performance without sacrificing security. We implemented a prototype of BeeBox for the Linux kernel that supports popular features of eBPF (e.g., BPF maps and helper functions), and evaluated it both in terms of effectiveness and performance, demonstrating resilience against prevalent transient execution attacks (i.e., Spectre-PHT and Spectre-STL) with low overhead. On average, BeeBox incurs 20% overhead in the Katran benchmark, while the current mitigations of Linux incur 112% overhead. Lastly, BeeBox exhibits less than 1% throughput degradation in end-to-end, real-world settings that include seccomp-BPF and packet filtering.",
+  "abstract_source_id": "src-abstract-usenix-security-2024-ba28a453",
   "venue": "usenix-security",
   "year": 2024,
   "track_or_session": "Side Channel I: Transient Execution",
@@ -112,6 +114,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2024-ba28a453",
+      "url": "https://www.usenix.org/conference/usenixsecurity24/presentation/jin-di",
+      "kind": "paper-page",
+      "title": "BeeBox: Hardening BPF against Transient Execution Attacks",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:14:16Z",
+      "content_hash": "sha256:639e5f5d52025c50bd4672fd1babcc700fbb5337fdfa9c19333225126c656358",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

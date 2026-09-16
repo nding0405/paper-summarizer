@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2025-granny-granular-management-of-compute-intensive-applicat-2a334a2d",
   "title": "GRANNY: Granular Management of Compute-Intensive Applications in the Cloud",
+  "abstract": "Parallel applications are typically implemented using multi-threading (with shared memory, e.g., OpenMP) or multi-processing (with message passing, e.g., MPI). While it seems attractive to deploy such applications in cloud VMs, existing cloud schedulers fail to manage these applications efficiently: they cannot scale multi-threaded applications dynamically when more vCPUs in a VM become available, and they cause fragmentation over time because of the static allocation of multi-process applications to VMs.\n\nWe describe GRANNY, a new distributed runtime that enables the fine-granular management of multi-threaded/process applications in cloud environments. GRANNY supports the vertical scaling of multi-threaded applications within a VM and the horizontal migration of multi-process applications between VMs. GRANNY achieves both through a single WebAssembly-based execution abstraction: Granules can execute application code with thread or process semantics and allow for efficient snapshotting. GRANNY scales up applications by adding more Granules at runtime, and de-fragments applications by migrating Granules between VMs. In both cases, it launches new Granules from snapshots efficiently. We evaluate GRANNY with dynamic scheduling policies and show that, compared to current schedulers, it reduces the makespan for OpenMP workloads by up to 60% and the fragmentation for MPI workloads by up to 25%.",
+  "abstract_source_id": "src-abstract-nsdi-2025-2a334a2d",
   "venue": "nsdi",
   "year": 2025,
   "track_or_session": "Data Center Resource Scheduling",
@@ -203,6 +205,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2025-2a334a2d",
+      "url": "https://www.usenix.org/conference/nsdi25/presentation/segarra",
+      "kind": "paper-page",
+      "title": "GRANNY: Granular Management of Compute-Intensive Applications in the Cloud",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:04:12Z",
+      "content_hash": "sha256:b40bc10f2f52d08fdb2a26ab6644547d0750b1d612f650841d879607badf4781",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sigcomm-2026-understanding-host-network-stack-latency-4fb21cdc",
   "title": "Understanding Host Network Stack Latency",
+  "abstract": "One of the most frequently cited flaws of Linux host network stacks is their high latency—recent studies show that the Linux network stack suffers from millisecond-scale tail latency. This has motivated clean-slate solutions such as userspace stacks and specialized host networking hardware, but without understanding the true root causes of Linux tail latency, these efforts risk repeating the same pitfalls. This paper studies the root causes of tail latency in the Linux network stack and reaches a surprising conclusion: the dominant bottlenecks lie not in packet processing itself, but in how the host manages CPU resources for networking. Through extensive measurements, we identify three key factors: misattribution of processing time by CPU schedulers, limitations of CPU runtime as a fairness abstraction, and the inefficiency of interrupt tuning under unpredictable packet arrivals. We show that addressing these factors improves performance by up to 5.3× while maintaining similar throughput. Together, these results suggest that achieving low-latency networking requires rethinking host CPU scheduling and host-NIC interaction, providing new design directions for operating systems, network stacks, and future host networking hardware.",
+  "abstract_source_id": "src-abstract-4fb21cdc",
   "venue": "sigcomm",
   "year": 2026,
   "track_or_session": "Research Session 12: Host Networking & Packet Processing — Research Paper",
@@ -170,6 +172,19 @@
       "official": true,
       "supports": [
         "official main-paper scope and track definitions"
+      ]
+    },
+    {
+      "id": "src-abstract-4fb21cdc",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/search/match?query=Understanding%20Host%20Network%20Stack%20Latency&fields=title,abstract",
+      "kind": "semantic-scholar",
+      "title": "Understanding Host Network Stack Latency",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T23:09:22Z",
+      "content_hash": "sha256:228c6a4a52510b161920ca2edbb76d1f1b4175df800388c6cad646f5dc2ef0f5",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

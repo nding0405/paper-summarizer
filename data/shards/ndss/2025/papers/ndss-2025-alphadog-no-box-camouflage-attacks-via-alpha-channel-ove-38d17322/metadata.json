@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2025-alphadog-no-box-camouflage-attacks-via-alpha-channel-ove-38d17322",
   "title": "AlphaDog: No-Box Camouflage Attacks via Alpha Channel Oversight",
+  "abstract": "Traditional black-box adversarial attacks on computer vision models face significant limitations, including intensive querying requirements, time-consuming iterative processes, a lack of universality, and low attack success rates (ASR) and confidence levels (CL) due to subtle perturbations. This paper introduces AlphaDog, an Alpha channel attack, the first universally efficient targeted no-box attack, exploiting the often overlooked Alpha channel in RGBA images to create visual disparities between human perception and machine interpretation, efficiently deceiving both. Specifically, AlphaDog maliciously sets the RGB channels to represent the desired object for AI recognition, while crafting the Alpha channel to create a different perception for humans when blended with a standard or default background color of digital media (thumbnail or image viewer apps). Leveraging differences in how AI models and human vision process transparency, AlphaDog outperforms existing adversarial attacks in four key ways: (i) as a no-box attack, it requires zero queries; (ii) it achieves highly efficient generation, taking milliseconds to produce arbitrary attack images; (iii) AlphaDog can be universally applied, compromising most AI models with a single attack image; (iv) it guarantees 100% ASR and CL. The assessment of 6,500 AlphaDog attack examples across 100 state-of-the-art image recognition systems demonstrates AlphaDog's effectiveness, and an IRB-approved experiment involving 20 college-age participants validates AlphaDog's stealthiness. AlphaDog can be applied in data poisoning, evasion attacks, and content moderation. Additionally, a novel pixel-intensity histogram-based detection method is introduced to identify AlphaDog, achieving 100% effectiveness in detecting and protecting computer vision models against AlphaDog. Demos are available on the AlphaDog website (https://sites.google.com/view/alphachannelattack/home).",
+  "abstract_source_id": "src-abstract-ndss-2025-38d17322",
   "venue": "ndss",
   "year": 2025,
   "track_or_session": "Summer submission cycle",
@@ -105,6 +107,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2025-38d17322",
+      "url": "https://www.ndss-symposium.org/ndss-paper/alphadog-no-box-camouflage-attacks-via-alpha-channel-oversight/",
+      "kind": "paper-page",
+      "title": "AlphaDog: No-Box Camouflage Attacks via Alpha Channel Oversight",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:19:03Z",
+      "content_hash": "sha256:b332b7d192e75dffb27bd4893c249103db6e445ddf8515bc1e2a127c135554a2",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

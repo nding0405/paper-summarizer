@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2026-zkfuzz-foundation-and-framework-for-effective-fuzzing-of-a6c2bf4e",
   "title": "zkFuzz: Foundation and Framework for Effective Fuzzing of Zero-Knowledge Circuits",
+  "abstract": "Zero-knowledge (ZK) circuits enable privacypreserving computations and are central to many cryptographic protocols. Systems like Circom simplify ZK development by combining witness computation and circuit constraints in one program. However, even small errors can compromise security of ZK programs - under-constrained circuits may accept invalid witnesses, while over-constrained ones may reject valid ones. Static analyzers are often imprecise with high false positives, and formal tools struggle with real-world circuit scale. Additionally, existing tools overlook several critical behaviors, such as intermediate computations and program aborts, and thus miss many vulnerabilities. Our theoretical contribution is the Trace-Constraint Consistency Test (TCCT), a foundational, language-independent formulation of ZK circuit bugs. TCCT provides a unified semantics that subsumes prior definitions and captures both under- and over-constrained vulnerabilities, exposing the full space of ZK bugs that elude prior tools. Our systems contribution is zkFuzz, a novel program mutation-based fuzzing framework for detecting TCCT violations. zkFuzz systematically mutates the computational logic of Zk programs guided by a novel fitness function, and injects carefully crafted inputs using tailored heuristics to expose bugs. We evaluated zkFuzz on 452 real-world ZK circuits written in Circom, a leading programming system for ZK development. zkFuzz successfully identified 85 bugs, including 59 zero-days- 39 of which were confirmed by developers and 14 fixed, including bugs undetectable by prior works due to their fundamentally limited formulations, earning thousands of bug bounties. Our preliminary research on Noir, another emerging DSL for ZK circuit, also demonstrates the feasibility of zkFuzz to support multiple DSLs.",
+  "abstract_source_id": "src-abstract-sp-2026-a6c2bf4e",
   "venue": "sp",
   "year": 2026,
   "track_or_session": "Cycle 1",
@@ -133,6 +135,19 @@
       "official": true,
       "supports": [
         "DOI, published-order authors and affiliations, abstract, publication date, page span, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2026-a6c2bf4e",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "zkFuzz: Foundation and Framework for Effective Fuzzing of Zero-Knowledge Circuits",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:58:06Z",
+      "content_hash": "sha256:5353b9384fd86d54ad3dc674f6041a164ea560a1a98a9c02cc1bb37e317e508e",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

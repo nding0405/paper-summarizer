@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2025-rushing-at-spdz-on-the-practical-security-of-malicious-m-3e2e7870",
   "title": "Rushing at SPDZ: On the Practical Security of Malicious MPC Implementations",
+  "abstract": "Secure multi-party computation (MPC) enables parties to compute a function over private inputs while maintaining confidentiality. Although MPC has advanced significantly and attracts a growing industry interest, open-source imple-mentations are still at an early stage, with no production-ready code and a poor understanding of their actual security guarantees. In this work, we study the real-world security of modern MPC implementations, focusing on the SPDZ protocol (Damgard et al., CRYPTO 2012, ESORICS 2013), which provides security against malicious adversaries when all-but-one of the participants may be corrupted. We identify a novel type of MAC key leakage in the MAC check protocol of SPDZ, which can be exploited in concurrent, multi-threaded settings, com-promising output integrity and, in some cases, input privacy. In our analysis of three SPDZ implementations (MP-SPDZ, SCALE-MAMBA, and FRESCO), two are vulnerable to this attack, while we also uncover further issues and vulnerabilities with all implementations. We propose mitigation strategies and some recommendations for researchers, developers and users, which we hope can bring more awareness to these issues and avoid them reoccurring in future.",
+  "abstract_source_id": "src-abstract-sp-2025-3e2e7870",
   "venue": "sp",
   "year": 2025,
   "track_or_session": "Cycle 2",
@@ -133,6 +135,19 @@
       "official": true,
       "supports": [
         "DOI, authors, affiliations, abstract, publication date, pages, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2025-3e2e7870",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Rushing at SPDZ: On the Practical Security of Malicious MPC Implementations",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:52Z",
+      "content_hash": "sha256:b15ce02bcc49da611fdd791ecc56741e7d91d84154b58c1a7f72a5c6902e6e46",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

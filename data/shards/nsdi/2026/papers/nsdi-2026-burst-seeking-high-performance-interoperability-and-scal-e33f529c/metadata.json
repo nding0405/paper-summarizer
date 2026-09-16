@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2026-burst-seeking-high-performance-interoperability-and-scal-e33f529c",
   "title": "BURST: Seeking High-performance, Interoperability and Scalability in Soft-RDMA",
+  "abstract": "Modern data centers deploy heterogeneous server pods, including a mix of commercial RDMA NICs (RNICs), legacy Ethernet NICs, and custom in-house hardware. This diversity creates significant interoperability challenges, particularly for Non-RNIC-to-RNIC (NR2R) communication, a scenario driven by emerging disaggregated workloads like LLM inference, large-scale infrastructure upgrades, and the integration of novel network protocols. Due to strict hardware dependencies, RNICs discard packets from non-compliant packets, forcing a costly fallback to TCP/IP and limiting RDMA network scaling. Existing software RDMA solutions, RXE (SoftRoCE implementation in Linux kernel), suffer from prohibitive CPU overhead, making them unsuitable for high-speed networks.\n\nTo address this, we present BURST, a high-performance, user-space software RDMA stack designed for high-speed networks. BURST operates as an independent process that maintains full compatibility with the standard RDMA Verbs API, allowing unmodified applications to run on Ethernet NICs. It integrates a lock-free DPDK data plane for line-rate packet processing, leverages Intel's DSA for reducing CPU, and features a kernel-bypass connection manager to accelerate setup. Experimental results show that BURST achieves 98.7% line-rate bandwidth on 400G NICs, delivering a 3.2-6.3x throughput improvement over kernel RXE. In production workloads, BURST accelerates LLM inference latency to 25.2% of TCP's and increases connection setup speeds by 12x compared to native RDMA CM, demonstrating its benefits for unifying communication in heterogeneous environments.",
+  "abstract_source_id": "src-abstract-nsdi-2026-e33f529c",
   "venue": "nsdi",
   "year": 2026,
   "track_or_session": "All Your Networks Are Belong to ML",
@@ -426,6 +428,19 @@
       "supports": [
         "canonical author line and publication-time affiliations",
         "resolution of conflicting citation metadata or an explicitly absent affiliation"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2026-e33f529c",
+      "url": "https://www.usenix.org/conference/nsdi26/presentation/shen",
+      "kind": "paper-page",
+      "title": "BURST: Seeking High-performance, Interoperability and Scalability in Soft-RDMA",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:04:54Z",
+      "content_hash": "sha256:d1cc2f882651bac324cd2684e32c974d5ff0188f9c356ac8c56d09a90a3e616b",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

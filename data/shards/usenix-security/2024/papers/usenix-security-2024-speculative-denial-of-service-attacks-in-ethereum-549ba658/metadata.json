@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2024-speculative-denial-of-service-attacks-in-ethereum-549ba658",
   "title": "Speculative Denial-of-Service Attacks In Ethereum",
+  "abstract": "Transaction fees compensate actors for resources expended on transactions and can only be charged from transactions included in blocks. But, the expressiveness of Turing-complete contracts implies that verifying if transactions can be included requires executing them on the current blockchain state.\n\nIn this work, we show that adversaries can craft malicious transactions that decouple the work imposed on blockchain actors from the compensation offered in return. We introduce three attacks: (i) ConditionalExhaust, a conditional resource-exhaustion attack against blockchain actors. (ii) MemPurge, an attack for evicting transactions from actors' mempools. (iii) GhostTX, an attack on the reputation system used in Ethereum's proposer-builder separation ecosystem.\n\nWe evaluate our attacks on an Ethereum testnet and find that by combining ConditionalExhaust and MemPurge, adversaries can simultaneously burden victims' computational resources and clog their mempools to the point where victims are unable to include transactions in blocks. Thus, victims create empty blocks, thereby hurting the system's liveness. The attack's expected cost is $376, but becomes cheaper if adversaries are validators. For other attackers, costs decrease if censorship is prevalent in the network.\n\nConditionalExhaust and MemPurge are made possible by inherent features of Turing-complete blockchains, and potential mitigations may result in reducing a ledger's scalability.",
+  "abstract_source_id": "src-abstract-usenix-security-2024-549ba658",
   "venue": "usenix-security",
   "year": 2024,
   "track_or_session": "Blockchain I",
@@ -154,6 +156,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2024-549ba658",
+      "url": "https://www.usenix.org/conference/usenixsecurity24/presentation/yaish",
+      "kind": "paper-page",
+      "title": "Speculative Denial-of-Service Attacks In Ethereum",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:17:24Z",
+      "content_hash": "sha256:5f77a1ed7f028eeb3d080690395014d448e399e601e32407e4736d0a9c5a4ff1",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2026-identifying-logical-vulnerabilities-in-quic-implementati-9bfef70f",
   "title": "Identifying Logical Vulnerabilities in QUIC Implementations",
+  "abstract": "QUIC is a modern transport protocol increasingly adopted by major platforms and services, making its security and correctness critically important. However, the complexity of QUIC specification and implementations introduces opportunities for subtle and dangerous logic flaws. Existing QUIC testing tools primarily focus on memory-related vulnerabilities and are ill-equipped to detect logical vulnerabilities. Therefore, the discovery of logical vulnerabilities is currently still highly dependent on manual auditing.\n\nIn this paper, we introduce MerCuriuzz, a novel black-box fuzzing framework designed to automatically uncover logical vulnerabilities in QUIC implementations. We evaluated MerCuriuzz against 16 widely used QUIC implementations and discovered 14 previously unknown logical vulnerabilities affecting popular implementations such as quiche, xquic, and aioquic. Those vulnerabilities can pose severe security risks, enabling attackers to exhaust server resources, crash services, or deny legitimate users access to the server. We categorize those vulnerabilities into six categories and propose mitigation strategies. We also responsibly disclosed our findings to the affected vendors, and 11 of them were confirmed and rewarded by the vendors, such as Cloudflare and Alibaba Cloud.",
+  "abstract_source_id": "src-abstract-ndss-2026-9bfef70f",
   "venue": "ndss",
   "year": 2026,
   "track_or_session": "Summer submission cycle",
@@ -202,6 +204,19 @@
       "official": false,
       "supports": [
         "independent proceedings identity reconciliation"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2026-9bfef70f",
+      "url": "https://www.ndss-symposium.org/ndss-paper/identifying-logical-vulnerabilities-in-quic-implementations/",
+      "kind": "paper-page",
+      "title": "Identifying Logical Vulnerabilities in QUIC Implementations",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:22:12Z",
+      "content_hash": "sha256:1eddd6d69ee9bd7490d2596908e66792465fbebfe27d9dc02502e8aada27ca86",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

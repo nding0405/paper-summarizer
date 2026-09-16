@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2023-parbft-faster-asynchronous-bft-consensus-with-a-parallel-455248a4",
   "title": "ParBFT: Faster Asynchronous BFT Consensus with a Parallel Optimistic Path",
+  "abstract": "To reduce latency and communication overhead of asynchronous Byzantine Fault Tolerance (BFT) consensus, an optimistic path is often added, with Ditto and BDT as state-of-the-art representatives. These protocols first attempt to run an optimistic path that is typically adapted from partially-synchronous BFT and promises good performance in good situations. If the optimistic path fails to make progress, these protocols switch to a pessimistic path after a timeout, to guarantee liveness in an asynchronous network. This design crucially relies on an accurate estimation of the network delay Δ to set the timeout parameter correctly. A wrong estimation of Δ can lead to either premature or delayed switching to the pessimistic path, hurting the protocol's efficiency in both cases.",
+  "abstract_source_id": "src-abstract-ccs-2023-455248a4",
   "venue": "ccs",
   "year": 2023,
   "track_or_session": "Consensus Protocols (Blockchain and Distributed Systems)",
@@ -172,6 +174,19 @@
       "official": false,
       "supports": [
         "published title, author order, and page span"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2023-455248a4",
+      "url": "https://api.openalex.org/works/doi:10.1145/3576915.3623101?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "ParBFT: Faster Asynchronous BFT Consensus with a Parallel Optimistic Path",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:07:58Z",
+      "content_hash": "sha256:0b3500f7e1b2aeb7303d91e783d5ed0b336acb67db909f6bfc8fad16dde1e1f0",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

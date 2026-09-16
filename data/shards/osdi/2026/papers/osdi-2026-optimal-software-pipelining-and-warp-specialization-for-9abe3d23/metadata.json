@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2026-optimal-software-pipelining-and-warp-specialization-for-9abe3d23",
   "title": "Optimal Software Pipelining and Warp Specialization for Tensor Core GPUs",
+  "abstract": "GPU architectures have continued to grow in complexity, with recent incarnations introducing increasingly powerful fixed-function units for matrix multiplication and data movement to accompany highly parallel general-purpose cores. To fully leverage these machines, software must use sophisticated schedules that maximally utilize all hardware resources. Since realizing such schedules is complex, both programmers and compilers routinely employ program transformations, such as software pipelining (SWP) and warp specialization (WS), to do so in practice. However, determining how best to use SWP and WS in combination is a challenging problem that is currently handled through a mix of brittle compilation heuristics and fallible human intuition, with little insight into the space of solutions. To remedy this situation, we introduce a novel formulation of SWP and WS as a joint optimization problem that can be solved holistically by off-the-shelf constraint solvers. We reify our approach in Twill, the first system that automatically derives optimal SWP and WS schedules for a large class of iterative programs. Twill is heuristic-free, easily extensible to new GPU architectures, and guaranteed to produce optimal schedules. We show that Twill can rediscover, and thereby prove optimal, the SWP and WS schedules manually developed by experts for Flash Attention on both the NVIDIA Hopper and Blackwell GPU architectures.",
+  "abstract_source_id": "src-abstract-osdi-2026-9abe3d23",
   "venue": "osdi",
   "year": 2026,
   "track_or_session": "GPU Compilers and Kernels",
@@ -209,6 +211,19 @@
       "official": true,
       "supports": [
         "Official proceedings availability and canonical conference versions."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2026-9abe3d23",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/soi",
+      "kind": "paper-page",
+      "title": "Optimal Software Pipelining and Warp Specialization for Tensor Core GPUs",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:08:43Z",
+      "content_hash": "sha256:41026dec0f59e0e4e03c924413329786deb4e80da856dd0d81ee19077f25612d",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

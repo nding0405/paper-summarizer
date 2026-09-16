@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sosp-2024-silvanforge-a-schedule-guided-retargetable-compiler-for-1b5bf960",
   "title": "SilvanForge: A Schedule Guided Retargetable Compiler for Decision Tree Inference",
+  "abstract": "The proliferation of machine learning together with the rapid evolution of the hardware ecosystem has led to a surge in the demand for model inference on a variety of hardware. Decision tree based models are the most popular models on tabular data. This paper is motivated by the problems encountered when targeting inference of these models to run at peak performance on CPU and GPU targets. Existing solutions are neither portable nor achieve the best possible performance for the specific hardware they target. This is because they do not explore and customize optimization configurations to the target processor and the model being used. We present SilvanForge, a schedule-guided, retargetable compiler for decision tree based models that searches over several optimization choices and automatically generates high-performance inference routines for CPUs and GPUs. SilvanForge has two core components. The first is a scheduling language that encapsulates the optimization space, and techniques to efficiently explore this space. The second is an optimizing retargetable compiler that can generate code for any specified schedule. SilvanForge's ability to use different data layouts, loop structures and caching strategies enables it to achieve portable performance across a range of targets. We evaluate SilvanForge on several hundred decision tree models across different batch sizes and target architectures. We find that our schedule exploration strategy is able to quickly find near-optimal schedules. In terms of performance, SilvanForge generated code is an order of magnitude faster than XGBoost, about 2--4× faster on average than RAPIDS FIL and Tahoe, and 2.5--3× faster than Hummingbird over several batch sizes. While most systems only target NVIDIA GPUs, SilvanForge achieves competent performance on AMD GPUs as well. On CPUs, SilvanForge is able to outperform Treebeard by up to 5× by utilizing additional sources of parallelism at small batch sizes.",
+  "abstract_source_id": "src-abstract-sosp-2024-1b5bf960",
   "venue": "sosp",
   "year": 2024,
   "track_or_session": "Session 7: Verification and Compilers 16:00 - 18:00 Session Chair: Manos Kapritsos",
@@ -167,6 +169,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-sosp-2024-1b5bf960",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "SilvanForge: A Schedule-Guided Retargetable Compiler for Decision Tree Inference",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:19Z",
+      "content_hash": "sha256:b613162f9e7d53fac5fe410aff94d06ac71f23c6c31e2e9cc362b51e87d1bb79",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

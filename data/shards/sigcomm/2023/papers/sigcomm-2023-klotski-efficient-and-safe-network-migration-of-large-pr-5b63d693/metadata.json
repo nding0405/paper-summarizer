@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sigcomm-2023-klotski-efficient-and-safe-network-migration-of-large-pr-5b63d693",
   "title": "Klotski: Efficient and Safe Network Migration of Large Production Datacenters",
+  "abstract": "This paper presents the design, implementation, evaluation, and deployment of Meta's production network migration system. We first introduce the network migration problem for large-scale production datacenter networks (DCNs). A network migration task at Meta touches as many as hundreds of switches and tens of thousands of circuits per datacenter (DC), and involves physical deployment work on site that can last months. We describe real-world migration challenges, covering complex and evolving DCN architectures and operational constraints. We mathematically formalize the problem of generating efficient and safe migration plans, and exploit the inherent symmetry and locality of DCN topologies to prune the search space. We design an ordering-agnostic compact topology representation to eliminate redundant satisfiability checking, and apply the A* algorithm with a domain-specific priority function to find the optimal plan. Evaluation results on a range of production migration cases show that Klotski reduces the time to find optimal migration plans by up to 381× compared to prior solutions. We hope by introducing the problem and sharing our deployment experience, this work can provide a useful context for network migration in the real world and inspire future research.",
+  "abstract_source_id": "src-abstract-sigcomm-2023-5b63d693",
   "venue": "sigcomm",
   "year": 2023,
   "track_or_session": "Data Center Programming — Experience Paper",
@@ -277,6 +279,19 @@
         "publisher-deposited ORCIDs",
         "proceedings page range and print publication date",
         "empty publisher relation metadata for alternate-version checks"
+      ]
+    },
+    {
+      "id": "src-abstract-sigcomm-2023-5b63d693",
+      "url": "https://api.openalex.org/works/doi:10.1145/3603269.3604818?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Klotski: Efficient and Safe Network Migration of Large Production Datacenters",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:22:53Z",
+      "content_hash": "sha256:77b721b6ba7cb372fdae3df3e3e9ec1191f3beeef27372a2e283b6da5a5e5db4",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

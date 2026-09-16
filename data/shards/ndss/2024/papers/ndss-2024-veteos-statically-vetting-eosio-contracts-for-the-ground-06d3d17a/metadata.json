@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2024-veteos-statically-vetting-eosio-contracts-for-the-ground-06d3d17a",
   "title": "VETEOS: Statically Vetting EOSIO Contracts for the “Groundhog Day” Vulnerabilities",
+  "abstract": "In this paper, we propose VETEOS, a static vetting tool for the \"Groundhog Day\" vulnerabilities in EOSIO contracts. In a \"Groundhog Day\" attack, culprits leverage the distinctive rollback issue in EOSIO contracts, which allows them to persistently execute identical contract code with varying inputs. By using the information exposed in prior executions, these attackers unlawfully amass insights about the target contract, thereby figuring out a reliable method to generate unauthorized profits. To tackle this problem, we formally define this unique vulnerability as a control and data dependency problem, and develop a custom static analysis tool, VETEOS, that can precisely discover such bugs directly from EOSIO WebAssembly (WASM) bytecode. VETEOS has detected 735 new vulnerabilities in the wild and outperforms the state-of-the-art EOSIO contract analyzer.",
+  "abstract_source_id": "src-abstract-ndss-2024-06d3d17a",
   "venue": "ndss",
   "year": 2024,
   "track_or_session": "Fall submission cycle",
@@ -147,6 +149,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2024-06d3d17a",
+      "url": "https://www.ndss-symposium.org/ndss-paper/veteos-statically-vetting-eosio-contracts-for-the-groundhog-day-vulnerabilities/",
+      "kind": "paper-page",
+      "title": "VETEOS: Statically Vetting EOSIO Contracts for the “Groundhog Day” Vulnerabilities",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:18:55Z",
+      "content_hash": "sha256:a3f57bb79aef7d2940439eab5bb6ba875472e8599f908072de8c8e6f5f59d46d",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

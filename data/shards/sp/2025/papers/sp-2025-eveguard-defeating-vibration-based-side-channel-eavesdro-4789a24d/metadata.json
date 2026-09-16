@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2025-eveguard-defeating-vibration-based-side-channel-eavesdro-4789a24d",
   "title": "EveGuard: Defeating Vibration-based Side-Channel Eavesdropping with Audio Adversarial Perturbations",
+  "abstract": "Vibrometry-based side channels pose a significant privacy risk, exploiting sensors like mmWave radars, light sensors, and accelerometers to detect vibrations from sound sources or proximate objects, enabling speech eavesdropping. Despite various proposed defenses, these involve costly hard-ware solutions with inherent physical limitations. This paper presents EveGuard, a software-driven defense framework that creates adversarial audio, protecting voice privacy from side channels without compromising human perception. We leverage the distinct sensing capabilities of side channels and traditional microphones-where side channels capture vibrations and microphones record changes in air pressure, resulting in different frequency responses. EveGuard first proposes a perturbation generator model (PGM) that effectively suppresses sensor-based eavesdropping while maintaining high audio quality. Second, to enable end-to-end training of PGM, we introduce a new domain translation task called Eve-GAN for inferring an eavesdropped signal from a given audio. We further apply few-shot learning to mitigate the data collection overhead for Eve-GAN training. Our extensive experiments show that EveGuard achieves a protection rate of more than 97% from audio classifiers and significantly hinders eaves-dropped audio reconstruction. We further validate the performance of EveGuard across three adaptive attack mechanisms. We have conducted a user study to verify the perceptual quality of our perturbed audio.",
+  "abstract_source_id": "src-abstract-sp-2025-4789a24d",
   "venue": "sp",
   "year": 2025,
   "track_or_session": "Cycle 2",
@@ -154,6 +156,19 @@
       "official": true,
       "supports": [
         "DOI, authors, affiliations, abstract, publication date, pages, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2025-4789a24d",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "EveGuard: Defeating Vibration-based Side-Channel Eavesdropping with Audio Adversarial Perturbations",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:47Z",
+      "content_hash": "sha256:d48e5e27e72297ce02860f066764bd9c5cd6e8191e2ebf4b4f15da0fffb6959f",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

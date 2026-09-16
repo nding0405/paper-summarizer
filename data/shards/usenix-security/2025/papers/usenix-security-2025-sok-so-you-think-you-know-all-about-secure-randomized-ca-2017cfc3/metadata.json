@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-sok-so-you-think-you-know-all-about-secure-randomized-ca-2017cfc3",
   "title": "SoK: So, You Think You Know All About Secure Randomized Caches?",
+  "abstract": "Over the past decade, numerous side-channel attacks on shared resources, such as the Last-Level Cache (LLC), have exposed security risks in the form of flush-based, conflict-based, and occupancy-based attacks, driving the development of secure cache designs. To defend against conflict-based attacks, which is one of the most effective classes of side-channel attacks, many modern designs randomize LLC set indexing to hinder eviction set construction. Various randomized cache designs have been proposed recently, offering distinct security guarantees. While these designs incorporate several microarchitectural modifications (we call them security knobs) over the conventional set-associative cache to ensure security, the individual impact of these microarchitectural modifications has never been evaluated. This leaves a gap in the understanding of randomized LLCs—the design space has not been explored completely and systematically.\n\nIn this SoK, we identify and systematically analyze the design knobs employed in state-of-the-art secure randomized cache designs that mitigate conflict-based attacks. Using conventional set-associative caches as our baseline, we study five key knobs: skewing, extra invalid tags, high associativity, replacement policy, and remapping. We also evaluate their impact on occupancy-based attacks. Our findings show that no single knob provides a comprehensive security guarantee. Instead, only specific combinations of knobs yield effective protection, while others offer little to no security benefit.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-2017cfc3",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Hardware Security 1: Microarchitectures",
@@ -133,6 +135,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-2017cfc3",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/bhatla",
+      "kind": "paper-page",
+      "title": "SoK: So, You Think You Know All About Secure Randomized Caches?",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:21:55Z",
+      "content_hash": "sha256:7898686e19c1bbe41a656cc320eef3ce4ed2d7da5dfcfdc834e53dedf497bdcc",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2024-harmony-a-congestion-free-datacenter-architecture-6588765c",
   "title": "Harmony: A Congestion-free Datacenter Architecture",
+  "abstract": "Datacenter networks today provide best-effort delivery—messages may observe unpredictable queueing, delays, and drops due to switch buffer overflows within the network. Such weak guarantees reduce the set of assumptions that system designers can rely upon from the network, thus introducing inefficiency and complexity in host hardware and software.\n\nWe present Harmony, a datacenter network architecture that provides powerful \"congestion-free\" message delivery guarantees—each message, once transmitted by the sender, observes bounded queueing at each switch in the network. Thus, network delays are bounded in failure-free scenarios, and congestion-related drops are completely eliminated. We establish, both theoretically and empirically, that Harmony provides such powerful guarantees with near-zero overheads compared to best-effort delivery networks: it incurs a tiny additive latency overhead that diminishes with message sizes, while achieving near-optimal network utilization.",
+  "abstract_source_id": "src-abstract-nsdi-2024-6588765c",
   "venue": "nsdi",
   "year": 2024,
   "track_or_session": "Distributed Systems: Part 1",
@@ -160,6 +162,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2024-6588765c",
+      "url": "https://www.usenix.org/conference/nsdi24/presentation/agarwal-saksham",
+      "kind": "paper-page",
+      "title": "Harmony: A Congestion-free Datacenter Architecture",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:03:14Z",
+      "content_hash": "sha256:82715d1c54912d9ccb2f27658057c9d34d3426d57c26887ac94c3888a67d63f8",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

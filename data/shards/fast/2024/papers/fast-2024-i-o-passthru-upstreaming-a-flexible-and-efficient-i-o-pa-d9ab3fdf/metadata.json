@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "fast-2024-i-o-passthru-upstreaming-a-flexible-and-efficient-i-o-pa-d9ab3fdf",
   "title": "I/O Passthru: Upstreaming a flexible and efficient I/O Path in Linux",
+  "abstract": "New storage interfaces continue to emerge fast on Non-Volatile Memory Express (NVMe) storage. Fitting these innovations in the general-purpose I/O stack of operating systems has been challenging and time-consuming. The NVMe standard is no longer limited to block-I/O, but the Linux I/O advances historically centered around the block-I/O path. The lack of scalable OS interfaces risks the adoption of the new storage innovations.\n\nWe introduce I/O Passthru , a new I/O Path that has made its way into the mainline Linux Kernel. The key ingredients of this new path are NVMe char interface and io_uring command . In this paper, we present our experience building and upstreaming I/O Passthru and report on how this helps to consume new NVMe innovations without changes to the Linux kernel. We provide experimental results to (i) compare its efficiency against existing io_uring block path and (ii) demonstrate its flexibility by integrating data placement into Cachelib. FIO peak performance workloads show 16–40% higher IOPS than block path.",
+  "abstract_source_id": "src-abstract-fast-2024-d9ab3fdf",
   "venue": "fast",
   "year": 2024,
   "track_or_session": "File Systems",
@@ -223,6 +225,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-fast-2024-d9ab3fdf",
+      "url": "https://www.usenix.org/conference/fast24/presentation/joshi",
+      "kind": "paper-page",
+      "title": "I/O Passthru: Upstreaming a flexible and efficient I/O Path in Linux",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:00:46Z",
+      "content_hash": "sha256:3e8cac2eaeacfcca67f2fb0a28a47a8416338113e7acf78cd7e9dfe87a839d33",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

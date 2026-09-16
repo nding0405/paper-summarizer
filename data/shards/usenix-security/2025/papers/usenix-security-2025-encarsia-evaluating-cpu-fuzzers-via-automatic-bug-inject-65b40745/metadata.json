@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-encarsia-evaluating-cpu-fuzzers-via-automatic-bug-inject-65b40745",
   "title": "Encarsia: Evaluating CPU Fuzzers via Automatic Bug Injection",
+  "abstract": "Hardware fuzzing has recently gained momentum with many discovered bugs in open-source RISC-V CPU designs. Comparing the effectiveness of different hardware fuzzers, however, remains a challenge: each fuzzer optimizes for a different metric and is demonstrated on different CPU designs. Furthermore, the number of newly-discovered bugs is not an appropriate metric since finding new bugs becomes increasingly more difficult as designs mature. We argue that a corpus of automatically injectable bugs will help compare hardware fuzzers to better understand their strengths and weaknesses. Through a large-scale study of 177 software-observable bugs in open-source RISC-V CPUs, we discover that CPU bugs can be modelled by manipulating conditional statements or signal drivers. Based on this observation, we design Encarsia, a framework that automatically transforms the intermediate representation of a given CPU design to inject bugs that are equivalent to incorrect conditions or assignments at the HDL level. To ensure that an injected bug has an observable architectural effect, we leverage formal methods to prove the existence of an architectural deviation due to the bug-specific transformation. We evaluate Encarsia by injecting bugs into three open-source RISC-V CPUs, fuzzing these CPUs with recently-proposed CPU fuzzers, and comparing their bug-finding performance. Our experiments reveal key insights into the limitations of existing hardware fuzzers, including their inability to cover large sections of the designs under test, ineffective coverage metrics, and bug detection mechanisms that often miss bugs or produce false positives, highlighting the urgent need to reassess current approaches.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-65b40745",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Hardware Security 1: Microarchitectures",
@@ -133,6 +135,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-65b40745",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/bolcskei",
+      "kind": "paper-page",
+      "title": "Encarsia: Evaluating CPU Fuzzers via Automatic Bug Injection",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:19:37Z",
+      "content_hash": "sha256:26bdf2f3c50fc86300bc4093539223f94bf89cf506c19a6a085453267f54c3f1",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

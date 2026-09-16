@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2025-an-attack-on-tons-adnl-secure-channel-protocol-a6e46923",
   "title": "An Attack on TON’s ADNL Secure Channel Protocol",
+  "abstract": "We present an attack on the Abstract Datagram Network Layer (ADNL) protocol used in The Open Network (TON), currently the 10th largest blockchain by market capitalization. In its TCP variant, ADNL secures communication between clients and specialized nodes called liteservers, which provide access to blockchain data. We identify two crypto-graphic design flaws in this protocol: a handshake that permits session-key replay and a non-standard integrity mechanism whose security critically depends on message confidentiality. We transform these vulnerabilities into an efficient plaintext-recovery attack by exploiting two ADNL communication patterns, allowing message reordering across replayed sessions. We then develop a plaintext model for this scenario and construct an efficient algorithm that recovers the keystream using a fraction of known plaintexts and a handful of replays. We implement our attack and show that an attacker intercepting the communication between a TON liteserver and a widely deployed ADNL client can recover the keystream used to encrypt server responses by performing eight connection replays to the server. This allows the decryption of sensitive data, such as account balances and user activity patterns. Additionally, the attacker can modify server responses to manipulate blockchain information displayed to the client, including account balances and asset prices.",
+  "abstract_source_id": "src-abstract-sp-2025-a6e46923",
   "venue": "sp",
   "year": 2025,
   "track_or_session": "Cycle 2",
@@ -91,6 +93,19 @@
       "official": true,
       "supports": [
         "DOI, authors, affiliations, abstract, publication date, pages, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2025-a6e46923",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "An Attack on TON's ADNL Secure Channel Protocol",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:42Z",
+      "content_hash": "sha256:d62dac834635b4cd1890a53da454ceae7aaa151189662d990ac591dfd5cb6b3e",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

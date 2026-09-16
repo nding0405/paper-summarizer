@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2024-few-shot-unlearning-b424071b",
   "title": "Few-shot Unlearning",
+  "abstract": "We consider the problem of machine unlearning to erase the impact of a target dataset, used in training but incorrect or sensitive, from a trained model. It has been often presumed that every data sample to erase or remain is entirely identifiable and thus clarifies the desired model behavior after unlearning. However, such a flawless identification can be infeasible in practice. We pose a further realistic yet challenging scenario, referred to as few-shot unlearning, where only a few samples of target data are provided while aiming at achieving the underlying intention (e.g., correcting mislabels, countering a certain privacy attack, or specifying nothing) behind the full target dataset. We then devise a few-shot unlearning method including a new model inversion technique, specialized for unlearning scenarios, to retrieve a proxy of the training dataset from the trained model if needed. We demonstrate that our method using only a tiny subset of target data can achieve similar performance to the state-of-the-art methods with full access to target data. Our code and results are available at https://github.com/ml-postech/Few-shot-Unlearning.",
+  "abstract_source_id": "src-abstract-sp-2024-b424071b",
   "venue": "sp",
   "year": 2024,
   "track_or_session": "Winter cycle",
@@ -201,6 +203,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2024-b424071b",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Few-shot Unlearning",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:32Z",
+      "content_hash": "sha256:be7515012a8c1ea1211f38a27ea4d2aa9cff6e0faac9417a2f58b1d64e91280e",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

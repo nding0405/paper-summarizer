@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2023-weak-fiat-shamir-attacks-on-modern-proof-systems-bda374c3",
   "title": "Weak Fiat-Shamir Attacks on Modern Proof Systems",
+  "abstract": "A flurry of excitement amongst researchers and practitioners has produced modern proof systems built using novel technical ideas and seeing rapid deployment, especially in cryptocurrencies. Most of these modern proof systems use the Fiat-Shamir (F-S) transformation, a seminal method of removing interaction from a protocol with a public-coin verifier. Some prior work has shown that incorrectly applying F-S (i.e., using the so-called \"weak\" F-S transformation) can lead to breaks of classic protocols like Schnorr’s discrete log proof; however, little is known about the risks of applying F-S incorrectly for modern proof systems seeing deployment today.In this paper, we fill this knowledge gap via a broad theoretical and practical study of F-S in implementations of modern proof systems. We perform a survey of open-source implementations and find 30 weak F-S implementations affecting 12 different proof systems. For four of these—Bulletproofs, Plonk, Spartan, and Wesolowski’s VDF—we develop novel knowledge soundness attacks accompanied by rigorous proofs of their efficacy. We perform case studies of applications that use vulnerable implementations, and demonstrate that a weak F-S vulnerability could have led to the creation of unlimited currency in a private smart contract platform. Finally, we discuss possible mitigations and takeaways for academics and practitioners.",
+  "abstract_source_id": "src-abstract-sp-2023-bda374c3",
   "venue": "sp",
   "year": 2023,
   "track_or_session": "Session 1C: Cryptographic attacks",
@@ -172,6 +174,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2023-bda374c3",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Weak Fiat-Shamir Attacks on Modern Proof Systems",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:27Z",
+      "content_hash": "sha256:2c3c9cbfdcc9ef58a970a66aadb81bbaf8238409ab69d65565522a11e421be99",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "eurosys-2025-cacheblend-fast-large-language-model-serving-for-rag-wit-5f65874f",
   "title": "CacheBlend: Fast Large Language Model Serving for RAG with Cached Knowledge Fusion",
+  "abstract": "Large language models (LLMs) often incorporate multiple text chunks in their inputs to provide the necessary contexts. To speed up the prefill of the long LLM inputs, one can pre-compute the KV cache of a text and re-use the KV cache when the context is reused as the prefix of another LLM input. However, the reused text chunks are not always the input prefix, which makes precomputed KV caches not directly usable since they ignore the text's cross-attention with the preceding texts. Thus, the benefits of reusing KV caches remain largely unrealized.",
+  "abstract_source_id": "src-abstract-eurosys-2025-5f65874f",
   "venue": "eurosys",
   "year": 2025,
   "track_or_session": "Session-1.2: LLM Serving - Location: Rotterdam hall 1B - Chair: Thaleia Doudali",
@@ -251,6 +253,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-eurosys-2025-5f65874f",
+      "url": "https://api.openalex.org/works/doi:10.1145/3689031.3696098?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "CacheBlend: Fast Large Language Model Serving for RAG with Cached Knowledge Fusion",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:19:02Z",
+      "content_hash": "sha256:7a448777bd1c6aefca2ce9812727307682875ce4ba97b1d7cb89eecbfc7a621b",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "atc-2025-flb-fine-grained-load-balancing-for-lossless-datacenter-830042c8",
   "title": "FLB: Fine-grained Load Balancing for Lossless Datacenter Networks",
+  "abstract": "Remote Direct Memory Access (RDMA) over Converged Ethernet (RoCE) cooperating with Priority Flow Control (PFC) has been widely deployed in production datacenters to enable low latency, lossless transmission. At the same time, modern datacenters typically offer parallel transmission paths between any pair of end-hosts, underscoring the importance of load balancing. However, the well-studied load balancing mechanisms designed for lossy datacenter networks (DCNs) are ill-suited for such lossless environments.\n\nThrough extensive experiments, we are among the first to comprehensively inspect the interactions between PFC and load balancing, and uncover that existing fine-grained rerouting schemes can be counterproductive to spread the congested flows among more paths, further aggravating PFC’s head-of-line (HoL) blocking. Motivated by this, we present FLB, a Fine-grained Load Balancing scheme for lossless DCNs. At its core, FLB employs threshold-free rerouting to effectively balance traffic load and improve link utilization during normal conditions and leverages timely congested flow isolation to eliminate HoL blocking on non-congested flows when congestion occurs. We have fully implemented a FLB prototype, and our evaluation results show that FLB reduces PFC PAUSE rate by up to 96% and avoids HoL blocking, translating to up to 45% improvement in goodput over CONGA+DCQCN and 40%, 36%, 29% and 18% reduction in average flow completion time (FCT) over LetFlow+Swift, MP-RDMA, Proteus+DCQCN and LetFlow+PCN, respectively.",
+  "abstract_source_id": "src-abstract-atc-2025-830042c8",
   "venue": "atc",
   "year": 2025,
   "track_or_session": "The Programmable Data Plane: SmartNICs and Beyond",
@@ -264,6 +266,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-atc-2025-830042c8",
+      "url": "https://www.usenix.org/conference/atc25/presentation/hu-jinbin",
+      "kind": "paper-page",
+      "title": "FLB: Fine-grained Load Balancing for Lossless Datacenter Networks",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T21:59:41Z",
+      "content_hash": "sha256:70bf3584c3035e388a002cce6b7dd010f11be08894b8e7fbb9340e42390383b8",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

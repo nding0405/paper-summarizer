@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sigcomm-2023-ebb-reliable-and-evolvable-express-backbone-network-in-m-2dbff099",
   "title": "EBB: Reliable and Evolvable Express Backbone Network in Meta",
+  "abstract": "We present the design, implementation, evaluation, deployment and production experiences of EBB (Express BackBone), a private WAN (Wide Area Network) connecting Meta's global data centers (DCs). Initiated in 2015, EBB now carries 100% of DC-DC traffic, witnessing remarkable growth over the years. A key design aspect of EBB is its multi-plane architecture, facilitating seamless deployment of a new control plane while ensuring operational simplicity. This architecture allows for efficient failure mitigation, standard maintenance, and capacity expansion by draining one or two planes without impacting service level objectives (SLOs). Another critical design decision is the hybrid model, combining distributed control agents and a central controller. EBB's centralized traffic engineering utilizes an MPLS-TE based solution to allocate paths periodically for different traffic classes based on service requirements, while its distributed control agents enable fast local failure recovery by pre-installing pre-computed backup paths in the data plane. We delve into our eight-year production experience, highlighting the successful deployment of multiple generations of EBB.",
+  "abstract_source_id": "src-abstract-sigcomm-2023-2dbff099",
   "venue": "sigcomm",
   "year": 2023,
   "track_or_session": "Traffic Engineering — Experience Paper",
@@ -382,6 +384,19 @@
         "publisher-deposited ORCIDs",
         "proceedings page range and print publication date",
         "empty publisher relation metadata for alternate-version checks"
+      ]
+    },
+    {
+      "id": "src-abstract-sigcomm-2023-2dbff099",
+      "url": "https://api.openalex.org/works/doi:10.1145/3603269.3604860?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "EBB: Reliable and Evolvable Express Backbone Network in Meta",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:22:50Z",
+      "content_hash": "sha256:39bc43e69bcdea9c5914af9a3032d1b9247ab13f149c1bd9cf043c5d6ac73ace",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

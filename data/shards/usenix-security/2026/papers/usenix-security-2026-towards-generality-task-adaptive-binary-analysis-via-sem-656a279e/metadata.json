@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-towards-generality-task-adaptive-binary-analysis-via-sem-656a279e",
   "title": "Towards Generality: Task-Adaptive Binary Analysis via Semantic Retrieval and Verifiable Reasoning",
+  "abstract": "Stripped binaries dominate real-world security analysis: COTS software, firmware, and malware are released without symbols, obscuring program semantics. Recent LLM-based approaches target narrowly predefined tasks, limiting applicability in intent-driven analysis. Toward general binary analysis, agentic LLMs provide a natural direction, yet achieving generality remains challenging: query intent is hard to ground in stripped binaries, and effective tool-driven analysis is difficult.\n\nWe present BINREX, the first agentic framework for general, fully automated static binary analysis. BINREX employs a dual-encoder pipeline to enrich stripped functions with semantic context, paired with hierarchical planning to decompose intents into executable subtasks. It leverages code synthesis to translate subtasks into IDAPython scripts, executed with iterative validation to produce outputs aggregated into the final report.\n\nWe evaluate BINREX on BinREval, a benchmark of 72 tasks across seven COTS categories with machine-checkable oracles. BINREX achieves 83.3% success rate, outperforming baselines (Codex: 27.8%, Codex with IDA: 43.1%) while reducing total analysis time from 87.9 to 36.1 hours. On domain benchmarks (Juliet, NYU CTF), BINREX is competitive with task-specific methods on their respective evaluation settings. Human study and industrial deployment confirm practical value: BINREX identifies 395 unknown malware samples with 96× average efficiency gain over experts.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-656a279e",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Software Security 2",
@@ -239,6 +241,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-656a279e",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/liu-yuzhe",
+      "kind": "paper-page",
+      "title": "Towards Generality: Task-Adaptive Binary Analysis via Semantic Retrieval and Verifiable Reasoning",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:25:55Z",
+      "content_hash": "sha256:26dfd8e78b7a9d05240c36d3ba132e230d4082241162a0b02b31c0086265bc75",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

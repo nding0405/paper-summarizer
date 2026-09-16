@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2024-moat-towards-safe-bpf-kernel-extension-49b2e649",
   "title": "MOAT: Towards Safe BPF Kernel Extension",
+  "abstract": "The Linux kernel extensively uses the Berkeley Packet Filter (BPF) to allow user-written BPF applications to execute in the kernel space. The BPF employs a verifier to check the security of user-supplied BPF code statically. Recent attacks show that BPF programs can evade security checks and gain unauthorized access to kernel memory, indicating that the verification process is not flawless. In this paper, we present MOAT, a system that isolates potentially malicious BPF programs using Intel Memory Protection Keys (MPK). Enforcing BPF program isolation with MPK is not straightforward; MOAT is designed to alleviate technical obstacles, such as limited hardware keys and the need to protect a wide variety of BPF helper functions. We implement MOAT on Linux (ver. 6.1.38), and our evaluation shows that MOAT delivers low-cost isolation of BPF programs under mainstream use cases, such as isolating a BPF packet filter with only 3% throughput loss.",
+  "abstract_source_id": "src-abstract-usenix-security-2024-49b2e649",
   "venue": "usenix-security",
   "year": 2024,
   "track_or_session": "System Security II: OS Kernel",
@@ -154,6 +156,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2024-49b2e649",
+      "url": "https://www.usenix.org/conference/usenixsecurity24/presentation/lu-hongyi",
+      "kind": "paper-page",
+      "title": "MOAT: Towards Safe BPF Kernel Extension",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:16:15Z",
+      "content_hash": "sha256:569c4f081854476836904e73a722056ee78d89e72aab55a314292ab237e4bfd1",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

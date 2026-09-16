@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-improved-secure-two-party-computation-from-a-geometric-p-52858a5f",
   "title": "Improved Secure Two-party Computation from a Geometric Perspective",
+  "abstract": "Multiplication and non-linear operations are well known to be the most expensive protocols in secure two-party computation (2PC). Moreover, the comparison protocol (or Wrap protocol) is essential for various operations such as truncation, signed extension, and signed non-uniform multiplication. This paper aims to optimize these protocols by avoiding invoking the costly comparison protocol, thereby improving their efficiency.\n\nWe propose a novel approach to study 2PC from a geometric perspective. Specifically, we interpret the two shares of a secret as the horizontal and vertical coordinates of a point in a Cartesian coordinate system, with the secret itself represented as the corresponding point. This reformulation allows us to address the comparison problem by determining the region where the point lies. Furthermore, we identify scenarios where the costly comparison protocol can be replaced by more efficient evaluating AND gate protocols within a constrained range. Using this method, we improve protocols for truncation, signed extension and signed non-uniform multiplication, all of which are fundamental to 2PC. In particular, for the one-bit error truncation protocol and signed extension protocols, we reduce the state-of-the-art communication complexities of Cheetah (USENIX'22) and SirNN (S\\&P '21) from ≈ λ (l+1) to ≈λ in two rounds, where l is the input length and λ is the security parameter. For signed multiplication with non-uniform bit-width, we reduce the communication cost of SirNN's by 40% to 60%.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-52858a5f",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Crypto 3: Formal Methods and Private Computation",
@@ -196,6 +198,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-52858a5f",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/guo-hao-improved",
+      "kind": "paper-page",
+      "title": "Improved Secure Two-party Computation from a Geometric Perspective",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:20:25Z",
+      "content_hash": "sha256:67234c40671293537ec9ea7b5f0023a6ec0f3d8f1d0aef48c8c4c5420ceffc56",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "fast-2026-unleashing-zoned-ufs-cross-layer-optimizations-for-next-9eaff654",
   "title": "Unleashing Zoned UFS: Cross-Layer Optimizations for Next-Generation Mobile Storage",
+  "abstract": "Zoned UFS (ZUFS) has emerged as a next-generation mobile storage technology that reduces the logical-to-physical (L2P) mapping overhead of conventional UFS (CUFS) by enforcing sequential writes within fixed-size zones. While the concept appears straightforward, deploying ZUFS in commercial smartphones introduces non-trivial challenges across the mobile storage stack. In this paper, we identify three key obstacles: managing limited SRAM across multiple open zones, ensuring end-to-end write ordering guarantees, and mitigating severe garbage collection overhead caused by large zones.\n\nWe address these challenges through cross-layer optimizations spanning device firmware, the SCSI/UFS driver, the block layer, F2FS, and Android framework: a dynamic device-side buffer management scheme that opportunistically shares SRAM, a write ordering mechanism that eliminates reordering hazards, and a proactive garbage collection framework that reclaims free space in the background. Evaluation on a commercial smartphone shows that ZUFS sustains over 2x higher write throughput under fragmentation and reduces mobile game loading time by 14% compared to CUFS, while maintaining stable read performance. These results demonstrate that ZUFS’s full potential can only be realized through coordinated redesign across the entire mobile storage stack.",
+  "abstract_source_id": "src-abstract-fast-2026-9eaff654",
   "venue": "fast",
   "year": 2026,
   "track_or_session": "Tiering, Mobile, and SSDs",
@@ -307,6 +309,19 @@
         "proceedings page range and page count",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-fast-2026-9eaff654",
+      "url": "https://www.usenix.org/conference/fast26/presentation/kim-jungae",
+      "kind": "paper-page",
+      "title": "Unleashing Zoned UFS: Cross-Layer Optimizations for Next-Generation Mobile Storage",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:01:45Z",
+      "content_hash": "sha256:a5b65a149e5ae7d9f8cc986764925f34ede3d063e287e359e15fc6bf8187f431",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

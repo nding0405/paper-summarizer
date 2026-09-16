@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-let-s-move2evm-183389c2",
   "title": "Let's Move2EVM",
+  "abstract": "The Move programming language, designed with strong safety guarantees such as linear resource semantics and borrow-checking, has emerged as a secure and reliable choice for writing smart contracts. However, these guarantees depend on the assumption that all interacting contracts are well-formed—a condition naturally met in Move's native execution environment but not in heterogeneous or untrusted platforms like the Ethereum Virtual Machine (EVM). This hinders the usage of Move as a source language for such platforms: for instance, we show in this paper that the existing Move-to-EVM compiler is not secure, meaning the compilation of secure Move contracts yields vulnerable EVM bytecode.\n\nThis work addresses the challenge of preserving Move's security guarantees when compiling to EVM. We introduce a novel compiler design extending the existing Move-to-EVM compiler with an Inlined-Reference-Monitor-(IRM)-based protection layer. Our approach enforces Move's linear semantics and borrow-checking rules at runtime in EVM, ensuring the correctness and safety of the compiled smart contracts, even in adversarial execution environments. We formally define the compilation process, establish correctness guarantees for the translation, and implement our protection mechanism in the original compiler. Our evaluation draws on three datasets: (i) an ERC-20 implementation in Solidity and Move, (ii) the Rosetta dataset curated by Bartoletti et al., and (iii) modules scraped from the Aptos blockchain. The performance evaluation shows that the gas cost overhead introduced by our compiler—compared both to the original compiler and Solidity-compiled code—is modest, thereby confirming our approach as a practical solution for bringing the security guarantees of Move code to the EVM.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-183389c2",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Blockchain Security, Attacks, and Defenses",
@@ -133,6 +135,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-183389c2",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/benetollo",
+      "kind": "paper-page",
+      "title": "Let's Move2EVM",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:20:33Z",
+      "content_hash": "sha256:c2115ee13d9f8d4f408c9423f648cfce30f0d9974cd0057f8e7f2c13fc250e57",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

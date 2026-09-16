@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-rangesanitizer-detecting-memory-errors-with-efficient-ra-5a4a3e95",
   "title": "RangeSanitizer: Detecting Memory Errors with Efficient Range Checks",
+  "abstract": "Sanitizers for spatial and temporal memory errors have become a cornerstone of security testing. Popular redzone-based sanitizers such as AddressSanitizer (ASan) offer high compatibility and effectiveness through the use of redzones, but incur significant runtime overhead. A major cause of this overhead is the traditional use of per-object redzone metadata, which constrains the sanitizer to check individual addresses rather than entire ranges of memory at once—as is done by classic bounds checkers based on per-pointer metadata.\n\nIn this paper, we introduce RangeSanitizer (RSan), a redzone-based sanitizer that introduces a novel metadata and check paradigm. RSan combines the compatibility of redzones with a rich per-object metadata format that allows for range (rather than address) checks and powerful optimizations. RSan stores bounds information inside the underflow redzone associated with each memory object. By combining pointer tagging with power-of-two size classes, RSan can swiftly locate metadata and validate an access to an arbitrary memory range with a single check. RSan incurs a geomean runtime overhead of 44% on SPEC CPU2017, faster than all state-of-the-art redzone-based sanitizers and twice as fast as ASan. Additionally, fuzzing with AFL++ and RSan as sanitizer improves state-of-the-art throughput by up to 70%.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-5a4a3e95",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Software Security 2: Patching and Repair",
@@ -91,6 +93,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-5a4a3e95",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/gorter",
+      "kind": "paper-page",
+      "title": "RangeSanitizer: Detecting Memory Errors with Efficient Range Checks",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:21:23Z",
+      "content_hash": "sha256:6da8a23ed40f0ec1b2a50eab3c2db33b0b3e3f34eab3eecff5f08bacf99698cc",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

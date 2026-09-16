@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-what-you-decode-depends-on-where-you-stand-distance-base-a6b59a26",
   "title": "What You Decode Depends on Where You Stand: Distance-Based Optical QR Code",
+  "abstract": "Quick Response (QR) codes are ubiquitous; we can see them in authentication, payments, advertising, and other information-sharing use cases. QR code’s security relies on the assumption that every scanner decodes identical information from the same code. This work introduces Optical Quick Response (OQR) codes, a novel multi-layer QR code design that challenges this assumption. OQR uses specially designed optical patterns to encode distinctive information across distance-dependent layers within a single code, while upholding full backward compatibility with standard QR decoders. This paper presents 2-layer (OQR 2 ) and 3-layer (OQR 3 ) OQR configurations that achieve up to 300% higher data capacity. Exploiting this multi-layer capability, a filter evasion vulnerability is identified in which automated QR validators decode only the innermost layer of pixel-perfect images, enabling attackers to conceal malicious content in the outer layers and remain undetected. To counter this threat, a blurring-based defense is developed that recovers all layer content, enabling detection and flagging of malicious OQR codes before they reach end users. A custom dataset of 600 OQR codes was generated for evaluation. Results across six smartphones, for both printed and digital formats, demonstrate a reliable multi-layer Code Decodability Rate (CDR) of 100% for OQR 2 and over 98% for OQR 3 . The filter evasion attack success rate against two popular QR decoding libraries reaches 100% for OQR 2 and 98.67% for OQR 3 .",
+  "abstract_source_id": "src-abstract-usenix-security-2026-a6b59a26",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Human Aspects 3",
@@ -134,6 +136,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-a6b59a26",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/garg-pulkit",
+      "kind": "paper-page",
+      "title": "What You Decode Depends on Where You Stand: Distance-Based Optical QR Code",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:26:12Z",
+      "content_hash": "sha256:4de6677135315bd11aa37507e95e844d2787b21843bef985a80c1e91dc040058",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

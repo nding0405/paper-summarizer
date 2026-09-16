@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-combisan-unifying-software-sanitizers-for-comprehensive-dafd1585",
   "title": "CombiSan: Unifying Software Sanitizers for Comprehensive Fuzzing",
+  "abstract": "Modern C/C++ bug detection efforts heavily rely on fuzzing with software sanitizers. However, the most popular sanitizers have limited interoperability. As a result, developers often enable each sanitizer in isolation, if at all, requiring multiple runs. This sequential execution undermines performance and tests code in a non-uniform manner.\n\nIn this paper, we present CombiSan, a fuzzing-optimized sanitizer that simultaneously detects all the addressability, uninitialized memory, and other undefined behavior issues covered by the three most popular sanitizers: ASan, MSan, and UBSan. CombiSan features a unified shadow memory design that efficiently tracks both the addressability and the initialization state of every byte of program memory. In addition, CombiSan's instrumentation seamlessly integrates with state-of-the-art detection of other undefined behavior classes. As bugs found by different sanitizers may mask each other by terminating execution early, CombiSan defers its analysis of all aggregated issues to test case completion.\n\nIn our evaluation, CombiSan detected 81 new bugs in 10 programs tested daily by OSS-Fuzz. On average, fuzzing with CombiSan is 1.7x faster than sequentially testing with ASan+UBSan and MSan. Moreover, our results demonstrate that CombiSan has the same bug detection accuracy as these sanitizers, despite running for significantly fewer CPU hours.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-dafd1585",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Software Security 3",
@@ -135,6 +137,19 @@
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening",
         "prepublication PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-dafd1585",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/marini",
+      "kind": "paper-page",
+      "title": "CombiSan: Unifying Software Sanitizers for Comprehensive Fuzzing",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:23:25Z",
+      "content_hash": "sha256:54fca759ebb26d09bc44da04b854ce6dd4c0fb1e3008b1a05d1a7e820e3ea7f9",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

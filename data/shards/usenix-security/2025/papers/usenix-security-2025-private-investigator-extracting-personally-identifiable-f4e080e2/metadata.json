@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-private-investigator-extracting-personally-identifiable-f4e080e2",
   "title": "Private Investigator: Extracting Personally Identifiable Information from Large Language Models Using Optimized Prompts",
+  "abstract": "Recent studies on training data extraction attacks have demonstrated significant threats to the language model ecosystem. In a typical machine learning deployment scenario where a pre-trained language model is fine-tuned on users' private data, an adversary may attempt to leak personally identifiable information (PII) memorized by the fine-tuned model. Prior work has demonstrated this privacy risk by inducing a model to output PII in response to handcrafted or outsourced prompts. However, little attention has been given to how a smart adversary will design optimal prompts for successful PII extraction.\n\nIn this work, we address this knowledge gap. We propose Private Investigator, an attack framework designed to optimize prompts for querying a target language model to extract PII used for its fine-tuning process. We propose a new prompt generation method that aims to craft promising prompts, which induce the target language model to emit as many PII items as possible by exploring diverse contexts. Private Investigator then exploits these generated prompts to conduct extraction attacks. To this end, we develop a prompt selection strategy that prioritizes the most promising prompts for successful PII extraction, taking full advantage of each extraction attack opportunity. In evaluation, we demonstrate that Private Investigator extracts up to 1,254 more email addresses, 634 more phone numbers, and 5,087 more personal names, outperforming existing attacks in extracting PII items.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-f4e080e2",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Vulnerabilities in LLMs: Privacy, Safety, and Defense",
@@ -154,6 +156,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-f4e080e2",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/keum",
+      "kind": "paper-page",
+      "title": "Private Investigator: Extracting Personally Identifiable Information from Large Language Models Using Optimized Prompts",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:21:19Z",
+      "content_hash": "sha256:d8a465039afd1a5e98d1217ff2f2d4397af0ee816f6d8eec9aefeccc33fa3ad3",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

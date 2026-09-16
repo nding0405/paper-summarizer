@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2025-securing-mixed-rust-with-hardware-capabilities-5b7e5d3f",
   "title": "Securing Mixed Rust with Hardware Capabilities",
+  "abstract": "The Rust programming language enforces three basic Rust principles, namely ownership, borrowing, and AXM (Aliasing Xor Mutability) to prevent security bugs such as memory safety violations and data races. However, Rust projects often have mixed code, i.e., code that also uses unsafe Rust, FFI (Foreign Function Interfaces), and inline assembly for low-level control. The Rust compiler is unable to statically enforce Rust principles in mixed Rust code which can lead to many security vulnerabilities. In this paper, we propose CapsLock, a security enforcement mechanism that can run at the level of machine code and detect Rust principle violations at run-time in mixed code. CapsLock is kept simple enough to be implemented into recent capability-based hardware abstractions that provide low-cost spatial memory safety. CapsLock introduces a novel revoke-on-use abstraction for capability-based designs, wherein accessing a memory object via a capability implicitly invalidates certain other capabilities pointing to it, thereby also providing temporal memory safety automatically, without requiring software to explicitly specify such invalidation. Thus, CapsLock is the first mechanism capable of providing cross-language enforcement of Rust principles. We implemented a prototype of CapsLock on QEMU. Evaluation results show that CapsLock is highly compatible with existing Rust code (passing 99.7% of the built-in test cases of the 100 most popular crates) and flags Rust principle violations in real-world Rust projects that use FFI or inline assembly. We discovered 8 previously unknown bugs in such crates in our experiments.",
+  "abstract_source_id": "src-abstract-ccs-2025-5b7e5d3f",
   "venue": "ccs",
   "year": 2025,
   "track_or_session": "Cycle 1",
@@ -169,6 +171,19 @@
         "published-order authors",
         "publication-time affiliations",
         "publication date and page span"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2025-5b7e5d3f",
+      "url": "https://api.openalex.org/works/doi:10.1145/3719027.3744861?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Securing Mixed Rust with Hardware Capabilities",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:16:45Z",
+      "content_hash": "sha256:07b8de05007a6e2a2223865a3ac5d47fe3c2aeae3334ea148b65d407ea546b9c",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

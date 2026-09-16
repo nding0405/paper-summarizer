@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2026-sfa-miner-mining-path-sensitive-api-usage-patterns-via-s-b1f0f3ed",
   "title": "SFA-Miner: Mining Path-Sensitive API Usage Patterns via Symbolic Finite Automata",
+  "abstract": "APIs are fundamental to modern software development, enabling integration across components. However, API misuses remain a significant concern, often stemming from an incomplete understanding of requirements and constraints. These misuses can introduce critical security vulnerabilities, impacting software reliability and safety. Avoiding API misuses requires effective detection and prevention mechanisms. In particular, understanding and enforcing correct API usage patterns play a crucial role in mitigating risks and improving API robustness. Recent work has demonstrated the effectiveness of frequent mining techniques in extracting API usage patterns from code. However, state-of-the-art studies focus only on frequently co-occurring operations, overlooking the pre-conditions of the operations. This paper introduces SFA-Miner (Symbolic Finite Automata Miner), a static analysis framework that extracts the frequent usage patterns of each API under different path conditions as SFAs, where states represent abstract program states and transitions correspond to conditions involving APIs and symbolic variables representing their parameters. The key insight is that APIs can have different usage patterns under different path conditions. Violations of the SFA indicate potential API misuses. Leveraging frequent mining techniques, we extract SFAs hidden within code. We implemented SFA-Miner and evaluated it on four widely used open-source projects: Linux kernel, OpenSSL, FFmpeg, and Apache httpd, identifying 181 API misuses. Additionally, we discovered 1 CVE, demonstrating the tool's effectiveness in detecting API misuses.",
+  "abstract_source_id": "src-abstract-sp-2026-b1f0f3ed",
   "venue": "sp",
   "year": 2026,
   "track_or_session": "Cycle 1",
@@ -133,6 +135,19 @@
       "official": true,
       "supports": [
         "DOI, published-order authors and affiliations, abstract, publication date, page span, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2026-b1f0f3ed",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "SFA-Miner: Mining Path-Sensitive API Usage Patterns Via Symbolic Finite Automata",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:58:02Z",
+      "content_hash": "sha256:4204efad9387253e2c70bd18217fac7c5220b9cd43ecd6179fdc27c5a043343e",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

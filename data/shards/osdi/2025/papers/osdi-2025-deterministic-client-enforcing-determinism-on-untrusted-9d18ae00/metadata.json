@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2025-deterministic-client-enforcing-determinism-on-untrusted-9d18ae00",
   "title": "Deterministic Client: Enforcing Determinism on Untrusted Machine Code",
+  "abstract": "This paper presents Deterministic Client (DeCl), a software-based sandboxing system for enforcing deterministic behavior on untrusted machine code, either x86-64 or Arm64. DeCl adapts techniques from Software Fault Isolation (SFI) traditionally used to guarantee memory isolation to instead enforce the stronger property of determinism. By using a simple and efficient machine code verifier that can guarantee that a program behaves deterministically, DeCl does not rely on a trusted compiler/interpreter for correctness. This allows the use of LLVM without compromising the size of the trusted code base. We also describe how to implement two efficient metering mechanisms that enforce deterministic preemption of sandboxed programs, and how DeCl can be implemented in combination with traditional software-based isolation, by making the sandboxed code position-oblivious. DeCl is able to combine and improve upon the benefits of both interpreters and JIT compilers at once, with low CPU overhead, fast startup time, and strong security via a small trusted code base. We evaluate DeCl's effectiveness on general-purpose CPU benchmarks, as well as in an application-specific context by integrating with the Groundhog smart contract engine, and using DeCl for zero-knowledge-proof verification.",
+  "abstract_source_id": "src-abstract-osdi-2025-9d18ae00",
   "venue": "osdi",
   "year": 2025,
   "track_or_session": "Kernel and Operating Systems I",
@@ -138,6 +140,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2025-9d18ae00",
+      "url": "https://www.usenix.org/conference/osdi25/presentation/yedidia",
+      "kind": "paper-page",
+      "title": "Deterministic Client: Enforcing Determinism on Untrusted Machine Code",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:07:30Z",
+      "content_hash": "sha256:02b743077971b56f77e60961c81fb8aa71259f547ed0bea0dd33414b29660f50",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

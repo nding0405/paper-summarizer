@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2024-freqfed-a-frequency-analysis-based-approach-for-mitigati-31840211",
   "title": "FreqFed: A Frequency Analysis-Based Approach for Mitigating Poisoning Attacks in Federated Learning",
+  "abstract": "Federated learning (FL) is a collaborative learning paradigm allowing multiple clients to jointly train a model without sharing their training data. However, FL is susceptible to poisoning attacks, in which the adversary injects manipulated model updates into the federated model aggregation process to corrupt or destroy predictions (untargeted poisoning) or implant hidden functionalities (targeted poisoning or backdoors). Existing defenses against poisoning attacks in FL have several limitations, such as relying on specific assumptions about attack types and strategies or data distributions or not sufficiently robust against advanced injection techniques and strategies and simultaneously maintaining the utility of the aggregated model.\n\nTo address the deficiencies of existing defenses, we take a generic and completely different approach to detect poisoning (targeted and untargeted) attacks. We present FreqFed, a novel aggregation mechanism that transforms the model updates (i.e., weights) into the frequency domain, where we can identify the core frequency components that inherit sufficient information about weights. This allows us to effectively filter out malicious updates during local training on the clients, regardless of attack types, strategies, and clients' data distributions. We extensively evaluate the efficiency and effectiveness of FreqFed in different application domains, including image classification, word prediction, IoT intrusion detection, and speech recognition. We demonstrate that FreqFed can mitigate poisoning attacks effectively with a negligible impact on the utility of the aggregated model.",
+  "abstract_source_id": "src-abstract-ndss-2024-31840211",
   "venue": "ndss",
   "year": 2024,
   "track_or_session": "Fall submission cycle",
@@ -168,6 +170,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2024-31840211",
+      "url": "https://www.ndss-symposium.org/ndss-paper/freqfed-a-frequency-analysis-based-approach-for-mitigating-poisoning-attacks-in-federated-learning/",
+      "kind": "paper-page",
+      "title": "FreqFed: A Frequency Analysis-Based Approach for Mitigating Poisoning Attacks in Federated Learning",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:18:05Z",
+      "content_hash": "sha256:e76940f8fcd30b6223f65bfc0d7ba9b8e6fff50047e94afa571227afde9fe9a3",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

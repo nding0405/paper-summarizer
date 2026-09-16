@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2025-rondo-scalable-and-reconfiguration-friendly-randomness-b-7b25ab36",
   "title": "Rondo: Scalable and Reconfiguration-Friendly Randomness Beacon",
+  "abstract": "We present Rondo, a scalable and reconfiguration-friendly distributed randomness beacon (DRB) protocol in the partially synchronous model. Rondo is the first DRB protocol that is built from batched asynchronous verifiable secret sharing (bAVSS) and meanwhile avoids the high $O(n^3)$ message cost, where $n$ is the number of nodes. Our key contribution lies in the introduction of a new variant of bAVSS called batched asynchronous verifiable secret sharing with partial output (bAVSS-PO). bAVSS-PO is a weaker primitive than bAVSS but allows us to build a secure and more scalable DRB protocol. We propose a bAVSS-PO protocol Breeze. Breeze achieves the optimal $O(n)$ messages for the sharing stage and allows Rondo to offer better scalability than prior DRB protocols.\n\nAdditionally, to support the reconfiguration, we introduce Rondo-BFT, a dynamic and partially synchronous Byzantine fault-tolerant protocol inspired by Dyno (S&P 2022). Unlike Dyno, Rondo-BFT provides a communication pattern that generates randomness beacon output periodically, making it well-suited for DRB applications.\n\nWe implement our protocols and evaluate the performance on Amazon EC2 using up to 91 instances. Our evaluation results show that Rondo achieves higher throughput than existing works and meanwhile offers better scalability, where the performance does not degrade as significantly as $n$ grows.",
+  "abstract_source_id": "src-abstract-ndss-2025-7b25ab36",
   "venue": "ndss",
   "year": 2025,
   "track_or_session": "Summer submission cycle",
@@ -231,6 +233,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2025-7b25ab36",
+      "url": "https://www.ndss-symposium.org/ndss-paper/rondo-scalable-and-reconfiguration-friendly-randomness-beacon/",
+      "kind": "paper-page",
+      "title": "Rondo: Scalable and Reconfiguration-Friendly Randomness Beacon",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:20:23Z",
+      "content_hash": "sha256:c0ba6609af09b4ed032c41fa790267a47e42c6840742eb33cb69363892f09b15",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

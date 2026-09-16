@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2023-transparent-runtime-change-handling-for-android-apps-49d315c9",
   "title": "Transparent Runtime Change Handling for Android Apps",
+  "abstract": "Mobile devices often face runtime configuration changes, such as screen orientation changes, screen resizing, and language switching. The current Android design adopts a restarting-based solution to load the corresponding resources according to the new configuration. Therefore, application developers must explicitly deal with state preservation and restoration brought about by the activity restarting. Otherwise, the runtime change will cause state loss and even app crash issues. To solve the runtime change handling issues, we propose RCHDroid, a transparent runtime change handling approach for apps at the Android system level. When a configuration change occurs, we do not restart the activity, but instead, create a new activity according to the new configuration and migrate states from the old one to the new one, while putting the old activity into an inactive mode. We propose a lazy-migration scheme to handle asynchronous tasks that remain working on the old activity, which migrates the result events when the asynchronous tasks return. We have implemented a prototype of RCHDroid with real hardware and released the source code for public access. Overall, using RCHDroid, existing apps can handle runtime configuration changes without any modifications and save the runtime change handling time by 25.46%.",
+  "abstract_source_id": "src-abstract-asplos-2023-49d315c9",
   "venue": "asplos",
   "year": 2023,
   "track_or_session": "Session 1C: IoT/Embedded/Mobile",
@@ -104,6 +106,19 @@
       "official": false,
       "supports": [
         "Indexed abstract used with the official technical-session context for relevance classification, plus alternate-copy and explicitly printed ancillary links."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2023-49d315c9",
+      "url": "https://api.openalex.org/works/doi:10.1145/3582016.3582060?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Transparent Runtime Change Handling for Android Apps",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T21:59:48Z",
+      "content_hash": "sha256:6f9a13a7b6a1f3fc2a96f405a7f3676a9ee238289f2aee6f67cd6a16f2b12fbd",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

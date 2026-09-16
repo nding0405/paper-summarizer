@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sigcomm-2026-harvest-adaptive-photonic-switching-schedules-for-collec-69ef0d3f",
   "title": "Harvest: Adaptive Photonic Switching Schedules for Collective Communication in Scale-up Domains",
+  "abstract": "As chip-to-chip silicon photonics gain traction for their bandwidth and energy efficiency, their circuit-switched nature raises a fundamental question for collective communication: when and how should the interconnect be reconfigured to realize these benefits? Establishing direct optical paths can reduce congestion and propagation delay; however, each reconfiguration incurs non-negligible overhead, making naive per-step reconfiguration impractical. We present Harvest, a systematic approach for synthesizing topology reconfiguration schedules that minimize collective completion time in photonic interconnects. Given a collective communication algorithm and its fixed communication schedule, Harvest determines how the interconnect should evolve over the course of the collective, explicitly balancing reconfiguration delay against congestion and propagation delay. We reduce the synthesis problem into a dynamic program with an underlying topology optimization subproblem and show that the approach applies to arbitrary collective communication algorithms. Furthermore, we exploit the algorithmic structure of a well-known AllReduce algorithm (Recursive Doubling) to synthesize optimal reconfiguration schedules without using any optimizers. By parameterizing the formulation using reconfiguration delay, Harvest naturally adapts to various photonic technologies. Using packet-level and flow-level evaluations, as well as hardware emulation on commercial GPUs, we show that the schedules synthesized by Harvest significantly reduce collective completion time across multiple collective algorithms compared to static interconnects and reconfigure-every-step baselines.",
+  "abstract_source_id": "src-abstract-sigcomm-2026-69ef0d3f",
   "venue": "sigcomm",
   "year": 2026,
   "track_or_session": "Research Session 17: Congestion, Rate & Schedule Control — Research Paper",
@@ -170,6 +172,19 @@
       "official": true,
       "supports": [
         "official main-paper scope and track definitions"
+      ]
+    },
+    {
+      "id": "src-abstract-sigcomm-2026-69ef0d3f",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/search/match?query=Harvest%3A%20Adaptive%20Photonic%20Switching%20Schedules%20for%20Collective%20Communication%20in%20Scale-up%20Domains&fields=title,abstract",
+      "kind": "semantic-scholar",
+      "title": "Harvest: Adaptive Photonic Switching Schedules for Collective Communication in Scale-up Domains",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T23:01:57Z",
+      "content_hash": "sha256:e45b0a9881a277ba158102a8cffa40bc9837d42a242368a1e4e6beb4183e9ac4",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2025-vattention-dynamic-memory-management-for-serving-llms-wi-5e57001d",
   "title": "vAttention: Dynamic Memory Management for Serving LLMs without PagedAttention",
+  "abstract": "PagedAttention is a popular approach for dynamic memory allocation in LLM serving systems. It enables on-demand allocation of GPU memory to mitigate KV cache fragmentation - a phenomenon that crippled the batch size (and consequently throughput) in prior systems. However, in trying to allocate physical memory at runtime, PagedAttention ends up changing the virtual memory layout of the KV cache from contiguous to non-contiguous. Such a design leads to non-trivial programming and performance overheads.",
+  "abstract_source_id": "src-abstract-asplos-2025-5e57001d",
   "venue": "asplos",
   "year": 2025,
   "track_or_session": "Session 10D: Memory Management",
@@ -167,6 +169,19 @@
       "official": false,
       "supports": [
         "Indexed abstract and open-access links used for relevance classification and ancillary-link discovery."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2025-5e57001d",
+      "url": "https://api.openalex.org/works/doi:10.1145/3669940.3707256?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "vAttention: Dynamic Memory Management for Serving LLMs without PagedAttention",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:04:20Z",
+      "content_hash": "sha256:779134a0149bb1981dd58a214b03f8938d74dd7b01bb7104e00ba382c3f00f2f",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2026-adgfuzz-assignment-dependency-guided-fuzzing-for-robotic-19120655",
   "title": "ADGFUZZ: Assignment Dependency-Guided Fuzzing for Robotic Vehicles",
+  "abstract": "Robotic vehicles (RVs) play an increasingly vital role in modern society, with widespread applications in both commercial and military contexts. RV control software is the core of RV systems, which maintains proper operation by continuously computing the vehicle's internal state, sensor readings, and external inputs to adjust the system's behavior accordingly. However, the vast combination space of configurable parameters, command inputs, and environment-sensed data in RV software introduces significant security risks to the system. Existing fuzzing techniques face substantial challenges in effectively exploring this vast input space while uncovering deep bugs.\n\nTo address these challenges, we propose ADGFuzz, a novel fuzzing framework specifically designed to detect assignment statement bugs in RV control software. ADGFuzz statically constructs an Assignment Dependency Graph (ADG) to capture inter-variable dependencies within the program. These dependencies are then propagated to the RV input space by leveraging naming similarities, resulting in a targeted set of inputs referred to as the matched input set (MIS). Building upon this, ADGFuzz performs entropy-aware fuzzing over the MISs, thereby enhancing the overall efficiency of bug discovery. In our evaluation, ADGFuzz uncovered 87 unique bugs across three RV types, 78 of which were previously unknown. All found bugs were responsibly disclosed to the developers, and 16 have been confirmed for fixing.",
+  "abstract_source_id": "src-abstract-ndss-2026-19120655",
   "venue": "ndss",
   "year": 2026,
   "track_or_session": "Summer submission cycle",
@@ -223,6 +225,19 @@
       "official": false,
       "supports": [
         "independent proceedings identity reconciliation"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2026-19120655",
+      "url": "https://www.ndss-symposium.org/ndss-paper/adgfuzz-assignment-dependency-guided-fuzzing-for-robotic-vehicles/",
+      "kind": "paper-page",
+      "title": "ADGFUZZ: Assignment Dependency-Guided Fuzzing for Robotic Vehicles",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:21:11Z",
+      "content_hash": "sha256:a984bc47c8152019e78298179d632ee1e12ad44a4aaf5546406270a03952ce58",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

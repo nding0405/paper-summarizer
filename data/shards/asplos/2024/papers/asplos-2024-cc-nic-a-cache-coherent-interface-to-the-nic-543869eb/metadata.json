@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2024-cc-nic-a-cache-coherent-interface-to-the-nic-543869eb",
   "title": "CC-NIC: a Cache-Coherent Interface to the NIC",
+  "abstract": "Emerging interconnects make peripherals, such as the network interface controller (NIC), accessible through the processor's cache hierarchy, allowing these devices to participate in the CPU cache coherence protocol. This is a fundamental change from the separate I/O data paths and read-write transaction primitives of today's PCIe NICs. Our experiments show that the I/O data path characteristics cause NICs to prioritize CPU efficiency at the expense of inflated latency, an issue that can be mitigated by the emerging low-latency coherent interconnects. But, the coherence abstraction is not suited to current host-NIC access patterns. Applying existing signaling mechanisms and data structure layouts in a cache-coherent setting results in extraneous communication and cache retention, limiting performance. Redesigning the interface is necessary to minimize overheads and benefit from the new interactions coherence enables. This work contributes CC-NIC, a host-NIC interface design for coherent interconnects. We model CC-NIC using Intel's Ice Lake and Sapphire Rapids UPI interconnects, demonstrating the potential of optimizing for coherence. Our results show a maximum packet rate of 1.5Gpps and 980Gbps packet throughput. CC-NIC has 77% lower minimum latency, and 88% lower at 80% load, than today's PCIe NICs. We also demonstrate application-level core savings. Finally, we show that CC-NIC's benefits hold across a range of interconnect performance characteristics.",
+  "abstract_source_id": "src-abstract-asplos-2024-543869eb",
   "venue": "asplos",
   "year": 2024,
   "track_or_session": "Session 2C: Memory Optimizations",
@@ -287,6 +289,19 @@
       "official": false,
       "supports": [
         "Indexed alternate-version and institutional-copy links; not used as the authoritative relevance source."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2024-543869eb",
+      "url": "https://api.openalex.org/works/doi:10.1145/3617232.3624868?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "CC-NIC: a Cache-Coherent Interface to the NIC",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T21:59:57Z",
+      "content_hash": "sha256:b74546f74ca6010742451c0f8f774a78d58a7cd995091a733e051a7f3a7b61f9",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2025-disa-accurate-learning-based-static-disassembly-with-att-61bf589a",
   "title": "Disa : Accurate Learning-based Static Disassembly with Attentions",
+  "abstract": "For reverse engineering related security domains, such as vulnerability detection, malware analysis, and binary hardening, disassembly is crucial yet challenging. The fundamental challenge of disassembly is to identify instruction and function boundaries. Classic approaches rely on file-format assumptions and architecture-specific heuristics to guess the boundaries, resulting in incomplete and incorrect disassembly, especially when the binary is obfuscated. Recent advancements of disassembly have demonstrated that deep learning can improve both the accuracy and efficiency of disassembly. In this paper, we propose Disa, a new learning-based disassembly approach that uses the information of superset instructions over the multi-head self-attention to learn the instructions' correlations, thus being able to infer function entry-points and instruction boundaries. Disa can further identify instructions relevant to memory block boundaries to facilitate an advanced block-memory model based value-set analysis for an accurate control flow graph (CFG) generation. Our experiments show that Disa outperforms prior deep-learning disassembly approaches in function entry-point identification, especially achieving 9.1% and 13.2% F1-score improvement on binaries respectively obfuscated by the disassembly desynchronization technique and popular source-level obfuscator. By achieving an 18.5% improvement in the memory block precision, Disa generates more accurate CFGs with a 4.4% reduction in Average Indirect Call Targets (AICT) compared with the state-of-the-art heuristic-based approach.",
+  "abstract_source_id": "src-abstract-ccs-2025-61bf589a",
   "venue": "ccs",
   "year": 2025,
   "track_or_session": "Cycle 1",
@@ -190,6 +192,19 @@
         "published-order authors",
         "publication-time affiliations",
         "publication date and page span"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2025-61bf589a",
+      "url": "https://api.openalex.org/works/doi:10.1145/3719027.3744828?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Disa : Accurate Learning-based Static Disassembly with Attentions",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:13:51Z",
+      "content_hash": "sha256:ccadc69bc448d6c878751c3e66e4b8d63315dbd89f53d62e690b258f66627a79",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

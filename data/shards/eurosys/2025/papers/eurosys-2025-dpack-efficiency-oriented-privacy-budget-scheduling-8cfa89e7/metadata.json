@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "eurosys-2025-dpack-efficiency-oriented-privacy-budget-scheduling-8cfa89e7",
   "title": "DPack: Efficiency-Oriented Privacy Budget Scheduling",
+  "abstract": "Machine learning (ML) models can leak information about users, and differential privacy (DP) provides a rigorous way to bound that leakage under a given budget. This DP budget can be regarded as a new type of computing resource in workloads of multiple ML models training on user data. Once it is used, the DP budget is forever consumed. Therefore, it is crucial to allocate it most efficiently to train as many models as possible. This paper presents a scheduler for the privacy resources that optimizes for efficiency. We formulate privacy scheduling as a new type of multidimensional knapsack problem, called privacy knapsack, which maximizes DP budget efficiency. We show that privacy knapsack is NP-hard, hence practical algorithms are necessarily approximate. We develop an approximation algorithm for privacy knapsack, DPack, and evaluate it on microbenchmarks and on a new, synthetic private-ML workload we developed from the Alibaba ML cluster trace. We show that DPack: (1) often approaches the efficiency-optimal schedule, (2) consistently schedules more tasks compared to a state-of-the-art privacy scheduling algorithm that focused on fairness instead of efficiency (1.3-1.7× in Alibaba, 1.0-2.6X in microbenchmarks), but (3) sacrifices some level of fairness for efficiency. Using DPack, DP ML operators should be able to train more models on the same amount of user data while offering the same privacy guarantee to their users.",
+  "abstract_source_id": "src-abstract-eurosys-2025-8cfa89e7",
   "venue": "eurosys",
   "year": 2025,
   "track_or_session": "Session-9.1: Security and Privacy - Location: Van Oldebarneveldt - Chair: Anjo Vahldiek-Oberwagner",
@@ -209,6 +211,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-eurosys-2025-8cfa89e7",
+      "url": "https://api.openalex.org/works/doi:10.1145/3689031.3696096?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "DPack: Efficiency-Oriented Privacy Budget Scheduling",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:19:05Z",
+      "content_hash": "sha256:716c2cd4544db6a5356b3336bde9d78f731ce6b75b1962b67aa82ea2280c528b",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

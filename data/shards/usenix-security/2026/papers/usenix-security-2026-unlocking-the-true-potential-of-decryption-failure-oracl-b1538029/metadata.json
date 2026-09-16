@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-unlocking-the-true-potential-of-decryption-failure-oracl-b1538029",
   "title": "Unlocking the True Potential of Decryption Failure Oracles: A Hybrid Adaptive-LDPC Attack on ML-KEM Using Imperfect Oracles",
+  "abstract": "Side-channel attacks exploiting Plaintext-Checking (PC) and Decryption Failure (DF) oracles are a pressing threat to deployed post-quantum cryptography. These oracles can be instantiated from tangible leakage sources like timing, power, and microarchitectural behaviors, making them a practical concern for leading schemes based on lattices, codes, and isogenies. In this paper, we revisit chosen-ciphertext side-channel attacks that leverage the DF oracle on ML-KEM. While DF oracles are often considered inefficient compared to their binary PC counterparts in lattice-based schemes, we demonstrate that their full potential has been largely unrealized.\n\nWe introduce a novel attack framework that combines adaptive query generation with belief propagation for Low-Density Parity-Check (LDPC) codes. Our methodology crafts carefully balanced parity checks over multiple secret coefficients, maximizing the Shannon information extracted from each oracle query, even in the presence of significant noise. This approach dramatically reduces the number of queries required for a full key recovery, achieving near-optimal efficiency by approaching the theoretical Shannon information bound. For ML-KEM-768 with an oracle accuracy of 95%, our attack requires only 2950 queries (a 1.35 ratio to the Shannon lower bound), establishing that a well-designed DF attack can surpass the efficiency of state-of-the-art binary PC attacks.\n\nTo validate the practical impact of our findings, we apply our framework to the recent GoFetch attack, showing significant gains in this real-world, microarchitectural side-channel scenario. Our method reduces the required measurement traces by over an order of magnitude and eliminates the need for computationally expensive post-processing, enabling a full key recovery on higher-security schemes previously considered intractable.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-b1538029",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Hardware Security 2",
@@ -114,6 +116,19 @@
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening",
         "prepublication PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-b1538029",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/guo-qian",
+      "kind": "paper-page",
+      "title": "Unlocking the True Potential of Decryption Failure Oracles: A Hybrid Adaptive-LDPC Attack on ML-KEM Using Imperfect Oracles",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:26:03Z",
+      "content_hash": "sha256:30b045fbf517ccc9985990c0d742aa5e54b6c69a992cff704b30468a5df0c9b8",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2025-veribin-adaptive-verification-of-patches-at-the-binary-l-c49f38e2",
   "title": "VeriBin: Adaptive Verification of Patches at the Binary Level",
+  "abstract": "Vendors are often provided with updated versions of a piece of software, fixing known security issues.\n\nHowever, the inability to have any guarantee that the provided patched software does not break the functionality of its original version often hinders patch deployment.\n\nThis issue is particularly severe when the patched software is only provided in its compiled binary form.\n\nIn this case, manual analysis of the patch's source code is impossible, and existing automated patch analysis techniques, which rely on source code, are not applicable.\n\nEven when the source code is accessible, the necessity of binary-level patch verification is still crucial, as highlighted by the recent XZ Utils backdoor.\n\nTo tackle this issue, we propose VeriBin, a system able to compare a binary with its patched version and determine whether the patch is ''Safe to Apply'', meaning it does not introduce any modification that could potentially break the functionality of the original binary.\n\nTo achieve this goal, VeriBin checks functional equivalence between the original and patched binaries.\n\nIn particular, VeriBin first uses symbolic execution to systematically identify patch-introduced modifications.\n\nThen, it checks if the detected patch-introduced modifications respect specific properties that guarantee they will not break the original binary's functionality.\n\nTo work without source code, VeriBin's design solves several challenges related to the absence of semantic information (removed during the compilation process) about the analyzed code and the complexity of symbolically executing large functions precisely.\n\nOur evaluation of VeriBin on a dataset of 86 samples shows that it achieves an accuracy of 93.0% with no false positives, requiring only minimal analyst input.\n\nAdditionally, we showcase how VeriBin can be used to detect the recently discovered XZ Utils backdoor.",
+  "abstract_source_id": "src-abstract-ndss-2025-c49f38e2",
   "venue": "ndss",
   "year": 2025,
   "track_or_session": "Summer submission cycle",
@@ -189,6 +191,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2025-c49f38e2",
+      "url": "https://www.ndss-symposium.org/ndss-paper/veribin-adaptive-verification-of-patches-at-the-binary-level/",
+      "kind": "paper-page",
+      "title": "VeriBin: Adaptive Verification of Patches at the Binary Level",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:20:56Z",
+      "content_hash": "sha256:48848f36053f5943b6ec88af9f3e84a000b600650ffbd982f642cfa5b22e3d8f",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

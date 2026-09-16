@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2024-ida-hybrid-attestation-with-support-for-interrupts-and-t-ef19a6b4",
   "title": "IDA: Hybrid Attestation with Support for Interrupts and TOCTOU",
+  "abstract": "Remote attestation has received much attention recently due to the proliferation of embedded and IoT devices. Among various solutions, methods based on hardware-software co-design (hybrid) are particularly popular due to their low overhead yet effective approaches. Despite their usefulness, hybrid methods still suffer from multiple limitations such as strict protections required for the attestation keys and restrictive operation and threat models such as disabling interrupts and neglecting time-of-check-time-of-use (TOCTOU) attacks.\n\nIn this paper, we propose a new hybrid attestation method called IDA, which removes the requirement for disabling interrupts and restrictive access control for the secret key and attestation code, thus improving the system's overall security and flexibility. Rather than making use of a secret key to calculate the response, IDA verifies the attestation process with trusted hardware monitoring and certifies its authenticity only if it was followed precisely. Further, to prevent TOCTOU attacks and handle interrupts, we propose IDA+, which monitors program memory between attestation requests or during interrupts and informs the verifier of changes to the program memory. We implement and evaluate IDA and IDA+ on open-source MSP430 architecture, showing a reasonable overhead in terms of runtime, memory footprint, and hardware overhead while being robust against various attack scenarios. Comparing our method with the state-of-the-art, we show that it has minimal overhead while achieving important new properties such as support for interrupts and DMA requests and detecting TOCTOU attacks.",
+  "abstract_source_id": "src-abstract-ndss-2024-ef19a6b4",
   "venue": "ndss",
   "year": 2024,
   "track_or_session": "Summer submission cycle",
@@ -126,6 +128,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2024-ef19a6b4",
+      "url": "https://www.ndss-symposium.org/ndss-paper/ida-hybrid-attestation-with-support-for-interrupts-and-toctou/",
+      "kind": "paper-page",
+      "title": "IDA: Hybrid Attestation with Support for Interrupts and TOCTOU",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:18:11Z",
+      "content_hash": "sha256:0755d44a738353f3b4941f3fdfaee80c9bed7d4fd2639d0ce24808ea4a3abd2b",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

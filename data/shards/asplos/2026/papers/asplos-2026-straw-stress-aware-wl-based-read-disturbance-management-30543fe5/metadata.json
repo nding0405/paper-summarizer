@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2026-straw-stress-aware-wl-based-read-disturbance-management-30543fe5",
   "title": "STRAW: Stress-Aware WL-Based Read Disturbance Management for High-Density NAND Flash Memory",
+  "abstract": "While NAND flash memory has continuously increased its storage density over decades, this progress has exacerbated the read-disturbance problem. In this work, we identify two fundamental limitations of existing read-disturbance management techniques that trigger read reclaim (RR) at the block granularity: (i) they overlook the heterogeneous reliability impact of read disturbance across individual wordlines (WLs), leading to unnecessary RR in many cases; and (ii) they address read disturbance only after disturbance-induced errors have already accumulated, which forces substantial RR-induced copy overheads in read-disturbance-prone modern NAND flash memory. To address these limitations, we propose STRAW (STRess-Aware Wordline-based read-disturbance management), a new technique that minimizes RR overheads through two key ideas: (i) stress-aware WL-based read reclaim, which monitors the accumulated read-disturbance effect on each WL and reclaims only heavily disturbed WLs, and (ii) stress-reduced read, which mitigates disturbance on valid WLs during each read operation by scaling pass-through voltages based on WL validity. Our experimental results using a modern SSD emulator show that STRAW reduces RR-induced page-copy overhead by 88.6% on average compared with the state-of-the-art technique.",
+  "abstract_source_id": "src-abstract-asplos-2026-30543fe5",
   "venue": "asplos",
   "year": 2026,
   "track_or_session": "Session 2D: DRAM Reliability & Security",
@@ -188,6 +190,19 @@
       "official": false,
       "supports": [
         "Indexed abstract used for strict relevance classification and indexed arXiv identifier where available."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2026-30543fe5",
+      "url": "https://api.openalex.org/works/doi:10.1145/3779212.3790228?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "STRAW: Stress-Aware WL-Based Read Disturbance Management for High-Density NAND Flash Memory",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:06:39Z",
+      "content_hash": "sha256:e0d87cf88916239abdef2cdbd4ef6bfcee443d57a5df2c347b38c5857df3b8e8",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

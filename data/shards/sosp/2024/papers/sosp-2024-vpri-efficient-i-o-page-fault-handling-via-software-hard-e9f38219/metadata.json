@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sosp-2024-vpri-efficient-i-o-page-fault-handling-via-software-hard-e9f38219",
   "title": "VPRI: Efficient I/O Page Fault Handling via Software-Hardware Co-Design for IaaS Clouds",
+  "abstract": "Device pass-through has been widely adopted by cloud service providers to achieve near bare-metal I/O performance in virtual machines (VMs). However, this approach requires static pinning of VM memory, making on-demand paging unavailable. The hardware device I/O page fault (IOPF) capability offers an optimal solution to this limitation. Current IOPF approaches, using either standard IOMMU capabilities (ATS+PRI) or devices with independent IOMMU implementations, have not gained widespread adoption in public Infrastructure-as-a-Service clouds. This is due to high costs, platform dependency, and significant impacts on performance and service level objectives (SLOs). We present the Virtualized Page Request Interface (VPRI), a novel IOPF system developed through software-hardware collaboration. VPRI is not only platform-independent, free from address translation complexities, but also cost-effective, and designed to minimize SLO impact. Our work enables large-scale deployment of IOPF capability in Alibaba Cloud with negligible impact on SLOs. When integrated with memory management software, it significantly enhances memory utilization in public IaaS clouds, effectively overcoming the static memory pinning restriction associated with pass-through devices.",
+  "abstract_source_id": "src-abstract-sosp-2024-e9f38219",
   "venue": "sosp",
   "year": 2024,
   "track_or_session": "Session 8: Data Center, Cloud, and Virtualization 9:00 - 10:30 Session Chair: Natacha Crooks",
@@ -314,6 +316,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-sosp-2024-e9f38219",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "VPRI: Efficient I/O Page Fault Handling via Software-Hardware Co-Design for IaaS Clouds",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:19Z",
+      "content_hash": "sha256:b613162f9e7d53fac5fe410aff94d06ac71f23c6c31e2e9cc362b51e87d1bb79",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

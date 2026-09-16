@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2025-typeforge-synthesizing-and-selecting-best-fit-composite-dc71f2ee",
   "title": "TypeForge: Synthesizing and Selecting Best-Fit Composite Data Types for Stripped Binaries",
+  "abstract": "Static binary analysis is a widely used approach for ensuring the security of closed-source software. However, the absence of type information in stripped binaries, particularly for composite data types, poses significant challenges for both static analyzers and reverse engineering experts in achieving efficient and accurate analysis. Existing methods often struggle with inaccuracies and scalability limitations when dealing with such data types. To address these problems, we present Typeforge, a novel approach inspired by the workflow of reverse engineering experts, which uses a two-stage synthesis-selection strategy to automate the recovery of composite data types from stripped binaries. We design a new graph structure, the Type Flow Graph (TFG) to represent type information within stripped binaries. In the first stage, TFG-based Type Synthesis focuses on efficiently and accurately building constraints and synthesizing possible composite type declarations from the stripped binaries. In the second stage, we propose an LLM-assisted double-elimination framework to select the best-fit type declaration from the candidates by assessing the readability of the decompiled code. Our comparison with state-of-the-art approaches demonstrates that TYPEFORGE achieves F1 scores of 81.7% and 88.2% in Composite Data Type Identification and Layout Recovery, respectively, substantially outperforming existing methods. Additionally, TYPEFORGE achieves an F1 score of 72.1% in Relationship Recovery, a particularly challenging task for previous approaches. Furthermore, TYPEFORGE has significantly lower time overhead, requiring only about 3.8% of the time taken by OSPREY, the best-performing existing approach, making it a promising solution for various real-world reverse engineering tasks.",
+  "abstract_source_id": "src-abstract-sp-2025-dc71f2ee",
   "venue": "sp",
   "year": 2025,
   "track_or_session": "Cycle 2",
@@ -175,6 +177,19 @@
       "official": true,
       "supports": [
         "DOI, authors, affiliations, abstract, publication date, pages, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2025-dc71f2ee",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "TypeForge: Synthesizing and Selecting Best-Fit Composite Data Types for Stripped Binaries",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:52Z",
+      "content_hash": "sha256:b15ce02bcc49da611fdd791ecc56741e7d91d84154b58c1a7f72a5c6902e6e46",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

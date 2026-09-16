@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2026-hybridtier-an-adaptive-and-lightweight-cxl-memory-tierin-f6c2bbca",
   "title": "HybridTier: an Adaptive and Lightweight CXL-Memory Tiering System",
+  "abstract": "Modern workloads are demanding increasingly larger memory capacity. Compute Express Link (CXL)-based memory tiering has emerged as a promising solution for addressing this problem by utilizing traditional DRAM alongside slow-tier CXL memory devices. We analyze prior tiering systems and observe two challenges for high-performance memory tiering: adapting to skewed but dynamically varying data hotness distributions while minimizing memory and cache overhead due to tiering. To address these challenges, we propose HybridTier, an adaptive and lightweight tiering system for CXL memory. HybridTier tracks both long-term data access frequency and short-term access momentum simultaneously to accurately capture and adapt to shifting hotness distributions. HybridTier reduces the metadata memory overhead by tracking data accesses probabilistically, obtaining higher memory efficiency by trading off a small amount of tracking inaccuracy that has a negligible impact on application performance. To reduce cache overhead, HybridTier uses lightweight data structures that optimize for data locality to track data hotness. Our evaluations show that HybridTier outperforms prior systems by up to 91% (19% geomean), incurring 2.0-7.8x less memory overhead and 1.7-3.5x less cache misses.",
+  "abstract_source_id": "src-abstract-asplos-2026-f6c2bbca",
   "venue": "asplos",
   "year": 2026,
   "track_or_session": "Session 1D: CXL & Memory Fabric",
@@ -207,6 +209,19 @@
       "official": false,
       "supports": [
         "Author-deposited archival artifact matched by title, authors, linked DOI, or accompanying paper description."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2026-f6c2bbca",
+      "url": "https://api.openalex.org/works/doi:10.1145/3676642.3736119?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "HybridTier: an Adaptive and Lightweight CXL-Memory Tiering System",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:05:31Z",
+      "content_hash": "sha256:0e6857c4c379f36a8b75101bca169d5671dbbbd9cc532fa569aba59cfd1a4088",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2023-xbgp-faster-innovation-in-routing-protocols-b22f63bf",
   "title": "xBGP: Faster Innovation in Routing Protocols",
+  "abstract": "Internet Service Providers use routers from multiple vendors that support standardized routing protocols. Network operators deploy new services by tuning these protocols. Unfortunately, while standardization is necessary for interoperability, this is a slow process. As a consequence, new features appear very slowly in routing protocols.\n\nWe propose a new implementation model for BGP, called xBGP, that enables ISPs to innovate by easily deploying BGP extensions in their multivendor network. We define a vendor-neutral xBGP API which can be supported by any BGP implementation and an eBPF Virtual Machine that allows executing extension code within these BGP implementations. We demonstrate the feasibility of our approach by extending both FRRouting and BIRD.\n\nWe demonstrate seven different use cases showing the benefits that network operators can obtain using xBGP programs. We propose a verification toolchain that enables operators to compile and verify the safety properties of xBGP programs before deploying them. Our testbed measurements show that the performance impact of xBGP is reasonable compared to native code.",
+  "abstract_source_id": "src-abstract-nsdi-2023-b22f63bf",
   "venue": "nsdi",
   "year": 2023,
   "track_or_session": "Internet-Scale Networks",
@@ -224,6 +226,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2023-b22f63bf",
+      "url": "https://www.usenix.org/conference/nsdi23/presentation/wirtgen",
+      "kind": "paper-page",
+      "title": "xBGP: Faster Innovation in Routing Protocols",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:02:46Z",
+      "content_hash": "sha256:98a6d3ac616519e2e2bd316c9b40814c2bab00a1f4d3d1eb92c55bb76f75f02e",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

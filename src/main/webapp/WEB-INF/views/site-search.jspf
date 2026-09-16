@@ -1,0 +1,24 @@
+<%-- Collapsible search box shown at the right of every top bar.
+     Expects searchPath and suggestPath; optionally searchQuery and searchHidden (filter parameters to keep). --%>
+<form class="search-form" method="get" action="<c:out value='${searchPath}' />" role="search">
+  <c:forEach var="parameter" items="${searchHidden}">
+    <c:if test="${parameter.key != 'q' and parameter.key != 'page'}">
+      <input type="hidden" name="<c:out value='${parameter.key}' />" value="<c:out value='${parameter.value}' />">
+    </c:if>
+  </c:forEach>
+  <details class="search-popup">
+    <summary class="icon-button${not empty searchQuery ? ' is-active' : ''}" aria-label="Search" title="Search">
+      <svg class="icon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false">
+        <circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/>
+        <line x1="15.5" y1="15.5" x2="21" y2="21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+    </summary>
+    <div class="search-panel" data-suggest="<c:out value='${suggestPath}' />">
+      <label class="visually-hidden" for="search-query">Search papers</label>
+      <input id="search-query" type="search" name="q" value="<c:out value='${searchQuery}' />" maxlength="200" autocomplete="off"
+             role="combobox" aria-expanded="false" aria-controls="search-suggestions" aria-autocomplete="list"
+             placeholder="Search keyword">
+      <ul id="search-suggestions" class="suggestions" role="listbox" aria-label="Matching papers" hidden></ul>
+    </div>
+  </details>
+</form>

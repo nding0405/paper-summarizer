@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sigcomm-2026-anytest-localizing-the-root-cause-of-hardware-transport-b50b226e",
   "title": "Anytest: Localizing the Root Cause of Hardware Transport Performance Anomalies",
+  "abstract": "RoCEv2-based RDMA fabrics are the backbone of modern high-performance data-center workloads, yet large-scale deployments increasingly suffer transport-layer network performance anomalies (NPAs) such as throughput collapse, persistent unfairness, and latency inflation even without link failures. Localizing root causes of NPAs is one of today's hardest operational challenges: RoCEv2 transport logic is offloaded into proprietary NIC/switch hardware with limited observability; available counters miss μs-scale dynamics; and similar symptoms can originate from sender, receiver, or switch behaviors in the tightly coupled RoCEv2 system. We present Anytest, an in-situ black-box testing tool that localizes root causes of transport-layer NPAs on commodity RoCEv2 RNICs and Ethernet switches without re-cabling or hardware modification. Anytest decomposes RoCEv2 network system into logical roles and isolates the hardware under test by emulating the other roles with protocol-correct DPDK endpoints. This enables deterministic injection of transport events and μs-resolution measurements. We overcome non-trivial technical challenges to implement Anytest's DPDK-based endpoints, which realize protocol correctness while enforcing μs-level packet timing at the hardware line rate. Integrated into a trace-reproduce-localize workflow, Anytest has been deployed in production for ~1 year, reducing mean localization effort to 3.1 person-hours.",
+  "abstract_source_id": "src-abstract-sigcomm-2026-b50b226e",
   "venue": "sigcomm",
   "year": 2026,
   "track_or_session": "Experience Session 3: Diagnosis & Root-Cause Analysis — Experience Paper",
@@ -527,6 +529,19 @@
       "official": true,
       "supports": [
         "official main-paper scope and track definitions"
+      ]
+    },
+    {
+      "id": "src-abstract-sigcomm-2026-b50b226e",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/search/match?query=Anytest%3A%20Localizing%20the%20Root%20Cause%20of%20Hardware%20Transport%20Performance%20Anomalies&fields=title,abstract",
+      "kind": "semantic-scholar",
+      "title": "Anytest: Localizing the Root Cause of Hardware Transport Performance Anomalies",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:23:50Z",
+      "content_hash": "sha256:1ab9c5e27961429e62a0942d33a8232175a50dc33f94508a6c116e0de8bddfbe",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

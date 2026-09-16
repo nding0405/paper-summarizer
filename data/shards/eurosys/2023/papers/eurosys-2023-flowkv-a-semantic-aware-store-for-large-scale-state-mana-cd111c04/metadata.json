@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "eurosys-2023-flowkv-a-semantic-aware-store-for-large-scale-state-mana-cd111c04",
   "title": "FlowKV: A Semantic-Aware Store for Large-Scale State Management of Stream Processing Engines",
+  "abstract": "We propose FlowKV, a persistent store tailored for large-scale state management of streaming applications. Unlike existing KV stores, FlowKV leverages information from stream processing engines by taking a principled approach toward exploiting information about how and when the applications access data. FlowKV categorizes data access patterns of window operations according to how window boundaries are set and how tuples inside a window are aggregated, and deploys customized in-memory and on-disk data structures optimized for each pattern. In addition, FlowKV takes window metadata as explicit arguments of read and write methods to predict the moment when a window is read, and then loads the tuples of windows in batches from storage ahead of time. Using the NEXMark benchmark as workload, our experiments show that Apache Flink on FlowKV outperforms Flink on RocksDB or Faster with up to 4.12× throughput gain.",
+  "abstract_source_id": "src-abstract-eurosys-2023-cd111c04",
   "venue": "eurosys",
   "year": 2023,
   "track_or_session": null,
@@ -272,6 +274,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-eurosys-2023-cd111c04",
+      "url": "https://api.openalex.org/works/doi:10.1145/3552326.3567493?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "FlowKV: A Semantic-Aware Store for Large-Scale State Management of Stream Processing Engines",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:18:33Z",
+      "content_hash": "sha256:20181a28f5e38c106738654c9b968e83c90628b52629af45fee92626958eac48",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

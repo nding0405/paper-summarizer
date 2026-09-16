@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-duetoram-two-server-distributed-oram-with-constant-round-5b124f35",
   "title": "DuetORAM: Two-Server Distributed ORAM with Constant Rounds and O(log N) Communication",
+  "abstract": "Distributed Oblivious RAM (DORAM) is a promising building block for privacy-preserving cloud databases and outsourced storage systems. However, existing two-server designs often rely on slow linear scans or heavy cryptographic primitives, making them struggle to balance efficiency and bandwidth, and thus hindering their practical deployment.\n\nWe present DuetORAM, a two-server DORAM that achieves constant-round access with O(log N) communication while avoiding these computational bottlenecks. Our key idea is a replicated-to-shared block encoding that allows servers to keep identical ciphertexts for efficient PIR-based retrieval, while locally interpreting them as secret shares to enable oblivious eviction via a lightweight shuffle. We further design a secret-shared shuffle with an offline-online decomposition that shifts most bandwidth-intensive work to a preprocessing phase, significantly reducing online communication. We implement a prototype of DuetORAM and evaluate it under diverse network conditions. Our results show that DuetORAM outperforms both the state-of-the-art two-server scheme DUORAM (reducing retrieval latency by up to 170× in LAN settings), and three-server design S^3ORAM (reducing retrieval latency by 1.7× in LAN and accelerating eviction by 7× in LAN and 5× in WAN, respectively).",
+  "abstract_source_id": "src-abstract-usenix-security-2026-5b124f35",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Applications of Cryptography 5",
@@ -197,6 +199,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-5b124f35",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/li-feng",
+      "kind": "paper-page",
+      "title": "DuetORAM: Two-Server Distributed ORAM with Constant Rounds and O(log N) Communication",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:23:48Z",
+      "content_hash": "sha256:e8de35a8f2c263f08b11edda33387989245ae3c2a22668681fb53eb20b08d4ce",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "fast-2023-pararc-embracing-sub-packetization-for-repair-paralleliz-b283eead",
   "title": "ParaRC: Embracing Sub-Packetization for Repair Parallelization in MSR-Coded Storage",
+  "abstract": "Minimum-storage regenerating (MSR) codes are provably optimal erasure codes that minimize the repair bandwidth (i.e., the amount of traffic being transferred during a repair operation), with the minimum storage redundancy, in distributed storage systems. However, the practical repair performance of MSR codes still has significant room to improve, as the mathematical structure of MSR codes makes their repair operations difficult to parallelize. We present ParaRC, a parallel repair framework for MSR codes. ParaRC exploits the sub-packetization nature of MSR codes to parallelize the repair of sub-blocks and balance the repair load (i.e., the amount of traffic sent or received by a node) across the available nodes. We show that there exists a trade-off between the repair bandwidth and the maximum repair load, and further propose a fast heuristic that approximately minimizes the maximum repair load with limited search time for large coding parameters. We prototype our heuristic in ParaRC and show that ParaRC reduces the degraded read and full-node recovery times over the conventional centralized repair approach in MSR codes by up to 59.3% and 39.2%, respectively.",
+  "abstract_source_id": "src-abstract-fast-2023-b283eead",
   "venue": "fast",
   "year": 2023,
   "track_or_session": "Coding and Cloud Storage",
@@ -224,6 +226,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-fast-2023-b283eead",
+      "url": "https://www.usenix.org/conference/fast23/presentation/li-xiaolu",
+      "kind": "paper-page",
+      "title": "ParaRC: Embracing Sub-Packetization for Repair Parallelization in MSR-Coded Storage",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:00:36Z",
+      "content_hash": "sha256:507611c98e537840f21801b12aaddcdf53a53224921011ff6086428e23f8c77b",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

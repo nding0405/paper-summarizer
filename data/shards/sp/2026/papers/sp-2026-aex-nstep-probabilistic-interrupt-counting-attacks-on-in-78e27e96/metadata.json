@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2026-aex-nstep-probabilistic-interrupt-counting-attacks-on-in-78e27e96",
   "title": "AEX-NStep: Probabilistic Interrupt Counting Attacks on Intel SGX",
+  "abstract": "To mitigate interrupt-based stepping attacks (notably using SGX-Step), Intel introduced AEX-Notify, an ISA extension to Intel SGX that aims to prevent deterministic single-stepping. In this work, we introduce AEX-NStep, the first interrupt counting attack on AEX-Notify-enabled Enclaves. We show that deterministic single-stepping is not required for interrupt counting attacks to be practical and that, therefore, AEX-Notify does not entirely prevent such attacks. We specifically show that one of AEX-Notify's security guarantees, obfuscated forward progress, does not hold, and we introduce two new probabilistic interrupt counting attacks. We use these attacks to construct a practical ECDSA key leakage attack on an AEX-Notify-enabled SGX enclave. Our results extend the original security analysis of AEX-Notify and inform the design of future mitigations.",
+  "abstract_source_id": "src-abstract-sp-2026-78e27e96",
   "venue": "sp",
   "year": 2026,
   "track_or_session": "Cycle 1",
@@ -154,6 +156,19 @@
       "official": true,
       "supports": [
         "DOI, published-order authors and affiliations, abstract, publication date, page span, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2026-78e27e96",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "AEX-NStep: Probabilistic Interrupt Counting Attacks on Intel SGX",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:57Z",
+      "content_hash": "sha256:303a9b5e5ef8908a3cfe67f02eb8a87be978a5fe3281c7ecec8c0cdb512517e0",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

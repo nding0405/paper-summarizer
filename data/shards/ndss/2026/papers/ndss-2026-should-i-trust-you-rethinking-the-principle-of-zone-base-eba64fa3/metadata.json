@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2026-should-i-trust-you-rethinking-the-principle-of-zone-base-eba64fa3",
   "title": "Should I Trust You? Rethinking the Principle of Zone-Based Isolation DNS Bailiwick Checking",
+  "abstract": "DNS cache poisoning attacks covertly hijack domain access by injecting forged resource records into resolvers. To counter this, resolvers employ bailiwick checking, a critical defense mechanism designed to filter potentially malicious records from DNS responses. However, in the context of third-party services, a misalignment between domain ownership and the traditional, top-down zone delegation model has emerged, posing significant challenges to the effectiveness of bailiwick checks.\n\nIn this paper, we present a systematic analysis of the design and implementation of bailiwick checking. We demonstrated that mainstream resolvers generally adopt a conservatism principle: they will cache any resource record that satisfies minimal constraints, regardless of its direct relevance to the originating query . Building on this finding, we propose a novel cache poisoning attack (termed CUCKOO DOMAIN): by controlling one single subdomain, attackers can compromise its parent domain or its sibling domains. The results of our testing revealed that seven major DNS resolver implementations, including BIND9 and Microsoft DNS, are vulnerable. Through a large-scale measurement study, we confirmed that 44.64% of open resolvers and 21 major public DNS providers are also at risk. In addition, we found that over a million subdomains provided by 7 providers—including No-IP, ClouDNS, and Akamai—are potentially vulnerable to hijacking through this attack. We have conducted a responsible disclosure, reporting the affected software vendors and service providers. BIND9, Unbound, PowerDNS and Technitium have acknowledged our reports and assigned 3 CVEs. We call upon the community and software vendors to address the new challenges that modern service ecosystems pose to the effectiveness of bailiwick checking.",
+  "abstract_source_id": "src-abstract-ndss-2026-eba64fa3",
   "venue": "ndss",
   "year": 2026,
   "track_or_session": "Fall submission cycle",
@@ -160,6 +162,19 @@
       "official": false,
       "supports": [
         "independent proceedings identity reconciliation"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2026-eba64fa3",
+      "url": "https://www.ndss-symposium.org/ndss-paper/should-i-trust-you-rethinking-the-principle-of-zone-based-isolation-dns-bailiwick-checking/",
+      "kind": "paper-page",
+      "title": "Should I Trust You? Rethinking the Principle of Zone-Based Isolation DNS Bailiwick Checking",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:23:08Z",
+      "content_hash": "sha256:6834c41eca481d1b677383b81047185b31b840a821ff6da8b68a99847e5722d5",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "fast-2025-rethinking-the-request-to-io-transformation-process-of-f-ec2dd2f5",
   "title": "Rethinking the Request-to-IO Transformation Process of File Systems for Full Utilization of High-Bandwidth SSDs",
+  "abstract": "The capacity and bandwidth of modern Solid-State Drives (SSDs) have been steadily increasing in recent years. Unfortunately, existing SSD file systems that transform user requests to memory-page aligned homogeneous block IOs have by and large failed to make full use of the superior write bandwidth of SSDs even for large writes. Our experimental analysis identifies three main root causes of this write inefficiency, namely, 1) SSD-page alignment cost, 2) page caching overhead, and 3) insufficient IO concurrency.\n\nTo fully exploit the potentials offered by modern SSDs, this paper proposes a heterogeneous-IO orchestrated file system with an alignment-based write-partition, or OrchFS, that leverages a small-size NVM (Non-Volatile Memory) to maximize SSD performance. OrchFS extends and improves the request-to-IO transformation functionality of file systems to proactively transform file-writes into SSD-page aligned SSD-IOs and/or remaining SSD-page unaligned NVM-IOs, and then to perform these IOs via their respective optimal data paths and in an explicit multi-threaded manner. To this end, OrchFS presents several novel enabling techniques, including heterogeneous-unit data layout, alignment-based file write partition, unified per-file mapping structure and embedded parallel IO engine. The experimental results show that OrchFS outperforms 1) EXT4 and F2FS on SSD, 2) NOVA, OdinFS and ArckFS on NVM, and 3) Strata, SPFS and PHFS on hybrid NVM-SSD by up to 29.76× and 6.79× in write and read performances, respectively.",
+  "abstract_source_id": "src-abstract-fast-2025-ec2dd2f5",
   "venue": "fast",
   "year": 2025,
   "track_or_session": "File Systems",
@@ -203,6 +205,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-fast-2025-ec2dd2f5",
+      "url": "https://www.usenix.org/conference/fast25/presentation/zhan",
+      "kind": "paper-page",
+      "title": "Rethinking the Request-to-IO Transformation Process of File Systems for Full Utilization of High-Bandwidth SSDs",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:01:14Z",
+      "content_hash": "sha256:83c373d6d020e22316d60acd18e5757d5fcf8b177b75ff71e044344cb6a24c14",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

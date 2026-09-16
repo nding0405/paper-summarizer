@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2025-housefuzz-service-aware-grey-box-fuzzing-for-vulnerabili-77ff584e",
   "title": "HouseFuzz: Service-Aware Grey-Box Fuzzing for Vulnerability Detection in Linux-Based Firmware",
+  "abstract": "To date, grey-box fuzzing has become an essential technique to detect vulnerabilities implied in Linux-based firmware. However, existing fuzzing approaches commonly encounter three overlooked obstacles stemming from firmware service characteristics, which largely hinder the effectiveness and efficiency of vulnerability identification. Firstly, the multi-process nature of firmware services is oversimplified during both the emulation and the fuzzing procedures, limiting the scope of firmware testing. Furthermore, firmware services usually incorporate customized service protocols, which feature rich and stringent semantic constraints, causing unique challenges for input generation. To address these obstacles, this paper proposes a service-aware grey-box fuzzing tool HouseFuzz. During the firmware emulation, HouseFuzz carefully traverses the system initialization procedure for identifying those network-facing and daemon processes overlooked by existing approaches. After that, during the fuzzing procedure, HouseFuzz features a multi-process fuzzing framework, enabling the comprehensive inspection of firmware services activated via multiple processes. Furthermore, HouseFuzz leverages both offline and online firmware service analysis to capture the token-level semantic constraints of customized service protocols, based on which HouseFuzz can effectively generate high-quality test cases. In evaluation, compared to SoTA grey-box firmware fuzzing approaches, HouseFuzz identified 76% more network services, achieved 24.8% more code coverage, and detected 175% more 0-day vulnerabilities on the same firmware dataset.",
+  "abstract_source_id": "src-abstract-sp-2025-77ff584e",
   "venue": "sp",
   "year": 2025,
   "track_or_session": "Cycle 2",
@@ -175,6 +177,19 @@
       "official": true,
       "supports": [
         "DOI, authors, affiliations, abstract, publication date, pages, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2025-77ff584e",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "HouseFuzz: Service-Aware Grey-Box Fuzzing for Vulnerability Detection in Linux-Based Firmware",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:47Z",
+      "content_hash": "sha256:d48e5e27e72297ce02860f066764bd9c5cd6e8191e2ebf4b4f15da0fffb6959f",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

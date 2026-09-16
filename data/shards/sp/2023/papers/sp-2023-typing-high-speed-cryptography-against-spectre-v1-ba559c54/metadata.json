@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2023-typing-high-speed-cryptography-against-spectre-v1-ba559c54",
   "title": "Typing High-Speed Cryptography against Spectre v1",
+  "abstract": "The current gold standard of cryptographic software is to write efficient libraries with systematic protections against timing attacks. In order to meet this goal, cryptographic engineers increasingly use high-assurance cryptography tools. These tools guide programmers and provide rigorous guarantees that can be verified independently by library users. However, high-assurance tools reason about overly simple execution models that elide transient execution leakage. Thus, implementations validated by high-assurance cryptography tools remain potentially vulnerable to transient execution attacks such as Spectre or Meltdown. Moreover, proposed countermeasures are not used in practice due to performance overhead.We propose, analyze, implement and evaluate an approach for writing efficient cryptographic implementations that are protected against Spectre v1 attacks. Our approach ensures speculative constant-time, an information flow property which guarantees that programs are protected against Spectre v1. Speculative constant-time is enforced by means of a (value-dependent) information flow type system. The type system tracks security levels depending on whether execution is misspeculating. We implement our approach in the Jasmin framework for high-assurance cryptography, and use it for protecting all implementations of an experimental cryptographic library that includes highly optimized implementations of symmetric primitives, of elliptic-curve cryptography, and of Kyber, a lattice-based KEM recently selected by NIST for standardization. The performance impact of our protections is very low; for example, less than 1% for Kyber and essentially zero for X25519.",
+  "abstract_source_id": "src-abstract-sp-2023-ba559c54",
   "venue": "sp",
   "year": 2023,
   "track_or_session": "Session 4C: Cryptographic proof techniques",
@@ -256,6 +258,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2023-ba559c54",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Typing High-Speed Cryptography against Spectre v1",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:27Z",
+      "content_hash": "sha256:2c3c9cbfdcc9ef58a970a66aadb81bbaf8238409ab69d65565522a11e421be99",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

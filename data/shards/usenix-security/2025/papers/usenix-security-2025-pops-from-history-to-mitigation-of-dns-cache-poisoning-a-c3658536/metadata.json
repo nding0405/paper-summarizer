@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-pops-from-history-to-mitigation-of-dns-cache-poisoning-a-c3658536",
   "title": "POPS: From History to Mitigation of DNS Cache Poisoning Attacks",
+  "abstract": "We present a novel yet simple and comprehensive DNS cache POisoning Prevention System (POPS), designed to integrate as a module in Intrusion Prevention Systems (IPS). POPS addresses statistical DNS poisoning attacks-documented from 2002 to the present-and offers robust protection against similar future threats. It comprises a detection module, which employs three simple rules, and a mitigation module that leverages the TC flag in the DNS header to enhance security. Once activated, the mitigation module has zero false positives or negatives, correcting any such errors on the side of the detection module. Thus, the detection module is allowed to err on the false positive side while minimizing false negatives.\n\nWe first analyze POPS against historical DNS services and attacks, showing that it would have mitigated all network-based statistical poisoning attacks. We then simulate POPS on traffic benchmarks (PCAPs), incorporating current potential network-based statistical poisoning attacks, and benign PCAPs; the simulated attacks still succeed with a probability of 0.0076%. This occurs because five malicious packets go through before POPS detects the attack and activates the mitigation module. In addition, POPS completes its task using only 20%–50% of the time required by other tools (e.g., Suricata or Snort), and after examining just 5%–10% as many packets. It successfully detects DNS cache poisoning attacks-including fragmentation-based variants-that Suricata and Snort consistently miss, highlighting POPS's superiority.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-c3658536",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Network Security 2: Routing and DoS",
@@ -112,6 +114,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-c3658536",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/afek",
+      "kind": "paper-page",
+      "title": "POPS: From History to Mitigation of DNS Cache Poisoning Attacks",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:21:10Z",
+      "content_hash": "sha256:b7ad0e2dbee0cd216098b6d47f958241997c654dd2d76aa5d75ab242c5ddcba1",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

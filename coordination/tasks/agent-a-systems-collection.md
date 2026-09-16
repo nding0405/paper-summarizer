@@ -61,9 +61,7 @@ layers, contribution types, and methods.
 Run once per assigned shard:
 
 ```sh
-PYTHONPATH=src python3 -m systems_phd_explorer.cli validate \
-  --root data/shards/<venue>/<year> \
-  --profile draft
+./mvnw -q compile exec:java -Dexec.args="validate --root data/shards/<venue>/<year>"
 ```
 
 ## Handoff

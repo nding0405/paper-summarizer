@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2026-zooroute-enhancing-cloud-scale-network-reliability-via-c-7a893fdb",
   "title": "ZooRoute: Enhancing Cloud-Scale Network Reliability via Candidate Path Provisioning and Overlay Proactive Rerouting",
+  "abstract": "Failures are inevitable in production-scale cloud networks, making reliability a critical concern for both cloud service providers (CSPs) and their tenants. Existing network failure recovery solutions either fail to provide timely failover or require underlay upgrades, forcing tenants to deploy their own high availability systems with additional CapEX & OpEx. However, most tenants lack the expertise or willingness to invest in such systems but are highly sensitive to service disruptions. This motivates CSPs to assume the responsibility of fast and deterministic failure recovery as a cloud service.\n\nIn this work, we present ZooRoute, a tenant-transparent, underlay-agnostic network failure recovery service in Alibaba Cloud. ZooRoute leverages the overlay layer and enables failure bypass by modifying outer source ports during VXLAN tunnel encapsulation. A set of source port candidates per destination IP are maintained by proactive probing between tunnel endpoints to guarantee one-shot deterministic traffic reroute onto healthy paths. However, scaling such design at planet-scale cloud infra brings challenges such as probing overhead at hypervisors, memory consumption at Tofino gateways, and service disruptions at stateful middleboxes, which we address with a range of novel techniques. Deployed in Alibaba Cloud for 26 months, ZooRoute has significantly improved network reliability, reducing cumulative outage time by 93.19% and masking 98.21% of failures from tenant awareness.",
+  "abstract_source_id": "src-abstract-nsdi-2026-7a893fdb",
   "venue": "nsdi",
   "year": 2026,
   "track_or_session": "Clouds with Benefits",
@@ -517,6 +519,19 @@
         "proceedings page range and page count",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2026-7a893fdb",
+      "url": "https://www.usenix.org/conference/nsdi26/presentation/sun",
+      "kind": "paper-page",
+      "title": "ZooRoute: Enhancing Cloud-Scale Network Reliability via Candidate Path Provisioning and Overlay Proactive Rerouting",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:06:19Z",
+      "content_hash": "sha256:79457755deecf6f15f3ed5ee5ccd442f1a5a0be22c5bfa85710a105da0486aa6",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

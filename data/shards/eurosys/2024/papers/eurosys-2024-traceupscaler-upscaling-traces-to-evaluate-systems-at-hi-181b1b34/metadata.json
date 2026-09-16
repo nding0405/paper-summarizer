@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "eurosys-2024-traceupscaler-upscaling-traces-to-evaluate-systems-at-hi-181b1b34",
   "title": "TraceUpscaler: Upscaling Traces to Evaluate Systems at High Load",
+  "abstract": "Trace replay is a common approach for evaluating systems by rerunning historical traffic patterns, but it is not always possible to find suitable real-world traces at the desired level of system load. Experimenting with higher traffic loads requires upscaling a trace to artificially increase the load. Unfortunately, most prior research has adopted ad-hoc approaches for upscaling, and there has not been a systematic study of how the upscaling approach impacts the results. One common approach is to count the arrivals in a predefined time-interval and multiply these counts by a factor, but this requires generating new requests/jobs according to some model (e.g., a Poisson process), which may not be realistic. Another common approach is to divide all the timestamps in the trace by an upscaling factor to squeeze the requests into a shorter time period. However, this can distort temporal patterns within the input trace. This paper evaluates the pros and cons of existing trace upscaling techniques and introduces a new approach, TraceUpscaler, that avoids the drawbacks of existing methods. The key idea behind TraceUpscaler is to decouple the arrival timestamps from the request parameters/data and upscale just the arrival timestamps in a way that preserves temporal patterns within the input trace. Our work applies to open-loop traffic where requests have arrival timestamps that aren't dependent on previous request completions. We evaluate TraceUpscaler under multiple experimental settings using both real-world and synthetic traces. Through our study, we identify the trace characteristics that affect the quality of upscaling in existing approaches and show how TraceUpscaler avoids these pitfalls. We also present a case study demonstrating how inaccurate trace upscaling can lead to incorrect conclusions about a system's ability to handle high load.",
+  "abstract_source_id": "src-abstract-eurosys-2024-181b1b34",
   "venue": "eurosys",
   "year": 2024,
   "track_or_session": null,
@@ -146,6 +148,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-eurosys-2024-181b1b34",
+      "url": "https://api.openalex.org/works/doi:10.1145/3627703.3629581?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "TraceUpscaler: Upscaling Traces to Evaluate Systems at High Load",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:18:57Z",
+      "content_hash": "sha256:e1f7f22598de936ea44ab8a7fc234879937ab2533b8586241fea2b58ee28f7bd",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

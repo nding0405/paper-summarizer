@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2026-geminet-learning-the-duality-based-topology-agnostic-upd-bf6ddb2d",
   "title": "Geminet: Learning the Duality-based Topology-Agnostic Update Operator for Lightweight Traffic Engineering in Changing Topologies",
+  "abstract": "Recently, researchers have explored ML-based Traffic Engineering (TE), leveraging neural networks to solve TE problems traditionally addressed by optimization. However, existing ML-based TE schemes remain impractical: they either fail to handle topology changes or suffer from poor scalability due to excessive computational and memory overhead. To overcome these limitations, we propose Geminet, a lightweight and scalable ML-based TE framework that can handle changing topologies. Geminet is built upon two key insights: (i) decoupling neural networks from topology by learning a topology-agnostic update operator inspired by classical iterative optimization methods (e.g., gradient descent), which depend only on a few gradient-related quantities; (ii) shifting optimization from path-level routing weights to edge-level dual variables, reducing memory consumption by leveraging the fact that edges are far fewer than paths. Evaluations on WAN and data center datasets show that Geminet significantly improves scalability. Its neural network size is only 0.04%-7% of existing schemes, while handling topology variations as effectively as HARP, a state-of-the-art ML-based TE approach, without performance degradation. When trained on large-scale topologies, Geminet consumes less than 10 GiB of memory compared to more than 80 GiB required by HARP, while achieving 18× faster convergence, demonstrating its potential for large-scale deployment.",
+  "abstract_source_id": "src-abstract-nsdi-2026-bf6ddb2d",
   "venue": "nsdi",
   "year": 2026,
   "track_or_session": "Smart Pipes, Smarter Learning",
@@ -181,6 +183,19 @@
         "proceedings page range and page count",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2026-bf6ddb2d",
+      "url": "https://www.usenix.org/conference/nsdi26/presentation/liu-ximeng",
+      "kind": "paper-page",
+      "title": "Geminet: Learning the Duality-based Topology-Agnostic Update Operator for Lightweight Traffic Engineering in Changing Topologies",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:05:23Z",
+      "content_hash": "sha256:0fd6f18cb716fd5e01e02b7fd2652cd1b8fb9a4e51f64383c42a4036dd4d6655",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

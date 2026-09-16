@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-waltzz-webassembly-runtime-fuzzing-with-stack-invariant-5eb5b01a",
   "title": "Waltzz: WebAssembly Runtime Fuzzing with Stack-Invariant Transformation",
+  "abstract": "WebAssembly (Wasm) is a binary instruction format proposed by major browser vendors to achieve near-native performance on the web and other platforms. By design, Wasm modules should be executed in a memory-safe runtime, which acts as a trusted computing base. Therefore, security vulnerabilities inside runtime implementation can have severe impacts and should be identified and mitigated promptly.\n\nFuzzing is a practical and widely adopted technique for uncovering bugs in real-world programs. However, to apply fuzzing effectively to the domain of Wasm runtimes, it is vital to address two primary challenges: (1) Wasm is a stack-based language and runtimes should verify the correctness of stack semantics, which requires fuzzers to meticulously maintain desired stack semantics to reach deeper states. (2) Wasm acts as a compilation target and includes hundreds of instructions, making it hard for fuzzers to explore different combinations of instructions and cover the input space effectively.\n\nTo address these challenges, we design and implement Waltzz, a practical greybox fuzzing framework tailored for Wasm runtimes. Specifically, Waltzz proposes the concept of stack-invariant code transformation to preserve appropriate stack semantics during fuzzing. Next, Waltzz introduces a versatile suite of mutators designed to systematically traverse diverse combinations of instructions in terms of both control and data flow. Moreover, Waltzz designs a skeleton-based generation algorithm to produce code snippets that are rarely seen in the seed corpus. To demonstrate the efficacy of Waltzz, we evaluate it on seven well-known Wasm runtimes. Compared to the state-of-the-art works, Waltzz can surpass the nearest competitor by finding 12.4% more code coverage even within the large code bases and uncovering 1.38x more unique bugs. Overall, Waltzz has discovered 20 new bugs which have all been confirmed and 17 CVE IDs have been assigned.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-5eb5b01a",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Software Security 3: Fuzzing",
@@ -217,6 +219,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-5eb5b01a",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/zhang-lingming",
+      "kind": "paper-page",
+      "title": "Waltzz: WebAssembly Runtime Fuzzing with Stack-Invariant Transformation",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:22:40Z",
+      "content_hash": "sha256:43c57869b72393ed2a340dd812e4c59465c3b99aac6b550afc47ac3fbd31d238",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

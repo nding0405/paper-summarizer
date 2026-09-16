@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-mmcipher-batching-post-quantum-public-key-encryption-mad-ab3ab86b",
   "title": "mmCipher: Batching Post-Quantum Public Key Encryption Made Bandwidth-Optimal",
+  "abstract": "In applications such as secure group communication and broadcasting, it is important to efficiently deliver multiple messages to different recipients at once. To this end, multi-message multi-recipient Public Key Encryption (mmPKE) enables the batch encryption of multiple messages for multiple independent recipients in one go, significantly reducing costs–particularly bandwidth–compared to the trivial solution of encrypting each message individually. This capability is especially desirable in the post-quantum setting, where the ciphertext length is typically significantly larger than the corresponding plaintext. However, almost all prior works on mmPKE are limited to quantum-vulnerable traditional assumptions.\n\nIn this work, we propose the first CPA-secure mmPKE and Multi-Key Encapsulation Mechanism (mmKEM) from the standard Module Learning with Errors (MLWE) lattice assumption, named mmCipher-PKE and mmCipher-KEM, respectively. Our design proceeds in two steps: (i) We introduce a novel generic construction of mmPKE by proposing a new PKE variant—extended reproducible PKE (XR-PKE)—that enables the reproduction of ciphertexts through additional hints; (ii) We instantiate a lattice-based XR-PKE using a new technique that can precisely estimate the impact of such hints on the ciphertext security while also establishing suitable parameters. We believe both to be of independent interest. As a bonus contribution, we explore generic constructions of adaptively secure mmPKE, resisting adaptive corruption and chosen-ciphertext attacks.\n\nWe also provide an efficient implementation and thorough evaluation of the practical performance of our mmCipher. The results demonstrate substantial bandwidth and computational savings over the state-of-the-art. For example, for 1024 recipients, our mmCipher-KEM achieves a 23–45× reduction in bandwidth overhead, with ciphertexts only 4–9% larger than the plaintexts (near optimal bandwidth), while also offering a 3–5× reduction in computational cost.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-ab3ab86b",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Applications of Cryptography 5",
@@ -156,6 +158,19 @@
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening",
         "prepublication PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-ab3ab86b",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/wang-hongxiao",
+      "kind": "paper-page",
+      "title": "mmCipher: Batching Post-Quantum Public Key Encryption Made Bandwidth-Optimal",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:24:46Z",
+      "content_hash": "sha256:010259804a620fad5d6a5507865e1a4cf9a9cd12e59aaa8e44148b0decd3efce",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-badcontrol-backdoor-attacks-against-control-systems-64ecc98d",
   "title": "BADControl: Backdoor Attacks Against Control Systems",
+  "abstract": "We introduce BADCONTROL, the first backdoor attack against low-level controllers that uses physical triggers. The attack poisons operational data to implant a vulnerability that can be activated by an exogenous signal from the environment, such as a specific driving maneuver or adversarial road patches within autonomous driving applications. BADCONTROL solves a constrained optimization problem by using a projected gradient ascent to modify the data, maximizing the frequency response of the controlled system at a target frequency. This method differs from backdoor attacks against Deep Learning (DL) and Reinforcement Learning (RL) models, which manipulate high-dimensional model inputs or reward functions. We additionally propose two defenses: one based on regularization and one based on robust optimization, to limit the worst-case amplification of trigger signals. This is achieved by converting infinite poisoning scenarios into a single, tractable optimization problem via a specialized mathematical transformation. We evaluate BADCONTROL on Proportional-Integral-Derivative (PID) and Linear-Quadratic-Regulator (LQR) controllers through simulations and physical experiments. In the adaptive cruise control scenario, we achieve a 100% crash rate, while in lane-keeping control, the backdoor causes the victim vehicle to steer 62% into the opposing lane, compared to 0% in both cases without a backdoor. By contrast, a state-of-the-art falsification framework for autonomous vehicles identifies only a single crash instance over 30 trials, underscoring its stealthiness.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-64ecc98d",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Hardware Security 3",
@@ -156,6 +158,19 @@
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening",
         "prepublication PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-64ecc98d",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/burbano",
+      "kind": "paper-page",
+      "title": "BADControl: Backdoor Attacks Against Control Systems",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:23:08Z",
+      "content_hash": "sha256:5076f261b8d732efc598643fea2c909eccc65ab8da82d6da58003e2d3cf33fc0",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

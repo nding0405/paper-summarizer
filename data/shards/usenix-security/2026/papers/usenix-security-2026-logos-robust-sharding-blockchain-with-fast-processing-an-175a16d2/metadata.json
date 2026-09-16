@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-logos-robust-sharding-blockchain-with-fast-processing-an-175a16d2",
   "title": "Logos: Robust Sharding Blockchain With Fast Processing and Optimal Cross-Shard Overhead",
+  "abstract": "Sharding blockchains improve scalability significantly by partitioning the network into shards. Due to the substantial fraction of cross-shard transactions (CSTXs) related to multiple shards, cross-shard transaction processing (CSTP) is critical to the system security and performance. However, existing CSTP methods suffer from limited robustness caused by invalid CSTXs flooding by malicious nodes and impose high overhead, especially in asynchronous networks.\n\nWe present Logos, a robust sharding blockchain with fast CSTP and optimal cross-shard overhead. Logos adopts a novel robust broadcast-transmission-agreement pattern. Each input shard only invokes a new designed broadcast primitive to generate input availability states. After the states are delivered to involved shards by an innovative parallel single-tosingle transmission mechanism, valid CSTXs are committed via an agreement protocol while invalid ones are discarded. Logos is proven to achieve an optimal intra-shard overhead for valid CSTP and lower overhead for invalid CSTP. Besides, Logos achieves reliable transmission with optimal cross-shard overhead. Experiments conducted on 1000 AWS-EC2 nodes across 4 regions demonstrate that Logos realizes 50% latency compared to the baseline (Kronos, NDSS'25) and a peak throughput of 132.8 ktx/sec. Besides, the cross-shard network usage of Logos impressively remains only 1/210 of Kronos. Under malicious flooding attacks, Logos maintains 2.86× the throughput of Kronos, demonstrating strong robustness.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-175a16d2",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Applications of Cryptography 2",
@@ -282,6 +284,19 @@
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening",
         "prepublication PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-175a16d2",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/liu-yizhong",
+      "kind": "paper-page",
+      "title": "Logos: Robust Sharding Blockchain With Fast Processing and Optimal Cross-Shard Overhead",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:24:33Z",
+      "content_hash": "sha256:8ad60ce5753754237e1b4b12d8e2f3b023efec8f6f5ea15c6af6155e5685e8ba",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

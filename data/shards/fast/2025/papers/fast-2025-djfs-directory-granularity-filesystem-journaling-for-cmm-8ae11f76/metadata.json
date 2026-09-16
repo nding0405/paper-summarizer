@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "fast-2025-djfs-directory-granularity-filesystem-journaling-for-cmm-8ae11f76",
   "title": "DJFS : Directory-Granularity Filesystem Journaling for CMM-H SSDs",
+  "abstract": "In this paper, we propose DJFS, Journaling Filesystem with per-Directory Transaction . By analyzing the file access patterns in eight popular applications, we find that most file update operations are centered around the associated directory. Based upon this observation, we propose that the journaling filesystem defines the transaction in per-directory basis. DJFS consists of three key ingredients: path-based transaction selection, transaction coalescing and transaction conflict resolution. Per-directory journal transaction successfully addresses the fundamental issues associated with improving the performance of the journaling filesystem: reduce the lock contention, reduce the transaction conflict, reduce the transaction lock-up, and parallelize the journal commit. DJFS improves the throughput by 4.5× in Varmail, 2.5× in MDTest, and 3.7× in Exim, compared to the state-of-the-art journaling filesystem, FastCommit.",
+  "abstract_source_id": "src-abstract-fast-2025-8ae11f76",
   "venue": "fast",
   "year": 2025,
   "track_or_session": "File Systems",
@@ -245,6 +247,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-fast-2025-8ae11f76",
+      "url": "https://www.usenix.org/conference/fast25/presentation/yoo",
+      "kind": "paper-page",
+      "title": "DJFS : Directory-Granularity Filesystem Journaling for CMM-H SSDs",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:01:02Z",
+      "content_hash": "sha256:e67c6a38a9244b7425068f6d12a263b440afb1a1fa3979df1f9a61fe303c1e0d",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

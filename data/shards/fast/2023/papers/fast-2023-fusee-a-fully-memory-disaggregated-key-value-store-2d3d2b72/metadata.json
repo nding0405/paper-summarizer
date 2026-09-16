@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "fast-2023-fusee-a-fully-memory-disaggregated-key-value-store-2d3d2b72",
   "title": "FUSEE: A Fully Memory-Disaggregated Key-Value Store",
+  "abstract": "Distributed in-memory key-value (KV) stores are embracing the disaggregated memory (DM) architecture for higher resource utilization. However, existing KV stores on DM employ a \\emph{semi-disaggregated} design that stores KV pairs on DM but manages metadata with monolithic metadata servers, hence still suffering from low resource efficiency on metadata servers. To address this issue, this paper proposes FUSEE, a FUlly memory-diSaggrEgated KV StorE that brings disaggregation to metadata management. FUSEE replicates metadata, i.e., the index and memory management information, on memory nodes, manages them directly on the client side, and handles complex failures under the DM architecture. To scalably replicate the index on clients, FUSEE proposes a client-centric replication protocol that allows clients to concurrently access and modify the replicated index. To efficiently manage disaggregated memory, FUSEE adopts a two-level memory management scheme that splits the memory management duty among clients and memory nodes. Finally, to handle the metadata corruption under client failures, FUSEE leverages an embedded operation log scheme to repair metadata with low log maintenance overhead. We evaluate FUSEE with both micro and YCSB hybrid benchmarks. The experimental results show that FUSEE outperforms the state-of-the-art KV stores on DM by up to 4.5 times with less resource consumption.",
+  "abstract_source_id": "src-abstract-fast-2023-2d3d2b72",
   "venue": "fast",
   "year": 2023,
   "track_or_session": "Key-Value Stores",
@@ -203,6 +205,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-fast-2023-2d3d2b72",
+      "url": "https://www.usenix.org/conference/fast23/presentation/shen",
+      "kind": "paper-page",
+      "title": "FUSEE: A Fully Memory-Disaggregated Key-Value Store",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:00:29Z",
+      "content_hash": "sha256:e1c7e07615290b3c5ac5938868efb9becffb65dcec526d165ac9cff78a6d3450",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

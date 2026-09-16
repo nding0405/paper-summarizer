@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "eurosys-2025-besa-extending-bugs-triggered-by-runtime-testing-via-sta-8aae65b4",
   "title": "BESA: Extending Bugs Triggered by Runtime Testing via Static Analysis",
+  "abstract": "Due to limited test cases and execution scenarios, runtime testing often has insufficient code coverage and thus misses many real bugs. To tackle this problem, we propose a novel idea that static analysis of the triggered bug in runtime testing can help extend and detect extra bugs missed by runtime testing. Based on this idea, we develop a new approach named BESA, which can extend null-pointer dereferences found by runtime testing via static analysis. It first collects trace information about the triggered bug in runtime testing, by monitoring PoC (Proof of Concept) execution or analyzing existing failure log. Then, with this trace information, BESA uses a backward propagation analysis based on the call stack of the triggered bug, to effectively identify source variables propagating problematic value to the buggy variable. Finally, according to each source variable, BESA uses a summary-based alias-aware analysis to efficiently track target variables aliased with the buggy variable for detecting extra bugs. We have evaluated BESA on 25 known null-pointer dereferences found by runtime testing in four popular programs (SQLite, VIM, GPAC and Linux kernel). BESA finds 57 extra bugs, and 18 of them are new bugs that have been confirmed.",
+  "abstract_source_id": "src-abstract-eurosys-2025-8aae65b4",
   "venue": "eurosys",
   "year": 2025,
   "track_or_session": "Session-8.1: Bug finding - Location: Penn - Chair: Julia Lawall",
@@ -83,6 +85,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-eurosys-2025-8aae65b4",
+      "url": "https://api.openalex.org/works/doi:10.1145/3689031.3696089?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "BESA: Extending Bugs Triggered by Runtime Testing via Static Analysis",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:19:01Z",
+      "content_hash": "sha256:4b7bccc13c80e631f717902fd9f2104140f8ce2007ee5a29f28efa8074fd1ef4",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

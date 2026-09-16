@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2023-raizn-redundant-array-of-independent-zoned-namespaces-d96018dc",
   "title": "RAIZN: Redundant Array of Independent Zoned Namespaces",
+  "abstract": "Zoned Namespace (ZNS) SSDs are the latest evolution of host-managed flash storage, enabling improved performance at a lower cost-per-byte than traditional block interface (conventional) SSDs. To date, there is no support for arranging these new devices in arrays that offer increased throughput and reliability (RAID). We identify key challenges in designing redundant ZNS SSD arrays, such as managing metadata updates and persisting partial stripe writes in the absence of overwrite support from the device. We present RAIZN, a logical volume manager that exposes a ZNS interface and stripes data and parity across ZNS SSDs. RAIZN provides more stable throughput and lower tail latencies than an mdraid array of conventional SSDs based on the same hardware platform. RAIZN achieves superior performance because device-level garbage collection slows down conventional SSDs. We confirm that the benefits of RAIZN translate to higher layers by adapting the F2FS file system, RocksDB key-value store, and MySQL database to work with ZNS and leverage its benefits by closely controlling garbage collection. Compared to arrays of conventional SSDs experiencing on-device garbage collection, RAIZN leverages the ZNS interface to maintain consistent performance with up to 14× higher throughput and lower tail latency.",
+  "abstract_source_id": "src-abstract-asplos-2023-d96018dc",
   "venue": "asplos",
   "year": 2023,
   "track_or_session": "Session 5B: Storage",
@@ -264,6 +266,19 @@
       "official": true,
       "supports": [
         "Author-deposited archival software or evaluation artifact associated with the conference paper."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2023-d96018dc",
+      "url": "https://api.openalex.org/works/doi:10.1145/3575693.3575746?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "RAIZN: Redundant Array of Independent Zoned Namespaces",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T21:59:40Z",
+      "content_hash": "sha256:94341753e8d0c80f5c54e7281d3f67efe9e4418e5e5cb40a2db50f90c35f1aee",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

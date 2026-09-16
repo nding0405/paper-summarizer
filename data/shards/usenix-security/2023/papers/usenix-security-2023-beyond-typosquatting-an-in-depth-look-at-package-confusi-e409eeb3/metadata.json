@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2023-beyond-typosquatting-an-in-depth-look-at-package-confusi-e409eeb3",
   "title": "Beyond Typosquatting: An In-depth Look at Package Confusion",
+  "abstract": "Package confusion incidents - where a developer is misled into importing a package other than the intended one - are one of the most severe issues in supply chain security with significant security implications, especially when the wrong package has malicious functionality. While the prevalence of the issue is generally well-documented, little work has studied the range of mechanisms by which confusion in a package name could arise or be employed by an adversary. In our work, we present the first comprehensive categorization of the mechanisms used to induce confusion, and we show how this understanding can be used for detection.\n\nFirst, we use qualitative analysis to identify and rigorously define 13 categories of confusion mechanisms based on a dataset of 1200+ documented attacks. Results show that, while package confusion is thought to mostly exploit typing errors, in practice attackers use a variety of mechanisms, many of which work at semantic, rather than syntactic, level. Equipped with our categorization, we then define detectors for the discovered attack categories, and we evaluate them on the entire npm package set.\n\nEvaluation of a sample, performed through an online survey, identifies a subset of highly effective detection rules which (i) return high-quality matches (77% matches marked as potentially or highly confusing, and 18% highly confusing) and (ii) generate low warning overhead (1 warning per 100M+ package pairs). Comparison with state-of-the-art reveals that the large majority of such pairs are not flagged by existing tools. Thus, our work has the potential to concretely improve the identification of confusable package names in the wild.",
+  "abstract_source_id": "src-abstract-usenix-security-2023-e409eeb3",
   "venue": "usenix-security",
   "year": 2023,
   "track_or_session": "Supply Chains and Third-Party Code",
@@ -154,6 +156,19 @@
       "official": true,
       "supports": [
         "authors, affiliations when published, abstract, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2023-e409eeb3",
+      "url": "https://www.usenix.org/conference/usenixsecurity23/presentation/neupane",
+      "kind": "paper-page",
+      "title": "Beyond Typosquatting: An In-depth Look at Package Confusion",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:10:01Z",
+      "content_hash": "sha256:df81795bafecf815c4be6f5d6e742cd31b60a3989bba920ada04d464ebbad4dc",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

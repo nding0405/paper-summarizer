@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "eurosys-2026-effective-on-hardware-fuzzing-of-embedded-operating-syst-5e7be35e",
   "title": "Effective On-Hardware Fuzzing of Embedded Operating Systems",
+  "abstract": "Fuzz testing embedded OSs is difficult because their implementations vary widely and rely on specialized hardware. These factors render many existing methods ineffective, since they prevent adapting established fuzzing routines, disrupt communication with the target OS, and impede observation of runtime behavior. This paper introduces EOF, a feedback-guided fuzzer designed to test embedded OSs running on actual hardware. Through the debug port, EOF communicates with the target embedded OS, executes test cases, and collect feedback data, with no dependence on OS services. Then, EOF deploys a cross-platform agent and executes API-aware input across diverse hardware. Last, EOF collects runtime coverage and critical execution events to identify interesting seeds and find potential bugs during fuzzing. We implemented EOF and evaluated its performance on four different embedded OSs, where EOF discovered 19 bugs and achieved a 50.84% coverage improvement on average compared with other comparable fuzzing methods.",
+  "abstract_source_id": "src-abstract-eurosys-2026-5e7be35e",
   "venue": "eurosys",
   "year": 2026,
   "track_or_session": null,
@@ -222,6 +224,19 @@
       "official": false,
       "supports": [
         "Publisher-deposited proceedings identity and print publication date."
+      ]
+    },
+    {
+      "id": "src-abstract-eurosys-2026-5e7be35e",
+      "url": "https://api.openalex.org/works/doi:10.1145/3767295.3769326?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Effective On-Hardware Fuzzing of Embedded Operating Systems",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:20:16Z",
+      "content_hash": "sha256:70a79236ef7e0998b295f864f1e2c82e32d3169baa617ce9000627fa0d965237",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

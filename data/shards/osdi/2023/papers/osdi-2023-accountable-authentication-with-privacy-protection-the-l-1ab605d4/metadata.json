@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2023-accountable-authentication-with-privacy-protection-the-l-1ab605d4",
   "title": "Accountable authentication with privacy protection: The Larch system for universal login",
+  "abstract": "Credential compromise is hard to detect and hard to mitigate. To address this problem, we present larch, an accountable authentication framework with strong security and privacy properties. Larch protects user privacy while ensuring that the larch log server correctly records every authentication. Specifically, an attacker who compromises a user’s device cannot authenticate without creating evidence in the log, and the log cannot learn which web service (relying party) the user is authenticating to. To enable fast adoption, larch is backwards-compatible with relying parties that support FIDO2, TOTP, and password-based login. Furthermore, larch does not degrade the security and privacy a user already expects: the log server cannot authenticate on behalf of a user, and larch does not allow relying parties to link a user across accounts. We implement larch for FIDO2, TOTP, and password-based login. Given a client with four cores and a log server with eight cores, an authentication with larch takes 150ms for FIDO2, 91ms for TOTP, and 74ms for passwords (excluding preprocessing, which takes 1.23s for TOTP).",
+  "abstract_source_id": "src-abstract-osdi-2023-1ab605d4",
   "venue": "osdi",
   "year": 2023,
   "track_or_session": "Secure Your Bits I",
@@ -159,6 +161,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2023-1ab605d4",
+      "url": "https://www.usenix.org/conference/osdi23/presentation/dauterman",
+      "kind": "paper-page",
+      "title": "Accountable authentication with privacy protection: The Larch system for universal login",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:06:19Z",
+      "content_hash": "sha256:3d37ba90f99943487ffd78ffcda04784f199ef696d084997faf662eceb1c5ce3",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2026-triton-sanitizer-a-fast-and-device-agnostic-memory-sanit-c852467b",
   "title": "Triton-Sanitizer: A Fast and Device-Agnostic Memory Sanitizer for Triton with Rich Diagnostic Context",
+  "abstract": "Memory access errors remain one of the most pervasive bugs in GPU programming. Existing GPU sanitizers such as compute-sanitizer detect memory access errors by instrumenting every memory instruction in low-level IRs or binaries, which imposes high overhead and provides minimal memory access error diagnostic context for fixing problems. We present Triton-Sanitizer, the first device-agnostic memory sanitizer designed for Triton, a domain-specific language for developing portable, efficient GPU kernels for deep learning workloads. Triton-Sanitizer leverages Triton's tile-oriented semantics to construct symbolic expressions for memory addresses and masks, verifies them with an SMT solver, and selectively falls back to eager simulation for indirect accesses. This hybrid analysis enables precise detection of memory access errors without false positives while avoiding the cost of per-access instrumentation. Beyond detection, Triton-Sanitizer generates rich diagnostic reports that attribute violations to the tensors nearest to the violated addresses, track the complete call path, and expose the symbolic operations responsible for incorrect addresses. Evaluated on seven widely used open-source repositories of Triton kernels, Triton-Sanitizer uncovered 24 previously unknown memory access errors, of which 8 have already been fixed and upstreamed by us. Compared to compute-sanitizer, Triton-Sanitizer achieves speedups ranging from 1.07× to 14.66×, with an average improvement of 1.62×, demonstrating its ability to enhance performance, precision, and usability in memory access error detection.",
+  "abstract_source_id": "src-abstract-asplos-2026-c852467b",
   "venue": "asplos",
   "year": 2026,
   "track_or_session": "Session 4A: ML Training & Monitoring",
@@ -251,6 +253,19 @@
       "official": false,
       "supports": [
         "Indexed abstract used for strict relevance classification and indexed arXiv identifier where available."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2026-c852467b",
+      "url": "https://api.openalex.org/works/doi:10.1145/3779212.3790241?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Triton-Sanitizer: A Fast and Device-Agnostic Memory Sanitizer for Triton with Rich Diagnostic Context",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:07:01Z",
+      "content_hash": "sha256:a20867d7dfda5b74efb1ec810c3252934984f7a15cfdd2c302745486529a53a5",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

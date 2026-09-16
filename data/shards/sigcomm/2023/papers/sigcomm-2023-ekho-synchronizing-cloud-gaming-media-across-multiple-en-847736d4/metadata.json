@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sigcomm-2023-ekho-synchronizing-cloud-gaming-media-across-multiple-en-847736d4",
   "title": "Ekho: Synchronizing Cloud Gaming Media Across Multiple Endpoints",
+  "abstract": "Online cloud gaming platforms stream game media to multiple end-points (e.g., a television display and a controller-connected headset) via possibly different networks with considerably different latencies. This leads to the media being played out of sync with one another, and severely degrades user experience. Typical approaches that rely on network and software timing measurements fail to reach synchronization goals. In this work, we propose Ekho, a robust and efficient end-to-end approach for synchronizing streams transmitted to two devices. Ekho adds faint, human-inaudible pseudo-noise (PN) markers to the game audio, and listens for these markers in the chat audio captured by the player's microphone to measure inter-stream delay (ISD). The game server then compensates for the ISD to synchronize the streams. We evaluate Ekho in depth, with a corpus of audio samples from popular online games, and demonstrate that it calculates ISD with sub-millisecond accuracy, has low computational overhead, and is resilient to background chatter, compression and microphone quality. In end-to-end tests over WiFi and cellular links with frequent packet loss and playback disruption, Ekho maintains human-imperceptible ISD (< 10 ms) 86.8% of the time. Without Ekho, the ISD exceeds 50 ms at all times.",
+  "abstract_source_id": "src-abstract-sigcomm-2023-847736d4",
   "venue": "sigcomm",
   "year": 2023,
   "track_or_session": "Quality Experiences — Research Paper",
@@ -151,6 +153,19 @@
         "publisher-deposited ORCIDs",
         "proceedings page range and print publication date",
         "empty publisher relation metadata for alternate-version checks"
+      ]
+    },
+    {
+      "id": "src-abstract-sigcomm-2023-847736d4",
+      "url": "https://api.openalex.org/works/doi:10.1145/3603269.3604826?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Ekho: Synchronizing cloud gaming media across multiple endpoints",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:22:50Z",
+      "content_hash": "sha256:c6978b9ff3ff7a9b21f78a1a4a12d63eb3f7fa0e5c82c3a7f7a8275c4ca0211e",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "atc-2025-irhash-efficient-multi-language-compiler-caching-by-ir-l-533adf2a",
   "title": "IRHash: Efficient Multi-Language Compiler Caching by IR-Level Hashing",
+  "abstract": "Compilation caches (CCs) save time, energy, and money by avoiding redundant compilations. They are provided by means of compiler wrappers (Ccache, sccache, cHash) or native build system features (Bazel, Buck2). Conceptually, a CC pays off if the achieved savings by cache hits outweigh the extra costs for cache lookups. Thus, most techniques try to detect a cache hit early in the compilation process by hashing the (preprocessed/tokenized) source code, but hashing the AST has also been suggested to achieve even higher end-to-end savings, as the increased accuracy outweighs the additional parsing costs. Technically, all these CCs are currently limited to C or C-style languages.\n\nIn this paper we take the conceptual question of the “right” lookup level for compiler caches one step further onto the IR level. We provide IRHash, an IR-level CC for LLVM that not only offers higher accuracy than the previous works but can also support all languages with an LLVM backend.\n\nWe evaluate IRHash against Ccache and cHash based on the development history of 16 open-source projects written in C, C++, Fortran, and Haskell. With an average build time reduction of 19% across all C projects, IRHash provides better end-to-end savings than Ccache (10%) and cHash (16%), while additionally supporting more languages.",
+  "abstract_source_id": "src-abstract-atc-2025-533adf2a",
   "venue": "atc",
   "year": 2025,
   "track_or_session": "Finding Faults: Concurrency, Numerics, and Kernel Fuzzing",
@@ -159,6 +161,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-atc-2025-533adf2a",
+      "url": "https://www.usenix.org/conference/atc25/presentation/landsberg",
+      "kind": "paper-page",
+      "title": "IRHash: Efficient Multi-Language Compiler Caching by IR-Level Hashing",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T21:59:49Z",
+      "content_hash": "sha256:d7ad32d4bdb5e7a943796ed18f8ebd90397f9213fbf6b3dddd6ece91adc33ab6",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

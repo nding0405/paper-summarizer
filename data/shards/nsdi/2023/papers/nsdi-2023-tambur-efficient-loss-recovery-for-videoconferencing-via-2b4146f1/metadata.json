@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2023-tambur-efficient-loss-recovery-for-videoconferencing-via-2b4146f1",
   "title": "Tambur: Efficient loss recovery for videoconferencing via streaming codes",
+  "abstract": "Packet loss degrades the quality of experience (QoE) of videoconferencing. The standard approach to recovering lost packets for long-distance communication where retransmission takes too long is forward error correction (FEC). Conventional approaches for FEC for real-time applications are inefficient at protecting against bursts of losses. Yet such bursts frequently arise in practice and can be better tamed with a new class of theoretical FEC schemes, called \"streaming codes,\" that require significantly less redundancy to recover bursts. However, existing streaming codes do not address the needs of videoconferencing, and their potential to improve the QoE for videoconferencing is largely untested. \\emph{Tambur} is a new streaming-codes-based approach to videoconferencing that overcomes the aforementioned limitations. We first evaluate Tambur in simulation over a large corpus of traces from Microsoft Teams. Tambur reduces the frequency of decoding failures for video frames by 26% and the bandwidth used for redundancy by 35% compared to the baseline. We implement Tambur in C++, integrate it with a videoconferencing application, and evaluate end-to-end QoE metrics over an emulated network showcasing substantial benefits for several key metrics. For example, Tambur reduces the frequency and cumulative duration of freezes by 26% and 29%, respectively.",
+  "abstract_source_id": "src-abstract-nsdi-2023-2b4146f1",
   "venue": "nsdi",
   "year": 2023,
   "track_or_session": "Video",
@@ -182,6 +184,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2023-2b4146f1",
+      "url": "https://www.usenix.org/conference/nsdi23/presentation/rudow",
+      "kind": "paper-page",
+      "title": "Tambur: Efficient loss recovery for videoconferencing via streaming codes",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:02:40Z",
+      "content_hash": "sha256:aab088c14b619253075d39a12ccb8cf2a54dccc0de34e265e552649faa7407e2",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

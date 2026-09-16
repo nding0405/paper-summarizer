@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2026-z-ip-s-erv-fast-and-memory-efficient-llm-inference-with-1d360600",
   "title": "Z ip S erv : Fast and Memory-Efficient LLM Inference with Hardware-Aware Lossless Compression",
+  "abstract": "Lossless model compression holds tremendous promise for alleviating the memory and bandwidth bottlenecks in bitexact Large Language Model (LLM) serving. However, existing approaches often result in substantial inference slowdowns due to fundamental design mismatches with GPU architectures: at the kernel level, variable-length bitstreams produced by traditional entropy codecs break SIMT parallelism; at the system level, decoupled pipelines lead to redundant memory traffic. We present ZipServ, a lossless compression framework co-designed for efficient LLM inference. ZipServ introduces Tensor-Core-Aware Triple Bitmap Encoding (TCA-TBE), a novel fixed-length format that enables constant-time, parallel decoding, together with a fused decompression-GEMM (ZipGEMM) kernel that decompresses weights on-the-fly directly into Tensor Core registers. This \"load-compressed, compute-decompressed\" design eliminates intermediate buffers and maximizes compute intensity. Experiments show that ZipServ reduces the model size by up to 30%, achieves up to 2.21× kernel-level speedup over NVIDIA’s cuBLAS, and expedites end-to-end inference by an average of 1.22× over vLLM. ZipServ is the first lossless compression system that provides both storage savings and substantial acceleration for LLM inference on GPUs.",
+  "abstract_source_id": "src-abstract-asplos-2026-1d360600",
   "venue": "asplos",
   "year": 2026,
   "track_or_session": "Session 1B: LLM Serving: Latency & Scheduling",
@@ -236,6 +238,19 @@
       "official": false,
       "supports": [
         "Indexed abstract used for strict relevance classification and indexed arXiv identifier where available."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2026-1d360600",
+      "url": "https://api.openalex.org/works/doi:10.1145/3779212.3790250?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Z ip S erv : Fast and Memory-Efficient LLM Inference with Hardware-Aware Lossless Compression",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:07:20Z",
+      "content_hash": "sha256:bdb5eb9dfffa081d7f8544f46d49ad775f8dab1f2e57370bf8274b50c4d2b345",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

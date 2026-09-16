@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sigcomm-2026-ranpilot-making-ai-functionalities-robust-to-dynamic-o-r-b51da3c2",
   "title": "RANPilot: Making AI Functionalities Robust to Dynamic O-RAN Reconfigurations",
+  "abstract": "The Open Radio Access Network (O-RAN) promises unprecedented flexibility through its reconfigurable architecture and AI-driven control. However, this agility exposes a critical fragility: AI models trained on one network configuration suffer significant performance degradation after an upgrade due to dramatic data drift. The standard solution, reactive retraining, is unacceptably slow, leaving the network in a suboptimal state for tens of minutes and undermining the core benefits of O-RAN's dynamism. This paper introduces RANPilot, the first framework to address this challenge through proactive AI adaptation. RANPilot constructs a lightweight \"virtual O-RAN\" (a trace-driven emulator) to synthesize high-fidelity training data representing the post-reconfiguration state before the physical change occurs, allowing AI models to be adapted in advance. Extensive experiments on a real-world 5G testbed demonstrate that RANPilot achieves near interruption-free AI services upon reconfiguration, reducing AI downtime by 85% to 94% against reactive baselines. By shifting the AI evolution paradigm from reactive redevelopment to proactive preparation, RANPilot explores a digital-leadoff approach to enable robust AI in reconfigurable O-RAN deployments.",
+  "abstract_source_id": "src-abstract-b51da3c2",
   "venue": "sigcomm",
   "year": 2026,
   "track_or_session": "Research Session 4: Cellular & RAN Systems — Research Paper",
@@ -212,6 +214,19 @@
       "official": true,
       "supports": [
         "official main-paper scope and track definitions"
+      ]
+    },
+    {
+      "id": "src-abstract-b51da3c2",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/search/match?query=RANPilot%3A%20Making%20AI%20Functionalities%20Robust%20to%20Dynamic%20O-RAN%20Reconfigurations&fields=title,abstract",
+      "kind": "semantic-scholar",
+      "title": "RANPilot: Making AI Functionalities Robust to Dynamic O-RAN Reconfigurations",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T23:05:50Z",
+      "content_hash": "sha256:a81afd97b4a03ddf430d55e3fd2d936fa84cac46879ca7ff64c4f7c0aef0a6dc",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

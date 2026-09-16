@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2026-wbslt-a-framework-for-white-box-encryption-based-on-subs-ca7a3936",
   "title": "WBSLT: A Framework for White-Box Encryption Based on Substitution-Linear Transformation Ciphers",
+  "abstract": "Encryption algorithms face various key-extraction attacks, prompting a variety of defensive works under different threat models. Among these, the white-box threat model has the strongest adversarial scenario, where attackers have full access to and control over the cryptographic implementation and its execution environment. However, prior white-box encryption designs primarily protected a single key-dependent table, enabling white-box and side-channel attacks to recover the key. Based on our observation, fuzzing the boundaries of these tables can make attacks ineffective. Thus, we proposed WBSLT, a novel design framework for tabulated white-box implementations of substitution-linear transformation (SLT) ciphers. WBSLT protects key-embedded tables with linear and nonlinear transformations and partially leaves each component’s computation to the next component to mitigate single key-dependent table breach. To further defend against differential computation analysis and differential fault analysis, the framework integrates masking, shuffling and external encoding. Theoretical analysis indicates its immunity to various attacks. Experimental results validate the practicality of WBSLT across multiple computing platforms, showing efficient encryption performance and reasonable memory consumption.",
+  "abstract_source_id": "src-abstract-ndss-2026-ca7a3936",
   "venue": "ndss",
   "year": 2026,
   "track_or_session": "Fall submission cycle",
@@ -181,6 +183,19 @@
       "official": false,
       "supports": [
         "independent proceedings identity reconciliation"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2026-ca7a3936",
+      "url": "https://www.ndss-symposium.org/ndss-paper/wbslt-a-framework-for-white-box-encryption-based-on-substitution-linear-transformation-ciphers/",
+      "kind": "paper-page",
+      "title": "WBSLT: A Framework for White-Box Encryption Based on Substitution-Linear Transformation Ciphers",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:23:37Z",
+      "content_hash": "sha256:8d6bb7e262f880f355efb240318c20c267ed77fe594d3ff7d60becd00eaa11df",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

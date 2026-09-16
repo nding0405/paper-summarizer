@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2025-building-massive-mimo-baseband-processing-on-a-single-no-67183506",
   "title": "Building Massive MIMO Baseband Processing on a Single-Node Supercomputer",
+  "abstract": "The rising deployment of massive MIMO coupled with the wide adoption of virtualized radio access networks (vRAN) poses an unprecedented computational demand on the baseband processing, hardly met by existing vRAN hardware substrates. The single-node supercomputer, an emerging computing platform, offers scalable computation and communication capabilities, making it a promising target to hold and run the baseband pipeline. However, realizing this is non-trivial due to the mismatch between (a) the diverse execution granularities and incongruent parallel degrees of different stages along the software processing pipeline and (b) the underlying evolving irregular hardware parallelism at runtime.\n\nThis paper closes the gap by designing and implementing MegaStation–an application-platform co-designed system that effectively harnesses the computing power of a single-node supercomputer for processing massive MIMO baseband. Our key insight is that one can adjust the execution granularity and reconstruct the baseband processing pipeline on the fly based on the monitored hardware parallelism status. Inspired by dynamic instruction scheduling, MegaStation models the single-node supercomputer as a tightly coupled microprocessor and employs a scoreboarding-like algorithm to orchestrate \"baseband processing\" instructions over GPU-instantiated executors. Our evaluations using the GigaIO FabreX demonstrate that MegaStation achieves up to 66.2% lower tail frame processing latency and 4× higher throughput than state-of-the-art solutions. MegaStation is a scalable and adaptive solution that can meet today’s vRAN requirements.",
+  "abstract_source_id": "src-abstract-nsdi-2025-67183506",
   "venue": "nsdi",
   "year": 2025,
   "track_or_session": "Cellular and Wireless",
@@ -140,6 +142,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2025-67183506",
+      "url": "https://www.usenix.org/conference/nsdi25/presentation/xie",
+      "kind": "paper-page",
+      "title": "Building Massive MIMO Baseband Processing on a Single-Node Supercomputer",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:04:00Z",
+      "content_hash": "sha256:2f853710251b5bd45fff1e73c459a6c11824446956b5b00118c15b1aed201805",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

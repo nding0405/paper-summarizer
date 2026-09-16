@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2023-spectre-declassified-reading-from-the-right-place-at-the-0e2702b2",
   "title": "Spectre Declassified: Reading from the Right Place at the Wrong Time",
+  "abstract": "Practical information-flow programming languages commonly allow controlled leakage via a declassify construct—programmers can use this construct to declare intentional leakage. For instance, cryptographic signatures and ciphertexts, which are computed from private keys, are viewed as secret by information-flow analyses. Cryptographic libraries can use declassify to make this data public, as it is no longer sensitive.In this paper, we study the interaction between speculative execution and declassification. We show that speculative execution leads to unintended leakage from declassification sites. Concretely, we present a PoC that recovers keys from AES implementations. Our PoC is an instance of a Spectre attack, and remains effective even when programs are compiled with speculative load hardening (SLH), a widespread compiler-based countermeasure against Spectre. We develop formal countermeasures against these attacks, including a significant improvement to SLH we term selective speculative load hardening (selSLH). These countermeasures soundly enforce relative non-interference (RNI): Informally, the speculative leakage of a protected program is limited to the existing sequential leakage of the original program. We implement our simplest countermeasure in the FaCT language and compiler—which is designed specifically for high-assurance cryptography—and we see performance overheads of at most 10%. Finally, although we do not directly implement selSLH, our preliminary evaluation suggests a significant reduction in performance cost for cryptographic functions as compared to traditional SLH.",
+  "abstract_source_id": "src-abstract-sp-2023-0e2702b2",
   "venue": "sp",
   "year": 2023,
   "track_or_session": "Session 6C: Rowhammer and spectre",
@@ -324,6 +326,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2023-0e2702b2",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Spectre Declassified: Reading from the Right Place at the Wrong Time",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:27Z",
+      "content_hash": "sha256:2c3c9cbfdcc9ef58a970a66aadb81bbaf8238409ab69d65565522a11e421be99",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

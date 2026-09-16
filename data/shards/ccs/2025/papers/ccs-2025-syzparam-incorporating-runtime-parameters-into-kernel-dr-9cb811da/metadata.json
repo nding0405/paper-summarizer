@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2025-syzparam-incorporating-runtime-parameters-into-kernel-dr-9cb811da",
   "title": "SyzParam : Incorporating Runtime Parameters into Kernel Driver Fuzzing",
+  "abstract": "Under the monolithic architecture of the Linux kernel, all its components operate within the same address space. Notably, device drivers constitute over half of the kernel codebase yet are particularly prone to bugs. Therefore, exploring vulnerabilities in drivers is critical for ensuring kernel security. Extensive research has been done to fuzz kernel drivers through system calls and hardware interrupts. Through a comprehensive study of the Linux Kernel Device Model, we identified that the execution of device drivers is also influenced by runtime parameters, including device attributes and kernel module parameters. Our analysis reveals that large portions of the uncovered code are masked by these parameters, which are exposed to the userspace through a specialized virtual file system known as sysfs. Furthermore, adjacent devices interconnected within the same device tree also impact drivers' behavior.",
+  "abstract_source_id": "src-abstract-ccs-2025-9cb811da",
   "venue": "ccs",
   "year": 2025,
   "track_or_session": "Cycle 1",
@@ -295,6 +297,19 @@
         "published-order authors",
         "publication-time affiliations",
         "publication date and page span"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2025-9cb811da",
+      "url": "https://api.openalex.org/works/doi:10.1145/3719027.3744838?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "SyzParam : Incorporating Runtime Parameters into Kernel Driver Fuzzing",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:17:09Z",
+      "content_hash": "sha256:80cb6c96ef2ea2272df41885432455816a8f203fb916c04f4e5e37c74644abae",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2025-gap-diff-protecting-jpeg-compressed-images-from-diffusio-8dc06fba",
   "title": "GAP-Diff: Protecting JPEG-Compressed Images from Diffusion-based Facial Customization",
+  "abstract": "Text-to-image diffusion model's fine-tuning technology allows people to easily generate a large number of customized photos using limited identity images. Although this technology is easy to use, its misuse could lead to violations of personal portraits and privacy, with false information and harmful content potentially causing further harm to individuals. Several methods have been proposed to protect faces from customization via adding protective noise to user images by disrupting the fine-tuned models.\n\nUnfortunately, simple pre-processing techniques like JPEG compression, a normal pre-processing operation performed by modern social networks, can easily erase the protective effects of existing methods. To counter JPEG compression and other potential pre-processing, we propose GAP-Diff, a framework of underline{G}enerating data with underline{A}dversarial underline{P}erturbations for text-to-image underline{Diff}usion models using unsupervised learning-based optimization, including three functional modules. Specifically, our framework learns robust representations against JPEG compression by backpropagating gradient information through a pre-processing simulation module while learning adversarial characteristics for disrupting fine-tuned text-to-image diffusion models. Furthermore, we achieve an adversarial mapping from clean images to protected images by designing adversarial losses against these fine-tuning methods and JPEG compression, with stronger protective noises within milliseconds. Facial benchmark experiments, compared to state-of-the-art protective methods, demonstrate that GAP-Diff significantly enhances the resistance of protective noise to JPEG compression, thereby better safeguarding user privacy and copyrights in the digital world.",
+  "abstract_source_id": "src-abstract-ndss-2025-8dc06fba",
   "venue": "ndss",
   "year": 2025,
   "track_or_session": "Fall submission cycle",
@@ -168,6 +170,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2025-8dc06fba",
+      "url": "https://www.ndss-symposium.org/ndss-paper/gap-diff-protecting-jpeg-compressed-images-from-diffusion-based-facial-customization/",
+      "kind": "paper-page",
+      "title": "GAP-Diff: Protecting JPEG-Compressed Images from Diffusion-based Facial Customization",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:19:39Z",
+      "content_hash": "sha256:51f1a2e718bc9ad41719f44d11b8f7326f42b7154c32595ea1b132ec404171d1",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

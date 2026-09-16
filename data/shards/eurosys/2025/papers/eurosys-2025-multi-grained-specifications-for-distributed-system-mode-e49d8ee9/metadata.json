@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "eurosys-2025-multi-grained-specifications-for-distributed-system-mode-e49d8ee9",
   "title": "Multi-Grained Specifications for Distributed System Model Checking and Verification",
+  "abstract": "This paper presents our experience specifying and verifying the correctness of ZooKeeper, a complex and evolving distributed coordination system. We use TLA+ to model finegrained behaviors of ZooKeeper and use the TLC model checker to verify its correctness properties; we also check conformance between the model and code. The fundamental challenge is to balance the granularity of specifications and the scalability of model checking---fine-grained specifications lead to state-space explosion, while coarse-grained specifications introduce model-code gaps. To address this challenge, we write specifications with different granularities for composable modules, and compose them into mixed-grained specifications based on specific scenarios. For example, to verify code changes, we compose fine-grained specifications of changed modules and coarse-grained specifications that abstract away details of unchanged code with preserved interactions. We show that writing multi-grained specifications is a viable practice and can cope with model-code gaps without untenable state space, especially for evolving software where changes are typically local and incremental. We detected six severe bugs that violate five types of invariants and verified their code fixes; the fixes have been merged to ZooKeeper. We also improve the protocol design to make it easy to implement correctly.",
+  "abstract_source_id": "src-abstract-eurosys-2025-e49d8ee9",
   "venue": "eurosys",
   "year": 2025,
   "track_or_session": "Session-3.1: Distributed Systems - Location: Rotterdam hall 1A - Chair: Yerom-David Bromberg",
@@ -209,6 +211,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-eurosys-2025-e49d8ee9",
+      "url": "https://api.openalex.org/works/doi:10.1145/3689031.3696069?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Multi-Grained Specifications for Distributed System Model Checking and Verification",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:19:30Z",
+      "content_hash": "sha256:af4b9c56a62de39e5edd1b43c6adf7d34afd9de420bd8507abb6bb4f5f702533",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

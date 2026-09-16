@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-fully-oblivious-differential-privacy-for-frequency-estim-1cc1b5a0",
   "title": "Fully Oblivious Differential Privacy for Frequency Estimation in the Augmented Shuffle Model with Trusted Processors",
+  "abstract": "In the shuffle model of DP (Differential Privacy), a shuffler randomly permutes users' data to achieve high accuracy and privacy. Recent studies show that most existing shuffle protocols are vulnerable to collusion attacks by the data collector and users. They address this issue by introducing the augmented shuffle model that incorporates random sampling and dummy data addition into the shuffler. However, it remains open how to ensure the shuffler follows the protocol and does not collude with the data collector in this model.\n\nWe address this trust issue by thoroughly exploring the augmented shuffle model with TEEs (Trusted Execution Environments). We first introduce a new privacy notion, FODP (Fully Oblivious DP), which strengthens DP to prevent various TEE side-channel attacks based on external/internal memory access patterns and control flows. We propose a general framework for FODP algorithms based on memory-size obfuscation and three concrete algorithms within it. We also improve the efficiency of our algorithms by using the count-min sketch and optimizing the number of hashes. We evaluate our algorithms on Intel SGX and demonstrate their effectiveness through comparisons with nine baselines.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-1cc1b5a0",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Privacy Anonymity 1",
@@ -113,6 +115,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-1cc1b5a0",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/murakami",
+      "kind": "paper-page",
+      "title": "Fully Oblivious Differential Privacy for Frequency Estimation in the Augmented Shuffle Model with Trusted Processors",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:24:07Z",
+      "content_hash": "sha256:939c5c352eec3409cef71f4c2e92150b37226990f6efc4942df35fba0ed56e7e",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

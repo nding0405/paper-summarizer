@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2025-waven-webassembly-memory-virtualization-for-enclaves-98d43124",
   "title": "WAVEN: WebAssembly Memory Virtualization for Enclaves",
+  "abstract": "The advancement of trusted execution environments (TEEs) has enabled the confidential computing paradigm and created new application scenarios for WebAssembly (Wasm). \"Wasm+TEE\" designs achieve in-enclave multi-tenancy with strong isolation, facilitating concurrent execution of untrusted code instances from multiple users. However, the linear memory model of Wasm lacks efficient cross-module data sharing and fine-grained memory access control, significantly restricting its applications in certain confidential computing scenarios where secure data sharing is essential (e.g., confidential stateful FaaS and data marketplaces). In this paper, we propose WAVEN (WebAssembly Memory Virtualization for ENclaves), a novel WebAssembly memory virtualization scheme, to enable memory sharing among Wasm modules and page-level access control. We implement WAVEN atop WAMR, a popular Wasm runtime for TEEs, and empirically demonstrate its efficiency and effectiveness. To the best of our knowledge, our work represents the first approach that enables cross-module memory sharing with fine-grained memory access control in Wasm.",
+  "abstract_source_id": "src-abstract-ndss-2025-98d43124",
   "venue": "ndss",
   "year": 2025,
   "track_or_session": "Summer submission cycle",
@@ -189,6 +191,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2025-98d43124",
+      "url": "https://www.ndss-symposium.org/ndss-paper/waven-webassembly-memory-virtualization-for-enclaves/",
+      "kind": "paper-page",
+      "title": "WAVEN: WebAssembly Memory Virtualization for Enclaves",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:20:59Z",
+      "content_hash": "sha256:7e4d0f99cd1fd9ecc34bae279aa3f007c02ac1ec3e778f5939c4412744c6dbd7",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

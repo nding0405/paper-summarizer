@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "eurosys-2025-rakis-secure-fast-i-o-primitives-across-trust-boundaries-68a80d87",
   "title": "RAKIS: Secure Fast I/O Primitives Across Trust Boundaries on Intel SGX",
+  "abstract": "The use of Intel® Software Guard Extensions (SGX) offers robust security measures for shielding applications in untrusted environments. However, the performance overhead experienced by IO-intensive applications within SGX limits widespread adoption. Prior approaches have proposed the use of userspace kernel-bypass libraries such as Data Plane Development Kit (DPDK) inside SGX enclaves to enable direct access to IO devices. However, these solutions often come at the cost of increasing the Trusted Computing Base (TCB) size, expanding the attack surface, and complicating deployment. In this paper, we introduce Rakis, a comprehensive system that securely enables SGX enclave programs to leverage fast IO Linux kernel primitives without modifying user applications. Rakis prioritizes the security of its TCB components by employing rigorous software testing and verification methods, embodying a security-by-design approach. Importantly, Rakis achieves performance advantages without sacrificing TCB size or introducing deployment intricacies and demonstrates significant improvements in benchmark tests with a 4.6x increase in UDP network throughput compared to state-of-the-art SGX enclave LibOS (Gramine-SGX). To demonstrate the practical applicability of Rakis, we evaluate its performance on four real-world programs showcasing an average performance improvement of 2.8x compared to Gramine-SGX across all workloads.",
+  "abstract_source_id": "src-abstract-eurosys-2025-68a80d87",
   "venue": "eurosys",
   "year": 2025,
   "track_or_session": "Session-9.1: Security and Privacy - Location: Van Oldebarneveldt - Chair: Anjo Vahldiek-Oberwagner",
@@ -167,6 +169,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-eurosys-2025-68a80d87",
+      "url": "https://api.openalex.org/works/doi:10.1145/3689031.3696090?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Rakis: Secure Fast I/O Primitives Across Trust Boundaries on Intel SGX",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:19:33Z",
+      "content_hash": "sha256:9a2ac18201feffdbc5ecad2baf35d2b40b18ee9342e9853fce57d90949ed67b8",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

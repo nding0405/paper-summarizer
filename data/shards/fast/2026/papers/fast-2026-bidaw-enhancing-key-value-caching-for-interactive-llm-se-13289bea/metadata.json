@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "fast-2026-bidaw-enhancing-key-value-caching-for-interactive-llm-se-13289bea",
   "title": "Bidaw: Enhancing Key-Value Caching for Interactive LLM Serving via Bidirectional Computation–Storage Awareness",
+  "abstract": "In interactive LLM serving, historical key–value tensors (KVs) of multi-round conversations are often cached in a two-tier storage system consisting of host memory and SSDs, which provides large capacity at low cost. However, loading KVs from two-tier storage in existing approaches increases serving latency by up to 3.8× and decreases throughput by up to 2.0× compared to an ideal large-memory setting on our interactive conversation workload. This inefficiency arises from poor coordination between compute engine and two-tier storage.\n\nThis paper proposes Bidaw, an efficient KV caching approach with two-tier storage that enables bidirectional awareness between compute and storage . Bidaw introduces two key mechanisms. First, the compute engine schedules requests with KV-loading latency awareness by separating requests whose KVs reside in different storage layers and reordering them by KV size to reduce blocking. Second, the storage system improves host memory hit rates by leveraging LLM-generated responses to predict user access patterns during KV eviction. For further optimization, Bidaw balances storage footprint against computational savings by selectively caching storage-efficient history tensors.\n\nExperiments on our interactive conversation workload and a public multi-round conversation workload of interactive LLM serving show that Bidaw reduces response latency by up to 3.58× and improves throughput by up to 1.83× over state-of-the-art approaches, approaching the theoretical upper bound achieved when all KVs reside entirely in host memory.",
+  "abstract_source_id": "src-abstract-fast-2026-13289bea",
   "venue": "fast",
   "year": 2026,
   "track_or_session": "AI and LLMs I",
@@ -181,6 +183,19 @@
         "proceedings page range and page count",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-fast-2026-13289bea",
+      "url": "https://www.usenix.org/conference/fast26/presentation/hu-shipeng",
+      "kind": "paper-page",
+      "title": "Bidaw: Enhancing Key-Value Caching for Interactive LLM Serving via Bidirectional Computation–Storage Awareness",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:01:22Z",
+      "content_hash": "sha256:0056061d13e6f42f29b9a9ce1aeb51b5212611a551fdf01091da404d54f79a2a",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

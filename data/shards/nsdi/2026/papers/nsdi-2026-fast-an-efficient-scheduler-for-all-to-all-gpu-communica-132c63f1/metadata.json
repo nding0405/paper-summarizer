@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2026-fast-an-efficient-scheduler-for-all-to-all-gpu-communica-132c63f1",
   "title": "FAST: An Efficient Scheduler for All-to-All GPU Communication",
+  "abstract": "All-to-All(v) communication is a critical primitive in modern machine learning workloads, particularly mixture-of-experts (MoE) models. Unfortunately, efficient scheduling is challenging due to workload skew, heterogeneous two-tier fabrics, and incast congestion, compounded by the dynamic nature of MoE workloads, where traffic shifts every few hundred milliseconds. Existing schedulers are hardly scalable, incurring seconds to hours of synthesis time, making them impractical.\n\nWe present FAST, an efficient All-to-All(v) scheduler. FAST addresses skew through intra-server rebalancing and enforces balanced, one-to-one scale-out transfers that avoid incast. Evaluated extensively on both NVIDIA H200 and AMD MI300X clusters, FAST consistently outperforms state-of-the-art solutions on skewed workloads while reducing synthesis time by orders of magnitude.",
+  "abstract_source_id": "src-abstract-nsdi-2026-132c63f1",
   "venue": "nsdi",
   "year": 2026,
   "track_or_session": "Cloud Systems, Shared and Scalable",
@@ -307,6 +309,19 @@
         "proceedings page range and page count",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2026-132c63f1",
+      "url": "https://www.usenix.org/conference/nsdi26/presentation/lei-yiran",
+      "kind": "paper-page",
+      "title": "FAST: An Efficient Scheduler for All-to-All GPU Communication",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:05:15Z",
+      "content_hash": "sha256:e7d72e9dae7049df3e856014b4e7cd7adb9ba6384613418cc69fccdf10ebc2bd",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2024-crossfire-fuzzing-macos-cross-xpu-memory-on-apple-silico-c04be030",
   "title": "CrossFire: Fuzzing macOS Cross-XPU Memory on Apple Silicon",
+  "abstract": "Modern computing systems increasingly utilize XPUs, such as GPUs and NPUs, for specialized computation tasks.While these XPUs provide critical functionalities, their security protections are generally weaker than those of CPUs, making them attractive attack targets.In particular, Apple silicon optimizes memory usage by adopting a unified memory architecture (UMA), which employs shared memory regions (termed cross-XPU memory) to facilitate communication between CPUs and XPUs.Although the cross-XPU memory enhances performance, it also introduces a new attack surface.Unfortunately, the difficulty in identifying effective shared memory regions and generating valid payloads makes fuzzing cross-XPU memory a challenging problem that cannot be resolved effectively by existing fuzzing techniques.Therefore, we propose CrossFire, the first fuzzer targeting Apple silicon XPU by fuzzing cross-XPU memory, to evaluate this new attack surface.Initially, we conduct an in-depth cross-XPU memory analysis to investigate the challenges of fuzzing XPU.To address these challenges, CrossFire introduces two novel techniques to pinpoint effective fuzzing regions in cross-XPU memory and trace kernel execution information to extract data constraints.Leveraging these techniques, we develop CrossFire based on the m1n1 hypervisor to monitor cross-XPU memory accesses and perform grey-box hooking-based fuzzing.We further evaluate CrossFire on macOS Ventura, where it has identified 15 new zero-day bugs, 8 of which have been confirmed by Apple.",
+  "abstract_source_id": "src-abstract-ccs-2024-c04be030",
   "venue": "ccs",
   "year": 2024,
   "track_or_session": "Cycle 2",
@@ -222,6 +224,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2024-c04be030",
+      "url": "https://api.openalex.org/works/doi:10.1145/3658644.3690376?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "CrossFire: Fuzzing macOS Cross-XPU Memory on Apple Silicon",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:09:47Z",
+      "content_hash": "sha256:a6075c87019288c728ea46bdbd31f1b3920ae55d2872014904781b1a2c937a92",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

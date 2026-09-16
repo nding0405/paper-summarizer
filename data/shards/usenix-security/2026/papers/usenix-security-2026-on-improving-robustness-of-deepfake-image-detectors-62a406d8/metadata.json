@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-on-improving-robustness-of-deepfake-image-detectors-62a406d8",
   "title": "On Improving Robustness of Deepfake Image Detectors",
+  "abstract": "The rapid advancement of Generative AI has introduced remarkable opportunities while simultaneously raising critical concerns regarding content authenticity. While recent work has increasingly focused on improving the generalization of deepfake detectors across unseen generative models, their robustness against adversarial attacks remains limited. In particular, Abdullah et al. (IEEE SP 2024) evaluated eight detectors and demonstrated that most of them exhibit significant performance degradation under adversarial attacks. We also observed the same phenomenon by testing seven most recent state-of-the-art detectors. To address this problem, we propose a unified framework that integrates three complementary design principles without relying on adversarial training data: (i) higher-order statistical modeling in the frequency domain via Discrete Cosine Transform (DCT)-based moment pooling up to fourth order, (ii) content-agnostic feature representations derived from noise residuals, and (iii) cross-scene generalization enforced through patch-level semantic disruption. A key insight underpinning our approach is that adversarial attacks primarily operate on low-order statistics and visual semantics, leaving higher-order residual-frequency characteristics, particularly kurtosis, largely unconstrained. Extensive experiments demonstrate that our method consistently improves robustness across six architecturally diverse detectors. Notably, we achieve up to 88.9% reduction in recall degradation on current adversarial benchmarks, and improve the best-performing recent detector (Yang et al., IEEE CVPR 2025) from 81.9% to 97.15% accuracy under attack. Overall, our method provides a principled, architecture-agnostic approach for improving deepfake detection robustness against current attacks.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-62a406d8",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Security of ML 4",
@@ -134,6 +136,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-62a406d8",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/shahjahan",
+      "kind": "paper-page",
+      "title": "On Improving Robustness of Deepfake Image Detectors",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:24:53Z",
+      "content_hash": "sha256:e2aa33726c23dcc54ebac491f0fe1d0a848bf731876f02eea14fe42269b1da0f",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

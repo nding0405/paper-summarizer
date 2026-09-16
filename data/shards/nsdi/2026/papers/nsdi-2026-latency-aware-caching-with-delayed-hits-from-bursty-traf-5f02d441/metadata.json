@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2026-latency-aware-caching-with-delayed-hits-from-bursty-traf-5f02d441",
   "title": "Latency-Aware Caching with Delayed Hits: From Bursty Traffic to Pipeline Architectures",
+  "abstract": "Modern computing systems rely on caching to reduce access latency and optimize resource utilization. However, in heterogeneous storage and cloud environments, non-uniform access latencies across storage tiers, network locations, and intermediary caches undermine traditional caching. Moreover, modern cache algorithms that attempt to capture multiple access patterns, recency, frequency, and burstiness, often become complex and difficult to maintain.\n\nAs a key contribution, we propose an adaptive caching architecture that treats caching strategies as a pipeline of simple, orthogonal policies, each focused on a distinct access bias. This modular design is easier to expand, debug, and integrate, and it self-adjusts the memory resources allocated to each stage to optimize overall workload performance. New heuristics can be introduced dynamically without disrupting existing behaviors.\n\nIn addition, in latency-aware caching, one often encounters the phenomenon of delayed hits, where items not yet available in the cache are requested repeatedly. We introduce the Least Bursty Used (LBU) heuristic, which retains items exhibiting high burstiness even when they are neither recent nor frequent, thereby mitigating delayed hits that degrade request latency. We embed LBU within our pipeline and derive the Recency–Frequency–Burstiness (RFB) policy, which balances resources among recency, frequency, and burstiness. Evaluations on thirteen real-world storage traces from IBM, Twitter and Meta using latencies drawn from real-life deployments show that RFB reduces average request latency by 10% compared to the best state-of-the-art alternative, while maintaining consistent performance, with a low standard deviation across bursty and non-bursty workloads.",
+  "abstract_source_id": "src-abstract-nsdi-2026-5f02d441",
   "venue": "nsdi",
   "year": 2026,
   "track_or_session": "Hot Data, Cold Data",
@@ -118,6 +120,19 @@
         "proceedings page range and page count",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2026-5f02d441",
+      "url": "https://www.usenix.org/conference/nsdi26/presentation/keren",
+      "kind": "paper-page",
+      "title": "Latency-Aware Caching with Delayed Hits: From Bursty Traffic to Pipeline Architectures",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:05:34Z",
+      "content_hash": "sha256:d540bfe05ee2944b71e762ace42d546da1af07088f761e1a100204aed62e4e02",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

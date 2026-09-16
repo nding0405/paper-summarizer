@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sigcomm-2024-suss-improving-tcp-performance-by-speeding-up-slow-start-6413eaf9",
   "title": "SUSS: Improving TCP Performance by Speeding Up Slow-Start",
+  "abstract": "The traditional slow-start mechanism in TCP can result in slow ramping-up of the data delivery rate, inefficient bandwidth utilization, and prolonged completion time for small-size flows, especially in networks with a large bandwidth-delay product (BDP). Existing solutions either only work in specific situations, or require network assistance, making them challenging (if even possible) to deploy. This paper presents SUSS (Speeding Up Slow Start): a lightweight, sender-side add-on to the traditional slow-start mechanism, that aims to safely expedite the growth of the congestion window when a flow is significantly below its optimal fair share of the available bandwidth. SUSS achieves this by accelerating the growth in cwnd when exponential growth is predicted to continue in the next round. SUSS employs a novel combination of ACK clocking and packet pacing to effectively mitigate traffic burstiness caused by accelerated increases in cwnd. We have implemented SUSS in the Linux kernel, integrated into the CUBIC congestion control algorithm. Our real-world experiments span many device types and Internet locations, demonstrating that SUSS consistently outperforms traditional slow-start with no measured negative impacts. SUSS achieves over 20% improvement in flow completion time in all experiments with flow sizes less than 5MB and RTT larger than 50 ms.",
+  "abstract_source_id": "src-abstract-sigcomm-2024-6413eaf9",
   "venue": "sigcomm",
   "year": 2024,
   "track_or_session": "Sharing the network — Research Track",
@@ -150,6 +152,19 @@
         "publisher-deposited ORCIDs when available",
         "proceedings page range and online publication date",
         "empty publisher relation metadata for alternate-version checks"
+      ]
+    },
+    {
+      "id": "src-abstract-sigcomm-2024-6413eaf9",
+      "url": "https://api.openalex.org/works/doi:10.1145/3651890.3672234?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "SUSS: Improving TCP Performance by Speeding Up Slow-Start",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:23:13Z",
+      "content_hash": "sha256:edc7aee7b19e665364e45d47c46c2293b2db6fa7dc371c6117ce519d15e1f039",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

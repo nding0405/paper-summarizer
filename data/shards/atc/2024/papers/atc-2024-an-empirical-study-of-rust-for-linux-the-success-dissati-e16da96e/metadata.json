@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "atc-2024-an-empirical-study-of-rust-for-linux-the-success-dissati-e16da96e",
   "title": "An Empirical Study of Rust-for-Linux: The Success, Dissatisfaction, and Compromise",
+  "abstract": "Developed for over 30 years, Linux has already become the computing foundation for today's digital world; from gigantic, complex mainframes (e.g., supercomputers) to cheap, wimpy embedded devices (e.g., IoTs), countless applications are built on top of it. Yet, such an infrastructure has been plagued by numerous memory and concurrency bugs since the day it was born, due to many rogue memory operations are permitted by C language. A recent project Rust-for-Linux (RFL) has the potential to address Linux's safety concerns once and for all -- by embracing Rust's static ownership and type checkers into the kernel code, the kernel may finally be free from memory and concurrency bugs without hurting its performance. While it has been gradually matured and even merged into Linux mainline, however, RFL is rarely studied and still remains unclear whether it has indeed reconciled the safety and performance dilemma for the kernel.\n\nTo this end, we conduct the first empirical study on RFL to understand its status quo and benefits, especially on how Rust fuses with Linux and whether the fusion assures driver safety without overhead. We collect and analyze 6 key RFL drivers, which involve hundreds of issues and PRs, thousands of Github commits and mail exchanges of the Linux mailing list, as well as over 12K discussions on Zulip.We have found while Rust mitigates kernel vulnerabilities, it is beyond Rust's capability to fully eliminate them; what is more, if not handled properly, its safety assurance even costs the developers dearly in terms of both runtime overhead and development efforts.",
+  "abstract_source_id": "src-abstract-atc-2024-e16da96e",
   "venue": "atc",
   "year": 2024,
   "track_or_session": "Operating Systems 2",
@@ -180,6 +182,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-atc-2024-e16da96e",
+      "url": "https://www.usenix.org/conference/atc24/presentation/li-hongyu",
+      "kind": "paper-page",
+      "title": "An Empirical Study of Rust-for-Linux: The Success, Dissatisfaction, and Compromise",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T21:58:25Z",
+      "content_hash": "sha256:ed0b5e20305d66c562b4bfca8dd0e68801f2511b554e9180b505150c359c896b",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

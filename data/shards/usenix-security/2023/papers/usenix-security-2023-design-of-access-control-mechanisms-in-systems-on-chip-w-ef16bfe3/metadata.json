@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2023-design-of-access-control-mechanisms-in-systems-on-chip-w-ef16bfe3",
   "title": "Design of Access Control Mechanisms in Systems-on-Chip with Formal Integrity Guarantees",
+  "abstract": "Many SoCs employ system-level hardware access control mechanisms to ensure that security-critical operations cannot be tampered with by less trusted components of the circuit. While there are many design and verification techniques for developing an access control system, continuous discoveries of new vulnerabilities in such systems suggest a need for an exhaustive verification methodology to find and eliminate such weaknesses. This paper proposes UPEC-OI, a formal verification methodology that exhaustively covers integrity vulnerabilities of an SoC-level access control system. The approach is based on iteratively checking a 2-safety interval property whose formulation does not require any explicit specification of possible attack scenarios. The counterexamples returned by UPEC-OI can provide designers of access control hardware with valuable information on possible attack channels, allowing them to perform pinpoint fixes. We present a verification-driven development methodology which formally guarantees the developed SoC’s access control mechanism to be secure with respect to integrity. We evaluate the proposed approach in a case study on OpenTitan’s Earl Grey SoC where we add an SoC-level access control mechanism alongside malicious IPs to model the threat. UPEC-OI was found vital to guarantee the integrity of the mechanism and was proven to be tractable for SoCs of realistic size.",
+  "abstract_source_id": "src-abstract-usenix-security-2023-ef16bfe3",
   "venue": "usenix-security",
   "year": 2023,
   "track_or_session": "Integrity",
@@ -175,6 +177,19 @@
       "official": true,
       "supports": [
         "authors, affiliations when published, abstract, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2023-ef16bfe3",
+      "url": "https://www.usenix.org/conference/usenixsecurity23/presentation/mehmedagic",
+      "kind": "paper-page",
+      "title": "Design of Access Control Mechanisms in Systems-on-Chip with Formal Integrity Guarantees",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:10:28Z",
+      "content_hash": "sha256:940af767f0d3fd7bf718406e74d3cd5f1c6fe87d6fde26b4df25038bb5f1bc35",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

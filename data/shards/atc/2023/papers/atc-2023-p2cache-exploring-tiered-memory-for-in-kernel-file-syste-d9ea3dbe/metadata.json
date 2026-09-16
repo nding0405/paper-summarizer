@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "atc-2023-p2cache-exploring-tiered-memory-for-in-kernel-file-syste-d9ea3dbe",
   "title": "P2CACHE: Exploring Tiered Memory for In-Kernel File Systems Caching",
+  "abstract": "Fast, byte-addressable persistent memory (PM) is becoming a reality in products. However, porting legacy kernel file systems to fully support PM requires substantial effort and encounters the challenge of bridging the gap between block-based access granularity and byte-addressability. Moreover, new PM-specific file systems remain far from production-ready, preventing them from being widely used. In this paper, we propose P2CACHE, a novel in-kernel caching mechanism to explore how legacy kernel file systems can effectively evolve in the face of fast, byte-addressable PM. P2CACHE exploits a read/write-distinguishable memory hierarchy upon a tiered memory system involving both PM and DRAM. P2CACHE leverages PM to serve all write requests for instant data durability and strong crash consistency while using DRAM to serve most read I/Os for high I/O performance. Further, P2CACHE employs a simple yet effective synchronization model between PM and DRAM by leveraging device-level parallelism. Our evaluation shows that P2CACHE can significantly increase the performance of legacy kernel file systems -- e.g., by 200x for RocksDB on Ext4 -- meanwhile equipping them with instant data durability and strong crash consistency, similar to PM-specialized file systems.",
+  "abstract_source_id": "src-abstract-atc-2023-d9ea3dbe",
   "venue": "atc",
   "year": 2023,
   "track_or_session": "Persistent Memory",
@@ -159,6 +161,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-atc-2023-d9ea3dbe",
+      "url": "https://www.usenix.org/conference/atc23/presentation/lin",
+      "kind": "paper-page",
+      "title": "P2CACHE: Exploring Tiered Memory for In-Kernel File Systems Caching",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T21:58:09Z",
+      "content_hash": "sha256:b35e005bfea9d443eb361272185950e43de845e997827307a98197b0ae5704f6",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

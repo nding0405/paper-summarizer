@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2026-riscy-cache-coherence-timer-free-architectural-cache-att-92df0b99",
   "title": "RISCy Cache Coherence: Timer-Free Architectural Cache Attacks via Instruction/Data Cache Incoherence",
+  "abstract": "Caches have long been known to leak information across isolation boundaries, with classic attacks relying on timing to distinguish cache hits and misses. However, modern CPUs and operating systems increasingly limit timer resolution or restrict access to cycle counters, making such attacks less reliable in practice. As an alternative, architectural side channels replace timing with instruction sequences whose architectural outcome depends on cache state, offering higher robustness. In this paper, we introduce $I^{2} \\text{SC}$, a generic timer-free architectural cache side channel that exploits instruction/data-cache incoherence on RISC-V, ARM, and LoongArch. $I^{2} \\text{SC}$ leverages a widespread RISC property: stores through the data path are invisible to instruction fetch when the instruction cache holds stale lines, yielding architecturally distinct outcomes that reveal cache state. Unlike prior work that targets only instruction caches, $\\mathbf{I}^{\\mathbf{2}} \\mathbf{S C}$ generalizes this behavior into a timerfree oracle for both instruction and data caches via a transient-execution-based cache-state transfer gadget. We evaluate $\\mathbf{I}^{2} \\mathbf{S C}$ on 18 microarchitectures, finding that 12 microarchitectures are affected. To demonstrate the security impact of $\\mathrm{I}^{2} \\text{SC}$, we mount three end-to-end attacks: a timer-free AES keyrecovery, a Spectre variant with architectural leakage across all three architectures, achieving reliability on par with or exceeding prior timing-based methods, and a classical sidechannel attack on Android shared libraries recovering finegrained touch-event timing. Finally, we discuss both software and hardware mitigations, noting that full prevention likely requires hardware changes.",
+  "abstract_source_id": "src-abstract-sp-2026-92df0b99",
   "venue": "sp",
   "year": 2026,
   "track_or_session": "Cycle 2",
@@ -91,6 +93,19 @@
       "official": true,
       "supports": [
         "DOI, published-order authors and affiliations, abstract, publication date, page span, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2026-92df0b99",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "RISCy Cache Coherence: Timer-Free Architectural Cache Attacks via Instruction/Data Cache Incoherence",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:58:02Z",
+      "content_hash": "sha256:4204efad9387253e2c70bd18217fac7c5220b9cd43ecd6179fdc27c5a043343e",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

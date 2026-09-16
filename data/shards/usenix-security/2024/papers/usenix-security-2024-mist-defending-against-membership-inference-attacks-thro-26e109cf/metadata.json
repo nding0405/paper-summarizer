@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2024-mist-defending-against-membership-inference-attacks-thro-26e109cf",
   "title": "MIST: Defending Against Membership Inference Attacks Through Membership-Invariant Subspace Training",
+  "abstract": "In Member Inference (MI) attacks, the adversary try to determine whether an instance is used to train a machine learning (ML) model. MI attacks are a major privacy concern when using private data to train ML models. Most MI attacks in the literature take advantage of the fact that ML models are trained to fit the training data well, and thus have very low loss on training instances. Most defenses against MI attacks therefore try to make the model fit the training data less well. Doing so, however, generally results in lower accuracy.\n\nWe observe that training instances have different degrees of vulnerability to MI attacks. Most instances will have low loss even when not included in training. For these instances, the model can fit them well without concerns of MI attacks. An effective defense only needs to (possibly implicitly) identify instances that are vulnerable to MI attacks and avoids overfitting them. A major challenge is how to achieve such an effect in an efficient training process.\n\nLeveraging two distinct recent advancements in representation learning: counterfactually-invariant representations and subspace learning methods, we introduce a novel Membership-Invariant Subspace Training (MIST) method to defend against MI attacks. MIST avoids overfitting the vulnerable instances without significant impact on other instances. We have conducted extensive experimental studies, comparing MIST with various other state-of-the-art (SOTA) MI defenses against several SOTA MI attacks. We find that MIST outperforms other defenses while resulting in minimal reduction in testing accuracy.",
+  "abstract_source_id": "src-abstract-usenix-security-2024-26e109cf",
   "venue": "usenix-security",
   "year": 2024,
   "track_or_session": "ML IV: Privacy Inference I",
@@ -112,6 +114,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2024-26e109cf",
+      "url": "https://www.usenix.org/conference/usenixsecurity24/presentation/li-jiacheng",
+      "kind": "paper-page",
+      "title": "MIST: Defending Against Membership Inference Attacks Through Membership-Invariant Subspace Training",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:16:14Z",
+      "content_hash": "sha256:4e235643d54cef98e31febf77c4bb0bd3b0eb52aea26e4bfdd522c8efd1fdaa4",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2025-zen-empowering-distributed-training-with-sparsity-driven-0423be7a",
   "title": "ZEN: Empowering Distributed Training with Sparsity-driven Data Synchronization",
+  "abstract": "Distributed training is the de facto standard to scale up the training of deep learning models with multiple GPUs. Its performance bottleneck lies in communications for gradient synchronization. Although high tensor sparsity is widely observed, the optimal communication scheme to fully leverage sparsity is still missing. This paper aims to bridge this gap. We first analyze the characteristics of sparse tensors in popular models to understand the fundamentals of sparsity. We then systematically explore the design space of communication schemes for sparse tensors and find the optimal ones. These findings give a new understanding and inspire us to develop a holistic gradient synchronization system for sparse tensors called ZEN. We demonstrate that ZEN can achieve up to 5.09x speedup in communication time and up to 2.48x speedup in training throughput compared to the state-of-the-art methods.",
+  "abstract_source_id": "src-abstract-osdi-2025-0423be7a",
   "venue": "osdi",
   "year": 2025,
   "track_or_session": "Distributed Systems and Data Centers II",
@@ -201,6 +203,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2025-0423be7a",
+      "url": "https://www.usenix.org/conference/osdi25/presentation/wang-zhuang",
+      "kind": "paper-page",
+      "title": "ZEN: Empowering Distributed Training with Sparsity-driven Data Synchronization",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:07:56Z",
+      "content_hash": "sha256:8e19e46bea50811d9b5226971ce96d9d4034c2730623231ce4fa2cff576044e9",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

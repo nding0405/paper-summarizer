@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "atc-2024-centimani-enabling-fast-ai-accelerator-selection-for-dnn-e7987aee",
   "title": "Centimani: Enabling Fast AI Accelerator Selection for DNN Training with a Novel Performance Predictor",
+  "abstract": "For an extended period, graphics processing units (GPUs) have stood as the exclusive choice for training deep neural network (DNN) models. Over time, to serve the growing demands in a more targeted manner, various artificial intelligence-specific hardware, referred to as AI accelerators , have been vigorously developed, aiming to provide more efficient DNN acceleration solutions. However, sufficient solutions are also heterogeneous and thus introduce complexities in accelerator selection. Given a DNN model and a training objective, such as throughput or price-performance ratio, it remains challenging to arrive at the optimal decision among many options due to high reimplementation costs and unexpected performance.\n\nTo tackle this challenge, we propose Centimani , a performance predictor that accurately and rapidly predicts DNN training throughput on various AI accelerators, thereby facilitating the accelerator selection process. To achieve this goal, we first analyze typical AI accelerators and draw observations that abstract AI accelerator designs and guide our performance modeling approach. In particular, we construct a memory estimation model and decoupled performance models to select the most appropriate batch size and predict the execution time of DNN training. We validate our approach by applying Centimani to six common DNN models on four typical AI accelerators. Results show that Centimani predicts the throughput with an average accuracy of 93.1% on single-device training and 90.4% on multiple-device training, thus the optimal accelerator corresponding to the user's training objective can be obtained.",
+  "abstract_source_id": "src-abstract-atc-2024-e7987aee",
   "venue": "atc",
   "year": 2024,
   "track_or_session": "Hardware",
@@ -243,6 +245,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-atc-2024-e7987aee",
+      "url": "https://www.usenix.org/conference/atc24/presentation/xie",
+      "kind": "paper-page",
+      "title": "Centimani: Enabling Fast AI Accelerator Selection for DNN Training with a Novel Performance Predictor",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T21:58:27Z",
+      "content_hash": "sha256:9be3fd4bf30719e5ffc483f35fa0b5da1e9ca2ae0aad7c163ecd656aa61f0ba8",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

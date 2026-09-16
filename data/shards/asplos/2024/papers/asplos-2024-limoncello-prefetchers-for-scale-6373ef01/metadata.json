@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2024-limoncello-prefetchers-for-scale-6373ef01",
   "title": "Limoncello: Prefetchers for Scale",
+  "abstract": "This paper presents Limoncello, a novel software system that dynamically configures data prefetchers for high-utilization systems. We demonstrate that in resource-constrained environments, such as large data centers, traditional methods of hardware prefetching can increase memory latency and decrease available memory bandwidth. To address this issue, Limoncello disables hardware prefetchers when memory bandwidth utilization is high, and it leverages targeted software prefetching to reduce cache misses when hardware prefetchers are disabled. Limoncello is software-centric and does not require any modifications to hardware. Our evaluation of the deployment on Google's fleet reveals that Limoncello unlocks significant performance gains for high-utilization systems: It improves application throughput by 10%, due to a 15% reduction in memory latency, while maintaining minimal change in cache miss rate for targeted library functions.",
+  "abstract_source_id": "src-abstract-asplos-2024-6373ef01",
   "venue": "asplos",
   "year": 2024,
   "track_or_session": "Session 8A: Caching and Prefetching",
@@ -248,6 +250,19 @@
       "official": false,
       "supports": [
         "Indexed alternate-version and institutional-copy links; not used as the authoritative relevance source."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2024-6373ef01",
+      "url": "https://api.openalex.org/works/doi:10.1145/3620666.3651373?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Limoncello: Prefetchers for Scale",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:00:17Z",
+      "content_hash": "sha256:aa430851a5832269cc8adf5cc477370e54e8b90ace3d1803d6a3181354014557",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

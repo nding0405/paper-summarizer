@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2023-ark-gpu-driven-code-execution-for-distributed-deep-learn-eb0c14bd",
   "title": "ARK: GPU-driven Code Execution for Distributed Deep Learning",
+  "abstract": "Modern state-of-the-art deep learning (DL) applications tend to scale out to a large number of parallel GPUs. Unfortunately, we observe that the collective communication overhead across GPUs is often the key limiting factor of performance for distributed DL. It under-utilizes the networking bandwidth by frequent transfers of small data chunks, which also incurs a substantial I/O overhead on GPU that interferes with computation on GPU. The root cause lies in the inefficiency of CPU-based communication event handling as well as the inability to control the GPU's internal DMA engine with GPU threads.\n\nTo address the problem, we propose a GPU-driven code execution system that leverages a GPU-controlled hardware DMA engine for I/O offloading. Our custom DMA engine pipelines multiple DMA requests to support efficient small data transfer while it eliminates the I/O overhead on GPU cores. Unlike existing GPU DMA engines initiated only by CPU, we let GPU threads to directly control DMA operations, which leads to a highly efficient system where GPUs drive their own execution flow and handle communication events autonomously without CPU intervention. Our prototype DMA engine achieves a line-rate from a message size as small as 8KB (3.9x better throughput) with only 4.3us of communication latency (9.1x faster) while it incurs little interference with computation on GPU, achieving 1.8x higher all-reduce throughput in a real training workload.",
+  "abstract_source_id": "src-abstract-nsdi-2023-eb0c14bd",
   "venue": "nsdi",
   "year": 2023,
   "track_or_session": "Learning with GPUs",
@@ -182,6 +184,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2023-eb0c14bd",
+      "url": "https://www.usenix.org/conference/nsdi23/presentation/hwang",
+      "kind": "paper-page",
+      "title": "ARK: GPU-driven Code Execution for Distributed Deep Learning",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:01:48Z",
+      "content_hash": "sha256:000a680289cdc3664d971874bc165b47875a16972a96900293cbd2dac54f9c56",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

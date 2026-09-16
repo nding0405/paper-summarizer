@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2025-pfortifier-mitigating-php-object-injection-through-autom-3729d80e",
   "title": "PFORTIFIER: Mitigating PHP Object Injection through Automatic Patch Generation",
+  "abstract": "PHP Object Injection (POI) vulnerabilities enable unexpected execution of class methods in PHP applications, resulting in various attacks. In the meanwhile, designing effective patches for POI vulnerabilities demands substantial engineering efforts. Existing research mostly focused on the detection of POI gadget chains, whereas the automatic patch generation remains an under-explored problem. In this work, we empirically study known gadget chains, and discover that adversaries usually construct gadget chains by diverging the execution to paths that developers never considered. The methods that get unexpectedly jump into (i.e., executed) are referred to as possible methods (PM). Based on the observation, we propose PFortifier, a framework for automatic POI patch generation. PFortifier operates in two stages: (i) the gadget chain detection phase, in which PFortifier simulates the execution of PHP applications, and detects gadget chains that pass attacker controlled objects to dangerous sinks, and (ii) the patch generation phase, in which PFortifier automatically generates POI patches by restricting PM jumps detected in the first phase. We evaluate PFortifier on 31 PHP applications and frameworks. The experiment results demonstrate the effectiveness of PFortifier: it generates precise patches for 52.53% of gadget chains, and suggests potential patches for 45.45% chains, resulting in a total chain coverage of 97.98%.",
+  "abstract_source_id": "src-abstract-sp-2025-3729d80e",
   "venue": "sp",
   "year": 2025,
   "track_or_session": "Cycle 2",
@@ -196,6 +198,19 @@
       "official": true,
       "supports": [
         "DOI, authors, affiliations, abstract, publication date, pages, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2025-3729d80e",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "PFortifier: Mitigating PHP Object Injection Through Automatic Patch Generation",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:47Z",
+      "content_hash": "sha256:d48e5e27e72297ce02860f066764bd9c5cd6e8191e2ebf4b4f15da0fffb6959f",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

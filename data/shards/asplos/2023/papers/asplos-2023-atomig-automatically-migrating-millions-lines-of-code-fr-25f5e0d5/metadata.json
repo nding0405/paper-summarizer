@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2023-atomig-automatically-migrating-millions-lines-of-code-fr-25f5e0d5",
   "title": "AtoMig: Automatically Migrating Millions Lines of Code from TSO to WMM",
+  "abstract": "CPUs with weak memory-consistency models (WMMs), such as Arm and RISC-V, are rapidly increasing their market share. Porting legacy x86 applications to such CPUs requires introducing extra synchronization to prevent WMM-related concurrency bugs---a task often left to human experts. Given the rarity of such experts and the enormous size of legacy applications, we develop AtoMig, an effective, fully automated tool for porting large, real-world applications to WMM CPU architectures. AtoMig detects shared memory access patterns with novel static analysis strategies and performs program transformations to properly protect them from WMM effects. In the absence of sufficiently scalable verification methods, AtoMig shows practicality of focusing on code patterns more prone to WMM faults, trading off completeness for scalability. We validate the correctness of AtoMig's transformations on several small concurrent benchmarks via model checking. We demonstrate the scalability and performance of our approach by applying AtoMig to popular real-world large code bases with up to millions of lines of code, viz., MariaDB, Postgres, SQlite, LevelDB, and Memcached. As part of this work, we also found a WMM bug in MariaDB, which AtoMig fixes automatically.",
+  "abstract_source_id": "src-abstract-asplos-2023-25f5e0d5",
   "venue": "asplos",
   "year": 2023,
   "track_or_session": "Session 1B: Shared Memory/Mem Consistency",
@@ -251,6 +253,19 @@
       "official": false,
       "supports": [
         "Indexed abstract used with the official technical-session context for relevance classification, plus alternate-copy and explicitly printed ancillary links."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2023-25f5e0d5",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1145%2F3575693.3579849?fields=title,abstract",
+      "kind": "semantic-scholar",
+      "title": "AtoMig: Automatically Migrating Millions Lines of Code from TSO to WMM",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T21:58:46Z",
+      "content_hash": "sha256:5cf0c310928af80ee4c2fbf8fcd548b181e7b12a91038bfdc024eaeaec7c0815",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

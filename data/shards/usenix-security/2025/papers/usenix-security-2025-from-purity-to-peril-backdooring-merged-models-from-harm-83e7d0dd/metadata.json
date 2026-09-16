@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-from-purity-to-peril-backdooring-merged-models-from-harm-83e7d0dd",
   "title": "From Purity to Peril: Backdooring Merged Models From \"Harmless\" Benign Components",
+  "abstract": "The expansion of capabilities in large-scale models often incurs prohibitively high training costs. Fortunately, recent advancements in model merging techniques have made it possible to efficiently combine multiple large models, each designed for a specific task, into a single multi-functional model with negligible cost. Despite these advantages, there is a notable research gap regarding the security implications of model merging, particularly concerning backdoor vulnerabilities. In this study, we introduce a novel supply chain threat under the model merging scenario: multiple ostensibly benign models can be merged into a backdoored model. To rigorously explore this threat, we propose MergeBackdoor, a versatile training framework designed to suppress backdoor behaviors in upstream models before merging, while simultaneously ensuring the emergence of the backdoor when these models are merged. Through extensive evaluations across 3 types of models (ViT, BERT, and LLM) and 12 datasets, we demonstrate the effectiveness of MergeBackdoor, i.e., the attack success rates (ASRs) of the upstream models before merging are all at a random-guessing level, and the ASRs can reach nearly 1.0 for the final merged model. Besides conducting an in-depth analysis of MergeBackdoor's underlying mechanism, we further demonstrate that even the most knowledgeable detectors fail to identify the anomalies in these models before merging. We highlight that our findings underscore the critical need for security audit throughout the entire merging pipeline.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-83e7d0dd",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "ML and AI Security 3: Backdoors, Poisoning, Unlearning",
@@ -175,6 +177,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-83e7d0dd",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/wang-lijin",
+      "kind": "paper-page",
+      "title": "From Purity to Peril: Backdooring Merged Models From \"Harmless\" Benign Components",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:19:58Z",
+      "content_hash": "sha256:e29d79fdb230340d62f9bcdf9fe0276ce6b0f82f1ed946579bcc036bea0f71ff",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2023-kodan-addressing-the-computational-bottleneck-in-space-9358bce7",
   "title": "Kodan: Addressing the Computational Bottleneck in Space",
+  "abstract": "Decreasing costs of deploying space vehicles to low-Earth orbit have fostered an emergence of large constellations of satellites. However, high satellite velocities, large image data quantities, and brief ground station contacts create a data downlink challenge. Orbital edge computing (OEC), which filters data at the space edge, addresses this downlink bottleneck but shifts the challenge to the inelastic computational capabilities onboard satellites. In this work, we present Kodan: an OEC system that maximizes the utility of saturated satellite downlinks while mitigating the computational bottleneck. Kodan consists of two phases. A one-time transformation step uses a reference implementation of a satellite data analysis application, along with a representative dataset, to produce specialized ML models targeted for deployment to the space edge. After deployment to a target satellite, a runtime system dynamically selects the best specialized models for each data sample to maximize valuable data downlinked within the constraints of the computational bottleneck. By intelligently filtering low-value data and prioritizing high-value data for transmit via the saturated downlink, Kodan increases the data value density between 89 and 97 percent.",
+  "abstract_source_id": "src-abstract-asplos-2023-9358bce7",
   "venue": "asplos",
   "year": 2023,
   "track_or_session": "Session 1C: IoT/Embedded/Mobile",
@@ -167,6 +169,19 @@
       "official": false,
       "supports": [
         "Indexed abstract used with the official technical-session context for relevance classification, plus alternate-copy and explicitly printed ancillary links."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2023-9358bce7",
+      "url": "https://api.openalex.org/works/doi:10.1145/3582016.3582043?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Kodan: Addressing the Computational Bottleneck in Space",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T21:59:33Z",
+      "content_hash": "sha256:ba79ce27025690ec7522c434b36302a0278dfbcc905db8a631f22b3cd6c6823c",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

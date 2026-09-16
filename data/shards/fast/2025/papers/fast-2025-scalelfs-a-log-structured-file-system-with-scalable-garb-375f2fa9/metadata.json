@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "fast-2025-scalelfs-a-log-structured-file-system-with-scalable-garb-375f2fa9",
   "title": "ScaleLFS: A Log-Structured File System with Scalable Garbage Collection for Commodity SSDs",
+  "abstract": "We present a log-structured file system (LFS) with scalable garbage collection (GC) called ScaleLFS for providing higher sustained performance on commodity SSDs. Specifically, we first introduce a per-core dedicated garbage collector to parallelize the GC operations and utilize dedicated resources. Second, we present a scalable victim manager that selects victim segments and updates the metadata of the segments concurrently. Finally, we propose a scalable victim protector to enable a page-level GC procedure instead of a file level to increase GC concurrency while resolving the conflict with victim pages. We implement ScaleLFS with three techniques based on F2FS in the Linux kernel. Our evaluations show that ScaleLFS provides higher sustained performance by up to 3.5×, 4.6×, and 7.0× compared with F2FS, a scalable LFS, and a parallel GC scheme, respectively.",
+  "abstract_source_id": "src-abstract-fast-2025-375f2fa9",
   "venue": "fast",
   "year": 2025,
   "track_or_session": "File Systems",
@@ -140,6 +142,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-fast-2025-375f2fa9",
+      "url": "https://www.usenix.org/conference/fast25/presentation/ha",
+      "kind": "paper-page",
+      "title": "ScaleLFS: A Log-Structured File System with Scalable Garbage Collection for Commodity SSDs",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:01:16Z",
+      "content_hash": "sha256:4af4f025bb6728ad54b717d2ecfccd8f3f0c5b4750d024609351b1d2a4b9c2ae",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sigcomm-2026-spillway-orchestrating-dpu-and-host-into-a-unified-vswit-a4c34f98",
   "title": "Spillway: Orchestrating DPU and Host into a Unified vSwitching Fabric",
+  "abstract": "The transition to Data Processing Unit (DPU)-centric architectures has become the de-facto standard in modern cloud networks, enabling infrastructure offload and improved host resource utilization. However, the fixed hardware limits of DPUs increasingly fail to keep pace with the rapid growth of host compute density and network-intensive workloads. As a result, when DPU resources are saturated, host compute capacity often remains underutilized due to insufficient network provisioning. This paper presents Spillway, a unified vSwitching fabric that decouples virtual switching capacity from static DPU hardware limits. Spillway introduces a DPU-host hybrid data plane that repurposes idle host CPU resources to process spillover traffic when the DPU becomes the bottleneck. Unlike traditional software switching, Spillway activates host-based forwarding selectively through a unified resource scheduler, incurring no overhead under normal operating conditions. To ensure production viability, Spillway enforces strict performance isolation across heterogeneous data planes. Experimental results from a large-scale deployment show that, under bursty traffic workloads, Spillway improves single-node connection processing capacity by up to 90% with negligible interference to co-located applications.",
+  "abstract_source_id": "src-abstract-a4c34f98",
   "venue": "sigcomm",
   "year": 2026,
   "track_or_session": "Experience Session 4: Cloud Data Planes & Network Virtualization — Experience Paper",
@@ -821,6 +823,19 @@
       "official": true,
       "supports": [
         "official main-paper scope and track definitions"
+      ]
+    },
+    {
+      "id": "src-abstract-a4c34f98",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/search/match?query=Spillway%3A%20Orchestrating%20DPU%20and%20Host%20into%20a%20Unified%20vSwitching%20Fabric&fields=title,abstract",
+      "kind": "semantic-scholar",
+      "title": "Spillway: Orchestrating DPU and Host into a Unified vSwitching Fabric",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T23:06:45Z",
+      "content_hash": "sha256:a0204b6b079ff45d022460979d3dab75f6d4a07c6a3778c63f07a91c6cf9b953",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

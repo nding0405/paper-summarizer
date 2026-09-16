@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2026-cryptpeft-efficient-and-private-neural-network-inference-a73e3a02",
   "title": "CryptPEFT: Efficient and Private Neural Network Inference via Parameter-Efficient Fine-Tuning",
+  "abstract": "Publicly available large pretrained models (i.e., backbones) and lightweight adapters for parameter-efficient finetuning (PEFT) have become standard components in modern machine learning pipelines. However, preserving the privacy of both user inputs and fine-tuned adapters—often trained on sensitive data—during inference remains a significant challenge. Applying cryptographic techniques, such as multi-party computation (MPC), to PEFT settings still incurs substantial encrypted computation across both the backbone and adapter, mainly due to the inherent two-way communication between them. To address this limitation, we propose CRYPTPEFT, the first PEFT solution specifically designed for private inference scenarios. CRYPTPEFT introduces a novel one-way communication (OWC) architecture that confines encrypted computation solely to the adapter, significantly reducing both computational and communication overhead. To maintain strong model utility under this constraint, we explore the design space of OWC-compatible adapters and employ an automated architecture search algorithm to optimize the trade-off between private inference efficiency and model utility. We evaluated CRYPTPEFT using Vision Transformer backbones across widely used image classification datasets. Our results show that CRYPTPEFT significantly outperforms existing baselines, delivering speedups ranging from 20.62× to 291.48× in simulated wide-area network (WAN) and local-area network (LAN) settings. On CIFAR-100, CRYPTPEFT attains 85.47% accuracy with just 2.26 seconds of inference latency. These findings demonstrate that CRYPTPEFT offers an efficient and privacy-preserving solution for modern PEFT-based inference.",
+  "abstract_source_id": "src-abstract-ndss-2026-a73e3a02",
   "venue": "ndss",
   "year": 2026,
   "track_or_session": "Summer submission cycle",
@@ -223,6 +225,19 @@
       "official": false,
       "supports": [
         "independent proceedings identity reconciliation"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2026-a73e3a02",
+      "url": "https://www.ndss-symposium.org/ndss-paper/cryptpeft-efficient-and-private-neural-network-inference-via-parameter-efficient-fine-tuning/",
+      "kind": "paper-page",
+      "title": "CryptPEFT: Efficient and Private Neural Network Inference via Parameter-Efficient Fine-Tuning",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:21:46Z",
+      "content_hash": "sha256:7d2af3c5684d2746e225453cadf59a9ed70f355ca876465e348082eb32025e2b",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

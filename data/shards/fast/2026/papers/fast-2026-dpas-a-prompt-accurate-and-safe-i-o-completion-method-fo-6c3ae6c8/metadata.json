@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "fast-2026-dpas-a-prompt-accurate-and-safe-i-o-completion-method-fo-6c3ae6c8",
   "title": "DPAS: A Prompt, Accurate and Safe I/O Completion Method for SSDs",
+  "abstract": "Modern SSDs demand faster I/O completion methods. While polling is a potential alternative to interrupts, it suffers under CPU contention. Hybrid polling mitigates this by sleeping early and polling later, yet it cannot keep up with rapidly varying I/O latencies and incurs context-switch overheads. We introduce PAS, an accurate latency tracking method for hybrid polling that adjusts sleep duration using the two most recent I/Os, and DPAS, which dynamically switches among polling, interrupts, and PAS to overcome the inherent drawbacks of hybrid polling. Experiments show that PAS reduces CPU usage by 21 percentage points compared to Linux hybrid polling for 4 KB random reads, and DPAS improves YCSB performance by 9% on a 3D XPoint SSD and 5% on a TLC NAND SSD, even under simultaneous CPU contention and I/O interference.",
+  "abstract_source_id": "src-abstract-fast-2026-6c3ae6c8",
   "venue": "fast",
   "year": 2026,
   "track_or_session": "SSDs and CXL",
@@ -202,6 +204,19 @@
         "proceedings page range and page count",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-fast-2026-6c3ae6c8",
+      "url": "https://www.usenix.org/conference/fast26/presentation/seo",
+      "kind": "paper-page",
+      "title": "DPAS: A Prompt, Accurate and Safe I/O Completion Method for SSDs",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:01:29Z",
+      "content_hash": "sha256:d31082afaca840fe534caed888e0c21caabd3550d6a88319334fc3fb1d259e9f",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

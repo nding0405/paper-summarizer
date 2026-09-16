@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "eurosys-2026-flexiwalker-extensible-gpu-framework-for-efficient-dynam-e205ca73",
   "title": "FlexiWalker: Extensible GPU Framework for Efficient Dynamic Random Walks with Runtime Adaptation",
+  "abstract": "Dynamic random walks are fundamental to various graph analysis applications, offering advantages by adapting to evolving graph properties. Their runtime-dependent transition probabilities break down the pre-computation strategy that underpins most existing CPU and GPU static random walk optimizations. This leaves practitioners suffering from suboptimal frameworks and having to write hand-tuned kernels that do not adapt to workload diversity. To handle this issue, we present FlexiWalker, the first GPU framework that delivers efficient, workload-generic support for dynamic random walks. Our design-space study shows that rejection sampling and reservoir sampling are more suitable than other sampling techniques under massive parallelism. Thus, we devise (i) new high-performance kernels for them that eliminate global reductions, redundant memory accesses, and random-number generation. Given the necessity of choosing the best-fitting sampling strategy at runtime, we adopt (ii) a lightweight first-order cost model that selects the faster kernel per node at runtime. To enhance usability, we introduce (iii) a compile-time component that automatically specializes user-supplied walk logic into optimized building blocks. On various dynamic random walk workloads with real-world graphs, FlexiWalker outperforms the best published CPU/GPU baselines by geometric means of 73.44× and 5.91×, respectively, while successfully executing workloads that prior systems cannot support. We open-source FlexiWalker in https://github.com/AIS-SNU/FlexiWalker.",
+  "abstract_source_id": "src-abstract-eurosys-2026-e205ca73",
   "venue": "eurosys",
   "year": 2026,
   "track_or_session": null,
@@ -201,6 +203,19 @@
       "official": false,
       "supports": [
         "Publisher-deposited proceedings identity and print publication date."
+      ]
+    },
+    {
+      "id": "src-abstract-eurosys-2026-e205ca73",
+      "url": "https://api.openalex.org/works/doi:10.1145/3767295.3769358?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "FlexiWalker: Extensible GPU Framework for Efficient Dynamic Random Walks with Runtime Adaptation",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:20:20Z",
+      "content_hash": "sha256:8638a4bd068b229db29d2d14608838b6ec0e46663b38bf49c5fd50c8498b774f",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

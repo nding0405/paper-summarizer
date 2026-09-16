@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-the-art-of-hide-and-seek-making-pickle-based-model-suppl-be1ded3d",
   "title": "The Art of Hide and Seek: Making Pickle-Based Model Supply Chain Poisoning Stealthy Again",
+  "abstract": "Pickle deserialization vulnerabilities have persisted throughout Python's history, remaining widely recognized yet unresolved. Due to its ability to transparently save and restore complex objects, many AI/ML frameworks continue to adopt pickle as the model serialization protocol despite its inherent risks. As the open-source model ecosystem grows, model-sharing platforms such as Hugging Face have attracted massive participation, significantly amplifying the real-world impact of pickle exploitation and opening new avenues for model supply chain poisoning. Although several state-of-the-art scanners have been developed to detect poisoned models, their incomplete understanding of the poisoning surface allows attackers to bypass them. In this work, we present the first systematic disclosure of the pickle-based model poisoning surface from both model loading and risky function perspectives. Our research demonstrates how pickle-based model poisoning can remain stealthy and highlights critical gaps in current scanning solutions. On the model loading surface, we identify 22 distinct pickle-based model loading paths across five foundational AI/ML frameworks, 19 of which are entirely missed by existing scanners. We further develop a bypass technique named Exception-Directed Programming (EDP) and discover 9 EDP instances, 7 of which can bypass all scanners. On the risky function surface, we discover 133 exploitable gadgets, achieving almost a 100% bypass rate. Even against the best-performing scanner, these gadgets maintain an 89% bypass rate. By systematically revealing the pickle-based model poisoning surface, we achieve practical and robust bypasses against real-world scanners. We responsibly disclose our findings to corresponding vendors, receiving acknowledgments and a $12,000 bug bounty.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-be1ded3d",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Security of ML 1",
@@ -177,6 +179,19 @@
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening",
         "prepublication PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-be1ded3d",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/liu-tong",
+      "kind": "paper-page",
+      "title": "The Art of Hide and Seek: Making Pickle-Based Model Supply Chain Poisoning Stealthy Again",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:25:49Z",
+      "content_hash": "sha256:42b2622042a503933ef60bbb0cbf17f60b036b0ee683b50e85ccf10a556cdc01",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

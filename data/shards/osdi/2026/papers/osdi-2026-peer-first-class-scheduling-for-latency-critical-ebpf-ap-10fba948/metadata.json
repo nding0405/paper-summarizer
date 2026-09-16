@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2026-peer-first-class-scheduling-for-latency-critical-ebpf-ap-10fba948",
   "title": "PeeR: First-Class Scheduling for Latency-Critical eBPF Applications",
+  "abstract": "We present PeeR, a novel eBPF runtime that makes latency-critical eBPF programs preemptable and schedulable while maintaining low overhead. As eBPF programs grow more complex, they expose a fundamental gap: performance-critical hooks execute in a non-preemptable softirq context, which is invisible to the scheduler. These programs bypass resource controls, break isolation, and cause head-of-line blocking, degrading tail latency. PeeR exploits two key properties of eBPF: the verifier enforces clean program state at helper function boundaries, making these sites natural preemption points, and non-trivial programs frequently call helpers, ensuring fine-grained preemption opportunities. Building on these properties, PeeR brings cooperative preemption to eBPF: lightweight budget checks, inserted at each helper call, force programs exceeding their budget to yield and resume later on per-CPU kernel threads. To handle a wide variety of workloads, PeeR uses a two-level scheduling model that integrates with sched e xt, where the outer level controls aggregate CPU time for eBPF workloads, while an inner micro-scheduler orders individual tasks according to an operator-defined policy. Our evaluation on Redis, Memcached, echo-server, and TPC-C workloads shows that PeeR reduces p99 latency for latency-sensitive requests by 3× to 19.8× over the current eBPF runtime, without starving competing long-running requests.",
+  "abstract_source_id": "src-abstract-osdi-2026-10fba948",
   "venue": "osdi",
   "year": 2026,
   "track_or_session": "Tooling Potpourri",
@@ -167,6 +169,19 @@
       "official": true,
       "supports": [
         "Official proceedings availability and canonical conference versions."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2026-10fba948",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/carin",
+      "kind": "paper-page",
+      "title": "PeeR: First-Class Scheduling for Latency-Critical eBPF Applications",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:08:45Z",
+      "content_hash": "sha256:9e334d74700ab7c4944bb6f8bc31fecb430f1eefb575311607b70cf28667f8c6",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

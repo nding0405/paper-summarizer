@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2023-m-wait-for-it-bridging-the-gap-between-microarchitectura-f6e12e42",
   "title": "(M)WAIT for It: Bridging the Gap between Microarchitectural and Architectural Side Channels",
+  "abstract": "In the last years, there has been a rapid increase in microarchitectural attacks, exploiting side effects of various parts of the CPU. Most of them have in common that they rely on timing differences, requiring an architectural high-resolution timer to make microarchitectural states visible to an attacker.\n\nIn this paper, we present a new primitive that converts microarchitectural states into architectural states without relying on time measurements. We exploit the unprivileged idle-loop optimization instructions umonitor and umwait introduced with the new Intel microarchitectures (Tremont and Alder Lake). Although not documented, these instructions provide architectural feedback about the transient usage of a specified memory region. In three case studies, we show the versatility of our primitive. First, with Spectral, we present a way of enabling transient-execution attacks to leak bits architecturally with up to 200 kbit/s without requiring any architectural timer. Second, we show traditional side-channel attacks without relying on an architectural timer. Finally, we demonstrate that when augmented with a coarse-grained timer, we can also mount interrupt-timing attacks, allowing us to, e.g., detect which website a user opens. Our case studies highlight that the boundary between architecture and microarchitecture becomes more and more blurry, leading to new attack variants and complicating effective countermeasures.",
+  "abstract_source_id": "src-abstract-usenix-security-2023-f6e12e42",
   "venue": "usenix-security",
   "year": 2023,
   "track_or_session": "More Hardware Side Channels",
@@ -133,6 +135,19 @@
       "official": true,
       "supports": [
         "authors, affiliations when published, abstract, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2023-f6e12e42",
+      "url": "https://www.usenix.org/conference/usenixsecurity23/presentation/zhang-ruiyi",
+      "kind": "paper-page",
+      "title": "(M)WAIT for It: Bridging the Gap between Microarchitectural and Architectural Side Channels",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:11:57Z",
+      "content_hash": "sha256:9408e22766af1e8e6ee35433e15920b18cb4011a6de9fe5bf7ffd8f5e5d3ef57",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

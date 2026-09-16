@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2026-the-configuration-wall-characterization-and-elimination-c6342b15",
   "title": "The Configuration Wall: Characterization and Elimination of Accelerator Configuration Overhead",
+  "abstract": "Contemporary compute platforms increasingly offload compute kernels from CPU to integrated hardware accelerators to reach maximum performance per Watt. Unfortunately, the time the CPU spends on setup control and synchronization has increased with growing accelerator complexity. For systems with complex accelerators, this means that performance can be configuration-bound. Faster accelerators are more severely impacted by this overlooked performance drop, which we call the configuration wall. Prior work evidences this wall and proposes ad-hoc solutions to reduce configuration overhead. However, these solutions are not universally applicable, nor do they offer comprehensive insights into the underlying causes of performance degradation. In this work, we first introduce a widely-applicable variant of the well-known roofline model to quantify when system performance is configuration-bound. To move systems out of the performance-bound region, we subsequently propose a domain-specific compiler abstraction and associated optimization passes. We implement the abstraction and passes in the MLIR compiler framework to run optimized binaries on open-source architectures to prove its effectiveness and generality. Experiments demonstrate a geomean performance boost of 2x on the open-source OpenGeMM system, by eliminating redundant configuration cycles and by automatically hiding the remaining configuration cycles. Our work provides key insights in how accelerator performance is affected by setup mechanisms, thereby facilitating automatic code generation for circumventing the configuration wall.",
+  "abstract_source_id": "src-abstract-asplos-2026-c6342b15",
   "venue": "asplos",
   "year": 2026,
   "track_or_session": "Session 8D: Reconfigurable Architectures",
@@ -257,6 +259,19 @@
       "official": false,
       "supports": [
         "Indexed abstract used for strict relevance classification and indexed arXiv identifier where available."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2026-c6342b15",
+      "url": "https://api.openalex.org/works/doi:10.1145/3760250.3762225?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "The Configuration Wall: Characterization and Elimination of Accelerator Configuration Overhead",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:06:58Z",
+      "content_hash": "sha256:03b4ed818545eee9ac6e304cf7cb10d769314743bd08bc12fc3f612712e0eb9c",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

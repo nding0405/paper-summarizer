@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2026-anvil-a-general-purpose-timing-safe-hardware-description-5e13492b",
   "title": "Anvil: A General-Purpose Timing-Safe Hardware Description Language",
+  "abstract": "Expressing hardware designs using hardware description languages (HDLs) routinely involves using stateless signals whose values change according to their underlying registers. Unintended behaviours can arise when the stored values in these underlying registers are mutated while their dependent signals are expected to remain constant across multiple cycles. Such timing hazards are common because, with a few exceptions, existing HDLs lack abstractions for values that remain unchanged over multiple clock cycles, delegating this responsibility to hardware designers. Designers must then carefully decide whether a value should remain unchanged, sometimes even across hardware modules. This paper proposes Anvil, an HDL which statically prevents timing hazards with a novel type system. Anvil is the only HDL we know of that guarantees timing safety, i.e., absence of timing hazards, without sacrificing expressiveness for cycle-level timing control or dynamic timing behaviours. Unlike many HLS languages that abstract away the differences between registers and signals, Anvil's type system exposes them fully while capturing the timing relationships between register value mutations and signal usages to enforce timing safety. This, in turn, enables safe composition of communicating hardware modules by static enforcement of timing contracts that encode timing constraints on shared signals. Such timing contracts can be specified parametric on abstract time points that can vary during run-time, allowing the type system to statically express dynamic timing behaviour. We have implemented Anvil and successfully used it to implement key timing-sensitive modules, comparing them against open-source SystemVerilog counterparts to demonstrate the practicality and expressiveness of the generated hardware.",
+  "abstract_source_id": "src-abstract-asplos-2026-5e13492b",
   "venue": "asplos",
   "year": 2026,
   "track_or_session": "Session 6B: Hardware Design Languages",
@@ -186,6 +188,19 @@
       "official": false,
       "supports": [
         "Author-deposited archival artifact matched by title, authors, linked DOI, or accompanying paper description."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2026-5e13492b",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/search/match?query=Anvil%3A%20A%20General-Purpose%20Timing-Safe%20Hardware%20Description%20Language&fields=title,abstract",
+      "kind": "semantic-scholar",
+      "title": "Anvil: A General-Purpose Timing-Safe Hardware Description Language",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:58:27Z",
+      "content_hash": "sha256:c06df40c9f650e3199a09a30a24df632bfc2daa0cac4a988e7da4d61be616a0f",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

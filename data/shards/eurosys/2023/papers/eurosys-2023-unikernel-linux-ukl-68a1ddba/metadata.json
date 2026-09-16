@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "eurosys-2023-unikernel-linux-ukl-68a1ddba",
   "title": "Unikernel Linux (UKL)",
+  "abstract": "This paper presents Unikernel Linux (UKL), a path toward integrating unikernel optimization techniques in Linux, a general purpose operating system. UKL adds a configuration option to Linux allowing for a single, optimized process to link with the kernel directly, and run at supervisor privilege. This UKL process does not require application source code modification, only a re-link with our, slightly modified, Linux kernel and glibc. Unmodified applications show modest performance gains out of the box, and developers can further optimize applications for more significant gains (e.g. 26% throughput improvement for Redis). UKL retains support for co-running multiple user level processes capable of communicating with the UKL process using standard IPC. UKL preserves Linux's battle-tested codebase, community, and ecosystem of tools, applications, and hardware support. UKL runs both on bare-metal and virtual servers and supports multi-core execution. The changes to the Linux kernel are modest (1250 LOC).",
+  "abstract_source_id": "src-abstract-eurosys-2023-68a1ddba",
   "venue": "eurosys",
   "year": 2023,
   "track_or_session": null,
@@ -314,6 +316,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-eurosys-2023-68a1ddba",
+      "url": "https://api.openalex.org/works/doi:10.1145/3552326.3587458?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Unikernel Linux (UKL)",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:18:41Z",
+      "content_hash": "sha256:520e819dc3e24f9b4a7544d5e2e84506eefefd150d16223bcf22a87f3a1db3dc",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

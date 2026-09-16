@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2024-asynchronous-consensus-without-trusted-setup-or-public-k-dd8af420",
   "title": "Asynchronous Consensus without Trusted Setup or Public-Key Cryptography",
+  "abstract": "Byzantine consensus is a fundamental building block in distributed cryptographic problems. Despite decades of research, most existing asynchronous consensus protocols require a strong trusted setup and expensive public-key cryptography. In this paper, we study asynchronous Byzantine consensus protocols that do not rely on a trusted setup and do not use public-key cryptography such as digital signatures. We give an Asynchronous Common Subset (ACS) protocol whose security is only based on cryptographic hash functions modeled as a random oracle. Our protocol has O(κn3) total communication and runs in expected O(1) rounds. The fact that we use only cryptographic hash functions also means that our protocol is post-quantum secure. The minimal use of cryptography and the small number of rounds make our protocol practical. We implement our protocol and evaluate it in a geo-distributed setting with up to 128 machines. Our experimental evaluation shows that our protocol is more efficient than the only other setup-free consensus protocol that has been implemented to date. En route to our asynchronous consensus protocols, we also introduce new primitives called asynchronous secret key sharing and cover gather, which may be of independent interest.",
+  "abstract_source_id": "src-abstract-ccs-2024-dd8af420",
   "venue": "ccs",
   "year": 2024,
   "track_or_session": "Cycle 1",
@@ -201,6 +203,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2024-dd8af420",
+      "url": "https://api.openalex.org/works/doi:10.1145/3658644.3670327?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Asynchronous Consensus without Trusted Setup or Public-Key Cryptography",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:08:43Z",
+      "content_hash": "sha256:6c35baba6e2f6975a4eb4be9b1ee0e91fe4052f600577f2e7d024d3da8fb6f34",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

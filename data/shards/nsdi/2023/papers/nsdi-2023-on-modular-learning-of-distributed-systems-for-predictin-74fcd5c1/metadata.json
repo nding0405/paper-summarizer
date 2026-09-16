@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2023-on-modular-learning-of-distributed-systems-for-predictin-74fcd5c1",
   "title": "On Modular Learning of Distributed Systems for Predicting End-to-End Latency",
+  "abstract": "An emerging trend in cloud deployments is to adopt machine learning (ML) models to characterize end-to-end system performance. Despite early success, such methods can incur significant costs when adapting to the deployment dynamics of distributed systems like service scaling-out and replacement. They require hours or even days for data collection and model training, otherwise models may drift to result in unacceptable inaccuracy. This problem arises from the practice of modeling the entire system with monolithic models. We propose Fluxion, a framework to model end-to-end system latency with modularized learning. Fluxion introduces learning assignment, a new abstraction that allows modeling individual sub-components. With a consistent interface, multiple learning assignments can then be dynamically composed into an inference graph, to model a complex distributed system on the fly. Changes in a system sub-component only involve updating the corresponding learning assignment, thus significantly reducing costs. Using three systems with up to 142 microservices on a 100-VM cluster, Fluxion shows a performance modeling MAE (mean absolute error) up to 68.41% lower than monolithic models. In turn, this lower MAE allows better system performance tuning, e.g., a speed up for 90-percentile end-to-end latency by up to 1.57×. All these are achieved under various system deployment dynamics.",
+  "abstract_source_id": "src-abstract-nsdi-2023-74fcd5c1",
   "venue": "nsdi",
   "year": 2023,
   "track_or_session": "Making Systems Learn",
@@ -224,6 +226,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2023-74fcd5c1",
+      "url": "https://www.usenix.org/conference/nsdi23/presentation/liang-chieh-jan",
+      "kind": "paper-page",
+      "title": "On Modular Learning of Distributed Systems for Predicting End-to-End Latency",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:02:19Z",
+      "content_hash": "sha256:90e3dedbd348dc648ec55adfd31756b790d427f6826ba2fb5c34d0321da5b7a0",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

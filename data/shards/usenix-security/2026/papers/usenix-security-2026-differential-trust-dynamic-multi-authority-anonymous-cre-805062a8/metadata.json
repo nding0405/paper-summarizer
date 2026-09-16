@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-differential-trust-dynamic-multi-authority-anonymous-cre-805062a8",
   "title": "Differential Trust: Dynamic Multi-Authority Anonymous Credentials with Epoch-Weighted Updates",
+  "abstract": "Anonymous credentials (ACs) are fundamental to privacy-preserving authentication, allowing users to prove possession of attributes without revealing their identities. State-of-the-art ACs distribute credential issuance across multiple authorities, typically employing techniques such as Shamir's secret sharing or aggregate signatures. While this approach enhances system robustness and eliminates single point of failure, it treats all authorities equally in the credential issuance phase. This uniform treatment disregards the varying levels of trustworthiness or stake held by different authorities. Such limitation has become particularly problematic in modern decentralized systems like Proof-of-Stake networks, where the inherent trust differentiation among nodes cannot be leveraged in the credential issuance process.\n\nTo address this limitation, we propose the notion of M ulti- A uthority A nonymous C redentials with E poch-Based W eights (MA-ACEW), the first Multi-Authority Anonymous Credential (MA-AC) model that considers authorities' weight distribution in credential issuance. Crucially, MA-ACEW enables efficient credential updates when authority weight distributions change across epochs. The core of MA-ACEW is our novel Epoch-Bound Pointcheval-Sanders Signature (EB-PS) primitive, which binds signatures to specific time epochs. This temporal binding enables both weight-based credential issuance within epochs and efficient non-interactive credential updates across epochs. We formalize the EUF-eCMA unforgeability requirement for EB-PS and prove our construction satisfies it under a novel STB-GPS assumption. We then prove that our MA-ACEW construction achieves unforgeability, anonymity, and blindness. Finally, we present benchmarks demonstrating the efficiency of EB-PS and MA-ACEW. Remarkably, presenting a credential aggregated from 128 partial ones takes only 10.68 ms on average.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-805062a8",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Applications of Cryptography 7",
@@ -135,6 +137,19 @@
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening",
         "prepublication PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-805062a8",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/li-chen",
+      "kind": "paper-page",
+      "title": "Differential Trust: Dynamic Multi-Authority Anonymous Credentials with Epoch-Weighted Updates",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:23:39Z",
+      "content_hash": "sha256:50aa5826827d1c24a6cecdcf37b1857516184f787dd6124ff2e406365f1996f3",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

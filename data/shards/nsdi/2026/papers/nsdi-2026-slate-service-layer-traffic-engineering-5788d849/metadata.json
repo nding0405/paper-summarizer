@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2026-slate-service-layer-traffic-engineering-5788d849",
   "title": "SLATE: Service Layer Traffic Engineering",
+  "abstract": "In microservice-based applications, requests flow between many microservice instances across potentially multiple geodistributed clusters. Today, the routing of requests is limited to simple load balancing, or extensions that spill requests to nearby clusters. We argue that the problem is more subtle, and that there are significant opportunities for improvement by viewing microservice request routing as a global traffic engineering problem. We present Service Layer Traffic Engineering (SLATE), a system that optimizes request routing in microservice deployments that span multiple clusters to minimize average latency and bandwidth cost. SLATE tackles challenges unique to the service layer, including multiple request traffic classes, multi-hop call trees, and service latency profiles. To achieve this, SLATE takes a unique hybrid approach combining global optimization and local exploration. SLATE outperforms state-of-the-art global load balancing by up to 18.3× in average latency and reduces egress bandwidth cost by up to 2.64× in a Kubernetes deployment of an open-source benchmark application, and shows resilient performance against dynamic changes due to its hybrid optimization approach. Our system is completely transparent to the application and can be seamlessly plugged into existing L7 proxy deployments, specifically Envoy.",
+  "abstract_source_id": "src-abstract-nsdi-2026-5788d849",
   "venue": "nsdi",
   "year": 2026,
   "track_or_session": "Networked Resources, Virtualized",
@@ -139,6 +141,19 @@
         "proceedings page range and page count",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2026-5788d849",
+      "url": "https://www.usenix.org/conference/nsdi26/presentation/lim",
+      "kind": "paper-page",
+      "title": "SLATE: Service Layer Traffic Engineering",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:06:02Z",
+      "content_hash": "sha256:01c2b229f05ebb61f9317ef3946df31b9959dc3d1c06755ab222806211e5526e",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

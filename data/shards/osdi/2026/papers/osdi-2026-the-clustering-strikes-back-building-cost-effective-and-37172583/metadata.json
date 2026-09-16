@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2026-the-clustering-strikes-back-building-cost-effective-and-37172583",
   "title": "The Clustering Strikes Back: Building Cost-Effective and High-Performance ANNS at Scale with Helmsman (Operational Systems)",
+  "abstract": "RedNote (a.k.a., Xiaohongshu, a global-scale social network platform) widely adopts approximate nearest neighbor search (ANNS) to power its search, recommendation, and advertising services. Due to the demanding Service Level Agreements (SLAs), we have to rely on in-memory graph-based ANNS (i.e., HNSW) to provide high throughput and low latency.\n\nHowever, the ever-growing user base and content volume have led to an explosive increase in memory footprint and consequently huge CapEx and OpEx. After exploring various alternatives, we find that building a clustering-based ANNS on top of all-flash servers can be promising. Yet, we still experience severe overheads from the kernel I/O stack, a fixed pruning strategy, and slow index construction.\n\nWe present Helmsman, a high-performance and cost-effective clustering-based ANNS system, which combines an ANNS-oriented userspace storage stack, a leveling-learned pruning module, and GPU-accelerated pipelines of construction. Helmsman saves over 90% of hardware costs and enables billion-scale index (re)builds within hours. In the current production deployment, operating stably for several months, 40 machines now host ANNS workloads that previously required about 35,000 cores and 0.35 PB DRAM.",
+  "abstract_source_id": "src-abstract-osdi-2026-37172583",
   "venue": "osdi",
   "year": 2026,
   "track_or_session": "Graphs, ANN, and Vector Search",
@@ -272,6 +274,19 @@
       "official": true,
       "supports": [
         "Official proceedings availability and canonical conference versions."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2026-37172583",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/huang-yuchen",
+      "kind": "paper-page",
+      "title": "The Clustering Strikes Back: Building Cost-Effective and High-Performance ANNS at Scale with Helmsman (Operational Systems)",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:09:06Z",
+      "content_hash": "sha256:61cd57b5996c05615f13c15a6f3de08af7a6c6d148e23d3b53053f4d4e776ef1",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

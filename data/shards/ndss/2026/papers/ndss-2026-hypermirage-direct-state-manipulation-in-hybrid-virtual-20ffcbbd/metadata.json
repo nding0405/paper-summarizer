@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2026-hypermirage-direct-state-manipulation-in-hybrid-virtual-20ffcbbd",
   "title": "HyperMirage: Direct State Manipulation in Hybrid Virtual CPU Fuzzing",
+  "abstract": "Hypervisors are crucial for the security and availability of modern cloud infrastructures, yet they must expose a large virtualization interface to guest VMs—an attack surface that adversaries can exploit. Among the most intricate and security-sensitive components of hypervisors is their virtual CPU implementation, typically implemented at the highest privilege level. Although previous fuzzing research made promising steps towards scrutinizing the virtual CPU component of HVs, existing techniques fail at covering it in depth, as its convoluted nature requires laborious manual setup for accessing individual interfaces, all the while employing sub-optimal techniques that lower fuzzing throughput.\n\nWe address these shortcomings via HyperMirage, a novel hypervisor fuzzer that automatically and efficiently explores the large space of architectural states emulated by virtual CPU implementations. HyperMirage spares security analysts from manually crafting fuzzing seeds in the form of architecturally valid VM states by employing a novel Direct State Manipulation approach, which directly and automatically mutates the HV's view of a VM's state that is consumed during fuzzing. Additionally, we extend a state-of-the-art compiler-based symbolic execution engine, making it the first one available for bare-metal targets, and integrate it into an efficient coverage-guided HV fuzzer, enabling HyperMirage to drastically improve fuzzing throughput when compared to existing techniques.\n\nWe provide a case study of HyperMirage by fuzzing the production-grade Xen and KVM hypervisors on the Intel x86 architecture. Our evaluation shows that HyperMirage is capable of covering 200% more virtual CPU interfaces than prior work and achieves drastically more coverage on the entire virtual CPU space when compared to available HV fuzzers. Moreover, HyperMirage discovered 9 new bugs in Xen and 2 in KVM, all of which have been confirmed by the respective project maintainers.",
+  "abstract_source_id": "src-abstract-ndss-2026-20ffcbbd",
   "venue": "ndss",
   "year": 2026,
   "track_or_session": "Summer submission cycle",
@@ -139,6 +141,19 @@
       "official": false,
       "supports": [
         "independent proceedings identity reconciliation"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2026-20ffcbbd",
+      "url": "https://www.ndss-symposium.org/ndss-paper/hypermirage-direct-state-manipulation-in-hybrid-virtual-cpu-fuzzing/",
+      "kind": "paper-page",
+      "title": "HyperMirage: Direct State Manipulation in Hybrid Virtual CPU Fuzzing",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:22:11Z",
+      "content_hash": "sha256:373a52db5d2bd99413f0cc34ab2e43310f2edccdc599736b403bcca318c148cc",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

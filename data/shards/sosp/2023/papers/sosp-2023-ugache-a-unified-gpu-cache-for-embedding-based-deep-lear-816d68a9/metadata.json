@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sosp-2023-ugache-a-unified-gpu-cache-for-embedding-based-deep-lear-816d68a9",
   "title": "UGACHE: A Unified GPU Cache for Embedding-based Deep Learning",
+  "abstract": "This paper presents UGache, a unified multi-GPU cache system for embedding-based deep learning (EmbDL). UGache is primarily motivated by the unique characteristics of EmbDL applications, namely read-only, batched, skewed, and predictable embedding accesses. UGache introduces a novel factored extraction mechanism that avoids bandwidth congestion to fully exploit high-speed cross-GPU interconnects (e.g., NVLink and NVSwitch). Based on a new hotness metric, UGache also provides a near-optimal cache policy that balances local and remote access to minimize the extraction time. We have implemented UGache and integrated it into two representative frameworks, TensorFlow and PyTorch. Evaluation using two typical types of EmbDL applications, namely graph neural network training and deep learning recommendation inference, shows that UGache outperforms state-of-the-art replication and partition designs by an average of 1.93× and 1.63× (up to 5.25× and 3.45×), respectively.",
+  "abstract_source_id": "src-abstract-sosp-2023-816d68a9",
   "venue": "sosp",
   "year": 2023,
   "track_or_session": "Session 10: Learning II",
@@ -146,6 +148,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-sosp-2023-816d68a9",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "UGACHE: A Unified GPU Cache for Embedding-based Deep Learning",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:12Z",
+      "content_hash": "sha256:aa9c23a45f6ec9973f40e6c9520c69d42bb49fc1f526891570edfdb1976cff82",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

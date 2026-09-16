@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "atc-2024-oper-optimality-guided-embedding-table-parallelization-f-e42db87b",
   "title": "OPER: Optimality-Guided Embedding Table Parallelization for Large-scale Recommendation Model",
+  "abstract": "The deployment of Deep Learning Recommendation Models (DLRMs) involves the parallelization of extra-large embedding tables (EMTs) on multiple GPUs. Existing works overlook the input-dependent behavior of EMTs and parallelize them in a coarse-grained manner, resulting in unbalanced workload distribution and inter-GPU communication.\n\nTo this end, we propose OPER , an algorithm-system co-design with OP timality-guided E mbedding table parallelization for large-scale R ecommendation model training and inference. The core idea of OPER is to explore the connection between DLRM inputs and the efficiency of distributed EMTs, aiming to provide a near-optimal parallelization strategy for EMTs. Specifically, we conduct an in-depth analysis of various types of EMTs parallelism and propose a heuristic search algorithm to efficiently approximate an empirically near-optimal EMT parallelization. Furthermore, we implement a distributed shared memory-based system, which supports the lightweight but complex computation and communication pattern of fine-grained EMT parallelization, effectively converting theoretical improvements into real speedups. Extensive evaluation shows that OPER achieves 2.3× and 4.0× speedup on average in training and inference, respectively, over state-of-the-art DLRM frameworks.",
+  "abstract_source_id": "src-abstract-atc-2024-e42db87b",
   "venue": "atc",
   "year": 2024,
   "track_or_session": "ML-System Co-Design",
@@ -243,6 +245,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-atc-2024-e42db87b",
+      "url": "https://www.usenix.org/conference/atc24/presentation/wang",
+      "kind": "paper-page",
+      "title": "OPER: Optimality-Guided Embedding Table Parallelization for Large-scale Recommendation Model",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T21:58:54Z",
+      "content_hash": "sha256:09dc43a8af4f96306b303791082858953a53f74898f809716d5e5e22cd7b65d3",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

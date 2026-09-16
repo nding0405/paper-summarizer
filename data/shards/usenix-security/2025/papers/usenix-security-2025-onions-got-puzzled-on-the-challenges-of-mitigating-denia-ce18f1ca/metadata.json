@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-onions-got-puzzled-on-the-challenges-of-mitigating-denia-ce18f1ca",
   "title": "Onions Got Puzzled: On the Challenges of Mitigating Denial-of-Service Problems in Tor Onion Services",
+  "abstract": "Denial-of-service (DoS) attacks present significant challenges for Tor onion services, where strict anonymity requirements render conventional mitigation strategies inapplicable. In response, the Tor community has recently revived the client puzzle idea in an official update to address real-world DoS attacks, leading to its adoption by several major onion services. In this paper, we uncover a critical vulnerability in the current puzzle system in Tor through a novel family of attacks, dubbed OnionFlation. The proposed attacks artificially inflate the required puzzle difficulty for all clients without causing noticeable congestion at the targeted service, rendering any existing onion service largely unusable at an attack cost of a couple of dollars per hour. Our ethical evaluation on the live Tor network demonstrates the impact of these attacks, which we have reported to the Tor Project and received acknowledgment. Our analysis reveals an undesirable trade-off in the client puzzle mechanism, which is the root cause of the discovered vulnerability, that forces the Tor onion system to choose between inflation resistance and congestion resistance, but not both. We offer practical guidance for Tor onion services aimed at balancing the mitigation of these attacks.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-ce18f1ca",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Network Security 2: Routing and DoS",
@@ -112,6 +114,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-ce18f1ca",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/lee",
+      "kind": "paper-page",
+      "title": "Onions Got Puzzled: On the Challenges of Mitigating Denial-of-Service Problems in Tor Onion Services",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:20:58Z",
+      "content_hash": "sha256:3dd52c53f9072fb7a8a463fe3d8a1eaa18120fbfd84574e8ca29eefe109a0d31",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

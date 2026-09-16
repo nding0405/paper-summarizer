@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-malguard-towards-real-time-accurate-and-actionable-detec-a82a729f",
   "title": "MalGuard: Towards Real-Time, Accurate, and Actionable Detection of Malicious Packages in PyPI Ecosystem",
+  "abstract": "Malicious package detection has become a critical task in ensuring the security and stability of the PyPI community. Existing detection approaches have focused on advancing model selection, evolving from traditional machine learning (ML) models to large language models (LLMs). However, as model complexity increases, the time consumption also increases, which raises the question that can lightweight model achieve effective detection? Through empirical research, we demonstrate that collecting a sufficiently comprehensive feature set enables even traditional ML-models to achieve outstanding performance. But, traditional ML-models rely on manually pre-defined feature set and lack of explainability to malicious packages. Thereforce, we propose a novel approach MalGuard based on social network graphs to detect malicious packages in five traditional ML-models. To overcome this challenge, we leverage graph centrality analysis to extract sensitive APIs automatically to replace the hand-crafted features. To understand the sensitive APIs, we further refine the feature set using LLM and integrate the LIME(Local Interpretable Model-agnostic Explanations) algorithm with ML-models to provide explanations for malicious packages. We evaluated MalGuard against five SOTA baselines with the same settings. Experimental results show that our proposed MalGuard, improves precision by 0.5%-33.2% and recall by 1.8%-22.1%. With MalGuard, we successfully identified 95 previously unknown malicious packages from a pool of 51,479 newly-uploaded packages over a four-week period, and 73 out of them have been removed by the PyPI official.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-a82a729f",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Fraud, Malware, Spam",
@@ -217,6 +219,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-a82a729f",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/gao-xingan",
+      "kind": "paper-page",
+      "title": "MalGuard: Towards Real-Time, Accurate, and Actionable Detection of Malicious Packages in PyPI Ecosystem",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:20:41Z",
+      "content_hash": "sha256:7a6a19cbd2749fbedef305bf5e422d89c2c173736d6abfb00f55cee530ff41d9",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

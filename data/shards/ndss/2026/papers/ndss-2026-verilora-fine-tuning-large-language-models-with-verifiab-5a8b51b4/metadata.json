@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2026-verilora-fine-tuning-large-language-models-with-verifiab-5a8b51b4",
   "title": "VeriLoRA: Fine-Tuning Large Language Models with Verifiable Security via Zero-Knowledge Proofs",
+  "abstract": "Fine-tuning large language models (LLMs) is crucial for adapting them to specific tasks, yet it remains computationally demanding and raises concerns about correctness and privacy, particularly in untrusted environments. Although parameter-efficient methods like Low-Rank Adaptation (LoRA) significantly reduce resource requirements, ensuring the security and verifiability of fine-tuning under zero-knowledge constraints remains an unresolved challenge. To address this, we introduce VeriLoRA, the first framework to integrate LoRA fine-tuning with zero-knowledge proofs (ZKPs), achieving provable security and correctness. VeriLoRA employs advanced cryptographic techniques---such as lookup arguments, sumcheck protocols, and polynomial commitments---to verify both arithmetic and non-arithmetic operations in Transformer-based architectures. The framework provides end-to-end verifiability for forward propagation, backward propagation, and parameter updates during LoRA fine-tuning, while safeguarding the privacy of model parameters and training data. Leveraging GPU-based implementations, VeriLoRA demonstrates practicality and efficiency through experimental validation on open-source LLMs like LLaMA, scaling up to 13 billion parameters. By combining parameter-efficient fine-tuning with ZKPs, VeriLoRA bridges a critical gap, enabling secure and trustworthy deployment of LLMs in sensitive or untrusted environments.",
+  "abstract_source_id": "src-abstract-ndss-2026-5a8b51b4",
   "venue": "ndss",
   "year": 2026,
   "track_or_session": "Fall submission cycle",
@@ -202,6 +204,19 @@
       "official": false,
       "supports": [
         "independent proceedings identity reconciliation"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2026-5a8b51b4",
+      "url": "https://www.ndss-symposium.org/ndss-paper/verilora-fine-tuning-large-language-models-with-verifiable-security-via-zero-knowledge-proofs/",
+      "kind": "paper-page",
+      "title": "VeriLoRA: Fine-Tuning Large Language Models with Verifiable Security via Zero-Knowledge Proofs",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:23:33Z",
+      "content_hash": "sha256:6153b47d14e4ac3a8968c89c69a8c8c9b4f7caf27f77831607ee1f54e707eb8f",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

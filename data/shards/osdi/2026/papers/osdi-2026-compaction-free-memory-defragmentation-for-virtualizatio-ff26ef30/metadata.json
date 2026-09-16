@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2026-compaction-free-memory-defragmentation-for-virtualizatio-ff26ef30",
   "title": "Compaction-Free Memory Defragmentation for Virtualization via Infinite Guest Physical Address Space",
+  "abstract": "In virtualized environments, guest memory defragmentation is essential for exploiting huge-page benefits and improving application performance. However, existing approaches directly reuse host-side defragmentation and assume a limited guest physical address (GPA) space. As a result, they rely on memory compaction to defragment this constrained space, causing throughput to drop by up to 51% and latency to rise by up to 102% in YCSB-Redis workloads.\n\nThis paper proposes InfiniDefrag, a compaction-free memory defragmentation technique for virtualization. Our key insight is that the GPA space can be regarded as (nearly) infinite by controlling the mapping between GPA and host physical address (HPA), thereby eliminating the need for guest-side memory compaction. To realize this insight, we introduce (1) Infinite Address Manager that expands the GPA space while reclaiming free fragment pages; (2) Host Memory Guard that maintains the GPA–HPA mapping and constrains HPA usage within each VM’s quota; and (3) Scalability Optimizer that scales GPA/HPA space management to multi-thread and multi-VM environments. Experiments on micro-benchmarks and real-world applications show that InfiniDefrag outperforms state-of-the-art approaches and can achieve ideal, fragmentation-free performance.",
+  "abstract_source_id": "src-abstract-osdi-2026-ff26ef30",
   "venue": "osdi",
   "year": 2026,
   "track_or_session": "Virtualization and Live Migration",
@@ -209,6 +211,19 @@
       "official": true,
       "supports": [
         "Official proceedings availability and canonical conference versions."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2026-ff26ef30",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/zeng",
+      "kind": "paper-page",
+      "title": "Compaction-Free Memory Defragmentation for Virtualization via Infinite Guest Physical Address Space",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:08:05Z",
+      "content_hash": "sha256:4f4d44d60c1561d45e67d0301fdac308eee038a11035b0a98fbdd596594af65e",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

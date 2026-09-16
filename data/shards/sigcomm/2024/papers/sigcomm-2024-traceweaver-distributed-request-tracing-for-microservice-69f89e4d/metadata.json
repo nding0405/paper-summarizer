@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sigcomm-2024-traceweaver-distributed-request-tracing-for-microservice-69f89e4d",
   "title": "TraceWeaver: Distributed Request Tracing for Microservices Without Application Modification",
+  "abstract": "Monitoring and debugging modern cloud-based applications is challenging since even a single API call can involve many interdependent distributed microservices. To provide observability for such complex systems, distributed tracing frameworks track request flow across the microservice call tree. However, such solutions require instrumenting every component of the distributed application to add and propagate tracing headers, which has slowed adoption. This paper explores whether we can trace requests without any application instrumentation, which we refer to as request trace reconstruction. To that end, we develop TraceWeaver, a system that incorporates readily available information from production settings (e.g., timestamps) and test environments (e.g., call graphs) to reconstruct request traces with usefully high accuracy. At the heart of TraceWeaver is a reconstruction algorithm that uses request-response timestamps to effectively prune the search space for mapping requests and applies statistical timing analysis techniques to reconstruct traces. Evaluation with (1) benchmark microservice applications and (2) a production microservice dataset demonstrates that TraceWeaver can achieve a high accuracy of ~90% and can be meaningfully applied towards multiple use cases (e.g., finding slow services and A/B testing).",
+  "abstract_source_id": "src-abstract-sigcomm-2024-69f89e4d",
   "venue": "sigcomm",
   "year": 2024,
   "track_or_session": "Managing microservices and service meshes — Research Track",
@@ -192,6 +194,19 @@
         "publisher-deposited ORCIDs when available",
         "proceedings page range and online publication date",
         "empty publisher relation metadata for alternate-version checks"
+      ]
+    },
+    {
+      "id": "src-abstract-sigcomm-2024-69f89e4d",
+      "url": "https://api.openalex.org/works/doi:10.1145/3651890.3672254?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "TraceWeaver: Distributed Request Tracing for Microservices Without Application Modification",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:23:14Z",
+      "content_hash": "sha256:573a2e966e369b1697f7c4a050fb25507f19c8ac96379dd0e5723b7b224d8924",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

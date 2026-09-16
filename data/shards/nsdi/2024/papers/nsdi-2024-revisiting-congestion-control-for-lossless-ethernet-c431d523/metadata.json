@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2024-revisiting-congestion-control-for-lossless-ethernet-c431d523",
   "title": "Revisiting Congestion Control for Lossless Ethernet",
+  "abstract": "Congestion control is a key enabler for lossless Ethernet at scale. In this paper, we revisit this classic topic from a new perspective, i.e., understanding and exploiting the intrinsic properties of the underlying lossless network. We experimentally and analytically find that the intrinsic properties of lossless networks, such as packet conservation , can indeed provide valuable implications in estimating pipe capacity and the precise number of excessive packets. Besides, we derive principles on how to treat congested flows and victim flows individually to handle HoL blocking efficiently. Then, we propose ACK-driven congestion control (ACC) for lossless Ethernet, which simply resorts to the knowledge of ACK time series to exert a temporary halt to exactly drain out excessive packets of congested flows and then match its rate to pipe capacity. Testbed and large-scale simulations demonstrate that ACC ameliorates fundamental issues in lossless Ethernet (e.g., congestion spreading, HoL blocking, and deadlock) and achieves excellent low latency and high throughput performance. For instance, compared with existing schemes, ACC improves the average and 99th percentile FCT performance of small flows by 1.3~3.3× and 1.4~11.5×, respectively.",
+  "abstract_source_id": "src-abstract-nsdi-2024-c431d523",
   "venue": "nsdi",
   "year": 2024,
   "track_or_session": "Scheduling the Network",
@@ -139,6 +141,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2024-c431d523",
+      "url": "https://www.usenix.org/conference/nsdi24/presentation/zhang-yiran",
+      "kind": "paper-page",
+      "title": "Revisiting Congestion Control for Lossless Ethernet",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:03:38Z",
+      "content_hash": "sha256:3c8b329d7609100cb9dedad188caca5e66814e898eb133a0689b46c474e79e55",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

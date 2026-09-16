@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-the-silent-danger-in-http-identifying-http-desync-vulner-7421c5a9",
   "title": "The Silent Danger in HTTP: Identifying HTTP Desync Vulnerabilities with Gray-box Testing",
+  "abstract": "HTTP Desync is a high-risk threat in today's decentralized Internet, stemming from discrepancies among HTTP implementations. Current automatic detection tools, primarily dictionary-based scanners and black-box fuzzers, lack insights into internal states of implementations, leading to ineffective testing. Moreover, they focus on the request-side Desync, overlooking vulnerabilities in HTTP responses.\n\nIn this paper, we present HDHunter, a novel automatic HTTP discrepancy detection framework using the gray-box coverage-directed differential testing technique. HDHunter can discover discrepancies in not only HTTP requests but also HTTP responses and CGI responses. We evaluated our HDHunter prototype against 19 state-of-the-art HTTP implementations and identified 17 new HTTP Desync vulnerabilities. We have disclosed all identified vulnerabilities to corresponding vendors and received acknowledgments and bug bounty rewards, including 9 CVEs from well-known HTTP software, including Apache, Tomcat, Squid, etc.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-7421c5a9",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Network Security 1: Censorship, Evasion, and Trustworthy Infrastructure",
@@ -175,6 +177,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-7421c5a9",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/mu",
+      "kind": "paper-page",
+      "title": "The Silent Danger in HTTP: Identifying HTTP Desync Vulnerabilities with Gray-box Testing",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:22:15Z",
+      "content_hash": "sha256:1cbb718d2a74dd57e48500da4897709a686e7c28fc38fc4c87598110e2fa3a2d",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

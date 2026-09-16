@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "eurosys-2025-ohminer-an-overlap-centric-system-for-efficient-hypergra-fc6da31b",
   "title": "OHMiner: An Overlap-centric System for Efficient Hypergraph Pattern Mining",
+  "abstract": "Hypergraph Pattern Mining (HPM) aims to identify all the instances of user-interested subhypergraphs (patterns) in hypergraphs, which has been widely used in various applications. However, existing solutions either need significant enumeration overhead because they extend subhypergraphs at the granularity of vertices, or suffer from massive redundant computations because they often need to repeatedly fetch and process the same incident hyperedges for different vertices. This paper presents an overlap-centric system named OHMiner to efficiently support HPM. OHMiner proposes an overlap-centric execution model to determine the subhypergraphs isomorphism through computing and comparing overlaps among hyperedges using set operations. This model aims to efficiently handle the vertices that collectively share the same incident hyperedges. To automatically and precisely retrieve an arbitrary pattern's overlapping semantics without performing redundant set computations, OHMiner further proposes a redundancy-free compiler, which constructs an Overlap Intersection Graph (OIG) for the pattern, optimizes the OIG, and generates an overlap-centric execution plan to guide the procedure of HPM. Moreover, OHMiner designs an overlap-centric parallel execution engine, which adopts an incremental overlap-pruned approach to fast validate candidates for HPM. Additionally, it proposes a degree-aware data store to support efficient generation of candidates. Through evaluating OHMiner on a broad range of real-world hypergraphs with various patterns, our experimental results show that OHMiner outperforms the state-of-the-art HPM system by 5.4×-22.2×.",
+  "abstract_source_id": "src-abstract-eurosys-2025-fc6da31b",
   "venue": "eurosys",
   "year": 2025,
   "track_or_session": "Session-5.1: Graph and Stream processing - Location: Mees - Chair: Baptiste Lepers",
@@ -335,6 +337,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-eurosys-2025-fc6da31b",
+      "url": "https://api.openalex.org/works/doi:10.1145/3689031.3717474?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "OHMiner: An Overlap-centric System for Efficient Hypergraph Pattern Mining",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:19:31Z",
+      "content_hash": "sha256:52fe364b0a062308a2f6842c287d9d6889336191e6e1a91b13a84a141213f3ed",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

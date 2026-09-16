@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2023-towards-a-proactive-ml-approach-for-detecting-backdoor-p-cc6f7273",
   "title": "Towards A Proactive ML Approach for Detecting Backdoor Poison Samples",
+  "abstract": "Adversaries can embed backdoors in deep learning models by introducing backdoor poison samples into training datasets. In this work, we investigate how to detect such poison samples to mitigate the threat of backdoor attacks. First, we uncover a post-hoc workflow underlying most prior work, where defenders passively allow the attack to proceed and then leverage the characteristics of the post-attacked model to uncover poison samples. We reveal that this workflow does not fully exploit defenders' capabilities, and defense pipelines built on it are prone to failure or performance degradation in many scenarios. Second, we suggest a paradigm shift by promoting a proactive mindset in which defenders engage proactively with the entire model training and poison detection pipeline, directly enforcing and magnifying distinctive characteristics of the post-attacked model to facilitate poison detection. Based on this, we formulate a unified framework and provide practical insights on designing detection pipelines that are more robust and generalizable. Third, we introduce the technique of Confusion Training (CT) as a concrete instantiation of our framework. CT applies an additional poisoning attack to the already poisoned dataset, actively decoupling benign correlation while exposing backdoor patterns to detection. Empirical evaluations on 4 datasets and 14 types of attacks validate the superiority of CT over 14 baseline defenses.",
+  "abstract_source_id": "src-abstract-usenix-security-2023-cc6f7273",
   "venue": "usenix-security",
   "year": 2023,
   "track_or_session": "Poisoning",
@@ -175,6 +177,19 @@
       "official": true,
       "supports": [
         "authors, affiliations when published, abstract, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2023-cc6f7273",
+      "url": "https://www.usenix.org/conference/usenixsecurity23/presentation/qi",
+      "kind": "paper-page",
+      "title": "Towards A Proactive ML Approach for Detecting Backdoor Poison Samples",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:13:23Z",
+      "content_hash": "sha256:57b6c7e783701b9a2fbca8a52e68a7664bb3e81ed58d9da740d96ce2190a1c4d",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

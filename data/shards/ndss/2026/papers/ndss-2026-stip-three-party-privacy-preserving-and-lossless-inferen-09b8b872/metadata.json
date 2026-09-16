@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2026-stip-three-party-privacy-preserving-and-lossless-inferen-09b8b872",
   "title": "STIP: Three-Party Privacy-Preserving and Lossless Inference for Large Transformers in Production",
+  "abstract": "The privacy of model parameters and user data is crucial for Transformer-based cloud services, such as online chatbots. While recent advances in secure multi-party computation and homomorphic encryption provide strong cryptographic guarantees, their computational overhead makes them infeasible for real-time inference with large-scale Transformer models.\n\nIn this work, we propose a practical alternative that balances privacy and efficiency in real-world deployments.\n\nWe introduce a three-party threat model involving a model developer, a cloud model server, and a data owner, capturing the trust assumptions and deployment conditions of practical AI services.\n\nWithin this framework, we design a semi-symmetric permutation-based protection mechanism and present STIP, the first three-party privacy-preserving inference system for large Transformers deployable on commodity hardware.\n\nSTIP formally bounds privacy leakage while preserving lossless inference accuracy.\n\nTo further safeguard model parameters, STIP integrates trusted execution environments to resist model extraction and fine-tuning attacks.\n\nWe evaluate STIP on six representative Transformer model families, including models with up to 70 billion parameters, under three deployment settings.\n\nSTIP's efficiency is comparable to unprotected full-cloud inference, for example, STIP achieves 31.7 ms latency on LLaMA2-7B model.\n\nSTIP also shows effective resistance to various attacks against user data and model parameters.\n\nSTIP has been deployed in a production environment on our proprietary 70B model.\n\nIn a three-month online test, STIP brings only 12% additional latency and no privacy incidents were reported, demonstrating its practicality and robustness for production-scale AI systems.",
+  "abstract_source_id": "src-abstract-ndss-2026-09b8b872",
   "venue": "ndss",
   "year": 2026,
   "track_or_session": "Summer submission cycle",
@@ -202,6 +204,19 @@
       "official": false,
       "supports": [
         "independent proceedings identity reconciliation"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2026-09b8b872",
+      "url": "https://www.ndss-symposium.org/ndss-paper/stip-three-party-privacy-preserving-and-lossless-inference-for-large-transformers-in-production/",
+      "kind": "paper-page",
+      "title": "STIP: Three-Party Privacy-Preserving and Lossless Inference for Large Transformers in Production",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:23:13Z",
+      "content_hash": "sha256:78262ca6d15d9e5b498d3f01bb9a00643b255468790f849942e8ac9031681c9a",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

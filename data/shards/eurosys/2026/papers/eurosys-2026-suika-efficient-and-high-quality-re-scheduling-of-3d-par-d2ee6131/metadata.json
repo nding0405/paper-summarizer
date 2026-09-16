@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "eurosys-2026-suika-efficient-and-high-quality-re-scheduling-of-3d-par-d2ee6131",
   "title": "Suika: Efficient and High-quality Re-scheduling of 3D-parallelized LLM Training Jobs in Shared Clusters",
+  "abstract": "Large Language Models (LLMs) are usually trained with 3D (data, tensor, and pipeline) parallelism—in shared GPU clusters where the available resources are highly dynamic. Rescheduling the idle resources to ongoing jobs can help improve cluster utilization, but doing so for 3D-parallelized training jobs suffers large overheads in performance modeling, decision making, and redeployment. We present Suika, a cluster training system that supports efficient and high-quality resource rescheduling for 3D-parallelized LLM training jobs. Suika holistically addresses the complexity challenges by exploiting the incremental nature of rescheduling. For performance modeling, it builds an accurate performance estimator with non-disruptive online profiling. For decision-making, it employs topology-aware sorting and an expand-and-balance algorithm to reduce the complexity of resource allocation and job parallelization, without compromising decision quality. Suika further integrates a device-to-device redeployment method to leverage the overlapping nature of incremental reconfiguration for overhead reduction. Experiments on 64-GPU physical cluster and 1024-GPU simulated cluster show that, Suika achieves 1.29 ~ 1.31× reduction in average JCT compared to state-of-the-art schedulers.",
+  "abstract_source_id": "src-abstract-eurosys-2026-d2ee6131",
   "venue": "eurosys",
   "year": 2026,
   "track_or_session": null,
@@ -306,6 +308,19 @@
       "official": false,
       "supports": [
         "Publisher-deposited proceedings identity and print publication date."
+      ]
+    },
+    {
+      "id": "src-abstract-eurosys-2026-d2ee6131",
+      "url": "https://api.openalex.org/works/doi:10.1145/3767295.3803623?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Suika: Efficient and High-quality Re-scheduling of 3D-parallelized LLM Training Jobs in Shared Clusters",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:22:07Z",
+      "content_hash": "sha256:bf9b306a03dbd8983eb8d81bd296b402fb21ca99ca2b77063ed6bdbbba6cc459",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

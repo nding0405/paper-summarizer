@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sigcomm-2025-sglb-scalable-and-robust-global-load-balancing-in-commod-c328a304",
   "title": "SGLB: Scalable and Robust Global Load Balancing in Commodity AI Clusters",
+  "abstract": "Internet companies are constructing large-scale AI clusters with commodity Ethernet switches for AI model training to support their businesses. AI training workloads impose stringent network requirements, mandating that cluster networks deliver high peak throughput while maintaining robustness and resilience in the face of link failures. We present SGLB, a distributed, global congestion-aware load balancing system for AI clusters. SGLB operates a control-plane protocol, SyncMesh, to enable a new load balancing abstraction in modern commodity switches—Global Load Balancing (GLB) engine—which utilizes global congestion information to distribute traffic across all available paths. We address three key challenges in designing SGLB: fast routing convergence to minimize downtime in the event of link failures, scalable maintenance of congestion profiles within the constraints of limited switch hardware resources, and preventing GLB throughput suppression in scenarios where path bandwidths are asymmetric. We prototype SGLB and conduct extensive experiments to evaluate SGLB. SGLB ensures rapid routing convergence in the event of link failures, recovering in as little as 45 μs to guarantee network robustness for long-term, stable model training. Additionally, SGLB effectively load-balances traffic across paths, avoiding those with global congestion, which accelerates All-to-All collective communication by up to 60%.",
+  "abstract_source_id": "src-abstract-sigcomm-2025-c328a304",
   "venue": "sigcomm",
   "year": 2025,
   "track_or_session": "NetAI",
@@ -444,6 +446,19 @@
         "DOI and ACM publisher landing/PDF links",
         "publisher-deposited ORCIDs when available",
         "proceedings page range and online publication date"
+      ]
+    },
+    {
+      "id": "src-abstract-sigcomm-2025-c328a304",
+      "url": "https://api.openalex.org/works/doi:10.1145/3718958.3750527?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "SGLB: Scalable and Robust Global Load Balancing in Commodity AI Clusters",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:23:34Z",
+      "content_hash": "sha256:84bb28cd05aa57fd41bf53b5e609ef84165837d2ba09c3e454a84a1a8d68983c",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

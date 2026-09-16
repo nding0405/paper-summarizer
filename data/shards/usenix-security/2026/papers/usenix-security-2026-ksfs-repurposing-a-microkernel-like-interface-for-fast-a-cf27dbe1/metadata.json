@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-ksfs-repurposing-a-microkernel-like-interface-for-fast-a-cf27dbe1",
   "title": "kSFS: Repurposing a Microkernel-like Interface for Fast and Secure In-Kernel Linux File Systems",
+  "abstract": "File systems are widely-used and crucial but notoriously complex and a major source of vulnerabilities in operating systems. Recent works have proposed introducing in-kernel sandboxing techniques to isolate kernel components including file systems. However, a well-defined and secure boundary, where all interactions between untrusted and trusted kernel components should be validated against a strong threat model, is often ignored. This lack of secure boundary particularly applies to Linux file systems, which rely on a large and complex interface and interact with many kernel subsystems such as VFS and block devices. Defining such an interface is a challenging prerequisite of sandboxed kernel file systems.\n\nWe address this challenge with kSFS, a framework for in-kernel sandboxed file systems. kSFS repurposes the FUSE protocol, which is a microkernel-like interface originally designed for user-space file systems in Linux, as a secure interface for untrusted sandboxed kernel file systems that has strong isolation guarantees. Furthermore, kSFS generalizes WebAssembly to kernel space as a generic sandboxing mechanism and achieves compatibility with existing user-space file system implementations with minimal porting effort. For instance, porting the NTFS and exFAT implementations from user space with kSFS required modifying fewer than 300 LoC. While achieving better security and reliability than Linux file system implementations, kSFS achieves significantly better performance than their user-space counterparts. For the real-world applications tar and RocksDB, the kSFS NTFS implementation achieves up to 29% and 60× better performance than the user-space baseline, respectively, and only 0% to 52% lower performance than the insecure Linux implementation.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-cf27dbe1",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "System Security 1",
@@ -93,6 +95,19 @@
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening",
         "prepublication PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-cf27dbe1",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/peng-dinglan",
+      "kind": "paper-page",
+      "title": "kSFS: Repurposing a Microkernel-like Interface for Fast and Secure In-Kernel Linux File Systems",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:24:28Z",
+      "content_hash": "sha256:3c2d9e6f48d5aca296dddb742f6a4f60ac8dd04e67af7a02fadf576ef1af5675",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

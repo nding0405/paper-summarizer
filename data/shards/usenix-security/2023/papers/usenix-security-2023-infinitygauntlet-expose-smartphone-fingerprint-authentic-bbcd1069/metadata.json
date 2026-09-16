@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2023-infinitygauntlet-expose-smartphone-fingerprint-authentic-bbcd1069",
   "title": "InfinityGauntlet: Expose Smartphone Fingerprint Authentication to Brute-force Attack",
+  "abstract": "Billions of smartphone fingerprint authentications (SFA) occur daily for unlocking, privacy and payment. Existing threats to SFA include presentation attacks (PA) and some case-by-case vulnerabilities. The former need to know the victim's fingerprint information (e.g., latent fingerprints) and can be mitigated by liveness detection and security policies. The latter require additional conditions (e.g., third-party screen protector, root permission) and are only exploitable for individual smartphone models.\n\nIn this paper, we conduct the first investigation on the general zero-knowledge attack towards SFA where no knowledge about the victim is needed. We propose a novelty fingerprint brute-force attack on off-the-shelf smartphones, named InfinityGauntlet. Firstly, we discover design vulnerabilities in SFA systems across various manufacturers, operating systems, and fingerprint types to achieve unlimited authentication attempts. Then, we use SPI MITM to bypass liveness detection and make automatic attempts. Finally, we customize a synthetic fingerprint generator to get a valid brute-force fingerprint dictionary.\n\nWe design and implement low-cost equipment to launch InfinityGauntlet. A proof-of-concept case study demonstrates that InfinityGauntlet can brute-force attack successfully in less than an hour without any knowledge of the victim. Additionally, empirical analysis on representative smartphones shows the scalability of our work.",
+  "abstract_source_id": "src-abstract-usenix-security-2023-bbcd1069",
   "venue": "usenix-security",
   "year": 2023,
   "track_or_session": "Authentication",
@@ -112,6 +114,19 @@
       "official": true,
       "supports": [
         "authors, affiliations when published, abstract, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2023-bbcd1069",
+      "url": "https://www.usenix.org/conference/usenixsecurity23/presentation/chen-yu",
+      "kind": "paper-page",
+      "title": "InfinityGauntlet: Expose Smartphone Fingerprint Authentication to Brute-force Attack",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:11:40Z",
+      "content_hash": "sha256:7cf36234e640b5003cf8164bc5e5ce5ed55c27182b928f7df2a863c147929a83",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

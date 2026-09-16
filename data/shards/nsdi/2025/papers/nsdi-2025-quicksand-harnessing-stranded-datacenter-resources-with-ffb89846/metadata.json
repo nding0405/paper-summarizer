@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2025-quicksand-harnessing-stranded-datacenter-resources-with-ffb89846",
   "title": "Quicksand: Harnessing Stranded Datacenter Resources with Granular Computing",
+  "abstract": "Datacenters today waste CPU and memory, as resources demanded by applications often fail to match the resources available on machines. This leads to stranded resources because one resource that runs out prevents placing additional applications that could consume the other resources. Unusable stranded resources result in reduced utilization of servers, and wasted money and energy.\n\nQuicksand is a new framework and runtime system that unstrands resources by providing developers with familiar, high-level abstractions (e.g., data structures, batch computing). Internally Quicksand decomposes them into resource proclets, granular units that each primarily consume resources of one type. Inspired by recent granular programming models, Quicksand decouples consumption of resources as much as possible. It splits, merges, and migrates resource proclets in milliseconds, so it can use resources on any machine, even if available only briefly.\n\nEvaluation of our prototype with four applications shows that Quicksand uses stranded resources effectively; that Quicksand reacts to changing resource availability and demand within milliseconds, increasing utilization; and that porting applications to Quicksand requires moderate effort.",
+  "abstract_source_id": "src-abstract-nsdi-2025-ffb89846",
   "venue": "nsdi",
   "year": 2025,
   "track_or_session": "Data Center Resource Scheduling",
@@ -203,6 +205,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2025-ffb89846",
+      "url": "https://www.usenix.org/conference/nsdi25/presentation/ruan",
+      "kind": "paper-page",
+      "title": "Quicksand: Harnessing Stranded Datacenter Resources with Granular Computing",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:04:30Z",
+      "content_hash": "sha256:dee7f5f809e369e2922991975cefce49784089ce6b685c48f7b7114a01809738",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2026-rakaia-scalable-in-kernel-scheduling-for-tcp-based-rpcs-c483b58d",
   "title": "Rakaia: Scalable In-Kernel Scheduling for TCP-Based RPCs",
+  "abstract": "Delivering RPCs with high throughput and low latency demands work-conserving scheduling across many CPU cores and eliminating head-of-line (HOL) blocking across all messages. By exposing per-connection byte streams rather than messages to userspace, the POSIX TCP API inherently induces HOL blocking both within and across connections. To mitigate HOL blocking, RPC frameworks such as gRPC must reconstruct message semantics in userspace through additional abstractions including dedicated I/O threads, work queues, and worker thread pools, introducing significant context switching and synchronization overheads.\n\nThis paper presents Rakaia, a framework that hides all TCP-level abstractions from userspace and exposes a purely message-oriented API. By performing message parsing and work-conserving scheduling directly in the kernel’s TCP receive path, at the earliest possible point, Rakaia efficiently eliminates HOL blocking and avoids the heavy userspace machinery imposed by stream-based APIs.\n\nWe implemented Rakaia as a Linux kernel module with support for kTLS. Rakaia is compatible with the kernel’s TCP stack and existing RPC protocols. We also adapted gRPC to use Rakaia’s API. Our evaluation shows Rakaia: (i) consistently eliminates HOL blocking across a wide range of connection counts; (ii) achieves up to 5× higher throughput-under-SLO than KCM, Linux’s current in-kernel message API over TCP; (iii) improves gRPC-Go’s throughput-under-SLO by up to 1.56×, and gRPC-C++’s by up to 2.69×; and (iv) improves the throughput-under-SLO for real-world applications including Silo running TPC-C and OpenTelemetry Collector by 1.39× and 1.42×, respectively.",
+  "abstract_source_id": "src-abstract-osdi-2026-c483b58d",
   "venue": "osdi",
   "year": 2026,
   "track_or_session": "Kernel Scheduling and Tail Latency",
@@ -125,6 +127,19 @@
       "official": true,
       "supports": [
         "Official proceedings availability and canonical conference versions."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2026-c483b58d",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/yang-rui",
+      "kind": "paper-page",
+      "title": "Rakaia: Scalable In-Kernel Scheduling for TCP-Based RPCs",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:08:48Z",
+      "content_hash": "sha256:a1fc5213e5d3871d5313e338cd27f0e04ef67c882e2a432231f413e73b33285e",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

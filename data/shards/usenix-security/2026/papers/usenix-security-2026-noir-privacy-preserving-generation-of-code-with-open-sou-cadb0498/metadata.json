@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-noir-privacy-preserving-generation-of-code-with-open-sou-cadb0498",
   "title": "NOIR: Privacy-Preserving Generation of Code with Open-Source LLMs",
+  "abstract": "Although boosting software development performance, large language model (LLM)-powered code generation introduces intellectual property and data security risks rooted in the fact that a service provider (cloud) observes a client's prompts and generated code, which can be proprietary in commercial systems. To mitigate this problem, we propose NOIR, the first framework to protect the client's prompts and generated code from the cloud. NOIR uses an encoder and a decoder at the client to encode and send the prompts' embeddings to the cloud to get enriched embeddings from the LLM, which are then decoded to generate the code locally at the client. Since the cloud can use the embeddings to infer the prompt and the generated code, NOIR introduces a new mechanism to achieve indistinguishability, a local differential privacy protection at the token embedding level, in the vocabulary used in the prompts and code, and a data-independent and randomized tokenizer on the client side. These components effectively defend against reconstruction and frequency analysis attacks by an honest-but-curious cloud. Extensive analysis and results using open-source LLMs show that NOIR significantly outperforms existing baselines on benchmarks, including the Evalplus (MBPP and HumanEval, Pass@1 of 76.7 and 77.4), and BigCodeBench (Pass@1 of 38.7, only a 1.77% drop from the original LLM) under strong privacy against attacks.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-cadb0498",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Privacy Anonymity 2",
@@ -240,6 +242,19 @@
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening",
         "prepublication PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-cadb0498",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/nguyen-khoa",
+      "kind": "paper-page",
+      "title": "NOIR: Privacy-Preserving Generation of Code with Open-Source LLMs",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:24:49Z",
+      "content_hash": "sha256:bf2b7727e6402c40b36872a32362659f3181c1c89c94677eb9179f5c3dcb1cba",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

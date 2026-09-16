@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-xcfi-comprehensive-control-flow-integrity-for-arm-trustz-d113a5bf",
   "title": "XCFI: Comprehensive Control-Flow Integrity for Arm TrustZone-M",
+  "abstract": "Arm TrustZone-M (TZ-M) provides hardware-based isolation for tiny embedded systems by partitioning execution into secure and non-secure states. However, despite this isolation, memory vulnerabilities in software running within either state can still be exploited to perform control-flow hijacking attacks. To mitigate these threats, numerous control-flow integrity (CFI) studies have been proposed for embedded systems, but they have several limitations: many neglect the secure state, fail to protect control-flow events during TZ-M security state transitions, or incur prohibitive performance overhead.\n\nIn this paper, we present XCFI, a comprehensive CFI mechanism for TZ-M. XCFI employs a 32-bit control-flow identifier (CID) based protection to uniformly enforce fine-grained CFI across both secure and non-secure states, covering all control-flow events, including indirect branches, returns, and exceptions. Crucially, XCFI extends CFI enforcement to cross-state control-flow events in TZ-M, which have not been protected by prior work. Overall, XCFI provides comprehensive control-flow protection across all TZ-M execution contexts while incurring only modest runtime overhead.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-d113a5bf",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Hardware Security 5",
@@ -113,6 +115,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-d113a5bf",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/gu-yunju",
+      "kind": "paper-page",
+      "title": "XCFI: Comprehensive Control-Flow Integrity for Arm TrustZone-M",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:26:21Z",
+      "content_hash": "sha256:381d019e49d952229105650092af44819d0f162aefef799e92b8587e907af54b",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

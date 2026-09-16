@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "atc-2025-mtuner-accelerating-parameter-efficient-fine-tuning-on-m-2a5ae5c4",
   "title": "mTuner: Accelerating Parameter-Efficient Fine-Tuning on Multi-GPU Servers with Elastic Tensor",
+  "abstract": "With the growing importance of personalized large language models (LLMs) and fine-tuning techniques, parameter-efficient fine-tuning (PEFT) has emerged as a mainstream approach, offering reduced computational and storage demands compared to full-parameter fine-tuning. Compared to pre-training, we find memory efficiency more critical during fine-tuning. Although the overall memory capacity of fine-tuning hardware is typically limited, memory becomes more precious since most parameters are frozen and can be cached for performance optimization. To better utilize memory, we propose Elastic Tensor, an abstraction for dynamic tensor management, enabling flexible control over their availability, accumulation, and release in memory. Elastic tensor defines four key operations for static and runtime tensors with tunable ratios: gather, discard, execute, and checkpoint. With elastic tensors, a series of optimizations are enabled, such as improving temporal memory utilization, relaxing data dependence, and accumulating runtime tensors in a memory-adaptive way. We implement mTuner, an end-to-end fine-tuning system based on elastic tensors. Compared with state-of-the-art training and fine-tuning systems, mTuner achieves a throughput improvement of up to 51.2% and 24.8% (28.3% and 14.5% on average) on PCIe and NVLink servers respectively, for LLMs from 7B to 70B. mTuner is publicly available at https://github.com/xxcclong/mTuner .",
+  "abstract_source_id": "src-abstract-atc-2025-2a5ae5c4",
   "venue": "atc",
   "year": 2025,
   "track_or_session": "Accelerating ML Training: Parallelism, Tuning, and Modalities",
@@ -243,6 +245,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-atc-2025-2a5ae5c4",
+      "url": "https://www.usenix.org/conference/atc25/presentation/huang-kezhao",
+      "kind": "paper-page",
+      "title": "mTuner: Accelerating Parameter-Efficient Fine-Tuning on Multi-GPU Servers with Elastic Tensor",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T21:59:56Z",
+      "content_hash": "sha256:1130ea7049041b841f7b5fc12a20a1d1676d95987ff860bdc12407d403a89259",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

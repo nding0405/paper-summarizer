@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "eurosys-2026-not-a-dpu-in-name-only-unleashing-rdma-capable-dpus-in-m-927dc2a5",
   "title": "Not A DPU in Name Only! Unleashing RDMA-capable DPUs in Multi-Tenant Serverless Clouds with NADINO",
+  "abstract": "Serverless computing promises enhanced resource efficiency and lower user costs, yet is burdened by a heavyweight, CPU-bound data plane. Prior efforts exploiting shared memory reduce overhead locally but fall short when scaling across nodes. Furthermore, serverless environments can have unpredictable and large-scale multi-tenancy, leading to contention for shared network resources. We present NADINO, a DPU-centric serverless data plane that reduces the CPU burden and enables efficient, zero-copy communication in multi-tenant serverless clouds. Despite the limited general-purpose processing capability of the DPU cores, NADINO strategically exploits the DPU's potential by (1) offloading data transmission to high-performance NIC cores via RDMA, combined with intra-node shared memory to eliminate data copies across nodes, and (2) enabling cross-processor (CPU-DPU) shared memory to eliminate redundant data movement, which overwhelms wimpy DPU cores. At the core of NADINO is the DPU-enabled network engine (DNE) - a lightweight reverse proxy that isolates RDMA resources from tenant functions, orchestrates inter-node RDMA flows, and enforces fairness under contention. To further reduce CPU involvement, NADINO performs early HTTP/TCP-to-RDMA transport conversion at the cloud ingress, bridging the protocol mismatch before client traffic enters the RDMA fabric, thus avoiding costly protocol translation along the critical path. We show that careful selection of RDMA primitives (i.e., two-sided instead of one-sided) significantly affects the zero-copy data plane. Our preliminary experimental results show that enabling DPU offloading in NADINO improves RPS by 20.9×. The latency is reduced by a factor of 21× in the best case, all the while saving up to 7 CPU cores, and only consuming two wimpy DPU cores.",
+  "abstract_source_id": "src-abstract-eurosys-2026-927dc2a5",
   "venue": "eurosys",
   "year": 2026,
   "track_or_session": null,
@@ -201,6 +203,19 @@
       "official": false,
       "supports": [
         "Publisher-deposited proceedings identity and print publication date."
+      ]
+    },
+    {
+      "id": "src-abstract-eurosys-2026-927dc2a5",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Not A DPU in Name Only! Unleashing RDMA-capable DPUs in Multi-Tenant Serverless Clouds with NADINO",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:12Z",
+      "content_hash": "sha256:aa9c23a45f6ec9973f40e6c9520c69d42bb49fc1f526891570edfdb1976cff82",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

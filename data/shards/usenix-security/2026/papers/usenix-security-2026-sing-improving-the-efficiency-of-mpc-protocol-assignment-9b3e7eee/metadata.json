@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-sing-improving-the-efficiency-of-mpc-protocol-assignment-9b3e7eee",
   "title": "SING: Improving the Efficiency of MPC Protocol Assignment using Graph Neural Networks",
+  "abstract": "Secure Multi-Party Computation (MPC) enables private computation, but has significantly higher overhead than plaintext execution. Hybrid MPC compilers improve concrete efficiency by mapping distinct computation parts to contextually optimal MPC protocols. However, state-of-the-art systems like Silph (Chen et al., S&P'23) depend on deployment-specific cost models that are cumbersome to retune, and compute mappings via brittle heuristics or costly Integer Linear Programming (ILP), limiting scalability and portability across protocols and deployment settings.\n\nWe present SING, the first machine-learning-based framework for hybrid MPC share assignment. SING leverages Graph Neural Networks (GNNs) for: (1) imitation of Silph's assignments, accelerating share assignment by up to 76,697x with comparable quality; and (2) cost-driven learning, where we train a GNN cost predictor on synthetic or empirical costs (e.g., runtime or communication), freeze it, and train the share-assigning GNN to minimize predicted costs. The latter supports expressive non-linear cost models, avoiding ILP's linearity constraints, and enables retargeting to new protocol suites and deployment settings by re-fitting the predictor. Finally, we release our synthetic benchmark resources, including a dataset of 704 MPC circuits with wide-ranging hybrid assignments.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-9b3e7eee",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Applications of Cryptography 3",
@@ -155,6 +157,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-9b3e7eee",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/blueml",
+      "kind": "paper-page",
+      "title": "SING: Improving the Efficiency of MPC Protocol Assignment using Graph Neural Networks",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:25:28Z",
+      "content_hash": "sha256:e0c3b3ada7546c541dd86353cfb8bd7c5e7c1dd6798e445213efe7ded0311ad5",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

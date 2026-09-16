@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-cusafe-capturing-memory-corruption-on-nvidia-gpus-5cedb297",
   "title": "CuSafe: Capturing Memory Corruption on NVIDIA GPUs",
+  "abstract": "Modern GPU applications, particularly in machine learning and scientific computing, are increasingly affected by memory corruption bugs due to their reliance on memory-unsafe languages like C/C++. However, existing solutions either depend on hardware/software that is not available on commodity GPUs, or incur prohibitive performance overheads, rendering them impractical for real-world deployment.\n\nWe present CuSafe, a novel GPU sanitizer that is readily deployable on commodity NVIDIA GPUs. CuSafe employs a hybrid metadata scheme combining pointer tagging with in-band buffer bounds to enable accurate and efficient memory safety validation. CuSafe also introduces mechanisms such as stack epoch tracking and virtual address randomization to mitigate metadata confusion caused by temporal corruption.\n\nOur security evaluation on 33 programs demonstrates that CuSafe uniquely achieves the best coverages of both spatial and temporal bugs among existing GPU sanitizers. Moreover, our performance benchmarks on 44 programs, including large-language models like LLaMA2-7B and LLaMA3-8B, show that CuSafe incurs an average slowdown of 13% and a negligible memory overhead of 0.3%.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-5cedb297",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Software Security 2",
@@ -156,6 +158,19 @@
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening",
         "prepublication PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-5cedb297",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/lu-hongyi",
+      "kind": "paper-page",
+      "title": "CuSafe: Capturing Memory Corruption on NVIDIA GPUs",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:23:34Z",
+      "content_hash": "sha256:eb59eabaca1ba8bcd3f01a61f140f65e59dd4772755216ca22100c4cbe4b90ac",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

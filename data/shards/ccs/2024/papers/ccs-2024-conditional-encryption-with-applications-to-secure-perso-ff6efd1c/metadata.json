@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2024-conditional-encryption-with-applications-to-secure-perso-ff6efd1c",
   "title": "Conditional Encryption with Applications to Secure Personalized Password Typo Correction",
+  "abstract": "We introduce the notion of a conditional encryption scheme as an extension of public key encryption. In addition to the standard public key algorithms (KG, Enc, Dec) for key generation, encryption and decryption, a conditional encryption scheme for a binary predicate P adds a new conditional encryption algorithm CEnc. The conditional encryption algorithm c=CEncpk (c1,m2,m3) takes as input the public encryption key pk, a ciphertext c1 = Encpk (m1) for an unknown message m1, a control message m2 and a payload message m3 and outputs a conditional ciphertext c. Intuitively, if P(m1,m2)=1 then the conditional ciphertext c should decrypt to the payload message m3. On the other hand if P(m1,m2) = 0 then the ciphertext should not leak any information about the control message m2 or the payload message m3 even if the attacker already has the secret decryption key sk. We formalize the notion of conditional encryption secrecy and provide concretely efficient constructions for a set of predicates relevant to password typo correction. Our practical constructions utilize the Paillier partially homomorphic encryption scheme as well as Shamir Secret Sharing. We prove that our constructions are secure and demonstrate how to use conditional encryption to improve the security of personalized password typo correction systems such as TypTop. We implement a C++ library for our practically efficient conditional encryption schemes and evaluate the performance empirically. We also update the implementation of TypTop to utilize conditional encryption for enhanced security guarantees and evaluate the performance of the updated implementation.",
+  "abstract_source_id": "src-abstract-ccs-2024-ff6efd1c",
   "venue": "ccs",
   "year": 2024,
   "track_or_session": "Cycle 2",
@@ -117,6 +119,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2024-ff6efd1c",
+      "url": "https://api.openalex.org/works/doi:10.1145/3658644.3690374?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Conditional Encryption with Applications to Secure Personalized Password Typo Correction",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:09:45Z",
+      "content_hash": "sha256:b96e65577f67902de347d2258c142ca32a223dd01a11856ad12d8b67274e1075",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

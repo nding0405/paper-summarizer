@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2023-viper-spotting-syscall-guard-variables-for-data-only-att-b3b4280d",
   "title": "VIPER: Spotting Syscall-Guard Variables for Data-Only Attacks",
+  "abstract": "As control-flow protection techniques are widely deployed, it is difficult for attackers to modify control data, like function pointers, to hijack program control flow. Instead, data-only attacks corrupt security-critical non-control data (critical data), and can bypass all control-flow protections to revive severe attacks. Previous works have explored various methods to help construct or prevent data-only attacks. However, no solution can automatically detect program-specific critical data.\n\nIn this paper, we identify an important category of critical data, syscall-guard variables, and propose a set of solutions to automatically detect such variables in a scalable manner. Syscall-guard variables determine to invoke security-related system calls (syscalls), and altering them will allow attackers to request extra privileges from the operating system. We propose branch force, which intentionally flips every conditional branch during the execution and checks whether new security-related syscalls are invoked. If so, we conduct data-flow analysis to estimate the feasibility to flip such branches through common memory errors. We build a tool, VIPER, to implement our ideas. VIPER successfully detects 34 previously unknown syscall-guard variables from 13 programs. We build four new data-only attacks on sqlite and v8, which execute arbitrary command or delete arbitrary file. VIPER completes its analysis within five minutes for most programs, showing its practicality for spotting syscall-guard variables.",
+  "abstract_source_id": "src-abstract-usenix-security-2023-b3b4280d",
   "venue": "usenix-security",
   "year": 2023,
   "track_or_session": "Programs, Code, and Binaries",
@@ -133,6 +135,19 @@
       "official": true,
       "supports": [
         "authors, affiliations when published, abstract, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2023-b3b4280d",
+      "url": "https://www.usenix.org/conference/usenixsecurity23/presentation/ye",
+      "kind": "paper-page",
+      "title": "VIPER: Spotting Syscall-Guard Variables for Data-Only Attacks",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:13:40Z",
+      "content_hash": "sha256:9169f829f980ab60380dba9f42004499bf68e5259e4705c2b15b4b414509a768",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

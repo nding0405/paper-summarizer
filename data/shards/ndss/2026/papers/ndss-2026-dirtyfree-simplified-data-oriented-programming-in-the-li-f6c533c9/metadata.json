@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2026-dirtyfree-simplified-data-oriented-programming-in-the-li-f6c533c9",
   "title": "DirtyFree: Simplified Data-Oriented Programming in the Linux Kernel",
+  "abstract": "With the advent of Kernel Control-Flow Integrity (KCFI), Data-Oriented Programming (DOP) has emerged as an essential alternative to traditional control-flow hijacking techniques such as Return-Oriented Programming (ROP). Unlike control-flow attacks, DOP manipulates kernel data-flow to achieve privilege escalation without violating control-flow integrity. However, traditional DOP attacks remain complex and exhibit limited practicality due to their multistage nature, typically requiring heap address leakage, arbitrary address read, and arbitrary address write capabilities. Each stage imposes strict constraints on the selection and usage of kernel objects.\n\nTo address these limitations, we introduce DIRTYFREE, a systematic exploitation method that leverages the arbitrary free primitive. This primitive enables the forced deallocation of attacker-controlled kernel objects, significantly reducing exploitability requirements and simplifying the overall exploitation process. DIRTYFREE provides a systematic method for identifying suitable arbitrary free objects across diverse kernel caches and presents a structured exploitation strategy targeting security-critical objects such as cred. Through extensive evaluation, we successfully identified 14 arbitrary free objects covering most kernel caches, demonstrating DIRTYFREE’s practical effectiveness by successfully exploiting 24 real-world kernel vulnerabilities. Additionally, we propose and implement two mitigation techniques designed to mitigate DIRTYFREE, effectively preventing exploitation while incurring negligible performance overhead (i.e., 0.28% and-0.55%, respectively).",
+  "abstract_source_id": "src-abstract-ndss-2026-f6c533c9",
   "venue": "ndss",
   "year": 2026,
   "track_or_session": "Fall submission cycle",
@@ -139,6 +141,19 @@
       "official": false,
       "supports": [
         "independent proceedings identity reconciliation"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2026-f6c533c9",
+      "url": "https://www.ndss-symposium.org/ndss-paper/dirtyfree-simplified-data-oriented-programming-in-the-linux-kernel/",
+      "kind": "paper-page",
+      "title": "DirtyFree: Simplified Data-Oriented Programming in the Linux Kernel",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:21:51Z",
+      "content_hash": "sha256:4f5ebd3fc6942047833e98654b80d0506db00757e348d3157082c8a5d17503ac",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

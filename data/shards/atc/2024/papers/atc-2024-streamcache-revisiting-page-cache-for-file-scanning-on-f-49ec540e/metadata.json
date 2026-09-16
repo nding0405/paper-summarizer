@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "atc-2024-streamcache-revisiting-page-cache-for-file-scanning-on-f-49ec540e",
   "title": "StreamCache: Revisiting Page Cache for File Scanning on Fast Storage Devices",
+  "abstract": "Buffered I/O via page cache is used for file scanning in many cases as page cache can provide buffering, data aggregation, I/O alignment and prefetching transparently. However, our study indicates that employing page cache for file scanning on fast storage devices presents two performance issues: it offers limited I/O bandwidth that does not align with the performance of fast storage devices, and the intensive background writeback onto fast storage devices can significantly interfere with foreground I/O requests.\n\nIn this paper, we propose StreamCache, a new page cache management system for file scanning on fast storage devices. StreamCache exploits three techniques to achieve high I/O performance. First, it uses a lightweight stream tracking method to record the states of cached pages at the granularity of sequential streams. Second, it uses a stream-based page reclaiming method to lower the interference to foreground I/O requests. Third, it uses a two-layer memory management method to accelerate page allocation by leveraging CPU cache locality.\n\nWe implement StreamCache in XFS. Experimental results show that compared with existing methods, StreamCache can increase the I/O bandwidth of scientific applications by 44%, and reduce the checkpoint/restart time of large language models by 15.7% on average.",
+  "abstract_source_id": "src-abstract-atc-2024-49ec540e",
   "venue": "atc",
   "year": 2024,
   "track_or_session": "Storage 2",
@@ -117,6 +119,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-atc-2024-49ec540e",
+      "url": "https://www.usenix.org/conference/atc24/presentation/li-zhiyue",
+      "kind": "paper-page",
+      "title": "StreamCache: Revisiting Page Cache for File Scanning on Fast Storage Devices",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T21:59:06Z",
+      "content_hash": "sha256:370c06600ccd05e541b9f75106ebcd159bc092b05ddcb85e42f604a06fa992fe",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

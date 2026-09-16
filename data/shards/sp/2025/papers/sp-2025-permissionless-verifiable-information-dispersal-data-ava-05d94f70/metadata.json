@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2025-permissionless-verifiable-information-dispersal-data-ava-05d94f70",
   "title": "Permissionless Verifiable Information Dispersal (Data Availability for Bitcoin Rollups)",
+  "abstract": "Rollups are special applications on distributed state machines (aka blockchains) for which the underlying state machine only logs, but does not execute, transactions. Rollups scale throughput by using auxiliary machines that have higher throughput and lower cost of executing transactions than the underlying blockchain. State updates are periodically posted to the underlying blockchain and either verified directly through succinct cryptographic proofs (zk rollups) or can be challenged for a defined period of time in a verifiable way by third parties (optimistic rollups). However, once computation is reduced, communication quickly becomes the new bottleneck. The critical service that the underlying blockchain provides, in addition to verification, is data availability: that necessary data can always be recovered upon request. However, directly broadcasting data requires communication per participant that is linear in the data size. Verifiable information dispersal (VID) systems achieve sublinear blowup in the Ethereum's security and same participation model, where all nodes have a strong public-key identity. However, it is not known how to do so in the permissionless model (the Bitcoin model), where participants are unauthenticated and participation is dynamic. We construct a VID system that is secure under the same model as Bitcoin, with one minimal additional requirement on the existence of reliable participants. Our system uses a state machine replication (SMR) protocol (e.g., Bitcoin) as a black box, and is therefore backward compatible. We implemented the system on top of Bitcoin core with the Regression Test Network (regtest), and our analysis shows that it can reduce communication costs and latency up to more than $1, 000\\times$ and $10\\times$, respectively, for certain parameter choices.",
+  "abstract_source_id": "src-abstract-sp-2025-05d94f70",
   "venue": "sp",
   "year": 2025,
   "track_or_session": "Cycle 2",
@@ -133,6 +135,19 @@
       "official": true,
       "supports": [
         "DOI, authors, affiliations, abstract, publication date, pages, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2025-05d94f70",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Permissionless Verifiable Information Dispersal (Data Availability for Bitcoin Rollups)",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:47Z",
+      "content_hash": "sha256:d48e5e27e72297ce02860f066764bd9c5cd6e8191e2ebf4b4f15da0fffb6959f",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

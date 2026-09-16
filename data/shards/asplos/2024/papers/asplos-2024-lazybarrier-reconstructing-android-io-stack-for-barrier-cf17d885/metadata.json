@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2024-lazybarrier-reconstructing-android-io-stack-for-barrier-cf17d885",
   "title": "LazyBarrier: Reconstructing Android IO Stack for Barrier-Enabled Flash Storage",
+  "abstract": "Costly synchronous write---a.k.a., fsync()---is a common approach to preserve the storage order of data. Android smart-phones use No-Barrier by default to improve fsync() performance. Recently, Barrier-Enabled IO Stack (BEIOS) provides an efficient order-preserving method for flash storage by barrier write commands (BWCs). However, our evaluation shows that BEIOS suffers from performance degradation in multi-threaded scenarios since BWCs increase linearly with the number of threads. This paper proposes LazyBarrier, a new order-preserving IO stack mainly involving order-preserving write (OPW) Model, the Lazy Issue algorithm, modified F2FS, and Barrier Scheduling. OPW Model is based on Finite Automata and defines state transition in OPW. Lazy Issue is a novel algorithm that minimizes BWCs. F2FS is modified to support OPW, and Barrier Scheduling solves the ordering problem in multi-queue block layer. The experiments on Android smartphones show that, compared with BEIOS, LazyBarrier improves OPW performance by 73% and 29% under the FIO benchmark and in real applications respectively. And LazyBarrier also outperforms BEIOS by 19% in dbench workload in servers.",
+  "abstract_source_id": "src-abstract-asplos-2024-cf17d885",
   "venue": "asplos",
   "year": 2024,
   "track_or_session": "Session 9B: SSDs",
@@ -222,6 +224,19 @@
       "official": false,
       "supports": [
         "Indexed alternate-version and institutional-copy links; not used as the authoritative relevance source."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2024-cf17d885",
+      "url": "https://api.openalex.org/works/doi:10.1145/3620665.3640370?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "LazyBarrier: Reconstructing Android IO Stack for Barrier-Enabled Flash Storage",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:00:15Z",
+      "content_hash": "sha256:74d84308fdacb1a3e769d1522bf6190632215d219e4872b7e5466f3d1cbf8b84",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2026-continuation-centric-computing-with-arca-0b6a98ab",
   "title": "Continuation-Centric Computing with Arca",
+  "abstract": "This paper presents continuation-centric computing, an operating system design paradigm for “serverless”-style workloads: short-lived tasks that spend a substantial fraction of time waiting on dependencies and other services. Under this paradigm, a running function can capture its current continuation—a lightweight snapshot of its state—as a distinct function that can be paused, migrated, or copied as needed.\n\nThis paper evaluates the continuation-centric computing model using Arca, an operating system providing continuation capture as a core service. Arca supports a process abstraction that is broadly similar to Unix processes in guarantees and isolation, but additionally provides efficient capture and resumption of serializable, portable continuations.",
+  "abstract_source_id": "src-abstract-osdi-2026-0b6a98ab",
   "venue": "osdi",
   "year": 2026,
   "track_or_session": "Serverless Plus Resilence",
@@ -209,6 +211,19 @@
       "official": true,
       "supports": [
         "Official proceedings availability and canonical conference versions."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2026-0b6a98ab",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/srivatsan",
+      "kind": "paper-page",
+      "title": "Continuation-Centric Computing with Arca",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:08:06Z",
+      "content_hash": "sha256:de116ec0f8dff7867d20246055ff9f511822efa297e737d4806ba989b7780fdc",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

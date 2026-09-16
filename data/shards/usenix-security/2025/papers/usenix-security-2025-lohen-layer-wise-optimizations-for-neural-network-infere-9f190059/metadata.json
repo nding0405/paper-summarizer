@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-lohen-layer-wise-optimizations-for-neural-network-infere-9f190059",
   "title": "LOHEN: Layer-wise Optimizations for Neural Network Inferences over Encrypted Data with High Performance or Accuracy",
+  "abstract": "Fully Homomorphic Encryption (FHE) presents unique challenges in programming due to the contrast between traditional and FHE language paradigms. A key challenge is selecting ciphertext configurations (CCs) to achieve the desired level of security, performance, and accuracy simultaneously. Finding the design point satisfying the goal is often labor-intensive (probably impossible), for which reason previous works settle down to a reasonable CC that brings acceptable performance. When FHE is applied to neural networks (NNs), we have observed that the distinct layered architecture of NN models opens the door for a performance improvement by using layer-wise CCs, because a globally chosen CC may not be the best possible CC for every layer individually. This paper introduces LOHEN, a technique crafted to attain high performance of NN inference by enabling to use layer-wise CC efficiently. Empowered with a cryptographic gadget that allows switching between arbitrary CCs, LOHEN allocates layer-wise CCs for individual layers tailored to their structural properties, while minimizing the increased overhead incurred by CC switching with its capability to replace costly FHE operations. LOHEN can also be engineered to attain higher accuracy, yet deliver higher performance compared to state-of-the-art studies, by additionally adopting the multi-scheme techniques in a layer-wise manner. Moreover, the developers using LOHEN are given the capability of customizing the selection policy to adjust the desired levels of performance and accuracy, subject to their demands. Our evaluation shows that LOHEN improves the NN inference performance in both of these cases when compared to the state-of-the-art. When used to improve the CKKS-only inference, LOHEN improves the NN inference performance of various NNs 1.08–2.88x. LOHEN also improves the performance of mixed-scheme NN inference by 1.34–1.75x without accuracy loss. These two results along with other empirical analyses, advocate that LOHEN can widely help improve the performance of NN inference over FHE.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-9f190059",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "ML and AI Privacy 2",
@@ -196,6 +198,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-9f190059",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/nam-lohen",
+      "kind": "paper-page",
+      "title": "LOHEN: Layer-wise Optimizations for Neural Network Inferences over Encrypted Data with High Performance or Accuracy",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:20:37Z",
+      "content_hash": "sha256:cbf87e47485efed63b441b843a095145cee42a888df5700b3d4667795069b8f5",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "eurosys-2024-wormhole-filters-caching-your-hash-on-persistent-memory-69beb88b",
   "title": "Wormhole Filters: Caching Your Hash on Persistent Memory",
+  "abstract": "Approximate membership query (AMQ) data structures can approximately determine whether an element is in the set with high efficiency. They are widely used in distributed systems, database systems, bioinformatics, IoT applications, data stream mining, etc. However, the memory consumption of AMQ data structures grows rapidly as the data scale grows, which limits the system's ability to process a massive amount of data. The emerging persistent memory provides a close-to-DRAM access speed and terabyte-level capacity, facilitating AMQ data structures to handle massive data. Nevertheless, existing AMQ data structures perform poorly on persistent memory due to intensive random accesses and/or sequential writes. Therefore, we propose a novel AMQ data structure called wormhole filter, which achieves high performance on persistent memory by reducing random accesses and sequential writes. In addition, we reduce the number of log records for lower recovery overhead. Theoretical analysis and experimental results show that wormhole filters significantly outperform competitive state-of-the-art AMQ data structures. For example, wormhole filters achieve 23.26× insertion throughput, 1.98× positive lookup throughput, and 8.82× deletion throughput of the best competing baseline.",
+  "abstract_source_id": "src-abstract-eurosys-2024-69beb88b",
   "venue": "eurosys",
   "year": 2024,
   "track_or_session": null,
@@ -272,6 +274,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-eurosys-2024-69beb88b",
+      "url": "https://api.openalex.org/works/doi:10.1145/3627703.3629590?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Wormhole Filters: Caching Your Hash on Persistent Memory",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:18:59Z",
+      "content_hash": "sha256:fa61c7ba5d2124908619bd1ed4e52dd7626526a0140ba110ccff3a2a33a7a141",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

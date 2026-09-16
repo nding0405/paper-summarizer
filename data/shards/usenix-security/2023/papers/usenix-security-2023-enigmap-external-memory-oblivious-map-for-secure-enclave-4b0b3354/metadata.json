@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2023-enigmap-external-memory-oblivious-map-for-secure-enclave-4b0b3354",
   "title": "EnigMap: External-Memory Oblivious Map for Secure Enclaves",
+  "abstract": "Imagine that a privacy-conscious client would like to query a key-value store residing on an untrusted server equipped with a secure processor. To protect the privacy of the client's queries as well as the database, one approach is to implement an oblivious map inside a secure enclave. Indeed, earlier works demonstrated numerous applications of an enclaved-based oblivious map, including private contact discovery, key transparency, and secure outsourced databases.\n\nOur work is motivated by the observation that the previous enclave implementations of oblivious algorithms are suboptimal both asymptotically and concretely. We make the key observation that for enclave applications, the number of page swaps should be a primary performance metric. We therefore adopt techniques from the external-memory algorithms literature, and we are the first to implement such algorithms inside hardware enclaves. We also devise asymptotically better algorithms for ensuring a strong notion of obliviousness that resists cache-timing attacks. We complement our algorithmic improvements with various concrete optimizations that save constant factors in practice. The resulting system, called ENIGMAP, achieves 15× speedup over Signal's linear scan implementation, and 53× speedup over the prior best oblivious algorithm implementation, at a realistic database size of 256 million and a batch size of 1000. The speedup is asymptotical in nature and will be even greater as Signal's user base grows.",
+  "abstract_source_id": "src-abstract-usenix-security-2023-4b0b3354",
   "venue": "usenix-security",
   "year": 2023,
   "track_or_session": "Enclaves and Serverless Computing",
@@ -112,6 +114,19 @@
       "official": true,
       "supports": [
         "authors, affiliations when published, abstract, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2023-4b0b3354",
+      "url": "https://www.usenix.org/conference/usenixsecurity23/presentation/tinoco",
+      "kind": "paper-page",
+      "title": "EnigMap: External-Memory Oblivious Map for Secure Enclaves",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:10:45Z",
+      "content_hash": "sha256:3bec07079fa5cb10cc4d1b71aa0a8fc260c627bc8a40843a0018b3ad46603ffa",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

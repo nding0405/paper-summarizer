@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2026-beyond-nodes-vs-edges-a-multi-view-fusion-framework-for-b4786dda",
   "title": "Beyond Nodes vs. Edges: A Multi-View Fusion Framework for Provenance-Based Intrusion Detection",
+  "abstract": "Provenance-based intrusion detection has emerged as a promising approach for analyzing complex attack behaviors through system-level provenance graphs. However, existing defense methods face an inherent granularity limitation. Node-centric detectors, which evaluate anomalies using entities' attributes and local structural patterns, may misclassify benign behavioral changes or configuration modifications as suspicious. In contrast, edge-centric detectors, which focus more on interactions, may lack sufficient contextual awareness of the involved entities, leading to missed detections when compromised entities perform seemingly ordinary operations. These analytical biases highlight a persistent gap between node-centric and edge-centric analyses. To mitigate this gap, we present ProvFusion, a multiview detection framework that integrates anomaly signals from three distinct views (i.e., attribute, structure, and causality). The framework fuses heterogeneous anomaly signals through lightweight fusion schemes and determines the final anomaly decisions through a voting-based integration process, providing a more consistent and context-aware assessment of system behavior. This design enables ProvFusion to capture both entity-level deviations and interaction-level anomalies within a consistent analytic pipeline. Experiments on nine widely used benchmark datasets demonstrate that ProvFusion achieves higher detection accuracy and lower false-positive rates than single node- and edge-centric baselines, maintaining stable performance across scenarios. Overall, the results suggest that our multi-view anomaly fusion together with voting-based decision aggregation offers a practical and effective direction for advancing provenance-based intrusion detection.",
+  "abstract_source_id": "src-abstract-sp-2026-b4786dda",
   "venue": "sp",
   "year": 2026,
   "track_or_session": "Cycle 2",
@@ -133,6 +135,19 @@
       "official": true,
       "supports": [
         "DOI, published-order authors and affiliations, abstract, publication date, page span, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2026-b4786dda",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Beyond Nodes vs. Edges: A Multi-View Fusion Framework for Provenance-Based Intrusion Detection",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:57Z",
+      "content_hash": "sha256:303a9b5e5ef8908a3cfe67f02eb8a87be978a5fe3281c7ecec8c0cdb512517e0",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

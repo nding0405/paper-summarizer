@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2024-making-kernel-bypass-practical-for-the-cloud-with-juncti-b4cafd07",
   "title": "Making Kernel Bypass Practical for the Cloud with Junction",
+  "abstract": "Kernel bypass systems have demonstrated order of magnitude improvements in throughput and tail latency for network-intensive applications relative to traditional operating systems (OSes). To achieve such excellent performance, however, they rely on dedicated resources ( e.g., spinning cores, pinned memory) and require application rewriting. This is unattractive to cloud operators because they aim to densely pack applications, and rewriting cloud software requires a massive investment of valuable developer time. For both reasons, kernel bypass, as it exists, is impractical for the cloud.\n\nIn this paper, we show these compromises are not necessary to unlock the full benefits of kernel bypass. We present Junction, the first kernel bypass system that can pack thousands of instances on a machine while providing compatibility with unmodified Linux applications. Junction achieves high density through several advanced NIC features that reduce pinned memory and the overhead of monitoring large numbers of queues. It maintains compatibility with minimal overhead through optimizations that exploit a shared address space with the application. Junction scales to 19–62× more instances than existing kernel bypass systems and can achieve similar or better performance without code changes. Furthermore, Junction delivers significant performance benefits to applications previously unsupported by kernel bypass, including those that depend on runtime systems like Go, Java, Node, and Python. In a comparison to native Linux, Junction increases throughput by 1.6–7.0× while using 1.2–3.8× less cores across seven applications.",
+  "abstract_source_id": "src-abstract-nsdi-2024-b4cafd07",
   "venue": "nsdi",
   "year": 2024,
   "track_or_session": "Clouds but Faster",
@@ -223,6 +225,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2024-b4cafd07",
+      "url": "https://www.usenix.org/conference/nsdi24/presentation/fried",
+      "kind": "paper-page",
+      "title": "Making Kernel Bypass Practical for the Cloud with Junction",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:03:23Z",
+      "content_hash": "sha256:f1f46214864572e77b78a5a95aec92d0e7c3e84b5737993f31800f247772d449",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

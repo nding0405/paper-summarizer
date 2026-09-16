@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2026-the-dark-side-of-flexibility-detecting-risky-permission-847552b4",
   "title": "The Dark Side of Flexibility: Detecting Risky Permission Chaining Attacks in Serverless Applications",
+  "abstract": "Modern serverless platforms enable rapid application evolution by decoupling infrastructure from function-level development. However, this flexibility introduces a fundamental mismatch between the decentralized, function-level privilege configurations of serverless applications and the centralized cloud access control systems. We observe that this mismatch commonly incurs risky permissions of functions in serverless applications, and an attacker can chain multiple risky-permissioned functions to escalate privileges, take over the account, and even move laterally to compromise other accounts. We term such an attack a risky permission chaining attack .\n\nIn this work, we propose an automated reasoning system that can detect risky permissions that are exploitable for chaining attacks. First, we root in attacker-centric modality abstraction, which explicitly captures how independent permissions from different functions and accounts can be merged into real attack chains. Based on this abstraction, we build a modalityguided detection tool that uncovers exploitable privilege chains in real-world serverless applications. We evaluate our approach across two major cloud platforms — AWS and Alibaba Cloud — by analyzing serverless applications sourced from their official, production-grade application repositories. As a result, our analysis uncovers 28 vulnerable applications, including five confirmed CVEs, six responsible vulnerability acknowledgments, and one security bounty. These findings underscore that the risky permission chaining attack is not only a theoretical risk but also a structural and exploitable threat already present in commercial serverless deployments, rooted in the fundamental mismatch between decentralized serverless applications and centralized access control models.",
+  "abstract_source_id": "src-abstract-ndss-2026-847552b4",
   "venue": "ndss",
   "year": 2026,
   "track_or_session": "Summer submission cycle",
@@ -202,6 +204,19 @@
       "official": false,
       "supports": [
         "independent proceedings identity reconciliation"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2026-847552b4",
+      "url": "https://www.ndss-symposium.org/ndss-paper/the-dark-side-of-flexibility-detecting-risky-permission-chaining-attacks-in-serverless-applications/",
+      "kind": "paper-page",
+      "title": "The Dark Side of Flexibility: Detecting Risky Permission Chaining Attacks in Serverless Applications",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:23:18Z",
+      "content_hash": "sha256:3f5076ae38b6d7e5579e143a5402d2c9820174c3fd34233975bb65ac693385f2",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

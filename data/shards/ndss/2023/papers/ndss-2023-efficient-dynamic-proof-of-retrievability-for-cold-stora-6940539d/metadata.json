@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2023-efficient-dynamic-proof-of-retrievability-for-cold-stora-6940539d",
   "title": "Efficient Dynamic Proof of Retrievability for Cold Storage",
+  "abstract": "Storage-as-a-service (STaaS) permits the client to outsource her data to the cloud thereby, reducing data management and maintenance costs. However, STaaS also brings significant data integrity and soundness concerns since the storage provider might not keep the client data intact and retrievable all the time (e.g., cost saving via deletions). Proof of Retrievability (PoR) can validate the integrity and retrievability of remote data effectively. This technique can be useful for regular audits to monitor data compromises, as well as to comply with standard data regulations. In particular, cold storage applications (e.g., MS Azure, Amazon Glacier) require regular and frequent audits but with less frequent data modification. Yet, despite their merits, existing PoR techniques generally focus on other metrics (e.g., low storage, fast update, metadata privacy) but not audit efficiency (e.g., low audit time, small proof size). Hence, there is a need to develop new PoR techniques that achieve efficient data audit while preserving update and retrieval performance.\n\nIn this paper, we propose Porla, a new PoR framework that permits efficient data audit, update, and retrieval functionalities simultaneously. Porla permits data audit in both private and public settings, each of which features asymptotically (and concretely) smaller audit-proof size and lower audit time than all the prior works while retaining the same asymptotic data update overhead. Porla achieves all these properties by composing erasure codes with verifiable computation techniques which, to our knowledge, is a new approach to PoR design. We address several challenges that arise in such a composition by creating a new homomorphic authenticated commitment scheme, which can be of independent interest. We fully implemented Porla and evaluated its performance on commodity cloud (i.e., Amazon EC2) under various settings. Experimental results demonstrated that Porla achieves two to four orders of magnitude smaller audit proof size with 4× – 1,800× lower audit time than all prior schemes in both private and public audit settings at the cost of only 2× – 3× slower update.",
+  "abstract_source_id": "src-abstract-ndss-2023-6940539d",
   "venue": "ndss",
   "year": 2023,
   "track_or_session": "Cloud and Edge Computing",
@@ -168,6 +170,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2023-6940539d",
+      "url": "https://www.ndss-symposium.org/ndss-paper/efficient-dynamic-proof-of-retrievability-for-cold-storage/",
+      "kind": "paper-page",
+      "title": "Efficient Dynamic Proof of Retrievability for Cold Storage",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:16:56Z",
+      "content_hash": "sha256:6f71d6ca54c8f91d676b7457b73a5e4fd2efdc68c9586b2b58d114ad814d1626",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

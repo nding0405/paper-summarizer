@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "fast-2025-flacio-flat-and-collective-i-o-for-container-image-servi-a815298a",
   "title": "FlacIO: Flat and Collective I/O for Container Image Service",
+  "abstract": "This paper examines the I/O bottlenecks in the container image service. With a comprehensive analysis of existing solutions, we reveal that they suffer from high I/O amplification and excessive network traffic. Furthermore, we identify that the root cause of these problems lies in the storage-oriented and global-oriented container image abstraction. This work proposes a memory-oriented and service-oriented image abstraction, called runtime image, which represents the memory state of the root file system of the container service. The runtime image enables efficient network transfer and fast root file system construction. We design and implement FlacIO, an I/O accelerator based on the runtime image for container image service. FlacIO introduces an efficient runtime image structure that works in conjunction with a runtime page cache on a host node to achieve efficient image service. Our evaluation shows that FlacIO reduces the container cold startup latency by up to 23 and 4.6 times compared to existing full image and lazy loading solutions, respectively. In real-world applications, FlacIO achieves up to 2.25 and 1.7 times performance speedup over other systems in the object storage and machine learning training scenarios, respectively.",
+  "abstract_source_id": "src-abstract-fast-2025-a815298a",
   "venue": "fast",
   "year": 2025,
   "track_or_session": "Cloud Storage",
@@ -245,6 +247,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-fast-2025-a815298a",
+      "url": "https://www.usenix.org/conference/fast25/presentation/liu-yubo",
+      "kind": "paper-page",
+      "title": "FlacIO: Flat and Collective I/O for Container Image Service",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:01:04Z",
+      "content_hash": "sha256:6176bfd554750c5e2a4ccc17aa34b2851264546436fb426cb293a1c0ffb8eeb8",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

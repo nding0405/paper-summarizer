@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2025-finding-ssh-strict-key-exchange-violations-by-state-lear-6be13d11",
   "title": "Finding SSH Strict Key Exchange Violations by State Learning",
+  "abstract": "SSH is an important protocol for secure remote shell access to servers on the Internet. At USENIX 2024, Bäumer et al. presented the Terrapin attack on SSH, which relies on the attacker injecting optional messages during the key exchange. To mitigate this attack, SSH vendors adopted an extension developed by OpenSSH called strict key exchange (''strict KEX''). With strict KEX, optional messages are forbidden during the handshake, preventing the attack. In practice, this should simplify the state machine of an SSH handshake to a linear message flow similar to that of TLS. In this work, we analyze the design, implementation, and security of strict KEX in popular SSH servers, using black-box state learning, which can uncover the hidden state machine of an implementation. In practice, it is limited by the number of learned messages and the complexity of the state machine. Thus, learning the complete state machine of SSH is infeasible. Previous research on SSH, therefore, excluded optional messages, learning only a partial state machine. However, these messages are a critical part of the Terrapin attack. We propose to instead learn the complete state machine of the handshake phase of an SSH server, but with strict KEX enabled. We investigate the security of ten SSH implementations supporting strict KEX for up to five key exchange algorithms. In total, we learn 33 state machines, revealing significant differences in the implementations. We show that seven implementations violate the strict KEX specification and find two critical security vulnerabilities. One results in a rogue session attack in the proprietary Tectia SSH implementation. Another affects the official SSH implementation of the Erlang Open Telecom Platform, and enables unauthenticated remote code execution in the security context of the SSH server.",
+  "abstract_source_id": "src-abstract-ccs-2025-6be13d11",
   "venue": "ccs",
   "year": 2025,
   "track_or_session": "Cycle 2",
@@ -148,6 +150,19 @@
         "published-order authors",
         "publication-time affiliations",
         "publication date and page span"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2025-6be13d11",
+      "url": "https://api.openalex.org/works/doi:10.1145/3719027.3765208?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Finding SSH Strict Key Exchange Violations by State Learning",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:14:37Z",
+      "content_hash": "sha256:8fd15ffc33eb63d4c0d831a3da348568749e426b95f0bf57f82a6a7e4dca27e9",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2026-law-towards-consistent-low-latency-in-802-11-home-networ-7822fc73",
   "title": "Law: Towards Consistent Low Latency in 802.11 Home Networks",
+  "abstract": "Wireless ultra-low-latency video streaming over 802.11 WiFi networks is increasingly popular, but the latency on the Wi-Fi link is always fluctuating. With the development of CDNs and edge servers, the fluctuation of the wireless lasthop is increasingly dominating the fluctuation of the end-toend latency. In this paper, we investigate the reasons why the existing Wi-Fi link layer will have a fluctuating latency from a systematic perspective. We find that the hierarchical queueing structure, queue-agnostic rate adaptation, and delay-insensitive retry management of the existing link layer design are the main reasons to a latency spike when channel fluctuates. Thus, we propose LAtency-bounded Wi-Fi (Law), an 802.11 link layer architecture to provide a consistent low latency for the application. Law exploits the loss tolerance ability from the upper layer video streaming application and significantly avoids the latency spikes caused by the blockage in the link layer at the cost of acceptably additional packet loss. Law maintains a high goodput by carefully redesigning the queueing structure and introducing fine-grained control for each transmission opportunity. We implement the prototype of Law on OpenWiFi and test it with WebRTC – both the tail frame latency and stall rate can be significantly reduced over existing baselines.",
+  "abstract_source_id": "src-abstract-nsdi-2026-7822fc73",
   "venue": "nsdi",
   "year": 2026,
   "track_or_session": "From Fiber to Radio",
@@ -97,6 +99,19 @@
         "proceedings page range and page count",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2026-7822fc73",
+      "url": "https://www.usenix.org/conference/nsdi26/presentation/shen-yibin",
+      "kind": "paper-page",
+      "title": "Law: Towards Consistent Low Latency in 802.11 Home Networks",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:05:34Z",
+      "content_hash": "sha256:474487b322ec0da4aa92970875568fdb10fbe61e84ef2717d986cf8dcfe28a12",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-sni5gect-a-practical-approach-to-inject-anrchy-into-5g-n-a42db524",
   "title": "SNI5GECT: A Practical Approach to Inject aNRchy into 5G NR",
+  "abstract": "In this paper, we propose and design SNI5GECT– a framework that sniffs messages from pre-authentication 5G communication in real-time and injects targeted attack payload in downlink communication towards the UE. As opposed to using a rogue base station which limits the practicality of many 5G attacks, SNI5GECT acts as a third-party in the communication, silently sniffs messages, and tracks the protocol state by decoding the sniffed messages during the UE attach procedure. The state information is then used to inject targeted attack payload in downlink communication. We have implemented SNI5GECT and evaluated it with five 5G enabled UE devices and with both open-source (srsRAN) and commercial (Effnet) base stations (gNBs). Our evaluation reveals that SNI5GECT obtains over 80% accuracy in uplink and downlink sniffing, and successfully injects messages at an arbitrary protocol state with a 70%-90% success rate up to 20m of distance between UE and SNI5GECT. We further evaluate SNI5GECT to launch a variety of attacks that crash the UE, downgrade the connection to lower generation or extract the UE identity with an attack success rate often over 70% with known UE distance. Finally, we discover a new multi-stage, downgrade attack leveraging the SNI5GECT framework. The risk of this attack has been acknowledged by GSMA and a coordinated vulnerability disclosure (CVD) identity has been assigned. Thus, SNI5GECT is a practical and complementary tool for evaluating current and new 5G attacks in the wild.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-a42db524",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Network Security 3: BLE and Cellular",
@@ -133,6 +135,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-a42db524",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/luo-shijie",
+      "kind": "paper-page",
+      "title": "SNI5GECT: A Practical Approach to Inject aNRchy into 5G NR",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:21:45Z",
+      "content_hash": "sha256:595babfd79c591b3aeebd1e2a8c567853aa012b73c9903ddfb78c790978294b1",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

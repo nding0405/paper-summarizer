@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2026-extracting-database-access-control-policies-from-web-app-5ac86e13",
   "title": "Extracting Database Access-Control Policies from Web Applications",
+  "abstract": "To safeguard sensitive user data, web developers typically rely on implicit access-control policies, which they implement using access checks and query filters. This ad hoc approach is error-prone as these scattered checks and filters are easy to misplace or misspecify, and the lack of an explicit policy precludes external access-control enforcement. More critically, it is difficult for humans to discern what policy is embedded in application code (i.e., what data the application may access)—an issue that worsens as development teams evolve.\n\nThis paper tackles policy extraction: the task of extracting the access-control policy embedded in an application by summarizing its data queries. An extracted policy, once vetted for errors, can stand alone as a specification for the application’s data access, and can be enforced to ensure compliance as code changes over time. We introduce Ote, a policy extractor for Ruby on Rails web applications. Ote uses concolic execution to explore execution paths through the application, generating traces of SQL queries and conditions that trigger them. It then merges and simplifies these traces into a final policy that aligns with the observed behaviors. We applied Ote to three real-world applications and compared extracted policies to handwritten ones, revealing several errors in the latter.",
+  "abstract_source_id": "src-abstract-osdi-2026-5ac86e13",
   "venue": "osdi",
   "year": 2026,
   "track_or_session": "Sandboxing, Access Control, and Drivers",
@@ -180,6 +182,19 @@
       "official": true,
       "supports": [
         "Final proceedings title page and complete canonical author list, including Dev Bali."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2026-5ac86e13",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/zhang-wen",
+      "kind": "paper-page",
+      "title": "Extracting Database Access-Control Policies from Web Applications",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:08:18Z",
+      "content_hash": "sha256:5780bd4efee42006e07486f9eda0c5bbbddbe1948e27d3a45886e030ef86d70d",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

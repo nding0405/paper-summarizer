@@ -51,9 +51,7 @@ runtime, compiler, kernel, scheduling, or ML-systems tags also apply.
 ## Validation
 
 ```sh
-PYTHONPATH=src python3 -m systems_phd_explorer.cli validate \
-  --root data/shards/asplos/<year> \
-  --profile draft
+./mvnw -q compile exec:java -Dexec.args="validate --root data/shards/asplos/<year>"
 ```
 
 ## Handoff

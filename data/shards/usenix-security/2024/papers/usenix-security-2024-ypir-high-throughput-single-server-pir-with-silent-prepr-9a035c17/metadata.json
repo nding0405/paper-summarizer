@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2024-ypir-high-throughput-single-server-pir-with-silent-prepr-9a035c17",
   "title": "YPIR: High-Throughput Single-Server PIR with Silent Preprocessing",
+  "abstract": "We introduce YPIR, a single-server private information retrieval (PIR) protocol that achieves high throughput (up to 83% of the memory bandwidth of the machine) without any offline communication. For retrieving a 1-bit (or 1-byte) record from a 32 GB database, YPIR achieves 12.1 GB/s/core server throughput and requires 2.5 MB of total communication. On the same setup, the state-of-the-art SimplePIR protocol achieves a 12.5 GB/s/core server throughput, requires 1.5 MB total communication, but additionally requires downloading a 724 MB hint in an offline phase. YPIR leverages a new lightweight technique to remove the hint from high-throughput single-server PIR schemes with small overhead. We also show how to reduce the server preprocessing time in the SimplePIR family of protocols by a factor of 10–15×.\n\nBy removing the need for offline communication, YPIR significantly reduces the server-side costs for private auditing of Certificate Transparency logs. Compared to the best previous PIR-based approach, YPIR reduces the server-side costs by a factor of 8×. Note that to reduce communication costs, the previous approach assumed that updates to the Certificate Transparency log servers occurred in weekly batches. Since there is no offline communication in YPIR, our approach allows clients to always audit the most recent Certificate Transparency logs (e.g., updating once a day). Supporting daily updates using the prior scheme would cost 48× more than YPIR (based on current AWS compute costs).",
+  "abstract_source_id": "src-abstract-usenix-security-2024-9a035c17",
   "venue": "usenix-security",
   "year": 2024,
   "track_or_session": "Crypto V: Private Information Retrieval",
@@ -91,6 +93,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2024-9a035c17",
+      "url": "https://www.usenix.org/conference/usenixsecurity24/presentation/menon",
+      "kind": "paper-page",
+      "title": "YPIR: High-Throughput Single-Server PIR with Silent Preprocessing",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:18:17Z",
+      "content_hash": "sha256:9ae390e3ddaa0e3a8d5fa46f734534cdffdd78200928eed42245f06f34a12e2b",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

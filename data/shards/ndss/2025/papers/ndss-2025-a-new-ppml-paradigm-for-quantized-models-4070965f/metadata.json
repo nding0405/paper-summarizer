@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2025-a-new-ppml-paradigm-for-quantized-models-4070965f",
   "title": "A New PPML Paradigm for Quantized Models",
+  "abstract": "Model quantization has become a common practice in machine learning (ML) to improve efficiency and reduce computational/communicational overhead. However, adopting quantization in privacy-preserving machine learning (PPML) remains challenging due to the complex internal structure of quantized operators, which leads to inefficient protocols under the existing PPML frameworks.\n\nIn this work, we propose a new PPML paradigm that is tailor-made for and can benefit from quantized models. Our main observation is that look-up tables can ignore the complex internal constructs of any functions which can be used to simplify the quantized operator evaluation. We view the model inference process as a sequence of quantized operators, and each operator is implemented by a look-up table. We then develop an efficient private look-up table evaluation protocol, and its online communication cost is only $log n$, where $n$ is the size of the look-up table.\n\nOn a single CPU core, our protocol can evaluate $2^{26}$ tables with 8-bit input and 8-bit output per second.\n\nThe resulting PPML framework for quantized models offers extremely fast online performance.\n\nThe experimental results demonstrate that our quantization strategy achieves substantial speedups over SOTA PPML solutions, improving the online performance by $40sim 60 times$ w.r.t. convolutional neural network (CNN) models, such as AlexNet, VGG16, and ResNet18, and by $10sim 25 times$ w.r.t. large language models (LLMs), such as GPT-2, GPT-Neo, and Llama2.",
+  "abstract_source_id": "src-abstract-ndss-2025-4070965f",
   "venue": "ndss",
   "year": 2025,
   "track_or_session": "Fall submission cycle",
@@ -147,6 +149,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2025-4070965f",
+      "url": "https://www.ndss-symposium.org/ndss-paper/a-new-ppml-paradigm-for-quantized-models/",
+      "kind": "paper-page",
+      "title": "A New PPML Paradigm for Quantized Models",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:19:01Z",
+      "content_hash": "sha256:38298627a17c66d01593287c2f1214d238c3559ba4d4fcdebbe53eae471fd22b",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

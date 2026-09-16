@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2023-protego-overload-control-for-applications-with-unpredict-4cd1613b",
   "title": "Protego: Overload Control for Applications with Unpredictable Lock Contention",
+  "abstract": "Modern datacenter applications are concurrent, so they require synchronization to control access to shared data. Requests can contend for different combinations of locks, depending on application and request state. In this paper, we show that locks, especially blocking synchronization, can squander throughput and harm tail latency, even when the CPU is underutilized. Moreover, the presence of a large number of contention points, and the unpredictability in knowing which locks a request will require, make it difficult to prevent contention through overload control using traditional signals such as queueing delay and CPU utilization.\n\nWe present Protego, a system that resolves these problems with two key ideas. First, it contributes a new admission control strategy that prevents compute congestion in the presence of lock contention. The key idea is to use marginal improvements in observed throughput, rather than CPU load or latency measurements, within a credit-based admission control algorithm that regulates the rate of incoming requests to a server. Second, it introduces a new latency-aware synchronization abstraction called Active Synchronization Queue Management (ASQM) that allows applications to abort requests if delays exceed latency objectives. We apply Protego to two real-world applications, Lucene and Memcached, and show that it achieves up to 3.3x more goodput and 12.2x lower 99th percentile latency than the state-of-the-art overload control systems while avoiding congestion collapse.",
+  "abstract_source_id": "src-abstract-nsdi-2023-4cd1613b",
   "venue": "nsdi",
   "year": 2023,
   "track_or_session": "Data Centers",
@@ -161,6 +163,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2023-4cd1613b",
+      "url": "https://www.usenix.org/conference/nsdi23/presentation/cho-inho",
+      "kind": "paper-page",
+      "title": "Protego: Overload Control for Applications with Unpredictable Lock Contention",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:02:23Z",
+      "content_hash": "sha256:e38e0d9b9f462d9ad8755f36a161eaa21a0fb86e4712bec18aac4b26038151fc",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

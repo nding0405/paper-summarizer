@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2024-byzantine-robust-decentralized-federated-learning-3be4049b",
   "title": "Byzantine-Robust Decentralized Federated Learning",
+  "abstract": "Federated learning (FL) enables multiple clients to collaboratively train machine learning models without revealing their private training data. In conventional FL, the system follows the server-assisted architecture (server-assisted FL), where the training process is coordinated by a central server. However, the server-assisted FL framework suffers from poor scalability due to a communication bottleneck at the server, and trust dependency issues. To address challenges, decentralized federated learning (DFL) architecture has been proposed to allow clients to train models collaboratively in a serverless and peer-to-peer manner. However, due to its fully decentralized nature, DFL is highly vulnerable to poisoning attacks, where malicious clients could manipulate the system by sending carefully-crafted local models to their neighboring clients. To date, only a limited number of Byzantine-robust DFL methods have been proposed, most of which are either communication-inefficient or remain vulnerable to advanced poisoning attacks. In this paper, we propose a new algorithm called BALANCE (Byzantine-robust averaging through local similarity in decentralization) to defend against poisoning attacks in DFL. In BALANCE, each client leverages its own local model as a similarity reference to determine if the received model is malicious or benign. We establish the theoretical convergence guarantee for BALANCE under poisoning attacks in both strongly convex and non-convex settings. Furthermore, the convergence rate of BALANCE under poisoning attacks matches those of the state-of-the-art counterparts in Byzantine-free settings. Extensive experiments also demonstrate that BALANCE outperforms existing DFL methods and effectively defends against poisoning attacks.",
+  "abstract_source_id": "src-abstract-ccs-2024-3be4049b",
   "venue": "ccs",
   "year": 2024,
   "track_or_session": "Cycle 1",
@@ -243,6 +245,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2024-3be4049b",
+      "url": "https://api.openalex.org/works/doi:10.1145/3658644.3670307?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Byzantine-Robust Decentralized Federated Learning",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:09:06Z",
+      "content_hash": "sha256:73d7cb5630f0f588003e373b14e6fd0aacc4e503a9c747b79c9a320be259ed8d",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

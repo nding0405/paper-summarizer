@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-fragjam-dos-attacks-using-ip-reassembly-congestion-c82057c5",
   "title": "FRAGJAM: DoS Attacks Using IP Reassembly Congestion",
+  "abstract": "UDP, one of the major transport protocols for multiple popular services such as DNS and video conferencing, is an important component of today's network. Its reliance on IP fragmentation is known to cause both security and reliability issues. To avoid fragmentation, UDP-based applications hence usually limit the payload size. Currently, Linux's IP fragment reassembling algorithm relies on a per-network-namespace buffer size limit. That is, a classic resource-exhaustion DoS attack against UDP services relying on IP fragmentation is possible. However, the fragility of present real-world services has not yet been thoroughly researched.\n\nIn this paper, we examine the practicability of such an IP-fragmentation-based DoS attack against real-world providers of popular UDP-based services, including VPN, video conferencing, and RADIUS. We assess the attack from both the client and service provider perspectives. On the server side, we observe that many real-world service providers fragment the server-to-client traffic with respect to artificially small path MTUs when receiving attacker forged ICMP Fragmentation Needed messages. On the client side, we show the chance of dropping server-to-client fragmented traffic by flooding Linux-based NAT gateways with bogus fragments. Through simulated attacks, we demonstrate that the fragmentation-based DoS attack is realistic, affecting various providers such as Zoom and ExpressVPN. We conduct a comprehensive disclosure to affected parties and suggest possible mitigations.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-c82057c5",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Network Security 3",
@@ -92,6 +94,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-c82057c5",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/pan",
+      "kind": "paper-page",
+      "title": "FRAGJAM: DoS Attacks Using IP Reassembly Congestion",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:24:02Z",
+      "content_hash": "sha256:ece87da1b65202e0bd64b5fd6a7a9fd8ebc672b21c2396b62149deba87d290dc",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

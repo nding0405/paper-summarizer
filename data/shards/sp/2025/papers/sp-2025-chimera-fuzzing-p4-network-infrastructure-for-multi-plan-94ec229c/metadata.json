@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2025-chimera-fuzzing-p4-network-infrastructure-for-multi-plan-94ec229c",
   "title": "CHIMERA: Fuzzing P4 Network Infrastructure for Multi-Plane Bug Detection and Vulnerability Discovery",
+  "abstract": "Programmable network data planes, such as P4, offer flexibility in defining network forwarding behavior. However, such programmability introduces a new attack surface for bugs and security vulnerabilities. Most P4 security research has focused solely on the data plane, overlooking its integration with the control plane. We investigated past bug reports in open-source P4 implementations across both control and data planes, and we observed that many P4 network bugs and vulnerabilities arise from the interplay between these planes. We present Chimera, a comprehensive P4 fuzzer that targets bugs requiring multi-plane inputs and impacts. Unlike existing network fuzzers that operate separately on each plane, Chimera uses concolic execution to capture control-data plane interactions. Chimera introduces two novel input mutation strategies to exploit interdependencies across both planes and P4 programs: parser-aware packet mutation (PAPM) and header-guided rule generation (HGRG). Evaluating Chimera on ONOS, Stratum, and BMv2, we discovered 7 new bugs, including 3 security-critical vulnerabilities, 2 bugs triggered by multi-plane inputs, and 2 cross-plane bugs. Chimera outperforms state-of-the-art single-plane fuzzers with higher coverage and a 3.5x higher bug detection rate.",
+  "abstract_source_id": "src-abstract-sp-2025-94ec229c",
   "venue": "sp",
   "year": 2025,
   "track_or_session": "Cycle 2",
@@ -112,6 +114,19 @@
       "official": true,
       "supports": [
         "DOI, authors, affiliations, abstract, publication date, pages, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2025-94ec229c",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Chimera: Fuzzing P4 Network Infrastructure for Multi-Plane Bug Detection and Vulnerability Discovery",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:42Z",
+      "content_hash": "sha256:d62dac834635b4cd1890a53da454ceae7aaa151189662d990ac591dfd5cb6b3e",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

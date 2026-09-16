@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2025-blindfold-confidential-memory-management-by-untrusted-op-ef6759e9",
   "title": "Blindfold: Confidential Memory Management by Untrusted Operating System",
+  "abstract": "Confidential Computing (CC) has received increasing attention in recent years as a mechanism to protect user data from untrusted operating systems (OSes). Existing CC solutions hide confidential memory from the OS and/or encrypt it to achieve confidentiality. In doing so, they render OS memory optimization unusable or complicate the trusted computing base (TCB) required for optimization. This paper presents our results toward overcoming these limitations, synthesized in a CC design named Blindfold. Like many other CC solutions, Blindfold relies on a small trusted software component running at a higher privilege level than the kernel, called Guardian. It features three techniques that can enhance existing CC solutions. First, instead of nesting page tables, Blindfold’s Guardian mediates how the OS accesses memory and handles exceptions by switching page and interrupt tables. Second, Blindfold employs a lightweight capability system to regulate the OS’s semantic access to user memory, unifying case-by-case approaches in previous work. Finally, Blindfold provides carefully designed secure ABI for confidential memory management without encryption. We report an implementation of Blindfold that works on ARMv8-A/Linux. Using Blindfold's prototype, we are able to evaluate the cost of enabling confidential memory management by the untrusted Linux kernel. We show Blindfold has a smaller runtime TCB than related systems and enjoys competitive performance. More importantly, we show that the Linux kernel, including all of its memory optimizations except memory compression, can function properly for confidential memory. This requires only about 400 lines of kernel modifications.",
+  "abstract_source_id": "src-abstract-ndss-2025-ef6759e9",
   "venue": "ndss",
   "year": 2025,
   "track_or_session": "Fall submission cycle",
@@ -126,6 +128,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2025-ef6759e9",
+      "url": "https://www.ndss-symposium.org/ndss-paper/blindfold-confidential-memory-management-by-untrusted-operating-system/",
+      "kind": "paper-page",
+      "title": "Blindfold: Confidential Memory Management by Untrusted Operating System",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:19:13Z",
+      "content_hash": "sha256:db4a88e5b859e4bf5279f02e78e4da923844e3d10673eaede18e11547548e6e7",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

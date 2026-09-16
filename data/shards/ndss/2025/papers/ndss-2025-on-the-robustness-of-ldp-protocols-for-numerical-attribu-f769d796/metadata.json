@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2025-on-the-robustness-of-ldp-protocols-for-numerical-attribu-f769d796",
   "title": "On the Robustness of LDP Protocols for Numerical Attributes under Data Poisoning Attacks",
+  "abstract": "Recent studies reveal that local differential privacy (LDP) protocols are vulnerable to data poisoning attacks where an attacker can manipulate the final estimate on the server by leveraging the characteristics of LDP and sending carefully crafted data from a small fraction of controlled local clients. This vulnerability raises concerns regarding the robustness and reliability of LDP in hostile environments.\n\nIn this paper, we conduct a systematic investigation of the robustness of state-of-the-art LDP protocols for numerical attributes, i.e., categorical frequency oracles (CFOs) with binning and consistency, and distribution reconstruction. We evaluate protocol robustness through an attack-driven approach and propose new metrics for cross-protocol attack gain measurement. The results indicate that Square Wave and CFO-based protocols in the textit{Server} setting are more robust against the attack compared to the CFO-based protocols in the textit{User} setting. Our evaluation also unfolds new relationships between LDP security and its inherent design choices. We found that the hash domain size in local-hashing-based LDP has a profound impact on protocol robustness beyond the well-known effect on utility. Further, we propose a textit{zero-shot attack detection} by leveraging the rich reconstructed distribution information. The experiment show that our detection significantly improves the existing methods and effectively identifies data manipulation in challenging scenarios.",
+  "abstract_source_id": "src-abstract-ndss-2025-f769d796",
   "venue": "ndss",
   "year": 2025,
   "track_or_session": "Fall submission cycle",
@@ -147,6 +149,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2025-f769d796",
+      "url": "https://www.ndss-symposium.org/ndss-paper/on-the-robustness-of-ldp-protocols-for-numerical-attributes-under-data-poisoning-attacks/",
+      "kind": "paper-page",
+      "title": "On the Robustness of LDP Protocols for Numerical Attributes under Data Poisoning Attacks",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:20:04Z",
+      "content_hash": "sha256:912b9260b625a3b64803070fd03fce549832de3421fda48054bcfa024827a401",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

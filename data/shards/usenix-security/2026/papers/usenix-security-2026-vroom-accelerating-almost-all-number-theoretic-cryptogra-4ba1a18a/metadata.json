@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-vroom-accelerating-almost-all-number-theoretic-cryptogra-4ba1a18a",
   "title": "VROOM: Accelerating (Almost All) Number-Theoretic Cryptography Using Vectorization and the Residue Number System",
+  "abstract": "Modular arithmetic with a large prime modulus is a dominant computational cost in number-theoretic cryptography. Modular operations are especially challenging to parallelize efficiently on CPUs using vector instructions. Standard CPU implementations rely on costly carry operations and permutation instructions to align with the multiplication datapath, negating the benefits of vectorization.\n\nWe develop vectorized algorithms for modular addition and multiplication, and present a new, constant-time modular multiplication algorithm suitable for general moduli—prime or otherwise. Our method uses a Residue Number System (RNS) representation to align the arithmetic naturally with wide vector units, and strategically eliminate extraneous instructions. Existing works either require the use of customized hardware or fail to show latency improvements.\n\nReducing the latency of modular arithmetic results in speedups for cryptographic applications. We accelerate RSA-4096 signatures by 4.0× (verify) and 1.3× (sign) over OpenSSL, and speed up BLS signature verifications by 4.05× over the assembly-optimized blst library. To facilitate broad practical adoption, we are upstreaming our implementation into BoringSSL, where it will directly benefit real-world TLS and cryptographic deployments. Results on mapping our algorithm to Nvidia GPUs demonstrate speedups on modular multiplication over Nvidia's CGBN library.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-4ba1a18a",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Applications of Cryptography 1",
@@ -113,6 +115,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-4ba1a18a",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/langowski",
+      "kind": "paper-page",
+      "title": "VROOM: Accelerating (Almost All) Number-Theoretic Cryptography Using Vectorization and the Residue Number System",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:26:08Z",
+      "content_hash": "sha256:75f41636b6c6da4722be2ffe44f63d5e8eeaa76c0e0d768bb749442d6d3c0486",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

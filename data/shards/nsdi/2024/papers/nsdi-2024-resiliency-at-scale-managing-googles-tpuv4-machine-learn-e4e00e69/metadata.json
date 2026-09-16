@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2024-resiliency-at-scale-managing-googles-tpuv4-machine-learn-e4e00e69",
   "title": "Resiliency at Scale: Managing Google’s TPUv4 Machine Learning Supercomputer",
+  "abstract": "TPUv4 (Tensor Processing Unit) is Google’s 3rd generation accelerator for machine learning training, deployed as a 4096-node supercomputer with a custom 3D torus interconnect. In this paper, we describe our experience designing and operating the software infrastructure that allows TPUv4 supercomputers to operate at scale, including features for automatic fault resiliency and hardware recovery. We adopt a software-defined networking (SDN) approach to manage TPUv4’s high-bandwidth inter-chip interconnect (ICI) fabric, using optical circuit switching to dynamically configure routes to work around machine, chip and link failures. Our infrastructure detects failures and automatically triggers reconfiguration to minimize disruption to running workloads, as well as initiating remediation and repair workflows for the affected components. Similar techniques interface with maintenance and upgrade workflows for both hardware and software. Our dynamic reconfiguration approach allows our TPUv4 supercomputers to achieve 99.98% system availability, gracefully handling hardware outages experienced by ~1% of the training jobs.",
+  "abstract_source_id": "src-abstract-nsdi-2024-e4e00e69",
   "venue": "nsdi",
   "year": 2024,
   "track_or_session": "ML at Scale",
@@ -370,6 +372,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2024-e4e00e69",
+      "url": "https://www.usenix.org/conference/nsdi24/presentation/zu",
+      "kind": "paper-page",
+      "title": "Resiliency at Scale: Managing Google’s TPUv4 Machine Learning Supercomputer",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:03:37Z",
+      "content_hash": "sha256:c98ac632dfd5aa2795f9b537834bc6191a99f1f848235e698e1defc1409b385b",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

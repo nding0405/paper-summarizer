@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "atc-2025-gpreempt-gpu-preemptive-scheduling-made-general-and-effi-5503bf64",
   "title": "GPREEMPT: GPU Preemptive Scheduling Made General and Efficient",
+  "abstract": "GPUs support various workloads with different peak periods and diverse service level agreements (SLA) requirements, including latency-critical tasks and best-effort tasks. Co-locating tasks with diverse SLA demands can enhance resource utilization, yet it introduces the risk of performance interference. Prior work employs preemption strategies to enforce SLAs for latency-critical tasks. These strategies can be classified into two categories: wait-based and reset-based approaches. The wait-based strategy ensures broad generality but incurs significant preemption latency. In contrast, the reset-based strategy necessitates the idempotence of preempted kernels, limiting its generality.\n\nThis paper presents GPreempt, a preemption mechanism that breaks the trade-off. GPreempt implements a timeslice-based yield mechanism to enable context-switch preemption on GPUs. To mitigate the overhead associated with context-switching, GPreempt employs a hint-based pre-preemption technique to overlap the preemption process with the essential data-preparation phase. Our evaluation demonstrates that GPreempt achieves within 40 μs low-latency preemption comparable to executing only latency-critical tasks while remaining applicable to non-idempotent workloads, where reset-based mechanisms prove inadequate.",
+  "abstract_source_id": "src-abstract-atc-2025-5503bf64",
   "venue": "atc",
   "year": 2025,
   "track_or_session": "Operating Systems: Scheduling, Security, and Extensibility",
@@ -201,6 +203,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-atc-2025-5503bf64",
+      "url": "https://www.usenix.org/conference/atc25/presentation/fan",
+      "kind": "paper-page",
+      "title": "GPREEMPT: GPU Preemptive Scheduling Made General and Efficient",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T21:59:43Z",
+      "content_hash": "sha256:775b5d54fd7ab791ce491b259a6c79757209971a9310a153440bb53ee9f5213f",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

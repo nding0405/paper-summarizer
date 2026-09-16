@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2023-srnic-a-scalable-architecture-for-rdma-nics-cea28627",
   "title": "SRNIC: A Scalable Architecture for RDMA NICs",
+  "abstract": "RDMA is expected to be highly scalable: to perform well in large-scale data center networks where packet losses are inevitable (i.e., high network scalability), and to support a large number of performant connections per server (i.e., high connection scalability). Commercial RoCEv2 NICs (RNICs) fall short on scalability as they rely on a lossless, limited-scale network fabric and support only a small number of performant connections. Recent work IRN improves the network scalability by relaxing the lossless network requirement, but the connection scalability issue remains unaddressed.\n\nIn this paper, we aim to address the connection scalability challenge, while maintaining high performance and low CPU overhead as commercial RNICs, and high network scalability as IRN, by designing SRNIC, a Scalable RDMA NIC architecture. Our key insight in SRNIC is that, on-chip data structures and their memory requirements in RNICs can be minimized with careful protocol and architecture co-designs to improve connection scalability. Guided by this insight, we analyze all data structures involved in an RDMA conceptual model, and remove them as many as possible with RDMA protocol header modifications and architectural innovations, including cache-free QP scheduler and memory-free selective repeat. We implement a fully functional SRNIC prototype using FPGA. Experiments show that, SRNIC achieves 10K performant connections on chip and outperforms commercial RNICs by 18x in terms of normalized connection scalability (i.e., the number of performant connections per 1MB memory), while achieving 97 Gbps throughput and 3.3 μs latency with less than 5% CPU overhead, and maintaining high network scalability.",
+  "abstract_source_id": "src-abstract-nsdi-2023-cea28627",
   "venue": "nsdi",
   "year": 2023,
   "track_or_session": "RDMA",
@@ -497,6 +499,19 @@
       "supports": [
         "canonical author line and publication-time affiliations",
         "resolution of conflicting or malformed citation metadata on the official paper page"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2023-cea28627",
+      "url": "https://www.usenix.org/conference/nsdi23/presentation/wang-zilong",
+      "kind": "paper-page",
+      "title": "SRNIC: A Scalable Architecture for RDMA NICs",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:02:37Z",
+      "content_hash": "sha256:a3cf1dc212298b591a2e8ca16ee345c019ad0acc361af15ebf2f0f93a6f4a40b",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

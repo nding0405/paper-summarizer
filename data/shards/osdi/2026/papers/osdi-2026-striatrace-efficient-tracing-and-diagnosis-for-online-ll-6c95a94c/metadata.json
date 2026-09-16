@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2026-striatrace-efficient-tracing-and-diagnosis-for-online-ll-6c95a94c",
   "title": "StriaTrace: Efficient Tracing and Diagnosis for Online LLM Inference (Operational Systems)",
+  "abstract": "Large Language Model (LLM) inference services in production operate under stringent, fine-grained Service Level Objectives (SLOs). Unlike throughput-oriented LLM training, even sporadic performance anomalies during inference can violate SLOs, underscoring the need for improved tracing and diagnosis solutions. However, existing solutions face two primary limitations: (1) existing tracing tools incur prohibitive overhead; (2) training-centric diagnosis tools are ill-suited for capturing sporadic inference anomalies. To bridge these gaps, we propose StriaTrace, a novel tracing and diagnosis system tailored for online LLM inference. StriaTrace is built upon three principles distilled from production experience: (1) tracing key synchronization points, (2) tracing critical paths, and (3) detailed tracing only during abnormalities. StriaTrace further constructs a dynamic regression-based roofline model and correlation-based diagnosis to identify why each LLM inference abnormality happens. Evaluations show that StriaTrace reduces tracing overhead by 97.8% relative to alternatives. StriaTrace has been widely used in our development, testing, and production release cycles, and has successfully diagnosed hundreds of abnormalities spanning 19 distinct root causes.",
+  "abstract_source_id": "src-abstract-osdi-2026-6c95a94c",
   "venue": "osdi",
   "year": 2026,
   "track_or_session": "Agentic AI and LLM Operations",
@@ -272,6 +274,19 @@
       "official": true,
       "supports": [
         "Official proceedings availability and canonical conference versions."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2026-6c95a94c",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/wu-haonan",
+      "kind": "paper-page",
+      "title": "StriaTrace: Efficient Tracing and Diagnosis for Online LLM Inference (Operational Systems)",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:09:01Z",
+      "content_hash": "sha256:953a2c1cf3547ba530b79a8916df04cdd7b06d8a895181a556144e5589c837e1",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

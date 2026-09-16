@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "fast-2025-mooncake-trading-more-storage-for-less-computation-a-kvc-0f1fcb08",
   "title": "Mooncake: Trading More Storage for Less Computation — A KVCache-centric Architecture for Serving LLM Chatbot",
+  "abstract": "Mooncake is the serving platform for Kimi, an LLM chatbot service developed by Moonshot AI. This platform features a KVCache-centric disaggregated architecture that not only separates prefill and decoding clusters but also efficiently utilizes the underexploited CPU, DRAM, SSD and NIC resources of the GPU cluster to establish a disaggregated KVCache. At the core of Mooncake is its KVCache-centric global cache and a scheduler designed to maximize throughput while adhering to stringent latency-related Service Level Objectives (SLOs).\n\nOur experiments demonstrate that Mooncake excels in scenarios involving long-context inputs. In tests using real traces, Mooncake increases the effective request capacity by 59%~498% when compared to baseline methods, all while complying with SLOs. Currently, Mooncake is operational across thousands of nodes, processing over 100 billion tokens daily. In practical deployments, Mooncake's innovative architecture enables Kimi to handle 115% and 107% more requests on NVIDIA A800 and H800 clusters, respectively, compared to previous systems.",
+  "abstract_source_id": "src-abstract-fast-2025-0f1fcb08",
   "venue": "fast",
   "year": 2025,
   "track_or_session": "Machine Learning and Storage",
@@ -245,6 +247,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-fast-2025-0f1fcb08",
+      "url": "https://www.usenix.org/conference/fast25/presentation/qin",
+      "kind": "paper-page",
+      "title": "Mooncake: Trading More Storage for Less Computation — A KVCache-centric Architecture for Serving LLM Chatbot",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:01:10Z",
+      "content_hash": "sha256:9f48bd522dec5594a9fe23a22d41be4ae7010b6294ba4bd9bb0861dc9bac56f6",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

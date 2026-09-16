@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2026-oxidizer-toward-concise-and-high-fidelity-rust-decompila-eb64119c",
   "title": "Oxidizer: Toward Concise and High-fidelity Rust Decompilation",
+  "abstract": "Rust is an increasingly popular language that has gained traction among developers. As a memory-safe language, Rust reduces the burden for developers to create reliable and fast software. However, the same features can also hinder reverse engineering tasks. For instance, malware developers have also picked up on the trend of Rust, using it to make their malware more reliable and difficult to analyze. Reverse engineering tasks often rely on decompilers to recover the source code from these binaries. However, analysts find it difficult to analyze Rust binaries using modern C decompilers. Modern $\\mathbf{C}$ decompilers fail on Rust binaries because they fail to recover high-level Rust abstractions from low-level implementations. As a result, the decompiled output is often verbose and inaccurate. Therefore, we believe that to achieve high-quality Rust decompilation, a decompiler must bridge the gap between high-level Rust abstractions and lowlevel implementations. In this paper, we study how $\\mathbf{C}$ decompilers fail at decompiling Rust binaries. We identify a comprehensive list of decompilation failures, find the root causes of these failures, and develop a novel decompiler, Oxidizer, for decompiling Rust binaries to Rust pseudocode. We evaluate Oxidizer on 28 popular Rust projects across multiple optimization levels and compiler versions, comparing it against angr, Hex-Rays, Ghidra, and Binary Ninja. Oxidizer outperforms all baselines on most conciseness and fidelity metrics, and is the only tool capable of recovering Rust enums and macros. A human study further shows that participants using Oxidizer achieved 28 % higher accuracy and completed tasks 20 % faster than those using Hex-Rays.",
+  "abstract_source_id": "src-abstract-sp-2026-eb64119c",
   "venue": "sp",
   "year": 2026,
   "track_or_session": "Cycle 2",
@@ -301,6 +303,19 @@
       "official": true,
       "supports": [
         "DOI, published-order authors and affiliations, abstract, publication date, page span, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2026-eb64119c",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Oxidizer: Toward Concise and High-fidelity Rust Decompilation",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:58:02Z",
+      "content_hash": "sha256:4204efad9387253e2c70bd18217fac7c5220b9cd43ecd6179fdc27c5a043343e",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

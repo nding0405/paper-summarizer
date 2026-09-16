@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-remise-authorized-anonymous-communication-systems-e7106b28",
   "title": "Remise: Authorized Anonymous Communication Systems",
+  "abstract": "We present Remise, a two-server authorized anonymous communication system built on Distributed Oblivious RAM (DORAM). Remise supports two modes of operation: (i) an anonymous bulletin board, where messages are publicly revealed at the end of each epoch without linking senders to messages, and (ii) anonymous communication channels, where messages remain secret-shared, and writers selectively grant and revoke read access to chosen readers. In both modes, the two servers execute read and write operations without learning which indices are accessed, which authorization tokens are used, or which relationships exist between writers and readers, assuming no collusion between the servers. A central contribution of Remise is a lightweight and efficient access-control mechanism. Authorization tokens are maintained in secret-shared form across the two servers, enabling oblivious verification and updates, while preventing leakage even under client–server collusion. Unlike prior DPF-based systems, Remise provides built-in auditing by having the semi-honest servers generate standard-basis vector shares internally, eliminating the need for server-side DPF validity checks. We implement a prototype of Remise and evaluate it under realistic network conditions. Our experiments show an 80× improvement in online server time for request validity check when compared to PACL (IEEE S&amp;P 2023) for large database size.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-e7106b28",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Privacy Anonymity 4",
@@ -113,6 +115,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-e7106b28",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/ravi-rohan",
+      "kind": "paper-page",
+      "title": "Remise: Authorized Anonymous Communication Systems",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:25:12Z",
+      "content_hash": "sha256:a2162eb48b0043e250a06b60ff215439bede5ad62bfa5d9f6c6dc4ee82c820a1",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

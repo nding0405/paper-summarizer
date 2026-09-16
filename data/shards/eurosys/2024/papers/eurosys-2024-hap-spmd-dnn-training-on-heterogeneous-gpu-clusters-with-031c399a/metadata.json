@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "eurosys-2024-hap-spmd-dnn-training-on-heterogeneous-gpu-clusters-with-031c399a",
   "title": "HAP: SPMD DNN Training on Heterogeneous GPU Clusters with Automated Program Synthesis",
+  "abstract": "Single-Program-Multiple-Data (SPMD) parallelism has recently been adopted to train large deep neural networks (DNNs). Few studies have explored its applicability on heterogeneous clusters, to fully exploit available resources for large model learning. This paper presents HAP, an automated system designed to expedite SPMD DNN training on heterogeneous clusters. HAP jointly optimizes the tensor sharding strategy, sharding ratios across heterogeneous devices and the communication methods for tensor exchanges for optimized distributed training with SPMD parallelism. We novelly formulate model partitioning as a program synthesis problem, in which we generate a distributed program from scratch on a distributed instruction set that semantically resembles the program designed for a single device, and systematically explore the solution space with an A-based search algorithm. We derive the optimal tensor sharding ratios by formulating it as a linear programming problem. Additionally, HAP explores tensor communication optimization in a heterogeneous cluster and integrates it as part of the program synthesis process, for automatically choosing optimal collective communication primitives and applying sufficient factor broadcasting technique. Extensive experiments on representative workloads demonstrate that HAP achieves up to 2.41x speed-up on heterogeneous clusters.",
+  "abstract_source_id": "src-abstract-eurosys-2024-031c399a",
   "venue": "eurosys",
   "year": 2024,
   "track_or_session": null,
@@ -188,6 +190,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-eurosys-2024-031c399a",
+      "url": "https://api.openalex.org/works/doi:10.1145/3627703.3629580?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "HAP: SPMD DNN Training on Heterogeneous GPU Clusters with Automated Program Synthesis",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:18:50Z",
+      "content_hash": "sha256:ccd6e1ebd163831ac4fb9028c1ae54ccafa85495394a28fb586168e27752c409",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

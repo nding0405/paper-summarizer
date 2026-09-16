@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2026-themis-scheduling-aware-buffer-management-for-hbm-based-48d915ca",
   "title": "Themis: Scheduling-Aware Buffer Management for HBM-Based Hybrid Buffers",
+  "abstract": "Packet buffers are critical for absorbing congestion and sustaining throughput in high-speed routers. As link rates escalate, on-chip SRAM alone can no longer provide sufficient capacity. To address this, modern routers widely adopt hybrid buffer architectures that augment limited on-chip SRAM with large off-chip DRAM. Despite this architectural promise, existing hybrid Buffer Management (BM) schemes severely undermine router performance. They simply redirect packets that would otherwise be dropped into DRAM, which leads to priority inversion and head-of-line blocking: as packets buffered in DRAM age into the highest-priority packets, SRAM must stall until they are retrieved, wasting bandwidth and degrading throughput. Worse still, existing BM schemes ignore DRAM's access characteristics, further constraining its limited bandwidth and reducing overall performance dramatically.\n\nWe present Themis, a hybrid buffer management scheme that fully exploits SRAM's high bandwidth and DRAM's large capacity. Its core principle is scheduling-aware packet placement, which ensures packets with the earliest departure time are preferentially stored in SRAM to maximize its bandwidth utilization. To achieve this, Themis proactively migrates buffered packets between SRAM and DRAM, reserving SRAM space for imminent, high-priority traffic. Themis is compatible with diverse scheduling algorithms and supports dynamic changes to the scheduling policy. It also organizes DRAM storage according to scheduling order, mapping consecutively departing packets to contiguous addresses. This unlocks effective off-chip bandwidth, and accelerates packet migration. Themis is hardware-friendly and its FPGA and ASIC prototypes achieve low overhead and high frequency. Large-scale simulations show that Themis improves end-to-end performance by up to 2.8×.",
+  "abstract_source_id": "src-abstract-nsdi-2026-48d915ca",
   "venue": "nsdi",
   "year": 2026,
   "track_or_session": "Hardware, Mobility, and Systems",
@@ -265,6 +267,19 @@
         "proceedings page range and page count",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2026-48d915ca",
+      "url": "https://www.usenix.org/conference/nsdi26/presentation/zhang-zhiyu",
+      "kind": "paper-page",
+      "title": "Themis: Scheduling-Aware Buffer Management for HBM-Based Hybrid Buffers",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:06:11Z",
+      "content_hash": "sha256:e80be25c7121000cdc061c1f9223f31696c16d635927084b6b21be676564398a",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

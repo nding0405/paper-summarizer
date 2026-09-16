@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "atc-2025-wic-hiding-producer-consumer-synchronization-delays-with-a45e4b8f",
   "title": "WIC: Hiding Producer-Consumer Synchronization Delays with Warp-Level Interrupt-based GPU Communications",
+  "abstract": "GPU communication plays a pivotal role in collaborative computation across multiple devices. Despite advancements in inter-device communication fabrics and architectures, synchronization still remains a significant challenge due to the manual coordination required between producers and consumers at the application level. In this work, we first reveal that traditional synchronization is a primary bottleneck in GPU communication, where consumers frequently poll for producer data availability. Specifically, early-started polling leads to the unnecessary occupation of computational resources. To address this issue, we propose Warp-level Interrupt-based Communication (WIC), a novel synchronization framework for GPU communication that introduces a fine-grained interruption mechanism at the warp level to replace repetitive polling. WIC preemptively stalls warps engaged in frequent polling and releases computational resources for other warps, thereby effectively overlapping producer-consumer synchronization with ongoing computations. Comprehensive experiments demonstrate that WIC significantly outperforms conventional polling methods by 1.13 × on average across various applications with diverse communication patterns.",
+  "abstract_source_id": "src-abstract-atc-2025-a45e4b8f",
   "venue": "atc",
   "year": 2025,
   "track_or_session": "Distributed Systems: Communication, Consensus, and Data Structures",
@@ -201,6 +203,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-atc-2025-a45e4b8f",
+      "url": "https://www.usenix.org/conference/atc25/presentation/zhang-jiajian",
+      "kind": "paper-page",
+      "title": "WIC: Hiding Producer-Consumer Synchronization Delays with Warp-Level Interrupt-based GPU Communications",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:00:23Z",
+      "content_hash": "sha256:9c296d14d31718f6db664133e0c4a9e9b96f07c3fdcfbbdfaf4108903a1b1081",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

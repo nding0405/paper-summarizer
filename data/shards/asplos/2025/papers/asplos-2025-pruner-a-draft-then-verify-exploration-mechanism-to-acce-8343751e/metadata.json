@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2025-pruner-a-draft-then-verify-exploration-mechanism-to-acce-8343751e",
   "title": "Pruner: A Draft-then-Verify Exploration Mechanism to Accelerate Tensor Program Tuning",
+  "abstract": "Tensor program tuning is essential for the efficient deployment of deep neural networks. Search-based approaches have demonstrated scalability and effectiveness in automatically finding high-performance programs for specific hardware. However, the search process is often inefficient, taking hours or even days to discover optimal programs due to the exploration mechanisms guided by an accurate but slow-learned cost model. Meanwhile, the learned cost model trained on one platform cannot seamlessly adapt online to another, which we call cross-platform online unawareness. In this work, we propose Pruner and MoA-Pruner. Pruner is a ''Draft-then-Verify'' exploration mechanism that accelerates the schedule search process. Instead of applying the complex learned cost model to all explored candidates, Pruner drafts small-scale potential candidates by introducing a naive Symbol-based Analyzer (draft model), then identifies the best candidates by the learned cost model. MoA-Pruner introduces a Momentum online Adaptation strategy to address the cross-platform online unawareness.",
+  "abstract_source_id": "src-abstract-asplos-2025-8343751e",
   "venue": "asplos",
   "year": 2025,
   "track_or_session": "Session 9A: ML Compilers",
@@ -335,6 +337,19 @@
       "official": false,
       "supports": [
         "Indexed abstract and open-access links used for relevance classification and ancillary-link discovery."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2025-8343751e",
+      "url": "https://api.openalex.org/works/doi:10.1145/3676641.3716269?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Pruner: A Draft-then-Verify Exploration Mechanism to Accelerate Tensor Program Tuning",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:02:43Z",
+      "content_hash": "sha256:f56a36d004b292feed753765d6ccbaf9d36c58f1a226d855504ba4946e7520ad",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

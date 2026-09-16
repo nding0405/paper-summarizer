@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2023-ou-automating-the-parallelization-of-zero-knowledge-prot-654a90aa",
   "title": "Ou: Automating the Parallelization of Zero-Knowledge Protocols",
+  "abstract": "A zero-knowledge proof (ZKP) is a powerful cryptographic primitive used in many decentralized or privacy-focused applications. However, the high overhead of ZKPs can restrict their practical applicability. We design a programming language, Ou, aimed at easing the programmer's burden when writing efficient ZKPs, and a compiler framework, Lian, that automates the analysis and distribution of statements to a computing cluster. Ou uses programming language semantics, formal methods, and combinatorial optimization to automatically partition an Ou program into efficiently sized chunks for parallel ZK-proving and/or verification. We contribute: (1) A front-end language where users can write proof statements as imperative programs in a familiar syntax; (2) A compiler architecture and implementation that automatically analyzes the program and compiles it into an optimized IR that can be lifted to a variety of ZKP constructions; and (3) A cutting algorithm, based on Pseudo-Boolean optimization and Integer Linear Programming, that reorders instructions and then partitions the program into efficiently sized chunks for parallel evaluation and efficient state reconciliation.",
+  "abstract_source_id": "src-abstract-ccs-2023-654a90aa",
   "venue": "ccs",
   "year": 2023,
   "track_or_session": "Language-based security (Formal Methods and Programming Languages)",
@@ -256,6 +258,19 @@
       "official": false,
       "supports": [
         "published title, author order, and page span"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2023-654a90aa",
+      "url": "https://api.openalex.org/works/doi:10.1145/3576915.3616621?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Ou: Automating the Parallelization of Zero-Knowledge Protocols",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:07:57Z",
+      "content_hash": "sha256:ca128032570ca8c337fb1a67978bfaeb61928fc3617aa277a042a99bb5bb1f05",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

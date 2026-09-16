@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sigcomm-2024-ccanalyzer-an-efficient-and-nearly-passive-congestion-co-00fb6957",
   "title": "CCAnalyzer: An Efficient and Nearly-Passive Congestion Control Classifier",
+  "abstract": "We present CCAnalyzer, a novel classifier for deployed Internet congestion control algorithms (CCAs) which is more accurate, more generalizable, and more human-interpretable than prior classifiers. CCAnalyzer requires no knowledge of the underlying CCA algorithms, and it can identify when a CCA is novel - i.e. not in the training set. Furthermore, CCAnalyzer can cluster together servers it believes use the same novel/unknown algorithm. CCAnalyzer correctly identifies all 15 of the default Internet CCAs deployed with Linux, including BBRv1, which no existing classifier can do. Finally, CCAnalyzer can classify server CCAs while being as efficient or better than prior approaches in terms of bytes transferred and runtime. We conduct a measurement study using CCAnalyzer measuring the CCA for 5000+ websites. We find widespread deployment of BBRv1 at large CDNs, and demonstrate how our clustering technique can detect deployments of new algorithms as it discovers BBRv3 although BBRv3 is not in its training set.",
+  "abstract_source_id": "src-abstract-sigcomm-2024-00fb6957",
   "venue": "sigcomm",
   "year": 2024,
   "track_or_session": "Sharing the network — Research Track",
@@ -192,6 +194,19 @@
         "publisher-deposited ORCIDs when available",
         "proceedings page range and online publication date",
         "empty publisher relation metadata for alternate-version checks"
+      ]
+    },
+    {
+      "id": "src-abstract-sigcomm-2024-00fb6957",
+      "url": "https://api.openalex.org/works/doi:10.1145/3651890.3672255?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "CCAnalyzer: An Efficient and Nearly-Passive Congestion Control Classifier",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:23:04Z",
+      "content_hash": "sha256:8bb5c178608951bb8119f4b4939948ba1a0713a743cfcd32774aead6d0430254",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

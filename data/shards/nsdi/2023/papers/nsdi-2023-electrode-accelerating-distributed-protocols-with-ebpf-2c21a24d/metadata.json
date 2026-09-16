@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2023-electrode-accelerating-distributed-protocols-with-ebpf-2c21a24d",
   "title": "Electrode: Accelerating Distributed Protocols with eBPF",
+  "abstract": "Implementing distributed protocols under a standard Linux kernel networking stack enjoys the benefits of load-aware CPU scaling, high compatibility, and robust security and isolation. However, it suffers from low performance because of excessive user-kernel crossings and kernel networking stack traversing. We present Electrode with a set of eBPF-based performance optimizations designed for distributed protocols. These optimizations get executed in the kernel before the networking stack but achieve similar functionalities as were implemented in user space (e.g., message broadcasting, collecting quorum of acknowledgments), thus avoiding the overheads incurred by user-kernel crossings and kernel networking stack traversing. We show that when applied to a classic Multi-Paxos state machine replication protocol, Electrode improves its throughput by up to 128.4% and latency by up to 41.7%.",
+  "abstract_source_id": "src-abstract-nsdi-2023-2c21a24d",
   "venue": "nsdi",
   "year": 2023,
   "track_or_session": "Performance",
@@ -140,6 +142,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2023-2c21a24d",
+      "url": "https://www.usenix.org/conference/nsdi23/presentation/zhou",
+      "kind": "paper-page",
+      "title": "Electrode: Accelerating Distributed Protocols with eBPF",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:02:00Z",
+      "content_hash": "sha256:4871f46041f51a176b0909d7c184cc90547f834ecead7a9b2902784228c94442",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

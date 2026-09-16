@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2026-shaving-the-peaks-taming-tail-latency-for-managed-worklo-5a92dbd6",
   "title": "Shaving the Peaks: Taming Tail Latency for Managed Workloads via Disaggregated Garbage Collection",
+  "abstract": "Language runtimes are essential systems commonly used in multi-tenant cloud scenarios, such as interactive web services and other cloud workloads. They usually provide memory management services, or garbage collection (GC), to automatically reclaim memory and reduce the labor work of application developers. Recent concurrent collectors allow GC to co-run with application threads (mutators), which reduces application pauses and intends to improve the applications’ tail latency. However, this work observes that periodic GC workloads remain a primary source of long tail latency, particularly in resource-constrained multi-tenant environments. In such settings, GC threads consume significant CPU resources, leading to severe performance contention with mutators.\n\nTo resolve the contention, this work presents DGC, a disaggregated GC architecture that exposes GC as an external service. DGC decouples the most costly marking phase in concurrent GC and offloads it to a disaggregated marking engine. Through a co-design of the GC marking algorithm and an RDMA-based software paging mechanism, DGC’s disaggregated marking engine achieves performance on par with local execution while offloading marking to a remote node. To improve resource utilization, DGC introduces a global GC orchestrator to serve multiple runtimes while minimizing the conflicts due to the overlapping of individual GC triggering points. DGC is implemented on the OpenJDK HotSpot Java virtual machine, and the evaluation results on representative latency-sensitive applications show that DGC reduces P99 latency by up to 64.4% under moderate workloads and improves the peak goodput by up to 24.0%.",
+  "abstract_source_id": "src-abstract-osdi-2026-5a92dbd6",
   "venue": "osdi",
   "year": 2026,
   "track_or_session": "Synchronization",
@@ -125,6 +127,19 @@
       "official": true,
       "supports": [
         "Official proceedings availability and canonical conference versions."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2026-5a92dbd6",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/lyu",
+      "kind": "paper-page",
+      "title": "Shaving the Peaks: Taming Tail Latency for Managed Workloads via Disaggregated Garbage Collection",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:08:57Z",
+      "content_hash": "sha256:802c09605a8d206a37c85988d858ba4635cda27b2ea4b40b02367f69fbffd5cd",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

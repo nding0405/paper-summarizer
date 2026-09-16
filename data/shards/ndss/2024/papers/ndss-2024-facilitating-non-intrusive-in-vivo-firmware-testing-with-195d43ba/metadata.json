@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2024-facilitating-non-intrusive-in-vivo-firmware-testing-with-195d43ba",
   "title": "Facilitating Non-Intrusive In-Vivo Firmware Testing with Stateless Instrumentation",
+  "abstract": "Although numerous dynamic testing techniques have been developed, they can hardly be directly applied to firmware of deeply embedded (e.g., microcontroller-based) devices due to the tremendously different runtime environment and restricted resources on these devices. This work tackles these challenges by leveraging the unique position of microcontroller devices during firmware development. That is, firmware developers have to rely on a powerful engineering workstation that connects to the target device to program and debug code. Therefore, we develop a decoupled firmware testing framework named IPEA, which shifts the overhead of resource-intensive analysis tasks from the microcontroller to the workstation. Only lightweight “needle probes” are left in the firmware to collect internal execution information without processing it. We also instantiated this framework with a sanitizer based on pointer capability (IPEA-San) and a greybox fuzzer (IPEA-Fuzz). By comparing IPEA-San with a port of AddressSanitizer for microcontrollers, we show that IPEA-San reduces memory overhead by 62.75% in real-world firmware with better detection accuracy. Combining IPEA-Fuzz with IPEA-San, we found 7 zero-day bugs in popular IoT libraries (3) and peripheral driver code (4).",
+  "abstract_source_id": "src-abstract-ndss-2024-195d43ba",
   "venue": "ndss",
   "year": 2024,
   "track_or_session": "Summer submission cycle",
@@ -147,6 +149,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2024-195d43ba",
+      "url": "https://www.ndss-symposium.org/ndss-paper/facilitating-non-intrusive-in-vivo-firmware-testing-with-stateless-instrumentation/",
+      "kind": "paper-page",
+      "title": "Facilitating Non-Intrusive In-Vivo Firmware Testing with Stateless Instrumentation",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:18:02Z",
+      "content_hash": "sha256:9e092a1071623a98f924f7f84c41d2264fc4a8be0083250cd4f62133f0c8824a",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

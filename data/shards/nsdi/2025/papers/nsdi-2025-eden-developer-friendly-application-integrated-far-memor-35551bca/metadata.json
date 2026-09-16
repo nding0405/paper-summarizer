@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2025-eden-developer-friendly-application-integrated-far-memor-35551bca",
   "title": "Eden: Developer-Friendly Application-Integrated Far Memory",
+  "abstract": "Far memory systems are a promising way to address the resource stranding problem in datacenters. Far memory systems broadly fall into two categories. On one hand, paging-based systems use hardware guards at the granularity of pages to intercept remote accesses, which require no application changes but incur significant faulting overhead. On the other hand, app-integrated systems use software guards on data objects and apply application-specific optimizations to avoid faulting overheads, but these systems require significant application redesign and/or suffer from overhead on local accesses. We propose Eden, a new approach to far memory that combines hardware guards with a small number of software guards in the form of programmer annotations, to achieve performance similar to app-integrated systems with minimal developer effort. Eden is based on the insight that applications generate most of their page faults at a small number of code locations, and those locations are easy to find programmatically. By adding hints to such locations, Eden can notify the pager about upcoming memory accesses to customize read-ahead and memory reclamation. We show that Eden achieves 19.4–178% higher performance than Fastswap for memory-intensive applications including DataFrame and memcached. Eden achieves performance comparable to AIFM with almost 100× fewer code changes.",
+  "abstract_source_id": "src-abstract-nsdi-2025-35551bca",
   "venue": "nsdi",
   "year": 2025,
   "track_or_session": "RDMA",
@@ -224,6 +226,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2025-35551bca",
+      "url": "https://www.usenix.org/conference/nsdi25/presentation/yelam",
+      "kind": "paper-page",
+      "title": "Eden: Developer-Friendly Application-Integrated Far Memory",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:04:05Z",
+      "content_hash": "sha256:69f15b290f57f30fc151f0ff486a814bdfd0692dc36652f9ea47fdb150f0055f",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

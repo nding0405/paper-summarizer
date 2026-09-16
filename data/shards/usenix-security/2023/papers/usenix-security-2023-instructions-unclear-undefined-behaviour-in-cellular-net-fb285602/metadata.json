@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2023-instructions-unclear-undefined-behaviour-in-cellular-net-fb285602",
   "title": "Instructions Unclear: Undefined Behaviour in Cellular Network Specifications",
+  "abstract": "Cellular networks are a cornerstone of modern communication and indispensable to our daily lives. Their specifications span thousands of pages, written primarily in natural language. The ensuing complexity and lack of explicitness lead to underspecification, where only subsets of possible interactions are properly specified, while other behaviour is left undefined and open to interpretation by developers. In practice, this causes weird, unintended interactions in smartphone modems implementing the specification that, in the worst case, lead to security vulnerabilities.\n\nIn this work, we present the first generic approach for systematically discovering undefined behaviour in cellular specifications. Requiring solely a model of the behaviour defined in the specification, our technique extends this model to automatically reason about the presence of undefined behaviour. For each undefined behaviour, it automatically infers concrete examples as proof of existence. This not only allows improving the specification but also enables us to test smartphone modems. This way, we can verify whether an instance of undefined behaviour leads to a security vulnerability within modem firmware. With our approach, we identify 58 cases of undefined behaviour in LTE's Public Warning System, SMS, and Radio Resource Control specifications. Five of these cases resulted in previously unknown vulnerabilities that allow adversaries to read modem memory contents and perform remote Denial of Service attacks (in one case just via a single SMS) against commonly used smartphone modems. So far, two CVEs of high and one CVE of critical severity have been assigned.",
+  "abstract_source_id": "src-abstract-usenix-security-2023-fb285602",
   "venue": "usenix-security",
   "year": 2023,
   "track_or_session": "Cellular Networks",
@@ -175,6 +177,19 @@
       "official": true,
       "supports": [
         "authors, affiliations when published, abstract, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2023-fb285602",
+      "url": "https://www.usenix.org/conference/usenixsecurity23/presentation/klischies",
+      "kind": "paper-page",
+      "title": "Instructions Unclear: Undefined Behaviour in Cellular Network Specifications",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:11:40Z",
+      "content_hash": "sha256:b038d2e50ebc59ad55e457e098a7e4c123d9a13e80c10257b54621f6e3ec1ebd",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-rowhammer-based-trojan-injection-one-bit-flip-is-suffici-44405868",
   "title": "Rowhammer-Based Trojan Injection: One Bit Flip Is Sufficient for Backdooring DNNs",
+  "abstract": "While conventional backdoor attacks on deep neural networks (DNNs) assume the attacker can manipulate the training data or process, recent research introduces a more practical threat model by injecting backdoors during the inference stage. These approaches exploit bit flip attacks to modify model weights, leveraging memory fault injection techniques like Rowhammer. However, they face a significant limitation—requiring multiple bits to be flipped simultaneously, which is highly difficult in practice. Additionally, they primarily target quantized models, leaving the feasibility of inference-time backdoor attacks on full-precision models unclear. To address these limitations, we propose ONEFLIP, the first one-bit-flip backdoor attack on full-precision models. Unlike prior methods that rely on optimization-based bit searches and require flipping multiple bits, our algorithm identifies the most promising weights for the attack and flips a single bit to insert a backdoor. We evaluate ONEFLIP on the CIFAR-10, CIFAR-100, GTSRB, and ImageNet datasets, covering different DNN architectures, including a vision transformer. The results demonstrate that ONEFLIP achieves high attack success rates (up to 99.9%, with an average of 99.6%) while causing minimal degradation to benign accuracy (as low as 0.005%, averaging 0.06%). Moreover, ONEFLIP is resilient to backdoor defenses. Our findings underscore a critical threat to DNNs: flipping just one bit in full-precision models is sufficient to execute a successful backdoor attack.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-44405868",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "ML and AI Security 3: Backdoors, Poisoning, Unlearning",
@@ -154,6 +156,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-44405868",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/li-xiang",
+      "kind": "paper-page",
+      "title": "Rowhammer-Based Trojan Injection: One Bit Flip Is Sufficient for Backdooring DNNs",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:21:31Z",
+      "content_hash": "sha256:0cebd688a38d2ba89074eeb4cadc5d6c2a91f48e2d6df57daf20742ed3666bf1",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

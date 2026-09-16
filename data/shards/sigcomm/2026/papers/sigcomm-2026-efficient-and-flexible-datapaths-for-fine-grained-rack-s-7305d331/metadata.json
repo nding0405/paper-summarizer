@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sigcomm-2026-efficient-and-flexible-datapaths-for-fine-grained-rack-s-7305d331",
   "title": "Efficient and Flexible Datapaths for Fine-Grained Rack-Scale Interconnects with Elastic QP",
+  "abstract": "Rack-scale interconnects serve as critical datapaths for emerging communication-intensive systems to scale up. Innovative solutions for this datapath are rising at a rapid pace, especially those based on Ethernet. However, existing hardware-based solutions, such as RDMA, face performance issues, particularly for small-message memory access, and suffer from the inflexibility of hardware-fixed processing. The community is actively pursuing efficient, flexible, and cost-effective rack-scale datapaths. In this work, we propose Software-Interposed Datapath (SID), an efficient, software-flexible, and low-cost solution for rack-scale interconnects, particularly optimized for fine-grained memory access. Improving small-message efficiency is a well-known challenge, and software involvement for flexibility seems to amplify the performance hurdle further. SID boosts performance by exploiting one insight: existing NICs primarily rely on Queue Pair (QP)-level parallelism, but underutilize intra-QP Work Queue Element (WQE)-level parallelism. Harnessing parallelism is non-trivial, especially at the WQE-level, due to ordering semantics and request dispatching. The key technique is our Elastic QP data structure built atop the on-NIC datapath processors, which realizes ordered intra-QP parallelism while minimizing coordination overhead. Regarding flexibility, SID supports extensible operation sets that comply with the OpenSHMEM model for ML/HPC workloads and the Message Queue model for cloud service workloads. Regarding cost efficiency, SID is built on top of commodity components such as Ethernet, PCIe, and datapath cores of NVIDIA ConnectX-8 and BlueField-3 NICs. Evaluation shows that SID achieves up to 11.03x higher rates for small messages than RDMA-based baselines and supports both CPU and GPU-Direct operations.",
+  "abstract_source_id": "src-abstract-sigcomm-2026-7305d331",
   "venue": "sigcomm",
   "year": 2026,
   "track_or_session": "Research Session 8: Scale-Up Fabrics: Measurement & Design — Research Paper",
@@ -191,6 +193,19 @@
       "official": true,
       "supports": [
         "official main-paper scope and track definitions"
+      ]
+    },
+    {
+      "id": "src-abstract-sigcomm-2026-7305d331",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/search/match?query=Efficient%20and%20Flexible%20Datapaths%20for%20Fine-Grained%20Rack-Scale%20Interconnects%20with%20Elastic%20QP&fields=title,abstract",
+      "kind": "semantic-scholar",
+      "title": "Efficient and Flexible Datapaths for Fine-Grained Rack-Scale Interconnects with Elastic QP",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T23:00:42Z",
+      "content_hash": "sha256:24c46be49eedc50b054837ebbe0ae391ae9f8f981a98f38915ce2f380500bb4d",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

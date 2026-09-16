@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2024-augur-practical-mobile-multipath-transport-service-for-l-8979c94c",
   "title": "AUGUR: Practical Mobile Multipath Transport Service for Low Tail Latency in Real-Time Streaming",
+  "abstract": "Real-time streaming applications like cloud gaming require consistently low latency, even at the tail. Our large-scale measurement based on a major cloud gaming service provider reveals that in Wi-Fi networks, the delay of the wireless hop can inflate due to its fluctuating nature, making it difficult to achieve consistently low tail latency. While cellular paths can be leveraged to alleviate the impact of wireless fluctuation of Wi-Fi paths, our user study reveals that it is crucial to constrain cellular data usage while using multipath transport. In this paper, we present AUGUR, a multipath transport service designed to reduce long tail latency and video frame stall rates in mobile real-time streaming. To address the challenge of reducing long tail latency by utilizing cellular paths while minimizing cellular data usage, AUGUR captures user characteristics by deriving state probability models and formulates the equilibrium into Integer Linear Programming (ILP) problems for each user session to determine the opportunity of frame retransmission and path selection. Our trace-driven emulation and large-scale real-world deployment in a Tencent Start cloud gaming platform demonstrate that AUGUR achieves up to 66.0% reduction in tail latency and 99.5% reduction in frame stall rate with 88.1% decrease in cellular data usage compared to other multipath transport schemes.",
+  "abstract_source_id": "src-abstract-nsdi-2024-8979c94c",
   "venue": "nsdi",
   "year": 2024,
   "track_or_session": "Mobile Things",
@@ -307,6 +309,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2024-8979c94c",
+      "url": "https://www.usenix.org/conference/nsdi24/presentation/zhou-yuhan",
+      "kind": "paper-page",
+      "title": "AUGUR: Practical Mobile Multipath Transport Service for Low Tail Latency in Real-Time Streaming",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:02:53Z",
+      "content_hash": "sha256:45a2575f28582dfac12fc17ef8ae60fe7ff1f466d4bbd8badf0fdf941cd7adb4",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2024-dint-fast-in-kernel-distributed-transactions-with-ebpf-bbfa274a",
   "title": "DINT: Fast In-Kernel Distributed Transactions with eBPF",
+  "abstract": "Serializable distributed in-memory transactions are important building blocks for data center applications. To achieve high throughput and low latency, existing distributed transaction systems eschew the kernel networking stack and rely heavily on kernel-bypass networking techniques such as RDMA and DPDK. However, kernel-bypass networking techniques generally suffer from security, isolation, protection, maintainability, and debuggability issues, while the kernel networking stack supports these properties well, but performs poorly.\n\nWe present DINT, a kernel networking stack-based distributed transaction system that achieves kernel-bypass-like throughput and latency. To gain the performance back under the kernel stack, DINT offloads frequent-path transaction operations directly into the kernel via eBPF techniques without kernel modifications or customized kernel modules, avoiding most of the kernel stack overheads. DINT does not lose the good properties of the kernel stack, as eBPF is a kernel-native technique on modern OSes. On typical transaction workloads, DINT even achieves up to 2.6× higher throughput than using a DPDK-based kernel-bypass stack, while only adding at most 10%/16% average/99th-tail unloaded latency.",
+  "abstract_source_id": "src-abstract-nsdi-2024-bbfa274a",
   "venue": "nsdi",
   "year": 2024,
   "track_or_session": "Distributed Systems: Part 1",
@@ -160,6 +162,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2024-bbfa274a",
+      "url": "https://www.usenix.org/conference/nsdi24/presentation/zhou-yang",
+      "kind": "paper-page",
+      "title": "DINT: Fast In-Kernel Distributed Transactions with eBPF",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:03:05Z",
+      "content_hash": "sha256:df9d7e7cff8d1dd2d913c9689f267a5e1a41b64790face54bea2c29a50dd7de7",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

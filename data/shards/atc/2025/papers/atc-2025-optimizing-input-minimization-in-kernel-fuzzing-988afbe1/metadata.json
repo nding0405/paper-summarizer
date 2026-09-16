@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "atc-2025-optimizing-input-minimization-in-kernel-fuzzing-988afbe1",
   "title": "Optimizing Input Minimization in Kernel Fuzzing",
+  "abstract": "Ensuring the reliability and security of an operating system (OS) kernel is a critical and challenging task. To this end, coverage-guided kernel fuzzing has been employed as an effective technique for finding kernel bugs. Specifically, in kernel fuzzing, input minimization is one critical stage to provide short, coverage-preserving seeds for improving the efficacy of fuzzing. However, we observe that the cost of the minimization –- taking over half of the fuzzing resources –- significantly limits the potential of kernel fuzzing.\n\nTo the best of our knowledge, no prior work explores and mitigates the preceding problem in kernel fuzzing. To this end, we introduce and design two general and novel optimization strategies –- influence-guided call removal and type-informed argument simplification –- for reducing the minimization cost. The key idea of these two strategies is to reduce the number of dynamic program executions needed for verifying whether the new coverage achieved by the inputs is always preserved.\n\nWe optimized the input minimization stage by our strategies in Syzkaller, the most popular and representative kernel fuzzer, resulting in a prototype named SyzMini. Our evaluation shows that SyzMini can significantly reduce the minimization cost by 60.7%. Moreover, SyzMini improves branch coverage by 12.5%, and finds 1.7~2X more unique bugs. On the latest upstream kernel version, Syzmini has found 13 previously unknown bugs, all of which have been confirmed and four have already been fixed. Our optimization strategies also show the general applicability for improving the effectiveness of other kernel fuzzers. We have made our implementation of SyzMini publicly available at https://github.com/ecnusse/SyzMini .",
+  "abstract_source_id": "src-abstract-atc-2025-988afbe1",
   "venue": "atc",
   "year": 2025,
   "track_or_session": "Finding Faults: Concurrency, Numerics, and Kernel Fuzzing",
@@ -201,6 +203,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-atc-2025-988afbe1",
+      "url": "https://www.usenix.org/conference/atc25/presentation/guo",
+      "kind": "paper-page",
+      "title": "Optimizing Input Minimization in Kernel Fuzzing",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T21:59:59Z",
+      "content_hash": "sha256:c6e216e6e1342748b09127f9719ec81e57177fc65fc15fe8933fcb76f6485c76",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

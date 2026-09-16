@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2024-hairpin-rethinking-packet-loss-recovery-in-edge-based-in-26755baa",
   "title": "Hairpin: Rethinking Packet Loss Recovery in Edge-based Interactive Video Streaming",
+  "abstract": "Interactive streaming requires minimizing stuttering events (or deadline misses for video frames) to ensure seamless interaction between users and applications. However, existing packet loss recovery mechanisms uniformly optimize redundancy for initial transmission and retransmission, which still could not satisfy the delay requirements of interactive streaming, but also introduces considerable bandwidth costs. Our insight is that in edge-based interactive streaming, differentiating retransmissions on redundancy settings can often achieve a low bandwidth cost and a low deadline miss rate simultaneously. In this paper, we propose Hairpin, a new packet loss recovery mechanism for edge-based interactive streaming. Hairpin finds the optimal combination of data packets, retransmissions, and redundant packets over multiple rounds of transmissions, which significantly reduces the bandwidth cost while ensuring the end-to-end latency requirement. Experiments with production deployments demonstrate that Hairpin can simultaneously reduce the bandwidth cost by 40% and the deadline miss rate by 32% on average in the wild against state-of-the-art solutions.",
+  "abstract_source_id": "src-abstract-nsdi-2024-26755baa",
   "venue": "nsdi",
   "year": 2024,
   "track_or_session": "Wide-Area and Edge",
@@ -265,6 +267,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2024-26755baa",
+      "url": "https://www.usenix.org/conference/nsdi24/presentation/meng",
+      "kind": "paper-page",
+      "title": "Hairpin: Rethinking Packet Loss Recovery in Edge-based Interactive Video Streaming",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:03:13Z",
+      "content_hash": "sha256:11ec971f589e952492e43cca906eb4b8ab3c08e2060de848386cde6dce0daa06",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

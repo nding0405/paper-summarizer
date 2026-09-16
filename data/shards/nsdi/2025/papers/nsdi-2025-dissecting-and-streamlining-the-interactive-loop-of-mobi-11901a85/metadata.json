@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2025-dissecting-and-streamlining-the-interactive-loop-of-mobi-11901a85",
   "title": "Dissecting and Streamlining the Interactive Loop of Mobile Cloud Gaming",
+  "abstract": "With cloud-side computing and rendering, mobile cloud gaming (MCG) is expected to deliver high-quality gaming experiences to budget mobile devices. However, our measurement on representative MCG platforms reveals that even under good network conditions, all platforms exhibit high interactive latency of 112–403 ms, from a user-input action to its display response, that critically affects users’ quality of experience. Moreover, jitters in network latency often lead to significant fluctuations in interactive latency.\n\nIn this work, we collaborate with a commercial MCG platform to conduct the first in-depth analysis on the interactive latency of cloud gaming. We identify VSync, the synchronization primitive of Android graphics pipeline, to be a key contributor to the excessive interactive latency; as many as five VSync events are intricately invoked, which serialize the complex graphics processing logic on both the client and cloud sides. To address this, we design an end-to-end VSync regulator, dubbed LoopTailor, which minimizes VSync events by decoupling game rendering from the lengthy cloud-side graphics pipeline and coordinating cloud game rendering directly with the client. We implement LoopTailor on the collaborated platform and commodity Android devices, reducing the interactive latency (by ∼34%) to stably below 100 ms.",
+  "abstract_source_id": "src-abstract-nsdi-2025-11901a85",
   "venue": "nsdi",
   "year": 2025,
   "track_or_session": "Video and Cloud Gaming",
@@ -287,6 +289,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2025-11901a85",
+      "url": "https://www.usenix.org/conference/nsdi25/presentation/li-yang",
+      "kind": "paper-page",
+      "title": "Dissecting and Streamlining the Interactive Loop of Mobile Cloud Gaming",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:04:04Z",
+      "content_hash": "sha256:999a351fd3e1a5c13c9b093c8c81355b0fcdb867458cc7630f9c172cd5751e75",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

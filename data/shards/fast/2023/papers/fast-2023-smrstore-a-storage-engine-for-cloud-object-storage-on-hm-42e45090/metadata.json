@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "fast-2023-smrstore-a-storage-engine-for-cloud-object-storage-on-hm-42e45090",
   "title": "SMRSTORE: A Storage Engine for Cloud Object Storage on HM-SMR Drives",
+  "abstract": "Cloud object storage vendors are always in pursuit of better cost efficiency. Emerging Shingled Magnetic Recording (SMR) drives are becoming economically favorable in archival storage systems due to significantly improved areal density. However, for standard-class object storage, previous studies and our preliminary exploration revealed that the existing SMR drive solutions can experience severe throughput variations due to garbage collection (GC).\n\nIn this paper, we introduce SMRSTORE, an SMR-based storage engine for standard-class object storage without compromising performance or durability. The key features of SMRSTORE include directly implementing chunk store interfaces over SMR drives, using a complete log-structured design, and applying guided data placement to reduce GC for consistent performance. The evaluation shows that SMRSTORE delivers comparable performance as Ext4 on the Conventional Magnetic Recording (CMR) drives, and can be up to 2.16x faster than F2FS on SMR drives. By switching to SMR drives, we have decreased the total cost by up to 15% and provided performance on par with the prior system for customers. Currently, we have deployed SMRSTORE in standard-class Alibaba Cloud Object Storage Service (OSS) to store hundreds of PBs of data. We plan to use SMR drives for all classes of OSS in the near future.",
+  "abstract_source_id": "src-abstract-fast-2023-42e45090",
   "venue": "fast",
   "year": 2023,
   "track_or_session": "IO Stacks",
@@ -476,6 +478,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-fast-2023-42e45090",
+      "url": "https://www.usenix.org/conference/fast23/presentation/zhou",
+      "kind": "paper-page",
+      "title": "SMRSTORE: A Storage Engine for Cloud Object Storage on HM-SMR Drives",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:00:41Z",
+      "content_hash": "sha256:1f83752f88bd0dc062395de742f267534df162ddb9ad5553b2a75b3eaff7dd55",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-drvfuzz-data-sensitive-risc-v-cpu-fuzzing-a22cbb29",
   "title": "DRVFuzz: Data-Sensitive RISC-V CPU Fuzzing",
+  "abstract": "The rapid adoption of RISC-V across modern computing systems has made the security integrity of its implementations a paramount concern. Logic bugs in RISC-V cores can lead to critical failures, such as faulty privilege transitions and architectural state corruption. While hardware fuzzing has emerged as a powerful technique for automated bug discovery, existing frameworks remain largely data-agnostic. By prioritizing instruction sequence diversity while treating operands as incidental random values, these tools often fail to trigger guarded microarchitectural states that manifest only under precise, data-dependent conditions.\n\nIn this work, we present DRVFuzz, a data-sensitive fuzzing framework designed to expose hardware vulnerabilities by explicitly modeling and navigating the data-sensitive semantics. First, DRVFuzz introduces a sensitive data model (SDModel) that hierarchically codifies ISA semantics to synthesize tailored operands, including boundary values and exception triggers. Second, to effectively exploring data-dependent paths, DRVFuzz employs transition-guided fuzzing, prioritizing testcases that trigger previously unseen state transitions as labeled by the SDModel. We evaluated DRVFuzz on six real-world RISC-V CPUs with varying microarchitectural complexity, uncovering 22 previously unknown bugs (19 new CVEs).",
+  "abstract_source_id": "src-abstract-usenix-security-2026-a22cbb29",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Hardware Security 2",
@@ -176,6 +178,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-a22cbb29",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/yu-zehong",
+      "kind": "paper-page",
+      "title": "DRVFuzz: Data-Sensitive RISC-V CPU Fuzzing",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:23:46Z",
+      "content_hash": "sha256:1c0731ecfa26c8f58cf51a4d3ec779423841a9343818964718a863ca4b958da4",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

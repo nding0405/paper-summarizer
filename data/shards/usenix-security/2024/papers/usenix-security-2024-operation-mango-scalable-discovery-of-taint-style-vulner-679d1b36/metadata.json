@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2024-operation-mango-scalable-discovery-of-taint-style-vulner-679d1b36",
   "title": "Operation Mango: Scalable Discovery of Taint-Style Vulnerabilities in Binary Firmware Services",
+  "abstract": "The rise of IoT (Internet of Things) devices has created a system of convenience, which allows users to control and automate almost everything in their homes. But this increase in convenience comes with increased security risks to the users of IoT devices, partially because IoT firmware is frequently complex, feature-rich, and very vulnerable. Existing solutions for automatically finding taint-style vulnerabilities significantly reduce the number of binaries analyzed to achieve scalability. However, we show that this trade-off results in missing significant numbers of vulnerabilities. In this paper, we propose a new direction: scaling static analysis of firmware binaries so that all binaries can be analyzed for command injection or buffer overflows. To achieve this, we developed MANGODFA, a novel binary data-flow analysis leveraging value analysis and data dependency analysis on binary code. Through key algorithmic optimizations in MANGODFA, our prototype Mango achieves fast analysis without sacrificing precision. On the same dataset used in prior work, Mango analyzed 27× more binaries in a comparable amount of time to the state-of-the-art in Linux-based user-space firmware taint-analysis SaTC. Mango achieved an average per-binary analysis time of 8 minutes compared to 6.56 hours for SaTC. In addition, Mango finds 56 real vulnerabilities that SaTC does not find in a set of seven firmware. We also performed an ablation study demonstrating the performance gains in Mango come from key algorithmic improvements.",
+  "abstract_source_id": "src-abstract-usenix-security-2024-679d1b36",
   "venue": "usenix-security",
   "year": 2024,
   "track_or_session": "Hardware Security V: Embedded",
@@ -364,6 +366,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2024-679d1b36",
+      "url": "https://www.usenix.org/conference/usenixsecurity24/presentation/gibbs",
+      "kind": "paper-page",
+      "title": "Operation Mango: Scalable Discovery of Taint-Style Vulnerabilities in Binary Firmware Services",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:16:28Z",
+      "content_hash": "sha256:7dfb372928053a602e58581cfad6d11bab2aa5dc6c3c850dd287dd63b294dcd4",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

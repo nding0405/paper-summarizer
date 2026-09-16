@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "atc-2025-accelerating-nested-virtualization-with-hyperturtle-04d956be",
   "title": "Accelerating Nested Virtualization with HyperTurtle",
+  "abstract": "Nested virtualization provides strong isolation but incurs non-trivial performance costs. Prior works alleviate some overheads but suffer from limitations such as intrusive code changes or reduced control over nested virtual environments. We present HyperTurtle, a general approach to accelerate nested virtualization. It reduces the number of costly world switches between the virtualization layers, the primary source of performance overheads. HyperTurtle offloads the execution of certain parts on the critical path of the virtualized hypervisor, encapsulating them as eBPF programs and executing them safely in the context of the bare-metal hypervisor. Thus, HyperTurtle reduces the performance cost of world switches whilst retaining control over nested VMs. We show that HyperTurtle can be used to optimize a variety of OS subsystems and apply it to memory management, networking, and application profiling. HyperTurtle achieves significant performance improvements in micro and macro-benchmarks, for example, 5× faster EPT fault handling, which translates to up to 27% faster boot-time of Kata containers, without requiring intrusive code changes to the virtualization infrastructure.",
+  "abstract_source_id": "src-abstract-atc-2025-04d956be",
   "venue": "atc",
   "year": 2025,
   "track_or_session": "Virtualization and Isolation: Security, Sharing, and Performance",
@@ -159,6 +161,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-atc-2025-04d956be",
+      "url": "https://www.usenix.org/conference/atc25/presentation/zur",
+      "kind": "paper-page",
+      "title": "Accelerating Nested Virtualization with HyperTurtle",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T21:59:24Z",
+      "content_hash": "sha256:638da4a5849bf301fb80be760dbff757041839d7ecde55d45629cfff67227f2b",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2024-attention-please-an-investigation-of-the-app-tracking-tr-95b34048",
   "title": "ATTention Please! An Investigation of the App Tracking Transparency Permission",
+  "abstract": "Apple introduced the App Tracking Transparency (ATT) framework in iOS 14.5. The goal of this framework is to mitigate user concerns about how their privacy-sensitive data is used for targeted advertising. Through this framework, the OS generates an ATT alert to request user permission for tracking. While this alert includes developer-controlled alert text, Apple mandates this text adheres to specific guidelines to prevent users from being coerced into unwillingly granting the ATT permission for tracking. However, to improve apps' monetization, developers may incorporate dark patterns in the ATT alerts to deceive users into granting the permission.\n\nTo understand the prevalence and characteristics of such dark patterns, we first study Apple's alert guidelines and identify four patterns that violate standards. We then develop ATTCLS, an ATT alert classification framework that combines contrastive learning for language modeling with a fully connected neural network for multi-label alert pattern classification. Finally, by applying ATTCLS to 4,000 iOS apps, we reveal that 59% of the alerts use four dark patterns that either mislead users, incentivize tracking, include confusing terms, or omit the purpose of the ATT permission.\n\nWe then conduct a user study with 114 participants to examine users' understanding of ATT and how different alert patterns can influence their perception. This study reveals that ATT alerts used by current apps often deceive or confuse users. For instance, users can be misled into believing that granting the ATT permission guarantees better app features or that denying it protects all of their sensitive data. We envision that our developed tools and empirical results will aid mobile platforms to refine guidelines, introduce a strict vetting process, and better design privacy-related prompts for users.",
+  "abstract_source_id": "src-abstract-usenix-security-2024-95b34048",
   "venue": "usenix-security",
   "year": 2024,
   "track_or_session": "User Studies VI: Privacy II",
@@ -175,6 +177,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2024-95b34048",
+      "url": "https://www.usenix.org/conference/usenixsecurity24/presentation/mohamed",
+      "kind": "paper-page",
+      "title": "ATTention Please! An Investigation of the App Tracking Transparency Permission",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:14:13Z",
+      "content_hash": "sha256:663a8905b4c4f77f064ccbeb8aa855960e4cf83482aec777e436f879de2d3cfb",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

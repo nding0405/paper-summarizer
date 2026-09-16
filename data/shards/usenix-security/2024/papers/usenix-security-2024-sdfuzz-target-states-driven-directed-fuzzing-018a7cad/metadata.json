@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2024-sdfuzz-target-states-driven-directed-fuzzing-018a7cad",
   "title": "SDFuzz: Target States Driven Directed Fuzzing",
+  "abstract": "Directed fuzzers often unnecessarily explore program code and paths that cannot trigger the target vulnerabilities. We observe that the major application scenarios of directed fuzzing provide detailed vulnerability descriptions, from which highly-valuable program states (i.e., target states) can be derived, e.g., call traces when a vulnerability gets triggered. By driving to expose such target states, directed fuzzers can exclude massive unnecessary exploration.\n\nInspired by the observation, we present SDFuzz, an efficient directed fuzzing tool driven by target states. SDFuzz first automatically extracts target states in vulnerability reports and static analysis results. SDFuzz employs a selective instrumentation technique to reduce the fuzzing scope to the required code for reaching target states. SDFuzz then early terminates the execution of a test case once SDFuzz probes that the remaining execution cannot reach the target states. It further uses a new target state feedback and refines prior imprecise distance metric into a two-dimensional feedback mechanism to proactively drive the exploration towards the target states.\n\nWe thoroughly evaluated SDFuzz on known vulnerabilities and compared it to related works. The results show that SDFuzz could improve vulnerability exposure capability with more vulnerability triggered and less time used, outperforming the state-of-the-art solutions. SDFuzz could significantly improve the fuzzing throughput. Our application of SDFuzz to automatically validate the static analysis results successfully discovered four new vulnerabilities in well-tested applications. Three of them have been acknowledged by developers.",
+  "abstract_source_id": "src-abstract-usenix-security-2024-018a7cad",
   "venue": "usenix-security",
   "year": 2024,
   "track_or_session": "Fuzzing II: Method",
@@ -112,6 +114,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2024-018a7cad",
+      "url": "https://www.usenix.org/conference/usenixsecurity24/presentation/li-penghui",
+      "kind": "paper-page",
+      "title": "SDFuzz: Target States Driven Directed Fuzzing",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:17:06Z",
+      "content_hash": "sha256:9e151c175b612c7d0d806cfe69846f7ba1010367829864cc1f6a5fbe0a5bd484",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

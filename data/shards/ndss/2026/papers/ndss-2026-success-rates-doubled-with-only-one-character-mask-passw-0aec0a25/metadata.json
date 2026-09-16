@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2026-success-rates-doubled-with-only-one-character-mask-passw-0aec0a25",
   "title": "Success Rates Doubled with Only One Character: Mask Password Guessing",
+  "abstract": "While traditional whole-password guessing attacks have been extensively studied, few studies have explored mask password guessing, where an attacker has somehow obtained emph{partial information} of the target victim's password (e.g., length and/or some characters) by exploiting various side-channel attacks (e.g., shoulder surfing, smudge, and keystroke audio feedback).\n\nTo evaluate the threats posed by mask attackers with varied capabilities, we investigate emph{four major mask guessing scenarios}, each of which is based on different kinds of information exploited by the attacker (e.g., the length of the victim's password and some characters). For the first time, we systematically and comprehensively characterize the impacts of mask guessing that incorporate side-channel priors, personally identifiable information (PII), and previously leaked (sister) passwords, by proposing two password models: neural network-based PassSeq and probability statistics-based Kneser-Ney. Using the maximum likelihood estimation technique, we propose a new guess number estimation method to accurately and efficiently estimate the guess number required against the target password under a given password model. Extensive experiments on 15 large-scale datasets demonstrate the effectiveness of PassSeq and Kneser-Ney. Particularly, within ten guesses: (1) When a trawling attacker knows the character composition (without order) of the victim's 4-digit PIN, the success rate increases by 152% (from 14% to 35%); (2) When a PII-based targeted attacker knows the length of the victim's password, the success rate increases by 47%-82%; and (3) if this targeted attacker further knows emph{one character} of the victim's password (besides the length), the success rate generally emph{doubles}, reaching 7%-29% (and these figures will be 33%-73% for a targeted attacker that can exploit the victim’s sister password).\n\nTo further validate the practicality of our mask guessing models, we collect real-world keystroke audio data from 11 popular keyboards (e.g., Apple, Dell, Lenovo) and replicate attacks where partial password information is inferred via acoustic side channels. Experiments show that our PassSeq significantly boosts the success rates of existing keystroke inference attacks, achieving an emph{additional} 5.6%-166.7% improvement within 10 guesses. This work highlights that mask password guessing is a damaging threat that deserves more attention.",
+  "abstract_source_id": "src-abstract-ndss-2026-0aec0a25",
   "venue": "ndss",
   "year": 2026,
   "track_or_session": "Fall submission cycle",
@@ -139,6 +141,19 @@
       "official": false,
       "supports": [
         "independent proceedings identity reconciliation"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2026-0aec0a25",
+      "url": "https://www.ndss-symposium.org/ndss-paper/success-rates-doubled-with-only-one-character-mask-password-guessing/",
+      "kind": "paper-page",
+      "title": "Success Rates Doubled with Only One Character: Mask Password Guessing",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:23:15Z",
+      "content_hash": "sha256:3888a00abce2e8251fe39d1c190008506470560b5b5e14e329620f40bd98137c",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

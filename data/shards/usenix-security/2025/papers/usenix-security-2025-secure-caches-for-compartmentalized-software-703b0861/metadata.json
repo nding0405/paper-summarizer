@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-secure-caches-for-compartmentalized-software-703b0861",
   "title": "Secure Caches for Compartmentalized Software",
+  "abstract": "Compartmentalized software systems have been recently proposed in response to security challenges with traditional process-level isolation mechanisms. Compartments provide logical isolation for mutually mistrusting software components, even within the same address space. However, they do not provide side-channel isolation, leaving them vulnerable to side-channel attacks. In this paper, we take on the problem of protecting compartmentalized software from hardware cache side-channel attacks. We consider unique challenges that compartmentalized software poses in terms of securing caches, which include performance implications, efficient and secure data sharing, and avoiding leakage when shared libraries are called by multiple callers. We propose SCC - a framework that addresses these challenges by 1) multi-level cache partitioning including L1 caches with a series of optimizations to avoid performance impact; 2) the concept of domain-oriented partitioning where cache partitions are created per memory domain, instead of per compartment; and 3) creating separate partition instance of a shared library code for each caller. We formally prove the security of SCC using operational semantics and evaluate its performance using the gem5 simulator on a set of compartmentalized benchmarks.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-703b0861",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Crypto 3: Formal Methods and Private Computation",
@@ -175,6 +177,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-703b0861",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/arikan",
+      "kind": "paper-page",
+      "title": "Secure Caches for Compartmentalized Software",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:21:37Z",
+      "content_hash": "sha256:a5b07e8edf959e61217119eecbc666f47afb573727e54b520b181a00d63e39ea",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

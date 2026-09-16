@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2024-lifter-unleash-learned-codecs-in-video-streaming-with-lo-14f3fb2d",
   "title": "LiFteR: Unleash Learned Codecs in Video Streaming with Loose Frame Referencing",
+  "abstract": "Video codecs are essential for video streaming. While traditional codecs like AVC and HEVC are successful, learned codecs built on deep neural networks (DNNs) are gaining popularity due to their superior coding efficiency and quality of experience (QoE) in video streaming. However, using learned codecs built with sophisticated DNNs in video streaming leads to slow decoding and low frame rate, thereby degrading the QoE. The fundamental problem is the tight frame referencing design adopted by most codecs, which delays the processing of the current frame until its immediate predecessor frame is reconstructed. To overcome this limitation, we propose LiFteR, a novel video streaming system that operates a learned video codec with loose frame referencing (LFR). LFR is a unique frame referencing paradigm that redefines the reference relation between frames and allows parallelism in the learned video codec to boost the frame rate. LiFteR has three key designs: (i) the LFR video dispatcher that routes video data to the codec based on LFR, (ii) LFR learned codec that enhances coding efficiency in LFR with minimal impact on decoding speed, and (iii) streaming supports that enables adaptive bitrate streaming with learned codecs in existing infrastructures. In our evaluation, LiFteR consistently outperforms existing video streaming systems. Compared to the existing best-performing learned and traditional systems, LiFteR demonstrates up to 23.8% and 19.7% QoE gain, respectively. Furthermore, LiFteR achieves up to a 3.2× frame rate improvement through frame rate configuration.",
+  "abstract_source_id": "src-abstract-nsdi-2024-14f3fb2d",
   "venue": "nsdi",
   "year": 2024,
   "track_or_session": "Video",
@@ -160,6 +162,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2024-14f3fb2d",
+      "url": "https://www.usenix.org/conference/nsdi24/presentation/chen-bo",
+      "kind": "paper-page",
+      "title": "LiFteR: Unleash Learned Codecs in Video Streaming with Loose Frame Referencing",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:03:20Z",
+      "content_hash": "sha256:61676556cd31e8d6f9646a96d202d79ccf90ad7b9491baedd790bf13606b8a47",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2026-tileloom-automatic-dataflow-planning-for-tile-based-lang-0b5b95a7",
   "title": "TileLoom: Automatic Dataflow Planning for Tile-Based Languages on Spatial Dataflow Accelerators",
+  "abstract": "Spatial dataflow accelerators are a promising direction for next-generation computer systems because they can reduce the memory bottlenecks of traditional von Neumann machines such as CPUs and GPUs. They organize computation around explicit, compiler-managed data movement over on-chip networks, allowing operands to be forwarded directly between processing elements and reducing reliance on high-latency, bandwidth-limited global shared memory. However, their performance depends strongly on how workloads are mapped to hardware. Naive mappings can perform poorly, and most users rely on hand-tuned vendor libraries. Thus, despite their potential for high performance, energy efficiency, and cost efficiency, limited programmability remains a major barrier to wider adoption.\n\nThis paper presents TileLoom, an MLIR-based end-to-end framework that compiles tile-based programs, such as Triton kernels, onto spatial dataflow architectures. Unlike compiler frameworks that focus on optimizing code generation within a single tile, TileLoom distributes tile instances across spatially distributed cores and exploits the on-chip network and distributed memories to increase data reuse and reduce communication. TileLoom introduces a hardware representation that captures interconnect topology, memory hierarchy, and compute capabilities, enabling both architecture-specific optimizations and support for diverse spatial dataflow targets. In experiments on two generations of Tenstorrent systems, TileLoom achieves performance comparable to vendor libraries on various kernels.",
+  "abstract_source_id": "src-abstract-osdi-2026-0b5b95a7",
   "venue": "osdi",
   "year": 2026,
   "track_or_session": "GPU Compilers and Kernels",
@@ -251,6 +253,19 @@
       "official": true,
       "supports": [
         "Official proceedings availability and canonical conference versions."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2026-0b5b95a7",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/li-wei",
+      "kind": "paper-page",
+      "title": "TileLoom: Automatic Dataflow Planning for Tile-Based Languages on Spatial Dataflow Accelerators",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:09:07Z",
+      "content_hash": "sha256:3d0b5314aabe34b1a453540a68f678104a09f7e1eae01b3e1ae01fa1abf70d5d",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

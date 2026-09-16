@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2025-necro-reaper-pruning-away-dead-memory-traffic-in-warehou-35fa009e",
   "title": "Necro-reaper: Pruning away Dead Memory Traffic in Warehouse-Scale Computers",
+  "abstract": "Memory bandwidth is emerging as a critical bottleneck in warehouse-scale computing (WSC). This work reveals that a significant portion of memory traffic in WSC is surprisingly unnecessary, consisting of needless writebacks of deallocated data and fetches of uninitialized data. This issue is particularly acute in WSC, where short-lived heap allocations bigger than a cache line are prevalent. To address this problem, this work proposes a pragmatic approach tailored to WSC. Leveraging the existing WSC ecosystem of vertical integration, profile-guided compilation flows, and customized memory allocators, this work presents Necro-reaper, a novel software/hardware co-design that avoids dead memory traffic without requiring the hardware tracking of prior work. New ISA instructions enable the hardware to avoid unnecessary dead traffic, while extended software components, including a profile-guided compiler and memory allocator, optimize the utilization of these instructions. Evaluation across a diverse set of 10 WSC workloads demonstrates that Necro-reaper achieves a geomean memory traffic reduction of 26% and a geomean IPC increase of 6%.",
+  "abstract_source_id": "src-abstract-asplos-2025-35fa009e",
   "venue": "asplos",
   "year": 2025,
   "track_or_session": "Session 4A: Cloud Computing 2",
@@ -146,6 +148,19 @@
       "official": false,
       "supports": [
         "Indexed abstract and open-access links used for relevance classification and ancillary-link discovery."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2025-35fa009e",
+      "url": "https://api.openalex.org/works/doi:10.1145/3676641.3716007?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Necro-reaper: Pruning away Dead Memory Traffic in Warehouse-Scale Computers",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:02:37Z",
+      "content_hash": "sha256:e0bb8355c6e6e996ae46ba51219377e8cdbbe736401d188108bae8c8e210ea3d",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

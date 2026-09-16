@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2025-clubheap-a-high-speed-and-scalable-priority-queue-for-pr-546b24a2",
   "title": "ClubHeap: A High-Speed and Scalable Priority Queue for Programmable Packet Scheduling",
+  "abstract": "While PIFO is a powerful priority queue abstraction to support programmable packet scheduling in network devices, the efficient implementation of PIFO faces multiple challenges in performance and scalability. The existing solutions all fall short of certain requirements. In this paper, we propose ClubHeap to address the problem. On the one hand, we develop a novel hardware-friendly heap data structure to support faster PIFO queue operations that can schedule a flow in every clock cycle, reaching the theoretical lower bound; on the other hand, the optimized hardware architecture reduces the circuit complexity and thus enables a higher clock frequency. The end result is the best scheduling performance in its class. Combined with its inherently better scalability and flexibility, ClubHeap is an ideal solution to be built in programmable switches and SmartNICs to support various scheduling algorithms. We build an FPGA-based hardware prototype and conduct a thorough evaluation by comparing ClubHeap with the other state-of-the-art solutions. ClubHeap also allows graceful trade-offs between throughput and resource consumption through parameter adjustments, making it adaptable on different target devices.",
+  "abstract_source_id": "src-abstract-nsdi-2025-546b24a2",
   "venue": "nsdi",
   "year": 2025,
   "track_or_session": "Data Plane Programmability 2",
@@ -161,6 +163,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2025-546b24a2",
+      "url": "https://www.usenix.org/conference/nsdi25/presentation/chen-zhikang",
+      "kind": "paper-page",
+      "title": "ClubHeap: A High-Speed and Scalable Priority Queue for Programmable Packet Scheduling",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:04:03Z",
+      "content_hash": "sha256:291bfba9edcba5e3d04c45fcb0f5ef876530429264901802a7b4b37c85ae9ccd",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

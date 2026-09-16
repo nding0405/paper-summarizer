@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2025-flexprof-flexible-side-channel-free-memory-access-8efca33f",
   "title": "FLEXPROF: Flexible, Side-Channel-Free Memory Access",
+  "abstract": "Secure processors must defend against a wide array of microarchitecture side-channels, including those induced by a shared memory controller. Multiple studies have proposed techniques that allocate ''turns'' (within the memory controller) to each co-scheduled virtual machine (VM), and introduce gaps between VM turns to prevent resource conflicts and side-channels. In spite of past advancements in secure memory scheduling, the elimination of side-channels imposes a performance slowdown of 2x. We observe that one of the causes of this slowdown is that the memory controller schedule accommodates the worst case, i.e., it is prepared to handle either reads or writes. The key insight in this work is that the schedule can be more efficient if we designate every turn to handle fixed patterns of reads and writes.In particular, we introduce a read-optimized turn and a write-optimized turn. Coarse-grain application profiling helps determine how often the two types of turns are invoked, without leaking sensitive information. We also add flexibility so that a read-optimized turn can opportunistically also issue writes, and vice versa. This provides a good balance between restrictions and flexibility; between throughput and utilization. The proposed FlexProf memory controller improves performance by up to 33% with a geometric mean gain of 8% on mixed workloads, relative to state-of-the-art methods. Over half the memory-intensive programs evaluated exhibit performance gains of over 10%.",
+  "abstract_source_id": "src-abstract-asplos-2025-8efca33f",
   "venue": "asplos",
   "year": 2025,
   "track_or_session": "Session 7C: Side Channels",
@@ -104,6 +106,19 @@
       "official": false,
       "supports": [
         "Indexed abstract and open-access links used for relevance classification and ancillary-link discovery."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2025-8efca33f",
+      "url": "https://api.openalex.org/works/doi:10.1145/3676641.3715997?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "FLEXPROF : Flexible, Side-Channel-Free Memory Access",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:01:47Z",
+      "content_hash": "sha256:3569b51fcef9648f27f761d4e4d322fc8d4242b0186a637ecd5cca632682baa4",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

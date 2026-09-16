@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2024-graphical-vs-deep-generative-models-measuring-the-impact-282a33b4",
   "title": "Graphical vs. Deep Generative Models: Measuring the Impact of Differentially Private Mechanisms and Budgets on Utility",
+  "abstract": "Generative models trained with Differential Privacy (DP) can produce synthetic data while reducing privacy risks. However, navigating their privacy-utility tradeoffs makes finding the best models for specific settings/tasks challenging. This paper bridges this gap by profiling how DP generative models for tabular data distribute privacy budgets across rows and columns, which is one of the primary sources of utility degradation. We compare graphical and deep generative models, focusing on the key factors contributing to how privacy budgets are spent, i.e., underlying modeling techniques, DP mechanisms, and data dimensionality. Through our measurement study, we shed light on the characteristics that make different models suitable for various settings and tasks. For instance, we find that graphical models distribute privacy budgets horizontally and thus cannot handle relatively wide datasets for a fixed training time; also, the performance on the task they were optimized for monotonically increases with more data but could also overfit. Deep generative models spend their budgets per iteration, so their behavior is less predictable with varying dataset dimensions, but are more flexible as they could perform better if trained on more features. Moreover, low levels of privacy ($ε\\geq100$) could help some models generalize, achieving better results than without applying DP. We believe our work will aid the deployment of DP synthetic data techniques by navigating through the best candidate models vis-a-vis the dataset features, desired privacy levels, and downstream tasks.",
+  "abstract_source_id": "src-abstract-ccs-2024-282a33b4",
   "venue": "ccs",
   "year": 2024,
   "track_or_session": "Cycle 2",
@@ -138,6 +140,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2024-282a33b4",
+      "url": "https://api.openalex.org/works?filter=title.search:Graphical%20vs.%20Deep%20Generative%20Models%3A%20Measuring%20the%20Impact%20of%20Differentially%20Private%20Mechanisms%20and%20Budgets%20on%20Utility&select=id,title,abstract_inverted_index&per-page=3&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Graphical vs. Deep Generative Models: Measuring the Impact of Differentially Private Mechanisms and Budgets on Utility",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:10:10Z",
+      "content_hash": "sha256:6ffe66f5c56bf3846ce7bfb0a7b84e0458758099503895e83bb29e788234ced7",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

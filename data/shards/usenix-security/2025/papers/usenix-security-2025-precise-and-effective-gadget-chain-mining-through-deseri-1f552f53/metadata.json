@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-precise-and-effective-gadget-chain-mining-through-deseri-1f552f53",
   "title": "Precise and Effective Gadget Chain Mining through Deserialization Guided Call Graph Construction",
+  "abstract": "Gadget chains of consecutive method invocations can trigger Java deserialization vulnerabilities, posing significant security threats to applications. Existing detection methods often rely on imprecise call graphs while overlooking complex features like deserialization, dynamic proxy, and reflection, leading to incomplete and inaccurate results.\n\nThis paper presents FLASH, a novel gadget chain detection tool leveraging a deserialization-guided call graph construction approach. FLASH begins with controllability analysis to determine if variables can be restored through deserialization. It then applies a hybrid dispatch technique to resolve callees at call sites based on the controllability of their receiver variable: if controllable, a more comprehensive but potentially less precise technique (e.g., CHA, proxy dispatch) is used; otherwise, a more precise technique (e.g., pointer analysis) is applied. FLASH also recovers missing call edges by handling reflection involving controllable variables, and prunes false or irrelevant edges to improve accuracy and efficiency.\n\nEvaluation on 30 applications demonstrates that FLASH achieves higher recall (with 30.8% lower false negative rate) and precision (with 25.9% lower false positive rate) than state-of-the-art methods, at the cost of limited overhead. Furthermore, FLASH detects a total of 90 new gadget chains and 10 existing CVEs. Leveraging the new gadget chains, FLASH uncovers 5 previously unknown exploitation methods of the vulnerabilities, which demonstrate a broader impact compared to previously known CVEs.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-1f552f53",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Software Security and Usable Security",
@@ -154,6 +156,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-1f552f53",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/zhang-yiheng",
+      "kind": "paper-page",
+      "title": "Precise and Effective Gadget Chain Mining through Deserialization Guided Call Graph Construction",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:21:13Z",
+      "content_hash": "sha256:28c829579ef826b724eef10cbc09fcdc763166a0a40d892e3b377422e7dcf71a",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

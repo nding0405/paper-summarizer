@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2026-disentangling-graph-dependencies-for-efficient-billion-s-8fd2a8c5",
   "title": "Disentangling Graph Dependencies for Efficient Billion-Scale GPU Vector Search",
+  "abstract": "Graph-based approximate nearest neighbor search (ANNS) drives high-performance vector search for AI systems. Nowadays, GPU becomes the emerging ANNS platform for its high performance and cost efficiency. However, GPU’s limited memory capacity hinders graph ANNS systems from scaling to billion-level, due to graph’s high memory consumption (239–334 GB). Existing efforts mitigate this by offloading graph to CPU memory; however, this incurs severe performance penalties due to data transfer overhead and GPU stalls.\n\nWe identify the root cause of this inefficiency: a strict step-level dependency in graph search, where each step relies on the traversal and computations of all nodes in the previous step. Our key insight is that this monolithic step-level dependency can be disentangled into a more flexible, fine-grained node-level dependency . Specifically, for each node, it is first accessed as a neighbor via an edge (i.e., discovery ), and later selected as a parent to traverse its neighbors (i.e., expansion ). These two stages are typically separated by many steps, exposing a sufficient discovery-expansion window. Leveraging this time window, the edge fetching to access some neighbors can be deferred and overlapped with computation. Based on this insight, we propose FlowANN, a graph-based ANNS system that efficiently supports billion-scale search on a single GPU. FlowANN employs a tiered graph structure, offloading the edges connected to neighbors that have sufficient time windows to the CPU. It effectively pipelines GPU computation with edge fetching via optimized asynchronous transfer and dynamic coordination. Evaluations show that FlowANN outperforms state-of-the-art systems by 4.08–45.7× on average (up to 172.6×), without compromising search accuracy.",
+  "abstract_source_id": "src-abstract-osdi-2026-8fd2a8c5",
   "venue": "osdi",
   "year": 2026,
   "track_or_session": "Graphs, ANN, and Vector Search",
@@ -167,6 +169,19 @@
       "official": true,
       "supports": [
         "Official proceedings availability and canonical conference versions."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2026-8fd2a8c5",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/zhao",
+      "kind": "paper-page",
+      "title": "Disentangling Graph Dependencies for Efficient Billion-Scale GPU Vector Search",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:08:10Z",
+      "content_hash": "sha256:0db5f4ef20a056a40442a68c0303c6009b0b1023f7c6329253d4eff641233352",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

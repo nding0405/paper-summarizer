@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2024-cross-the-zone-toward-a-covert-domain-hijacking-via-shar-a38a003d",
   "title": "Cross the Zone: Toward a Covert Domain Hijacking via Shared DNS Infrastructure",
+  "abstract": "Domain Name System (DNS) establishes clear responsibility boundaries among nameservers for managing DNS records via authoritative delegation. However, the rise of thirdparty public services has blurred this boundary. In this paper, we uncover a novel attack surface, named XDAuth, arising from public authoritative nameserver infrastructure's failure to isolate data across zones adequately. This flaw enables adversaries to inject arbitrary resource records across logical authority boundaries and covertly hijack domain names without authority. Unlike prior research on stale NS records, which concentrated on domain names delegated to expired nameservers or those of hosting service providers, XDAuth targets enterprises that maintain their authoritative domain names. We demonstrate that XDAuth is entirely feasible, and through comprehensive measurements, we identify 12 vulnerable providers (e.g., Amazon Route 53, NSONE, and DigiCert DNS), affecting 125,124 domains of notable enterprises, including the World Bank, and the BBC. Moreover, we responsibly disclose the issue to the affected vendors. Some DNS providers and enterprises (e.g., Amazon Route 53) have recognized the issue and are adopting mitigation measures based on our suggestions.",
+  "abstract_source_id": "src-abstract-usenix-security-2024-a38a003d",
   "venue": "usenix-security",
   "year": 2024,
   "track_or_session": "Network Security IV: Infrastructure",
@@ -238,6 +240,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2024-a38a003d",
+      "url": "https://www.usenix.org/conference/usenixsecurity24/presentation/zhang-yunyi-zone",
+      "kind": "paper-page",
+      "title": "Cross the Zone: Toward a Covert Domain Hijacking via Shared DNS Infrastructure",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:14:34Z",
+      "content_hash": "sha256:fe4a47424e2db8b1db0a4a4f2caff911e6c49f61310e87d687f4116c515811e3",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

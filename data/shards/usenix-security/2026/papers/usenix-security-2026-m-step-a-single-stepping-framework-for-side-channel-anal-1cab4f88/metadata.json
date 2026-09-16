@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-m-step-a-single-stepping-framework-for-side-channel-anal-1cab4f88",
   "title": "M-Step: A Single-Stepping Framework for Side-Channel Analysis on TrustZone-M",
+  "abstract": "Trusted Execution Environments (TEEs) have become a key technology for isolating sensitive enclave applications from untrusted operating systems. Extensive research on high-end platforms like Intel SGX and TDX, AMD SEV, and Arm TrustZone-A has exposed their limitations in terms of software-based side-channel analysis, amplified by specialized single-stepping attack frameworks that exploit privileged timer interrupts to execute enclaves one instruction at a time. Meanwhile, TEEs are increasingly deployed on resource-constrained IoT devices, with Arm TrustZone-M emerging as a leading solution, which, however, remains largely unexplored for high-resolution, software-based side channels.\n\nThis paper presents M-Step, an open and extensible single-stepping attack framework for TrustZone-M. While Cortex-M microcontrollers feature precise timers and deterministic behavior, achieving precise, instruction-level stepping remains challenging due to (i) the absence of virtual memory and page tables used in high-end frameworks; and (ii) Cortex-M's unique interrupt behavior, where certain multi-cycle instructions are abandoned or paused to reduce latency. To overcome these challenges, we extensively profile interrupt handling CPU behavior and develop a novel approach that uses previously dismissed interrupt-latency leakage to dynamically adjust the timer interrupts. We demonstrate M-Step's improved resolution and practicality by discovering previously unknown vulnerabilities in the latest Arm Mbed TLS library that enable single-trace, deterministic attacks recovering full RSA keys from a TrustZone enclave.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-1cab4f88",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Hardware Security 5",
@@ -135,6 +137,19 @@
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening",
         "prepublication PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-1cab4f88",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/rodrigues",
+      "kind": "paper-page",
+      "title": "M-Step: A Single-Stepping Framework for Side-Channel Analysis on TrustZone-M",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:24:37Z",
+      "content_hash": "sha256:24ead8341c8437f0c062982e516da54b737f732d75cf0e8ecc0ec3fce6661dd9",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

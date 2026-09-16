@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2026-jetpack-consensus-made-generally-fast-195d6db2",
   "title": "Jetpack: Consensus Made Generally Fast",
+  "abstract": "Classic consensus protocols such as Raft require 2 round- trip times (RTTs) for a client to commit a command. Recent protocols reduce this latency to 1 RTT through a carefully designed fast path, but these fast paths are tightly coupled to their host protocols and cannot be retrofitted to existing systems. This paper presents Jetpack, a plugin framework that adds a 1-RTT fast path to existing consensus protocols with minimal modifications. Jetpack issues commands concurrently to both a fast path and the original path, committing when the fast path succeeds while ensuring the original path honors the same decision. The key challenge is maintaining this guarantee across view changes: we identify the view change hazard, a subtle correctness issue where promises made during stable operation can become invalid after leader elections. Jetpack captures this in two structural requirements and two design principles that a fast-path layer can apply across consensus environments, conditions that are easy to overlook when a fast-path idea is adapted to a new setting, as we illustrate with prior designs and a deployed system. We evaluate Jetpack on six consensus systems across 10 AWS datacenters. Results show that Jetpack achieves 1-RTT latency, reducing average commit latency by as much as 60%, while preserving the original path’s performance and proper- ties when the fast path is not used.",
+  "abstract_source_id": "src-abstract-osdi-2026-195d6db2",
   "venue": "osdi",
   "year": 2026,
   "track_or_session": "Consensus and Byzantine Fault Tolerance",
@@ -167,6 +169,19 @@
       "official": true,
       "supports": [
         "Official proceedings availability and canonical conference versions."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2026-195d6db2",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/tang",
+      "kind": "paper-page",
+      "title": "Jetpack: Consensus Made Generally Fast",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:08:28Z",
+      "content_hash": "sha256:a5127ba69e5b5516d0f31c9584f72dc059b7abf9d3a0a0132e61e5be149fb87b",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

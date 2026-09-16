@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-ares-comprehensive-path-hijacking-detection-via-routing-070f0f39",
   "title": "Ares: Comprehensive Path Hijacking Detection via Routing Tree",
+  "abstract": "Since Border Gateway Protocol (BGP) lacks a strong security mechanism, prefix hijacking attacks are becoming increasingly rampant, which has drawn a lot of attention from both academia and industry. Recently, prefix hijacking has evolved from origin hijacking to more stealthy hijacking, i.e., path hijacking, to bypass existing hijacking detection systems. The attacker will manipulate the AS path attributes while announcing the prefix of the victim AS. However, existing systems only target origin hijacking or only address part of the path hijacking, which allows attackers to exploit vulnerabilities to hijack. In this paper, our observation shows that path hijacking triggers the creation of a new observed prefix's routing tree (OPRT) within an AS and we advocate for a radical new approach to comprehensively address all types of path hijacking. We propose a first-of-its-kind system, called Ares, to detect path hijacking in an effective, accurate, and fast way. At the core of Ares is weighted edit distance to quantify the differences between routing trees, combined with a clustering mechanism to accelerate anomaly detection and heuristic rules to further increase the detection accuracy. We validate Ares with historical hijacking events and large-scale simulations, For each of the 12 real-world events, Ares was able to detect the hijacking within 5 minutes of its occurrence. Additionally, simulations show that Ares detects an average of 97.2% and 99.3% of stealthy exact and sub-prefix path hijackings targeting Tier-1 and content ASes with only 1.06% of false positive rate, outperforming state-of-the-art methods. In addition, it generates only 2.31 suspicious alerts per hour across the entire Internet, a manageable volume for operators to investigate and respond effectively.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-070f0f39",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Network Security 1: Censorship, Evasion, and Trustworthy Infrastructure",
@@ -175,6 +177,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-070f0f39",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/tao",
+      "kind": "paper-page",
+      "title": "Ares: Comprehensive Path Hijacking Detection via Routing Tree",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:18:38Z",
+      "content_hash": "sha256:355d19649a68e40e1992719369d6d114726a9a365de72eda4dcad427137e4647",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

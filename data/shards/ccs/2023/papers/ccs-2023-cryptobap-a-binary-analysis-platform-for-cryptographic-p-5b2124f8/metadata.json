@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2023-cryptobap-a-binary-analysis-platform-for-cryptographic-p-5b2124f8",
   "title": "CryptoBap: A Binary Analysis Platform for Cryptographic Protocols",
+  "abstract": "We introduce CryptoBap, a platform to verify weak secrecy and authentication for the (ARMv8 and RISC-V) machine code of cryptographic protocols. We achieve this by first transpiling the binary of protocols into an intermediate representation and then performing a crypto-aware symbolic execution to automatically extract a model of the protocol that represents all its execution paths. Our symbolic execution resolves indirect jumps and supports bounded loops using the loop-summarization technique, which we fully automate. The extracted model is then translated into models amenable to automated verification via ProVerif and CryptoVerif using a third-party toolchain. We prove the soundness of the proposed approach and used CryptoBap to verify multiple case studies ranging from toy examples to real-world protocols, TinySSH, an implementation of SSH, and WireGuard, a modern VPN protocol.",
+  "abstract_source_id": "src-abstract-ccs-2023-5b2124f8",
   "venue": "ccs",
   "year": 2023,
   "track_or_session": "Formal analysis of Cryptographic protocols (Formal Methods and Programming Languages)",
@@ -151,6 +153,19 @@
       "official": false,
       "supports": [
         "published title, author order, and page span"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2023-5b2124f8",
+      "url": "https://api.openalex.org/works/doi:10.1145/3576915.3623090?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "CryptoBap: A Binary Analysis Platform for Cryptographic Protocols",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:07:31Z",
+      "content_hash": "sha256:32ede61d95dcb179368eb1816d01cd3d86ca38c923a0beb26b7ee9946e7cb29c",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

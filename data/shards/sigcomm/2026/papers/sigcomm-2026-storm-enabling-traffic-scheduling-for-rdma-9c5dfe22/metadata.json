@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sigcomm-2026-storm-enabling-traffic-scheduling-for-rdma-9c5dfe22",
   "title": "STORM: Enabling Traffic Scheduling for RDMA",
+  "abstract": "Remote Direct Memory Access (RDMA) is increasingly used as a shared communication substrate across datacenter workloads with very different scheduling needs, from request-response services and storage fan-out to AI training collectives. Proper request scheduling can reduce communication time, but in practice, no RDMA flow scheduling is enabled in datacenters, leaving traffic to simple fair sharing. We present STORM, a NIC-level scheduler for all types of RDMA workloads using NIC-only information: the known RDMA request size, and per-queue-pair backlog. STORM converts these signals into a small number of extra priority levels on the wire and prioritizes requests that are either near completion or blocking queued dependent work. STORM requires no application hints and works with both in-order RoCEv2 and newer RDMA stacks that tolerate reordering. We prototype STORM on an FPGA NIC with negligible overhead. Across representative cloud and LLM training workloads, STORM reduces training iteration time by up to 12% and reduces average and P99 flow completion slowdown by up to 90% compared to fair scheduling.",
+  "abstract_source_id": "src-abstract-9c5dfe22",
   "venue": "sigcomm",
   "year": 2026,
   "track_or_session": "Research Session 13: Datacenter Transport: RDMA & Congestion Control — Research Paper",
@@ -191,6 +193,19 @@
       "official": true,
       "supports": [
         "official main-paper scope and track definitions"
+      ]
+    },
+    {
+      "id": "src-abstract-9c5dfe22",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/search/match?query=STORM%3A%20Enabling%20Traffic%20Scheduling%20for%20RDMA&fields=title,abstract",
+      "kind": "semantic-scholar",
+      "title": "STORM: Enabling Traffic Scheduling for RDMA",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T23:06:50Z",
+      "content_hash": "sha256:83392edc20d9433b95a32d270fcdbcc57020ce25d2674494ef5bc4c712cfa931",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

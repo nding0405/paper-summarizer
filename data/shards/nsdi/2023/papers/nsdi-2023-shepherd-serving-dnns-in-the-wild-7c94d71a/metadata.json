@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2023-shepherd-serving-dnns-in-the-wild-7c94d71a",
   "title": "SHEPHERD: Serving DNNs in the Wild",
+  "abstract": "Model serving systems observe massive volumes of inference requests for many emerging interactive web services. These systems need to be scalable, guarantee high system goodput and maximize resource utilization across compute units. However, achieving all three goals simultaneously is challenging since inference requests have very tight latency constraints (10 – 500 ms), and production workloads can be extremely unpredictable at such small time granularities.\n\nWe present SHEPHERD, a model serving system that achieves all three goals in the face of workload unpredictability. SHEPHERD uses a two-level design that decouples model serving into planning and serving modules. For planning, SHEPHERD exploits the insight that while individual request streams can be highly unpredictable, aggregating request streams into moderately-sized groups greatly improves predictability, permitting high resource utilization as well as scalability. For serving, SHEPHERD employs a novel online algorithm that provides guaranteed goodput under workload unpredictability by carefully leveraging preemptions and model-specific batching properties. Evaluation results over production workloads show that SHEPHERD achieves up to 18.1X higher goodput and 1.8X better utilization compared to prior state-of-the-art, while scaling to hundreds of workers.",
+  "abstract_source_id": "src-abstract-nsdi-2023-7c94d71a",
   "venue": "nsdi",
   "year": 2023,
   "track_or_session": "Systems for Learning",
@@ -140,6 +142,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2023-7c94d71a",
+      "url": "https://www.usenix.org/conference/nsdi23/presentation/zhang-hong",
+      "kind": "paper-page",
+      "title": "SHEPHERD: Serving DNNs in the Wild",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:02:31Z",
+      "content_hash": "sha256:1310ab156a0d04f7fe829a14e9ab4df5cf109f921873a0801466bc34f96cc46e",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

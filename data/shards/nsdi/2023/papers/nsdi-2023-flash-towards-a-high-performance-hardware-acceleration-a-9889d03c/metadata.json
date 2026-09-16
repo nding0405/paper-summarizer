@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2023-flash-towards-a-high-performance-hardware-acceleration-a-9889d03c",
   "title": "FLASH: Towards a High-performance Hardware Acceleration Architecture for Cross-silo Federated Learning",
+  "abstract": "Cross-silo federated learning (FL) adopts various cryptographic operations to preserve data privacy, which introduces significant performance overhead. In this paper, we identify nine widely-used cryptographic operations and design an efficient hardware architecture to accelerate them. However, directly offloading them on hardware statically leads to (1) inadequate hardware acceleration due to the limited resources allocated to each operation; (2) insufficient resource utilization, since different operations are used at different times. To address these challenges, we propose FLASH, a high-performance hardware acceleration architecture for cross-silo FL systems. At its heart, FLASH extracts two basic operators—modular exponentiation and multiplication— behind the nine cryptographic operations and implements them as highly-performant engines to achieve adequate acceleration. Furthermore, it leverages a dataflow scheduling scheme to dynamically compose different cryptographic operations based on these basic engines to obtain sufficient resource utilization. We have implemented a fully-functional FLASH prototype with Xilinx VU13P FPGA and integrated it with FATE, the most widely-adopted cross-silo FL framework. Experimental results show that, for the nine cryptographic operations, FLASH achieves up to 14.0× and 3.4× acceleration over CPU and GPU, translating to up to 6.8× and 2.0× speedup for realistic FL applications, respectively. We finally evaluate the FLASH design as an ASIC, and it achieves 23.6× performance improvement upon the FPGA prototype.",
+  "abstract_source_id": "src-abstract-nsdi-2023-9889d03c",
   "venue": "nsdi",
   "year": 2023,
   "track_or_session": "Data",
@@ -182,6 +184,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2023-9889d03c",
+      "url": "https://www.usenix.org/conference/nsdi23/presentation/zhang-junxue",
+      "kind": "paper-page",
+      "title": "FLASH: Towards a High-performance Hardware Acceleration Architecture for Cross-silo Federated Learning",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:02:05Z",
+      "content_hash": "sha256:85b921e64639132c7834532d01ec44d14ae23df4858e5d4b835ed40798629521",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

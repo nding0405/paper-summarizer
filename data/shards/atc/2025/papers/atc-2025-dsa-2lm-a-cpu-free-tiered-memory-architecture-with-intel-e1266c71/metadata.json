@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "atc-2025-dsa-2lm-a-cpu-free-tiered-memory-architecture-with-intel-e1266c71",
   "title": "DSA-2LM: A CPU-Free Tiered Memory Architecture with Intel DSA",
+  "abstract": "Tiered Memory is critical to manage heterogeneous memory devices, such as Persistent Memory or CXL Memory. Existing works make difficult trade-offs between optimal data placement and costly data movement. With the advent of Intel Data Streaming Accelerator (DSA), a CPU-free hardware to move data between memory regions, data movement can be up to 4× faster than a single CPU core. However, the fine memory movement granularity in Linux kernel undermines the potential performance improvement. To this end, we have developed DSA-2LM, a new tiered memory system that adaptively integrates DSA into page migration. The proposed framework integrates fast memory migration workflow and adaptable concurrent data paths with well-tuned DSA configurations. Experimental results show that, compared to three representative tiered memory works: MEMTIS, TPP and NOMAD, DSA-2LM can achieve 20%, 30% and 16% performance improvement under real-world applications.",
+  "abstract_source_id": "src-abstract-atc-2025-e1266c71",
   "venue": "atc",
   "year": 2025,
   "track_or_session": "Software-Hardware Synergy: Accelerators, Memory, and Interconnects",
@@ -327,6 +329,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-atc-2025-e1266c71",
+      "url": "https://www.usenix.org/conference/atc25/presentation/liu-ruili",
+      "kind": "paper-page",
+      "title": "DSA-2LM: A CPU-Free Tiered Memory Architecture with Intel DSA",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T21:59:36Z",
+      "content_hash": "sha256:40690e6b92ff199473c0f477d0e0736726b6fac46073f438b677fc528d51534e",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

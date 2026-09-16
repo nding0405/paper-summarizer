@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2026-ddos-detection-at-the-scale-of-one-hundred-tbps-45c59886",
   "title": "DDoS Detection at the Scale of One Hundred Tbps",
+  "abstract": "Defending against Distributed Denial-of-Service (DDoS) attacks is a critical priority for cloud providers, who must manage ever-growing volumes of both benign and malicious traffic. While state-of-the-art DDoS detection systems leverage programmable devices to process traffic at hundreds of Gbps to Tbps on a single machine, large-scale cloud providers often handle traffic at scales approaching 100 Tbps. This massive volume—two orders of magnitude higher than the traffic handled by existing systems—motivates us to implement distributed processing across multiple servers, where new challenges are present. Specifically, naive load-balancing strategies lead to imbalanced traffic distribution and severe performance bottlenecks, while function offloading to programmable devices must balance flexibility and adaptability. In this paper, we present Canopy, a scalable DDoS detection system designed to overcome these challenges. Canopy features a dynamic load-balancing mechanism that adapts to fluctuating traffic patterns, ensuring balanced distribution across detection servers despite the mix of mice and elephant flows. Additionally, it employs a traffic compression technique at the programmable switch to significantly reduce per-server workload. These innovations enable Canopy to scale to over 100 Tbps in real-world deployments. Successfully deployed in production, Canopy has demonstrated its effectiveness in mitigating large-scale DDoS attacks.",
+  "abstract_source_id": "src-abstract-nsdi-2026-45c59886",
   "venue": "nsdi",
   "year": 2026,
   "track_or_session": "Measuring at Scale",
@@ -328,6 +330,19 @@
         "proceedings page range and page count",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2026-45c59886",
+      "url": "https://www.usenix.org/conference/nsdi26/presentation/xiao",
+      "kind": "paper-page",
+      "title": "DDoS Detection at the Scale of One Hundred Tbps",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:05:04Z",
+      "content_hash": "sha256:5909d31ad24a21655046ac0dfd38546b460d8f22345c2eb484a56d25e566e559",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "atc-2024-etc-an-elastic-transmission-control-using-end-to-end-ava-a90c4e99",
   "title": "ETC: An Elastic Transmission Control Using End-to-End Available Bandwidth Perception",
+  "abstract": "Researchers and practitioners have proposed various transport protocols to keep up with advances in networks and the applications that use them. Current Wide Area Network protocols strive to identify a congestion signal to make distributed but fair judgments. However, existing congestion signals such as RTT and packet loss can only be observed after congestion occurs. We therefore propose Elastic Transmission Control (ETC). ETC exploits the instantaneous receipt rate of N consecutive packets as the congestion signal. We refer to this as the pulling rate , as we posit that the receipt rate can be used to \"pull'' the sending rate towards a fair share of the capacity. Naturally, this signal can be measured prior to congestion, as senders can access it immediately after the acknowledgment of the first N packets. Exploiting the pulling rate measurements, ETC calculates the optimal rate update steps following a simple elastic principle: the further away from the pulling rate, the faster the sending rate increases. We conduct extensive experiments using both simulated and real networks. Our results show that ETC outperforms the state-of-the-art protocols in terms of both throughput (15% higher than Copa) and latency (20% lower than BBR). Besides, ETC shows superiority in convergence speed and fairness, with a 10× improvement in convergence time even compared to the protocol with the best convergence performance.",
+  "abstract_source_id": "src-abstract-atc-2024-a90c4e99",
   "venue": "atc",
   "year": 2024,
   "track_or_session": "Networks 1",
@@ -243,6 +245,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-atc-2024-a90c4e99",
+      "url": "https://www.usenix.org/conference/atc24/presentation/han",
+      "kind": "paper-page",
+      "title": "ETC: An Elastic Transmission Control Using End-to-End Available Bandwidth Perception",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T21:58:34Z",
+      "content_hash": "sha256:710ab5798b019b05bfb3982453755ed7e6375066016b42fc995cbdf6daaa8168",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

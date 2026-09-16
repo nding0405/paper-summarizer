@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2025-enhancing-security-in-third-party-library-reuse-comprehe-e7aa1617",
   "title": "Enhancing Security in Third-Party Library Reuse – Comprehensive Detection of 1-day Vulnerability through Code Patch Analysis",
+  "abstract": "Nowadays, software development progresses\n\nrapidly to incorporate new features. To facilitate such growth\n\nand provide convenience for developers when creating and\n\nupdating software, reusing open-source software (i.e., thirdparty\n\nlibrary reuses) has become one of the most effective\n\nand efficient methods. Unfortunately, the practice of reusing\n\nthird-party libraries (TPLs) can also introduce vulnerabilities\n\n(known as 1-day vulnerabilities) because of the low maintenance\n\nof TPLs, resulting in many vulnerable versions remaining in\n\nuse. If the software incorporating these TPLs fails to detect the\n\nintroduced vulnerabilities and leads to delayed updates, it will\n\nexacerbate the security risks. However, the complicated code\n\ndependencies and flexibility of TPL reuses make the detection of\n\n1-day vulnerability a challenging task. To support developers in\n\nsecurely reusing TPLs during software development, we design\n\nand implement VULTURE, an effective and efficient detection\n\ntool, aiming at identifying 1-day vulnerabilities that arise from\n\nthe reuse of vulnerable TPLs. It first executes a database creation\n\nmethod, TPLFILTER, which leverages the Large Language\n\nModel (LLM) to automatically build a unique database for the\n\ntargeted platform. Instead of relying on code-level similarity\n\ncomparison, VULTURE employs hashing-based comparison to\n\nexplore the dependencies among the collected TPLs and identify\n\nthe similarities between the TPLs and the target projects.\n\nRecognizing that developers have the flexibility to reuse TPLs\n\nexactly or in a custom manner, VULTURE separately conducts\n\nversion-based comparison and chunk-based analysis to capture\n\nfine-grained semantic features at the function levels. We applied\n\nVULTURE to 10 real-world projects to assess its effectiveness\n\nand efficiency in detecting 1-day vulnerabilities. VULTURE\n\nsuccessfully identified 175 vulnerabilities from 178 reused TPLs.",
+  "abstract_source_id": "src-abstract-ndss-2025-e7aa1617",
   "venue": "ndss",
   "year": 2025,
   "track_or_session": "Fall submission cycle",
@@ -210,6 +212,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2025-e7aa1617",
+      "url": "https://www.ndss-symposium.org/ndss-paper/enhancing-security-in-third-party-library-reuse-comprehensive-detection-of-1-day-vulnerability-through-code-patch-analysis/",
+      "kind": "paper-page",
+      "title": "Enhancing Security in Third-Party Library Reuse – Comprehensive Detection of 1-day Vulnerability through Code Patch Analysis",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:19:34Z",
+      "content_hash": "sha256:afff4f560f56c8f749bc6721d696ffed3be7bc4c62e63857b76e1e29e80e7b92",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

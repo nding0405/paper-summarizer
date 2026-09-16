@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2024-blueswat-a-lightweight-state-aware-security-framework-fo-3e50192b",
   "title": "BlueSWAT: A Lightweight State-Aware Security Framework for Bluetooth Low Energy",
+  "abstract": "Bluetooth Low Energy (BLE) is a short-range wireless communication technology for resource-constrained IoT devices. Unfortunately, BLE is vulnerable to session-based attacks, where previous packets construct exploitable conditions for subsequent packets to compromise connections. Defending against session-based attacks is challenging because each step in the attack sequence is legitimate when inspected individually. In this paper, we present BlueSWAT, a lightweight state-aware security framework for protecting BLE devices. To perform inspection on the session level rather than individual packets, BlueSWAT leverages a finite state machine (FSM) to monitor sequential actions of connections at runtime. Patterns of session-based attacks are modeled as malicious transition paths in the FSM. To overcome the heterogeneous IoT environment, we develop a lightweight eBPF framework to facilitate universal patch distribution across different BLE architectures and stacks, without requiring device reboot. We implement BlueSWAT on 5 real-world devices with different chips and stacks to demonstrate its cross-device adaptability. On our dataset with 101 real-world BLE vulnerabilities, BlueSWAT can mitigate 76.1% of session-based attacks, outperforming other defense frameworks. In our end-to-end application evaluation, BlueSWAT introduces an average of 0.073% memory overhead and negligible latency.",
+  "abstract_source_id": "src-abstract-ccs-2024-3e50192b",
   "venue": "ccs",
   "year": 2024,
   "track_or_session": "Cycle 1",
@@ -201,6 +203,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2024-3e50192b",
+      "url": "https://api.openalex.org/works/doi:10.1145/3658644.3670397?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "BlueSWAT: A Lightweight State-Aware Security Framework for Bluetooth Low Energy",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:09:05Z",
+      "content_hash": "sha256:31619bb05ce020097725bd32e7951dcdb84ca760f9ce220bc2df965860f867c0",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

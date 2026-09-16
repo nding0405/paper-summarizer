@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-revelio-a-global-study-of-voip-blocking-038fbc39",
   "title": "Revelio: A Global Study of VoIP Blocking",
+  "abstract": "Online censorship has substantially increased over the past decade. While prior work on censorship detection has largely focused on the web, the landscape and mechanisms of VoIP censorship remain poorly understood.\n\nThis work presents the first global study of VoIP blocking by introducing Revelio, a system that systematically detects and comprehensively analyzes VoIP censorship at scale. Unlike the only prior work, which is limited to two countries and requires authors to travel to conduct measurements, Revelio remotely uncovers VoIP blocking by carefully crafting probe packets and strategically leveraging IP address space within target countries, enabling detection of otherwise invisible VoIP censorship.\n\nUsing Revelio, we studied 71 countries, covering 11 widely used VoIP applications. Our findings reveal evidence of VoIP blocking in 19 countries, primarily through targeted interference with the STUN traffic. By studying packet traces, we reverse-engineer censorship behavior and uncover four classes and six subtypes of middleboxes that trigger on unique application-specific STUN packets. We further analyze domain-level blocking at the HTTP and HTTPS layers, revealing cases where only VoIP calling is blocked while messaging remains accessible.\n\nOverall, our study advances the understanding of the privacy and censorship community by providing the first comprehensive, global view of an understudied yet highly prevalent form of censorship. We release our code to support reproducibility and future research.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-038fbc39",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Privacy Anonymity 3",
@@ -134,6 +136,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-038fbc39",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/gupta",
+      "kind": "paper-page",
+      "title": "Revelio: A Global Study of VoIP Blocking",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:25:15Z",
+      "content_hash": "sha256:97f530715d1d22ac627ac57dc5e7ff4363972c6c5b5a74f470a09511278aa61c",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

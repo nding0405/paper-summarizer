@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2024-reasoning-about-network-traffic-load-property-at-product-b81ffb9f",
   "title": "Reasoning about Network Traffic Load Property at Production Scale",
+  "abstract": "This paper presents Jingubang, the first reported system for checking network traffic load properties (e.g., if any link’s utilization would exceed 80% during a network change) in a production Wide Area Network (WAN). Motivated by our network operators, Jingubang should meet three important requirements: ( R1 ) comprehensive support for complex traffic behavior under BGP, IS-IS, policy-based routes (PBR), and segment routes (SR), ( R2 ) reasoning on traffic load of billions of flows across a period of time, ( R3 ) real-time failure-tolerance analysis. These requirements pose challenges in modeling the complex traffic behavior and maintaining the checking efficiency. Jingubang has successfully addressed these challenges. First, we propose the traffic distribution graph (or TDG), capable of modeling equal-cost multi-path (ECMP), packet rewriting, and tunneling, introduced by BGP/IS-IS, PBR, and SR, respectively. Second, we design an algorithm based on TDG to simulate traffic distribution for billions of flows across a time period both efficiently and accurately. Third, Jingubang proposes an incremental traffic simulation approach that first computes an incremental TDG and then simulates only the differential traffic distribution, avoiding the need to simulate the entire network traffic distribution from scratch. Jingubang has been used in the daily checking of our WAN for more than one year and prevented service downtime resulting from traffic load violations.",
+  "abstract_source_id": "src-abstract-nsdi-2024-b81ffb9f",
   "venue": "nsdi",
   "year": 2024,
   "track_or_session": "Networking at Scale",
@@ -349,6 +351,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2024-b81ffb9f",
+      "url": "https://www.usenix.org/conference/nsdi24/presentation/li-ruihan",
+      "kind": "paper-page",
+      "title": "Reasoning about Network Traffic Load Property at Production Scale",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:03:36Z",
+      "content_hash": "sha256:370393037b13a08facad5deeb3649a488099b82684eb77edd3886e892717cbc1",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

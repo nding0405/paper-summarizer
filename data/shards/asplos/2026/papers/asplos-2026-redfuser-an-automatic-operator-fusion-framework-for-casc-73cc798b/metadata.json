@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2026-redfuser-an-automatic-operator-fusion-framework-for-casc-73cc798b",
   "title": "RedFuser: An Automatic Operator Fusion Framework for Cascaded Reductions on AI Accelerators",
+  "abstract": "Operator fusion, as a key performance optimization technique in the deployment of AI models, significantly improves execution efficiency and has been widely adopted in modern AI compilers. However, for cascaded reduction operations involving multiple loops with inter-loop data dependencies, such as the safe softmax followed by GEMM within attention mechanisms, existing compilers lack effective automated fusion and kernel generation capabilities. Although some works have addressed specific instances through hand-crafted fusion strategies, their solutions are limited in generality and difficult to extend to other similar structures. Given the prevalence of such computational patterns in deep learning models, there remains significant untapped potential in achieving general and automated fusion optimization. In this paper, we present a formal theoretical methodology for analyzing cascaded reductions which can fuse them into a single loop and introduce an incremental computation form. Based on this methodology, we design Red uction Fuser (RedFuser), a framework that automatically identifies supported cascaded reduction patterns and generates optimized fused kernels. Experiments show that RedFuser successfully fuses diverse workloads, achieving up to 2× to 5× speedup over state-of-the-art AI compilers and matching the performance of highly optimized hand-written kernels.",
+  "abstract_source_id": "src-abstract-asplos-2026-73cc798b",
   "venue": "asplos",
   "year": 2026,
   "track_or_session": "Session 4B: ML Compilers & Tensor Programs",
@@ -236,6 +238,19 @@
       "official": false,
       "supports": [
         "Indexed abstract used for strict relevance classification and indexed arXiv identifier where available."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2026-73cc798b",
+      "url": "https://api.openalex.org/works/doi:10.1145/3779212.3790209?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "RedFuser: An Automatic Operator Fusion Framework for Cascaded Reductions on AI Accelerators",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:06:00Z",
+      "content_hash": "sha256:ce5d712d6160324367190057ce612da212dbdb7c7820bb7eb0c3530b8f1612a2",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "atc-2024-quant-llm-accelerating-the-serving-of-large-language-mod-f58fa522",
   "title": "Quant-LLM: Accelerating the Serving of Large Language Models via FP6-Centric Algorithm-System Co-Design on Modern GPUs",
+  "abstract": "Six-bit quantization (FP6) can effectively reduce the size of large language models (LLMs) and preserve the model quality consistently across varied applications. However, existing systems do not provide Tensor Core support for FP6 quantization and struggle to achieve practical performance improvements during LLM inference. It is challenging to support FP6 quantization on GPUs due to (1) unfriendly memory access of model weights with non-power-of-two bit-width and (2) high runtime overhead of weight de-quantization. To address these problems, we propose TC-FPx, the first full-stack GPU kernel design scheme with unified Tensor Core support of 6-bit and arbitrary bit-width quantization (5-bit, etc.). We integrate TC-FPx kernel into an existing inference system, providing new end-to-end support (called Quant-LLM) for quantized LLM inference, where better trade-offs between inference cost and model quality are achieved with 6-bit quantization. Experiments show that Quant-LLM enables the inference of LLaMA-70b using only a single GPU, achieving 1.69×-2.65× higher normalized inference throughput than the FP16 baseline. The source code is publicly available at https://github.com/usyd-fsalab/fp6_llm .",
+  "abstract_source_id": "src-abstract-atc-2024-f58fa522",
   "venue": "atc",
   "year": 2024,
   "track_or_session": "ML-System Co-Design",
@@ -348,6 +350,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-atc-2024-f58fa522",
+      "url": "https://www.usenix.org/conference/atc24/presentation/xia",
+      "kind": "paper-page",
+      "title": "Quant-LLM: Accelerating the Serving of Large Language Models via FP6-Centric Algorithm-System Co-Design on Modern GPUs",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T21:58:59Z",
+      "content_hash": "sha256:72b93449ab2e24f8b591cc9fcfd7fd83e8c90d45d80427832647c7661dc89550",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

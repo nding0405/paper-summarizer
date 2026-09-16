@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2026-attention-is-all-you-need-to-defend-against-indirect-pro-f5a3a83e",
   "title": "Attention is All You Need to Defend Against Indirect Prompt Injection Attacks in LLMs",
+  "abstract": "Large Language Models (LLMs) have been integrated into many applications (e.g., web agents) to perform more sophisticated tasks. However, LLM-empowered applications are vulnerable to Indirect Prompt Injection (IPI) attacks, where instructions are injected via untrustworthy external data sources. This paper presents Rennervate, a defense framework to detect and prevent IPI attacks. Rennervate leverages attention features to detect the covert injection at a fine-grained token level, enabling precise sanitization that neutralizes IPI attacks while maintaining LLM functionalities. Specifically, the token-level detector is materialized with a 2-step attentive pooling mechanism, which aggregates attention heads and response tokens for IPI detection and sanitization. Moreover, we establish a fine-grained IPI dataset, FIPI, to be open-sourced to support further research. Extensive experiments verify that Rennervate outperforms 15 commercial and academic IPI defense methods, achieving high precision on 5 LLMs and 6 datasets. We also demonstrate that Rennervate is transferable to unseen attacks and robust against adaptive adversaries.",
+  "abstract_source_id": "src-abstract-ndss-2026-f5a3a83e",
   "venue": "ndss",
   "year": 2026,
   "track_or_session": "Fall submission cycle",
@@ -202,6 +204,19 @@
       "official": false,
       "supports": [
         "independent proceedings identity reconciliation"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2026-f5a3a83e",
+      "url": "https://www.ndss-symposium.org/ndss-paper/attention-is-all-you-need-to-defend-against-indirect-prompt-injection-attacks-in-llms/",
+      "kind": "paper-page",
+      "title": "Attention is All You Need to Defend Against Indirect Prompt Injection Attacks in LLMs",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:21:16Z",
+      "content_hash": "sha256:5b0f41478131d9f29a34007aac71466841e71027e325f53d38300a2d4e6b6eef",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

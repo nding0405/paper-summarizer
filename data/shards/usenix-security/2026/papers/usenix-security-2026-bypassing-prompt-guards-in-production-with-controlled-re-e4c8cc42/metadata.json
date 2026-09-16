@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-bypassing-prompt-guards-in-production-with-controlled-re-e4c8cc42",
   "title": "Bypassing Prompt Guards in Production with Controlled-Release Prompting",
+  "abstract": "Ball et al. recently established that prompt filtering for AI alignment faces a fundamental barrier: under standard cryptographic assumptions, no filter running significantly faster than the protected model can universally distinguish adversarial prompts from benign ones. We investigate whether this impossibility result translates to real-world vulnerabilities in deployed large language model (LLM) systems. We answer affirmatively by introducing controlled-release prompting, a practical instantiation of the theoretical framework that exploits the resource asymmetry between lightweight input filters and the main models they protect. Unlike the theoretical construction, our attack does not require model modification: it generates malicious prompts that are indecipherable by any bounded filter yet remain tractable to the target LLM. We find our attack to be successful on four major chat platforms (Google Gemini, DeepSeek Chat, xAI Grok, and Mistral Le Chat) where baseline methods fail. Additionally, we apply our attack to extract copyrighted data from Gemini. Finally, we provide a systematic evaluation of 14 open-weight prompt guard models, revealing that even reasoning-capable filters cannot reliably detect our attack without incurring prohibitive resource overhead.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-e4c8cc42",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Security of ML 3",
@@ -134,6 +136,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-e4c8cc42",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/fairoze",
+      "kind": "paper-page",
+      "title": "Bypassing Prompt Guards in Production with Controlled-Release Prompting",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:23:19Z",
+      "content_hash": "sha256:77077b5033bfc956dac940eaec39c3eb41973b9d2043614ba9384de1cff55311",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

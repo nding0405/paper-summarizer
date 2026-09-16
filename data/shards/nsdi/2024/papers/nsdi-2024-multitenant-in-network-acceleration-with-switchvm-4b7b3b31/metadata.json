@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2024-multitenant-in-network-acceleration-with-switchvm-4b7b3b31",
   "title": "Multitenant In-Network Acceleration with SwitchVM",
+  "abstract": "We propose a practical approach to implementing multitenancy on programmable network switches to make in-network acceleration accessible to cloud users. We introduce a Switch Virtual Machine (SwitchVM), that is deployed on the switches and offers an expressive instruction set and program state abstractions. Tenant programs, called Data-Plane filters (DPFs), are executed on top of SwitchVM in a sandbox with memory, network and state isolation policies controlled by network operators. The packets that trigger DPF execution include the code to execute or a reference to the DPFs deployed in the switch. DPFs are Turing-complete, may maintain state in the packet and in switch virtual memory, may form a dynamic chain, and may steer packets to desired destinations, all while enforcing the operator’s policies.\n\nWe demonstrate that this idea is practical by prototyping SwitchVM in P4 on Intel Tofino switches. We describe a variety of use cases that SwitchVM supports, and implement three complex applications from prior works – key-value store cache, Load-aware load balancer and Paxos accelerator. We also show that SwitchVM provides strong performance isolation, zero-overhead runtime programmability, may hold two orders of magnitude more in-switch programs than existing techniques, and may support up to thirty thousand concurrent tenants each with its private state.",
+  "abstract_source_id": "src-abstract-nsdi-2024-4b7b3b31",
   "venue": "nsdi",
   "year": 2024,
   "track_or_session": "Sharing the Network",
@@ -118,6 +120,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2024-4b7b3b31",
+      "url": "https://www.usenix.org/conference/nsdi24/presentation/khashab",
+      "kind": "paper-page",
+      "title": "Multitenant In-Network Acceleration with SwitchVM",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:03:27Z",
+      "content_hash": "sha256:770909dc27685590fa119faabada0973a8d01bfcd8be9de737d0c339910030a6",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2025-bridgerouter-automated-capability-upgrading-of-out-of-bo-03029f16",
   "title": "BridgeRouter: Automated Capability Upgrading of Out-Of-Bounds Write Vulnerabilities to Arbitrary Memory Write Primitives in the Linux Kernel",
+  "abstract": "Memory corruption vulnerabilities pose a significant threat to the Linux kernel, with out-of-bounds (OOB) vulnerabilities receiving particular attention due to their prevalence. The existing kernel OOB exploitation techniques either require strong capabilities from the vulnerabilities, demand that the vulnerable and victim objects reside in the same memory allocator cache, or rely on extensive page table manipulation. These constraints restrict their applicability and lead to low success rates in completing a full exploitation chain. In this paper, we propose a practical approach that enables arbitrary memory writes from kernel OOB vulnerabilities with limited capabilities. Our method leverages two special kinds of kernel objects to upgrade the capability from an uncontrolled overwrite to a controlled overwrite, ultimately achieving arbitrary memory write. We develop a system to automatically identify and utilize these two kinds of kernel objects. Evaluations on a crafted vulnerability and 14 representative real-world vulnerabilities, along with a comparison against two state-of-the-art works, demonstrate the broad applicability of our approach.",
+  "abstract_source_id": "src-abstract-sp-2025-03029f16",
   "venue": "sp",
   "year": 2025,
   "track_or_session": "Cycle 2",
@@ -196,6 +198,19 @@
       "official": true,
       "supports": [
         "DOI, authors, affiliations, abstract, publication date, pages, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2025-03029f16",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "BridgeRouter: Automated Capability Upgrading of Out-Of-Bounds Write Vulnerabilities to Arbitrary Memory Write Primitives in the Linux Kernel",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:42Z",
+      "content_hash": "sha256:d62dac834635b4cd1890a53da454ceae7aaa151189662d990ac591dfd5cb6b3e",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

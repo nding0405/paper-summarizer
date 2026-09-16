@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-ddr-sse-duplicated-retrieval-of-documents-for-system-wid-67106ddb",
   "title": "DDR-SSE: Duplicated Retrieval of Documents for System-wide Secure Searchable Symmetric Encryption",
+  "abstract": "Searchable Symmetric Encryption (SSE) schemes enable efficient keyword searches over encrypted documents at the cost of some leakage. An SSE scheme is said to be system-wide secure if it resists cryptanalysis by an adversary with access to leakage from retrieval of both encrypted indices and encrypted documents. The vast majority of state-of-the-art SSE schemes are, in fact, not system-wide secure (Gui et al. , IEEE S&P 2023). Currently, the only efficient system-wide secure SSE scheme is SWiSSSE (Gui et al. , PoPETS 2024). However, SWiSSSE requires a client state that is updated per query (which hinders adoption in various practical settings), and its leakage is hard to characterize precisely (thus making security analysis harder).\n\nIn this paper, we present DDR-SSE – a practically efficient, system-wide secure SSE scheme that only requires a static client state, and has a simple leakage profile. Technically, we introduce a novel encrypted document retrieval scheme that uses duplicated document storage and randomized document retrieval to suppress access pattern leakage without compromising on practical efficiency. A remarkable feature of our scheme is its conceptual simplicity (unlike SWiSSSE, which uses an extremely involved document retrieval mechanism).\n\nWe present a simulation-based security proof for DDR-SSE with respect to a rigorously formal system-wide leakage profile. Through extensive leakage cryptanalysis, we establish that DDR-SSE is resilient to query reconstruction attacks (even under \"unrealistically\" strong attack assumptions). Finally, we benchmark a prototype implementation of DDR-SSE and show that it scales smoothly to large databases of the size seen in real-world applications.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-67106ddb",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Applications of Cryptography 5",
@@ -135,6 +137,19 @@
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening",
         "prepublication PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-67106ddb",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/gui",
+      "kind": "paper-page",
+      "title": "DDR-SSE: Duplicated Retrieval of Documents for System-wide Secure Searchable Symmetric Encryption",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:23:37Z",
+      "content_hash": "sha256:a7b70bf90e6973805093a216fd5c6e38b874523f326103a88402d5490d99e816",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

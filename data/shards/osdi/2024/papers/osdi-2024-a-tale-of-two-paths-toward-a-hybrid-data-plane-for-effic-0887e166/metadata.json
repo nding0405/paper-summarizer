@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2024-a-tale-of-two-paths-toward-a-hybrid-data-plane-for-effic-0887e166",
   "title": "A Tale of Two Paths: Toward a Hybrid Data Plane for Efficient Far-Memory Applications",
+  "abstract": "With rapid advances in network hardware, far memory has gained a great deal of traction due to its ability to break the memory capacity wall. Existing far memory systems fall into one of two data paths: one that uses the kernel's paging system to transparently access far memory at the page granularity, and a second that bypasses the kernel, fetching data at the object granularity. While it is generally believed that object fetching outperforms paging due to its fine-grained access, it requires significantly more compute resources to run object-level LRU and eviction.\n\nWe built Atlas, a hybrid data plane enabled by a runtime-kernel co-design that simultaneously enables accesses via these two data paths to provide high efficiency for real-world applications. Atlas uses always-on profiling to continuously measure page locality. For workloads already with good locality, paging is used to fetch data, whereas for those without, object fetching is employed. Object fetching moves objects that are accessed close in time to contiguous local space, dynamically improving locality and making the execution increasingly amenable to paging, which is much more resource-efficient. Our evaluation shows that Atlas improves the throughput (e.g., by 1.5x and 3.2x) and reduces the tail latency (e.g., by one and two orders of magnitude) when using remote memory, compared with AIFM and Fastswap, the state-of-the-art techniques respectively in the two categories.",
+  "abstract_source_id": "src-abstract-osdi-2024-0887e166",
   "venue": "osdi",
   "year": 2024,
   "track_or_session": "Memory Management",
@@ -327,6 +329,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2024-0887e166",
+      "url": "https://www.usenix.org/conference/osdi24/presentation/chen-lei",
+      "kind": "paper-page",
+      "title": "A Tale of Two Paths: Toward a Hybrid Data Plane for Efficient Far-Memory Applications",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:06:54Z",
+      "content_hash": "sha256:cb6a67ea61ef956a80dd4da59435124bb9b6a80874f3bbd66a5a7a0902f25e49",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

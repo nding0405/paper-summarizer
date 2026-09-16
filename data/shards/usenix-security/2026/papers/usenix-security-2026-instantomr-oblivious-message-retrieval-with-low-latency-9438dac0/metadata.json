@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-instantomr-oblivious-message-retrieval-with-low-latency-9438dac0",
   "title": "InstantOMR: Oblivious Message Retrieval with Low Latency and Optimal Parallelizability",
+  "abstract": "Oblivious message retrieval (OMR) addresses the expensive message retrieval process in anonymous messaging systems and private blockchains. It enables resource-limited recipients to outsource detection and retrieval of their messages, while preserving privacy.\n\nThis work introduces InstantOMR, a novel OMR scheme that combines TFHE functional bootstrapping with standard RLWE operations in a hybrid design. InstantOMR is specifically optimized for low latency and high parallelizability. Our implementation, using the Primus-fhe library (and estimates based on TFHE-rs), demonstrates that InstantOMR offers the following key advantages:\n\nLow latency: InstantOMR achieves \\sim 600× lower latency than SophOMR, the state-of-the-art single-server OMR. This translates directly into reduced recipient waiting time (by the same factor) in the streaming setting, where the detector processes incoming messages on-the-fly and returns a digest immediately upon the recipient becoming online. Optimal parallelizability: InstantOMR scales near-optimally with available CPU cores (by processing messages independently), so for high core counts it is faster than SophOMR (whose parallelism is constrained by reliance on BFV).",
+  "abstract_source_id": "src-abstract-usenix-security-2026-9438dac0",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Applications of Cryptography 4",
@@ -156,6 +158,19 @@
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening",
         "prepublication PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-9438dac0",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/liang",
+      "kind": "paper-page",
+      "title": "InstantOMR: Oblivious Message Retrieval with Low Latency and Optimal Parallelizability",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:24:21Z",
+      "content_hash": "sha256:5250c922440aea81da9461f42852d7ed5d281f2f04150c9f5f56e001f24775bc",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2026-private-data-imputation-a2ce2946",
   "title": "Private Data Imputation",
+  "abstract": "Data imputation is an important data preparation task where the data analyst replaces missing or erroneous values to increase the expected accuracy of downstream analyses. The accuracy improvement of data imputation extends to private data analyses across distributed databases. However, existing data imputation methods violate the privacy of the data rendering the privacy protection in the downstream analyses obsolete. We conclude that private data analysis requires private data imputation. In this paper, we present the first optimized protocols for private data imputation. We consider the case of horizontally and vertically split data sets. Our optimization aims to reduce most of the computation to private set intersection (or at least oblivious programmable pseudo-random function) protocols which can be very efficiently computed. We show that private data imputation has - on average across all evaluated datasets - an accuracy advantage of 20% in case of vertically split data and 5% in case of horizontally split data over imputing data locally. In case of the worst data split we observed that imputing using our method resulted in an accuracy improvement (Root Mean Square Error reduction) of up to 32.7 times over the vertically split data and 3.4 times in case of horizontally split data. Our protocols are very efficient and run in 2.4 seconds in case of vertically split data and 8.4 seconds in case of horizontally split data for 100,000 records evaluated in the 10 Gbps network setting, performing one data imputation.",
+  "abstract_source_id": "src-abstract-sp-2026-a2ce2946",
   "venue": "sp",
   "year": 2026,
   "track_or_session": "Cycle 2",
@@ -112,6 +114,19 @@
       "official": true,
       "supports": [
         "DOI, published-order authors and affiliations, abstract, publication date, page span, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2026-a2ce2946",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Private Data Imputation",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:58:02Z",
+      "content_hash": "sha256:4204efad9387253e2c70bd18217fac7c5220b9cd43ecd6179fdc27c5a043343e",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

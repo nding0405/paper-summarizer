@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-when-aiops-become-ai-oops-subverting-llm-driven-it-opera-9dfdf8e4",
   "title": "When AIOps Become \"AI Oops\": Subverting LLM-driven IT Operations via Telemetry Manipulation",
+  "abstract": "AI for IT Operations (AIOps) is transforming how organizations manage complex software systems by automating anomaly detection, incident diagnosis, and remediation. Modern AIOps solutions increasingly rely on autonomous LLM-based agents to interpret telemetry data and take corrective actions with minimal human intervention, promising faster response times and operational cost savings.\n\nIn this work, we perform the first security analysis of AIOps solutions, showing that, once again, AI-driven automation comes with a profound security cost. We demonstrate that adversaries can manipulate system telemetry to mislead AIOps agents into taking actions that compromise the integrity of the infrastructure they manage. We introduce techniques to reliably inject telemetry data using error-inducing requests that influence agent behavior through a form of adversarial reward-hacking; plausible but incorrect system error interpretations that steer the agent's decision-making. Our attack methodology, AIOpsDoom, is fully automated–combining reconnaissance, fuzzing, and LLM-driven adversarial input generation–and operates without any prior knowledge of the target system.\n\nTo counter this threat, we propose AIOpsShield, a defense mechanism that sanitizes telemetry data by exploiting its structured nature and the minimal role of user-generated content. Our experiments show that AIOpsShield reliably blocks telemetry-based attacks without affecting normal agent performance. Ultimately, this work exposes AIOps as an emerging attack vector for system compromise and underscores the urgent need for security-aware AIOps design.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-9dfdf8e4",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Security of ML 5",
@@ -177,6 +179,19 @@
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening",
         "prepublication PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-9dfdf8e4",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/pasquini",
+      "kind": "paper-page",
+      "title": "When AIOps Become \"AI Oops\": Subverting LLM-driven IT Operations via Telemetry Manipulation",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:26:14Z",
+      "content_hash": "sha256:fa362eb9461f794b4044603c075a62073e060ef78277d152e37abe1b62780673",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

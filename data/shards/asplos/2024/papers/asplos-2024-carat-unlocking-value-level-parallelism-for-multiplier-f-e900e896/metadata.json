@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2024-carat-unlocking-value-level-parallelism-for-multiplier-f-e900e896",
   "title": "Carat: Unlocking Value-Level Parallelism for Multiplier-Free GEMMs",
+  "abstract": "In recent years, hardware architectures optimized for general matrix multiplication (GEMM) have been well studied to deliver better performance and efficiency for deep neural networks. With trends towards batched, low-precision data, e.g., FP8 format in this work, we observe that there is growing untapped potential for value reuse. We propose a novel computing paradigm, value-level parallelism, whereby unique products are computed only once, and different inputs subscribe to (select) their products via temporal coding. Our architecture, Carat, employs value-level parallelism and transforms multiplication into accumulation, performing GEMMs with efficient multiplier-free hardware. Experiments show that, on average, Carat improves iso-area throughput and energy efficiency by 1.02× and 1.06× over a systolic array and 3.2× and 4.3× when scaled up to multiple nodes.",
+  "abstract_source_id": "src-abstract-asplos-2024-e900e896",
   "venue": "asplos",
   "year": 2024,
   "track_or_session": "Session 7A: Architecture Support for ML",
@@ -138,6 +140,19 @@
       "official": false,
       "supports": [
         "Indexed alternate-version and institutional-copy links; not used as the authoritative relevance source."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2024-e900e896",
+      "url": "https://api.openalex.org/works/doi:10.1145/3620665.3640364?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Carat: Unlocking Value-Level Parallelism for Multiplier-Free GEMMs",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T21:59:57Z",
+      "content_hash": "sha256:2a3726184e2bbf20bddc7bccfbef7131f5abc6c4a0ff1b32eac2cb50e70a1942",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

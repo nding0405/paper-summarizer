@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "atc-2024-mangosteen-fast-transparent-durability-for-linearizable-902dc2ab",
   "title": "Mangosteen: Fast Transparent Durability for Linearizable Applications using NVM",
+  "abstract": "The advent of byte-addressable non-volatile memory (NVM) technologies has enabled the development of low-latency high-throughput durable applications, i.e., applications that are capable of recovering from full-system crashes. However, programming such applications is error-prone as efficiency gains often require fine-grained (programmer-controlled) management of low-level persistence instructions.\n\nWe propose Mangosteen, a high-level programming framework that allows developers to transform an existing linearizable in-memory application to a corresponding durably linearizable version using NVM. Our framework’s API consists of a set of callback hooks that interpose on an application’s request processing flow with minimal developer effort. Mangosteen executes client operations on DRAM and persists their effects using binary instrumentation and redo logging. Mangosteen’s concurrency control facilitates batching of read-write requests to minimize the cost of persistence, while allowing read-only requests to execute concurrently. A novel intra-batch deduplication mechanism further reduces persistence overheads for common OLTP workloads. Our empirical evaluation results show that Mangosteen-enabled applications outperform state-of-the-art solutions across the entire spectrum of read-write ratios. In particular, the Mangosteen-based version of Redis demonstrates throughput gains of between 2×–5× in comparison to prior work.",
+  "abstract_source_id": "src-abstract-atc-2024-902dc2ab",
   "venue": "atc",
   "year": 2024,
   "track_or_session": "Memory",
@@ -180,6 +182,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-atc-2024-902dc2ab",
+      "url": "https://www.usenix.org/conference/atc24/presentation/egorov",
+      "kind": "paper-page",
+      "title": "Mangosteen: Fast Transparent Durability for Linearizable Applications using NVM",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T21:58:49Z",
+      "content_hash": "sha256:c4aa290373555df2ead3a8625dedf1d73673d9021f64584c1cc641ad8b5cc476",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

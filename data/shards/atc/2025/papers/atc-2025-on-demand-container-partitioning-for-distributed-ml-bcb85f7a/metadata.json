@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "atc-2025-on-demand-container-partitioning-for-distributed-ml-bcb85f7a",
   "title": "On-Demand Container Partitioning for Distributed ML",
+  "abstract": "As machine learning (ML) models grow in complexity and scale, distributed deployment across multiple devices has become essential for ensuring performance and scalability. However, the dynamic nature of distributed ML, where models must be frequently retrained, partitioned, and updated, exposes severe limitations in the current de-facto container-based model deployment. Specifically, the layered architecture of container filesystems is not well-suited for handling fine-grained model updates and partitioned ML deployments, leading to inefficient rebuilds and long delays.\n\nIn this paper, we present 2DFS, a novel two-dimensional filesystem that enables independent updates, caching, and distribution of ML model components. We design and develop a complete ecosystem, including a builder, registry, and cache hierarchy, to streamline the build and deployment processes of ML models leveraging 2DFS. Our comprehensive evaluation of 14 real-world ML models demonstrates that 2DFS achieves up to 56x faster build times, 25x better caching efficiency, while providing on-demand image partitioning with negligible overhead. 2DFS is fully OCI-compliant and integrates seamlessly with existing infrastructures and container workflows.",
+  "abstract_source_id": "src-abstract-atc-2025-bcb85f7a",
   "venue": "atc",
   "year": 2025,
   "track_or_session": "Advanced Distributed Systems: ML, Data, and Performance Tuning",
@@ -180,6 +182,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-atc-2025-bcb85f7a",
+      "url": "https://www.usenix.org/conference/atc25/presentation/bartolomeo",
+      "kind": "paper-page",
+      "title": "On-Demand Container Partitioning for Distributed ML",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T21:59:58Z",
+      "content_hash": "sha256:1dd5678a56494a63024c9ff771d5e7430665fad3e18508aeec83bf9f40230fb9",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

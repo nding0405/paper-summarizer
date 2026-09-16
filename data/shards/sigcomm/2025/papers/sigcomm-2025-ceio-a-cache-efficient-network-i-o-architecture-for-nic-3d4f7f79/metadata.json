@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sigcomm-2025-ceio-a-cache-efficient-network-i-o-architecture-for-nic-3d4f7f79",
   "title": "CEIO: A Cache-Efficient Network I/O Architecture for NIC-CPU Data Paths",
+  "abstract": "Efficient Input/Output (I/O) data path between NICs and CPUs/DRAMs is critical for supporting datacenter applications with high-performance network transmission, especially as link speed scales to 100Gbps and beyond. Traditional I/O acceleration strategies, such as Data Direct I/O (DDIO) and Remote Direct Memory Access (RDMA), perform suboptimally due to the inefficient utilization of the Last-Level Cache (LLC). This paper presents CEIO, a novel cache-efficient network I/O architecture that employs proactive rate control and elastic buffering to achieve zero LLC misses in the I/O data path while ensuring the effectiveness of DDIO and RDMA under various network conditions. We have implemented CEIO on commodity SmartNICs and incorporated it into widely-used DPDK and RDMA libraries. Experiments with well-optimized RPC framework and distributed file system under realistic workloads demonstrate that CEIO achieves up to 2.9× higher throughput and 1.9× lower P99.9 latency over prior work.",
+  "abstract_source_id": "src-abstract-sigcomm-2025-3d4f7f79",
   "venue": "sigcomm",
   "year": 2025,
   "track_or_session": "Datacenter Networking",
@@ -255,6 +257,19 @@
         "DOI and ACM publisher landing/PDF links",
         "publisher-deposited ORCIDs when available",
         "proceedings page range and online publication date"
+      ]
+    },
+    {
+      "id": "src-abstract-sigcomm-2025-3d4f7f79",
+      "url": "https://api.openalex.org/works/doi:10.1145/3718958.3750488?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "CEIO: A Cache-Efficient Network I/O Architecture for NIC-CPU Data Paths",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:23:20Z",
+      "content_hash": "sha256:1c1e4862a49a0f974190cf8f7f229e7ea07b5a20be1f8f3f4b31127511e66727",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

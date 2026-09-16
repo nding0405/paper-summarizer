@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2025-revisiting-keyed-verification-anonymous-credentials-ca59c411",
   "title": "Revisiting Keyed-Verification Anonymous Credentials",
+  "abstract": "Keyed-verification anonymous credentials (KVACs) have demonstrated their practicality through large-scale deployments in Apple, Google, Signal, and Tor. Despite their widespread adoption, the theoretical framework underlying KVACs lacks the flexibility needed to support diverse applications, which in general require different security properties. For instance, rate-limiting credentials only need a weaker unforgeability notion (one-more unforgeability), yet the framework cannot easily accommodate this relaxation. Similarly, digital identity protocols require stronger properties than unforgeability -—specifically, extractability for security proofs when adversaries can observe other users' credentials. We address these limitations by introducing new notions of extractability and one-more unforgeability. We improve two foundational works in the space: The scheme by Chase et al. (CCS 2014), commonly referred to as CMZ or PS MAC can be made statistically anonymous, and issuance cost reduced from (O(n)) to (O(1)). The scheme by Barki et al. (SAC 2016), known as BBDT or BBS MAC can be issued more efficiently (one less group element). We provide a security proof for both schemes in the algebraic group model (CRYPTO 2018) and describe how these core credential schemes can be extended to construct more complex anonymous credential systems such as time-based policies, pseudonyms, and rate-limiting extensions.",
+  "abstract_source_id": "src-abstract-ccs-2025-ca59c411",
   "venue": "ccs",
   "year": 2025,
   "track_or_session": "Cycle 2",
@@ -85,6 +87,19 @@
         "published-order authors",
         "publication-time affiliations",
         "publication date and page span"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2025-ca59c411",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Revisiting Keyed-Verification Anonymous Credentials",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:12Z",
+      "content_hash": "sha256:aa9c23a45f6ec9973f40e6c9520c69d42bb49fc1f526891570edfdb1976cff82",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

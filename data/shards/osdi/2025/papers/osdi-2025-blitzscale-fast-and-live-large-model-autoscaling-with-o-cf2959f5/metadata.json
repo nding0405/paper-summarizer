@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2025-blitzscale-fast-and-live-large-model-autoscaling-with-o-cf2959f5",
   "title": "BlitzScale: Fast and Live Large Model Autoscaling with O(1) Host Caching",
+  "abstract": "Model autoscaling is the key mechanism to achieve serverless model-as-a-service, but it faces a fundamental trade-off between scaling speed and storage/memory usage to cache parameters, and cannot meet frequent scaling requirements across multiple hosts. The key problem is that data plane performance is slow, and scaled instances remain stopped while parameters are loading.\n\nIn this paper, we first show that the data plane can be made fast with no or O(1) caching by loading parameters through the compute network between GPUs because: (1) its speed is comparable to host cache and is underutilized, and (2) scaling multiple instances requires no or O(1) caching with network-optimized multicast. Second, autoscaling can be made live by breaking the scaling abstraction for inference from a coarse-grained instance-level to a fine-grained layer-level. This allows us to offload the layer computation from the overloaded serving instances to the scaled ones without waiting for the parameters to be fully loaded.\n\nUnder real-world workloads, our system BLITZSCALE achieves up to 94 % lower tail latency reductions compared to state-of-the-art autoscaling system (ServerlessLLM), and it reduces the GPU time used for serving by 49 % when compared with serving systems that do not support autoscaling like DistServe and vLLM with the same service-level-agreement.",
+  "abstract_source_id": "src-abstract-osdi-2025-cf2959f5",
   "venue": "osdi",
   "year": 2025,
   "track_or_session": "AI + Systems II",
@@ -222,6 +224,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2025-cf2959f5",
+      "url": "https://www.usenix.org/conference/osdi25/presentation/zhang-dingyan",
+      "kind": "paper-page",
+      "title": "BlitzScale: Fast and Live Large Model Autoscaling with O(1) Host Caching",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:07:26Z",
+      "content_hash": "sha256:6c3d42f4f7ff011d4ff7f8a1e61db07998501232d0b39175380bfbda50aef416",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

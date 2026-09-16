@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-muzzle-adaptive-agentic-red-teaming-of-web-agents-agains-297fe6ce",
   "title": "MUZZLE: Adaptive Agentic Red-Teaming of Web Agents Against Indirect Prompt Injection Attacks",
+  "abstract": "Large language model (LLM) based web agents are increasingly deployed to automate complex online tasks by directly interacting with web sites and performing actions on users' behalf. While these agents offer powerful capabilities, their design exposes them to indirect prompt injection attacks embedded in untrusted web content, enabling adversaries to hijack agent behavior and violate user intent. Despite growing awareness of this threat, existing evaluations rely on fixed attack templates, manually selected injection surfaces, or narrowly scoped scenarios, limiting their ability to capture realistic, adaptive attacks encountered in practice.\n\nWe present MUZZLE, an automated agentic framework for evaluating the security of web agents against indirect prompt injection attacks. MUZZLE utilizes the agent's trajectories to automatically identify high-salience injection surfaces, and adaptively generate context-aware malicious instructions that target violations of confidentiality, integrity, and availability. Unlike prior approaches, MUZZLE adapts its attack strategy based on the agent's observed execution trajectory and iteratively refines attacks using feedback from failed executions.\n\nWe evaluate MUZZLE across diverse web applications, user tasks, and agent configurations, demonstrating its ability to automatically and adaptively assess the security of web agents with minimal human intervention. Our results show that MUZZLE effectively discovers 44 new attacks on 4 web applications with 10 adversarial objectives that violate confidentiality, availability, or privacy properties across different LLMs and agent scaffolds. MUZZLE also identifies novel attack strategies, including 3 cross-application prompt injection attacks and an agent-tailored phishing scenario.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-297fe6ce",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Security of ML 2",
@@ -197,6 +199,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-297fe6ce",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/syros",
+      "kind": "paper-page",
+      "title": "MUZZLE: Adaptive Agentic Red-Teaming of Web Agents Against Indirect Prompt Injection Attacks",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:24:47Z",
+      "content_hash": "sha256:a4b1f7c040d62261fa93e024c1b576b8783977cb397920e51d1aae2f1fcba556",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-meps-privacy-preserving-edge-cloud-video-foundation-mode-af6ffecd",
   "title": "MEPS: Privacy-preserving Edge-cloud Video Foundation Model Inference with Privacy Protectability",
+  "abstract": "Edge-cloud video understanding systems, which leverage video foundation models on the cloud for inference to serve downstream tasks, present significant privacy risks due to the exposure of video data containing sensitive information (e.g., human faces) from edge devices to the cloud. To mitigate privacy leakage, existing methods often involve perturbing sensitive information, which can unfortunately degrade the accuracy of video understanding tasks, especially when that sensitive information is relevant to the tasks. Alternatively, encryption-based private inference offers strong privacy guarantees without accuracy loss but imposes a substantial computational burden on resource-constrained edge devices. This paper addresses these privacy challenges by observing that while many video frames contain sensitive information, only a few contain sensitive information that is truly essential for the video understanding tasks. Thus, it is unnecessary and inefficient to apply universal, computation-intensive encryption for all video frames on the edge.\n\nWe propose MEPS, a novel privacy-preserving video understanding system designed to intelligently manage the trade-off between privacy, accuracy, and efficiency. MEPS selectively encrypts video frames only when the sensitive information they contain is crucial for the downstream tasks, thus ensuring robust privacy for essential data. For the majority of frames where sensitive information is non-essential to the task, MEPS applies lightweight perturbation schemes. This approach effectively protects privacy by obscuring sensitive details without negatively impacting task accuracy or overburdening edge devices. A core component of MEPS is its ability to discern whether sensitive information within a frame is essential for video understanding. To facilitate this, we propose privacy protectability, a novel metric rooted in information theory that evaluates the degree of overlap between sensitive information and the information required for video understanding tasks. We implement a prototype of MEPS and evaluate its performance with three public real-world video trace datasets. Theoretical analysis proves MEPS has rigorous privacy guarantee. Experimental results demonstrate that MEPS can maintain the satisfied privacy protection and task accuracy, while significantly improve system efficiency, achieving a 48.8× speedup.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-af6ffecd",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Security and Privacy for Web, Mobile, and Emerging Technologies 4",
@@ -134,6 +136,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-af6ffecd",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/shi-siping",
+      "kind": "paper-page",
+      "title": "MEPS: Privacy-preserving Edge-cloud Video Foundation Model Inference with Privacy Protectability",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:24:43Z",
+      "content_hash": "sha256:2aefb05e380c48b9f69bbcf7de110304cbbb77bd56d94436f64ba5d0eaf4c31a",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

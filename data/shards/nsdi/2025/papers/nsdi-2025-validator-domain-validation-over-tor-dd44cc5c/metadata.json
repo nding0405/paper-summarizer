@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2025-validator-domain-validation-over-tor-dd44cc5c",
   "title": "ValidaTor: Domain Validation over Tor",
+  "abstract": "Domain Validation (DV) is the primary method used by Certificate Authorities (CAs) to confirm administrative control over a domain before issuing digital certificates. Despite its widespread use, DV is vulnerable to various attacks, prompting the adoption of multiple vantage points to enhance security, such as the state of the art DV mechanism supported by Let’s Encrypt. However, even distributed static vantage points remain susceptible to targeted attacks. In this paper we introduce ValidaTor, an HTTP-based domain validation system that leverages the Tor network to create a distributed and unpredictable set of validators. By utilizing Tor’s exit nodes, ValidaTor significantly increases the pool of available validators, providing high path diversity and resilience against strong adversaries. Our empirical evaluations demonstrate that ValidaTor can achieve the validation throughput of a commercial CA and has the potential to scale to a validation volume comparable to Let’s Encrypt, while using minimal dedicated infrastructure and only a small fraction (~0.1%) of Tor’s available bandwidth. While unpredictable selection of validators makes ValidaTor fully resistant to targeted attacks on validators, we also show the use of Tor nodes improves path diversity and thereby the resilience of DV to subversion by well-positioned ASes, reducing the number of Autonomous Systems (ASes) capable of issuing fraudulent certificates by up to 27% compared to Let’s Encrypt. Lastly, we show that the chance of subversion by malicious, colluding exit nodes is negligible (≤ 1% even with a quarter of existing exit nodes). We make the code of ValidaTor as well as the datasets and measurements publicly available for use, reproduction, and future research.",
+  "abstract_source_id": "src-abstract-nsdi-2025-dd44cc5c",
   "venue": "nsdi",
   "year": 2025,
   "track_or_session": "Security",
@@ -119,6 +121,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2025-dd44cc5c",
+      "url": "https://www.usenix.org/conference/nsdi25/presentation/friess",
+      "kind": "paper-page",
+      "title": "ValidaTor: Domain Validation over Tor",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:04:43Z",
+      "content_hash": "sha256:94bcb8e888881cd1cf582dd91838351b4d5af326f7fc45c714c490462f8a5c79",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

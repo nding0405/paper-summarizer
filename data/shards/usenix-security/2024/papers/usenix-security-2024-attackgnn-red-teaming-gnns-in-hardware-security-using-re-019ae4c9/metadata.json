@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2024-attackgnn-red-teaming-gnns-in-hardware-security-using-re-019ae4c9",
   "title": "AttackGNN: Red-Teaming GNNs in Hardware Security Using Reinforcement Learning",
+  "abstract": "Machine learning has shown great promise in addressing several critical hardware security problems. In particular, researchers have developed novel graph neural network (GNN)-based techniques for detecting intellectual property (IP) piracy, detecting hardware Trojans (HTs), and reverse engineering circuits, to name a few. These techniques have demonstrated outstanding accuracy and have received much attention in the community. However, since these techniques are used for security applications, it is imperative to evaluate them thoroughly and ensure they are robust and do not compromise the security of integrated circuits.\n\nIn this work, we propose AttackGNN , the first red-team attack on GNN-based techniques in hardware security. To this end, we devise a novel reinforcement learning (RL) agent that generates adversarial examples, i.e., circuits, against the GNN-based techniques. We overcome three challenges related to effectiveness, scalability, and generality to devise a potent RL agent. We target five GNN-based techniques for four crucial classes of problems in hardware security: IP piracy, detecting/localizing HTs, reverse engineering, and hardware obfuscation. Through our approach, we craft circuits that fool all GNNs considered in this work. For instance, to evade IP piracy detection, we generate adversarial pirated circuits that fool the GNN-based defense into classifying our crafted circuits as not pirated. For attacking HT localization GNN, our attack generates HT-infested circuits that fool the defense on all tested circuits. We obtain a similar 100% success rate against GNNs for all classes of problems.",
+  "abstract_source_id": "src-abstract-usenix-security-2024-019ae4c9",
   "venue": "usenix-security",
   "year": 2024,
   "track_or_session": "Hardware Security I: Attacks and Defense",
@@ -133,6 +135,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2024-019ae4c9",
+      "url": "https://www.usenix.org/conference/usenixsecurity24/presentation/gohil",
+      "kind": "paper-page",
+      "title": "AttackGNN: Red-Teaming GNNs in Hardware Security Using Reinforcement Learning",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:14:13Z",
+      "content_hash": "sha256:7e38db4f06e088ae9981a7bfed0c3f5af09aad5d340d5cd5089c09313ecef77a",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

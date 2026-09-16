@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sigcomm-2025-mixnet-a-runtime-reconfigurable-optical-electrical-fabri-241981c4",
   "title": "MixNet: A Runtime Reconfigurable Optical-Electrical Fabric for Distributed Mixture-of-Experts Training",
+  "abstract": "Mixture-of-Expert (MoE) models outperform conventional models by selectively activating different subnets, named experts, on a per-token basis. This gated computation generates dynamic communications that cannot be determined beforehand, challenging the existing GPU interconnects that remain static during distributed training. In this paper, we advocate for a first-of-its-kind system, called MixNet, that unlocks topology reconfiguration during distributed MoE training. Towards this vision, we first perform a production measurement study and show that the MoE dynamic communication pattern has strong locality, alleviating the need for global reconfiguration. Based on this, we design and implement a regionally reconfigurable high-bandwidth domain that augments existing electrical interconnects using optical circuit switching (OCS), achieving scalability while maintaining rapid adaptability. We build a fully functional MixNet prototype with commodity hardware and a customized collective communication runtime. Our prototype trains state-of-the-art MoE models with in-training topology reconfiguration across 32 A100 GPUs. Large-scale packet-level simulations show that MixNet achieves performance comparable to a non-blocking fat-tree fabric while boosting the networking cost efficiency (e.g., performance per dollar) of four representative MoE models by 1.2×–1.5× and 1.9×–2.3× at 100 Gbps and 400 Gbps link bandwidths, respectively.",
+  "abstract_source_id": "src-abstract-sigcomm-2025-241981c4",
   "venue": "sigcomm",
   "year": 2025,
   "track_or_session": "NetAI",
@@ -402,6 +404,19 @@
         "DOI and ACM publisher landing/PDF links",
         "publisher-deposited ORCIDs when available",
         "proceedings page range and online publication date"
+      ]
+    },
+    {
+      "id": "src-abstract-sigcomm-2025-241981c4",
+      "url": "https://api.openalex.org/works/doi:10.1145/3718958.3750465?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "MixNet: A Runtime Reconfigurable Optical-Electrical Fabric for Distributed Mixture-of-Experts Training",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:23:28Z",
+      "content_hash": "sha256:b49e6c39eb25d713901705f3b3ae5143f6d594bd5e5df44ff86ab0128be3b6e8",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

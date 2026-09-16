@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2024-deeptype-refining-indirect-call-targets-with-strong-mult-1d96f8b9",
   "title": "DEEPTYPE: Refining Indirect Call Targets with Strong Multi-layer Type Analysis",
+  "abstract": "Indirect calls, while facilitating dynamic execution characteristics in C and C++ programs, impose challenges on precise construction of the control-flow graphs (CFG). This hinders effective program analyses for bug detection (e.g., fuzzing) and program protection (e.g., control-flow integrity). Solutions using data-tracking and type-based analysis are proposed for identifying indirect call targets, but are either time-consuming or imprecise for obtaining the analysis results. Multi-layer type analysis (MLTA), as the state-of-the-art approach, upgrades type-based analysis by leveraging multi-layer type hierarchy, but their solution to dealing with the information flow between multi-layer types introduces false positives. In this paper, we propose strong multi-layer type analysis (SMLTA) and implement the prototype, DEEPTYPE, to further refine indirect call targets. It adopts a robust solution to record and retrieve type information, avoiding information loss and enhancing accuracy. We evaluate DEEPTYPE on Linux kernel, 5 web servers, and 14 user applications. Compared to TypeDive, the prototype of MLTA, DEEPTYPE is able to narrow down the scope of indirect call targets by 43.11% on average across most benchmarks and reduce runtime overhead by 5.45% to 72.95%, which demonstrates the effectiveness, efficiency and applicability of SMLTA.",
+  "abstract_source_id": "src-abstract-usenix-security-2024-1d96f8b9",
   "venue": "usenix-security",
   "year": 2024,
   "track_or_session": "Security Analysis IV: OS",
@@ -112,6 +114,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2024-1d96f8b9",
+      "url": "https://www.usenix.org/conference/usenixsecurity24/presentation/xia",
+      "kind": "paper-page",
+      "title": "DEEPTYPE: Refining Indirect Call Targets with Strong Multi-layer Type Analysis",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:14:41Z",
+      "content_hash": "sha256:7864aefb5d2eac294f1a74675f3c37edcc9af6af1edfa77f8b11ed12245c28a9",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

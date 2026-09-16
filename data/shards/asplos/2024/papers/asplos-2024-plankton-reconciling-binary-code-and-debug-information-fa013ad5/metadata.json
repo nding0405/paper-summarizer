@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2024-plankton-reconciling-binary-code-and-debug-information-fa013ad5",
   "title": "Plankton: Reconciling Binary Code and Debug Information",
+  "abstract": "Static analysis has been widely used in large-scale software defect detection. Despite recent advances, it is still not practical enough because it requires compilation interference to obtain analyzable code. Directly translating the binary code using a binary lifter mitigates this practicality problem by being non-intrusive to the building system. However, existing binary lifters cannot produce precise enough code for rigorous static analysis even in the presence of the debug information. In this paper, we propose a new binary lifter Plankton together with two new algorithms that can fill the gaps between the low- and high-level code to produce high-quality LLVM intermediate representations (IRs) from binaries with debug information, enabling full-fledged static analysis with minor precision loss. Plankton shows comparable static analysis results with traditional compilation interference solutions, producing only 17.2% differences while being much more practical, outperforming existing lifters by 76.9% on average.",
+  "abstract_source_id": "src-abstract-asplos-2024-fa013ad5",
   "venue": "asplos",
   "year": 2024,
   "track_or_session": "Session 2A: Binary Analysis",
@@ -180,6 +182,19 @@
       "official": false,
       "supports": [
         "Indexed alternate-version and institutional-copy links; not used as the authoritative relevance source."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2024-fa013ad5",
+      "url": "https://api.openalex.org/works/doi:10.1145/3620665.3640382?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Plankton: Reconciling Binary Code and Debug Information",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:00:26Z",
+      "content_hash": "sha256:e934c5374cf593cc03c910bc6ea294fbd79b14e38c615d9fc1688da0bcf65335",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

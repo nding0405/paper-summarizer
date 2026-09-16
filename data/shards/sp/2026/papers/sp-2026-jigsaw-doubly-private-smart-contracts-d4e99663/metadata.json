@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2026-jigsaw-doubly-private-smart-contracts-d4e99663",
   "title": "Jigsaw: Doubly Private Smart Contracts",
+  "abstract": "Privacy is a growing concern for smart contracts on public ledgers. In recent years, we have seen several practical systems for privacy-preserving smart contracts, but they only target privacy of on-chain data, and rely on trusted off-chain parties with user data – for instance, a decentralized finance application (e.g. exchange) relies on an off-chain matching engine to process client orders that get settled on-chain, where privacy only applies to the on-chain data. Privacy conscious users demand stronger notions of privacy, for their identity and their data, from all other parties in the ecosystem. We propose a novel framework for smart contracts that ensures doubly private execution, addressing both on-chain and off-chain privacy requirements. In our framework, clients submit their requests in a privacy-preserving manner to a group of (potentially mutually untrusting) servers. These servers collaboratively match client requests without learning any information about the data or identities of the clients. We then present Jigsaw, an efficient cryptographic realization of our proposed framework. Jigsaw builds on the ZEXE architecture (Bowe et al., S&P 2020), which leverages zkSNARKs, and extends Collaborative zkSNARKs (Ozdemir and Boneh, USENIX 2022) to enable proof generation by a group of servers. In Jigsaw, we introduce a novel collaborative zkSNARK construction that achieves low latency and reduced proving time, and showcase these advantages over sample applications ranging from trading in a decentralized exchange to auctions and voting. Our experiments demonstrate that Jigsaw is roughly 40-50 x faster in proof generation and uses orders-of-magnitude less bandwidth than the naive approach of using off-the-shelf Collaborative zkSNARKs.",
+  "abstract_source_id": "src-abstract-sp-2026-d4e99663",
   "venue": "sp",
   "year": 2026,
   "track_or_session": "Cycle 1",
@@ -133,6 +135,19 @@
       "official": true,
       "supports": [
         "DOI, published-order authors and affiliations, abstract, publication date, page span, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2026-d4e99663",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Jigsaw: Doubly Private Smart Contracts",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:58:02Z",
+      "content_hash": "sha256:4204efad9387253e2c70bd18217fac7c5220b9cd43ecd6179fdc27c5a043343e",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

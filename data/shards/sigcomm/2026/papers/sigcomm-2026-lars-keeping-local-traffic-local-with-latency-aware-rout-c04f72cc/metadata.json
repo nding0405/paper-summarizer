@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sigcomm-2026-lars-keeping-local-traffic-local-with-latency-aware-rout-c04f72cc",
   "title": "LARS: Keeping Local Traffic Local with Latency-Aware Route Servers at IXPs",
+  "abstract": "Internet Exchange Points facilitate traffic exchange through Route Servers that use BGP for path selection without considering latency. This paper presents LARS, the first system to enable latency-aware path optimization at IXP route servers. It requires no changes to BGP and no bilateral coordination among members, thus directly enabling latency-aware routing for all IXP members. LARS continuously probes the route-server RIB, annotates routes with RTT-derived BGP communities, and enables members to (i) enforce a configurable latency radius that suppresses high-latency routes and (ii) prefer lower-latency alternatives when multiple paths exist. We evaluate LARS at a very large IXP using a production-level prototype that demonstrates stable latency estimation, effective tail-latency control via selective redistribution, and potential to optimize BGP best paths.",
+  "abstract_source_id": "src-abstract-c04f72cc",
   "venue": "sigcomm",
   "year": 2026,
   "track_or_session": "Research Session 10: Internet Measurement & Routing — Research Paper",
@@ -191,6 +193,19 @@
       "official": true,
       "supports": [
         "official main-paper scope and track definitions"
+      ]
+    },
+    {
+      "id": "src-abstract-c04f72cc",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/search/match?query=LARS%3A%20Keeping%20Local%20Traffic%20Local%20with%20Latency-Aware%20Route%20Servers%20at%20IXPs&fields=title,abstract",
+      "kind": "semantic-scholar",
+      "title": "LARS: Keeping Local Traffic Local with Latency-Aware Route Servers at IXPs",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T23:02:42Z",
+      "content_hash": "sha256:a2137c6490c37cc7362cd6879532b7f25b7c3d32dd7086943de9d75867a9e075",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

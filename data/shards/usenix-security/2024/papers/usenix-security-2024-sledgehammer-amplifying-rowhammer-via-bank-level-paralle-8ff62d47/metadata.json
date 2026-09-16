@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2024-sledgehammer-amplifying-rowhammer-via-bank-level-paralle-8ff62d47",
   "title": "SledgeHammer: Amplifying Rowhammer via Bank-level Parallelism",
+  "abstract": "Rowhammer is a hardware vulnerability in DDR memory by which attackers can perform specific access patterns in their own memory to flip bits in adjacent, uncontrolled rows with- out accessing them. Since its discovery by Kim et. al. (ISCA 2014), Rowhammer attacks have emerged as an alarming threat to numerous security mechanisms.\n\nIn this paper, we show that Rowhammer attacks can in fact be more effective when combined with bank-level parallelism, a technique in which the attacker hammers multiple memory banks simultaneously. This allows us to increase the amount of Rowhammer-induced flips 7-fold and significantly speed up prior Rowhammer attacks relying on native code execution.\n\nFurthermore, we tackle the task of mounting browser-based Rowhammer attacks. Here, we develop a self-evicting ver- sion of multi-bank hammering, allowing us to replace clflush instructions with cache evictions. We then develop a novel method for detecting contiguous physical addresses using memory access timings, thereby obviating the need for trans- parent huge pages. Finally, by combining both techniques, we are the first, to our knowledge, to obtain Rowhammer bit flips on DDR4 memory from the Chrome and Firefox browsers running on default Linux configurations, without enabling transparent huge pages.",
+  "abstract_source_id": "src-abstract-usenix-security-2024-8ff62d47",
   "venue": "usenix-security",
   "year": 2024,
   "track_or_session": "Side Channel II: RowHammer",
@@ -217,6 +219,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2024-8ff62d47",
+      "url": "https://www.usenix.org/conference/usenixsecurity24/presentation/kang",
+      "kind": "paper-page",
+      "title": "SledgeHammer: Amplifying Rowhammer via Bank-level Parallelism",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:17:14Z",
+      "content_hash": "sha256:a063bcb44864bb3c33986415d4516cbbee57e8497424532b9710c68cb478bf92",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2023-kextfuzz-fuzzing-macos-kernel-extensions-on-apple-silico-c4054586",
   "title": "KextFuzz: Fuzzing macOS Kernel EXTensions on Apple Silicon via Exploiting Mitigations",
+  "abstract": "macOS drivers, i.e., Kernel EXTensions (kext), are attractive attack targets for adversaries. However, automatically discovering vulnerabilities in kexts is extremely challenging because kexts are mostly closed-source, and the latest macOS running on customized Apple Silicon has limited tool-chain support. Most existing static analysis and dynamic testing solutions cannot be applied to the latest macOS. In this paper, we present the first smart fuzzing solution KextFuzz to detect bugs in the latest macOS kexts running on Apple Silicon. Unlike existing driver fuzzing solutions, KextFuzz does not require source code, execution traces, hypervisors, or hardware features (e.g., coverage tracing) and thus is universal and practical. We note that macOS has deployed many mitigations, including pointer authentication, code signature, and userspace kernel layer wrappers, to thwart potential attacks. These mitigations can provide extra knowledge and resources for us to enable kernel fuzzing. KextFuzz exploits these mitigation schemes to instrument the binary for coverage tracking, test privileged kext code that is guarded and infrequently accessed, and infer the type and semantic information of the kext interfaces. KextFuzz has found 48 unique kernel bugs in the macOS kexts. Some of them could cause severe consequences like non-recoverable denial-of-service or damages.",
+  "abstract_source_id": "src-abstract-usenix-security-2023-c4054586",
   "venue": "usenix-security",
   "year": 2023,
   "track_or_session": "Kernel Analysis",
@@ -175,6 +177,19 @@
       "official": true,
       "supports": [
         "authors, affiliations when published, abstract, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2023-c4054586",
+      "url": "https://www.usenix.org/conference/usenixsecurity23/presentation/yin",
+      "kind": "paper-page",
+      "title": "KextFuzz: Fuzzing macOS Kernel EXTensions on Apple Silicon via Exploiting Mitigations",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:11:48Z",
+      "content_hash": "sha256:56eb4a6a82716e54d996cd4deb3bf0f102f3b4d6ccf6fb2423bab20265705ee8",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

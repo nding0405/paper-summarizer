@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "eurosys-2026-patternsketch-general-and-runtime-reconfigurable-time-se-173c3fd6",
   "title": "PatternSketch: General and Runtime Reconfigurable Time-series Network Traffic Pattern Detection",
+  "abstract": "Network traffic measurement is indispensable for many network management tasks. Time-series traffic pattern detection extends the benefits of traditional single-period flow measurement by revealing dynamic flow behaviors, but also yields higher complexity. When multiple patterns must be monitored simultaneously, building a separate sketch for each pattern is prohibitive since programmable switches typically allow only one resource-intensive sketch. In this paper, we propose PatternSketch, which enables general and dynamically reconfigurable time-series pattern detection within a single sketch. PatternSketch unifies the detection of diverse patterns with a Pattern Automaton and decomposes the pattern detection process into two phases in the data plane, while allowing operators to reconfigure the active set of monitoring patterns at runtime without taking the switch offline. Our implementation on an Intel Tofino switch demonstrates that PatternSketch can operate at line rate, detecting multiple patterns concurrently while using only tens of kilobytes of SRAM. This significantly reduces both computational and storage resource consumption compared to deploying multiple, pattern-specific sketches. Evaluations on four real-world datasets show that the hardware version of PatternSketch maintains over 90% F1 scores while simultaneously detecting six time-series patterns (three representative and three newly proposed) with as little as 200KB of memory.",
+  "abstract_source_id": "src-abstract-eurosys-2026-173c3fd6",
   "venue": "eurosys",
   "year": 2026,
   "track_or_session": null,
@@ -222,6 +224,19 @@
       "official": false,
       "supports": [
         "Publisher-deposited proceedings identity and print publication date."
+      ]
+    },
+    {
+      "id": "src-abstract-eurosys-2026-173c3fd6",
+      "url": "https://api.openalex.org/works/doi:10.1145/3767295.3769337?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "PatternSketch: General and Runtime Reconfigurable Time-series Network Traffic Pattern Detection",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:21:22Z",
+      "content_hash": "sha256:59015631cc3dca60ca4002b9c5862fee8e1fea6f821610c8afa0e4e52397205a",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

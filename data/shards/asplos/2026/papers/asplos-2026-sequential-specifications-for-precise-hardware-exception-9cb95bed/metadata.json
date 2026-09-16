@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2026-sequential-specifications-for-precise-hardware-exception-9cb95bed",
   "title": "Sequential Specifications for Precise Hardware Exceptions",
+  "abstract": "Modern processors are difficult to implement because pipelining makes them inherently parallel. A promising new approach, demonstrated in the PDL hardware description language, is to compile a high-level sequential specification into an efficient pipelined implementation. This high-level approach makes design-space exploration and reasoning easier. However, previous work on this approach does not support features needed for operating systems: hardware exceptions like traps and interrupts. The inherently non-sequential nature of these features makes it challenging to give them a sequential specification. They often require flushing the pipeline, writing to control state registers (CSRs), or resetting pipeline state. In this work, we develop XPDL, which extends PDL to support hardware exceptions. With this extension, logic for precise exceptions can be synthesized from a high-level specification, while maintaining the appealing properties of PDL. Using RISC-V processor designs, we demonstrate that XPDL flexibly supports exceptions with no impact on CPI (Cycles per Instructions), and minor overhead over frequency and area, and argue that the implementation preserves the one-instruction-at-a-time semantics of PDL.",
+  "abstract_source_id": "src-abstract-asplos-2026-9cb95bed",
   "venue": "asplos",
   "year": 2026,
   "track_or_session": "Session 6B: Hardware Design Languages",
@@ -146,6 +148,19 @@
       "official": false,
       "supports": [
         "Indexed abstract used for strict relevance classification and indexed arXiv identifier where available."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2026-9cb95bed",
+      "url": "https://api.openalex.org/works/doi:10.1145/3760250.3762233?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Sequential Specifications for Precise Hardware Exceptions",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:06:19Z",
+      "content_hash": "sha256:c7eba5623248afef82302c967e2c58b867c6c23078f2014afa5123c521b7e3e6",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

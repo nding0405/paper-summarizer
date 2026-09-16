@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sosp-2024-trenv-transparently-share-serverless-execution-environme-61f5acc5",
   "title": "TrEnv: Transparently Share Serverless Execution Environments Across Different Functions and Nodes",
+  "abstract": "Serverless computing is renowned for its computation elasticity, yet its full potential is often constrained by the requirement for functions to operate within local and dedicated background environments, resulting in limited memory elasticity. To address this limitation, this paper introduces TrEnv, a co-designed integration of the serverless platform with the operating system and CXL/RDMA-based remote memory pools in two key areas. Firstly, TrEnv introduces repurposable sandboxes, which can be shared across different functions and hence, substantially decrease the overhead associated with creating isolation sandboxes. Secondly, it augments the OS with \"memory templates\" that enable rapid restoration of function states stored on remote memory. These innovations allow TrEnv to facilitate rapid transitions between instances of different functions and enable memory sharing across multiple nodes. Our evaluations using a variety of representative and real-world workloads demonstrate that TrEnv can initiate a container within 10 milliseconds, achieving up to a 7× speedup in P99 end-to-end latency and reducing memory usage by 48% on average compared to state-of-the-art on-demand restoring systems.",
+  "abstract_source_id": "src-abstract-sosp-2024-61f5acc5",
   "venue": "sosp",
   "year": 2024,
   "track_or_session": "Session 6: Serverless 14:00 - 15:30 Session Chair: Vijay Chidambaram",
@@ -356,6 +358,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-sosp-2024-61f5acc5",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "TrEnv: Transparently Share Serverless Execution Environments Across Different Functions and Nodes",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:19Z",
+      "content_hash": "sha256:b613162f9e7d53fac5fe410aff94d06ac71f23c6c31e2e9cc362b51e87d1bb79",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

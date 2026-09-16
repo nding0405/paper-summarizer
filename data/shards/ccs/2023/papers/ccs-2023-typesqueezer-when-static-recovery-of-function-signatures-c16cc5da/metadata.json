@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2023-typesqueezer-when-static-recovery-of-function-signatures-c16cc5da",
   "title": "TypeSqueezer: When Static Recovery of Function Signatures for Binary Executables Meets Dynamic Analysis",
+  "abstract": "Control-Flow Integrity (CFI) is considered a promising solution in thwarting advanced code-reuse attacks. While the problem of backward-edge protection in CFI is nearly closed, effective forward-edge protection is still a major challenge. The keystone of protecting the forward edge is to resolve indirect call targets, which although can be done quite accurately using type-based solutions given the program source code, it faces difficulties when carried out at the binary level. Since the actual type information is unavailable in COTS binaries, type-based indirect call target matching typically resorts to approximate function signatures inferred using the arity and argument width of indirect callsites and calltargets. Doing so with static analysis, therefore, forces the existing solutions to assume the arity/width boundaries in a too-permissive way to defeat sophisticated attacks.",
+  "abstract_source_id": "src-abstract-ccs-2023-c16cc5da",
   "venue": "ccs",
   "year": 2023,
   "track_or_session": "Program Analysis & Instrumentation (Software Security)",
@@ -214,6 +216,19 @@
       "official": false,
       "supports": [
         "published title, author order, and page span"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2023-c16cc5da",
+      "url": "https://api.openalex.org/works/doi:10.1145/3576915.3623214?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "TypeSqueezer: When Static Recovery of Function Signatures for Binary Executables Meets Dynamic Analysis",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:08:33Z",
+      "content_hash": "sha256:40fc5ef3765f0833104183376f78829a4aeadf4028a30c6e5652d3cff41a0890",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

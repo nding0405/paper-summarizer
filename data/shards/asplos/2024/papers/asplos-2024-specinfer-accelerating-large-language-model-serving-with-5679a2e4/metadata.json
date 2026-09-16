@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2024-specinfer-accelerating-large-language-model-serving-with-5679a2e4",
   "title": "SpecInfer: Accelerating Large Language Model Serving with Tree-based Speculative Inference and Verification",
+  "abstract": "This paper introduces SpecInfer, a system that accelerates generative large language model (LLM) serving with tree-based speculative inference and verification. The key idea behind SpecInfer is leveraging small speculative models to predict the LLM's outputs; the predictions are organized as a token tree, whose nodes each represent a candidate token sequence. The correctness of all candidate token sequences represented by a token tree is verified against the LLM in parallel using a novel tree-based parallel decoding mechanism. SpecInfer uses an LLM as a token tree verifier instead of an incremental decoder, which significantly reduces the end-to-end latency and computational requirement for serving generative LLMs while provably preserving model quality. Our evaluation shows that SpecInfer outperforms existing LLM serving systems by 1.5-2.8× for distributed LLM inference and by 2.6-3.5× for offloading-based LLM inference, while preserving the same generative performance. SpecInfer is publicly available at https://github.com/flexflow/FlexFlow/",
+  "abstract_source_id": "src-abstract-asplos-2024-5679a2e4",
   "venue": "asplos",
   "year": 2024,
   "track_or_session": "Session 2D: ML Inference Systems",
@@ -409,6 +411,19 @@
       "official": true,
       "supports": [
         "Author-deposited archival artifact associated with the conference paper."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2024-5679a2e4",
+      "url": "https://api.openalex.org/works/doi:10.1145/3620666.3651335?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "SpecInfer: Accelerating Large Language Model Serving with Tree-based Speculative Inference and Verification",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:00:33Z",
+      "content_hash": "sha256:4458af08ec4b30ec02d7d52675865411e5aef880f33cd3f2e8f04abd6f28b409",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

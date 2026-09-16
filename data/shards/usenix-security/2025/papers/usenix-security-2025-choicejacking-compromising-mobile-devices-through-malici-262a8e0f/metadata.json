@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-choicejacking-compromising-mobile-devices-through-malici-262a8e0f",
   "title": "ChoiceJacking: Compromising Mobile Devices through Malicious Chargers like a Decade ago",
+  "abstract": "JuiceJacking is an attack in which malicious chargers compromise connected mobile devices. Shortly after the attack was discovered about a decade ago, mobile OSs introduced user prompts for confirming data connections from a USB host to a mobile device. Since the introduction of this countermeasure, no new USB-based attacks with comparable impact have been found.\n\nIn this paper, we present a novel family of USB-based attacks on mobile devices, ChoiceJacking, which is the first to bypass existing JuiceJacking mitigations. We observe that these mitigations assume that an attacker cannot inject input events while establishing a data connection. However, we show that this assumption does not hold in practice. We present a platform-agnostic attack principle and three concrete attack techniques for Android and iOS that allow a malicious charger to autonomously spoof user input to enable its own data connection. Our evaluation using a custom cheap malicious charger design reveals an alarming state of USB security on mobile platforms. Despite vendor customizations in USB stacks, ChoiceJacking attacks gain access to sensitive user files (pictures, documents, app data) on all tested devices from 8 vendors including the top 6 by market share. For two vendors, our attacks allow file extraction from locked devices. For stealthily performing attacks that require an unlocked device, we use a power line side-channel to detect suitable moments, i.e., when the user does not notice visual artifacts.\n\nWe responsibly disclosed all findings to affected vendors. All but one (including Google, Samsung, Xiaomi, and Apple) acknowledged our attacks and are in the process of integrating mitigations.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-262a8e0f",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "System Security 3: Mobile Platforms",
@@ -133,6 +135,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-262a8e0f",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/draschbacher",
+      "kind": "paper-page",
+      "title": "ChoiceJacking: Compromising Mobile Devices through Malicious Chargers like a Decade ago",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:19:06Z",
+      "content_hash": "sha256:370e5c07c73860f6dc19d4bd229cbad221b22ef3c863d5a1cae92779d6002bcd",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

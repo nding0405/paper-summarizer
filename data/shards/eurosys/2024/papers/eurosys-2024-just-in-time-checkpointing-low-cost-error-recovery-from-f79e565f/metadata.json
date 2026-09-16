@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "eurosys-2024-just-in-time-checkpointing-low-cost-error-recovery-from-f79e565f",
   "title": "Just-In-Time Checkpointing: Low Cost Error Recovery from Deep Learning Training Failures",
+  "abstract": "Deep Learning training jobs process large amounts of training data using many GPU devices, often running for weeks or months. When hardware or software failures happen, these jobs need to restart, losing the memory state for the Deep Neural Network (DNN) model trained so far, unless checkpointing mechanisms are used to save training state periodically. However, for large models, periodic checkpointing incurs significant steady state overhead, and during recovery, a large number of GPUs need to redo work since the last checkpoint. This is especially problematic when failures are frequent for large DNN (such as Large Language Model) training jobs using many GPUs. In this paper, we present a novel approach of just-in-time checkpointing when failures happen, which enables recovery from failures with just a single minibatch iteration of work replayed by all GPUs. This reduces the cost of error recovery from several minutes to a few seconds per GPU, with nearly zero steady state overhead. This also avoids the guesswork of choosing a checkpointing frequency since failure rates usually have high variance. We discuss how just-in-time checkpointing can be enabled in training code, as well as design of key mechanisms for transparent just-in-time checkpointing without user code change. We analyze the wasted GPU work of just-in-time checkpointing and show that it is less than periodic checkpointing for large numbers of GPUs. We present results from our implementation in modern AI cluster infrastructure.",
+  "abstract_source_id": "src-abstract-eurosys-2024-f79e565f",
   "venue": "eurosys",
   "year": 2024,
   "track_or_session": null,
@@ -230,6 +232,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-eurosys-2024-f79e565f",
+      "url": "https://api.openalex.org/works/doi:10.1145/3627703.3650085?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Just-In-Time Checkpointing: Low Cost Error Recovery from Deep Learning Training Failures",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:18:51Z",
+      "content_hash": "sha256:39437fc58c8b53ee71e39831dbfa020368915cb54195115410779159a7efdedd",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

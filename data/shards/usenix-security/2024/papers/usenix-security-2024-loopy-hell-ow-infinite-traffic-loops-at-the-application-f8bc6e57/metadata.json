@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2024-loopy-hell-ow-infinite-traffic-loops-at-the-application-f8bc6e57",
   "title": "Loopy Hell(ow): Inﬁnite Traffic Loops at the Application Layer",
+  "abstract": "Denial-of-Service (DoS) attacks have long been a persistent threat to network infrastructures. Existing attack primitives require attackers to continuously send traffic, such as in SYN floods, amplification attacks, or application-layer DoS. In contrast, we study the threat of application-layer traffic loops, which are an almost cost-free attack primitive alternative. Such loops exist, e.g., if two servers consider messages sent to each other as malformed and respond with errors that again trigger error messages. Attackers can send a single IP-spoofed loop trigger packet to initiate an infinite loop among two servers. But despite the severity of traffic loops, to the best of our knowledge, they have never been studied in greater detail.\n\nIn this paper, we thus investigate the threat of application-layer traffic loops. To this end, we propose a systematic approach to identify loops among real servers. Our core idea is to learn the response functions of all servers of a given application-layer protocol, encode this knowledge into a loop graph, and finally, traverse the graph to spot looping server pairs. Using the proposed method, we examined traffic loops among servers running both popular (DNS, NTP, and TFTP) and legacy (Daytime, Time, Active Users, Chargen, QOTD, and Echo) UDP protocols and confirmed the prevalence of traffic loops. In total, we identified approximately 296k servers in IPv4 vulnerable to traffic loops, providing attackers the opportunity to abuse billions of loop pairs.",
+  "abstract_source_id": "src-abstract-usenix-security-2024-f8bc6e57",
   "venue": "usenix-security",
   "year": 2024,
   "track_or_session": "Network Security I: DDoS",
@@ -112,6 +114,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2024-f8bc6e57",
+      "url": "https://www.usenix.org/conference/usenixsecurity24/presentation/pan-yepeng",
+      "kind": "paper-page",
+      "title": "Loopy Hell(ow): Inﬁnite Traffic Loops at the Application Layer",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:16:06Z",
+      "content_hash": "sha256:578a01bc1a9db7395416d71489f981711b8ad8f1537473e7955f1dc70e22a69d",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

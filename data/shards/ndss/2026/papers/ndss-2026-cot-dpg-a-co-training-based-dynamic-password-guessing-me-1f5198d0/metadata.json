@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2026-cot-dpg-a-co-training-based-dynamic-password-guessing-me-1f5198d0",
   "title": "CoT-DPG: A Co-Training based Dynamic Password Guessing Method",
+  "abstract": "Password is still the primary authentication method, and the security community researches password guessing to improve password security. Dynamic password guessing continuously collects target's information and dynamically fits the distribution during the guessing process, thus expanding the threat. Existing methods are mainly of two types: dynamic adjustment of password policies and dynamic generation based on generative models. However, these methods fit the target distribution from a single perspective, ignoring the complementary effects of information between different dimensions. Dynamic password guessing performance will be greatly improved if information from multiple dimensions is well utilized, but how to effectively fuse multidimensional information is a challenge.\n\nMotivated by this, we propose CoT-DPG, a new dynamic password guessing framework that allows multiple guessing models to learn collaboratively and complement each other's knowledge. This is the first application of the co-training approach in multi-view learning to password guessing. Firstly, at the feature level, we dynamically update the neural network parameters and fit the target distribution based on incremental training. Secondly, at the character level, we design a policy distribution optimization approach to alleviate the blindness of policy selection. Thirdly, we use the co-training approach for complementary learning, iterative training, and password generation in multiple dimensions. Finally, the experiments demonstrate the effectiveness of the proposed framework, with the absolute improvement in cracking rate of 6.4% to 26.7% over the state-of-the-art method on eight real-world password datasets.",
+  "abstract_source_id": "src-abstract-ndss-2026-1f5198d0",
   "venue": "ndss",
   "year": 2026,
   "track_or_session": "Summer submission cycle",
@@ -244,6 +246,19 @@
       "official": false,
       "supports": [
         "independent proceedings identity reconciliation"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2026-1f5198d0",
+      "url": "https://www.ndss-symposium.org/ndss-paper/cot-dpg-a-co-training-based-dynamic-password-guessing-method/",
+      "kind": "paper-page",
+      "title": "CoT-DPG: A Co-Training based Dynamic Password Guessing Method",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:21:42Z",
+      "content_hash": "sha256:14bfab94c06b7c315e627f056e17600eee2e2d6485f5c81a71e25435b26553a0",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

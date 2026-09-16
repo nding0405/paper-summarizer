@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-a-crack-in-the-bark-leveraging-public-knowledge-to-remov-a4d35305",
   "title": "A Crack in the Bark: Leveraging Public Knowledge to Remove Tree-Ring Watermarks",
+  "abstract": "We present a novel attack specifically designed against Tree-Ring, a watermarking technique for diffusion models known for its high imperceptibility and robustness against removal attacks. Unlike previous removal attacks, which rely on strong assumptions about attacker capabilities, our attack only requires access to the variational autoencoder that was used to train the target diffusion model, a component that is often publicly available. By leveraging this variational autoencoder, the attacker can approximate the model's intermediate latent space, enabling more effective surrogate-based attacks. Our evaluation shows that this approach leads to a dramatic reduction in the AUC of Tree-Ring detector's ROC and PR curves, decreasing from 0.993 to 0.153 and from 0.994 to 0.385, respectively, while maintaining high image quality. Notably, our attacks outperform existing methods that assume full access to the diffusion model. These findings highlight the risk of reusing public autoencoders to train diffusion models—a threat not considered by current industry practices. Furthermore, the results suggest that the Tree-Ring detector's precision, a metric that has been overlooked by previous evaluations, falls short of the requirements for real-world deployment.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-a4d35305",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "ML and AI Security 4: Robustness",
@@ -91,6 +93,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-a4d35305",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/lin-junhua",
+      "kind": "paper-page",
+      "title": "A Crack in the Bark: Leveraging Public Knowledge to Remove Tree-Ring Watermarks",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:18:20Z",
+      "content_hash": "sha256:82e4b500147d7089a54651c8b9ff527dabbf413022ef67acce3d80b7d52388d1",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

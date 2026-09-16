@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2024-detecting-kernel-memory-bugs-through-inconsistent-memory-f46d2b6f",
   "title": "Detecting Kernel Memory Bugs through Inconsistent Memory Management Intention Inferences",
+  "abstract": "Modern operating system kernels, typically written in low-level languages such as C and C++, are tasked with managing extensive memory resources. Memory-related errors, such as memory leak and memory corruption, are common occurrences and constantly introduced. Traditional detection methods often rely on taint analysis, which suffers from scalability issue (i.e., path explosion) when applied to complex OS kernels. Recent research has pivoted towards leveraging techniques like function pairing or similarity analysis to overcome this challenge. These approaches identify memory errors by referencing code that is either frequently used or semantically similar. However, these techniques have limitations when applied to customized code, which may lack a sufficient corpus of code snippets to facilitate effective function pairing or similarity analysis. This deficiency hinders their applicability in kernel analysis where unique or proprietary code is prevalent.\n\nIn this paper, we propose a novel methodology for detecting memory bugs based on inconsistent memory management intentions (IMMI). Our insight is that many memory bugs, despite their varied manifestations, stem from a common underlying issue: the ambiguity in ownership and lifecycle management of memory objects, especially when these objects are passed across various functions. Memory bugs emerge when the mem- ory management strategies of the caller and callee functions misalign for a given memory object. IMMI aims to model and clarify these inconsistent intentions, thereby mitigating the prevalence of such bugs. Our methodology offers two primary advantages over existing techniques: (1) It utilizes a fine-grained memory management model that obviates the need for extensive data-flow tracking, and (2) it does not rely on similarity analysis or the identification of function pairs, making it highly effective in the context of customized code. To enhance the capabilities of IMMI, we have integrated a large language model (LLM) to assist in the interpretation of implicit kernel resource management mechanisms. We have implemented IMMI and evaluated it against the Linux kernel. IMMI effectively found 80 new memory bugs (including 23 memory corruptions and 57 memory leaks) with 35% false positive rate. Most of them are missed by the state-of-the-art memory bug detection tools.",
+  "abstract_source_id": "src-abstract-usenix-security-2024-f46d2b6f",
   "venue": "usenix-security",
   "year": 2024,
   "track_or_session": "System Security III: Memory I",
@@ -238,6 +240,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2024-f46d2b6f",
+      "url": "https://www.usenix.org/conference/usenixsecurity24/presentation/liu-dinghao-detecting",
+      "kind": "paper-page",
+      "title": "Detecting Kernel Memory Bugs through Inconsistent Memory Management Intention Inferences",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:14:45Z",
+      "content_hash": "sha256:14034a846bcacbcfc987847faf6caacfde5fe645bebefd345f9bf36bcf546edb",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

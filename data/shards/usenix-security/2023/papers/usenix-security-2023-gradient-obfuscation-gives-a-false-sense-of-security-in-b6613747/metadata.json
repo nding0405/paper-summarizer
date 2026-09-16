@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2023-gradient-obfuscation-gives-a-false-sense-of-security-in-b6613747",
   "title": "Gradient Obfuscation Gives a False Sense of Security in Federated Learning",
+  "abstract": "Federated learning has been proposed as a privacy-preserving machine learning framework that enables multiple clients to collaborate without sharing raw data. However, client privacy protection is not guaranteed by design in this framework. Prior work has shown that the gradient sharing strategies in federated learning can be vulnerable to data reconstruction attacks. In practice, though, clients may not transmit raw gradients considering the high communication cost or due to privacy enhancement requirements. Empirical studies have demonstrated that gradient obfuscation, including intentional obfuscation via gradient noise injection and unintentional obfuscation via gradient compression, can provide more privacy protection against reconstruction attacks. In this work, we present a new reconstruction attack framework targeting the image classification task in federated learning. We show how commonly adopted gradient postprocessing procedures, such as gradient quantization, gradient sparsification, and gradient perturbation may give a false sense of security in federated learning. Contrary to prior studies, we argue that privacy enhancement should not be treated as a byproduct of gradient compression. Additionally, we design a new method under the proposed framework to reconstruct images at the semantic level. We quantify the semantic privacy leakage and compare it with conventional image similarity scores. Our comparisons challenge the image data leakage evaluation schemes in the literature. The results emphasize the importance of revisiting and redesigning the privacy protection mechanisms for client data in existing federated learning algorithms.",
+  "abstract_source_id": "src-abstract-usenix-security-2023-b6613747",
   "venue": "usenix-security",
   "year": 2023,
   "track_or_session": "More ML Attacks and Defenses",
@@ -154,6 +156,19 @@
       "official": true,
       "supports": [
         "authors, affiliations when published, abstract, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2023-b6613747",
+      "url": "https://www.usenix.org/conference/usenixsecurity23/presentation/yue",
+      "kind": "paper-page",
+      "title": "Gradient Obfuscation Gives a False Sense of Security in Federated Learning",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:11:18Z",
+      "content_hash": "sha256:8e2919320c3b1a36ae26c3b641fd37b2cef4be00ccabbf6eee0c8cf0f69fc4ce",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

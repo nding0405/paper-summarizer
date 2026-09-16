@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2025-403-forbidden-ethically-evaluating-broken-access-control-cb3f090b",
   "title": "403 Forbidden? Ethically Evaluating Broken Access Control in the Wild",
+  "abstract": "In the context of web applications, the most prevalent vulnerability, according to the OWASP Top Ten, is broken access control. As access control (AC) is implemented on the server side, not having access to the code in live systems limits the ability of researchers to study improper AC issues in the wild. While several works have identified vulnerabilities in open-source applications deployed in researcher-controlled environments, the problem has not been studied in the wild because of ethical and legal considerations to not leak unknowing users' data. We address this gap in research and present the Variable Swapping Framework (VSF), the first ethically sound and scalable black-box framework to test for improper AC patterns in the wild. VSF's design is the result of our indepth ethical stakeholder analysis and risk minimization while maximizing benefits in vulnerability detection. At its core, it relies on two accounts per site and swaps identifiers between them to access one account's resources with the other. On 100 web apps successfully tested, we find a total of 584 potential AC-sensitive HTTP endpoints, out of which 19 (across 7 sites) are exploitable flaws, which we disclosed responsibly.",
+  "abstract_source_id": "src-abstract-sp-2025-cb3f090b",
   "venue": "sp",
   "year": 2025,
   "track_or_session": "Cycle 2",
@@ -112,6 +114,19 @@
       "official": true,
       "supports": [
         "DOI, authors, affiliations, abstract, publication date, pages, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2025-cb3f090b",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "403 Forbidden? Ethically Evaluating Broken Access Control in the Wild",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:42Z",
+      "content_hash": "sha256:d62dac834635b4cd1890a53da454ceae7aaa151189662d990ac591dfd5cb6b3e",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

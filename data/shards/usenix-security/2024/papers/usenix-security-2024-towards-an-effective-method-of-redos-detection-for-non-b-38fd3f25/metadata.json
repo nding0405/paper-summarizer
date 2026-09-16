@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2024-towards-an-effective-method-of-redos-detection-for-non-b-38fd3f25",
   "title": "Towards an Effective Method of ReDoS Detection for Non-backtracking Engines",
+  "abstract": "Regular expressions (regexes) are a fundamental concept across the fields of computer science. However, they can also induce the Regular expression Denial of Service (ReDoS) attacks, which are a class of denial of service attacks, caused by super-linear worst-case matching time. Due to the severity and prevalence of ReDoS attacks, the detection of ReDoS-vulnerable regexes in software is thus vital. Although various ReDoS detection approaches have been proposed, these methods have focused mainly on backtracking regex engines, leaving the problem of ReDoS vulnerability detection on non-backtracking regex engines largely open.\n\nTo address the above challenges, in this paper, we first systematically analyze the major causes that could contribute to ReDoS vulnerabilities on non-backtracking regex engines. We then propose a novel type of ReDoS attack strings that builds on the concept of simple strings. Next we propose EvilStrGen, a tool for generating attack strings for ReDoS-vulnerable regexes on non-backtracking engines. It is based on a novel incremental determinisation algorithm with heuristic strategies to lazily find the k-simple strings without explicit construction of finite automata. We evaluate EvilStrGen against six state-of-the-art approaches on a broad range of publicly available datasets containing 736,535 unique regexes. The results illustrate the significant efficacy of our tool. We also apply our tool to 85 intensively-tested projects, and have identified 34 unrevealed ReDoS vulnerabilities.",
+  "abstract_source_id": "src-abstract-usenix-security-2024-38fd3f25",
   "venue": "usenix-security",
   "year": 2024,
   "track_or_session": "Network Security I: DDoS",
@@ -154,6 +156,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2024-38fd3f25",
+      "url": "https://www.usenix.org/conference/usenixsecurity24/presentation/su-weihao",
+      "kind": "paper-page",
+      "title": "Towards an Effective Method of ReDoS Detection for Non-backtracking Engines",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:17:43Z",
+      "content_hash": "sha256:8655950e78085fc35d86d32741bf8d88c4b9157682df3e2dcffacd2ac7bc12e4",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

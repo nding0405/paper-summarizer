@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "eurosys-2025-superfe-a-scalable-and-flexible-feature-extractor-for-ml-687e416f",
   "title": "SuperFE: A Scalable and Flexible Feature Extractor for ML-based Traffic Analysis Applications",
+  "abstract": "The feature extractor component in today's ML-based traffic analysis applications is becoming a key bottleneck. While mainstream software-based approaches can support flexible feature extraction, they fail to scale to multi-100Gbps network speed easily. Meanwhile, hardware-accelerated solutions can scale to high throughput, but cannot flexibly support generic traffic analysis applications. In this paper, we propose SuperFE, a feature extraction framework that allows users to extract traffic features efficiently and flexibly. SuperFE leverages the capabilities of both new-generation programmable switches and SmartNICs, with three key designs. First, SuperFE presents a user-friendly and extensible interface to support customized feature extraction policies, shielding underlying hardware implementation details and complexities. Second, SuperFE introduces a high-performance multi-granularity key-vector cache system in the programmable switches to batch necessary feature metadata for massive amounts of packets. Third, SuperFE exploits the multi-core parallel and hierarchical memory of SoC-based SmartNICs to achieve efficient feature computation with diverse streaming algorithms. Evaluations using our prototype demonstrate that SuperFE enables various state-of-the-art traffic analysis applications to efficiently extract features from multi-100Gbps raw traffic without compromising detection accuracy, and achieves nearly two orders of magnitude higher throughput than the software-based counterparts.",
+  "abstract_source_id": "src-abstract-eurosys-2025-687e416f",
   "venue": "eurosys",
   "year": 2025,
   "track_or_session": "Session-6.1: ML systems - Location: Mees - Chair: Haibo Chen",
@@ -272,6 +274,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-eurosys-2025-687e416f",
+      "url": "https://api.openalex.org/works/doi:10.1145/3689031.3696081?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "SuperFE: A Scalable and Flexible Feature Extractor for ML-based Traffic Analysis Applications",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:19:36Z",
+      "content_hash": "sha256:823a6def3b457b86bf5602924bf106d3f0fa8e296938e48d9c0cf0f9134e64d7",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

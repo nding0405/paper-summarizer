@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-picasso-scaling-cheri-use-after-free-protection-to-milli-72eceee0",
   "title": "PICASSO: Scaling CHERI Use-After-Free Protection to Millions of Allocations using Colored Capabilities",
+  "abstract": "While the CHERI instruction-set architecture extensions for capabilities enable strong spatial memory safety, CHERI lacks built-in temporal safety, particularly for heap allocations. Prior attempts to augment CHERI with temporal safety fall short in terms of scalability, memory overhead, and incomplete security guarantees due to periodical sweeps of the system's memory to individually revoke stale capabilities.\n\nWe address these limitations by introducing colored capabilities that add a controlled form of indirection to CHERI's capability model. This enables provenance tracking of capabilities to their respective allocations via a hardware-managed provenance-validity table, allowing bulk retraction of dangling pointers without needing to quarantine freed memory. Colored capabilities significantly reduce the frequency of capability revocation sweeps while improving security.\n\nWe realize colored capabilities in PICASSO, an extension of the CHERI-RISC-V architecture on a speculative out-of-order FPGA softcore (CHERI-Toooba). We also integrate colored-capability support into the CheriBSD OS and CHERI-enabled Clang/LLVM toolchain. Our evaluation shows effective mitigation of use-after-free and double-free bugs across all heap-based temporal memory-safety vulnerabilities in NIST Juliet test cases, real-world CVEs, only a small performance overhead on SPEC CPU benchmarks (≈ 5% g.m.), less latency, and more consistent performance in long-running SQLite, PostgreSQL, and gRPC workloads compared to prior work.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-72eceee0",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "System Security 2",
@@ -197,6 +199,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-72eceee0",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/guelmez",
+      "kind": "paper-page",
+      "title": "PICASSO: Scaling CHERI Use-After-Free Protection to Millions of Allocations using Colored Capabilities",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:25:01Z",
+      "content_hash": "sha256:8afe46b1465cd9a987f649fdbb9d036e33981944f05669247ef4371fed2481ca",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

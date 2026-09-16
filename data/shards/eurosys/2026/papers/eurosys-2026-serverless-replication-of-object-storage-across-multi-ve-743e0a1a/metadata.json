@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "eurosys-2026-serverless-replication-of-object-storage-across-multi-ve-743e0a1a",
   "title": "Serverless Replication of Object Storage across Multi-Vendor Clouds and Regions",
+  "abstract": "Cross-cloud data replication is vital for improving reliability and performance. Since cloud providers lack native support, users turn to open-source solutions that rely on VMs. However, these are slow to provision, leading to high replication delays and costs. We propose a serverless approach for data replication using cloud functions, which cut provisioning overhead from tens of seconds to just a few. While functions offer sufficient bandwidth, they suffer from performance asymmetry across clouds and variability among instances. Our system, λReplica, mitigates this uncertainty through proactive planning and adaptive runtime adjustments. Prior to replication, λReplica formulates an SLO-compliant plan. During runtime, it employs decentralized scheduling to manage slow instances and uses changelog propagation and batching to further reduce costs. Implemented on three major clouds, λReplica outperforms existing solutions by reducing replication delay by 61%-99% with cost savings of up to three orders of magnitude. On production traces, it keeps p99.99 replication delay below 10 seconds.",
+  "abstract_source_id": "src-abstract-eurosys-2026-743e0a1a",
   "venue": "eurosys",
   "year": 2026,
   "track_or_session": null,
@@ -201,6 +203,19 @@
       "official": false,
       "supports": [
         "Publisher-deposited proceedings identity and print publication date."
+      ]
+    },
+    {
+      "id": "src-abstract-eurosys-2026-743e0a1a",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Serverless Replication of Object Storage across Multi-Vendor Clouds and Regions",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:12Z",
+      "content_hash": "sha256:aa9c23a45f6ec9973f40e6c9520c69d42bb49fc1f526891570edfdb1976cff82",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

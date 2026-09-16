@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2024-security-performance-tradeoff-in-dag-based-proof-of-work-91dbc03c",
   "title": "Security-Performance Tradeoff in DAG-based Proof-of-Work Blockchain Protocols",
+  "abstract": "Proof-of-work (PoW) blockchain protocols based on directed acyclic graphs (DAGs) have demonstrated superior transaction confirmation performance compared to their chain-based predecessors. However, it is uncertain whether their security deteriorates in high-throughput settings similar to their predecessors, because their acceptance of simultaneous blocks and complex block dependencies presents challenges for rigorous security analysis.\n\nWe address these challenges by analyzing DAG-based protocols via a congestible blockchain model (CBM), a general model that allows case-by-case upper bounds on the block propagation delay, rather than a uniform upper bound as in most previous analyses. CBM allows us to capture two key phenomena of high-throughput settings: (1) simultaneous blocks increase each other's propagation delay, and (2) a block can be processed only after receiving all the blocks it refers to. We further devise a reasonable adversarial block propagation strategy in CBM, called the late-predecessor attack, which exploits block dependencies to delay the processing of honest blocks. We then evaluate the security and performance of Prism and OHIE, two DAG-based protocols that aim to break the security-performance tradeoff, in the presence of an attacker capable of launching the late predecessor attack. Our results show that these protocols suffer from reduced security and extended latency in high-throughput settings similar to their chain-based predecessors.",
+  "abstract_source_id": "src-abstract-ndss-2024-91dbc03c",
   "venue": "ndss",
   "year": 2024,
   "track_or_session": "Fall submission cycle",
@@ -147,6 +149,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2024-91dbc03c",
+      "url": "https://www.ndss-symposium.org/ndss-paper/security-performance-tradeoff-in-dag-based-proof-of-work-blockchain-protocols/",
+      "kind": "paper-page",
+      "title": "Security-Performance Tradeoff in DAG-based Proof-of-Work Blockchain Protocols",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:18:38Z",
+      "content_hash": "sha256:9c6b4de48549e42e24471efadbbcb7cf09330b70474a11d1ca3c43950f363f66",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

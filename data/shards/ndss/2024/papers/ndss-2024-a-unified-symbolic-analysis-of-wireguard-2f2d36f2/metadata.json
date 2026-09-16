@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2024-a-unified-symbolic-analysis-of-wireguard-2f2d36f2",
   "title": "A Unified Symbolic Analysis of WireGuard",
+  "abstract": "WireGuard is a Virtual Private Network (VPN), presented at NDSS 2017, recently integrated into the Linux Kernel and paid commercial VPNs such as NordVPN, Mullvad and ProtonVPN. It proposes a different approach from other classical VPN such as IPsec or OpenVPN because it does not let configure cryptographic algorithms. The protocol inside WireGuard is a dedicated extension of IKpsk2 protocol from Noise Framework. Different analyses of WireGuard and IKpsk2 protocols have been proposed, in both the symbolic and the computational model, with or without computer-aided proof assistants. These analyses however consider different adversarial models or refer to incomplete versions of the protocols. In this work, we propose a unified formal model of WireGuard protocol in the symbolic model. Our model uses the automatic cryptographic protocol verifiers SAPIC+, ProVerif and Tamarin. We consider a complete protocol execution, including cookie messages used for resistance against denial of service attacks. We model a precise adversary that can read or set static, ephemeral or pre-shared keys, read or set ECDH pre-computations, control key distribution. Eventually, we present our results in a unified and interpretable way, allowing comparisons with previous analyses. Finally thanks to our models, we give necessary and sufficient conditions for security properties to be compromised, we confirm a flaw on the anonymity of the communications and point an implementation choice which considerably weakens its security. We propose a remediation that we prove secure using our models.",
+  "abstract_source_id": "src-abstract-ndss-2024-2f2d36f2",
   "venue": "ndss",
   "year": 2024,
   "track_or_session": "Fall submission cycle",
@@ -126,6 +128,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2024-2f2d36f2",
+      "url": "https://www.ndss-symposium.org/ndss-paper/a-unified-symbolic-analysis-of-wireguard/",
+      "kind": "paper-page",
+      "title": "A Unified Symbolic Analysis of WireGuard",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:17:36Z",
+      "content_hash": "sha256:d1a8e312cc7d8ff95da4b25971fc958cfeaca3e6bc1a144bbf0965e3ee9de537",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

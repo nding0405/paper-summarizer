@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2025-interventional-root-cause-analysis-of-failures-in-multi-8f82e723",
   "title": "Interventional Root Cause Analysis of Failures in Multi-Sensor Fusion Perception Systems",
+  "abstract": "Autonomous driving systems (ADS) heavily depend on multi-sensor fusion (MSF) perception systems to process sensor data and improve the accuracy of environmental perception. However, MSF cannot completely eliminate uncertainties, and faults in multiple modules will lead to perception failures. Thus, identifying the root causes of these perception failures is crucial to ensure the reliability of MSF perception systems. Traditional methods for identifying perception failures, such as anomaly detection and runtime monitoring, are limited because they do not account for causal relationships between faults in multiple modules and overall system failure. To overcome these limitations, we propose a novel approach called interventional root cause analysis (IRCA). IRCA leverages the directed acyclic graph (DAG) structure of MSF to develop a hierarchical structural causal model (H-SCM), which effectively addresses the complexities of causal relationships. Our approach uses a divide-and-conquer pruning algorithm to encompass multiple causal modules within a causal path and to pinpoint intervention targets. We implement IRCA and evaluate its performance using real fault scenarios and synthetic scenarios with injected faults in the ADS Autoware. The average F1-score of IRCA in real fault scenarios is over $95%$. We also illustrate the effectiveness of IRCA on an autonomous vehicle testbed equipped with Autoware, as well as a cross-platform evaluation using Apollo. The results show that IRCA can efficiently identify the causal paths leading to failures and significantly enhance the safety of ADS.",
+  "abstract_source_id": "src-abstract-ndss-2025-8f82e723",
   "venue": "ndss",
   "year": 2025,
   "track_or_session": "Fall submission cycle",
@@ -210,6 +212,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2025-8f82e723",
+      "url": "https://www.ndss-symposium.org/ndss-paper/interventional-root-cause-analysis-of-failures-in-multi-sensor-fusion-perception-systems/",
+      "kind": "paper-page",
+      "title": "Interventional Root Cause Analysis of Failures in Multi-Sensor Fusion Perception Systems",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:19:47Z",
+      "content_hash": "sha256:496a6c0722ce7f66fd59b1166f94ebedb8c799a35170de2c5479ef7d0a098cc9",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

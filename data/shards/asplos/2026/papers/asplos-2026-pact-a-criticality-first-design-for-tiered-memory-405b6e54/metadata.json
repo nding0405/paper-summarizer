@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2026-pact-a-criticality-first-design-for-tiered-memory-405b6e54",
   "title": "PACT: A Criticality-First Design for Tiered Memory",
+  "abstract": "Tiered memory systems typically place pages based on access frequency (hotness), yet frequency alone fails to capture the true performance impact. We present PACT, an online, page-granular tiered memory design that elevates performance criticality to a first-class design principle. At its core is Per-page Access Criticality (PAC), a fine-grained metric that quantifies each page's contribution to application performance rather than merely counting accesses. PACT profiles PAC online using a lightweight analytical model that uniquely decomposes per-tier memory-level parallelism via hardware queue occupancy counters, enabling direct CPU stall attribution to individual pages. To handle highly skewed PAC distributions, PACT employs PAC-centric migration policies: eager demotion and adaptive promotion, to dynamically place performance-critical pages in DRAM. Across 13 workloads, PACT achieves up to 61% performance improvement over the best of 7 state-of-the-art tiering designs with up to 50× fewer migrations.",
+  "abstract_source_id": "src-abstract-asplos-2026-405b6e54",
   "venue": "asplos",
   "year": 2026,
   "track_or_session": "Session 8C: Memory Hierarchy & Performance",
@@ -167,6 +169,19 @@
       "official": false,
       "supports": [
         "Indexed abstract used for strict relevance classification and indexed arXiv identifier where available."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2026-405b6e54",
+      "url": "https://api.openalex.org/works/doi:10.1145/3779212.3790198?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "PACT: A Criticality-First Design for Tiered Memory",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:05:39Z",
+      "content_hash": "sha256:893530d3d60559481433f5beabbb36ce1b21bcf674e33113f08e42c1df53b09a",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

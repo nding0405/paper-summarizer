@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sigcomm-2023-lightning-a-reconfigurable-photonic-electronic-smartnic-f4b509e4",
   "title": "Lightning: A Reconfigurable Photonic-Electronic SmartNIC for Fast and Energy-Efficient Inference",
+  "abstract": "The massive growth of machine learning-based applications and the end of Moore's law have created a pressing need to redesign computing platforms. We propose Lightning, the first reconfigurable photonic-electronic smartNIC to serve real-time deep neural network inference requests. Lightning uses a fast datapath to feed traffic from the NIC into the photonic domain without creating digital packet processing and data movement bottlenecks. To do so, Lightning leverages a novel reconfigurable count-action abstraction that keeps track of the required computation operations of each inference packet. Our count-action abstraction decouples the compute control plane from the data plane by counting the number of operations in each task and triggers the execution of the next task(s) without interrupting the dataflow. We evaluate Lightning's performance using four platforms: a prototype, chip synthesis, emulations, and simulations. Our prototype demonstrates the feasibility of performing 8-bit photonic multiply-accumulate operations with 99.25% accuracy. To the best of our knowledge, our prototype is the highest-frequency photonic computing system, capable of serving real-time inference queries at 4.055 GHz end-to-end. Our simulations with large DNN models show that compared to Nvidia A100 GPU, A100X DPU, and Brainwave smartNIC, Lightning accelerates the average inference serve time by 337×, 329×, and 42×, while consuming 352×, 419×, and 54× less energy, respectively.",
+  "abstract_source_id": "src-abstract-sigcomm-2023-f4b509e4",
   "venue": "sigcomm",
   "year": 2023,
   "track_or_session": "On Inference — Research Paper",
@@ -256,6 +258,19 @@
         "publisher-deposited ORCIDs",
         "proceedings page range and print publication date",
         "empty publisher relation metadata for alternate-version checks"
+      ]
+    },
+    {
+      "id": "src-abstract-sigcomm-2023-f4b509e4",
+      "url": "https://api.openalex.org/works/doi:10.1145/3603269.3604821?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Lightning: A Reconfigurable Photonic-Electronic SmartNIC for Fast and Energy-Efficient Inference",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:22:54Z",
+      "content_hash": "sha256:cbfee25732a5b52cbe23b2b21cbb2edc944ccdf7e1254e53a90ce22cef86ee41",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2024-smooth-sensitivity-for-geo-privacy-40dbcfc1",
   "title": "Smooth Sensitivity for Geo-Privacy",
+  "abstract": "Suppose each user i holds a private value xi in some metric space (U, dist), and an untrusted data analyst wishes to compute Σi f(xi) for some function f : U -> R by asking each user to send in a privatized f(xi). This is a fundamental problem in privacy-preserving population analytics, and the local model of differential privacy (LDP) is the predominant model under which the problem has been studied. However, LDP requires any two different xi, x'i to be ε-distinguishable, which can be overly strong for geometric/numerical data. On the other hand, Geo-Privacy (GP) stipulates that the level of distinguishability be proportional to dist(xi, xi'), providing an attractive alternative notion of personal data privacy in a metric space. However, existing GP mechanisms for this problem, which add a uniform noise to either xi or f(xi), are not satisfactory. In this paper, we generalize the smooth sensitivity framework from Differential Privacy to Geo-Privacy, which allows us to add noise tailored to the hardness of the given instance. We provide definitions, mechanisms, and a generic procedure for computing the smooth sensitivity under GP equipped with a general metric. Then we present three applications: one-way and two-way threshold functions, and Gaussian kernel density estimation, to demonstrate the applicability and utility of our smooth sensitivity framework.",
+  "abstract_source_id": "src-abstract-ccs-2024-40dbcfc1",
   "venue": "ccs",
   "year": 2024,
   "track_or_session": "Cycle 2",
@@ -117,6 +119,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2024-40dbcfc1",
+      "url": "https://api.openalex.org/works/doi:10.1145/3658644.3690365?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Smooth Sensitivity for Geo-Privacy",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:12:11Z",
+      "content_hash": "sha256:567f649b2be6d81b46545b231a669008f64d4ffca80810588890e96621042a94",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

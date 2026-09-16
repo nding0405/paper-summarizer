@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2024-defects-in-depth-analyzing-the-integration-of-effective-941b67d0",
   "title": "Defects-in-Depth: Analyzing the Integration of Effective Defenses against One-Day Exploits in Android Kernels",
+  "abstract": "With the mobile phone market exceeding one billion units sold in 2023, ensuring the security of these devices is critical. However, recent research has revealed worrying delays in the deployment of security-critical kernel patches, leaving devices vulnerable to publicly known one-day exploits. While the mainline Android kernel has seen an increase in defense mechanisms, their integration and effectiveness in vendor-supplied kernels are unknown at a large scale.\n\nIn this paper, we systematically analyze publicly available one-day exploits targeting the Android kernel over the past three years. We identify multiple exploitation flows representing vulnerability-agnostic strategies to gain high privileges. We then demonstrate that integrating defense-in-depth mechanisms from the mainline Android kernel could mitigate 84.6 % of these exploitation flows. In a subsequent analysis of 994 devices, we reveal a widespread absence of effective defenses across vendors. Depending on the vendor, only 28.8 % to 54.6 % of exploitation flows are mitigated, indicating a 4.62 to 2.951 times worse scenario than the mainline kernel.\n\nFurther delving into defense mechanisms, we reveal weaknesses in vendor-specific defenses and advanced exploitation techniques bypassing defense implementations. As these developments pose additional threats, we discuss potential solutions. Lastly, we discuss factors contributing to the absence of effective defenses and offer improvement recommendations. We envision that our findings will guide the inclusion of effective defenses, ultimately enhancing Android security.",
+  "abstract_source_id": "src-abstract-usenix-security-2024-941b67d0",
   "venue": "usenix-security",
   "year": 2024,
   "track_or_session": "Mobile Security II",
@@ -133,6 +135,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2024-941b67d0",
+      "url": "https://www.usenix.org/conference/usenixsecurity24/presentation/maar-defects",
+      "kind": "paper-page",
+      "title": "Defects-in-Depth: Analyzing the Integration of Effective Defenses against One-Day Exploits in Android Kernels",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:14:42Z",
+      "content_hash": "sha256:dd7f1df3cd97460bfa263b70b4b3c7d71e09458ace8b59c54cc99366a3f8ecb2",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

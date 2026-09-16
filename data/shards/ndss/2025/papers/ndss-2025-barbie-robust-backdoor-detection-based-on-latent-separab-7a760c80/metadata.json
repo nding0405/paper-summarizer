@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2025-barbie-robust-backdoor-detection-based-on-latent-separab-7a760c80",
   "title": "BARBIE: Robust Backdoor Detection Based on Latent Separability",
+  "abstract": "Backdoor attacks are an essential risk to deep learning model sharing. Fundamentally, backdoored models are different from benign models considering latent separability, i.e., distinguishable differences in model latent representations. However, existing methods quantify latent separability by clustering latent representations or computing distances between latent representations, which are easy to be compromised by adaptive attacks. In this paper, we propose BARBIE, a backdoor detection approach that can pinpoint latent separability under adaptive backdoor attacks. To achieve this goal, we propose a new latent separability metric, named relative competition score (RCS), by characterizing the dominance of latent representations over model output, which is robust against various backdoor attacks and is hard to compromise. Without the need to access any benign or backdoored sample, we invert two sets of latent representations of each label, reflecting the normal latent representations of benign models and intensifying the abnormal ones of backdoored models, to calculate RCS. We compute a series of RCS-based indicators to comprehensively reflect the differences between backdoored models and benign models. We validate the effectiveness of BARBIE on more than 10,000 models on 4 datasets against 14 types of backdoor attacks, including the adaptive attacks against latent separability. Compared with 7 baselines, BARBIE improves the average true positive rate by 17.05% against source-agnostic attacks, 27.72% against source-specific attacks, 43.17% against sample-specific attacks and 11.48% against clean-label attacks. BARBIE also maintains lower false positive rates than baselines. The source code is available at: https://github.com/Forliqr/BARBIE.",
+  "abstract_source_id": "src-abstract-ndss-2025-7a760c80",
   "venue": "ndss",
   "year": 2025,
   "track_or_session": "Fall submission cycle",
@@ -168,6 +170,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2025-7a760c80",
+      "url": "https://www.ndss-symposium.org/ndss-paper/barbie-robust-backdoor-detection-based-on-latent-separability/",
+      "kind": "paper-page",
+      "title": "BARBIE: Robust Backdoor Detection Based on Latent Separability",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:19:08Z",
+      "content_hash": "sha256:75cc1355b1f7db43ad44a47d8847270896073cde60bfc90653e9d3bf1ce33bff",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

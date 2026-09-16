@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2023-exoflow-a-universal-workflow-system-for-exactly-once-dag-d78a0179",
   "title": "ExoFlow: A Universal Workflow System for Exactly-Once DAGs",
+  "abstract": "Given the fundamental tradeoff between run-time and recovery performance, current distributed systems often build application-specific recovery strategies to minimize overheads. However, it is increasingly common for different applications to be composed into heterogeneous pipelines. Implementing multiple interoperable recovery techniques in the same system is rare and difficult. Thus, today's users must choose between: (1) building on a single system, and face a fixed choice of performance vs. recovery overheads, or (2) the challenging task of stitching together multiple systems that can offer application-specific tradeoffs.\n\nWe present ExoFlow, a universal workflow system that enables a flexible choice of recovery vs. performance tradeoffs, even within the same application. The key insight behind our solution is to decouple execution from recovery and provide exactly-once semantics as a separate layer from execution. For generality, workflow tasks can return references that capture arbitrary inter-task communication. To enable the workflow system and therefore the end user to take control of recovery, we design task annotations that specify execution semantics such as nondeterminism. ExoFlow generalizes recovery for existing workflow applications ranging from ETL pipelines to stateful serverless workflows, while enabling further optimizations in task communication and recovery.",
+  "abstract_source_id": "src-abstract-osdi-2023-d78a0179",
   "venue": "osdi",
   "year": 2023,
   "track_or_session": "Expanding, Hardening, and Deploying Your Bits",
@@ -180,6 +182,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2023-d78a0179",
+      "url": "https://www.usenix.org/conference/osdi23/presentation/zhuang",
+      "kind": "paper-page",
+      "title": "ExoFlow: A Universal Workflow System for Exactly-Once DAGs",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:06:31Z",
+      "content_hash": "sha256:90c9666f259eb7cf4784f1166002967508b98b4a2f82d5facaecd8422a1414b6",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

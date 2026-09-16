@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "atc-2025-popfetcher-towards-accelerated-mixture-of-experts-traini-44cb6f2f",
   "title": "PopFetcher: Towards Accelerated Mixture-of-Experts Training Via Popularity Based Expert-Wise Prefetch",
+  "abstract": "Scaling laws indicate that increasing model size enhances performance. The Mixture-of-Experts (MoE) architecture enables scaling model parameters to trillions while requiring only a sub-linear increase in training computations. However, the sparse activation of experts within MoE leads to substantial All-to-All communications and imbalanced computation workloads, which in turn can severely degrade training efficiency. In this paper, we develop PopFetcher, a scalable MoE training system with popularity-aided expert-wise prefetching, to address these communication and computation bottlenecks. Specifically, PopFetcher uncovers skewed and correlated patterns in expert selection, and implements a lightweight sliding-window technique to accurately predict the popularity of experts. As a result, PopFetcher facilitates dynamic identification of high-demand experts and prefetches them in the next layer during the execution of current non-MoE computations, thereby exploiting the idle network links to reduce dispatched tokens in upcoming All-to-All communications. PopFetcher rigorously formulates the end-to-end training latency and develops a tailored pruning strategy to derive the globally optimal prefetching scheme, which can restore both communication and computation balances based on the underlying network infrastructure. By prioritizing All-to-All data stream during the backward pass, PopFetcher significantly alleviates the communication blockage. Extensive experiments conducted on GPU clusters demonstrate that PopFetcher outperforms existing state-of-the-art systems, reducing training time by 15%-94.5%.",
+  "abstract_source_id": "src-abstract-atc-2025-44cb6f2f",
   "venue": "atc",
   "year": 2025,
   "track_or_session": "Scaling Complex Models: Distribution, Heterogeneity, and Efficiency",
@@ -264,6 +266,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-atc-2025-44cb6f2f",
+      "url": "https://www.usenix.org/conference/atc25/presentation/zhang-junyi",
+      "kind": "paper-page",
+      "title": "PopFetcher: Towards Accelerated Mixture-of-Experts Training Via Popularity Based Expert-Wise Prefetch",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:00:04Z",
+      "content_hash": "sha256:11173b50f4cdfdc2af2fd37f83fdc5085bbad5be0c974b9c43ee4ac99c1cbe48",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

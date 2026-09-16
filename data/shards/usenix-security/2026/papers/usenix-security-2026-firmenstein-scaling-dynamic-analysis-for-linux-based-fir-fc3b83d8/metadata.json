@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-firmenstein-scaling-dynamic-analysis-for-linux-based-fir-fc3b83d8",
   "title": "Firmenstein: Scaling Dynamic Analysis for Linux-Based Firmware Services via API-Centric Intervention Code Synthesis",
+  "abstract": "The rapid proliferation of Linux-based IoT devices necessitates rigorous security analysis. To achieve scalable, hardware-free analysis, firmware rehosting has become essential for constructing faithful emulated environments. However, existing approaches rely on inflexible heuristics to perform semantic-agnostic interventions, failing to generalize to diverse targets and leaving many firmware samples unanalyzable.\n\nIn this paper, we propose FIRMENSTEIN, a novel API-centric framework that unifies the complex and cumbersome rehosting process into a systematic program analysis and synthesis task. Specifically, we introduce an agentic cross-program analysis built upon the API Dependency Graph to automatically diagnose rehosting roadblocks. Guided by these diagnostics, FIRMENSTEIN further introduces a roadblock-driven workflow to synthesize high-fidelity intervention code that resolves environmental dependencies, thereby enabling successful firmware execution. Evaluation on an LFwC-based dataset demonstrates that FIRMENSTEIN enables 2.5×, 3.1×, and 2.1× more firmware samples to reach interact states than the state-of-the-art rehosting tools Greenhouse, FirmAE, and Penguin, respectively. Even with incomplete rehosting, FIRMENSTEIN executes 29% more basic blocks than Greenhouse. Furthermore, FIRMENSTEIN executes 5.2% more basic blocks than Greenhouse in interactive testing, validates 29 out of 31 known N-day vulnerabilities, and facilitates the discovery of 43 previously unknown vulnerabilities, with 19 CVE IDs assigned to date.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-fc3b83d8",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Software Security 4",
@@ -197,6 +199,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-fc3b83d8",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/wang-yanzhong",
+      "kind": "paper-page",
+      "title": "Firmenstein: Scaling Dynamic Analysis for Linux-Based Firmware Services via API-Centric Intervention Code Synthesis",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:23:58Z",
+      "content_hash": "sha256:b9529d3145a5b7a706ed5729a37ffcaa26e8d8f771444a5dc457c07497d56280",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

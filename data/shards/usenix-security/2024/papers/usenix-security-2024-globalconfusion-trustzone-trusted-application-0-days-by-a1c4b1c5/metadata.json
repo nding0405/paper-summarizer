@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2024-globalconfusion-trustzone-trusted-application-0-days-by-a1c4b1c5",
   "title": "GlobalConfusion: TrustZone Trusted Application 0-Days by Design",
+  "abstract": "Trusted Execution Environments form the backbone of mobile device security architectures. The GlobalPlatform Internal Core API is the de-facto standard that unites the fragmented landscape of real-world implementations, providing compatibility between different TEEs.\n\nUnfortunately, our research reveals that this API standard is prone to a design weakness. Manifestations of this weakness result in critical type-confusion bugs in real-world user-space applications of the TEE, called Trusted Applications (TAs). At its core, the design weakness consists of a fail-open design leaving an optional type check for untrusted data to TA developers. The API does not mandate this easily forgettable check that in most cases results in arbitrary read-and-write exploitation primitives. To detect instances of these type-confusion bugs, we design and implement GPCheck, a static binary analysis system capable of vetting real-world TAs. We employ GPCheck to analyze 14,777 TAs deployed on widely used TEEs to investigate the prevalence of the issue. We reconfirm known bugs that fit this pattern and discover unknown instances of the issue in the wild. In total, we confirmed 9 known bugs, found 10 instances of silently-fixed bugs, and discovered a surprising amount of 14 critical 0-day vulnerabilities using our GPCheck prototype. Our findings affect mobile devices currently in use by billions of users. We responsibly disclosed these findings, already received 12,000 USD as bug bounty, and were assigned four CVEs. Ten of our 14 critical 0-day vulnerabilities are still in the responsible disclosure process. Finally, we propose an extension to the GP Internal Core API specification to enforce a fail-safe mechanism that removes the underlying design weakness. We implement and successfully demonstrate our mitigation on OPTEE, an open-source TEE implementation. We shared our findings with GlobalPlatform and suggested our mitigation as an extension to their specification to secure future TEE implementations.",
+  "abstract_source_id": "src-abstract-usenix-security-2024-a1c4b1c5",
   "venue": "usenix-security",
   "year": 2024,
   "track_or_session": "Measurement VI: Human Behavior and Security",
@@ -112,6 +114,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2024-a1c4b1c5",
+      "url": "https://www.usenix.org/conference/usenixsecurity24/presentation/busch-globalconfusion",
+      "kind": "paper-page",
+      "title": "GlobalConfusion: TrustZone Trusted Application 0-Days by Design",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:15:25Z",
+      "content_hash": "sha256:980e5acb1431b6b93a4f6e67173c5dde0f7b357a3f9c8c4d11140f1fb179c457",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

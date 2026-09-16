@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2023-hermit-low-latency-high-throughput-and-transparent-remot-2932e6f5",
   "title": "Hermit: Low-Latency, High-Throughput, and Transparent Remote Memory via Feedback-Directed Asynchrony",
+  "abstract": "Remote memory techniques are gaining traction in datacenters because they can significantly improve memory utilization. A popular approach is to use kernel-level, page-based memory swapping to deliver remote memory as it is transparent, enabling existing applications to benefit without modifications. Unfortunately, current implementations suffer from high software overheads, resulting in significantly worse tail latency and throughput relative to local memory.\n\nHermit is a redesigned swap system that overcomes this limitation through a novel technique called adaptive, feedback-directed asynchrony. It takes non-urgent but time-consuming operations (e.g., swap-out, cgroup charge, I/O deduplication, etc.) off the fault-handling path and executes them asynchronously. Different from prior work such as Fastswap, Hermit collects runtime feedback and uses it to direct how asynchrony should be performed—i.e., whether asynchronous operations should be enabled, the level of asynchrony, and how asynchronous operations should be scheduled. We implemented Hermit in Linux 5.14. An evaluation with a set of latency-critical applications shows that Hermit delivers low-latency remote memory. For example, it reduces the 99th percentile latency of Memcached by 99.7% from 36 ms to 91 µs. Running Hermit over batch applications improves their overall throughput by 1.24× on average. These results are achieved without changing a single line of user code.",
+  "abstract_source_id": "src-abstract-nsdi-2023-2932e6f5",
   "venue": "nsdi",
   "year": 2023,
   "track_or_session": "RPC and Remote Memory",
@@ -224,6 +226,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2023-2932e6f5",
+      "url": "https://www.usenix.org/conference/nsdi23/presentation/qiao",
+      "kind": "paper-page",
+      "title": "Hermit: Low-Latency, High-Throughput, and Transparent Remote Memory via Feedback-Directed Asynchrony",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:02:10Z",
+      "content_hash": "sha256:121b79d381769d010c2cf8d0203ab6c4d81f37c29e727a516ea366c16337e966",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

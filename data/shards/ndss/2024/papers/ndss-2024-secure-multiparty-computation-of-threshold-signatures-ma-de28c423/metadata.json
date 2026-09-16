@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2024-secure-multiparty-computation-of-threshold-signatures-ma-de28c423",
   "title": "Secure Multiparty Computation of Threshold Signatures Made More Efficient",
+  "abstract": "Threshold signatures, notably ECDSA, are fundamental for securing decentralized applications. Their non-linear structure poses challenges in distributed signing, often tackled by pairwise multiplicative-to-additive share conversion, leading to O(n) communication and O(n 2 ) verification costs for each of n signers. Moreover, most schemes lack robustness, necessitating a complete restart upon fault. A pioneering work by Wong et al. (NDSS '23) still requires rolling back to the preceding round to resume signing after another round to convince all other signers.\n\nWe revisit secure multiparty computation from threshold linearly homomorphic encryption (LHE). Realizing its public verifiability and fault recovery, we encompass two technical contributions to Castagnos–Laguillaumie LHE (CT-RSA '15): a 2-round robust distributed key generation (DKG) protocol in the dishonest majority setting and an accompanying zero-knowledge proof allowing extraction in an unknown-order group. We extend the DKG with dual-code-based verification (ACNS '17), upgrading its O(tn 2 )-cost private verifiability to an O(n 2 ) public one.\n\nBuilt on our DKG, we present the first threshold ECDSA protocol with O(1) communication and O(n) verification per-party costs while matching the lowest round complexity of nonrobust schemes (CCS '20). Empirically, we halve the computation and communication costs of the signing phase compared to state-of-the-art robust threshold ECDSA (NDSS '23). We also illustrate the versatility of our techniques with an improved threshold extension (IEEE S&P '23) of BBS+ signatures (IEEE Syst. J. '13).",
+  "abstract_source_id": "src-abstract-ndss-2024-de28c423",
   "venue": "ndss",
   "year": 2024,
   "track_or_session": "Fall submission cycle",
@@ -126,6 +128,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2024-de28c423",
+      "url": "https://www.ndss-symposium.org/ndss-paper/secure-multiparty-computation-of-threshold-signatures-made-more-efficient/",
+      "kind": "paper-page",
+      "title": "Secure Multiparty Computation of Threshold Signatures Made More Efficient",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:18:38Z",
+      "content_hash": "sha256:200d1ad3bfa47a1b1e96cee5750c618415b5a101e94502ed577d7234eec59834",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

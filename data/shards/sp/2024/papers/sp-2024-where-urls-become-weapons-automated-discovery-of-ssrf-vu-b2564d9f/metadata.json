@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2024-where-urls-become-weapons-automated-discovery-of-ssrf-vu-b2564d9f",
   "title": "Where URLs Become Weapons: Automated Discovery of SSRF Vulnerabilities in Web Applications",
+  "abstract": "Server-Side Request Forgery (SSRF) vulnerability poses significant security risks to web applications, enabling adversaries to exploit web applications as stepping stones for unauthorized access of internal-only services or even performing arbitrary commands. Despite its recent emergence as a distinct category in the 2021 OWASP Top 10 web security risks and its increasing prevalence in modern web applications, there remains a lack of effective approaches to detect SSRF vulnerabilities systematically.We present a novel methodology, SSRFuzz, to effectively identify SSRF vulnerability in PHP web applications. Our methodology consists of three phases. In the initial phase, we designed an SSRF oracle to examine functions in PHP manuals and identify sinks that provide server-side request capabilities. This process yielded a total of 86 sensitive PHP sinks out of 2101 PHP functions. The second stage involves dynamic taint inference and the utilization of the identified sinks to examine the source code of target web applications, pinpointing all feasible input points that could trigger these sinks. The final phase employs fuzzing techniques. We generate testing HTTP requests with SSRF payloads, send them to the previously identified input points within the target web applications, and detect if an SSRF vulnerability is triggered. We implemented a prototype of SSRFuzz and evaluated it on 27 real-world applications, including Joomla and WordPress. In total, we discovered 28 SSRF vulnerabilities, 25 of which were previously unreported. We reported all the vulnerabilities to the affected vendors, and 16 new CVE IDs were assigned.",
+  "abstract_source_id": "src-abstract-sp-2024-b2564d9f",
   "venue": "sp",
   "year": 2024,
   "track_or_session": "Winter cycle",
@@ -264,6 +266,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2024-b2564d9f",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Where URLs Become Weapons: Automated Discovery of SSRF Vulnerabilities in Web Applications",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:42Z",
+      "content_hash": "sha256:d62dac834635b4cd1890a53da454ceae7aaa151189662d990ac591dfd5cb6b3e",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

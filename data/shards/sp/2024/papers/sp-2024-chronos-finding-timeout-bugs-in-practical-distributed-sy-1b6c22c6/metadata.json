@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2024-chronos-finding-timeout-bugs-in-practical-distributed-sy-1b6c22c6",
   "title": "Chronos: Finding Timeout Bugs in Practical Distributed Systems by Deep-Priority Fuzzing with Transient Delay",
+  "abstract": "Delays are inevitable in complex distributed environments. Timeout mechanisms are commonly used to handle unexpected failures in distributed systems. However, incorrect timeout handling or implementation errors in timeout mechanisms can lead to system hang-ups or crashes. Such timeout bugs may be crucial and pose a significant threat to the availability and security of distributed systems.In this work, we introduce Chronos, a general testing framework for automatically detecting timeout bugs in distributed systems with deep-priority transient delays. First, we propose general runtime delayed libraries that dynamically inject fine-grained delays in a Distributed System Under Test (DSUT). To effectively trigger delays and constantly explore timeout bugs in deep paths, Chronos harnesses a deep-priority guided fuzzing that dynamically generates high-quality delay sequences in the runtime. Then, Chronos utilizes transient delays to eliminate the time overhead caused by actual delays and accelerate the test process. We implemented and evaluated Chronos on four widely used distributed systems, including ZooKeeper, MySQL-Cluster, HDFS, and Go-Ethereum. Compared with the state-of-the-art techniques, Random, Brute-Force, and Coverage-Guided fault injection, Chronos covers 26.40%, 21.69%, and 15.14% more timeout mechanism logic, respectively. Furthermore, Chronos has detected 27 timeout bugs in these real-world applications, which have been repaired by the corresponding maintainers.",
+  "abstract_source_id": "src-abstract-sp-2024-1b6c22c6",
   "venue": "sp",
   "year": 2024,
   "track_or_session": "Summer cycle",
@@ -201,6 +203,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2024-1b6c22c6",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Chronos: Finding Timeout Bugs in Practical Distributed Systems by Deep-Priority Fuzzing with Transient Delay",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:32Z",
+      "content_hash": "sha256:be7515012a8c1ea1211f38a27ea4d2aa9cff6e0faac9417a2f58b1d64e91280e",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

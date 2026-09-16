@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2026-nixie-efficient-transparent-temporal-multiplexing-for-co-97090905",
   "title": "Nixie: Efficient, Transparent Temporal Multiplexing for Consumer GPUs",
+  "abstract": "Consumer machines are increasingly running large ML workloads such as large language models (LLMs), text-to-image generation, and interactive image editing. Unlike datacenter GPUs, consumer GPUs serve single-user, rapidly changing workloads, and each model’s working set often nearly fills the GPU memory. As a result, existing sharing mechanisms, such as NVIDIA Unified Virtual Memory (UVM), suffer from severe memory thrashing and consume excessive CPU pinned memory when multiple applications are active.\n\nWe design and implement Nixie, a system service that enables efficient and transparent temporal multiplexing on consumer GPUs without requiring any application or driver changes. Nixie coordinates GPU memory allocation and kernel launch behavior to efficiently utilize the CPU-GPU bi-directional bandwidth and CPU pinned memory. A lightweight scheduler in Nixie further improves responsiveness by automatically prioritizing latency-sensitive interactive jobs using MLFQ-inspired techniques. Our evaluations show that, compared to UVM-based approaches, Nixie improves the latency of interactive code-completion tasks co-located with a long-running LLM by up to 3.8x and reduces CPU pinned memory usage by up to 66.8% under the same latency requirement.",
+  "abstract_source_id": "src-abstract-osdi-2026-97090905",
   "venue": "osdi",
   "year": 2026,
   "track_or_session": "Accelerator and Device Virtualization",
@@ -167,6 +169,19 @@
       "official": true,
       "supports": [
         "Official proceedings availability and canonical conference versions."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2026-97090905",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/xu-yechen",
+      "kind": "paper-page",
+      "title": "Nixie: Efficient, Transparent Temporal Multiplexing for Consumer GPUs",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:08:40Z",
+      "content_hash": "sha256:2ac6edf27148e185f5a7cdd5cec139316365582689d4eb233c97a6284501168d",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

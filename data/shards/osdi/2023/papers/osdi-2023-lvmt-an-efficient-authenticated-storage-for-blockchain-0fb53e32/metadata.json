@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2023-lvmt-an-efficient-authenticated-storage-for-blockchain-0fb53e32",
   "title": "LVMT: An Efficient Authenticated Storage for Blockchain",
+  "abstract": "Authenticated storage access is the performance bottleneck of a blockchain, because each access can be amplified to potentially O (log n ) disk I/O operations in the standard Merkle Patricia Trie (MPT) storage structure. In this paper, we propose a multi-Layer Versioned Multipoint Trie (LVMT), a novel high-performance blockchain storage with significantly reduced I/O amplifications. LVMT uses the authenticated multipoint evaluation tree (AMT) vector commitment protocol to update commitment proofs in constant time. LVMT adopts a multi-layer design to support unlimited key-value pairs and stores version numbers instead of value hashes to avoid costly elliptic curve multiplication operations. In our experiment, LVMT outperforms the MPT in real Ethereum traces, delivering read and write operations six times faster. It also boosts blockchain system execution throughput by up to 2.7 times.",
+  "abstract_source_id": "src-abstract-osdi-2023-0fb53e32",
   "venue": "osdi",
   "year": 2023,
   "track_or_session": "Secure Your Bits I",
@@ -201,6 +203,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2023-0fb53e32",
+      "url": "https://www.usenix.org/conference/osdi23/presentation/li-chenxing",
+      "kind": "paper-page",
+      "title": "LVMT: An Efficient Authenticated Storage for Blockchain",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:06:37Z",
+      "content_hash": "sha256:dd2769dde14171b342a9c65af751a08bc1e9c22e8987b08c57d70db221327e01",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

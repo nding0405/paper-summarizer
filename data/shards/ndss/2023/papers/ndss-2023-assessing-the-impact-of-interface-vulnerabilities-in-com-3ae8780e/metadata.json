@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2023-assessing-the-impact-of-interface-vulnerabilities-in-com-3ae8780e",
   "title": "Assessing the Impact of Interface Vulnerabilities in Compartmentalized Software",
+  "abstract": "Least-privilege separation decomposes applications into compartments limited to accessing only what they need. When compartmentalizing existing software, many approaches neglect securing the new inter-compartment interfaces, although what used to be a function call from/to a trusted component is now potentially a targeted attack from a malicious compartment. This results in an entire class of security bugs: Compartment Interface Vulnerabilities (CIVs).\n\nThis paper provides an in-depth study of CIVs. We taxonomize these issues and show that they affect all known compartmentalization approaches. We propose ConfFuzz, an in-memory fuzzer specialized to detect CIVs at possible compartment boundaries. We apply ConfFuzz to a set of 25 popular applications and 36 possible compartment APIs, to uncover a wide data-set of 629 vulnerabilities. We systematically study these issues, and extract numerous insights on the prevalence of CIVs, their causes, impact, and the complexity to address them. We stress the critical importance of CIVs in compartmentalization approaches, demonstrating an attack to extract isolated keys in OpenSSL and uncovering a decade-old vulnerability in sudo. We show, among others, that not all interfaces are affected in the same way, that API size is uncorrelated with CIV prevalence, and that addressing interface vulnerabilities goes beyond writing simple checks. We conclude the paper with guidelines for CIV-aware compartment interface design, and appeal for more research towards systematic CIV detection and mitigation.",
+  "abstract_source_id": "src-abstract-ndss-2023-3ae8780e",
   "venue": "ndss",
   "year": 2023,
   "track_or_session": "Software Security I",
@@ -189,6 +191,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2023-3ae8780e",
+      "url": "https://www.ndss-symposium.org/ndss-paper/assessing-the-impact-of-interface-vulnerabilities-in-compartmentalized-software/",
+      "kind": "paper-page",
+      "title": "Assessing the Impact of Interface Vulnerabilities in Compartmentalized Software",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:16:41Z",
+      "content_hash": "sha256:673829b0eaae26f6b4e846a14a8c39c3d4fc78cab3e304b347564924f61dece8",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

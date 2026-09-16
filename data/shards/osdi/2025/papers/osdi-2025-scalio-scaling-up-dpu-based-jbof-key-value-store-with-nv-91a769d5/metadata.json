@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2025-scalio-scaling-up-dpu-based-jbof-key-value-store-with-nv-91a769d5",
   "title": "Scalio: Scaling up DPU-based JBOF Key-value Store with NVMe-oF Target Offload",
+  "abstract": "The rapid growth of data-intensive applications has created a demand for high-density storage systems. Data-Processing-Unit-based (DPU-based) Just a Bunch of Flash (JBOF) solutions provide an energy-efficient and cost-effective architecture to meet this need. However, existing JBOF solutions struggle with scalability when handling an increasing number of attached SSDs, due to their heavy reliance on the DPU's CPU for SSD I/O operations.\n\nIn this paper, we introduce Scalio, a scalable disaggregated key-value store designed to address the limitations of current DPU-based JBOF systems. Scalio offloads as many SSD I/O operations as possible to the DPU's network I/O capabilities, including traditional RDMA verbs and a recent hardware optimization, NVMe over Fabrics Target Offload. Additionally, Scalio incorporates a two-layer design with compact in-memory data structures to handle hot read traffic and manage bursty writes. One of the key challenges in this design is ensuring consistency between the DRAM states in the DPU and the SSD states, which, unlike CPU L1/L2 caches, are not automatically synchronized through hardware cache coherence protocols. To address this, Scalio introduces an RDMA-based cache consistency protocol that guarantees linearizability across the system, despite the disaggregated nature of the architecture.\n\nOur experiments show that Scalio significantly improves both scalability and throughput, achieving up to 3.3× higher throughput compared to existing systems, especially in high-density SSD configurations.",
+  "abstract_source_id": "src-abstract-osdi-2025-91a769d5",
   "venue": "osdi",
   "year": 2025,
   "track_or_session": "Scheduling and Resource Management",
@@ -201,6 +203,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2025-91a769d5",
+      "url": "https://www.usenix.org/conference/osdi25/presentation/sun",
+      "kind": "paper-page",
+      "title": "Scalio: Scaling up DPU-based JBOF Key-value Store with NVMe-oF Target Offload",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:07:48Z",
+      "content_hash": "sha256:dfde0630f5a8d18effeea5bfc7fc82017a116709f511ea9583799de9bf41c2e6",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

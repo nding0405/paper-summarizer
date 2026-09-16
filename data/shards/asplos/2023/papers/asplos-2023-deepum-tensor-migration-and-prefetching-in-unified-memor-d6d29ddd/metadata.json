@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2023-deepum-tensor-migration-and-prefetching-in-unified-memor-d6d29ddd",
   "title": "DeepUM: Tensor Migration and Prefetching in Unified Memory",
+  "abstract": "Deep neural networks (DNNs) are continuing to get wider and deeper. As a result, it requires a tremendous amount of GPU memory and computing power. In this paper, we propose a framework called DeepUM that exploits CUDA Unified Memory (UM) to allow GPU memory oversubscription for DNNs. While UM allows memory oversubscription using a page fault mechanism, page migration introduces enormous overhead. DeepUM uses a new correlation prefetching technique to hide the page migration overhead. It is fully automatic and transparent to users. We also propose two optimization techniques to minimize the GPU fault handling time. We evaluate the performance of DeepUM using nine large-scale DNNs from MLPerf, PyTorch examples, and Hugging Face and compare its performance with six state-of-the-art GPU memory swapping approaches. The evaluation result indicates that DeepUM is very effective for GPU memory oversubscription and can handle larger models that other approaches fail to handle.",
+  "abstract_source_id": "src-abstract-asplos-2023-d6d29ddd",
   "venue": "asplos",
   "year": 2023,
   "track_or_session": "Session 7A: Deep Learning Systems",
@@ -125,6 +127,19 @@
       "official": false,
       "supports": [
         "Indexed abstract used with the official technical-session context for relevance classification, plus alternate-copy and explicitly printed ancillary links."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2023-d6d29ddd",
+      "url": "https://api.openalex.org/works/doi:10.1145/3575693.3575736?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "DeepUM: Tensor Migration and Prefetching in Unified Memory",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T21:59:24Z",
+      "content_hash": "sha256:43e99cb415bdc3bc33f55d9d8ba4c5c165aeec2fb4359b2c6dfd49a564859f13",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

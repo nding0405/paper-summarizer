@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-stackwarp-breaking-amd-sev-snp-integrity-via-determinist-1d8ded29",
   "title": "StackWarp: Breaking AMD SEV-SNP Integrity via Deterministic Stack-Pointer Manipulation through the CPU's Stack Engine",
+  "abstract": "Confidential Virtual Machines (CVMs), such as AMD SEV-SNP, aim to protect guest operating systems from an untrusted host by encrypting state and constraining privileged control. These platforms promise isolation even in multi-tenant cloud setups where simultaneous multithreading (SMT) remains enabled. While prior attacks focus on the memory hierarchy or execution units, they largely ignore frontend configurations.\n\nIn this paper, we present StackWarp, a software-based architectural attack exploiting the stack engine on AMD Zen CPUs to modify the stack pointer within an SEV-SNP guest, fully breaking integrity. StackWarp relies on an undocumented bit within a shared model-specific register (MSR) available on AMD Zen 1–5 CPUs that enables or disables the stack engine. Our reverse engineering shows that the state of the stack engine is not correctly synchronized across the logical cores, allowing an attacker to deterministically adjust the stack pointer on the sibling logical core across Zen generations, including fully patched Zen 5. We discover StackWarp via a systematic exploration of the MSR space, including undocumented MSRs. By flipping MSR bits, we discover bits that affect SEV-SNP guests running on a sibling logical core. To demonstrate the security impact, we show StackWarp in four end-to-end attacks on SEV-SNP guests: RSA-CRT private-key recovery, OpenSSH password-authentication bypass, and privilege escalations using either sudo or a kernel-mode ROP chain. We conclude with software hardening guidance and argue for a microcode or hardware change that prevents cross-core control of the stack engine when CVMs are active. Our results show that leaving SMT enabled undermines SEV-SNP integrity guarantees today.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-1d8ded29",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Hardware Security 5",
@@ -156,6 +158,19 @@
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening",
         "prepublication PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-1d8ded29",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/zhang-ruiyi",
+      "kind": "paper-page",
+      "title": "StackWarp: Breaking AMD SEV-SNP Integrity via Deterministic Stack-Pointer Manipulation through the CPU's Stack Engine",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:25:41Z",
+      "content_hash": "sha256:66ecaa7af7b3f9d53c97eb8b73aa3e6799176a68e674f169c5d40f87827e50e4",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

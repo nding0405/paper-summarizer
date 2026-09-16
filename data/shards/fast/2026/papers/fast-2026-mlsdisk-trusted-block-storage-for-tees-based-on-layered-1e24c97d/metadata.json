@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "fast-2026-mlsdisk-trusted-block-storage-for-tees-based-on-layered-1e24c97d",
   "title": "MlsDisk: Trusted Block Storage for TEEs Based on Layered Secure Logging",
+  "abstract": "Trusted Execution Environments (TEEs) enable users to run sensitive applications in private memory regions. SGX-PFS is the state-of-the-art secure storage solution for TEEs that ensures data confidentiality, integrity, freshness, and consistency (CIFC). Unfortunately, SGX-PFS uses Merkle Hash Trees to protect in-place persisted data and suffers from poor I/O performance and is thus of limited use in practice.\n\nThis paper presents MlsDisk, a secure virtual disk that adopts out-of-place logging to provide efficient trusted block storage for TEEs. The challenge is that the complexity of indexing and garbage collection (GC) in log-structured storage makes it difficult to ensure security. We therefore adopt a layered design to break down the indexing and GC into four layers of abstractions, which facilitates reasoning about CIFC properties. Evaluation shows that MlsDisk, with CIFC guarantees, outperforms SGX-PFS by 7.3×–21.1× on microbenchmarks and 1.4×–3.6× on trace-driven workloads.",
+  "abstract_source_id": "src-abstract-fast-2026-1e24c97d",
   "venue": "fast",
   "year": 2026,
   "track_or_session": "Virtualization",
@@ -265,6 +267,19 @@
         "proceedings page range and page count",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-fast-2026-1e24c97d",
+      "url": "https://www.usenix.org/conference/fast26/presentation/xu",
+      "kind": "paper-page",
+      "title": "MlsDisk: Trusted Block Storage for TEEs Based on Layered Secure Logging",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:01:36Z",
+      "content_hash": "sha256:61504c549702eb463e2614272501ee82217db0b8e894abc83efadb86c10ec9bd",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

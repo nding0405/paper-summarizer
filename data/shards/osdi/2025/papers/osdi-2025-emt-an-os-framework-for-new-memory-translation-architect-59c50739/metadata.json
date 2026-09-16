@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2025-emt-an-os-framework-for-new-memory-translation-architect-59c50739",
   "title": "EMT: An OS Framework for New Memory Translation Architectures",
+  "abstract": "With terabyte-scale memory capacity and memory-intensive workloads, memory translation has become a major performance bottleneck. Many novel hardware schemes are developed to speed up memory translation, but few are experimented with commodity OSes. A main reason is that memory management in major OSes, like Linux, does not have the extensibility to empower emerging hardware schemes.\n\nWe develop EMT, a pragmatic framework atop Linux to empower different hardware schemes of memory translation such as radix tree and hash table. EMT provides an architecture neutral interface that 1) supports diverse memory translation architectures, 2) enables hardware-specific optimizations, 3) accommodates modern hardware and OS complexity, and 4) has negligible overhead over hardwired implementations. We port Linux’s memory management onto EMT and show that EMT enables extensibility without sacrificing performance. We use EMT to implement OS support for ECPT and FPT, two recent experimental translation schemes for fast translation; EMT enables us to understand the OS perspective of these architectures and further optimize their designs.",
+  "abstract_source_id": "src-abstract-osdi-2025-59c50739",
   "venue": "osdi",
   "year": 2025,
   "track_or_session": "Kernel and Operating Systems II",
@@ -285,6 +287,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2025-59c50739",
+      "url": "https://www.usenix.org/conference/osdi25/presentation/chai-siyuan",
+      "kind": "paper-page",
+      "title": "EMT: An OS Framework for New Memory Translation Architectures",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:07:31Z",
+      "content_hash": "sha256:44c6a53c5a56bfb8caebdf7393c7628474f1b209b25b1746c8a11b5f7ebd9dd2",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

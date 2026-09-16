@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2026-ichnaea-a-framework-for-precise-tracking-of-memory-objec-af3b9b59",
   "title": "Ichnaea: A Framework for Precise Tracking of Memory Objects",
+  "abstract": "Tracing memory objects ( who accessed what object and when ) is often important for understanding the runtime behavior of modern software. This type of rich per-access metadata can aid in debugging, tracing, forensics and other tasks. Collecting this information is non-trivial since it will either be incomplete or requires heavy instrumentation and/or hardware support and likely adds significant runtime overheads (e.g., Intel Pin or Valgrind slow programs down by 10−100x).\n\nWe present Ichnaea, a purpose-built, precise and complete framework based on memory protection keys (MPK) that delivers context-rich object events at very low cost to the application. Ichnaea is dormant until one of the objects of interest (ObjOfInterest) is read or written to — at which point it logs any access attempts and changes to the ObjOfInterest along with rich context information (\" who is attempting access? \", \" what changes, if any, are being applied? \") before returning control to the application. In general Ichnaea reduces the tracing overheads by 10−60x when compared to the widely used framework Intel Pin, while still capturing precise , per-access information needed to diagnose memory vulnerabilities, performance hot-spots and subtle concurrency errors.",
+  "abstract_source_id": "src-abstract-osdi-2026-af3b9b59",
   "venue": "osdi",
   "year": 2026,
   "track_or_session": "Sandboxing, Access Control, and Drivers",
@@ -146,6 +148,19 @@
       "official": true,
       "supports": [
         "Official proceedings availability and canonical conference versions."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2026-af3b9b59",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/haque",
+      "kind": "paper-page",
+      "title": "Ichnaea: A Framework for Precise Tracking of Memory Objects",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:08:25Z",
+      "content_hash": "sha256:eac1f4254b9534629c67d92efd53701aaf11c7cd68077b12f160e765ad12fa26",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

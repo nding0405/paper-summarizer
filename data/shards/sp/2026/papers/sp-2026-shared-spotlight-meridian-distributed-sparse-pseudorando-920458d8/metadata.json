@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2026-shared-spotlight-meridian-distributed-sparse-pseudorando-920458d8",
   "title": "Shared Spotlight Meridian: Distributed Sparse Pseudorandom Functions for Scalable Federated Learning",
+  "abstract": "Secure federated learning enables multiple clients to train a shared model while keeping raw data private. Minimizing communication is natural in secure multiparty computation, yet cryptographic mechanisms create tension. Consequently, existing secure aggregation protocols are illsuited to high-dimensional sparse updates and forfeit sparsification gains, inflating communication by orders of magnitude relative to plaintext aggregation. Seeking efficiency under privacy, we introduce distributed sparse pseudorandom functions. Hidden alignment comes from a secretly shared spotlight index that illuminates the chosen coordinate and serves as a meridian that anchors aggregations of nonzero entries. Enabled by our cryptographic advances, we present a secure aggregation protocol with near-optimal client communication. Relative to a plaintext baseline, each client sends at most one extra bit per nonzero gradient element. Multi-server security holds unless all servers collude. At the client side, computational overhead is small, and server communication is optimal. Near-baseline accuracy is seen across computer vision, natural language processing, and recommendation experiments, with plaintext-level bandwidth savings.",
+  "abstract_source_id": "src-abstract-sp-2026-920458d8",
   "venue": "sp",
   "year": 2026,
   "track_or_session": "Cycle 1",
@@ -175,6 +177,19 @@
       "official": true,
       "supports": [
         "DOI, published-order authors and affiliations, abstract, publication date, page span, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2026-920458d8",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Shared Spotlight Meridian: Distributed Sparse Pseudorandom Functions for Scalable Federated Learning",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:58:02Z",
+      "content_hash": "sha256:4204efad9387253e2c70bd18217fac7c5220b9cd43ecd6179fdc27c5a043343e",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

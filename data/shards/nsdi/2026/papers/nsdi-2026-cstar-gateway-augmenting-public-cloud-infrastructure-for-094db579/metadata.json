@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2026-cstar-gateway-augmenting-public-cloud-infrastructure-for-094db579",
   "title": "CStar Gateway: Augmenting Public Cloud Infrastructure for Heterogeneous Network Function Virtualization",
+  "abstract": "Major cloud providers often build NFV products by reusing existing architectures. These designs were originally developed and optimized for tenant virtual machines (VMs) that operate at network endpoints. In contrast, network function (NF) VMs function as intermediate forwarding nodes shared by multiple tenants, which have very different resource demands. Directly applying tenant-oriented designs creates mismatches between infrastructure capabilities and NF requirements. A common case arises when NF VMs serve many tenants: they typically exhaust vNIC and sessions on vSwitches well before CPU resources are saturated. At this point, NF VMs cannot accept additional traffic despite having idle CPU cycles. Providers usually address this by scaling out or scaling up NF VMs, which wastes resources and increases cost. This is just one example, where numerous other mismatches remain. To address these, we present CStar Gateway. CStar Gateway shifts NF VM multi-tenancy support from vSwitches into NF VMs, which reduces vNIC and session bottlenecks with minimal changes to the existing cloud infrastructure. CStar Gateway also identifies and redirects I/O- or CPU-intensive flows to FPGA-based NFs, increasing the service capacity. In addition, CStar Gateway takes over NF VM elasticity support from vSwitch, simplifying and accelerating the scaling process, and thereby enhancing overall system flexibility. Deployment results show that the design improves CPU and I/O utilization of NF VMs by at least 5x and reduces NF cluster capital expenditure by 71.91% to 88.57%.",
+  "abstract_source_id": "src-abstract-nsdi-2026-094db579",
   "venue": "nsdi",
   "year": 2026,
   "track_or_session": "Virtualization Meets the Network",
@@ -601,6 +603,19 @@
         "proceedings page range and page count",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2026-094db579",
+      "url": "https://www.usenix.org/conference/nsdi26/presentation/li-haonan",
+      "kind": "paper-page",
+      "title": "CStar Gateway: Augmenting Public Cloud Infrastructure for Heterogeneous Network Function Virtualization",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:05:03Z",
+      "content_hash": "sha256:65b4707ab18f68cb43f5c0f4b27540073048fcd44ce2d14655c328b7e14adbda",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-scalable-collaborative-zk-snark-and-its-application-to-f-64a2316d",
   "title": "Scalable Collaborative zk-SNARK and Its Application to Fully Distributed Proof Delegation",
+  "abstract": "Collaborative zk-SNARK (USENIX '22) allows multiple parties to compute a proof over distributed witness. It offers a promising application called proof delegation (USENIX '23), where a client delegates the tedious proof generation to many servers while ensuring no one can learn the witness. Unfortunately, existing works suffer from significant efficiency issues and face challenges when scaling to complex applications.\n\nIn this work, we introduce the first scalable collaborative zk-SNARK for general circuits, built upon HyperPlonk (Eurocrypt '23). Our result overcomes existing barriers, offering fully distributed workload and small communication. For data-parallel circuits, the communication overhead is even sublinear. We propose several efficient collaborative and distributed protocols for multivariate primitives, which form the main building blocks of our results and may be of independent interest. In addition, we design a new permutation check protocol for Plonk arithmetization, which is MPC-friendly and suitable for collaborative zk-SNARKs.\n\nWith 128 servers jointly generating a proof for a circuit of size 2^21 gates, the experiment demonstrates over 30x speedup and reduced RAM requirements compared to a local prover, while the witness is still private. Previous works were unable to achieve such savings in both time and memory efficiency. Moreover, our protocol performs well under various network conditions, making it practical for real-world applications.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-64a2316d",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Crypto 1: Zero Knowledge and Multi-Party Computation",
@@ -217,6 +219,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-64a2316d",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/liu-xuanming",
+      "kind": "paper-page",
+      "title": "Scalable Collaborative zk-SNARK and Its Application to Fully Distributed Proof Delegation",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:21:34Z",
+      "content_hash": "sha256:0c2ba65e2dd88307fa9968e42a2f0ebb4682fc8eb0c7bf8cf5193188d8796e27",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

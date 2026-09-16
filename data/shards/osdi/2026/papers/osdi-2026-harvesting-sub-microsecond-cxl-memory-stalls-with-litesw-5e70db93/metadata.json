@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2026-harvesting-sub-microsecond-cxl-memory-stalls-with-litesw-5e70db93",
   "title": "Harvesting Sub-Microsecond CXL Memory Stalls with LiteSwitch",
+  "abstract": "Compute Express Link (CXL) offers a practical path to scale memory capacity and bandwidth available to a single host. However, CXL memory incurs sub-microsecond latency that is typically 3× or more compared to local memory, exacerbating memory-induced CPU stalls and degrading application performance. This paper presents LiteSwitch, a lightweight hardware-software co-design that opportunistically harvests otherwise idle cycles caused by CXL memory accesses. LiteSwitch introduces: (1) a hardware mechanism that precisely identifies a CXL-induced memory stall and exposes it to software with near-perfect accuracy and minimal overhead; (2) an ultra-fast software path that switches to another ready thread for harvesting in under 20 nanoseconds, an order of magnitude faster than conventional context switches. Together, these mechanisms enable efficient harvesting of sub-μs-scale memory stalls (>200 nanoseconds), without requiring changes to the application. The evaluation demonstrates that with a sufficient number of available threads per core, LiteSwitch recovers up to 80% of the performance lost due to CXL access latency, enabling the adoption of CXL memory without prohibitive slowdowns.",
+  "abstract_source_id": "src-abstract-osdi-2026-5e70db93",
   "venue": "osdi",
   "year": 2026,
   "track_or_session": "Disaggregated Memory Systems",
@@ -146,6 +148,19 @@
       "official": true,
       "supports": [
         "Official proceedings availability and canonical conference versions."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2026-5e70db93",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/li-nanqinqin",
+      "kind": "paper-page",
+      "title": "Harvesting Sub-Microsecond CXL Memory Stalls with LiteSwitch",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:08:22Z",
+      "content_hash": "sha256:4e84e7a8435a5356972bfd37f2286e7d784403ed966e19e2b63a64993a16d509",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

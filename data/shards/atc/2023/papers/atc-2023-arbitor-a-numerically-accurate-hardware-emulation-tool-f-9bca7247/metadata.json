@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "atc-2023-arbitor-a-numerically-accurate-hardware-emulation-tool-f-9bca7247",
   "title": "Arbitor: A Numerically Accurate Hardware Emulation Tool for DNN Accelerators",
+  "abstract": "Recently there has been considerable attention on designing and developing hardware accelerators for deep neural network (DNN) training workloads. However, designing DNN accelerators is often challenging as many commonly used hardware optimization strategies can potentially impact the final accuracy of the models. In this work, we propose a hardware emulation tool called Arbitor for empirically evaluating DNN accelerator designs and accurately estimating their effects on DNN accuracy. Arbitor takes advantage of modern machine learning compilers to enable fast prototyping and numerically accurate emulation of common DNN optimizations like low-precision arithmetic, approximate computing, and sparsity-aware processing on general-purpose GPUs. Subsequently, we use Arbitor to conduct an extensive sensitivity study to understand the effects of these optimizations on popular models such as ResNet, Transformers, Recurrent-CNN, and GNNs. Based on our analysis, we observe that DNN models can tolerate arithmetic operations with much lower precision than the commonly used numerical formats support. We also demonstrate that piece-wise approximation is effective in handling complex non-linear operations in DNN models without affecting their accuracy. Finally, enforcing a high degree of structured sparsity in the parameters and gradients can significantly affect the accuracy of the models.",
+  "abstract_source_id": "src-abstract-atc-2023-9bca7247",
   "venue": "atc",
   "year": 2023,
   "track_or_session": "Hardware and Software for Security and Performance",
@@ -159,6 +161,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-atc-2023-9bca7247",
+      "url": "https://www.usenix.org/conference/atc23/presentation/jiang-chenhao",
+      "kind": "paper-page",
+      "title": "Arbitor: A Numerically Accurate Hardware Emulation Tool for DNN Accelerators",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T21:57:45Z",
+      "content_hash": "sha256:16251aa319ceefe48c86313d3f73c08037dedd7274ce5b1293eaec4d5e08c35a",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

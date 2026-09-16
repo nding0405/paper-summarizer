@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2024-sense-enhancing-microarchitectural-awareness-for-tees-vi-0b65f7e5",
   "title": "SENSE: Enhancing Microarchitectural Awareness for TEEs via Subscription-Based Notification",
+  "abstract": "Effectively mitigating side-channel attacks (SCAs) in Trusted Execution Environments (TEEs) remains challenging despite advances in existing defenses. Current detection-based defenses hinge on observing abnormal victim performance characteristics but struggle to detect attacks leaking smaller portions of the secret across multiple executions. Limitations of existing detection-based defenses stem from various factors, including the absence of a trusted microarchitectural data source in TEEs, low-quality available data, inflexibility of victim responses, and platform-specific constraints. We contend that the primary obstacles to effective detection techniques can be attributed to the lack of direct access to precise microarchitectural information within TEEs.\n\nWe propose SENSE, a solution that actively exposes underlying microarchitectural information to userspace TEEs. SENSE enables userspace software in TEEs to subscribe to fine-grained microarchitectural events and utilize the events as a means to contextualize the ongoing microarchitectural states. We initially demonstrate SENSE’s capability by applying it to defeat the state-of-the-art cache-based side-channel attacks. We conduct a comprehensive security analysis to ensure that SENSE does not leak more information than a system without it does. We prototype SENSE on a gem5-based emulator, and our evaluation shows that SENSE is secure, can effectively defeats cache SCAs, and incurs negligible performance overhead (1.2%) under benign situations.",
+  "abstract_source_id": "src-abstract-ndss-2024-0b65f7e5",
   "venue": "ndss",
   "year": 2024,
   "track_or_session": "Fall submission cycle",
@@ -252,6 +254,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2024-0b65f7e5",
+      "url": "https://www.ndss-symposium.org/ndss-paper/sense-enhancing-microarchitectural-awareness-for-tees-via-subscription-based-notification/",
+      "kind": "paper-page",
+      "title": "SENSE: Enhancing Microarchitectural Awareness for TEEs via Subscription-Based Notification",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:18:39Z",
+      "content_hash": "sha256:86b08d05eb0152215c3be3059abddd09f0b3cd5d03e2695fc41df79d6fe5cd32",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

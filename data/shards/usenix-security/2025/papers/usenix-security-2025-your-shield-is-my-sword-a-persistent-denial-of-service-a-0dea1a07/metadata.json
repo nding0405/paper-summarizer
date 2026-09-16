@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-your-shield-is-my-sword-a-persistent-denial-of-service-a-0dea1a07",
   "title": "Your Shield is My Sword: A Persistent Denial-of-Service Attack via the Reuse of Unvalidated Caches in DNSSEC Validation",
+  "abstract": "The Domain Name System Security Extensions (DNSSEC), designed to ensure the authenticity and integrity of DNS data, has been deployed in over 90% of top-level zones. To mitigate service outages due to DNSSEC misconfigurations, DNS resolvers allow the public to troubleshoot resource records without enforcing DNSSEC validation. Unfortunately, given no clear specifications, many resolvers mix the caching and reusing of DNS data introduced via troubleshooting with those in routine operations. This opens a new attack surface that thwarts domain resolution.\n\nBased on the above finding, we present a novel Denial-of-Service attack named RUC, which turns DNSSEC from a shield into a sword that breaks the resolution of domains under DNSSEC-signed zones. Specifically, adversaries can exploit the troubleshooting mechanism of DNSSEC to inject forged data into the resolver cache. In subsequent routine resolutions, the resolver continuously reuses the unvalidated data, leading to persistent DNSSEC validation failure. Due to the unrestricted TTL of the unvalidated caches, a single injection can cause a resolution outage lasting over 24 hours. Our Internet-wide measurements reveal that RUC affects mainstream DNS software, public DNS services and DNSSEC-compliant open resolvers. After disclosure, BIND, Cloudflare and OpenDNS have acknowledged the vulnerabilities and patched based on our suggestions. Our work calls for formal guidelines on handling troubleshooting data in DNSSEC.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-0dea1a07",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Network Security 2: Routing and DoS",
@@ -154,6 +156,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-0dea1a07",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/zhang-shuhan",
+      "kind": "paper-page",
+      "title": "Your Shield is My Sword: A Persistent Denial-of-Service Attack via the Reuse of Unvalidated Caches in DNSSEC Validation",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:22:48Z",
+      "content_hash": "sha256:308c3c4ba39b2593b2c2b23fe8ecb6b6da32925b923b2b0c9ef4924172b7f54b",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

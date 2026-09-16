@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2025-tally-non-intrusive-performance-isolation-for-concurrent-43e586f8",
   "title": "Tally: Non-Intrusive Performance Isolation for Concurrent Deep Learning Workloads",
+  "abstract": "GPU underutilization is a significant concern in many production deep learning clusters, leading to prolonged job queues and increased operational expenses. A promising solution to this inefficiency is GPU sharing, which improves resource utilization by allowing multiple workloads to execute concurrently on a single GPU. However, deploying GPU sharing in production settings faces critical obstacles due to the limitations of existing mechanisms, including high integration costs, inadequate performance isolation, and limited application compatibility. To address these issues, we introduce Tally, a non-intrusive GPU sharing mechanism that provides robust performance isolation and comprehensive workload compatibility. The key to Tally's robust performance isolation capability lies in its fine-grained thread-block-level GPU kernel scheduling strategy, which allows the system to effectively mitigate interference caused by workload co-execution. We evaluate Tally on a diverse range of workloads and show that it incurs an average overhead of only 7.2% on the 99th-percentile latency of high-priority inference tasks when executed concurrently with best-effort training workloads, compared to 188.9% overhead exhibited by the state-of-the-art GPU sharing systems like TGS, while achieving over 80% of TGS's system throughput.",
+  "abstract_source_id": "src-abstract-asplos-2025-43e586f8",
   "venue": "asplos",
   "year": 2025,
   "track_or_session": "Session 6A: ML Systems 2",
@@ -125,6 +127,19 @@
       "official": false,
       "supports": [
         "Indexed abstract and open-access links used for relevance classification and ancillary-link discovery."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2025-43e586f8",
+      "url": "https://api.openalex.org/works/doi:10.1145/3669940.3707282?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Tally: Non-Intrusive Performance Isolation for Concurrent Deep Learning Workloads",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:04:16Z",
+      "content_hash": "sha256:a4c0e6463ec523d8c81af4812c5f84e5fe95eee3b870ff419f49d69fdde29b03",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

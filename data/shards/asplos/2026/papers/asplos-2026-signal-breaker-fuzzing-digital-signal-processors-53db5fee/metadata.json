@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2026-signal-breaker-fuzzing-digital-signal-processors-53db5fee",
   "title": "Signal Breaker: Fuzzing Digital Signal Processors",
+  "abstract": "Fuzzing is one of the most effective techniques for discovering software vulnerabilities. Fuzzers use feedback from prior executions to generate new test cases via random mutation,executing these inputs to uncover bugs. Fuzzing has been successfully applied to applications, operating systems, processors, and network protocols, making it one of the most widely adopted software testing methodologies. Despite this success, fuzzing has seen little adoption for Digital Signal Processor (DSP) software. DSPs occupy a unique position at the boundary of hardware and software: they ingest signals from the physical world, execute software instructions, and are tightly integrated into data-processing pipelines. Many safety- and security-critical domains, including telecommunications, transportation, and defense, rely heavily on DSPs, making robust DSP testing essential. To address this gap, we introduce SBFUZZ, a coverage-guided fuzzer designed specifically for DSP software. SBFUZZ is driven by three key observations: (1) DSPs expose limited and high-latency execution control and communication interfaces, and (2) DSPs have unique architectures that necessitate new instrumentation and mutation routines, and (3) DSP fuzzing must detect both traditional software bugs manifested as crashes and hardware-style bugs manifested as divergent yet continuing execution. Based on these insights, SBFUZZ advocates a DSP-centric fuzzer decomposition, where the DSP executes most fuzzing tasks autonomously while periodically leveraging a more powerful host for coordination, analysis, and storage. This design allows a single host to concurrently fuzz multiple end devices and supports both physical DSPs and simulated DSPs for re-hosted fuzzing. We implement SBFUZZ on a Texas Instruments TMS320C5515 DSP and evaluate it on 15 DSP benchmark programs.Our results show that SBFUZZ achieves 17.4x higher throughput and 2.6x greater code coverage than prior embedded fuzzing approaches applied to DSPs, uncovering 2491 unique crashes, yielding 34 unique bugs",
+  "abstract_source_id": "src-abstract-asplos-2026-53db5fee",
   "venue": "asplos",
   "year": 2026,
   "track_or_session": "Session 7C: Testing & Fuzzing",
@@ -104,6 +106,19 @@
       "official": false,
       "supports": [
         "Indexed abstract used for strict relevance classification and indexed arXiv identifier where available."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2026-53db5fee",
+      "url": "https://api.openalex.org/works/doi:10.1145/3779212.3790220?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Signal Breaker: Fuzzing Digital Signal Processors",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:06:36Z",
+      "content_hash": "sha256:89e5862259532dd1b19ff3e8ea58a64445d533d403100ecf3726010b7894a04e",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

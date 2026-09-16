@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2025-parcel-mismatch-demystified-addressing-a-decade-old-secu-b50399c4",
   "title": "Parcel Mismatch Demystified: Addressing a Decade-Old Security Challenge in Android",
+  "abstract": "Parcel Mismatch vulnerabilities in Android's Inter-Process Communication (IPC) mechanism have been a persistent security challenge for over a decade, leading to numerous privilege escalation exploits. While Google has implemented various mitigation strategies, culminating in the Lazy Bundle mechanism in Android 13, there has been no systematic analysis of these vulnerabilities and mitigations. To fill the gap, in this paper, we conduct the first comprehensive study of Parcel Mismatch vulnerabilities, proposing ParcelTaint, a new static analysis approach for detecting these issues. We develop precise models for tracking Intent and Bundle transformations across processes, enabling the discovery of new attack vectors. We reveal 10 previously unknown high-severity vulnerabilities, and 5 of them have been assigned with CVEs, including new ways to bypass existing mitigations and new attack chains in system services. All of them have been confirmed. We find that Parcel Mismatch remains a significant security concern, particularly for Android versions prior to 13 and for Original Equipment Manufacturers (OEMs) implementing custom system components. Based on our findings, Google has revised its security strategy to address core vulnerability patterns rather than relying solely on system-level mitigations. The study provides crucial insights for improving Android's IPC security and highlights the importance of systematic analysis in addressing long-standing security challenges.",
+  "abstract_source_id": "src-abstract-ccs-2025-b50399c4",
   "venue": "ccs",
   "year": 2025,
   "track_or_session": "Cycle 2",
@@ -169,6 +171,19 @@
         "published-order authors",
         "publication-time affiliations",
         "publication date and page span"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2025-b50399c4",
+      "url": "https://api.openalex.org/works/doi:10.1145/3719027.3765034?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Parcel Mismatch Demystified: Addressing a Decade-Old Security Challenge in Android",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:15:39Z",
+      "content_hash": "sha256:060d96ab1029bf9baded5bf0c7b57569d1dab81d8eef286557639c78ff5bd118",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

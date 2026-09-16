@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "fast-2025-hasis-a-hardware-assisted-single-index-store-for-hybrid-9b38f410",
   "title": "HaSiS: A Hardware-assisted Single-index Store for Hybrid Transactional and Analytical Processing",
+  "abstract": "Driven by the exploding demands for real-time data analytics, hybrid transactional and analytical processing (HTAP) has become a topic of great interest in academia and the database industry. To address the well-known conflict between optimal storage formats for online transactional processing (OLTP) and online analytical processing (OLAP), the conventional practice employs a mixture of at least two distinct index data structures (e.g., B+-tree and column-store) and dynamically migrates data across different index domains. Unfortunately, such a multi-index design is notably subject to non-trivial trade-offs among OLTP performance, OLAP performance, and OLAP data freshness. In contrast to prior work that centered around exploring the multi-index design space, this work advocates a single-index design for a paradigm shift towards much more effectively serving HTAP workloads. This is made possible by computational storage drives (CSDs) with built-in transparent compression that are emerging on the commercial market. The key is to exploit the fact that compression-capable CSDs enable data management software to purposefully employ sparsely filled storage data blocks without sacrificing physical storage capacity. Leveraging this unique feature, we have developed an HTAP-oriented B+-tree design that can effectively serve HTAP workloads and in the meantime can achieve almost instant OLAP data freshness. We have developed and open-sourced a fully functional prototype. Our results show that compared to the state-of-the-art solutions, such a CSD-assisted single-index design can ensure data freshness and deliver high performance for HTAP workloads.",
+  "abstract_source_id": "src-abstract-fast-2025-9b38f410",
   "venue": "fast",
   "year": 2025,
   "track_or_session": "Hardware Assist",
@@ -161,6 +163,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-fast-2025-9b38f410",
+      "url": "https://www.usenix.org/conference/fast25/presentation/huang",
+      "kind": "paper-page",
+      "title": "HaSiS: A Hardware-assisted Single-index Store for Hybrid Transactional and Analytical Processing",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:01:06Z",
+      "content_hash": "sha256:b6d31d1bc57b3ba87227b08fdf367132576055122511aac5a1bd06393afb28c4",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

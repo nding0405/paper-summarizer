@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2023-rosetta-enabling-robust-tls-encrypted-traffic-classifica-d624d66a",
   "title": "Rosetta: Enabling Robust TLS Encrypted Traffic Classification in Diverse Network Environments with TCP-Aware Traffic Augmentation",
+  "abstract": "As the majority of Internet traffic is encrypted by the Transport Layer Security (TLS) protocol, recent advances leverage Deep Learning (DL) models to conduct encrypted traffic classification by automatically extracting complicated and informative features from the packet length sequences of TLS flows. Though existing DL models have reported to achieve excellent classification results on encrypted traffic, we conduct a comprehensive study to show that they all have significant performance degradation in real diverse network environments. After systematically studying the reasons, we discover the packet length sequences of flows may change dramatically due to various TCP mechanisms for reliable transmission in varying network environments. Thereafter, we propose Rosetta to enable robust TLS encrypted traffic classification for existing DL models. It leverages TCP-aware traffic augmentation mechanisms and self-supervised learning to understand implict TCP semantics, and hence extracts robust features of TLS flows. Extensive experiments show that Rosetta can significantly improve the classification performance of existing DL models on TLS traffic in diverse network environments.",
+  "abstract_source_id": "src-abstract-usenix-security-2023-d624d66a",
   "venue": "usenix-security",
   "year": 2023,
   "track_or_session": "Traffic Analysis",
@@ -217,6 +219,19 @@
       "official": true,
       "supports": [
         "authors, affiliations when published, abstract, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2023-d624d66a",
+      "url": "https://www.usenix.org/conference/usenixsecurity23/presentation/xie",
+      "kind": "paper-page",
+      "title": "Rosetta: Enabling Robust TLS Encrypted Traffic Classification in Diverse Network Environments with TCP-Aware Traffic Augmentation",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:12:51Z",
+      "content_hash": "sha256:d6012d37346697a0fd0f9d5112beed5f10200d0244957dbe15f2b704b2d96068",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

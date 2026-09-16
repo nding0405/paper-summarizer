@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2026-firmagent-leveraging-fuzzing-to-assist-llm-agents-with-i-9f95a461",
   "title": "FirmAgent: Leveraging Fuzzing to Assist LLM Agents with IoT Firmware Vulnerability Discovery",
+  "abstract": "The rapid proliferation of IoT devices has introduced substantial security vulnerabilities. Existing vulnerability detection techniques exhibit various weaknesses: static analysis solutions (including large language models, LLMs) suffer from high false positives and provide no PoC (proof-of-concept) samples, while dynamic analysis solutions (e.g., fuzzing) often have high false negatives.\n\nTo address these challenges, we present FirmAgent, the first hybrid solution that leverages fuzzing to assist LLM agents in finding vulnerabilities in IoT firmware.\n\nOur design is motivated by the key observation that fuzzing can accurately identify input-related code points in firmware, while static analysis can thoroughly analyze program paths starting from those code points.\n\nFirmAgent utilizes fuzzing to collect runtime input points (i.e., taint sources) and reconstruct potential vulnerability paths. Then, it applies an LLM agent to perform context-aware taint analysis along the potential paths and another LLM agent to refine the fuzzing-generated testcase to generate PoC testcases.\n\nWe evaluate FirmAgent on 14 real-world IoT firmware. It identifies 182 vulnerabilities with a precision of 91%, including 140 previously unknown vulnerabilities, 17 of which have been assigned CVE numbers. Our results demonstrate that FirmAgent substantially outperforms SOTA tools in both detection capability and precision.",
+  "abstract_source_id": "src-abstract-ndss-2026-9f95a461",
   "venue": "ndss",
   "year": 2026,
   "track_or_session": "Summer submission cycle",
@@ -244,6 +246,19 @@
       "official": false,
       "supports": [
         "independent proceedings identity reconciliation"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2026-9f95a461",
+      "url": "https://www.ndss-symposium.org/ndss-paper/firmagent-leveraging-fuzzing-to-assist-llm-agents-with-iot-firmware-vulnerability-discovery/",
+      "kind": "paper-page",
+      "title": "FirmAgent: Leveraging Fuzzing to Assist LLM Agents with IoT Firmware Vulnerability Discovery",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:22:02Z",
+      "content_hash": "sha256:8f6c304324c190f902d8fb75430d1e42b93616bba57f74ef42aac5c4bd2f8c02",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

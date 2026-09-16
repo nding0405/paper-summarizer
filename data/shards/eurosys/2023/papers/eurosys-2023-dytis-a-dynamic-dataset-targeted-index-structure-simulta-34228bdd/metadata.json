@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "eurosys-2023-dytis-a-dynamic-dataset-targeted-index-structure-simulta-34228bdd",
   "title": "DyTIS: A Dynamic Dataset Targeted Index Structure Simultaneously Efficient for Search, Insert, and Scan",
+  "abstract": "Many datasets in real life are complex and dynamic, that is, their key densities are varied over the whole key space and their key distributions change over time. It is challenging for an index structure to efficiently support all key operations for data management, in particular, search, insert, and scan, for such dynamic datasets. In this paper, we present DyTIS (Dynamic dataset Targeted Index Structure), an index that targets dynamic datasets. DyTIS, though based on the structure of Extendible hashing, leverages the CDF of the key distribution of a dataset, and learns and adjusts its structure as the dataset grows. The key novelty behind DyTIS is to group keys by the natural key order and maintain keys in sorted order in each bucket to support scan operations within a hash index. We also define what we refer to as a dynamic dataset and propose a means to quantify its dynamic characteristics. Our experimental results show that DyTIS provides higher performance than the state-of-the-art learned index for the dynamic datasets considered.",
+  "abstract_source_id": "src-abstract-eurosys-2023-34228bdd",
   "venue": "eurosys",
   "year": 2023,
   "track_or_session": null,
@@ -167,6 +169,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-eurosys-2023-34228bdd",
+      "url": "https://api.openalex.org/works/doi:10.1145/3552326.3587434?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "DyTIS: A Dynamic Dataset Targeted Index Structure Simultaneously Efficient for Search, Insert, and Scan",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:18:31Z",
+      "content_hash": "sha256:4abe14b9c49894b82670d5b88a0b4cd0ad46754ce761bfb0c01f533f569f3847",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

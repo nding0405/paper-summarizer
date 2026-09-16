@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "fast-2023-revitalizing-the-forgotten-on-chip-dma-to-expedite-data-b4e67de3",
   "title": "Revitalizing the Forgotten On-Chip DMA to Expedite Data Movement in NVM-based Storage Systems",
+  "abstract": "Data-intensive applications executing on NVM-based storage systems experience serious bottlenecks when moving data between DRAM and NVM. We advocate for the use of the long-existing but recently neglected on-chip DMA to expedite data movement with three contributions. First, we explore new latency-oriented optimization directions, driven by a comprehensive DMA study, to design a high-performance DMA module, which significantly lowers the I/O size threshold to observe benefits. Second, we propose a new data movement engine, Fastmove, that coordinates the use of the DMA along with the CPU with judicious scheduling and load splitting such that the DMA’s limitations are compensated, and the overall gains are maximized. Finally, with a general kernel-based design, simple APIs, and DAX file system integration, Fastmove allows applications to transparently exploit the DMA and its new features without code change. We run three data-intensive applications MySQL, GraphWalker, and Filebench atop NOVA, ext4-DAX, and XFS-DAX, with standard benchmarks like TPC-C, and popular graph algorithms like PageRank. Across single- and multi-socket settings, compared to the conventional CPU-only NVM accesses, Fastmove introduces to TPC-C with MySQL 1.13-2.16× speedups of peak throughput, reduces the average latency by 17.7-60.8%, and saves 37.1-68.9% CPU usage spent in data movement. It also shortens the execution time of graph algorithms with GraphWalker by 39.7-53.4%, and introduces 1.12-1.27× throughput speedups for Filebench.",
+  "abstract_source_id": "src-abstract-fast-2023-b4e67de3",
   "venue": "fast",
   "year": 2023,
   "track_or_session": "IO Stacks",
@@ -238,6 +240,19 @@
       "supports": [
         "canonical author line and publication-time affiliations",
         "resolution of conflicting or malformed citation metadata on the official paper page"
+      ]
+    },
+    {
+      "id": "src-abstract-fast-2023-b4e67de3",
+      "url": "https://www.usenix.org/conference/fast23/presentation/su",
+      "kind": "paper-page",
+      "title": "Revitalizing the Forgotten On-Chip DMA to Expedite Data Movement in NVM-based Storage Systems",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:00:39Z",
+      "content_hash": "sha256:465a3873918c71d624d85146709fa10f5584cee0b3948caaa4219da8f8553ab6",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

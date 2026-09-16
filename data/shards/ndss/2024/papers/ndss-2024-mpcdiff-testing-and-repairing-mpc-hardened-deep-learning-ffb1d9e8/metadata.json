@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2024-mpcdiff-testing-and-repairing-mpc-hardened-deep-learning-ffb1d9e8",
   "title": "MPCDiff: Testing and Repairing MPC-Hardened Deep Learning Models",
+  "abstract": "Secure multi-party computation (MPC) has recently become prominent as a concept to enable multiple parties to perform privacy-preserving machine learning without leaking sensitive data or details of pre-trained models to the other parties. Industry and the community have been actively developing and promoting high-quality MPC frameworks (e.g., based on TensorFlow and PyTorch) to enable the usage of MPC-hardened models, greatly easing the development cycle of integrating deep learning models with MPC primitives.\n\nDespite the prosperous development and adoption of MPC frameworks, a principled and systematic understanding toward the correctness of those MPC frameworks does not yet exist. To fill this critical gap, this paper introduces MPCDiff, a differential testing framework to effectively uncover inputs that cause deviant outputs of MPC-hardened models and their plaintext versions. We further develop techniques to localize error-causing computation units in MPC-hardened models and automatically repair those defects.\n\nWe evaluate MPCDiff using real-world popular MPC frameworks for deep learning developed by Meta (Facebook), Alibaba Group, Cape Privacy, and OpenMined. MPCDiff successfully detected over one thousand inputs that result in largely deviant outputs. These deviation-triggering inputs are (visually) meaningful in comparison to regular inputs, indicating that our findings may cause great confusion in the daily usage of MPC frameworks. After localizing and repairing error-causing computation units, the robustness of MPC-hardened models can be notably enhanced without sacrificing accuracy and with negligible overhead.",
+  "abstract_source_id": "src-abstract-ndss-2024-ffb1d9e8",
   "venue": "ndss",
   "year": 2024,
   "track_or_session": "Summer submission cycle",
@@ -126,6 +128,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2024-ffb1d9e8",
+      "url": "https://www.ndss-symposium.org/ndss-paper/mpcdiff-testing-and-repairing-mpc-hardened-deep-learning-models/",
+      "kind": "paper-page",
+      "title": "MPCDiff: Testing and Repairing MPC-Hardened Deep Learning Models",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:18:25Z",
+      "content_hash": "sha256:264951e895ec3d4662c7059a7b63648092e45b175bbaeb7e0af4d7909fd49ae1",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

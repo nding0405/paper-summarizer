@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2026-tpla-tensor-parallel-latent-attention-for-efficient-disa-dd55907c",
   "title": "TPLA: Tensor Parallel Latent Attention for Efficient Disaggregated Prefill & Decode Inference",
+  "abstract": "Multi-Head Latent Attention (MLA), introduced in DeepSeek-V2, compresses key–value states into a low-rank latent vector cKV, caching only this vector to reduce memory. In tensor parallelism (TP), however, attention heads are computed across multiple devices, and each device must load the full cKV, eroding the advantage of MLA over Grouped Query Attention (GQA). We present TPLA, a scheme that partitions both the latent representation and each head's input dimension across devices, performs attention independently on each shard, and aggregates the results with an all-reduce. Unlike GLA, every attention head in TPLA still attends to the full latent space, preserving MLA's representational capacity while reducing the per-device KV cache. To make TPLA drop-in compatible with MLA checkpoints, we further derive orthogonal reparameterizations of RMSNorm and softmax---instantiated with Hadamard and PCA transforms---that mitigate cross-shard discrepancies when slicing latent vectors across devices. Finally, we introduce a prefill-decode separation scheme that keeps the MLA form during compute-bound prefilling and switches to TPLA during memory-bound decoding, minimizing conversion-induced error. By reducing the per-device KV cache for DeepSeek-V3 and Kimi-K2, we achieve 1.79x) and 1.93) speedups respectively, at a 32K-token context length while maintaining accuracy on commonsense and LongBench benchmarks. TPLA can be further implemented on top of FlashAttention-3, enabling practical end-to-end acceleration.",
+  "abstract_source_id": "src-abstract-asplos-2026-dd55907c",
   "venue": "asplos",
   "year": 2026,
   "track_or_session": "Session 3A: LLM Attention & KV Cache",
@@ -209,6 +211,19 @@
       "official": false,
       "supports": [
         "Indexed abstract used for strict relevance classification and indexed arXiv identifier where available."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2026-dd55907c",
+      "url": "https://api.openalex.org/works/doi:10.1145/3779212.3790237?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "TPLA: Tensor Parallel Latent Attention for Efficient Disaggregated Prefill & Decode Inference",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:07:00Z",
+      "content_hash": "sha256:b8ab3e204ade0ada38d44bcb1386065da4f5e75b4f768867ffb180f8f43f3b22",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

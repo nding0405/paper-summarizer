@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2025-invade-the-walled-garden-evaluating-gtp-security-in-cell-f6f7e479",
   "title": "Invade the Walled Garden: Evaluating GTP Security in Cellular Networks",
+  "abstract": "Cellular backhaul and core networks have traditionally been considered as Walled Garden, with their security ensured by physical isolation. Therefore, prior security studies primarily focused on radio access networks with limited treatment of backhaul and core network interfaces. In this paper, we performed a security evaluation of real-world GPRS Tunnelling Protocol (GTP) deployments. GTP is the fundamental protocol for user traffic management between base stations and core networks (inside the Walled Garden) from 3G to 5G, thus often assumed inaccessible and non-exploitable from the Internet. However, our study reveals for the first time the troubling state of GTP access control in real-world deployments. Aided by a semi-automated tool, our measurements discovered around 749,000 valid GTP hosts accessible via the public Internet, spanning across 1,176 service providers in 162 countries. Our results demonstrate potential exposure of mobile core network infrastructures to external threats. We then evaluated the attack surface of exposed GTP infrastructures, and found out that as many as 38 types of GTP messages can be misused to launch various attacks such as denial-of-service and session hijacking. Our experiments using open source 4G and 5G projects in isolated lab environments further confirm the feasibility of those GTP-based attacks, including remote hijacking of user traffic sent through cellular core networks. In addition to threats against cellular networks and their subscribers, exposed GTP devices could also be weaponized to launch large-scale reflective denial-of-services (RDoS) attacks. We hope our findings will increase awareness of GTP vulnerabilities among operators and the security community, highlighting the urgent need to further strengthen security in cellular core networks.",
+  "abstract_source_id": "src-abstract-sp-2025-f6f7e479",
   "venue": "sp",
   "year": 2025,
   "track_or_session": "Cycle 1",
@@ -217,6 +219,19 @@
       "official": true,
       "supports": [
         "DOI, authors, affiliations, abstract, publication date, pages, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2025-f6f7e479",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Invade the Walled Garden: Evaluating GTP Security in Cellular Networks",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:47Z",
+      "content_hash": "sha256:d48e5e27e72297ce02860f066764bd9c5cd6e8191e2ebf4b4f15da0fffb6959f",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2025-evilharmony-stealthy-adversarial-attacks-against-black-b-9bef0dae",
   "title": "EvilHarmony: Stealthy Adversarial Attacks against Black-box Speech Recognition Systems",
+  "abstract": "Automatic Speech Recognition (ASR) systems are vulnerable to adversarial examples (AEs), where small, carefully designed perturbations are added to original audio to mislead the systems into generating target commands. Existing adversarial attacks typically initialize perturbations either as zero or as Text-to-Speech clips of the target command. The former accumulates the features of the command in the perturbed audio, while the latter constantly reduces the features of the command, resulting in the generation of AEs. Although most target commands in the AEs are imperceptible to humans, the audio often exhibits noticeable distortions or disruptions, making it apparent that the sound has been tampered with. This work aims to retain only the essential features of adversarial audio, minimizing distortions from unnecessary elements to improve quality and make the attack less detectable. Our findings highlight the importance of formants as critical features for black-box adversarial attacks, motivating the development of a novel Formant Filter Bank (FFB) tailored to the target command. By inputting musical audio into the FFB, we utilize the filtered output as the perturbation seed, which retains the formant features of the target command and blends in certain features of the original music. Then we search for a minimum enhancement factor for the perturbation seed to generate high-quality AEs. Our perturbation can be regarded as local amplitude modulation of the music, so we define the AE as EvilHarmony. Experimental results demonstrate that our method successfully attacks commercial black-box ASR models, including Microsoft, Google, Amazon, Tencentyun, Aliyun, and OpenAI Whisper-V3. Compared to existing approaches, our AEs achieve significantly greater stealth, with 53% to 77% of participants perceiving them as indistinguishable from normal audio across the six ASR API services. Additionally, our approach successfully attacks Google Assistant and voice assistants on Surface Pro 9 in the real world. Demos are uploaded at https://sites.google.com/view/evilharmony.",
+  "abstract_source_id": "src-abstract-sp-2025-9bef0dae",
   "venue": "sp",
   "year": 2025,
   "track_or_session": "Cycle 2",
@@ -280,6 +282,19 @@
       "official": true,
       "supports": [
         "DOI, authors, affiliations, abstract, publication date, pages, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2025-9bef0dae",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "EvilHarmony: Stealthy Adversarial Attacks Against Black-Box Speech Recognition Systems",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:47Z",
+      "content_hash": "sha256:d48e5e27e72297ce02860f066764bd9c5cd6e8191e2ebf4b4f15da0fffb6959f",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

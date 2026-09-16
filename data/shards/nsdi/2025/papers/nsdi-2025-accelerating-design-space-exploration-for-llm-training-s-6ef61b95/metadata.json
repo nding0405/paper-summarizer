@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2025-accelerating-design-space-exploration-for-llm-training-s-6ef61b95",
   "title": "Accelerating Design Space Exploration for LLM Training Systems with Multi-experiment Parallel Simulation",
+  "abstract": "The rapid expansion of large language models (LLMs) requires the development of extensive GPU clusters, with companies deploying clusters with tens to hundreds of thousands of GPUs. This growth significantly expands the design space for LLM training systems, requiring thorough exploration of different parallelization strategies, communication parameters, congestion control, fabric topology, etc. Current methods require up to 10k simulation experiments to identify optimal configurations, with inadequate exploration leading to significant degradation of training performance.\n\nIn this paper, we tackle the overlooked problem of efficiently conducting parallel simulation experiments for design space exploration. Our analysis and experiments show that Single-process Multi-experiment (SPME) achieves superior performance by reducing scheduling overhead and optimizing resource utilization, yet remains insufficient for current AI cluster scales. To enhance SPME’s efficacy, we introduce Multiverse, a novel GPU-based AI training simulator. Multiverse leverages the computing throughput of GPUs efficiently with optimizations such as a pull-based synchronization, highfidelity intra-server communication, and a kernel-fusion technique. Extensive experiments validate the accuracy and efficiency of Multiverse, demonstrating less than 3.0% discrepancy with real-world LLM training on clusters of up to 54,000 GPUs, achieving 43.1−73.2X speedup over state-of-the-art CPU-based simulators in various use cases.",
+  "abstract_source_id": "src-abstract-nsdi-2025-6ef61b95",
   "venue": "nsdi",
   "year": 2025,
   "track_or_session": "LLM Training and Resilience",
@@ -224,6 +226,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2025-6ef61b95",
+      "url": "https://www.usenix.org/conference/nsdi25/presentation/gui",
+      "kind": "paper-page",
+      "title": "Accelerating Design Space Exploration for LLM Training Systems with Multi-experiment Parallel Simulation",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:03:56Z",
+      "content_hash": "sha256:be4b44478611d9013743b977877099dc4c8b5a4f57d1c648e6f7203b539f2a38",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

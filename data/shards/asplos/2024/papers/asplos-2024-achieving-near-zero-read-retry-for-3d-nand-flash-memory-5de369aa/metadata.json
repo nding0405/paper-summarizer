@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2024-achieving-near-zero-read-retry-for-3d-nand-flash-memory-5de369aa",
   "title": "Achieving Near-Zero Read Retry for 3D NAND Flash Memory",
+  "abstract": "As the flash-based storage devices age with program/erase (P/E) cycles, they require an increasing number of read retries for error correction, which in turn deteriorates their read performance. The design of read-retry methods is critical to flash read performance. Current flash chips embed pre-defined read retry tables (RRT) for retry, but these tables fail to consider the read granularity and error behaviors. We characterize different types of real flash chips, based on which we further develop models for the correlation among the optimal read offsets of read voltages required for reading each page. By leveraging characterization observations and the models, we propose a methodology to generate a tailored RRT for each flash model. We introduce a dynamic read retry procedure to pick up proper read voltages from the table, followed by a proximity-search method for fine-tuning the read offsets. Experiments on real flash chips show that the proposed methodology can achieve near-zero retries. It reduces the average number of read retries to below 0.003 for data with high retention time at 8K P/E cycles, whereas the state-of-the-art approaches incur over 3 read retries on average once the flash is aged to 3K P/E cycles.",
+  "abstract_source_id": "src-abstract-asplos-2024-5de369aa",
   "venue": "asplos",
   "year": 2024,
   "track_or_session": "Session 9B: SSDs",
@@ -243,6 +245,19 @@
       "official": false,
       "supports": [
         "Indexed alternate-version and institutional-copy links; not used as the authoritative relevance source."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2024-5de369aa",
+      "url": "https://api.openalex.org/works/doi:10.1145/3620665.3640372?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Achieving Near-Zero Read Retry for 3D NAND Flash Memory",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T21:59:52Z",
+      "content_hash": "sha256:3ea7c32d4d514ab8d40a0293ea813b26eb83d91f180d2eeb738273822e0a95e2",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

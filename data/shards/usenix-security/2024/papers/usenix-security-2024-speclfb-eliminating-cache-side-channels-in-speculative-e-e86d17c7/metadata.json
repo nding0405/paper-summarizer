@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2024-speclfb-eliminating-cache-side-channels-in-speculative-e-e86d17c7",
   "title": "SpecLFB: Eliminating Cache Side Channels in Speculative Executions",
+  "abstract": "Cache side-channel attacks based on speculative executions are powerful and difficult to mitigate. Existing hardware defense schemes often require additional hardware data structures, data movement operations and/or complex logical computations, resulting in excessive overhead of both processor performance and hardware resources. To this end, this paper proposes SpecLFB, which utilizes the microarchitecture component, Line-Fill-Buffer, integrated with a proposed mechanism for load security check to prevent the establishment of cache side channels in speculative executions. To ensure the correctness and immediacy of load security check, a structure called ROB unsafe mask is designed for SpecLFB to track instruction state. To further reduce processor performance overhead, SpecLFB narrows down the protection scope of unsafe speculative loads and determines the time at which they can be deprotected as early as possible. SpecLFB has been implemented in the open-source RISC-V core, SonicBOOM, as well as in Gem5. For the enhanced SonicBOOM, its register-transfer-level (RTL) code is generated, and an FPGA hardware prototype burned with the core and running a Linux-kernel-based operating system is developed. Based on the evaluations in terms of security guarantee, performance overhead, and hardware resource overhead through RTL simulation, FPGA prototype experiment, and Gem5 simulation, it shows that SpecLFB effectively defends against attacks. It leads to a hardware resource overhead of only 0.6% and the performance overhead of only 1.85% and 3.20% in the FPGA prototype experiment and Gem5 simulation, respectively.",
+  "abstract_source_id": "src-abstract-usenix-security-2024-e86d17c7",
   "venue": "usenix-security",
   "year": 2024,
   "track_or_session": "Side Channel I: Transient Execution",
@@ -175,6 +177,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2024-e86d17c7",
+      "url": "https://www.usenix.org/conference/usenixsecurity24/presentation/cheng-xiaoyu",
+      "kind": "paper-page",
+      "title": "SpecLFB: Eliminating Cache Side Channels in Speculative Executions",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:17:23Z",
+      "content_hash": "sha256:92dfa16f77e00b35f29d8347ca04c36147ca08178a20de0a348edd5700d4aea0",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2023-aurc-detecting-errors-in-program-code-and-documentation-23984c7a",
   "title": "AURC: Detecting Errors in Program Code and Documentation",
+  "abstract": "Error detection in program code and documentation is a critical problem in computer security. Previous studies have shown promising vulnerability discovery performance by extensive code or document-guided analysis. However, the state-of-the-arts have the following significant limitations: (i) They assume the documents are correct and treat the code that violates documents as bugs, thus cannot find documents’ defects and code’s bugs if APIs have defective documents or no documents. (ii) They utilize majority voting to judge the inconsistent code snippets and treat the deviants as bugs, thus cannot cope with situations where correct usage is minor or all use cases are wrong.\n\nIn this paper, we present AURC, a static framework for detecting code bugs of incorrect return checks and document defects. We observe that three objects participate in the API invocation, the document, the caller (code that invokes API), and the callee (the source code of API). Mutual corroboration of these three objects eliminates the reliance on the above assumptions. AURC contains a context-sensitive backward analysis to process callees, a pre-trained model-based document classifier, and a container that collects conditions of if statements from callers. After cross-checking the results from callees, callers, and documents, AURC delivers them to the correctness inference module to infer the defective one. We evaluated AURC on ten popular codebases. AURC discovered 529 new bugs that can lead to security issues like heap buffer overflow and sensitive information leakage, and 224 new document defects. Maintainers acknowledge our findings and have accepted 222 code patches and 76 document patches.",
+  "abstract_source_id": "src-abstract-usenix-security-2023-23984c7a",
   "venue": "usenix-security",
   "year": 2023,
   "track_or_session": "Programs, Code, and Binaries",
@@ -154,6 +156,19 @@
       "official": true,
       "supports": [
         "authors, affiliations when published, abstract, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2023-23984c7a",
+      "url": "https://www.usenix.org/conference/usenixsecurity23/presentation/hu",
+      "kind": "paper-page",
+      "title": "AURC: Detecting Errors in Program Code and Documentation",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:09:52Z",
+      "content_hash": "sha256:0f92909d50bef1c0dc62786a22b3791b40289c7bf03d7a6d632b9eb0b96f19ff",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

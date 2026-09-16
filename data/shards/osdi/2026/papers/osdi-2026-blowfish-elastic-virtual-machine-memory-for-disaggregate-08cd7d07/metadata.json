@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2026-blowfish-elastic-virtual-machine-memory-for-disaggregate-08cd7d07",
   "title": "Blowfish: Elastic Virtual Machine Memory for Disaggregated Memory",
+  "abstract": "Cold memory rebalancing exhibits unique challenges to the existing memory overcommitment mechanisms, such as page tracking under Transparent Huge Pages (THP) and frequent remapping of page tables, leading to a series of throughput and latency issues. In this paper, we propose Blowfish, a memory overcommitment framework built on disaggregated memory, performing cold (and free) memory reclamation and restoration at μs-scale. Based on paravirtualization, Blowfish leverages a lightweight guest-level THP-aware hotness tracker to monitor page access and let the hypervisor directly reclaim and reallocate host physical memory across VMs with a dedicated cross-layer path for cold memory, bypassing the modifications of guest page table and modifications of I/O page table while benefiting from the rich program semantics of guest VM when recognizing the cold memory. As a result, Blowfish significantly speeds up the page reclamation and restoration, 2.48× and 2.14× faster than the state-of-the-art solution, HyperAlloc, respectively, and improves memory reclamation ratios by 1.6×-6.1× within 5% performance degradation.",
+  "abstract_source_id": "src-abstract-osdi-2026-08cd7d07",
   "venue": "osdi",
   "year": 2026,
   "track_or_session": "Disaggregated Memory Systems",
@@ -335,6 +337,19 @@
       "official": true,
       "supports": [
         "Official proceedings availability and canonical conference versions."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2026-08cd7d07",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/zhang-yulong",
+      "kind": "paper-page",
+      "title": "Blowfish: Elastic Virtual Machine Memory for Disaggregated Memory",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:08:03Z",
+      "content_hash": "sha256:ae100c85d15538bf28e571ac1676b73a8f08af49669cdd62667575f165ca3d8b",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

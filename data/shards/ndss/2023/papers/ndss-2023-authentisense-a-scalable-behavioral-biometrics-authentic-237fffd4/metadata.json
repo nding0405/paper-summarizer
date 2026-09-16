@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2023-authentisense-a-scalable-behavioral-biometrics-authentic-237fffd4",
   "title": "AuthentiSense: A Scalable Behavioral Biometrics Authentication Scheme using Few-Shot Learning for Mobile Platforms",
+  "abstract": "Mobile applications are widely used for online services sharing a large amount of personal data online. One-time authentication techniques such as passwords and physiological biometrics (e.g., fingerprint, face, and iris) have their own advantages but also disadvantages since they can be stolen or emulated, and do not prevent access to the underlying device, once it is unlocked. To address these challenges, complementary authentication systems based on behavioural biometrics have emerged. The goal is to continuously profile users based on their interaction with the mobile device. However, existing behavioural authentication schemes are not (i) user-agnostic meaning that they cannot dynamically handle changes in the user-base without model re-training, or (ii) do not scale well to authenticate millions of users.\n\nIn this paper, we present AuthentiSense, a user-agnostic, scalable, and efficient behavioural biometrics authentication system that enables continuous authentication and utilizes only motion patterns (i.e., accelerometer, gyroscope, and magnetometer data) while users interact with mobile apps. Our approach requires neither manually engineered features nor a significant amount of data for model training. We leverage a few-shot learning technique, called Siamese network, to authenticate users at a large scale. We perform a systematic measurement study and report the impact of the parameters such as interaction time needed for authentication and n-shot verification (comparison with enrollment samples) at the recognition stage. Remarkably, AuthentiSense achieves high accuracy of up to 97% in terms of F1-score even when evaluated in a few-shot fashion that requires only a few behaviour samples per user (3 shots). Our approach accurately authenticates users only after 1 second of user interaction. For AuthentiSense, we report a FAR and FRR of 0.023 and 0.057, respectively.",
+  "abstract_source_id": "src-abstract-ndss-2023-237fffd4",
   "venue": "ndss",
   "year": 2023,
   "track_or_session": "Mobile Security and Privacy",
@@ -231,6 +233,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2023-237fffd4",
+      "url": "https://www.ndss-symposium.org/ndss-paper/authentisense-a-scalable-behavioral-biometrics-authentication-scheme-using-few-shot-learning-for-mobile-platforms/",
+      "kind": "paper-page",
+      "title": "AuthentiSense: A Scalable Behavioral Biometrics Authentication Scheme using Few-Shot Learning for Mobile Platforms",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:16:42Z",
+      "content_hash": "sha256:e352f845332c3bf00b5ef6fc4a093189906cecab315e0db3e7afeec31eba9533",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

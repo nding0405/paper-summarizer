@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2024-high-throughput-and-flexible-host-networking-for-acceler-56cf1b04",
   "title": "High-throughput and Flexible Host Networking for Accelerated Computing",
+  "abstract": "Modern network hardware is able to meet the stringent bandwidth demands of applications like GPU-accelerated AI. However, existing host network stacks offer a hard tradeoff between performance (in terms of sustained throughput when compared to network hardware capacity) and flexibility (in terms of the ability to select, customize, and extend different network protocols).\n\nThis paper explores a clean-slate approach to simultaneously offer high performance and flexibility. We present a co-design of the NIC hardware and the software stack to achieve this. The key idea in our design is the physical separation of the data path (payload transfer between network and application buffers) and the control path (header processing and transport-layer decisions). The NIC enables a high-performance zero-copy data path, independent of the placement of the application (CPU, GPU, FPGA, or other accelerators). The software stack provides a flexible control path by enabling the integration of any network protocol, executing in any environment (in the kernel, in user space, or in an accelerator).\n\nWe implement and evaluate ZeroNIC, a prototype that combines an FPGA-based NIC with a software stack that integrates the Linux TCP protocol. We demonstrate that ZeroNIC achieves RDMA-like throughput while maintaining the benefits of robust protocols like TCP under various network perturbations. For instance, ZeroNIC enables a single TCP flow to saturate a 100Gbps link while utilizing only 17% of a single CPU core. ZeroNIC improves NCCL and Redis throughput by 2.66X and 3.71X, respectively, over Linux TCP on a Mellanox ConnectX-6 NIC, without requiring application modifications.",
+  "abstract_source_id": "src-abstract-osdi-2024-56cf1b04",
   "venue": "osdi",
   "year": 2024,
   "track_or_session": "Operating Systems",
@@ -390,6 +392,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2024-56cf1b04",
+      "url": "https://www.usenix.org/conference/osdi24/presentation/skiadopoulos",
+      "kind": "paper-page",
+      "title": "High-throughput and Flexible Host Networking for Accelerated Computing",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:07:06Z",
+      "content_hash": "sha256:e548a6ca3261576b17f90a7e6a5b5e4c2866a2355e81c58b86c635e6f4fe0a34",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

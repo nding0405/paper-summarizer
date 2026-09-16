@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2025-duumviri-detecting-trackers-and-mixed-trackers-with-a-br-64dde410",
   "title": "Duumviri: Detecting Trackers and Mixed Trackers with a Breakage Detector",
+  "abstract": "Web tracking harms user privacy. As a result, the use of tracker detection and blocking tools is a common practice among Internet users. However, no such tool can be perfect, and thus there is a trade-off between avoiding breakage (caused by unintentionally blocking some required functionality) and neglecting to block some trackers. State-of-the-art tools usually rely on user reports and developer effort to detect breakages, which can be broadly categorized into two causes: 1) misidentifying non-trackers as trackers, and 2) blocking mixed trackers which blend tracking with functional components.\n\nWe propose incorporating a machine learning-based break- age detector into the tracker detection pipeline to automatically avoid misidentification of functional resources. For both tracker detection and breakage detection, we propose using differential features that can more clearly elucidate the differences caused by blocking a request. We designed and implemented a prototype of our proposed approach, Duumviri, for non-mixed trackers. We then adopt it to automatically identify mixed trackers, drawing differential features at partial-request granularity.\n\nIn the case of non-mixed trackers, evaluating Duumviri on 15K pages shows its ability to replicate the labels of human-generated filter lists, EasyPrivacy, with an accuracy of 97.44%. Through a manual analysis, we find that Duumviri can identify previously unreported trackers and its breakage detector can identify overly strict EasyPrivacy rules that cause breakage. In the case of mixed trackers, Duumviri is the first automated mixed tracker detector, and achieves a lower bound accuracy of 74.19%. Duumviri has enabled us to detect and confirm 22 previously unreported unique trackers and 26 unique mixed trackers.",
+  "abstract_source_id": "src-abstract-ndss-2025-64dde410",
   "venue": "ndss",
   "year": 2025,
   "track_or_session": "Summer submission cycle",
@@ -126,6 +128,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2025-64dde410",
+      "url": "https://www.ndss-symposium.org/ndss-paper/duumviri-detecting-trackers-and-mixed-trackers-with-a-breakage-detector/",
+      "kind": "paper-page",
+      "title": "Duumviri: Detecting Trackers and Mixed Trackers with a Breakage Detector",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:19:31Z",
+      "content_hash": "sha256:40d92d26c1aa364b4e310cf2f4b81dcb5f3366acaa0b132b5d88b784dc37bd27",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

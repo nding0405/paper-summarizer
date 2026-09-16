@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2023-flattened-clos-designing-high-performance-deadlock-free-19797131",
   "title": "Flattened Clos: Designing High-performance Deadlock-free Expander Data Center Networks Using Graph Contraction",
+  "abstract": "Clos networks have witnessed the successful deployment of RoCE in production data centers. However, as DCN bandwidth keeps increasing, building Clos networks is becoming cost-prohibitive and thus the more cost-efficient expander graph has received much attention in recent literature. Unfortunately, the existing expander graphs' topology and routing designs may contain Cyclic Buffer Dependency (CBD) and incur deadlocks in PFC-enabled RoCE networks.\n\nWe propose Flattened Clos (FC), a topology/routing codesigned approach, to eliminate the PFC-induced deadlocks in expander networks. FC's topology and routing are designed in three steps: 1) logically divide each ToR switch into k virtual layers and establish connections only between adjacent virtual layers; 2) generate virtual up-down paths for routing; 3) flatten the virtual multi-layered network and the virtual up-down paths using graph contraction. We rigorously prove that FC's design is deadlock-free and validate this property using a real testbed and packet-level simulation. Compared to expander graphs with the edge-disjoint-spanning-tree (EDST) based routing (a state-of-art CBD-free routing algorithm for expander graphs), FC reduces the average hop count by at least 50% and improves network throughput by 2−10× or more. Compared to Clos networks with up-down routing, FC increases network throughput by 1.1−2× under all-to-all and uniform random traffic patterns.",
+  "abstract_source_id": "src-abstract-nsdi-2023-19797131",
   "venue": "nsdi",
   "year": 2023,
   "track_or_session": "Data Centers",
@@ -182,6 +184,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2023-19797131",
+      "url": "https://www.usenix.org/conference/nsdi23/presentation/zhao-shizhen",
+      "kind": "paper-page",
+      "title": "Flattened Clos: Designing High-performance Deadlock-free Expander Data Center Networks Using Graph Contraction",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:02:06Z",
+      "content_hash": "sha256:c4bc65f24b3ae7b93eddafb98871b2de472fe84e9ff09cee500f714e13de7318",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

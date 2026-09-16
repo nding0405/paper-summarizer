@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "fast-2024-combining-buffered-i-o-and-direct-i-o-in-distributed-fil-22de8ea4",
   "title": "Combining Buffered I/O and Direct I/O in Distributed File Systems",
+  "abstract": "Direct I/O allows I/O requests to bypass the Linux page cache and was introduced over 20 years ago as an alternative to the default buffered I/O mode. However, high-performance computing (HPC) applications still mostly rely on buffered I/O, even if direct I/O could perform better in a given situation. This is because users tend to use the I/O mode they are most familiar with. Moreover, with complex distributed file systems and applications, it is often unclear which I/O mode to use.\n\nIn this paper, we show under which conditions both I/O modes are beneficial and present a new transparent approach that dynamically switches to each I/O mode within the file system. Its decision is based not only on the I/O size but also on file lock contention and memory constraints. We exemplary implemented our design into the Lustre client and server and extended it with additional features, e.g., delayed allocation. Under various conditions and real-world workloads, our approach achieved up to 3× higher throughput than the original Lustre and outperformed other distributed file systems that include varying degrees of direct I/O support by up to 13×.",
+  "abstract_source_id": "src-abstract-fast-2024-22de8ea4",
   "venue": "fast",
   "year": 2024,
   "track_or_session": "Distributed Storage",
@@ -244,6 +246,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-fast-2024-22de8ea4",
+      "url": "https://www.usenix.org/conference/fast24/presentation/qian",
+      "kind": "paper-page",
+      "title": "Combining Buffered I/O and Direct I/O in Distributed File Systems",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:00:44Z",
+      "content_hash": "sha256:585346fb51c580eced353c46d8ca1a1062e829598784afdd0a735d56349db3b9",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

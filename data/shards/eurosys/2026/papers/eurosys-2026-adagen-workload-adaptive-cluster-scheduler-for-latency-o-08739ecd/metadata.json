@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "eurosys-2026-adagen-workload-adaptive-cluster-scheduler-for-latency-o-08739ecd",
   "title": "AdaGen: Workload-Adaptive Cluster Scheduler for Latency-Optimal LLM Inference Serving",
+  "abstract": "The inference workloads of Large Language Models (LLMs) pose significant latency and cost challenges due to increasing model sizes and demand for real-time responses. Existing cluster schedulers for multi-instance LLM serving primarily focus on load balancing to optimize memory usage, which is insufficient for workloads with diverse request characteristics. In such cases, the compute layout — the arrangement of tokens across iterations within each instance—plays a crucial role in determining latency. We propose AdaGen, a workload-adaptive cluster scheduler that minimizes latency and thus maximizes SLO attainment by optimizing compute layouts across instances. AdaGen employs a multi-step scheduling strategy: it first classifies requests based on prefill and decode lengths, then balances load, and finally performs selective distributed execution across instances. Each step incrementally refines the scheduling based on the compute layouts derived from the decision of the previous step. To avoid the overhead of actual execution to generate the layouts, AdaGen introduces a novel simulation-based estimator. Extensive experiments using production workloads show that AdaGen achieves up to 3.6× higher SLO attainment and 2× better cost-efficiency compared to the existing systems, while ensuring scalability.",
+  "abstract_source_id": "src-abstract-eurosys-2026-08739ecd",
   "venue": "eurosys",
   "year": 2026,
   "track_or_session": null,
@@ -243,6 +245,19 @@
       "official": false,
       "supports": [
         "Publisher-deposited proceedings identity and print publication date."
+      ]
+    },
+    {
+      "id": "src-abstract-eurosys-2026-08739ecd",
+      "url": "https://api.openalex.org/works/doi:10.1145/3767295.3769345?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "AdaGen: Workload-Adaptive Cluster Scheduler for Latency-Optimal LLM Inference Serving",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:19:43Z",
+      "content_hash": "sha256:4692e595fd44a4fea3664f56b8e20d5bd4df0d1a0eab7bf4affae9043012e68a",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

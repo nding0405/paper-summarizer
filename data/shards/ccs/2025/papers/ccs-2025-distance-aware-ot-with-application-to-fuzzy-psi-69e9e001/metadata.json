@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2025-distance-aware-ot-with-application-to-fuzzy-psi-69e9e001",
   "title": "Distance-Aware OT with Application to Fuzzy PSI",
+  "abstract": "A two-party fuzzy private set intersection (PSI) protocol between Alice and Bob with input sets A and B allows Alice to learn nothing more than the points of Bob that are ''δ-close'' to its points in some metric space dist . More formally, Alice learns only the set {b | dist (a,b) ≤ δ, a ∈ A, b ∈ B} for a predefined threshold δ and distance metric dist, while Bob learns nothing about Alice's set. Fuzzy PSI is a valuable privacy tool in scenarios where private set intersection needs to be computed over imprecise or measurement-based data, such as GPS coordinates or healthcare data. Previous approaches to fuzzy PSI rely on asymmetric cryptographic primitives, generic two-party computation (2PC) techniques like garbled circuits, or function secret sharing methods, all of which are computationally intensive and lead to poor concrete efficiency. This work introduces a new modular framework for fuzzy PSI, primarily built on efficient symmetric key primitives. Our framework reduces the design of efficient fuzzy PSI to a novel variant of oblivious transfer (OT), which we term distance-aware random OT (da-ROT). This variant enables the sender to obtain two random strings (r0, r1), while the receiver obtains one of these values rb, depending on whether the receiver's input keyword a and the sender's input keyword b are close in some metric space i.e., dist (a,b) ≤ δ. The da-ROT can be viewed as a natural extension of traditional OT, where the condition (choice bit) is known to the receiver. We propose efficient constructions for da-ROT based on standard OT techniques tailored for small domains, supporting distance metrics such as the Chebyshev norm, the Euclidean norm, and the Manhattan norm. By integrating these da-ROT constructions, our fuzzy PSI framework achieves up to a 14× reduction in communication cost and up to a 54× reduction in computation cost compared to previous state-of-the-art protocols, across input set sizes ranging from 28 to 216. Additionally, we extend our framework to compute fuzzy PSI cardinality and fuzzy join from traditional PSI-related functionalities. All proposed protocols are secure in the semi-honest model.",
+  "abstract_source_id": "src-abstract-ccs-2025-69e9e001",
   "venue": "ccs",
   "year": 2025,
   "track_or_session": "Cycle 1",
@@ -169,6 +171,19 @@
         "published-order authors",
         "publication-time affiliations",
         "publication date and page span"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2025-69e9e001",
+      "url": "https://api.openalex.org/works/doi:10.1145/3719027.3744857?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Distance-Aware OT with Application to Fuzzy PSI",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:14:08Z",
+      "content_hash": "sha256:7496382625ec4d41ff234b8a3d9598eab0e7d374b4dcbf73a3b5395df5931427",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "eurosys-2025-loft-a-lock-free-and-adaptive-learned-index-with-high-sc-47d96854",
   "title": "LOFT: A Lock-free and Adaptive Learned Index with High Scalability for Dynamic Workloads",
+  "abstract": "In order to mitigate memory overheads and reduce data movements in the critical path, a computational and space-efficient learned index is promising to deliver high performance and complement traditional index structures, which unfortunately works well only in static workloads. In dynamic workloads, the learned indexes incur performance degradation with poor scalability due to inefficient data placement for newly inserted items and intensive lock contention. Furthermore, the model retraining is time-consuming and blocking, which hampers the performance of index operations. In order to meet the needs of dynamic workloads and efficient retraining, we propose LOFT, a highly scalable and adaptive learned index with lock-free design and self-tuning retraining technique to provide high throughput and low latency. LOFT enables all index operations to be concurrently executed in a lock-free manner by using Compare-and-Swap (CAS) primitive and an expanded learned bucket to handle the overflowed data. To minimize the impact of model retraining, LOFT leverages a shadow node to serve the clients' requests and accelerates the retraining process with the aid of index operations. To accommodate dynamic workloads, LOFT determines when and how to perform retraining based on inferred access patterns. Our extensive evaluation on YCSB and real-world workloads demonstrates that LOFT effectively improves the performance by up to 14× than state-of-the-art designs.",
+  "abstract_source_id": "src-abstract-eurosys-2025-47d96854",
   "venue": "eurosys",
   "year": 2025,
   "track_or_session": "Session-4.1: ML Systems - Location: Rotterdam Hall 1A - Chair: Yubin Xia",
@@ -104,6 +106,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-eurosys-2025-47d96854",
+      "url": "https://api.openalex.org/works/doi:10.1145/3689031.3717458?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "LOFT: A Lock-free and Adaptive Learned Index with High Scalability for Dynamic Workloads",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:19:28Z",
+      "content_hash": "sha256:6d79f8ce32dc4a4377adb442b005a49f057eac1782952ec020f90cd625498e54",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

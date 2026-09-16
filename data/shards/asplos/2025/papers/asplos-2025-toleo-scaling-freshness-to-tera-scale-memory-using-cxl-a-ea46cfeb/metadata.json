@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2025-toleo-scaling-freshness-to-tera-scale-memory-using-cxl-a-ea46cfeb",
   "title": "Toleo: Scaling Freshness to Tera-scale Memory Using CXL and PIM",
+  "abstract": "Trusted hardware's freshness guarantee ensures that an adversary cannot replay an old value in response to a memory read request. They rely on maintaining a version number for each cache block and ensuring their integrity using a Merkle tree. However, these existing solutions protect only a small amount of main memory (few MBs), as the extraneous memory accesses to the Merkle tree increase prohibitively with the protected memory size. We present Toleo, which uses trusted smart memory connected through a secure CXL IDE network to safely store version numbers. Toleo eliminates the need for an unscalable Merkle tree to protect the integrity of version numbers by instead using smart memory as the root of trust. Additionally, Toleo ensures version confidentiality which enables stealth versions that reduce the version storage overhead in half.",
+  "abstract_source_id": "src-abstract-asplos-2025-ea46cfeb",
   "venue": "asplos",
   "year": 2025,
   "track_or_session": "Session 9B: Processing in Memory",
@@ -125,6 +127,19 @@
       "official": false,
       "supports": [
         "Indexed abstract and open-access links used for relevance classification and ancillary-link discovery."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2025-ea46cfeb",
+      "url": "https://api.openalex.org/works/doi:10.1145/3622781.3674180?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Toleo: Scaling Freshness to Tera-scale Memory Using CXL and PIM",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:04:18Z",
+      "content_hash": "sha256:578c1232332616a4886326ec5b40910f8e103c9d71efd5136888801b92e6e154",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

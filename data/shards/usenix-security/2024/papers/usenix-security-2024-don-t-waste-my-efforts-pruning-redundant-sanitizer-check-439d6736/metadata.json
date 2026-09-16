@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2024-don-t-waste-my-efforts-pruning-redundant-sanitizer-check-439d6736",
   "title": "Don't Waste My Efforts: Pruning Redundant Sanitizer Checks by Developer-Implemented Type Checks",
+  "abstract": "Type confusion occurs when C or C++ code accesses an object after casting it to an incompatible type. The security impacts of type confusion vulnerabilities are significant, potentially leading to system crashes or even arbitrary code execution. To mitigate these security threats, both static and dynamic approaches have been developed to detect type confusion bugs. However, static approaches can suffer from excessive false positives, while existing dynamic approaches track type information for each object to enable safety checking at each cast, introducing a high runtime overhead.\n\nIn this paper, we present a novel tool T-PRUNIFY to reduce the overhead of dynamic type confusion sanitizers. We observe that in large complex C++ projects, to prevent type confusion bugs, developers often add their own encoding of runtime type information (RTTI) into classes, to enable efficient runtime type checks before casts. T-PRUNIFY works by first identifying these custom RTTI in classes, automatically determining the relationship between field and method return values and the concrete types of corresponding objects. Based on these custom RTTI, T-PRUNIFY can identify cases where a cast is protected by developer-written type checks that guarantee the safety of the cast. Consequently, it can safely remove sanitizer instrumentation for such casts, reducing performance overhead. We evaluate T-PRUNIFY based on HexType, a state-of-the-art type confusion sanitizer that supports extensive C++ projects such as Google Chrome. Our findings demonstrate that our method significantly lowers HexType's average overhead by 25% to 75% in large C++ programs, marking a substantial enhancement in performance.",
+  "abstract_source_id": "src-abstract-usenix-security-2024-439d6736",
   "venue": "usenix-security",
   "year": 2024,
   "track_or_session": "Security Analysis II: Program Analysis",
@@ -196,6 +198,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2024-439d6736",
+      "url": "https://www.usenix.org/conference/usenixsecurity24/presentation/zhai",
+      "kind": "paper-page",
+      "title": "Don't Waste My Efforts: Pruning Redundant Sanitizer Checks by Developer-Implemented Type Checks",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:14:53Z",
+      "content_hash": "sha256:9ad8409f375753e15fd2b8a3fbf446c1361a88ec48367bdeb8bc04eba3aab63b",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

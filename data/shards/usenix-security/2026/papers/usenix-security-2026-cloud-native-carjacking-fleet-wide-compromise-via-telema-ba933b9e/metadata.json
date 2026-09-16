@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-cloud-native-carjacking-fleet-wide-compromise-via-telema-ba933b9e",
   "title": "Cloud-Native Carjacking: Fleet-wide Compromise via Telematics Authorization Failures",
+  "abstract": "Modern connected vehicles increasingly rely on cloud-centric telematics backends to provide remote control, telemetry, media access, and other software-defined functionality. Although these platforms commonly employ endpoint hardening and encrypted communication, such measures do not ensure correct backend authorization. Across the platforms we evaluated, cloud services often accepted a valid vehicle identity without consistently binding that identity to the specific topic, object, or command target being accessed.\n\nWe investigate this failure mode by recovering reusable authentication material from a seed vehicle and testing whether backend authorization remains properly scoped to vehicle-specific resources across MQTT, HTTPS, and SMS. On several legacy platforms, process-memory inspection exposed client certificates, private keys, tokens, or session artifacts sufficient to authenticate to backend services. Using this material, we established authenticated backend sessions and then modified logical vehicle identifiers, such as Vehicle Identification Numbers (VINs), at the application layer. We discovered previously unknown authorization vulnerabilities in telematics platforms used by three major OEMs. Starting from a single seed vehicle under the attacker's control, we demonstrate cross-vehicle privilege escalation without physical access to victim vehicles and without OEM-internal privileges. These flaws enable remote vehicle control, unauthorized access to private surveillance media, and spoofed fallback commands. We conclude with root-cause analysis informed by coordinated disclosure and derive mitigation lessons for identity-bound, Zero-Trust-style telematics authorization.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-ba933b9e",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Network Security 2",
@@ -155,6 +157,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-ba933b9e",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/liu-yangyang",
+      "kind": "paper-page",
+      "title": "Cloud-Native Carjacking: Fleet-wide Compromise via Telematics Authorization Failures",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:23:23Z",
+      "content_hash": "sha256:3e54fa4beb0e2c2d36140eded88d0401d141810fbbd12c9858fe6bce77092e6a",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sosp-2023-grove-a-separation-logic-library-for-verifying-distribut-8520826b",
   "title": "Grove: a Separation-Logic Library for Verifying Distributed Systems",
+  "abstract": "Grove is a concurrent separation logic library for verifying distributed systems. Grove is the first to handle time-based leases, including their interaction with reconfiguration, crash recovery, thread-level concurrency, and unreliable networks. This paper uses Grove to verify several distributed system components written in Go, including vKV, a realistic distributed multi-threaded key-value store. vKV supports reconfiguration, primary/backup replication, and crash recovery, and uses leases to execute read-only requests on any replica. vKV achieves high performance (67--73% of Redis on a single core), scales with more cores and more backup replicas (achieving about 2× the throughput when going from 1 to 3 servers), and can safely execute reads while reconfiguring.",
+  "abstract_source_id": "src-abstract-sosp-2023-8520826b",
   "venue": "sosp",
   "year": 2023,
   "track_or_session": "Session 2: Reliability",
@@ -167,6 +169,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-sosp-2023-8520826b",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Grove: a Separation-Logic Library for Verifying Distributed Systems",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:12Z",
+      "content_hash": "sha256:aa9c23a45f6ec9973f40e6c9520c69d42bb49fc1f526891570edfdb1976cff82",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

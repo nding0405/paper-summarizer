@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2026-descriptors-of-exposure-undermining-tor-anonymity-throug-e1175673",
   "title": "Descriptors of Exposure: Undermining Tor Anonymity through Exploiting Descriptor Flood",
+  "abstract": "Tor is a widely used network for anonymous communication, employing onion encryption and multi-hop routing to ensure anonymity for its users and service providers. Despite its robust design, Tor has been the target of numerous attacks, such as denial-of-service (DoS) attacks and deanonymization attacks. However, these attacks often rely on resource-intensive methods, such as bandwidth inflation or controlling large-scale nodes. They face limitations due to high costs, limited scalability, and countermeasures that Tor already has in place. In this paper, we identify a new vulnerability, termed the Descriptor Flood, in Tor's memory management mechanism and service publication protocol. By exploiting Descriptor Flood, attackers can flood Tor nodes with malicious descriptors of onion services, causing severe memory fragmentation, exhaustion, and eventual node crash. Unlike conventional attacks, our method leverages a fundamental design flaw, allowing cost-effective and scalable exploitation without requiring substantial resources. To demonstrate the practical impact of this vulnerability, we propose the Tordos Attack, a three-phase strategy that efficiently disables Tor nodes and executes DoS and deanonymization attacks against onion services via tearing down specific nodes in Tor. The attack addresses key challenges, such as measuring node memory capacity, inducing fragmentation, and disabling critical nodes to maximize disruption. Our extensive experimental results indicate that the attack can disable Tor nodes and onion services within 9.1 minutes and expose the onion service's real identity in 6.1 hours, potentially leading to the collapse of the entire Tor network.",
+  "abstract_source_id": "src-abstract-sp-2026-e1175673",
   "venue": "sp",
   "year": 2026,
   "track_or_session": "Cycle 1",
@@ -217,6 +219,19 @@
       "official": true,
       "supports": [
         "DOI, published-order authors and affiliations, abstract, publication date, page span, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2026-e1175673",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Descriptors of Exposure: Undermining Tor Anonymity Through Exploiting Descriptor Flood",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:57Z",
+      "content_hash": "sha256:303a9b5e5ef8908a3cfe67f02eb8a87be978a5fe3281c7ecec8c0cdb512517e0",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

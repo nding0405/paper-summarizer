@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2024-serverlessllm-low-latency-serverless-inference-for-large-7a5e7248",
   "title": "ServerlessLLM: Low-Latency Serverless Inference for Large Language Models",
+  "abstract": "This paper presents ServerlessLLM, a distributed system designed to support low-latency serverless inference for Large Language Models (LLMs). By harnessing the substantial near-GPU storage and memory capacities of inference servers, ServerlessLLM achieves effective local checkpoint storage, minimizing the need for remote checkpoint downloads and ensuring efficient checkpoint loading. The design of ServerlessLLM features three core contributions: (i) fast multi-tier checkpoint loading, featuring a new loading-optimized checkpoint format and a multi-tier loading system, fully utilizing the bandwidth of complex storage hierarchies on GPU servers; (ii) efficient live migration of LLM inference, which enables newly initiated inferences to capitalize on local checkpoint storage while ensuring minimal user interruption; and (iii) startup-time-optimized model scheduling, which assesses the locality statuses of checkpoints on each server and schedules the model onto servers that minimize the time to start the inference. Comprehensive evaluations, including microbenchmarks and real-world scenarios, demonstrate that ServerlessLLM dramatically outperforms state-of-the-art serverless systems, reducing latency by 10 - 200X across various LLM inference workloads.",
+  "abstract_source_id": "src-abstract-osdi-2024-7a5e7248",
   "venue": "osdi",
   "year": 2024,
   "track_or_session": "Low-Latency LLM Serving",
@@ -222,6 +224,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2024-7a5e7248",
+      "url": "https://www.usenix.org/conference/osdi24/presentation/fu",
+      "kind": "paper-page",
+      "title": "ServerlessLLM: Low-Latency Serverless Inference for Large Language Models",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:07:20Z",
+      "content_hash": "sha256:111cf924b37fd5c6dfb34888f866315f133a5cfd0009ad8667eb6b943638445e",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

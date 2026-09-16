@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "atc-2024-telescope-telemetry-for-gargantuan-memory-footprint-appl-701675e5",
   "title": "Telescope: Telemetry for Gargantuan Memory Footprint Applications",
+  "abstract": "Data-hungry applications that require terabytes of memory have become widespread in recent years. To meet the memory needs of these applications, data centers are embracing tiered memory architectures with near and far memory tiers. Precise, efficient, and timely identification of hot and cold data and their placement in appropriate tiers is critical for performance in such systems. Unfortunately, the existing state-of-the-art telemetry techniques for hot and cold data detection are ineffective at terabyte scale.\n\nWe propose Telescope, a novel technique that profiles different levels of the application's page table tree for fast and efficient identification of hot and cold data. Telescope is based on the observation that for a memory- and TLB-intensive workload, higher levels of a page table tree are also frequently accessed during a hardware page table walk. Hence, the hotness of the higher levels of the page table tree essentially captures the hotness of its subtrees or address space sub-regions at a coarser granularity. We exploit this insight to quickly converge on even a few megabytes of hot data and efficiently identify several gigabytes of cold data in terabyte-scale applications. Importantly, such a technique can seamlessly scale to petabyte-scale applications.\n\nTelescope's telemetry achieves 90%+ precision and recall at just 0.9% single CPU utilization for microbenchmarks with 5 TB memory footprint. Memory tiering based on Telescope results in 5.6% to 34% throughput improvement for real-world benchmarks with 1–2 TB memory footprint compared to other state-of-the-art telemetry techniques.",
+  "abstract_source_id": "src-abstract-atc-2024-701675e5",
   "venue": "atc",
   "year": 2024,
   "track_or_session": "Operating Systems 2",
@@ -201,6 +203,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-atc-2024-701675e5",
+      "url": "https://www.usenix.org/conference/atc24/presentation/nair",
+      "kind": "paper-page",
+      "title": "Telescope: Telemetry for Gargantuan Memory Footprint Applications",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T21:59:08Z",
+      "content_hash": "sha256:3817d64e6105cf3bfa6bf1a8c71d5805f681345f57b90c5b85e3c6aad04c11a8",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

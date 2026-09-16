@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-h2o2ram-a-high-performance-hierarchical-doubly-oblivious-40632bce",
   "title": "H2O2RAM: A High-Performance Hierarchical Doubly Oblivious RAM",
+  "abstract": "The combination of Oblivious RAM (ORAM) with Trusted Execution Environments (TEE) has found numerous real-world applications due to their complementary nature. TEEs alleviate the performance bottlenecks of ORAM, such as network bandwidth and roundtrip latency, and ORAM provides general-purpose protection for TEE applications against attacks exploiting memory access patterns. The defining property of this combination, which sets it apart from traditional ORAM designs, is its ability to ensure that memory accesses, both inside and outside of TEEs, are made oblivious, thus termed doubly oblivious RAM (O2RAM). Efforts to develop O2RAM with enhanced performance have been ongoing.\n\nIn this work, we propose H2O2RAM, a high-performance doubly oblivious RAM construction. The distinguishing feature of our approach, compared with the existing tree-based doubly oblivious designs, is its first adoption of the hierarchical framework that enjoys inherently better data locality and parallelization. While the latest hierarchical solution, FutORAMa, achieves concrete efficiency in the classic client-server model by leveraging a relaxed assumption of sublinear-sized client-side private memory, adapting it to our scenario poses challenges due to the conflict between this relaxed assumption and our doubly oblivious requirement. To this end, we introduce several new efficient oblivious components to build a high-performance hierarchical O2RAM (H2O2RAM). We implement our design and evaluate it on various scenarios. The results indicate that H2O2RAM reduces execution time by up to ∼10^3 times and saves memory usage by a factor of 5∼44 compared with state-of-the-art solutions.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-40632bce",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Crypto 5: HE, MPC, Oblivious Computation",
@@ -175,6 +177,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-40632bce",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/zheng",
+      "kind": "paper-page",
+      "title": "H2O2RAM: A High-Performance Hierarchical Doubly Oblivious RAM",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:20:10Z",
+      "content_hash": "sha256:1a95c7533368a8d9d6f6c019daa8bf61be10a4c39358267179d377f602608090",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

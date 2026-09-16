@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2026-worksetenclave-towards-optimizing-cold-starts-in-confide-5ddf275a",
   "title": "WorksetEnclave: Towards Optimizing Cold Starts in Confidential Serverless with Workset-Based Enclave Restore",
+  "abstract": "Serverless computing has become a popular cloud computing paradigm. However, the increasing demand for data security in serverless applications necessitates the use of Trusted Execution Environments (TEEs) such as Intel Software Guard Extensions (SGX). Despite the promise of SGX for secure computation, its adoption in serverless environments is hindered by high startup latencies and excessive Enclave Page Cache (EPC) consumption, particularly during cold starts. This paper identifies the key challenges of SGX in serverless workloads and proposes WorksetEnclave, an efficient optimization method designed to address these issues. WorksetEnclave leverages a snapshot-based approach to optimize both startup time and enclave memory usage. By tracking workset pages used during execution, WorksetEnclave minimizes enclave memory footprints and significantly accelerates enclave restore time during secure checkpointing and recovery. We have implemented two separate prototypes, each based on a different LibOS: Gramine and Occlum. Our evaluation shows that WorksetEnclave accelerates cold start times by 1.9--54× and reduces enclave memory consumption by 13.37--94.87%. Our findings demonstrate that WorksetEnclave significantly improves the performance of confidential serverless.",
+  "abstract_source_id": "src-abstract-asplos-2026-5ddf275a",
   "venue": "asplos",
   "year": 2026,
   "track_or_session": "Session 3D: Trusted Execution Environments",
@@ -209,6 +211,19 @@
       "official": false,
       "supports": [
         "Indexed abstract used for strict relevance classification and indexed arXiv identifier where available."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2026-5ddf275a",
+      "url": "https://api.openalex.org/works/doi:10.1145/3779212.3790249?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "WorksetEnclave: Towards Optimizing Cold Starts in Confidential Serverless with Workset-Based Enclave Restore",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:07:20Z",
+      "content_hash": "sha256:b5a5506c99b363980c0c982fb7a1bd7368b17edcf8e4e33746f154eca3f91ba6",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

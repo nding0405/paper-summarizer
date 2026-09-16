@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2023-carpetfuzz-automatic-program-option-constraint-extractio-2a01ea68",
   "title": "CarpetFuzz: Automatic Program Option Constraint Extraction from Documentation for Fuzzing",
+  "abstract": "The large-scale code in software supports the rich and diverse functionalities, and at the same time contains potential vulnerabilities. Fuzzing, as one of the most popular vulnerability detection methods, continues evolving in both industry and academy, aiming to find more vulnerabilities by covering more code. However, we find that even with the state-of-the-art fuzzers, there is still some unexplored code that can only be triggered using a specific combination of program options. Simply mutating the options may generate many invalid combinations due to the lack of consideration of constraints (or called relationships) among options. In this paper, we leverage natural language processing (NLP) to automatically extract option descriptions from program documents and analyze the relationship (e.g., conflicts, dependencies) among the options before filtering out invalid combinations and only leaving the valid ones for fuzzing. We implemented a tool called CarpetFuzz and evaluated its performance. The results show that CarpetFuzz accurately extracts the relationships from documents with 96.10% precision and 88.85% recall. Based on these relationships, CarpetFuzz reduced the 67.91% option combinations to be tested. It helps AFL find 45.97% more paths that other fuzzers cannot discover. After analyzing 20 popular open-source programs, CarpetFuzz discovered 57 vulnerabilities, including 43 undisclosed ones. We also successfully obtained CVE IDs for 30 vulnerabilities.",
+  "abstract_source_id": "src-abstract-usenix-security-2023-2a01ea68",
   "venue": "usenix-security",
   "year": 2023,
   "track_or_session": "x-Fuzz and Fuzz-x",
@@ -133,6 +135,19 @@
       "official": true,
       "supports": [
         "authors, affiliations when published, abstract, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2023-2a01ea68",
+      "url": "https://www.usenix.org/conference/usenixsecurity23/presentation/wang-dawei",
+      "kind": "paper-page",
+      "title": "CarpetFuzz: Automatic Program Option Constraint Extraction from Documentation for Fuzzing",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:10:11Z",
+      "content_hash": "sha256:b920b41e0ca81b8c8d27fd5e2d3c4cc82b174859ae0af5508f9dc61c85f016a5",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

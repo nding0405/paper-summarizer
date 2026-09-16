@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2023-waco-learning-workload-aware-co-optimization-of-the-form-56cb3a95",
   "title": "WACO: Learning Workload-Aware Co-optimization of the Format and Schedule of a Sparse Tensor Program",
+  "abstract": "In this paper, we present WACO, a novel method of co-optimizing the format and the schedule of a given sparsity pattern in a sparse tensor program. A core challenge in this paper is the design of a lightweight cost model that accurately predicts the runtime of a sparse tensor program by considering the sparsity pattern, the format, and the schedule. The key idea in addressing this is exploiting a sparse convolutional network to learn meaningful features of the sparsity pattern and embedding a coupled behavior between the format and the schedule using a specially designed schedule template. In addition, within the enormous search space of co-optimization, our novel search strategy, an approximate nearest neighbor search, efficiently and accurately retrieves the best format and schedule for a given sparsity pattern. We evaluated WACO for four different algorithms (SpMV, SpMM, SDDMM, and MTTKRP) on a CPU using 726 different sparsity patterns. Our experimental results showed that WACO outperformed four state-of-the-art baselines, Intel MKL, BestFormat, TACO with a default schedule, and ASpT. Compared to the best of four baselines, WACO achieved 1.43×, 1.18×, 1.14×, and 1.27× average speedups on SpMV, SpMM, SDDMM, and MTTKRP, respectively.",
+  "abstract_source_id": "src-abstract-asplos-2023-56cb3a95",
   "venue": "asplos",
   "year": 2023,
   "track_or_session": "Session 1A: Systems for ML",
@@ -146,6 +148,19 @@
       "official": false,
       "supports": [
         "Indexed abstract used with the official technical-session context for relevance classification, plus alternate-copy and explicitly printed ancillary links."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2023-56cb3a95",
+      "url": "https://api.openalex.org/works/doi:10.1145/3575693.3575742?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "WACO: Learning Workload-Aware Co-optimization of the Format and Schedule of a Sparse Tensor Program",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T21:59:50Z",
+      "content_hash": "sha256:8205be9290a380e591681544186913240e3b5119aabdc998067db54636fb50b9",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

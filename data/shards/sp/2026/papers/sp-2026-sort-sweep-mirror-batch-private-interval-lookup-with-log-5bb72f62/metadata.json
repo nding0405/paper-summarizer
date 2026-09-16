@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2026-sort-sweep-mirror-batch-private-interval-lookup-with-log-5bb72f62",
   "title": "Sort, Sweep, Mirror: Batch Private Interval Lookup with Logarithmic Cost",
+  "abstract": "Secure multiparty computation often requires table lookups and piecewise polynomial evaluation for efficiency. Hiding both the table and the accessed entries is essential. Existing work on private lookup table (LUT) protocols either incurs $\\Omega(m L)$ computation and communication (Eurocrypt ’24) or is optimized for small tables (NDSS ’25), where $m$ is the output bitwidth and $L=2^{\\ell}$ for input bitwidth $\\ell$. Realizing $\\mathcal{O}(\\ell \\log L)$ communication and $\\mathcal{O}((\\ell+m) \\log L)$ computation per query for the first time, we propose a batch private LUT protocol that overcomes these limitations by processing $K$ lookups with $\\mathcal{O}(K \\log L)$ secure comparisons. More generally, our approach extends to private interval LUT (ILUT), enabling efficient interval-based lookups in batches. Applications include private machine learning over a large input range, which small LUTs cannot approximate accurately. Notably, it supports inverse-square-root approximation and secure multiplication common in quantized neural networks, where outputs are dependent on the private model weights. Systematic experiments demonstrate that our protocol reduces communication by 10.56 - to 1984-fold over the state of the art for private LUTs with tables ranging from 216 to 224 entries. Moreover, it supports $>2^{11}$ lookups per second for a 224-entry table in a local-area network and $>2^{9}$ in a wide-area network.",
+  "abstract_source_id": "src-abstract-sp-2026-5bb72f62",
   "venue": "sp",
   "year": 2026,
   "track_or_session": "Cycle 1",
@@ -133,6 +135,19 @@
       "official": true,
       "supports": [
         "DOI, published-order authors and affiliations, abstract, publication date, page span, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2026-5bb72f62",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Sort, Sweep, Mirror: Batch Private Interval Lookup with Logarithmic Cost",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:58:06Z",
+      "content_hash": "sha256:5353b9384fd86d54ad3dc674f6041a164ea560a1a98a9c02cc1bb37e317e508e",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

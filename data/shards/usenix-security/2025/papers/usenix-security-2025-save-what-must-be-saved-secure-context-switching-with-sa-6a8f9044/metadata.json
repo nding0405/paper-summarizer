@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-save-what-must-be-saved-secure-context-switching-with-sa-6a8f9044",
   "title": "Save what must be saved: Secure context switching with Sailor",
+  "abstract": "Instruction set architectures (ISAs) are complex, with hundreds of registers and instructions that can modify dozens of them during execution, variably on each instance. Prose-style ISA specifications struggle to capture these intricacies of the ISAs, where often the important details about a single register are spread out across hundreds of pages of documentation. Ensuring that all ISA-state is swapped in context switch implementations of privileged software requires meticulous examination of these pages. This manual process is tedious and error-prone.\n\nWe propose a tool called Sailor that leverages machine-readable ISA specifications written in Sail and Isla symbolic execution engine for Sail to automate this task. Sailor determines the ISA-state that must be swapped during the context switch using the data collected from Isla and a novel algorithm to identify all the ISA-state that must be swapped during context switches. We use Sailor to assess the context switch code of multiple systems: from regular user process context switching code in the RISC-V Linux kernel on the StarFive VisionFive2 board, to the enclave context switching code in confidential computing frameworks, Keystone and Komodo. We identify multiple mishandled security-sensitive ISA-state. This research exposes an often overlooked attack surface that stems from mishandled ISA-state, enabling unprivileged adversaries to exploit system vulnerabilities.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-6a8f9044",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "System Security 4: Kernel and Low-Level System Security",
@@ -133,6 +135,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-6a8f9044",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/kalani",
+      "kind": "paper-page",
+      "title": "Save what must be saved: Secure context switching with Sailor",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:21:33Z",
+      "content_hash": "sha256:87633e121446741c6bba01a7178f7509dfd51066aa2c93cfbdf2753facb6144f",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

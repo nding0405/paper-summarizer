@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sigcomm-2026-forewarned-is-forearmed-a-responsive-congestion-control-dfc8b04d",
   "title": "Forewarned is Forearmed: A Responsive Congestion Control with Non-intrusive Uplink Dynamics Capture",
+  "abstract": "The cellular uplink is increasingly important for modern applications but poses significant challenges to congestion control algorithms (CCAs), due to the highly dynamic conditions and complex operations. Existing CCA paradigms, mainly for downloading data, are unable to react promptly to uplink fluctuations because they rely on ACKs to indicate congestion, introducing inevitable control loop latency. Furthermore, the cost associated with modifications to both the sender and receiver cannot be overlooked. We observe a fundamental opportunity in uplink scenarios: the sender's proximity to the wireless-side allows for fast and accurate control without relying on ACK-based feedback, and requires no modifications to either the receiver-side or the hardware layer. In this paper, we propose Aether, mainly consisting of: (1) a monitor deployed on the driver-layer that captures uplink dynamics, by leveraging our key finding that driver buffer dynamics serve as an indicator of uplink congestion; (2) a bottleneck detector that activates Aether when the uplink becomes the bottleneck; (3) a rate controller that steers transmission toward uplink capacity. We implement Aether on commercial devices and develop a trace-driven emulator for testing Aether. Extensive evaluations demonstrate that Aether outperforms state-of-the-art schemes, improving average throughput by 9.28% to 234.11% while consistently reducing latency by 5.34% to 56.94%.",
+  "abstract_source_id": "src-abstract-sigcomm-2026-dfc8b04d",
   "venue": "sigcomm",
   "year": 2026,
   "track_or_session": "Research Session 17: Congestion, Rate & Schedule Control — Research Paper",
@@ -296,6 +298,19 @@
       "official": true,
       "supports": [
         "official main-paper scope and track definitions"
+      ]
+    },
+    {
+      "id": "src-abstract-sigcomm-2026-dfc8b04d",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/search/match?query=Forewarned%20is%20Forearmed%3A%20A%20Responsive%20Congestion%20Control%20with%20Non-intrusive%20Uplink%20Dynamics%20Capture&fields=title,abstract",
+      "kind": "semantic-scholar",
+      "title": "Forewarned is Forearmed: A Responsive Congestion Control with Non-intrusive Uplink Dynamics Capture",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T23:01:32Z",
+      "content_hash": "sha256:683d91ac1d63e57689908a85c9bc14595c74945e3c08bbd84e5aad4c54ccf3dd",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

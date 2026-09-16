@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2023-fuzzjit-oracle-enhanced-fuzzing-for-javascript-engine-ji-4f17eea4",
   "title": "FuzzJIT: Oracle-Enhanced Fuzzing for JavaScript Engine JIT Compiler",
+  "abstract": "We present a novel fuzzing technique, FuzzJIT, for exposing JIT compiler bugs in JavaScript engines, based on our insight that JIT compilers shall only speed up the execution but never change the execution result of JavaScript code. FuzzJIT can activate the JIT compiler for every test case and acutely capture any execution discrepancy caused by JIT compilers. The key to success is the design of an input wrapping template, which proactively activates the JIT compiler and makes the generated samples oracle-aware themselves and the oracle is tested during execution spontaneously. We also design a set of mutation strategies to emphasize program elements promising in revealing JIT compiler bugs. FuzzJIT drills to JIT compilers and at the same time retains the high efficiency of fuzzing. We have implemented the design and applied the prototype to find new JIT compiler bugs in four mainstream JavaScript engines. In one month, ten, five, two, and 16 new bugs are exposed in JavaScriptCore, V8, SpiderMonkey, and ChakraCore, respectively, with three demonstrated exploitable.",
+  "abstract_source_id": "src-abstract-usenix-security-2023-4f17eea4",
   "venue": "usenix-security",
   "year": 2023,
   "track_or_session": "x-Fuzz and Fuzz-x",
@@ -154,6 +156,19 @@
       "official": true,
       "supports": [
         "authors, affiliations when published, abstract, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2023-4f17eea4",
+      "url": "https://www.usenix.org/conference/usenixsecurity23/presentation/wang-junjie",
+      "kind": "paper-page",
+      "title": "FuzzJIT: Oracle-Enhanced Fuzzing for JavaScript Engine JIT Compiler",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:11:10Z",
+      "content_hash": "sha256:12b6c9d29852ebee3f6198dd5473b4ca0fa94dc0e352d8892aed73bff83a2cde",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2024-evoke-efficient-revocation-of-verifiable-credentials-in-83db0578",
   "title": "EVOKE: Efficient Revocation of Verifiable Credentials in IoT Networks",
+  "abstract": "The lack of trust is one of the major factors that hinder collaboration among Internet of Things (IoT) devices and harness the usage of the vast amount of data generated. Traditional methods rely on Public Key Infrastructure (PKI), managed by centralized certification authorities (CAs), which suffer from scalability issues, single points of failure, and limited interoperability. To address these concerns, Decentralized Identifiers (DIDs) and Verifiable Credentials (VCs) have been proposed by the World Wide Web Consortium (W3C) and the European Union as viable solutions for promoting decentralization and \"electronic IDentification, Authentication, and trust Services\" (eIDAS). Nevertheless, at the state-of-the-art, there are no efficient revocation mechanisms for VCs specifically tailored for IoT devices, which are characterized by limited connectivity, storage, and computational power.\n\nThis paper presents EVOKE, an efficient revocation mechanism of VCs in IoT networks. EVOKE leverages an ECC-based accumulator to manage VCs with minimal computing and storage overhead while offering additional features like mass and offline revocation. We designed, implemented, and evaluated a prototype of EVOKE across various deployment scenarios. Our experiments on commodity IoT devices demonstrate that each device only requires minimal storage (i.e., approximately 1.5 KB) to maintain verification information, and most notably half the storage required by the most efficient PKI certificates. Moreover, our experiments on hybrid networks, representing typical IoT protocols (e.g., Zigbee), also show minimal latency in the order of milliseconds. Finally, our large-scale analysis demonstrates that even when 50% of devices missed updates, approximately 96% of devices in the entire network were updated within the first hour, proving the scalability of EVOKE in offline updates.",
+  "abstract_source_id": "src-abstract-usenix-security-2024-83db0578",
   "venue": "usenix-security",
   "year": 2024,
   "track_or_session": "Network Security II: Attacks",
@@ -133,6 +135,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2024-83db0578",
+      "url": "https://www.usenix.org/conference/usenixsecurity24/presentation/mazzocca",
+      "kind": "paper-page",
+      "title": "EVOKE: Efficient Revocation of Verifiable Credentials in IoT Networks",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:15:04Z",
+      "content_hash": "sha256:bcfa9a755c99fa27e6c38430914d983e95d9faf58810184c9e8ddc25e19c2b90",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

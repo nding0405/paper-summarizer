@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-safeffi-efficient-sanitization-at-the-boundary-between-s-5281ee6b",
   "title": "SafeFFI: Efficient Sanitization at the Boundary Between Safe and Unsafe Code in Rust and Mixed-Language Applications",
+  "abstract": "Unsafe Rust code is necessary for interoperability with C/C++ libraries and implementing low-level data structures, but it can cause memory safety violations in otherwise memory-safe Rust programs. Sanitizers can catch such memory errors at run time, but introduce many unnecessary checks even for memory accesses guaranteed safe by the Rust type system. We introduce SafeFFI, a system for optimizing memory safety instrumentation in Rust binaries such that checks occur at the boundary between unsafe and safe code, handing over the enforcement of memory safety from the sanitizer to the Rust type system. Unlike previous approaches, our design avoids expensive whole-program analysis; hence, it incurs significantly less compile-time overhead (2.01× compared to over 5.91×). On a collection of popular Rust crates, SafeFFI reduces sanitizer checks by up to 79.63%, while still detecting all memory safety violations in our dataset of known vulnerable Rust code.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-5281ee6b",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Software Security 2",
@@ -156,6 +158,19 @@
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening",
         "prepublication PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-5281ee6b",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/braunsdorf",
+      "kind": "paper-page",
+      "title": "SafeFFI: Efficient Sanitization at the Boundary Between Safe and Unsafe Code in Rust and Mixed-Language Applications",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:25:17Z",
+      "content_hash": "sha256:25d3645ffa289151f6cd4434e6dd51ab3787c810bd31d758c704b5a00c59c617",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

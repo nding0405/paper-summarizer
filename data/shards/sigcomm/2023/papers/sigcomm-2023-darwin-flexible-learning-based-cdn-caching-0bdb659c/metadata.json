@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sigcomm-2023-darwin-flexible-learning-based-cdn-caching-0bdb659c",
   "title": "Darwin: Flexible Learning-based CDN Caching",
+  "abstract": "Cache management is critical for Content Delivery Networks (CDNs), impacting their performance and operational costs. Most production CDNs apply static, hand-tuned caching policy parameters at cache servers, such as admission frequency or size thresholds for the Hot Object Caches (HOC) of their system. However, these static policies fall short when a server is faced with unpredictable traffic pattern changes, even when policies employ multiple control parameters/knobs. Recent approaches have proposed learning-based solutions to dynamically adjust policy parameters, but they are limited in action space, caching objectives, or impose high overhead. We propose Darwin, a CDN cache management system that is robust to traffic pattern changes and can flexibly optimize different caching objectives with unrestricted action spaces. Darwin employs a three-stage pipeline involving traffic pattern feature collection, unsupervised clustering for classification, and neural bandit expert selection to choose the optimal caching policy. Through extensive simulations, experiments using an Apache Traffic Server (ATS)-based prototype, and theoretical analysis, we show that Darwin achieves significant performance gain w.r.t. different objectives such as maximizing object hit rates and minimizing disk writes, while simultaneously adapting to traffic pattern shifts. Darwin imposes negligible overhead and achieves high throughput compared to the state-of-the-art.",
+  "abstract_source_id": "src-abstract-sigcomm-2023-0bdb659c",
   "venue": "sigcomm",
   "year": 2023,
   "track_or_session": "Caching and Provisioning — Research Paper",
@@ -235,6 +237,19 @@
         "publisher-deposited ORCIDs",
         "proceedings page range and print publication date",
         "empty publisher relation metadata for alternate-version checks"
+      ]
+    },
+    {
+      "id": "src-abstract-sigcomm-2023-0bdb659c",
+      "url": "https://api.openalex.org/works/doi:10.1145/3603269.3604863?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Darwin: Flexible Learning-based CDN Caching",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:22:48Z",
+      "content_hash": "sha256:4779e7d5d21eef6d631825be24a182aa1ae71ce228d27662a2053d8383d28831",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

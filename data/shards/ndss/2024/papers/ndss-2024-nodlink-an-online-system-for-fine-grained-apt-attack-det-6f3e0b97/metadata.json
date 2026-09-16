@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2024-nodlink-an-online-system-for-fine-grained-apt-attack-det-6f3e0b97",
   "title": "NODLINK: An Online System for Fine-Grained APT Attack Detection and Investigation",
+  "abstract": "Advanced Persistent Threats (APT) attacks have plagued modern enterprises, causing significant financial losses. To counter these attacks, researchers propose techniques that capture the complex and stealthy scenarios of APT attacks by using provenance graphs to model system entities and their dependencies. Particularly, to accelerate attack detection and reduce financial losses, online provenance-based detection systems that detect and investigate APT attacks under the constraints of timeliness and limited resources are in dire need. Unfortunately, existing online systems usually sacrifice detection granularity to reduce computational complexity and produce provenance graphs with more than 100,000 nodes, posing challenges for security admins to interpret the detection results. In this paper, we design and implement NodLink, the first online detection system that maintains high detection accuracy without sacrificing detection granularity. Our insight is that the APT attack detection process in online provenance-based detection systems can be modeled as a Steiner Tree Problem (STP), which has efficient online approximation algorithms that recover concise attack-related provenance graphs with a theoretically bounded error. To utilize the frameworks of the STP approximation algorithm for APT attack detection, we propose a novel design of in-memory cache, an efficient attack screening method, and a new STP approximation algorithm that is more efficient than the conventional one in APT attack detection while maintaining the same complexity. We evaluate NodLink in a production environment. The open-world experiment shows that NodLink outperforms two state-of-the-art (SOTA) online provenance analysis systems by achieving magnitudes higher detection and investigation accuracy while having the same or higher throughput.",
+  "abstract_source_id": "src-abstract-ndss-2024-6f3e0b97",
   "venue": "ndss",
   "year": 2024,
   "track_or_session": "Summer submission cycle",
@@ -252,6 +254,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2024-6f3e0b97",
+      "url": "https://www.ndss-symposium.org/ndss-paper/nodlink-an-online-system-for-fine-grained-apt-attack-detection-and-investigation/",
+      "kind": "paper-page",
+      "title": "NODLINK: An Online System for Fine-Grained APT Attack Detection and Investigation",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:18:26Z",
+      "content_hash": "sha256:373c50bcf4a931284b4bbf5681c711c214e1b3354f3dae099752c1658ea24a9a",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

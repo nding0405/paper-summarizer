@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "eurosys-2026-megascale-omni-a-hyper-scale-workload-resilient-system-f-2ed60da7",
   "title": "MegaScale-Omni: A Hyper-Scale, Workload-Resilient System for MultiModal LLM Training in Production",
+  "abstract": "As the foundational component of versatile AI applications, training an multimodal large language model (MLLM) relies on multimodal datasets with dynamic modality mixture proportions and sample length distributions. However, existing MLLM systems remain inefficient under dynamic workloads, due to statically coupled decisions of resource allocation and model parallelization between encoders and the LLM backbone. This paper presents MegaScale-Omni, an industrial-grade MLLM training system tailored for dynamic workload adaption and hyper-scale deployment. MegaScale-Omni is built upon the training scheme of encoder-LLM multiplexing with three key innovations: (1) Decoupled parallelism strategies with long-short sequence parallelism for encoders to process variable-length samples, and full-fledged 5D parallelism for the LLM backbone, both organized under a communication-efficient parallelization layout. (2) Unified encoder-LLM representations for flexible, extensible colocation, and a new paradigm of encoder-LLM joint pipeline with workload resilience. (3) Workload balancing techniques via decentralized grouped reordering in data loaders and adaptive resharding from encoder to LLM ranks. MegaScale-Omni is deployed as the foundation of our in-house large-scale MLLM training tasks with thousands of GPUs. Our experimental results demonstrate 1.27×–7.57× throughput improvement under production-grade dynamic workloads, as compared to four state-of-the-art systems.",
+  "abstract_source_id": "src-abstract-eurosys-2026-2ed60da7",
   "venue": "eurosys",
   "year": 2026,
   "track_or_session": null,
@@ -432,6 +434,19 @@
       "official": false,
       "supports": [
         "Publisher-deposited proceedings identity and print publication date."
+      ]
+    },
+    {
+      "id": "src-abstract-eurosys-2026-2ed60da7",
+      "url": "https://api.openalex.org/works/doi:10.1145/3767295.3803587?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "MegaScale-Omni: A Hyper-Scale, Workload-Resilient System for MultiModal LLM Training in Production",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:20:43Z",
+      "content_hash": "sha256:a6e5899326a60666a8189f82deb8bc2a9a4a3d2bed59343a901b48e361813bef",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

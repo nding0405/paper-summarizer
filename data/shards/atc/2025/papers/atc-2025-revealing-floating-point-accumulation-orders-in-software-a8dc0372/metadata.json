@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "atc-2025-revealing-floating-point-accumulation-orders-in-software-a8dc0372",
   "title": "Revealing Floating-Point Accumulation Orders in Software/Hardware Implementations",
+  "abstract": "Accumulation-based operations, such as summation and matrix multiplication, are fundamental to numerous computational domains. However, their accumulation orders are often undocumented in existing software and hardware implementations, making it difficult for developers to ensure consistent results across systems. To address this issue, we introduce FPRev, a diagnostic tool designed to reveal the accumulation order in the software and hardware implementations through numerical testing. With FPRev, developers can identify and compare accumulation orders, enabling developers to create reproducible software and verify implementation equivalence.\n\nFPRev is a testing-based tool that non-intrusively reveals the accumulation order by analyzing the outputs of the tested implementation for distinct specially designed inputs. Employing FPRev, we showcase the accumulation orders of popular libraries (such as NumPy and PyTorch) on CPUs and GPUs (including GPUs with specialized matrix accelerators such as Tensor Cores). We also validate the efficiency of FPRev through extensive experiments. FPRev exhibits a lower time complexity compared to the basic solution. FPRev is open-sourced at https://github.com/peichenxie/FPRev .",
+  "abstract_source_id": "src-abstract-atc-2025-a8dc0372",
   "venue": "atc",
   "year": 2025,
   "track_or_session": "Finding Faults: Concurrency, Numerics, and Kernel Fuzzing",
@@ -159,6 +161,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-atc-2025-a8dc0372",
+      "url": "https://www.usenix.org/conference/atc25/presentation/xie",
+      "kind": "paper-page",
+      "title": "Revealing Floating-Point Accumulation Orders in Software/Hardware Implementations",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:00:08Z",
+      "content_hash": "sha256:aed94ae660f25fbf659c28a1805c49e02000bcef85814a9e0e29f5655c838a6e",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

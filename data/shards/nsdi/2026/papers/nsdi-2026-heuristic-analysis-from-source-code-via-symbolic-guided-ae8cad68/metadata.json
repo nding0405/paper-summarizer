@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2026-heuristic-analysis-from-source-code-via-symbolic-guided-ae8cad68",
   "title": "Heuristic Analysis from Source Code via Symbolic-Guided Optimization",
+  "abstract": "Large-scale systems rely on heuristics to tackle NP-hard problems such as traffic engineering, virtual machine placement, and packet scheduling. While these heuristics are efficient, they can exhibit severe performance gaps under certain workloads, which leads to outages or costly over-provisioning. This risk has motivated tools that attempt to find inputs that cause worst-case underperformance. But, to use these tools in practice, heuristic developers need to rewrite heuristics as formal mathematical models—a process that is time-consuming, error-prone, and excludes many real-world algorithms.\n\nWe introduce MetaEase, a practical general-domain analyzer that directly analyzes a heuristic’s source code and eliminates the need for formal modeling. MetaEase combines code-aware input generation with guided search to uncover worst-case scenarios efficiently, even for heuristics with randomness (e.g., various traffic engineering schemes) or non-convex behavior (e.g., bin packing for virtual machine placement).\n\nIn most cases, across five problem domains, and eight heuristics, MetaEase matched or exceeded MetaOpt, a state-of-the-art optimization-based heuristic analyzer; in the remainder, it remained competitive and often ran faster. Against black-box optimization baselines, it won in 88% of settings and ranked in the top two otherwise. MetaEase analyzed Arrow, a recent networking heuristic that none of the state-of-the-art heuristic analyzers can analyze. We revealed previously unknown performance gaps in Arrow.",
+  "abstract_source_id": "src-abstract-nsdi-2026-ae8cad68",
   "venue": "nsdi",
   "year": 2026,
   "track_or_session": "Self-Managing Networks",
@@ -202,6 +204,19 @@
         "proceedings page range and page count",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2026-ae8cad68",
+      "url": "https://www.usenix.org/conference/nsdi26/presentation/karimi",
+      "kind": "paper-page",
+      "title": "Heuristic Analysis from Source Code via Symbolic-Guided Optimization",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:05:26Z",
+      "content_hash": "sha256:7f6f80307968503c7f162011dfa7f27e5f38f3ac86100f57ef154e369fa1bda1",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

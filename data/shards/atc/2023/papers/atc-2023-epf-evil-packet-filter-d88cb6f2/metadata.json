@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "atc-2023-epf-evil-packet-filter-d88cb6f2",
   "title": "EPF: Evil Packet Filter",
+  "abstract": "The OS kernel is at the forefront of a system's security. Therefore, its own security is crucial for the correctness and integrity of user applications. With a plethora of bugs continuously discovered in OS kernel code, defenses and mitigations are essential for practical kernel security. One important defense strategy is to isolate user-controlled memory from kernel-accessible memory, in order to mitigate attacks like ret2usr and ret2dir. We present EPF (Evil Packet Filter): a new method for bypassing various (both deployed and proposed) kernel isolation techniques by abusing the BPF infrastructure of the Linux kernel: i.e., by leveraging BPF code, provided by unprivileged users/programs, as attack payloads. We demonstrate two different EPF instances, namely BPF-Reuse and BPF-ROP, which utilize malicious BPF payloads to mount privilege escalation attacks in both 32- and 64-bit x86 platforms. We also present the design, implementation, and evaluation of a set of defenses to enforce the isolation between BPF instructions and benign kernel data, and the integrity of BPF program execution, effectively providing protection against EPF-based attacks. Our implemented defenses show minimal overhead (<3%) in BPF-heavy tasks.",
+  "abstract_source_id": "src-abstract-atc-2023-d88cb6f2",
   "venue": "atc",
   "year": 2023,
   "track_or_session": "Security: Attacks",
@@ -138,6 +140,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-atc-2023-d88cb6f2",
+      "url": "https://www.usenix.org/conference/atc23/presentation/jin",
+      "kind": "paper-page",
+      "title": "EPF: Evil Packet Filter",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T21:57:58Z",
+      "content_hash": "sha256:c8805148d90f2187424bfc1283d79f6b5b95f563306396814fed6ea73514eaee",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

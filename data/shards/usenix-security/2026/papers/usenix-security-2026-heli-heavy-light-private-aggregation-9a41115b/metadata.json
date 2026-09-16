@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-heli-heavy-light-private-aggregation-9a41115b",
   "title": "Heli: Heavy-Light Private Aggregation",
+  "abstract": "This paper presents Heli, a system that lets a pair of servers collect aggregate statistics about private client-held data, without learning anything more about any individual client's data. Like prior systems, Heli protects client privacy against a malicious server, protects correctness against misbehaving clients, and supports common statistical functions: average, variance, and more. Heli's innovation is that only one of the servers (the \"heavy server\") needs to do per-run work proportional to the number of clients; the other server (the \"light server\") does work independent of the number of clients, after a one-time setup phase. As a result, a computationally limited party, such as a low-budget non-profit, could potentially serve as the second server for a Heli deployment with millions of clients.\n\nHeli relies on a new cryptographic primitive, aggregation-only encryption , that allows computing certain restricted functions on many clients' encrypted data. In a deployment with ten million clients, in which the servers privately compute the sum of 32 client-held 1-bit integers, Heli's heavy server does 240,000 core-s of work and the light server does 7 core-ms of work. Compared with prior work, the heavy server does 38× more computation, but the light server does 120, 000× less.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-9a41115b",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Applications of Cryptography 7",
@@ -135,6 +137,19 @@
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening",
         "prepublication PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-9a41115b",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/lehmkuhl",
+      "kind": "paper-page",
+      "title": "Heli: Heavy-Light Private Aggregation",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:24:13Z",
+      "content_hash": "sha256:bea5356e5ab2422ba673e95df2f532ebfce9dfb9c43069de78d4038cc80050b7",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

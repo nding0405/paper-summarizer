@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2025-cauchyproofs-batch-updatable-vector-commitment-with-easy-a2b28daa",
   "title": "Cauchyproofs: Batch-Updatable Vector Commitment with Easy Aggregation and Application to Stateless Blockchains",
+  "abstract": "Stateless blockchain designs have emerged to address the challenge of growing blockchain size using succinct global states. Previous works have developed vector commitments that support proof updates and aggregation to be used as such states. However, maintaining proofs for multiple users still demands significant computational resources, particularly to update proofs with every transaction. This paper introduces Cauchyproofs, a batch-updatable vector commitment that enables proof-serving nodes to efficiently update proofs in quasilinear time relative to the number of users and transactions, utilizing an optimized KZG scheme to achieve complexity $o((\\vert \\vec{\\alpha}\\vert +\\vert \\vec{\\beta}\\vert)\\log^{2}(\\vert \\vec{\\alpha}\\vert +\\vert \\vec{\\beta}\\vert))$ for $\\vert \\alpha\\vert$ users and $\\vert \\beta\\vert$ transactions, compared to the previous $O(\\vert \\vec{\\alpha}\\vert \\cdot\\vert \\vec{\\beta}\\vert)$ approaches. This advancement reduces the computational burden on proof-serving nodes, allowing efficient proof maintenance across large user groups. We demonstrate that our approach is approximately eight times faster than the naive approach at the Ethereumlevel transaction throughput if we perform batch update every hour. Additionally, we present a novel matrix representation for KZG proofs utilizing Cauchy matrices, enabling faster all-proof computations with reduced elliptic curve operations. Finally, we propose an algorithm for history proof query, supporting retrospective proof generation with high efficiency. Our contributions substantially enhance the scalability and practicality of proof-serving nodes in stateless blockchain frameworks.",
+  "abstract_source_id": "src-abstract-sp-2025-a2b28daa",
   "venue": "sp",
   "year": 2025,
   "track_or_session": "Cycle 2",
@@ -119,6 +121,19 @@
       "official": true,
       "supports": [
         "DOI, authors, affiliations, abstract, publication date, pages, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2025-a2b28daa",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Cauchyproofs: Batch-Updatable Vector Commitment with Easy Aggregation and Application to Stateless Blockchains",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:42Z",
+      "content_hash": "sha256:d62dac834635b4cd1890a53da454ceae7aaa151189662d990ac591dfd5cb6b3e",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

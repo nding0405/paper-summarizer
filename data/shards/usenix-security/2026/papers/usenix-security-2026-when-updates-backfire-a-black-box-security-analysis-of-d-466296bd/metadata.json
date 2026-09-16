@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-when-updates-backfire-a-black-box-security-analysis-of-d-466296bd",
   "title": "When Updates Backfire: A Black-Box Security Analysis of Desktop Software Update Mechanisms",
+  "abstract": "Desktop software has become an essential component of modern computing, and software updates are the primary mechanism to patch vulnerabilities and deliver security fixes. However, the update process itself introduces new attack surfaces, particularly when validation of update data is incomplete or improperly enforced. Nevertheless, these risks in desktop updates are less studied because most update clients are closed-source and complex. We present UpdSight, a black-box framework that tests update security by simulating MitM attacks in realistic settings. UpdSight operates by emulating man-in-the-middle scenarios, intercepting traffic during the update process, and automatically validating the presence of critical weaknesses. By combining traffic interception, payload integrity inspection, and behavior monitoring, UpdSight provides a comprehensive assessment of update trust models across diverse software categories. We adopted UpdSight to 85 widely-used desktop applications. The results show 22 exploitable vulnerabilities, including downgrade, manifest manipulation, installer hijack, and path traversal. Among these, 16 have been confirmed by vendors. In addition, 5 CVE identifiers were assigned, covering vulnerabilities in 8 software products. Our findings highlight recurring design flaws, such as unsigned manifests and weak rollback checks, which allow attackers to gain code execution through the update channel.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-466296bd",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Software Security 4",
@@ -114,6 +116,19 @@
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening",
         "prepublication PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-466296bd",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/wan",
+      "kind": "paper-page",
+      "title": "When Updates Backfire: A Black-Box Security Analysis of Desktop Software Update Mechanisms",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:26:17Z",
+      "content_hash": "sha256:8c1ce67da151e10682e51eedba30b30ceccc4b83d61dbbc29d7f99a1f1020fd5",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

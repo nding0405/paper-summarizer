@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2024-deepcache-revisiting-cache-side-channel-attacks-in-deep-05bce684",
   "title": "DeepCache: Revisiting Cache Side-Channel Attacks in Deep Neural Networks Executables",
+  "abstract": "Deep neural networks (DNN) are increasingly deployed in heterogeneous hardware, including high-performance devices like GPUs and low-power devices like mobile/IoT CPUs, FPGAs, and accelerators. In order to unlock the full performance potential of various hardware, deep learning (DL) compilers automatically optimize DNN inference computations and compile DNN models into DNN executables for efficient computations across hardware backends. As valuable intellectual properties, DNN architectures are one primary attack target. Since previous works already demonstrate the abuse of cache side channels to steal DNN architectures from DL frameworks (e.g., PyTorch and TensorFlow), we first study using those known side-channel attacks against DNN executables. We find that attacking DNN executables presents unique challenges, and existing works can hardly apply. Particularly, DNN executables exhibit a standalone paradigm that largely reduces cache side channel attack surfaces. Meanwhile, cache side channels capture only limited behaviors of the whole DNN execution while facing daunting technical challenges (e.g., noise and low time resolution). However, we unveil a unique attack vector in DNN executables, such that the cache-aware optimizations, which are extensively employed by contemporary DL compilers to harvest the full potentials of hardware, would result in distinguishable DNN operator cache access patterns, making model architecture recovery possible. We propose DeepCache, an end-to-end side channel attack framework, to infer DNN model architectures from DNN executables. DeepCache \\ leverages cache side channels as the attacking primitives and combines contrastive learning and anomaly detection to enable precise inference. Our evaluation using the standard Prime+Probe shows that DeepCache \\ yields a high accuracy in exploiting complex DNN executables under both the basic L1 cache attack and the more practical but challenging last level cache (LLC) attack settings.",
+  "abstract_source_id": "src-abstract-ccs-2024-05bce684",
   "venue": "ccs",
   "year": 2024,
   "track_or_session": "Cycle 2",
@@ -201,6 +203,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2024-05bce684",
+      "url": "https://api.openalex.org/works/doi:10.1145/3658644.3690241?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "DeepCache: Revisiting Cache Side-Channel Attacks in Deep Neural Networks Executables",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:09:57Z",
+      "content_hash": "sha256:957fff0fb7996282c01f279eafb94f44afc30cb4a18d9ba2a3771dfb6c2dde1b",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

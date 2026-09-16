@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-tetd-trusted-execution-in-trust-domains-0872313a",
   "title": "TETD: Trusted Execution in Trust Domains",
+  "abstract": "Intel TDX empowers cloud service providers to construct confidential virtual machines called trust domains (TDs) on x86 platforms. Similar to its counterparts from AMD and Arm, TDX's hardware based protection over integrity and secrecy of virtual machine memory and vCPU states inevitably hinders legitimate virtual machine management such as introspection. At the presence of compromised high-privileged software (e.g., the guest kernel), neither the cloud service provider nor the TD owner can securely carry out a task within the TD. To tackle this problem, we propose TETD, an in-TD trusted execution technique without trusting any TD system software. Our design does not pivot on in-VM privilege layering, a popular approach used in existing VM security enhancement schemes. Instead, we leverage the virtual machine monitor's existing capability of resource management to directly separate memory and vCPU used for trusted execution from the TD system software. We implement a TETD prototype on a TDX server and run extensive experiments. The performance overhead incurred by TETD to the TD depends on the workload. In our benchmark evaluations, the highest toll is about 6.8%. Moreover, our three applications also demonstrate that TETD provides a TD owner a practical and secure foothold at the presence of a compromised kernel.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-0872313a",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "System Security 2: Trusted and Robust Computing",
@@ -154,6 +156,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-0872313a",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/wang-zhanbo",
+      "kind": "paper-page",
+      "title": "TETD: Trusted Execution in Trust Domains",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:22:11Z",
+      "content_hash": "sha256:5ac837ae5fa5b401fa6b2023439061d74d7259bdaafd3afcbf6306aa7d3ab41c",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2024-understanding-route-origin-validation-rov-deployment-in-53e79ac7",
   "title": "Understanding Route Origin Validation (ROV) Deployment in the Real World and Why MANRS Action 1 Is Not Followed",
+  "abstract": "BGP hijacking is one of the most important threats to routing security. To improve the reliability and availability of inter-domain routing, a lot of work has been done to defend against BGP hijacking, and Route Origin Validation (ROV) has become the best current practice. However, although the Mutually Agreed Norms for Routing Security (MANRS) has been encouraging network operators to at least validate announcements of their customers, recent research indicates that a large number of networks still do not fully deploy ROV or propagate illegitimate announcements of their customers. To understand ROV deployment in the real world and why network operators are not following the action proposed by MANRS, we make a long-term measurement for ROV deployment and further find that many non-compliant networks may deploy ROV only at part of customer interfaces, or at provider or peer interfaces. Then, we present the first notification experiment to investigate the impact of notifications on ROV remediation. However, our analysis indicates that none of the notification treatments has a significant effect. After that, we conduct a survey among network operators and find that economical and technical problems are the two major classes of reasons for non-compliance. Seeking a realistic ROV deployment strategy, we perform large-scale simulations, and, to our surprise, find that not following MANRS Action 1 can lead to better defence of prefix hijacking. Finally, with all our findings, we provide practical recommendations and outline future directions to help promote ROV deployment.",
+  "abstract_source_id": "src-abstract-ndss-2024-53e79ac7",
   "venue": "ndss",
   "year": 2024,
   "track_or_session": "Fall submission cycle",
@@ -168,6 +170,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2024-53e79ac7",
+      "url": "https://www.ndss-symposium.org/ndss-paper/understanding-route-origin-validation-rov-deployment-in-the-real-world-and-why-manrs-action-1-is-not-followed/",
+      "kind": "paper-page",
+      "title": "Understanding Route Origin Validation (ROV) Deployment in the Real World and Why MANRS Action 1 Is Not Followed",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:18:52Z",
+      "content_hash": "sha256:dd725259e9a8356b53ac8649722ffebe433945bca55586e67b2030b93851e0c6",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sigcomm-2023-lightyear-using-modularity-to-scale-bgp-control-plane-ve-8e60491a",
   "title": "Lightyear: Using Modularity to Scale BGP Control Plane Verification",
+  "abstract": "Current network control plane verification tools cannot scale to large networks because of the complexity of jointly reasoning about the behaviors of all network nodes. We present a modular approach to control plane verification, where end-to-end network properties are verified via a set of purely local checks on individual nodes and edges. The approach targets verification of reachability properties for BGP configurations, and provides guarantees in the face of arbitrary external route announcements and, for some properties, arbitrary node/link failures. We have proven the approach correct and implemented it in a tool Lightyear. Experimentally we show Lightyear scales dramatically better than prior control plane verifiers. Further, Lightyear has been used for six months to verify properties of a major cloud provider network containing hundreds of routers and tens of thousands of edges, finding and fixing bugs in the process. To our knowledge no prior control-plane verification tool has been shown to scale to that size and complexity. Our modular approach also makes it easy to localize configuration errors and enables incremental re-verification.",
+  "abstract_source_id": "src-abstract-sigcomm-2023-8e60491a",
   "venue": "sigcomm",
   "year": 2023,
   "track_or_session": "BGP Configuration — Research Paper",
@@ -214,6 +216,19 @@
         "publisher-deposited ORCIDs",
         "proceedings page range and print publication date",
         "empty publisher relation metadata for alternate-version checks"
+      ]
+    },
+    {
+      "id": "src-abstract-sigcomm-2023-8e60491a",
+      "url": "https://api.openalex.org/works/doi:10.1145/3603269.3604842?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Lightyear: Using Modularity to Scale BGP Control Plane Verification",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:22:55Z",
+      "content_hash": "sha256:4bc48f94b3d3595d8371f9d0feaaa259eff629702e84b5160cf71fad7e775498",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

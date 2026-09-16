@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "atc-2024-gvulkan-scalable-gpu-pooling-for-pixel-grained-rendering-3d087293",
   "title": "gVulkan: Scalable GPU Pooling for Pixel-Grained Rendering in Ray Tracing",
+  "abstract": "Ray tracing rendering technology enhances scene realism and offers immersive experiences. However, it demands significant computational resources to trace and compute light-object interactions. As a result, traditional local GPU rendering might not meet the demands for high image quality and low latency. Moreover, many applications are tailored to utilize the resources of a single GPU, limiting their capacity to increase computational power through additional GPUs.\n\nThis paper presents gVulkan, the first transparent multi-GPU acceleration rendering solution for Vulkan-based ray tracing. To address the bottleneck caused by limited local GPU resources, gVulkan can offload ray tracing rendering to the cloud via API-forwarding. In the cloud, gVulkan employs Split Frame Rendering (SFR) to enable an arbitrary number of GPUs to accelerate rendering in parallel, while dynamically self-rebalancing the workload at a pixel-grained level across GPUs. Experiments demonstrate that gVulkan can accelerate Vulkan-based ray tracing programs in an application-unaware manner. By dynamically rebalancing each GPU's workload, gVulkan achieves good linearity with 3.81× speedup across 4 GPUs on average.",
+  "abstract_source_id": "src-abstract-atc-2024-3d087293",
   "venue": "atc",
   "year": 2024,
   "track_or_session": "Hardware",
@@ -243,6 +245,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-atc-2024-3d087293",
+      "url": "https://www.usenix.org/conference/atc24/presentation/gu-yicheng",
+      "kind": "paper-page",
+      "title": "gVulkan: Scalable GPU Pooling for Pixel-Grained Rendering in Ray Tracing",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T21:58:43Z",
+      "content_hash": "sha256:c5f55f361fa53b8b77434f62ee95602b999843f29c0dbc709c36fcec3c9dffc1",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

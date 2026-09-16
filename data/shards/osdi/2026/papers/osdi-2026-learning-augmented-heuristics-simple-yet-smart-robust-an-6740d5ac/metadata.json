@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2026-learning-augmented-heuristics-simple-yet-smart-robust-an-6740d5ac",
   "title": "Learning-Augmented Heuristics: Simple Yet Smart, Robust and Interpretable Cache Eviction",
+  "abstract": "Caching is widely used across the system stack to improve performance and efficiency, with eviction algorithms at its core. Existing cache eviction policies fall into two broad categories: static heuristics (e.g., 2Q, S3-FIFO) and smart algorithms (e.g., ARC, LRB). Smart caches can adapt to workloads and have the potential to achieve higher efficiency and robustness than static heuristics. However, we find that existing smart caches suffer from objective mismatches and instability.\n\nWe introduce Learning-Augmented Heuristics (LAH), a framework that learns the cache-level parameters of static heuristics. By decoupling the data and control planes, LAH supports simple, high-speed data reads and writes on the data plane, while performing occasional asynchronous learning on the control plane using cache-level features.\n\nWe demonstrate the effectiveness of LAH through S4-FIFO, a Smart S3-FIFO cache eviction algorithm. We pre-train a single model on 4,140 production traces and embed it in S4-FIFO to learn optimal cache parameters. On 1,035 evaluation traces, S4-FIFO improves the mean efficiency by 26% compared to S3-FIFO and by 8% compared to 3L-Cache, the best state-of-the-art algorithm. S4-FIFO is also robust—increasing miss ratio over FIFO by 0.8% on the worst trace, whereas 3L-Cache increases FIFO’s miss ratio by 8.8%. Finally, S4-FIFO’s decisions are also interpretable: a language model can provide a rationale for why a particular configuration was chosen.",
+  "abstract_source_id": "src-abstract-osdi-2026-6740d5ac",
   "venue": "osdi",
   "year": 2026,
   "track_or_session": "A Coherent, Consistent Session on Caching",
@@ -167,6 +169,19 @@
       "official": true,
       "supports": [
         "Official proceedings availability and canonical conference versions."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2026-6740d5ac",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/xia",
+      "kind": "paper-page",
+      "title": "Learning-Augmented Heuristics: Simple Yet Smart, Robust and Interpretable Cache Eviction",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:08:31Z",
+      "content_hash": "sha256:bc09a1beef793f52f1511353bb58ae75ad15858b29675b3daa6d5853450007bd",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

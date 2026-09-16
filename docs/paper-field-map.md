@@ -17,6 +17,7 @@ a field to another stage to make a task convenient.
 | --- | --- |
 | Stable paper ID | `/paper_id` |
 | Exact title | `/title` |
+| Published abstract and the source it was read from | `/abstract`, `/abstract_source_id` |
 | Conference and year | `/venue`, `/year` |
 | Track or session | `/track_or_session` |
 | Main-track/other paper type | `/paper_type` |

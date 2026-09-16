@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2025-detecting-ransomware-despite-i-o-overhead-a-practical-mu-2c36b530",
   "title": "Detecting Ransomware Despite I/O Overhead: A Practical Multi-Staged Approach",
+  "abstract": "Ransomware attacks have become one of the most widely feared cyber attacks for businesses and home users.\n\nSince attacks are evolving and use advanced phishing campaigns and zero-day exploits, everyone is at risk, ranging from novice users to experts.\n\nAs a result, much research has focused on preventing and detecting ransomware attacks, with real-time monitoring of I/O activity being the most prominent approach for detection.\n\nThese approaches have in common that they inject code into the execution of the operating system's I/O stack, a more and more optimized system.\n\nHowever, they seemingly do not consider the impact the integration of such mechanisms would have on system performance or only consider slow storage mediums, such as rotational hard disk drives.\n\nThis paper analyzes the impact of monitoring different features of relevant I/O operations for Windows and Linux.\n\nWe find that even simple features, such as the entropy of a buffer, can increase execution time by 350% and reduce SSD performance by up to 75%.\n\nTo combat this degradation, we propose adjusting the number of monitored features based on a process's behavior in real-time.\n\nTo this end, we design and implement a multi-staged IDS that can adjust overhead by moving a process between stages that monitor different numbers of features.\n\nBy moving seemingly benign processes to stages with fewer features and less overhead while moving suspicious processes to stages with more features to confirm the suspicion, the average time a system requires to perform I/O operations can be reduced drastically.\n\nWe evaluate the effectiveness of our design by combining actual I/O behavior from a public dataset with the measurements we gathered for each I/O operation and found that a multi-staged design can reduce the overhead to I/O operations by an order of magnitude while maintaining similar detection accuracy of traditional single-staged approaches.\n\nAs a result, real-time behavior monitoring for ransomware detection becomes feasible despite its inherent overhead impacts.",
+  "abstract_source_id": "src-abstract-ndss-2025-2c36b530",
   "venue": "ndss",
   "year": 2025,
   "track_or_session": "Fall submission cycle",
@@ -168,6 +170,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2025-2c36b530",
+      "url": "https://www.ndss-symposium.org/ndss-paper/detecting-ransomware-despite-i-o-overhead-a-practical-multi-staged-approach/",
+      "kind": "paper-page",
+      "title": "Detecting Ransomware Despite I/O Overhead: A Practical Multi-Staged Approach",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:19:25Z",
+      "content_hash": "sha256:4f3719ec360b645dd592b259ddd1d13a38d0e5fd3c05da4530c5eba89a590170",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

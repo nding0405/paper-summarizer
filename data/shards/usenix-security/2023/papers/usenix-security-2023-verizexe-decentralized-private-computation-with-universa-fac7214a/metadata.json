@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2023-verizexe-decentralized-private-computation-with-universa-fac7214a",
   "title": "VeriZexe: Decentralized Private Computation with Universal Setup",
+  "abstract": "Traditional blockchain systems execute program state transitions on-chain, requiring each network node participating in state-machine replication to re-compute every step of the program when validating transactions. This limits both scalability and privacy. Recently, Bowe et al. introduced a primitive called decentralized private computation (DPC) and provided an instantiation called Zexe, which allows users to execute arbitrary computations off-chain without revealing the program logic to the network. Moreover, transaction validation takes only constant time, independent of the off-chain computation. However, Zexe required a separate trusted setup for each application, which is highly impractical. Prior attempts to remove this per-application setup incurred significant performance loss.\n\nWe propose a new DPC instantiation VeriZexe that is highly efficient and requires only a single universal setup to support an arbitrary number of applications. Our benchmark improves the state-of-the-art by 9x in transaction generation time and by 3.4x in memory usage. Along the way, we also design efficient gadgets for variable-base multi-scalar multiplication and modular arithmetic within the Plonk constraint system, leading to a Plonk verifier gadget using only ∼ 21 k Plonk constraints.",
+  "abstract_source_id": "src-abstract-usenix-security-2023-fac7214a",
   "venue": "usenix-security",
   "year": 2023,
   "track_or_session": "Privacy Preserving Crypto Blocks",
@@ -196,6 +198,19 @@
       "official": true,
       "supports": [
         "authors, affiliations when published, abstract, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2023-fac7214a",
+      "url": "https://www.usenix.org/conference/usenixsecurity23/presentation/xiong",
+      "kind": "paper-page",
+      "title": "VeriZexe: Decentralized Private Computation with Universal Setup",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:13:39Z",
+      "content_hash": "sha256:042d3733e39a587fbb0cbba33fe804f15f1bc769c8f47fe81e25d3fbbf7b3b22",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

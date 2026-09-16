@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-system-register-hijacking-compromising-kernel-integrity-016ab787",
   "title": "System Register Hijacking: Compromising Kernel Integrity By Turning System Registers Against the System",
+  "abstract": "The Linux kernel has been a battleground between security researchers identifying new exploitation techniques and those developing mitigations to protect the kernel from exploitation. This is an ongoing battle: last year, Google's KernelCTF Vulnerability Research Program paid out 44 bounties for unique exploitation techniques submitted to the program, many of which targeted control flow hijacking vulnerabilities. However, the era of control flow hijacking exploits in the kernel may be coming to an end: FineIBT, now the default Control Flow Integrity measure in the Linux kernel, blocks all known control flow hijacking exploitation techniques.\n\nIn this paper, we propose System Register Hijacking, a previously overlooked frontier in the exploitation of control flow hijacking vulnerabilities in the kernel context. Our approach provides a comprehensive examination of typically overlooked system registers, leading us to propose several powerful exploitation techniques targeting different x86-64 system registers (e.g., cr0, cr3, and gs) and aarch64 system registers (e.g., pan, elr_el1, and vbar_el1) to break kernel security in different ways. While all of our techniques present new avenues for attackers, one in particular, which leverages the x86-64 swapgs instruction, requires neither general purpose register nor stack control, making it one of the most powerful kernel exploitation primitives currently known. Moreover, to our knowledge, this is the first exploitation primitive capable of bypassing the FineIBT mitigation, demonstrating not only the power of our technique but also the continued relevance of control flow hijacking vulnerabilities.\n\nIn addition to developing these techniques, we propose mitigations to defend against most of them. Though some of our techniques appear challenging to mitigate, our swapgs mitigation restores FineIBT's security posture at a performance cost of just under 1%.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-016ab787",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "System Security 4: Kernel and Low-Level System Security",
@@ -238,6 +240,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-016ab787",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/miller",
+      "kind": "paper-page",
+      "title": "System Register Hijacking: Compromising Kernel Integrity By Turning System Registers Against the System",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:22:06Z",
+      "content_hash": "sha256:9a581e6ff51ac7dd1cc6c7c1f047ab09bd263e45b396751532c2968fb74ebd10",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2025-crosstalk-induced-side-channel-threats-in-multi-tenant-n-cb4e8495",
   "title": "Crosstalk-induced Side Channel Threats in Multi-Tenant NISQ Computers",
+  "abstract": "As quantum computing rapidly advances, its near-term applications are becoming increasingly evident. However, the high cost and under-utilization of quantum resources are prompting a shift from single-user to multi-user access models. In a multi-tenant environment, where multiple users share one quantum computer, protecting user confidentiality becomes crucial. The varied uses of quantum computers increase the risk that sensitive data encoded by one user could be compromised by others, rendering the protection of data integrity and confidentiality essential.\n\nIn the evolving quantum computing landscape, it is imperative to study these security challenges within the scope of realistic threat model assumptions,\n\nwherein an adversarial user can mount practical attacks without relying on any heightened privileges afforded by physical access to a quantum computer or rogue cloud services.\n\nIn this paper, we demonstrate the potential of crosstalk as an attack vector for the first time on a Noisy Intermediate Scale Quantum (NISQ) machine, that an adversarial user can exploit within a multi-tenant quantum computing model.\n\nThe proposed side-channel attack is conducted with minimal and realistic adversarial privileges, with the overarching aim of uncovering the quantum algorithm being executed by a victim. Crosstalk signatures are used to estimate the presence of CNOT gates in the victim circuit, and subsequently, this information is encoded and classified by a graph-based learning model to identify the victim quantum algorithm. When evaluated on up to 336 benchmark circuits, our attack framework is found to be able to unveil the victim's quantum algorithm with up to 85.7% accuracy.",
+  "abstract_source_id": "src-abstract-ndss-2025-cb4e8495",
   "venue": "ndss",
   "year": 2025,
   "track_or_session": "Fall submission cycle",
@@ -189,6 +191,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2025-cb4e8495",
+      "url": "https://www.ndss-symposium.org/ndss-paper/crosstalk-induced-side-channel-threats-in-multi-tenant-nisq-computers/",
+      "kind": "paper-page",
+      "title": "Crosstalk-induced Side Channel Threats in Multi-Tenant NISQ Computers",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:19:21Z",
+      "content_hash": "sha256:0bd21f66993b54a3b4ca78884b2297c5ac59da41ab66f1bd3a9b1b5c4deb52e5",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

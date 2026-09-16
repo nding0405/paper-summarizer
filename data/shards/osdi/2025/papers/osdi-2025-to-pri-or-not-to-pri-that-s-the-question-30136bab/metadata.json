@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2025-to-pri-or-not-to-pri-that-s-the-question-30136bab",
   "title": "To PRI or Not To PRI, That's the question",
+  "abstract": "SR-IOV and I/O device passthrough enable network and storage devices to be shared among multiple tenants with high density using virtual functions (VFs), achieving near-native performance. However, passthrough does not support page faults, requiring the hypervisor to statically pin the VM-allocated memory. This approach is unacceptable for cloud service providers (CSPs) that rely on oversubscription to enhance memory utilization and reduce costs. The Page Request Interface (PRI) was designed to support device-side I/O page faults (IOPFs) through collaboration among devices, Input-Output Memory Management Units (IOMMU), and the OS. But PRI has not seen broad adoption in devices like NICs and storage.\n\nWe propose VIO, a novel dynamic I/O device passthrough approach that achieves near-native performance and is hardware-independent. By leveraging a shadow available queue, VIO can dynamically and transparently switch devices between VIO and passthrough modes based on I/O operations per second (IOPS) pressure, balancing resource utilization and performance. Each DMA request is probed via IOPA-snooping in the virtio data plane to eliminate IOPFs, while device interrupts are directly passed through to the VM guest, enabling performance close to passthrough. VIO is extensively tested and deployed by a leading global CSP across 300K VMs, supporting both legacy and new instances while reclaiming up to the equivalent of 30K VM memory daily without compromising user Service Level Objectives (SLOs). As the scale grows, the benefits continue to increase.",
+  "abstract_source_id": "src-abstract-osdi-2025-30136bab",
   "venue": "osdi",
   "year": 2025,
   "track_or_session": "Distributed Systems and Data Centers I",
@@ -411,6 +413,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2025-30136bab",
+      "url": "https://www.usenix.org/conference/osdi25/presentation/wang-yun",
+      "kind": "paper-page",
+      "title": "To PRI or Not To PRI, That's the question",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:07:52Z",
+      "content_hash": "sha256:40dcb716de62949d1934fd22266745f1ca9870a9cefed8c729b723400b8f6f4c",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

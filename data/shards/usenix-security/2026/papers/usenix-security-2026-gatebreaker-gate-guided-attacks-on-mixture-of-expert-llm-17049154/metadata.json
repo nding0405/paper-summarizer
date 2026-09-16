@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-gatebreaker-gate-guided-attacks-on-mixture-of-expert-llm-17049154",
   "title": "GateBreaker: Gate-Guided Attacks on Mixture-of-Expert LLMs",
+  "abstract": "Mixture-of-Experts (MoE) architectures have advanced the scaling of Large Language Models (LLMs) by activating only a sparse subset of parameters per input, enabling state-of-the-art performance with reduced computational cost. As these models are increasingly deployed in critical domains, understanding and strengthening their alignment mechanisms is essential to prevent harmful outputs. However, existing LLM safety research has focused almost exclusively on dense architectures, leaving the unique safety properties of MoEs largely unexamined. The modular, sparsely-activated design of MoEs suggests that safety mechanisms may operate differently than in dense models, raising questions about their robustness.\n\nIn this paper, we present GateBreaker, the first training-free, lightweight, and architecture-agnostic attack framework that compromises the safety alignment of modern MoE LLMs at inference time. GateBreaker operates in three stages: (i) gate-level profiling , which identifies safety experts disproportionately routed on harmful inputs, (ii) expert-level localization , which localizes the safety structure within safety experts, and (iii) targeted safety removal , which disables the identified safety structure to compromise the safety alignment. Our study shows that MoE safety concentrates within a small subset of neurons coordinated by sparse routing. Selective disabling of these neurons, maximum 2.9% of neurons in the targeted expert layers, significantly increases the averaged attack success rate (ASR) from 7.4% to 64.9% against the eight latest aligned MoE LLMs with limited utility degradation. These safety neurons transfer across models within the same family, raising ASR from 17.9% to 67.7% with one-shot transfer attack. Furthermore, GateBreaker generalizes to five MoE vision language models (VLMs) with 60.9% ASR on unsafe image inputs. To our knowledge, no prior work achieves this level of efficacy against MoE LLMs.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-17049154",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Security of ML 3",
@@ -156,6 +158,19 @@
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening",
         "prepublication PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-17049154",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/wu-lichao",
+      "kind": "paper-page",
+      "title": "GateBreaker: Gate-Guided Attacks on Mixture-of-Expert LLMs",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:24:08Z",
+      "content_hash": "sha256:cbbc14ccd220f5662958e733b7fae7a64c8bbfa2d5f9bb788218eaccaf97a71a",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

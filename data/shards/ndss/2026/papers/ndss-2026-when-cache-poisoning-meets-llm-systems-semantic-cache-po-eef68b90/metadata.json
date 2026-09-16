@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2026-when-cache-poisoning-meets-llm-systems-semantic-cache-po-eef68b90",
   "title": "When Cache Poisoning Meets LLM Systems: Semantic Cache Poisoning and Its Countermeasures",
+  "abstract": "The emergence of large language models (LLMs) has enabled a wide range of applications, including code generation, chatbots, and AI agents. However, deploying these applications faces substantial challenges in terms of cost and efficiency. One notable optimization to address these challenges is semantic caching, which reuses query-response pairs across users based on semantic similarity. This mechanism has gained significant traction in both academia and industry and has been integrated into the LLM serving infrastructure of cloud providers such as Azure, AWS, and Alibaba. This paper is the first to show that semantic caching is vulnerable to cache poisoning attacks, where an attacker injects crafted cache entries to cause others to receive attacker-defined responses. We demonstrate the semantic cache poisoning attack in diverse scenarios and confirm its practicality across all three major public clouds. Building on the attack, we evaluate existing adversarial prompting defenses and find they are ineffective against semantic cache poisoning, leading us to propose a new defense mechanism that demonstrates improved protection compared to existing approaches, though complete mitigation remains challenging. Our study reveals that cache poisoning, a long-standing security concern, has re-emerged in LLM systems. While our analysis focuses on semantic cache, the underlying risks may extend to other types of caching mechanisms used in LLM systems.",
+  "abstract_source_id": "src-abstract-ndss-2026-eef68b90",
   "venue": "ndss",
   "year": 2026,
   "track_or_session": "Fall submission cycle",
@@ -223,6 +225,19 @@
       "official": false,
       "supports": [
         "independent proceedings identity reconciliation"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2026-eef68b90",
+      "url": "https://www.ndss-symposium.org/ndss-paper/when-cache-poisoning-meets-llm-systems-semantic-cache-poisoning-and-its-countermeasures/",
+      "kind": "paper-page",
+      "title": "When Cache Poisoning Meets LLM Systems: Semantic Cache Poisoning and Its Countermeasures",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:23:39Z",
+      "content_hash": "sha256:a58599bb686b33cc6e290753878fd321bba5af0a4852f268088323ad56571d9d",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

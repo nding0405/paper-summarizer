@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2025-on-the-security-of-ssh-client-signatures-038603e1",
   "title": "On the Security of SSH Client Signatures",
+  "abstract": "Administrators and developers use SSH client keys and signatures for authentication, for example, to access internet backbone servers or to commit new code on platforms like GitHub. However, unlike servers, SSH clients cannot be measured through internet scans. We close this gap in two steps. First, we collect SSH client public keys. Such keys are regularly published by their owners on open development platforms like GitHub and GitLab. We systematize previous non-academic work by subjecting these keys to various security tests in a longitudinal study. Second, in a series of black-box lab experiments, we analyze the implementations of algorithms for SSH client signatures in 24 popular SSH clients for Linux, Windows, and macOS. We extracted 31,622,338 keys from three public sources in two scans. Compared to previous work, we see a clear tendency to abandon RSA signatures in favor of EdDSA signatures. Still, in January 2025, we found 98 broken short keys, 139 keys generated from weak randomness, and 149 keys with common or small factors—the large majority of the retrieved keys exposed no weakness. Weak randomness can not only compromise a secret key through its public key, but also through signatures. It is well-known that a bias in random nonces in ECDSA can reveal the secret key through public signatures. For the first time, we show that the use of deterministic nonces in ECDSA can also be dangerous: The private signing key of a PuTTY client can be recovered from just 58 valid signatures if ECDSA with NIST curve P-521 is used. PuTTY acknowledged our finding in CVE-2024-31497, and they subsequently replaced the nonce generation algorithm.",
+  "abstract_source_id": "src-abstract-ccs-2025-038603e1",
   "venue": "ccs",
   "year": 2025,
   "track_or_session": "Cycle 2",
@@ -169,6 +171,19 @@
         "published-order authors",
         "publication-time affiliations",
         "publication date and page span"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2025-038603e1",
+      "url": "https://api.openalex.org/works/doi:10.1145/3719027.3765079?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "On the Security of SSH Client Signatures",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:15:19Z",
+      "content_hash": "sha256:6cb35d0a6a91d6477c379e3c9d68c0d9c97973449380e65fa274c261f5cd62a3",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

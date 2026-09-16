@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-irblock-a-large-scale-measurement-study-of-the-great-fir-09e91c10",
   "title": "IRBlock: A Large-Scale Measurement Study of the Great Firewall of Iran",
+  "abstract": "The Great Firewall of Iran (GFI) has evolved significantly over the past decade, constantly adding sophisticated blocking techniques. Prior research into Iran's Internet censorship, however, has primarily been one-off studies, leaving significant gaps in understanding the breadth and evolution of its filtering strategies. Exploiting the bidirectional blocking behaviors of the GFI and its own injection mechanisms as a side-channel to determine traffic disruption, we developed IRBlock, a novel large-scale, multi-protocol measurement system designed to measure DNS, HTTP, and UDP-based censorship across Iran, enabling continuous monitoring and in-depth exploration of the GFI's blocking behavior.\n\nOver a period of 2.5 months, IRBlock has periodically measured the entire Iran's IP address space and tested the blocking status of over 500M apex domains, uncovering new insights into the GFI's censorship practices of different core network protocols. Notably, IRBlock identified 6.8M IPs subjected to DNS poisoning and HTTP blockpage injection, and 5.4M IPs subjected to UDP-based traffic disruption. We also analyzed the censored domains found by IRBlock and discovered over censored 6M FQDNs and 3.3M apex domains. Via reverse engineering of the GFI's blocking rules, we found many domains are inadvertently overblocked due to blanket blocking policies of entire TLDs (e.g., .il), resulting in large collateral damage to innocuous websites. We also find that the GFI's blocking strategies show many similarities to those observed for the Great Firewall of China.\n\nOur study represents the most comprehensive view of Iran's Internet censorship to date. Leveraging IRBlock's data, we shed light on the GFI's evolving filtering strategies and the challenges faced by circumvention tools. We discuss the implications of our findings on existing censorship measurement and circumvention efforts. We hope that the insights gained from our study can inform not only the research community but also policymakers and activists working to promote digital freedom in Iran and beyond. All data collected by IRBlock will be made publicly available to facilitate further research on nation-state censorship and Internet freedom advocacy.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-09e91c10",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Network Security 1: Censorship, Evasion, and Trustworthy Infrastructure",
@@ -133,6 +135,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-09e91c10",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/tai",
+      "kind": "paper-page",
+      "title": "IRBlock: A Large-Scale Measurement Study of the Great Firewall of Iran",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:20:27Z",
+      "content_hash": "sha256:c8a7b5f261d885a67c2be809210ea411f1681f3af6e7e9687aac5d9c4bfa9941",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

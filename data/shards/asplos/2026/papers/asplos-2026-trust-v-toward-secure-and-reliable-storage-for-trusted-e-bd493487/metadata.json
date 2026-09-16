@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2026-trust-v-toward-secure-and-reliable-storage-for-trusted-e-bd493487",
   "title": "Trust-V: Toward Secure and Reliable Storage for Trusted Execution Environments",
+  "abstract": "Trusted execution environments (TEEs) provide strong isolation for security-critical applications (enclaves) and their runtime data from potentially malicious operating systems. While TEEs also support secure storage by sealing data and storing it persistently on media, they do not ensure the integrity of sealed data, leaving it vulnerable to deletion or manipulation by an untrusted OS. In this work, we present Trusted Storage, a runtime storage isolation mechanism for TEEs that guarantees the integrity of TEE persistent data. The core design partitions storage into trusted and untrusted regions and enforces access control by locking MMIO regions and monitoring block I/O. To ensure portability, Trusted Storage requires no hardware modifications or additional hardware. We implemented a prototype, Trust-V, on the RISC-V platform. In particular, to support secure operation on legacy devices where security features are limited, Trust-V introduces a Virtual-M mode, a sandboxed privileged execution environment in machine mode, for securely hosting the monitor. Our evaluation demonstrates that, although Trust-V incurs up to 3.86× system overhead, it allows TEE software to reliably store and retrieve persistent data.",
+  "abstract_source_id": "src-abstract-asplos-2026-bd493487",
   "venue": "asplos",
   "year": 2026,
   "track_or_session": "Session 2D: DRAM Reliability & Security",
@@ -125,6 +127,19 @@
       "official": false,
       "supports": [
         "Indexed abstract used for strict relevance classification and indexed arXiv identifier where available."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2026-bd493487",
+      "url": "https://api.openalex.org/works/doi:10.1145/3779212.3790242?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Trust-V: Toward Secure and Reliable Storage for Trusted Execution Environments",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:07:02Z",
+      "content_hash": "sha256:890d3cbfbd49d5f5bb9622c621eec116656799182a7d73734a02495211105597",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

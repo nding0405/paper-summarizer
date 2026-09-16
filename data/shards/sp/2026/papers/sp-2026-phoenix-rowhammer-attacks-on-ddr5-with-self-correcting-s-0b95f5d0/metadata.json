@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2026-phoenix-rowhammer-attacks-on-ddr5-with-self-correcting-s-0b95f5d0",
   "title": "Phoenix: Rowhammer Attacks on DDR5 with Self-Correcting Synchronization",
+  "abstract": "DDR5 has shown an increased resistance to Rowhammer attacks in production settings. Surprisingly, DDR5 achieves this without additional refresh management commands, pointing to the deployment of more sophisticated inDRAM Target Row Refresh (TRR) mechanisms. This paper reverse engineers such advanced TRR schemes in DDR5 devices for the first time. Our findings show that compared to older mitigations deployed in DDR4, these new schemes have considerably fewer blind spots spread over many refresh intervals. This means that an effective DDR5 Rowhammer pattern must precisely track thousands of refresh operations, which we show is not possible with existing techniques. To address this challenge, our new DDR5 Rowhammer attack, called Phoenix, self-corrects the pattern whenever it detects a missed refresh operation during the attack. Our evaluation shows that Phoenix triggers bit flips on 15 out of 15 DDR5 devices in our test pool. Using these bit flips, we build the first Rowhammer privilege escalation exploit that obtains root on a commodity DDR5 system with default settings in as little as 109 seconds. These results provide further evidence that a principled Rowhammer mitigation, such as per-row activation counters, is mandatory for a secure operation of future devices.",
+  "abstract_source_id": "src-abstract-sp-2026-0b95f5d0",
   "venue": "sp",
   "year": 2026,
   "track_or_session": "Cycle 1",
@@ -175,6 +177,19 @@
       "official": true,
       "supports": [
         "DOI, published-order authors and affiliations, abstract, publication date, page span, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2026-0b95f5d0",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Phoenix: Rowhammer Attacks on DDR5 with Self-Correcting Synchronization",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:58:02Z",
+      "content_hash": "sha256:4204efad9387253e2c70bd18217fac7c5220b9cd43ecd6179fdc27c5a043343e",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

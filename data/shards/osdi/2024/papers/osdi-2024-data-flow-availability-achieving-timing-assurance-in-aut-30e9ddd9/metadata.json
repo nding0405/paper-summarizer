@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2024-data-flow-availability-achieving-timing-assurance-in-aut-30e9ddd9",
   "title": "Data-flow Availability: Achieving Timing Assurance in Autonomous Systems",
+  "abstract": "Due to the continuous interaction with the physical world, autonomous cyber-physical systems (CPS) require both functional and temporal correctness. Despite recent advances in the theoretical foundation of real-time computing, leveraging these results efficiently in modern CPS platforms often requires domain expertise, and presents non-trivial challenges to many developers.\n\nTo understand the practical challenges in building real-time software, we conducted a survey of 189 software issues from 7 representative CPS open-source projects. Through this exercise, we found that most bugs are due to misalignment in time between cyber and physical states. This inspires us to abstract three key temporal properties: freshness, consistency, and stability. Using a newly developed concept, Data-flow Availability (DFA), which aims to capture temporal/availability expectation of data flow, we show how these essential properties can be represented as timing constraints on data flows. To realize the timing assurance from DFA, we designed and implemented Kairos, which automatically detects and mitigates timing constraint violations. To detect violations, Kairos translates the policy definition from the API-based annotations into run-time program instrumentation. To mitigate the violations, it provides an infrastructure to bridge semantic gaps between schedulers at different abstraction layers to allow for coordinated efforts. End-to-end evaluation on three real-world CPS platforms shows that Kairos improves timing predictability and safety while introducing a minimal 2.8% run-time overhead.",
+  "abstract_source_id": "src-abstract-osdi-2024-30e9ddd9",
   "venue": "osdi",
   "year": 2024,
   "track_or_session": "Operating Systems",
@@ -117,6 +119,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2024-30e9ddd9",
+      "url": "https://www.usenix.org/conference/osdi24/presentation/li",
+      "kind": "paper-page",
+      "title": "Data-flow Availability: Achieving Timing Assurance in Autonomous Systems",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:06:59Z",
+      "content_hash": "sha256:589da2e3866f268b49e53740ebea16ce8b4e552ae35d586abf9ad64a083ca5f4",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

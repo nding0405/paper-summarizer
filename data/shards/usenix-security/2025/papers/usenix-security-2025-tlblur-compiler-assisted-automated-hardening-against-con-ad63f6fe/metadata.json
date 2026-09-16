@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-tlblur-compiler-assisted-automated-hardening-against-con-ad63f6fe",
   "title": "TLBlur: Compiler-Assisted Automated Hardening against Controlled Channels on Off-the-Shelf Intel SGX Platforms",
+  "abstract": "Intel SGX's vision of secure enclaved execution has been plagued by a continuous line of side channels. Among these, the ability to track enclave page accesses emerged as a particularly versatile and indispensable attack primitive. Despite nearly a decade since the original controlled-channel attack, existing mitigations remain focused on detection rather than prevention or depend on impractical developer annotations and hypothetical hardware extensions. This paper introduces TLBlur, a novel approach that leverages the recent AEX-Notify hardware extension in modern Intel SGX processors to essentially limit the bandwidth of controlled-channel attacks to the anonymity set of recently used pages.\n\nOur defense leverages the fact that page translations served from the processor's Translation Lookaside Buffer (TLB), which is forcibly flushed during enclave interruptions, remain oblivious to adversaries. We introduce practical compile-time instrumentation to seamlessly log page accesses within the protected enclave application. Additionally, we utilize AEX-Notify to implement a custom enclave interrupt handler that hides the N most recently accessed application pages by transparently prefetching them into the hardware TLB. Our evaluation on real-world libraries such as libjpeg, yescrypt, wolfSSL, and OpenSSL yields acceptable performance overheads, improving over prior work with several orders of magnitude.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-ad63f6fe",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "System Security 2: Trusted and Robust Computing",
@@ -175,6 +177,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-ad63f6fe",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/vanoverloop",
+      "kind": "paper-page",
+      "title": "TLBlur: Compiler-Assisted Automated Hardening against Controlled Channels on Off-the-Shelf Intel SGX Platforms",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:22:18Z",
+      "content_hash": "sha256:fb61c8ce4f3cb9aba15a07d20f8fdce1de1d2022801eafcffcddb63cf9080175",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

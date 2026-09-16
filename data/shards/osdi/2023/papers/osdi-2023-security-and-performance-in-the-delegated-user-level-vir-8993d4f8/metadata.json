@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2023-security-and-performance-in-the-delegated-user-level-vir-8993d4f8",
   "title": "Security and Performance in the Delegated User-level Virtualization",
+  "abstract": "Today’s mainstream virtualization systems are plagued by severe security threats due to the large attack surface exposed by in-kernel hypervisor components such as KVM. To address this issue, this paper proposes a novel design called delegated virtualization, which decouples the commodity hypervisor into two planes: the hypervisor plane for hypervisor control (which is typically small and has fixed logic) and the VM plane for handling virtual machine (VM) requests and exceptions at runtime. As our investigation reveals that all known hypervisor vulnerabilities that threaten the host kernel lie in the VM plane, delegated virtualization completely offloads the in-kernel VM plane to a user-space hypervisor called DuVisor that directly interacts with its VM without exiting to the host kernel, based on a small hardware extension (481 lines of Chisel). We have implemented the hardware extension on an open-source RISC-V CPU on FireSim and built a Rust-based DuVisor atop it. The evaluation results demonstrate that DuVisor significantly reduces the attack surface with negligible performance overhead (< 5%). DuVisor’s source code is publicly available at https://github.com/IPADS-DuVisor .",
+  "abstract_source_id": "src-abstract-osdi-2023-8993d4f8",
   "venue": "osdi",
   "year": 2023,
   "track_or_session": "Secure Your Bits II",
@@ -222,6 +224,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2023-8993d4f8",
+      "url": "https://www.usenix.org/conference/osdi23/presentation/chen",
+      "kind": "paper-page",
+      "title": "Security and Performance in the Delegated User-level Virtualization",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:06:44Z",
+      "content_hash": "sha256:4ad8337f1989424a9119e5a8ac3a040eb315c44eb79d01db64784c3b445a74c1",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

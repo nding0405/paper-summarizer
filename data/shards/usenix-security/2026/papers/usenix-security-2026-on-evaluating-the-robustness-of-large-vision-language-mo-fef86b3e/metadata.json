@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-on-evaluating-the-robustness-of-large-vision-language-mo-fef86b3e",
   "title": "On Evaluating the Robustness of Large Vision-Language Models via Untargeted Modality Alignment Breaking Adversarial Attack",
+  "abstract": "Large Vision-Language Models (LVLMs) have achieved remarkable success in multimodal tasks by aligning the representation space of visual encoders to that of the LLMs. However, they remain vulnerable to transferable adversarial attacks, which can manipulate the LVLMs' output without accessing the model. Ensuring their reliable deployment thus requires a rigorous evaluation of black-box robustness. Current methods provide a limited assessment by perturbing only the visual encoder of LVLMs and often neglect untargeted attack scenarios. In this work, we propose the Modality Alignment Breaking Attack (MABA), a novel transferable, untargeted adversarial attack for evaluating the black-box robustness of LVLMs. MABA emphasizes disrupting the entire multimodal pipeline, targeting two key phases: visual encoding and modality alignment. First, MABA reveals that the core of transferable adversarial attacks lies in suppressing discriminative visual representations and explicitly uses this as an optimization objective to improve transferability across different LVLMs. Second, MABA introduces a mutual-information-aware projector that acts as a surrogate modality alignment module of LVLMs, effectively breaking cross-modal consistency and enhancing the transferability. Extensive evaluations demonstrate that MABA achieves state-of-the-art performance, leading to an average 58.37% drop in semantic metrics for the image caption task. Through ablation studies on diverse LVLM families, we derive valuable insights into strengthening the robustness of LVLMs.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-fef86b3e",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Security of ML 5",
@@ -219,6 +221,19 @@
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening",
         "prepublication PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-fef86b3e",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/li-zhichao",
+      "kind": "paper-page",
+      "title": "On Evaluating the Robustness of Large Vision-Language Models via Untargeted Modality Alignment Breaking Adversarial Attack",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:24:52Z",
+      "content_hash": "sha256:12af68843fbcb6931c1168d9da48d2ff2c400dbed185e3727a53e9b3719bdb79",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-hyperaudit-towards-user-transparent-and-highly-efficient-67c8831b",
   "title": "HyperAudit: Towards User Transparent and Highly Efficient System Auditing for Cloud Platforms",
+  "abstract": "System auditing is a critical security primitive for cloud platforms, but existing auditing frameworks place the log collection module inside the compromise-prone guest kernel. This design exposes a large attack surface and enables race condition attacks, where an attacker that compromises the kernel can tamper with uncommitted logs and erase pre-compromise traces. Prior secure collectors mitigate this by frequent synchronous or timed submissions, which incur non-trivial runtime overhead.\n\nWe present HyperAudit, a hypervisor-assisted auditing architecture that isolates the log collection module from the guest kernel while keeping collection efficient and deployable. HyperAudit injects a kernel-independent collector into a hidden memory region, protects its code with execute-only permissions, and shields the log buffer with guard-page trapping, minimizing the exposed attack surface. Logs are asynchronously pulled by a consumer in a dedicated Secure VM, avoiding periodic synchronous commits. Under the common auditing assumption that logs generated after kernel compromise are untrustworthy, HyperAudit guarantees the integrity of all pre-compromise logs against race condition and flooding attacks. We implement HyperAudit on both x86 and Arm without extra hardware, and show that it reduces log-intensive application overhead by 49% and 66% compared to eAudit and HitchHiker, even outperforming host-only collectors.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-67c8831b",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Hardware Security 1",
@@ -176,6 +178,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-67c8831b",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/zhang-renpeng",
+      "kind": "paper-page",
+      "title": "HyperAudit: Towards User Transparent and Highly Efficient System Auditing for Cloud Platforms",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:24:16Z",
+      "content_hash": "sha256:02d8ec47b06c738c6a431275ce5c1c8c6214e8100399030dfe91d27f2796a9a6",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

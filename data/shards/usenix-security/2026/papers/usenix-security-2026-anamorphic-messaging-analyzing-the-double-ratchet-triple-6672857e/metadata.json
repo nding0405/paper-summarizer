@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-anamorphic-messaging-analyzing-the-double-ratchet-triple-6672857e",
   "title": "Anamorphic Messaging: Analyzing the Double Ratchet, Triple Ratchet, PQ3, and MLS",
+  "abstract": "Anamorphic cryptography targets the scenario in which a dictator does not forbid the use of cryptography but requires all users to reveal their secret keys to them. Thus, the dictator can decrypt all honestly generated ciphertexts. The approach for bypassing this is to identify spots, such as random nonces, in existing cryptographic protocols in which secret messages can be hidden using an additional secret double key. So far, the literature mostly focused on identifying such spots in simple primitives like public-key encryption or signatures; only recently, an initial work identified limited spots in Signal's Double Ratchet Algorithm.\n\nWe are the first to leverage the statefulness of cryptographic communication protocols to employ continuously updated double states and, thereby, achieve Forward Security: Even if the adversary (i) observes all traffic, (ii) knows all users' regular secret key material at any stage of the protocol execution, and (iii) at some point learns the secret double state, the entire protocol execution looks benign although covert messages were previously hidden in the traffic anamorphically. We formalize this notion and also cover robustness and authenticity, which appear to be particularly relevant in the messaging context.\n\nIn this new model, we study four of the most relevant messaging protocols and identify hiding spots therein: Signal's Double Ratchet, Signal's Triple Ratchet, Apple's PQ3, and the two-party core of the Messaging Layer Security Standard. We focus on the cryptographic parts of these protocols and, despite their complexity, identify surprisingly few anamorphic hiding spots. We prove that all these protocols offer forward secure, authenticated anamorphic channels and we evaluate their bandwidths: While 16 bits can be embedded in every epoch of the Double Ratchet, Triple Ratchet and PQ3 provide 176 bits, respectively 256 bits, of bandwidth per post-quantum epoch, and MLS provides 688 bits per epoch.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-6672857e",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Applications of Cryptography 4",
@@ -113,6 +115,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-6672857e",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/chu",
+      "kind": "paper-page",
+      "title": "Anamorphic Messaging: Analyzing the Double Ratchet, Triple Ratchet, PQ3, and MLS",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:22:58Z",
+      "content_hash": "sha256:f71fab5a2f7b4d6d3a67b258e7729b0812bfb38a6ba5d5151edf782b43907ca0",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

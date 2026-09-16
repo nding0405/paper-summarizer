@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2025-powerradio-manipulate-sensor-measurement-via-power-gnd-r-1fb3a20e",
   "title": "PowerRadio: Manipulate Sensor Measurement via Power GND Radiation",
+  "abstract": "Sensors are key components to enable various applications, e.g., home intrusion detection, and environment monitoring. While various software defenses and physical protections are used to prevent sensor manipulation, this paper introduces a new threat vector, PowerRadio, which can bypass existing protections and change the sensor readings at a distance. PowerRadio leverages interconnected ground (GND) wires, a standard practice for electrical safety at home, to inject malicious signals. The injected signal is coupled by the sensor's analog measurement wire and eventually, it survives the noise filters, inducing incorrect measurement. We present three methods that can manipulate sensors by inducing static bias, periodical signals, or pulses. For instance, we show adding stripes into the captured images of a surveillance camera or injecting inaudible voice commands into conference microphones. We study the underlying principles of PowerRadio and find its root causes: (1) the lack of shielding between ground and data signal wires and (2) the asymmetry of circuit impedance that enables interference to bypass filtering. We validate PowerRadio against a surveillance system, broadcast system, and various sensors. We believe that PowerRadio represents an emerging threat that exhibits the pros of both radiated and conducted EMI, e.g., expanding the effective attack distance of radiated EMI yet eliminating the requirement of line-of-sight or approaching physically. Our insights shall provide guidance for enhancing the sensors' security and power wiring during the design phases.",
+  "abstract_source_id": "src-abstract-ndss-2025-1fb3a20e",
   "venue": "ndss",
   "year": 2025,
   "track_or_session": "Summer submission cycle",
@@ -189,6 +191,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2025-1fb3a20e",
+      "url": "https://www.ndss-symposium.org/ndss-paper/powerradio-manipulate-sensor-measurement-via-power-gnd-radiation/",
+      "kind": "paper-page",
+      "title": "PowerRadio: Manipulate Sensor Measurement via Power GND Radiation",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:20:09Z",
+      "content_hash": "sha256:14c267db47f4f8d9df36f98841edce437306443eb3897632eecbcd93fb2ca975",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

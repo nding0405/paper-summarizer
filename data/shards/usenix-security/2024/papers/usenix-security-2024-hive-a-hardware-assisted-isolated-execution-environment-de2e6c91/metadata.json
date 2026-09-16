@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2024-hive-a-hardware-assisted-isolated-execution-environment-de2e6c91",
   "title": "HIVE: A Hardware-assisted Isolated Execution Environment for eBPF on AArch64",
+  "abstract": "eBPF has become a critical component in Linux. To ensure kernel security, BPF programs are statically verified before being loaded and executed in the kernel. However, the state-of-the-art eBPF verifier has both security and complexity issues. To this end, we choose to look at BPF programs from a new perspective and regard them as a new type of kernel-mode application, thus an isolation-based rather than a verificationbased approach is needed. In this paper, we propose HIVE, an isolation execution environment for BPF programs on AArch64. To provide the equivalent security guarantees, we systematize the security aims of the eBPF verifier and categorize two types of pointers in eBPF: the inclusive type pointer that points to BPF objects and the exclusive type pointer that points to kernel objects. For the former, HIVE compartmentalizes all BPF memory from the kernel and de-privileges the memory accesses in the BPF programs by leveraging the load/store unprivileged instructions; for the latter, HIVE utilizes the pointer authentication feature to enforce access controls of kernel objects. Evaluation results show that HIVE is not only efficient but also supports complex BPF programs.",
+  "abstract_source_id": "src-abstract-usenix-security-2024-de2e6c91",
   "venue": "usenix-security",
   "year": 2024,
   "track_or_session": "System Security I: OS",
@@ -280,6 +282,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2024-de2e6c91",
+      "url": "https://www.usenix.org/conference/usenixsecurity24/presentation/zhang-peihua",
+      "kind": "paper-page",
+      "title": "HIVE: A Hardware-assisted Isolated Execution Environment for eBPF on AArch64",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:15:33Z",
+      "content_hash": "sha256:3f10763b546518676bb469aafa31d6c8933452d3841bdb97a039441b6258f58d",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

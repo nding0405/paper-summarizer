@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2024-lmsanitator-defending-prompt-tuning-against-task-agnosti-3eb32ab0",
   "title": "LMSanitator: Defending Prompt-Tuning Against Task-Agnostic Backdoors",
+  "abstract": "*Prompt-tuning* has emerged as an attractive paradigm for deploying large-scale language models due to its strong downstream task performance and efficient multitask serving ability. Despite its wide adoption, we empirically show that prompt-tuning is vulnerable to downstream task-agnostic backdoors, which reside in the pretrained models and can affect arbitrary downstream tasks. The state-of-the-art backdoor detection approaches cannot defend against task-agnostic backdoors since they hardly converge in reversing the backdoor triggers. To address this issue, we propose LMSanitator, a novel approach for detecting and removing task-agnostic backdoors on Transformer models. Instead of directly inverting the triggers, LMSanitator aims to invert the *predefined attack vectors* (pretrained models' output when the input is embedded with triggers) of the task-agnostic backdoors, which achieves much better convergence performance and backdoor detection accuracy. LMSanitator further leverages prompt-tuning’s property of freezing the pretrained model to perform accurate and fast output monitoring and input purging during the inference phase. Extensive experiments on multiple language models and NLP tasks illustrate the effectiveness of LMSanitator. For instance, LMSanitator achieves 92.8% backdoor detection accuracy on 960 models and decreases the attack success rate to less than 1% in most scenarios.",
+  "abstract_source_id": "src-abstract-ndss-2024-3eb32ab0",
   "venue": "ndss",
   "year": 2024,
   "track_or_session": "Summer submission cycle",
@@ -252,6 +254,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2024-3eb32ab0",
+      "url": "https://www.ndss-symposium.org/ndss-paper/lmsanitator-defending-prompt-tuning-against-task-agnostic-backdoors/",
+      "kind": "paper-page",
+      "title": "LMSanitator: Defending Prompt-Tuning Against Task-Agnostic Backdoors",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:18:20Z",
+      "content_hash": "sha256:4ca01dbadbf6fef64db6e1090a821eec6349071db14674ec94f96b927c9a05a2",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

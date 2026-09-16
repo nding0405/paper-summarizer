@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2023-ghost-domain-reloaded-vulnerable-links-in-domain-name-de-b188c398",
   "title": "Ghost Domain Reloaded: Vulnerable Links in Domain Name Delegation and Revocation",
+  "abstract": "In this paper, we propose textit{Phoenix Domain}, a general and novel attack that allows adversaries to maintain the revoked malicious domain continuously resolvable at scale, which enables an old, mitigated attack, Ghost Domain. textit{Phoenix Domain} has two variations and affects all mainstream DNS software and public DNS resolvers overall because it does not violate any DNS specifications and best security practices. The attack is made possible through systematically ''textit{reverse engineer}'' the cache operations of 8 DNS implementations, and new attack surfaces are revealed in the domain name delegation processes. We select 41 well-known public DNS resolvers and prove that all surveyed DNS services are vulnerable to textit{Phoenix Domain}, including Google Public DNS and Cloudflare DNS. Extensive measurement studies are performed with 210k stable and distributed DNS recursive resolvers, and results show that even after one month from domain name revocation and cache expiration, more than 25% of recursive resolvers can still resolve it. The proposed attack provides an opportunity for adversaries to evade the security practices of malicious domain take-down. We have reported discovered vulnerabilities to all affected vendors and suggested 6 types of mitigation approaches to them. Until now, 7 DNS software providers and 15 resolver vendors, including BIND, Unbound, Google, and Cloudflare, have confirmed the vulnerabilities, and some of them are implementing and publishing mitigation patches according to our suggestions. In addition, 9 CVE numbers have been assigned. The study calls for standardization to address the issue of how to revoke domain names securely and maintain cache consistency.",
+  "abstract_source_id": "src-abstract-ndss-2023-b188c398",
   "venue": "ndss",
   "year": 2023,
   "track_or_session": "Network Protocols",
@@ -270,6 +272,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2023-b188c398",
+      "url": "https://www.ndss-symposium.org/ndss-paper/ghost-domain-reloaded-vulnerable-links-in-domain-name-delegation-and-revocation/",
+      "kind": "paper-page",
+      "title": "Ghost Domain Reloaded: Vulnerable Links in Domain Name Delegation and Revocation",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:17:01Z",
+      "content_hash": "sha256:b421ba3c406197fb1e3fbdc8bc5cbbb6847b1e57163fbec5d72a642c120c62cb",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

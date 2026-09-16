@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-mitigating-injection-attacks-against-e2ee-applications-v-c9a3e145",
   "title": "Mitigating Injection Attacks against E2EE Applications via View-Based Partitioning",
+  "abstract": "A recent line of work has explored injection attacks against end-to-end encrypted (E2EE) applications. These involve sending adversarial content to a target victim E2EE client, thereby \"injecting it\" into otherwise honest client state, followed by monitoring some encrypted backup or other server-side state to violate confidentiality. These attacks exploit features such as compression before encryption of backups, and practitioners so far lack a way to prevent these attacks while retaining practicality.\n\nWe address this gap by introducing a framework for preventing injection attacks. Underlying the framework is a new approach that we call view-based partitioning, which allows application features to be designed to ensure that injection attacks cannot be exploited to leak confidential information. At the same time, our framework allows for efficiency: intuitively, application state can be partitioned according to potential adversarial views, and within individual views (e.g., all the messages visible to a particular sender in an E2EE messaging app) compression and other performance features can be used without risk of injection attacks.\n\nWe provide, for the first time, a formal security model for injection attacks, and prove that designers can use our framework to ensure injection attacks fail. Finally, we evaluate various implementations of our framework as applied to backing up E2EE application state via SQLite and XML databases, showing that we can achieve injection resistance with negligible performance overheads.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-c9a3e145",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Software Security and Usable Security",
@@ -133,6 +135,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-c9a3e145",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/fabrega-partitioning",
+      "kind": "paper-page",
+      "title": "Mitigating Injection Attacks against E2EE Applications via View-Based Partitioning",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:20:46Z",
+      "content_hash": "sha256:b0d4965b36a334cef76c6500f7d717abbc446b66223baafb4561a1a413e0a05e",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

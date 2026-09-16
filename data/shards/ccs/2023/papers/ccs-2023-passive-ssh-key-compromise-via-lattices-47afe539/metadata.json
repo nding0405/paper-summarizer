@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2023-passive-ssh-key-compromise-via-lattices-47afe539",
   "title": "Passive SSH Key Compromise via Lattices",
+  "abstract": "We demonstrate that a passive network attacker can opportunistically obtain private RSA host keys from an SSH server that experiences a naturally arising fault during signature computation. In prior work, this was not believed to be possible for the SSH protocol because the signature included information like the shared Diffie-Hellman secret that would not be available to a passive network observer. We show that for the signature parameters commonly in use for SSH, there is an efficient lattice attack to recover the private key in case of a signature fault. We provide a security analysis of the SSH, IKEv1, and IKEv2 protocols in this scenario, and use our attack to discover hundreds of compromised keys in the wild from several independently vulnerable implementations.",
+  "abstract_source_id": "src-abstract-ccs-2023-47afe539",
   "venue": "ccs",
   "year": 2023,
   "track_or_session": "Cryptographic Protocols (Applied Cryptography)",
@@ -185,6 +187,19 @@
       "official": false,
       "supports": [
         "published title, author order, and page span"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2023-47afe539",
+      "url": "https://api.openalex.org/works/doi:10.1145/3576915.3616629?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Passive SSH Key Compromise via Lattices",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:07:59Z",
+      "content_hash": "sha256:a258e4154f628541a9c403e74670c40c6d291a498c32ca5216b0c29a58130b30",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

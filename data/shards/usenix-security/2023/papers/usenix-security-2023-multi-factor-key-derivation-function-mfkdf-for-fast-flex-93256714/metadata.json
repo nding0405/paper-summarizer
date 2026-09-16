@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2023-multi-factor-key-derivation-function-mfkdf-for-fast-flex-93256714",
   "title": "Multi-Factor Key Derivation Function (MFKDF) for Fast, Flexible, Secure, & Practical Key Management",
+  "abstract": "We present the first general construction of a Multi-Factor Key Derivation Function (MFKDF). Our function expands upon password-based key derivation functions (PBKDFs) with support for using other popular authentication factors like TOTP, HOTP, and hardware tokens in the key derivation process. In doing so, it provides an exponential security improvement over PBKDFs with less than 12 ms of additional computational overhead in a typical web browser. We further present a threshold MFKDF construction, allowing for client-side key recovery and reconstitution if a factor is lost. Finally, by \"stacking\" derived keys, we provide a means of cryptographically enforcing arbitrarily specific key derivation policies. The result is a paradigm shift toward direct cryptographic protection of user data using all available authentication factors, with no noticeable change to the user experience. We demonstrate the ability of our solution to not only significantly improve the security of existing systems implementing PBKDFs, but also to enable new applications where PBKDFs would not be considered a feasible approach.",
+  "abstract_source_id": "src-abstract-usenix-security-2023-93256714",
   "venue": "usenix-security",
   "year": 2023,
   "track_or_session": "Authentication",
@@ -91,6 +93,19 @@
       "official": true,
       "supports": [
         "authors, affiliations when published, abstract, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2023-93256714",
+      "url": "https://www.usenix.org/conference/usenixsecurity23/presentation/nair-mfkdf",
+      "kind": "paper-page",
+      "title": "Multi-Factor Key Derivation Function (MFKDF) for Fast, Flexible, Secure, & Practical Key Management",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:12:06Z",
+      "content_hash": "sha256:110bc4ff90d163b819125dc55545e78557798b1068d6c670c6288c3444b2a89c",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

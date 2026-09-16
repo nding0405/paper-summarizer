@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2025-urvfl-undetectable-data-reconstruction-attack-on-vertica-f28f7f36",
   "title": "URVFL: Undetectable Data Reconstruction Attack on Vertical Federated Learning",
+  "abstract": "Vertical Federated Learning (VFL) is a collaborative learning paradigm designed for scenarios where multiple clients share disjoint features of the same set of data samples. Albeit a wide range of applications, VFL is faced with privacy leakage from data reconstruction attacks. These attacks generally fall into two categories: honest-but-curious (HBC), where adversaries steal data while adhering to the protocol; and malicious attacks, where adversaries breach the training protocol for significant data leakage. While most research has focused on HBC scenarios, the exploration of malicious attacks remains limited.\n\nLaunching effective malicious attacks in VFL presents unique challenges: 1) Firstly, given the distributed nature of clients’ data features and models, each client rigorously guards its privacy and prohibits direct querying, complicating any attempts to steal data; 2) Existing malicious attacks alter the underlying VFL training task, and are hence easily detected by comparing the received gradients with the ones received in honest training. To overcome these challenges, we develop URVFL, a novel attack strategy that evades current detection mechanisms. The key idea is to integrate a discriminator with auxiliary classifier that takes a full advantage of the label information and generates malicious gradients to the victim clients: on one hand, label information helps to better characterize embeddings of samples from distinct classes, yielding an improved reconstruction performance; on the other hand, computing malicious gradients with label information better mimics the honest training, making the malicious gradients indistinguishable from the honest ones, and the attack much more stealthy. Our comprehensive experiments demonstrate that URVFL significantly outperforms existing attacks, and successfully circumvents SOTA detection methods for malicious attacks. Additional ablation studies and evaluations on defenses further underscore the robustness and effectiveness of URVFL.",
+  "abstract_source_id": "src-abstract-ndss-2025-f28f7f36",
   "venue": "ndss",
   "year": 2025,
   "track_or_session": "Fall submission cycle",
@@ -168,6 +170,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2025-f28f7f36",
+      "url": "https://www.ndss-symposium.org/ndss-paper/urvfl-undetectable-data-reconstruction-attack-on-vertical-federated-learning/",
+      "kind": "paper-page",
+      "title": "URVFL: Undetectable Data Reconstruction Attack on Vertical Federated Learning",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:20:55Z",
+      "content_hash": "sha256:ad6bb1b0008587a13b855e58fffa836f5a26ffd431f340dca259db8076c429dd",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

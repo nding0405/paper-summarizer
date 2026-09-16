@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2024-stateful-least-privilege-authorization-for-the-cloud-965134cd",
   "title": "Stateful Least Privilege Authorization for the Cloud",
+  "abstract": "Architecting an authorization protocol that enforces least privilege in the cloud is challenging. For example, when Zoom integrates with Google Calendar, Zoom obtains a bearer token—a credential that grants broad access to user data on the server. Widely-used authorization protocols like OAuth create overprivileged credentials because they do not provide developers of client apps and servers the tools to request and enforce minimal access. In the status quo, these overprivileged credentials are vulnerable to abuse when stolen or leaked. We introduce an authorization framework that enables creating and using bearer tokens that are least privileged. Our core insight is that the client app developer always knows their minimum privilege requirements when requesting access to user resources on a server. Our framework allows client app developers to write small programs in WebAssembly that customize and attenuate the privilege of OAuth-like bearer tokens. The server executes these programs to enforce that requests are least privileged. Building on this primary mechanism, we introduce a new class of stateful least privilege policies—authorization rules that can depend on a log of actions a client has taken on a server. We instantiate our authorization model for the popular OAuth protocol. Using open source client apps, we show how they can reduce their privilege using a variety of stateful policies enabled by our work.",
+  "abstract_source_id": "src-abstract-usenix-security-2024-965134cd",
   "venue": "usenix-security",
   "year": 2024,
   "track_or_session": "Cloud Security",
@@ -133,6 +135,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2024-965134cd",
+      "url": "https://www.usenix.org/conference/usenixsecurity24/presentation/cao-leo",
+      "kind": "paper-page",
+      "title": "Stateful Least Privilege Authorization for the Cloud",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:17:29Z",
+      "content_hash": "sha256:a69c0674ffafe6cdfa751b9c55ed66b3f0530080864bb30eddf45f2e8319c906",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

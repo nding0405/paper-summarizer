@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2025-tigon-a-distributed-database-for-a-cxl-pod-6cee237a",
   "title": "Tigon: A Distributed Database for a CXL Pod",
+  "abstract": "Building efficient distributed transactional databases remains a challenging problem despite decades of research. Existing distributed databases synchronize cross-host concurrent data accesses over a network, which requires numerous message exchanges and introduces performance overhead.\n\nWe describe Tigon, the first distributed in-memory database that synchronizes cross-host concurrent data accesses using atomic operations on CXL memory. Using CXL memory is more efficient than network-based approaches, however, Tigon must address the limitations of CXL memory. The limitations are CXL’s higher latency and lower bandwidth relative to local DRAM, and its limited hardware support for cross-host cache coherence. For TPC-C and a variant of YCSB, Tigon achieves up to 2.5× higher throughput compared with two optimized shared-nothing databases that use CXL memory as a transport and up to 18.5× higher throughput compared with an RDMA-based distributed database.",
+  "abstract_source_id": "src-abstract-osdi-2025-6cee237a",
   "venue": "osdi",
   "year": 2025,
   "track_or_session": "Database Systems",
@@ -222,6 +224,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2025-6cee237a",
+      "url": "https://www.usenix.org/conference/osdi25/presentation/huang-yibo",
+      "kind": "paper-page",
+      "title": "Tigon: A Distributed Database for a CXL Pod",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:07:51Z",
+      "content_hash": "sha256:eced0da981fea670daeb67a88ffc25b5b17d6f2e0456128c28c0b5e25b24612b",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

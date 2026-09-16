@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2025-empirical-security-analysis-of-software-based-fault-isol-62a0dad3",
   "title": "Empirical Security Analysis of Software-based Fault Isolation through Controlled Fault Injection",
+  "abstract": "We use browsers daily to access all sorts of information. Because browsers routinely process scripts, media, and executable code from unknown sources, they form a critical security boundary between users and adversaries. A common attack vector is JavaScript, which powers complex web interactions but exposes a large attack surface due to the sheer complexity of modern JavaScript engines. To mitigate these threats, modern engines increasingly adopt software-based fault isolation (SFI). A prominent example is Google's V8 heap sandbox, which represents the most widely deployed SFI mechanism, protecting billions of users across all Chromium-based browsers and countless applications built on Node.js and Electron. The heap sandbox splits the address space into two parts: one part containing trusted, security-sensitive metadata, and a sandboxed heap containing memory accessible to untrusted code. On a technical level, the sandbox enforces isolation by removing raw pointers and using translation tables to resolve references to trusted objects. Consequently, an attacker cannot corrupt trusted data even with full control of the sandboxed data, unless there is a bug in how code handles data from the sandboxed heap. Despite their widespread use, such SFI mechanisms have seen surprisingly little security testing.",
+  "abstract_source_id": "src-abstract-ccs-2025-62a0dad3",
   "venue": "ccs",
   "year": 2025,
   "track_or_session": "Cycle 2",
@@ -148,6 +150,19 @@
         "published-order authors",
         "publication-time affiliations",
         "publication date and page span"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2025-62a0dad3",
+      "url": "https://api.openalex.org/works/doi:10.1145/3719027.3765027?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Empirical Security Analysis of Software-based Fault Isolation through Controlled Fault Injection",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:14:11Z",
+      "content_hash": "sha256:be575ab229f37b0a41c5fe5f439608c35b80e7002c38c8c49ae951c2b48668e1",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

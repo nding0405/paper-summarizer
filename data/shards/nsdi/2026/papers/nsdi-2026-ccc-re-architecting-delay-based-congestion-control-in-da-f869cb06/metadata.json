@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2026-ccc-re-architecting-delay-based-congestion-control-in-da-f869cb06",
   "title": "CCC: Re-architecting Delay-based Congestion Control in Datacenter Networks",
+  "abstract": "In datacenter networks, delay-based congestion control (CC) algorithms are popular and protocols such as TIMELY and SWIFT are employed in production. However, even if delay signals are precisely measured, the congestion information deduction (CiD) may be incorrect under certain conditions, degrading the performance of CC. To address this problem, we re-architect the delay-based CC to make rate adjustments based not only on the congestion states but also the CiD trustworthiness. Based on this architecture, the CiD-sensitive congestion control (CCC) is developed. Specifically, CCC demarcates the regions, where the CiD from delay signals is untrustworthy, with the assistance of well-designed congestion criteria and inherent system inertia. When the CiD is untrustworthy, CCC constructs the probing rate adjustment rules for both the rapid response to congestion and the subsequent trustworthy CiD. Otherwise, CCC conducts the analytical rate adjustment to both reach the expected congestion state and keep the trustworthy CiD, fully leveraging the abundant information in delay signals. DPDK-based experiments and large-scale simulations confirm that CCC achieves similar good performance as INT-based CCs, including HPCC and PowerTCP, by using only delay signals, outperforming DCQCN, TIMELY, and SWIFT.",
+  "abstract_source_id": "src-abstract-nsdi-2026-f869cb06",
   "venue": "nsdi",
   "year": 2026,
   "track_or_session": "Clouds, Carefully Engineered",
@@ -244,6 +246,19 @@
         "proceedings page range and page count",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2026-f869cb06",
+      "url": "https://www.usenix.org/conference/nsdi26/presentation/jiang",
+      "kind": "paper-page",
+      "title": "CCC: Re-architecting Delay-based Congestion Control in Datacenter Networks",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:04:57Z",
+      "content_hash": "sha256:9749f68030b72d7198a75651861e37263468a028febfc3df46a4f23824dd9cc6",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

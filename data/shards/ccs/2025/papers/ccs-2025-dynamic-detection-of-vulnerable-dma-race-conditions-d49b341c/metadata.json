@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2025-dynamic-detection-of-vulnerable-dma-race-conditions-d49b341c",
   "title": "Dynamic Detection of Vulnerable DMA Race Conditions",
+  "abstract": "The drivers of modern operating systems use Direct Memory Access (DMA) to efficiently communicate with peripheral devices. Since the memory accessed by DMA is a shared resource between driver and device, it is a possible source of race conditions. Peripheral devices are also often untrusted, so these race conditions open up a new potential attack vector against a trusted OS kernel. In this paper, we present DMARacer, a dynamic detector called for these DMA-based race conditions in kernel code. DMARacer tracks memory accesses to DMA memory throughout the kernel's lifetime and analyses them for various indicators of race conditions. Additionally, upon detecting a race condition, DMARacer uses taint tracking to trace its impact and identify any potential vulnerabilities it may trigger, such as memory corruption or denial-of-service. We used DMARacer to search the drivers of the Linux kernel for DMA-based errors and find that DMA-based race conditions are a systemic issue in driver code. In total, DMARacer was able to detect 817 problematic memory accesses and 344 vulnerable operations in the scanned Linux kernel drivers.",
+  "abstract_source_id": "src-abstract-ccs-2025-d49b341c",
   "venue": "ccs",
   "year": 2025,
   "track_or_session": "Cycle 2",
@@ -148,6 +150,19 @@
         "published-order authors",
         "publication-time affiliations",
         "publication date and page span"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2025-d49b341c",
+      "url": "https://api.openalex.org/works/doi:10.1145/3719027.3765126?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Dynamic Detection of Vulnerable DMA Race Conditions",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:14:09Z",
+      "content_hash": "sha256:22547ad2fcfe42d49b352761afcd80ed0771af32c76dfb2477fc5ebc58f8358f",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

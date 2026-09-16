@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2023-network-detection-of-interactive-ssh-impostors-using-dee-0013b346",
   "title": "Network Detection of Interactive SSH Impostors Using Deep Learning",
+  "abstract": "Impostors who have stolen a user's SSH login credentials can inflict significant harm to the systems to which the user has remote access. We consider the problem of identifying such imposters when they conduct interactive SSH logins by detecting discrepancies in the timing and sizes of the client-side data packets, which generally reflect the typing dynamics of the person sending keystrokes over the connection.\n\nThe problem of keystroke authentication using unknown freeform text has received limited-scale study to date. We develop a supervised approach based on using a transformer (a sequence model from the ML deep learning literature) and a custom “partition layer” that, once trained, takes as input the sequence of client packet timings and lengths, plus a purported user label, and outputs a decision regarding whether the sequence indeed corresponds to that user. We evaluate the model on 5 years of labeled SSH PCAPs (spanning 3,900 users) from a large research institute. While the performance specifics vary with training levels, we find that in all cases the model can catch over 95% of (injected) imposters within the first minutes of a connection, while incurring a manageable level of false positives per day.",
+  "abstract_source_id": "src-abstract-usenix-security-2023-0013b346",
   "venue": "usenix-security",
   "year": 2023,
   "track_or_session": "Intrusion Detection",
@@ -133,6 +135,19 @@
       "official": true,
       "supports": [
         "authors, affiliations when published, abstract, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2023-0013b346",
+      "url": "https://www.usenix.org/conference/usenixsecurity23/presentation/piet",
+      "kind": "paper-page",
+      "title": "Network Detection of Interactive SSH Impostors Using Deep Learning",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:12:10Z",
+      "content_hash": "sha256:24924b5f48a783bb43a3ca63089fe079e7518bc1a9cdbeddeadc4a900517e852",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

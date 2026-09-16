@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2026-flexllm-token-level-co-serving-of-llm-inference-and-fine-2cfecf1f",
   "title": "FlexLLM: Token-Level Co-Serving of LLM Inference and Finetuning with SLO Guarantees",
+  "abstract": "Finetuning large language models (LLMs) is essential for task adaptation, yet today's serving stacks isolate inference and finetuning on separate GPU clusters—wasting resources and under-utilizing hardware. We introduce FlexLLM, the first system to co-serve LLM inference and PEFT-based finetuning on shared GPUs by fusing computation at the token level. FlexLLM's static compilation optimizations— dependent parallelization and graph pruning significantly shrink activation memory, leading to end-to-end GPU memory savings by up to 80%. At runtime, a novel token-level finetuning mechanism paired with a hybrid token scheduler dynamically interleaves inference and training tokens within each co-serving iteration, meeting strict latency SLOs while maximizing utilization. In end-to-end benchmarks on LLaMA-3.1-8B, Qwen-2.5-14B, and Qwen-2.5-32B, FlexLLM maintains inference SLO compliance at up to 20 req/s, and improves finetuning throughput by 1.9-4.8× under heavy inference workloads and 2.5-6.8× under light loads, preserving over 76% of peak finetuning progress even at peak demand. FlexLLM is publicly available at https://flexllm.github.io .",
+  "abstract_source_id": "src-abstract-nsdi-2026-2cfecf1f",
   "venue": "nsdi",
   "year": 2026,
   "track_or_session": "Living Large in Shared Clouds",
@@ -307,6 +309,19 @@
         "proceedings page range and page count",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2026-2cfecf1f",
+      "url": "https://www.usenix.org/conference/nsdi26/presentation/oliaro",
+      "kind": "paper-page",
+      "title": "FlexLLM: Token-Level Co-Serving of LLM Inference and Finetuning with SLO Guarantees",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:05:18Z",
+      "content_hash": "sha256:48ade52df18827617c3d46174200a1907b983af84b691cccac3cc490df7fe815",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

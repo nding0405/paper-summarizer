@@ -1,0 +1,99 @@
+<%-- Abstract, LLM summary, and review sections for one paper. Expects `paper` in page scope. --%>
+<section class="paper-section">
+  <h3>Abstract</h3>
+  <c:choose>
+    <c:when test="${paper.hasAbstract}">
+      <p class="prose"><c:out value="${paper.abstractText}" /></p>
+    </c:when>
+    <c:otherwise>
+      <p class="muted">The abstract has not been collected for this paper yet.
+        <c:if test="${paper.hasOfficialPage}">Read it on the <a href="<c:out value='${paper.officialPage}' />" rel="noopener">official page</a>.</c:if>
+      </p>
+    </c:otherwise>
+  </c:choose>
+</section>
+
+<section class="paper-section">
+  <h3>LLM-written summary</h3>
+  <c:choose>
+    <c:when test="${paper.hasSummary}">
+      <c:set var="summary" value="${paper.summary}" />
+      <p class="summary-status">
+        <span class="tag tag-status"><c:out value="${summary.statusLabel}" /></span>
+        <c:if test="${not empty summary.writtenBy}">Written by <c:out value="${summary.writtenBy}" /></c:if>
+        <c:if test="${not empty summary.updatedDate}"> on <c:out value="${summary.updatedDate}" /></c:if>
+        <c:if test="${not empty summary.confidence}"> · writer confidence: <c:out value="${summary.confidenceLabel}" /></c:if>
+        <c:if test="${summary.unreviewed}"> · not yet approved by an independent reviewer; verify against the paper.</c:if>
+      </p>
+      <dl class="summary-story">
+        <c:if test="${not empty summary.background}"><dt>Background</dt><dd><c:out value="${summary.background}" /></dd></c:if>
+        <c:if test="${not empty summary.villain}"><dt>Problem</dt><dd><c:out value="${summary.villain}" /></dd></c:if>
+        <c:if test="${not empty summary.approach}"><dt>Approach</dt><dd><c:out value="${summary.approach}" /></dd></c:if>
+        <c:if test="${not empty summary.impact}"><dt>Why it matters</dt><dd><c:out value="${summary.impact}" /></dd></c:if>
+        <c:if test="${summary.hasEvaluation}">
+          <dt>Evaluation</dt>
+          <dd>
+            <c:if test="${not empty summary.evaluationOverview}"><p><c:out value="${summary.evaluationOverview}" /></p></c:if>
+            <c:if test="${not empty summary.implemented}"><p><strong>Implemented:</strong> <c:out value="${summary.implemented}" /></p></c:if>
+            <c:if test="${not empty summary.setting}"><p><strong>Setting:</strong> <c:out value="${summary.setting}" /></p></c:if>
+            <c:if test="${not empty summary.baselines}">
+              <p><strong>Baselines:</strong>
+                <c:forEach var="baseline" items="${summary.baselines}" varStatus="loop"><c:out value="${baseline}" /><c:if test="${not loop.last}">; </c:if></c:forEach>
+              </p>
+            </c:if>
+            <c:if test="${not empty summary.results}">
+              <p><strong>Reported results</strong> (as claimed by the authors):</p>
+              <ul class="summary-results">
+                <c:forEach var="result" items="${summary.results}">
+                  <li><c:out value="${result.text}" /><c:if test="${result.hasLocator}"> <span class="muted">[<c:out value="${result.locator}" />]</span></c:if></li>
+                </c:forEach>
+              </ul>
+            </c:if>
+            <c:if test="${not empty summary.studyTypes}">
+              <p class="muted">Study type:
+                <c:forEach var="type" items="${summary.studyTypes}" varStatus="loop"><c:out value="${type}" /><c:if test="${not loop.last}">, </c:if></c:forEach>
+              </p>
+            </c:if>
+          </dd>
+        </c:if>
+        <c:if test="${not empty summary.limitations}"><dt>Limitations</dt><dd><c:out value="${summary.limitations}" /></dd></c:if>
+        <c:if test="${not empty summary.phdGroupSignal}"><dt>Group signal</dt><dd><c:out value="${summary.phdGroupSignal}" /></dd></c:if>
+        <c:if test="${not empty summary.beginnerConcepts}">
+          <dt>Concepts to know</dt>
+          <dd><c:forEach var="concept" items="${summary.beginnerConcepts}" varStatus="loop"><c:out value="${concept}" /><c:if test="${not loop.last}">, </c:if></c:forEach></dd>
+        </c:if>
+        <c:if test="${not empty summary.readingCoverage}">
+          <dt>Sections read</dt>
+          <dd class="muted"><c:forEach var="entry" items="${summary.readingCoverage}" varStatus="loop"><c:out value="${entry.key}" />: <c:out value="${entry.value}" /><c:if test="${not loop.last}"> · </c:if></c:forEach></dd>
+        </c:if>
+      </dl>
+    </c:when>
+    <c:otherwise>
+      <p class="muted">No summary has been written for this paper yet.</p>
+    </c:otherwise>
+  </c:choose>
+</section>
+
+<c:if test="${paper.hasReview}">
+  <c:set var="review" value="${paper.review}" />
+  <section class="paper-section">
+    <h3>Independent review</h3>
+    <p class="summary-status">
+      <span class="tag tag-status"><c:out value="${review.decisionLabel}" /></span>
+      <c:if test="${not empty review.reviewer}">by <c:out value="${review.reviewer}" /></c:if>
+      <c:if test="${not empty review.updatedDate}"> on <c:out value="${review.updatedDate}" /></c:if>
+    </p>
+    <c:if test="${not empty review.issues}">
+      <ul class="review-issues">
+        <c:forEach var="issue" items="${review.issues}">
+          <li>
+            <span class="tag"><c:out value="${issue.severity}" /></span>
+            <c:if test="${not empty issue.stage}"><span class="muted"><c:out value="${issue.stage}" />:</span></c:if>
+            <c:out value="${issue.description}" />
+            <c:if test="${not empty issue.status}"><span class="muted">(<c:out value="${issue.status}" />)</span></c:if>
+          </li>
+        </c:forEach>
+      </ul>
+    </c:if>
+  </section>
+</c:if>

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2024-critical-code-guided-directed-greybox-fuzzing-for-commit-993e83cf",
   "title": "Critical Code Guided Directed Greybox Fuzzing for Commits",
+  "abstract": "Newly submitted commits are prone to introducing vulnerabilities into programs. As a promising countermeasure, directed greybox fuzzers can be employed to test commit changes by designating the commit change sites as targets. However, existing directed fuzzers primarily focus on reaching a single target and neglect the diverse exploration of the additional affected code. As a result, they may overlook bugs that crash at a distant site from the change site and lack directness in multi-target scenarios, which are both very common in the context of commit testing.\n\nIn this paper, we propose WAFLGO, a direct greybox fuzzer, to effectively discover vulnerabilities introduced by commits. WAFLGO employs a novel critical code guided input generation strategy to thoroughly explore the affected code. Specifically, we identify two types of critical code: pathprefix code and data-suffix code. The critical code first guides the input generation to gradually and incrementally reach the change sites. Then while maintaining the reachability of the critical code, the input generation strategy further encourages the diversity of the generated inputs in exploring the affected code. Additionally, WAFLGO introduces a lightweight multitarget distance metric for directness and thorough examination of all change sites. We implement WAFLGO and evaluate it with 30 real-world bugs introduced by commits. Compared to eight state-of-the-art tools, WAFLGO achieves an average speedup of 10.3×. Furthermore, WAFLGO discovers seven new vulnerabilities including four CVEs while testing the most recent 50 commits of real-world software, including libtiff, fig2dev, and libming, etc.",
+  "abstract_source_id": "src-abstract-usenix-security-2024-993e83cf",
   "venue": "usenix-security",
   "year": 2024,
   "track_or_session": "Fuzzing II: Method",
@@ -217,6 +219,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2024-993e83cf",
+      "url": "https://www.usenix.org/conference/usenixsecurity24/presentation/xiang-yi",
+      "kind": "paper-page",
+      "title": "Critical Code Guided Directed Greybox Fuzzing for Commits",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:14:33Z",
+      "content_hash": "sha256:6bf0201a2ec5051fdfb100d01adf70552330996b6e6cd2a4b023e5444a920a65",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

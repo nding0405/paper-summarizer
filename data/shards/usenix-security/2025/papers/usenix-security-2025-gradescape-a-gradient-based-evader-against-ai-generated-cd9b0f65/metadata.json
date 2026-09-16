@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-gradescape-a-gradient-based-evader-against-ai-generated-cd9b0f65",
   "title": "GradEscape: A Gradient-Based Evader Against AI-Generated Text Detectors",
+  "abstract": "In this paper, we introduce GradEscape, the first gradient-based evader designed to attack AI-generated text (AIGT) detectors. GradEscape overcomes the undifferentiable computation problem, caused by the discrete nature of text, by introducing a novel approach to construct weighted embeddings for the detector input. It then updates the evader model parameters using feedback from victim detectors, achieving high attack success with minimal text modification. To address the issue of tokenizer mismatch between the evader and the detector, we introduce a warm-started evader method, enabling GradEscape to adapt to detectors across any language model architecture. Moreover, we employ novel tokenizer inference and model extraction techniques, facilitating effective evasion even in query-only access.\n\nWe evaluate GradEscape on four datasets and three widely-used language models, benchmarking it against four state-of-the-art AIGT evaders. Experimental results demonstrate that GradEscape outperforms existing evaders in various scenarios, including with an 11B paraphrase model, while utilizing only 139M parameters. We have successfully applied GradEscape to two real-world commercial AIGT detectors. Our analysis reveals that the primary vulnerability stems from disparity in text expression styles within the training data. We also propose a potential defense strategy to mitigate the threat of AIGT evaders. We open-source our GradEscape for developing more robust AIGT detectors.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-cd9b0f65",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "LLM Security and Attacks",
@@ -217,6 +219,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-cd9b0f65",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/meng",
+      "kind": "paper-page",
+      "title": "GradEscape: A Gradient-Based Evader Against AI-Generated Text Detectors",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:20:08Z",
+      "content_hash": "sha256:ea5ed961b908b633946a29c14e7b458081f43ea07bba2379995a28ec922506f6",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

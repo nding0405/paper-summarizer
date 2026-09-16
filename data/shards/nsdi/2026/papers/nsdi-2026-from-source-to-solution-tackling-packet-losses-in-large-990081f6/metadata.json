@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2026-from-source-to-solution-tackling-packet-losses-in-large-990081f6",
   "title": "From Source to Solution: Tackling Packet Losses in Large-scale Cloud Gaming Systematically and Precisely",
+  "abstract": "Cloud gaming requires all video frames to be delivered before a stringent delay deadline to ensure seamless gaming experience. However, meeting this requirement is challenging due to packet losses, which greatly magnifies the frame delay. Various FEC-based loss recovery schemes were recently proposed to address the packet loss issue. However, the source of such packet losses remains unrevealed. Our production measurement results from Tencent START cloud gaming platform have shown that 66.5% of packet losses are caused by network infrastructure’s preferences against UDP and network congestion. Moreover, off-the-shelf video streaming systems like WebRTC could not detect retransmission loss efficiently. These issues completely nullified the performance gain of loss recovery schemes. To address this, we design and implement LADR, which combines loss avoidance, detection, and recovery to tackle packet losses. LADR incorporates the loss-based and delay-based congestion control algorithms and adopts RACK-TLP for loss avoidance and detection. Furthermore, LADR adopts an opportunistic FEC scheme to perform loss recovery. LADR has been rolled out at Tencent START cloud gaming platform, a large-scale cloud gaming provider, for one year. Production measurement results show that LADR only suffers from 0.049% packet loss rate (-59.8% vs. existing solutions) and delivers 99.87% of video frames within 100 milliseconds.",
+  "abstract_source_id": "src-abstract-nsdi-2026-990081f6",
   "venue": "nsdi",
   "year": 2026,
   "track_or_session": "Debugging Distributed Systems",
@@ -202,6 +204,19 @@
         "proceedings page range and page count",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2026-990081f6",
+      "url": "https://www.usenix.org/conference/nsdi26/presentation/wang-jing",
+      "kind": "paper-page",
+      "title": "From Source to Solution: Tackling Packet Losses in Large-scale Cloud Gaming Systematically and Precisely",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:05:22Z",
+      "content_hash": "sha256:1214287985d30798d6de3f82c460004cf7efc4e5d693b2d891617352d2a3d637",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

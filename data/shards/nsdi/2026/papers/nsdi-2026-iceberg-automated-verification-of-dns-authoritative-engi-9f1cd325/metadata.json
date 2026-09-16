@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2026-iceberg-automated-verification-of-dns-authoritative-engi-9f1cd325",
   "title": "Iceberg: Automated Verification of DNS Authoritative Engines via Just-in-Time Summarization",
+  "abstract": "As the core of DNS services, DNS authoritative engines are responsible for answering DNS queries with DNS responses, where any bugs may lead to severe consequences. While it is critical to ensure the correctness of the engine, existing solutions fail to deliver both correctness guarantees and low manual effort when applied to large and complex implementations in use. The state-of-the-art solution, DNS-V, relies on extra manual specifications for scaling verification, which still incurs a prohibitive cost.\n\nIn this paper, we present Iceberg, an automated verification framework for DNS authoritative engines that holistically reduces manual effort. To achieve this, we propose just-in-time (JIT) summarization , a refinement-proof approach that utilizes invariants from DNS zones to enable the use of automated summaries throughout verification, especially for domain-specific DNS operations. In addition, we employ a set of techniques to further scale automation, including symbolic regions, summary optimization, and stub function interposing. We apply Iceberg to four open-source DNS engines, identifying 12 new bugs while keeping manual effort low.",
+  "abstract_source_id": "src-abstract-nsdi-2026-9f1cd325",
   "venue": "nsdi",
   "year": 2026,
   "track_or_session": "Trust but Verify",
@@ -139,6 +141,19 @@
         "proceedings page range and page count",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2026-9f1cd325",
+      "url": "https://www.usenix.org/conference/nsdi26/presentation/xiang-iceberg",
+      "kind": "paper-page",
+      "title": "Iceberg: Automated Verification of DNS Authoritative Engines via Just-in-Time Summarization",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:05:29Z",
+      "content_hash": "sha256:21a7a887992b6f38d7876c3fd968b9193974ff33b63c7fcd5d5ba51912d51a70",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

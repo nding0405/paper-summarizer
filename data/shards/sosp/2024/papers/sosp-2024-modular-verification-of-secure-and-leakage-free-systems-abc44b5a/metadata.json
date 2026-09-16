@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sosp-2024-modular-verification-of-secure-and-leakage-free-systems-abc44b5a",
   "title": "Modular Verification of Secure and Leakage-Free Systems: From Application Specification to Circuit-Level Implementation",
+  "abstract": "Parfait is a framework for proving that an implementation of a hardware security module (HSM) leaks nothing more than what is mandated by an application specification. Parfait proofs cover the software and the hardware of an HSM, which catches bugs above the cycle-level digital circuit abstraction, including timing side channels. Parfait's contribution is a scalable approach to proving security and non-leakage by using intermediate levels of abstraction and relating them with transitive information-preserving refinement. This enables Parfait to use different techniques to verify the implementation at different levels of abstraction, reuse existing verified components such as CompCert, and automate parts of the proof, while still providing end-to-end guarantees. We use Parfait to verify four HSMs, including an ECDSA certificate-signing HSM and a password-hashing HSM, on top of the OpenTitan Ibex and PicoRV32 processors. Parfait provides strong guarantees for these HSMs: for instance, it proves that the ECDSA-on-Ibex HSM implementation---2,300 lines of code and 13,500 lines of Verilog---leaks nothing more than what is allowed by a 40-line specification of its behavior.",
+  "abstract_source_id": "src-abstract-sosp-2024-abc44b5a",
   "venue": "sosp",
   "year": 2024,
   "track_or_session": "Session 10: Security 13:30 - 15:30 Session Chair: Jay Lorch",
@@ -167,6 +169,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-sosp-2024-abc44b5a",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Modular Verification of Secure and Leakage-Free Systems: From Application Specification to Circuit-Level Implementation",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:19Z",
+      "content_hash": "sha256:b613162f9e7d53fac5fe410aff94d06ac71f23c6c31e2e9cc362b51e87d1bb79",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

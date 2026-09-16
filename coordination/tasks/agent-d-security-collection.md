@@ -57,9 +57,7 @@ When uncertain, use `NEEDS_HUMAN_REVIEW`; never inflate the corpus by default.
 ## Validation
 
 ```sh
-PYTHONPATH=src python3 -m systems_phd_explorer.cli validate \
-  --root data/shards/<venue>/<year> \
-  --profile draft
+./mvnw -q compile exec:java -Dexec.args="validate --root data/shards/<venue>/<year>"
 ```
 
 ## Handoff

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "atc-2025-katz-efficient-workflow-serving-for-diffusion-models-wit-177cde5c",
   "title": "Katz: Efficient Workflow Serving for Diffusion Models with Many Adapters",
+  "abstract": "Text-to-image (T2I) generation using diffusion models has become a blockbuster service in today's AI cloud. A production T2I service typically involves a serving workflow where a base diffusion model is augmented with many ControlNet and LoRA adapters to control the details of output images, such as shapes, outlines, poses, and styles. In this paper, we present Katz, a system that efficiently serves a T2I workflow with many adapters. Katz differentiates compute-heavy ControlNets from compute-light LoRAs, where the former introduces significant computational overheads while the latter is bottlenecked by loading. Katz proposes to take ControlNet off the critical path with a ControlNet-as-a-Service design, in which ControlNets are decoupled from the base model and deployed as a separate, independently scalable service on dedicated GPUs, thus enabling ControlNet caching, parallelization, and sharing. To hide the high LoRA loading overhead, Katz employs bounded asynchronous loading that overlaps LoRA loading with initial base model execution by a maximum of K steps, while maintaining the same image quality. Katz further accelerates base model execution across multiple GPUs with latent parallelism . Collectively, these designs enable Katz to outperform the state-of-the-art T2I serving systems, achieving up to 7.8× latency reduction and 1.7× throughput improvement in serving SDXL models on H800 GPUs, without compromising image quality.",
+  "abstract_source_id": "src-abstract-atc-2025-177cde5c",
   "venue": "atc",
   "year": 2025,
   "track_or_session": "Scaling Complex Models: Distribution, Heterogeneity, and Efficiency",
@@ -390,6 +392,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-atc-2025-177cde5c",
+      "url": "https://www.usenix.org/conference/atc25/presentation/li-suyi-katz",
+      "kind": "paper-page",
+      "title": "Katz: Efficient Workflow Serving for Diffusion Models with Many Adapters",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T21:59:50Z",
+      "content_hash": "sha256:39cf55438beadc698b70af053ee8394ed06dd92940aafb2e7eaa57604c405592",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

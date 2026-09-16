@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2023-alpaserve-statistical-multiplexing-with-model-parallelis-0fd89cb1",
   "title": "AlpaServe: Statistical Multiplexing with Model Parallelism for Deep Learning Serving",
+  "abstract": "Model parallelism is conventionally viewed as a method to scale a single large deep learning model beyond the memory limits of a single device. In this paper, we demonstrate that model parallelism can be additionally used for the statistical multiplexing of multiple devices when serving multiple models, even when a single model can fit into a single device. Our work reveals a fundamental trade-off between the overhead introduced by model parallelism and the opportunity to exploit statistical multiplexing to reduce serving latency in the presence of bursty workloads. We explore the new trade-off space and present a novel serving system, AlpaServe, that determines an efficient strategy for placing and parallelizing collections of large deep learning models across a distributed cluster. Evaluation results on production workloads show that AlpaServe can process requests at up to 10× higher rates or 6× more burstiness while staying within latency constraints for more than 99% of requests.",
+  "abstract_source_id": "src-abstract-osdi-2023-0fd89cb1",
   "venue": "osdi",
   "year": 2023,
   "track_or_session": "Train Your Bits I",
@@ -306,6 +308,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2023-0fd89cb1",
+      "url": "https://www.usenix.org/conference/osdi23/presentation/li-zhouhan",
+      "kind": "paper-page",
+      "title": "AlpaServe: Statistical Multiplexing with Model Parallelism for Deep Learning Serving",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:06:21Z",
+      "content_hash": "sha256:73c69d9e089f4b9b566e155f803b801dbba53f6b8c7c75d7ea2586a7102b8489",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

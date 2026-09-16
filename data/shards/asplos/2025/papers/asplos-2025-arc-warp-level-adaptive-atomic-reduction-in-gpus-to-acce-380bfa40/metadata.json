@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2025-arc-warp-level-adaptive-atomic-reduction-in-gpus-to-acce-380bfa40",
   "title": "ARC: Warp-level Adaptive Atomic Reduction in GPUs to Accelerate Differentiable Rendering",
+  "abstract": "Differentiable rendering is widely used in emerging applications that represent any 3D scene as a model trained using gradient descent from 2D images. Recent works (e.g., 3D Gaussian Splatting) use rasterization to enable rendering photo-realistic imagery at high speeds from these learned 3D models. These rasterization-based differentiable rendering methods have been demonstrated to be very promising, providing state-of-art quality for various important tasks. However, training a model to represent a scene is still time-consuming even on powerful GPUs. In this work, we observe that the gradient computation step during model training is a significant bottleneck due to the large number of atomic operations. These atomics overwhelm the atomic units in the L2 cache of GPUs, causing long stalls.",
+  "abstract_source_id": "src-abstract-asplos-2025-380bfa40",
   "venue": "asplos",
   "year": 2025,
   "track_or_session": "Session 3B: Graphics",
@@ -243,6 +245,19 @@
       "official": true,
       "supports": [
         "Author-deposited archival artifact associated with the conference paper."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2025-380bfa40",
+      "url": "https://api.openalex.org/works/doi:10.1145/3669940.3707238?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "ARC: Warp-level Adaptive Atomic Reduction in GPUs to Accelerate Differentiable Rendering",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:00:42Z",
+      "content_hash": "sha256:339c29e9dc88678d349a698c687fadabe6434ae5b3296912bc35cb638429631b",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

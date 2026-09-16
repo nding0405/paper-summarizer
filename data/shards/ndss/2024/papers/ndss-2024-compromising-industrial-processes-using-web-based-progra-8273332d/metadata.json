@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2024-compromising-industrial-processes-using-web-based-progra-8273332d",
   "title": "Compromising Industrial Processes using Web-Based Programmable Logic Controller Malware",
+  "abstract": "We present a novel approach to developing programmable logic controller (PLC) malware that proves to be more flexible, resilient, and impactful than current strategies. While previous attacks on PLCs infect either the control logic or firmware portions of PLC computation, our proposed malware exclusively infects the web application hosted by the emerging embedded web servers within the PLCs. This strategy allows the malware to stealthily attack the underlying real-world machinery using the legitimate web application program interfaces (APIs) exposed by the admin portal website. Such attacks include falsifying sensor readings, disabling safety alarms, and manipulating physical actuators. Furthermore, this approach has significant advantages over existing PLC malware techniques (control logic and firmware) such as platform independence, ease-of-deployment, and higher levels of persistence. Our research shows that the emergence of web technology in industrial control environments has introduced new security concerns that are not present in the IT domain or consumer IoT devices. Depending on the industrial process being controlled by the PLC, our attack can potentially cause catastrophic incidents or even loss of life. We verified these claims by performing a Stuxnet-style attack using a prototype implementation of this malware on a widely-used PLC model by exploiting zero-day vulnerabilities that we discovered during our research (CVE-2022-45137, CVE-2022-45138, CVE-2022-45139, and CVE-2022-45140). Our investigation reveals that every major PLC vendor (80% of global market share) produces a PLC that is vulnerable to our proposed attack vector. Lastly, we discuss potential countermeasures and mitigations.",
+  "abstract_source_id": "src-abstract-ndss-2024-8273332d",
   "venue": "ndss",
   "year": 2024,
   "track_or_session": "Summer submission cycle",
@@ -147,6 +149,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2024-8273332d",
+      "url": "https://www.ndss-symposium.org/ndss-paper/compromising-industrial-processes-using-web-based-programmable-logic-controller-malware/",
+      "kind": "paper-page",
+      "title": "Compromising Industrial Processes using Web-Based Programmable Logic Controller Malware",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:17:47Z",
+      "content_hash": "sha256:77c08244c071afe3de5d7b1757ce18186d440692db03af2c360a98b55c44c787",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

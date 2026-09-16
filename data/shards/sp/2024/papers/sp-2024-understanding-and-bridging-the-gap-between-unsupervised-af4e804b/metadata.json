@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2024-understanding-and-bridging-the-gap-between-unsupervised-af4e804b",
   "title": "Understanding and Bridging the Gap Between Unsupervised Network Representation Learning and Security Analytics",
+  "abstract": "Cyber-attacks have become increasingly sophisticated, which also drives the development of security analytics that produce countermeasures by mining organizational logs, e.g., network and authentication logs. Graph security analytics (GSA) that can model the complex communication patterns between users/hosts/processes have been extensively developed and deployed. Among the techniques that power GSAs, Unsupervised Network Representation Learning (UNRL) is gaining traction, which learns a latent graph representation, i.e., node embedding, and customizes it for different downstream tasks. Prominent advantages have been demonstrated by UNRL-based GSAs, as UNRL trains a detection model in an unsupervised way and exempts the model developers from the duty of feature engineering.In this paper, we revisit the designs of previous UNRL-based GSAs to understand how they perform in real-world settings. We found their performance is questionable on large-scale, noisy log datasets like LANL authentication dataset, and the main reason is that they follow the standard UNRL framework that trains a generic model in an attack-agnostic way. We argue that generic attack characteristics should be considered, and propose Argus, a UNRL-based GSA with new encoder and decoder designs. Argus is also designed to work on discrete temporal graphs (DTG) to exploit the graph temporal dynamics. Our evaluation of two large-scale datasets, LANL and OpTC, shows it can outperform the state-of-the-art approaches by a large margin.",
+  "abstract_source_id": "src-abstract-sp-2024-af4e804b",
   "venue": "sp",
   "year": 2024,
   "track_or_session": "Spring cycle",
@@ -138,6 +140,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2024-af4e804b",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Understanding and Bridging the Gap Between Unsupervised Network Representation Learning and Security Analytics",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:42Z",
+      "content_hash": "sha256:d62dac834635b4cd1890a53da454ceae7aaa151189662d990ac591dfd5cb6b3e",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

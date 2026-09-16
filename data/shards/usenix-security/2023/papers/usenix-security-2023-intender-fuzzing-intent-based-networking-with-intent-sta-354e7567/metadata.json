@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2023-intender-fuzzing-intent-based-networking-with-intent-sta-354e7567",
   "title": "Intender: Fuzzing Intent-Based Networking with Intent-State Transition Guidance",
+  "abstract": "Intent-based networking (IBN) abstracts network configuration complexity from network operators by focusing on what operators want the network to do rather than how such configuration should be implemented. While such abstraction eases network management challenges, little attention to date has focused on IBN’s new security concerns that adversely impact an entire network’s correct operation. To motivate the prevalence of such security concerns, we systematize IBN’s security challenges by studying existing bug reports from a representative IBN implementation within the ONOS network operating system. We find that 61% of IBN-related bugs are semantic bugs that are challenging, if not impossible, to detect efficiently by state-of-the-art vulnerability discovery tools.\n\nTo tackle existing limitations, we present Intender, the first semantically-aware fuzzing framework for IBN. Intender leverages network topology information and intent-operation dependencies (IOD) to efficiently generate testing inputs. Intender introduces a new feedback mechanism, intent-state transition guidance (ISTG), which traces the history of transitions in intent states. We evaluate Intender using ONOS and find 12 bugs, 11 of which were CVE-assigned security-critical vulnerabilities affecting network-wide control plane integrity and availability. Compared to state-of-the-art fuzzing tools AFL, Jazzer, Zest, and PAZZ, Intender generates up to 78.7× more valid fuzzing input, achieves up to 2.2× better coverage, and detects up to 82.6× more unique errors. Intender with IOD reduces 73.02% of redundant operations and spends 10.74% more time on valid operations. Intender with ISTG leads to 1.8× more intent-state transitions compared to code-coverage guidance.",
+  "abstract_source_id": "src-abstract-usenix-security-2023-354e7567",
   "venue": "usenix-security",
   "year": 2023,
   "track_or_session": "Warm and Fuzzing",
@@ -112,6 +114,19 @@
       "official": true,
       "supports": [
         "authors, affiliations when published, abstract, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2023-354e7567",
+      "url": "https://www.usenix.org/conference/usenixsecurity23/presentation/kim-jiwon",
+      "kind": "paper-page",
+      "title": "Intender: Fuzzing Intent-Based Networking with Intent-State Transition Guidance",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:11:41Z",
+      "content_hash": "sha256:0ceabd2b7ee629f9b8cbe8fc34abf4b51aa5fc9dbbe1eebf8921e71d515b7604",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

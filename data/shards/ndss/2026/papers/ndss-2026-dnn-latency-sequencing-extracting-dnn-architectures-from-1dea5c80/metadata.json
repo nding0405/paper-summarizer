@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2026-dnn-latency-sequencing-extracting-dnn-architectures-from-1dea5c80",
   "title": "DNN Latency Sequencing: Extracting DNN Architectures from Intel SGX Enclaves with Single-Stepping Attacks",
+  "abstract": "Deep neural networks (DNNs) are integral to modern computing, powering applications such as image recognition, natural language processing, and audio analysis. The architectures of these models (e.g., the number and types of layers) are considered valuable intellectual property due to the significant expertise and computational effort required for their design. Although trusted execution environments (TEEs) like Intel SGX have been adopted to safeguard these models, recent studies on model extraction attacks have shown that side-channel attacks (SCAs) can still be leveraged to extract the architectures of DNN models. However, many existing model extraction attacks either do not account for TEE protections or are limited to specific model types, reducing their real-world applicability.\n\nIn this paper, we introduce DNN Latency Sequencing (DLS), a novel model extraction attack framework that targets DNN architectures running within Intel SGX enclaves. DLS employs SGX-Step to single-step model execution and collect fine-grained latency traces, which are then analyzed at both the function and basic block levels to reconstruct the model architecture. Our key insight is that DNN architectures inherently influence execution behavior, enabling accurate reconstruction from latency patterns. We evaluate DLS on models built with three widely used deep learning libraries, Darknet, TensorFlow Lite, and ONNX Runtime, and show that it achieves architecture recovery accuracies of 97.3%, 96.4%, and 93.6%, respectively. We further demonstrate that DLS enables advanced attacks, highlighting its practicality and effectiveness.",
+  "abstract_source_id": "src-abstract-ndss-2026-1dea5c80",
   "venue": "ndss",
   "year": 2026,
   "track_or_session": "Summer submission cycle",
@@ -181,6 +183,19 @@
       "official": false,
       "supports": [
         "independent proceedings identity reconciliation"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2026-1dea5c80",
+      "url": "https://www.ndss-symposium.org/ndss-paper/dnn-latency-sequencing-extracting-dnn-architectures-from-intel-sgx-enclaves-with-single-stepping-attacks/",
+      "kind": "paper-page",
+      "title": "DNN Latency Sequencing: Extracting DNN Architectures from Intel SGX Enclaves with Single-Stepping Attacks",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:21:52Z",
+      "content_hash": "sha256:9c7bac363eb521a5a051768a066ef9233b6e10740261e0ac5dfdfb65c18d6b11",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

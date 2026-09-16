@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2024-detecting-logic-bugs-in-database-engines-via-equivalent-3e48bebc",
   "title": "Detecting Logic Bugs in Database Engines via Equivalent Expression Transformation",
+  "abstract": "Database management systems (DBMSs) are crucial for storing and fetching data. To improve the reliability of such systems, approaches have been proposed to detect logic bugs that cause DBMSs to process data incorrectly. These approaches manipulate queries and check whether the query results produced by DBMSs follow the expectations. However, such query-level manipulation cannot handle complex query semantics and thus needs to limit the patterns of generated queries, degrading testing effectiveness.\n\nIn this paper, we tackle the problem using a fine-grained methodology—expression-level manipulation—which empowers the proposed approach to be applicable to arbitrary queries. To find logic bugs in DBMSs, we design a novel and general approach, equivalent expression transformation (EET). Our core idea is that manipulating expressions of a query in a semantic-preserving manner also preserves the semantics of the entire query and is independent of query patterns. EET validates DBMSs by checking whether the transformed queries still produce the same results as the corresponding original queries. We realize our approach and evaluate it on 5 widely used and extensively tested DBMSs: MySQL, PostgreSQL, SQLite, ClickHouse, and TiDB. In total, EET found 66 unique bugs, 35 of which are logic bugs. We expect the generality and effectiveness of EET to inspire follow-up research and benefit the reliability of many DBMSs.",
+  "abstract_source_id": "src-abstract-osdi-2024-3e48bebc",
   "venue": "osdi",
   "year": 2024,
   "track_or_session": "Analysis of Correctness",
@@ -117,6 +119,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2024-3e48bebc",
+      "url": "https://www.usenix.org/conference/osdi24/presentation/jiang",
+      "kind": "paper-page",
+      "title": "Detecting Logic Bugs in Database Engines via Equivalent Expression Transformation",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:07:00Z",
+      "content_hash": "sha256:d126a5aff9db994d03fab98ee6e239b11891dc6c9d469d4ef2a8c0fcd95d2361",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

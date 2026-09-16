@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2024-veil-a-protected-services-framework-for-confidential-vir-3eed0750",
   "title": "Veil: A Protected Services Framework for Confidential Virtual Machines",
+  "abstract": "Confidential virtual machines (CVMs) enabled by AMD SEV provide a protected environment for sensitive computations on an untrusted cloud. Unfortunately, CVMs are typically deployed with huge and vulnerable operating system kernels, exposing the CVMs to attacks that exploit kernel vulnerabilities. Veil is a versatile CVM framework that efficiently protects critical system services like shielding sensitive programs, which cannot be entrusted to the buggy kernel. Veil leverages a new hardware primitive, virtual machine privilege levels (VMPL), to install a privileged security monitor inside the CVM. We overcome several challenges in designing Veil, including (a) creating unlimited secure domains with a limited number of VMPLs, (b) establishing resource-efficient domain switches, and (c) maintaining commodity kernel backwards-compatibility with only minor changes. Our evaluation shows that Veil incurs no discernible performance slowdown during normal CVM execution while incurring a modest overhead (2 -- 64%) when running its protected services across real-world use cases.",
+  "abstract_source_id": "src-abstract-asplos-2024-3eed0750",
   "venue": "asplos",
   "year": 2024,
   "track_or_session": "Session 10D: Trusted Computing",
@@ -180,6 +182,19 @@
       "official": false,
       "supports": [
         "Indexed alternate-version and institutional-copy links; not used as the authoritative relevance source."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2024-3eed0750",
+      "url": "https://api.openalex.org/works/doi:10.1145/3623278.3624763?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Veil: A Protected Services Framework for Confidential Virtual Machines",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:00:38Z",
+      "content_hash": "sha256:2132dd0d1287d59b19b83e1a5c9758980ef41b6d1c024268fb7da7016bae971f",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

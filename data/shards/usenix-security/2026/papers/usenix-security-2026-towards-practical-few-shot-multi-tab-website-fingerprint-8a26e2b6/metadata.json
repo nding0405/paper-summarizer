@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-towards-practical-few-shot-multi-tab-website-fingerprint-8a26e2b6",
   "title": "Towards Practical Few-shot Multi-tab Website Fingerprinting",
+  "abstract": "Website fingerprinting (WF) attacks can infer the visited websites to deanonymize Tor networks by analyzing encrypted traffic patterns. Recent few-shot WF methods reduce reliance on large-scale data collection, yet they predominantly formulate WF as a single-label classification task and rely on meta-learning episodes that assume disjoint label sets and stable embedding spaces. These assumptions break down in the realistic multi-tab browsing, where traffic from multiple websites interleaves within a single observation window and the number of concurrent tabs is unknown. Meanwhile, the label space grows exponentially as the monitored set expands, making existing multi-tab WF methods costly to update. To address these challenges, we propose MMF, a novel framework for few-shot multi-tab WF. MMF shifts the meta-learning objective from single-label classification to support-guided presence detection . In each episode, we pair a mixed multi-tab query trace with a small set of single-tab support traces for each monitored website, and generate class-specific features by feature reweighting to decide which websites are present. This detection-centric formulation yields well-defined few-shot tasks in multi-tab scenarios and enables MMF to detect previously unseen websites from limited traces. We evaluate MMF on established public datasets and a new real-world dataset collected under varied browsing conditions. Results demonstrate that MMF consistently outperforms state-of-the-art multi-tab WF attacks across all settings. Notably, in the 5-shot scenario, MMF achieves improvements of up to 300% in Novel Precision@k, highlighting its strong capability for few-shot detection in dynamically growing website sets.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-8a26e2b6",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Privacy Anonymity 3",
@@ -176,6 +178,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-8a26e2b6",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/liu-lin",
+      "kind": "paper-page",
+      "title": "Towards Practical Few-shot Multi-tab Website Fingerprinting",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:25:56Z",
+      "content_hash": "sha256:21137ab10bfbcefb89bf736e9b0c34bbcc46f726ee242b915750d68a1b6f2a15",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

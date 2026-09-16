@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2024-eye-of-sauron-long-range-hidden-spy-camera-detection-and-44e0b99f",
   "title": "Eye of Sauron: Long-Range Hidden Spy Camera Detection and Positioning with Inbuilt Memory EM Radiation",
+  "abstract": "In this paper, we present ESauron — the first proof-of-concept system that can detect diverse forms of spy cameras (i.e., wireless, wired and offline devices) and quickly pinpoint their locations. The key observation is that, for all spy cameras, the captured raw images must be first digested (e.g., encoding and compression) in the video-capture devices before transferring to target receiver or storage medium. This digestion process takes place in an inbuilt read-write memory whose operations cause electromagnetic radiation (EMR). Specifically, the memory clock drives a variable number of switching voltage regulator activities depending on the workloads, causing fluctuating currents injected into memory units, thus emitting EMR signals at the clock frequency. Whenever the visual scene changes, bursts of video data processing (e.g., video encoding) suddenly aggravate the memory workload, bringing responsive EMR patterns. ESauron can detect spy cameras by intentionally stimulating scene changes and then sensing the surge of EMRs even from a considerable distance. We implemented a proof-of-concept prototype of the ESauron by carefully designing techniques to sense and differentiate memory EMRs, assert the existence of spy cameras, and pinpoint their locations. Experiments with 50 camera products show that ESauron can detect all spy cameras with an accuracy of 100% after only 4 stimuli, the detection range can exceed 20 meters even in the presence of blockages, and all spy cameras can be accurately located.",
+  "abstract_source_id": "src-abstract-usenix-security-2024-44e0b99f",
   "venue": "usenix-security",
   "year": 2024,
   "track_or_session": "Hardware Security I: Attacks and Defense",
@@ -196,6 +198,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2024-44e0b99f",
+      "url": "https://www.usenix.org/conference/usenixsecurity24/presentation/zhang-qibo",
+      "kind": "paper-page",
+      "title": "Eye of Sauron: Long-Range Hidden Spy Camera Detection and Positioning with Inbuilt Memory EM Radiation",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:15:08Z",
+      "content_hash": "sha256:72c5824cb20e8caab1e4dcae3ffd7982630c0e2c6c5f5ffeb18d0bec77f2709b",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2023-access-your-tesla-without-your-awareness-compromising-ke-c9d47039",
   "title": "Access Your Tesla without Your Awareness: Compromising Keyless Entry System of Model 3",
+  "abstract": "Tesla Model 3 has equipped with Phone Keys and Key Cards in addition to traditional key fobs for better driving experiences. These new features allow a driver to enter and start the vehicle without using a mechanical key through a wireless authentication process between the vehicle and the key. Unlike the requirements of swiping against the car for Key Cards, the Tesla mobile app’s Phone Key feature can unlock a Model 3 while your smartphone is still in a pocket or bag.\n\nIn this paper, we performed a detailed security analysis aiming at Tesla keys, especially for Key Cards and Phone Keys. Starting with reverse engineering the mobile application and sniffing the communication data, we reestablished pairing and authentication protocols and analyzed their potential issues. Missing the certificate verification allows an unofficial Key Card to work as an official one. Using these third-party products may lead to serious security problems. Also, the weaknesses of the current protocol lead to a man-in-the-middle (MitM) attack through a Bluetooth channel. The MitM attack is an improved relay attack breaking the security of the authentication procedures for Phone Keys. We also developed an App named TESmLA installed on customized Android devices to complete the proof-of-concept. The attackers can break into Tesla Model 3 and drive it away without the awareness of the car owner. Our results bring into question the security of Passive Keyless Entry and Start (PKES) and Bluetooth implementations in security-critical applications. To mitigate the security problems, we discussed the corresponding countermeasures and feasible secure scheme in the future.",
+  "abstract_source_id": "src-abstract-ndss-2023-c9d47039",
   "venue": "ndss",
   "year": 2023,
   "track_or_session": "Cyber-Physical Systems Security II",
@@ -210,6 +212,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2023-c9d47039",
+      "url": "https://www.ndss-symposium.org/ndss-paper/access-your-tesla-without-your-awareness-compromising-keyless-entry-system-of-model-3/",
+      "kind": "paper-page",
+      "title": "Access Your Tesla without Your Awareness: Compromising Keyless Entry System of Model 3",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:16:38Z",
+      "content_hash": "sha256:e105e76979d17e0d528d79321d323d53ef370cac612c253329ec8b11516768a9",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2025-thor-secure-transformer-inference-with-homomorphic-encry-484c4964",
   "title": "THOR: Secure Transformer Inference with Homomorphic Encryption",
+  "abstract": "As large language models are increasingly deployed in cloud environments, privacy concerns have become a significant issue. To address this challenge, we present THOR, a non-interactive framework for secure transformer inference using homomorphic encryption. We first propose efficient matrix multiplication algorithms based on diagonal-major encoding and compact ciphertext packing. We extend these basic algorithms to support plaintext-ciphertext matrix multiplication (PC-MM) using parallel submatrix computation and ciphertext-ciphertext multiplication (CC-MM) with a baby-step giant-step strategy. We also design efficient evaluation strategies for non-linear functions such as softmax, LayerNorm, GELU, and Tanh, by integrating advanced approximation techniques with adaptive iterative methods. Our matrix multiplication algorithms outperform state-of-the-art methods, achieving up to 5.3X speedup in PC-MM for ℝ 768 X 768 X ℝ768X128 over BOLT (Pang et al., IEEE S&P 2024) and 9.7X in CC-MM for 12X (ℝ64X128 X ℝ128X128) over Powerformer (Park et al., Preprint). THOR enables secure inference on the BERT-base model with 128 tokens in 10 minutes on a single GPU, while maintaining comparable accuracy on GLUE tasks.",
+  "abstract_source_id": "src-abstract-ccs-2025-484c4964",
   "venue": "ccs",
   "year": 2025,
   "track_or_session": "Cycle 2",
@@ -148,6 +150,19 @@
         "published-order authors",
         "publication-time affiliations",
         "publication date and page span"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2025-484c4964",
+      "url": "https://api.openalex.org/works/doi:10.1145/3719027.3765150?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "THOR: Secure Transformer Inference with Homomorphic Encryption",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:17:46Z",
+      "content_hash": "sha256:ec5a2c55970ccd666c0a3e73092013f62a5128d1e275ce59c95a6922a75209b3",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

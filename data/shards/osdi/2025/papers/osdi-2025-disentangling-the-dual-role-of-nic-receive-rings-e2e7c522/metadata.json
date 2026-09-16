@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2025-disentangling-the-dual-role-of-nic-receive-rings-e2e7c522",
   "title": "Disentangling the Dual Role of NIC Receive Rings",
+  "abstract": "CPUs parallelize packet processing across cores via per-core receive (Rx) rings, which are typically sized to absorb bursts with >=1Ki entries by default. The combined I/O working set (packet buffers pointed to by all Rx rings) easily exceeds the LLC capacity, thus degrading performance due to high memory bandwidth pressure. Recent work has reduced the I/O working set size by sharing Rx rings among cores with the \"shRing\" system. But this approach suffers from a bottleneck under imbalanced loads, which are common.\n\nWe contend that the bottleneck stems from an unnecessary entanglement of two orthogonal producer-consumer structures: (1) memory allocation, where the core produces empty buffers that the NIC consumes to store packets; and (2) packet delivery, where the NIC produces incoming packets that the core consumes. We propose rxBisect, a new CPU-NIC interface that decouples these structures. RxBisect replaces each Rx ring with two separate rings corresponding to the two structures, allowing memory allocation to be performed independently of packet reception. RxBisect can thus pass empty buffers efficiently between cores upon imbalance, thereby eliminating the aforementioned bottleneck. We implement rxBisect with software emulation and find that it improves throughput by up to 20% and 37% relative to the state-of-the-art (shRing) and state-of-the-practice (per-core Rx rings).",
+  "abstract_source_id": "src-abstract-osdi-2025-e2e7c522",
   "venue": "osdi",
   "year": 2025,
   "track_or_session": "Kernel and Operating Systems II",
@@ -138,6 +140,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2025-e2e7c522",
+      "url": "https://www.usenix.org/conference/osdi25/presentation/pismenny",
+      "kind": "paper-page",
+      "title": "Disentangling the Dual Role of NIC Receive Rings",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:07:31Z",
+      "content_hash": "sha256:79ed9f0241a3d99d8ae4ca07bbab52412fb189f5ce03bbbd0a714ab9fcc41610",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

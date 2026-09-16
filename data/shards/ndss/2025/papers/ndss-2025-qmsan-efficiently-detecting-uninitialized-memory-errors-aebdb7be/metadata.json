@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2025-qmsan-efficiently-detecting-uninitialized-memory-errors-aebdb7be",
   "title": "QMSan: Efficiently Detecting Uninitialized Memory Errors During Fuzzing",
+  "abstract": "Fuzzing evolved into the most popular technique to detect bugs in software. Its combination with sanitizers has shown tremendous efficacy in uncovering memory safety errors, such as buffer overflows, that haunt C and C++ programmers. However, an important class of such issues, the so-called use-of-uninitialized-memory (UUM) errors, struggles to gain similar benefits from fuzzing endeavors. The only fuzzer-compatible UUM sanitizer available to date, MSan, requires that all libraries are fully instrumented. Unlike address sanitization, for which partial instrumentation results in false negatives (missed detection of bugs), UUM sanitizers require complete instrumentation to avoid false positives, hampering testing at scale. Yet, full-stack compiler-based instrumentation can be a daunting prospect for compatibility and practicality. As a result, many programs are left untested for UUM bugs.\n\nIn this paper, we propose an efficient multi-layer, opportunistic design that does not require (source-based) recompilation of all code without harming accuracy. The multiplicity of executions when fuzzing offers us the opportunity to learn what any encountered false positive looks like, and later ignore them when we meet them again with new test cases. Such an avenue is feasible only if one can resort to fast techniques to effectively discriminate candidate errors, or false negatives will then occur.\n\nWe show how to realize this design by using the dynamic binary translation of QEMU for compatibility and lightweight code analysis techniques to achieve scalability and accuracy. As a result, we obtain a fuzzer-friendly, performant sanitizer, QMSan, that effectively tackles current practicality challenges of UUM error detection. On a collection of 10 open-source and 5 proprietary programs, QMSan exposed 44 new UUM bugs. In our tests, QMSan incurs slowdowns of 1.51x over QEMU and 1.55x over the compiler-based instrumentation of MSan, showing no false positives and false negatives. QMSan is open-source.",
+  "abstract_source_id": "src-abstract-ndss-2025-aebdb7be",
   "venue": "ndss",
   "year": 2025,
   "track_or_session": "Fall submission cycle",
@@ -147,6 +149,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2025-aebdb7be",
+      "url": "https://www.ndss-symposium.org/ndss-paper/qmsan-efficiently-detecting-uninitialized-memory-errors-during-fuzzing/",
+      "kind": "paper-page",
+      "title": "QMSan: Efficiently Detecting Uninitialized Memory Errors During Fuzzing",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:20:13Z",
+      "content_hash": "sha256:45ed393b9ac4901f91109368738be4ef6706f960bc0a23aedd959d354d12e66f",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

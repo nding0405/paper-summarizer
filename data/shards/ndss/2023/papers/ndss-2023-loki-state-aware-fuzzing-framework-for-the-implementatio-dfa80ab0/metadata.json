@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2023-loki-state-aware-fuzzing-framework-for-the-implementatio-dfa80ab0",
   "title": "LOKI: State-Aware Fuzzing Framework for the Implementation of Blockchain Consensus Protocols",
+  "abstract": "Blockchain consensus protocols are responsible for coordinating the nodes to make agreements on the transaction results. Their implementation bugs, including memory-related and consensus logic vulnerabilities, may pose serious threats. Fuzzing is a promising technique for protocol vulnerability detection. However, existing fuzzers cannot deal with complex consensus states of distributed nodes, thus generating a large number of useless packets, inhibiting their effectiveness in reaching the deep logic of consensus protocols.\n\nIn this work, we propose LOKI, a blockchain consensus protocol fuzzing framework that detects the consensus memory-related and logic bugs. LOKI senses consensus states in real-time by masquerading as a node. First, LOKI dynamically builds a state model that records the state transition of each node. After that, LOKI adaptively generates the input targets, types, and contents according to the state model. With a bug analyzer, LOKI detects the consensus protocol implementation bugs with well-defined oracles. We implemented and evaluated LOKI on four widely used commercial blockchain systems, including Go-Ethereum, Facebook Diem, IBM Fabric, and WeBank FISCO-BCOS. LOKI has detected 20 serious previously unknown vulnerabilities with 9 CVEs assigned. 14 of them are memory-related bugs, and 6 are consensus logic bugs. Compared with state-of-the-art tools such as Peach, Fluffy, and Twins, LOKI improves the branch coverage by an average of 43.21%, 182.05%, and 291.58%.",
+  "abstract_source_id": "src-abstract-ndss-2023-dfa80ab0",
   "venue": "ndss",
   "year": 2023,
   "track_or_session": "Fuzzing",
@@ -231,6 +233,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2023-dfa80ab0",
+      "url": "https://www.ndss-symposium.org/ndss-paper/loki-state-aware-fuzzing-framework-for-the-implementation-of-blockchain-consensus-protocols/",
+      "kind": "paper-page",
+      "title": "LOKI: State-Aware Fuzzing Framework for the Implementation of Blockchain Consensus Protocols",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:17:06Z",
+      "content_hash": "sha256:cc5f974c855d918063bbec96a0cc3d4ff0aa01039e8e5a5e7769b4ce6ee485bf",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

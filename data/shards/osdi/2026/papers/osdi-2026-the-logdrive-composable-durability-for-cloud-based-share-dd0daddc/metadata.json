@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2026-the-logdrive-composable-durability-for-cloud-based-share-dd0daddc",
   "title": "The LogDrive: Composable Durability for Cloud-Based Shared Logs",
+  "abstract": "A growing class of systems leverages inexpensive cloud object storage as a disaggregated data plane, offloading durability and scaling to the cloud. Storing the metadata for such systems in a cloud database is too expensive; while self-managed databases are complex and fragile. Conflux provides a third option by storing a shared log on cloud storage and using it to replicate state across VMs. A key innovation in Conflux is the separation of durability from sequencing. Durability is provided solely by the novel LogDrive abstraction: a simple, low-level substrate that can be layered above arbitrary cloud storage, striped for throughput, and – unlike shared logs – composed via quorum-based replication. Sequencing is provided by the AtomicLog, which implements a conventional shared log over any LogDrive. This design allows Conflux to replicate arbitrary state machines while using RAID-like compositions of cloud storage for durability. Conflux is deployed in production at Confluent as the metadata service for an S3-based publish-subscribe system called K2. We show that Conflux can run on diverse storage services (e.g., DynamoDB, S3, S3Express) with just a few hundred extra LOC per service; as well as augment the durability of these services (e.g., with synchronous cross-region replication). Conflux unlocks new cost vs. latency trade-offs over cloud storage: for our representative workloads and latency SLAs (compared to using DynamoDB directly) Conflux-over-DynamoDB slashes metadata cost by 10X and overall cost by 3X.",
+  "abstract_source_id": "src-abstract-osdi-2026-dd0daddc",
   "venue": "osdi",
   "year": 2026,
   "track_or_session": "Durable and Trustworthy Storage",
@@ -419,6 +421,19 @@
       "official": true,
       "supports": [
         "Official proceedings availability and canonical conference versions."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2026-dd0daddc",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/vickers",
+      "kind": "paper-page",
+      "title": "The LogDrive: Composable Durability for Cloud-Based Shared Logs",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:09:06Z",
+      "content_hash": "sha256:3a3cc673212754ae45ca6fa813e529d7011ee29a10bed31e5296b1aa0ba0aeb8",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

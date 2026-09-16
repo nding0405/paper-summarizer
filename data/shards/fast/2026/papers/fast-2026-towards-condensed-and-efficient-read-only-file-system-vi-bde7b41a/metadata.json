@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "fast-2026-towards-condensed-and-efficient-read-only-file-system-vi-bde7b41a",
   "title": "Towards Condensed and Efficient Read-Only File System via Sort-Enhanced Compression",
+  "abstract": "Read-only compressed file systems have become increasingly popular in space-sensitive scenarios, such as IoT and Docker containers. To construct condensed images, they divide the data into blocks (e.g., 1 MB) and compress blocks separately. However, we observe that block-based compression cannot fully utilize the compression benefits due to the data mixture problem, while its performance issues hinder practical usage.\n\nWe propose RubikFS, a sort-enhanced read-only file system. Our key idea is to solve data mixture by sorting and clustering similar data chunks in a file system-favored block granularity. This is achieved by similarity sorter , which builds a similarity graph to measure the similarity of data chunks and clusters similar chunks by subgraph partitioning. Moreover, sorting can also group data with the same hotness to minimize read amplification. We then introduce an array of techniques, including data grouper , data chunker , and hotness grouper , to implement condensed and efficient RubikFS. Experiments suggest that, compared to existing read-only compressed file systems, RubikFS increases the compression ratio by up to 42.60% and reduces unnecessary reads by up to 70.70%.",
+  "abstract_source_id": "src-abstract-fast-2026-bde7b41a",
   "venue": "fast",
   "year": 2026,
   "track_or_session": "Cloud Technologies I",
@@ -223,6 +225,19 @@
         "proceedings page range and page count",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-fast-2026-bde7b41a",
+      "url": "https://www.usenix.org/conference/fast26/presentation/huang",
+      "kind": "paper-page",
+      "title": "Towards Condensed and Efficient Read-Only File System via Sort-Enhanced Compression",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:01:43Z",
+      "content_hash": "sha256:fde458f3efdfe6121eb02af54b927dc0257b3c32e4cbacb28d8a5363fe8f9c16",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

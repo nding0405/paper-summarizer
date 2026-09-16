@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-towards-practical-end-to-end-formally-verified-x-509-cer-5cd2512f",
   "title": "Towards Practical, End-to-End Formally Verified X.509 Certificate Validators with Verdict",
+  "abstract": "Validating X.509 certificates is a critical part of Internet security, but the relevant standards are complex and ambiguous. Most X.509 validators also intentionally deviate from these standards in idiosyncratic ways, often for security or backward compatibility. Unsurprisingly, the result is a long history of security vulnerabilities.\n\nIn this work, we present Verdict, the first end-to-end formally verified X.509 certificate validator with customizable validation policies. Verdict's formal guarantees cover certificate parsing, path building, and path validation. To make Verdict practical to both verify and to use, we specify its correctness generically in terms of a user-supplied validation policy written concisely in first-order logic, with a proof-producing compiler to efficient Rust code.\n\nTo demonstrate Verdict's expressiveness, we use Verdict's policy framework to implement the X.509 validation policies in Google Chrome, Mozilla Firefox, and OpenSSL, and formally prove that they conform to a subset of RFC requirements. We instantiate Verdict with each policy and show that Verdict matches the corresponding baseline's behavior and state-of-the-art performance on over ten million certificates from Certificate Transparency logs.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-5cd2512f",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Crypto 3: Formal Methods and Private Computation",
@@ -196,6 +198,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-5cd2512f",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/lin-zhengyao",
+      "kind": "paper-page",
+      "title": "Towards Practical, End-to-End Formally Verified X.509 Certificate Validators with Verdict",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:22:24Z",
+      "content_hash": "sha256:f74ddf1dcd251a2e5bbd308f4d250b2b0b3084e5d121a3fd0b62b8ed98c90c49",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

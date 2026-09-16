@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "atc-2025-understanding-and-detecting-fail-slow-hardware-failure-b-a2b91912",
   "title": "Understanding and Detecting Fail-Slow Hardware Failure Bugs in Cloud Systems",
+  "abstract": "Fail-slow hardwares are still running and functional, but in a degraded mode, thus slower than their expected performance. Bugs triggered by fail-slow hardwares cause severe cloud system failures. Existing testing tools fail to efficiently detect these bugs due to overlooking their characteristics. In order to address this problem, this paper provides a bug study that analyzes 48 real-world fail-slow hardware failures from typical cloud systems. We observe that (1) fail-slow hardwares make high-level software components vulnerable, including synchronized and timeout mechanisms; (2) the fine granularity of fail-slow hardwares is necessary to trigger these bugs. Based on these two observations, we propose Sieve, a fault injection testing framework for detecting fail-slow hardware failure bugs. Sieve statically analyzes target system codes to identify synchronized and timeout-protected I/O operations as candidate fault points and instruments hooks before candidate fault points to enable fail slow hardware injection. To efficiently explore candidate fault points, Sieve adopts grouping and context-sensitive injection strategies. We have applied Sieve to three widely deployed cloud systems, i.e., ZooKeeper, Kafka, and HDFS. Sieve has detected six unknown bugs, two of which have been confirmed.",
+  "abstract_source_id": "src-abstract-atc-2025-a2b91912",
   "venue": "atc",
   "year": 2025,
   "track_or_session": "Hunting Elusive Bugs: Verification and Analysis from Compilers to Hardware",
@@ -180,6 +182,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-atc-2025-a2b91912",
+      "url": "https://www.usenix.org/conference/atc25/presentation/dong",
+      "kind": "paper-page",
+      "title": "Understanding and Detecting Fail-Slow Hardware Failure Bugs in Cloud Systems",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:00:20Z",
+      "content_hash": "sha256:ff1914824c487160fe16a9e6e1261a7b67cc367e849298f8c38b290244fe2109",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

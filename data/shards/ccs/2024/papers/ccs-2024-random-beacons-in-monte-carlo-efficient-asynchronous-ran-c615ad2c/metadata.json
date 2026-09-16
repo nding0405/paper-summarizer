@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2024-random-beacons-in-monte-carlo-efficient-asynchronous-ran-c615ad2c",
   "title": "Random Beacons in Monte Carlo: Efficient Asynchronous Random Beacon without Threshold Cryptography",
+  "abstract": "Regular access to unpredictable and bias-resistant randomness is important for applications such as blockchains, voting, and secure distributed computing. Distributed random beacon protocols address this need by distributing trust across multiple nodes, with the majority of them assumed to be honest. Numerous applications across the blockchain space have led to the proposal of several distributed random beacon protocols, with some already implemented. However, many current random beacon systems rely on threshold cryptographic setups or exhibit high computational costs, while others expect the network to be partial or bounded synchronous. To overcome these limitations, we propose HashRand, a computation and communication-efficient asynchronous random beacon protocol that only demands secure hash and pairwise secure channels to generate beacons. HashRand has a per-node amortized communication complexity of O (λn log(n)) bits per beacon. The computational efficiency of HashRand is attributed to the two orders of magnitude lower time of a one-way Hash computation compared to discrete log exponentiation. Interestingly, besides reduced overhead, HashRand achieves Post-Quantum security by leveraging the secure Hash function against quantum adversaries, setting it apart from other random beacon protocols that use discrete log cryptography. In a geo-distributed testbed of n = 136 nodes, HashRand produces 78 beacons per minute, which is at least 5× higher than Spurt [IEEE S&P'22]. We also demonstrate the practical utility of HashRand by implementing a Post-Quantum secure Asynchronous SMR protocol, which has a response rate of over 135k transactions per second at a latency of 2.3 seconds over a WAN for n = 16 nodes.",
+  "abstract_source_id": "src-abstract-ccs-2024-c615ad2c",
   "venue": "ccs",
   "year": 2024,
   "track_or_session": "Cycle 1",
@@ -180,6 +182,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2024-c615ad2c",
+      "url": "https://api.openalex.org/works/doi:10.1145/3658644.3670326?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Random Beacons in Monte Carlo: Efficient Asynchronous Random Beacon without Threshold Cryptography",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:11:32Z",
+      "content_hash": "sha256:9ac02c9508e0f91d0e2cd9e4b3311a959cc0c1f76a458268d29c4c061e101877",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

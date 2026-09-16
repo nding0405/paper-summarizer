@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2024-luna-quasi-optimally-succinct-designated-verifier-zero-k-59984979",
   "title": "LUNA: Quasi-Optimally Succinct Designated-Verifier Zero-Knowledge Arguments from Lattices",
+  "abstract": "We introduce the first candidate Lattice-based designated verifier (DV) zero knowledge sUccinct Non-interactive Argument (ZK-SNARG) protocol, named LUNA, with quasi-optimal proof length (quasi-linear in the security/privacy parameter). By simply relying on mildly stronger security assumptions, LUNA is also a candidate ZK-SNARK (i.e. argument of knowledge). LUNA achieves significant improvements in concrete proof sizes, reaching below 6 KB (compared to >32 KB in prior work) for 128-bit security/privacy level. To achieve our quasi-optimal succinct LUNA, we give a new regularity result for 'private' re-randomization of Module LWE (MLWE) samples using discrete Gaussian randomization vectors, also known as a lattice-based leftover hash lemma with leakage, which applies with a discrete Gaussian re-randomization parameter that is polynomial in the statistical privacy parameter (avoiding exponential smudging), and hides the coset of the re-randomization vector support set. Along the way, we derive bounds on the smoothing parameter of the intersection of short integer solution (SIS), gadget, and Gaussian perp module lattices over the power of 2 cyclotomic rings. We then introduce a new candidate linear-only homomorphic encryption scheme called Module Half-GSW (HGSW), and apply our regularity theorem to provide smudging-free circuit-private homomorphic linear operations for Module HGSW. Our implementation and experimental performance evaluation show that, for typical instance sizes, Module HGSW provides favourable performance for ZK-SNARG applications involving lightweight verifiers. It enables significantly (around 5x) shorter proof lengths while speeding up CRS generation and encryption time by 4-16x and speeding up decryption time by 4.3x, while incurring just 1.2-2x time overhead in linear homomorphic proof generation operations, compared to a Regev encryption used in prior work in the ZK-SNARG context. We believe our techniques are of independent interest and will find application in other privacy-preserving lattice-based protocols.",
+  "abstract_source_id": "src-abstract-ccs-2024-59984979",
   "venue": "ccs",
   "year": 2024,
   "track_or_session": "Cycle 1",
@@ -201,6 +203,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2024-59984979",
+      "url": "https://api.openalex.org/works/doi:10.1145/3658644.3670345?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "LUNA: Quasi-Optimally Succinct Designated-Verifier Zero-Knowledge Arguments from Lattices",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:10:59Z",
+      "content_hash": "sha256:e690c727a4731523df51f218f81d9a7dcf0d6a0ab578f5257bf4748957212d86",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

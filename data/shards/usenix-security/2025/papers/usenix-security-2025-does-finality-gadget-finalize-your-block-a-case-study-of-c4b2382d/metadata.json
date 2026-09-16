@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-does-finality-gadget-finalize-your-block-a-case-study-of-c4b2382d",
   "title": "Does Finality Gadget Finalize Your Block? A Case Study of Binance Consensus",
+  "abstract": "This paper studies the consensus mechanism of BNB smart chain (BSC)—a top-ranked blockchain platform developed by Binance. Since mid 2023, BSC has integrated a fast finality (FF) mechanism into its system. The FF mechanism is borrowed from the friendly finality gadget (FFG) by Ethereum Casper. The idea is to allow validators to vote for blocks and then agree on their order. Such an approach shares some similarities with the consensus mechanism in Byzantine fault-tolerant (BFT) protocols (e.g., PBFT and HotStuff). BSC claims that its FF mechanism can finalize blocks in O(1) time, simultaneously reducing latency and improving stability.\n\nIn this paper, we demonstrate the FF mechanism of BSC is susceptible to attacks. In particular, we provide three different attacks, showing BSC fails to finalize blocks in constant time and may even simply fail to achieve liveness. We validate our results via extensive experimental analysis and meanwhile provide mitigation solutions.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-c4b2382d",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Blockchain Security 2: Infrastructure, Protocol Design, and Governance",
@@ -175,6 +177,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-c4b2382d",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/li-rujia",
+      "kind": "paper-page",
+      "title": "Does Finality Gadget Finalize Your Block? A Case Study of Binance Consensus",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:19:24Z",
+      "content_hash": "sha256:127826864a45abdc10a5a565249ab5911df7ebe50213a4f08d0c13d4418e8be5",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

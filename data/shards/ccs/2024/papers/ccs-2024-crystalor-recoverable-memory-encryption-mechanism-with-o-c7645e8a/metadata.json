@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2024-crystalor-recoverable-memory-encryption-mechanism-with-o-c7645e8a",
   "title": "Crystalor: Recoverable Memory Encryption Mechanism with Optimized Metadata Structure",
+  "abstract": "This study presents an efficient recoverable memory encryption mechanism, named Crystalor. Existing memory encryption mechanisms, such as Intel SGX integrity tree, offer neither crash consistency nor recoverability, which results in attack surfaces and causes a non-trivial limitation of practical availability. Although the crash consistency of encrypted memory has been studied in the research field of microarchitecture, existing mechanisms lack formal security analysis and cannot incorporate with metadata optimization mechanisms, which are essential to achieve a practical performance. Crystalor efficiently realizes provably-secure recoverable memory encryption with metadata optimization. To establish Crystalor with provable security and practical performance, we develop a dedicated universal hash function PXOR-Hash and a microarchitecture equipped with PXOR-Hash. Crystalor incurs almost no latency overhead under the nominal operations for the recoverability, while it has a simple construction in such a way as to be compatible with existing microarchitectures. We evaluate its practical performance through both algorithmic analyses and system-level simulation in comparison with the state-of-the-art ones, such as SCUE. Crystalor requires 29--62% fewer clock cycles per memory read/write operation than SCUE for protecting a 4 TB memory. In addition, Crystalor and SCUE require 312 GB and 554 GB memory overheads for metadata, respectively, which indicates that Crystalor achieves a memory overhead reduction of 44%. The results of the system-level simulation using the gem5 simulator indicate that Crystalor achieves a reduction of up to 11.5% in the workload execution time compared to SCUE. Moreover, Crystalor achieves a higher availability and memory recovery several thousand times faster than SCUE, as Crystalor offers lazy recovery.",
+  "abstract_source_id": "src-abstract-ccs-2024-c7645e8a",
   "venue": "ccs",
   "year": 2024,
   "track_or_session": "Cycle 1",
@@ -180,6 +182,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2024-c7645e8a",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1145%2F3658644.3670273?fields=title,abstract",
+      "kind": "semantic-scholar",
+      "title": "Crystalor: Recoverable Memory Encryption Mechanism with Optimized Metadata Structure",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:09:55Z",
+      "content_hash": "sha256:0b7250cb1158676217336b60790257986984919b57427c8a5a18aae1977c80cc",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

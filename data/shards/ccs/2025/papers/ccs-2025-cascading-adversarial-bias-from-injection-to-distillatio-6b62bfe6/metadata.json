@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2025-cascading-adversarial-bias-from-injection-to-distillatio-6b62bfe6",
   "title": "Cascading Adversarial Bias from Injection to Distillation in Language Models",
+  "abstract": "Model distillation has become essential for creating deployable language models, but their widespread deployment raises concerns about about their resilience to adversarial manipulation. This paper investigates how adversaries can inject subtle biases into teacher models through minimal data poisoning during training, which propagates to a smaller distilled student model and becomes significantly amplified. We identify two propagation modes: Untargeted (affecting multiple tasks) and Targeted (focusing on specific task while maintaining normal behavior elsewhere). With only 25 poisoned samples (0.25% poisoning rate), student models generate biased responses 76.9% of the time in targeted scenarios versus 69.4% in teachers, while untargeted propagation shows 5.7X-29.2X higher adversarial bias rate in students on unseen tasks. We validate across six bias types (targeted advertisement, phishing link, narrative manipulations, insecure coding practices), various distillation methods, and text/code generation modalities. Current defense mechanisms—including perplexity filtering, bias detection systems, and LLM-based autoraters—prove inadequate against these attacks. We propose practical design principles for building effective adversarial bias mitigation strategies to address this threat vector.",
+  "abstract_source_id": "src-abstract-ccs-2025-6b62bfe6",
   "venue": "ccs",
   "year": 2025,
   "track_or_session": "Cycle 2",
@@ -190,6 +192,19 @@
         "published-order authors",
         "publication-time affiliations",
         "publication date and page span"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2025-6b62bfe6",
+      "url": "https://api.openalex.org/works/doi:10.1145/3719027.3765122?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Cascading Adversarial Bias from Injection to Distillation in Language Models",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:13:09Z",
+      "content_hash": "sha256:1da4be8bfb21827a501d512dcfa108ef3ffc754b3d0c8bcf3bf67dea8b714a82",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

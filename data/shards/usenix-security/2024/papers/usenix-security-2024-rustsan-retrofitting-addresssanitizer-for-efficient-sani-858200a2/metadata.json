@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2024-rustsan-retrofitting-addresssanitizer-for-efficient-sani-858200a2",
   "title": "RustSan: Retrofitting AddressSanitizer for Efficient Sanitization of Rust",
+  "abstract": "Rust is gaining traction as a safe systems programming language with its strong type and memory safety guarantees. However, Rust's guarantees are not infallible. The use of unsafe Rust, a subvariant of Rust, allows the programmer to temporarily escape the strict Rust language semantics to trade security for flexibility. Memory errors within unsafe blocks in Rust have far-reaching ramifications for the program's safety. As a result, the conventional dynamic memory error detection (e.g., fuzzing) has been adapted as a common practice for Rust and proved its effectiveness through a trophy case of discovered CVEs.\n\nRUSTSAN is a retrofitted design of AddressSanitizer (ASan) for efficient dynamic memory error detection of Rust programs. Our observation is that a significant portion of instrumented memory access sites in a Rust program compiled with ASan is redundant, as the Rust security guarantees can still be valid at the site. RUSTSAN identifies and instruments the sites that definitely or may undermine Rust security guarantees while lifting instrumentation on safe sites. To this end, RUSTSAN employs a cross-IR program analysis for accurate tracking of unsafe sites and also extends ASan's shadow memory scheme for checking non-uniform memory access validation necessary for Rust. We conduct a comprehensive evaluation of RUSTSAN in terms of detection capability and performance using 57 Rust crates. RUSTSAN successfully detected all 31 tested cases of CVE-issued memory errors. Also, RUSTSAN shows an average of 62.3% performance increase against ASan in general benchmarks that involved 20 Rust crates. In the fuzzing experiment with 6 crates, RUSTSAN marked an average of 23.52%, and up to 57.08% of performance improvement.",
+  "abstract_source_id": "src-abstract-usenix-security-2024-858200a2",
   "venue": "usenix-security",
   "year": 2024,
   "track_or_session": "Language-Based Security",
@@ -154,6 +156,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2024-858200a2",
+      "url": "https://www.usenix.org/conference/usenixsecurity24/presentation/cho-kyuwon",
+      "kind": "paper-page",
+      "title": "RustSan: Retrofitting AddressSanitizer for Efficient Sanitization of Rust",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:17:02Z",
+      "content_hash": "sha256:11f8dd561b1d7036203f4468c53f8424622303079ab0726227e712a4877b3f3b",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

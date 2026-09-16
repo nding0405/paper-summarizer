@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2026-rtrace-towards-better-visibility-of-shared-library-execu-aeb50814",
   "title": "RTrace: Towards Better Visibility of Shared Library Execution",
+  "abstract": "Software supply chain security has become a critical concern in recent years.\n\nModern software systems increasingly depend on third-party dependencies to accelerate development.\n\nShared libraries are the prevalent form of software sharing and hence, of third-party dependencies in modern software systems. As more attacks target the software supply chain, understanding the behavior of these dependencies is essential for identifying vulnerabilities and malicious code.\n\nHence, accurately tracing function calls within shared libraries is critical for effective software security analysis.\n\nHowever, existing library function tracers often fail to meet this need.\n\nAs we show in this work, state-of-the-art library function tracers are limited in effectiveness and scalability, missing a significant number of function calls and failing with more complex workloads, resulting in incomplete or misleading views of runtime behavior.\n\nIn this paper, we present RTrace, a tracing tool designed to address the limitations of existing solutions.\n\nWe analyze the root causes of why widely used tracers miss function calls and identify common pitfalls such as relying on incorrect symbol information and inability to monitor early or indirect function invocations.\n\nRTrace overcomes these challenges by incorporating comprehensive runtime monitoring, function boundary detection, and support for implicit and unconventional function calls.\n\nWe compare RTrace to four state-of-the-art tracers, namely, emph{ltrace}, emph{drltrace}, emph{ldaudit}, and emph{IntelPT}.\n\nOur evaluation across 21 applications and 92 shared libraries shows that RTrace significantly outperforms existing tools in detecting function call.\n\nRTrace achieves an F1-score of at least 0.92 on all benchmarks, whereas the best existing tracer reaches only 0.74, providing more accurate visibility into shared library runtime behavior.\n\nFinally, we show how RTrace can be used to assist in detecting malicious package and in vulnerability analysis by providing a more complete view of shared library function usage.",
+  "abstract_source_id": "src-abstract-ndss-2026-aeb50814",
   "venue": "ndss",
   "year": 2026,
   "track_or_session": "Summer submission cycle",
@@ -118,6 +120,19 @@
       "official": false,
       "supports": [
         "independent proceedings identity reconciliation"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2026-aeb50814",
+      "url": "https://www.ndss-symposium.org/ndss-paper/rtrace-towards-better-visibility-of-shared-library-execution/",
+      "kind": "paper-page",
+      "title": "RTrace: Towards Better Visibility of Shared Library Execution",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:23:04Z",
+      "content_hash": "sha256:59b8042382791a1e25c30df9e15184c9c5da02ceecea0bf9fe657e0b6d23e883",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2026-making-logic-a-first-class-citizen-in-generative-ml-for-d49c73af",
   "title": "Making Logic a First-Class Citizen in Generative ML for Networking",
+  "abstract": "Generative ML models are increasingly popular in networking for tasks such as telemetry imputation, prediction, and synthetic trace generation. Despite their capabilities, they suffer from two shortcomings: (i) their output is often visibly violating well-known networking rules, which undermines their trustworthiness; and (ii) they are difficult to control, frequently requiring retraining even for minor changes.\n\nTo address these limitations and unlock the benefits of generative models for networking, we propose a new paradigm for integrating explicit network knowledge, in the form of first-order logic rules, into ML models used for networking tasks. Rules capture well-known relationships among observed signals, e.g., that increased latency precedes packet loss. While the idea is conceptually straightforward, its realization is challenging: networking knowledge is rarely formalized into rules, and naively injecting rules into ML models often hampers their effectiveness. This paper introduces NetNomos, a multi-stage framework that (i) learns rules directly from data (e.g., measurements); (ii) filters them to select semantically meaningful ones; and (iii) enforces them through collaborative generation between an ML model and a Satisfiability Modulo Theories (SMT) solver.\n\nWe show that NetNomos learns diverse, meaningful rules from four real-world datasets and is 1.6–6.5× more scalable than DuoAI, a state-of-the-art (SOTA) rule-learning method. By enforcing these rules on a generic GPT-2 model, NetNomos achieves performance on par with or even surpassing specialized SOTA systems such as Zoom2Net and NetShare across three networking tasks: telemetry imputation, traffic forecasting, and synthetic data generation.",
+  "abstract_source_id": "src-abstract-nsdi-2026-d49c73af",
   "venue": "nsdi",
   "year": 2026,
   "track_or_session": "Learning at Line Rate",
@@ -118,6 +120,19 @@
         "proceedings page range and page count",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2026-d49c73af",
+      "url": "https://www.usenix.org/conference/nsdi26/presentation/he",
+      "kind": "paper-page",
+      "title": "Making Logic a First-Class Citizen in Generative ML for Networking",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:05:37Z",
+      "content_hash": "sha256:cb3fcd7d5cf2e52a57aaf4a9b26267abbc686b969047c0999802d3876dd10943",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

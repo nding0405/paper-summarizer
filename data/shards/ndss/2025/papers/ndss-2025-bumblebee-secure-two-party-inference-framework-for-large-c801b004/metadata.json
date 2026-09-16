@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2025-bumblebee-secure-two-party-inference-framework-for-large-c801b004",
   "title": "BumbleBee: Secure Two-party Inference Framework for Large Transformers",
+  "abstract": "Large transformer-based models have realized state-of-the-art performance on lots of real-world tasks such as natural language processing and computer vision.\n\nHowever, with the increasing sensitivity of the data and tasks they handle, privacy has become a major concern during model deployment.\n\nIn this work, we focus on private inference in two-party settings, where one party holds private inputs and the other holds the model.\n\nWe introduce BumbleBee, a fast and communication-friendly two-party private transformer inference system.\n\nOur contributions are three-fold:\n\nFirst, we propose optimized protocols for matrix multiplication, which significantly reduce communication costs by 80% -- 90% compared to previous techniques.\n\nSecondly, we develop a methodology for constructing efficient protocols tailored to the non-linear activation functions employed in transformer models.\n\nThe proposed activation protocols have realized a significant enhancement in processing speed, alongside a remarkable reduction in communication costs by 80% -- 95% compared with two prior methods.\n\nLastly, we have performed extensive benchmarks on five transformer models.\n\nBumbleBee demonstrates its capability by evaluating the LLaMA-7B model, generating one token in approximately 8 minutes using CPUs.\n\nOur results further reveal that BumbleBee outperforms Iron (NeurIPS22) by over an order of magnitude and is three times faster than BOLT (Oakland24) with one-tenth communication.",
+  "abstract_source_id": "src-abstract-ndss-2025-c801b004",
   "venue": "ndss",
   "year": 2025,
   "track_or_session": "Summer submission cycle",
@@ -252,6 +254,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2025-c801b004",
+      "url": "https://www.ndss-symposium.org/ndss-paper/bumblebee-secure-two-party-inference-framework-for-large-transformers/",
+      "kind": "paper-page",
+      "title": "BumbleBee: Secure Two-party Inference Framework for Large Transformers",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:19:14Z",
+      "content_hash": "sha256:6775fa64ecb034ff4c6f4652ccece2bd6c157e6afd728c2c74017b6525f3ef5a",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

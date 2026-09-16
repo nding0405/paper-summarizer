@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2025-sird-a-sender-informed-receiver-driven-datacenter-transp-5108bf74",
   "title": "SIRD: A Sender-Informed, Receiver-Driven Datacenter Transport Protocol",
+  "abstract": "Datacenter congestion control protocols are challenged to navigate the throughput-buffering trade-off while relative packet buffer capacity is trending lower year-over-year. In this context, receiver-driven protocols — which schedule packet transmissions instead of reacting to congestion — excel when the bottleneck lies at the ToR-to-receiver link. However, when multiple receivers must use a shared link (e.g., ToR to Spine), their independent schedules can conflict.\n\nWe present SIRD, a receiver-driven congestion control protocol designed around the simple insight that single-owner links should be scheduled, while shared links should be managed with reactive control algorithms. The approach allows receivers to both precisely schedule their downlinks and to coordinate over shared bottlenecks. Critically, SIRD also treats sender uplinks as shared links, enabling the flow of congestion feedback from senders to receivers, which then adapt their scheduling to each sender’s real time capacity. This results in tight scheduling, enabling high bandwidth utilization with little contention, and thus minimal latency-inducing buffering in the fabric.\n\nWe implement SIRD on top of the Caladan stack and show that SIRD’s asymmetric design can deliver 100Gbps in software while keeping network queuing minimal. We further compare SIRD to state-of-the-art receiver-driven protocols (Homa, dcPIM, and ExpressPass) and production-grade reactive protocols (Swift and DCTCP) and show that SIRD is uniquely able to simultaneously maximize link utilization, minimize queuing, and obtain near-optimal latency.",
+  "abstract_source_id": "src-abstract-nsdi-2025-5108bf74",
   "venue": "nsdi",
   "year": 2025,
   "track_or_session": "All Things Transport",
@@ -140,6 +142,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2025-5108bf74",
+      "url": "https://www.usenix.org/conference/nsdi25/presentation/prasopoulos",
+      "kind": "paper-page",
+      "title": "SIRD: A Sender-Informed, Receiver-Driven Datacenter Transport Protocol",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:04:36Z",
+      "content_hash": "sha256:95deff49b081987d44d0062f3325ea8b5f2d3d03e1145ae2f7c1008b4e7a76b8",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sigcomm-2026-leveller-fair-communication-scheduling-via-progress-rate-cbc176ff",
   "title": "LEVELLER: Fair Communication Scheduling via Progress-Rate Awareness in Multi-Tenant Training Clusters",
+  "abstract": "The rapid expansion of Large Language Models (LLMs) has established Deep Learning Training (DLT) as a major workload in modern multi-tenant GPU clusters. While fair computational scheduling is well-studied, fair communication scheduling in handling execution-time network contention remains underexplored. Current DLT communication schedulers focus primarily on efficiency-oriented objectives, often causing disparate performance degradation or even job starvation when concurrent jobs compete for shared bandwidth. In this paper, we propose LEVELLER, the first communication scheduling system that achieves max-min fairness specifically for DLT workloads. To bridge the gap between traditional flow-level fairness and DLT job-level fairness, LEVELLER introduces a novel online metric, normalized progress rate, which quantifies training experience by measuring actual progress against a contention-free ideal. We theoretically prove that a greedy, progress-rate-aware flow scheduling strategy achieves at least a 1/2-approximation of max-min fairness for arbitrary workloads, even with lazy priority updates. Building on theoretical results, LEVELLER employs preemptive, dynamic-priority scheduling to achieve near-optimal fairness on commodity infrastructure without hardware or protocol modifications. We prototype LEVELLER on both RDMA and TCP, evaluating it through a physical GPU cluster and trace-based simulations. Experimental results on 10 LLMs show that LEVELLER improves the minimum progress rate by 57% and fairness by 17% compared to state-of-the-art solutions (including CASSINI, CRUX, Symphony and Sincronia), while maintaining competitive cluster efficiency.",
+  "abstract_source_id": "src-abstract-cbc176ff",
   "venue": "sigcomm",
   "year": 2026,
   "track_or_session": "Research Session 11: Scheduling for ML Training Clusters — Research Paper",
@@ -149,6 +151,19 @@
       "official": true,
       "supports": [
         "official main-paper scope and track definitions"
+      ]
+    },
+    {
+      "id": "src-abstract-cbc176ff",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/search/match?query=LEVELLER%3A%20Fair%20Communication%20Scheduling%20via%20Progress-Rate%20Awareness%20in%20Multi-Tenant%20Training%20Clusters&fields=title,abstract",
+      "kind": "semantic-scholar",
+      "title": "LEVELLER: Fair Communication Scheduling via Progress-Rate Awareness in Multi-Tenant Training Clusters",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T23:03:03Z",
+      "content_hash": "sha256:baa0ef578037bcc04ddf623d558f0f248bd47b0cb13dbc122eb1fcb5828344e8",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

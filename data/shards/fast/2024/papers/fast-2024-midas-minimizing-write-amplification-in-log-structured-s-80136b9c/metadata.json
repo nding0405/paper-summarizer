@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "fast-2024-midas-minimizing-write-amplification-in-log-structured-s-80136b9c",
   "title": "MIDAS: Minimizing Write Amplification in Log-Structured Systems through Adaptive Group Number and Size Configuration",
+  "abstract": "Log-structured systems are widely used in various applications because of its high write throughput. However, high garbage collection (GC) cost is widely regarded as the primary obstacle for its wider adoption. There have been numerous attempts to alleviate GC overhead, but with ad-hoc designs. This paper introduces MiDAS that minimizes GC overhead in a systematic and analytic manner. It employs a chain-like structure of multiple groups, automatically segregating data blocks by age. It employs analytical models, Update Interval Distribution (UID) and Markov-Chain-based Analytical Model (MCAM), to dynamically adjust the number of groups as well as their sizes according to the workload I/O patterns, thereby minimizing the movement of data blocks. Furthermore, MiDAS isolates hot blocks into a dedicated HOT group, where the size of HOT is dynamically adjusted according to the workload to minimize overall WAF. Our experiments using simulations and a proof-of-concept prototype for flash-based SSDs show that MiDAS outperforms state-of-the-art GC techniques, offering 25% lower WAF and 54% higher throughput, while consuming less memory and CPU cycles.",
+  "abstract_source_id": "src-abstract-fast-2024-80136b9c",
   "venue": "fast",
   "year": 2024,
   "track_or_session": "Key-Value Systems",
@@ -181,6 +183,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-fast-2024-80136b9c",
+      "url": "https://www.usenix.org/conference/fast24/presentation/oh",
+      "kind": "paper-page",
+      "title": "MIDAS: Minimizing Write Amplification in Log-Structured Systems through Adaptive Group Number and Size Configuration",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:00:49Z",
+      "content_hash": "sha256:35ee14b0eab9cd81f868a3b90b31cb7cd8fd541c7a0d4b276527547c2ec7916b",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

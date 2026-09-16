@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-dp-sapf-saliency-aware-parameter-fine-tuning-of-public-m-9afd2830",
   "title": "DP-SAPF: Saliency-Aware Parameter Fine-tuning of Public Models for Differentially Private Image Synthesis",
+  "abstract": "Differentially private (DP) image synthesis generates images that preserve the statistical characteristics of a sensitive dataset, enabling sensitive data analysis and usage while providing rigorous guarantees of privacy leakage. Existing methods fine-tune public models using DP Stochastic Gradient Descent (DP-SGD) on sensitive images to generate synthetic images. But full fine-tuning public models on sensitive images is computationally expensive, because current public models typically contain a large number of parameters. Recent work proposes heuristically using Low-Rank Adaptation (LoRA) on all attention-layer parameters of public models to reduce the number of trainable parameters. However, we argue that exhaustive LoRA coverage across all attention-layer parameters is suboptimal in a DP setting, as it leads to noise accumulation and collapse during private training.\n\nTo address this issue, we propose DP-SAPF, which uses a saliency-aware strategy to identify specific target parameters for LoRA training under DP. DP-SAPF is inspired by the fact that larger gradients signify higher saliency, indicating that these parameters are most critical for the DP learning. Specifically, we feed the sensitive images into public models, compute gradients, and add noise to the gradients to satisfy DP. Then, DP-SAPF identifies the most salient parameters, those exhibiting high gradient magnitudes on sensitive images, for DP fine-tuning. Experiments on four sensitive image datasets show that DP-SAPF improves the utility and fidelity of synthetic images while requiring fewer computational resources than fine-tuning methods without parameter selection.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-9afd2830",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Privacy of ML 2",
@@ -134,6 +136,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-9afd2830",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/gong-dp-sapf",
+      "kind": "paper-page",
+      "title": "DP-SAPF: Saliency-Aware Parameter Fine-tuning of Public Models for Differentially Private Image Synthesis",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:23:46Z",
+      "content_hash": "sha256:c12ad11fd252b76a7bac9244d43e885061a2c35453f6dd1c74db6109ad4a580b",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

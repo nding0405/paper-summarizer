@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2025-wirewatch-measuring-the-security-of-proprietary-network-3ae2242c",
   "title": "WireWatch: Measuring the security of proprietary network encryption in the global Android ecosystem",
+  "abstract": "We present WireWatch, a large-scale measurement pipeline to evaluate the network security of Android apps. WireWatch measures apps' usage of plaintext network traffic and non-standard, proprietary network cryptography. We found that 47.6% of top Mi Store applications used proprietary network cryptography without any additional encryption, compared to only 3.51% of top Google Play Store applications. We analyzed the 18 most popular protocols from WireWatch, which belonged to 9 protocol families, including cryptosystems designed by Alibaba, iQIYI, Kuaishou, and Tencent. We found that 8 of these protocol families sent requests that allowed network eavesdroppers to decrypt underlying data, including browsing data and device metadata, among various other issues, such as being downgradable, not validating TLS certificates, and the use of RSA without OAEP. These vulnerabilities affected 26.9% of our Mi Store dataset with a cumulative 130 billion downloads. Ultimately, WireWatch reveals that a large portion of massively popular applications are using insecure proprietary network protocols to encrypt sensitive user data.",
+  "abstract_source_id": "src-abstract-sp-2025-3ae2242c",
   "venue": "sp",
   "year": 2025,
   "track_or_session": "Cycle 2",
@@ -154,6 +156,19 @@
       "official": true,
       "supports": [
         "DOI, authors, affiliations, abstract, publication date, pages, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2025-3ae2242c",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "WireWatch: Measuring the Security of Proprietary Network Encryption in the Global Android Ecosystem",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:57Z",
+      "content_hash": "sha256:303a9b5e5ef8908a3cfe67f02eb8a87be978a5fe3281c7ecec8c0cdb512517e0",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2025-swiftsweeper-defeating-use-after-free-bugs-using-memory-d22a3bb5",
   "title": "SwiftSweeper: Defeating Use-After-Free Bugs Using Memory Sweeper Without Stop-the-World",
+  "abstract": "Use-after-free (UAF) vulnerabilities pose severe security risks in memory-unsafe languages like C and C++. To mitigate these issues, prior work has employed memory sweeping, inspired by conservative garbage collection. However, such approaches inherit key limitations, including stop-the-world pauses, poor scalability, and high CPU usage, rendering them unsuitable for modern, latency-sensitive applications. This paper presents SwiftSweeper, a secure memory allocator designed to prevent UAF vulnerabilities in unmodified binaries. SwiftSweeper reimagines memory sweeping by eliminating stop-the-world pauses and enhancing scalability to support high-performance C and C++ workloads. It features an efficient and secure in-kernel data path, implemented using eBPF (XMP, eXpress Memory Path), and a co-designed user-level allocator and kernel. We implement SwiftSweeper on Linux and demonstrate that it delivers state-of-the-art performance, memory efficiency, and minimal latency overhead across both single-threaded and multi-threaded applications, including SPEC CPU and WebServer benchmarks.",
+  "abstract_source_id": "src-abstract-sp-2025-d22a3bb5",
   "venue": "sp",
   "year": 2025,
   "track_or_session": "Cycle 2",
@@ -154,6 +156,19 @@
       "official": true,
       "supports": [
         "DOI, authors, affiliations, abstract, publication date, pages, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2025-d22a3bb5",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "SwiftSweeper: Defeating Use-After-Free Bugs Using Memory Sweeper Without Stop-the-World",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:52Z",
+      "content_hash": "sha256:b15ce02bcc49da611fdd791ecc56741e7d91d84154b58c1a7f72a5c6902e6e46",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2023-prospect-provably-secure-speculation-for-the-constant-ti-c606b10a",
   "title": "ProSpeCT: Provably Secure Speculation for the Constant-Time Policy",
+  "abstract": "We propose ProSpeCT, a generic formal processor model providing provably secure speculation for the constant-time policy. For constant-time programs under a non-speculative semantics, ProSpeCT guarantees that speculative and out-of-order execution cause no microarchitectural leaks. This guarantee is achieved by tracking secrets in the processor pipeline and ensuring that they do not influence the microarchitectural state during speculative execution. Our formalization covers a broad class of speculation mechanisms, generalizing prior work. As a result, our security proof covers all known Spectre attacks, including load value injection (LVI) attacks.\n\nIn addition to the formal model, we provide a prototype hardware implementation of ProSpeCT on a RISC-V processor and show evidence of its low impact on hardware cost, performance, and required software changes. In particular, the experimental evaluation confirms our expectation that for a compliant constant-time binary, enabling ProSpeCT incurs no performance overhead.",
+  "abstract_source_id": "src-abstract-usenix-security-2023-c606b10a",
   "venue": "usenix-security",
   "year": 2023,
   "track_or_session": "Speculation Doesn't Pay",
@@ -175,6 +177,19 @@
       "official": true,
       "supports": [
         "authors, affiliations when published, abstract, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2023-c606b10a",
+      "url": "https://www.usenix.org/conference/usenixsecurity23/presentation/daniel",
+      "kind": "paper-page",
+      "title": "ProSpeCT: Provably Secure Speculation for the Constant-Time Policy",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:12:38Z",
+      "content_hash": "sha256:0e63a39ee64519d27b5e8bdc56430c64c9f68ad594851e8b9b86d2b304f2a4fc",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

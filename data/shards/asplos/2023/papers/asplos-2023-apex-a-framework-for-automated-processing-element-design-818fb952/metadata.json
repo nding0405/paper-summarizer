@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2023-apex-a-framework-for-automated-processing-element-design-818fb952",
   "title": "APEX: A Framework for Automated Processing Element Design Space Exploration using Frequent Subgraph Analysis",
+  "abstract": "The architecture of a coarse-grained reconfigurable array (CGRA) processing element (PE) has a significant effect on the performance and energy-efficiency of an application running on the CGRA. This paper presents APEX, an automated approach for generating specialized PE architectures for an application or an application domain. APEX first analyzes application domain benchmarks using frequent subgraph mining to extract commonly occurring computational subgraphs. APEX then generates specialized PEs by merging subgraphs using a datapath graph merging algorithm. The merged datapath graphs are translated into a PE specification from which we automatically generate the PE hardware description in Verilog along with a compiler that maps applications to the PE. The PE hardware and compiler are inserted into a flexible CGRA generation and compilation toolchain that allows for agile evaluation of CGRAs. We evaluate APEX for two domains, machine learning and image processing. For image processing applications, our automatically generated CGRAs with specialized PEs achieve from 5% to 30% less area and from 22% to 46% less energy compared to a general-purpose CGRA. For machine learning applications, our automatically generated CGRAs consume 16% to 59% less energy and 22% to 39% less area than a general-purpose CGRA. This work paves the way for creation of application domain-driven design-space exploration frameworks that automatically generate efficient programmable accelerators, with a much lower design effort for both hardware and compiler generation.",
+  "abstract_source_id": "src-abstract-asplos-2023-818fb952",
   "venue": "asplos",
   "year": 2023,
   "track_or_session": "Session 8B: Accelerators B",
@@ -251,6 +253,19 @@
       "official": false,
       "supports": [
         "Indexed abstract used with the official technical-session context for relevance classification, plus alternate-copy and explicitly printed ancillary links."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2023-818fb952",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1145%2F3582016.3582070?fields=title,abstract",
+      "kind": "semantic-scholar",
+      "title": "APEX: A Framework for Automated Processing Element Design Space Exploration using Frequent Subgraph Analysis",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T21:58:44Z",
+      "content_hash": "sha256:3656acd384796b096579ca1675b59a3acb05a169b219628f8398f4050d137dc3",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

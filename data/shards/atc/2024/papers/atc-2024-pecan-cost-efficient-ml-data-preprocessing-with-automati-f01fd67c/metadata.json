@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "atc-2024-pecan-cost-efficient-ml-data-preprocessing-with-automati-f01fd67c",
   "title": "Pecan: Cost-Efficient ML Data Preprocessing with Automatic Transformation Ordering and Hybrid Placement",
+  "abstract": "Input data preprocessing is a common bottleneck in machine learning (ML) jobs, that can significantly increase training time and cost as expensive GPUs or TPUs idle waiting for input data. Previous work has shown that offloading data preprocessing to remote CPU servers successfully alleviates data stalls and improves training time. However, remote CPU workers in disaggregated data processing systems comprise a significant fraction of total training costs. Meanwhile, current disaggregated solutions often underutilize CPU and DRAM resources available on ML accelerator nodes. We propose two approaches to alleviate ML input data stalls while minimizing costs. First, we dynamically schedule data preprocessing workers on ML accelerator host resources to minimize the number of remote CPU workers needed to achieve peak data ingestion bandwidth. Second, we analyze the characteristics of input pipelines and automatically reorder transformations to increase data preprocessing worker throughput. We observe that relaxing commutativity increases throughput while maintaining high model accuracy for a variety of ML data pipelines. We build Pecan, an ML data preprocessing service that automates data preprocessing worker placement and transformation reordering decisions. Pecan reduces preprocessing costs by 87% on average and total training costs by up to 60% compared to training with state-of-the-art disaggregated data preprocessing and total training costs by 55% on average compared to collocated data preprocessing.",
+  "abstract_source_id": "src-abstract-atc-2024-f01fd67c",
   "venue": "atc",
   "year": 2024,
   "track_or_session": "ML-System Co-Design",
@@ -201,6 +203,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-atc-2024-f01fd67c",
+      "url": "https://www.usenix.org/conference/atc24/presentation/graur",
+      "kind": "paper-page",
+      "title": "Pecan: Cost-Efficient ML Data Preprocessing with Automatic Transformation Ordering and Hybrid Placement",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T21:58:56Z",
+      "content_hash": "sha256:e27d60a7cdaa65edf02d190369c93cf5b7ee280c25d768c72bb612d1008e5268",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

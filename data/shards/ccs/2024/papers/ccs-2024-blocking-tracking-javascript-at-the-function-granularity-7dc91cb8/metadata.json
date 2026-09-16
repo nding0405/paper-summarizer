@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2024-blocking-tracking-javascript-at-the-function-granularity-7dc91cb8",
   "title": "Blocking Tracking JavaScript at the Function Granularity",
+  "abstract": "Modern websites extensively rely on JavaScript to implement both functionality and tracking. Existing privacy-enhancing content blocking tools struggle against mixed scripts, which simultaneously implement both functionality and tracking. Blocking such scripts would break functionality, and not blocking themwould allowtracking. We propose NoT.js, a fine-grained JavaScript blocking tool that operates at the function-level granularity. NoT.js’s strengths lie in analyzing the dynamic execution context, including the call stack and calling context of each JavaScript function, and then encoding this context to build a rich graph representation. NoT.js trains a supervised machine learning classifier on a webpage’s graph representation to first detect tracking at the function-level and then automatically generates surrogate scripts that preserve functionality while removing tracking. Our evaluation of NoT.js on the top-10K websites demonstrates that it achieves high precision (94%) and recall (98%) in detecting tracking functions, outperforming the state-of-the-art while being robust against off-the-shelf JavaScript obfuscation. Fine-grained detection of tracking functions allows NoT.js to automatically generate surrogate scripts, which our evaluation shows that successfully remove tracking functions without causing major breakage. Our deployment of NoT.js shows that mixed scripts are present on 62.3% of the top-10K websites, with 70.6% of the mixed scripts being third-party that engage in tracking activities such as cookie ghostwriting.",
+  "abstract_source_id": "src-abstract-ccs-2024-7dc91cb8",
   "venue": "ccs",
   "year": 2024,
   "track_or_session": "Cycle 1",
@@ -159,6 +161,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2024-7dc91cb8",
+      "url": "https://api.openalex.org/works/doi:10.1145/3658644.3670329?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Blocking Tracking JavaScript at the Function Granularity",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:09:04Z",
+      "content_hash": "sha256:878324d764ffe21b581140d80b1668b2a710e072d197a353e57f3a6956be538a",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

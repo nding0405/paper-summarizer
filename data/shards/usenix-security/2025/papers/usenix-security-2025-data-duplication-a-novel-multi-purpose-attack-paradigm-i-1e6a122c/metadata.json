@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-data-duplication-a-novel-multi-purpose-attack-paradigm-i-1e6a122c",
   "title": "Data Duplication: A Novel Multi-Purpose Attack Paradigm in Machine Unlearning",
+  "abstract": "Duplication is a prevalent issue within datasets. Existing research has demonstrated that the presence of duplicated data in training datasets can significantly influence both model performance and data privacy. However, the impact of data duplication on the unlearning process remains largely unexplored. This paper addresses this gap by pioneering a comprehensive investigation into the role of data duplication, not only in standard machine unlearning but also in federated and reinforcement unlearning paradigms. Specifically, we propose an adversary who duplicates a subset of the target model's training set and incorporates it into the training set. After training, the adversary requests the model owner to unlearn this duplicated subset, and analyzes the impact on the unlearned model. For example, the adversary can challenge the model owner by revealing that, despite efforts to unlearn it, the influence of the duplicated subset remains in the model. Moreover, to circumvent detection by de-duplication techniques, we propose three novel near-duplication methods for the adversary, each tailored to a specific unlearning paradigm. We then examine their impacts on the unlearning process when de-duplication techniques are applied. Our findings reveal several crucial insights: 1) the gold standard unlearning method, retraining from scratch, fails to effectively conduct unlearning under certain conditions; 2) unlearning duplicated data can lead to significant model degradation in specific scenarios; and 3) meticulously crafted duplicates can evade detection by de-duplication methods. The source code is provided at: https://zenodo.org/records/14736535 .",
+  "abstract_source_id": "src-abstract-usenix-security-2025-1e6a122c",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "ML and AI Security 3: Backdoors, Poisoning, Unlearning",
@@ -217,6 +219,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-1e6a122c",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/ye-duplication",
+      "kind": "paper-page",
+      "title": "Data Duplication: A Novel Multi-Purpose Attack Paradigm in Machine Unlearning",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:19:14Z",
+      "content_hash": "sha256:4e435722574c3b47bb866fa58e050c712495e3ffc2a1b711eeb5877d4f82ea19",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

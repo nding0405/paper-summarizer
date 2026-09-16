@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2023-recl-responsive-resource-efficient-continuous-learning-f-ad2c0812",
   "title": "RECL: Responsive Resource-Efficient Continuous Learning for Video Analytics",
+  "abstract": "Continuous learning has recently shown promising results for video analytics by adapting a lightweight \"expert\" DNN model for each specific video scene to cope with the data drift in real time. However, current adaptation approaches either rely on periodic retraining and suffer its delay and significant compute costs or rely on selecting historical models and incur accuracy loss by not fully leveraging the potential of persistent retraining. Without dynamically optimizing the resource sharing among model selection and retraining, both approaches have a diminishing return at scale. RECL is a new video-analytics framework that carefully integrates model reusing and online model retraining, allowing it to quickly adapt the expert model given any video frame samples. To do this, RECL (i) shares across edge devices a (potentially growing) \"model zoo\" that comprises expert models previously trained for all edge devices, enabling history model reuse across video sessions, (ii) uses a fast procedure to online select a highly accurate expert model from this shared model zoo, and (iii) dynamically optimizes GPU allocation among model retraining, model selection, and timely updates of the model zoo. Our evaluation of RECL over 70 hours of real-world videos across two vision tasks (object detection and classification) shows substantial performance gains compared to prior work, further amplifying over the system lifetime.",
+  "abstract_source_id": "src-abstract-nsdi-2023-ad2c0812",
   "venue": "nsdi",
   "year": 2023,
   "track_or_session": "Video",
@@ -224,6 +226,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2023-ad2c0812",
+      "url": "https://www.usenix.org/conference/nsdi23/presentation/khani",
+      "kind": "paper-page",
+      "title": "RECL: Responsive Resource-Efficient Continuous Learning for Video Analytics",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:02:24Z",
+      "content_hash": "sha256:9e23ec21c61ff655d9872f2ea2cd3dd9d4a99925887f5dc879557fe1507d82af",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

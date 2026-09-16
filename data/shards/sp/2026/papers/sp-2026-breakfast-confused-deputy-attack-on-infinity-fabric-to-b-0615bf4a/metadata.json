@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2026-breakfast-confused-deputy-attack-on-infinity-fabric-to-b-0615bf4a",
   "title": "BreakFAST: Confused Deputy Attack on Infinity Fabric to Break AMD SEV-SNP",
+  "abstract": "SEV-SNP is AMD's offering of confidential computing in the cloud. It enables the creation of so-called confidential virtual machines. To achieve its security, SEV-SNP relies on a trusted co-processor called the Platform Security Processor (PSP). In this paper, we present the following novel observations: The hypervisor can change the MMIO address mapping of internal devices (e.g., SMU that manages power). Worse, these changes affect how PSP accesses to system DRAM are routed. With this ability, we showcase that we can mount a confused deputy attack on the PSP. Specifically, we can trick the PSP into writing attacker-controlled values to the MMIO range of internal devices. As there is little documentation on internal devices, it is challenging to identify: which device to write to, at what location, and with what value. To this end, we reverse engineer an undocumented device called FASTREG. Its role is to map the internal control network 4 GB address space as an addressable range (e.g., to the internal device, hypervisor, PSP) to facilitate read/write. Putting these two observations together, we use the PSP to update the internal control network to disable the IOMMU's SEV-SNP protections, to subsequently fake attestation and enable debug on production CVMs.",
+  "abstract_source_id": "src-abstract-sp-2026-0615bf4a",
   "venue": "sp",
   "year": 2026,
   "track_or_session": "Cycle 2",
@@ -112,6 +114,19 @@
       "official": true,
       "supports": [
         "DOI, published-order authors and affiliations, abstract, publication date, page span, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2026-0615bf4a",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "BreakFAST: Confused Deputy Attack on Infinity Fabric to Break AMD SEV-SNP",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:57Z",
+      "content_hash": "sha256:303a9b5e5ef8908a3cfe67f02eb8a87be978a5fe3281c7ecec8c0cdb512517e0",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

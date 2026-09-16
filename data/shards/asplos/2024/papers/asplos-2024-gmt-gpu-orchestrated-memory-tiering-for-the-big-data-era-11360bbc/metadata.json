@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2024-gmt-gpu-orchestrated-memory-tiering-for-the-big-data-era-11360bbc",
   "title": "GMT: GPU Orchestrated Memory Tiering for the Big Data Era",
+  "abstract": "As the demand for processing larger datasets increases, GPUs need to reach deeper into their (memory) hierarchy to directly access capacities that only storage systems (SSDs) can hold. However, the state-of-the-art mechanisms to reach storage either employ software stacks running on the host CPUs as intermediaries (e.g. Dragon, HMM), which has been noted to perform poorly and not able to meet the throughput needs of GPU cores, or directly access SSDs through NVMe queues (BaM) which does not benefit from lower latencies that may be possible by having the host memory as an intermediate tier. This paper presents the design and implementation of GPU Memory Tiering (GMT) by implementing a GPU-orchestrated 3-tier hierarchy comprising GPU memory, host memory and SSDs, where the GPU orchestrates most of the transfers that are bandwidth/latency sensitive. Additionally, it is important to not blindly transfer pages from the GPU memory to host memory upon an eviction, and GMT employs a reuse-prediction based practical insertion policy to perform discretionary page placement/bypass. An implementation and evaluation on an actual platform demonstrates that GMT performs 50% better than the state-of-the-art 2-tier strategy (BaM) and over 350% better than the state-of-the-art 3-tier strategy that is orchestrated by host CPUs (HMM), over a number of GPU applications with diverse memory access characteristics.",
+  "abstract_source_id": "src-abstract-asplos-2024-11360bbc",
   "venue": "asplos",
   "year": 2024,
   "track_or_session": "Session 8B: Memory: Address Translation and Tiering",
@@ -201,6 +203,19 @@
       "official": false,
       "supports": [
         "Indexed alternate-version and institutional-copy links; not used as the authoritative relevance source."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2024-11360bbc",
+      "url": "https://api.openalex.org/works/doi:10.1145/3620666.3651353?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "GMT: GPU Orchestrated Memory Tiering for the Big Data Era",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:00:11Z",
+      "content_hash": "sha256:eed126f1192254ab58013de5580b70253e975c7c545c014e663a54318c1fa9ff",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

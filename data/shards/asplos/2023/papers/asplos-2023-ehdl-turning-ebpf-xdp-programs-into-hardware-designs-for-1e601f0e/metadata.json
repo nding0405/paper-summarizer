@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2023-ehdl-turning-ebpf-xdp-programs-into-hardware-designs-for-1e601f0e",
   "title": "eHDL: Turning eBPF/XDP Programs into Hardware Designs for the NIC",
+  "abstract": "Scaling network packet processing performance to meet the increasing speed of network ports requires software programs to carefully leverage the network devices’ hardware features. This is a complex task for network programmers, who need to learn and deal with the heterogeneity of device architectures, and re-think their software to leverage them. In this paper we make first steps to reverse this design process, enabling the automatic generation of tailored hardware designs starting from a network packet processing program. We introduce eHDL, a high-level synthesis tool that automatically generates hardware pipelines from unmodified Linux’s eBPF/XDP programs. eHDL is designed to enable software developers to directly define and implement the hardware functions they need in the NIC. We prototype eHDL targeting a Xilinx Alveo U50 FPGA NIC, and evaluate it with a set of 5 eBPF/XDP programs. Our results show that the generated pipelines are efficient in terms of required hardware resources, using only 6.5%-13.3% of the FPGA, and always achieve the line rate forwarding throughput with about 1 microsecond of per-packet forwarding latency. Compared to other network-specific high-level synthesis tool, eHDL enables software programmers with no hardware expertise to describe stateful functions that operate on the entire packet data. Compared to alternative processor-based solutions that perform eBFP/XDP offloading to a NIC, eHDL provides 10-100x higher throughput.",
+  "abstract_source_id": "src-abstract-asplos-2023-1e601f0e",
   "venue": "asplos",
   "year": 2023,
   "track_or_session": "Session 4A: Design Tools",
@@ -173,6 +175,19 @@
       "official": false,
       "supports": [
         "Indexed abstract used with the official technical-session context for relevance classification, plus alternate-copy and explicitly printed ancillary links."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2023-1e601f0e",
+      "url": "https://api.openalex.org/works/doi:10.1145/3582016.3582035?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "eHDL: Turning eBPF/XDP Programs into Hardware Designs for the NIC",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T21:59:27Z",
+      "content_hash": "sha256:bea1dc3b8885e45391b55664b85a64fc00cfba8ef548f28bef4b70061774aecb",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

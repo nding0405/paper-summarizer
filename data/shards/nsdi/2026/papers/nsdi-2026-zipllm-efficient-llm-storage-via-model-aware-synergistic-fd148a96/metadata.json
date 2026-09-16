@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2026-zipllm-efficient-llm-storage-via-model-aware-synergistic-fd148a96",
   "title": "ZipLLM: Efficient LLM Storage via Model-Aware Synergistic Data Deduplication and Compression",
+  "abstract": "Modern model hubs, such as Hugging Face, store tens of petabytes of LLMs, with fine-tuned variants vastly outnumbering base models and dominating storage consumption. Existing storage reduction techniques—such as deduplication and compression—are either LLM-oblivious or not compatible with each other, limiting data reduction effectiveness.\n\nOur large-scale characterization study across all publicly available Hugging Face LLM repositories reveals several key insights: (1) fine-tuned models within the same family exhibit highly structured, sparse parameter differences suitable for delta compression; (2) bitwise similarity enables LLM family clustering; and (3) tensor-level deduplication is better aligned with model storage workloads, achieving high data reduction with low metadata overhead. Building on these insights, we design BitX, an effective, fast, lossless delta compression algorithm that compresses the XORed difference between fine-tuned and base LLMs. We build ZipLLM, a model storage reduction pipeline that unifies tensor-level deduplication and lossless BitX compression. By synergizing deduplication and compression around LLM family clustering, ZipLLM reduces model storage consumption by 54%, over 20% higher than state-of-the-art deduplication and compression approaches.",
+  "abstract_source_id": "src-abstract-nsdi-2026-fd148a96",
   "venue": "nsdi",
   "year": 2026,
   "track_or_session": "Hot Data, Cold Data",
@@ -160,6 +162,19 @@
         "proceedings page range and page count",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2026-fd148a96",
+      "url": "https://www.usenix.org/conference/nsdi26/presentation/wang-zirui",
+      "kind": "paper-page",
+      "title": "ZipLLM: Efficient LLM Storage via Model-Aware Synergistic Data Deduplication and Compression",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:06:18Z",
+      "content_hash": "sha256:6fb8885447ae9b6e6591e5ce41ae749d090fa475c782ac42a71ab16c3b765780",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2025-lock-the-door-but-keep-the-window-open-extracting-app-pr-ba5a787d",
   "title": "Lock the Door But Keep the Window Open: Extracting App-Protected Accessibility Information from Browser-Rendered Websites",
+  "abstract": "The Android accessibility (a11y) service has been widely utilized by malware to abuse benign services.To prevent such abuse, developers need to secure a11y content access in both their apps and mobile websites.However, a misalignment of a11y protection mechanisms exists between them.Prior research has focused on attacking and defending a11y information embedded in native Android apps.However, our research found that a11y malware can retrieve app-protected a11y information in its mobile browser-rendered website counterpart, leaving mobile browser users more vulnerable to a11y attacks than app users.To help benign service developers vet this attack surface, we developed SOMBRA, an automated analysis pipeline to vet browser-side leakage of a11y information that is a11y-protected in apps.Using SOMBRA, we analyzed 294 benign services and found 29 of them deploy app-side a11y protection mechanisms to secure 256 views.SOMBRA discovered that 241, 402, 244, and 251 elements corresponding to their protected app-side views are a11y-exposed in their websites rendered by Chrome, Firefox, Brave, and Edge browsers, respectively.The leaked elements contain sensitive personal identifiable information.Finally, SOMBRA discovered that most developers do not adopt browser-side a11y protections because existing mechanisms either have ineffective protection or hinder the usability of their content.",
+  "abstract_source_id": "src-abstract-ccs-2025-ba5a787d",
   "venue": "ccs",
   "year": 2025,
   "track_or_session": "Cycle 1",
@@ -211,6 +213,19 @@
         "published-order authors",
         "publication-time affiliations",
         "publication date and page span"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2025-ba5a787d",
+      "url": "https://api.openalex.org/works/doi:10.1145/3719027.3744822?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Lock the Door But Keep the Window Open: Extracting App-Protected Accessibility Information from Browser-Rendered Websites",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:15:07Z",
+      "content_hash": "sha256:1c7ba56657e00eac6bf6a5130ff096b9daf5eaf987445e5fac92824587f9b937",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2025-safeguider-robust-and-practical-content-safety-control-f-9f5623da",
   "title": "SafeGuider: Robust and Practical Content Safety Control for Text-to-Image Models",
+  "abstract": "Text-to-image models have shown remarkable capabilities in generating high-quality images from natural language descriptions. However, these models are highly vulnerable to adversarial prompts, which can bypass safety measures and produce harmful content. Despite various defensive strategies, achieving robustness against attacks while maintaining practical utility in real-world applications remains a significant challenge. To address this issue, we first conduct an empirical study of the text encoder in the Stable Diffusion (SD) model, which is a widely used and representative text-to-image model. Our findings reveal that the [EOS] token acts as a semantic aggregator, exhibiting distinct distributional patterns between benign and adversarial prompts in its embedding space. Building on this insight, we introduce SafeGuider, a two-step framework designed for robust safety control without compromising generation quality. SafeGuider combines an embedding-level recognition model with a safety-aware feature erasure beam search algorithm. This integration enables the framework to maintain high-quality image generation for benign prompts while ensuring robust defense against both in-domain and out-of-domain attacks. SafeGuider demonstrates exceptional effectiveness in minimizing attack success rates, achieving a maximum rate of only 5.48% across various attack scenarios. Moreover, instead of refusing to generate or producing black images for unsafe prompts, SafeGuider generates safe and meaningful images, enhancing its practical utility. In addition, SafeGuider is not limited to the SD model and can be effectively applied to other text-to-image models, such as the Flux model, demonstrating its versatility and adaptability across different architectures. We hope that SafeGuider can shed some light on the practical deployment of secure text-to-image systems.",
+  "abstract_source_id": "src-abstract-ccs-2025-9f5623da",
   "venue": "ccs",
   "year": 2025,
   "track_or_session": "Cycle 1",
@@ -232,6 +234,19 @@
         "published-order authors",
         "publication-time affiliations",
         "publication date and page span"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2025-9f5623da",
+      "url": "https://api.openalex.org/works/doi:10.1145/3719027.3744835?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "SafeGuider: Robust and Practical Content Safety Control for Text-to-Image Models",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:16:26Z",
+      "content_hash": "sha256:8c48c57de3a881e5b1ee90902c3643c8831587249c4511268b8861fe87f9cfb6",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

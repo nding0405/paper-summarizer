@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2026-joser-just-in-time-object-serialization-for-heavy-java-s-e7ade684",
   "title": "JOSer: Just-In-Time Object Serialization for Heavy Java Serialization Workloads",
+  "abstract": "Object serialization is critical in Java, which preserves objects in memory and transfers them among software systems if needed. However, the serialization techniques of modern Java systems are usually inflexible and inefficient under heavy serialization workloads, as they rely on manually-defined object schemas or omni-functional serializers. To tackle the above problem, we reveal a novel, serialization-specific optimization opportunity in Java. Based on it, we develop JOSer (Just-in-time Object SERializer), an efficient, Just-in-Time (JIT) object serialization technique. At runtime, JOSer generates a set of class-specific, JIT-friendly object serializers (i.e., serialization code), and then continuously optimizes them with the JIT compiler of Java Virtual Machine (JVM). JOSer also shares the metadata of objects under serialization and the serializers under optimization. We evaluate JOSer against six Java serialization techniques including OpenJDK's built-in serialization technique. Overall, JOSer improves the throughput by up to 20~83× in serialization and 43~229× in deserialization. JOSer has been successfully deployed in real-world products, reducing serialization CPU usage of Flink by 35.32~41.14% and latency of search recommendations by 30+ ms. JOSer grounds Apache Fory#8482;, an open-source serialization framework available at https://fory.apache.org/.",
+  "abstract_source_id": "src-abstract-asplos-2026-e7ade684",
   "venue": "asplos",
   "year": 2026,
   "track_or_session": "Session 9D: Network & Cloud Infrastructure",
@@ -230,6 +232,19 @@
       "official": false,
       "supports": [
         "Indexed abstract used for strict relevance classification and indexed arXiv identifier where available."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2026-e7ade684",
+      "url": "https://api.openalex.org/works/doi:10.1145/3779212.3790179?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "JOSer: Just-In-Time Object Serialization for Heavy Java Serialization Workloads",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:05:32Z",
+      "content_hash": "sha256:1ee4b686d9b1cf39d3a6ae1e15a593512da6f1e8407beaf86efda61e9cc71cc1",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2025-pac-private-algorithms-897438a4",
   "title": "PAC-Private Algorithms",
+  "abstract": "Provable privacy typically requires involved analysis and is often associated with unacceptable accuracy loss. While many empirical verification or approximation methods, such as Membership Inference Attacks (MIA) and Differential Privacy Auditing (DPA), have been proposed, these do not offer rigorous privacy guarantees. In this paper, we apply recently-proposed Probably Approximately Correct (PAC) Privacy to give formal, mechanized, simulation-based proofs for a range of practical, black-box algorithms: K-Means, Support Vector Machines (SVM), Principal Component Analysis (PCA) and Random Forests. To provide these proofs, we present a new simulation algorithm that efficiently determines anisotropic noise perturbation required for any given level of privacy. We provide a proof of correctness for this algorithm and demonstrate that anisotropic noise has substantive benefits over isotropic noise. Stable algorithms are easier to privatize, and we demonstrate privacy amplification resulting from introducing regularization in these algorithms; meaningful privacy guarantees are obtained with small losses in accuracy. We propose new techniques in order to reduce instability in algorithmic output and convert intractable geometric stability verification into efficient deterministic stability verification. Thorough experiments are included, and we validate our provable adversarial inference hardness against state-of-the-art empirical attacks.",
+  "abstract_source_id": "src-abstract-sp-2025-897438a4",
   "venue": "sp",
   "year": 2025,
   "track_or_session": "Cycle 1",
@@ -112,6 +114,19 @@
       "official": true,
       "supports": [
         "DOI, authors, affiliations, abstract, publication date, pages, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2025-897438a4",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "PAC-Private Algorithms",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:47Z",
+      "content_hash": "sha256:d48e5e27e72297ce02860f066764bd9c5cd6e8191e2ebf4b4f15da0fffb6959f",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

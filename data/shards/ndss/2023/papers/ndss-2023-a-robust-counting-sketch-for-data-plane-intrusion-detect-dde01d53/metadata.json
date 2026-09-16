@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2023-a-robust-counting-sketch-for-data-plane-intrusion-detect-dde01d53",
   "title": "A Robust Counting Sketch for Data Plane Intrusion Detection",
+  "abstract": "Demands are increasing to measure per-flow statistics in the data plane of high-speed switches. However, the resource constraint of the data plane is the biggest challenge. Although existing in-data plane solutions improve memory efficiency by accommodating Zipfian distribution of network traffic, they cannot adapt to various flow size distributions due to their static data structure. In other words, they cannot provide robust flow measurement under complex traffic patterns (e.g. under attacks). Recent works suggest dynamic data structure management schemes, but the high complexity is the major obstruction for the data plane deployment. In this paper, we present Count-Less sketch that enables robust and accurate network measurement under a wide variety of traffic distributions without dynamic data structure update. Count-Less applies a novel sketch update strategy, called {em minimum update}, which approximates the conservative update strategy of Count-MIN for fitting into in-network switches. Not only theoretical proof on Count-Less's estimation but also comprehensive experimental results are presented in terms of estimation accuracy and throughput of Count-Less, compared to Count-Min (baseline), Elastic sketch, and FCM sketch. More specifically, experiment results on security applications including estimation errors under various skewness parameters are provided. Count-Less is much more accurate in all measurement tasks than Count-Min and outperforms FCM sketch and Elastic sketch, state-of-the-art algorithms without the help of any special hardware like TCAM. To prove its feasibility in the data plane of a high-speed switch, Count-Less prototype on an ASIC-based programmable switch (Tofino) is implemented in P4 language and evaluated. In terms of data plane latency, Count-Less is 1.53x faster than FCM, while consuming 1.56x less resources such as hash bits, SRAM, and ALU of a programmable switch.",
+  "abstract_source_id": "src-abstract-ndss-2023-dde01d53",
   "venue": "ndss",
   "year": 2023,
   "track_or_session": "Cloud and Edge Computing",
@@ -168,6 +170,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2023-dde01d53",
+      "url": "https://www.ndss-symposium.org/ndss-paper/a-robust-counting-sketch-for-data-plane-intrusion-detection/",
+      "kind": "paper-page",
+      "title": "A Robust Counting Sketch for Data Plane Intrusion Detection",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:16:37Z",
+      "content_hash": "sha256:5c2d4b9119a01292f36de3782b6a3ed388c04a64a054753ecc9c8f0decec64d8",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

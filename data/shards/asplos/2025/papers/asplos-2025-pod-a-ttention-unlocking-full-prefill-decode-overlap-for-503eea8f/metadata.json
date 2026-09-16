@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2025-pod-a-ttention-unlocking-full-prefill-decode-overlap-for-503eea8f",
   "title": "POD-Attention: Unlocking Full Prefill-Decode Overlap for Faster LLM Inference",
+  "abstract": "Each request in LLM inference goes through two phases: compute-bound prefill and memory-bandwidth-bound decode. To improve GPU utilization, recent systems use hybrid batching that combines the prefill and decode phases of different requests into the same batch. This approach optimizes linear operations but remains inefficient for attention computation because existing attention kernels specialize execution independently for the prefill and decode phases. In this paper, we present POD-Attention - the first GPU kernel that efficiently computes attention for hybrid batches. POD-Attention aims to maximize the utilization of both compute and memory bandwidth by carefully allocating the GPU's resources such that prefill and decode operations happen concurrently on the same multiprocessor. POD-Attention speeds up attention computation by up to $59\\%$ (mean $28\\%$), enabling higher throughput and lower latency LLM inference compared to the use of independently optimized prefill and decode attention kernels.",
+  "abstract_source_id": "src-abstract-asplos-2025-503eea8f",
   "venue": "asplos",
   "year": 2025,
   "track_or_session": "Session 7A: Serving LLMs",
@@ -188,6 +190,19 @@
       "official": false,
       "supports": [
         "Indexed abstract and open-access links used for relevance classification and ancillary-link discovery."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2025-503eea8f",
+      "url": "https://api.openalex.org/works?filter=title.search:POD-Attention%3A%20Unlocking%20Full%20Prefill-Decode%20Overlap%20for%20Faster%20LLM%20Inference&select=id,title,abstract_inverted_index&per-page=3&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "POD-Attention: Unlocking Full Prefill-Decode Overlap for Faster LLM Inference",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:02:42Z",
+      "content_hash": "sha256:66d1e8ab3a314c8626bbe9177d61c58bd6b891404856fcd3d64afca772da0b84",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

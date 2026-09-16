@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2023-we-really-need-to-talk-about-session-tickets-a-large-sca-1d3c0c94",
   "title": "We Really Need to Talk About Session Tickets: A Large-Scale Analysis of Cryptographic Dangers with TLS Session Tickets",
+  "abstract": "Session tickets improve the performance of the TLS protocol. They allow abbreviating the handshake by using secrets from a previous session. To this end, the server encrypts the secrets using a Session Ticket Encryption Key (STEK) only know to the server, which the client stores as a ticket and sends back upon resumption. The standard leaves details such as data formats, encryption algorithms, and key management to the server implementation.\n\nTLS session tickets have been criticized by security experts, for undermining the security guarantees of TLS. An adversary, who can guess or compromise the STEK, can passively record and decrypt TLS sessions and may impersonate the server. Thus, weak implementations of this mechanism may completely undermine TLS security guarantees.\n\nWe performed the first systematic large-scale analysis of the cryptographic pitfalls of session ticket implementations. (1) We determined the data formats and cryptographic algorithms used by 12 open-source implementations and designed online and offline tests to identify vulnerable implementations. (2) We performed several large-scale scans and collected session tickets for extended offline analyses.\n\nWe found significant differences in session ticket implementations and critical security issues in the analyzed servers. Vulnerable servers used weak keys or repeating keystreams in the used tickets, allowing for session ticket decryption. Among others, our analysis revealed a widespread implemen tation flaw within the Amazon AWS ecosystem that allowed for passive traffic decryption for at least 1.9% of the Tranco Top 100k servers.",
+  "abstract_source_id": "src-abstract-usenix-security-2023-1d3c0c94",
   "venue": "usenix-security",
   "year": 2023,
   "track_or_session": "Network Cryptographic Protocols",
@@ -196,6 +198,19 @@
       "official": true,
       "supports": [
         "authors, affiliations when published, abstract, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2023-1d3c0c94",
+      "url": "https://www.usenix.org/conference/usenixsecurity23/presentation/hebrok",
+      "kind": "paper-page",
+      "title": "We Really Need to Talk About Session Tickets: A Large-Scale Analysis of Cryptographic Dangers with TLS Session Tickets",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:13:43Z",
+      "content_hash": "sha256:64ee4d397c1c36e7de9a022e021e6e99fe20fe86e0236e6604b819af446fc769",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

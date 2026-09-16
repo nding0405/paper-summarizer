@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2026-detecting-inconsistencies-in-arm-cca-s-formally-verified-9602ba83",
   "title": "Detecting Inconsistencies in Arm CCA's Formally Verified Specification",
+  "abstract": "Formal verification offers strong guarantees of correctness, robustness, and security. However, these guarantees depend on specification correctness, and even minor flaws can invalidate proofs and introduce critical vulnerabilities. We present Scope, an automated system that identifies specification inconsistencies by combining formal modeling with rule-based consistency checking. Unlike traditional approaches that rely on implementations, Scope treats the specification as the sole ground truth. It translates the specification into a machine-verifiable model using Verus and SMT solvers, then detects inconsistencies in success/failure conditions, dependency rules, and state transitions. We apply Scope to the Realm Management Monitor (RMM) specifications for Arm's Confidential Compute Architecture (CCA), uncovering 35 previously unknown bugs—including security-critical flaws in ABI semantics and missing state transitions—all confirmed by Arm. Compared to modern LLM-based tools, Scope improves inconsistency-detection precision by 7x over GPT-o1 and up to 40× over leading chat models (LLaMA 3.1, GPT-4o, Claude 3.7).",
+  "abstract_source_id": "src-abstract-asplos-2026-9602ba83",
   "venue": "asplos",
   "year": 2026,
   "track_or_session": "Session 3D: Trusted Execution Environments",
@@ -146,6 +148,19 @@
       "official": false,
       "supports": [
         "Indexed abstract used for strict relevance classification and indexed arXiv identifier where available."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2026-9602ba83",
+      "url": "https://api.openalex.org/works/doi:10.1145/3779212.3790152?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Detecting Inconsistencies in Arm CCA's Formally Verified Specification",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:05:07Z",
+      "content_hash": "sha256:f8247c1cac1d4262bc81b2ec449fa540885e09b3e03a77828ddf78efd058460c",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-kernelrca-facilitating-root-cause-analysis-of-memory-cor-253789f6",
   "title": "KernelRCA: Facilitating Root Cause Analysis of Memory Corruptions in Linux Kernel with Contextual Causality Chain",
+  "abstract": "Continuous fuzzing infrastructure has found a large number of bugs. In this case, automatic root cause analysis (RCA) has been proposed to reduce the expensive manual effort to understand the root cause of a bug. However, existing root-cause representations are designed as isolated forms. Analysts still need to manually infer the integrated bug-triggering procedure including calling context and data dependency, which is very difficult for OS kernels due to their complexity.\n\nIn this paper, we propose contextual causality chain (CC-chain), a novel root-cause representation to intuitively reflect the integrated bug-triggering procedure of memory corruptions in the Linux kernel. CC-chain shows the bug-contributing instructions to explain corresponding unexpected behaviors that lead to a bug, as well as calling contexts and data dependencies among these instructions to help analysts rapidly understand how a bug happens. To automatically construct the CC-chain, we design a root cause analysis system KernelRCA including selective tracing, contextual information recovery, and chain-style root cause analysis. KernelRCA successfully diagnoses 54 various kinds of real-world memory corruptions in the Linux kernel and performs better than existing crash reports and KASAN reports. A user study shows that KernelRCA's reports significantly facilitate bug understanding and fixing for human analysts.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-253789f6",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "System Security 1",
@@ -135,6 +137,19 @@
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening",
         "prepublication PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-253789f6",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/gu-kangzheng",
+      "kind": "paper-page",
+      "title": "KernelRCA: Facilitating Root Cause Analysis of Memory Corruptions in Linux Kernel with Contextual Causality Chain",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:24:26Z",
+      "content_hash": "sha256:f9d3194fe67993547c5469c39396c51417be142100ea99ffc0039ac12c554135",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

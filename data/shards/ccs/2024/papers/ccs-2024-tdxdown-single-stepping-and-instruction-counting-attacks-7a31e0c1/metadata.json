@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2024-tdxdown-single-stepping-and-instruction-counting-attacks-7a31e0c1",
   "title": "TDXdown: Single-Stepping and Instruction Counting Attacks against Intel TDX",
+  "abstract": "Trusted Execution Environments are a promising solution for solving the data privacy and trust issues introduced by cloud computing. As a result, all major CPU vendors integrated Trusted Execution Environments (TEEs) into their CPUs. The biggest threat to TEE security are side-channel attacks, of which single-stepping attacks turned out to be the most powerful ones. Enabled by the TEE attacker model, single-stepping attacks allow the attacker to execute the TEE one instruction at a time, enabling numerous controlled- and side-channel based security issues. Intel recently launched Intel TDX, its second generation TEE, which protects whole virtual machines (VMs). To minimize the attack surface to side-channels, TDX comes with a dedicated single-stepping attack countermeasure. In this paper, we systematically analyze the single-stepping countermeasure of Intel TDX and show, for the first time, that both, the built-in detection heuristic as well as the prevention mechanism, can be circumvented. We reliably single-step TDX-protected VMs by deluding the TDX security monitor about the elapsed processing time used as part of the detection heuristic. Moreover, our study reveals a design flaw in the single-stepping countermeasure that turns the prevention mechanism against itself: An inherent side-channel within the prevention mechanism leaks the number of instructions executed by the TDX-protected VM, enabling a novel attack we refer to as StumbleStepping. Both attacks, single-stepping and StumbleStepping, work on the most recent Intel TDX enabled Xeon Scalable CPUs. Using StumbleStepping, we demonstrate a novel end-to-end attack against wolfSSL's ECDSA implementation, exploiting a control flow side-channel in its truncation-based nonce generation algorithm. We provide a systematic study of nonce-truncation implementations, revealing similar leakages in OpenSSL, which we exploit with our single-stepping primitive. Finally, we propose design changes to TDX to mitigate our attacks.",
+  "abstract_source_id": "src-abstract-ccs-2024-7a31e0c1",
   "venue": "ccs",
   "year": 2024,
   "track_or_session": "Cycle 2",
@@ -138,6 +140,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2024-7a31e0c1",
+      "url": "https://api.openalex.org/works/doi:10.1145/3658644.3690230?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "TDXdown: Single-Stepping and Instruction Counting Attacks against Intel TDX",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:12:15Z",
+      "content_hash": "sha256:29e175db39faffedc0551ca2b0cb4b8e4c4d2fb49ec52b011391a829dd7ef58d",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

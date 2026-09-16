@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2023-neuropots-realtime-proactive-defense-against-bit-flip-at-0da753e3",
   "title": "NeuroPots: Realtime Proactive Defense against Bit-Flip Attacks in Neural Networks",
+  "abstract": "Deep neural networks (DNNs) are becoming ubiquitous in various safety- and security-sensitive applications such as self-driving cars and financial systems. Recent studies revealed that bit-flip attacks (BFAs) can destroy DNNs' functionality via DRAM rowhammer—by precisely injecting a few bit-flips into the quantized model parameters, attackers can either degrade the model accuracy to random guessing, or misclassify certain inputs into a target class. BFAs can cause catastrophic consequences if left undetected. However, detecting BFAs is challenging because bit-flips can occur on any weights in a DNN model, leading to a large detection surface. Unlike prior works that attempt to \"patch'' vulnerabilities of DNN models, our work is inspired by the idea of \"honeypot''. Specifically, we propose a proactive defense concept named NeuroPots, which embeds a few \"honey neurons'' as crafted vulnerabilities into the DNN model to lure the attacker into injecting faults in them, thus making detection and model recovery efficient. We utilize NeuroPots to develop a trapdoor-enabled defense framework. We design a honey neuron selection strategy, and propose two methods for embedding trapdoors into the DNN model. Furthermore, since the majority of injected bit flips will concentrate in the trapdoors, we use a checksum-based detection approach to efficiently detect faults in them, and rescue the model accuracy by \"refreshing'' those faulty trapdoors. Our experiments show that trapdoor-enabled defense achieves high detection performance and effectively recovers a compromised model at a low cost across a variety of DNN models and datasets.",
+  "abstract_source_id": "src-abstract-usenix-security-2023-0da753e3",
   "venue": "usenix-security",
   "year": 2023,
   "track_or_session": "More ML Attacks and Defenses",
@@ -154,6 +156,19 @@
       "official": true,
       "supports": [
         "authors, affiliations when published, abstract, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2023-0da753e3",
+      "url": "https://www.usenix.org/conference/usenixsecurity23/presentation/liu-qi",
+      "kind": "paper-page",
+      "title": "NeuroPots: Realtime Proactive Defense against Bit-Flip Attacks in Neural Networks",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:12:11Z",
+      "content_hash": "sha256:8fdabed49d00f11c649e03b3fa3f824ce1d664a9208c386dcb323ce4f3ccc328",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

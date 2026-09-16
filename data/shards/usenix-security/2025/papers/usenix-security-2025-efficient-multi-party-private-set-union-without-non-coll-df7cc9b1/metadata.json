@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-efficient-multi-party-private-set-union-without-non-coll-df7cc9b1",
   "title": "Efficient Multi-Party Private Set Union Without Non-Collusion Assumptions",
+  "abstract": "Multi-party private set union (MPSU) protocol enables m (m > 2) parties, each holding a set, to collectively compute the union of their sets without revealing any additional information to other parties. There are two main categories of multi-party private set union (MPSU) protocols: The first category builds on public-key techniques, where existing works require a super-linear number of public-key operations, resulting in their poor practical efficiency. The second category builds on oblivious transfer and symmetric-key techniques. The only work in this category, proposed by Liu and Gao (ASIACRYPT 2023), features the best concrete performance among all existing protocols, but still has super-linear computation and communication. Moreover, it does not achieve the standard semi-honest security, as it inherently relies on a non-collusion assumption, which is unlikely to hold in practice.\n\nThere remain two significant open problems so far: no MPSU protocol achieves semi-honest security based on oblivious transfer and symmetric-key techniques, and no MPSU protocol achieves both linear computation and linear communication complexity. In this work, we resolve both of them.\n\nWe propose the first MPSU protocol based on oblivious transfer and symmetric-key techniques in the standard semi-honest model. This protocol is 3.9-10.0 x faster than Liu and Gao in the LAN setting. Concretely, our protocol requires only 4.4 seconds in online phase for 3 parties with sets of 2^20 items each. We propose the first MPSU protocol achieving both linear computation and linear communication complexity, based on public-key operations. This protocol has the lowest overall communication costs and shows a factor of 3.0-36.5x improvement in terms of overall communication compared to Liu and Gao. We implement our protocols and conduct an extensive experiment to compare the performance of our protocols and the state-of-the-art. To the best of our knowledge, our code is the first correct and secure implementation of MPSU that reports on large-size experiments.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-df7cc9b1",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Crypto 1: Zero Knowledge and Multi-Party Computation",
@@ -133,6 +135,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-df7cc9b1",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/dong-minglang",
+      "kind": "paper-page",
+      "title": "Efficient Multi-Party Private Set Union Without Non-Collusion Assumptions",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:19:33Z",
+      "content_hash": "sha256:16da040c724ba98994be8e8f60d8ac805900c1c0ba0c9bf093f872a3b85eeef5",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

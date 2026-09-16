@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2026-odysseus-jailbreaking-commercial-multimodal-llm-integrat-f8bce191",
   "title": "Odysseus: Jailbreaking Commercial Multimodal LLM-integrated Systems via Dual Steganography",
+  "abstract": "Multimodal large language models (MLLMs), which combine text with other modalities, such as images, have demonstrated powerful capabilities and are increasingly adopted in real-world commercial systems. However, their growing accessibility also raises concerns about misuse, such as generating harmful content. To mitigate these risks, alignment techniques are commonly applied to align model behavior with human values. Despite these efforts, recent studies have shown that jailbreak attacks can circumvent alignment and elicit unsafe outputs. Currently, most existing jailbreak methods are tailored for open-source models and exhibit limited effectiveness against commercial MLLM-integrated systems, which often employ additional filters. These filters can detect and prevent malicious input and output content, significantly reducing jailbreak threats.\n\nIn this paper, we reveal that the success of these safety filters heavily relies on a critical assumption that malicious content must be explicitly visible in either the input or the output. This assumption, while often valid for traditional LLM-integrated systems, breaks down in MLLM-integrated systems, where attackers can leverage multiple modalities to conceal adversarial intent, leading to a false sense of security in existing MLLM-integrated systems. To challenge this assumption, we propose texttt{Odysseus}, a novel jailbreak paradigm that introduces dual steganography to covertly embed malicious queries and responses into benign-looking images. Our method proceeds through four stages: textbf{(1)} malicious query encoding, textbf{(2)} steganography embedding, textbf{(3)} model interaction, and textbf{(4)} response extraction. We first encode the adversary-specified malicious prompt into binary matrices and embed them into images using a steganography model. The modified image will be fed into the victim MLLM-integrated system. We encourage the victim MLLM-integrated system to implant the generated illegitimate content into a carrier image (via steganography), which will be used for attackers to decode the hidden response locally. Extensive experiments on benchmark datasets demonstrate that our texttt{Odysseus} successfully jailbreaks several pioneering and realistic MLLM-integrated systems, including GPT-4o, Gemini-2.0-pro, Gemini-2.0-flash, and Grok-3, achieving up to 99% attack success rate. It exposes a fundamental blind spot in existing defenses, and calls for rethinking cross-modal security in MLLM-integrated systems.",
+  "abstract_source_id": "src-abstract-ndss-2026-f8bce191",
   "venue": "ndss",
   "year": 2026,
   "track_or_session": "Fall submission cycle",
@@ -181,6 +183,19 @@
       "official": false,
       "supports": [
         "independent proceedings identity reconciliation"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2026-f8bce191",
+      "url": "https://www.ndss-symposium.org/ndss-paper/odysseus-jailbreaking-commercial-multimodal-llm-integrated-systems-via-dual-steganography/",
+      "kind": "paper-page",
+      "title": "Odysseus: Jailbreaking Commercial Multimodal LLM-integrated Systems via Dual Steganography",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:22:38Z",
+      "content_hash": "sha256:667d5d7255e5d130d37a8d223730cbfa1663cb337552495917aa59ea4dc1386b",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

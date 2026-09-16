@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2025-incognitos-a-practical-unikernel-design-for-full-system-7fb3097d",
   "title": "IncognitOS: A Practical Unikernel Design for Full-System Obfuscation in Confidential Virtual Machines",
+  "abstract": "Recent works have repeatedly proven the practicality of side-channel attacks in undermining the confidentiality guarantees of Trusted Execution Environments such as Intel SGX. Meanwhile, the trusted execution in the cloud is witnessing a trend shift towards confidential virtual machines (CVMs). Unfortunately, several side-channel attacks have survived the shift and are feasible even for CVMs, along with the new attacks discovered on the CVM architectures. Previous works have explored defensive measures for securing userspace enclaves (i.e., Intel SGX) against side-channel attacks. However, the design space for a CVM-based obfuscation execution engine is largely unexplored. This paper proposes a unikernel design named NCOGNITOS provide full-system obfuscation for CVM-based cloud workloads. INCOGNITOS fully embraces unikernel principles such as minimized TCB and direct hardware access to render full-system obfuscation feasible. INCOGNITOS retrofits two key OS components, the scheduler and memory management, to implement a novel adaptive obfuscation scheme. INCOGNITOS's scheduling is designed to be self-sovereign from the timer interrupts from the untrusted hypervisor with its synchronous tick delivery. This allows INCOGNITOS to reliably monitor the frequency of the hypervisor's possession of execution control (i.e., VMExits) and adjust the frequency of memory rerandomization performed by the paging subsystem, which transparently performs memory rerandomization through direct MMU access. The resulting INCOGNITOS design makes a case for a self-obfuscating unikernel as a secure CVM deployment strategy while further advancing the obfuscation technique compared to previous works. Evaluation results demonstrate INCOGNITOS'S resilience against CVM attacks and show that its adaptive obfuscation scheme enables practical performance for real-world programs.",
+  "abstract_source_id": "src-abstract-sp-2025-7fb3097d",
   "venue": "sp",
   "year": 2025,
   "track_or_session": "Cycle 2",
@@ -133,6 +135,19 @@
       "official": true,
       "supports": [
         "DOI, authors, affiliations, abstract, publication date, pages, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2025-7fb3097d",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "INCOGNITOS: A Practical Unikernel Design for Full-System Obfuscation in Confidential Virtual Machines",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:47Z",
+      "content_hash": "sha256:d48e5e27e72297ce02860f066764bd9c5cd6e8191e2ebf4b4f15da0fffb6959f",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

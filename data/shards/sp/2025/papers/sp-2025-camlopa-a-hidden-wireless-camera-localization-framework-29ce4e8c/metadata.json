@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2025-camlopa-a-hidden-wireless-camera-localization-framework-29ce4e8c",
   "title": "CamLoPA: A Hidden Wireless Camera Localization Framework via Signal Propagation Path Analysis",
+  "abstract": "Hidden wireless cameras pose significant privacy threats, necessitating effective detection and localization methods. However, existing localization solutions often require impractical activity spaces, expensive specialized devices, or pre-collected training data, limiting their practical deployment. To address these limitations, we introduce CamLopa, a training-free wireless camera localization framework that operates with minimal activity space constraints using low-cost, commercial-off-the-shelf (COTS) devices. CamLopa can achieve detection and localization in just 45 seconds of user activities with a Raspberry Pi board. During this short period, it analyzes the causal relationship between wireless traffic and user movement to detect the presence of a hidden camera. Upon detection, CamLopa utilizes a novel azimuth localization model based on wireless signal propagation path analysis for localization. This model leverages the time ratio of user paths crossing the First Fresnel Zone (FFZ) to determine the camera's azimuth angle. Subsequently, CamLopa refines the localization by identifying the camera's quadrant. We evaluate CamLopa across various devices and environments, demonstrating its effectiveness with a 95.37% detection accuracy for snooping cameras and an average localization error of 17.23°, under the significantly reduced activity space requirements and without the need for training. Our code and demo are available at https://github.com/CamLoPA/CamLoPA-Code.",
+  "abstract_source_id": "src-abstract-sp-2025-29ce4e8c",
   "venue": "sp",
   "year": 2025,
   "track_or_session": "Cycle 2",
@@ -301,6 +303,19 @@
       "official": true,
       "supports": [
         "DOI, authors, affiliations, abstract, publication date, pages, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2025-29ce4e8c",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "CamLopa: A Hidden Wireless Camera Localization Framework via Signal Propagation Path Analysis",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:42Z",
+      "content_hash": "sha256:d62dac834635b4cd1890a53da454ceae7aaa151189662d990ac591dfd5cb6b3e",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

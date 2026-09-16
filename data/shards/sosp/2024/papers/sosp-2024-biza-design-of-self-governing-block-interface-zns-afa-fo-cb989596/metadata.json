@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sosp-2024-biza-design-of-self-governing-block-interface-zns-afa-fo-cb989596",
   "title": "BIZA: Design of Self-Governing Block-Interface ZNS AFA for Endurance and Performance",
+  "abstract": "All-flash array (AFA) has become one of the most popular storage forms in diverse computing domains. While traditional AFA implementations adopt the block interface to seamlessly integrate with most existing software, this interface hinders the host from managing SSD internal tasks explicitly, which results in both short endurance and poor performance. In comparison, ZNS AFA, such as RAIZN, adopts ZNS SSDs and exposes the ZNS interface to the users. This solution attempts to raise the level of responsibility for SSD management. Unfortunately, it faces severe compatibility issues as most upper-layer software only takes block I/O accesses for granted. In this work, we propose BIZA, a self-governing blockinterface ZNS AFA to proactively schedule I/O requests and SSD internal tasks via the ZNS interface while exposing the user-friendly block interface to upper-layer software. BIZA achieves both long endurance and high performance by exploiting the zone random write area (ZRWA) and internal parallelisms of ZNS SSDs. Specifically, to mitigate write amplification, BIZA proposes a ghost-cache-based algorithm to identify hot data and absorb their updates in the scarce ZRWA. BIZA also employs a novel guess-and-verify mechanism to detect the mappings between zones and I/O resources at a low cost. Thereafter, BIZA can serve write requests and internal tasks in parallel with our customized I/O scheduler for high throughput and low latency. The evaluation results show that BIZA can reduce write amplification by 42.7% while achieving 93.2% higher throughput and 62.8% lower tail latency, compared to the state-of-the-art AFA solutions.",
+  "abstract_source_id": "src-abstract-sosp-2024-cb989596",
   "venue": "sosp",
   "year": 2024,
   "track_or_session": "Session 5: File and Storage Systems 11:00 - 12:30 Session Chair: Gala Yadgar",
@@ -272,6 +274,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-sosp-2024-cb989596",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "BIZA: Design of Self-Governing Block-Interface ZNS AFA for Endurance and Performance",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:12Z",
+      "content_hash": "sha256:aa9c23a45f6ec9973f40e6c9520c69d42bb49fc1f526891570edfdb1976cff82",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-task-oriented-training-data-privacy-protection-for-cloud-395dd510",
   "title": "Task-Oriented Training Data Privacy Protection for Cloud-based Model Training",
+  "abstract": "Cloud-based model training presents significant privacy challenges, as users must upload personal data for training high-performance models. Once uploaded, this data goes beyond the user's control and could be misused for other purposes. Users need tools to control the usage scope of the uploaded training data, preventing unauthorized training without compromising authorized training. Unfortunately, existing solutions overlook this issue.\n\nIn this paper, we propose and achieve a unique privacy-utility goal tailored for cloud-based model training, considering both user demand and legal requirements. Our approach provides task-level control of training data usage, simultaneously ensuring each protected data exhibits noticeable visual changes to address fundamental privacy concerns. We introduce carefully designed noise to each training data for privacy protection. These noises are designed to provide visual protection while minimizing the shifts in the feature domain through adversarial optimization. By adjusting the correlation between noise and class labels, we guide the model to learn the correct features for the target task while preventing unauthorized privacy task training. Additionally, we introduce the overflow matrix for compatibility with existing encoding and transmission frameworks. Real-world experiments demonstrate that it can simultaneously protect visual privacy (SSIM is 0.028) and prevent unauthorized model training (protection success rate achieved 100%), while the accuracy of the target task model is slightly reduced by about 1.8%.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-395dd510",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "ML and AI Privacy 1: Federated Learning and Protecting Data",
@@ -196,6 +198,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-395dd510",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/wang-zhiqiang",
+      "kind": "paper-page",
+      "title": "Task-Oriented Training Data Privacy Protection for Cloud-based Model Training",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:22:09Z",
+      "content_hash": "sha256:ccecbc5acbc853b07395e61065eedd6bddd03331ad3c1089dfe6214d790de3d8",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

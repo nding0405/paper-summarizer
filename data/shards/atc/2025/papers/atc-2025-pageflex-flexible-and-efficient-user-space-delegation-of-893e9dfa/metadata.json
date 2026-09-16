@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "atc-2025-pageflex-flexible-and-efficient-user-space-delegation-of-893e9dfa",
   "title": "PageFlex: Flexible and Efficient User-space Delegation of Linux Paging Policies with eBPF",
+  "abstract": "To increase platform memory efficiency, hyperscalers like Google and Meta transparently demote \"cold\" application data to cheaper cost-per-byte memory tiers like compressed memory and NVMe SSDs. These systems rely on standard kernel paging policies and mechanisms to maximize the achievable memory savings without hurting application performance. Although the literature promises better policies, implementing and deploying them within the Linux kernel is challenging. Delegating policies and mechanisms to user space, through userfaultfd or library-based approaches, incurs overheads and may require modifying application code.\n\nWe present PageFlex, a framework for delegating Linux paging policies to user space with minimal overhead and full compatibility with existing real-world deployments. PageFlex uses eBPF to delegate policy decisions while providing low-overhead access to in-kernel memory state and access information, thus balancing flexibility and performance. Additionally, PageFlex supports different paging strategies for distinct memory regions and application phases. We show that PageFlex can delegate existing kernel-based policies with little (< 1%) application slowdown, effectively realizing the benefits of state-of-the-art policies like Hyperbolic caching and Leap prefetching, and unlocking application-specific benefits through region- and phase-aware policy specialization.",
+  "abstract_source_id": "src-abstract-atc-2025-893e9dfa",
   "venue": "atc",
   "year": 2025,
   "track_or_session": "Operating Systems: Scheduling, Security, and Extensibility",
@@ -264,6 +266,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-atc-2025-893e9dfa",
+      "url": "https://www.usenix.org/conference/atc25/presentation/yelam",
+      "kind": "paper-page",
+      "title": "PageFlex: Flexible and Efficient User-space Delegation of Linux Paging Policies with eBPF",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:00:01Z",
+      "content_hash": "sha256:38600e84b99445c49dbc123ab5ebd47b110ec216fe4da58ed2ba112c1b53bac8",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

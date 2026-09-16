@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-unbalanced-fuzzy-private-set-intersection-for-l-infinity-a096ba56",
   "title": "Unbalanced Fuzzy Private Set Intersection for L_infinity Distance: Achieving Sublinear Communication with Large Set Size",
+  "abstract": "Fuzzy private set intersection (PSI) is a cryptographic protocol that enables two parties to compute the intersection of their sets under approximate matching, with variants including standard fuzzy PSI and fuzzy PSI with sender privacy (PSI-SP). Although recent advances have led to efficient fuzzy PSI protocols, most are designed for the balanced case where both sets are of similar size. In practice, however, many applications involve highly unbalanced sets (e.g., where the receiver's set is much larger than the sender's, or vice versa). This work focuses on unbalanced fuzzy PSI for the l ∞ metric. We observe that communication in existing protocols is dominated by the transmission of oblivious key-value stores (OKVS), especially when set sizes are imbalanced. This overhead can be reduced using batch private information retrieval (BatchPIR) if the OKVS is sparse. However, such optimization requires spatial hashing with specific properties, and few existing spatial hashing schemes satisfy these requirements.\n\nIn this work, we reformulate spatial hashing and propose two new schemes: one non-interactive and one interactive, each suited to different input set conditions. Based on these, we design two unbalanced fuzzy PSI protocols that combine sparse OKVS with BatchPIR to achieve sublinear communication in the size of the larger set. The first protocol is suitable for scenarios where the receiver holds a larger set, while the second is designed for cases where the sender possesses more items. Our protocols significantly outperform state-of-the-art in communication and runtime. For example, in a 100 Mbps network with parameters (N, M, d, σ) = (2 20 , 2 5 , 2, 10), our protocol based on our non-interactive spatial hashing reduces communication from 16,128 MB (Baarsen and Pu, Eurocrypto'24) to 0.35 MB. Furthermore, our fuzzy PSI protocol, which utilizes our interactive spatial hashing approach, achieves at least 31× faster online runtime and 1762× lower communication than Gao et al. (Asiacrypt'25). For our fuzzy PSI protocol with sender privacy, we outperform Piske et al. (CCS'25) with at least 4× faster online runtime and 6× lower communication.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-a096ba56",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Privacy Anonymity 4",
@@ -135,6 +137,19 @@
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening",
         "prepublication PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-a096ba56",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/meng",
+      "kind": "paper-page",
+      "title": "Unbalanced Fuzzy Private Set Intersection for L_infinity Distance: Achieving Sublinear Communication with Large Set Size",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:26:01Z",
+      "content_hash": "sha256:7d391b4f1d9b1f9fe75ad77c3ab77162022f4da188a5c679b510aa624897783f",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

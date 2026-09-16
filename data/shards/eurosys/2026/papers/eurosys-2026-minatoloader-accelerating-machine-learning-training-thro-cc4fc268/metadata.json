@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "eurosys-2026-minatoloader-accelerating-machine-learning-training-thro-cc4fc268",
   "title": "MinatoLoader: Accelerating Machine Learning Training Through Efficient Data Preprocessing",
+  "abstract": "Machine learning (ML) frameworks, such as PyTorch and TensorFlow, rely on data loaders to preprocess data before feeding it to accelerators. When preprocessing is inefficiently pipelined, GPUs can remain idle over long periods of time, leading to substantial training delays. For example, PyTorch's default data loaders can cause up to 76% GPU idleness. A key bottleneck is the variability in preprocessing time across samples within the same dataset. Existing data loaders are oblivious to this variability, training all samples uniformly. In this case, a single slow sample can stall the entire batch, causing head-of-line blocking.",
+  "abstract_source_id": "src-abstract-eurosys-2026-cc4fc268",
   "venue": "eurosys",
   "year": 2026,
   "track_or_session": null,
@@ -159,6 +161,19 @@
       "official": false,
       "supports": [
         "Publisher-deposited proceedings identity and print publication date."
+      ]
+    },
+    {
+      "id": "src-abstract-eurosys-2026-cc4fc268",
+      "url": "https://api.openalex.org/works/doi:10.1145/3767295.3769376?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "MinatoLoader: Accelerating Machine Learning Training Through Efficient Data Preprocessing",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:20:44Z",
+      "content_hash": "sha256:d350bccd3e529d1dd4c08cd8d8c044275094284301d26599437d28c3f24dc0bb",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

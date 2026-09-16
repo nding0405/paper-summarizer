@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2026-taming-the-long-tail-efficient-reasoning-rl-training-wit-0c2d78ef",
   "title": "Taming the Long-Tail: Efficient Reasoning RL Training with Adaptive Drafter",
+  "abstract": "The emergence of Large Language Models (LLMs) with strong reasoning capabilities marks a significant milestone, unlocking new frontiers in complex problem-solving. However, training these reasoning models, typically using Reinforcement Learning (RL), encounters critical efficiency bottlenecks: response generation during RL training exhibits a persistent long-tail distribution, where a few very long responses dominate execution time, wasting resources and inflating costs. To address this, we propose TLT, a system that accelerates reasoning RL training losslessly by integrating adaptive speculative decoding. Applying speculative decoding in RL is challenging due to the dynamic workloads, evolving target model, and draft model training overhead. TLT overcomes these obstacles with two synergistic components: (1) Adaptive Drafter, a lightweight draft model trained continuously on idle GPUs during long-tail generation to maintain alignment with the target model at no extra cost; and (2) Adaptive Rollout Engine, which maintains a memory-efficient pool of pre-captured CUDAGraphs and adaptively select suitable SD strategies for each input batch. Evaluations demonstrate that TLT achieves over 1.7x end-to-end RL training speedup over state-of-the-art systems, preserves the model accuracy, and yields a high-quality draft model as a free byproduct suitable for efficient deployment. Code is released at https://github.com/mit-han-lab/fastrl.",
+  "abstract_source_id": "src-abstract-asplos-2026-0c2d78ef",
   "venue": "asplos",
   "year": 2026,
   "track_or_session": "Session 3B: Mixture-of-Experts & Efficient Inference",
@@ -278,6 +280,19 @@
       "official": false,
       "supports": [
         "Indexed abstract used for strict relevance classification and indexed arXiv identifier where available."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2026-0c2d78ef",
+      "url": "https://api.openalex.org/works/doi:10.1145/3779212.3790231?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Taming the Long-Tail: Efficient Reasoning RL Training with Adaptive Drafter",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:06:57Z",
+      "content_hash": "sha256:07083afafe59a41f705198c5a54a2d3ae0268a3e8ec6a621ab8e276c84fb95f8",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

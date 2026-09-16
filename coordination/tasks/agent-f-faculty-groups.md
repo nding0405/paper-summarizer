@@ -68,9 +68,7 @@ search are `NOT_STARTED`, not a verified negative.
 Entity references require full-root validation:
 
 ```sh
-PYTHONPATH=src python3 -m systems_phd_explorer.cli validate \
-  --root data/shards \
-  --profile draft
+./mvnw -q compile exec:java -Dexec.args="validate --root data/shards"
 ```
 
 ## Handoff

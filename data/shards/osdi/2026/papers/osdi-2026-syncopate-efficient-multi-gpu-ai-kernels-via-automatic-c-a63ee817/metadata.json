@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2026-syncopate-efficient-multi-gpu-ai-kernels-via-automatic-c-a63ee817",
   "title": "Syncopate: Efficient Multi-GPU AI Kernels via Automatic Chunk-Centric Compute-Communication Overlap",
+  "abstract": "Communication has become a first-order bottleneck in large-scale GPU workloads, and existing distributed compilers address it mainly by overlapping whole compute and communication kernels at the stream level. This coarse granularity incurs extra kernel launches, forces device-wide synchronizations at kernel boundaries, and leaves substantial slack when the slowest tile or kernel stretches the communication tail. We present Syncopate, a compiler and runtime that enable automatic fine-grained overlap around a single fused compute kernel. Syncopate introduces a communication chunk abstraction that decouples communication granularity from kernel structure and backend mechanisms, allowing chunk-level plans to be ported from existing distributed compilers, written directly by users, or instantiated from reusable templates. Given a local Triton kernel and a chunk schedule, Syncopate performs transformations to align computation with chunk availability. Implemented as a source-to-source compiler on Triton, Syncopate delivers an average end-to-end speedup of 1.3× and up to 4.7× on multi-GPU workloads. Our code is open-sourced at https://github.com/tie-pilot-qxw/syncopate .",
+  "abstract_source_id": "src-abstract-osdi-2026-a63ee817",
   "venue": "osdi",
   "year": 2026,
   "track_or_session": "LLM Training at Scale",
@@ -188,6 +190,19 @@
       "official": true,
       "supports": [
         "Official proceedings availability and canonical conference versions."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2026-a63ee817",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/qiang",
+      "kind": "paper-page",
+      "title": "Syncopate: Efficient Multi-GPU AI Kernels via Automatic Chunk-Centric Compute-Communication Overlap",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:09:03Z",
+      "content_hash": "sha256:abe327c978a5dcba266f5197b8375bc5957e0481b57d0a504b995ad519c2beb4",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

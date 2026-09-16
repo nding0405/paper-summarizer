@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2025-selectively-uniform-concurrency-testing-a219eda4",
   "title": "Selectively Uniform Concurrency Testing",
+  "abstract": "Buggy behaviors in concurrent programs are notoriously elusive, as they may manifest only in few of exponentially many possible thread interleavings. Randomized concurrency testing techniques probabilistically sample from (instead of enumerating) the vast search space and have been shown to be both an effective as well as a scalable class of algorithms for automated discovery of concurrency bugs. In this work we focus on the key desirable characteristic of black-box randomized concurrency testing algorithms --- uniformity of exploration. Unfortunately, prior randomized algorithms acutely fall short on uniformity and, as a result, struggle to expose bugs that only manifest in few, infrequent interleavings. Towards this, we show that, indeed, a sampling strategy for uniformly sampling over the interleaving space, is eminently achievable with minimal additional information for broad classes of programs. Moreover, when applied to a carefully selected subset of program events, this interleaving-uniformity strategy allows for an effective exploration of program behaviors. We present an online randomized concurrency testing algorithm named Selectively Uniform Random Walk (SURW) that builds on these insights. SURW is the first of its class to achieve interleaving-uniformity for a wide class of programs, or an arbitrary subset of events thereof. This property translates to effective behavioral exploration should a subset with desirable characteristics be selected. Extensive evaluation on leading concurrency benchmarks suggests SURW is able to expose more bugs and significantly faster than comparable randomized algorithms. In addition, we show that SURW is able to explore both the space of interleavings and behaviors more uniformly on real-world programs.",
+  "abstract_source_id": "src-abstract-asplos-2025-a219eda4",
   "venue": "asplos",
   "year": 2025,
   "track_or_session": "Session 6D: Testing",
@@ -146,6 +148,19 @@
       "official": false,
       "supports": [
         "Indexed abstract and open-access links used for relevance classification and ancillary-link discovery."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2025-a219eda4",
+      "url": "https://api.openalex.org/works/doi:10.1145/3669940.3707214?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Selectively Uniform Concurrency Testing",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:03:53Z",
+      "content_hash": "sha256:1af752ef83fe3baf558055254dcf3db75f478fa787d0fb32c8334a107b070bdd",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

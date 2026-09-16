@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2024-supporting-descendants-in-simd-accelerated-jsonpath-59f6cc30",
   "title": "Supporting Descendants in SIMD-Accelerated JSONPath",
+  "abstract": "Harnessing the power of SIMD can bring tremendous performance gains in data processing. In querying streamed JSON data, the state of the art leverages SIMD to fast forward significant portions of the document. However, it does not provide support for descendant, which excludes many real-life queries and makes formulating many others hard. In this work, we aim to change this: we consider the fragment of JSONPath that supports child, descendant, wildcard, and labels. We propose a modular approach based on novel depth-stack automata that process a stream of events produced by a state-driven classifier, allowing fast forwarding parts of the input document irrelevant at the current stage of the computation. We implement our solution in Rust and compare it with the state of the art, confirming that our approach allows supporting descendants without sacrificing performance, and that reformulating natural queries using descendants brings impressive performance gains in many cases.",
+  "abstract_source_id": "src-abstract-asplos-2024-59f6cc30",
   "venue": "asplos",
   "year": 2024,
   "track_or_session": "Session 8C: High Performance Systems",
@@ -138,6 +140,19 @@
       "official": false,
       "supports": [
         "Indexed alternate-version and institutional-copy links; not used as the authoritative relevance source."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2024-59f6cc30",
+      "url": "https://api.openalex.org/works/doi:10.1145/3623278.3624754?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Supporting Descendants in SIMD-Accelerated JSONPath",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:00:34Z",
+      "content_hash": "sha256:1434587b69db8f7cf24e148d46f805593806dded92d560d6b2f134ddbe5cf30a",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

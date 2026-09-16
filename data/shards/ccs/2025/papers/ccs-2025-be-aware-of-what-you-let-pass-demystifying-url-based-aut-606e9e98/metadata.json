@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2025-be-aware-of-what-you-let-pass-demystifying-url-based-aut-606e9e98",
   "title": "Be Aware of What You Let Pass: Demystifying URL-based Authentication Bypass Vulnerability in Java Web Applications",
+  "abstract": "URL-based authentication provides a centralized and flexible way to safeguard sensitive resources in Java web applications by enforcing authentication checks based on URL paths. However, inconsistencies in handling flexible routing features (e.g., removing /./) between URL routing and authentication can be exploited to bypass authentication checks, resulting in URL-based Authentication Bypass Vulnerabilities (UABVulns). These vulnerabilities allow attackers to access sensitive resources without authentication, leading to serious security breaches. In this paper, we conduct the first in-depth study of 53 real-world UABVulns in Java web applications. Our study uncovers the root causes of UABVulns and identifies three key findings regarding URL routing, authentication, and sanitization. Guided by these findings, we design and implement UABScan, a static analysis tool that detects UABVulns by matching routing and authentication inconsistencies through pattern-based analysis. We evaluate UABScan on 529 popular Java web applications and successfully report 94 UABVulns across 72 applications, including 35 verified high-risk 0-days. Through manual investigation, UABScan achieves a recall of 87.50% and a precision of 80.00%, and significantly outperforms the state-of-the-art tool. To date, 31 CVE IDs have been assigned.",
+  "abstract_source_id": "src-abstract-ccs-2025-606e9e98",
   "venue": "ccs",
   "year": 2025,
   "track_or_session": "Cycle 2",
@@ -148,6 +150,19 @@
         "published-order authors",
         "publication-time affiliations",
         "publication date and page span"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2025-606e9e98",
+      "url": "https://api.openalex.org/works/doi:10.1145/3719027.3765199?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Be Aware of What You Let Pass: Demystifying URL-based Authentication Bypass Vulnerability in Java Web Applications",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:12:55Z",
+      "content_hash": "sha256:6329fd283c99072e6c8767da16df4732151fb47b64591d94c563ca7233b7c3a2",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

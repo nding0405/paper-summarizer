@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sosp-2024-aceso-achieving-efficient-fault-tolerance-in-memory-disa-09f77a21",
   "title": "Aceso: Achieving Efficient Fault Tolerance in Memory-Disaggregated Key-Value Stores",
+  "abstract": "Disaggregated memory (DM) has garnered increasing attention due to high resource utilization. Fault tolerance is critical for key-value (KV) stores on DM since machine failures are common in datacenters. Existing KV stores on DM are generally based on replication to achieve fault tolerance, which however suffer from high memory space and performance overheads. In this paper, we investigate the efficiency of different fault-tolerant mechanisms on DM and reveal that checkpointing and erasure coding work best for the index and KV pairs respectively. Based on these observations, we present Aceso, a DM-based KV store that employs a hybrid fault-tolerant mechanism, combining checkpointing for the index and erasure coding for KV pairs. However, applying this hybrid mechanism to DM introduces multiple challenges, i.e., performance interference and data loss of checkpointing, slow space reclamation and failure recovery of erasure coding. To address these challenges, Aceso leverages a differential checkpointing scheme to reduce performance interference incurred by the bandwidth consumption to transmit checkpoints, a versioning approach to recover lost index updates on failures, a delta-based space reclamation mechanism to reclaim obsolete KV pairs with negligible overhead, and a tiered recovery scheme to minimize user disruption. Our experiments show that Aceso simultaneously achieves up to 2.7× throughput improvement, up to 54% tail latency reduction, and 44% memory space savings compared with the state-of-the-art replication-based KV store on DM.",
+  "abstract_source_id": "src-abstract-sosp-2024-09f77a21",
   "venue": "sosp",
   "year": 2024,
   "track_or_session": "Session 2: Memory 11:00 - 12:30 Session Chair: Sudarsun Kannan",
@@ -188,6 +190,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-sosp-2024-09f77a21",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Aceso: Achieving Efficient Fault Tolerance in Memory-Disaggregated Key-Value Stores",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:12Z",
+      "content_hash": "sha256:aa9c23a45f6ec9973f40e6c9520c69d42bb49fc1f526891570edfdb1976cff82",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

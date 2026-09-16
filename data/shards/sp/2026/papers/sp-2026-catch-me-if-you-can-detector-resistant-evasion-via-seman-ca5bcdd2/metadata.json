@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2026-catch-me-if-you-can-detector-resistant-evasion-via-seman-ca5bcdd2",
   "title": "Catch Me If You Can: Detector-Resistant Evasion via Semantics-Preserving Command Re-Realization",
+  "abstract": "Red teams require evasion techniques to test Security Information and Event Management (SIEM) detection rules, yet existing approaches are (1) manual, (2) rely on stringlevel obfuscations (such as encoding schemes and quoting tricks) that are easily reversed by de-obfuscators, and (3) provide limited rule coverage. This leaves unexplored semanticpreserving evasions that achieve identical effects through different utilities, preventing assessment of whether rules detect attack intent or merely surface patterns. We present Spectra, an automated evasion generator that preserves attack effects while transforming command-line realization through functionally equivalent utilities and argument structures. By reasoning over semantic representations rather than syntactic patterns, Spectra automatically generates more durable and effective evasions. On Windows Sigma process_creation rules, Spectra achieves 72.9 % rule coverage compared to 37.6 % for AMIDES (the state-of-the-art method), with only 4.5% of evasions reversed by de-obfuscators versus 78.1% for AMIDES (17.4 times more resistant). When evaluated against the state-of-the-art evasion detector at its zero-falsepositive operating point, Spectra achieves a detection rate of only 22.7 % compared to 69.9 % for AMIDES. SPECTRA also outperforms five general-purpose LLMs across metrics.",
+  "abstract_source_id": "src-abstract-sp-2026-ca5bcdd2",
   "venue": "sp",
   "year": 2026,
   "track_or_session": "Cycle 2",
@@ -119,6 +121,19 @@
       "official": true,
       "supports": [
         "DOI, published-order authors and affiliations, abstract, publication date, page span, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2026-ca5bcdd2",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Catch Me If You Can: Detector-Resistant Evasion via Semantics-Preserving Command Re-Realization",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:57Z",
+      "content_hash": "sha256:303a9b5e5ef8908a3cfe67f02eb8a87be978a5fe3281c7ecec8c0cdb512517e0",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-wormholes-in-the-file-system-understanding-the-misunders-875c0656",
   "title": "Wormholes in the File System: Understanding the Misunderstanding of Symlinks",
+  "abstract": "Symlinks, a file system feature supported at the operating system level for more than four decades, are deeply integrated across the software stack, making them an indispensable component of modern computing environments. The symlink mechanism is highly flexible, allowing references to nearly any location in the file system and enabling complex resolution behaviors. However, this flexibility also introduces significant misunderstandings for developers, which has led to widespread misuse and become a primary vector for critical security vulnerabilities in file-handling software, e.g., arbitrary file write and code execution.\n\nIn this paper, we present the first systematic study of how symlinks are incorrectly handled and the substantial security risks. Specifically, we study how programming language standard libraries improperly utilize symlink-related system calls, and how such misuse and misunderstanding propagates to downstream applications which results in various inadequate path validations. To further understand whether these inadequate path validations could be exploited in real world, we design and implement five path validation bypass schemes and three arbitrary write methods. Our evaluation across 85 projects uncovered 16 arbitrary file write vulnerabilities, two of which have been assigned high-severity CVEs. We also demonstrate their severe impacts in real-world scenarios and propose multiple mitigation strategies. We have responsibly disclosed these issues to the affected vendors.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-875c0656",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Software Security 4",
@@ -134,6 +136,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-875c0656",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/liu-yongheng",
+      "kind": "paper-page",
+      "title": "Wormholes in the File System: Understanding the Misunderstanding of Symlinks",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:26:20Z",
+      "content_hash": "sha256:6d2c8e394eb17f4f6fd9a1b1db00bafc1f28f862e3645f1f4e54599b3ce30617",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

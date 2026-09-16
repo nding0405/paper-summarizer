@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2023-lost-along-the-way-understanding-and-mitigating-path-mis-7a9dccd9",
   "title": "Lost along the Way: Understanding and Mitigating Path-Misresolution Threats to Container Isolation",
+  "abstract": "Filesystem isolation enforced by today's container technology has been found to be less effective in the presence of host-container interactions increasingly utilized by container tools. This weakened isolation has led to a type of path misresolution (Pamir) vulnerabilities, which have been considered to be highly risky and continuously reported over the years. In this paper, we present the first systematic study on the Pamir risk and the existing fixes to related vulnerabilities. Our research reveals that in spite of significant efforts being made to patch vulnerable container tools and address the risk, the Pamir vulnerabilities continue to be discovered, including a new vulnerability (CVE-2023-0778) we rediscovered from patched software. A key insight of our study is that the Pamir risk is inherently hard to prevent at the level of container tools, due to their heavy reliance on third-party components. While security inspections should be applied to all components to mediate host-container interactions, third-party component developers tend to believe that container tools should perform security checks before invoking their components, and are therefore reluctant to patch their code with the container-specific protection. Moreover, due to the large number of components today's container tools depend on, re-implementing all of them is impractical.",
+  "abstract_source_id": "src-abstract-ccs-2023-7a9dccd9",
   "venue": "ccs",
   "year": 2023,
   "track_or_session": "Attacks & Malware (Software Security)",
@@ -235,6 +237,19 @@
       "official": false,
       "supports": [
         "published title, author order, and page span"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2023-7a9dccd9",
+      "url": "https://api.openalex.org/works/doi:10.1145/3576915.3623154?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Lost along the Way: Understanding and Mitigating Path-Misresolution Threats to Container Isolation",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:07:54Z",
+      "content_hash": "sha256:fb3da5d7fe6e7bce24a62972e74763aa89ae62e759678f65d7f1d5047210a545",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

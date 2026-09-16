@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2023-ultimate-slh-taking-speculative-load-hardening-to-the-ne-a09f7052",
   "title": "Ultimate SLH: Taking Speculative Load Hardening to the Next Level",
+  "abstract": "In this paper we revisit the Spectre v1 vulnerability and software-only countermeasures. Specifically, we systematically investigate the performance penalty and security properties of multiple variants of speculative load hardening (SLH). As part of this investigation we implement the \"strong SLH\" variant by Patrignani and Guarnieri (CCS 2021) as a compiler extension to LLVM. We show that none of the existing variants, including strong SLH, is able to protect against all Spectre v1 attacks in practice. We do this by demonstrating, for the first time, that variable-time arithmetic instructions leak secret information even if they are executed only speculatively. We extend strong SLH to include protections also against this kind of leakage, implement the resulting full protection in LLVM, and use the SPEC2017 benchmarks to compare its performance to the existing variants of SLH and to code that uses fencing instructions to completely prevent speculative execution. We show that our proposed countermeasure offers full protection against Spectre v1 attacks at much better performance than code using fences. In fact, for several benchmarks our approach is more than twice as fast.",
+  "abstract_source_id": "src-abstract-usenix-security-2023-a09f7052",
   "venue": "usenix-security",
   "year": 2023,
   "track_or_session": "Speculation Doesn't Pay",
@@ -154,6 +156,19 @@
       "official": true,
       "supports": [
         "authors, affiliations when published, abstract, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2023-a09f7052",
+      "url": "https://www.usenix.org/conference/usenixsecurity23/presentation/zhang-zhiyuan-slh",
+      "kind": "paper-page",
+      "title": "Ultimate SLH: Taking Speculative Load Hardening to the Next Level",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:13:31Z",
+      "content_hash": "sha256:308b32685f42a1ac4f1e8c539a1d5ff555d66c9f2bd16918a573540598597fb8",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

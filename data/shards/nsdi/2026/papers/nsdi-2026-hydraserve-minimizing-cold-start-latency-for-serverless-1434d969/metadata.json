@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2026-hydraserve-minimizing-cold-start-latency-for-serverless-1434d969",
   "title": "HydraServe: Minimizing Cold Start Latency for Serverless LLM Serving in Public Clouds",
+  "abstract": "With the proliferation of large language model (LLM) variants, developers are turning to serverless computing for cost-efficient LLM deployment. However, public cloud providers often struggle to provide performance guarantees for serverless LLM serving due to significant cold start latency caused by substantial model sizes and complex runtime dependencies. To address this problem, we present HydraServe, a serverless LLM serving system designed to minimize cold start latency in public clouds. HydraServe proactively distributes models across servers to quickly fetch them, and overlaps cold-start stages within workers to reduce startup latency. Additionally, HydraServe strategically places workers across GPUs to avoid network contention among cold-start instances. To minimize resource consumption during cold starts, HydraServe further introduces pipeline consolidation that can merge groups of workers into individual serving endpoints. Our comprehensive evaluations under diverse settings demonstrate that HydraServe reduces the cold start latency by 1.7×–4.7× and improves service level objective attainment by 1.43×–1.74× compared to baselines.",
+  "abstract_source_id": "src-abstract-nsdi-2026-1434d969",
   "venue": "nsdi",
   "year": 2026,
   "track_or_session": "Cloudy with a Chance of Tenants",
@@ -223,6 +225,19 @@
         "proceedings page range and page count",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2026-1434d969",
+      "url": "https://www.usenix.org/conference/nsdi26/presentation/lou",
+      "kind": "paper-page",
+      "title": "HydraServe: Minimizing Cold Start Latency for Serverless LLM Serving in Public Clouds",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:05:28Z",
+      "content_hash": "sha256:0e5b9d6ded24da4257a790e832996285a57582d727a10f9d26b15fcafd2c715a",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

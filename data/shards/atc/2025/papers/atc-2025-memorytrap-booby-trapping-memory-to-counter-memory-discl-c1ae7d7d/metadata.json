@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "atc-2025-memorytrap-booby-trapping-memory-to-counter-memory-discl-c1ae7d7d",
   "title": "MemoryTrap: Booby Trapping Memory to Counter Memory Disclosure Attacks with Hardware Support",
+  "abstract": "Code-reuse attacks harvest reusable code gadgets from the vulnerable program's executable memory, posing a severe threat to the widely deployed executable-space protection. With the advent of address space layout randomization, a more complicated tactic of code-reuse attacks, known as just-in-time return-oriented programming (JIT-ROP), has emerged. JIT-ROP relies on repeated memory disclosure to search for available code gadgets in real-time. In response, a series of techniques have surfaced to impede memory disclosure or to prevent disclosed code from subsequently being executed. The most representative countermeasures involve enforcing a stricter memory permission policy, such as execute-only memory or destructive code reads. However, existing methods are either vulnerable to emerging code inference attacks or disallow a mixture of code and data, which is a fundamental property of the von Neumann architecture.\n\nIn this paper, we present MemoryTrap , a hardware-assisted technique to counter direct memory disclosure attacks while simultaneously allowing the mixture of code and data. MemoryTrap sprinkles unreadable \"booby traps\" in the program at compile time. Once JIT-ROP attackers land in a booby trap area during memory disclosure at runtime, MemoryTrap can immediately detect and stop the ongoing attack. We take advantage of a hardware feature from Intel, Memory Protection Keys, to offer an efficient memory permission control mechanism for booby traps. MemoryTrap supports the security hardening of applications, shared libraries, and dynamically generated JIT code. Our security evaluation demonstrates that MemoryTrap can reliably thwart the threat of disclosing executable memory in real JIT-ROP attacks and synthetic code inference attacks. Performance experiments with both microbenchmarks and macrobenchmarks show that MemoryTrap only introduces negligible runtime overhead.",
+  "abstract_source_id": "src-abstract-atc-2025-c1ae7d7d",
   "venue": "atc",
   "year": 2025,
   "track_or_session": "Securing the Stack: Attestation, Memory Protection, and Privacy",
@@ -180,6 +182,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-atc-2025-c1ae7d7d",
+      "url": "https://www.usenix.org/conference/atc25/presentation/luo",
+      "kind": "paper-page",
+      "title": "MemoryTrap: Booby Trapping Memory to Counter Memory Disclosure Attacks with Hardware Support",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T21:59:54Z",
+      "content_hash": "sha256:360e5348ad9ae47da359628ffc37780e858fdd49fa0a4d56966f478e39fb5440",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

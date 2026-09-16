@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2025-mako-speculative-distributed-transactions-with-geo-repli-5481dcdc",
   "title": "Mako: Speculative Distributed Transactions with Geo-Replication",
+  "abstract": "This paper introduces Mako, a highly available, high-throughput, and horizontally scalable transactional key-value store. Mako performs strongly consistent geo-replication to maintain availability despite entire datacenter failures, uses multi-core machines for fast serializable transaction processing, and shards data to scale out. To achieve these properties, especially to overcome the overheads of distributed transactions in geo-replicated settings, Mako decouples transaction execution and replication. This enables Mako to run transactions speculatively and very fast, and replicate transactions in the background to make them fault-tolerant. The key innovation in Mako is the use of two-phase commit (2PC) speculatively to allow distributed transactions to proceed without having to wait for their decisions to be replicated, while also preventing unbounded cascading aborts if shards fail prior to the end of replication. Our experimental evaluation on Azure shows that Mako processes 3.66M TPC-C transactions per second when data is split across 10 shards, each of which runs with 24 threads. This is an 8.6× higher throughput than state-of-the-art systems optimized for geo-replication.",
+  "abstract_source_id": "src-abstract-osdi-2025-5481dcdc",
   "venue": "osdi",
   "year": 2025,
   "track_or_session": "Database Systems",
@@ -180,6 +182,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2025-5481dcdc",
+      "url": "https://www.usenix.org/conference/osdi25/presentation/shen-weihai",
+      "kind": "paper-page",
+      "title": "Mako: Speculative Distributed Transactions with Geo-Replication",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:07:38Z",
+      "content_hash": "sha256:20497e741142ba4c6b2e02e0e6264791b45a5d559d5bcad1090fe5fe143cc512",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

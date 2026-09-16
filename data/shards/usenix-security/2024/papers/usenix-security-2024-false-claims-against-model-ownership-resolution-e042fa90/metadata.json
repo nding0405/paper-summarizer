@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2024-false-claims-against-model-ownership-resolution-e042fa90",
   "title": "False Claims against Model Ownership Resolution",
+  "abstract": "Deep neural network (DNN) models are valuable intellectual property of model owners, constituting a competitive advantage. Therefore, it is crucial to develop techniques to protect against model theft. Model ownership resolution (MOR) is a class of techniques that can deter model theft. A MOR scheme enables an accuser to assert an ownership claim for a suspect model by presenting evidence, such as a watermark or fingerprint, to show that the suspect model was stolen or derived from a source model owned by the accuser. Most of the existing MOR schemes prioritize robustness against malicious suspects, ensuring that the accuser will win if the suspect model is indeed a stolen model.\n\nIn this paper, we show that common MOR schemes in the literature are vulnerable to a different, equally important but insufficiently explored, robustness concern: a malicious accuser. We show how malicious accusers can successfully make false claims against independent suspect models that were not stolen. Our core idea is that a malicious accuser can deviate (without detection) from the specified MOR process by finding (transferable) adversarial examples that successfully serve as evidence against independent suspect models. To this end, we first generalize the procedures of common MOR schemes and show that, under this generalization, defending against false claims is as challenging as preventing (transferable) adversarial examples. Via systematic empirical evaluation we show that our false claim attacks always succeed in MOR schemes that follow our generalization, including in a real-world model: Amazon's Rekognition API.",
+  "abstract_source_id": "src-abstract-usenix-security-2024-e042fa90",
   "venue": "usenix-security",
   "year": 2024,
   "track_or_session": "Security Analysis V: ML",
@@ -154,6 +156,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2024-e042fa90",
+      "url": "https://www.usenix.org/conference/usenixsecurity24/presentation/liu-jian",
+      "kind": "paper-page",
+      "title": "False Claims against Model Ownership Resolution",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:15:09Z",
+      "content_hash": "sha256:7a438dc475ad6950ff161ab619e6d7812cd0a8a661cc87305431381037e3a167",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

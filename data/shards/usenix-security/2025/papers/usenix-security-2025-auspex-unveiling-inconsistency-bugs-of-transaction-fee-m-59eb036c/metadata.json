@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-auspex-unveiling-inconsistency-bugs-of-transaction-fee-m-59eb036c",
   "title": "Auspex: Unveiling Inconsistency Bugs of Transaction Fee Mechanism in Blockchain",
+  "abstract": "The transaction fee mechanism (TFM) in blockchain prevents resource abuse by charging users based on resource usage, but inconsistencies between charged fees and actual resource consumption, termed as TFM inconsistency bugs, introduce significant security and financial risks.\n\nIn this paper, we present Auspex, the first tool that automatically detects TFM inconsistency bugs in Ethereum ecosystem by leveraging fuzzing technology. To efficiently trigger and identify TFM inconsistency bugs, Auspex introduces three novel technologies: (i) a chain-based test case generation strategy that enables Auspex to efficiently generate the test cases; (ii) a charging-guided fuzzing approach that guides Auspex to explore more code logic; and (iii) fee consistency property and resource consistency property, two general bug oracles for automatically detecting bugs. We evaluate Auspex on Ethereum and demonstrate its effectiveness by discovering 13 previously unknown TFM inconsistency bugs, and achieving 3.5 times more code branches than state-of-the-art tools. We further explore the financial and security impact of the bugs. On one hand, these bugs have caused losses exceeding millions of dollars for users on both Ethereum and BSC. On the other hand, the denial-of-service (DoS) attack exploiting these bugs can prolong transaction wait time by 4.5 times during the attack period.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-59eb036c",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Blockchain Security, Attacks, and Defenses",
@@ -259,6 +261,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-59eb036c",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/he-zheyuan",
+      "kind": "paper-page",
+      "title": "Auspex: Unveiling Inconsistency Bugs of Transaction Fee Mechanism in Blockchain",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:18:44Z",
+      "content_hash": "sha256:f20ba39ff2f7c41b16dfbe03966be0c9df78ed775c81d90536c588fe1e611671",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

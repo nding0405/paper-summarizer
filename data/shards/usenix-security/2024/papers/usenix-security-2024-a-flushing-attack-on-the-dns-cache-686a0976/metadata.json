@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2024-a-flushing-attack-on-the-dns-cache-686a0976",
   "title": "A Flushing Attack on the DNS Cache",
+  "abstract": "A severe vulnerability in the DNS resolver's cache is exposed here, introducing a new type of attack, termed DNS CacheFlush. This attack poses a significant threat as it can easily disrupt a resolver's ability to provide service to its clients.\n\nDNS resolver software incorporates various mechanisms to safeguard its cache. However, we have identified a tricky path to bypass these safeguards, allowing a high-rate flood of malicious but seemingly existent domain name resolutions to thrash the benign DNS cache. The resulting attack has a high amplification factor, where with a low rate attack it produces a continuous high rate resource records insertions into the resolver cache. This prevents benign request resolutions from surviving in the DNS LRU cache long enough for subsequent requests to be resolved directly from the cache. Thus leading to repeated cache misses for most benign domains, resulting in a substantial delay in the DNS service. The attack rate amplification factor is high enough to even flush out popular benign domains that are requested at a high frequency (∼ 100/1sec). Moreover, the attack packets introduce additional processing overhead and all together the attack easily denies service from the resolver's legitimate clients.\n\nIn our experiments we observed 95.7% cache miss rate for a domain queried once per second under 8,000 qps attack on a resolver with 100MB cache. Even on a resolver with 2GB cache size we observed a drop of 88.3% in the resolver benign traffic throughput.\n\nA result of this study is a recommendation to deny and drop any authoritative replies that contain many server names, e.g., a long referral response, or a long CNAME chain, before the resolver starts any processing of such a response.",
+  "abstract_source_id": "src-abstract-usenix-security-2024-686a0976",
   "venue": "usenix-security",
   "year": 2024,
   "track_or_session": "Measurement II: Network",
@@ -133,6 +135,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2024-686a0976",
+      "url": "https://www.usenix.org/conference/usenixsecurity24/presentation/afek",
+      "kind": "paper-page",
+      "title": "A Flushing Attack on the DNS Cache",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:13:54Z",
+      "content_hash": "sha256:3c09a80042ca379c298d1d4c18ed5f705ed9ce0d0d3ec25ffb740422c305b4e0",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

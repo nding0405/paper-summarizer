@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2026-in-context-probing-for-membership-inference-in-fine-tune-79cdb264",
   "title": "In-Context Probing for Membership Inference in Fine-Tuned Language Models",
+  "abstract": "Membership inference attacks (MIAs) pose a critical privacy threat to fine-tuned large language models (LLMs), especially when models are adapted to domain-specific tasks using sensitive data. While prior black-box MIA techniques rely on confidence scores or token likelihoods, these signals are often entangled with a sample’s intrinsic properties—such as content difficulty or rarity—leading to poor generalization and low signal-to-noise ratios. In this paper, we propose ICP-MIA, a novel MIA framework grounded in the theory of training dynamics, particularly the phenomenon of diminishing returns during optimization. We introduce the Optimization Gap as a fundamental signal of membership: at convergence, member samples exhibit minimal remaining loss-reduction potential, while non-members retain significant potential for further optimization. To estimate this gap in a black-box setting, we propose In-Context Probing (ICP)—a training-free method that simulates fine-tuning-like behavior via strategically constructed input contexts. We propose two probing strategies: reference-data-based (using semantically similar public samples) and self-perturbation (via masking or generation). Experiments on three tasks and multiple LLMs show that ICP-MIA significantly outperforms prior black-box MIAs, particularly at low false positive rates. We further analyze how reference data alignment, model type, PEFT configurations, and training schedules affect attack effectiveness. Our findings establish ICP-MIA as a practical and theoretically grounded framework for auditing privacy risks in deployed LLMs.",
+  "abstract_source_id": "src-abstract-ndss-2026-79cdb264",
   "venue": "ndss",
   "year": 2026,
   "track_or_session": "Fall submission cycle",
@@ -202,6 +204,19 @@
       "official": false,
       "supports": [
         "independent proceedings identity reconciliation"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2026-79cdb264",
+      "url": "https://www.ndss-symposium.org/ndss-paper/in-context-probing-for-membership-inference-in-fine-tuned-language-models/",
+      "kind": "paper-page",
+      "title": "In-Context Probing for Membership Inference in Fine-Tuned Language Models",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:22:13Z",
+      "content_hash": "sha256:90b1d59507478d20a3a0f128a000239a9bd72f35ae6bbc218c28f8428965f0de",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2023-stateful-defenses-for-machine-learning-models-are-not-ye-5381a152",
   "title": "Stateful Defenses for Machine Learning Models Are Not Yet Secure Against Black-box Attacks",
+  "abstract": "Recent work has proposed stateful defense models (SDMs) as a compelling strategy to defend against a black-box attacker who only has query access to the model, as is common for online machine learning platforms. Such stateful defenses aim to defend against black-box attacks by tracking the query history and detecting and rejecting queries that are \"similar\" and thus preventing black-box attacks from finding useful gradients and making progress towards finding adversarial attacks within a reasonable query budget. Recent SDMs (e.g., Blacklight and PIHA) have shown remarkable success in defending against state-of-the-art black-box attacks. In this paper, we show that SDMs are highly vulnerable to a new class of adaptive black-box attacks. We propose a novel adaptive black-box attack strategy called Oracle-guided Adaptive Rejection Sampling (OARS) that involves two stages: (1) use initial query patterns to infer key properties about an SDM's defense; and, (2) leverage those extracted properties to design subsequent query patterns to evade the SDM's defense while making progress towards finding adversarial inputs. OARS is broadly applicable as an enhancement to existing black-box attacks - we show how to apply the strategy to enhance six common black-box attacks to be more effective against current class of SDMs. For example, OARS-enhanced versions of black-box attacks improved attack success rate against recent stateful defenses from almost 0% to to almost 100% for multiple datasets within reasonable query budgets.",
+  "abstract_source_id": "src-abstract-ccs-2023-5381a152",
   "venue": "ccs",
   "year": 2023,
   "track_or_session": "Machine Learning Attacks I (Machine Learning and Security)",
@@ -214,6 +216,19 @@
       "official": false,
       "supports": [
         "published title, author order, and page span"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2023-5381a152",
+      "url": "https://api.openalex.org/works/doi:10.1145/3576915.3623116?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Stateful Defenses for Machine Learning Models Are Not Yet Secure Against Black-box Attacks",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:08:26Z",
+      "content_hash": "sha256:4610733dbe1f5443a546990f6b3ac5882fff5a77d73739dc8f4f7143770dbb3f",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

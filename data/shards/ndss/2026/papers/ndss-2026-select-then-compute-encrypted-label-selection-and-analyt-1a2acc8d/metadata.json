@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2026-select-then-compute-encrypted-label-selection-and-analyt-1a2acc8d",
   "title": "Select-Then-Compute: Encrypted Label Selection and Analytics over Distributed Datasets using FHE",
+  "abstract": "Private Set Intersection (PSI) protocols allow a querier to determine whether an item exists in a dataset without revealing the query or exposing non-matching records. It has many applications in fraud detection, compliance monitoring, healthcare analytics, and secure collaboration across distributed data sources. In these cases, the results obtained through PSI can be sensitive and even require some kind of downstream computation on the associated data before the outcome is revealed to the querier, computation that may involve floating-point arithmetic, such as the inference of a machine learning model. Although many such protocols have been proposed, and some of them even enable secure queries over distributed encrypted sets, they fail to address the aforementioned real-world complexities.\n\nIn this work, we present the first encrypted label selection and analytics protocol construction, which allows the querier to securely retrieve not just the results of intersections among identifiers but also the outcomes of downstream functions on the data/label associated with the intersected identifiers. To achieve this, we construct a novel protocol based on an approximate CKKSfully homomorphic encryption that supports efficient label retrieval and downstream computations over real-valued data. In addition, we introduce several techniques to handle identifiers in large domains, e.g., 64 or 128 bits, while ensuring high precision for accurate downstream computations.\n\nFinally, we implement and benchmark our protocol, compare it against state-of-the-art methods, and perform evaluation over real-world fraud datasets, demonstrating its scalability and efficiency in large-scale use case scenarios. Our results show up to 1.4× to 6.8× speedup over prior approaches and select and analyze encrypted labels over real-world datasets in under 65 sec., making our protocol practical for real-world deployments.",
+  "abstract_source_id": "src-abstract-ndss-2026-1a2acc8d",
   "venue": "ndss",
   "year": 2026,
   "track_or_session": "Fall submission cycle",
@@ -244,6 +246,19 @@
       "official": false,
       "supports": [
         "independent proceedings identity reconciliation"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2026-1a2acc8d",
+      "url": "https://www.ndss-symposium.org/ndss-paper/select-then-compute-encrypted-label-selection-and-analytics-over-distributed-datasets-using-fhe/",
+      "kind": "paper-page",
+      "title": "Select-Then-Compute: Encrypted Label Selection and Analytics over Distributed Datasets using FHE",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:23:07Z",
+      "content_hash": "sha256:a67da5f9d0c52f7c27ed4adfa24b6e013c66161a4401ca0aa8693db9f65ec61d",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

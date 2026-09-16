@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2026-a-systematic-threat-analysis-and-practical-attacks-on-au-c8687ed0",
   "title": "A Systematic Threat Analysis and Practical Attacks on Automated Frequency Coordination Systems",
+  "abstract": "The 6 GHz band, traditionally reserved for mission-critical incumbent systems such as public safety communications, utility infrastructure, and fixed satellite services, has recently been opened for Wi-Fi devices. This expansion introduces a critical coexistence challenge of ensuring that unlicensed Wi-Fi Access Points (APs) do not interfere with incumbent operations. To manage this risk, regulators mandated the use of Automated Frequency Coordination (AFC) systems that assign spectrum access to Wi-Fi APs based on their locations. In this work, we present the first systematic security analysis of AFC systems. In particular, we analyze the trust assumptions of AFC systems and uncover design lapses and deployment mishaps in this model. Our analysis reveals that the AFC's dependence on unauthenticated data sources, including GNSS/GPS and Wi-Fi-based localization (for location), DNS (for service discovery), and NTP (for time synchronization), creates practical off-path attack vectors that allow adversaries to manipulate control-plane parameters without breaking cryptographic protections between APs and AFC servers. For example, using inexpensive, off-the-shelf software-defined radios, an off-path adversary can spoof the GPS signals received by an AP, falsifying its reported location to either disable 6 GHz transmissions or cause harmful interference with incumbent services. We validate these vectors empirically on commercial APs from four major vendors and evaluate four commercial and one open-source AFC servers to measure real-world impact. We also propose potential mitigations and analyze the trade-offs between usability and security to formulate our recommendations to harden AFC deployments and 6 GHz APs.",
+  "abstract_source_id": "src-abstract-nsdi-2026-c8687ed0",
   "venue": "nsdi",
   "year": 2026,
   "track_or_session": "Security in Networked Systems",
@@ -139,6 +141,19 @@
         "proceedings page range and page count",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2026-c8687ed0",
+      "url": "https://www.usenix.org/conference/nsdi26/presentation/dong",
+      "kind": "paper-page",
+      "title": "A Systematic Threat Analysis and Practical Attacks on Automated Frequency Coordination Systems",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:04:48Z",
+      "content_hash": "sha256:0ce7d25efe565897f41a5f09cc1e3db28616cd291ca330762472b2560cd4a839",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2026-consensus-in-the-known-participation-model-with-byzantin-a81fd67f",
   "title": "Consensus in the Known Participation Model with Byzantine Faults and Sleepy Replicas",
+  "abstract": "We study consensus in the known participation model with both Byzantine failures and sleepy replicas, where honest replicas may unpredictably fall asleep, and replicas know the minimum number of awake honest replicas. Our main contribution is providing a fine-grained treatment of consensus in such a mixed failure model. First, we present a synchronous atomic broadcast protocol with $5Delta+2delta$ expected latency and $2Delta+2delta$ best-case latency, where $Delta$ is the bound on network delay and $delta$ is the actual network delay. Second, in the partially synchronous network (the value of $Delta$ is unknown), we show that one can make a conventional Byzantine fault-tolerant (BFT) protocol tolerate sleepy replicas but has to make the stable storage assumption (where replicas need to store intermediate consensus parameters in stable storage). Finally, in the partially synchronous network but not assuming stable storage, we show several bounds on the relationship between the total number of replicas $n$, the maximum number of Byzantine replicas $f$, and the maximum number of simultaneous sleeping replicas $s$. Using these bounds, we transform HotStuff (PODC'19) into a protocol that tolerates sleepy replicas without sacrificing the performance.",
+  "abstract_source_id": "src-abstract-ndss-2026-a81fd67f",
   "venue": "ndss",
   "year": 2026,
   "track_or_session": "Summer submission cycle",
@@ -181,6 +183,19 @@
       "official": false,
       "supports": [
         "independent proceedings identity reconciliation"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2026-a81fd67f",
+      "url": "https://www.ndss-symposium.org/ndss-paper/consensus-in-the-known-participation-model-with-byzantine-faults-and-sleepy-replicas/",
+      "kind": "paper-page",
+      "title": "Consensus in the Known Participation Model with Byzantine Faults and Sleepy Replicas",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:21:38Z",
+      "content_hash": "sha256:7a35496b35c1fa9bc7748b819a0fcc46d869a859a09f85c196e8a214132a837c",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

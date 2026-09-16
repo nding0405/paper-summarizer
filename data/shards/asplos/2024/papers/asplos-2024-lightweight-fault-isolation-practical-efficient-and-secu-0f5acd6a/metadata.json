@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2024-lightweight-fault-isolation-practical-efficient-and-secu-0f5acd6a",
   "title": "Lightweight Fault Isolation: Practical, Efficient, and Secure Software Sandboxing",
+  "abstract": "Software-based fault isolation (SFI) is a longstanding technique that allows isolation of one or more processes from each other with minimal or no use of hardware protection mechanisms. The demand for SFI systems has been increasing due to the advent of cloud and serverless computing, which require systems to run untrusted code with low latency and low context switch times. SFI systems must optimize for a combination of performance, trusted code base (TCB) size, scalability, and implementation complexity. With the rise of ARM64 in both cloud and personal computers, we revisit classic SFI in the context of ARM64 and present a new multi-sandbox SFI scheme that is practical to implement, efficient, and maintains a small TCB. Our technique, called Lightweight Fault Isolation (LFI), supports tens of thousands of 4GiB sandboxes in a single address space and does full software isolation of loads, stores, and jumps with a runtime overhead of 7% on the compatible subset of the SPEC 2017 benchmark suite. In addition to providing low runtime and code size overheads compared to existing multi-sandbox systems, LFI is implemented independently of existing compiler toolchains, has a small static verifier to reduce TCB size, is hardened against basic Spectre attacks, and has broad software support, including for language mechanisms like exceptions and ISA features such as SIMD.",
+  "abstract_source_id": "src-abstract-asplos-2024-0f5acd6a",
   "venue": "asplos",
   "year": 2024,
   "track_or_session": "Session 3B: Security",
@@ -109,6 +111,19 @@
       "official": true,
       "supports": [
         "Author-deposited archival artifact associated with the conference paper."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2024-0f5acd6a",
+      "url": "https://api.openalex.org/works/doi:10.1145/3620665.3640408?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Lightweight Fault Isolation: Practical, Efficient, and Secure Software Sandboxing",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:00:16Z",
+      "content_hash": "sha256:d71c98ae73f246f6ee7fe20e4845854b0f29cf20a5439783af4b407bfdfa4157",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

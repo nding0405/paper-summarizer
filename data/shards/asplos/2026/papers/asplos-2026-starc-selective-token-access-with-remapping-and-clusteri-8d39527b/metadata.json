@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2026-starc-selective-token-access-with-remapping-and-clusteri-8d39527b",
   "title": "STARC: Selective Token Access with Remapping and Clustering for Efficient LLM Decoding on PIM Systems",
+  "abstract": "Serving large language models (LLMs) places significant pressure on memory systems due to frequent accesses and growing key–value (KV) caches as context lengths increase. Processing-in-memory (PIM) architectures offer high internal bandwidth and near-data compute parallelism, but current designs target dense attention and perform poorly under the irregular access patterns of dynamic KV cache sparsity. To mitigate this limitation, we propose STARC, a sparsity-optimized data mapping scheme for efficient LLM decoding on PIM. STARC clusters semantically similar KV pairs and co-locates them contiguously within PIM banks, enabling retrieval at cluster granularity by matching queries against precomputed centroids. This bridges the gap between fine-grained sparse attention and row-level PIM operations, improving utilization while minimizing overhead. On a simulated HBM-PIM system, under constrained KV budgets, STARC achieves up to 78% and 65% reductions in attention-layer latency and energy over token-wise sparsity methods, and up to 93% and 92% reductions relative to full attention, while preserving model accuracy.",
+  "abstract_source_id": "src-abstract-asplos-2026-8d39527b",
   "venue": "asplos",
   "year": 2026,
   "track_or_session": "Session 3A: LLM Attention & KV Cache",
@@ -236,6 +238,19 @@
       "official": false,
       "supports": [
         "Indexed abstract used for strict relevance classification and indexed arXiv identifier where available."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2026-8d39527b",
+      "url": "https://api.openalex.org/works/doi:10.1145/3779212.3790226?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "STARC: Selective Token Access with Remapping and Clustering for Efficient LLM Decoding on PIM Systems",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:06:38Z",
+      "content_hash": "sha256:07a29225db4e6dbd94f724889c38cc683ef82f73d77ffe4a6b065742669a36bc",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

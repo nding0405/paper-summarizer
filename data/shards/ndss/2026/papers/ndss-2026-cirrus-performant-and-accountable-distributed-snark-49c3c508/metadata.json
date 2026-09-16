@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2026-cirrus-performant-and-accountable-distributed-snark-49c3c508",
   "title": "Cirrus: Performant and Accountable Distributed SNARK",
+  "abstract": "Succinct Non-interactive Arguments of Knowledge (SNARKs) can enable efficient verification of computation in many applications. However, generating SNARK proofs for large-scale tasks, such as verifiable machine learning or virtual machines, remains computationally expensive. A promising approach is to distribute the proof generation workload across multiple workers. A practical distributed SNARK protocol should have three properties: horizontal scalability with low overhead (linear computation and logarithmic communication per worker), accountability (efficient detection of malicious workers), and a universal trusted setup independent of circuits and the number of workers. Existing protocols fail to achieve all these properties.\n\nIn this paper, we present Cirrus, the first distributed SNARK generation protocol achieving all three desirable properties at once. Our protocol builds on HyperPlonk (EUROCRYPT'23), inheriting its universal trusted setup. It achieves linear computation complexity for both workers and the coordinator, along with low communication overhead. To achieve accountability, we introduce a highly efficient accountability protocol to localize malicious workers. Additionally, we propose a hierarchical aggregation technique to further reduce the coordinator’s workload.\n\nWe implemented and evaluated Cirrus on machines with modest hardware. Our experiments show that Cirrus is highly scalable: it generates proofs for circuits with 33M gates in under 40 seconds using 32 8-core machines. Compared to the state-of-the-art accountable protocol Hekaton (CCS’24), Cirrus achieves over 7× faster proof generation for PLONK-friendly circuits such as the Pedersen hash. Our accountability protocol also efficiently identifies faulty workers within just 4 seconds, making Cirrus particularly suitable for decentralized and outsourced computation scenarios.",
+  "abstract_source_id": "src-abstract-ndss-2026-49c3c508",
   "venue": "ndss",
   "year": 2026,
   "track_or_session": "Fall submission cycle",
@@ -160,6 +162,19 @@
       "official": false,
       "supports": [
         "independent proceedings identity reconciliation"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2026-49c3c508",
+      "url": "https://www.ndss-symposium.org/ndss-paper/cirrus-performant-and-accountable-distributed-snark/",
+      "kind": "paper-page",
+      "title": "Cirrus: Performant and Accountable Distributed SNARK",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:21:37Z",
+      "content_hash": "sha256:af33b79d9485114597cdc1f0a82ba31866edad39c3f9587c8af7ce83f2a66153",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

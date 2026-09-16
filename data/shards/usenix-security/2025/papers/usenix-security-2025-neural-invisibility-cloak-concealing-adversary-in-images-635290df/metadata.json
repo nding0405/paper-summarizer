@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-neural-invisibility-cloak-concealing-adversary-in-images-635290df",
   "title": "Neural Invisibility Cloak: Concealing Adversary in Images via Compromised AI-driven Image Signal Processing",
+  "abstract": "Image Signal Processing (ISP) is crucial for image production in cameras, and recent AI-driven ISP algorithms (AISP) are increasingly used in cameras to produce enhanced images. However, their vulnerabilities are not well understood. This paper presents Neural Invisibility Cloak (NIC), which can trigger a compromised AISP to remove a person with an \"invisibility cloak\" from the image. Essentially NIC is a neural backdoor that none of the traditional ones can accomplish, as it requires replacing each pixel in the cloaked area with background information, yet the final image should be free of any suspicious elements in terms of both humans and AI algorithms. To address the challenges, we propose a data-poisoning method combined with a generative training strategy to embed malicious behaviors in the AISP models, thereby manipulating the output images and videos from cameras, without impairing AISP performance. Our validation in two mainstream AISP modules and four representative AISP tasks in real-world experiments shows the effectiveness of NIC on deceiving downstream image recognition algorithms and human observers. In particular, we show that NIC can remove the human from the images completely, as he walks across the camera views, wearing a real cloak, appearing invisible to the video surveillance system. Moreover, we extend NIC to a patch-based variant (NIP), which can be applied to more general scenarios. Finally, we discuss potential defenses against NIC-like attacks to safeguard AISP models.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-635290df",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "ML and AI Security 1: Images",
@@ -217,6 +219,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-635290df",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/zhu-wenjun",
+      "kind": "paper-page",
+      "title": "Neural Invisibility Cloak: Concealing Adversary in Images via Compromised AI-driven Image Signal Processing",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:20:51Z",
+      "content_hash": "sha256:0fb880e7f38fa76f124969fd2b9f5b7c8f2aede08686b67739f8fccf1c59b0aa",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

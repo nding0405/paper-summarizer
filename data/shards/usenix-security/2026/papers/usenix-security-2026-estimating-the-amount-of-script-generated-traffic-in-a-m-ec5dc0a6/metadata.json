@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-estimating-the-amount-of-script-generated-traffic-in-a-m-ec5dc0a6",
   "title": "Estimating the Amount of Script-generated Traffic in a Mixture",
+  "abstract": "We address the question of estimating the fraction of traffic that is bot-generated in a mixture. That is, we seek to estimate α when what we receive is α · Clean + (1-α) · Bot. This is primarily of interest when traffic is attempting to masquerade as human-generated (eg, click-fraud, inauthentic social media engagement, etc).\n\nWhen at least one pair of features is independent in the clean traffic (eg, time-invariance of geographic distribution) we show that getting an upper-bound on α is equivalent to finding the rank-one matrix that maximizes a simple objective function. We give an efficient method for solving, and derive the tightness of the bound. When we have limited data, error analysis is extremely important, since the sampled version of a rank-one matrix will not be precisely rank-one. We derive confidence intervals for our estimates, that allow us to be confident that we find a true upper-bound.\n\nWe empirically validate our findings. First, using random rank-one, and full-rank matrices for the clean and bot distributions respectively, we verify accuracy using Monte Carlo simulations. Second, we examine Twitter (now X) data. Twitter accounts with large follower-ship that were offered for sale on an open market-place are flagged as having >90% bot followers, while accounts for several academic conferences and well-known researchers are flagged at <20%. We verify accuracy on Twitter account populations of arbitrary clean/bot composition.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-ec5dc0a6",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Security and Privacy for Web, Mobile, and Emerging Technologies 1",
@@ -71,6 +73,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-ec5dc0a6",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/herley",
+      "kind": "paper-page",
+      "title": "Estimating the Amount of Script-generated Traffic in a Mixture",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:23:53Z",
+      "content_hash": "sha256:59cb7fbed799ca28df0e62d63828e48522fff843d33554ffd31ccd9434f653e8",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "eurosys-2025-jupiter-pushing-speed-and-scalability-limitations-for-su-1fd01302",
   "title": "Jupiter: Pushing Speed and Scalability Limitations for Subgraph Matching on Multi-GPUs",
+  "abstract": "Graph pattern matching (GPM) aims to find subgraphs isomorphic to user-specified patterns within a large graph. Due to its ability to reveal potential relationships among entities in complex networks, it is widely applied in various fields, such as mining molecular structures in bioinformatics, detecting fraud in cloud-based e-commerce, and querying knowledge graphs in large language model. The explosion of data brought by the AI era has rendered traditional GPM systems inadequate for real-world needs. Due to the intricate data dependencies of GPM tasks, most SOTA GPM systems currently have limited scalability and performance, they perform well in small graph mining with single node but cannot scale to modern clusters with GPU acceleration. This paper introduces JUPITER, the first system capable of matching patterns on large graph across multi-node GPU clusters, which can handle graphs 10 times larger than SOTAs with the same memory resources. Its core principle is to delegate computation to the data-residing processing unit rather than pulling data to the computation location, which greatly improves communication efficiency. Experimental results show that JUPITER can reduce communication volume by two orders of magnitude compared to SOTA subgraph matching systems, achieving up to 120× speedup and an average of 21.5× speedup.",
+  "abstract_source_id": "src-abstract-eurosys-2025-1fd01302",
   "venue": "eurosys",
   "year": 2025,
   "track_or_session": "Session-4.2: GPU Systems - Location: Mees - Chair: Yiming Zhang",
@@ -180,6 +182,19 @@
       "official": false,
       "supports": [
         "Publisher-deposited title or author order used to resolve a documented conflict or duplicate in the official conference program."
+      ]
+    },
+    {
+      "id": "src-abstract-eurosys-2025-1fd01302",
+      "url": "https://api.openalex.org/works/doi:10.1145/3689031.3717491?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Jupiter: Pushing Speed and Scalability Limitations for Subgraph Matching on Multi-GPUs",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:19:28Z",
+      "content_hash": "sha256:ec211c7865d7040ad92de8620a1b4a3b5dc8002108f2e3575869630e2bf68843",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

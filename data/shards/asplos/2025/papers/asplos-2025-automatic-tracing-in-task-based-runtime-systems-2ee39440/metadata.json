@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2025-automatic-tracing-in-task-based-runtime-systems-2ee39440",
   "title": "Automatic Tracing in Task-Based Runtime Systems",
+  "abstract": "Implicitly parallel task-based runtime systems often perform dynamic analysis to discover dependencies in and extract parallelism from sequential programs. Dependence analysis becomes expensive as task granularity drops below a threshold. Tracing techniques have been developed where programmers annotate repeated program fragments (traces) issued by the application, and the runtime system memoizes the dependence analysis for those fragments, greatly reducing overhead when the fragments are executed again. However, manual trace annotation can be brittle and not easily applicable to complex programs built through the composition of independent components. We introduce Apophenia, a system that automatically traces the dependence analysis of task-based runtime systems, removing the burden of manual annotations from programmers and enabling new and complex programs to be traced. Apophenia identifies traces dynamically through a series of dynamic string analyses, which find repeated program fragments in the stream of tasks issued to the runtime system. We show that Apophenia is able to come between 0.92x--1.03x the performance of manually traced programs, and is able to effectively trace previously untraced programs to yield speedups of between 0.91x--2.82x on the Perlmutter and Eos supercomputers.",
+  "abstract_source_id": "src-abstract-asplos-2025-2ee39440",
   "venue": "asplos",
   "year": 2025,
   "track_or_session": "Session 3A: Performance Analysis & Tracing",
@@ -201,6 +203,19 @@
       "official": true,
       "supports": [
         "Author-deposited archival artifact associated with the conference paper."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2025-2ee39440",
+      "url": "https://api.openalex.org/works/doi:10.1145/3669940.3707237?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Automatic Tracing in Task-Based Runtime Systems",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:00:42Z",
+      "content_hash": "sha256:8b19dae09070846a6b218c7067dde9872f051ce509286146792ec2c99820e5ce",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

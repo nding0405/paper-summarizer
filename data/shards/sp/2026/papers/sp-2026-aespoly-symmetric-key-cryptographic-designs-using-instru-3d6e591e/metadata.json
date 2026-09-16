@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2026-aespoly-symmetric-key-cryptographic-designs-using-instru-3d6e591e",
   "title": "AESpoly: Symmetric-Key Cryptographic Designs Using Instruction-Level Parallelism between AES and Polynomial Hash",
+  "abstract": "This paper studies the impact of instruction-level parallelism between the AES and CLMUL instructions on the design and performance of symmetric-key schemes. Our benchmark on modern processors from different vendors shows that a considerable portion of encryption (e.g., AES-CTR) and hashing (e.g., GHASH) runs in parallel due to the instructionlevel parallelism. This impacts the design space of symmetrickey schemes that has been separately optimized for encryption and hashing. By exploring the design space with a primitive that abstracts parallel execution, we propose a new wide-block encryption (WBE) called AESpolyW that achieves optimal parallel performance with respect to the number of primitive calls. We evaluate software performance of the instantiations with AES-128, Rijndael and Simpira v2, and AESpolyW outperforms the state-of-the-art WBE schemes, HCTR2 and EME, in the majority of twelve target processors from Intel, AMD, Apple, and Amazon AWS. We also propose a new message authentication code (MAC) called AESpolyM optimized for the instruction-level parallelism, and our software implementation of AESpolyM outperforms PMAC and GMAC in the majority of cases.",
+  "abstract_source_id": "src-abstract-sp-2026-3d6e591e",
   "venue": "sp",
   "year": 2026,
   "track_or_session": "Cycle 2",
@@ -133,6 +135,19 @@
       "official": true,
       "supports": [
         "DOI, published-order authors and affiliations, abstract, publication date, page span, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2026-3d6e591e",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "AESpoly: Symmetric-Key Cryptographic Designs Using Instruction-Level Parallelism Between AES and Polynomial Hash",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:57Z",
+      "content_hash": "sha256:303a9b5e5ef8908a3cfe67f02eb8a87be978a5fe3281c7ecec8c0cdb512517e0",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

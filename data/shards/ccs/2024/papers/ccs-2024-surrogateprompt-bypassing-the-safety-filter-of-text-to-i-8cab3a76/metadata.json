@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2024-surrogateprompt-bypassing-the-safety-filter-of-text-to-i-8cab3a76",
   "title": "SurrogatePrompt: Bypassing the Safety Filter of Text-to-Image Models via Substitution",
+  "abstract": "Advanced text-to-image models such as DALL$\\cdot$E 2 and Midjourney possess the capacity to generate highly realistic images, raising significant concerns regarding the potential proliferation of unsafe content. This includes adult, violent, or deceptive imagery of political figures. Despite claims of rigorous safety mechanisms implemented in these models to restrict the generation of not-safe-for-work (NSFW) content, we successfully devise and exhibit the first prompt attacks on Midjourney, resulting in the production of abundant photorealistic NSFW images. We reveal the fundamental principles of such prompt attacks and suggest strategically substituting high-risk sections within a suspect prompt to evade closed-source safety measures. Our novel framework, SurrogatePrompt, systematically generates attack prompts, utilizing large language models, image-to-text, and image-to-image modules to automate attack prompt creation at scale. Evaluation results disclose an 88% success rate in bypassing Midjourney's proprietary safety filter with our attack prompts, leading to the generation of counterfeit images depicting political figures in violent scenarios. Both subjective and objective assessments validate that the images generated from our attack prompts present considerable safety hazards.",
+  "abstract_source_id": "src-abstract-ccs-2024-8cab3a76",
   "venue": "ccs",
   "year": 2024,
   "track_or_session": "Cycle 2",
@@ -243,6 +245,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2024-8cab3a76",
+      "url": "https://api.openalex.org/works?filter=title.search:SurrogatePrompt%3A%20Bypassing%20the%20Safety%20Filter%20of%20Text-to-Image%20Models%20via%20Substitution&select=id,title,abstract_inverted_index&per-page=3&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "SurrogatePrompt: Bypassing the Safety Filter of Text-to-Image Models via Substitution",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:12:14Z",
+      "content_hash": "sha256:a1319201242c445dead0b7f5c6ce9d57c476dae31a58da41ab30c570a3834a1e",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

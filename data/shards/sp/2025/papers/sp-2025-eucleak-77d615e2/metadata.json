@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2025-eucleak-77d615e2",
   "title": "EUCLEAK",
+  "abstract": "The present work unearths a side-channel vulnerability in the cryptographic library of Infineon Technologies, one of the most important secure element manufacturers. This vulnerability - that went unnoticed for 14 years and about 80 highest-level Common Criteria certification evaluations - is due to a non constant-time modular inversion. The attack requires physical access to the secure element (few local electromagnetic side-channel acquisitions, i.e. few minutes, are enough) in order to extract an ECDSA secret key. The attack is demonstrated on a FIDO hardware token from Yubico where it allows to create a clone of the FIDO device. Yubico acknowledged that all YubiKey 5 Series (with firmware version below 5.7) are impacted by the attack. Furthermore, strong arguments tend to indicate that all Infi-neon security microcontrollers (including TPMs) that run the Infineon cryptographic library are vulnerable to the attack.",
+  "abstract_source_id": "src-abstract-sp-2025-77d615e2",
   "venue": "sp",
   "year": 2025,
   "track_or_session": "Cycle 2",
@@ -70,6 +72,19 @@
       "official": true,
       "supports": [
         "DOI, authors, affiliations, abstract, publication date, pages, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2025-77d615e2",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "EUCLEAK Side-Channel Attack on the YubiKey 5 Series (Revealing and Breaking Infineon ECDSA Implementation on the Way)",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:47Z",
+      "content_hash": "sha256:d48e5e27e72297ce02860f066764bd9c5cd6e8191e2ebf4b4f15da0fffb6959f",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

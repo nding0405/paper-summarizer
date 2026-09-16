@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-alias-equals-zone-large-scale-and-stealthy-takeover-of-d-70dba2cf",
   "title": "Alias Equals Zone? Large-Scale and Stealthy Takeover of Domain Hosting Service via CNAME-Following Cross-Domain Verification",
+  "abstract": "CNAME records define alias relationships between domains and are widely used for service hosting and load balancing. We find that popular domain hosting providers misinterpret CNAME semantics during domain ownership verification. They accept DNS records after CNAME redirection as valid challenge tokens for alias domains, even though these domains do not configure any tokens. Based on this flaw, we propose ALIASLEAP, a novel domain takeover attack that enables hijacking hosting services of alias domains in CNAME chains. ALIASLEAP poses a serious threat in the real world: we identify four email and seven web hosting providers that are vulnerable, affecting over two million domains, including 200K in the Tranco Top 1M domain list. ALIASLEAP is highly stealthy because vulnerable CNAME chains are typically legitimate and long-lived: about half persist for more than 12 months, and up to 19,819 domains have been exposed for over 10 years. We propose mitigation strategies and responsibly disclose ALIASLEAP to 11 affected hosting providers, receiving confirmations from eight of them. We call on the Internet community to revisit the usage practices and capability boundaries of CNAME records.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-70dba2cf",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Security and Privacy for Web, Mobile, and Emerging Technologies 1",
@@ -155,6 +157,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-70dba2cf",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/li-ruixuan",
+      "kind": "paper-page",
+      "title": "Alias Equals Zone? Large-Scale and Stealthy Takeover of Domain Hosting Service via CNAME-Following Cross-Domain Verification",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:22:55Z",
+      "content_hash": "sha256:e6df2c7ddc79f99aea6aa985ce0572f94abda11c0d19f6cf0df9e8486647adf6",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

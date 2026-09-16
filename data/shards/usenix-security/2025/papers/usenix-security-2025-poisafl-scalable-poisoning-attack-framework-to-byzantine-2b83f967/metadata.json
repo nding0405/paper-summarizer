@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-poisafl-scalable-poisoning-attack-framework-to-byzantine-2b83f967",
   "title": "PoiSAFL: Scalable Poisoning Attack Framework to Byzantine-resilient Semi-asynchronous Federated Learning",
+  "abstract": "Semi-asynchronous federated learning (SAFL) enhances the efficiency of privacy-preserving collaborative learning across clients with diverse processing capabilities. It updates the global model by aggregating local models from only partial fast clients without waiting for all clients to synchronize. We realize that such semi-asynchronous aggregation may expose the system to serious poisoning risks, even when defenses are in place, since it introduces considerable inconsistency among local models, giving chances for attackers to inject inconspicuous malicious ones. However, such risks remain largely underexplored. To plug this gap and fully explore the vulnerability of SAFL, in this paper, we propose a scalable stealth poisoning attack framework for Byzantine-resilient SAFL, called PoiSAFL. It can effectively impair SAFL's learning performance while bypassing three typical kinds of Byzantine-resilient defenses by strategically controlling malicious clients to upload undetectable malicious local models. The challenge lies in crafting malicious models that evade detection yet remain destructive. We construct a constrained optimization problem and propose three modules to approximate the optimization objective: the anti-training-based model initialization, loss-aware model distillation, and distance-aware model scaling. These modules initialize and refine malicious models with desired poisoning ability while keeping their performance, prediction entropy, and dissimilarity within benign ranges to bypass detection. Extensive experiments demonstrate that PoiSAFL can defeat three typical categories of defenses. Besides, PoiSAFL can further amplify its attack impact by flexibly executing three proposed modules. Note that PoiSAFL is scalable and can incorporate new modules to defeat future new types of defenses.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-2b83f967",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "ML and AI Security 3: Backdoors, Poisoning, Unlearning",
@@ -238,6 +240,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-2b83f967",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/pang-xiaoyi",
+      "kind": "paper-page",
+      "title": "PoiSAFL: Scalable Poisoning Attack Framework to Byzantine-resilient Semi-asynchronous Federated Learning",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:21:08Z",
+      "content_hash": "sha256:d5974632e0d330f323894d4502e09932cbf2ca64ceaae2005cf5e270500c06bd",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

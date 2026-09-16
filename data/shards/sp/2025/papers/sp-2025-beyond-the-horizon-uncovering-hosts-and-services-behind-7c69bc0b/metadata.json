@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2025-beyond-the-horizon-uncovering-hosts-and-services-behind-7c69bc0b",
   "title": "Beyond the Horizon: Uncovering Hosts and Services Behind Misconfigured Firewalls",
+  "abstract": "Public IP addresses can expose devices and services to risks such as port scanning and subsequent cyberattacks. Therefore, firewalls are extensively deployed and play a critical role in enforcing security policies and preventing unauthorized access. However, vulnerabilities can allow firewalls to be by-passed, effectively nullifying the protection. In this paper, we present the first comprehensive study of a previously understudied attack surface: firewall misconfigurations that inadvertently expose protected services to the public Internet. Specifically, we demonstrate flawed firewall rules that allow inbound connections from special source ports to bypass the firewall, and explore the prevalence and security implications thereof. To this end, we scan the IPv4 space for 15 commonly high-risk TCP and UDP services from two special source ports. Our measurement reveals the widespread existence of such misconfigurations and identified over 2,000,000 otherwise unreachable services spread over 15,837 autonomous systems, expanding the “observable Internet” for various protocols by up to 12.60%. More importantly, the affected services generally exhibit higher security risks than the publicly accessible ones, like outdated software versions and weak configurations. Despite the severity of this vulnerability, our honeypot experiment provides little evidence of active exploitation in the wild. Our findings offer insights for better security posture and network administration, helping researchers and organizations anticipate and mitigate potential cyber threats emanating from the Internet.",
+  "abstract_source_id": "src-abstract-sp-2025-7c69bc0b",
   "venue": "sp",
   "year": 2025,
   "track_or_session": "Cycle 2",
@@ -154,6 +156,19 @@
       "official": true,
       "supports": [
         "DOI, authors, affiliations, abstract, publication date, pages, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2025-7c69bc0b",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Beyond the Horizon: Uncovering Hosts and Services Behind Misconfigured Firewalls",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:42Z",
+      "content_hash": "sha256:d62dac834635b4cd1890a53da454ceae7aaa151189662d990ac591dfd5cb6b3e",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

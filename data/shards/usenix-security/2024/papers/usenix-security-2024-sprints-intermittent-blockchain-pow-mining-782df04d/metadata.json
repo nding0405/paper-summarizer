@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2024-sprints-intermittent-blockchain-pow-mining-782df04d",
   "title": "Sprints: Intermittent Blockchain PoW Mining",
+  "abstract": "Cryptocurrencies and decentralized platforms have been rapidly gaining traction since Nakamoto's discovery of Bitcoin's blockchain protocol. Prominent systems use Proof of Work (PoW) to achieve unprecedented security for digital assets. However, the significant carbon footprint due to the manufacturing and operation of PoW mining hardware is leading policymakers to consider stark measures against them and various systems to explore alternatives. But these alternatives imply stepping away from key security aspects of PoW.\n\nWe present Sprints, a blockchain protocol that achieves almost the same security guarantees as PoW blockchains, but with an order-of-magnitude lower carbon footprint while increasing the number of mining rigs by a factor 1.27x. Our conservative estimate of environmental footprint uses common metrics, taking into account both power and hardware. To achieve this reduction, Sprints forces miners to mine intermittently. It interleaves Proof of Delay (PoD, e.g., using a Verifiable Delay Function) and PoW, where only the latter bears a significant resource expenditure. We prove that in Sprints the attacker's success probability is the same as that of legacy PoW. To evaluate practical performance, we analyze the effect of shortened PoW duration, showing a minor reduction in resilience (49% instead of 50%). We confirm the results with a full implementation using 100 patched Bitcoin clients in an emulated network.",
+  "abstract_source_id": "src-abstract-usenix-security-2024-782df04d",
   "venue": "usenix-security",
   "year": 2024,
   "track_or_session": "Blockchain II",
@@ -133,6 +135,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2024-782df04d",
+      "url": "https://www.usenix.org/conference/usenixsecurity24/presentation/mirkin",
+      "kind": "paper-page",
+      "title": "Sprints: Intermittent Blockchain PoW Mining",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:17:28Z",
+      "content_hash": "sha256:7536ce2259faec101c5e01b1e5163c1cfba3ca9bca6b4f6739926bd6824a7dcf",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

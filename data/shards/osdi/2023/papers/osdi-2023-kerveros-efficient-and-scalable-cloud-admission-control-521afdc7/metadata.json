@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2023-kerveros-efficient-and-scalable-cloud-admission-control-521afdc7",
   "title": "Kerveros: Efficient and Scalable Cloud Admission Control",
+  "abstract": "The infinite capacity of cloud computing is an illusion: in reality, cloud providers cannot always have enough capacity of the right type, in the right place, at the right time to meet all demand. Consequently, cloud providers need to implement admission-control policies to ensure accepted capacity requests experience high availability. However, admission control in the public cloud is hard due to dynamic changes in both supply and demand: hardware might become unavailable, and actual VM consumption could vary for a variety of reasons including tenant scale-outs and fulfillment of VM reservations made by customers ahead of time. In this paper, we design and implement Kerveros, a flexible admission-control system that has three desired properties: i) high computational scalability to handle a large inventory, ii) accurate capacity provisioning for high VM availability, and iii) good packing efficiency to optimize resource usage. To achieve this, Kerveros uses novel bookkeeping techniques to quickly estimate the capacity available for incoming VM requests. Our system has been deployed in Microsoft Azure. Results from both simulations and production confirm that Kerveros achieves more than four nines of availability while sustaining request processing latencies of a few milliseconds.",
+  "abstract_source_id": "src-abstract-osdi-2023-521afdc7",
   "venue": "osdi",
   "year": 2023,
   "track_or_session": "Secure Your Bits II",
@@ -306,6 +308,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2023-521afdc7",
+      "url": "https://www.usenix.org/conference/osdi23/presentation/sajal",
+      "kind": "paper-page",
+      "title": "Kerveros: Efficient and Scalable Cloud Admission Control",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:06:37Z",
+      "content_hash": "sha256:28e9cf08146dd1d955e7c3a33ecde6c3b5521a5f2e066817f4e7a769ed9355df",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

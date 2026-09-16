@@ -76,9 +76,7 @@ exists; the independent reviewer remains the verifier.
 ## Validation
 
 ```sh
-PYTHONPATH=src python3 -m systems_phd_explorer.cli validate \
-  --root data/shards \
-  --profile draft
+./mvnw -q compile exec:java -Dexec.args="validate --root data/shards"
 ```
 
 ## Handoff

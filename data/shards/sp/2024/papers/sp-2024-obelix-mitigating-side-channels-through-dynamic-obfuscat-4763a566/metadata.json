@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2024-obelix-mitigating-side-channels-through-dynamic-obfuscat-4763a566",
   "title": "Obelix: Mitigating Side-Channels through Dynamic Obfuscation",
+  "abstract": "Trusted execution environments (TEEs) offer hardware-assisted means to protect code and data. However, as shown in numerous results over the years, attackers can use side-channels to leak data access patterns and even single-step the code. While the vendors are slowly introducing hardware-based countermeasures for some attacks, others will stay unaddressed. This makes a software-level countermeasure desirable, but current available solutions only address very specific attack vectors or have a narrow leakage model.In this work, we take a holistic view at the vulnerabilities of TEEs and design a tool named Obelix, which is the first to protect both code and data against a wide range of TEE attacks, from cache attacks over single-stepping to ciphertext side-channels. We analyze the practically achievable precision of state-of-the-art single-stepping tools, and present an algorithm which uses that knowledge to divide a program into uniform code blocks, that are indistinguishable for a strong attacker. By storing these blocks and the program data in oblivious RAM, the attacker cannot follow execution, effectively protecting both secret code and data. We describe how we automate our approach to make it available for developers who are unfamiliar with side-channels. As an obfuscation tool, Obelix comes with a considerable performance overhead, but compensates this with strong security guarantees and easy applicability without requiring any expert knowledge.",
+  "abstract_source_id": "src-abstract-sp-2024-4763a566",
   "venue": "sp",
   "year": 2024,
   "track_or_session": "Winter cycle",
@@ -159,6 +161,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2024-4763a566",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Obelix: Mitigating Side-Channels Through Dynamic Obfuscation",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:37Z",
+      "content_hash": "sha256:d186972817127125a98a71b907d7b283fa37f2e757aaf5b9ae232aa389caabc0",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

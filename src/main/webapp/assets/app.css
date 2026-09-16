@@ -1,0 +1,1112 @@
+/* Server-rendered paper list.
+   Neutral, scan-first styling on a white background: system fonts, one
+   accent, no decoration, no scripts. */
+
+:root {
+  color-scheme: light;
+  --bg: #ffffff;
+  --bg-muted: #f4f4f2;
+  --fg: #1d1d1b;
+  --fg-muted: #5f5f5b;
+  --border: #d6d6d2;
+  --accent: #1740b4;
+  --accent-bg: #c5d6f5;
+  --focus: #b45309;
+  --tag-bg: #ececea;
+  --notice-bg: #fff6d5;
+  --notice-border: #d9b542;
+  --shadow: 0 6px 24px rgba(0, 0, 0, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.45;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  overflow-x: hidden;
+}
+
+a {
+  color: var(--accent);
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.92em;
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+}
+
+.muted {
+  color: var(--fg-muted);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Skip link: hidden until it receives keyboard focus. */
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: 8px;
+  padding: 6px 10px;
+  background: var(--fg);
+  color: var(--bg);
+  border-radius: 3px;
+  z-index: 30;
+}
+
+.skip-link:focus {
+  left: 8px;
+}
+
+/* Controls. */
+input,
+select,
+button,
+.button {
+  font: inherit;
+  font-size: 14px;
+  min-height: 34px;
+  padding: 4px 10px;
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  background: var(--bg);
+  color: var(--fg);
+}
+
+input[type="search"] {
+  width: 100%;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+input[type="number"] {
+  width: 5.5em;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  min-height: 0;
+  margin: 0 6px 0 0;
+  vertical-align: middle;
+}
+
+.button,
+button {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 14px;
+  background: var(--fg);
+  color: var(--bg);
+  border-color: var(--fg);
+  text-decoration: none;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.button-secondary,
+button.button-secondary {
+  background: var(--bg);
+  color: var(--fg);
+  border-color: var(--border);
+}
+
+.button-secondary:hover,
+button.button-secondary:hover {
+  background: var(--bg-muted);
+}
+
+/* Top bar, identical on every page: page controls on the left, the
+   collapsible search and page links on the right. */
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px 16px;
+  padding: 8px 16px;
+  border-bottom: 1px solid var(--border);
+  background: var(--bg-muted);
+}
+
+.topbar-left,
+.topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+}
+
+.filter-form {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.field-search {
+  flex: 1 1 320px;
+}
+
+.field-label {
+  font-size: 12px;
+  color: var(--fg-muted);
+}
+
+.filter-count {
+  display: inline-block;
+  min-width: 1.5em;
+  padding: 0 5px;
+  border-radius: 999px;
+  background: var(--accent);
+  color: #fff;
+  font-size: 12px;
+  line-height: 1.5em;
+  text-align: center;
+}
+
+/* Pop-up panel built on <details>, so it needs no script. */
+.filter-popup {
+  position: relative;
+}
+
+.filter-popup > summary {
+  list-style: none;
+}
+
+.filter-popup > summary::-webkit-details-marker {
+  display: none;
+}
+
+.filter-popup > summary::after {
+  content: "\25BE";
+  font-size: 12px;
+}
+
+.filter-popup[open] > summary::after {
+  content: "\25B4";
+}
+
+.filter-panel {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  z-index: 20;
+  width: min(760px, calc(100vw - 32px));
+  max-height: min(78vh, 720px);
+  overflow-y: auto;
+  padding: 14px 16px 12px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: var(--bg);
+  box-shadow: var(--shadow);
+}
+
+.filter-panel-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.filter-panel select {
+  width: 100%;
+}
+
+.facet {
+  margin: 0 0 10px;
+  padding: 8px 10px 6px;
+  border: 1px solid var(--border);
+  border-radius: 3px;
+}
+
+.facet legend,
+.facet-match legend {
+  padding: 0 4px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--fg-muted);
+}
+
+.facet-options {
+  columns: 3 200px;
+  column-gap: 16px;
+  font-size: 13px;
+}
+
+.facet-option {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+  padding: 1px 0;
+  break-inside: avoid;
+}
+
+.facet-option .facet-label {
+  flex: 1 1 auto;
+}
+
+.facet-topic .facet-option:not(.is-subtopic) {
+  font-weight: 600;
+  margin-top: 4px;
+}
+
+.facet-option.is-subtopic {
+  padding-left: 18px;
+}
+
+.facet-match {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px 16px;
+  margin: 0 0 12px;
+  padding: 6px 10px;
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  font-size: 13px;
+}
+
+.filter-panel-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding-top: 10px;
+  border-top: 1px solid var(--border);
+}
+
+/* Two-column layout: fixed sidebar, fluid paper list. */
+.layout {
+  display: grid;
+  grid-template-columns: 250px minmax(0, 1fr);
+  align-items: start;
+}
+
+.sidebar {
+  position: sticky;
+  top: 0;
+  max-height: 100vh;
+  overflow-y: auto;
+  padding: 12px 8px 24px 16px;
+  border-right: 1px solid var(--border);
+  font-size: 13px;
+}
+
+.sidebar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar a {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 2px 6px;
+  border-radius: 3px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.sidebar a:hover {
+  background: var(--bg-muted);
+}
+
+.sidebar a[aria-current="page"] {
+  background: var(--accent-bg);
+  font-weight: 600;
+}
+
+.count {
+  color: var(--fg-muted);
+  font-weight: 400;
+  font-variant-numeric: tabular-nums;
+}
+
+.nav-category {
+  margin-top: 12px;
+}
+
+.nav-category-link {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--fg-muted);
+}
+
+.nav-years {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 2px;
+  margin-left: 10px;
+}
+
+.nav-years a {
+  gap: 4px;
+  padding: 0 5px;
+  font-size: 12px;
+  color: var(--fg-muted);
+}
+
+.nav-years a[aria-current="page"] {
+  color: var(--fg);
+}
+
+/* Incomplete venue-year coverage, e.g. "upcoming" or "partial". */
+.coverage-mark {
+  font-size: 11px;
+  font-style: italic;
+  color: var(--fg-muted);
+}
+
+/* Paper list. */
+.content {
+  min-width: 0;
+  padding: 12px 24px 48px;
+}
+
+.results-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px 16px;
+  margin-bottom: 8px;
+}
+
+.results-heading {
+  margin: 0;
+  font-size: 19px;
+}
+
+.results-count {
+  margin: 0;
+  font-size: 13px;
+  color: var(--fg-muted);
+}
+
+.notice {
+  margin: 0 0 12px;
+  padding: 8px 12px;
+  border: 1px solid var(--notice-border);
+  border-radius: 3px;
+  background: var(--notice-bg);
+  font-size: 13px;
+}
+
+.active-filters {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  margin: 0 0 12px;
+  padding: 0;
+  list-style: none;
+  font-size: 13px;
+}
+
+.active-filter {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 1px 4px 1px 8px;
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  background: var(--bg-muted);
+}
+
+.active-filter-name {
+  color: var(--fg-muted);
+}
+
+.active-filter-remove {
+  padding: 0 4px;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.paper-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.paper {
+  padding: 8px 0 11px;
+  border-top: 1px solid var(--border);
+}
+
+/* Each row is a <details>; the collapsed part is the <summary>. */
+.paper-details > summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 2px 4px;
+  margin: 0 -4px;
+  border-radius: 3px;
+}
+
+.paper-details > summary::-webkit-details-marker {
+  display: none;
+}
+
+.paper-details > summary:hover {
+  background: var(--bg-muted);
+}
+
+.paper-title {
+  margin: 0 0 2px;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.paper-authors {
+  display: block;
+  font-size: 13px;
+  color: var(--fg-muted);
+}
+
+.paper-institutions {
+  display: block;
+  margin: 0;
+  font-size: 12.5px;
+  color: var(--fg-muted);
+}
+
+.paper-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px 10px;
+  margin: 3px 0 0;
+  font-size: 12px;
+}
+
+.paper-venue {
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+.tag {
+  padding: 0 6px;
+  border-radius: 3px;
+  background: var(--tag-bg);
+}
+
+.tag-summary {
+  background: var(--accent-bg);
+  color: var(--fg);
+}
+
+.tag-relevance,
+.tag-status {
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--fg-muted);
+}
+
+.paper-toggle {
+  margin-left: auto;
+  color: var(--accent);
+  white-space: nowrap;
+}
+
+.paper-details[open] .when-closed,
+.paper-details:not([open]) .when-open {
+  display: none;
+}
+
+.paper-takeaway {
+  display: block;
+  max-width: 78ch;
+  margin: 4px 0 0;
+  font-size: 14px;
+}
+
+.paper-body {
+  max-width: 82ch;
+  margin: 8px 0 4px;
+  padding: 4px 0 4px 14px;
+  border-left: 3px solid var(--accent);
+  font-size: 14px;
+}
+
+.paper-section {
+  margin: 0 0 12px;
+}
+
+.paper-section h3 {
+  margin: 0 0 4px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--fg-muted);
+}
+
+.paper-section p {
+  margin: 0 0 6px;
+}
+
+/* Multi-paragraph abstracts keep their blank lines. */
+.prose {
+  white-space: pre-line;
+}
+
+.summary-status {
+  font-size: 13px;
+  color: var(--fg-muted);
+}
+
+.summary-story {
+  margin: 0;
+}
+
+.summary-story dt {
+  margin-top: 8px;
+  font-weight: 600;
+}
+
+.summary-story dd {
+  margin: 2px 0 0;
+}
+
+.summary-results,
+.review-issues {
+  margin: 4px 0 6px;
+  padding-left: 20px;
+}
+
+.summary-results li,
+.review-issues li {
+  margin-bottom: 4px;
+}
+
+.paper-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 14px;
+  margin: 4px 0 0;
+  font-size: 13px;
+}
+
+.empty-state {
+  padding: 40px 0;
+  color: var(--fg-muted);
+}
+
+/* Pagination: previous/next, ±5/±10 jumps, and a go-to-page box. */
+.pagination {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px 24px;
+  margin-top: 8px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+  font-size: 14px;
+}
+
+.pagination-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px 14px;
+}
+
+.pagination-links a {
+  font-variant-numeric: tabular-nums;
+}
+
+.pagination-disabled {
+  color: var(--fg-muted);
+}
+
+.pagination-status {
+  padding: 0 6px;
+  font-variant-numeric: tabular-nums;
+}
+
+.pagination-jump {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.pagination-jump label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.error-page {
+  max-width: 60ch;
+}
+
+/* Narrow screens: sidebar becomes a compact conference chip block above the list.
+   Year links show only for the currently selected conference. */
+@media (max-width: 800px) {
+  .layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .sidebar {
+    position: static;
+    max-height: none;
+    padding: 8px 16px 10px;
+    border-right: 0;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .sidebar a {
+    justify-content: flex-start;
+    gap: 5px;
+  }
+
+  .nav-category {
+    margin-top: 6px;
+  }
+
+  .nav-venues {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+
+  .nav-venue-link {
+    border: 1px solid var(--border);
+  }
+
+  .nav-venue.is-current {
+    display: flex;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .nav-venue:not(.is-current) .nav-years {
+    display: none;
+  }
+
+  .nav-years {
+    margin-left: 4px;
+  }
+
+  .content {
+    padding: 12px 16px 32px;
+  }
+
+  .filter-popup {
+    position: static;
+  }
+
+  .filter-panel {
+    left: 8px;
+    right: 8px;
+    width: auto;
+  }
+
+  .search-panel {
+    width: calc(100vw - 180px);
+  }
+
+  .facet-options {
+    columns: 2 160px;
+  }
+
+  .paper-toggle {
+    margin-left: 0;
+    flex-basis: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .field-search {
+    flex-basis: 100%;
+  }
+
+  .facet-options {
+    columns: 1;
+  }
+}
+
+@media (forced-colors: active) {
+  .sidebar a[aria-current="page"],
+  .tag,
+  .active-filter,
+  .filter-panel {
+    border: 1px solid CanvasText;
+  }
+}
+
+/* Page switcher in the top bar. */
+.site-nav {
+  display: flex;
+  gap: 4px;
+  font-size: 14px;
+}
+
+.site-nav a {
+  padding: 4px 10px;
+  border-radius: 3px;
+  color: var(--fg);
+  text-decoration: none;
+}
+
+.site-nav a:hover {
+  background: var(--bg);
+}
+
+.site-nav a[aria-current="page"] {
+  background: var(--accent-bg);
+  font-weight: 600;
+}
+
+.breadcrumbs {
+  margin: 0;
+  font-size: 14px;
+}
+
+/* Search icon that reveals the search box. The icon stays in place; the box
+   opens to its left so the page links never move. */
+.search-form {
+  display: flex;
+  align-items: center;
+}
+
+.search-popup {
+  position: relative;
+}
+
+.search-popup > summary {
+  list-style: none;
+  display: inline-flex;
+}
+
+.search-popup > summary::-webkit-details-marker {
+  display: none;
+}
+
+.icon-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 36px;
+  min-height: 34px;
+  padding: 4px 8px;
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  background: var(--bg);
+  color: var(--fg);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.icon-button:hover {
+  background: var(--bg-muted);
+}
+
+/* A query is active but the box is collapsed. */
+.icon-button.is-active {
+  background: var(--accent-bg);
+  border-color: var(--accent-bg);
+}
+
+.search-popup[open] > summary {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-left: 0;
+}
+
+.icon {
+  display: block;
+  color: var(--fg);
+}
+
+.search-panel {
+  position: absolute;
+  top: 0;
+  right: 100%;
+  width: min(380px, calc(100vw - 200px));
+  z-index: 25;
+}
+
+.search-panel input[type="search"] {
+  width: 100%;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+/* Suggestion listbox rendered by app.js under the search box. */
+.suggestions {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  right: 0;
+  z-index: 25;
+  max-height: min(60vh, 480px);
+  overflow-y: auto;
+  margin: 0;
+  padding: 4px 0;
+  list-style: none;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: var(--bg);
+  box-shadow: var(--shadow);
+}
+
+.suggestion a {
+  display: block;
+  padding: 6px 12px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.suggestion.is-active a,
+.suggestion a:hover {
+  background: var(--accent-bg);
+}
+
+.suggestion-title {
+  display: block;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.suggestion-meta {
+  display: block;
+  font-size: 12px;
+  color: var(--fg-muted);
+}
+
+.results-proceedings {
+  font-size: 13px;
+}
+
+/* Proceedings overview and per-session program. */
+.content-wide {
+  max-width: 1100px;
+}
+
+.proceedings-overview {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px 32px;
+}
+
+.overview-category-name {
+  margin: 8px 0 6px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--fg-muted);
+}
+
+.overview-venues {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.overview-venue {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px 12px;
+  padding: 4px 0;
+  border-top: 1px solid var(--border);
+}
+
+.overview-venue-name {
+  flex: 0 0 120px;
+  font-weight: 600;
+}
+
+.overview-years {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 12px;
+}
+
+.overview-years a {
+  text-decoration: none;
+}
+
+.year-switcher {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin: 0 0 12px;
+  font-size: 14px;
+}
+
+.year-switcher a {
+  padding: 2px 10px;
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  text-decoration: none;
+}
+
+.year-switcher a[aria-current="page"] {
+  background: var(--accent-bg);
+  border-color: var(--accent-bg);
+  font-weight: 600;
+}
+
+.session-toc {
+  margin: 0 0 16px;
+  padding: 10px 14px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: var(--bg-muted);
+  font-size: 13px;
+}
+
+.session-toc-title {
+  margin: 0 0 4px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--fg-muted);
+}
+
+.session-toc-list {
+  columns: 3 220px;
+  column-gap: 24px;
+  margin: 0;
+  padding-left: 20px;
+}
+
+.session-toc-list li {
+  break-inside: avoid;
+  padding: 1px 0;
+}
+
+.session {
+  margin-top: 20px;
+}
+
+.session-name {
+  margin: 0 0 4px;
+  padding-bottom: 4px;
+  border-bottom: 2px solid var(--fg);
+  font-size: 16px;
+}
+
+.session-name .count {
+  font-size: 13px;
+}
+
+/* One paper's page. */
+.paper-page {
+  max-width: 900px;
+}
+
+.paper-full {
+  border-top: 0;
+  padding-top: 0;
+}
+
+.paper-page-title {
+  margin: 0 0 4px;
+  font-size: 22px;
+  line-height: 1.3;
+}
+
+.paper-authors-full {
+  margin: 0 0 4px;
+  font-size: 14px;
+  color: var(--fg-muted);
+}
+
+.paper-body-full {
+  max-width: none;
+  margin-top: 16px;
+  padding-left: 0;
+  border-left: 0;
+  font-size: 15px;
+}
+
+.paper-body-full .paper-section {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 800px) {
+  .session-toc-list {
+    columns: 2 180px;
+  }
+}
+
+/* Corpus statistics footer. */
+.site-footer {
+  margin-top: 24px;
+  padding: 14px 24px 20px;
+  border-top: 1px solid var(--border);
+  background: var(--bg-muted);
+  font-size: 13px;
+}
+
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 28px;
+  margin: 0;
+}
+
+.stats div {
+  display: flex;
+  flex-direction: column;
+}
+
+.stats dt {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--fg-muted);
+}
+
+.stats dd {
+  margin: 0;
+  font-size: 15px;
+  font-variant-numeric: tabular-nums;
+}
+
+.stats dd .muted {
+  font-size: 12px;
+}

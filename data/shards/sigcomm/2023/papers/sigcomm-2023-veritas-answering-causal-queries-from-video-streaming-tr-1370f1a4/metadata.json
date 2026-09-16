@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sigcomm-2023-veritas-answering-causal-queries-from-video-streaming-tr-1370f1a4",
   "title": "Veritas: Answering Causal Queries from Video Streaming Traces",
+  "abstract": "In this paper, we consider the task of answering what-if questions in the context of adaptive bit rate (ABR) video streaming without access to randomized control trials (RCTs) (e.g., no A/B testing) - i.e., given recorded data of an existing deployed system, what would be the performance impact if we changed its design. Our work makes three contributions. First, we show the problem is challenging since data may only be available for a single ABR algorithm without RCTs, and since it is necessary to deal with the cascading effects that past ABR decisions have on future decisions. Next we present Veritas, the first framework that tackles causal reasoning for video streaming without requiring data collected through RCTs. Integral to Veritas is an easy-to-interpret domain-specific ML model that relates the latent stochastic process (intrinsic bandwidth that the video session can achieve) to actual observations (download times), while exploiting counterfactual queries via abduction using the observed TCP states (e.g., congestion window) for blocking the cascading dependencies. Third, we evaluate Veritas's ability to accurately answer a wide range of what-if questions using emulation experiments, and data of real video sessions from Puffer. The results show that (i) Veritas accurately tackles a wider range of what-if questions (e.g., change of buffer size or video quality) that existing approaches cannot; (ii) Veritas without RCT training data achieves performance comparable or better than a recent parallel approach that requires RCT data; and (iii) in many scenarios Veritas achieves accuracy close to an ideal oracle.",
+  "abstract_source_id": "src-abstract-sigcomm-2023-1370f1a4",
   "venue": "sigcomm",
   "year": 2023,
   "track_or_session": "Video Analysis — Research Paper",
@@ -151,6 +153,19 @@
         "publisher-deposited ORCIDs",
         "proceedings page range and print publication date",
         "empty publisher relation metadata for alternate-version checks"
+      ]
+    },
+    {
+      "id": "src-abstract-sigcomm-2023-1370f1a4",
+      "url": "https://api.openalex.org/works/doi:10.1145/3603269.3604828?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Veritas: Answering Causal Queries from Video Streaming Traces",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:23:01Z",
+      "content_hash": "sha256:b52b36f0e9feda81864ec5d3ed59dda98122c971da75c4a8603586c503a19fff",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

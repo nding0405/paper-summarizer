@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "atc-2023-translation-pass-through-for-near-native-paging-performa-cc9b6285",
   "title": "Translation Pass-Through for Near-Native Paging Performance in VMs",
+  "abstract": "Virtual machines~(VMs) are used for consolidation, isolation, and provisioning in the cloud, but applications with large working sets are impacted by the overheads of memory address translation in VMs. Existing translation approaches incur non-trivial overheads: (i)~nested paging has a worst-case latency that increases with page table depth; and (ii)~paravirtualized and shadow paging suffer from high hypervisor intervention costs when updating guest page tables.\n\nWe describe Translation Pass-Through (TPT), a new memory virtualization mechanism that achieves near-native performance. TPT enables VMs to control virtual memory translation from guest-virtual to host-physical addresses using one-dimensional page tables. At the same time, inter-VM isolation is enforced by the host by exploiting new hardware support for physical memory tagging in commodity CPUs.\n\nWe prototype TPT by modifying the KVM/QEMU hypervisor and enlightening the Linux guest. We evaluate it by emulating the memory tagging mechanism of AMD CPUs. Our conservative performance estimates show that TPT achieves native performance for real-world data center applications, with speedups of up to 2.4× and 1.4× over nested and shadow paging, respectively.",
+  "abstract_source_id": "src-abstract-atc-2023-cc9b6285",
   "venue": "atc",
   "year": 2023,
   "track_or_session": "Virtual Machines",
@@ -180,6 +182,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-atc-2023-cc9b6285",
+      "url": "https://www.usenix.org/conference/atc23/presentation/bergman",
+      "kind": "paper-page",
+      "title": "Translation Pass-Through for Near-Native Paging Performance in VMs",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T21:58:20Z",
+      "content_hash": "sha256:156060f9525349b0437f77693614b16e55796027718203762e60e62f0bd21efe",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

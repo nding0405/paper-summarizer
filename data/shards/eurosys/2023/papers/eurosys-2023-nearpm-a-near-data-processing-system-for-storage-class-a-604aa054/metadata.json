@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "eurosys-2023-nearpm-a-near-data-processing-system-for-storage-class-a-604aa054",
   "title": "NearPM: A Near-Data Processing System for Storage-Class Applications",
+  "abstract": "Persistent Memory (PM) technologies enable both fast memory access and recovery in case of a failure. To ensure crash-consistent behavior, programs need to enforce persist ordering and employ mechanisms that introduce additional data movements such as logging, checkpointing, and shadow-paging. The emerging near-data processing (NDP) architectures can effectively reduce this overhead. In this work, we propose NearPM, a near-data processor that accelerates common, primitive operations that are crucial to crash consistency. Using these primitives, NearPM accelerates commonly-used crash-consistency mechanisms. NearPM further reduces the synchronization overheads between the NDP and the CPU by handling ordering near memory. We propose Partitioned Persist Ordering (PPO) that ensures a correct persist ordering between CPU and NDP devices, as well as among multiple NDP devices. We prototype NearPM on an FPGA platform. NearPM executes the data-intensive operations of crash-consistency mechanisms with correct ordering guarantees, while the rest of the program runs on the CPU. We evaluate nine PM workloads, each implemented in three crash consistency mechanisms: logging, checkpointing, and shadow paging. Overall, NearPM achieves 4.3 -- 9.8× speedup in the NDP-offloaded operations and 1.22 -- 1.35× speedup in the whole applications.",
+  "abstract_source_id": "src-abstract-eurosys-2023-604aa054",
   "venue": "eurosys",
   "year": 2023,
   "track_or_session": null,
@@ -146,6 +148,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-eurosys-2023-604aa054",
+      "url": "https://api.openalex.org/works/doi:10.1145/3552326.3587456?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "NearPM: A Near-Data Processing System for Storage-Class Applications",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:18:37Z",
+      "content_hash": "sha256:c2bec20a58e67de9cea5064537a1121cff38da6b9dd7c66a659312130beaa998",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

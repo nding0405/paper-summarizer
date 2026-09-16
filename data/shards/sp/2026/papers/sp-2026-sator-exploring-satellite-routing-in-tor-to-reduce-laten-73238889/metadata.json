@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2026-sator-exploring-satellite-routing-in-tor-to-reduce-laten-73238889",
   "title": "SaTor: Exploring Satellite Routing in Tor to Reduce Latency",
+  "abstract": "High latency is a critical limitation within the Tor network that has a negative impact on web application responsiveness. A key factor exacerbating Tor latency is the creation of lengthy circuits that span across geographically distant regions, causing significant transmission delays. A common solution involves modifying Tor's circuit-building process to reduce the likelihood of selecting lengthy circuits. However, this strategy compromises Tor's routing randomness, increasing the risk of deanonymization. Reducing Tor's latency while minimizing security degradation presents a challenge. This paper proposes and investigates SaTor, a satelliteassisted routing scheme to reduce Tor latency. By equipping Tor relays with satellite network access, SaTor could accelerate slow circuits via satellite transmission, without biasing the existing path selection process. Our performance evaluation, using a simulator we developed along with real-world measurements, shows that over the long term, SaTor provides an expected speed-up of 21.8 ms for over 40 % of circuits, with only 100 top relays equipped with satellite service. Our research uncovers a viable way to overcome Tor's latency bottleneck, serving as a practical reference for its future enhancement.",
+  "abstract_source_id": "src-abstract-sp-2026-73238889",
   "venue": "sp",
   "year": 2026,
   "track_or_session": "Cycle 1",
@@ -91,6 +93,19 @@
       "official": true,
       "supports": [
         "DOI, published-order authors and affiliations, abstract, publication date, page span, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2026-73238889",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "SaTor: Exploring Satellite Routing in Tor to Reduce Latency",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:58:02Z",
+      "content_hash": "sha256:4204efad9387253e2c70bd18217fac7c5220b9cd43ecd6179fdc27c5a043343e",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

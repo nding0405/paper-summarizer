@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-cloudflow-identifying-security-sensitive-data-flows-in-s-b762a14f",
   "title": "CloudFlow: Identifying Security-sensitive Data Flows in Serverless Applications",
+  "abstract": "The serverless computing paradigm has significantly changed how modern cloud applications are developed. This model allows developers to focus on application business logic while outsourcing to the cloud provider infrastructure details such as machine provisioning. However, the serverless model also presents new security challenges. Among these, static analysis of application security, a fundamental part of the secure software development lifecycle, becomes more complex due to the presence of event-triggered code and the black-box nature of cloud services.\n\nIn this paper, we present CloudFlow, a novel framework to statically detect security-sensitive data flows in serverless applications. To achieve this, CloudFlow leverages the infrastructure definition provided by the developer to identify the events, permissions and entry points of an application. Using this information and custom models for events and cloud API calls, it instruments the application code, which can then be analysed with general-purpose methods for static analysis. We evaluate our framework against a new suite of 40 microbenchmarks, CloudBench. Furthermore, we analyse 104 real-world applications selected from a recent dataset. To the best of our knowledge, this is the largest security-focused analysis of serverless applications to date. Our results show that CloudFlow passes all microbenchmarks, apart from three, and detects 11 code injection and information leakage vulnerabilities in real-world applications. Both CloudFlow and CloudBench are open-source to support future research.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-b762a14f",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "System Security 2: Trusted and Robust Computing",
@@ -133,6 +135,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-b762a14f",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/raffa",
+      "kind": "paper-page",
+      "title": "CloudFlow: Identifying Security-sensitive Data Flows in Serverless Applications",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:19:07Z",
+      "content_hash": "sha256:a535908a28bd61fb8ad469606c1fec58d5a8abcfc8bc4950f1d10255b33d8c4e",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

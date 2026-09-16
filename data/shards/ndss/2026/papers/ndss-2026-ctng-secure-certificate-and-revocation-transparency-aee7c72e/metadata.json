@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2026-ctng-secure-certificate-and-revocation-transparency-aee7c72e",
   "title": "CTng: Secure Certificate and Revocation Transparency",
+  "abstract": "We present CTng, an evolutionary and practical PKI design that efficiently addresses multiple key challenges faced by deployed PKI systems. CTng ensures strong security properties, including guaranteed transparency of certificates and guaranteed, unequivocal revocation , achieved under NTTP-security , i.e., without requiring trust in any single CA, logger, or relying party. These guarantees hold even in the presence of arbitrary corruptions of these entities, assuming only a known bound (f) of corrupt monitors (e.g., f=8), with minimal performance impact. CTng also enables efficient certificate validation and preserves relying-party privacy , while providing scalable and efficient distribution of revocation updates.\n\nThese properties significantly improve upon current PKI designs. In particular, while Certificate Transparency (CT) [35], [36], [37] aims to eliminate single points of trust, the existing specification [36] still assumes benign loggers. Addressing this through log redundancy is possible, but rather inefficient, limiting deployed configurations to f ≤ 2.\n\nWe present a security analysis and an evaluation of our opensource CTng prototype, showing that it is efficient and scalable under realistic deployment conditions.",
+  "abstract_source_id": "src-abstract-ndss-2026-aee7c72e",
   "venue": "ndss",
   "year": 2026,
   "track_or_session": "Summer submission cycle",
@@ -181,6 +183,19 @@
       "official": false,
       "supports": [
         "independent proceedings identity reconciliation"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2026-aee7c72e",
+      "url": "https://www.ndss-symposium.org/ndss-paper/ctng-secure-certificate-and-revocation-transparency/",
+      "kind": "paper-page",
+      "title": "CTng: Secure Certificate and Revocation Transparency",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:21:46Z",
+      "content_hash": "sha256:03f2c512b17c7ebb3950cfcf7a50ad3b58f78e0ace0bc5c96b6503e53832c88d",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

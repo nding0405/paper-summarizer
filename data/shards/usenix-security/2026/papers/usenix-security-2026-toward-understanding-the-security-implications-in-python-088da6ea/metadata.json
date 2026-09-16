@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-toward-understanding-the-security-implications-in-python-088da6ea",
   "title": "Toward Understanding the Security Implications in Python Configuration Files",
+  "abstract": "Security incidents targeting open-source software have increased substantially in recent years, yet existing defenses primarily focus on analyzing source code while largely overlooking configuration files that define how software is built, installed, and executed. In this paper, we present an in-depth study of security risks in Python configuration files, analyzing five widely used formats across the project lifecycle. We focus on risks that exploit configuration files to silently redirect dependency resolution to attacker-controlled infrastructure or hijack benign commands. We design an automated framework and identify 39 configuration fields that can be exploited under realistic usage scenarios. We further demonstrate that existing malware detection tools fail to detect most of these risks. As mitigation, we develop ConfigScoper, which not only examines security-relevant fields but also employs multiple vulnerability detectors to identify potential malicious behaviors. We apply ConfigScoper in a measurement study analyzing millions of open-source Python projects on GitHub, and our empirical results show that exploitable risks already exist in real-world projects. Finally, we have responsibly disclosed the identified vulnerabilities to relevant stakeholders.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-088da6ea",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Network Security 3",
@@ -134,6 +136,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-088da6ea",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/yu-xinwei",
+      "kind": "paper-page",
+      "title": "Toward Understanding the Security Implications in Python Configuration Files",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:25:55Z",
+      "content_hash": "sha256:1ff9a24c91707177b42b87e628e935d673de35973ee1ca406367ebdc3703ee21",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

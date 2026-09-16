@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2026-cocoon-a-system-architecture-for-differentially-private-40fe82c4",
   "title": "Cocoon: A System Architecture for Differentially Private Training with Correlated Noises",
+  "abstract": "Machine learning (ML) models memorize and leak training data, causing serious privacy issues to data owners. Training algorithms with differential privacy (DP) have been gaining attention as a solution. However, these algorithms add noise at each training iteration and degrade accuracy, limiting their real-world adoption. To improve accuracy, a new family of approaches adds carefully designed correlated noises, so that noises cancel out each other across iterations. We performed an extensive characterization study of these new mechanisms and show they incur non-negligible overheads when the model is relatively large or uses large embedding tables compared to the hardware capacity. Motivated by the analysis, we propose Cocoon, a framework for efficient training with correlated noises. Cocoon stores and processes the large noise history across CPU, GPU, and memory extension module, introduces optimizations for sparse embedding tables, and leverages to-be-commercialized near-memory processing (NMP) devices. On a real system with an FPGA-based NMP device prototype, Cocoon improves the performance by 1.23–10.82×.",
+  "abstract_source_id": "src-abstract-osdi-2026-40fe82c4",
   "venue": "osdi",
   "year": 2026,
   "track_or_session": "LLM Training at Scale",
@@ -251,6 +253,19 @@
       "official": true,
       "supports": [
         "Official proceedings availability and canonical conference versions."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2026-40fe82c4",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/kim-donghwan",
+      "kind": "paper-page",
+      "title": "Cocoon: A System Architecture for Differentially Private Training with Correlated Noises",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:08:05Z",
+      "content_hash": "sha256:0424eaa10eb38d81fbe906979304a98e0f4e9ab02c43456d7001b167be9b7d55",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

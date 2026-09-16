@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2025-probabilistic-skipping-based-data-structures-with-robust-fe9c24b4",
   "title": "Probabilistic Skipping-Based Data Structures with Robust Efficiency Guarantees",
+  "abstract": "Probabilistic data structures like hash tables, skip lists, and treaps support efficient operations through randomized hierarchies that enable ''skipping'' elements, achieving sub-linear query complexity on average for perfectly correct responses. They serve as critical components in performance-sensitive systems where correctness is essential and efficiency is highly desirable. While simpler than deterministic alternatives like balanced search trees, these structures traditionally assume that input data are independent of the structure's internal randomness and state -- an assumption questionable in malicious environments -- potentially leading to a significantly increased query complexity. We present adaptive attacks on all three aforementioned structures that, in the case of hash tables and skip lists, cause exponential degradation compared to the input-independent setting. While efficiency-targeting attacks on hash tables are well-studied, our attacks on skip lists and treaps provide new insights into vulnerabilities of skipping-based probabilistic data structures. Next, we propose simple and efficient modifications to the original designs of these data structures to provide provable security against adaptive adversaries. Our approach is formalized through Adaptive Adversary Property Conservation (AAPC), a general security notion that captures deviation from the expected efficiency guarantees in adversarial scenarios. We use this notion to present rigorous robustness proofs for our versions of the data structures. Lastly, we perform experiments whose empirical results closely agree with our analytical results.",
+  "abstract_source_id": "src-abstract-ccs-2025-fe9c24b4",
   "venue": "ccs",
   "year": 2025,
   "track_or_session": "Cycle 2",
@@ -127,6 +129,19 @@
         "published-order authors",
         "publication-time affiliations",
         "publication date and page span"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2025-fe9c24b4",
+      "url": "https://api.openalex.org/works/doi:10.1145/3719027.3765149?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Probabilistic Skipping-Based Data Structures with Robust Efficiency Guarantees",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:15:44Z",
+      "content_hash": "sha256:18f506cfd18f8cfbacac0057988af90e0189cae909423e8038ab6a0b78eb1f90",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

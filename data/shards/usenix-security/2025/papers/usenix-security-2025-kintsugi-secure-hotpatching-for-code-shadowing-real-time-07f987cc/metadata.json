@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-kintsugi-secure-hotpatching-for-code-shadowing-real-time-07f987cc",
   "title": "Kintsugi: Secure Hotpatching for Code-Shadowing Real-Time Embedded Systems",
+  "abstract": "Mission-critical embedded devices deal with strict real-time constraints, and thus make traditional updates or reboots unsuitable. While runtime fixes (i.e., hotpatching) reduce downtime, they pose challenges for resource management and real-time performance. Previous work has focused mainly on hotpatching devices executing their firmware from flash, neglecting those that use code-shadowing to execute firmware from RAM. These approaches neglect secure end-to-end hotpatch deployment during runtime, putting vulnerable devices at risk.\n\nWe introduce Kintsugi, the first secure hotpatching framework for real-time embedded devices that uses code-shadowing. By leveraging the context switch of real-time operating systems, we achieve atomic application of hotpatches while enforcing strict memory policies to protect Kintsugi's resources with minimal overhead. Kintsugi is designed to prevent tampering attacks on both the framework and deployed hotpatches. Evaluated on the NRF52840-DK with an ARM Cortex-M4 MCU running at 64 MHz, a processor deployed in millions of devices, our results demonstrate Kintsugi's performance advantage with overheads as low as 38 cycles (0.59 \\mu s) during normal operation, peaking at 216 cycles (3.38 \\mu s). We show Kintsugi's effectiveness addressing real-world vulnerabilities in popular real-time operating systems like FreeRTOS and Zephyr, and libraries such as mbedTLS and picoTCP. Our approach introduces negligible overhead, making it ideal for real-time applications, as illustrated by our case study.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-07f987cc",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Embedded and Hardware Security",
@@ -154,6 +156,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-07f987cc",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/mackensen",
+      "kind": "paper-page",
+      "title": "Kintsugi: Secure Hotpatching for Code-Shadowing Real-Time Embedded Systems",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:20:29Z",
+      "content_hash": "sha256:afdfda5cc513f22987df7be5b5704d64268f538914bba117f6402337ed402f52",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

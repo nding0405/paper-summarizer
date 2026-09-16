@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2025-same-script-different-behavior-characterizing-divergent-ab1de9a6",
   "title": "Same Script, Different Behavior: Characterizing Divergent JavaScript Execution Across Different Device Platforms",
+  "abstract": "JavaScript drives dynamic content across modern web platforms, yet differences in browser engines, hardware, and APIs create distinct execution environments on mobile and desktop devices. This divergence raises important concerns about platform-specific tracking, but its scope and impact remain underexplored. In this paper, we present a hybrid analysis of JavaScript execution across mobile and desktop to uncover behavioral differences in how identical code operates. By combining static analysis of script structure with dynamic tracing of runtime behavior, we identify execution path divergences tied to the user's device. Our study shows that 20.6% of scripts on the top 10K Tranco-ranked websites exhibit platform-specific execution. Our tracing algorithm pinpoints the sources of divergence for 92.8% of conditional Web API calls, with 76% involving known fingerprinting APIs and 6% relying on lesser-known but platform-revealing interfaces. We further categorize divergent paths, finding asymmetric tracking patterns: desktop flows are dominated by fingerprinting and bot detection, while mobile flows focus more on behavioral profiling.",
+  "abstract_source_id": "src-abstract-ccs-2025-ab1de9a6",
   "venue": "ccs",
   "year": 2025,
   "track_or_session": "Cycle 2",
@@ -169,6 +171,19 @@
         "published-order authors",
         "publication-time affiliations",
         "publication date and page span"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2025-ab1de9a6",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Same Script, Different Behavior: Characterizing Divergent JavaScript Execution Across Different Device Platforms",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:12Z",
+      "content_hash": "sha256:aa9c23a45f6ec9973f40e6c9520c69d42bb49fc1f526891570edfdb1976cff82",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

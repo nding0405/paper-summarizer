@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-h3act-automated-measuring-semantic-conversion-anomalies-4b3f965c",
   "title": "H3Act: Automated Measuring Semantic Conversion Anomalies of HTTP/3-to-HTTP/1.1 Translation in CDNs",
+  "abstract": "Content Delivery Networks (CDNs) are adopting HTTP/3 to enhance performance; however, they often need to convert it to HTTP/1.1 for compatibility. This conversion creates significant attack surfaces and may reintroduce confirmed or even patched vulnerabilities in HTTP/2 or HTTP/1. Unfortunately, existing tools struggle to adapt to the HTTP/3 environment and efficiently leverage accumulated attack knowledge. To overcome these challenges and systematically measure HTTP/3-to-HTTP/1.1 conversion anomalies within the black-box CDN environment, we present H3Act, a dual-agent, knowledge-driven fuzzing framework targeting HTTP/3-to-HTTP/1.1 semantic conversion anomalies. Our approach combines Large Language Models (LLMs) with Hybrid Retrieval-Augmented Generation (RAG) to automatically transform protocol specifications and historical threat intelligence into high-precision HTTP/3 test payloads, enabling regression testing of semantic translation risks. In a large-scale study of 9 commercial CDNs, including Cloudflare, Cloudfront, and Tencent CDN, we found a significant regression in protocol security, which means vulnerabilities in old protocols are reintroduced in HTTP/3. Our research identified 7 common attack vectors across various categories, including request smuggling, cache poisoning, and Denial-of-Service (DoS) amplification. Every CDN is vulnerable to at least one attack vector. We have responsibly disclosed these vulnerabilities and have received confirmations from some vendors. These findings highlight that the CDN ecosystem currently lacks the capacity to maintain security consistency checks while pursuing improvements in protocol performance.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-4b3f965c",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Security and Privacy for Web, Mobile, and Emerging Technologies 3",
@@ -302,6 +304,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-4b3f965c",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/peng-qihang",
+      "kind": "paper-page",
+      "title": "H3Act: Automated Measuring Semantic Conversion Anomalies of HTTP/3-to-HTTP/1.1 Translation in CDNs",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:24:10Z",
+      "content_hash": "sha256:a89184b14a437acc6829b755d54eb31c16bffe3c28d6734847558044f30e393b",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

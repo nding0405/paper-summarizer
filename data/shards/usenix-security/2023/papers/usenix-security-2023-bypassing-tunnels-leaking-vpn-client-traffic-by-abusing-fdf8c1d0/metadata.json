@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2023-bypassing-tunnels-leaking-vpn-client-traffic-by-abusing-fdf8c1d0",
   "title": "Bypassing Tunnels: Leaking VPN Client Traffic by Abusing Routing Tables",
+  "abstract": "Virtual Private Networks (VPNs) authenticate and encrypt network traffic to protect users’ security and privacy, and are used in professional and personal settings to defend against malicious actors, circumvent censorship, remotely work from home, etc. It is therefore essential that VPNs are secure.\n\nIn this paper, we present two novel attacks that cause VPN clients to leak traffic outside the protected VPN tunnel. The root cause of both attacks is a widespread design flaw in how clients configure the Operating System (OS) to route all traffic through the VPN tunnel. This is typically done by updating the system’s IP routing tables such that all traffic will first pass through the VPN client. However, some routing exceptions are added to ensure the system keeps functioning properly, namely that traffic to the local network, and to the VPN server itself, is sent outside the VPN tunnel. We show that by setting up a Wi-Fi access point or by spoofing DNS responses, an adversary can manipulate these exceptions to make the victim send arbitrary traffic in plaintext outside the VPN tunnel. We confirm our findings in practice by conducting 248 experiments against 67 of the most representative VPN providers on Windows, macOS, iOS, Linux, and Android. Our experimental results reveal that a significant number (126 and 39) and proportion (64.6% and 73.6%) of free, paid, open-source, corporate, and built-in VPN clients are vulnerable to (variants of) our two attacks respectively, suffering from leaky traffic. We discuss countermeasures to mitigate the vulnerabilities and confirm the effectiveness of selected defenses in practice.",
+  "abstract_source_id": "src-abstract-usenix-security-2023-fdf8c1d0",
   "venue": "usenix-security",
   "year": 2023,
   "track_or_session": "Routing and VPNs",
@@ -154,6 +156,19 @@
       "official": true,
       "supports": [
         "authors, affiliations when published, abstract, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2023-fdf8c1d0",
+      "url": "https://www.usenix.org/conference/usenixsecurity23/presentation/xue",
+      "kind": "paper-page",
+      "title": "Bypassing Tunnels: Leaking VPN Client Traffic by Abusing Routing Tables",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:10:06Z",
+      "content_hash": "sha256:3bc7672e500a2d1f8511ff86397b6708d152e737b651773b6decda1b821e561d",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

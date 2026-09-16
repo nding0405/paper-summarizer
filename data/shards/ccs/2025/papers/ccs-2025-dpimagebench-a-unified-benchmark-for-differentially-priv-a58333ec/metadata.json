@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2025-dpimagebench-a-unified-benchmark-for-differentially-priv-a58333ec",
   "title": "DPImageBench: A Unified Benchmark for Differentially Private Image Synthesis",
+  "abstract": "Differentially private (DP) image synthesis aims to generate artificial images that retain the properties of a sensitive image dataset while protecting the privacy of individual images within the dataset. Despite recent advancements, we find that inconsistent--and sometimes flawed--evaluation protocols have been applied across studies. This not only impedes the understanding of current methods but also hinders future advancements in the field. To address the issue, this paper introduces DPImageBench, with thoughtful design across several dimensions: (1) Methods. We study twelve prominent methods and systematically characterize each based on model architecture, pretraining strategy, and privacy mechanism. (2) Evaluation. We include nine datasets and seven metrics to thoroughly assess these methods. Notably, we find that the common practice of selecting downstream classifiers based on the highest accuracy on sensitive test sets not only violates DP but also overestimates the utility. DPImageBench corrects for it. (3) Platform. Despite the wide variety of methods and evaluation protocols, DPImageBench provides a standardized interface that accommodates current and future implementations within a unified framework. With DPImageBench, we have several noteworthy findings. For example, contrary to the common wisdom that pretraining on public image datasets is usually beneficial, we find that the distributional similarity between pretraining and sensitive images significantly impacts the performance of the synthetic images and does not always yield improvements. The source code is available.",
+  "abstract_source_id": "src-abstract-ccs-2025-a58333ec",
   "venue": "ccs",
   "year": 2025,
   "track_or_session": "Cycle 2",
@@ -148,6 +150,19 @@
         "published-order authors",
         "publication-time affiliations",
         "publication date and page span"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2025-a58333ec",
+      "url": "https://api.openalex.org/works/doi:10.1145/3719027.3765045?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "DPImageBench: A Unified Benchmark for Differentially Private Image Synthesis",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:14:09Z",
+      "content_hash": "sha256:06cdee8ae495cd3950697468f6a4b083cdf99db25083ff5d0885508a08d7b5fa",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

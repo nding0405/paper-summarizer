@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-void-defeating-unauthorized-mimicry-in-latent-diffusion-8d590666",
   "title": "VOID: Defeating Unauthorized Mimicry in Latent Diffusion Models",
+  "abstract": "While Latent Diffusion Models (LDMs) have revolutionized visual synthesis, they are increasingly exploited for unauthorized mimicry of individuals. Existing defenses inject deceptive perturbations to steer the generated images toward irrelevant targets. However, this approach hinges on an ungrounded assumption: subtle perturbations can maintain their deceptive efficacy throughout an LDM's extensive generation process. In reality, the model's innate restoration mechanism will remove such perturbations and cause individual identities to re-emerge in the images generated.\n\nWe propose VOID, a defense framework that overcomes this conundrum by manipulating an LDM's intrinsic stochasticity. VOID perturbs the diffusion pipeline in two novel ways: 1) amplifying the latent encoding errors to shatter an image's semantic structure, and 2) counteracting the target guidance signals to suppress the model's restoration capabilities. This results in a semantic corruption that thwarts any unauthorized mimicry. Notably, the security gain does not come at the price of visual utility, as VOID simultaneously manages to confine perturbations to human-imperceptible regions of protected images. Our comprehensive evaluation of 24 state-of-the-art defenses against 10 mimicry attacks on 5 datasets demonstrates VOID's unprecedented protection power: it increases the average Fréchet Inception Distance (FID) from 113 to 365, a 223% improvement over the strongest defense to date.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-8d590666",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Privacy of ML 2",
@@ -260,6 +262,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-8d590666",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/qiu-chunlin",
+      "kind": "paper-page",
+      "title": "VOID: Defeating Unauthorized Mimicry in Latent Diffusion Models",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:26:07Z",
+      "content_hash": "sha256:62f4be319a9762d48105876a591cd69d127bf40e7b132d17eceeee18987207b8",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

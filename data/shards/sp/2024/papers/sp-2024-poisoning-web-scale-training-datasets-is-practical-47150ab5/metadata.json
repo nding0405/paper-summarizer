@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2024-poisoning-web-scale-training-datasets-is-practical-47150ab5",
   "title": "Poisoning Web-Scale Training Datasets is Practical",
+  "abstract": "Deep learning models are often trained on distributed, web-scale datasets crawled from the internet. In this paper, we introduce two new dataset poisoning attacks that intentionally introduce malicious examples to a model’s performance. Our attacks are immediately practical and could, today, poison 10 popular datasets. Our first attack, split-view poisoning, exploits the mutable nature of internet content to ensure a dataset annotator’s initial view of the dataset differs from the view downloaded by subsequent clients. By exploiting specific invalid trust assumptions, we show how we could have poisoned 0.01% of the LAION-400M or COYO-700M datasets for just $60 USD. Our second attack, frontrunning poisoning, targets web-scale datasets that periodically snapshot crowd-sourced content—such as Wikipedia—where an attacker only needs a time-limited window to inject malicious examples. In light of both attacks, we notify the maintainers of each affected dataset and recommended several low-overhead defenses.",
+  "abstract_source_id": "src-abstract-sp-2024-47150ab5",
   "venue": "sp",
   "year": 2024,
   "track_or_session": "Summer cycle",
@@ -264,6 +266,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2024-47150ab5",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Poisoning Web-Scale Training Datasets is Practical",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:37Z",
+      "content_hash": "sha256:d186972817127125a98a71b907d7b283fa37f2e757aaf5b9ae232aa389caabc0",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

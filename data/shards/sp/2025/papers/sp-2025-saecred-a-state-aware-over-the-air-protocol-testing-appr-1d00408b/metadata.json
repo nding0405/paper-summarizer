@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2025-saecred-a-state-aware-over-the-air-protocol-testing-appr-1d00408b",
   "title": "SAECRED: A State-Aware, Over-the-Air Protocol Testing Approach for Discovering Parsing Bugs in SAE Handshake Implementations of COTS Wi-Fi Access Points",
+  "abstract": "WPA3-Personal introduced the stateful Simultane-ous Authentication of Equals (SAE) handshake protocol to achieve forward secrecy and resistance to passphrase guessing attacks during Wi-Fi connection bootstrapping, guarantees that are lacking in WPA2-Personal. However, the initial design of WPA3-Personal with SAE was susceptible to connection downgrade and denial-of-service (DoS) attacks. The current, enhanced version introduces mechanisms to mitigate these vulnerabilities. Enabling these security-enhancing mechanisms, however, results in a variable-structured, context-sensitive packet format that can be challenging to parse and interpret correctly. Misparsing SAE handshake packets can negatively impact Wi-Fi protocol security. To uncover SAE handshake packet misparsing in commercial-off-the-shelf (COTS) Wi-Fi access points (APs), we present Saecred,a packet-structure-guided, SAE-state-aware black-box fuzzer. Saecredreduces the underlying problem of misparsing discovery to a two-dimensional search problem, where the dimensions are the packet structure and the underlying SAE protocol state. It solves this search problem by combining Iterative Deepening Search (IDS) with a context-sensitive grammar-based fuzzing approach, where the latter relies on a Syntax-Guided Synthesis (SyGuS) solver. Saecred'seffectiveness is demonstrated by evaluating it on 6 COTS APs and the widely used open-source hostapd. Our evaluation discovered several instances of 4 classes of bugs. Bugs in two of these classes violate the two fundamental guarantees SAE expects to achieve (i.e., resistance to downgrade and DoS attacks). We reported our findings to the relevant stakeholders, which resulted in patches and security advisories.",
+  "abstract_source_id": "src-abstract-sp-2025-1d00408b",
   "venue": "sp",
   "year": 2025,
   "track_or_session": "Cycle 2",
@@ -217,6 +219,19 @@
       "official": true,
       "supports": [
         "DOI, authors, affiliations, abstract, publication date, pages, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2025-1d00408b",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Saecred: A State-Aware, Over-the-Air Protocol Testing Approach for Discovering Parsing Bugs in SAE Handshake Implementations of COTS Wi-Fi Access Points",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:52Z",
+      "content_hash": "sha256:b15ce02bcc49da611fdd791ecc56741e7d91d84154b58c1a7f72a5c6902e6e46",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

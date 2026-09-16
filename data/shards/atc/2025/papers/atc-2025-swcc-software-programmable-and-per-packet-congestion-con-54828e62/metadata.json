@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "atc-2025-swcc-software-programmable-and-per-packet-congestion-con-54828e62",
   "title": "SwCC: Software-Programmable and Per-Packet Congestion Control in RDMA Engine",
+  "abstract": "Many data centers adopt Remote Direct Memory Access (RDMA) to allow data center applications to achieve low latency and high throughput, while keeping minimal CPU overhead. The upper-layer applications keep evolving rapidly, and thus need congestion control algorithms (CCAs) that exist in the NIC hardware also to react correctly and timely, especially for a burstier ML workload. Even worse, the data center network will increase the line rate to 400 Gbps, even 800 Gbps soon. Therefore, how to reduce control loop delay for various CCAs becomes crucial to the performance of various applications. However, RDMA's hardwired CCA is not able to satisfy such a requirement.\n\nTo this end, we design and implement SwCC, an RDMA engine with on-NIC RISC-V cores that allows software-programmable and per-packet congestion control. To avoid the performance degradation caused by introducing the programmable RISC-V cores, SwCC carefully designs the 1) RISC-V core memory subsystem, 2) engine architecture, and 3) interaction between the RISC-V core and other NIC resources. Besides, SwCC provides a set of rich software APIs, allowing developers to deploy new CCAs with minimum engineering efforts.\n\nWe prototype SwCC using the Xilinx U280 FPGA. Experimental results demonstrate that SwCC achieves performance comparable to current commercial RDMA NICs (Mellanox ConnextX-5). Both SwCC and ConnectX-5 reach 3.1 µs control loop RTT and need 512B packet size to reach line-rate traffic (100 Gbps). In terms of flexibility, SwCC allows to use the C language to implement nearly all kinds of existing CCAs, e.g., rate-based CCAs, window-based CCAs, and credit-based CCAs. The potential ASIC design of SwCC can easily scale to higher network bandwidth.",
+  "abstract_source_id": "src-abstract-atc-2025-54828e62",
   "venue": "atc",
   "year": 2025,
   "track_or_session": "Software-Hardware Synergy: Accelerators, Memory, and Interconnects",
@@ -201,6 +203,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-atc-2025-54828e62",
+      "url": "https://www.usenix.org/conference/atc25/presentation/huang-hongjing",
+      "kind": "paper-page",
+      "title": "SwCC: Software-Programmable and Per-Packet Congestion Control in RDMA Engine",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:00:14Z",
+      "content_hash": "sha256:1bdaf860f4b6146bd22b96ed98ae122c3cff044e759d6702c0d2b60cd2e60f85",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2026-onesidedmw-managing-disaggregated-memory-efficiently-fle-624cfae0",
   "title": "OneSidedMW: Managing Disaggregated Memory Efficiently, Flexibly, and Securely with RNIC Offloading",
+  "abstract": "RDMA-based memory disaggregation is gaining popularity in modern datacenters to improve memory efficiency. However, existing memory management approaches for the disaggregated memory (DM) architecture face a critical tradeoff: they either suffer from poor memory utilization due to coarse-grained allocation, or encounter significant challenges in terms of performance, memory node CPU overhead, security vulnerabilities, and limited flexibility.\n\nIn this paper, we present OneSidedMW, a novel system that combines two advanced RDMA features—RDMA NIC (RNIC) offloading and memory windows—to provide fine-grained and highly efficient one-sided memory management primitives for DM. Specifically, it leverages RNIC offloading to perform MW binding and unbinding operations, achieving remote memory allocation and deallocation without involving the memory node’s CPU. To demonstrate the efficiency of OneSidedMW, we evaluate it over two representative DM systems: swap-based systems and disaggregated key-value stores. OneSidedMW achieves up to 10.6× better performance in disaggregated key-value stores and up to 32.3% performance improvement in swap-based systems, compared with the state-of-the-art approaches.",
+  "abstract_source_id": "src-abstract-nsdi-2026-624cfae0",
   "venue": "nsdi",
   "year": 2026,
   "track_or_session": "Sandboxes, Containers, and Beyond",
@@ -139,6 +141,19 @@
         "proceedings page range and page count",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2026-624cfae0",
+      "url": "https://www.usenix.org/conference/nsdi26/presentation/wang-zixuan",
+      "kind": "paper-page",
+      "title": "OneSidedMW: Managing Disaggregated Memory Efficiently, Flexibly, and Securely with RNIC Offloading",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:05:47Z",
+      "content_hash": "sha256:5849adc5c7e58d0e6603f18c51feccdd53620e77926faf116d1e03356119debb",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

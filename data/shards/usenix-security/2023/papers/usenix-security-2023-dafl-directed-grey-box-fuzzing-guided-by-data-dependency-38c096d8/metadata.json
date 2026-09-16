@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2023-dafl-directed-grey-box-fuzzing-guided-by-data-dependency-38c096d8",
   "title": "DAFL: Directed Grey-box Fuzzing guided by Data Dependency",
+  "abstract": "Despite growing research interest, existing directed grey-box fuzzers do not scale well with program complexity. In this paper, we identify two major scalability challenges for current directed grey-box fuzzing. Particularly, we find that traditional coverage feedback does not always provide meaningful guidance for reaching the target program point(s), and the existing seed distance mechanism does not operate well with programs with complex control structures. To address these problems, we present a novel fuzzer, named DAFL. DAFL selects code parts that are relevant to the target location and obtains coverage feedback only from those parts. Furthermore, it computes precise seed distances considering the data-flow semantics of program executions. The results are promising. Out of 41 real-world bugs, DAFL was able to find 4, 6, 9, and 5 more bugs within the given time, compared to AFL, AFLGo, WindRanger, and Beacon, respectively. Furthermore, among the cases where all fuzzers produced a median TTE, DAFL was at least 4.99 times faster on average compared to 3 state-of-the-art directed fuzzers including AFLGo, WindRanger, and Beacon.",
+  "abstract_source_id": "src-abstract-usenix-security-2023-38c096d8",
   "venue": "usenix-security",
   "year": 2023,
   "track_or_session": "Warmer and Fuzzers",
@@ -133,6 +135,19 @@
       "official": true,
       "supports": [
         "authors, affiliations when published, abstract, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2023-38c096d8",
+      "url": "https://www.usenix.org/conference/usenixsecurity23/presentation/kim-tae-eun",
+      "kind": "paper-page",
+      "title": "DAFL: Directed Grey-box Fuzzing guided by Data Dependency",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:10:24Z",
+      "content_hash": "sha256:33d14bdaa3bfdeeaf1de516d4f49dfc4d06c793d5daf67d1ac2225af4bd460a1",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

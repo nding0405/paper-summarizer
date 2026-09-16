@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2025-mpc-pipe-an-efficient-pipeline-scheme-for-semi-honest-mp-f4e8e8a2",
   "title": "MPC-Pipe: an Efficient Pipeline Scheme for Semi-honest MPC Machine Learning",
+  "abstract": "Multi-party computing (MPC) has been gaining popularity as a secure computing model over the past few years. However, prior works have demonstrated that MPC protocols still pay substantial performance penalties compared to plaintext, particularly when applied to ML algorithms. The overhead is due to added computation and communication costs. Prior studies, as well as our own analysis, found that most MPC protocols today sequentially perform communication and computation. The participating parties must compute on their shares first and then perform data communication to allow the distribution of new secret shares before proceeding to the next computation step. In this work, we show that serialization is unnecessary, particularly in the context of ML computations (both in Convolutional neural networks and in Transformer-based models). We demonstrate that it is possible to carefully orchestrate the computation and communication steps to overlap.",
+  "abstract_source_id": "src-abstract-asplos-2025-f4e8e8a2",
   "venue": "asplos",
   "year": 2025,
   "track_or_session": "Session 3C: ML Security",
@@ -125,6 +127,19 @@
       "official": false,
       "supports": [
         "Indexed abstract and open-access links used for relevance classification and ancillary-link discovery."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2025-f4e8e8a2",
+      "url": "https://api.openalex.org/works/doi:10.1145/3622781.3674175?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "MPC-Pipe: an Efficient Pipeline Scheme for Semi-honest MPC Machine Learning",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:02:20Z",
+      "content_hash": "sha256:2e9d951f50a04d4da69184a98fae934210fde604692b80152f7b7e49749f5525",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

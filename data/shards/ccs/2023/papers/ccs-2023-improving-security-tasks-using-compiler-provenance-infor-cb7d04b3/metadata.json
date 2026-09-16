@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2023-improving-security-tasks-using-compiler-provenance-infor-cb7d04b3",
   "title": "Improving Security Tasks Using Compiler Provenance Information Recovered At the Binary-Level",
+  "abstract": "The complex optimizations supported by modern compilers allow for compiler provenance recovery at many levels. For instance, it is possible to identify the compiler family and optimization level used when building a binary, as well as the individual compiler passes applied to functions within the binary. Yet, many downstream applications of compiler provenance remain unexplored. To bridge that gap, we train and evaluate a multi-label compiler provenance model on data collected from over 27,000 programs built using LLVM 14, and apply the model to a number of security-related tasks. Our approach considers 68 distinct compiler passes and achieves an average F-1 score of 84.4%. We first use the model to examine the magnitude of compiler-induced vulnerabilities, identifying 53 information leak bugs in 10 popular projects. We also show that several compiler optimization passes introduce a substantial amount of functional code reuse gadgets that negatively impact security. Beyond vulnerability detection, we evaluate other security applications, including using recovered provenance information to verify the correctness of Rich header data in Windows binaries (e.g., forensic analysis), as well as for binary decomposition tasks (e.g., third party library detection).",
+  "abstract_source_id": "src-abstract-ccs-2023-cb7d04b3",
   "venue": "ccs",
   "year": 2023,
   "track_or_session": "Program Analysis & Instrumentation (Software Security)",
@@ -193,6 +195,19 @@
       "official": false,
       "supports": [
         "published title, author order, and page span"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2023-cb7d04b3",
+      "url": "https://api.openalex.org/works/doi:10.1145/3576915.3623098?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Improving Security Tasks Using Compiler Provenance Information Recovered At the Binary-Level",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:07:49Z",
+      "content_hash": "sha256:4a5b0a212bf24c4d7fda72e64a4685448525d389e4ba56c868e5d7725d5ca958",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

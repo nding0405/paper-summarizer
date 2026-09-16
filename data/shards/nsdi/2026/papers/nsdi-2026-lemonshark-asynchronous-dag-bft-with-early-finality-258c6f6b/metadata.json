@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2026-lemonshark-asynchronous-dag-bft-with-early-finality-258c6f6b",
   "title": "Lemonshark: Asynchronous DAG-BFT With Early Finality",
+  "abstract": "DAG-Rider popularized a new paradigm of DAG-BFT protocols, separating dissemination from consensus: all nodes disseminate transactions as blocks that reference previously known blocks, while consensus is reached by electing certain blocks as leaders. This design yields high throughput but confers optimal latency only to leader blocks; non-leader blocks cannot be committed independently.\n\nWe present Lemonshark, an asynchronous DAG-BFT protocol that reinterprets the DAG at a transactional level and identifies conditions where commitment is sufficient—but not necessary—for safe results, enabling nodes to finalize transactions before official commitment, without compromising correctness. Compared to the state-of-the-art asynchronous BFT protocol, Lemonshark reduces latency by up to 65%.",
+  "abstract_source_id": "src-abstract-nsdi-2026-258c6f6b",
   "venue": "nsdi",
   "year": 2026,
   "track_or_session": "Storage Systems and Architecture",
@@ -160,6 +162,19 @@
         "proceedings page range and page count",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2026-258c6f6b",
+      "url": "https://www.usenix.org/conference/nsdi26/presentation/hu-michael",
+      "kind": "paper-page",
+      "title": "Lemonshark: Asynchronous DAG-BFT With Early Finality",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:05:35Z",
+      "content_hash": "sha256:44da51d15692d4630090ad43d8bf0d632a1d179bb9c3e3e39532f5b1ec3f0aa6",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

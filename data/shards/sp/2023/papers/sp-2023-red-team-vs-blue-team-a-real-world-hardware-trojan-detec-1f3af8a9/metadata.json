@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2023-red-team-vs-blue-team-a-real-world-hardware-trojan-detec-1f3af8a9",
   "title": "Red Team vs. Blue Team: A Real-World Hardware Trojan Detection Case Study Across Four Modern CMOS Technology Generations",
+  "abstract": "Verifying the absence of maliciously inserted Trojans in Integrated Circuits (ICs) is a crucial task – especially for security-enabled products. Depending on the concrete threat model, different techniques can be applied for this purpose. Assuming that the original IC layout is benign and free of backdoors, the primary security threats are usually identified as the outsourced manufacturing and transportation. To ensure the absence of Trojans in commissioned chips, one straightforward solution is to compare the received semiconductor devices to the design files that were initially submitted to the foundry. Clearly, conducting such a comparison requires advanced laboratory equipment and qualified experts. Nevertheless, the fundamental techniques to detect Trojans which require evident changes to the silicon layout are nowadays well-understood. Despite this, there is a glaring lack of public case studies describing the process in its entirety while making the underlying datasets publicly available. In this work, we aim to improve upon this state of the art by presenting a public and open hardware Trojan detection case study based on four different digital ICs using a Red Team vs. Blue Team approach. Hereby, the Red Team creates small changes acting as surrogates for inserted Trojans in the layouts of 90 nm, 65 nm, 40 nm, and 28 nm ICs. The quest of the Blue Team is to detect all differences between digital layout and manufactured device by means of a GDSII–vs–SEM-image comparison. Can the Blue Team perform this task efficiently? Our results spark optimism for the Trojan seekers and answer common questions about the efficiency of such techniques for relevant IC sizes. Further, they allow to draw conclusions about the impact of technology scaling on the detection performance.",
+  "abstract_source_id": "src-abstract-sp-2023-1f3af8a9",
   "venue": "sp",
   "year": 2023,
   "track_or_session": "Session 1A: Infrastructure security",
@@ -214,6 +216,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2023-1f3af8a9",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Red Team vs. Blue Team: A Real-World Hardware Trojan Detection Case Study Across Four Modern CMOS Technology Generations",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:27Z",
+      "content_hash": "sha256:2c3c9cbfdcc9ef58a970a66aadb81bbaf8238409ab69d65565522a11e421be99",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-aidfuzzer-adaptive-interrupt-driven-firmware-fuzzing-via-d9401afd",
   "title": "AidFuzzer: Adaptive Interrupt-Driven Firmware Fuzzing via Run-Time State Recognition",
+  "abstract": "Fuzzing has proven to be an effective method for discovering vulnerabilities in firmware images. However, several hard-to-bypass obstacles still block the way for fuzzers to achieve higher code coverage in the firmware fuzzing process. One major issue is interrupt handling, which is fundamental to emulate the firmware: If interrupts are triggered incorrectly, the firmware may crash or get stuck, even at an early stage. Thus, a proper mechanism for triggering and handling interrupts is a crucial yet under-researched aspect of firmware fuzzing. In this paper, we present AidFuzzer, an adaptive interrupt-driven firmware fuzzing method, to tackle the interrupt triggering problem. The key observation is that firmware images commonly exhibit a consistent run-time state transition cycle. In each state, the firmware may require specific interrupts to continue running, or it may not need any interrupts to continue processing data. Based on this observation, we model the type and status of the interrupts to verify that they are exactly the interrupts that the firmware needs at a specific point in time. Moreover, we monitor the run-time state of the firmware and trigger certain interrupts when the firmware expects them or let the firmware run when it does not require interrupts. We have implemented a prototype of AidFuzzer and evaluated it on 10 open-source firmware projects, including well-known real-time operating systems such as RT-Thread and Apache Mynewt-OS. The experiment demonstrates that our framework outperforms state-of-the-art works in terms of coverage when dealing with complex interrupt handling. We also discovered eight previously unknown vulnerabilities in the tested firmware images.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-d9401afd",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Embedded and Hardware Security",
@@ -175,6 +177,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-d9401afd",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/wang-jianqiang",
+      "kind": "paper-page",
+      "title": "AidFuzzer: Adaptive Interrupt-Driven Firmware Fuzzing via Run-Time State Recognition",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:18:30Z",
+      "content_hash": "sha256:79cef0dde1e36fac8b68a14ae0cb3b3f9abdbdeb13d5608c71ac3a6e6a97c32a",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

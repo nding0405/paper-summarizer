@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2026-accelerating-confidential-databases-with-crypto-free-map-a805e698",
   "title": "Accelerating Confidential Databases with Crypto-Free Mappings",
+  "abstract": "Confidential databases (CDBs) enable secure queries over sensitive data in untrusted cloud environments using confidential computing hardware. While adoption is growing, widespread deployment is hindered by high overheads from frequent synchronous cryptographic operations, which cause significant computational and I/O bottlenecks.\n\nZENO is a novel CDB design that removes cryptographic operations from the critical path. It introduces crypto-free mappings that maintain data-independent identifiers within the database while securely mapping them to plaintext secrets in a trusted domain. This paradigm shift yields substantial performance gains across industry-standard benchmarks (TPC-C, TPC-H) and a real-world industrial workload. Specifically, ZENO speeds up TPC-H queries by up to 53.1× on ARM S-EL2 and 94.7× on x86 TDX compared to HEDB. ZENO’s optimization techniques have been integrated into GaussDB.",
+  "abstract_source_id": "src-abstract-osdi-2026-a805e698",
   "venue": "osdi",
   "year": 2026,
   "track_or_session": "Confidential Computing",
@@ -125,6 +127,19 @@
       "official": true,
       "supports": [
         "Official proceedings availability and canonical conference versions."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2026-a805e698",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/huang-wenxuan",
+      "kind": "paper-page",
+      "title": "Accelerating Confidential Databases with Crypto-Free Mappings",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:07:57Z",
+      "content_hash": "sha256:d85de80a9feb945fdc58c6e5b56cceb0121d4bc10f8b931ef36d2c17ed54a56e",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

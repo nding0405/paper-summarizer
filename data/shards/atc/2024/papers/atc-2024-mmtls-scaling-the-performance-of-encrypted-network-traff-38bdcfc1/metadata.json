@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "atc-2024-mmtls-scaling-the-performance-of-encrypted-network-traff-38bdcfc1",
   "title": "mmTLS: Scaling the Performance of Encrypted Network Traffic Inspection",
+  "abstract": "Modern network monitoring TLS middleboxes play a critical role in fighting against the abuse by encrypted network traffic. Unfortunately, operating a TLS middlebox often incurs a huge computational overhead as it must translate and relay encrypted traffic from one endpoint to the other. We observe that even a simple TLS proxy drops the throughput of end-to-end TLS sessions by 43% to 73%. What is worse is that recent security enhancement TLS middlebox works levy an even more computational tax.\n\nIn this paper, we present mmTLS, a scalable TLS middlebox development framework that significantly improves the traffic inspection performance and provides a TLS event programming library with which one can write a TLS middlebox with ease. mmTLS eliminates the traffic relaying cost as it operates on a single end-to-end TLS session by secure session key sharing. This approach is not only beneficial to performance but it naturally guarantees all end-to-end TLS properties except confidentiality. To detect illegal content modification, mmTLS supplements a TLS record with a private tag whose key is kept secret only to TLS endpoints. We find that the extra overhead for private tag generation and verification is minimal when augmented with the first tag generation. Our evaluation demonstrates that mmTLS outperforms the nginx TLS proxy in the split-connection mode by a factor 2.7 to 41.2, and achieves 179 Gbps of traffic relaying throughput.",
+  "abstract_source_id": "src-abstract-atc-2024-38bdcfc1",
   "venue": "atc",
   "year": 2024,
   "track_or_session": "Security 1",
@@ -180,6 +182,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-atc-2024-38bdcfc1",
+      "url": "https://www.usenix.org/conference/atc24/presentation/yoon",
+      "kind": "paper-page",
+      "title": "mmTLS: Scaling the Performance of Encrypted Network Traffic Inspection",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T21:58:50Z",
+      "content_hash": "sha256:5b9c47a157764b981849b6fd687386953817c37b8216a5b7b51dfaba9d22ab1b",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

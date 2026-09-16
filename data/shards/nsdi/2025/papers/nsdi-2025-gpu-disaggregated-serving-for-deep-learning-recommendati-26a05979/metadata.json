@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2025-gpu-disaggregated-serving-for-deep-learning-recommendati-26a05979",
   "title": "GPU-Disaggregated Serving for Deep Learning Recommendation Models at Scale",
+  "abstract": "Online recommender systems use deep learning recommendation models (DLRMs) to provide accurate, personalized recommendations to improve customer experience. However, efficiently provisioning DLRM services at scale is challenging. DLRMs exhibit distinct resource usage patterns: they require a large number of CPU cores and a tremendous amount of memory, but only a small number of GPUs. Running them in multi-GPU servers quickly exhausts the servers' CPU and memory resources, leaving a large number of unallocated GPUs stranded, unable to utilize by other tasks.\n\nThis paper describes Prism, a production DLRM serving system that eliminates GPU fragmentation by means of resource disaggregation. In Prism, a fleet of CPU nodes (CNs) interconnect with a cluster of heterogeneous GPU nodes (HNs) through RDMA, leading to two disaggregated resource pools that can independently scale. Prism automatically divides DLRMs into CPU- and GPU-intensive subgraphs and schedules them on CNs and HNs for disaggregated serving. Prism employs various techniques to minimize the latency overhead caused by disaggregation, including optimal graph partitioning, topology-aware resource management, and SLO-aware communication scheduling. Evaluations show that Prism effectively reduces CPU and GPU fragmentation by 53% and 27% in a crowded GPU cluster. During seasonal promotion events, it efficiently enables capacity loaning from training clusters, saving over 90% of GPUs. Prism has been deployed in production clusters for over two years and now runs on over 10k GPUs.",
+  "abstract_source_id": "src-abstract-nsdi-2025-26a05979",
   "venue": "nsdi",
   "year": 2025,
   "track_or_session": "Operational Experiences",
@@ -518,6 +520,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2025-26a05979",
+      "url": "https://www.usenix.org/conference/nsdi25/presentation/yang",
+      "kind": "paper-page",
+      "title": "GPU-Disaggregated Serving for Deep Learning Recommendation Models at Scale",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:04:12Z",
+      "content_hash": "sha256:cc1790a3a8ef3857680a5910612e86184e76bacc06a376728b3ccd7411e32e5e",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

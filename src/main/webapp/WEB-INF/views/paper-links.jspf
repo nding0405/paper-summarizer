@@ -1,0 +1,18 @@
+<%-- Source links plus a permalink. Expects `paper` and `paperPath`. --%>
+<p class="paper-links">
+  <c:if test="${paper.hasOfficialPage}">
+    <a href="<c:out value='${paper.officialPage}' />" rel="noopener">Official page</a>
+  </c:if>
+  <c:if test="${paper.hasOfficialPdf}">
+    <a href="<c:out value='${paper.officialPdf}' />" rel="noopener">PDF</a>
+  </c:if>
+  <c:if test="${paper.hasCodeUrl}">
+    <a href="<c:out value='${paper.codeUrl}' />" rel="noopener">Code</a>
+  </c:if>
+  <c:if test="${paper.hasArtifactUrl}">
+    <a href="<c:out value='${paper.artifactUrl}' />" rel="noopener">Artifact</a>
+  </c:if>
+  <c:if test="${not empty paperPath}">
+    <a class="paper-permalink" href="<c:out value='${paperPath}' />?id=<c:out value='${paper.id}' />">Paper page</a>
+  </c:if>
+</p>

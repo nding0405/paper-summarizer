@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-refusal-is-not-an-option-unlearning-safety-alignment-of-09bb5551",
   "title": "Refusal Is Not an Option: Unlearning Safety Alignment of Large Language Models",
+  "abstract": "Safety alignment has become an indispensable procedure to ensure the safety of large language models (LLMs), as they are reported to generate harmful, privacy-sensitive, and copy-righted content when prompted with adversarial instructions. Machine unlearning is a representative approach to establishing the safety of LLMs, enabling them to forget problematic training instances and thereby minimize their influence. However, no prior study has investigated the feasibility of adversarial unlearning—using seemingly legitimate unlearning requests to compromise the safety of a target LLM.\n\nIn this paper, we introduce novel attack methods designed to break LLM safety alignment through unlearning. The key idea lies in crafting unlearning instances that cause the LLM to forget its mechanisms for rejecting harmful instructions. Specifically, we propose two attack methods. The first involves explicitly extracting rejection responses from the target LLM and feeding them back for unlearning. The second attack exploits LLM agents to obscure rejection responses by merging them with legitimate-looking unlearning requests, increasing their chances of bypassing internal filtering systems. Our evaluations show that these attacks significantly compromise the safety of two open-source LLMs: LLaMA and Phi. LLaMA's harmfulness scores increase by an average factor of 11 across four representative unlearning methods, while Phi exhibits a 61.8× surge in the rate of unsafe responses. Furthermore, we demonstrate that our unlearning attack is also effective against OpenAI's fine-tuning service, increasing GPT-4o's harmfulness score by 2.21×. Our work identifies a critical vulnerability in unlearning and represents an important first step toward developing safe and responsible unlearning practices while honoring users' unlearning requests. Our code is available at https://doi.org/10.5281/zenodo.15628860 .",
+  "abstract_source_id": "src-abstract-usenix-security-2025-09bb5551",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "LLM Security and Attacks",
@@ -154,6 +156,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-09bb5551",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/song-minkyoo",
+      "kind": "paper-page",
+      "title": "Refusal Is Not an Option: Unlearning Safety Alignment of Large Language Models",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:21:26Z",
+      "content_hash": "sha256:55d4f02e937f7292c5494a57a0d7bfac6a74aefc22691a2ffac09d9cd3f60935",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

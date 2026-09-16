@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-achilles-a-formal-framework-of-leaking-secrets-from-sign-1291e849",
   "title": "Achilles: A Formal Framework of Leaking Secrets from Signature Schemes via Rowhammer",
+  "abstract": "Signature schemes are a fundamental component of cybersecurity infrastructure. While they are designed to be mathematically secure against cryptographic attacks, they are vulnerable to Rowhammer fault-injection attacks. Since all existing attacks are ad-hoc in that they target individual parameters of specific signature schemes, it remains unclear about the impact of Rowhammer on signature schemes as a whole.\n\nIn this paper, we present Achilles, a formal framework that aids in leaking secrets in various real-world signature schemes via Rowhammer. Particularly, Achilles can be used to find potentially more vulnerable parameters in schemes that have been studied before and also new schemes that are potentially vulnerable. Achilles mainly describes a formal procedure where Rowhammer faults are induced to key parameters of a generalized signature scheme, called G-sign, and a post-Rowhammer analysis is then performed for secret recovery on it. To illustrate the viability of Achilles, we have evaluated six signature schemes (with five CVEs assigned to track their respective Rowhammer vulnerability), covering traditional and post-quantum signatures with different mathematical problems. Based on the analysis with Achilles, all six schemes are proved to be vulnerable, and two new vulnerable parameters are identified for EdDSA . Further, we demonstrate a successful Rowhammer attack against each of these schemes, using recent cryptographic libraries including wolfssl , relic , and liboqs .",
+  "abstract_source_id": "src-abstract-usenix-security-2025-1291e849",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Crypto 4: Systems and Protocols",
@@ -238,6 +240,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-1291e849",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/liang-achilles",
+      "kind": "paper-page",
+      "title": "Achilles: A Formal Framework of Leaking Secrets from Signature Schemes via Rowhammer",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:18:27Z",
+      "content_hash": "sha256:2db7ae0428ba812e7a02b46ce778d46919774cc4f62908f95c1b044cc4ca158d",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-firmrebugger-a-benchmark-framework-for-monolithic-firmwa-3ad40592",
   "title": "FirmReBugger: A Benchmark Framework for Monolithic Firmware Fuzzers",
+  "abstract": "Monolithic Firmware is widespread. Unsurprisingly, fuzz testing firmware is an active research field with new advances addressing the unique challenges in the domain. However, understanding and evaluating improvements by deriving metrics such as code coverage and unique crashes are problematic, leading to a desire for a reliable bug-based benchmark. To address the need, we design and build FirmReBugger, a holistic framework for fairly assessing monolithic firmware fuzzers with a realistic, diverse, bug-based benchmark.\n\nFirmReBugger proposes using bug oracles—C syntax expressions of bug descriptors—with an interpreter to automate analysis and accurately report on bugs discovered, discriminating between states of detected , triggered , reached and not reached . Importantly, our idea of benchmarking does not modify the target binary and simply replays fuzzing seeds to isolate the benchmark implementation from the fuzzer while providing a simple means to extend with new bug oracles.\n\nFurther, analyzing fuzzing roadblocks, we created FirmBench, a set of diverse, real-world binary targets with 313 software bug oracles. Incorporating our analysis of roadblocks challenging monolithic firmware fuzzing, the bench provides for rapid evaluation of future advances. We implement FirmReBugger in a FuzzBench-for-Firmware type service and use FirmBench to evaluate 9 state-of-the art monolithic firmware fuzzers in the style of a reproducibility study, using a 10 CPU-year effort, to report our findings.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-3ad40592",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Software Security 3",
@@ -156,6 +158,19 @@
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening",
         "prepublication PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-3ad40592",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/duong",
+      "kind": "paper-page",
+      "title": "FirmReBugger: A Benchmark Framework for Monolithic Firmware Fuzzers",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:24:00Z",
+      "content_hash": "sha256:558b0b5ac6d7317cbf0fd342b58abc342873745b788d1e44ead1c8f0e6f290c6",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

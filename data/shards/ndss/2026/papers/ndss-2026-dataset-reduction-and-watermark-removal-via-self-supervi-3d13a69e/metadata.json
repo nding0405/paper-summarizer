@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2026-dataset-reduction-and-watermark-removal-via-self-supervi-3d13a69e",
   "title": "Dataset Reduction and Watermark Removal via Self-supervised Learning for Model Extraction Attack",
+  "abstract": "To safeguard the intellectual property of high-value deep neural networks, black-box watermarking has emerged as a critical defense and has gained increasing momentum. These methods embed watermarks into the model’s prediction behavior through strategically crafted trigger samples, enabling verification via API queries. Meanwhile, model extraction attacks threaten proprietary deep learning models by exploiting query access to replicate watermarked models. These attacks also offer insights into the resilience of watermarking schemes and adversarial capabilities. However, previous methods struggle to remove watermark information, inadvertently retaining defensive mechanisms. They also suffer from inefficiency, often requiring thousands of queries to achieve competitive performance.\n\nTo address these limitations, we propose a query-efficient model extraction framework named SSLExtraction . SSLExtraction selects queries via a greedy random walk in the feature space, leading to both effective model replication and watermark removal. Specifically, SSLExtraction follows the self-supervised learning paradigm to extract intrinsic data representations, transforming the original pixel-level inputs into watermark-agnostic features. Then, we propose a greedy random walk algorithm in the feature space to construct a well-dispersed query set that effectively covers the feature space while avoiding redundant queries. By selecting queries in the feature space, our method naturally identifies watermark patterns as outliers, enabling simultaneous watermark removal. Additionally, we propose an evaluation metric tailored for the watermarking task that emphasizes the distinction between benign and stolen models. Unlike previous approaches that rely on manually predefined thresholds, our evaluation metric employs hypothesis testing to measure the relative distance from a suspicious model to both a watermarked model and a benign model, identifying which the suspicious model most closely resembles. Experimental results demonstrate that our method significantly reduces query costs compared to baselines while effectively removing watermarks across various datasets and watermarking scenarios.",
+  "abstract_source_id": "src-abstract-ndss-2026-3d13a69e",
   "venue": "ndss",
   "year": 2026,
   "track_or_session": "Fall submission cycle",
@@ -202,6 +204,19 @@
       "official": false,
       "supports": [
         "independent proceedings identity reconciliation"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2026-3d13a69e",
+      "url": "https://www.ndss-symposium.org/ndss-paper/dataset-reduction-and-watermark-removal-via-self-supervised-learning-for-model-extraction-attack/",
+      "kind": "paper-page",
+      "title": "Dataset Reduction and Watermark Removal via Self-supervised Learning for Model Extraction Attack",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:21:48Z",
+      "content_hash": "sha256:29868d789dcbfd0cb1a7edde81a3e2cd2e7b2f810277f1966ac84fca4b6a63e3",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

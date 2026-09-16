@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2026-mitigating-cpu-frontend-for-complex-data-plane-applicati-73d9e41e",
   "title": "Mitigating CPU Frontend for Complex Data Plane Applications",
+  "abstract": "The functionality and requirement of modern networks are becoming increasingly complex, giving rise to Complex Data Plane Applications (CDPA) with rich semantics but often limited performance. However, many existing optimizations fail to improve the performance of CDPAs. This is because CDPAs usually come with excessively large code size, which is often two orders of magnitude larger than today's L1 instruction cache (I-cache) size, causing the CPU to frequently stall on accessing instructions, thus presenting a distinct performance profile that bounds on CPU frontend. This paper proposes NanoPL, an I-cache-friendly new execution model that shuffles the packet processing logic to efficiently mitigate CPU frontend for CDPAs. Stemming from the common execution pattern of CDPAs, NanoPL analyzes its code to ensure semantic consistency after shuffling. By collecting performance profile of CDPAs over underlying traffic, NanoPL partitions CDPAs into execution stages and conducts I-cache-friendly shuffling policy. Experiments show that NanoPL can achieve 17.2%~30.2% higher throughput over real world CDPAs due to the reduction of I-cache misses by up to 86.4%.",
+  "abstract_source_id": "src-abstract-nsdi-2026-73d9e41e",
   "venue": "nsdi",
   "year": 2026,
   "track_or_session": "Virtualization Revisited",
@@ -160,6 +162,19 @@
         "proceedings page range and page count",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2026-73d9e41e",
+      "url": "https://www.usenix.org/conference/nsdi26/presentation/dang",
+      "kind": "paper-page",
+      "title": "Mitigating CPU Frontend for Complex Data Plane Applications",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:05:40Z",
+      "content_hash": "sha256:5a2d0f5b3781be19e382ce73339d0b432a9f0d0bb1dd61b23a4f35c6a6457bb2",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

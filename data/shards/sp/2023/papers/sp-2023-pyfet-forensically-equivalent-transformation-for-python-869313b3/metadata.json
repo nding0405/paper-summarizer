@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2023-pyfet-forensically-equivalent-transformation-for-python-869313b3",
   "title": "PyFET: Forensically Equivalent Transformation for Python Binary Decompilation",
+  "abstract": "Decompilation is a crucial capability in forensic analysis, facilitating analysis of unknown binaries. The recent rise of Python malware has brought attention to Python decompilers that aim to obtain source code representation from a Python binary. However, Python decompilers fail to handle various binaries, limiting their capabilities in forensic analysis.This paper proposes a novel solution that transforms a decompilation error-inducing Python binary into a decompilable binary. Our key intuition is that we can resolve the decompilation errors by transforming error-inducing code blocks in the input binary into another form. The core of our approach is the concept of Forensically Equivalent Transformation (FET) which allows non-semantic preserving transformation in the context of forensic analysis. We carefully define the FETs to minimize their undesirable consequences while fixing various error-inducing instructions that are difficult to solve when preserving the exact semantics. We evaluate the prototype of our approach with 17,117 real-world Python malware samples causing decompilation errors in five popular decompilers. It successfully identifies and fixes 77,022 errors. Our approach also handles anti-analysis techniques, including opcode remapping, and helps migrate Python 3.9 binaries to 3.8 binaries.",
+  "abstract_source_id": "src-abstract-sp-2023-869313b3",
   "venue": "sp",
   "year": 2023,
   "track_or_session": "Session 12A: Bug finding",
@@ -214,6 +216,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2023-869313b3",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Pyfet: Forensically Equivalent Transformation for Python Binary Decompilation",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:27Z",
+      "content_hash": "sha256:2c3c9cbfdcc9ef58a970a66aadb81bbaf8238409ab69d65565522a11e421be99",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

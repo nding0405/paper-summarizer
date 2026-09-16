@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sosp-2024-icarus-trustworthy-just-in-time-compilers-with-symbolic-b023ea8a",
   "title": "Icarus: Trustworthy Just-In-Time Compilers with Symbolic Meta-Execution",
+  "abstract": "Just-in-time (JIT) compilers make JavaScript run efficiently by replacing slow JavaScript interpreter code with fast machine code. However, this efficiency comes at a cost: bugs in JIT compilers can completely subvert all language-based (memory) safety guarantees, and thereby introduce catastrophic exploitable vulnerabilities. We present Icarus: a new framework for implementing JIT compilers that are automatically, formally verified to be safe, and which can then be converted to C++ that can be linked into browser runtimes. Crucially, we show how to build a JIT with Icarus such that verifying the JIT implementation statically ensures the security of all possible programs that the JIT could ever generate at run-time, via a novel technique called symbolic meta-execution that encodes the behaviors of all possible JIT-generated programs as a single Boogie meta-program which can be efficiently verified by SMT solvers. We evaluate Icarus by using it to re-implement components of Firefox's JavaScript JIT. We show that Icarus can scale up to expressing complex JITs, quickly detects real-world JIT bugs and verifies fixed versions, and yields C++ code that is as fast as hand-written code.",
+  "abstract_source_id": "src-abstract-sosp-2024-b023ea8a",
   "venue": "sosp",
   "year": 2024,
   "track_or_session": "Session 7: Verification and Compilers 16:00 - 18:00 Session Chair: Manos Kapritsos",
@@ -230,6 +232,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-sosp-2024-b023ea8a",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Icarus: Trustworthy Just-In-Time Compilers with Symbolic Meta-Execution",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:19Z",
+      "content_hash": "sha256:b613162f9e7d53fac5fe410aff94d06ac71f23c6c31e2e9cc362b51e87d1bb79",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

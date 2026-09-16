@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-compleak-deep-learning-model-compression-exacerbates-pri-d4688d68",
   "title": "CompLeak: Deep Learning Model Compression Exacerbates Privacy Leakage",
+  "abstract": "Model compression is crucial for minimizing memory storage and accelerating inference in deep learning (DL) models. Users can access different compressed model versions according to their resources and budget. However, while existing compression operations primarily focus on optimizing the trade-off between resource efficiency and model performance, the privacy risks introduced by compression remain overlooked and insufficiently understood.\n\nIn this work that focuses on typical classification tasks, through the lens of membership inference attack (MIA), we propose CompLeak, the first privacy risk evaluation framework examining three widely used compression configurations that are pruning, quantization, and weight clustering all supported by the commercial model compression framework of Google's TensorFlow-Lite (TF-Lite), and first two supported by Facebook's PyTorch Mobile and the open-source toolkit of Microsoft NNI. CompLeak has three variants, given access to the available number of compressed models and/or the original model. CompLeak NR starts by adopting existing MIA methods to attack each individual compressed model, and identifies that different compressed models influence members and non-members differently. When the original model and one compressed model are available, CompLeak SR leverages the compressed model as a reference to the original model and uncovers more privacy by combining meta information (e.g., confidence vector) from both models. When multiple compressed models are available with/without accessing the original model, CompLeak MR innovatively exploits privacy leakage info from multiple compressed versions to substantially signify the overall privacy leakage. We conduct extensive experiments on six diverse model architectures (from ResNet to BERT and GPT-2), and five image and textual benchmark datasets. Our experimental results show that CompLeak MR achieves the best MIA performance on all evaluation metrics, including TPR @ 0.1% FPR, proving that model compression exacerbates privacy leakage.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-d4688d68",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Privacy of ML 2",
@@ -156,6 +158,19 @@
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening",
         "prepublication PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-d4688d68",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/li-na",
+      "kind": "paper-page",
+      "title": "CompLeak: Deep Learning Model Compression Exacerbates Privacy Leakage",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:23:25Z",
+      "content_hash": "sha256:4dd32478f5052642eacdb0c3a65cd9304dedff3613ae097147369985ba1b8020",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

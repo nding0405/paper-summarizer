@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-tapas-an-efficient-online-apt-detection-with-task-guided-2ecbcdee",
   "title": "TAPAS: An Efficient Online APT Detection with Task-guided Process Provenance Graph Segmentation and Analysis",
+  "abstract": "Advanced Persistent Threats (APTs) pose critical security challenges to institutions and enterprises through sophisticated, long-duration attack campaigns. While recent APT detection methods primarily leverage provenance graphs constructed from kernel-level audit logs to reveal attack patterns, they face severe scalability limitations in production environments. The provenance graphs grow rapidly (several GB per day) and require long-term maintenance to capture APT campaigns that span months, creating prohibitive storage and computational overhead for real-time detection.\n\nTo address these challenges, we propose TAPAS, an efficient online APT detection framework that reduces graph dimensionality in both spatial and temporal spaces. For spatial dimensionality, TAPAS focuses on the backbone of the provenance graph, which is often large-scale but sparse. Specifically, TAPAS constructs stacked LSTM-GRU models that iteratively update the representations of the backbone nodes based on relevant redundant nodes, replacing direct storage and computation of these redundancies. For temporal dimensionality, TAPAS designs a task-guided backbone graph segmentation algorithm that identifies active subgraphs as objects to be detected in real-time, reducing structural redundancy in the temporal space.\n\nEvaluation in widely used benchmark datasets, DARPA TC and OpTC, demonstrates TAPAS's effectiveness in providing fast, low-overhead online detection while maintaining similar detection accuracy to state-of-the-art methods. Our results show that TAPAS reduces storage requirements by up to 1806× and achieves 99.99% accuracy with an average detection time of 12.78 seconds per GB of audit data, validating its practicality for enterprise deployment with throughputs well above the enterprise requirement of 10^4KB/s.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-2ecbcdee",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "System Security 1: Threat Detection, Exploitation, and Adaptive Defenses",
@@ -196,6 +198,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-2ecbcdee",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/zhang-bo-tapas",
+      "kind": "paper-page",
+      "title": "TAPAS: An Efficient Online APT Detection with Task-guided Process Provenance Graph Segmentation and Analysis",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:22:08Z",
+      "content_hash": "sha256:f9793446399c4d17f787d3f69e9f48739ca3fef7443762ad3cabdf3669173421",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

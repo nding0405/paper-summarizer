@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2024-scalable-zero-knowledge-proofs-for-non-linear-functions-cc0533df",
   "title": "Scalable Zero-knowledge Proofs for Non-linear Functions in Machine Learning",
+  "abstract": "Zero-knowledge (ZK) proofs have been recently explored for the integrity of machine learning (ML) inference. However, these protocols suffer from high computational overhead, with the primary bottleneck stemming from the evaluation of non-linear functions. In this paper, we propose the first systematic ZK proof framework for non-linear mathematical functions in ML using the perspective of table lookup. The key challenge is that table lookup cannot be directly applied to non-linear functions in ML since it would suffer from inefficiencies due to the intolerably large table. Therefore, we carefully design several important building blocks, including digital decomposition, comparison, and truncation, such that they can effectively utilize table lookup with a quite small table size while ensuring the soundness of proofs. Based on these building blocks, we implement complex mathematical operations and further construct ZK proofs for current mainstream non-linear functions in ML such as ReLU, sigmoid, and normalization. The extensive experimental evaluation shows that our framework achieves 50∼179× runtime improvement compared to the state-of-the-art work, while maintaining a similar level of communication efficiency.",
+  "abstract_source_id": "src-abstract-usenix-security-2024-cc0533df",
   "venue": "usenix-security",
   "year": 2024,
   "track_or_session": "Zero-Knowledge Proof II",
@@ -196,6 +198,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2024-cc0533df",
+      "url": "https://www.usenix.org/conference/usenixsecurity24/presentation/hao-meng-scalable",
+      "kind": "paper-page",
+      "title": "Scalable Zero-knowledge Proofs for Non-linear Functions in Machine Learning",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:17:05Z",
+      "content_hash": "sha256:deba212dbefe8ea0108c2c4f18737fab7db99cd463cf59c6a6e68654a401108f",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2024-belt-old-school-backdoor-attacks-can-evade-the-state-of-e63aa8d1",
   "title": "BELT: Old-School Backdoor Attacks can Evade the State-of-the-Art Defense with Backdoor Exclusivity Lifting",
+  "abstract": "Deep neural networks (DNNs) are susceptible to backdoor attacks, where malicious functionality is embedded to allow attackers to trigger incorrect classifications. Old-school backdoor attacks use strong trigger features that can easily be learned by victim models. Despite robustness against input variation, the robustness however increases the likelihood of unintentional trigger activations. This leaves traces to existing defenses, which find approximate replacements for the original triggers that can activate the backdoor without being identical to the original trigger via, e.g., reverse engineering and sample overlay.In this paper, we propose and investigate a new characteristic of backdoor attacks, namely, backdoor exclusivity, which measures the ability of backdoor triggers to remain effective in the presence of input variation. Building upon the concept of backdoor exclusivity, we propose Backdoor Exclusivity LifTing (BELT), a novel technique which suppresses the association between the backdoor and fuzzy triggers to enhance backdoor exclusivity for defense evasion. Extensive evaluation on three popular backdoor benchmarks validate, our approach substantially enhances the stealthiness of four old-school backdoor attacks, which, after backdoor exclusivity lifting, is able to evade seven state-of-the-art backdoor countermeasures, at almost no cost of the attack success rate and normal utility. For example, one of the earliest backdoor attacks BadNet, enhanced by BELT, evades most of the state-of-the-art defenses including ABS and MOTH which would otherwise recognize the backdoored model.",
+  "abstract_source_id": "src-abstract-sp-2024-e63aa8d1",
   "venue": "sp",
   "year": 2024,
   "track_or_session": "Winter cycle",
@@ -180,6 +182,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2024-e63aa8d1",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "BELT: Old-School Backdoor Attacks can Evade the State-of-the-Art Defense with Backdoor Exclusivity Lifting",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:32Z",
+      "content_hash": "sha256:be7515012a8c1ea1211f38a27ea4d2aa9cff6e0faac9417a2f58b1d64e91280e",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

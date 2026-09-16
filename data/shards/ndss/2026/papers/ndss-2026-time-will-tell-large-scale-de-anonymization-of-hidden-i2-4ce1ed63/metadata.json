@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2026-time-will-tell-large-scale-de-anonymization-of-hidden-i2-4ce1ed63",
   "title": "Time will Tell: Large-scale De-anonymization of Hidden I2P Services via Live Behavior Alignment",
+  "abstract": "I2P (Invisible Internet Project) is a popular anonymous communication network. While existing de-anonymization methods for I2P focus on identifying potential traffic patterns of target hidden services among extensive network traffic, they often fail to scale effectively across the large and diverse I2P network, which consists of numerous routers. In this paper, we introduce I2PERCEPTION a low-cost approach revealing the IP addresses of I2P hidden services. In I2PERCEPTION, attackers deploy floodfill routers to passively monitor I2P routers and collect their RouterInfo . We analyze the router information publication mechanism to accurately identify routers' join (i.e. on) and leave (i.e. off) behaviors, enabling fine-grained live behavior inference across the I2P network. Active probing is used to obtain the live behavior (i.e., on-off patterns) of a target hidden service hosted on one of the I2P routers. By correlating the live behaviors of the target hidden service and I2P routers over time, we narrow down the set of routers matching the hidden service's behavior, revealing the hidden service's true network identity for de-anonymization. Through the deployment of only 15 floodfill routers over the course of eight months, we validate the precision and effectiveness of our approach with extensive real-world experiments. Our results show that I2PERCEPTION successfully de-anonymizes all controlled hidden services.",
+  "abstract_source_id": "src-abstract-ndss-2026-4ce1ed63",
   "venue": "ndss",
   "year": 2026,
   "track_or_session": "Fall submission cycle",
@@ -223,6 +225,19 @@
       "official": false,
       "supports": [
         "independent proceedings identity reconciliation"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2026-4ce1ed63",
+      "url": "https://www.ndss-symposium.org/ndss-paper/time-will-tell-large-scale-de-anonymization-of-hidden-i2p-services-via-live-behavior-alignment/",
+      "kind": "paper-page",
+      "title": "Time will Tell: Large-scale De-anonymization of Hidden I2P Services via Live Behavior Alignment",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:23:23Z",
+      "content_hash": "sha256:b1b49acab210a59f0952644a454d2d69216dfd274b0f5de9db99f194943e387b",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

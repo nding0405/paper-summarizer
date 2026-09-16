@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2025-metteagle-costs-and-benefits-of-implementing-containers-ac9bbf64",
   "title": "MettEagle: Costs and Benefits of Implementing Containers on Microkernels",
+  "abstract": "Today, many applications are hosted by cloud providers. In order to isolate the workloads of different clients, cloud enterprises mostly rely on containers rather than standard processes, since the latter are able to exercise a lot of ambient authority. Containers counter this deficiency by sandboxing processes. To this end, they use dedicated security mechanisms such as seccomp-bpf. However, these mechanisms add complexity to the kernel and increase its attack surface, thus prompting new security challenges. Processes in microkernel-based systems do not have ambient authority. Thus, they do not require additional security mechanisms to build sandboxes. In this paper, we try to answer the question whether a microkernel-based OS architecture enables a leaner and more secure container infrastructure. Based on a CVE analysis, we show that the conceptual simplicity of containers on microkernels results in a better security posture than that typically found on monolithic systems. We furthermore demonstrate the practical feasibility of implementing containers on state-of-the-art microkernels by building MettEagle, a prototype container service running on L4Re. We found that applications running in containers on L4Re expose performance characteristics comparable to that of containers on Linux for both synthetic and real-world benchmarks. In some cases, the container implementation of L4Re even outperforms Linux, accelerating container startup latency and improving network performance.",
+  "abstract_source_id": "src-abstract-osdi-2025-ac9bbf64",
   "venue": "osdi",
   "year": 2025,
   "track_or_session": "Privacy and Security",
@@ -285,6 +287,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2025-ac9bbf64",
+      "url": "https://www.usenix.org/conference/osdi25/presentation/miemietz",
+      "kind": "paper-page",
+      "title": "MettEagle: Costs and Benefits of Implementing Containers on Microkernels",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:07:38Z",
+      "content_hash": "sha256:435f3a27b029b41f91de90a0cddf0ddbf3b3d4dbc196a6e0d5e2b9839420d73e",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

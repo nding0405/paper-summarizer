@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2024-lr-miner-static-race-detection-in-os-kernels-by-mining-l-c29e9444",
   "title": "LR-Miner: Static Race Detection in OS Kernels by Mining Locking Rules",
+  "abstract": "Data race is one of the most common concurrency issues in OS kernels, and it can cause severe problems like system crashes and privilege escalation. Therefore, detecting kernel races is important and necessary. A critical step of kernel race detection is to identify locking rules that which variable should be protected by which lock. However, due to insufficient documents of kernel concurrency, it is challenging to identify accurate locking rules, causing existing approaches to produce many false results in kernel race detection.\n\nIn this paper, we design a new static analysis approach named LR-Miner, to effectively detect data races in OS kernels by mining locking rules from kernel code. LR-Miner consists of three key techniques: (1) a field-aware mining method that constructs and statistically analyzes the structure field relation between locks and accessed variables, to mine accurate locking rules from kernel code; (2) an alias-aware checking method to detect data races that violate the mined locking rules; (3) a pattern-based estimation strategy to estimate the security impact of the found races and identify harmful ones. We have evaluated LR-Miner on two popular OS kernels including Linux and FreeBSD, and it finds 306 real races with a false positive rate of 19.9%. Among these found races, 200 are estimated to be harmful, and 61 of them have been confirmed by kernel developers. 10 harmful races have been assigned with CVE IDs.",
+  "abstract_source_id": "src-abstract-usenix-security-2024-c29e9444",
   "venue": "usenix-security",
   "year": 2024,
   "track_or_session": "System Security IV: Multithreading",
@@ -133,6 +135,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2024-c29e9444",
+      "url": "https://www.usenix.org/conference/usenixsecurity24/presentation/li-tuo",
+      "kind": "paper-page",
+      "title": "LR-Miner: Static Race Detection in OS Kernels by Mining Locking Rules",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:16:07Z",
+      "content_hash": "sha256:6d963eaf300495076216f996dd94c01187728276385f050c2d1db47e55949876",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

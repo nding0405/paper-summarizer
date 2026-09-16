@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-rarus-a-succinct-and-efficient-range-proof-for-polynomia-477a2839",
   "title": "Rarus: A Succinct and Efficient Range Proof for Polynomial-based Vector Commitment",
+  "abstract": "Range proofs enable a prover to convince a verifier that a committed value lies within a specific interval without revealing additional information. They are fundamental to privacy-preserving systems including anonymous credentials, e-voting, e-cash, and cryptocurrencies like Monero and Grin. A critical challenge is efficiently proving that multiple committed values simultaneously satisfy range constraints while minimizing communication overhead.\n\nVector commitment schemes provide a promising approach to this problem. Missileproof (CCS'24) recently proposed a range proof for vector commitments achieving O(1) proof size and verifier time, but with prover complexity of O(Nℒlog(Nℒ)) for proving ℒ values in [0,2 N ).\n\nWe present Rarus , an efficient range proof for polynomial-based vector commitments that achieves optimal asymptotic complexity across all metrics. Our key innovation is replacing binary decomposition with optimized b b-ary decomposition, coupled with Bi-variate Zero-Test and accelerated Uni-variate Sum-Check protocols. Rarus achieves O(1) proof size and verifier time, while reducing prover time to O (Nℒ / log (Nℒ)) G + O (Nℒ)F, where G and F denote group and field operations respectively. In addition , our protocol supports arbitrary ranges [0,R) beyond powers of two. Experimental results demonstrate that Rarus achieves a 20× speedup over both Bulletproofs and Missileproof when proving 16,384 values in [0,2 64 = ).",
+  "abstract_source_id": "src-abstract-usenix-security-2026-477a2839",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Applications of Cryptography 6",
@@ -134,6 +136,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-477a2839",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/yang-xinyang",
+      "kind": "paper-page",
+      "title": "Rarus: A Succinct and Efficient Range Proof for Polynomial-based Vector Commitment",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:25:09Z",
+      "content_hash": "sha256:87735b5e86c46f0d9ff52066f00cf58ed07e020bfad9a34ab517f70799c94c11",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

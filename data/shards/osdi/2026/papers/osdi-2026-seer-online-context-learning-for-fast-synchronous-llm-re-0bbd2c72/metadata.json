@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2026-seer-online-context-learning-for-fast-synchronous-llm-re-0bbd2c72",
   "title": "Seer: Online Context Learning for Fast Synchronous LLM Reinforcement Learning",
+  "abstract": "Reinforcement Learning (RL) has emerged as a critical technique for advancing modern Large Language Models (LLMs), yet existing synchronous RL systems face severe performance bottlenecks. The rollout phase, which dominates end-to-end iteration time, suffers from substantial long-tail latency and poor resource utilization due to inherent workload imbalance. We present Seer, a novel context learning RL system that addresses these challenges through a key observation: requests sharing the same prompt exhibit strong similarities in output lengths and response patterns. Leveraging this insight, Seer introduces three coordinated techniques: (1) divided rollout for dynamic load balancing, (2) context-aware scheduling to mitigate long-tail request delays, and (3) adaptive grouped speculative decoding to accelerate generation. These mechanisms work in concert to markedly reduce long-tail latency and improve resource efficiency during rollout. Evaluations on production-grade RL workloads demonstrate that Seer achieves up to 2.04× end-to-end rollout throughput improvement compared to the state-of-the-art synchronous RL systems, while notably reducing long-tail latency by 72–94%.",
+  "abstract_source_id": "src-abstract-osdi-2026-0bbd2c72",
   "venue": "osdi",
   "year": 2026,
   "track_or_session": "RL Training at Scale",
@@ -272,6 +274,19 @@
       "official": true,
       "supports": [
         "Official proceedings availability and canonical conference versions."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2026-0bbd2c72",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/qin",
+      "kind": "paper-page",
+      "title": "Seer: Online Context Learning for Fast Synchronous LLM Reinforcement Learning",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:08:56Z",
+      "content_hash": "sha256:17ed883b2062bffd3b0b282e28e52f7937885a5389a0bdd83e3f481f0606f216",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

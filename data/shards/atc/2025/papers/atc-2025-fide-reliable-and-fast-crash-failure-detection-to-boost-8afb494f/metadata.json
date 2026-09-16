@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "atc-2025-fide-reliable-and-fast-crash-failure-detection-to-boost-8afb494f",
   "title": "FiDe: Reliable and Fast Crash Failure Detection to Boost Datacenter Coordination",
+  "abstract": "Failure detection is one of the most fundamental primitives on which distributed fault tolerant services and applications rely to achieve liveness. Typical failure detectors resort to using timeouts that have to take into account the unpredictability in interaction times among remote processes, caused by resource contention in the network and in endhost processors. While modern (gray) failure detectors have improved in detecting a wide range of failures, the problem of prohibitively large and unreliable timeouts for crash failures still persists, hampering performance of both the failure detector themselves and modern μs-scale services sitting on top.\n\nWe propose a novel [f]ully rel[i]able failure- [de]tector (FiDe) that can report the crash of a remote process in a datacenter within less than 30 μs ( 7.2× faster than the current state of the art) with extremely high reliability , thanks to a ground-up design which provides stable end-to-end process interactions. By reliably lowering worst-case crash detection time, FiDe enables a class of algorithms that can be used to boost coordination services even in the absence of failures. We devise two novel, FiDe-based, highly efficient consensus protocols and integrate them into a key-value store and a synchronization service, improving throughput by up to 2.23× and reducing latency down to 0.46×.",
+  "abstract_source_id": "src-abstract-atc-2025-8afb494f",
   "venue": "atc",
   "year": 2025,
   "track_or_session": "Resilient Systems: Failure Detection, Consistency, and Scalability",
@@ -201,6 +203,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-atc-2025-8afb494f",
+      "url": "https://www.usenix.org/conference/atc25/presentation/rovelli",
+      "kind": "paper-page",
+      "title": "FiDe: Reliable and Fast Crash Failure Detection to Boost Datacenter Coordination",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T21:59:40Z",
+      "content_hash": "sha256:4316ac9001f5dd30b12d8672d6d12a5fd7b2dfc78c8d40b9eebb69a56df259cb",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

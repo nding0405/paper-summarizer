@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-zipper-static-taint-analysis-for-php-applications-with-p-c1d91bb6",
   "title": "ZIPPER: Static Taint Analysis for PHP Applications with Precision and Efficiency",
+  "abstract": "PHP-based web applications constitute a significant portion of the Web infrastructure and are frequently targeted by attackers exploiting taint-style vulnerabilities. While static analysis has emerged as a preferred approach for detecting these vulnerabilities, two major challenges persist: accurately inferring dynamic values from PHP's dynamic features, and efficiently detecting taint vulnerabilities in large-scale applications. This paper presents ZIPPER, a novel static analysis framework that addresses these challenges through two key innovations. First, we introduce a context-sensitive, flow-sensitive value-set algorithm that precisely infers dynamic values by leveraging input validation patterns and framework API characteristics. Second, we implement an efficient, on-demand approach to taint analysis that incorporates object-sensitive and array index-sensitive analyses while maintaining efficiency through sparse data dependency graphs. Evaluation on 429 known taint-style vulnerabilities demonstrates ZIPPER's effectiveness with the highest precision of 68.34% and an impressive recall of 98.14%, outperforming existing approaches. Furthermore, application of ZIPPER to 100 popular PHP applications led to the discovery of 11 previously unknown vulnerabilities, resulting in 6 CVE assignments.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-c1d91bb6",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Web Security",
@@ -259,6 +261,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-c1d91bb6",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/wang-xinyi",
+      "kind": "paper-page",
+      "title": "ZIPPER: Static Taint Analysis for PHP Applications with Precision and Efficiency",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:22:49Z",
+      "content_hash": "sha256:f12eb667974c5b8f770a74646f01439d332e9a62c1ddd55d9517451c56e69bd6",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

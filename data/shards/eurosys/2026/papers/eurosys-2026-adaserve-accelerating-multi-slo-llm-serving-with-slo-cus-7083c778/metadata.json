@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "eurosys-2026-adaserve-accelerating-multi-slo-llm-serving-with-slo-cus-7083c778",
   "title": "AdaServe: Accelerating Multi-SLO LLM Serving with SLO-Customized Speculative Decoding",
+  "abstract": "Modern large language model (LLM) applications exhibit diverse service-level objectives (SLOs), from low-latency requirements in interactive coding assistants to more relaxed constraints in data wrangling tasks. Existing LLM serving systems, which rely on uniform batching and scheduling strategies, often fail to meet these heterogeneous SLOs concurrently. We present AdaServe, the first LLM serving system designed to support efficient multi-SLO serving through SLO-customized speculative decoding. AdaServe formulates multi-SLO serving as a constrained optimization problem and introduces a hardware-aware algorithm that constructs a speculation tree tailored to each request's latency target. It features a speculate-select-verify pipeline that enables fine-grained control over decoding speed while maximizing system throughput. AdaServe further adapts to workload variation by dynamically adjusting speculation parameters. Evaluations across diverse workloads show that AdaServe reduces SLO violations by up to 4.3X and improves goodput by up to 1.9X compared to the best-performing baselines, highlighting its effectiveness in multi-SLO serving.",
+  "abstract_source_id": "src-abstract-eurosys-2026-7083c778",
   "venue": "eurosys",
   "year": 2026,
   "track_or_session": null,
@@ -369,6 +371,19 @@
       "official": false,
       "supports": [
         "Publisher-deposited proceedings identity and print publication date."
+      ]
+    },
+    {
+      "id": "src-abstract-eurosys-2026-7083c778",
+      "url": "https://api.openalex.org/works/doi:10.1145/3767295.3769315?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "AdaServe: Accelerating Multi-SLO LLM Serving with SLO-Customized Speculative Decoding",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:19:43Z",
+      "content_hash": "sha256:b7494a0fd19a548863b9970d5e7ff5ae8b7b9233060cbef3b62049e1a588a08f",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

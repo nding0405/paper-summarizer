@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-secpoline-a-scalable-approach-to-build-secure-in-process-7762dd42",
   "title": "Secpoline: A Scalable Approach to Build Secure In-Process Syscall Interposers",
+  "abstract": "In-process system call interposers are increasingly used to extend or monitor application functionality without context-switching or inter-process communication (IPC) overhead. However, when embedded inside untrusted applications, existing solutions face a trade-off: they either enforce no isolation at all, or impose severe restrictions on the monitor's isolated programming environment that are incompatible with complex, real-world use cases.\n\nThis paper presents Secpoline, a new interposition platform that allows in-process monitors to support arbitrary interposer functionality without compromising isolation. Secpoline achieves this via isolated multi-program loading and a novel meta-monitor design that interposes the monitor itself to emulate a seamless programming environment. In addition, Secpoline implements the first fully self-contained in-process sandbox to harden its own isolation primitive, while preserving fast-path syscall interposition with zero kernel involvement.\n\nOur evaluation shows that Secpoline matches the efficiency of state-of-the-art secure in-process interposers while enabling a significantly more expressive programming environment. We specifically demonstrate this by implementing a kernel-module-free version of the Falco intrusion detection engine. We also implement an in-process ProxySQL sidecar, embedded directly into the application process, where Secpoline transparently provides a kernel-bypass communication path to increase throughput by roughly 50%. These results confirm that Secpoline finally delivers on the promise of secure, complex application monitoring at in-process speeds.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-7762dd42",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "System Security 2",
@@ -155,6 +157,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-7762dd42",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/sturm",
+      "kind": "paper-page",
+      "title": "Secpoline: A Scalable Approach to Build Secure In-Process Syscall Interposers",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:25:18Z",
+      "content_hash": "sha256:6a53dd1d6bf74a9211d62ae72ecdd32c9837d42223fbf686eecc50755794810a",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

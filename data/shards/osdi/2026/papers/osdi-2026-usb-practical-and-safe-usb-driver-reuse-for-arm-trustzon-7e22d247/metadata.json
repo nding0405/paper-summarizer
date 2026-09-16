@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2026-usb-practical-and-safe-usb-driver-reuse-for-arm-trustzon-7e22d247",
   "title": "μUSB: Practical and Safe USB Driver Reuse for Arm TrustZone",
+  "abstract": "TrustZone isolates device access with secure I/O, yet lacks support for USB devices, which constitute the most diverse peripherals. Existing approaches to integrate USB drivers into the TEE are impractical due to the complex USB protocols, high-frequency DMA accesses, and varying vendor implementations.\n\nIn this paper, we present μUSB, a system that derives a functional, micro USB driver for TrustZone from the observable concrete execution traces of a full-fledged, complex USB driver, an approach we dub record, lift, and replay. Based on the key insight of kernel specialization and the deterministic nature of USB FSMs, μUSB proposes a lightweight mutational recorder and a novel program analysis technique, addressing two challenges: how to record USB execution sufficiently and analyze the traces deeply?\n\nAcross four major USB classes and six diverse devices, μUSB generates performant, ready-to-use USB drivers for TrustZone, enabling in-TEE apps to, for the first time, leverage complex USB devices with near-native performance while still enjoying full TrustZone protection.",
+  "abstract_source_id": "src-abstract-osdi-2026-7e22d247",
   "venue": "osdi",
   "year": 2026,
   "track_or_session": "Confidential Computing",
@@ -230,6 +232,19 @@
       "official": true,
       "supports": [
         "Official proceedings availability and canonical conference versions."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2026-7e22d247",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/zhang-xuankai",
+      "kind": "paper-page",
+      "title": "μUSB: Practical and Safe USB Driver Reuse for Arm TrustZone",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:09:12Z",
+      "content_hash": "sha256:cf82a96c9f916821cafc9f6d9d5ee577e4aa3cba3d169d10e028073837cdf1c3",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "eurosys-2024-serialization-deserialization-free-state-transfer-in-ser-f1d12949",
   "title": "Serialization/Deserialization-free State Transfer in Serverless Workflows",
+  "abstract": "Serialization and deserialization play a dominant role in the state transfer time of serverless workflows, leading to substantial performance penalties during workflow execution. We identify the key reason as a lack of ability to efficiently access the (remote) memory of another function. We propose RMMap, an OS primitive for remote memory map. It allows a serverless function to directly access the memory of another function, even if it is located remotely. RMMap is the first to completely eliminates serialization and deserialization when transferring states between any pairs of functions in (unmodified) serverless workflows. To make remote memory map efficient and feasible, we co-design it with fast networking (RDMA), OS, language runtime, and serverless platform. Evaluations using real-world serverless workloads show that integrating RMMap with Knative reduces the serverless workflow execution time on Knative by up to 2.6 × and improves resource utilizations by 86.3%.",
+  "abstract_source_id": "src-abstract-eurosys-2024-f1d12949",
   "venue": "eurosys",
   "year": 2024,
   "track_or_session": null,
@@ -188,6 +190,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-eurosys-2024-f1d12949",
+      "url": "https://api.openalex.org/works/doi:10.1145/3627703.3629568?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Serialization/Deserialization-free State Transfer in Serverless Workflows",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:18:56Z",
+      "content_hash": "sha256:b79bb320f35deb0e79ebf057d51e82cf536efc6088c5c587cae89b959ba79f61",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

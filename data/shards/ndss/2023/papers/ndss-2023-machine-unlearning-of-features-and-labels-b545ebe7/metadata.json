@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2023-machine-unlearning-of-features-and-labels-b545ebe7",
   "title": "Machine Unlearning of Features and Labels",
+  "abstract": "Removing information from a machine learning model is a non-trivial task that requires to partially revert the training process. This task is unavoidable when sensitive data, such as credit card numbers or passwords, accidentally enter the model and need to be removed afterwards. Recently, different concepts for machine unlearning have been proposed to address this problem. While these approaches are effective in removing individual data points, they do not scale to scenarios where larger groups of features and labels need to be reverted. In this paper, we propose the first method for unlearning features and labels. Our approach builds on the concept of influence functions and realizes unlearning through closed-form updates of model parameters. It enables to adapt the influence of training data on a learning model retrospectively, thereby correcting data leaks and privacy issues. For learning models with strongly convex loss functions, our method provides certified unlearning with theoretical guarantees. For models with non-convex losses, we empirically show that unlearning features and labels is effective and significantly faster than other strategies.",
+  "abstract_source_id": "src-abstract-ndss-2023-b545ebe7",
   "venue": "ndss",
   "year": 2023,
   "track_or_session": "ML and AI II",
@@ -147,6 +149,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2023-b545ebe7",
+      "url": "https://www.ndss-symposium.org/ndss-paper/machine-unlearning-of-features-and-labels/",
+      "kind": "paper-page",
+      "title": "Machine Unlearning of Features and Labels",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:17:07Z",
+      "content_hash": "sha256:c0dd2b14dfa09e51c75132bc4e934eea0d709095d2675ead80624402c01b7be0",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

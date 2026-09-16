@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2024-leveraging-semantic-relations-in-code-and-data-to-enhanc-b381003d",
   "title": "Leveraging Semantic Relations in Code and Data to Enhance Taint Analysis of Embedded Systems",
+  "abstract": "IoT devices have significantly impacted our daily lives, and detecting vulnerabilities in embedded systems early on is critical for ensuring their security. Among the existing vulnerability detection techniques for embedded systems, static taint analysis has been proven effective in detecting severe vulnerabilities, such as command injection vulnerabilities, which can cause remote code execution. Nevertheless, static taint analysis is faced with the problem of identifying sources comprehensively and accurately.\n\nThis paper presents Lara, a novel static taint analysis technique to detect vulnerabilities in embedded systems. The design of Lara is inspired by an observation that pertains to semantic relations within and between the code and data of embedded software: user input entries can be categorized as URIs or keys (data), and identifying their handling code (code) and relations can help systematically and comprehensively identify the sources for taint analysis. Transforming the observation into a practical methodology poses challenges. To address these challenges, Lara employs a combination of pattern-based static analysis and large language model(LLM)-aided analysis, aiming to replicate how human experts would utilize the findings during analysis and enhance it. The pattern-based static analysis simulates human experience, while the LLM-aided analysis captures the way human experts perceive code semantics. We implemented Lara and evaluated it on 203 IoT devices from 21 vendors. In general, Lara detects 556 and 602 more vulnerabilities than SaTC and Karonte while reducing false positives by 57.0% and 54.3%. Meanwhile, with more sources and sinks from Lara, EmTaint can detect 245 more vulnerabilities. To date, Lara has found 245 0-day vulnerabilities in 57 devices, all of which were confirmed or fixed with 162 CVE IDs assigned.",
+  "abstract_source_id": "src-abstract-usenix-security-2024-b381003d",
   "venue": "usenix-security",
   "year": 2024,
   "track_or_session": "Hardware Security V: Embedded",
@@ -280,6 +282,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2024-b381003d",
+      "url": "https://www.usenix.org/conference/usenixsecurity24/presentation/zhao",
+      "kind": "paper-page",
+      "title": "Leveraging Semantic Relations in Code and Data to Enhance Taint Analysis of Embedded Systems",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:16:03Z",
+      "content_hash": "sha256:ffa83bf6bf8e5b2ea19e4b03a91ce804ecb3d2ab424b39009da9e4b72bcf11ed",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

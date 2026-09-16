@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2024-reef-fast-succinct-non-interactive-zero-knowledge-regex-b705757e",
   "title": "Reef: Fast Succinct Non-Interactive Zero-Knowledge Regex Proofs",
+  "abstract": "This paper presents Reef, a system for generating publicly verifiable succinct non-interactive zero-knowledge proofs that a committed document matches or does not match a regular expression. We describe applications such as proving the strength of passwords, the provenance of email despite redactions, the validity of oblivious DNS queries, and the existence of mutations in DNA. Reef supports the Perl Compatible Regular Expression syntax, including wildcards, alternation, ranges, capture groups, Kleene star, negations, and lookarounds. Reef introduces a new type of automata, Skipping Alternating Finite Automata (SAFA), that skips irrelevant parts of a document when producing proofs without undermining soundness, and instantiates SAFA with a lookup argument. Our experimental evaluation confirms that Reef can generate proofs for documents with 32M characters; the proofs are small and cheap to verify (under a second).",
+  "abstract_source_id": "src-abstract-usenix-security-2024-b705757e",
   "venue": "usenix-security",
   "year": 2024,
   "track_or_session": "Zero-Knowledge Proof II",
@@ -154,6 +156,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2024-b705757e",
+      "url": "https://www.usenix.org/conference/usenixsecurity24/presentation/angel",
+      "kind": "paper-page",
+      "title": "Reef: Fast Succinct Non-Interactive Zero-Knowledge Regex Proofs",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:16:57Z",
+      "content_hash": "sha256:83e43dded67ca4d8c39f69fb0493c974cecb25d7eb0f4bdd1d169c08f5b8881f",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

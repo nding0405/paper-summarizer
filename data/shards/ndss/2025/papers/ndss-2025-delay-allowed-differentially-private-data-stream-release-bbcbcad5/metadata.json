@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2025-delay-allowed-differentially-private-data-stream-release-bbcbcad5",
   "title": "Delay-allowed Differentially Private Data Stream Release",
+  "abstract": "The research on tasks involving differentially private data stream releases has traditionally centered around real-time scenarios. However, not all data streams inherently demand real-time releases, and achieving such releases is challenging due to network latency and processing constraints in practical settings. We delve into the advantages of introducing a delay time in stream releases. Concentrating on the event-level privacy setting, we discover that incorporating a delay can overcome limitations faced by current approaches, thereby unlocking substantial potential for improving accuracy.\n\nBuilding on these insights, we developed a framework for data stream releases that allows for delays. Capitalizing on data similarity and relative order characteristics, we devised two optimization strategies, group-based and order-based optimizations, to aid in reducing the added noise and post-processing of noisy data. Additionally, we introduce a novel sensitivity truncation mechanism, significantly further reducing the amount of introduced noise. Our comprehensive experimental results demonstrate that, on a data stream of length $18,319$, allowing a delay of $10$ timestamps enables the proposed approaches to achieve a remarkable up to a $30times$ improvement in accuracy compared to baseline methods.\n\nOur code is open-sourced.",
+  "abstract_source_id": "src-abstract-ndss-2025-bbcbcad5",
   "venue": "ndss",
   "year": 2025,
   "track_or_session": "Summer submission cycle",
@@ -210,6 +212,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2025-bbcbcad5",
+      "url": "https://www.ndss-symposium.org/ndss-paper/delay-allowed-differentially-private-data-stream-release/",
+      "kind": "paper-page",
+      "title": "Delay-allowed Differentially Private Data Stream Release",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:19:23Z",
+      "content_hash": "sha256:4a4a4c323e248c9ccd3afa45b8beca2d1ea504971ba2ef612c0df8d9e201908f",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

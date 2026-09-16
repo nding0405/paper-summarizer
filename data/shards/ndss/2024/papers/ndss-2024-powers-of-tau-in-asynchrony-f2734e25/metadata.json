@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2024-powers-of-tau-in-asynchrony-f2734e25",
   "title": "Powers of Tau in Asynchrony",
+  "abstract": "The $q$-Strong Diffie-Hellman~($q$-SDH) parameters are foundational to efficient constructions of many cryptographic primitives such as zero-knowledge succinct non-interactive argument of knowledge, polynomial/vector commitments, verifiable secret sharing, and randomness beacon. The only existing method to generate these parameters securely is highly sequential, requires strong network synchrony assumptions, and has very high communication and computation cost. For example, to generate parameters for any given $q$, each party incurs a communication cost of $Omega(nq)$ and requires $Omega(n)$ rounds. Here $n$ is the number of parties in the secure multiparty computation protocol. Since $q$ is typically large, i.e., on the order of billions, the cost is highly prohibitive.\n\nIn this paper, we present a distributed protocol to generate $q$-SDH parameters in an asynchronous network. In a network of $n$ parties, our protocol tolerates up to one-third of malicious parties. Each party incurs a communication cost of $O(q + n^2log q)$ and the protocol finishes in $O(log q + log n)$ expected rounds. We provide a rigorous security analysis of our protocol. We implement our protocol and evaluate it with up to 128 geographically distributed parties. Our evaluation illustrates that our protocol is highly scalable and results in a 2-6$times$ better runtime and 4-13$times$ better per-party bandwidth usage compared to the state-of-the-art synchronous protocol for generating $q$-SDH parameters.",
+  "abstract_source_id": "src-abstract-ndss-2024-f2734e25",
   "venue": "ndss",
   "year": 2024,
   "track_or_session": "Fall submission cycle",
@@ -126,6 +128,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2024-f2734e25",
+      "url": "https://www.ndss-symposium.org/ndss-paper/powers-of-tau-in-asynchrony/",
+      "kind": "paper-page",
+      "title": "Powers of Tau in Asynchrony",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:18:31Z",
+      "content_hash": "sha256:981c8b073d5c3f1f79087040030024513871c955b1b7125c108efea4d9af31f5",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

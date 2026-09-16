@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2026-spade-signal-aware-dag-scheduling-and-dynamic-provisioni-51ea0138",
   "title": "SPADE: Signal-Aware DAG Scheduling and Dynamic Provisioning for Data Processing Clusters",
+  "abstract": "As AI-driven demand reshapes the data center landscape, external signals—such as energy cost, carbon intensity, power availability, and water usage—are increasingly dictating how much compute is available at any moment. These signals tend to vary over time, challenging traditional cluster schedulers, which implicitly assume stable resource supply, and calls for systems that continuously adapt to time-varying conditions. We focus on batch data-processing workloads, which are delay-tolerant but constitute a healthy fraction of total compute, making them a natural target for such flexibility. The directed acyclic graph (DAG) structure of these data-processing jobs makes decisions uniquely challenging, since delaying certain tasks in the DAG (e.g., bottleneck tasks) can stall entire pipelines. We introduce SPADE , a signal-aware scheduling and provisioning system that jointly considers workload DAG structure and external time-varying signals when deciding how (provisioning) and when (scheduling) to allocate resources. To underscore the importance of coupling these decisions, we evaluate SAP , an ablated system that preserves SPADE ’s signal-aware provisioning but delegates scheduling to arbitrary signal-agnostic policies. Using a Spark prototype deployed on a 100-node Kubernetes cluster, we show that SPADE reduces a secondary objective (e.g., the cost associated with carbon intensity or energy price) by 32.9% while maintaining overall cluster throughput.",
+  "abstract_source_id": "src-abstract-osdi-2026-51ea0138",
   "venue": "osdi",
   "year": 2026,
   "track_or_session": "Power, Energy, Sustainability",
@@ -188,6 +190,19 @@
       "official": true,
       "supports": [
         "Official proceedings availability and canonical conference versions."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2026-51ea0138",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/lechowicz",
+      "kind": "paper-page",
+      "title": "SPADE: Signal-Aware DAG Scheduling and Dynamic Provisioning for Data Processing Clusters",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:08:59Z",
+      "content_hash": "sha256:c8053d77ba74011da3dbf43a5b546e8ff64edbbcf2b5157b7585d8a8df6ee073",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

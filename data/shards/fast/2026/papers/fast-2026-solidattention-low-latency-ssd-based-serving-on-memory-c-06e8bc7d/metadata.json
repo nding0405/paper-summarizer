@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "fast-2026-solidattention-low-latency-ssd-based-serving-on-memory-c-06e8bc7d",
   "title": "SolidAttention: Low-Latency SSD-based Serving on Memory-Constrained PCs",
+  "abstract": "AI personal computers (AIPCs) enable the local deployment of large language model (LLM) inference, offering enhanced privacy guarantees and customizable serving. However, such deployments are constrained by limited memory capacity, primarily due to the substantial key-value (KV) cache overhead. This paper introduces SolidAttention, an LLM inference engine which addresses these limitations through a tight co-design of dynamic attention sparsity algorithms and SSD-based storage management. Specifically, to maximize SSD bandwidth utilization, SolidAttention consolidates multiple KV pairs into coarse-grained blocks and implements speculative prefetching mechanisms that exploit temporal locality in sparse attention. By fine-grained orchestration of computation and I/O operations while reusing synchronization points, SolidAttention further minimizes SSD-induced blocking latency. With a 128k-token context, SolidAttention improves the inference speed by up to 3.1× and reduces the KV cache memory footprint by up to 98% without compromising inference accuracy.",
+  "abstract_source_id": "src-abstract-fast-2026-06e8bc7d",
   "venue": "fast",
   "year": 2026,
   "track_or_session": "AI and LLMs I",
@@ -181,6 +183,19 @@
         "proceedings page range and page count",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-fast-2026-06e8bc7d",
+      "url": "https://www.usenix.org/conference/fast26/presentation/zheng",
+      "kind": "paper-page",
+      "title": "SolidAttention: Low-Latency SSD-based Serving on Memory-Constrained PCs",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:01:43Z",
+      "content_hash": "sha256:111356bee8c9e2efc4a05633d46481a49c2024e418059ce18a00d705e62af3e3",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

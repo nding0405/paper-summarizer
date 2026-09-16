@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "atc-2025-chitu-avoiding-unnecessary-fallback-in-byzantine-consens-fc78fe5f",
   "title": "Chitu: Avoiding Unnecessary Fallback in Byzantine Consensus",
+  "abstract": "Most Byzantine-Fault Tolerant (BFT) consensus protocols either pre-select a single leader with the help of additional timing assumptions (i.e., partially synchronous ones) or resort to random coins to achieve only probabilistic termination (i.e., asynchronous ones). The single leader may become a performance bottleneck and/or lead to availability problems, while probabilistic termination increases latency.\n\nWe re-consider the consensus problem from its first principles, where neither synchrony assumption or any designated role, nor randomization is intrinsic to consensus. We thus formally study a framework for designing robust BFT protocols with low latency: nodes first try to achieve consensus merely based on message exchange, but only resort to a fallback mechanism like random coin or leader election if correct nodes have divergent opinions on a proposal.\n\nWe further present Chitu, an asynchronous DAG-based protocols following this framework. Chitu in the best case commits proposals in four message delays, even in the presence of faulty nodes and/or under asynchrony. In the worst case, Chitu still ensures predictable performance with O(1) time complexity in expectation. Experimental results on Amazon EC2 show that Chitu achieves a significant reduction in latency compared to two representative DAG-based protocols that always put a leader or randomization on the execution path.",
+  "abstract_source_id": "src-abstract-atc-2025-fc78fe5f",
   "venue": "atc",
   "year": 2025,
   "track_or_session": "Distributed Systems: Communication, Consensus, and Data Structures",
@@ -201,6 +203,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-atc-2025-fc78fe5f",
+      "url": "https://www.usenix.org/conference/atc25/presentation/huang-rongji",
+      "kind": "paper-page",
+      "title": "Chitu: Avoiding Unnecessary Fallback in Byzantine Consensus",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T21:59:29Z",
+      "content_hash": "sha256:394c2de578a96c22831133a936aa0e548c3419a9e6163743582289eacaf85adc",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

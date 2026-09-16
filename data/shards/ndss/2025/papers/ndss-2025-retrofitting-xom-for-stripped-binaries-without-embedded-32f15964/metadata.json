@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2025-retrofitting-xom-for-stripped-binaries-without-embedded-32f15964",
   "title": "Retrofitting XoM for Stripped Binaries without Embedded Data Relocation",
+  "abstract": "System programs are frequently coded in memory-unsafe languages such as C/C++, rendering them susceptible to a variety of memory corruption attacks. Among these, just-in-time return-oriented programming (JIT-ROP) stands out as an advanced form of code-reuse attack designed to circumvent code randomization defenses. JIT-ROP leverages memory disclosure vulnerabilities to dynamically harvest reusable code gadgets and construct attack payloads in real-time. To counteract JIT-ROP threats, researchers have developed multiple execute-only memory (XoM) prototypes to prevent dynamic reading and disassembly of memory pages. XoM, akin to the widely deployed W$oplus$X protection, holds promise in enhancing security. However, existing XoM solutions may not be compatible with legacy and commercial off-the-shelf (COTS) programs, or they may require patching the protected binary to separate code and data areas, leading to poor reliability. In addition, some XoM methods have to modify the underlying architectural mechanism, compromising compatibility and performance.\n\nIn this paper, we present emph{PXoM}, a practical technique to seamlessly retrofit XoM into stripped binaries on the x86-64 platform. As handling the mixture of code and data is a well-known challenge for XoM, most existing methods require the strict separation of code and data areas via either compile-time transformation or binary patching, so that the unreadable permission can be safely enforced at the granularity of memory pages. In contrast to previous approaches, we provide a fine-grained memory permission control mechanism to restrict the read permission of code while allowing legitimate data reads within code pages. This novelty enables PXoM to harden stripped binaries but without resorting to error-prone embedded data relocation. We leverage Intel's hardware feature, Memory Protection Keys, to offer an efficient fine-grained permission control. We measure PXoM's performance with both micro- and macro-benchmarks, and it only introduces negligible runtime overhead. Our security evaluation shows that PXoM leaves adversaries with little wiggle room to harvest all of the required gadgets, suggesting PXoM is practical for real-world deployment.",
+  "abstract_source_id": "src-abstract-ndss-2025-32f15964",
   "venue": "ndss",
   "year": 2025,
   "track_or_session": "Fall submission cycle",
@@ -168,6 +170,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2025-32f15964",
+      "url": "https://www.ndss-symposium.org/ndss-paper/retrofitting-xom-for-stripped-binaries-without-embedded-data-relocation/",
+      "kind": "paper-page",
+      "title": "Retrofitting XoM for Stripped Binaries without Embedded Data Relocation",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:20:20Z",
+      "content_hash": "sha256:41fa33447e47f58e8fed7fe43e6b2113045cc5cb4395aa64850ddbcdd3bf7d3e",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2026-anonycall-enabling-native-private-calling-in-mobile-netw-f3d32853",
   "title": "ANONYCALL: Enabling Native Private Calling in Mobile Networks",
+  "abstract": "Mobile Network Operators (MNOs) are known to leak or sell subscribers’ sensitive information, including geolocation and communication histories. Anonymous mobile user authentication methods, such as [48] (USENIX Sec’21), [55] (NDSS’24), [13] (CCS’24), [54] (S&P’25), enable users to access mobile networks without revealing long-term identifiers like phone numbers or Subscription Permanent Identifiers (SUPI).\n\nHowever, the absence of identity transparency and location awareness poses significant challenges to implementing the above anonymous access methods in real-world mobile networks, particularly for supporting essential functions such as call routing, usage measurement, and charging. To overcome these limitations, we propose ANONYCALL, a privacy-preserving call management architecture that supports anonymous mobile network access while enabling two essential functions: anonymous callee discovery and usage-based charging . The anonymous callee discovery function incorporates an out-of-band authentication mechanism to securely share temporary callee identifiers with the caller, allowing the latter to establish native calls without obtaining the callee’s permanent information. The usage-based charging function introduces an anonymous and accountable balance credential that enables accurate charging and prevents double-spending while preserving mobile user anonymity. Fully compatible with existing mobile networks, ANONYCALL introduces minimal overhead, adding less than 200 ms to call establishment. Evaluations with smartphones and standard calling systems demonstrate its practicality, offering a viable solution for privacy-preserving yet functional mobile communication.",
+  "abstract_source_id": "src-abstract-ndss-2026-f3d32853",
   "venue": "ndss",
   "year": 2026,
   "track_or_session": "Fall submission cycle",
@@ -202,6 +204,19 @@
       "official": false,
       "supports": [
         "independent proceedings identity reconciliation"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2026-f3d32853",
+      "url": "https://www.ndss-symposium.org/ndss-paper/anonycall-enabling-native-private-calling-in-mobile-networks/",
+      "kind": "paper-page",
+      "title": "ANONYCALL: Enabling Native Private Calling in Mobile Networks",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:21:14Z",
+      "content_hash": "sha256:30e09a07da2461b210c6af8404eb4d4c7ef876530240b0f53f49c61277477f89",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

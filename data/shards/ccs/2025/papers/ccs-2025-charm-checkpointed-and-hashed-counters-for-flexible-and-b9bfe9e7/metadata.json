@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2025-charm-checkpointed-and-hashed-counters-for-flexible-and-b9bfe9e7",
   "title": "CHaRM: Checkpointed and Hashed Counters for Flexible and Efficient Rowhammer Mitigation",
+  "abstract": "Despite efforts by DRAM vendors to mitigate Rowhammer, it is still a potent attack vector. CPU vendors are reluctant to deploy deterministic mitigations against Rowhammer due to the high cost that needs to be paid for the most vulnerable DRAM device, even though an average DRAM device is considerably less vulnerable. The main reason for this high cost is the need to track an increasing number of aggressor rows with the worsening Rowhammer threshold. Our proposed in-CPU mitigation, called CHaRM, breaks this dependency by efficiently mapping a large number of rows to a fixed number of hashed counters. Since multiple rows are now mapped to a limited number of counters, collisions can occur. To avoid excessive mitigative refreshes upon collisions, CHaRM deploys a checkpointing mechanism that saves the state of rows evicted from the table. When a row is activated again, CHaRM restores its checkpointed value and resumes tracking. Our evaluation shows that CHaRM incurs negligible slowdown, below 1% across all Rowhammer thresholds, while improving area, power, and energy by 3.8x, 4.4x, and 8.2x, respectively, for Rowhammer threshold of 1K compared to the state of the art.",
+  "abstract_source_id": "src-abstract-ccs-2025-b9bfe9e7",
   "venue": "ccs",
   "year": 2025,
   "track_or_session": "Cycle 2",
@@ -127,6 +129,19 @@
         "published-order authors",
         "publication-time affiliations",
         "publication date and page span"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2025-b9bfe9e7",
+      "url": "https://api.openalex.org/works/doi:10.1145/3719027.3765021?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "CHaRM: Checkpointed and Hashed Counters for Flexible and Efficient Rowhammer Mitigation",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:13:09Z",
+      "content_hash": "sha256:2de29ee100a542499a2d398212dce3390544b7d8714b8f8daba1902b7d492a9a",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

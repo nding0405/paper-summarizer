@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2026-droidspeak-kv-cache-sharing-across-fine-tuned-model-vari-cb9b8594",
   "title": "DroidSpeak: KV Cache Sharing Across Fine-tuned Model Variants",
+  "abstract": "Compound AI systems , such as agentic systems, are an emerging trend in large-scale enterprise settings, with multiple LLMs specialized for different users, tasks, and/or roles working together. In these scenarios, different models often process inputs that share the same context prefix. Although much work was done in the past to enable the reuse of prefix KV caches across inputs for a single model, how to enable one model to reuse the prefix KV caches of a different model remains an open question.\n\nWe introduce DroidSpeak, the first distributed LLM inference system that enables KV cache reuse across distributed nodes running inference of different LLMs, so long as the LLMs have the same architecture. We present the first study that aims at understanding the impact of sharing KV caches across different LLMs, and if/when such sharing affects quality. Inspired by the findings, we present DroidSpeak, which selectively recomputes a few layers of the KV cache produced by another LLM and reuses the remaining layers, with negligible quality loss. Moreover, carefully pipelining the layer-wise re-computation and the loading of reused KV cache further improves the inference performance. Experiments on diverse datasets and model pairs demonstrate that DroidSpeak achieves up to 4x throughput improvement and about 3.1× faster prefill (time to first token), with negligible loss of quality in F1 scores, Rouge-L or code similarity score, compared to the baseline which does not allow any sharing across models.",
+  "abstract_source_id": "src-abstract-nsdi-2026-cb9b8594",
   "venue": "nsdi",
   "year": 2026,
   "track_or_session": "Overfitting the Internet",
@@ -307,6 +309,19 @@
         "proceedings page range and page count",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2026-cb9b8594",
+      "url": "https://www.usenix.org/conference/nsdi26/presentation/liu-yuhan",
+      "kind": "paper-page",
+      "title": "DroidSpeak: KV Cache Sharing Across Fine-tuned Model Variants",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:05:10Z",
+      "content_hash": "sha256:eb231c971309068378f407d7152c76f2c93decc6b629f63fbb450eb53fcd324b",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

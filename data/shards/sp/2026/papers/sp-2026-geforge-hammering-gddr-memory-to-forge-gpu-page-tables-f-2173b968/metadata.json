@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2026-geforge-hammering-gddr-memory-to-forge-gpu-page-tables-f-2173b968",
   "title": "GeForge: Hammering GDDR Memory to Forge GPU Page Tables for Fun and Profit",
+  "abstract": "Over the years, Rowhammer has been leveraged to mount a wide range of attacks against system main memory. While a recent study has revealed that GPU memory is similarly vulnerable, the security implications remain largely under-explored. To advance this line of research, we introduce GeForge, an end-to-end Rowhammer attack that exploits bit flips induced in GPU memory to achieve system-level compromise. At its core, GeForge corrupts GPU page tables to seize control of address translation, enabling arbitrary access to the entire GPU memory. Moreover, by exploiting a special mapping feature in the GPU page table, GeForge extends its reach to directly access host memory. To make GeForge practical under default system settings, we develop novel techniques that eliminate restrictive assumptions in prior work. Our techniques include a method for aligning offline-profiled physical address mappings to runtime GPU allocations and a memory massaging strategy that steers target GPU page table structures into vulnerable locations via the stock driver allocator. In addition, we improve the hammering pattern to trigger many more bit flips than prior work. With these approaches, we successfully mount GeForge on widely deployed NVIDIA GPUs, including both workstationclass and consumer-grade ones. We show that GeForge allows an attacker to arbitrarily read and modify data across GPU contexts. More crucially, we demonstrate that GeForge can help the attacker escalate privileges to root on the host system.",
+  "abstract_source_id": "src-abstract-sp-2026-2173b968",
   "venue": "sp",
   "year": 2026,
   "track_or_session": "Cycle 2",
@@ -175,6 +177,19 @@
       "official": true,
       "supports": [
         "DOI, published-order authors and affiliations, abstract, publication date, page span, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2026-2173b968",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "GeForge: Hammering GDDR Memory to Forge GPU Page Tables for Fun and Profit",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:57Z",
+      "content_hash": "sha256:303a9b5e5ef8908a3cfe67f02eb8a87be978a5fe3281c7ecec8c0cdb512517e0",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

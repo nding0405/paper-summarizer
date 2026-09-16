@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "atc-2023-melf-multivariant-executables-for-a-heterogeneous-world-caebddd2",
   "title": "MELF: Multivariant Executables for a Heterogeneous World",
+  "abstract": "Compilers today provide a plethora of options to optimize and instrument the code for specific processor extensions, safety features and compatibility settings. Application programmers often provide further instrumented variants of their code for similar purposes, controlled again at compiletime by means of preprocessor macros and dead-code elimination. However, the global once-for-all character of compile-time decisions regarding performance-, debugging-, and safety/security-critical features limits their usefulness in heterogeneous execution settings, where available processor features or security requirements may evolve over time or even differ on a per-client level. Our Multivariant ELF (MELF) approach makes it possible to provide multiple per-function compile-time variants within the same binary and flexibly switch between them at run-time, optionally on a per-thread granularity. As MELFs are implemented on binary level (linker, loader), they do not depend on specific language features or compilers and can be easily applied to existing projects. In our case studies with SQLite, memcached, MariaDB and a benchmark for heterogeneous architectures with overlapping ISAs, we show how MELFs can be employed to provide per-client performance isolation of expensive compile time security or debugging features and adapt to extended instruction sets, when they are actually available.",
+  "abstract_source_id": "src-abstract-atc-2023-caebddd2",
   "venue": "atc",
   "year": 2023,
   "track_or_session": "Updating Code",
@@ -180,6 +182,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-atc-2023-caebddd2",
+      "url": "https://www.usenix.org/conference/atc23/presentation/tollner",
+      "kind": "paper-page",
+      "title": "MELF: Multivariant Executables for a Heterogeneous World",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T21:58:05Z",
+      "content_hash": "sha256:bfe474f4493fea6efbf98742b1aa1c639572b8af6d45d79bcb722f9b796d2b7c",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2026-cwpsu-efficient-unbalanced-private-set-union-via-constan-8b57f880",
   "title": "cwPSU: Efficient Unbalanced Private Set Union via Constant-weight Codes",
+  "abstract": "Private Set Union (PSU) allows two parties to compute the union of their private sets without revealing any additional information. While several PSU protocols have been proposed for the unbalanced setting, these constructions still suffer from substantial communication overhead as the size of the larger set increases. Moreover, their reliance on multiple invocations of oblivious pseudo-random functions results in increased communication rounds, which becomes a practical bottleneck.\n\nIn this work, we present cwPSU, a novel unbalanced PSU protocol built upon constant-weight codes and leveled fully homomorphic encryption. To prevent leakage, we introduce a new technique called Batched Ciphertext Shuffle, which enables secure reordering of packed ciphertexts. Additionally, we propose an optimized arithmetic constant-weight equality operator, which reduces the number of non-scalar multiplications to just one-third of those required by the naïve approach. The communication complexity of our protocol scales linearly with the size of the smaller set and remains independent of the larger set. Notably, cwPSU requires only a single round of online communication.\n\nExperimental results demonstrate that our cwPSU outperforms the state-of-the-art protocol in various network conditions, achieving a 5.1–32.4x reduction in communication and a 3.1–13.3x speedup in runtime.",
+  "abstract_source_id": "src-abstract-ndss-2026-8b57f880",
   "venue": "ndss",
   "year": 2026,
   "track_or_session": "Summer submission cycle",
@@ -139,6 +141,19 @@
       "official": false,
       "supports": [
         "independent proceedings identity reconciliation"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2026-8b57f880",
+      "url": "https://www.ndss-symposium.org/ndss-paper/cwpsu-efficient-unbalanced-private-set-union-via-constant-weight-codes/",
+      "kind": "paper-page",
+      "title": "cwPSU: Efficient Unbalanced Private Set Union via Constant-weight Codes",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:21:47Z",
+      "content_hash": "sha256:594c604eafa61ea21ee4ba5e4b9259225b71a77dbd9863db8470faeba4b83c36",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

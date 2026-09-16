@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2026-swiftep-accelerating-moe-inference-with-buffer-fusion-an-55ef8b2a",
   "title": "SwiftEP: Accelerating MoE Inference with Buffer Fusion and TMA Offloading",
+  "abstract": "Large Language Models (LLMs) increasingly rely on Mixture-of-Experts (MoE) architectures to scale computation efficiently. Expert Parallelism (EP), which distributes experts across GPUs, introduces all-to-all communication overhead during the dispatch and combine phases, especially in the prefill stage, which dominates the inference performance. Existing communication libraries, such as DeepEP, suffer from excessive GPU SM utilization and underutilized interconnect bandwidth, limiting prefill performance.\n\nIn this paper, we identify two root causes: redundant buffer copies and inefficient intra-server transfers over NVLink. To address these, we propose SwiftEP, an all-to-all communication library tailored for MoE prefill, combining buffer fusion and Tensor Memory Accelerator (TMA) offloading . Buffer fusion eliminates redundant staging copies, enabling true zero-copy communication, while TMA offloading maximizes NVLink utilization and supports efficient multicast/reduce operations. SwiftEP further incorporates RDMA scatter-gather lists, QP transmission parallelization, and CUDA IPC to handle dynamic token placement and inter-GPU memory access. Evaluation on 16- and 32-GPU clusters shows that SwiftEP achieves up to 119.7% higher algorithm bandwidth, reduces SM occupancy by up to 66.7%, and improves request serving capacity by 21.2% compared to DeepEP.",
+  "abstract_source_id": "src-abstract-nsdi-2026-55ef8b2a",
   "venue": "nsdi",
   "year": 2026,
   "track_or_session": "Smart Pipes, Smarter Learning",
@@ -335,6 +337,19 @@
         "proceedings page range and page count",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2026-55ef8b2a",
+      "url": "https://www.usenix.org/conference/nsdi26/presentation/li-xingyi",
+      "kind": "paper-page",
+      "title": "SwiftEP: Accelerating MoE Inference with Buffer Fusion and TMA Offloading",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:06:07Z",
+      "content_hash": "sha256:aedc8cbc066bf14bfee0a1e4363e22dc9f10471fed4459c4296a53706cf5114b",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

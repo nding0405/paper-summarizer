@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "fast-2025-3l-cache-low-overhead-and-precise-learning-based-evictio-19b539fc",
   "title": "3L-Cache: Low Overhead and Precise Learning-based Eviction Policy for Caches",
+  "abstract": "Caches can effectively reduce request latency and network traffic, with the eviction policy serving as a core component. The effectiveness of an eviction policy is measured by both the byte miss ratio and the object miss ratio. To reduce these miss ratios, various learning-based policies have been proposed. However, the substantial computation overhead introduced by learning limits their deployment in production systems.\n\nThis work presents 3L -Cache, an object-level learning policy with L ow computation overhead, while achieving the L owest object miss ratio and the L owest byte miss ratio among learning-based policies. To reduce overhead, we introduce two key advancements. First, we propose an efficient training data collection scheme that filters out unnecessary historical cache requests and dynamically adjusts the training frequency without compromising accuracy. Second, we design a low-overhead eviction method that integrates a bidirectional sampling policy to prioritize unpopular objects and an efficient eviction strategy to effectively select evicted objects. Furthermore, we incorporate a parameter auto-tuning method to enhance adaptability across traces.\n\nWe evaluate 3L-Cache in a testbed using 4855 traces. The results show that 3L-Cache reduces the average CPU overhead by 60.9% compared to HALP and by 94.9% compared to LRB. Additionally, 3L-Cache incurs only 6.4× the average overhead of LRU for small cache sizes and 3.4× for large cache sizes, while achieving the best byte miss ratio or object miss ratio among twelve state-of-the-art policies.",
+  "abstract_source_id": "src-abstract-fast-2025-19b539fc",
   "venue": "fast",
   "year": 2025,
   "track_or_session": "More Machine Learning",
@@ -161,6 +163,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-fast-2025-19b539fc",
+      "url": "https://www.usenix.org/conference/fast25/presentation/zhou-wenbin",
+      "kind": "paper-page",
+      "title": "3L-Cache: Low Overhead and Precise Learning-based Eviction Policy for Caches",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:00:56Z",
+      "content_hash": "sha256:53539ce10435b29f3b72c45028d3d017303f4cfbf1116f7104cab340dac33a59",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

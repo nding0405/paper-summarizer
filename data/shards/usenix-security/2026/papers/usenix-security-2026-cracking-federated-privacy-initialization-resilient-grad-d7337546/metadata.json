@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-cracking-federated-privacy-initialization-resilient-grad-d7337546",
   "title": "Cracking Federated Privacy: Initialization-Resilient Gradient Inversion with Fine-Grained Reconstruction",
+  "abstract": "Federated Learning (FL) remains vulnerable to Gradient Inversion Attacks (GIA), where shared gradients can reveal clients' private data. Existing attacks struggle under early-stage initialization variations and often produce coarse reconstructions. In this paper, we identify sparsity changes in shared gradients as the primary source of this sensitivity and propose an initialization-resilient GIA with a coarse-to-fine design, achieving fine-grained recovery. The coarse stage aligns gradient directions and constrains non-zero entries to mitigate sparsity changes, while the fine stage refines magnitude alignment by a hybrid metric combining Cosine distance with a deformed Manhattan term. Extensive experiments against five baselines show up to 200% PSNR gain (25.4 → 47.7 dB) under sensitive initializations on CIFAR-10/100, with consistently delivering fine-grained recovery across four datasets and the entire FL lifecycle. Our method maintains competitive performance with SOTA baselines across batch sizes and local steps and reveals persistent leakage on several popular models and insufficient defenses, underscoring the urgent need for stronger privacy-preserving mechanisms.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-d7337546",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Privacy of ML 2",
@@ -219,6 +221,19 @@
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening",
         "prepublication PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-d7337546",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/zhu-kaiming",
+      "kind": "paper-page",
+      "title": "Cracking Federated Privacy: Initialization-Resilient Gradient Inversion with Fine-Grained Reconstruction",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:23:29Z",
+      "content_hash": "sha256:ed8655eed4d267cf528cc69e40f0cd845fc89bdc57f30a5ea30bb1a39590c25e",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

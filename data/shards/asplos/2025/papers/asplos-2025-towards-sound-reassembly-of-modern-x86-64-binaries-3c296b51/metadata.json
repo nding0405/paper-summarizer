@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2025-towards-sound-reassembly-of-modern-x86-64-binaries-3c296b51",
   "title": "Towards Sound Reassembly of Modern x86-64 Binaries",
+  "abstract": "Reassembly is a promising approach to transparently rewrite binaries without source code. However, sound symbolization remains an open problem as it requires precise identification of all memory references in the binary. In this paper, we systematically study the requirements for sound reassembly of modern x86-64 binaries, and present a novel approach to reassembly that symbolizes all memory references without affecting the original semantics. The key insights are twofold: (1) we find that Control-flow Enhancement Technology (CET), which has increasingly become the default setting for major Linux distributions, adds a unique property to binaries that can be leveraged to precisely symbolize dynamically computed pointers, and (2) we consider a superset of all possible memory references for symbolization by over-approximating indirect branch targets. With these insights, we design and implement a novel reassembler, named SURI, and show its effectiveness on 9,600 real-world binaries.",
+  "abstract_source_id": "src-abstract-asplos-2025-3c296b51",
   "venue": "asplos",
   "year": 2025,
   "track_or_session": "Session 6B: Compilers & Languages",
@@ -125,6 +127,19 @@
       "official": false,
       "supports": [
         "Indexed abstract and open-access links used for relevance classification and ancillary-link discovery."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2025-3c296b51",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1145%2F3676641.3716026?fields=title,abstract",
+      "kind": "semantic-scholar",
+      "title": "Towards Sound Reassembly of Modern x86-64 Binaries",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:04:19Z",
+      "content_hash": "sha256:5732478917a2cd7e661efe158b83aa19708c369e58f67ba148657776af5081ec",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

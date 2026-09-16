@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "atc-2025-hotrap-hot-record-retention-and-promotion-for-lsm-trees-81da9508",
   "title": "HotRAP: Hot Record Retention and Promotion for LSM-trees with Tiered Storage",
+  "abstract": "Tiered storage architectures are promising to improve cost efficiency by combining small and fast storage with slower but cheaper mediums. However, existing designs of Log-Structured Merge-trees (LSM-trees) on tiered storage cannot simultaneously support efficient read and write accesses. Keeping the upper and lower LSM-tree levels in the fast and slow storage respectively (i.e., tiering) allows efficient writes to the fast disks, but read-hot data may be stuck in the slow disks. Putting all the levels in the slow storage and using the fast disks as a cache (i.e., caching) can handle frequently read data efficiently, but LSM-tree compactions now need to happen in the slow disks.\n\nWe present HotRAP, a key-value store based on RocksDB that follows the tiering approach above, but enhances it to timely promote hot records individually from slow to fast storage and keep them in fast storage while they are hot. HotRAP uses an on-disk data structure (a specially-made LSM-tree) to track the hotness of keys in a fine-grained manner, and leverages two pathways to ensure that hot records reach fast storage with short delays. Our experiments show that HotRAP outperforms state-of-the-art LSM-trees on tiered storage by up to 1.6× compared to the second best under read-write-balanced YCSB workloads with common access skew patterns, and up to 1.5× under Twitter production workloads.",
+  "abstract_source_id": "src-abstract-atc-2025-81da9508",
   "venue": "atc",
   "year": 2025,
   "track_or_session": "Storage Innovations: Logs, Tiers, and Modern Flash",
@@ -159,6 +161,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-atc-2025-81da9508",
+      "url": "https://www.usenix.org/conference/atc25/presentation/qiu",
+      "kind": "paper-page",
+      "title": "HotRAP: Hot Record Retention and Promotion for LSM-trees with Tiered Storage",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T21:59:45Z",
+      "content_hash": "sha256:ec81787b1a37de227c8ea037ea276da4e5b76e7e30e25a02e888213396d7a79e",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

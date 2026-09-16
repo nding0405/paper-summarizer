@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "eurosys-2024-improving-gpu-energy-efficiency-through-an-application-t-f64d19e2",
   "title": "Improving GPU Energy Efficiency through an Application-transparent Frequency Scaling Policy with Performance Assurance",
+  "abstract": "Power consumption is one of the top limiting factors in high-performance computing systems and data centers, and dynamic voltage and frequency scaling (DVFS) is an important mechanism to control power. Existing works using DVFS to improve GPU energy efficiency suffer from the limitation that their policies either impact performance too much or require offline application profiling or code modification, which severely limits their applicability on large clusters. To address this issue, we propose a novel GPU DVFS policy, GEEPAFS, which improves the energy efficiency of GPUs while providing performance assurance. GEEPAFS is application-transparent as it does not require any offline profiling or code modification on user applications. To achieve this, GEEPAFS models application performance online based on our quantitative analysis of a correlation between performance and GPU memory bandwidth utilization. Based on their relationship, GEEPAFS builds a fold-line frequency-performance model for applications being executed, and it applies the model to guide the setting of GPU frequency to maximize energy efficiency while ensuring the performance loss is bounded. Through experiments on NVIDIA V100 and A100 GPUs, we show that GEEPAFS is able to improve the energy efficiency by 26.7% and 20.2% on average. While achieving this improvement, the average performance loss is only 5.8%, and the worst-case performance loss is 12.5% among all 33 tested applications.",
+  "abstract_source_id": "src-abstract-eurosys-2024-f64d19e2",
   "venue": "eurosys",
   "year": 2024,
   "track_or_session": null,
@@ -167,6 +169,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-eurosys-2024-f64d19e2",
+      "url": "https://api.openalex.org/works/doi:10.1145/3627703.3629584?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Improving GPU Energy Efficiency through an Application-transparent Frequency Scaling Policy with Performance Assurance",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:18:51Z",
+      "content_hash": "sha256:135136f53cad9dcd5950f101806cb24a115ea12bd104093ec45d74bf9173c1f6",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

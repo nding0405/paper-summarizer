@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2023-obsan-an-out-of-bound-sanitizer-to-harden-dnn-executable-2c2886f3",
   "title": "OBSan: An Out-Of-Bound Sanitizer to Harden DNN Executables",
+  "abstract": "The rapid adoption of deep neural network (DNN) models on a variety of hardware platforms has boosted the development of deep learning (DL) compilers. DL compilers take as input the high-level DNN model specifications and generate optimized DNN executables for diverse hardware architectures like CPUs and GPUs. Despite the emerging adoption of DL compilers in real-world scenarios, no solutions exist to protect DNN executables. To fill this critical gap, this paper introduces OBSAN, a fast sanitizer designed to check out-of-bound (OOB) behavior of DNN executables. From a holistic view, DNN incorporates bidirectional computation: forward propagation that predicts an output based on an input, and backward propagation that characterizes how the forward prediction is made. Both neuron activations in forward propagation and the gradients in backward propagation should fall within valid ranges, and deviations from the valid ranges would be considered as OOB.\n\nOOB is primarily related to unsafe behavior of DNNs, which root from anomalous inputs and may cause mispredictions or even exploitation via adversarial examples (AEs). We thus design OBSAN, which includes two variants, FOBSAN and BOBSAN, that can detect OOB in the forward and backward propagations, respectively. Each OBSAN is designed as extra passes of DL compilers to integrate with large-scale DNN models, and we design various optimization schemes to reduce the overhead of OBSAN. Evaluations over various anomalous inputs show that OBSAN manifests promising OOB detectability with low overhead. We further present two downstream applications to show how OBSAN prevents online AE generation and facilitates feedback-driven fuzz testing toward DNN executables.",
+  "abstract_source_id": "src-abstract-ndss-2023-2c2886f3",
   "venue": "ndss",
   "year": 2023,
   "track_or_session": "ML and AI III",
@@ -126,6 +128,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2023-2c2886f3",
+      "url": "https://www.ndss-symposium.org/ndss-paper/obsan-an-out-of-bound-sanitizer-to-harden-dnn-executables/",
+      "kind": "paper-page",
+      "title": "OBSan: An Out-Of-Bound Sanitizer to Harden DNN Executables",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:17:11Z",
+      "content_hash": "sha256:09817a0b0533723e8d725c1bf10dad79345f489734345d8ab32bbc61dbd556ff",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2026-eyespy-inferring-eye-gaze-via-side-channel-attacks-again-03b05a8e",
   "title": "EyeSpy: Inferring Eye Gaze via Side-Channel Attacks Against Foveated Rendering",
+  "abstract": "While eye tracking provides valuable capabilities for virtual reality, such as gaze interaction and dynamic foveated rendering (DFR), eye-tracking data can inadvertently reveal sensitive user information if not properly protected. Current protections, such as adding permission prompts or gatekeeping gaze data, are insufficient on DFR-enabled systems because gaze data is used internally to drive DFR. When DFR is implemented, objects in the fovea (i.e., immediate gaze area) incur a higher GPU workload than those in the periphery. This gaze-contingent workload creates a novel side channel, which can be leveraged to reconstruct gaze positions. Specifically, we design a novel attack that sweeps imperceptible high-cost objects (HCOs) across the user's field of view and logs rendering performance metrics (e.g., frame rate or frame time) commonly exposed through standard game engines. Then, we correlate variation in these metrics (caused by HCO-foveal overlap) with the known HCOs' positions to infer gaze coordinates directly without using eye-tracking APIs. Our experimental results show that mean gaze prediction errors (1.1-4.4 degrees) across the Meta Quest Pro, Varjo XR-4, and desktop platforms are comparable to typical eye-tracker accuracy. We demonstrate that the attack generalizes across various hardware platforms, standard game engines, and foveated rendering pipelines. Finally, we design defense mechanisms based on supervised and unsupervised detectors that can flag the attack reliably (F1 of 0.99) over short time windows.",
+  "abstract_source_id": "src-abstract-sp-2026-03b05a8e",
   "venue": "sp",
   "year": 2026,
   "track_or_session": "Cycle 2",
@@ -154,6 +156,19 @@
       "official": true,
       "supports": [
         "DOI, published-order authors and affiliations, abstract, publication date, page span, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2026-03b05a8e",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "EyeSpy: Inferring Eye Gaze via Side-Channel Attacks Against Foveated Rendering",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:57Z",
+      "content_hash": "sha256:303a9b5e5ef8908a3cfe67f02eb8a87be978a5fe3281c7ecec8c0cdb512517e0",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

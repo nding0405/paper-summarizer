@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2026-goldilocks-and-the-three-p-states-mitigating-hertzbleed-80fc8718",
   "title": "Goldilocks and the Three P-States: Mitigating Hertzbleed with Formal Leakage Guarantees",
+  "abstract": "Hertzbleed is an emerging class of remote timing attacks that can leak secrets previously considered beyond the reach of timing analysis. The attack exploits how, when a processor exceeds power or thermal limits and starts throttling, CPU frequency—and thus, program runtime—becomes dependent on power consumption. In response to Hertzbleed, several software-level mitigations have been proposed, including masking, key refresh, noise injection, and disabling frequency boost. However, none of these mitigations achieves general software applicability, low overhead, and provable security. In this work, we introduce Goldilocks, a practical mitigation against Hertzbleed. Goldilocks treats Hertzbleed as an information-theoretic channel and limits how much information the channel can carry by constraining when and how throttling can occur. It can be deployed on existing processors with no changes to application software, maintains a CPU frequency level that is “just right” for each machine and workload, and provides formal leakage bounds that reduce worst-case leakage growth from linear in execution time to as little as logarithmic. Our evaluation across a variety of processors and workloads shows that Goldilocks effectively mitigates Hertzbleed attacks and incurs low overhead.",
+  "abstract_source_id": "src-abstract-sp-2026-80fc8718",
   "venue": "sp",
   "year": 2026,
   "track_or_session": "Cycle 2",
@@ -112,6 +114,19 @@
       "official": true,
       "supports": [
         "DOI, published-order authors and affiliations, abstract, publication date, page span, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2026-80fc8718",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Goldilocks and the Three P-States: Mitigating Hertzbleed with Formal Leakage Guarantees",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:57Z",
+      "content_hash": "sha256:303a9b5e5ef8908a3cfe67f02eb8a87be978a5fe3281c7ecec8c0cdb512517e0",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

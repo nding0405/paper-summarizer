@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-make-agent-defeat-agent-automatic-detection-of-taint-sty-f956ac5f",
   "title": "Make Agent Defeat Agent: Automatic Detection of Taint-Style Vulnerabilities in LLM-based Agents",
+  "abstract": "Large Language Models (LLMs) have revolutionized software development, enabling the creation of AI-powered applications known as LLM-based agents. However, recent studies reveal that LLM-based agents are highly susceptible to taint-style vulnerabilities, which allow malicious prompts to exploit security-sensitive operations. These vulnerabilities pose severe threats to the security of agents, potentially allowing attackers to take over the entire agent remotely.\n\nIn this paper, we propose a novel directed greybox fuzzing approach, called AgentFuzz, the first fuzzing framework for detecting taint-style vulnerabilities in LLM-based agents. AgentFuzz consists of three key phases. First, AgentFuzz leverages the LLM to generate functionality-specific seed prompts in the form of natural language. Second, AgentFuzz utilizes a multifaceted feedback design to assess seed quality from both semantic and distance levels, prioritizing seeds with higher quality. Finally, AgentFuzz employs functionality and argument mutator to refine seeds and trigger vulnerabilities effectively. In our evaluation against 20 widely-used open-source agent applications, AgentFuzz identified 34 high-risk 0-day vulnerabilities, achieving 33 times higher precision than the state-of-the-art approach. These vulnerabilities encompass serious threats like code injection, impacting 14 open-source agents, with 7 of them having over 10,000 stars on GitHub. To date, 23 CVE IDs have been assigned.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-f956ac5f",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "LLM Security 3",
@@ -301,6 +303,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-f956ac5f",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/liu-fengyu",
+      "kind": "paper-page",
+      "title": "Make Agent Defeat Agent: Automatic Detection of Taint-Style Vulnerabilities in LLM-based Agents",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:20:40Z",
+      "content_hash": "sha256:2e5c5f48995195a6494bb2fa338a14c774cc5bbaec69e98aaf4281b152d6833d",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

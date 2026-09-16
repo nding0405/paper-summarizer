@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-masleak-investigating-and-exposing-intellectual-property-c1791786",
   "title": "MASLeak: Investigating and Exposing Intellectual Property Leakage Vulnerabilities in Multi-Agent Systems",
+  "abstract": "The rapid advancement of Large Language Models (LLMs) has led to the emergence of Multi-Agent Systems (MAS) to perform complex tasks through collaboration. However, the intricate nature of MAS, including their architecture, agent interactions, and complex internal communication processing, raises significant concerns regarding intellectual property (IP) protection. In this paper, we introduce MASLEAK, the first framework for systematically extracting IP from MAS in a practical black-box setting. We assume a realistic adversary who can only submit queries to the system's public API and observe the final output, without any prior knowledge of the internal architecture and the backend LLM information. Inspired by how computer worms propagate and infect vulnerable network hosts, MASLEAK carefully crafts adversarial query q to elicit, propagate, and retain responses from each MAS agent that reveal a full set of proprietary components, including the number of agents, topology, system prompts, task instructions, and tool usages. We construct the first synthetic dataset of 810 MAS applications and also evaluate MASLEAK against real-world MAS applications, including Coze and CrewAI. MASLEAK achieves high accuracy in extracting MAS IP, with an average attack success rate of 87% for system prompts and task instructions, and 92% for system architecture in most cases. We conclude by discussing the implications of our findings and the potential defenses.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-c1791786",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Privacy of ML 2",
@@ -219,6 +221,19 @@
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening",
         "prepublication PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-c1791786",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/wang-liwen",
+      "kind": "paper-page",
+      "title": "MASLeak: Investigating and Exposing Intellectual Property Leakage Vulnerabilities in Multi-Agent Systems",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:24:38Z",
+      "content_hash": "sha256:2f621f284e34c69c1e8164d42ce872e9753ecf00c36a5b4692c5f2c8a6e1f925",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

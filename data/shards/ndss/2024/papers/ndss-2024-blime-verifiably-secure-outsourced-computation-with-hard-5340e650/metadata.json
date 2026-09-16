@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2024-blime-verifiably-secure-outsourced-computation-with-hard-5340e650",
   "title": "BliMe: Verifiably Secure Outsourced Computation with Hardware-Enforced Taint Tracking",
+  "abstract": "Outsourced computing is widely used today. However, current approaches for protecting client data in outsourced computing fall short: use of cryptographic techniques like fully-homomorphic encryption incurs substantial costs, whereas use of hardware-assisted trusted execution environments has been shown to be vulnerable to run-time and side-channel attacks.\n\nWe present BliMe, an architecture to realize efficient and secure outsourced computation. BliMe consists of a novel and minimal set of instruction set architecture (ISA) extensions implementing a taint-tracking policy to ensure the confidentiality of client data even in the presence of server vulnerabilities. To secure outsourced computation, the BliMe extensions can be used together with an attestable, fixed-function hardware security module (HSM) and an encryption engine that provides atomic decrypt-and-taint and encrypt-and-untaint operations. Clients rely on remote attestation and key agreement with the HSM to ensure that their data can be transferred securely to and from the encryption engine and will always be protected by BliMe's taint-tracking policy while at the server.\n\nWe provide an RTL implementation BliMe-BOOM based on the BOOM RISC-V core. BliMe-BOOM requires no reduction in clock frequency relative to unmodified BOOM, and has minimal power (",
+  "abstract_source_id": "src-abstract-ndss-2024-5340e650",
   "venue": "ndss",
   "year": 2024,
   "track_or_session": "Fall submission cycle",
@@ -147,6 +149,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2024-5340e650",
+      "url": "https://www.ndss-symposium.org/ndss-paper/blime-verifiably-secure-outsourced-computation-with-hardware-enforced-taint-tracking/",
+      "kind": "paper-page",
+      "title": "BliMe: Verifiably Secure Outsourced Computation with Hardware-Enforced Taint Tracking",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:17:44Z",
+      "content_hash": "sha256:4d5864d66f51e3ed89d3ebcb9c5fb6c536caa38a9c67d68bc486801bede61382",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

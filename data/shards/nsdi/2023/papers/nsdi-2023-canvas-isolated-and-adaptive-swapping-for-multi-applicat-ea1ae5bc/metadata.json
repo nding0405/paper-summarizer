@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2023-canvas-isolated-and-adaptive-swapping-for-multi-applicat-ea1ae5bc",
   "title": "Canvas: Isolated and Adaptive Swapping for Multi-Applications on Remote Memory",
+  "abstract": "Remote memory techniques for datacenter applications have recently gained a great deal of popularity. Existing remote memory techniques focus on the efficiency of a single application setting only. However, when multiple applications co-run on a remote-memory system, significant interference could occur, resulting in unexpected slowdowns even if the same amounts of physical resources are granted to each application. This slowdown stems from massive sharing in applications' swap data paths. Canvas is a redesigned swap system that fully isolates swap paths for remote-memory applications. Canvas allows each application to possess its dedicated swap partition, swap cache, prefetcher, and RDMA bandwidth. Swap isolation lays a foundation for adaptive optimization techniques based on each application's own access patterns and needs. We develop three such techniques: (1) adaptive swap entry allocation, (2) semantics-aware prefetching, and (3) two-dimensional RDMA scheduling. A thorough evaluation with a set of widely-deployed applications demonstrates that Canvas minimizes performance variation and dramatically reduces performance degradation.",
+  "abstract_source_id": "src-abstract-nsdi-2023-ea1ae5bc",
   "venue": "nsdi",
   "year": 2023,
   "track_or_session": "RPC and Remote Memory",
@@ -259,6 +261,19 @@
       "supports": [
         "canonical author line and publication-time affiliations",
         "resolution of conflicting or malformed citation metadata on the official paper page"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2023-ea1ae5bc",
+      "url": "https://www.usenix.org/conference/nsdi23/presentation/wang-chenxi",
+      "kind": "paper-page",
+      "title": "Canvas: Isolated and Adaptive Swapping for Multi-Applications on Remote Memory",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:01:54Z",
+      "content_hash": "sha256:8dfa964220b930f85ebfad0faf0fd4b402c0feb88ab4d7d6bc29b5712744451a",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

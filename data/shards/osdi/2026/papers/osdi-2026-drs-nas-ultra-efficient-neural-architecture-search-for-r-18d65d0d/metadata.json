@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2026-drs-nas-ultra-efficient-neural-architecture-search-for-r-18d65d0d",
   "title": "Drs.NAS: Ultra-Efficient Neural Architecture Search for Recommendation Systems",
+  "abstract": "Deep learning-based recommendation systems (DRS) have become a dominant workload in hyperscale data centers. However, designing DRS architectures that balance high predictive performance with computational efficiency remains a major challenge due to ever-increasing model complexity and scale. Neural architecture search (NAS) has recently emerged as a promising automated design approach and is now adopted in production by major hyperscalers. Yet, existing NAS methods face two critical limitations: ( i ) prohibitive search costs—often requiring several GPU hours to days—which hinder rapid iteration, and ( ii ) the resulting architectures are typically computation- and memory-intensive, limiting practical deployment. In this paper, we propose Drs.NAS, an ultra-efficient NAS framework for DRS. ( i ) Ultra-efficient search: We propose a novel metric, superproxy , which enables NAS without the costly training and validation required by existing NAS methods. Compared to SOTA NAS search times of 5!∼!18 GPU-hours, Drs.NAS completes the search within two minutes on a commodity CPU . ( ii ) Ultra-efficient results: The models discovered by Drs.NAS drastically reduce resource demands—achieving on average 108.3× and 34.9× smaller model sizes, and 88.8× and 14.7× fewer FLOPs, compared to handcrafted and SOTA NAS results, respectively. Crucially, these gains come without sacrificing predictive quality : Drs.NAS delivers on par or even superior predictive performance, surpassing handcrafted and NAS baselines by 0.0123 and 0.0056 in average AUC across three representative benchmarks, respectively.",
+  "abstract_source_id": "src-abstract-osdi-2026-18d65d0d",
   "venue": "osdi",
   "year": 2026,
   "track_or_session": "Wild Cards",
@@ -104,6 +106,19 @@
       "official": true,
       "supports": [
         "Official proceedings availability and canonical conference versions."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2026-18d65d0d",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/wang-ruixuan",
+      "kind": "paper-page",
+      "title": "Drs.NAS: Ultra-Efficient Neural Architecture Search for Recommendation Systems",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:08:11Z",
+      "content_hash": "sha256:defca11a67689f5974ff7275faa1901f28366278a35bb54c7c6b3c18436571fa",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

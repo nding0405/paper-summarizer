@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "eurosys-2024-save-the-bruised-striver-a-reliable-live-patching-framew-4b393fc9",
   "title": "Save the Bruised Striver: A Reliable Live Patching Framework for Protecting Real-World PLCs",
+  "abstract": "Industrial Control Systems (ICS), particularly programmable logic controllers (PLCs) responsible for managing underlying physical infrastructures, often operate for extended periods without interruption. Thus, it is challenging to patch security vulnerabilities of ICS in a timely manner after disclosure because it often necessitates waiting for a rare downtime window. While live patching has been introduced to avoid downtime and maintenance costs, conventional live patching methods are not viable for closed-source PLCs. Without the source code, it is difficult to understand the system behaviors and determine binary patch equivalence. To address these challenges, we present a Reliable Live Patching framework called RLPatch for applying live patches to third-party binary without source code. We design RLPatch to capture real-time conditions and dynamic behaviors of PLCs, which enables DevOps engineers to identify major non-recoverable fault (MNRF) vulnerabilities and generate hot patches. The core of RLPatch is an update agent that inserts breakpoints over the original MNRF code and then directs execution to the patches. To ensure system reliability, we use the unique constraints of PLCs to integrate the update processes with the scan cycle. We leverage RLPatch to patch 20 real vulnerabilities in three widely used Rockwell PLCs. We evaluate RLPatch in a real-world gas pipeline, demonstrating its reliability and effectiveness in practice.",
+  "abstract_source_id": "src-abstract-eurosys-2024-4b393fc9",
   "venue": "eurosys",
   "year": 2024,
   "track_or_session": null,
@@ -167,6 +169,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-eurosys-2024-4b393fc9",
+      "url": "https://api.openalex.org/works/doi:10.1145/3627703.3650068?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Save the Bruised Striver: A Reliable Live Patching Framework for Protecting Real-World PLCs",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:18:55Z",
+      "content_hash": "sha256:486783026e523d1ae71c5b9b333c85de75346ccf9a45b8c09e5df16a1233a5f9",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

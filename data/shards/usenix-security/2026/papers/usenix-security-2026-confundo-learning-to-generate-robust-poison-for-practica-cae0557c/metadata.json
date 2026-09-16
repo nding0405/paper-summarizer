@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-confundo-learning-to-generate-robust-poison-for-practica-cae0557c",
   "title": "Confundo: Learning to Generate Robust Poison for Practical RAG Systems",
+  "abstract": "Retrieval-augmented generation (RAG) is increasingly deployed in real-world applications, where its reference-grounded design makes outputs appear trustworthy. This trust has spurred research on poisoning attacks that craft malicious content, inject it into knowledge sources, and manipulate RAG responses. However, when evaluated in practical RAG systems, existing attacks suffer from severely degraded effectiveness. This gap stems from two overlooked realities: (i) content is often processed before use, which can fragment the poison and weaken its effect, and (ii) users often do not issue the exact queries anticipated during attack design. These factors can lead practitioners to underestimate risks and develop a false sense of security. To better characterize the threat to practical systems, we present Confundo, a learning-to-poison framework that fine-tunes a large language model as a poison generator to achieve high effectiveness, robustness, and stealthiness. Confundo provides a unified framework supporting multiple attack objectives, demonstrated by manipulating factual correctness, inducing biased opinions, and triggering hallucinations. By addressing these overlooked challenges, Confundo consistently outperforms a wide range of purpose-built attacks across datasets and RAG configurations by large margins, even in the presence of defenses. Beyond exposing vulnerabilities, we also present a defensive use case that protects web content from unauthorized incorporation into RAG systems via scraping, with no impact on user experience.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-cae0557c",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Security of ML 1",
@@ -176,6 +178,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-cae0557c",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/hu-haoyang",
+      "kind": "paper-page",
+      "title": "Confundo: Learning to Generate Robust Poison for Practical RAG Systems",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:23:27Z",
+      "content_hash": "sha256:88b21bf82dc7b8a9b4e7d55cd903c94f63f49c5f125f5823c6108ce1e7b276b5",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

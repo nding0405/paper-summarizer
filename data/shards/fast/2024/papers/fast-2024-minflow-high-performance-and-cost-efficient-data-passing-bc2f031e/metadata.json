@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "fast-2024-minflow-high-performance-and-cost-efficient-data-passing-bc2f031e",
   "title": "MinFlow: High-performance and Cost-efficient Data Passing for I/O-intensive Stateful Serverless Analytics",
+  "abstract": "Serverless computing has revolutionized application deployment, obviating traditional infrastructure management and dynamically allocating resources on demand. A significant use case is I/O-intensive applications like data analytics, which widely employ the pivotal \"shuffle\" operation. Unfortunately, the shuffle operation poses severe challenges due to the massive PUT/GET requests to remote storage, especially in high-parallelism scenarios, leading to high performance degradation and storage cost. Existing designs optimize the data passing performance from multiple aspects, while they operate in an isolated way, thus still introducing unforeseen performance bottlenecks and bypassing untapped optimization opportunities. In this paper, we develop MinFlow, a holistic data passing framework for I/O-intensive serverless analytics jobs. MinFlow first rapidly generates numerous feasible multi-level data passing topologies with much fewer PUT/GET operations, then it leverages an interleaved partitioning strategy to divide the topology DAG into small-size bipartite sub-graphs to optimize function scheduling, further reducing over half of the transmitted data to remote storage. Moreover, MinFlow also develops a precise model to determine the optimal configuration, thus minimizing data passing time under practical function deployments. We implement a prototype of MinFlow, and extensive experiments show that MinFlow significantly outperforms state-of-the-art systems, FaaSFlow and Lambada, in both the job completion time and storage cost.",
+  "abstract_source_id": "src-abstract-fast-2024-bc2f031e",
   "venue": "fast",
   "year": 2024,
   "track_or_session": "Cloud Storage",
@@ -160,6 +162,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-fast-2024-bc2f031e",
+      "url": "https://www.usenix.org/conference/fast24/presentation/li",
+      "kind": "paper-page",
+      "title": "MinFlow: High-performance and Cost-efficient Data Passing for I/O-intensive Stateful Serverless Analytics",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:00:49Z",
+      "content_hash": "sha256:2b2a3e24f22e1a127dd02b1d378c1a1553073490bae9a0bcc79a141bf343d3e1",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

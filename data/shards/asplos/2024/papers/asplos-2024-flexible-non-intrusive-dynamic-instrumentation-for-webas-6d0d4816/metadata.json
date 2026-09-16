@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2024-flexible-non-intrusive-dynamic-instrumentation-for-webas-6d0d4816",
   "title": "Flexible Non-intrusive Dynamic Instrumentation for WebAssembly",
+  "abstract": "A key strength of managed runtimes over hardware is the ability to gain detailed insight into the dynamic execution of programs with instrumentation. Analyses such as code coverage, execution frequency, tracing, and debugging, are all made easier in a virtual setting. As a portable, low-level byte-code, WebAssembly offers inexpensive in-process sandboxing with high performance. Yet to date, Wasm engines have not offered much insight into executing programs, supporting at best bytecode-level stepping and basic source maps, but no instrumentation capabilities. In this paper, we show the first non-intrusive dynamic instrumentation system for WebAssembly in the open-source Wizard Research Engine. Our innovative design offers a flexible, complete hierarchy of instrumentation primitives that support building high-level, complex analyses in terms of low-level, programmable probes. In contrast to emulation or machine code instrumentation, injecting probes at the bytecode level increases expressiveness and vastly simplifies the implementation by reusing the engine's JIT compiler, interpreter, and deoptimization mechanism rather than building new ones. Wizard supports both dynamic instrumentation insertion and removal while providing consistency guarantees, which is key to composing multiple analyses without interference. We detail a fully-featured implementation in a high-performance multi-tier Wasm engine, show novel optimizations specifically designed to minimize instrumentation overhead, and evaluate performance characteristics under load from various analyses. This design is well-suited for production engine adoption as probes can be implemented to have no impact on production performance when not in use.",
+  "abstract_source_id": "src-abstract-asplos-2024-6d0d4816",
   "venue": "asplos",
   "year": 2024,
   "track_or_session": "Session 3A: Dynamic Analysis and Instrumentation",
@@ -207,6 +209,19 @@
       "official": false,
       "supports": [
         "Indexed alternate-version and institutional-copy links; not used as the authoritative relevance source."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2024-6d0d4816",
+      "url": "https://api.openalex.org/works/doi:10.1145/3620666.3651338?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Flexible Non-intrusive Dynamic Instrumentation for WebAssembly",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:00:08Z",
+      "content_hash": "sha256:c8aca505508825debd71a6236fb7017199836efd67b6dbfdaa5328232e2e8c7e",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

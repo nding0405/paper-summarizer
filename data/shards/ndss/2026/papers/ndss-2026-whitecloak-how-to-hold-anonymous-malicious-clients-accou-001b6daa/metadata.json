@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2026-whitecloak-how-to-hold-anonymous-malicious-clients-accou-001b6daa",
   "title": "WhiteCloak: How to Hold Anonymous Malicious Clients Accountable in Secure Aggregation?",
+  "abstract": "With the advancement of artificial intelligence and the increasing digitalization of various sectors, the scale of personal data collection and analysis continues to grow, leading to heightened demands for privacy protection of personal data and identity. However, existing secure aggregation methods, such as ACORN (USENIX 2023), while ensuring the privacy and compliance of input data, fail to meet the requirements for client anonymity. Simply applying anonymous credentials allows previously identified malicious clients (e.g., those using non-compliant data) to re-enter aggregation rounds by updating their credentials, thus evading accountability. To address this issue, we propose WhiteCloak, the first secure aggregation solution that ensures accountability under client anonymity. WhiteCloak requires each client $i$ to participate in round $tau$ using an anonymous credential $tilde{i}_{tau}$. Before participation, each client must submit a zero-knowledge proof verifying that they have not been blacklisted, preventing malicious clients from evading accountability by changing their credentials. WhiteCloak can be seamlessly integrated into existing frameworks. In federated learning experiments on the SHAKESPEARE dataset, WhiteCloak adds only 1.77s of additional processing time and 35.68KB of communication overhead, accounting for 0.34% and 0.1% of ACORN's total overhead, respectively.",
+  "abstract_source_id": "src-abstract-ndss-2026-001b6daa",
   "venue": "ndss",
   "year": 2026,
   "track_or_session": "Summer submission cycle",
@@ -139,6 +141,19 @@
       "official": false,
       "supports": [
         "independent proceedings identity reconciliation"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2026-001b6daa",
+      "url": "https://www.ndss-symposium.org/ndss-paper/whitecloak-how-to-hold-anonymous-malicious-clients-accountable-in-secure-aggregation/",
+      "kind": "paper-page",
+      "title": "WhiteCloak: How to Hold Anonymous Malicious Clients Accountable in Secure Aggregation?",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:23:40Z",
+      "content_hash": "sha256:f18d3ef53f22cfda0bd1a112893aa4d7b4e5337d0c44cd88470b3304256e5dea",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

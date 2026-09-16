@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2026-timelock-drive-isolated-time-based-defense-for-storage-s-71e111c8",
   "title": "Timelock Drive: Isolated Time-Based Defense for Storage Systems",
+  "abstract": "Data is one of the most critical assets for organizations and individuals, yet its integrity is increasingly threatened by ransomware, data tampering, sabotage, and intentional data vandalism. While most organizations rely on backups, backups themselves are also vulnerable. Even a fully secure software system may be insufficient, as nearly two-thirds of attacks exploit human errors to steal access credentials.\n\nWe present Timelock Drive (TD), which allows users to timelock a physical disk block for a duration during which the stored data cannot be modified by anyone, including credentialed users. We show that this enables a secure backup system where the versioning system itself is not part of the TCB. Only a small, isolated checker remains in the TCB, and we formally verify it. A critical challenge we address is maintaining metadata without overwriting prior state using a pure append-only design. We solve the performance problem of scanning logs to retrieve metadata by offloading metadata management to the untrusted host while ensuring security through integrity checks.\n\nOur experiments show that TD incurs negligible space, performance, and storage I/O overheads compared to conventional versioning systems.",
+  "abstract_source_id": "src-abstract-osdi-2026-71e111c8",
   "venue": "osdi",
   "year": 2026,
   "track_or_session": "Durable and Trustworthy Storage",
@@ -146,6 +148,19 @@
       "official": true,
       "supports": [
         "Official proceedings availability and canonical conference versions."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2026-71e111c8",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/rosenblum",
+      "kind": "paper-page",
+      "title": "Timelock Drive: Isolated Time-Based Defense for Storage Systems",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:09:07Z",
+      "content_hash": "sha256:2ac71a0e96857abde8d620ec66880d8413e7e0075aa76b3e56415a325f3eaebd",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

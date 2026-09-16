@@ -6,8 +6,8 @@ Agent-authored data is partitioned first by venue and year, then by paper, then
 by work stage. This keeps collection agents from touching the same directories
 and keeps specialist agents from touching the same files.
 
-SQLite becomes the canonical local query store only after a deterministic,
-validated merge. Agents never edit it directly.
+The site export (`make export`) is produced only from validated shards.
+Agents never edit it directly.
 
 ## Venue/year shard
 
@@ -45,8 +45,7 @@ aliases, but an established ID must not be renamed casually.
 Always run `init-paper`; do not invent IDs by hand:
 
 ```sh
-PYTHONPATH=src python3 -m systems_phd_explorer.cli init-paper \
-  --venue nsdi --year 2025 --title "Exact Title" --owner agent-b
+./mvnw -q compile exec:java -Dexec.args="init-paper --venue nsdi --year 2025 --title "Exact Title" --owner agent-b"
 ```
 
 ## Stage files
@@ -136,22 +135,20 @@ flag a possible duplicate, and let the merge/review process resolve it.
 
 These are not agent editing surfaces:
 
-- `data/database.sqlite`
-- `data/exports/`
-- `data/venue-year-manifest.generated.json`
-- `data/review_queue/generated/`
 - `site/data/papers.json`
+- `site/data/venue-years.json`
+- `data/review_queue/generated/`
 
 The committed `data/venue-year-manifest.json` is the initial Phase 0 coverage
-contract. The merge command emits the generated live manifest from independent
-shard files.
+contract. `make export` emits the live manifest (`site/data/venue-years.json`)
+from the independent shard files.
 
 ## Schemas and profiles
 
 All JSON files declare schema version `1.0.0` and point to `schemas/v1/`.
 
-- `draft`: validates structure, identity, paths, enumerations, and cross-file
-  paper IDs while allowing incomplete workflow stages.
-- `release`: additionally requires approved core-paper summaries, evidence for
-  PI associations and awards, resolved coverage counts, and reading/provenance
-  requirements.
+`make validate` checks structure, identity, paths, enumerations, source
+references, taxonomy values, and cross-file paper and source IDs while
+allowing incomplete workflow stages. Release gating (approved summaries,
+evidence for PI associations and awards, resolved coverage counts) is a review
+responsibility and is not enforced by the tool.

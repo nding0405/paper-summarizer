@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2023-ncc-natural-concurrency-control-for-strictly-serializabl-a45a456c",
   "title": "NCC: Natural Concurrency Control for Strictly Serializable Datastores by Avoiding the Timestamp-Inversion Pitfall",
+  "abstract": "Strictly serializable datastores greatly simplify application development. However, existing techniques pay unnecessary costs for naturally consistent transactions, which arrive at servers in an order that is already strictly serializable. We exploit this natural arrival order by executing transactions with minimal costs while optimistically assuming they are naturally consistent, and then leverage a timestamp-based technique to efficiently verify if the execution is indeed consistent. In the process of this design, we identify a fundamental pitfall in relying on timestamps to provide strict serializability and name it the timestamp-inversion pitfall. We show that timestamp inversion has affected several existing systems.\n\nWe present Natural Concurrency Control (NCC), a new concurrency control technique that guarantees strict serializability and ensures minimal costs---i.e., one-round latency, lock-free, and non-blocking execution---in the common case by leveraging natural consistency. NCC is enabled by three components: non-blocking execution, decoupled response management, and timestamp-based consistency checking. NCC avoids the timestamp-inversion pitfall with response timing control and proposes two optimization techniques, asynchrony-aware timestamps and smart retry, to reduce false aborts. Moreover, NCC designs a specialized protocol for read-only transactions, which is the first to achieve optimal best-case performance while guaranteeing strict serializability without relying on synchronized clocks. Our evaluation shows NCC outperforms state-of-the-art strictly serializable solutions by an order of magnitude on many workloads.",
+  "abstract_source_id": "src-abstract-osdi-2023-a45a456c",
   "venue": "osdi",
   "year": 2023,
   "track_or_session": "Expanding, Hardening, and Deploying Your Bits",
@@ -159,6 +161,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2023-a45a456c",
+      "url": "https://www.usenix.org/conference/osdi23/presentation/lu",
+      "kind": "paper-page",
+      "title": "NCC: Natural Concurrency Control for Strictly Serializable Datastores by Avoiding the Timestamp-Inversion Pitfall",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:06:39Z",
+      "content_hash": "sha256:2d1a3cff4a318a4db90ba1b4469bcfc85e9c3cf852579b489bfbdeee14d30b89",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

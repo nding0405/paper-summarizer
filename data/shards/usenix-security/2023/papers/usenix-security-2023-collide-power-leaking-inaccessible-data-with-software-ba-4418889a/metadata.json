@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2023-collide-power-leaking-inaccessible-data-with-software-ba-4418889a",
   "title": "Collide+Power: Leaking Inaccessible Data with Software-based Power Side Channels",
+  "abstract": "Differential Power Analysis (DPA) measures single-bit differences between data values used in computer systems by statistical analysis of power traces. In this paper, we show that the mere co-location of data values, e.g., attacker and victim data in the same buffers and caches, leads to power leakage in modern CPUs that depends on a combination of both values, resulting in a novel attack, Collide+Power. We systematically analyze the power leakage of the CPU's memory hierarchy to derive precise leakage models enabling practical end-to-end attacks. These attacks can be conducted in software with any signal related to power consumption, e.g., power consumption interfaces or throttling-induced timing variations. Leakage due to throttling requires 133.3 times more samples than direct power measurements. We develop a novel differential measurement technique amplifying the exploitable leakage by a factor of 8.778 on average, compared to a straightforward DPA approach. We demonstrate that Collide+Power leaks single-bit differences from the CPU's memory hierarchy with fewer than 23000 measurements. Collide+Power varies attacker-controlled data in our end-to-end DPA attacks. We present a Meltdown-style attack, leaking from attacker-chosen memory locations, and a faster MDS-style attack, which leaks 4.82 bit/h. Collide+Power is a generic attack applicable to any modern CPU, arbitrary memory locations, and victim applications and data. However, the Meltdown-style attack is not yet practical, as it is limited by the state of the art of prefetching victim data into the cache, leading to an unrealistic real-world attack runtime with throttling of more than a year for a single bit. Given the different variants and potentially more practical prefetching methods, we consider Collide+Power a relevant threat that is challenging to mitigate.",
+  "abstract_source_id": "src-abstract-usenix-security-2023-4418889a",
   "venue": "usenix-security",
   "year": 2023,
   "track_or_session": "More Hardware Side Channels",
@@ -217,6 +219,19 @@
       "official": true,
       "supports": [
         "authors, affiliations when published, abstract, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2023-4418889a",
+      "url": "https://www.usenix.org/conference/usenixsecurity23/presentation/kogler",
+      "kind": "paper-page",
+      "title": "Collide+Power: Leaking Inaccessible Data with Software-based Power Side Channels",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:10:16Z",
+      "content_hash": "sha256:b770420b1179b46e1dfaf87dcd8b09db6c60a84d33b291c641febbd9061e07cf",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

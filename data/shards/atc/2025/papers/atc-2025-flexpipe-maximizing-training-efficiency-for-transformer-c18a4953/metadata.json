@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "atc-2025-flexpipe-maximizing-training-efficiency-for-transformer-c18a4953",
   "title": "FlexPipe: Maximizing Training Efficiency for Transformer-based Models with Variable-Length Inputs",
+  "abstract": "Transformer achieves promising results among various deep learning architectures. Training transformer-based models (transformers) typically involves various parallelisms, such as data parallelism and pipeline parallelism (PP). Variable-length datasets have been adopted to facilitate multi-task training of transformers, which degrades training efficiency. Though many efforts have significantly improved the variable-length training, these efforts primarily focus on optimizations within a single iteration. However, substantial fluctuations of computation and memory requirements across iterations can also lead to inefficiency overall due to the static partitioning of distributed frameworks. Thus, this paper proposes FlexPipe from the perspective of a distributed system to enable high throughput variable-length training of transformers. To our knowledge, FlexPipe is the first flexible pipeline framework that dynamically adjusts PP by a live flexibility mechanism without training loss. We introduce a novel problem which aims at maximizing training throughput by adjusting the parallel configurations, along with an efficient heuristic algorithm to solve the problem. Extensive experiments show that FlexPipe achieves an average 1.25× training throughput compared to state-of-the-art methods.",
+  "abstract_source_id": "src-abstract-atc-2025-c18a4953",
   "venue": "atc",
   "year": 2025,
   "track_or_session": "Accelerating ML Training: Parallelism, Tuning, and Modalities",
@@ -159,6 +161,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-atc-2025-c18a4953",
+      "url": "https://www.usenix.org/conference/atc25/presentation/zhao-hairui",
+      "kind": "paper-page",
+      "title": "FlexPipe: Maximizing Training Efficiency for Transformer-based Models with Variable-Length Inputs",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T21:59:42Z",
+      "content_hash": "sha256:bd9a2badb6f457bf382805e177bb9ab99c5012442a812f276ecc8747ed02de0d",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

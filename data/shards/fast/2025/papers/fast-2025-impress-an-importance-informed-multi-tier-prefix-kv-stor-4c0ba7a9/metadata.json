@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "fast-2025-impress-an-importance-informed-multi-tier-prefix-kv-stor-4c0ba7a9",
   "title": "IMPRESS: An Importance-Informed Multi-Tier Prefix KV Storage System for Large Language Model Inference",
+  "abstract": "Modern advanced large language model (LLM) applications often prepend long contexts before user queries to improve model output quality. These contexts frequently repeat, either partially or fully, across multiple queries. Existing systems typically store and reuse the keys and values of these contexts (referred to as prefix KVs) to reduce redundant computation and time to first token (TTFT). When prefix KVs need to be stored on disks due to insufficient CPU memory, reusing them does not always reduce TTFT, as disk I/O latency is high. In this paper, we propose IMPRESS, an importance-informed multi-tier prefix KV storage system to reduce I/O delay for LLM inference by only loading important prefix KVs.\n\nIMPRESS first leverages the insight that there is significant similarity in important token index sets across attention heads and introduces an I/O-efficient important KV identification algorithm. It then optimizes prefix KV storage and caching through importance-informed KV management, reducing TTFT during model inference. Our experimental results show that IMPRESS can reduce TTFT by up to 2.8× compared to state-of-the-art systems, while maintaining comparable inference accuracy.",
+  "abstract_source_id": "src-abstract-fast-2025-4c0ba7a9",
   "venue": "fast",
   "year": 2025,
   "track_or_session": "Machine Learning and Storage",
@@ -245,6 +247,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-fast-2025-4c0ba7a9",
+      "url": "https://www.usenix.org/conference/fast25/presentation/chen-weijian-impress",
+      "kind": "paper-page",
+      "title": "IMPRESS: An Importance-Informed Multi-Tier Prefix KV Storage System for Large Language Model Inference",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:01:07Z",
+      "content_hash": "sha256:8b6abf9bfcf5857fd3e872b4264bcfdc0ccd38e601fdc6989087f3bb57a9d564",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

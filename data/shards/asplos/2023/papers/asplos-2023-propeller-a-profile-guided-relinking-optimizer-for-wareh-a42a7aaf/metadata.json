@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2023-propeller-a-profile-guided-relinking-optimizer-for-wareh-a42a7aaf",
   "title": "Propeller: A Profile Guided, Relinking Optimizer for Warehouse Scale Applications",
+  "abstract": "While profile guided optimizations (PGO) and link time optimiza-tions (LTO) have been widely adopted, post link optimizations (PLO)have languished until recently when researchers demonstrated that late injection of profiles can yield significant performance improvements. However, the disassembly-driven, monolithic design of post link optimizers face scaling challenges with large binaries andis at odds with distributed build systems. To reconcile and enable post link optimizations within a distributed build environment, we propose Propeller, a relinking optimizer for warehouse scale work-loads. To enable flexible code layout optimizations, we introduce basic block sections, a novel linker abstraction. Propeller uses basic block sections to enable a new approach to PLO without disassembly. Propeller achieves scalability by relinking the binary using precise profiles instead of rewriting the binary. The overhead of relinking is lowered by caching and leveraging distributed compiler actions during code generation. Propeller has been deployed to production at Google with over tens of millions of cores executing Propeller optimized code at any time. An evaluation of internal warehouse-scale applications show Propeller improves performance by 1.1% to 8% beyond PGO and ThinLTO. Compiler tools such as Clang improve by 7% while MySQL improves by 1%. Compared to the state of the art binary optimizer, Propeller achieves comparable performance while lowering memory overheads by 30%-70% on large benchmarks.",
+  "abstract_source_id": "src-abstract-asplos-2023-a42a7aaf",
   "venue": "asplos",
   "year": 2023,
   "track_or_session": "Session 9B: Distributed Systems",
@@ -188,6 +190,19 @@
       "official": false,
       "supports": [
         "Indexed abstract used with the official technical-session context for relevance classification, plus alternate-copy and explicitly printed ancillary links."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2023-a42a7aaf",
+      "url": "https://api.openalex.org/works/doi:10.1145/3575693.3575727?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Propeller: A Profile Guided, Relinking Optimizer for Warehouse-Scale Applications",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T21:59:39Z",
+      "content_hash": "sha256:1356cc560130e9f708dc54f71b9cd8bccf9d260787b048fe6d760c10f18181c0",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

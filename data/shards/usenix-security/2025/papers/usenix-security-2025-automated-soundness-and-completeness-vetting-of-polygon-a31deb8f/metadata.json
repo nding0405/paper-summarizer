@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-automated-soundness-and-completeness-vetting-of-polygon-a31deb8f",
   "title": "Automated Soundness and Completeness Vetting of Polygon zkEVM",
+  "abstract": "Zero-knowledge rollups have emerged as popular layer 2 scaling solutions for blockchains. Polygon zkEVM, a leading deployment of zk rollups, leverages non-deterministic execution to derive free inputs from an unconstrained command evaluator when implementing the zkEVM. This mechanism significantly simplifies the design of zkEVM and enhances the performance of proof generation. However, it introduces the challenge of requiring developers to define constraints for free inputs, a task that demands strong mathematical expertise and is prone to errors. As a component of the layer-2 infrastructure, the zkEVM's vulnerabilities could lead to powerful attacks. However, despite their importance, the security of free inputs in zkEVM remains unexplored.\n\nIn this paper, we present the first systematic exploration of free inputs in Polygon zkEVM. Our study reveals critical soundness and completeness issues with them. In particular, we uncover a new attack surface, termed the dual execution path attack, which targets unsound implementations of free inputs and can lead to chain splits. Moreover, we design the first tool, FreeVer, which facilitates the verification of the soundness and completeness of free inputs with formal semantics. Additionally, it automatically generates formal specifications for correct constraints by constructing prover state graphs that model both the behaviors of malicious and honest provers. It then uses the states from the honest prover as specifications to assist in the verification of states from the malicious one. FreeVer also adopts optimization strategies to reduce the complexity of constraints for effective verification. Our evaluation results show that FreeVer can correctly identify all previously disclosed free input related vulnerabilities and detect 7 new vulnerabilities in Polygon zkEVM. All detected bugs are submitted through the bug bounty program and are confirmed as high impact vulnerabilities.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-a31deb8f",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Blockchain Security 2: Infrastructure, Protocol Design, and Governance",
@@ -217,6 +219,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-a31deb8f",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/peng-xinghao",
+      "kind": "paper-page",
+      "title": "Automated Soundness and Completeness Vetting of Polygon zkEVM",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:18:46Z",
+      "content_hash": "sha256:afc077ab4e81cee882cfbb281738ffc9e048253bcf50691bc1befc3b53dd9fb5",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

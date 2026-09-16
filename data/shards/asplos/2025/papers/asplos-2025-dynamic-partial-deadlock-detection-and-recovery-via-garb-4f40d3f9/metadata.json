@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2025-dynamic-partial-deadlock-detection-and-recovery-via-garb-4f40d3f9",
   "title": "Dynamic Partial Deadlock Detection and Recovery via Garbage Collection",
+  "abstract": "A challenge of writing concurrent message-passing programs is ensuring the absence of partial deadlocks, which can cause severe memory leaks in long-running systems. The Go programming language is particularly susceptible to this problem due to its support of message passing and ease of lightweight concurrency creation. We propose a novel dynamic technique to detect partial deadlocks by soundly approximating liveness using the garbage collector's marking phase. The approach allows systems to not only detect, but also automatically redress partial deadlocks and alleviate their impact on memory. We implement the approach in the tool GOLF, as an extension to the garbage collector of the Go runtime system and evaluate its effectiveness in a series of experiments. Preliminary results show that the approach is effective at detecting 94% and 50% of partial deadlocks in a series of microbenchmarks and the test suites of a large-scale industrial codebase, respectively. Furthermore, we deployed golf on a real service used by Uber, and over a period of 24 hours, effectively detected 252 partial deadlocks caused by three programming errors.",
+  "abstract_source_id": "src-abstract-asplos-2025-4f40d3f9",
   "venue": "asplos",
   "year": 2025,
   "track_or_session": "Session 6D: Testing",
@@ -159,6 +161,19 @@
       "official": true,
       "supports": [
         "Author-deposited archival artifact associated with the conference paper."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2025-4f40d3f9",
+      "url": "https://api.openalex.org/works/doi:10.1145/3676641.3715990?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Dynamic Partial Deadlock Detection and Recovery via Garbage Collection",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:01:24Z",
+      "content_hash": "sha256:872434ba8d3c551b91a9b614e3ffee216374f94121c252fe8191029c9f2d107e",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2025-learnings-from-deploying-network-qos-alignment-to-applic-68be6353",
   "title": "Learnings from Deploying Network QoS Alignment to Application Priorities for Storage Services",
+  "abstract": "To ensure that application network traffic is prioritized correctly within data center networks, it is critical to align the configuration of network QoS in packets to the intended priority of the application. These QoS configurations, typically encoded in the DSCP bits in the IP header, are interpreted by network switches and routers to determine the resources such as buffer space and scheduling priorities, for network traffic. Conceptually, it appears fairly straightforward to map the application priorities within data center networks to network QoS configurations, as long as the mapping is well defined. In this work, we describe our experience of aligning network QoS settings for intra-cluster storage traffic to application priorities on a per-RPC basis for a large data center network, with well-defined static mappings from priorities to QoS traffic classes. We describe some unexpected insights learned from the deployment experiences, e.g., downgrading traffic to use a lower QoS does not always imply worse network latency due to over-used QoS bands in the network. We also share some challenges encountered along the way to reach the goal of a fleet-wide deployment, including the concerns of potential performance regressions due to QoS downgrades. These lessons provide guidance on the use of a QoS-based scheduling strategy to meet service guarantees and can be deployed to networks of any scale.",
+  "abstract_source_id": "src-abstract-nsdi-2025-68be6353",
   "venue": "nsdi",
   "year": 2025,
   "track_or_session": "Data Centers Queuing and Routing",
@@ -245,6 +247,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2025-68be6353",
+      "url": "https://www.usenix.org/conference/nsdi25/presentation/buckley",
+      "kind": "paper-page",
+      "title": "Learnings from Deploying Network QoS Alignment to Application Priorities for Storage Services",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:04:17Z",
+      "content_hash": "sha256:7498889a8d337031133895e9ed0987e6e6c99a5db30e139a4408b1c1837b5563",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

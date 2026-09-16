@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-graphace-secure-two-party-graph-analysis-achieving-commu-4535f7ed",
   "title": "GraphAce: Secure Two-Party Graph Analysis Achieving Communication Efficiency",
+  "abstract": "Graph analysis has achieved success in challenging tasks such as importance measures, fraud detection, and anti-money laundering. For a deep understanding of various complex systems in real life, a whole graph may involve data and connections from multiple sources. Secure multi-party computation is suitable for this scenario, which allows untrusted parties to compute collectively without revealing their individual data. However, a significant challenge is the high communication overhead, especially during intricate computations of large-scale input, and existing secure graph analysis frameworks incur a lower bound of Omega(|V|+|E|) communication per iteration, where V and E denote vertices and edges, respectively.\n\nThis paper proposes GraphAce, an efficient secure two-party graph analysis framework, which adopts a distinct technical roadmap from existing solutions. We identify and address the security challenges when utilizing local graph data of parties, with the mixed primitives system of homomorphic encryption and secret sharing, and a novel ChaosTable data structure that protects privacy during cross-party computation. Consequently, GraphAce eliminates any network traffic related to the edges. For each iteration, it achieves low complexities of Theta(|V|) communication, breaking the Omega(|V|+|E|) lower bound of previous secure solutions, and Theta(|V|+|E|) computation, which is the same as insecure methods.\n\nEvaluations show that GraphAce exceeds previous methods by up to tens of thousands of times in speed and saves up to 99.99% communication, depending on the application and the network. This is the first secure two-party graph analysis framework capable of processing over 1 million vertices and 132 million edges in a reasonable time, which is 128x larger than previous reports, to the best of our knowledge.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-4535f7ed",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Privacy 1: Differential Privacy and Audit",
@@ -196,6 +198,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-4535f7ed",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/yu-jiping",
+      "kind": "paper-page",
+      "title": "GraphAce: Secure Two-Party Graph Analysis Achieving Communication Efficiency",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:20:08Z",
+      "content_hash": "sha256:ad67dd0d17eb0c7cab9af456edb43f49df2613298e18011244cf95383fe237c5",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

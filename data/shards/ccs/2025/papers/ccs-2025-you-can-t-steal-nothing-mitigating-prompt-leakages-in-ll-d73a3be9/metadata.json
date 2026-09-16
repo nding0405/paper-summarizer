@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2025-you-can-t-steal-nothing-mitigating-prompt-leakages-in-ll-d73a3be9",
   "title": "You Can't Steal Nothing: Mitigating Prompt Leakages in LLMs via System Vectors",
+  "abstract": "Large language models (LLMs) have been widely adopted across various applications, leveraging customized system prompts for diverse tasks. Facing potential system prompt leakage risks, model developers have implemented strategies to prevent leakage, primarily by disabling LLMs from repeating their context when encountering known attack patterns. However, it remains vulnerable to new and unforeseen prompt-leaking techniques. In this paper, we first introduce a simple yet effective prompt leaking attack to reveal such risks. Our attack is capable of extracting system prompts from various LLM-based application, even from SOTA LLM models such as GPT-4o or Claude 3.5 Sonnet. Our findings further inspire us to search for a fundamental solution to the problems by having no system prompt in the context. To this end, we propose SysVec, a novel method that encodes system prompts as internal representation vectors rather than raw text. By doing so, SysVec minimizes the risk of unauthorized disclosure while preserving the LLM's core language capabilities. Remarkably, this approach not only enhances security but also improves the model's general instruction-following abilities. Experimental results demonstrate that SysVec effectively mitigates prompt leakage attacks, preserves the LLM's functional integrity, and helps alleviate the forgetting issue in long-context scenarios.",
+  "abstract_source_id": "src-abstract-ccs-2025-d73a3be9",
   "venue": "ccs",
   "year": 2025,
   "track_or_session": "Cycle 2",
@@ -190,6 +192,19 @@
         "published-order authors",
         "publication-time affiliations",
         "publication date and page span"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2025-d73a3be9",
+      "url": "https://api.openalex.org/works/doi:10.1145/3719027.3765124?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "You Can't Steal Nothing: Mitigating Prompt Leakages in LLMs via System Vectors",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:18:27Z",
+      "content_hash": "sha256:e8216a9ccd2e1040e02ee7c0894878870c635b85d9d4b96732d0f8e1d3f2bbb1",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

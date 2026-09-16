@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2026-supercharging-packet-level-network-simulation-of-large-m-e5c97ffa",
   "title": "Supercharging Packet-level Network Simulation of Large Model Training via Memoization and Fast-Forwarding",
+  "abstract": "Packet-level discrete-event simulation (PLDES) is a prevalent tool for evaluating detailed performance of large model training. Although PLDES offers high fidelity and generality, its slow performance has plagued networking practitioners. Existing optimization techniques either simplify the network model, resulting in large errors; or execute it in parallel using multiple processors, with an upper bound on speedup.\n\nThis paper explores an alternative optimization direction that reduces the computational loads of PLDES while maintaining high fidelity. Our key insight is that, in distributed LLM training, packet-level traffic behaviors often exhibit repetitive contention patterns and steady-states where flow rates stabilize, ignoring these redundant discrete events speeds up the simulation considerably and the error is negligible. We realize this idea by proposing Wormhole, a user-transparent PLDES kernel capable of automatically memoization for unsteady-states and skipping for steady-states. Wormhole adopts network partitioning, state memoization and reuse, and rate-based steady-state identification to accurately determine the periods of each flow’s steady-state, while maintaining simulation consistency after fast-forwarding. Experiments demonstrate that Wormhole can achieve a 744× speedup over the original ns-3 (510× for MoE workload), with a bounded error of <1%. Applying current multithreading parallel techniques and Wormhole together allows a 1012× speedup, reducing the simulation time for one GPT-13B training under 128 GPUs from 9 hours to 5 minutes.",
+  "abstract_source_id": "src-abstract-nsdi-2026-e5c97ffa",
   "venue": "nsdi",
   "year": 2026,
   "track_or_session": "Debugging Distributed Systems",
@@ -244,6 +246,19 @@
         "proceedings page range and page count",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2026-e5c97ffa",
+      "url": "https://www.usenix.org/conference/nsdi26/presentation/long",
+      "kind": "paper-page",
+      "title": "Supercharging Packet-level Network Simulation of Large Model Training via Memoization and Fast-Forwarding",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:06:06Z",
+      "content_hash": "sha256:e2b13a29fb7731f44717cd6c1c4322f6dbad001db608f99510b8a967fdffc4c7",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

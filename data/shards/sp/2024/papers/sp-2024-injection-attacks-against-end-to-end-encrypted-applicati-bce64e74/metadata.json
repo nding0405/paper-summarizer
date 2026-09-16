@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2024-injection-attacks-against-end-to-end-encrypted-applicati-bce64e74",
   "title": "Injection Attacks Against End-to-End Encrypted Applications",
+  "abstract": "We explore an emerging threat model for end-to-end (E2E) encrypted applications: an adversary sends chosen messages to a target client, thereby \"injecting\" adversarial content into the application state. Such state is subsequently encrypted and synchronized to an adversarially-visible storage. By observing the lengths of the resulting cloud-stored cipher-texts, the attacker backs out confidential information.We investigate this injection threat model in the context of state-of-the-art encrypted messaging applications that support E2E encrypted backups. We show proof-of-concept attacks that can recover information about E2E encrypted messages or attachments sent via WhatsApp, assuming the ability to compromise the target user’s Google or Apple account (which gives access to encrypted backups). We also show weaknesses in Signal’s encrypted backup design that would allow injection attacks to infer metadata including a target user’s number of contacts and conversations, should the adversary somehow obtain access to the user’s encrypted Signal backup.While we do not believe our results should be of immediate concern for users of these messaging applications, our results do suggest that more work is needed to build tools that enjoy strong E2E security guarantees.",
+  "abstract_source_id": "src-abstract-sp-2024-bce64e74",
   "venue": "sp",
   "year": 2024,
   "track_or_session": "Spring cycle",
@@ -201,6 +203,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2024-bce64e74",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Injection Attacks Against End-to-End Encrypted Applications",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:32Z",
+      "content_hash": "sha256:be7515012a8c1ea1211f38a27ea4d2aa9cff6e0faac9417a2f58b1d64e91280e",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

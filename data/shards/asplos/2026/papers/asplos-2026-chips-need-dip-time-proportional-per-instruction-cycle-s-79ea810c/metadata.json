@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2026-chips-need-dip-time-proportional-per-instruction-cycle-s-79ea810c",
   "title": "Chips Need DIP: Time-Proportional Per-Instruction Cycle Stacks at Dispatch",
+  "abstract": "Despite continuous accelerator improvements, high single-thread performance remains crucial due to Amdahl's Law. With technology scaling slowing, developers must produce code that is as performant as possible, which often involves instruction-level performance analysis. Such analysis can be visualized as Per-Instruction Cycle Stacks (PICS), which, when created at the commit stage of the processor, report each static instruction's contribution to overall execution time and capture the performance events it was subject to. Sadly, PICS at commit (PICSC) often cannot explain performance because they solely capture how effectively instructions egress from the processor core's out-of-order execution window. In contrast, developers must typically also gain insight into how efficiently instructions ingress into the execution window to fully understand application performance. PICSC must hence be complemented by PICS at dispatch (PICSD) because execution window ingress issues result in specific instructions exhibiting high dispatch latencies. We therefore propose dispatch-time profiling (DIP), which combines time-proportional at dispatch attribution policies with statistical sampling to accurately report each static instruction's contribution to dispatch time as well as list the reason(s) for delayed ingress. DIP is simple to implement and incurs low overhead, i.e., storage and execution time and overheads of 49 bytes and ~1%, respectively, while delivering high accuracy (average profile error of 5.2%). This is a significant improvement over the 26.9% error of state-of-the-art dispatch-tagging as implemented in AMD IBS, Arm SPE, and IBM RIS. We demonstrate that needing PICSD and PICSC is the common case by showing that 18 out of our 22 SPEC2017 benchmarks simultaneously exhibit both ingress and egress issues. Additionally, we leverage DIP's PICSD to optimize the fotonik3d benchmark, improving its performance by 8.5%.",
+  "abstract_source_id": "src-abstract-asplos-2026-79ea810c",
   "venue": "asplos",
   "year": 2026,
   "track_or_session": "Session 7D: Processor Microarchitecture",
@@ -146,6 +148,19 @@
       "official": false,
       "supports": [
         "Indexed abstract used for strict relevance classification and indexed arXiv identifier where available."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2026-79ea810c",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Chips Need DIP: Time-Proportional Per-Instruction Cycle Stacks at Dispatch",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:12Z",
+      "content_hash": "sha256:aa9c23a45f6ec9973f40e6c9520c69d42bb49fc1f526891570edfdb1976cff82",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

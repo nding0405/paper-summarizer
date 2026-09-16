@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-enhanced-private-set-union-from-secret-shared-private-me-0ab5f17a",
   "title": "Enhanced Private Set Union from Secret-shared Private Membership Test",
+  "abstract": "Private set union (PSU) enables two parties to compute the union of their sets without revealing additional information. Jia et al. (USENIX Security 2024) point out that most scalable PSU protocols suffer from during-execution leakage, whereby membership information is revealed to the receiver before the protocol completes, and consequently introduce the functionality of enhanced PSU to mitigate this issue. While several recent works propose protocols for enhanced PSU, existing solutions either incur high computational overhead due to reliance on computation-intensive public-key primitives, or suffer from large communication costs arising from generic secure computation.\n\nIn this work, we present a modular framework for constructing enhanced PSU based on the multi-query secret-shared private membership test (ssPMT) protocol (ASIACRYPT 2023) and a new primitive called secret-shared oblivious transfer with default (ssOTd). Our framework eliminates duringexecution leakage by ensuring that all intermediate information remains secret-shared between the parties throughout the protocol. At its core, we present two efficient ssPMT constructions relying primarily on lightweight symmetric-key primitives. We further design a customized, communication-efficient ssOTd protocol to optimize the overhead of enhanced PSU. As a byproduct, we obtain a computation-efficient construction of multi-query reverse PMT (mqRPMT) that avoids the computation-heavy public-key primitives used in the stateof-the-art approaches.\n\nWe implement two enhanced PSU protocols, denoted as ePSU-fast and ePSU-low, which are optimized for computational efficiency and communication efficiency, respectively, making them suitable for different network settings. Extensive evaluations show that ePSU-low simultaneously achieves lower computation and communication overhead than the state-of-the-art protocols by Jia et al. (USENIX Security 2024) and Tu et al. (USENIX Security 2025). Moreover, the ePSUfast protocol further reduces computation costs compared to ePSU-low, at the expense of increased communication.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-0ab5f17a",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Applications of Cryptography 3",
@@ -260,6 +262,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-0ab5f17a",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/hao",
+      "kind": "paper-page",
+      "title": "Enhanced Private Set Union from Secret-shared Private Membership Test",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:23:52Z",
+      "content_hash": "sha256:0b00a3bd4e2a762302971b5747ba27f39d74eb325b7491d9fa5c823406679055",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2023-oddfuzz-discovering-java-deserialization-vulnerabilities-3ad43f1b",
   "title": "ODDFUZZ: Discovering Java Deserialization Vulnerabilities via Structure-Aware Directed Greybox Fuzzing",
+  "abstract": "Java deserialization vulnerability is a severe threat in practice. Researchers have proposed static analysis solutions to locate candidate vulnerabilities and fuzzing solutions to generate proof-of-concept (PoC) serialized objects to trigger them. However, existing solutions have limited effectiveness and efficiency.In this paper, we propose a novel hybrid solution ODDFuzz to efficiently discover Java deserialization vulnerabilities. First, ODDFuzz performs lightweight static taint analysis to identify candidate gadget chains that may cause deserialization vulnerabilities. In this step, ODDFuzz tries to locate all candidates and avoid false negatives. Then, ODDFuzz performs directed greybox fuzzing (DGF) to explore those candidates and generate PoC testcases to mitigate false positives. Specifically, ODDFuzz applies a structure-aware seed generation method to guarantee the validity of the testcases, and adopts a novel hybrid feedback and a step-forward strategy to guide the directed fuzzing.We implemented a prototype of ODDFuzz and evaluated it on the popular Java deserialization repository ysoserial. Results show that, ODDFuzz could discover 16 out of 34 known gadget chains, while two state-of-the-art baselines only identify three of them. In addition, we evaluated ODDFuzz on real-world applications including Oracle WebLogic Server, Apache Dubbo, Sonatype Nexus, and protostuff, and found six previously unreported exploitable gadget chains with five CVEs assigned.",
+  "abstract_source_id": "src-abstract-sp-2023-3ad43f1b",
   "venue": "sp",
   "year": 2023,
   "track_or_session": "Session 10A: Fuzzing",
@@ -319,6 +321,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2023-3ad43f1b",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "ODDFuzz: Discovering Java Deserialization Vulnerabilities via Structure-Aware Directed Greybox Fuzzing",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:22Z",
+      "content_hash": "sha256:1bed15e4c1c4d6e59eecfd74eeffd17f506467abd5cdd4e0f536f68bd1e694ee",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

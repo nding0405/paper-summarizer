@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2024-liftfuzz-validating-binary-lifters-through-context-aware-0fc7b227",
   "title": "LiftFuzz: Validating Binary Lifters through Context-aware Fuzzing with GPT",
+  "abstract": "Analyzing binary code is vital for software engineering and security research, particularly when the source code is unavailable. However, understanding, modifying, and retargeting binary code can be complex tasks. To counter these difficulties, binary lifters have been introduced. These tools translate binary code into Intermediate Representations (IRs), providing several advantages, such as enabling modifications to executables without source code and facilitating code retargetability. So far, accurately developing binary lifters for modern ISAs is universally acknowledged as challenging and error-prone. Existing validation methods mainly concentrate on isolated instructions, overlooking interactions among instructions. In this paper, we introduce LiftFuzz, a novel framework that leverages instruction context-aware fuzzing to validate binary lifters. LiftFuzz harnesses an assembly language model to learn interactions among instructions and generates test cases with the knowledge. LiftFuzz greatly outperforms the baseline, requiring only 1/1000 of the test cases used by the baseline to identify 26 inconsistencies, including a previously uncovered category. LiftFuzz significantly contributes to enhancing the performance of binary lifters, which are frequently employed in binary security applications.",
+  "abstract_source_id": "src-abstract-ccs-2024-0fc7b227",
   "venue": "ccs",
   "year": 2024,
   "track_or_session": "Cycle 1",
@@ -201,6 +203,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2024-0fc7b227",
+      "url": "https://api.openalex.org/works/doi:10.1145/3658644.3670276?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "LiftFuzz: Validating Binary Lifters through Context-aware Fuzzing with GPT",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:10:59Z",
+      "content_hash": "sha256:f6a3b4f11196678978483cf629afb492c0fd1df317894da4b2634dfd1182faaf",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

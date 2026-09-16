@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "atc-2025-ppipe-efficient-video-analytics-serving-on-heterogeneous-d80fba55",
   "title": "PPipe: Efficient Video Analytics Serving on Heterogeneous GPU Clusters via Pool-Based Pipeline Parallelism",
+  "abstract": "With the rapid innovation of GPUs, heterogeneous GPU clusters in both public clouds and on-premise data centers have become increasingly commonplace. In this paper, we demonstrate how pipeline parallelism, a technique wellstudied for throughput-oriented deep learning model training, can be used effectively for serving latency-bound model inference, e.g., in video analytics systems, on heterogeneous GPU clusters. Our work exploits the synergy between diversity in model layers and diversity in GPU architectures, which results in comparable inference latency for many layers when running on low-class and high-class GPUs. We explore how such overlooked capability of low-class GPUs can be exploited using pipeline parallelism and present a novel inference serving system, PPipe, that employs pool-based pipeline parallelism via an MILP-based control plane and a data plane that performs resource reservation-based adaptive batching. Evaluation results on diverse workloads (18 CNN models) show that PPipe achieves 41.1%–65.5% higher utilization of low-class GPUs while maintaining high utilization of high-class GPUs, leading to 32.2%–75.1% higher serving throughput compared to various baselines.",
+  "abstract_source_id": "src-abstract-atc-2025-d80fba55",
   "venue": "atc",
   "year": 2025,
   "track_or_session": "Optimizing ML Execution: Compilers, Pipelines, and Runtimes",
@@ -138,6 +140,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-atc-2025-d80fba55",
+      "url": "https://www.usenix.org/conference/atc25/presentation/kong",
+      "kind": "paper-page",
+      "title": "PPipe: Efficient Video Analytics Serving on Heterogeneous GPU Clusters via Pool-Based Pipeline Parallelism",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:00:05Z",
+      "content_hash": "sha256:ecaf298d0a94f238f66c14188d5ee1b4ffc185f443bc2360528f894a51f8c442",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

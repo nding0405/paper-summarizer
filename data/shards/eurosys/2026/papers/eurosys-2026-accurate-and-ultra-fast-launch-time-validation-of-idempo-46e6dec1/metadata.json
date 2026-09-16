@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "eurosys-2026-accurate-and-ultra-fast-launch-time-validation-of-idempo-46e6dec1",
   "title": "Accurate and Ultra-Fast Launch-Time Validation of Idempotency for GPU Kernels",
+  "abstract": "We discovered that a GPU kernel can have both idempotent and non-idempotent instances depending on the input. These kernels, called conditionally-idempotent, are common in real-world GPU applications—490 out of 547 from six popular applications. This finding reveals a limitation in previous work that statically classifies GPU kernels as idempotent or non-idempotent, potentially compromising the correctness and effectiveness of idempotence-based systems. This paper presents Picker, the first launch-time analysis system for instance-level idempotency validation. Picker accurately validates the idempotency of GPU kernel instances before execution by utilizing launch arguments. Several optimizations are proposed to reduce validation latency to microseconds. Evaluations using representative GPU applications (547 kernels and 18,217 instances) show that Picker accurately identifies idempotent instances with zero false positives and an 18.54% false-negative rate. The launch-time validation completes in under 5 μs for all instances (about 90% under 1 μs). Through integration, Picker reduces checkpoint costs to less than 4% in fault-tolerant systems and decreases preemption latency by 84.2% in scheduling systems.",
+  "abstract_source_id": "src-abstract-eurosys-2026-46e6dec1",
   "venue": "eurosys",
   "year": 2026,
   "track_or_session": null,
@@ -159,6 +161,19 @@
       "official": false,
       "supports": [
         "Publisher-deposited proceedings identity and print publication date."
+      ]
+    },
+    {
+      "id": "src-abstract-eurosys-2026-46e6dec1",
+      "url": "https://api.openalex.org/works/doi:10.1145/3767295.3803597?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Accurate and Ultra-Fast Launch-Time Validation of Idempotency for GPU Kernels",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:19:43Z",
+      "content_hash": "sha256:1d7b347d87e1e3bec42c6004d21da1972897f951f4e89fa6bf9d571a4bbdd72e",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

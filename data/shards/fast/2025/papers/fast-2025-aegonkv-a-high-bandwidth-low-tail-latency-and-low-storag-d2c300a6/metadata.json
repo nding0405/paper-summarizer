@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "fast-2025-aegonkv-a-high-bandwidth-low-tail-latency-and-low-storag-d2c300a6",
   "title": "AegonKV: A High Bandwidth, Low Tail Latency, and Low Storage Cost KV-Separated LSM Store with SmartSSD-based GC Offloading",
+  "abstract": "The key-value separation is renowned for its significant mitigation of the write amplification inherent in traditional LSM trees. However, KV separation potentially increases performance overhead in the management of Value region, especially for garbage collection (GC) operation that is used to reduce the redundant space occupation. In response, many efforts have been made to optimize the GC mechanism for KV separation. However, our analysis indicates that such solution based on trade-offs between CPU and I/O overheads cannot simultaneously satisfy the three requirements of KV separated systems in terms of throughput, tail latency, and space usage. This limitation hinders their real-world application.\n\nIn this paper, we introduce AegonKV, a “three-birds-one-stone” solution that comprehensively enhances the throughput, tail latency, and space usage of KV separated systems. AegonKV first proposes a SmartSSD-based GC offloading mechanism to enable asynchronous GC operations without competing with LSM read/write for bandwidth or CPU. AegonKV leverages offload-friendly data structures and hardware/software execution logic to address the challenges of GC offloading. Experiments demonstrate that AegonKV achieves the largest throughput improvement of 1.28-3.3 times, a significant reduction of 37%-66% in tail latency, and 15%-85% in space overhead compared to existing KV separated systems.",
+  "abstract_source_id": "src-abstract-fast-2025-d2c300a6",
   "venue": "fast",
   "year": 2025,
   "track_or_session": "Hardware Assist",
@@ -182,6 +184,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-fast-2025-d2c300a6",
+      "url": "https://www.usenix.org/conference/fast25/presentation/duan",
+      "kind": "paper-page",
+      "title": "AegonKV: A High Bandwidth, Low Tail Latency, and Low Storage Cost KV-Separated LSM Store with SmartSSD-based GC Offloading",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:00:57Z",
+      "content_hash": "sha256:56e9d007f478e2156f98332d639ea284eae54147b03e77b7d8845435394e02c2",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

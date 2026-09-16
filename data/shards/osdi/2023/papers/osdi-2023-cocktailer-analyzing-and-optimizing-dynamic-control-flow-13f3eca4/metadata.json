@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2023-cocktailer-analyzing-and-optimizing-dynamic-control-flow-13f3eca4",
   "title": "Cocktailer: Analyzing and Optimizing Dynamic Control Flow in Deep Learning",
+  "abstract": "With the growing complexity of deep neural networks (DNNs), developing DNN programs with intricate control flow logic (e.g., loops, branches, and recursion) has become increasingly essential. However, executing such DNN programs efficiently on accelerators is challenging. Current DNN frameworks typically process control flow on the CPU, while offloading the remaining computations to accelerators like GPUs. This often introduces significant synchronization overhead between CPU and the accelerator, and prevents global optimization across control flow scopes.\n\nTo address this challenge, we propose Cocktailer, a new DNN compiler that co-optimizes the execution of control flow and data flow on hardware accelerators. Cocktailer provides the uTask abstraction to unify the representation of DNN models, including both control flow and data flow. This allows Cocktailer to expose a holistic scheduling space for rescheduling control flow to the lower-level hardware parallelism of accelerators. Cocktailer uses a heuristic policy to find efficient schedules and is able to automatically move control flow into kernels of accelerators, enabling optimization across control flow boundaries. Evaluations demonstrate that Cocktailer can accelerate DNN models with control flow by up to 8.2× over the fastest one of the state-of-the-art DNN frameworks and compilers.",
+  "abstract_source_id": "src-abstract-osdi-2023-13f3eca4",
   "venue": "osdi",
   "year": 2023,
   "track_or_session": "Train Your Bits I",
@@ -264,6 +266,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2023-13f3eca4",
+      "url": "https://www.usenix.org/conference/osdi23/presentation/zhang-chen",
+      "kind": "paper-page",
+      "title": "Cocktailer: Analyzing and Optimizing Dynamic Control Flow in Deep Learning",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:06:25Z",
+      "content_hash": "sha256:ac83b312e307da6a5157dca76470819bf0f029c3c41351b6e4a3472d6eba74ec",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

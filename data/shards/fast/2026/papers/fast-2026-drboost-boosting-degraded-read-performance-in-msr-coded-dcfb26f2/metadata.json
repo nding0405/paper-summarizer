@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "fast-2026-drboost-boosting-degraded-read-performance-in-msr-coded-dcfb26f2",
   "title": "DRBoost: Boosting Degraded Read Performance in MSR-Coded Storage Clusters",
+  "abstract": "Minimum Storage Regenerating (MSR) codes have strong potential for building efficient and reliable storage systems due to their excellent fault tolerance and low repair bandwidth. However, to meet MSR code constraints and optimize storage performance, systems often adopt large chunk sizes. This leads to significant I/O amplification during degraded reads, as entire chunks must be reconstructed to access a single object.\n\nIn this paper, we propose DRBoost, an approach that boosts degraded read performance in MSR-coded storage clusters by reducing repair bandwidth and eliminating access fragmentation for healthy data. DRBoost introduces three key techniques: (1) a partial-chunk reconstruction algorithm that reduces repair bandwidth by leveraging two forms of data reuse; (2) a reconstruction-friendly coding layout that improves reuse efficiency and accommodates objects of diverse sizes; and (3) a fragmentation-free storage layout that avoids unnecessary request splitting. Extensive experiments under various conditions and workloads show that DRBoost reduces degraded read latency by one to two orders of magnitude, significantly improving system responsiveness.",
+  "abstract_source_id": "src-abstract-fast-2026-dcfb26f2",
   "venue": "fast",
   "year": 2026,
   "track_or_session": "Integrity",
@@ -139,6 +141,19 @@
         "proceedings page range and page count",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-fast-2026-dcfb26f2",
+      "url": "https://www.usenix.org/conference/fast26/presentation/niu",
+      "kind": "paper-page",
+      "title": "DRBoost: Boosting Degraded Read Performance in MSR-Coded Storage Clusters",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:01:30Z",
+      "content_hash": "sha256:8c8f3460a6159afb2ab7075027a8de9c639fac2a48dacbb94406d5e3df47b6af",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

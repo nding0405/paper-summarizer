@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2025-error-messages-to-fuzzing-detecting-xps-parsing-vulnerab-1ad4193d",
   "title": "Error Messages to Fuzzing: Detecting XPS Parsing Vulnerabilities in Windows Printing Components",
+  "abstract": "Windows printing services remain a notable vector for attacks. Previous studies have predominantly targeted vulnerabilities within various control aspects of printing services, such as spooler services and firmware updates. Yet, we contend that an essential aspect of data processing—the document parser within printer drivers—has been overlooked in past research. We present a coverage-based fuzzing system, PrintXPSurge, specifically crafted to detect weaknesses in the XPS printer driver's parsing function. To craft semantically correct XPS files, we leverage a large language model-assisted repair approach to automate the creation of semantically correct XPS files that comply with necessary constraints. To ensure our fuzzing process effectively interacts with the XPS printer driver, we develop a progressive state reconstruction method that addresses individual dependency requirements across the entire printing service workflow. Furthermore, when a crash is detected, we employ backtracing to confirm its origin in the XPS parser, isolating it from other components in the pipeline. Our evaluation reveals that PrintXPSurge surpasses existing top Windows fuzzers in performance, successfully identifying 102 bugs in 10 drivers from major brands, including 17 zero-day vulnerabilities confirmed by Microsoft and third-party vendors.",
+  "abstract_source_id": "src-abstract-ccs-2025-1ad4193d",
   "venue": "ccs",
   "year": 2025,
   "track_or_session": "Cycle 1",
@@ -232,6 +234,19 @@
         "published-order authors",
         "publication-time affiliations",
         "publication date and page span"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2025-1ad4193d",
+      "url": "https://api.openalex.org/works/doi:10.1145/3719027.3744807?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Error Messages to Fuzzing: Detecting XPS Parsing Vulnerabilities in Windows Printing Components",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:14:34Z",
+      "content_hash": "sha256:8d7ebe9a70c08659a89b0b4aaa929e43e35844c333e2a5d8c483a50f523de143",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

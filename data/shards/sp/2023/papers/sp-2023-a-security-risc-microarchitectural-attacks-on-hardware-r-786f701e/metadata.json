@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2023-a-security-risc-microarchitectural-attacks-on-hardware-r-786f701e",
   "title": "A Security RISC: Microarchitectural Attacks on Hardware RISC-V CPUs",
+  "abstract": "Microarchitectural attacks threaten the security of computer systems even in the absence of software vulnerabilities. Such attacks are well explored on x86 and ARM CPUs, with a wide range of proposed but not-yet deployed hardware countermeasures. With the standardization of the RISC-V instruction set architecture and the announcement of support for the architecture by major processor vendors, RISC-V CPUs are on the verge of becoming ubiquitous. However, the microarchitectural attack surface of the first commercially-available RISC-V hardware CPUs still needs to be explored.This paper analyzes the two commercially-available off-the-shelf 64-bit RISC-V (hardware) CPUs used in most RISC-V systems running a full-fledged commodity Linux system. We evaluate the microarchitectural attack surface and introduce 3 new microarchitectural attack techniques: Cache+Time, a novel cache-line-granular cache attack without shared memory, Flush+Fault exploiting the Harvard cache architecture for Flush+Reload, and CycleDrift exploiting unprivileged access to instruction-retirement information. We also show that many known attacks apply to these RISC-V CPUs, mainly due to non-existing hardware countermeasures and instruction-set subtleties that do not consider the microarchitectural attack surface. We demonstrate our attacks in 6 case studies, including the first RISC-V-specific microarchitectural KASLR break and a CycleDrift-based method for detecting kernel activity. Based on our analysis, we stress the need to consider the microarchitectural attack surface during every step of a CPU design, including custom ISA extensions.",
+  "abstract_source_id": "src-abstract-sp-2023-786f701e",
   "venue": "sp",
   "year": 2023,
   "track_or_session": "Session 8C: Side-channel attacks",
@@ -172,6 +174,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2023-786f701e",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "A Security RISC: Microarchitectural Attacks on Hardware RISC-V CPUs",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:19Z",
+      "content_hash": "sha256:b613162f9e7d53fac5fe410aff94d06ac71f23c6c31e2e9cc362b51e87d1bb79",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

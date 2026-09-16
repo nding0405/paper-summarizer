@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2026-sdcs-in-the-wild-characterizing-and-diagnosing-sdc-defec-4c37e7e9",
   "title": "SDCs in the Wild: Characterizing and Diagnosing SDC-Defective GPUs in Production LLM Training (Operational Systems)",
+  "abstract": "Silent Data Corruption (SDC) has emerged as a critical reliability bottleneck in Large Language Model (LLM) training, where hardware faults are frequently indistinguishable from software anomalies. While standard industry practice relies on synthetic microbenchmarks for fault isolation, our experience shows these methods miss over 60% of defective devices. To understand this gap, we present a comprehensive characterization of 23 SDC-defective GPUs harvested from a large-scale production cluster. Our analysis reveals three key insights: (1) SDCs are not confined to new hardware but often arise later due to aging; (2) SDCs are highly data-dependent and unit-specific, meaning devices that pass general stress tests often fail under specific training input data; and (3) standard ECC and thermal protections fail to capture these logic-level bit flips. Driven by these findings, we propose SDCHunter, an automated diagnosis system for detecting SDC-defective GPUs in a large-scale training cluster. Instead of relying on generic benchmarks, SDCHunter employs execution replay with the exact training workload and input data that triggered the failure. Deployed at ByteDance, SDCHunter successfully mitigated 40 SDC incidents in production.",
+  "abstract_source_id": "src-abstract-osdi-2026-4c37e7e9",
   "venue": "osdi",
   "year": 2026,
   "track_or_session": "Training Reliability and Silent Errors",
@@ -461,6 +463,19 @@
       "official": true,
       "supports": [
         "Official proceedings availability and canonical conference versions."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2026-4c37e7e9",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/zheng",
+      "kind": "paper-page",
+      "title": "SDCs in the Wild: Characterizing and Diagnosing SDC-Defective GPUs in Production LLM Training (Operational Systems)",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:08:55Z",
+      "content_hash": "sha256:94f42bd749d3a82633f418d3a22e84b77caed8b638e351f23a94f79fe06fd517",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

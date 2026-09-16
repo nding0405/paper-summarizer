@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2025-clibe-detecting-dynamic-backdoors-in-transformer-based-n-7a9f0de7",
   "title": "CLIBE: Detecting Dynamic Backdoors in Transformer-based NLP Models",
+  "abstract": "Backdoors can be injected into NLP models to induce misbehavior when the input text contains a specific feature, known as a trigger, which the attacker secretly selects. Unlike fixed tokens, words, phrases, or sentences used in the textit{static} text trigger, textit{dynamic} backdoor attacks on NLP models design triggers associated with abstract and latent text features (e.g., style), making them considerably stealthier than traditional static backdoor attacks. However, existing research on NLP backdoor detection primarily focuses on defending against static backdoor attacks, while research on detecting dynamic backdoors in NLP models remains largely unexplored.\n\nThis paper presents CLIBE, the first framework to detect dynamic backdoors in Transformer-based NLP models. At a high level, CLIBE injects a textit{\"few-shot perturbation\"} into the suspect Transformer model by crafting an optimized weight perturbation in the attention layers to make the perturbed model classify a limited number of reference samples as a target label. Subsequently, CLIBE leverages the textit{generalization} capability of this \"few-shot perturbation\" to determine whether the original suspect model contains a dynamic backdoor. Extensive evaluation on three advanced NLP dynamic backdoor attacks, two widely-used Transformer frameworks, and four real-world classification tasks strongly validates the effectiveness and generality of CLIBE. We also demonstrate the robustness of CLIBE against various adaptive attacks. Furthermore, we employ CLIBE to scrutinize 49 popular Transformer models on Hugging Face and discover one model exhibiting a high probability of containing a dynamic backdoor. We have contacted Hugging Face and provided detailed evidence of the backdoor behavior of this model. Moreover, we show that CLIBE can be easily extended to detect backdoor text generation models (e.g., GPT-Neo-1.3B) that are modified to exhibit toxic behavior. To the best of our knowledge, CLIBE is the first framework capable of detecting backdoors in text generation models without requiring access to trigger input test samples. The code is available at https://github.com/Raytsang123/CLIBE.",
+  "abstract_source_id": "src-abstract-ndss-2025-7a9f0de7",
   "venue": "ndss",
   "year": 2025,
   "track_or_session": "Summer submission cycle",
@@ -189,6 +191,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2025-7a9f0de7",
+      "url": "https://www.ndss-symposium.org/ndss-paper/clibe-detecting-dynamic-backdoors-in-transformer-based-nlp-models/",
+      "kind": "paper-page",
+      "title": "CLIBE: Detecting Dynamic Backdoors in Transformer-based NLP Models",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:19:19Z",
+      "content_hash": "sha256:0f36621bf197f4441b6795ca4765c2e49571441c25c4a5d11d24157785c99b03",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

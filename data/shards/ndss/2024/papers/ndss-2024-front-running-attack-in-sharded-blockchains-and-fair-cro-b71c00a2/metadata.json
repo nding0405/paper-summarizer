@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2024-front-running-attack-in-sharded-blockchains-and-fair-cro-b71c00a2",
   "title": "Front-running Attack in Sharded Blockchains and Fair Cross-shard Consensus",
+  "abstract": "Sharding is a prominent technique for scaling blockchains. By dividing the network into smaller components known as shards, a sharded blockchain can process transactions in parallel without introducing inconsistencies through the coordination of intra-shard and cross-shard consensus protocols. However, we observe a critical security issue with sharded systems: transaction ordering manipulations can occur when coordinating intra-shard and cross-shard consensus protocols, leaving the system vulnerable to attack. Specifically, we identify a novel security issue known as finalization fairness, which can be exploited through a front-running attack. This attack allows an attacker to manipulate the execution order of transactions, even if the victim's transaction has already been processed and added to the blockchain by a fair intra-shard consensus.\n\nTo address the issue, we offer Haechi, a novel cross-shard protocol that is immune to front-running attacks. Haechi introduces an ordering phase between transaction processing and execution, ensuring that the execution order of transactions is the same as the processing order and achieving finalization fairness. To accommodate different consensus speeds among shards, Haechi incorporates a finalization fairness algorithm to achieve a globally fair order with minimal performance loss. By providing a global order, Haechi ensures strong consistency among shards, enabling better parallelism in handling conflicting transactions across shards. These features make Haechi a promising solution for supporting popular smart contracts in the real world. To evaluate Haechi's performance and effectiveness in preventing the attack, we implemented the protocol using Tendermint and conducted extensive experiments on a geo-distributed AWS environment. Our results demonstrate that Haechi can effectively prevent the presented front-running attack with little performance sacrifice compared to existing cross-shard consensus protocols.",
+  "abstract_source_id": "src-abstract-ndss-2024-b71c00a2",
   "venue": "ndss",
   "year": 2024,
   "track_or_session": "Summer submission cycle",
@@ -189,6 +191,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2024-b71c00a2",
+      "url": "https://www.ndss-symposium.org/ndss-paper/front-running-attack-in-sharded-blockchains-and-fair-cross-shard-consensus/",
+      "kind": "paper-page",
+      "title": "Front-running Attack in Sharded Blockchains and Fair Cross-shard Consensus",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:18:07Z",
+      "content_hash": "sha256:42880170ab239a4cf6924bf52bf07a33086e4cac91c56f4aefa5112cd5ea78ae",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

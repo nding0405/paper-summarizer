@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2026-writeguards-distributed-storage-support-for-strongly-con-b3569ebd",
   "title": "WriteGuards: Distributed Storage Support for Strongly Consistent Caches",
+  "abstract": "This paper presents a set of in-process and remote distributed caches for datacenter environments, CLINK and CRINK respectively, that provide linearizable reads entirely from memory without contacting storage. These caches remain loosely coupled to the storage layer and achieve high performance, scale, and availability by cooperating with auto-sharders and by tracking consistency metadata at the granularity of key ranges rather than individual keys. To our knowledge, CLINK is the first distributed linked cache that delivers scalable, linearizable reads from memory while remaining loosely coupled with storage. At the heart of these caches is a lightweight storage primitive called WriteGuards that can be easily added to a distributed store. WriteGuards prevent a subtle race we call the delayed-writes anomaly arising during changes in ownership of key ranges. Each write carries a small fencing value tied to the current owner, and the storage system checks this value to reject delayed writes. WriteGuards apply to key ranges instead of individual keys for scalability, add only a conditional check on the write path, and require no coordination on reads. We implemented our cache designs on TiDB. The in-process cache CLINK cuts tail read latency by three orders of magnitude, and the remote cache CRINK reduces it by 2.2−2.4× relative to direct storage access and existing strongly consistent remote caches.",
+  "abstract_source_id": "src-abstract-osdi-2026-b3569ebd",
   "venue": "osdi",
   "year": 2026,
   "track_or_session": "A Coherent, Consistent Session on Caching",
@@ -209,6 +211,19 @@
       "official": true,
       "supports": [
         "Official proceedings availability and canonical conference versions."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2026-b3569ebd",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/mao-ziming-writeguards",
+      "kind": "paper-page",
+      "title": "WriteGuards: Distributed Storage Support for Strongly Consistent Caches",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:09:19Z",
+      "content_hash": "sha256:f5c54bf6c00947a21b2dc75812c184aefbd653ad27907d9252ff80b17ce13fcb",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

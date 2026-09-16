@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2026-pushtap-pim-based-in-memory-htap-with-unified-data-stora-aeb82232",
   "title": "PUSHtap: PIM-based In-Memory HTAP with Unified Data Storage Format",
+  "abstract": "Hybrid transaction/analytical processing (HTAP) is an emerging database paradigm that supports both online transaction processing (OLTP) and online analytical processing (OLAP) workloads. Computing-intensive OLTP operations, involving row-wise data manipulation, are suitable for row-store format. In contrast, memory-intensive OLAP operations, which are column-centric, benefit from column-store format. This data-format dilemma prevents HTAP systems from concurrently achieving three design goals: performance isolation, data freshness, and workload-specific optimization. Another background technology is Processing-in-Memory (PIM), which integrates computing units (PIM units) inside DRAM memory devices to accelerate memory-intensive workloads, including OLAP. Our key insight is to combine the interleaved CPU access and localized PIM unit access to provide two-dimensional access to address the data format contradictions inherent in HTAP. First, we propose a unified data storage format with novel data alignment and placement techniques to optimize the effective bandwidth of CPUs and PIM units and exploit the PIM's parallelism. Second, we implement the multi-version concurrency control (MVCC) essential for single-instance HTAP. Third, we extend the commercial PIM architecture to support the OLAP operations and concurrent access from PIM and CPU. Experiments show that PUSHtap can achieve 3.4X/4.4X OLAP/OLTP throughput improvement compared to multi-instance PIM-based design.",
+  "abstract_source_id": "src-abstract-asplos-2026-aeb82232",
   "venue": "asplos",
   "year": 2026,
   "track_or_session": "Session 4D: Processing-in-Memory",
@@ -236,6 +238,19 @@
       "official": false,
       "supports": [
         "Indexed abstract used for strict relevance classification and indexed arXiv identifier where available."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2026-aeb82232",
+      "url": "https://api.openalex.org/works/doi:10.1145/3676642.3736120?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "PUSHtap: PIM-based In-Memory HTAP with Unified Data Storage Format",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:05:42Z",
+      "content_hash": "sha256:cf3d3c2c77b239bd769fe7a30b18265091bee2ef7fe1bf0ba670548ad160202c",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

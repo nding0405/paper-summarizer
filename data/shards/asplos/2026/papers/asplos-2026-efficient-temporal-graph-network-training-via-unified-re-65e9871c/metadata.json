@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2026-efficient-temporal-graph-network-training-via-unified-re-65e9871c",
   "title": "Efficient Temporal Graph Network Training via Unified Redundancy Elimination",
+  "abstract": "Temporal Graph Network (TGN) is increasingly adopted to model evolving relationships in dynamic graphs. However, the training pipeline is plagued by pervasive redundancy in computation, storage, and data loading. These redundancies harm computational efficiency, exacerbate memory pressure, and induce excessive CPU-GPU data transfers. We present PULSE, an end-to-end TGN training framework that systematically eliminates redundancies guided by a unified minimal-unit principle. To realize such principle, PULSE defines three synergetic units: 1) the Minimal Input Unit (MIU) for component-wise deduplication and operator-level reconstruction of redundant computations, 2) the Minimal Storage Unit (MSU) for dependency-guided message reconstruction, only preserving irreproducible entries while enabling on-demand recovery of others, and 3) the Minimal Reuse Unit (MRU) for GPU memory management, combining a BlockPool-based buffer allocator with a bipartite temporal reuse strategy to mitigate fragmentation and exploit inter-batch locality. Experimental results on representative benchmarks demonstrate that PULSE improves training throughput by up to 6.67× over the state-of-the-art baselines.",
+  "abstract_source_id": "src-abstract-asplos-2026-65e9871c",
   "venue": "asplos",
   "year": 2026,
   "track_or_session": "Session 6C: Graph & Sparse Computing",
@@ -293,6 +295,19 @@
       "official": false,
       "supports": [
         "Indexed abstract used for strict relevance classification and indexed arXiv identifier where available."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2026-65e9871c",
+      "url": "https://api.openalex.org/works/doi:10.1145/3779212.3790157?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Efficient Temporal Graph Network Training via Unified Redundancy Elimination",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:05:25Z",
+      "content_hash": "sha256:d5acb72fa30d8be6ac29ecca4f4f28adc7a606ea06a06f803dccae0c1055fb04",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

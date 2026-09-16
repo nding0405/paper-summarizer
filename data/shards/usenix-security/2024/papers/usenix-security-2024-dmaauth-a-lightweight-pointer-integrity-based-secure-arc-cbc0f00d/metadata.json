@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2024-dmaauth-a-lightweight-pointer-integrity-based-secure-arc-cbc0f00d",
   "title": "DMAAUTH: A Lightweight Pointer Integrity-based Secure Architecture to Defeat DMA Attacks",
+  "abstract": "IOMMU has been introduced to thwart DMA attacks. However, the performance degradation prevents it from being enabled on most systems. Even worse, recent studies show that IOMMU is still vulnerable to sub-page and deferred invalidation attacks, posing threats to systems with IOMMU enabled.\n\nThis paper aims to provide a lightweight and secure solution to defend against DMA attacks. Based on our measurement and characterizing of DMA behavior, we propose DMAAUTH, a lightweight pointer integrity-based hardware-software co-design architecture. DMAAUTH utilizes a novel technique named Arithmetic-capable Pointer AuthentiCation (APAC), which protects the DMA pointer integrity while supporting pointer arithmetic. It also places a dedicated hardware named Authenticator on the bus to authenticate all the DMA transactions. Combining APAC, per-mapping metadata, and the Authenticator, DMAAUTH achieves strict byte-grained spatial protection and temporal protection.\n\nWe implement DMAAUTH on a real FPGA hardware board. Specifically, we first realize a PCIe-customizable SoC on real FPGA, based on which we implement hardware version DMAAUTH and conduct a thorough evaluation. We also implement DMAAUTH on both ARM and RISC-V emulators to demonstrate its cross-architecture capability. Our evaluation shows that DMAAUTH is faster and safer than IOMMU while being transparent to devices, drivers, and IOMMU.",
+  "abstract_source_id": "src-abstract-usenix-security-2024-cbc0f00d",
   "venue": "usenix-security",
   "year": 2024,
   "track_or_session": "Hardware Security II: Architecture and Microarchitecture",
@@ -154,6 +156,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2024-cbc0f00d",
+      "url": "https://www.usenix.org/conference/usenixsecurity24/presentation/wang-xingkai",
+      "kind": "paper-page",
+      "title": "DMAAUTH: A Lightweight Pointer Integrity-based Secure Architecture to Defeat DMA Attacks",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:14:50Z",
+      "content_hash": "sha256:ec75cb362a99e83286b0d6980c6ab11f242784505a77ab5acf1f2f48642f53b1",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

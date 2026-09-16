@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-concretely-efficient-blind-signatures-based-on-vole-in-t-c7b36bc1",
   "title": "Concretely Efficient Blind Signatures Based on VOLE-in-the-Head Proofs and the MAYO Trapdoor",
+  "abstract": "Blind signatures (Chaum, CRYPTO 82) are important building blocks in many privacy-preserving applications, such as anonymous credentials or e-cash schemes. Recent years saw a strong interest in building Blind signatures from post-quantum assumptions, primarily from lattices. While performance has improved, no construction has reached practical efficiency in terms of computation and communication. The state of the art requires at least 20 KB size of communication for each showing of a lattice-based Blind signature to a verifier, and more than 100 ms in prover time.\n\nIn this work, we propose an alternative direction with a plausibly post-quantum Blind signature scheme called PoMFRIT. It builds on top of the VOLE-in-the-head Zero-Knowledge proof system (Baum et al. CRYPTO 2023), which we combine with the MAYO digital signature scheme (Beullens, SAC 2021). We implement multiple versions of PoMFRIT to demonstrate security and performance trade-offs, and provide detailed benchmarks of our constructions. Signature issuance requires (0.45) KB communication for Blind signatures of size (6.7) KB. Showing a Blind signature can be done in <76 ms even for a conservative construction with 128 bit security. As a building block for our Blind signature scheme, we implement the first VOLE-in-the-head proof for hash functions in the SHA-3 family, which we consider of independent interest.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-c7b36bc1",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Applications of Cryptography 7",
@@ -156,6 +158,19 @@
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening",
         "prepublication PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-c7b36bc1",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/baum",
+      "kind": "paper-page",
+      "title": "Concretely Efficient Blind Signatures Based on VOLE-in-the-Head Proofs and the MAYO Trapdoor",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:23:26Z",
+      "content_hash": "sha256:cfa0648379625c745e0d8b2028dadadb4e08ab02c471235cdbda11b38a70e1d7",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

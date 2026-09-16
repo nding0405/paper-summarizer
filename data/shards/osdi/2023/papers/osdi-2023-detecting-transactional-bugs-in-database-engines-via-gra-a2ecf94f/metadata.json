@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2023-detecting-transactional-bugs-in-database-engines-via-gra-a2ecf94f",
   "title": "Detecting Transactional Bugs in Database Engines via Graph-Based Oracle Construction",
+  "abstract": "Transactions are an important feature of database management systems (DBMSs), as they provide the ACID guarantees for a sequence of database operations. Consequently, approaches have been proposed to automatically find transactional bugs in DBMSs. However, they cannot handle complex operations and predicates common in real-world database queries, and thus miss bugs.\n\nThis paper introduces a general, effective technique for finding transactional bugs in DBMSs that supports complex SQL queries and predicates. At the conceptual level, we address the test-oracle problem by constructing semantically-equivalent test cases based on fine-grained statement-level dependencies in transactions. At the technical level, we introduce (1) statement-dependency graphs to describe dependencies among SQL statements in transactions, (2) SQL-level instrumentation to capture possible statement-level dependencies, and (3) transactional oracle construction to generate semantically-equivalent test cases using statement-dependency graphs. We also establish the correctness of our approach in generating semantically-equivalent test cases. We have realized our technique as a tool, TxCheck, and evaluated it on three widely-used and well-tested DBMSs, namely TiDB, MySQL, and MariaDB. In total, TxCheck found 56 unique bugs, 52 of which have been confirmed and 18 already fixed. We believe that TxCheck can help solidify DBMSs’ support for transactions thanks to its generality and effectiveness.",
+  "abstract_source_id": "src-abstract-osdi-2023-a2ecf94f",
   "venue": "osdi",
   "year": 2023,
   "track_or_session": "Query Your Bits",
@@ -159,6 +161,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2023-a2ecf94f",
+      "url": "https://www.usenix.org/conference/osdi23/presentation/jiang",
+      "kind": "paper-page",
+      "title": "Detecting Transactional Bugs in Database Engines via Graph-Based Oracle Construction",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:06:27Z",
+      "content_hash": "sha256:76d45aea246f91563cae8d0d5b5500bb186f7dc1d51a9926a81d6a99ca8b5738",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

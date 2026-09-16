@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2026-beyond-rtt-an-adversarially-robust-two-tiered-approach-f-f1a8f25f",
   "title": "Beyond RTT: An Adversarially Robust Two-Tiered Approach For Residential Proxy Detection",
+  "abstract": "Residential IP proxy networks have reached unprecedented scale, yet they pose significant security risks by enabling malicious activities such as fraud, web scraping, and sophisticated cyberattacks while masking traffic behind legitimate home addresses. Existing detection approaches rely primarily on cross-layer Round-Trip Time (RTT) discrepancies, but we demonstrate these methods are fundamentally flawed: simple traffic scheduling attacks can reduce detection recall from 99% to just 8%, rendering state-of-the-art techniques unreliable against basic adversarial evasion. To address this critical vulnerability, we introduce novel traffic analysis and flow-correlation features that accurately capture the characteristics of gateway and relayed traffic, moving beyond vulnerable timing-based approaches. We further develop textit{CorrTransform}, a Transformer-based deep learning architecture engineered for maximum adversarial resilience. This enables two complementary detection strategies: a lightweight approach using engineered features for efficient large-scale detection, and a heavyweight deep learning approach for high-assurance in adversarial settings. We validate our methods through a comprehensive analysis of Bright Data's EarnApp using 15 months of traffic data (900GB) encompassing over 110,000 proxy connections. Our two-tiered framework enables ISPs to identify proxyware devices with >98% precision/recall and classify individual connections with 99% precision/recall under normal conditions, while maintaining >92% F1 score against sophisticated attacks, including scheduling, padding, and packet reshaping where existing methods completely fail. For content providers, our approach achieves near-perfect recall with",
+  "abstract_source_id": "src-abstract-ndss-2026-f1a8f25f",
   "venue": "ndss",
   "year": 2026,
   "track_or_session": "Fall submission cycle",
@@ -181,6 +183,19 @@
       "official": false,
       "supports": [
         "independent proceedings identity reconciliation"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2026-f1a8f25f",
+      "url": "https://www.ndss-symposium.org/ndss-paper/beyond-rtt-an-adversarially-robust-two-tiered-approach-for-residential-proxy-detection/",
+      "kind": "paper-page",
+      "title": "Beyond RTT: An Adversarially Robust Two-Tiered Approach For Residential Proxy Detection",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:21:22Z",
+      "content_hash": "sha256:e3ede3d4ae951b8813cdcd37500ba5b9319387a97215427b65560d2f82c56d68",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

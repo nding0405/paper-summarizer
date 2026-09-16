@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2023-speculation-at-fault-modeling-and-testing-microarchitect-8d1aa15b",
   "title": "Speculation at Fault: Modeling and Testing Microarchitectural Leakage of CPU Exceptions",
+  "abstract": "Microarchitectural leakage models provide effective tools to prevent vulnerabilities such as Spectre and Meltdown via secure co-design: For software, they provide a foundation for secure compilation and verification; for hardware, they provide a target specification to test and verify against.\n\nUnfortunately, existing leakage models are severely limited: None of them covers CPU exceptions, which are essential to implement security abstractions such as virtualization and memory protection, and which are the source of critical vulnerabilities such as Meltdown, MDS, and Foreshadow.\n\nIn this paper, we provide the first leakage models for CPU exceptions, together with new tools for testing black-box CPUs against them. We run extensive experiments and successively refine these models, until we precisely capture the leakage for a representative subset of exceptions on four different x86 microarchitectures.\n\nIn the process, we contradict, refine, and corroborate a large number of findings from prior work, and we uncover three novel transient leaks affecting stores to non-canonical addresses, stores to read-only memory, and divisions by zero.",
+  "abstract_source_id": "src-abstract-usenix-security-2023-8d1aa15b",
   "venue": "usenix-security",
   "year": 2023,
   "track_or_session": "Speculation Doesn't Pay",
@@ -154,6 +156,19 @@
       "official": true,
       "supports": [
         "authors, affiliations when published, abstract, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2023-8d1aa15b",
+      "url": "https://www.usenix.org/conference/usenixsecurity23/presentation/hofmann",
+      "kind": "paper-page",
+      "title": "Speculation at Fault: Modeling and Testing Microarchitectural Leakage of CPU Exceptions",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:13:03Z",
+      "content_hash": "sha256:1adc63f272e1a1dabae73cc46cc0dcfc40571904c2528a88ed2cedc923658c5f",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

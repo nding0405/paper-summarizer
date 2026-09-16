@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2024-on-bridging-the-gap-between-control-flow-integrity-and-a-27ece33b",
   "title": "On Bridging the Gap between Control Flow Integrity and Attestation Schemes",
+  "abstract": "Control-flow hijacking attacks are still a major challenge in software security. Several means of protection and detection have been proposed but gaps still exist. To bridge such gaps, major processor manufacturers have designed and implemented several hardware security extensions in the new generations of processors. High-profile examples include Pointer Authentication (PA) and Branch Target Identification (BTI) technologies that are supported in the ARMv8.5-A processor architecture. Nevertheless, the direct enablement of these technologies would only provide coarse-grained security guarantees without any trustworthy evidence of runtime integrity.\n\nTo fill this gap, we propose CFA+, a practical hardware-assisted control flow attestation mechanism with prevention capabilities. CFA+ leverages the ARMv8.5-A's BTI security extension along with selective software instrumentation to enable lightweight always-on monitoring of the execution state without the need to maintain in-memory control-flow logs. The hybrid policy of CFA+ allows for either immediate prevention or quick detection of control-flow hijacks while providing trustworthy evidence of the runtime integrity status. CFA+ provides fine-grained security guarantees to complex software stacks while maintaining a high level of efficiency and scalability, surpassing state-of-the-art solutions. Our evaluation results show that CFA+ incurs less than 3% of runtime overhead on average when applied to a wide range of benchmark applications including SPEC CPU2006 suite and nginx.",
+  "abstract_source_id": "src-abstract-usenix-security-2024-27ece33b",
   "venue": "usenix-security",
   "year": 2024,
   "track_or_session": "IoT and CPS",
@@ -112,6 +114,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2024-27ece33b",
+      "url": "https://www.usenix.org/conference/usenixsecurity24/presentation/ammar",
+      "kind": "paper-page",
+      "title": "On Bridging the Gap between Control Flow Integrity and Attestation Schemes",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:16:25Z",
+      "content_hash": "sha256:2e225d653a722bae2e1e008773addd633acc15fbccad4d7c8588936f6f8b7cbf",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

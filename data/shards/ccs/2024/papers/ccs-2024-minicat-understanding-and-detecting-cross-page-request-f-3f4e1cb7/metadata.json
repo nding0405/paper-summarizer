@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2024-minicat-understanding-and-detecting-cross-page-request-f-3f4e1cb7",
   "title": "MiniCAT: Understanding and Detecting Cross-Page Request Forgery Vulnerabilities in Mini-Programs",
+  "abstract": "Mini-programs are lightweight apps running in super apps (such as WeChat, Baidu, Alipay, and TikTok), an emerging paradigm in the era of mobile computing. With the growing popularity of mini-programs, there is an increasing concern for their security and privacy. In essence, mini-programs are WebView-based apps. This means that they may be vulnerable to the same security risks associated with web apps. In this work, we discovered a new mini-program vulnerability called MiniCPRF (Cross-Page Request Forgery in Mini-Programs). The exploit of this vulnerability is easy, and the attack consequences are severe, leading to unauthorized operations, such as free shopping, and the exposure of confidential information, such as credit card numbers. The root causes of MiniCPRF can be attributed to multiple design flaws in both mini-programs and their super apps, including the insecure routing mechanism, lack of message integrity check, and plain-text storage. To evaluate the impacts of MiniCPRF, we designed an automated analysis framework called MiniCAT. It can automatically crawl mini-programs, perform static analysis on them, and generate detection reports. In large-scale real-world evaluations with MiniCAT, we identified that 32.0% (13,349/41,726) of analyzable mini-programs are potentially vulnerable to MiniCPRF, including some famous ones with millions of users, such as Sohu and Wenjuanxing. Following the responsible disclosure principle, we have reported verified vulnerable mini-programs to the corresponding vendors and developers, and three real-world cases have been confirmed by CNVD. Additionally, we suggest mitigation strategies to resolve the security issue related to MiniCPRF.",
+  "abstract_source_id": "src-abstract-ccs-2024-3f4e1cb7",
   "venue": "ccs",
   "year": 2024,
   "track_or_session": "Cycle 1",
@@ -269,6 +271,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2024-3f4e1cb7",
+      "url": "https://api.openalex.org/works/doi:10.1145/3658644.3670294?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "MiniCAT: Understanding and Detecting Cross-Page Request Forgery Vulnerabilities in Mini-Programs",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:11:01Z",
+      "content_hash": "sha256:7e13e8b7fb52ef9cb399142e69b18e7b88ebb0ee409fe0533c78ea3638ca73b3",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-dns-cache-poisoning-like-it-s-2006-82959179",
   "title": "DNS Cache Poisoning Like it's 2006",
+  "abstract": "The Domain Name System (DNS) underpins virtually all Internet services, making the integrity of DNS resolution critical to security and availability. We present a comprehensive study of a novel class of DNS cache poisoning attacks against BIND9,the most widely deployed open-source DNS resolver. Our attack focuses on two keycapabilities that set it apart from most prior work: (1) reliably predicting both critical challenge parameters– the UDP source port and TXID– whereas most existing attacks target only one; and (2) performing this prediction entirely from the client side, without attacker-operated authoritative servers for attacker domains, which to our knowledge is a first. We achieve this by exploiting weaknesses in BIND's pseudo-random number generation, enabling highly reliable prediction even under realistic network conditions. In addition to the client-side-only techniques, we also develop server-side techniques which are needed in order to attack the older 9.18 branch of BIND 9. We evaluate our attacks and demonstrate practical success rates across multiple BIND 9 release branches and configurations. All vulnerabilities were responsibly disclosed to the Internet Systems Consortium (ISC) and the FreeBSD Project, leading to two patches and CVEs and acknowledgments.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-82959179",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Network Security 4",
@@ -93,6 +95,19 @@
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening",
         "prepublication PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-82959179",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/ben-simhon",
+      "kind": "paper-page",
+      "title": "DNS Cache Poisoning Like it's 2006",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:23:43Z",
+      "content_hash": "sha256:1239e338ff0a6b9bf955c229f150c2f3712f81957c3ef8a1073df724ab954c54",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

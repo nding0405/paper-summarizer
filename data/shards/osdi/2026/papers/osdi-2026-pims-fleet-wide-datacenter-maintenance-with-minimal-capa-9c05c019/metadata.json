@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2026-pims-fleet-wide-datacenter-maintenance-with-minimal-capa-9c05c019",
   "title": "PIMS: Fleet-Wide Datacenter Maintenance with Minimal Capacity Buffer and Predictable Latency (Operational Systems)",
+  "abstract": "Maintenance is a fundamental operation in datacenters to ensure that hardware and software operate correctly, efficiently and use up-to-date versions. We present Meta’s maintenance system in production over the last five years that provides continuous support to tens of thousands of services running on our fleet of millions of servers and seamlessly orchestrates this process. To our knowledge, this is the first paper to discuss predictable maintenance at scale.\n\nThe key challenge is how to minimize the capacity buffer—servers reserved to absorb capacity loss caused by maintenance—while providing a predictable latency to maintenance operations. This paper presents a series of strategies and techniques we use to accomplish this goal, such as aligning maintenance with fault domains, placing hardware evenly across fault domains, a maintenance contract among participating parties, etc. Indicatively, we observe that these techniques have helped us reduce the size of the capacity buffer by about 15% in one quarter of 2025 and allowed us to perform a fleet-wide deployment under targeted SLOs (e.g., 45 days for a new OS, 90 days for a new firmware).",
+  "abstract_source_id": "src-abstract-osdi-2026-9c05c019",
   "venue": "osdi",
   "year": 2026,
   "track_or_session": "Fleet and Cluster Scheduling",
@@ -482,6 +484,19 @@
       "official": true,
       "supports": [
         "Official proceedings availability and canonical conference versions."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2026-9c05c019",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/leonhardi",
+      "kind": "paper-page",
+      "title": "PIMS: Fleet-Wide Datacenter Maintenance with Minimal Capacity Buffer and Predictable Latency (Operational Systems)",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:08:46Z",
+      "content_hash": "sha256:3e04c12c7b800153add0e4605cc98cf77c6dd77b94df539edf9349388ca6fba7",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2023-pond-cxl-based-memory-pooling-systems-for-cloud-platform-f49eae43",
   "title": "Pond: CXL-Based Memory Pooling Systems for Cloud Platforms",
+  "abstract": "Public cloud providers seek to meet stringent performance requirements and low hardware cost. A key driver of performance and cost is main memory. Memory pooling promises to improve DRAM utilization and thereby reduce costs. However, pooling is challenging under cloud performance requirements. This paper proposes Pond, the first memory pooling system that both meets cloud performance goals and significantly reduces DRAM cost. Pond builds on the Compute Express Link (CXL) standard for load/store access to pool memory and two key insights. First, our analysis of cloud production traces shows that pooling across 8-16 sockets is enough to achieve most of the benefits. This enables a small-pool design with low access latency. Second, it is possible to create machine learning models that can accurately predict how much local and pool memory to allocate to a virtual machine (VM) to resemble same-NUMA-node memory performance. Our evaluation with 158 workloads shows that Pond reduces DRAM costs by 7% with performance within 1-5% of same-NUMA-node VM allocations.",
+  "abstract_source_id": "src-abstract-asplos-2023-f49eae43",
   "venue": "asplos",
   "year": 2023,
   "track_or_session": "Session 9A: Disaggregated Memory",
@@ -341,6 +343,19 @@
       "official": false,
       "supports": [
         "Indexed abstract used with the official technical-session context for relevance classification, plus alternate-copy and explicitly printed ancillary links."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2023-f49eae43",
+      "url": "https://api.openalex.org/works/doi:10.1145/3575693.3578835?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Pond: CXL-Based Memory Pooling Systems for Cloud Platforms",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T21:59:38Z",
+      "content_hash": "sha256:8c8f2ab3efb7d0a2db9461e4eb5c4b8e0ab0c1344789a79529ae82f6f267c468",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

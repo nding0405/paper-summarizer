@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sosp-2023-paella-low-latency-model-serving-with-software-defined-g-df7ea2bf",
   "title": "Paella: Low-latency Model Serving with Software-defined GPU Scheduling",
+  "abstract": "Model serving systems play a critical role in multiplexing machine learning inference jobs across shared GPU infrastructure. These systems have traditionally sat at a high level of abstraction---receiving jobs from clients through a narrow API and relying on black-box GPU scheduling mechanisms when dispatching them. Fundamental limitations in the built-in GPU hardware scheduler, in particular, can lead to inefficiency when executing concurrent jobs. The current abstraction level also incurs system overheads that are similarly most significant when the GPU is heavily shared. In this paper, we argue for co-designing the model compiler, local clients, and the scheduler to bypass the built-in GPU scheduler and enable software control of kernel execution order. Doing so enables the use of arbitrary scheduling algorithms and reduces system overheads throughout the critical path of inference.",
+  "abstract_source_id": "src-abstract-sosp-2023-df7ea2bf",
   "venue": "sosp",
   "year": 2023,
   "track_or_session": "Session 10: Learning II",
@@ -125,6 +127,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-sosp-2023-df7ea2bf",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Paella: Low-latency Model Serving with Software-defined GPU Scheduling",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:12Z",
+      "content_hash": "sha256:aa9c23a45f6ec9973f40e6c9520c69d42bb49fc1f526891570edfdb1976cff82",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

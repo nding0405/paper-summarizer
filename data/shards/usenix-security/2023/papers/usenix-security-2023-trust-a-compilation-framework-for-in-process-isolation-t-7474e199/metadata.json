@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2023-trust-a-compilation-framework-for-in-process-isolation-t-7474e199",
   "title": "TRust: A Compilation Framework for In-process Isolation to Protect Safe Rust against Untrusted Code",
+  "abstract": "Rust was invented to help developers build highly safe systems. It comes with a variety of programming constructs that put emphasis on safety and control of memory layout. Rust enforces strict discipline about a type system and ownership model to enable compile-time checks of all spatial and temporal safety errors. Despite this advantage in security, the restrictions imposed by Rust’s type system make it difficult or inefficient to express certain designs or computations. To ease or simplify their programming, developers thus often include untrusted code from unsafe Rust or external libraries written in other languages. Sadly, the programming practices embracing such untrusted code for flexibility or efficiency subvert the strong safety guarantees by safe Rust. This paper presents TRUST, a compilation framework which against untrusted code present in the program, provides trustworthy protection of safe Rust via in-process isolation. Its main strategy is allocating objects in an isolated memory region that is accessible to safe Rust but restricted from being written by the untrusted. To enforce this, TRUST employs software fault isolation and x86 protection keys. It can be applied directly to any Rust code without requiring manual changes. Our experiments reveal that TRUST is effective and efficient, incurring runtime overhead of only 7.55% and memory overhead of 13.30% on average when running 11 widely used crates in Rust.",
+  "abstract_source_id": "src-abstract-usenix-security-2023-7474e199",
   "venue": "usenix-security",
   "year": 2023,
   "track_or_session": "Language-Based Security",
@@ -133,6 +135,19 @@
       "official": true,
       "supports": [
         "authors, affiliations when published, abstract, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2023-7474e199",
+      "url": "https://www.usenix.org/conference/usenixsecurity23/presentation/bang",
+      "kind": "paper-page",
+      "title": "TRust: A Compilation Framework for In-process Isolation to Protect Safe Rust against Untrusted Code",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:13:27Z",
+      "content_hash": "sha256:d56220b807f6de401c6441f6595cb2d96f2dde422d35cf91280feb62d2fe9df0",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

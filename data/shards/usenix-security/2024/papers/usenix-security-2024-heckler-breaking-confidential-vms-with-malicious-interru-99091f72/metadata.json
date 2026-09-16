@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2024-heckler-breaking-confidential-vms-with-malicious-interru-99091f72",
   "title": "HECKLER: Breaking Confidential VMs with Malicious Interrupts",
+  "abstract": "Hardware-based Trusted execution environments (TEEs) offer an isolation granularity of virtual machine abstraction. They provide confidential VMs (CVMs) that host security-sensitive code and data. AMD SEV-SNP and Intel TDX enable CVMs and are now available on popular cloud platforms. The untrusted hypervisor in these settings is in control of several resource management and configuration tasks, including interrupts. We present HECKLER, a new attack wherein the hypervisor injects malicious non-timer interrupts to break the confidentiality and integrity of CVMs. Our insight is to use the interrupt handlers that have global effects, such that we can manipulate a CVM's register states to change the data and control flow. With AMD SEV-SNP and Intel TDX, we demonstrate HECKLER on OpenSSH and sudo to bypass authentication. On AMD SEV-SNP we break execution integrity of C, Java, and Julia applications that perform statistical and text analysis. We explain the gaps in current defenses and outline guidelines for future defenses.",
+  "abstract_source_id": "src-abstract-usenix-security-2024-99091f72",
   "venue": "usenix-security",
   "year": 2024,
   "track_or_session": "Cloud Security",
@@ -154,6 +156,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2024-99091f72",
+      "url": "https://www.usenix.org/conference/usenixsecurity24/presentation/schl%C3%BCter",
+      "kind": "paper-page",
+      "title": "HECKLER: Breaking Confidential VMs with Malicious Interrupts",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:15:31Z",
+      "content_hash": "sha256:7f07812d05f3a05d08c84beb6c9718a59689b65cb21a3b70d1cb44334603f1a1",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

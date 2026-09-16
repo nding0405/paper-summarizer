@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2026-fractal-fault-tolerant-shell-script-distribution-8f404aba",
   "title": "Fractal: Fault-Tolerant Shell-Script Distribution",
+  "abstract": "This paper presents FRACTAL, a new system that offers fault tolerant distributed shell script execution for unmodified scripts. FRACTAL first distinguishes recoverable regions from side-effectful ones, and augments them with additional runtime support aimed at fault recovery. It employs precise dependency and progress tracking at the subgraph level to offer sound and efficient fault recovery. It minimizes the number of upstream regions that are re-executed during recovery and ensures exactly-once semantics upon recovery for downstream regions. Evaluation on 4- and 30-node clusters indicates average fault-free speedups of (1) >9.6x over Bash, a single-node shell-interpreter baseline, (2) >5.5x over Hadoop Streaming, a MapReduce system that supports language-agnostic third-party components, and (3) 17% over DiSh, a state-of-the-art fault-intolerant shell-script distribution system—all while recovering 7.8–16.4x faster than Hadoop Streaming in cases of faults.",
+  "abstract_source_id": "src-abstract-nsdi-2026-8f404aba",
   "venue": "nsdi",
   "year": 2026,
   "track_or_session": "Designing Robust Networked Systems",
@@ -160,6 +162,19 @@
         "proceedings page range and page count",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2026-8f404aba",
+      "url": "https://www.usenix.org/conference/nsdi26/presentation/huang",
+      "kind": "paper-page",
+      "title": "Fractal: Fault-Tolerant Shell-Script Distribution",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:05:20Z",
+      "content_hash": "sha256:2519ddd215ad89aceb7d80131c201af476807aabe9697ad7e052a6a50abfc005",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

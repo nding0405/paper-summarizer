@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2025-iubik-isolating-user-bytes-in-commodity-operating-system-74243a8b",
   "title": "IUBIK: Isolating User Bytes in Commodity Operating System Kernels via Memory Tagging Extensions",
+  "abstract": "Hardening OS kernels against memory errors is generally addressed by protecting security-critical data against corruption and disclosure. However, establishing a sound model for identifying sensitive memory objects in need of protection is hard, leading to emergent attack vectors that can be abused by attackers. In this paper, we propose rethinking how OS kernels are hardened by introducing IUBIK for compartmentalizing kernel memory. IUBIK prevents kernel exploitation by segregating attacker-controlled data-frequently used to manipulate security-critical data-in shadow memory, preventing it from interacting with sensitive kernel objects. To achieve this, IUBIK uses MTE: a recent hardware feature, available in ARM CPUs, which allows mitigating exploits based on both spatial and temporal memory-errors, efficiently. We ensure that segregated objects do not contain sensitive fields, such as pointers, by rewriting their struct definitions. Moreover, we develop a profiling framework that explores the kernel codebase in-depth and records code sites where attacker-controlled objects are allocated, allowing IUBIK to isolate them; our profiler recorded 292 privileged and 212 non-privileged allocation sites for a diverse set of workloads. Finally, we evaluate an implementation of IUBIK for the Linux kernel, across a suite of micro- and macro-benchmarks, demonstrating that our prototype incurs no runtime overhead in most tests and negligible additional memory consumption.",
+  "abstract_source_id": "src-abstract-sp-2025-74243a8b",
   "venue": "sp",
   "year": 2025,
   "track_or_session": "Cycle 2",
@@ -133,6 +135,19 @@
       "official": true,
       "supports": [
         "DOI, authors, affiliations, abstract, publication date, pages, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2025-74243a8b",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "IUBIK: Isolating User Bytes in Commodity Operating System Kernels via Memory Tagging Extensions",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:47Z",
+      "content_hash": "sha256:d48e5e27e72297ce02860f066764bd9c5cd6e8191e2ebf4b4f15da0fffb6959f",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

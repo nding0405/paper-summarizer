@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2025-themis-regulating-textual-inversion-for-personalized-con-ff074eae",
   "title": "THEMIS: Regulating Textual Inversion for Personalized Concept Censorship",
+  "abstract": "Personalization has become a crucial demand in the Generative AI technology. As the pre-trained generative model (*e.g.*, stable diffusion) has fixed and limited capability, it is desirable for users to customize the model to generate output with new or specific concepts. Fine-tuning the pre-trained model is not a promising solution, due to its high requirements of computation resources and data. Instead, the emerging personalization approaches make it feasible to augment the generative model in a lightweight manner. However, this also induces severe threats if such advanced techniques are misused by malicious users, such as spreading fake news or defaming individual reputations. Thus, it is necessary to regulate personalization models (*i.e.*, achieve *concept censorship*) for their development and advancement.\n\nIn this paper, we focus on the regulation of a popular personalization technique dubbed\n\ntextbf{Textual Inversion (TI)}, which can customize Text-to-Image (T2I) generative models with excellent performance. TI crafts the word embedding that contains detailed information about a specific object. Users can easily add the word embedding to their local T2I model, like the public Stable Diffusion (SD) model, to generate personalized images. The advent of TI has brought about a new business model, evidenced by the public platforms for sharing and selling word embeddings (*e.g.*, Civitai [1]). Unfortunately, such platforms also allow malicious users to misuse the word embeddings to generate unsafe content, causing damages to the concept owners.\n\nWe propose *THEMIS* to achieve the ***personalized concept censorship***. Its key idea is to leverage the backdoor technique for good by injecting positive backdoors into the TI embeddings. Briefly, the concept owner selects some sensitive words as triggers during the training of TI, which will be censored for normal use. In the subsequent generation stage, if a malicious user combines the sensitive words with the personalized embeddings as final prompts, the T2I model will output a pre-defined target image rather than images including the desired malicious content. To demonstrate the effectiveness of *THEMIS*, we conduct extensive experiments on the TI embeddings with Latent Diffusion and Stable Diffusion, two prevailing open-sourced T2I models.\n\nThe results demonstrate that *THEMIS* is capable of preventing Textual Inversion from cooperating with sensitive words meanwhile guaranteeing its pristine utility. Furthermore, *THEMIS* is general to different uses of sensitive words, including different locations, synonyms, and combinations of sensitive words. It can also resist different types of potential and adaptive attacks. Ablation studies are also conducted to verify our design.",
+  "abstract_source_id": "src-abstract-ndss-2025-ff074eae",
   "venue": "ndss",
   "year": 2025,
   "track_or_session": "Summer submission cycle",
@@ -147,6 +149,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2025-ff074eae",
+      "url": "https://www.ndss-symposium.org/ndss-paper/themis-regulating-textual-inversion-for-personalized-concept-censorship/",
+      "kind": "paper-page",
+      "title": "THEMIS: Regulating Textual Inversion for Personalized Concept Censorship",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:20:44Z",
+      "content_hash": "sha256:756d4adf42b34c294b9da0d821281ea7452bc6e3937873ae4dd383d06a3f7a60",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

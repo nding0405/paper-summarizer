@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "atc-2025-fast-distributed-transactions-for-rdma-based-disaggregat-13ba4c73",
   "title": "Fast Distributed Transactions for RDMA-based Disaggregated Memory",
+  "abstract": "Memory disaggregation has emerged as a promising datacenter architecture since it improves memory utilization and scalability. However, it is usually costly to process distributed transactions in disaggregated memory systems due to relatively high latency of remote memory accesses. In this paper, we present HDTX, a high-performance distributed transaction system for RDMA-based disaggregated memory. We advocate three novel designs. First, we propose a fast commit protocol (FCP) to minimize network round trips by coalescing different phases of distributed transaction processing. Second, we propose an RDMA-enabled offloading mechanism to reduce data transfers across computing and memory nodes by carefully orchestrating different RDMA primitives. Third, we propose decentralized priority-based locking to schedule mission-critical transactions, and thus further reduce the latency of distributed transactions. Experimental results show that HDTX reduces the latency of distributed transactions by up to 88.3% and 72.1%, and improves the throughput by up to 2.08× and 84.7%, compared with RDMA-based distributed transaction systems–FaRM and FORD, respectively.",
+  "abstract_source_id": "src-abstract-atc-2025-13ba4c73",
   "venue": "atc",
   "year": 2025,
   "track_or_session": "Distributed Systems: Communication, Consensus, and Data Structures",
@@ -222,6 +224,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-atc-2025-13ba4c73",
+      "url": "https://www.usenix.org/conference/atc25/presentation/lu",
+      "kind": "paper-page",
+      "title": "Fast Distributed Transactions for RDMA-based Disaggregated Memory",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T21:59:40Z",
+      "content_hash": "sha256:7f35937fb93ee0038dc5dbea1a5d6c9ab4ca1b6b51559d484f8a1fbc20436c40",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

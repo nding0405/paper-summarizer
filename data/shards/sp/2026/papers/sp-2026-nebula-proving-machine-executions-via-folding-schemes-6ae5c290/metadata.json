@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2026-nebula-proving-machine-executions-via-folding-schemes-6ae5c290",
   "title": "Nebula: Proving machine executions via folding schemes",
+  "abstract": "A zero-knowledge virtual machine (zkVM) is a versatile, developer-friendly primitive that proves the correct execution of programs on a fixed machine architecture. A major bottleneck for these protocols is the prover's space complexity, which grows linearly with the number of program steps and makes it impractical to produce proofs for longrunning computations. To overcome this, we propose generating these proofs incrementally, using folding schemes. However, realizing this requires new tools in the folding setting: (1) an efficient read-write memory argument for proving the correctness of memory operations; and (2) a method to eliminate the overheads incurred by unused machine instructions when incrementally proving a program execution step. We address these with new techniques. First, we introduce commitment-carrying IVC, where a proof carries an incremental commitment to the prover's non-deterministic advice provided at different steps. Second, we show how this unlocks efficient read-write memory arguments (which implies indexed lookups arguments), with a cost profile identical to that of memory arguments in the context of non-recursive arguments. Third, we provide a new universal “switchboard” circuit construction that combines circuits of different instructions such that one can “turn off” uninvoked circuit elements and constraints, offering a new way to achieve pay-per-use prover costs. We design an IVC scheme, which we refer to as Nebula, that incorporates these techniques. We implement a prototype of a Nebula-based zkVM for the Ethereum Virtual Machine (EVM). We find that our techniques qualitatively provide a $30 \\times$ smaller constraint system to represent the EVM over standard memory-checking techniques, and lead to over $260 \\times$ faster proof generation for the standard ERC-20 token transfer transaction when compared to our baseline Nova (CRYPTO'22) with existing arithmetization methods.",
+  "abstract_source_id": "src-abstract-sp-2026-6ae5c290",
   "venue": "sp",
   "year": 2026,
   "track_or_session": "Cycle 1",
@@ -91,6 +93,19 @@
       "official": true,
       "supports": [
         "DOI, published-order authors and affiliations, abstract, publication date, page span, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2026-6ae5c290",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Nebula: Proving Machine Executions via Folding Schemes",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:58:02Z",
+      "content_hash": "sha256:4204efad9387253e2c70bd18217fac7c5220b9cd43ecd6179fdc27c5a043343e",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

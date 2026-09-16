@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2023-encrypted-databases-made-secure-yet-maintainable-a40a59b2",
   "title": "Encrypted Databases Made Secure Yet Maintainable",
+  "abstract": "State-of-the-art encrypted databases (EDBs) can be divided into two types: one that protects the whole DBMS engine in a trusted domain, and one that protects only operators that support queries over encrypted data. Both types have limitations when dealing with malicious database administrators (DBAs). The first type either exposes the data to DBAs or makes maintenance operations difficult if the DBA role is eliminated. The second type is vulnerable to abuse of the operator interfaces; in particular, we devise a smuggle attack that enables DBAs to secretly and effectively access data.\n\nWe introduce HEDB, which prevents smuggle attacks and preserves database maintainability. HEDB uses a dual-mode EDB design based on our analysis of DBA maintenance tasks. Execution Mode handles user queries by isolating DBAs from operators to prevent smuggle attacks, while Maintenance Mode enables DBMS maintenance and operator troubleshooting through authenticated replay and anonymized replay, respectively. Our evaluation shows that HEDB blocks smuggle attacks and supports common maintenance tasks with 5.88% runtime cost and 9.26% storage cost.",
+  "abstract_source_id": "src-abstract-osdi-2023-a40a59b2",
   "venue": "osdi",
   "year": 2023,
   "track_or_session": "Secure Your Bits I",
@@ -285,6 +287,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2023-a40a59b2",
+      "url": "https://www.usenix.org/conference/osdi23/presentation/li-mingyu",
+      "kind": "paper-page",
+      "title": "Encrypted Databases Made Secure Yet Maintainable",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:06:29Z",
+      "content_hash": "sha256:a0d88b62eb3a4a8119babfe16cb7377f6eabd6d483b3bc2ea7108803865d36b5",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

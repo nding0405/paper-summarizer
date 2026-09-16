@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "atc-2024-puzzle-efficiently-aligning-large-language-models-throug-b274119a",
   "title": "PUZZLE: Efficiently Aligning Large Language Models through Light-Weight Context Switch",
+  "abstract": "Aligning Large Language Models (LLMs) is currently the primary method to ensure AI systems operate in an ethically responsible and socially beneficial manner. Its paradigm differs significantly from standard pre-training or fine-tuning processes, involving multiple models and workloads (context), and necessitates frequently switching execution, introducing significant overhead, such as parameter updates and data transfer, which poses a critical challenge: efficiently switching between different models and workloads.\n\nTo address these challenges, we introduce PUZZLE, an efficient system for LLM alignment. We explore model orchestration as well as light-weight and smooth workload switching in aligning LLMs by considering the similarity between different workloads. Specifically, PUZZLE adopts a two-dimensional approach for efficient switching, focusing on both intra- and inter-stage switching. Within each stage, switching costs are minimized by exploring model affinities and overlapping computation via time-sharing. Furthermore, a similarity-oriented strategy is employed to find the optimal inter-stage switch plan with the minimum communication cost. We evaluate PUZZLE on various clusters with up to 32 GPUs. Results show that PUZZLE achieves up to 2.12× speedup compared with the state-of-the-art RLHF training system DeepSpeed-Chat.",
+  "abstract_source_id": "src-abstract-atc-2024-b274119a",
   "venue": "atc",
   "year": 2024,
   "track_or_session": "ML Inference",
@@ -201,6 +203,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-atc-2024-b274119a",
+      "url": "https://www.usenix.org/conference/atc24/presentation/lei",
+      "kind": "paper-page",
+      "title": "PUZZLE: Efficiently Aligning Large Language Models through Light-Weight Context Switch",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T21:58:58Z",
+      "content_hash": "sha256:b2318c156afb93217fde02a03ebd0345d76e8a1552b84349162eea676315c090",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

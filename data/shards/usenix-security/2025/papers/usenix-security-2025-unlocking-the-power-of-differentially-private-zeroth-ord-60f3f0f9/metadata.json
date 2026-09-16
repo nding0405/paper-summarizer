@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-unlocking-the-power-of-differentially-private-zeroth-ord-60f3f0f9",
   "title": "Unlocking the Power of Differentially Private Zeroth-order Optimization for Fine-tuning LLMs",
+  "abstract": "Differentially private zeroth-order optimization (DPZO in short) has shown promise in fine-tuning large language models (LLMs) while protecting record-level privacy. Compared with classical first-order methods, such as DPSGD, the main difference is that DPZO replaces the exact first-order gradients that are computed via back-propagation with its random zeroth-order approximations that are computed via querying the model's losses. However, DPZO still lags in the resulting model utility compared to existing methods, indicating that further work is needed to fully realize its potential.\n\nIn this paper, we make a solid step towards designing a better differentially private algorithm for fine-tuning LLMs based on zeroth-order optimization. Our design is centered around the major performance issue of differentially private optimization for large models caused by artificial clipping, which creates biases in the model updates. Using our method called DP-AggZO, we theoretically prove that this issue can be mitigated, leading to an improved convergence rate over the prior DPZO methods and better model utility under the same privacy constraints. We back up our theory with extensive experiments, validating the performance improvement of DP-AggZO. Surprisingly, our DP-AggZO even outperforms the state-of-the-art method DP-AdamW significantly on some benchmark settings.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-60f3f0f9",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "LLM Privacy",
@@ -196,6 +198,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-60f3f0f9",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/bao-ergute",
+      "kind": "paper-page",
+      "title": "Unlocking the Power of Differentially Private Zeroth-order Optimization for Fine-tuning LLMs",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:22:32Z",
+      "content_hash": "sha256:ce28ff7aee7ab2039781bfa9fa02bf17f5500c7d7239a2118114056afad135bd",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

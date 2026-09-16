@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2025-ha-tcp-a-reliable-and-scalable-framework-for-tcp-network-adb02af6",
   "title": "HA/TCP: A Reliable and Scalable Framework for TCP Network Functions",
+  "abstract": "Layer 7 network functions (NFs) are a critical piece of modern network infrastructure. As a result, the scalability and reliability of these NFs are important but challenging because of the complexity of layer 7 NFs. This paper presents HA/TCP, a framework that enables migration and failover of layer 7 NFs. HA/TCP uses a novel replication mechanism to synchronize the state between replicas with low overhead, enabling seamless migration and failover of TCP connections. HA/TCP encapsulates the implementation details into our replicated socket interface to allow developers to easily add high availability to their layer 7 NFs such as WAN accelerators, load balancers, and proxies. Our benchmarks show that HA/TCP provides reliability for a 100 Gbps NF with as little as 0.2% decrease in client throughput. HA/TCP transparently migrates a connection between replicas in 38 µs, including the network latency. We provide reliability to a SOCKS proxy and a WAN accelerator with less than 2% decrease in throughput and a modest increase in CPU usage.",
+  "abstract_source_id": "src-abstract-nsdi-2025-adb02af6",
   "venue": "nsdi",
   "year": 2025,
   "track_or_session": "Middleboxes",
@@ -119,6 +121,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2025-adb02af6",
+      "url": "https://www.usenix.org/conference/nsdi25/presentation/gu",
+      "kind": "paper-page",
+      "title": "HA/TCP: A Reliable and Scalable Framework for TCP Network Functions",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:04:13Z",
+      "content_hash": "sha256:49fe11ded343e5659d57496ce86eac1b3d06be737cb35e1fd1edfd21f605484b",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

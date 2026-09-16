@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "eurosys-2026-bask-batch-and-smartnic-offloaded-ksm-27e4e778",
   "title": "BASK: Batch And SmartNIC-offloaded KSM",
+  "abstract": "Modern cloud servers are increasingly constrained by memory capacity and bandwidth, despite dramatic growth in CPU core counts. Kernel Same-page Merging (KSM) alleviates memory pressure by deduplicating redundant pages, but incurs significant CPU overhead and performance interference due to frequent comparisons and hashing. Prior work reduces this burden through stateless offloading to accelerators such as SmartNICs, but suffers from low deduplication throughput due to frequent communication overhead. This paper presents BASK, a stateful SmartNIC-based framework for KSM that offloads both control-plane and data-plane deduplication tasks. BASK introduces a transactional offloading model with optimistic concurrency control and shadow metadata, enabling batched, self-contained page deduplication, significantly improving deduplication throughput by minimizing communication overhead between host and SmartNIC. It tolerates SmartNIC failures, ensures safety through validation and rollback, and maintains isolation using read-only memory exposure. Evaluation under realistic cloud workloads shows that BASK improves deduplication throughput by up to 3.68× over standard KSM, while reducing Redis tail latency impact to only 1.42×, compared to 10.02× under aggressive KSM settings.",
+  "abstract_source_id": "src-abstract-eurosys-2026-27e4e778",
   "venue": "eurosys",
   "year": 2026,
   "track_or_session": null,
@@ -180,6 +182,19 @@
       "official": false,
       "supports": [
         "Publisher-deposited proceedings identity and print publication date."
+      ]
+    },
+    {
+      "id": "src-abstract-eurosys-2026-27e4e778",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1145%2F3767295.3769372?fields=title,abstract",
+      "kind": "semantic-scholar",
+      "title": "BASK: Batch And SmartNIC-offloaded KSM",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:19:53Z",
+      "content_hash": "sha256:b9acf2bfe0f2cae9642f3248f6f0322c38f2c2b6dff481d4cadb6f26246041ee",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

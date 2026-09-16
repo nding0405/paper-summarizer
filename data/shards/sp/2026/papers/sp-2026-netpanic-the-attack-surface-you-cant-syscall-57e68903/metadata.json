@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2026-netpanic-the-attack-surface-you-cant-syscall-57e68903",
   "title": "NetPanic: The Attack Surface You Can’t Syscall",
+  "abstract": "The Linux kernel network stack exposes a critical remote attack surface, yet kernel security research has historically focused on the local attack surface, especially the post-breach local privilege escalation attacks. This has left a direct, pre-authentication attack vector dangerously overlooked. To address this gap, we present the first systematic, fuzzing-based audit of this attack surface. Our work first identifies the unique challenges that render existing fuzzers ineffective for this task: Extreme Input Complexity and the challenge of Dual-channel Input Coordination. To overcome them, we present NetPanic, a novel fuzzer built on a Fuzzer-in-the-Middle architecture. This design inherently solves the coordination challenge by orchestrating real communication between two network stack instances. Simultaneously, it provides a stream of valid packets that serves as a highquality baseline for our execution-guided structure-mutation strategy, which addresses the input complexity challenge. Our evaluation of NetPanic on the latest Linux kernel yielded significant results. It discovered 15 new, remotely triggerable vulnerabilities, none of which could be found or reproduced by the state-of-the-art kernel fuzzer Syzkaller. In direct comparison, NetPanic demonstrated vastly superior performance, achieving over 100 times the execution throughput and an average code coverage improvement of over 400 %. This performance gap, combined with a targeted ablation study, provides a dual validation: it confirms the correctness of our insight in identifying the unique challenges and proves the effectiveness of our solutions in addressing them. Our work provides concrete evidence that the kernel's remote attack surface is a potent and immediate threat, and we provide the community with the first effective methodology and a practical tool to begin securing it.",
+  "abstract_source_id": "src-abstract-sp-2026-57e68903",
   "venue": "sp",
   "year": 2026,
   "track_or_session": "Cycle 2",
@@ -175,6 +177,19 @@
       "official": true,
       "supports": [
         "DOI, published-order authors and affiliations, abstract, publication date, page span, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2026-57e68903",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "NetPanic: the Attack Surface You Can't Syscall",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:58:02Z",
+      "content_hash": "sha256:4204efad9387253e2c70bd18217fac7c5220b9cd43ecd6179fdc27c5a043343e",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

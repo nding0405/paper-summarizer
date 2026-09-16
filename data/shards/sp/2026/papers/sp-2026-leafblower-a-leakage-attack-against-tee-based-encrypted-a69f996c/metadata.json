@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2026-leafblower-a-leakage-attack-against-tee-based-encrypted-a69f996c",
   "title": "Leafblower: a Leakage Attack Against TEE-Based Encrypted Databases",
+  "abstract": "Trusted execution environments (TEEs) have emerged as a common solution for database systems to provide encryption in use. Several encrypted databases (EDBs) have been deployed within TEEs using library operating system toolchains that transparently allow existing applications to run within TEEs without modification. This “lift-and-shift” paradigm greatly simplifies the design of EDBs but leaves open questions about the security of the resulting system. In this work, we propose a new leakage attack against TEEbased EDBs which use $\\mathbf{B}^{+}$-trees in the multi-snapshot external memory model, a weaker adversary which only observes snapshots of the encrypted database index files after each operation. We show how to approximately order insertions by their inserted value by exploiting the “structural leakage” of the on-disk index format. Then, we leverage auxiliary information to recover the approximate plaintext values of insert operations with significant advantage over a naive adversary that makes guesses based on equivalent auxiliary information. Under optimal conditions-when the auxiliary is accurate and the domain is small-we achieve up to 96% exact recovery in experiments on real-world datasets which increases to 100% when scoped to later operations in the transcript. Our attack requires no injections and no information about read operations. While our work is primarily motivated by TEE-based encrypted databases, we demonstrate that our attack generalizes to other kinds of page-level encryption systems including encrypted storage engines and disaggregated database systems.",
+  "abstract_source_id": "src-abstract-sp-2026-a69f996c",
   "venue": "sp",
   "year": 2026,
   "track_or_session": "Cycle 1",
@@ -133,6 +135,19 @@
       "official": true,
       "supports": [
         "DOI, published-order authors and affiliations, abstract, publication date, page span, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2026-a69f996c",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Leafblower: a Leakage Attack Against Tee-Based Encrypted Databases",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:58:02Z",
+      "content_hash": "sha256:4204efad9387253e2c70bd18217fac7c5220b9cd43ecd6179fdc27c5a043343e",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

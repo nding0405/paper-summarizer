@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2026-mohabi-disaggregating-and-sandboxing-the-firefox-javascr-72949fcc",
   "title": "Mohabi: Disaggregating and Sandboxing the Firefox JavaScript Engine",
+  "abstract": "We present Mohabi—a modern Firefox browser with a securely sandboxed JavaScript engine. Mohabi leverages software-based fault isolation (SFI) to ensure JavaScript engine bugs cannot affect the rest of the browser. To achieve this, we disaggregated the JavaScript engine (SpiderMonkey) from the rest of the browser, and developed techniques that leverage the type system and automatic code generation to make this complex transformation—that spans numerous data structures and deeply intertwined control flow across tens of thousands of functions—safe and tractable with reasonable engineering effort.\n\nWe then sandboxed SpiderMonkey using an optimized SFI toolchain we developed to meet the unique challenges of JavaScript engines, such as efficient support for large memory footprints. Mohabi only incurs modest overheads on common benchmarks—24.82% on JetStream and 24.43% on Speedometer. Mohabi is the most ambitious case study in retrofitting in-process sandboxing in a large system to date, and our x86-64 SFI toolchain is the fastest to date, imposing overheads between 5.9%–6.6% in SPEC 2017.",
+  "abstract_source_id": "src-abstract-osdi-2026-72949fcc",
   "venue": "osdi",
   "year": 2026,
   "track_or_session": "Sandboxing, Access Control, and Drivers",
@@ -314,6 +316,19 @@
       "official": true,
       "supports": [
         "Official proceedings availability and canonical conference versions."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2026-72949fcc",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/sharma",
+      "kind": "paper-page",
+      "title": "Mohabi: Disaggregating and Sandboxing the Firefox JavaScript Engine",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:08:36Z",
+      "content_hash": "sha256:13e29790b6ef6293bede166048f66d9aeaa6808ed435c5de5f0f12394c8e0744",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

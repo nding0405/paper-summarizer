@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2026-obase-object-based-address-space-engineering-to-improve-a37e02b8",
   "title": "OBASE: Object-Based Address-Space Engineering to Improve Memory Tiering",
+  "abstract": "Hardware and OS mechanisms for memory tiering are widely deployed, yet datacenters still overprovision DRAM. The root cause is hotness fragmentation : allocators place objects by size rather than access pattern, so hot and cold objects become interleaved within the same pages. A single hot object marks its page as active, trapping surrounding cold data in expensive DRAM. Our analysis of Google datacenter workloads shows that up to 97% of the bytes in active pages are cold and unreclaimable. We propose address-space engineering : dynamically reorganizing virtual memory so that hot objects cluster into uniformly hot pages and cold objects into uniformly cold pages. We present OBASE, a compiler-runtime system for unmanaged languages that serves as an object-aware frontend for page-aware OS backends . OBASE tracks accesses via lightweight pointer instrumentation and migrates objects at runtime using a lock-free protocol that is safe under concurrency. By reorganizing the address space, OBASE enables unmodified backends (kswapd, TMO, TPP, Memtis) to tier memory effectively. Across ten concurrent data structures, six backends, and production traces from Meta and Twitter, OBASE improves page utilization by 2–4× and reduces memory footprint by up to 70%, with only 2–5% overhead.",
+  "abstract_source_id": "src-abstract-osdi-2026-a37e02b8",
   "venue": "osdi",
   "year": 2026,
   "track_or_session": "Memory Tiering and CXL",
@@ -188,6 +190,19 @@
       "official": true,
       "supports": [
         "Official proceedings availability and canonical conference versions."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2026-a37e02b8",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/banakar",
+      "kind": "paper-page",
+      "title": "OBASE: Object-Based Address-Space Engineering to Improve Memory Tiering",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:08:41Z",
+      "content_hash": "sha256:74f86efbb28df53288c6329e41aae12fdf2b19b248666a678f8ca3270ae50130",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

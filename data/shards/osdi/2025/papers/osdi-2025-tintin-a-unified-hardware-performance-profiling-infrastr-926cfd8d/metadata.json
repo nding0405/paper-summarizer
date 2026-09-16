@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2025-tintin-a-unified-hardware-performance-profiling-infrastr-926cfd8d",
   "title": "Tintin: A Unified Hardware Performance Profiling Infrastructure to Uncover and Manage Uncertainty",
+  "abstract": "Hardware performance counters (HPCs) enable the measurement of microarchitectural events, which are crucial for tracking and predicting program behavior. High-fidelity measurement and precise attribution are essential for accurate profiling. However, existing profiling tools have fundamental challenges in both aspects. In measurement, numerous events compete for limited hardware monitoring resources; while for attribution, applications have diverse requirements, but systems provide limited support. Existing tools mitigate the former limitation through event multiplexing, but this approach introduces non-trivial errors. The latter limitation, however, remains largely unaddressed.\n\nThis paper introduces Tintin , an HPC profiling infrastructure with a modular three-component design that addresses both challenges. Tintin introduces mechanisms to mitigate multiplexing errors by characterizing uncertainty at runtime, scheduling events to minimize it, and reporting uncertainty to applications. It also proposes the Event Profiling Context ( ePX ) as a new OS primitive to unify diverse profiling requirements. Tintin is evaluated using benchmarks as well as real-world resource orchestration, performance debugging, and intrusion detection systems, to demonstrate its ability to improve hardware profiling with low runtime overhead.",
+  "abstract_source_id": "src-abstract-osdi-2025-926cfd8d",
   "venue": "osdi",
   "year": 2025,
   "track_or_session": "Kernel and Operating Systems I",
@@ -201,6 +203,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2025-926cfd8d",
+      "url": "https://www.usenix.org/conference/osdi25/presentation/li",
+      "kind": "paper-page",
+      "title": "Tintin: A Unified Hardware Performance Profiling Infrastructure to Uncover and Manage Uncertainty",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:07:51Z",
+      "content_hash": "sha256:850a6194afd053e185349f09db1a20c0720246053d52acaa21b12c4221e581ef",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

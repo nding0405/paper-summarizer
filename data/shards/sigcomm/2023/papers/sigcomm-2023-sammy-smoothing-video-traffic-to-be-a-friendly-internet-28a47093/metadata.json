@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sigcomm-2023-sammy-smoothing-video-traffic-to-be-a-friendly-internet-28a47093",
   "title": "Sammy: smoothing video traffic to be a friendly internet neighbor",
+  "abstract": "On-demand streaming video traffic is managed by an adaptive bi-trate (ABR) algorithm whose job is to optimize quality of experience (QoE) for a single video session. ABR algorithms leave the question of sharing network resources up to transport-layer algorithms. We observe that as the internet gets faster relative to video streaming rates, this delegation of responsibility gives video traffic a burstier on-off traffic pattern. In this paper, we show we can substantially smooth video traffic to improve its interactions with the rest of the internet, while maintaining the same or better QoE for streaming video. We smooth video traffic with two design principles: application-informed pacing, which allows ABR algorithms to set an upper limit on packet-by-packet throughput, and by designing ABR algorithms that work with pacing. We propose a joint ABR and rate-control scheme, called Sammy, which selects both video quality and pacing rates. We implement our scheme and evaluate it at a large video streaming service. Our approach smooths video, making it a more friendly neighbor to other internet applications. One surprising result is that being friendlier requires no compromise for the video traffic: in large scale, production experiments, Sammy improves video QoE over an existing, extensively tested and tuned production ABR algorithm.",
+  "abstract_source_id": "src-abstract-sigcomm-2023-28a47093",
   "venue": "sigcomm",
   "year": 2023,
   "track_or_session": "Video Analysis — Research Paper",
@@ -214,6 +216,19 @@
         "publisher-deposited ORCIDs",
         "proceedings page range and print publication date",
         "empty publisher relation metadata for alternate-version checks"
+      ]
+    },
+    {
+      "id": "src-abstract-sigcomm-2023-28a47093",
+      "url": "https://api.openalex.org/works/doi:10.1145/3603269.3604839?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Sammy: smoothing video traffic to be a friendly internet neighbor",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:22:58Z",
+      "content_hash": "sha256:ae81915f623d3658f7a5992bbf341107f31767f6c1e93918673473d6c5c1d1fb",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

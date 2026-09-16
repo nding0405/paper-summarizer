@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sigcomm-2026-verifying-non-deterministic-convergence-on-a-global-prod-ad07248e",
   "title": "Verifying Non-Deterministic Convergence on a Global Production WAN",
+  "abstract": "This paper presents our experience deploying TianYan on Alibaba Cloud's global production WAN, which is, to the best of our knowledge, the first system for verifying non-deterministic convergence on a global production WAN. In daily operation, we rely on simulation-based configuration verifiers that assume a single converged data plane to ensure reliability and performance. However, non-deterministic convergence—where a configuration yields different converged data planes—undermines verification accuracy and has caused a production incident, motivating the need to analyze non-deterministic convergence itself. At scale, this is challenging because the analysis space grows exponentially with the number of routers. TianYan addresses this challenge with a key insight: by leveraging routing similarity among routers within the same group—a common fault-tolerance practice—it reduces exponential complexity from the number of routers to the number of groups, enabling efficient convergence analysis. Over a year of deployment, TianYan identified non-deterministic convergence in ~2% of all prefixes, exposed unnoticed design flaws, and improved simulation-based verification accuracy through integration. We share representative cases and evaluation results from our production WAN, distilling key operational lessons and practical guidelines for managing nondeterminism at scale.",
+  "abstract_source_id": "src-abstract-ad07248e",
   "venue": "sigcomm",
   "year": 2026,
   "track_or_session": "Experience Session 5: WAN, Configuration & Verification — Experience Paper",
@@ -212,6 +214,19 @@
       "official": true,
       "supports": [
         "official main-paper scope and track definitions"
+      ]
+    },
+    {
+      "id": "src-abstract-ad07248e",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/search/match?query=Verifying%20Non-Deterministic%20Convergence%20on%20a%20Global%20Production%20WAN&fields=title,abstract",
+      "kind": "semantic-scholar",
+      "title": "Verifying Non-Deterministic Convergence on a Global Production WAN",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T23:09:32Z",
+      "content_hash": "sha256:93fb0ef54de62321e297052b32274d5d5b3cb1c5c4e4aa82d7a57ad4024b4e12",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

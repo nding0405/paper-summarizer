@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2025-defending-against-membership-inference-attacks-on-iterat-fd487770",
   "title": "Defending Against Membership Inference Attacks on Iteratively Pruned Deep Neural Networks",
+  "abstract": "Model pruning is a technique for compressing deep learning models, and using an iterative way to prune the model can achieve better compression effects with lower utility loss. However, our analysis reveals that iterative pruning significantly increases model memorization, making the pruned models more vulnerable to membership inference attacks (MIAs). Unfortunately, the vast majority of existing defenses against MIAs are designed for original and unpruned models. In this paper, we propose a new framework WeMem to weaken memorization in the iterative pruning process. Specifically, our analysis identifies two important factors that increase memorization in iterative pruning, namely data reuse and inherent memorability. We consider the individual and combined impacts of both factors, forming three scenarios that lead to increased memorization in iteratively pruned models. We design three defense primitives based on these factors' characteristics. By combining these primitives, we propose methods tailored to each scenario to weaken memorization effectively. Comprehensive experiments under ten adaptive MIAs demonstrate the effectiveness of the proposed defenses. Moreover, our defenses outperform five existing defenses in terms of privacy-utility tradeoff and efficiency. Additionally, we enhance the proposed defenses to automatically adjust settings for optimal defense, improving their practicability.",
+  "abstract_source_id": "src-abstract-ndss-2025-fd487770",
   "venue": "ndss",
   "year": 2025,
   "track_or_session": "Fall submission cycle",
@@ -210,6 +212,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2025-fd487770",
+      "url": "https://www.ndss-symposium.org/ndss-paper/defending-against-membership-inference-attacks-on-iteratively-pruned-deep-neural-networks/",
+      "kind": "paper-page",
+      "title": "Defending Against Membership Inference Attacks on Iteratively Pruned Deep Neural Networks",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:19:23Z",
+      "content_hash": "sha256:cd04b54f929c891b7df16bf91e45384a5035c7d8c541a029cf3f04f34468e4a4",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

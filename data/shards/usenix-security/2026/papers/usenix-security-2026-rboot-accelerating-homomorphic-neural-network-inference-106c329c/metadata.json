@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-rboot-accelerating-homomorphic-neural-network-inference-106c329c",
   "title": "RBOOT: Accelerating Homomorphic Neural Network Inference by Fusing ReLU within Bootstrapping",
+  "abstract": "A major bottleneck in secure neural network inference using Fully Homomorphic Encryption (FHE) is the evaluation of non-linear activation functions like ReLU, which are inefficient to compute under FHE. State-of-the-art solutions approximate ReLU using high-degree polynomials, incurring significant computational overhead. We present RBOOT, an optimized framework that seamlessly integrates ReLU evaluation into CKKS bootstrapping, significantly reducing multiplication depth and boosting efficiency. Our key insight is that the EvalMod step in CKKS bootstrapping is composed of trigonometric functions, which are nonlinear themselves. Prior works treat bootstrapping and activation functions as independent routines, missing an opportunity to leverage such nonlinearity. By co-optimizing these components, we can exploit such nonlinearity to construct ReLU (and other non-linear functions) within the bootstrapping process itself, greatly reducing the computation overhead. Results on four widely used CNN models show that RBOOT achieves 2.77× faster end-to-end inference and 81% lower memory usage compared to previous polynomial approximation works, while maintaining comparable accuracy.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-106c329c",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Applications of Cryptography 1",
@@ -177,6 +179,19 @@
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening",
         "prepublication PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-106c329c",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/yang-zhaomin",
+      "kind": "paper-page",
+      "title": "RBOOT: Accelerating Homomorphic Neural Network Inference by Fusing ReLU within Bootstrapping",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:25:09Z",
+      "content_hash": "sha256:0e70b29238beb20e63d90742afbcf50958b54f1fad5de38bf64356958864a4bf",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

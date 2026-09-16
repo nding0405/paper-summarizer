@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "atc-2025-rex-closing-the-language-verifier-gap-with-safe-and-usab-9d5b2e66",
   "title": "Rex: Closing the language-verifier gap with safe and usable kernel extensions",
+  "abstract": "Safe kernel extensions have gained significant traction, evolving from simple packet filters to large, complex programs that customize storage, networking, and scheduling. Existing kernel extension mechanisms like eBPF rely on in-kernel verifiers to ensure safety of kernel extensions by static verification using symbolic execution. We identify significant usability issues—safe extensions being rejected by the verifier—due to the language-verifier gap, a mismatch between developers’ expectation of program safety provided by a contract with the programming language, and the verifier’s expectation.\n\nWe present Rex, a new kernel extension framework that closes the language-verifier gap and improves the usability of kernel extensions in terms of programming experience and maintainability. Rex builds upon language-based safety to provide safety properties desired by kernel extensions, along with a lightweight extralingual runtime for properties that are unsuitable for static analysis, including safe exception handling, stack safety, and termination. With Rex, kernel extensions are written in safe Rust and interact with the kernel via a safe interface provided by Rex’s kernel crate. No separate static verification is needed. Rex addresses usability issues of eBPF kernel extensions without compromising performance.",
+  "abstract_source_id": "src-abstract-atc-2025-9d5b2e66",
   "venue": "atc",
   "year": 2025,
   "track_or_session": "Operating Systems: Scheduling, Security, and Extensibility",
@@ -306,6 +308,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-atc-2025-9d5b2e66",
+      "url": "https://www.usenix.org/conference/atc25/presentation/jia",
+      "kind": "paper-page",
+      "title": "Rex: Closing the language-verifier gap with safe and usable kernel extensions",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:00:09Z",
+      "content_hash": "sha256:c3131963dc8455854892530f58c9000da9f361a5244edad9379eb360b0631aff",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

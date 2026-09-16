@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2023-mega-malleable-encryption-goes-awry-a2ff0617",
   "title": "MEGA: Malleable Encryption Goes Awry",
+  "abstract": "MEGA is a leading cloud storage platform with more than 250 million users and 1000 Petabytes of stored data. MEGA claims to offer user-controlled, end-to-end security. This is achieved by having all data encryption and decryption operations done on MEGA clients, under the control of keys that are only available to those clients. This is intended to protect MEGA users from attacks by MEGA itself, or by adversaries who have taken control of MEGA’s infrastructure.We provide a detailed analysis of MEGA’s use of cryptography in such a malicious server setting. We present five distinct attacks against MEGA, which together allow for a full compromise of the confidentiality of user files. Additionally, the integrity of user data is damaged to the extent that an attacker can insert malicious files of their choice which pass all authenticity checks of the client. We built proof-of-concept versions of all the attacks. Four of the five attacks are eminently practical. They have all been responsibly disclosed to MEGA and remediation is underway.Taken together, our attacks highlight significant shortcomings in MEGA’s cryptographic architecture. We present immediately deployable countermeasures, as well as longer-term recommendations. We also provide a broader discussion of the challenges of cryptographic deployment at massive scale under strong threat models.",
+  "abstract_source_id": "src-abstract-sp-2023-a2ff0617",
   "venue": "sp",
   "year": 2023,
   "track_or_session": "Session 1C: Cryptographic attacks",
@@ -151,6 +153,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2023-a2ff0617",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "MEGA: Malleable Encryption Goes Awry",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:22Z",
+      "content_hash": "sha256:1bed15e4c1c4d6e59eecfd74eeffd17f506467abd5cdd4e0f536f68bd1e694ee",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-hydrangea-optimistic-two-round-partial-synchrony-with-im-f713b5b7",
   "title": "Hydrangea: Optimistic Two-Round Partial Synchrony with Improved Fault Resilience",
+  "abstract": "Consensus protocols in the partially synchronous setting face a fundamental trade-off: achieving optimal Byzantine fault tolerance requires a good-case latency of at least three rounds, while committing in fewer than three rounds generally entails reduced resilience. Even optimistic protocols such as SBFT (DSN'19), FaB (TDSC'06), and Kudzu achieve an optimistic good-case latency of two rounds under favorable conditions, but only at the cost of reduced fault tolerance.\n\nIn this work, we introduce Hydrangea, a partially synchronous Byzantine fault-tolerant state machine replication protocol that combines low latency with improved fault resilience. Let f denote the maximum number of tolerated Byzantine faults, c the maximum number of tolerated crash faults, and k 0 a tunable parameter. For a system of n = 3f + 2c + k + 1 parties, Hydrangea achieves an optimistic good-case latency of two rounds when the total number of faulty parties (Byzantine or crash) is at most p = c + k ⁄ 2 \\rfloor. In more adversarial settings, with up to f Byzantine faults and c crash faults, it guarantees a good-case latency of three rounds. We further prove a matching lower bound: no protocol can achieve a two-round optimistic commit under this fault model if p > c + k + 2 ⁄ 2 \\rfloor.\n\nOur experimental evaluation on geo-distributed deployments demonstrates that Hydrangea consistently achieves substantially lower latency than state-of-the-art protocols in both Byzantine-only and Byzantine–crash fault models, while also delivering modest improvements in throughput.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-f713b5b7",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "System Security 2",
@@ -114,6 +116,19 @@
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening",
         "prepublication PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-f713b5b7",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/shrestha",
+      "kind": "paper-page",
+      "title": "Hydrangea: Optimistic Two-Round Partial Synchrony with Improved Fault Resilience",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:24:15Z",
+      "content_hash": "sha256:09a7200b599dfe847df7432b70789b61d9206d5f8dfc1821cba6a780da0adaf9",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

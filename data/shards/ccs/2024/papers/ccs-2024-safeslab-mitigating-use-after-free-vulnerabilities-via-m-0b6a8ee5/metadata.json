@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2024-safeslab-mitigating-use-after-free-vulnerabilities-via-m-0b6a8ee5",
   "title": "Safeslab: Mitigating Use-After-Free Vulnerabilities via Memory Protection Keys",
+  "abstract": "Restricting dangling pointers from accessing freed memory is a promising technique for mitigating use-after-free vulnerabilities in memory-unsafe programming languages. However, existing solutions suffer from high performance overheads, as they rely on conventional page table manipulation to make dangling pointers inaccessible. In this paper, we present Safeslab: a heap-hardening extension that aims to mitigate use-after-free vulnerabilities via a novel and efficient address aliasing approach. Safeslab assigns multiple virtual aliases to each memory page in the system, and manages their access rights via the recently introduced Memory Protection Keys hardware extension, which is designed to provide a fast alternative to page tables for memory management. This allows Safeslab to drastically reduce the number of page table modifications, while blocking dangling pointers efficiently. We integrated Safeslab into the Linux kernel, replacing its default heap allocator (SLUB). The results of our experimental evaluation with real-world benchmarks show that Safeslab incurs a negligible runtime overhead of up to 4% and moderate memory waste.",
+  "abstract_source_id": "src-abstract-ccs-2024-0b6a8ee5",
   "venue": "ccs",
   "year": 2024,
   "track_or_session": "Cycle 1",
@@ -180,6 +182,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2024-0b6a8ee5",
+      "url": "https://api.openalex.org/works/doi:10.1145/3658644.3670279?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Safeslab: Mitigating Use-After-Free Vulnerabilities via Memory Protection Keys",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:11:57Z",
+      "content_hash": "sha256:08d5761425dfb1880df9e931c4c3dee5c4e04528217d47649511c269ec496aa2",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

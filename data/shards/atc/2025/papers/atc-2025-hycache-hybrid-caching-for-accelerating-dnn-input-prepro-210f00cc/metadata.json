@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "atc-2025-hycache-hybrid-caching-for-accelerating-dnn-input-prepro-210f00cc",
   "title": "HyCache: Hybrid Caching for Accelerating DNN Input Preprocessing Pipelines",
+  "abstract": "End-to-end deep neural networks' (DNNs) training performance depends not only on the time spent in training the model weights but also on the time spent in loading and preprocessing the training data. Recent advances in GPU hardware have made training substantially faster. As a result, the bottleneck has shifted to the CPU-based input pipeline. This pipeline must fetch and transform each sample through multiple stages before it can be consumed by the GPU.\n\nPrior works accelerate preprocessing by caching intermediate results across epochs, but suffer from several key limitations:\n\nThey cache either in memory or in storage, but are unable to leverage both together. They can cache the output of a stage only if it can entirely fit in the cache, which is a severe limitation for larger datasets. They can cache the output of only one of the stages, which could be suboptimal. We thus introduce Hybrid Cache (HyCache), a runtime that enables the caching of subsets of preprocessed data from multiple intermediate steps on both memory and storage. HyCache possesses the ability to partially cache the outputs of a stage across both memory and storage. HyCache deploys integer linear programming (ILP) to automatically determine the best caching strategies across the memory and the storage by finding an optimal trade-off between recomputation and caching. Importantly, it does so without any manual intervention. HyCache outperforms state-of-the-art prior approaches, delivering a raw pipeline throughput improvement ranging in speedups from 1.11× to 10.1× over a variety of pipelines.",
+  "abstract_source_id": "src-abstract-atc-2025-210f00cc",
   "venue": "atc",
   "year": 2025,
   "track_or_session": "Performance: Benchmarking, Caching, and Workload Characterization",
@@ -159,6 +161,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-atc-2025-210f00cc",
+      "url": "https://www.usenix.org/conference/atc25/presentation/jha",
+      "kind": "paper-page",
+      "title": "HyCache: Hybrid Caching for Accelerating DNN Input Preprocessing Pipelines",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T21:59:46Z",
+      "content_hash": "sha256:ac52a632735e0696469b75fe719ffb30a34b566ead7ff1858b3df48386389986",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

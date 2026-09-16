@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sigcomm-2026-connex-endpoint-mobility-primitives-for-dynamic-llm-serv-244bf3ad",
   "title": "Connex: Endpoint Mobility Primitives for Dynamic LLM Serving",
+  "abstract": "Modern LLM serving systems increasingly adopt elastic inference pipelines where stages frequently join, leave, and migrate across nodes. However, existing GPU communication frameworks like NCCL assume static topologies, causing routing failures and P99 latency spikes during worker transitions that violate sub-millisecond tail latency requirements. We present Connex, a communication system that elevates endpoint mobility from exceptional failure to first-class primitive. Rather than optimizing individual mechanisms in isolation, Connex defines a mobility contract that the communication layer enforces whenever workers join, leave, or migrate while token streams, activations, or KV transfers are in flight. The contract is realized through three cooperating mechanisms: (1) epoch-based routing that bounds staleness without global coordination, (2) explicit handover protocols that preserve stream ordering and provide exactly-once delivery across migrations, and (3) credit-based backpressure with traffic-class isolation that prevents churn-induced interference with latency-critical paths. Evaluation on a 5-node GPU cluster under synthetic and production-derived churn shows that Connex reduces P99 tail spikes by up to 85% compared to NCCL-based baselines, achieves sub-second cutover, and maintains 100% goodput at moderate loads where baselines collapse to 0–28%, while incurring less than 5% steady-state overhead.",
+  "abstract_source_id": "src-abstract-sigcomm-2026-244bf3ad",
   "venue": "sigcomm",
   "year": 2026,
   "track_or_session": "Research Session 1: LLM Inference & Serving — Research Paper",
@@ -170,6 +172,19 @@
       "official": true,
       "supports": [
         "official main-paper scope and track definitions"
+      ]
+    },
+    {
+      "id": "src-abstract-sigcomm-2026-244bf3ad",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/search/match?query=Connex%3A%20Endpoint%20Mobility%20Primitives%20for%20Dynamic%20LLM%20Serving&fields=title,abstract",
+      "kind": "semantic-scholar",
+      "title": "Connex: Endpoint Mobility Primitives for Dynamic LLM Serving",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:59:12Z",
+      "content_hash": "sha256:7044a31040386ebafcec1051de48caad309028b28c0d23b66b6837447eb61bc8",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

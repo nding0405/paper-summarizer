@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2026-bullseye-detecting-prototype-pollution-in-npm-packages-w-8066601d",
   "title": "Bullseye: Detecting Prototype Pollution in NPM Packages with Proof of Concept Exploits",
+  "abstract": "Prototype pollution is a critical security vulnerability in JavaScript, particularly in Node.js packages and applications, where attackers can manipulate the global object prototype and inject malicious properties into all objects that inherit from it. State-of-the-art static and dynamic approaches face significant limitations in detecting this vulnerability–both in terms of accuracy and efficiency. Static approaches struggle to recognize unexploitable vulnerabilities (e.g., due to missing code context with preventive mechanism), causing high false positives, besides suffering from scalability issues. Dynamic approaches have low false positives as they can access runtime information; however, due to low code reachability (resulting from the use of e.g., improper argument types/values), their false negatives could be high. In this paper, we present Bullseye, a fully automated dynamic analysis framework that delivers validated and scalable analysis of prototype pollution vulnerabilities in Node.js packages. Bullseye’s novel approach combines broad entry-point coverage, context-aware exploit generation, and dual runtime validation oracles. We use the developer-provided inputs from a package’s testsuites, and prototype pollution-related exploit inputs extracted from prior work. We then execute each entry point with its relevant exploit input candidates and observe the runtime for indications of prototype pollution. We analyzed 44,513 highly popular Node.js packages (with 10,000+ weekly downloads), and 5,879 packages with lower weekly downloads in less than 8 hours. We detected zero-day prototype pollution vulnerabilities in 290 packages, with no false positives. We responsibly disclosed all our findings with proof-of-concept exploit code to the respective package maintainers. We have also been assigned a total of 149 CVEs (as of July 22, 2025); among them, 66 have been made public, with 25 rated as critical, and 34 as high.",
+  "abstract_source_id": "src-abstract-ndss-2026-8066601d",
   "venue": "ndss",
   "year": 2026,
   "track_or_session": "Summer submission cycle",
@@ -160,6 +162,19 @@
       "official": false,
       "supports": [
         "independent proceedings identity reconciliation"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2026-8066601d",
+      "url": "https://www.ndss-symposium.org/ndss-paper/bullseye-detecting-prototype-pollution-in-npm-packages-with-proof-of-concept-exploits/",
+      "kind": "paper-page",
+      "title": "Bullseye: Detecting Prototype Pollution in NPM Packages with Proof of Concept Exploits",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:21:28Z",
+      "content_hash": "sha256:afe9d1937706fd71fd85c8bb7cfbe32f34d58c1293351e091dc96229cb3c56f6",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2026-opentela-unifying-decentralized-computing-resources-for-768d5f9e",
   "title": "OpenTela: Unifying Decentralized Computing Resources for Heterogeneous LLM Serving (Operational Systems)",
+  "abstract": "Large language models (LLMs) are becoming critical to a variety of public services, motivating sovereign AI initiatives that seek to serve models on infrastructure they control. Yet much of this infrastructure is built as HPC clusters optimized for batch jobs rather than interactive, always-on inference services. Existing LLM serving engines efficiently execute requests on GPUs, but rely on an external control plane (e.g., Kubernetes in cloud environments) for service discovery, routing, health monitoring, and load balancing. In HPC environments, these primitives are often unavailable: resources are managed by schedulers such as Slurm, allocations are transient, compute nodes may be unreachable from outside the cluster, and GPU capacity is fragmented across heterogeneous clusters and administrative domains.\n\nWe present OpenTela, a user-space orchestration overlay that turns existing fragmented HPC clusters into a unified, cross-institutional serving platform. OpenTela provides fault-tolerant service discovery via a CRDT-based gossip network, a unified API over heterogeneous cluster managers and serving engines, and a heterogeneity-aware scheduler, all in user-space without root privileges or cluster reconfiguration. OpenTela has been deployed for over 22 months, serving 13 million requests and 15 billion tokens across 142 models to over 1000 researchers across multiple institutions. We open-source the system and release an anonymized production trace to facilitate further research into real-world LLM serving workloads, and provide a replicable blueprint for other sovereign AI initiatives to harness their own federated GPU infrastructure.",
+  "abstract_source_id": "src-abstract-osdi-2026-768d5f9e",
   "venue": "osdi",
   "year": 2026,
   "track_or_session": "Resource-Efficient LLM Serving",
@@ -251,6 +253,19 @@
       "official": true,
       "supports": [
         "Official proceedings availability and canonical conference versions."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2026-768d5f9e",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/yao",
+      "kind": "paper-page",
+      "title": "OpenTela: Unifying Decentralized Computing Resources for Heterogeneous LLM Serving (Operational Systems)",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:08:42Z",
+      "content_hash": "sha256:dda1bdc3a80575e13fc58e00929444c5d15378abd18d4e3deb52058e2ab9c064",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2024-approximate-caching-for-efficiently-serving-text-to-imag-7cce60e6",
   "title": "Approximate Caching for Efficiently Serving Text-to-Image Diffusion Models",
+  "abstract": "Text-to-image generation using diffusion models has seen explosive popularity owing to their ability in producing high quality images adhering to text prompts. However, diffusion-models go through a large number of iterative denoising steps, and are resource-intensive, requiring expensive GPUs and incurring considerable latency. In this paper, we introduce a novel approximate-caching technique that can reduce such iterative denoising steps by reusing intermediate noise states created during a prior image generation. Based on this idea, we present an end-to-end text-to-image generation system, NIRVANA, that uses approximate-caching with a novel cache management policy to provide 21% GPU compute savings, 19.8% end-to-end latency reduction, and 19% dollar savings on two real production workloads. We further present an extensive characterization of real production text-to-image prompts from the perspective of caching, popularity and reuse of intermediate states in a large production environment.",
+  "abstract_source_id": "src-abstract-nsdi-2024-7cce60e6",
   "venue": "nsdi",
   "year": 2024,
   "track_or_session": "ML but Faster",
@@ -181,6 +183,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2024-7cce60e6",
+      "url": "https://www.usenix.org/conference/nsdi24/presentation/agarwal-shubham",
+      "kind": "paper-page",
+      "title": "Approximate Caching for Efficiently Serving Text-to-Image Diffusion Models",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:02:52Z",
+      "content_hash": "sha256:2babdc34b848e4269d70619d5746eee4781f2372846e03813443c8c04fca31df",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

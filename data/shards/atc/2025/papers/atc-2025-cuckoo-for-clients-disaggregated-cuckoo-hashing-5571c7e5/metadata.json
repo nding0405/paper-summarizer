@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "atc-2025-cuckoo-for-clients-disaggregated-cuckoo-hashing-5571c7e5",
   "title": "Cuckoo for Clients: Disaggregated Cuckoo Hashing",
+  "abstract": "RCuckoo is a fully disaggregated lock-based key/value store in which clients cooperatively access a passive memory server using exclusively one-sided RDMA operations. RCuckoo employs cuckoo hashing to enable single round-trip reads of small values while updates and deletes require only two. We introduce locality-enhanced dependent hashing that allows us to adjust the expected distance between a key’s potential table locations, dramatically improving insert performance compared to prior cuckoo-hashing approaches while limiting I/O amplification and maintaining practical maximum fill factors. We show that not only does RCuckoo outperform all existing state-of-the-art RDMA-based key/value stores when reading small values, but under severe contention RCuckoo delivers up to 7×the throughput of comparison systems across the standard set of YCSB workloads. Moreover, RCuckoo’s lease-based locking mechanism enables it to gracefully recover from 100s of client failures per second.",
+  "abstract_source_id": "src-abstract-atc-2025-5571c7e5",
   "venue": "atc",
   "year": 2025,
   "track_or_session": "Distributed Systems: Communication, Consensus, and Data Structures",
@@ -117,6 +119,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-atc-2025-5571c7e5",
+      "url": "https://www.usenix.org/conference/atc25/presentation/grant",
+      "kind": "paper-page",
+      "title": "Cuckoo for Clients: Disaggregated Cuckoo Hashing",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T21:59:33Z",
+      "content_hash": "sha256:2a1614c2f52914f8fe7e7e1fecebeb9b530eba8d4185db3cc10eb2d42339e8b9",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

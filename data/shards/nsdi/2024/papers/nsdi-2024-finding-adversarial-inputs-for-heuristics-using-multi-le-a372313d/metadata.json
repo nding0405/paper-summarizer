@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2024-finding-adversarial-inputs-for-heuristics-using-multi-le-a372313d",
   "title": "Finding Adversarial Inputs for Heuristics using Multi-level Optimization",
+  "abstract": "Production systems use heuristics because they are faster or scale better than their optimal counterparts. Yet, practitioners are often unaware of the performance gap between a heuristic and the optimum or between two heuristics in realistic scenarios. MetaOpt is a system that helps analyze these heuristics. Users specify the heuristic and the optimal (or another heuristic) as input, and MetaOpt encodes these efficiently for a solver to find performance gaps and their corresponding adversarial inputs. Its suite of built-in optimizations helps it scale to practical problem sizes. We used MetaOpt to analyze heuristics from three domains (traffic engineering, vector bin packing, and packet scheduling). We found a production traffic engineering heuristic can require 30\\% more capacity than the optimal in realistic cases. We modified the heuristic based on the patterns in the adversarial inputs MetaOpt discovered and reduced the performance gap by 12.5×. We examined adversarial inputs to a vector bin packing heuristic and proved a new lower bound on its performance.",
+  "abstract_source_id": "src-abstract-nsdi-2024-a372313d",
   "venue": "nsdi",
   "year": 2024,
   "track_or_session": "Verification",
@@ -223,6 +225,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2024-a372313d",
+      "url": "https://www.usenix.org/conference/nsdi24/presentation/namyar-finding",
+      "kind": "paper-page",
+      "title": "Finding Adversarial Inputs for Heuristics using Multi-level Optimization",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:03:10Z",
+      "content_hash": "sha256:a52852006e0bd4c8e7d6b97bed21905f0c7e651eb8e7ebc0d154d9edd82aecb7",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

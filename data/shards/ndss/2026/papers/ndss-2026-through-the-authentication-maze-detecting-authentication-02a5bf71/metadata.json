@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2026-through-the-authentication-maze-detecting-authentication-02a5bf71",
   "title": "Through the Authentication Maze: Detecting Authentication Bypass Vulnerabilities in Firmware Binaries",
+  "abstract": "Embedded web services are widely integrated into network devices such as routers and gateways. These services are often exposed to public networks, making them attractive targets for authentication bypass attacks. Such vulnerabilities allow attackers to gain privileged access without valid credentials, posing serious risks to device integrity and network security. Existing detection techniques rely heavily on manual analysis or rigid heuristics, making them ineffective against diverse and evolving authentication schemes. We present AuthSpark, a novel dynamic analysis framework for detecting authentication bypass vulnerabilities in firmware binaries. AuthSpark leverages execution trace similarity between successful and failed authentication attempts to locate credential checks. It then tracks authentication-related variable propagation to identify authentication success logic. Finally, it employs a customized greybox fuzzer with task-specific power scheduling and mutation strategies to explore bypass paths. We evaluate AuthSpark on firmware from 32 real-world devices containing 14 known vulnerabilities. AuthSpark successfully identifies 42 out of 44 credential checks and detects 14 of the known vulnerabilities. More importantly, when applied to the latest firmware versions, AuthSpark discovers six zero-day authentication bypass vulnerabilities, four of which received official assignments (three CVEs and one PSV). These results highlight AuthSpark's effectiveness and its potential to uncover critical security flaws in real-world systems.",
+  "abstract_source_id": "src-abstract-ndss-2026-02a5bf71",
   "venue": "ndss",
   "year": 2026,
   "track_or_session": "Fall submission cycle",
@@ -637,6 +639,19 @@
       "official": false,
       "supports": [
         "independent proceedings identity reconciliation"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2026-02a5bf71",
+      "url": "https://www.ndss-symposium.org/ndss-paper/through-the-authentication-maze-detecting-authentication-bypass-vulnerabilities-in-firmware-binaries/",
+      "kind": "paper-page",
+      "title": "Through the Authentication Maze: Detecting Authentication Bypass Vulnerabilities in Firmware Binaries",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:23:21Z",
+      "content_hash": "sha256:07b3413356101a32afe291724f5ca8ee1a5b4cc16bb8d38e0d5eed0552c1120b",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

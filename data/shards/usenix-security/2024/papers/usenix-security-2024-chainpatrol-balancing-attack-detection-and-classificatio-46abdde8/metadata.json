@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2024-chainpatrol-balancing-attack-detection-and-classificatio-46abdde8",
   "title": "ChainPatrol: Balancing Attack Detection and Classification with Performance Overhead for Service Function Chains Using Virtual Trailers",
+  "abstract": "Network functions virtualization enables tenants to outsource their service function chains (SFCs) to third-party clouds for better agility and cost-effectiveness. However, outsourcing may limit tenants' ability to directly inspect cloud-level deployments to detect attacks on SFC forwarding paths, such as network function bypass or traffic injection. Existing solutions requiring direct cloud access are unsuitable for outsourcing, and adding a cryptographic trailer to every packet may incur significant performance overhead over large flows. In this paper, we propose ChainPatrol, a lightweight solution for tenants to continuously detect and classify cloud-level attacks on SFCs. Our main idea is to \"virtualize'' cryptographic trailers by encoding them as side-channel watermarks, such that they can be transmitted without adding extra bits to packets. We tackle several key challenges like encoding virtual trailers within the limited side channel capacity, minimizing packet delay, and tolerating unexpected network jitters. We implement our solution on Amazon EC2, and our experiments with real-life data and applications demonstrate that ChainPatrol can achieve a better balance between security (e.g., 100% detection accuracy and 70% classification accuracy) and overhead (e.g., almost zero increased traffic and negligible end-to-end delay) than existing works (e.g., up to 45% overhead reduction compared to a state-of-the-art solution).",
+  "abstract_source_id": "src-abstract-usenix-security-2024-46abdde8",
   "venue": "usenix-security",
   "year": 2024,
   "track_or_session": "Cloud Security",
@@ -196,6 +198,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2024-46abdde8",
+      "url": "https://www.usenix.org/conference/usenixsecurity24/presentation/oqaily",
+      "kind": "paper-page",
+      "title": "ChainPatrol: Balancing Attack Detection and Classification with Performance Overhead for Service Function Chains Using Virtual Trailers",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:14:28Z",
+      "content_hash": "sha256:6ffd499528ff1708ca0a8ddb6de1126ab4ed8c5b7a0b58ab374c1a97d8fcf689",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

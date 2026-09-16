@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "eurosys-2024-cdmpp-a-device-model-agnostic-framework-for-latency-pred-addd935b",
   "title": "CDMPP: A Device-Model Agnostic Framework for Latency Prediction of Tensor Programs",
+  "abstract": "Deep Neural Networks (DNNs) have shown excellent performance in a wide range of machine learning applications. Knowing the latency of running a DNN model or tensor program on a specific device is useful in various tasks, such as DNN graph- or tensor-level optimization and device selection. Considering the large space of DNN models and devices that impedes direct profiling of all combinations, recent efforts focus on building a predictor to model the performance of DNN models on different devices. However, none of the existing attempts have achieved a cost model that can accurately predict the performance of various tensor programs while supporting both training and inference accelerators. We propose CDMPP, an efficient tensor program latency prediction framework for both cross-model and cross-device prediction. We design an informative but efficient representation of tensor programs, called compact ASTs, and a pre-order-based positional encoding method, to capture the internal structure of tensor programs. We develop a domain-adaption-inspired method to learn domain-invariant representations and devise a KMeans-based sampling algorithm, for the predictor to learn from different domains (i.e., different DNN operators and devices). Our extensive experiments on a diverse range of DNN models and devices demonstrate that CDMPP significantly outperforms state-of-the-art baselines with 14.03% and 10.85% prediction error for cross-model and cross-device prediction, respectively, and one order of magnitude higher training efficiency. The implementation and the expanded dataset are available at https://github.com/joapolarbear/cdmpp.",
+  "abstract_source_id": "src-abstract-eurosys-2024-addd935b",
   "venue": "eurosys",
   "year": 2024,
   "track_or_session": null,
@@ -209,6 +211,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-eurosys-2024-addd935b",
+      "url": "https://api.openalex.org/works/doi:10.1145/3627703.3629572?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "CDMPP: A Device-Model Agnostic Framework for Latency Prediction of Tensor Programs",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:18:44Z",
+      "content_hash": "sha256:ff4b5d39ad2cad842b5db914e4bbbf10005a263112c72be932642fd9c982e748",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

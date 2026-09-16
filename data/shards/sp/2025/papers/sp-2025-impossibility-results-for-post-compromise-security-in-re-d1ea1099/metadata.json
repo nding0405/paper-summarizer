@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2025-impossibility-results-for-post-compromise-security-in-re-d1ea1099",
   "title": "Impossibility Results for Post-Compromise Security in Real-World Communication Systems",
+  "abstract": "Modern secure communication systems, such as iMessage, WhatsApp, and Signal include intricate mechanisms that aim to achieve very strong security properties. These mechanisms typically involve continuously merging fresh secrets into the keying material that is used to encrypt messages during communications. In the literature, these mechanisms have been proven to achieve forms of Post-Compromise Security (PCS): the ability to provide communication security even if the full state of a party was compromised some time in the past. However, recent work has shown these proofs cannot be transferred to the end-user level, possibly because of usability concerns. This has raised the question of whether end-users can actually obtain PCS or not, and under which conditions. Here we show and formally prove that communication systems that need to be resilient against certain types of state loss (which can occur in practice) fundamentally cannot achieve full PCS for end-users. Whereas previous work showed that the Signal messenger did not achieve this with its current session-management layer, we isolate the exact conditions that cause this failure, and we show why this cannot be simply solved in communication systems by implementing a different session-management layer or an entirely different protocol. Moreover, we clarify the trade-off of the maximum number of sessions between two users (40 in Signal) in terms of failure-resilience versus security. Our results have direct consequences for the design of future secure communication systems and could motivate either the simplification of redundant mechanisms or the improvement of session-management designs to provide better security trade-offs with respect to state loss/failure tolerance.",
+  "abstract_source_id": "src-abstract-sp-2025-d1ea1099",
   "venue": "sp",
   "year": 2025,
   "track_or_session": "Cycle 2",
@@ -112,6 +114,19 @@
       "official": true,
       "supports": [
         "DOI, authors, affiliations, abstract, publication date, pages, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2025-d1ea1099",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Impossibility Results for Post-Compromise Security in Real-World Communication Systems",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:47Z",
+      "content_hash": "sha256:d48e5e27e72297ce02860f066764bd9c5cd6e8191e2ebf4b4f15da0fffb6959f",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

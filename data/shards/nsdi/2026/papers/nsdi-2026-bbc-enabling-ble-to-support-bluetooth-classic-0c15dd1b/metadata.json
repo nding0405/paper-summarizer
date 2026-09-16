@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2026-bbc-enabling-ble-to-support-bluetooth-classic-0c15dd1b",
   "title": "BBC: Enabling BLE to Support Bluetooth Classic",
+  "abstract": "Bluetooth Classic has been the technology used by the overwhelming majority of wireless headphones. However, Bluetooth Classic is incompatible with Bluetooth Low Energy (BLE), and hence cannot directly communicate with BLE devices. With the recent shift toward BLE, this incompatibility prevents using simple, energy-efficient BLE chips with Bluetooth headphones, and requires using more complex dual-mode chips to support both Bluetooth Classic and BLE.\n\nTo overcome this incompatibility, we present BBC, which enables Bluetooth-Classic connectivity on BLE chips. BBC sends and receives raw FSK bits using BLE hardware while emulating all other Bluetooth-Classic operations in the driver. By eliminating the need for Bluetooth-Classic hardware, BBC enables future devices to use BLE-only chips while maintaining the Bluetooth-Classic compatibility via emulation. It also enables new connectivity for current BLE devices to directly stream audio to Bluetooth-Classic headphones. BBC achieves a throughput of 557kbps and a packet error rate (PER) of 4.86% at the distance of 10m, and provides the same audio quality as off-the-shelf Bluetooth-Classic chips.",
+  "abstract_source_id": "src-abstract-nsdi-2026-0c15dd1b",
   "venue": "nsdi",
   "year": 2026,
   "track_or_session": "Mobile and Embedded Systems",
@@ -97,6 +99,19 @@
         "proceedings page range and page count",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2026-0c15dd1b",
+      "url": "https://www.usenix.org/conference/nsdi26/presentation/cho",
+      "kind": "paper-page",
+      "title": "BBC: Enabling BLE to Support Bluetooth Classic",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:04:51Z",
+      "content_hash": "sha256:2ad5e03c2e2b7911871752b05ee31db90bbdbe08a0daafd043efdf68528708d4",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

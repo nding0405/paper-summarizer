@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2026-lightening-the-load-a-cluster-based-framework-for-a-lowe-b20eb768",
   "title": "Lightening the Load: A Cluster-Based Framework for A Lower-Overhead, Provable Website Fingerprinting Defense",
+  "abstract": "Website fingerprinting (WF) attacks remain a significant threat to encrypted traffic, prompting the development of a wide range of defenses. Among these, two prominent classes are regularization-based defenses, which shape traffic using fixed padding rules, and supersequence-based approaches, which conceal traces among predefined patterns.\n\nIn this work, we present a unified framework for designing an adaptive WF defense that combines the effectiveness of regularization with the provable security of supersequence-style grouping.\n\nThe scheme first extracts behavioural patterns from traces and clusters them into $(k,l)$-diverse anonymity sets; an early-time-series classifier (adapted from ECDIRE) then switches from a conservative global set of regularization parameters to the lighter, set-specific parameters.\n\nWe instantiate the design as emph{Adaptive Tamaraw}, a variant of Tamaraw that assigns padding parameters on a per-cluster basis while retaining its original information-theoretic guarantee. Comprehensive experiments on public real-world datasets confirm the benefits.\n\nBy tuning $k$, operators can trade privacy for efficiency: in its high-privacy mode, Adaptive Tamaraw pushes the bound on any attacker's accuracy below textbf{30%}, whereas in efficiency-centred settings it cuts total overhead by textbf{99} percentage points compared with classic Tamaraw.",
+  "abstract_source_id": "src-abstract-ndss-2026-b20eb768",
   "venue": "ndss",
   "year": 2026,
   "track_or_session": "Fall submission cycle",
@@ -118,6 +120,19 @@
       "official": false,
       "supports": [
         "independent proceedings identity reconciliation"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2026-b20eb768",
+      "url": "https://www.ndss-symposium.org/ndss-paper/lightening-the-load-a-cluster-based-framework-for-a-lower-overhead-provable-website-fingerprinting-defense/",
+      "kind": "paper-page",
+      "title": "Lightening the Load: A Cluster-Based Framework for A Lower-Overhead, Provable Website Fingerprinting Defense",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:22:23Z",
+      "content_hash": "sha256:5471560296d5da5f49baa50b6b5ddd79731fed77ce7cde553689018cccaa44d6",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

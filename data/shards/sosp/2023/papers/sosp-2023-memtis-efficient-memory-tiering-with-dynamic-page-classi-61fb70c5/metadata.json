@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sosp-2023-memtis-efficient-memory-tiering-with-dynamic-page-classi-61fb70c5",
   "title": "MEMTIS: Efficient Memory Tiering with Dynamic Page Classification and Page Size Determination",
+  "abstract": "The evergrowing memory demand fueled by datacenter workloads is the driving force behind new memory technology innovations (e.g., NVM, CXL). Tiered memory is a promising solution which harnesses such multiple memory types with varying capacity, latency, and cost characteristics in an effort to reduce server hardware costs while fulfilling memory demand. Prior works on memory tiering make suboptimal (often pathological) page placement decisions because they rely on various heuristics and static thresholds without considering overall memory access distribution. Also, deciding the appropriate page size for an application is difficult as huge pages are not always beneficial as a result of skewed accesses within them. We present Memtis, a tiered memory system that adopts informed decision-making for page placement and page size determination. Memtis leverages access distribution of allocated pages to optimally approximate the hot data set to the fast tier capacity. Moreover, Memtis dynamically determines the page size that allows applications to use huge pages while avoiding their drawbacks by detecting inefficient use of fast tier memory and splintering them if necessary. Our evaluation shows that Memtis outperforms state-of-the-art tiering systems by up to 169.0% and their best by up to 33.6%.",
+  "abstract_source_id": "src-abstract-sosp-2023-61fb70c5",
   "venue": "sosp",
   "year": 2023,
   "track_or_session": "Session 1: Kernel Design and Testing",
@@ -146,6 +148,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-sosp-2023-61fb70c5",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "MEMTIS: Efficient Memory Tiering with Dynamic Page Classification and Page Size Determination",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:12Z",
+      "content_hash": "sha256:aa9c23a45f6ec9973f40e6c9520c69d42bb49fc1f526891570edfdb1976cff82",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

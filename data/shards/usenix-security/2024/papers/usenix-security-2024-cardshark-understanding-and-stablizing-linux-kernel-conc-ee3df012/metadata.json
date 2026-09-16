@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2024-cardshark-understanding-and-stablizing-linux-kernel-conc-ee3df012",
   "title": "CARDSHARK: Understanding and Stablizing Linux Kernel Concurrency Bugs Against the Odds",
+  "abstract": "Concurrency bugs in the Linux kernel are notoriously difficult to reproduce and debug due to their non-deterministic nature. While they bring constant headaches to Linux kernel developers, the reasons behind the non-determinism and how to improve the efficiency in triggering concurrency bugs to ease the debugging process still need to be studied.\n\nThis work aims to fill the gap. We comprehensively study the concurrency bug stability problem in the Linux kernel, dissect the factors behind the non-determinism, and systematize the insights into a model to explain the non-deterministic nature of concurrency bugs.\n\nBased on insights derived from the model, we identify an under-studied factor, named misalignment, which plays a vital role in triggering concurrency bugs. By controlling this factor, we significantly reduce the randomness in the concurrency bug-triggering process.\n\nInspired by this insight, we design a novel technique, named CARDSHARK, that can significantly improve the efficiency in triggering concurrency bugs when kernel instrumentation is possible. A variant of CARDSHARK, named BLINDSHARK, enables developers to improve efficiency in triggering concurrency bugs without knowing their root causes, making the use of CARDSHARK practical.\n\nIn our evaluation of 12 real-world concurrency bugs, CARDSHARK and BLINDSHARK significantly reduce the needed time and the number of attempts to trigger concurrency bugs in the Linux kernel. Notably, CARDSHARK can deterministically trigger 10 out of the 12 concurrency bugs with a single attempt. Our evaluation shows that CARDSHARK significantly outperforms existing works in stabilizing concurrency bugs, making it a potential great help to developers in analyzing and fixing concurrency bugs.",
+  "abstract_source_id": "src-abstract-usenix-security-2024-ee3df012",
   "venue": "usenix-security",
   "year": 2024,
   "track_or_session": "System Security IV: Multithreading",
@@ -112,6 +114,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2024-ee3df012",
+      "url": "https://www.usenix.org/conference/usenixsecurity24/presentation/han-tianshuo",
+      "kind": "paper-page",
+      "title": "CARDSHARK: Understanding and Stablizing Linux Kernel Concurrency Bugs Against the Odds",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:14:25Z",
+      "content_hash": "sha256:7e999dd064b939be3b36ad6f6b80c8585858c4d3047b76fdc8bcfa8a4c198075",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

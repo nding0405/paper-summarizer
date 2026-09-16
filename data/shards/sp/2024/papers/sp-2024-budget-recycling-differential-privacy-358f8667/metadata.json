@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2024-budget-recycling-differential-privacy-358f8667",
   "title": "Budget Recycling Differential Privacy",
+  "abstract": "Differential Privacy (DP) mechanisms usually force reduction in data utility by producing \"out-of-bound\" noisy results for a tight privacy budget. We introduce the Budget Recycling Differential Privacy (BR-DP) framework, designed to provide soft-bounded noisy outputs for a broad range of existing DP mechanisms. By \"soft-bounded,\" we refer to the mechanism’s ability to release most outputs within a predefined error boundary, thereby improving utility and maintaining privacy simultaneously. The core of BR-DP consists of two components: a DP kernel responsible for generating a noisy answer per iteration, and a recycler that probabilistically recycles/regenerates or releases the noisy answer. We delve into the privacy accounting of BR-DP, culminating in the development of a budgeting principle that optimally sub-allocates the available budget between the DP kernel and the recycler. Furthermore, we introduce algorithms for tight BR-DP accounting in composition scenarios, and our findings indicate that BR-DP achieves reduced privacy leakage post-composition compared to DP. Additionally, we explore the concept of privacy amplification via subsampling within the BR-DP framework and propose optimal sampling rates for BR-DP across various queries. We experiment with real data, and the results demonstrate BR-DP’s effectiveness in lifting the utility-privacy tradeoff provided by DP mechanisms.",
+  "abstract_source_id": "src-abstract-sp-2024-358f8667",
   "venue": "sp",
   "year": 2024,
   "track_or_session": "Winter cycle",
@@ -159,6 +161,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2024-358f8667",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Budget Recycling Differential Privacy",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:32Z",
+      "content_hash": "sha256:be7515012a8c1ea1211f38a27ea4d2aa9cff6e0faac9417a2f58b1d64e91280e",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

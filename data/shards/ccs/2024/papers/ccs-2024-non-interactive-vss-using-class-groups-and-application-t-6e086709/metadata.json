@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2024-non-interactive-vss-using-class-groups-and-application-t-6e086709",
   "title": "Non-interactive VSS using Class Groups and Application to DKG",
+  "abstract": "We put forward a non-interactive verifiable secret sharing (NI-VSS) scheme using class groups - we call it cgVSS. Our construction follows the standard framework of encrypting the shares to a set of recipients and generating a non-interactive proof of correct sharing. However, as opposed to prior works, such as Groth's [Eprint 2021], or Gentry et al.'s [Eurocrypt 2022], we do not require any range proof - this is possible due to the unique structure of class groups, that enables efficient encryption/decryption of large field elements in the exponent of an ElGamal-style encryption scheme. Importantly, this is possible without destroying the additive homomorphic structure, which is required to make the proof-of-correctness highly efficient. This approach not only substantially simplifies the NI-VSS process, but also outperforms the state-of-art schemes significantly. For example, our implementation shows that for a 150 node system cgVSS outperforms (a simplified implementation of) Groth's protocol in overall communication complexity by 5.6x, about 9.3 -- 9.7x in the dealer time and 2.4 - 2.7x in the receiver time per node.",
+  "abstract_source_id": "src-abstract-ccs-2024-6e086709",
   "venue": "ccs",
   "year": 2024,
   "track_or_session": "Cycle 1",
@@ -180,6 +182,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2024-6e086709",
+      "url": "https://api.openalex.org/works/doi:10.1145/3658644.3670312?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Non-interactive VSS using Class Groups and Application to DKG",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:11:05Z",
+      "content_hash": "sha256:ed73d09d10cafb3e919f3b0c26de33c6ed7b222144294e952211a8bdee497dcf",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

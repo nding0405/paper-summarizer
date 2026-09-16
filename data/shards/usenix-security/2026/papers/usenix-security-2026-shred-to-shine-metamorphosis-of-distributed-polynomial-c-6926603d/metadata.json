@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-shred-to-shine-metamorphosis-of-distributed-polynomial-c-6926603d",
   "title": "Shred-to-Shine Metamorphosis of (Distributed) Polynomial Commitments",
+  "abstract": "Succinct non-interactive arguments of knowledge (SNARKs) rely on polynomial commitment schemes (PCSs) to verify polynomial evaluations succinctly. High-performance multilinear PCSs (MLPCSs) from linear codes reduce prover cost, and distributed MLPCSs cut it further by parallelizing commitment and opening across provers. Employing a fast Reed–Solomon interactive oracle proof of proximity (FRI), we propose PIPFRI, an MLPCS that combines the linear-time proving of linear-time-encodable-code PCSs with the compact proofs and fast verification of Reed–Solomon (RS) PCSs. Reducing fast Fourier transform and hash overhead, PIPFRI is 10× faster to prove than the RS-based DeepFold (USENIX Security '25) while keeping competitive proof size and verifier time. Measured against Orion (CRYPTO '22) from linear-time-encodable codes, PIPFRI proves 3.5× faster and reduce proof size and verifier time by 15×. As a linearly scalable distributed variant, we propose DEPIPFRI, which adds accountability and distributes a single polynomial across provers, enabling the first code-based distributed SNARK for general circuits. Notably, compared with DeVirgo (CCS '22), which lacks accountability and supports only multiple independent polynomials, DEPIPFRI improves prover time by 25× and inter-prover communication by 7×. We identify shred-to-shine as the key insight: partitioning a polynomial into independently handled fragments while maintaining proof size and verifier time. Hitting the pairing regime, this insight yields a group-based MLPCS with a 16× shorter structured reference string (SRS) and a 10× faster opening time than a multilinear variant of Kate–Zaverucha–Goldberg (TCC '13).",
+  "abstract_source_id": "src-abstract-usenix-security-2026-6926603d",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Applications of Cryptography 6",
@@ -219,6 +221,19 @@
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening",
         "prepublication PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-6926603d",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/li-weihan",
+      "kind": "paper-page",
+      "title": "Shred-to-Shine Metamorphosis of (Distributed) Polynomial Commitments",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:25:26Z",
+      "content_hash": "sha256:2bbf0f7bcd9c81590bfd2571c63adab6dbe7b942596267c5d2b3c627ff921ab9",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

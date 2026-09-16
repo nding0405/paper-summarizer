@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2026-dpa-store-an-ordered-network-data-path-key-value-store-73bdeddf",
   "title": "DPA-Store: An Ordered Network Data Path Key-Value Store",
+  "abstract": "Remote in-memory key–value (KV) stores are fundamental to a wide range of applications, many of which depend on efficient range operations. However, existing designs fall short of simultaneously providing high performance, low complexity, and full range-query support. Host-based systems like Redis and Memcached are constrained by the kernel network stack and NIC–host interactions. Implementations of hash-based structures that bypass the OS kernel or serve directly from SmartNICs demonstrate upper performance limits but cannot support range queries. Distributed RDMA systems offer high throughput and range functionality when using stateful clients, but these clients increase the risk of faults and complicate scaling. Finally, SmartNICs traversing host-memory trees suffer from high numbers of DMA round-trips.\n\nThis paper presents DPA-Store , which uses the on-path Data Path Accelerators (DPAs) of the BlueField-3 SmartNIC to circumvent OS overheads while supporting stateless clients and range queries. The DPAs fetch incoming requests directly from the NIC buffers and traverse a lock-free learned index tree within the DPA memory. Values are fetched from a host-side replica of the tree when reaching the leaf level. Writes are buffered in DPA memory and transferred in batches to the host. Compute-heavy structural operations are executed on the host and transactionally stitched back to the SmartNIC. Complemented with a read cache directly on the NIC, DPA-Store sustains 33 million operations per second (MOPS) for lookups and 13 MOPS for range queries. Our evaluation shows that DPA-Store is already faster than or competitive with state-of-the-art solutions, and we demonstrate how small changes to the BlueField-3 hardware could additionally increase performance.",
+  "abstract_source_id": "src-abstract-osdi-2026-73bdeddf",
   "venue": "osdi",
   "year": 2026,
   "track_or_session": "Close to the Network",
@@ -188,6 +190,19 @@
       "official": true,
       "supports": [
         "Official proceedings availability and canonical conference versions."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2026-73bdeddf",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/schimmelpfennig",
+      "kind": "paper-page",
+      "title": "DPA-Store: An Ordered Network Data Path Key-Value Store",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:08:11Z",
+      "content_hash": "sha256:102539d221e72237050622aa4cfdc7c795ee6955f567218337f6b78d849c722a",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

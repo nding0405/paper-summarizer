@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2026-checkmate-zero-performance-overhead-model-checkpointing-3954f4b8",
   "title": "Checkmate: Zero Performance Overhead Model Checkpointing via Network Gradient Replication",
+  "abstract": "This paper presents Checkmate, a system that enables per-iteration checkpointing in DNN training without any training slowdown. The traditional approach to checkpointing requires a pause in training to copy model states to a separate location, allowing the state to be restored in the event of failure. This approach fundamentally has a tradeoff between the frequency of checkpoints and the cost of a failure. We avoid this tradeoff; our key insight is that in data-parallel training, all information necessary to create a checkpoint already exists in the network as gradients. Our core contribution is a new multicast abstraction that simultaneously delivers gradients to a separate CPU-based shadow cluster. The shadow maintains a checkpoint by applying those gradients to a copy of the model. Our evaluation shows that Checkmate performs per-iteration checkpointing with training throughput comparable to an ideal no-checkpoint baseline. Checkmate achieves 5 to 34.5× more frequent checkpointing compared to state-of-the-art checkpointing systems, resulting in 80% to 97.1% reduction in repeated work per failure. At the same checkpointing frequency, Checkmate delivers 1.3× to 6.5× throughput compared to other systems.",
+  "abstract_source_id": "src-abstract-nsdi-2026-3954f4b8",
   "venue": "nsdi",
   "year": 2026,
   "track_or_session": "Overfitting the Internet",
@@ -160,6 +162,19 @@
         "proceedings page range and page count",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2026-3954f4b8",
+      "url": "https://www.usenix.org/conference/nsdi26/presentation/bhardwaj",
+      "kind": "paper-page",
+      "title": "Checkmate: Zero Performance Overhead Model Checkpointing via Network Gradient Replication",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:04:58Z",
+      "content_hash": "sha256:ef64f49d4222ceb98d87387d0f634ab41132919fdb5c9fb57c9b02c27eef93d3",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

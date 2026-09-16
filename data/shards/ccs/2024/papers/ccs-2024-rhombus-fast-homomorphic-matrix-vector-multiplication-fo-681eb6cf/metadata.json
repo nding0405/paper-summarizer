@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2024-rhombus-fast-homomorphic-matrix-vector-multiplication-fo-681eb6cf",
   "title": "Rhombus: Fast Homomorphic Matrix-Vector Multiplication for Secure Two-Party Inference",
+  "abstract": "We present Rhombus, a new secure matrix-vector multiplication (MVM) protocol in the semi-honest two-party setting, which is able to be seamlessly integrated into existing privacy-preserving machine learning (PPML) frameworks and serve as the basis of secure computation in linear layers. Rhombus adopts RLWE-based homomorphic encryption (HE) with coefficient encoding, which allows messages to be chosen from not only a field Fp but also a ring Z2l, where the latter supports faster computation in non-linear layers. To achieve better efficiency, we develop an input-output packing technique that reduces the communication cost incurred by HE with coefficient encoding by about 21×, and propose a split-point picking technique that reduces the number of rotations to that sublinear in the matrix dimension. Compared to the recent protocol HELiKs by Balla and Koushanfar (CCS'23), our implementation demonstrates that Rhombus improves the whole performance of an MVM protocol by a factor of 7.4x ~ 8x, and improves the end-to-end performance of secure two-party inference of ResNet50 by a factor of 4.6x ~ 18x.",
+  "abstract_source_id": "src-abstract-ccs-2024-681eb6cf",
   "venue": "ccs",
   "year": 2024,
   "track_or_session": "Cycle 2",
@@ -243,6 +245,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2024-681eb6cf",
+      "url": "https://api.openalex.org/works/doi:10.1145/3658644.3690281?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Rhombus: Fast Homomorphic Matrix-Vector Multiplication for Secure Two-Party Inference",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:11:51Z",
+      "content_hash": "sha256:0ce445198b4f1ca7256500c3db23695945b61f5b46f0f479bf935f1482fd1b05",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

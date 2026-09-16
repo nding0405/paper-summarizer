@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-when-authorization-loses-its-meaning-breaking-and-fixing-567769bd",
   "title": "When Authorization Loses Its Meaning: Breaking and Fixing Third-Party Online Payments",
+  "abstract": "Third-party online payment systems, such as Alipay and PSPB, constitute critical infrastructure for modern e-commerce. However, their security rests on the unrealistic assumption of fully trusted communication channels. While prior studies have identified isolated vulnerabilities, a systematic formal analysis of payment protocol security remains absent. This paper presents formal security models for six third-party payment protocols, spanning three major payment scenarios and two dominant payment service providers. Our analysis reveals a fundamental design flaw: whenever channel integrity is compromised between the merchant client, merchant server, or payment system, order tampering attacks become feasible. We validate this threat on Android, where over 20% of tested merchant applications allow order tampering through implicit Intent hijacking. To mitigate this threat, we propose user-side order authentication, where per-user-merchant key pairs cryptographically bind consent to order semantics. Formal verification demonstrates its resilience against identified attacks under weak channel assumptions. By bridging formal methods and empirical analysis, this work offers actionable guidance for standardizing secure payment protocols.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-567769bd",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Network Security 1",
@@ -176,6 +178,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-567769bd",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/xiao",
+      "kind": "paper-page",
+      "title": "When Authorization Loses Its Meaning: Breaking and Fixing Third-Party Online Payments",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:26:14Z",
+      "content_hash": "sha256:d04a46e0f0f06ceb6b5fa0393c07bef28bdc09c962a9d5821ab1c94ca0fb98eb",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-enhanced-label-only-membership-inference-attacks-with-fe-d502ec75",
   "title": "Enhanced Label-Only Membership Inference Attacks with Fewer Queries",
+  "abstract": "Machine Learning (ML) models are vulnerable to membership inference attacks (MIAs), where an adversary aims to determine whether a specific sample was part of the model's training data. Traditional MIAs exploit differences in the model's output posteriors, but in more challenging scenarios (label-only scenarios) where only predicted labels are available, existing works directly utilize the shortest distance of samples reaching decision boundaries as membership signals, denoted as the shortestBD. However, they face two key challenges: low distinguishability between members and non-members due to sample diversity, and high query requirements stemming from direction diversity.\n\nTo overcome these limitations, we propose a novel label-only attack called DHAttack, designed for Higher performance and Higher stealth, focusing on the boundary distance of individual samples to mitigate the effects of sample diversity, and measuring this distance toward a fixed point to minimize query overhead. Empirical results demonstrate that DHAttack consistently outperforms other advanced attack methods. Notably, in some cases, DHAttack achieves more than an order of magnitude improvement over all baselines in terms of TPR @ 0.1% FPR with just 5 to 30 queries. Furthermore, we explore the reasons for DHAttack's success, and then analyze other crucial factors in the attack performance. Finally, we evaluate several defense mechanisms against DHAttack and demonstrate its superiority over all baseline attacks.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-d502ec75",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "ML and AI Privacy 2",
@@ -196,6 +198,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-d502ec75",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/li-hao",
+      "kind": "paper-page",
+      "title": "Enhanced Label-Only Membership Inference Attacks with Fewer Queries",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:19:40Z",
+      "content_hash": "sha256:f1f36c1d250a7f5e0f7a6a298dd5bc2a8d157da36d05e2b027ddf69094b676e4",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

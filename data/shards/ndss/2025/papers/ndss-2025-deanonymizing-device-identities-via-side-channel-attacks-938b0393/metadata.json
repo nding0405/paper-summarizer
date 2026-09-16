@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2025-deanonymizing-device-identities-via-side-channel-attacks-938b0393",
   "title": "Deanonymizing Device Identities via Side-channel Attacks in Exclusive-use IoTs & Mitigation",
+  "abstract": "Wireless technologies like Bluetooth Low Energy (BLE) and Wi-Fi are essential to the Internet of Things (IoT), facilitating seamless device communication without physical connections. However, this convenience comes at a cost—exposed data exchanges that are susceptible to observation by attackers, leading to serious security and privacy threats such as device tracking. Although protocol designers have traditionally relied on strategies like address and identity randomization as a countermeasure, our research reveals that these attacks remain a significant threat due to a historically overlooked, fundamental flaw in exclusive-use wireless communication. We define _exclusive-use_ as a scenario where devices are designed to provide functionality solely to an\n\nassociated or paired device. The unique communication patterns inherent in these relationships create an observable boolean side-channel that attackers can exploit to discover whether two devices “trust” each other. This information leak allows for the deanonymization of devices, enabling tracking even in the presence of modern countermeasures. We introduce our tracking attacks as _IDBleed_ and demonstrate that BLE and Wi-Fi protocols that support confidentiality, integrity, and authentication remain vulnerable to deanonymization due to this fundamental flaw in exclusive-use communication patterns. Finally, we propose and quantitatively evaluate a generalized, privacy-preserving mitigation we call _Anonymization Layer_ to find a negligible 2% approximate overhead in performance and power consumption on tested smartphones and PCs.",
+  "abstract_source_id": "src-abstract-ndss-2025-938b0393",
   "venue": "ndss",
   "year": 2025,
   "track_or_session": "Fall submission cycle",
@@ -168,6 +170,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2025-938b0393",
+      "url": "https://www.ndss-symposium.org/ndss-paper/deanonymizing-device-identities-via-side-channel-attacks-in-exclusive-use-iots-mitigation/",
+      "kind": "paper-page",
+      "title": "Deanonymizing Device Identities via Side-channel Attacks in Exclusive-use IoTs & Mitigation",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:19:22Z",
+      "content_hash": "sha256:57891037971e282c886ca8e16faf4728072d34d2784f951abfa258552ec60281",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

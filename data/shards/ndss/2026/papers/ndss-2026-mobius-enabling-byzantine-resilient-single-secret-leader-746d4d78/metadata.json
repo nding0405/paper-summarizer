@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2026-mobius-enabling-byzantine-resilient-single-secret-leader-746d4d78",
   "title": "Mobius: Enabling Byzantine-Resilient Single Secret Leader Election with Uniquely Verifiable State",
+  "abstract": "Single Secret Leader Election (SSLE) protocol facilitates the election of a single leader per round among a group of registered nodes while ensuring unpredictability. Ethereum has identified SSLE as an essential component in its development roadmap and has adopted it as a potential solution to counteract potential attacks. However, we identify a new form of attack termed the textit{state uniqueness} attack that is caused by malicious leaders proposing multiple publicly verifiable states. This attack undermines the property of textit{uniqueness} in subsequent leader elections and, with high probability, leads to violations of fundamental security properties of the over-layer protocol such as liveness. The vulnerability stems inherently from the designs reducing the uniqueness guarantee to a unique state per election, and can be generalized to the existing SSLE constructions. We further quantify the severity of this attack based on theoretical analysis and real-world executions on Ethereum, highlighting the critical challenges in designing provably secure SSLE protocols.\n\nTo address the textit{state uniqueness} attack while ensuring both security and practical performance, we present a universal SSLE protocol called Mobius that does not rely on extra trust assumptions. Specifically, Mobius prevents the generation of multiple verifiable states for each election and achieves a unique state across consecutive executions through an innovative textit{approximately-unique randomization} mechanism. In addition to providing a comprehensive security analysis in the Universal Composability framework, we develop a proof-of-concept implementation of Mobius, and conduct extensive experiments to evaluate the security and overhead. The experimental results show that Mobius exhibits enhanced security while significantly reducing communication complexity throughout the protocol execution, achieving over 80% reduction in the registration phase.",
+  "abstract_source_id": "src-abstract-ndss-2026-746d4d78",
   "venue": "ndss",
   "year": 2026,
   "track_or_session": "Fall submission cycle",
@@ -199,6 +201,19 @@
       "official": false,
       "supports": [
         "independent proceedings identity reconciliation"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2026-746d4d78",
+      "url": "https://www.ndss-symposium.org/ndss-paper/mobius-enabling-byzantine-resilient-single-secret-leader-election-with-uniquely-verifiable-state/",
+      "kind": "paper-page",
+      "title": "Mobius: Enabling Byzantine-Resilient Single Secret Leader Election with Uniquely Verifiable State",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:22:32Z",
+      "content_hash": "sha256:84fb9de5b2600468ea3556ba40145bb30d4f9f420f9208b22e1a0b6a1b986192",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2026-grace-unlocking-cuda-graphs-with-compiler-support-for-ml-f16efd9c",
   "title": "GraCE: Unlocking CUDA Graphs with Compiler Support for ML Workloads",
+  "abstract": "Machine learning (ML) workloads launch hundreds of short-running GPU kernels per iteration. With GPU compute throughput growing rapidly, CPU-side launch latency of kernels is emerging as a bottleneck. CUDA Graphs promise to address this by replaying a set of kernels with a single dispatch of the graph, removing per-kernel launch costs. However, CUDA Graphs remain surprisingly difficult to deploy correctly and efficiently.\n\nWe present GraCE—a compiler framework to maximize the coverage and benefits of CUDA Graphs for ML workloads. It introduces three novel optimizations: it applies automatic code transformations to make ML applications amenable for CUDA Graphs; it eliminates the parameter copy overheads for kernels executing in CUDA Graphs, and it selectively deploys CUDA Graphs guided by a cost–benefit analysis. For 25 ML workloads from TorchBench, HuggingFace and TIMM, GraCE more than doubles the benefit from deploying CUDA Graph compared to the most popular and widely used ML compiler PyTorch2. GraCE is built atop PyTorch2’s compilation framework and requires no programmer intervention.",
+  "abstract_source_id": "src-abstract-osdi-2026-f16efd9c",
   "venue": "osdi",
   "year": 2026,
   "track_or_session": "GPU Compilers and Kernels",
@@ -146,6 +148,19 @@
       "official": true,
       "supports": [
         "Official proceedings availability and canonical conference versions."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2026-f16efd9c",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/ghosh",
+      "kind": "paper-page",
+      "title": "GraCE: Unlocking CUDA Graphs with Compiler Support for ML Workloads",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:08:20Z",
+      "content_hash": "sha256:71a3517ebd5d9f0f540f845c3b95511034381cd8f27469bf29ed41bceb456185",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

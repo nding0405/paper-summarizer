@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-analyzing-the-webrtc-ecosystem-and-breaking-authenticati-9313c7d8",
   "title": "Analyzing the WebRTC Ecosystem and Breaking Authentication in DTLS-SRTP",
+  "abstract": "DTLS-SRTP was designed to secure real-time media communication and is found in prominent audio and video call platforms, including Zoom, Teams, and Google Meet. Notably, it is part of Web Real-Time Communication (Web-RTC), a web standard enabling real-time communication in the browser. To this end, WebRTC uses multiple technologies, including HTTP, TLS, SDP, ICE, STUN, TURN, UDP, TCP, DTLS, (S)RTP, (S)RTCP, and SCTP. This amalgamation of technologies results in an overly complex system that is very challenging to audit systematically and automatically. As a result, the security of deployments of this core modern communication technology remains largely unexplored.\n\nIn this work, we aim to close this gap by developing an automated MitM testing framework (DTLS-MitM-Scanner (DMS)) to test the DTLS channel of a DTLS-SRTP connection. We use our framework to study the current state of the ecosystem in a case study spanning 24 service providers across their browser and mobile applications. Our analysis puts special emphasis on the authentication mechanism in DTLS-SRTP, where we test for 19 potential vulnerabilities that could lead to authentication bypasses for both the client and server. We find that among the 33 tested media server implementations, 19 contained vulnerabilities allowing an attacker to break authentication at the DTLS layer. For 9 of the affected systems, which serve hundreds of millions of users, we could also demonstrate that they could be exploited by an attacker to retrieve media data, assuming only Man-in-the-Middle capabilities. We highlight the impact of these vulnerabilities by building a Proof-of-Concept exploit to listen to Webex video conference calls.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-9313c7d8",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Network Security 1",
@@ -156,6 +158,19 @@
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening",
         "prepublication PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-9313c7d8",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/bach",
+      "kind": "paper-page",
+      "title": "Analyzing the WebRTC Ecosystem and Breaking Authentication in DTLS-SRTP",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:22:58Z",
+      "content_hash": "sha256:0b6255ba78e5feaf230c7ae441fc2e2334fd9d581dbe25faa0d8fd47e0e795af",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-charting-the-cache-side-channel-frontier-a-systematic-st-33a12189",
   "title": "Charting the Cache Side-Channel Frontier: A Systematic Study of Eviction Set Construction on Apple Silicon",
+  "abstract": "Eviction sets constitute the fundamental primitive for conflict-based cache side-channel attacks, enabling unprivileged adversaries to induce contention deterministically. However, the security landscape of Apple Silicon remains largely underexplored due to the challenges of constructing these sets. We conduct a systematic reverse engineering study on the Apple M4 to uncover the root causes of these limitations, key microarchitectural impediments: an SLC victim buffer that obscures latency-based verification, a DRAM-to-Cache Prefetcher (DCP) that violates strict LRU replacement, and an opaque SLC allocation policy modulated by L2 Insertion/Promotion Vectors (IPV). Guided by these insights, we optimize construction strategies to overcome these impediments. Our enhanced Prime-Prune-Probe (PPP) achieves 88.2% success rate for L2 eviction sets. Furthermore, we employ a hierarchical filtering strategy to construct the first practical fine-grained SLC eviction sets on Apple Silicon. Our SLC optimal approach achieves a 90% success rate, unlocking fine-grained cross-cluster attack primitives previously deemed infeasible.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-33a12189",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Hardware Security 4",
@@ -134,6 +136,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-33a12189",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/wang-han",
+      "kind": "paper-page",
+      "title": "Charting the Cache Side-Channel Frontier: A Systematic Study of Eviction Set Construction on Apple Silicon",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:23:22Z",
+      "content_hash": "sha256:1d0eadf9570726bf15aa68dfc5108a44633c494a865d6ff904dabefb627677de",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

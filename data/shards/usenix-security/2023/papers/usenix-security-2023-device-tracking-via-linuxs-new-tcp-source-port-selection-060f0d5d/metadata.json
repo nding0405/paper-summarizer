@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2023-device-tracking-via-linuxs-new-tcp-source-port-selection-060f0d5d",
   "title": "Device Tracking via Linux’s New TCP Source Port Selection Algorithm",
+  "abstract": "We describe a tracking technique for Linux devices, exploiting a new TCP source port generation mechanism recently introduced to the Linux kernel. This mechanism is based on an algorithm, standardized in RFC 6056, for boosting security by better randomizing port selection. Our technique detects collisions in a hash function used in the said algorithm, based on sampling TCP source ports generated in an attacker-prescribed manner. These hash collisions depend solely on a per-device key, and thus the set of collisions forms a device ID that allows tracking devices across browsers, browser privacy modes, containers, and IPv4/IPv6 networks (including some VPNs). It can distinguish among devices with identical hardware and software, and lasts until the device restarts.\n\nWe implemented this technique and then tested it using tracking servers in two different locations and with Linux devices on various networks. We also tested it on an Android device that we patched to introduce the new port selection algorithm. The tracking technique works in real-life conditions, and we report detailed findings about it, including its dwell time, scalability, and success rate in different network types. We worked with the Linux kernel team to mitigate the exploit, resulting in a security patch introduced in May 2022 to the Linux kernel, and we provide recommendations for better securing the port selection algorithm in the paper.",
+  "abstract_source_id": "src-abstract-usenix-security-2023-060f0d5d",
   "venue": "usenix-security",
   "year": 2023,
   "track_or_session": "Networks and Security",
@@ -112,6 +114,19 @@
       "official": true,
       "supports": [
         "authors, affiliations when published, abstract, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2023-060f0d5d",
+      "url": "https://www.usenix.org/conference/usenixsecurity23/presentation/kol",
+      "kind": "paper-page",
+      "title": "Device Tracking via Linux’s New TCP Source Port Selection Algorithm",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:10:31Z",
+      "content_hash": "sha256:f6934263f0b69db1502971958e3b49d89571e2300543c37d1f08a5d1b0b1e20e",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

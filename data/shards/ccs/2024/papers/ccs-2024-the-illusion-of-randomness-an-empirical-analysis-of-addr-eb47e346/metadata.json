@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2024-the-illusion-of-randomness-an-empirical-analysis-of-addr-eb47e346",
   "title": "The Illusion of Randomness: An Empirical Analysis of Address Space Layout Randomization Implementations",
+  "abstract": "Address Space Layout Randomization (ASLR) is a crucial defense mechanism employed by modern operating systems to mitigate exploitation by randomizing processes? memory layouts. However, the stark reality is that real-world implementations of ASLR are imperfect and subject to weaknesses that attackers can exploit. This work evaluates the effectiveness of ASLR on major desktop platforms, including Linux, MacOS, and Windows, by examining the variability in the placement of memory objects across various processes, threads, and system restarts. In particular, we collect samples of memory object locations, conduct statistical analyses to measure the randomness of these placements and examine the memory layout to find any patterns among objects that could decrease this randomness. The results show that while some systems, like Linux distributions, provide robust randomization, others, like Windows and MacOS, often fail to adequately randomize key areas like executable code and libraries. Moreover, we find a significant entropy reduction in the entropy of libraries after the Linux 5.18 version and identify correlation paths that an attacker could leverage to reduce exploitation complexity significantly. Ultimately, we rank the identified weaknesses based on severity and validate our entropy estimates with a proof-of-concept attack. In brief, this paper provides the first comprehensive evaluation of ASLR effectiveness across different operating systems and highlights opportunities for Operating System (OS) vendors to strengthen ASLR implementations.",
+  "abstract_source_id": "src-abstract-ccs-2024-eb47e346",
   "venue": "ccs",
   "year": 2024,
   "track_or_session": "Cycle 2",
@@ -180,6 +182,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2024-eb47e346",
+      "url": "https://api.openalex.org/works/doi:10.1145/3658644.3690239?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "The Illusion of Randomness: An Empirical Analysis of Address Space Layout Randomization Implementations",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:12:17Z",
+      "content_hash": "sha256:56067e0e924b818e79b5acb6e06693cd4e2c0cda8403426f119fac623827ce78",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

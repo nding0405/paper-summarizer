@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2026-enhancing-website-fingerprinting-attacks-against-traffic-95b55317",
   "title": "Enhancing Website Fingerprinting Attacks against Traffic Drift",
+  "abstract": "Anonymous communication systems, e.g., Tor, are vulnerable to various website fingerprinting (WF) attacks, which analyze network traffic patterns to compromise user privacy. In particular, sophisticated attacks employ deep learning (DL) models to identify distinctive traffic patterns associated with specific websites, allowing the adversary to determine which websites users have visited. However, these attacks are not designed to handle traffic drift, such as changes in website content and network conditions. Since traffic drift is common in real-world, the effectiveness of these attacks diminishes significantly in real-world deployment. To address this limitation, we develop Proteus, the first adaptive WF attack framework to effectively mitigate the impact of traffic drift while maintaining robust performance in real-world scenarios. The key design rationale of Proteus is to continuously fine-tune the WF model using only drifted traffic without ground-truth labels collected while deploying the model, enabling the model to adapt to complex traffic drift in near real time. Specifically, Proteus aligns the feature distributions of original and drifted traffic by minimizing the maximum mean discrepancy and thus enhances model confidence by optimizing the entropy distribution of its predictions. Furthermore, it utilizes a Gaussian mixture model to obtain reliable pseudo labels, which are subsequently used in supervised fine-tuning to further enhance its robustness against drifted traffic. Notably, Proteus can be seamlessly integrated with existing DL-based WF attacks to enhance their resilience to traffic drift. We evaluate Proteus on large-scale datasets containing over 350,000 real-world Tor browsing traces across six traffic drift scenarios. The results demonstrate that Proteus achieves an average 94.24% relative improvement in F1-score over eight state-of-the-art WF attacks for identifying drifted traffic.",
+  "abstract_source_id": "src-abstract-ndss-2026-95b55317",
   "venue": "ndss",
   "year": 2026,
   "track_or_session": "Summer submission cycle",
@@ -202,6 +204,19 @@
       "official": false,
       "supports": [
         "independent proceedings identity reconciliation"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2026-95b55317",
+      "url": "https://www.ndss-symposium.org/ndss-paper/enhancing-website-fingerprinting-attacks-against-traffic-drift/",
+      "kind": "paper-page",
+      "title": "Enhancing Website Fingerprinting Attacks against Traffic Drift",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:21:56Z",
+      "content_hash": "sha256:5365bfc991aa39ddbd3c5964549aaafeb3acd56e2322becc90d2ce782cf7a946",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

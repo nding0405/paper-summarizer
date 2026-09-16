@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2023-a-high-speed-stateful-packet-processing-approach-for-tbp-d6eab61b",
   "title": "A High-Speed Stateful Packet Processing Approach for Tbps Programmable Switches",
+  "abstract": "High-speed ASIC switches hold great promise for offloading complex packet processing pipelines directly in the highspeed data-plane. Yet, a large variety of today's packet processing pipelines, including stateful network functions and packet schedulers, require storing some (or all the) packets for short amount of times in a programmatic manner. Such a programmable buffer feature is missing on today's high-speed ASIC switches.\n\nIn this work, we present RIBOSOME, a system that extends programmable switches with external memory (to store packets) and external general-purpose packet processing devices such as CPUs or FPGAs (to perform stateful operations). As today's packet processing devices are bottlenecked by their network interface speeds, RIBOSOME carefully transmits only the relevant bits to these devices. RIBOSOME leverages spare bandwidth from any directly connected servers to store the incoming payloads through RDMA. Our evaluation shows that RIBOSOME can process 300G of traffic through a stateful packet processing pipeline (e.g., firewall, load balancer, packet scheduler) by running the pipeline logic on a single server equipped with one 100G interface.",
+  "abstract_source_id": "src-abstract-nsdi-2023-d6eab61b",
   "venue": "nsdi",
   "year": 2023,
   "track_or_session": "Programming the Network",
@@ -182,6 +184,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2023-d6eab61b",
+      "url": "https://www.usenix.org/conference/nsdi23/presentation/scazzariello",
+      "kind": "paper-page",
+      "title": "A High-Speed Stateful Packet Processing Approach for Tbps Programmable Switches",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:01:46Z",
+      "content_hash": "sha256:71ca9403b7e15e225efd754855ef84763e8f1a80c64a7dc89d20c97404e6ee45",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

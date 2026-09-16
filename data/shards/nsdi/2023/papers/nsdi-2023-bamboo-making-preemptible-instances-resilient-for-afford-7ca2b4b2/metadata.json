@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2023-bamboo-making-preemptible-instances-resilient-for-afford-7ca2b4b2",
   "title": "Bamboo: Making Preemptible Instances Resilient for Affordable Training of Large DNNs",
+  "abstract": "DNN models across many domains continue to grow in size, resulting in high resource requirements for effective training, and unpalatable (and often unaffordable) costs for organizations and research labs across scales. This paper aims to significantly reduce training costs with effective use of preemptible instances, i.e., those that can be obtained at a much cheaper price while idle, but may be preempted whenever requested by priority users. Doing so, however, requires new forms of resiliency and efficiency to cope with the possibility of frequent preemptions – a failure model that is drastically different from the occasional failures in normal cluster settings that existing checkpointing techniques target.\n\nWe present Bamboo, a distributed system that tackles these challenges by introducing redundant computations into the training pipeline, i.e., whereby one node performs computations over not only its own layers but also over some layers in its neighbor. Our key insight is that training large models often requires pipeline parallelism where \"pipeline bubbles\" naturally exist. Bamboo carefully fills redundant computations into these bubbles, providing resilience at a low cost. Across a variety of widely used DNN models, Bamboo outperforms traditional checkpointing by 3.7× in training throughput, and reduces costs by 2.4× compared to a setting where on-demand instances are used.",
+  "abstract_source_id": "src-abstract-nsdi-2023-7ca2b4b2",
   "venue": "nsdi",
   "year": 2023,
   "track_or_session": "Cloud",
@@ -224,6 +226,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2023-7ca2b4b2",
+      "url": "https://www.usenix.org/conference/nsdi23/presentation/thorpe",
+      "kind": "paper-page",
+      "title": "Bamboo: Making Preemptible Instances Resilient for Affordable Training of Large DNNs",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:01:50Z",
+      "content_hash": "sha256:e004687ab9ad17fda6166c250224f03f3bc2a33edb22822488af2820ebe94cfd",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

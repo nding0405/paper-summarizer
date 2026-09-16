@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "atc-2023-legion-automatically-pushing-the-envelope-of-multi-gpu-s-228d070d",
   "title": "Legion: Automatically Pushing the Envelope of Multi-GPU System for Billion-Scale GNN Training",
+  "abstract": "Graph neural network(GNN) has been widely applied in real-world applications, such as product recommendation in e-commerce platforms and risk control in financial management systems. Several cache-based GNN systems have been built to accelerate GNN training in a single machine with multiple GPUs. However, these systems fail to train billion-scale graphs efficiently, which is a common challenge in the industry. In this work, we propose Legion, a system that automatically pushes the envelope of multi-GPU systems for accelerating billion-scale GNN training. First, we design a hierarchical graph partitioning mechanism that significantly improves the multi-GPU cache performance. Second, we build a unified multi-GPU cache that helps to reduce the PCIe traffic incurred by accessing both graph topology and features. Third, we develop an automatic cache management mechanism that adapts the multi-GPU cache plan according to the hardware specifications to maximize the overall training throughput. Evaluations on various GNN models and multiple datasets show that Legion supports training billion-scale GNNs in a single machine and significantly outperforms the state-of-the-art cache-based systems.",
+  "abstract_source_id": "src-abstract-atc-2023-228d070d",
   "venue": "atc",
   "year": 2023,
   "track_or_session": "Structuring Graphs",
@@ -306,6 +308,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-atc-2023-228d070d",
+      "url": "https://www.usenix.org/conference/atc23/presentation/sun",
+      "kind": "paper-page",
+      "title": "Legion: Automatically Pushing the Envelope of Multi-GPU System for Billion-Scale GNN Training",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T21:58:00Z",
+      "content_hash": "sha256:2f2146eb69a0094c8e9c5d6c9675911694052839eaf0f02c8c7c1bc3304826a8",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

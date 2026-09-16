@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-approximation-enforced-execution-of-untrusted-linux-kern-f6e47497",
   "title": "Approximation Enforced Execution of Untrusted Linux Kernel Extensions",
+  "abstract": "Modern OS kernels allow untrusted extensions, such as eBPF programs, to be dynamically loaded into kernel space, with their safety ensured by an in-kernel verifier. However, this approach implicitly places the entire verifier, a complicated and error-prone component, within the trusted code base. Despite substantial efforts to verify and test the verifier, its complexity and frequent updates continue to introduce soundness bugs, leading to various security issues.\n\nThis paper introduces Approximation-Enforced Execution (AEE) , a novel concept to ensure the safe execution of untrusted kernel extensions, even in the presence of potential verifier bugs. The verifier can be essentially abstracted into two key components: the complex state approximation and the simpler safety check based on the former. By enforcing the program execution to remain within the verifier's approximations, the soundness of state approximation is, by design, not assumed—executions with non-contained states are terminated, thereby significantly reducing the trust base. AEE also leverages the verifier, but mainly obtains the approximations. It then rewrites the program to conduct the approximation enforcement, where trust is established by combining the runtime facts with minimal reliance on the verifier's safety checks. We apply AEE to ensure the spatial memory safety of eBPF programs and formally prove its soundness w.r.t. mitigating the verifier's soundness bugs and completeness w.r.t. ensuring safety under the reduced trust base. Our evaluation shows that our prototype reduces the trusted code base by 4.5x , with an average runtime overhead of 1.2% and an average increase in binary size of 4.8%.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-f6e47497",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "System Security 4: Kernel and Low-Level System Security",
@@ -91,6 +93,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-f6e47497",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/sun-hao",
+      "kind": "paper-page",
+      "title": "Approximation Enforced Execution of Untrusted Linux Kernel Extensions",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:18:36Z",
+      "content_hash": "sha256:507e3efa785cbddc857f6b48edb36c76e9c9d1d5dd3e19fb98b62c96ebda77ff",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

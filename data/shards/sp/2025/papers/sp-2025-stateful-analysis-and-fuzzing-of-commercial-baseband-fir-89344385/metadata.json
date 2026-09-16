@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2025-stateful-analysis-and-fuzzing-of-commercial-baseband-fir-89344385",
   "title": "Stateful Analysis and Fuzzing of Commercial Baseband Firmware",
+  "abstract": "Baseband firmware plays a critical role in cellular communication, yet its proprietary, closed-source nature and complex, stateful processing logic make systematic security testing challenging. Existing methods often fail to account for the interdependencies between baseband tasks and the statefulness of input processing logic, limiting their scope and effectiveness. We present Loris, a stateful fuzz testing frame-work designed to explore and analyze baseband firmware implementations effectively. We employ iterative symbolic analysis to progressively identify state variables and the predicates over them that define different protocol states, while alleviating the state explosion problem. It enables Loris to perform targeted exploration and fuzzing of program regions with high potential for vulnerabilities. We evaluated Loris across 5 commercial devices from two major vendors, covering both 4G Long-Term Evolution (LTE) and 5G New Radio (NR), demonstrating its broad applicability. Our testing revealed 7 new vulnerabilities exploitable by over-the-air attackers, potentially leading to baseband crashes, remote code execution, and denial of service.",
+  "abstract_source_id": "src-abstract-sp-2025-89344385",
   "venue": "sp",
   "year": 2025,
   "track_or_session": "Cycle 2",
@@ -154,6 +156,19 @@
       "official": true,
       "supports": [
         "DOI, authors, affiliations, abstract, publication date, pages, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2025-89344385",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Stateful Analysis and Fuzzing of Commercial Baseband Firmware",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:52Z",
+      "content_hash": "sha256:b15ce02bcc49da611fdd791ecc56741e7d91d84154b58c1a7f72a5c6902e6e46",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

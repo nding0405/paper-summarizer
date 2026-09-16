@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2026-discovering-blind-trust-vulnerabilities-in-plc-binaries-6f9af9de",
   "title": "Discovering Blind-Trust Vulnerabilities in PLC Binaries via State Machine Recovery",
+  "abstract": "Programmable Logic Controllers (PLCs) are industrial computers that control devices with real-world physical effects, and safety vulnerabilities in these systems can lead to catastrophic consequences. While prior research has proposed techniques to detect safety issues in PLC state machines, most approaches require access to design specifications or source code—resources often unavailable to analysts or end users.\n\nThis paper targets a prevalent class of vulnerabilities, which we name Blind-Trust Vulnerabilities, caused by missing or incomplete safety checks on peripheral inputs. We introduce Ta’veren, a novel static analysis-based framework that identifies such vulnerabilities directly from PLC binaries without relying on firmware rehosting, which remains an open research problem in firmware analysis. Ta’veren recovers the finite state machines of the PLC binaries, enabling repeated safety analyses under various policy specifications. To abstract the state from program states to logic-related states, we leverage our insight that PLCs consistently use specific variables to represent internal states, thus allowing for aggressive state deduplication. This insight enables us to effectively deduplicate states without compromising soundness. We develop a prototype of Ta’veren and evaluate it on real-world PLC binaries. Our experiments show that Ta’veren efficiently recovers meaningful FSMs and uncovers critical safety violations with high effectiveness.",
+  "abstract_source_id": "src-abstract-ndss-2026-6f9af9de",
   "venue": "ndss",
   "year": 2026,
   "track_or_session": "Fall submission cycle",
@@ -265,6 +267,19 @@
       "official": false,
       "supports": [
         "independent proceedings identity reconciliation"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2026-6f9af9de",
+      "url": "https://www.ndss-symposium.org/ndss-paper/discovering-blind-trust-vulnerabilities-in-plc-binaries-via-state-machine-recovery/",
+      "kind": "paper-page",
+      "title": "Discovering Blind-Trust Vulnerabilities in PLC Binaries via State Machine Recovery",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:21:51Z",
+      "content_hash": "sha256:8851fdd8bb3d66c5b76267a7a527be6b2f986a4e8145c60d22477323e016c4d7",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

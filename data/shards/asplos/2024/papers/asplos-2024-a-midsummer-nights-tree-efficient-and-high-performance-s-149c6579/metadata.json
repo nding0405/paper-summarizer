@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2024-a-midsummer-nights-tree-efficient-and-high-performance-s-149c6579",
   "title": "A Midsummer Night’s Tree: Efficient and High Performance Secure SCM",
+  "abstract": "Secure memory is a highly desirable property to prevent memory corruption-based attacks. The emergence of nonvolatile, storage class memory (SCM) devices presents new challenges for secure memory. Metadata for integrity verification, organized in a Bonsai Merkle Tree (BMT), is cached on-chip in volatile caches, and may be lost on a power failure. As a consequence, care is required to ensure that metadata updates are always propagated into SCM. To optimize metadata updates, state-of-the-art approaches propose lazy update crash consistent metadata schemes. However, few consider the implications of their optimizations on on-chip area, which leads to inefficient utilization of scarce on-chip space. In this paper, we propose A Midsummer Night's Tree (AMNT), a novel \"tree within a tree\" approach to provide crash consistent integrity with low run-time overhead while limiting on-chip area for security metadata. Our approach offloads the potential hardware complexity of our technique to software to keep area overheads low. Our proposed mechanism results in significant improvements (a 41% reduction in execution overhead on average versus the state-of-the-art) for in-memory storage applications while significantly reducing the required on-chip area to implement our protocol.",
+  "abstract_source_id": "src-abstract-asplos-2024-149c6579",
   "venue": "asplos",
   "year": 2024,
   "track_or_session": "Session 10D: Trusted Computing",
@@ -214,6 +216,19 @@
       "official": true,
       "supports": [
         "Author-deposited archival artifact associated with the conference paper."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2024-149c6579",
+      "url": "https://api.openalex.org/works/doi:10.1145/3620666.3651354?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "A Midsummer Night’s Tree: Efficient and High Performance Secure SCM",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T21:59:51Z",
+      "content_hash": "sha256:da9f3c1609b3eaefdb405f569c3fff3106707b177077babe3f3fd24e784c4255",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

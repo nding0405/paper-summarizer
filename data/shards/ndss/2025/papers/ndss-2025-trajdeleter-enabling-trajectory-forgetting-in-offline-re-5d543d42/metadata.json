@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2025-trajdeleter-enabling-trajectory-forgetting-in-offline-re-5d543d42",
   "title": "TrajDeleter: Enabling Trajectory Forgetting in Offline Reinforcement Learning Agents",
+  "abstract": "Reinforcement learning (RL) trains an agent from experiences interacting with the environment. In scenarios where online interactions are impractical, offline RL, which trains the agent using pre-collected datasets, has become popular. While this new paradigm presents remarkable effectiveness across various real-world domains, like healthcare and energy management, there is a growing demand to enable agents to rapidly and completely eliminate the influence of specific trajectories from both the training dataset and the trained agents. To meet this problem, this paper advocates TRAJDELETER, the first practical approach to trajectory unlearning for offline RL agents. The key idea of TRAJDELETER is to guide the agent to demonstrate deteriorating performance when it encounters states associated with unlearning trajectories. Simultaneously, it ensures the agent maintains its original performance level when facing other remaining trajectories. Additionally, we introduce TRAJAUDITOR, a simple yet efficient method to evaluate whether TRAJDELETER successfully eliminates the specific trajectories of influence from the offline RL agent. Extensive experiments conducted on six offline RL algorithms and three tasks demonstrate that TRAJDELETER requires only about 1.5% of the time needed for retraining from scratch. It effectively unlearns an average of 94.8% of the targeted trajectories yet still performs well in actual environment interactions after unlearning. The replication package and agent parameters are available.",
+  "abstract_source_id": "src-abstract-ndss-2025-5d543d42",
   "venue": "ndss",
   "year": 2025,
   "track_or_session": "Summer submission cycle",
@@ -147,6 +149,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2025-5d543d42",
+      "url": "https://www.ndss-symposium.org/ndss-paper/trajdeleter-enabling-trajectory-forgetting-in-offline-reinforcement-learning-agents/",
+      "kind": "paper-page",
+      "title": "TrajDeleter: Enabling Trajectory Forgetting in Offline Reinforcement Learning Agents",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:20:47Z",
+      "content_hash": "sha256:536326d7585a765b67da051c7806414c6cdda5c8c632ad7b768229fc0eda2d96",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2024-perfomr-oblivious-message-retrieval-with-reduced-communi-66752db8",
   "title": "PerfOMR: Oblivious Message Retrieval with Reduced Communication and Computation",
+  "abstract": "Anonymous message delivery, as in privacy-preserving blockchain and private messaging applications, needs to protect recipient metadata: eavesdroppers should not be able to link messages to their recipients. This raises the question: how can untrusted servers assist in delivering the pertinent messages to each recipient, without learning which messages are addressed to whom?\n\nRecent work constructed Oblivious Message Retrieval (OMR) protocols that outsource the message detection and retrieval in a privacy-preserving way, using homomorphic encryption. Their construction exhibits significant costs in computation per message scanned (∼0.1 second), as well as in the size of the associated messages (∼1kB overhead) and public keys (∼132kB).\n\nThis work constructs more efficient OMR schemes, by replacing the LWE-based clue encryption of prior works with a Ring-LWE variant, and utilizing the resulting flexibility to improve several components of the scheme. We thus devise, analyze, and benchmark two protocols:\n\nThe first protocol focuses on improving the detector runtime, using a new retrieval circuit that can be homomorphically evaluated 15x faster than the prior work.\n\nThe second protocol focuses on reducing the communication costs, by designing a different homomorphic decryption circuit that allows the parameter of the Ring-LWE encryption to be set such that the public key size is about 235x smaller than the prior work, and the message size is roughly 1.6x smaller. The runtime of this second construction is ∼40.0ms per message, still more than 2.5x faster than prior works.",
+  "abstract_source_id": "src-abstract-usenix-security-2024-66752db8",
   "venue": "usenix-security",
   "year": 2024,
   "track_or_session": "Cryptographic Protocols II",
@@ -112,6 +114,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2024-66752db8",
+      "url": "https://www.usenix.org/conference/usenixsecurity24/presentation/liu-zeyu",
+      "kind": "paper-page",
+      "title": "PerfOMR: Oblivious Message Retrieval with Reduced Communication and Computation",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:16:37Z",
+      "content_hash": "sha256:a120f964ca9712276e5aa6b5b66819154ae35bbb91f3790d10d187f030ae99e6",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

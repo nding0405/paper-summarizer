@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-ecc-fail-mounting-rowhammer-attacks-on-ddr4-servers-with-20dffcb7",
   "title": "ECC.fail: Mounting Rowhammer Attacks on DDR4 Servers with ECC Memory",
+  "abstract": "Rowhammer is a hardware vulnerability present in nearly all computer memory, allowing attackers to modify bits in memory without directly accessing them. While Rowhammer has been extensively studied on client and even mobile platforms, no successful Rowhammer attack has been demonstrated on server platforms using DDR4 ECC memory.\n\nTackling this challenge, in this paper we demonstrate the first end-to-end Rowhammer technique effective against Intel servers using Hynix DDR4 ECC memory. To that aim, we first characterize the Hynix implementation of Target Row Refresh (TRR) on server parts, demonstrating effective hammering patterns on both FPGA and Intel-based testing platforms with ECC disabled. We then reverse engineer Intel's ECC implementation on Skylake and Cascade Lake servers. We find that it has a coding distance of four, which often allows triggering incorrect ECC correction with just two bit flips.\n\nCombining the two observations, we present an end-to-end Rowhammer attack which can flip bits on Intel servers, without causing crashes. Finally, we demonstrate the effectiveness of our attack by hammering RSA public keys loaded into memory, causing the server to accept messages not signed by the original key.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-20dffcb7",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Hardware Security 3: Side-Channel and Fault Injection Attacks",
@@ -175,6 +177,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-20dffcb7",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/kamadan",
+      "kind": "paper-page",
+      "title": "ECC.fail: Mounting Rowhammer Attacks on DDR4 Servers with ECC Memory",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:19:29Z",
+      "content_hash": "sha256:dde02311fd623fb776391bcf5f4384f39fd8d3f4a4c2441fe329c5698fbaba3e",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

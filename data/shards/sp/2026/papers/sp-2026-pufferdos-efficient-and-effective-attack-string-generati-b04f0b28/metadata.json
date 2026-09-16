@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2026-pufferdos-efficient-and-effective-attack-string-generati-b04f0b28",
   "title": "PUFFERDOS: Efficient and Effective Attack String Generation for Regular Expression Denial of Service Vulnerabilities",
+  "abstract": "Regular Expression Denial-of-Service (ReDoS) attacks constitute a critical class of resource-exhaustion vulnerabilities. In such attacks, adversaries exploit the pathological worst-case execution behavior of regular expression (regex) engines to induce highly asymmetric computational workloads, ultimately exhausting system resources and degrading service availability. To protect systems against ReDoS attacks, numerous detection techniques have been proposed that simulate the attack process by generating attack strings to proactively exploit ReDoS vulnerabilities at the early development stage and facilitate remediation. Existing techniques broadly fall into two classes: static analyses that search for pathological regex structures, and dynamic exploration methods that synthesize candidate attack strings. However, the generated attack strings are often impractical for real-world exploitation because they usually assume unrealistic input-length budgets and do not validate the effectiveness and efficiency of the attack at the program level. Therefore, many generated strings fail to trigger vulnerable regexes when applied to real-world programs, further limiting the practical utility. To address these shortcomings, we introduce an effective and efficient attack string generator, PufferDoS, designed to synthesize attack inputs that are both feasible within realistic length budgets and validated at the program level, enabling effective exploitation of ReDoS vulnerabilities in real-world programs. Specifically, we first define three vulnerable patterns based on our observation and formal verification. According to the patterns, Pufferdos conducts a synthesis technique to generate attack strings, and then refines and validates the strings with ReDoS-specific compositional concolic execution to guarantee real-world exploitability. We evaluated PufferDoS on a baseline corpus of 17,962 real-world vulnerable regexes. Compared to state-of-the-art tool RENGAR, PUFFERDOS produced attack strings that achieve efficiency gains ranging from $97.2 \\times$ to $3872.4 \\times$, thereby significantly enhancing practical exploitability assessment in real-world contexts. PufferDoS also discovered 59 exploitable ReDoS instances across 12 popular projects, which is 25 more than RENGAR.",
+  "abstract_source_id": "src-abstract-sp-2026-b04f0b28",
   "venue": "sp",
   "year": 2026,
   "track_or_session": "Cycle 2",
@@ -217,6 +219,19 @@
       "official": true,
       "supports": [
         "DOI, published-order authors and affiliations, abstract, publication date, page span, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2026-b04f0b28",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "PufferDoS: Efficient and Effective Attack String Generation for Regular Expression Denial of Service Vulnerabilities",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:58:02Z",
+      "content_hash": "sha256:4204efad9387253e2c70bd18217fac7c5220b9cd43ecd6179fdc27c5a043343e",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

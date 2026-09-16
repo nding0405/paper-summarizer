@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2025-from-address-blocks-to-authorized-prefixes-redesigning-r-17cab7f8",
   "title": "From Address Blocks to Authorized Prefixes: Redesigning RPKI ROV with a Hierarchical Hashing Scheme for Fast and Memory-Efficient Validation",
+  "abstract": "Route Origin Validation (ROV) with Route Origin Authorizations (ROAs), built on top of the Resource Public Key Infrastructure (RPKI), serves as the only formally standardized and production-grade defense mechanism against route hijackings in global interdomain routing infrastructures. However, the widespread adoption of RPKI has introduced escalating scalability challenges in validating high volumes of route messages against massive ROA entries.\n\nIn this paper, we attribute the performance bottleneck of existing ROV schemes to their underlying validation model, where the route is matched against rules in the form of address blocks. To overcome this bottleneck, we propose the Authorized Prefix (AP) model that enables validation at the prefix granularity, and redesign RPKI ROV based on this new model with a hierarchical hashing scheme named h 2 ROV . Extensive evaluations verify h 2 ROV 's superiority over state-of-the-art approaches in IPv4, with a speedup of $1.7× ∼ 9.8× in validation and a reduction of 49.3% ∼ 86.6% in memory consumption. System emulations using real-world network topologies further demonstrate h 2 ROV confines its impact to routing convergence to below 8.5% during update burst events, while reducing ROV-induced delays by 30.4% ∼ 64.7% compared to existing solutions.",
+  "abstract_source_id": "src-abstract-nsdi-2025-17cab7f8",
   "venue": "nsdi",
   "year": 2025,
   "track_or_session": "Security",
@@ -182,6 +184,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2025-17cab7f8",
+      "url": "https://www.usenix.org/conference/nsdi25/presentation/ni",
+      "kind": "paper-page",
+      "title": "From Address Blocks to Authorized Prefixes: Redesigning RPKI ROV with a Hierarchical Hashing Scheme for Fast and Memory-Efficient Validation",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:04:11Z",
+      "content_hash": "sha256:d5d47fd21d156ad6b9a4d3f60931ddffb6e89341601f60757c850ac1d9f47c2a",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

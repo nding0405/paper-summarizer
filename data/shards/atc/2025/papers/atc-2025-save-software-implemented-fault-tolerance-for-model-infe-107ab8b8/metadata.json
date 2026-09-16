@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "atc-2025-save-software-implemented-fault-tolerance-for-model-infe-107ab8b8",
   "title": "SAVE: Software-Implemented Fault Tolerance for Model Inference against GPU Memory Bit Flips",
+  "abstract": "Machine learning models are used in safety-critical edge applications such as autonomous driving, industrial robots, and satellites. However, GPU memory bit flips can significantly reduce the model accuracy. Existing mitigations either compromise accuracy or introduce substantial overhead.\n\nOur insight is that not all hardware bits are created equal and bit flips vary in their impact on model inference . Specifically, for the GPU memory, modern AI accelerators provide bit-flip-free but small reliable memory. For the model inference, due to nonlinear activation functions in the model, some bits are naturally robust against flips, while other vulnerable bits can silently corrupt results. Thus, we prioritize the allocation of vulnerable bits' computations in the reliable memory to enhance the robustness of the model inference.\n\nWe propose SAVE, a software-implemented fault tolerance system that protects model inference without modifying the model and with minimal performance impact. SAVE operates in four stages: S election to identify vulnerable bits based on the intrinsic characteristics of model inference, A llocation to prioritize computations related to more vulnerable bits in reliable memory, V erification to efficiently detect errors through asynchronous CPU checks, and E dit to recover from detected faults. Evaluation across computer vision, robotics, and decision-making models shows that SAVE maintains model accuracy even under 4K bit flips while incurring less than 9% performance overhead.",
+  "abstract_source_id": "src-abstract-atc-2025-107ab8b8",
   "venue": "atc",
   "year": 2025,
   "track_or_session": "OS, Mobile, and Reliability Challenges",
@@ -159,6 +161,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-atc-2025-107ab8b8",
+      "url": "https://www.usenix.org/conference/atc25/presentation/zheng",
+      "kind": "paper-page",
+      "title": "SAVE: Software-Implemented Fault Tolerance for Model Inference against GPU Memory Bit Flips",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:00:10Z",
+      "content_hash": "sha256:1777e9f3ad2fa8e33629384b80d81a196298b561fe71ffa29290b62fb673bd17",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

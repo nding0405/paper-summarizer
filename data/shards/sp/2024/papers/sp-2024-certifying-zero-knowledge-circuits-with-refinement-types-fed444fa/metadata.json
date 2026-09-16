@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2024-certifying-zero-knowledge-circuits-with-refinement-types-fed444fa",
   "title": "Certifying Zero-Knowledge Circuits with Refinement Types",
+  "abstract": "Zero-knowledge (ZK) proof systems have emerged as a promising solution for building security-sensitive applications. However, bugs in ZK applications are extremely difficult to detect and can allow a malicious party to silently exploit the system without leaving any observable trace. This paper presents Coda, a novel statically-typed language for building zero-knowledge applications. Critically, Coda makes it possible to formally specify and statically check properties of a ZK application through a rich refinement type system. One of the key challenges in formally verifying ZK applications is that they require reasoning about polynomial equations over large prime fields that go beyond the capabilities of automated theorem provers. Coda mitigates this challenge by generating a set of Coq lemmas that can be proven in an interactive manner with the help of a tactic library. We have used Coda to re-implement 77 arithmetic circuits from widely-used Circom libraries and applications. Our evaluation shows that Coda makes it possible to specify important and formally verify correctness properties of these circuits. Our evaluation also revealed 6 previously-unknown vulnerabilities in the original Circom projects.",
+  "abstract_source_id": "src-abstract-sp-2024-fed444fa",
   "venue": "sp",
   "year": 2024,
   "track_or_session": "Spring cycle",
@@ -285,6 +287,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2024-fed444fa",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Certifying Zero-Knowledge Circuits with Refinement Types",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:32Z",
+      "content_hash": "sha256:be7515012a8c1ea1211f38a27ea4d2aa9cff6e0faac9417a2f58b1d64e91280e",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-hobbit-space-efficient-zksnark-with-optimal-prover-time-d70a70ff",
   "title": "Hobbit: Space-Efficient zkSNARK with Optimal Prover Time",
+  "abstract": "Zero-knowledge succinct non-interactive arguments (zkSNARKs) are notorious for their large prover space requirements, which almost prohibits their use for really large instances. Space-efficient zkSNARKs aim to address this by limiting the prover space usage, without critical sacrifices to its runtime. In this work, we introduce Hobbit, the only existing space-efficient zkSNARK that achieves optimal prover time O(|C|) for an arithmetic circuit C. At the same time, Hobbit is the first transparent and post-quantum secure construction of its kind. Moreover, our experimental evaluation shows that Hobbit outperforms all prior general-purpose space-efficient zkSNARKs in the literature across four different applications (arbitrary arithmetic circuits, inference of pruned Multi-Layer Perceptron, batch AES128 evaluation, and select-and-aggregate SQL query) by x8-x56 in terms or prover time while requiring up to x23 less total space.\n\nAt a technical level, we introduce two new building blocks that may be of independent interest: (i) the first sumcheck protocol for products of polynomials with optimal prover time in the streaming setting, and (ii) a novel multi-linear post-quantum polynomial commitment scheme that outperforms all prior works in prover time (and can be tuned to work in a space-efficient manner). We build Hobbit by combining the above with a modified version of HyperPlonk, providing an explicit routine to stream access to the circuit evaluation.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-d70a70ff",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Crypto 3: Formal Methods and Private Computation",
@@ -91,6 +93,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-d70a70ff",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/pappas",
+      "kind": "paper-page",
+      "title": "Hobbit: Space-Efficient zkSNARK with Optimal Prover Time",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:20:15Z",
+      "content_hash": "sha256:d0629c520fcf7f7cb20ce6fecd94c872c6f14b95c4e3ebac2ed76565dc35e719",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

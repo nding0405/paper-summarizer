@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-from-texts-to-rules-generating-sigma-rules-with-large-la-12435368",
   "title": "From Texts to Rules: Generating Sigma Rules with Large Language Models from Cyber Threat Reports",
+  "abstract": "Cyber Threat Reports (CTRs) deliver actionable intelligence essential for security systems detection rules. Large language models (LLMs) could serve as a bridge for CTRs-to-Rules translation through parsing and generation capabilities. However, the semantic disconnect and domain-specific constraints between high-level abstractions in CTRs and low-level machine semantics in rules fundamentally impede accurate detection rules generation.\n\nIn this paper, we demonstrate that shell commands in CTRs can be effectively converted into Sigma detection rules for security systems. To this end, we propose SIGMERGE, an end-to-end framework that generates Sigma rules from texts of CTRs by constructing a semantic intermediate layer as a bridge. The SIGMERGE framework hierarchically organizes three modules by descending semantic levels: (1) The Information extraction module, high-level, utilizes a multi-subsequence algorithm and a fine-tuned domain-specific LLM, enabling accurate MITRE ATT&CK tactics, techniques, and procedures (TTPs) and command extractions; (2) The Attack description generation module, intermediate-level, employs preference optimization tuning with closed-loop self-validation to mitigate the semantic disconnect; (3) The Sigma rule generation module, machine-level, leverages a parameter-optimized retrieval algorithm to address domain-specific constraints. We constructed 7 datasets for training and conducted extensive experiments. To validate SIGMERGE, we evaluated it using 23 metrics against 16 baselines and 13 LLMs, and conducted 10 case studies integrated with real security systems to demonstrate both effectiveness and efficiency. Moreover, SIGMERGE has already contributed 4 novel Sigma rules to the official repository, all of which have been formally accepted.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-12435368",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Network Security 2",
@@ -156,6 +158,19 @@
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening",
         "prepublication PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-12435368",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/cai",
+      "kind": "paper-page",
+      "title": "From Texts to Rules: Generating Sigma Rules with Large Language Models from Cyber Threat Reports",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:24:05Z",
+      "content_hash": "sha256:cb5a734448e7d42cc258337112818f56d6680519f92636a22939f9f405ddbbd1",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

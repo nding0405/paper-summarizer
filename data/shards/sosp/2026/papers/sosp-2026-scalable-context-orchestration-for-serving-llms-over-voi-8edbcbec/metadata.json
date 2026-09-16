@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sosp-2026-scalable-context-orchestration-for-serving-llms-over-voi-8edbcbec",
   "title": "Scalable Context Orchestration for Serving LLMs Over Voice",
+  "abstract": "Voice AI applications are gaining popularity as advances in large language models (LLMs) enable more natural and accessible spoken interactions. Serving these applications requires accounting not only for what users say, but also for how they speak (e.g., speaking rate) and the conditions under which their audio is captured and transmitted (e.g., background noise and packet loss). However, existing LLM systems represent conversation context as a flat, growing sequence of messages, leaving voice-specific context implicit in the audio. As a result, they can generate responses that are poorly aligned with user preferences, degrade interaction quality under adverse environmental conditions, and incur high costs over long voice sessions. We present llmovoice, a context-management middleware that explicitly models voice context and orchestrates its use. At each turn, llmovoice constructs a bounded voice context from the current user input, relevant interaction history, and explicit paralinguistic and environmental states. It then uses the serving LLM to reason over this context and generate runtime directives that guide how the system responds. We evaluate llmovoice on real-world voice applications and benchmarks. It reduces speaking-rate alignment error by 52.4%, lowers the false-interruption rate from 46.0% to 0.9% under packet loss, and reduces model usage cost by 79.2%. For long sessions, llmovoice reduces per-turn cost by up to 24.9 times while retaining up to 98.7% of baseline answer quality.",
+  "abstract_source_id": "src-abstract-8edbcbec",
   "venue": "sosp",
   "year": 2026,
   "track_or_session": null,
@@ -112,6 +114,19 @@
       "official": true,
       "supports": [
         "Official camera-ready deadline and shepherd-approval requirements supporting accepted-papers-only status."
+      ]
+    },
+    {
+      "id": "src-abstract-8edbcbec",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/search/match?query=Scalable%20Context%20Orchestration%20for%20Serving%20LLMs%20Over%20Voice&fields=title,abstract",
+      "kind": "semantic-scholar",
+      "title": "Scalable Context Orchestration for Serving LLMs Over Voice",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T23:23:19Z",
+      "content_hash": "sha256:48b896a2da3cfd489138586780c78aa0d93a42d81a74f844d386493dc028cdd0",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

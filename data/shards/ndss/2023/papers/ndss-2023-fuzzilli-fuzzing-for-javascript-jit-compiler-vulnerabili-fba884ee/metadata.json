@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2023-fuzzilli-fuzzing-for-javascript-jit-compiler-vulnerabili-fba884ee",
   "title": "FUZZILLI: Fuzzing for JavaScript JIT Compiler Vulnerabilities",
+  "abstract": "JavaScript has become an essential part of the Internet infrastructure, and today's interactive web applications would be inconceivable without this programming language. On the downside, this interactivity implies that web applications rely on an ever-increasing amount of computationally intensive JavaScript code, which burdens the JavaScript engine responsible for efficiently executing the code. To meet these rising performance demands, modern JavaScript engines ship with sophisticated just-in-time (JIT) compilers. However, JIT compilers are a complex technology and, consequently, provide a broad attack surface for potential faults that might even be security-critical. Previous work on discovering software faults in JavaScript engines found many vulnerabilities, often using fuzz testing. Unfortunately, these fuzzing approaches are not designed to generate source code that actually triggers JIT semantics. Consequently, JIT vulnerabilities are unlikely to be discovered by existing methods.\n\nIn this paper, we close this gap and present the first fuzzer that focuses on JIT vulnerabilities. More specifically, we present the design and implementation of an intermediate representation (IR) that focuses on discovering JIT compiler vulnerabilities. We implemented a complete prototype of the proposed approach and evaluated our fuzzer over a period of six months. In total, we discovered 17 confirmed security vulnerabilities. Our results show that targeted JIT fuzzing is possible and a dangerously neglected gap in fuzzing coverage for JavaScript engines.",
+  "abstract_source_id": "src-abstract-ndss-2023-fba884ee",
   "venue": "ndss",
   "year": 2023,
   "track_or_session": "Fuzzing",
@@ -168,6 +170,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2023-fba884ee",
+      "url": "https://www.ndss-symposium.org/ndss-paper/fuzzilli-fuzzing-for-javascript-jit-compiler-vulnerabilities/",
+      "kind": "paper-page",
+      "title": "FUZZILLI: Fuzzing for JavaScript JIT Compiler Vulnerabilities",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:17:00Z",
+      "content_hash": "sha256:07e41bf4114fc0f18fe764c5d052ce524935c37c05193f63ff32c37c66b04732",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2023-systematic-assessment-of-fuzzers-using-mutation-analysis-b0da873c",
   "title": "Systematic Assessment of Fuzzers using Mutation Analysis",
+  "abstract": "Fuzzing is an important method to discover vulnerabilities in programs. Despite considerable progress in this area in the past years, measuring and comparing the effectiveness of fuzzers is still an open research question. In software testing, the gold standard for evaluating test quality is mutation analysis , which evaluates a test's ability to detect synthetic bugs: If a set of tests fails to detect such mutations, it is expected to also fail to detect real bugs. Mutation analysis subsumes various coverage measures and provides a large and diverse set of faults that can be arbitrarily hard to trigger and detect, thus preventing the problems of saturation and overfitting. Unfortunately, the cost of traditional mutation analysis is exorbitant for fuzzing, as mutations need independent evaluation.\n\nIn this paper, we apply modern mutation analysis techniques that pool multiple mutations and allow us—for the first time—to evaluate and compare fuzzers with mutation analysis . We introduce an evaluation bench for fuzzers and apply it to a number of popular fuzzers and subjects. In a comprehensive evaluation, we show how we can use it to assess fuzzer performance and measure the impact of improved techniques. The required CPU time remains manageable: 4.09 CPU years are needed to analyze a fuzzer on seven subjects and a total of 141,278 mutations. We find that today's fuzzers can detect only a small percentage of mutations, which should be seen as a challenge for future research—notably in improving (1) detecting failures beyond generic crashes and (2) triggering mutations (and thus faults).",
+  "abstract_source_id": "src-abstract-usenix-security-2023-b0da873c",
   "venue": "usenix-security",
   "year": 2023,
   "track_or_session": "Warm and Fuzzing",
@@ -196,6 +198,19 @@
       "official": true,
       "supports": [
         "authors, affiliations when published, abstract, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2023-b0da873c",
+      "url": "https://www.usenix.org/conference/usenixsecurity23/presentation/gorz",
+      "kind": "paper-page",
+      "title": "Systematic Assessment of Fuzzers using Mutation Analysis",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:13:08Z",
+      "content_hash": "sha256:18c35714d0bfc7e3dd374b288daed399d081977af1fcd866e6d388fb19515a5d",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

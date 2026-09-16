@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2025-you-cant-judge-a-binary-by-its-header-data-code-separati-cc735e5e",
   "title": "You Can’t Judge a Binary by Its Header: Data-Code Separation for Non-Standard ARM Binaries using Pseudo Labels",
+  "abstract": "Static binary analysis is critical to various security tasks such as vulnerability discovery and malware detection. In recent years, binary analysis has faced new challenges as vendors of the Internet of Things (IoT) and Industrial Control Systems (ICS) continue to introduce customized or non-standard binary formats that existing tools cannot readily process. Reverse-engineering each of the new formats is costly as it requires extensive expertise and analysts' time. In this paper, we investigate the first step to automate the analysis of non-standard binaries, which is to recognize the bytes representing “code” from “data” (i.e., data-code separation). We propose Loadstar, and its key idea is to use the abundant labeled data from standard binaries to train a classifier and adapt it for processing unlabeled non-standard binaries. We use a pseudo-label-based method for domain adaption and leverage knowledge-inspired rules for pseudo-label correction, which serves as the guardrail for the adaption process. A key advantage of the system is that it does not require labeling any non-standard binaries. Using three datasets of non-standard PLC binaries, we evaluate Loadstar and show it outperforms existing tools in terms of both accuracy and processing speed. We will share the tool (open source) with the community.",
+  "abstract_source_id": "src-abstract-sp-2025-cc735e5e",
   "venue": "sp",
   "year": 2025,
   "track_or_session": "Cycle 1",
@@ -112,6 +114,19 @@
       "official": true,
       "supports": [
         "DOI, authors, affiliations, abstract, publication date, pages, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2025-cc735e5e",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "You Can't Judge a Binary by Its Header: Data-Code Separation for Non-Standard ARM Binaries Using Pseudo Labels",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:57Z",
+      "content_hash": "sha256:303a9b5e5ef8908a3cfe67f02eb8a87be978a5fe3281c7ecec8c0cdb512517e0",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

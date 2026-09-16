@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-melting-the-flesh-of-php-s-memory-hardening-381911e3",
   "title": "Melting the Flesh of PHP's Memory Hardening",
+  "abstract": "Heap allocators are responsible for efficiently allocating or releasing memory on the heap. In addition, they also commonly implement various mitigation measures to defend against heap-based memory corruption. Recently, the PHP project launched a heap hardening initiative aimed at stopping popular heap exploit techniques or restricting the exploit strategy space. In this paper, we conduct the first security study to understand the impact and effectiveness of these new protective measures. We find that while they are effective at stopping current-generation exploits, they fall short against determined attackers who will adapt. Through our analysis, we not only identify the flaw that allows specific mitigations to be bypassed, but also a new suite of novel exploitation strategies that work for the most common vulnerabilities involving out-of-bounds memory write and use-after-free write primitives. Notably, our strategy is generic across the built-in PHP objects and can still work even with a single-byte out-of-bounds memory write primitive. Finally, we evaluate our exploit strategies against five real vulnerabilities in an environment with all evaluated protections enabled. The results show that although the new protection measures can effectively defend against the exploitation of most vulnerabilities, the attack strategies proposed by this work can still make these vulnerabilities exploitable again. The identified flaw has since been patched after our responsible disclosure.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-381911e3",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Software Security 2",
@@ -113,6 +115,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-381911e3",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/wu-yifan",
+      "kind": "paper-page",
+      "title": "Melting the Flesh of PHP's Memory Hardening",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:24:41Z",
+      "content_hash": "sha256:b30c941aaec4fc803abd105ef129f3719bfc5c1c30b06d7e1379be1999fe2d3a",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

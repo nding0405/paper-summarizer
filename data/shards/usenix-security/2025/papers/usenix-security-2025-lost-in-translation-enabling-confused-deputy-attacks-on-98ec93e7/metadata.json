@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-lost-in-translation-enabling-confused-deputy-attacks-on-98ec93e7",
   "title": "Lost in Translation: Enabling Confused Deputy Attacks on EDA Software with TransFuzz",
+  "abstract": "We introduce MIRTL, a confused deputy attack on EDA software such as simulators or synthesizers. MIRTL relies on gadgets that exploit vulnerabilities in the EDA software's translation of RTL to lower-level representations. Invisible to white-box testing and verification methods, MIRTL gadgets harden traditional hardware trojans, enabling unprecedentedly stealthy attacks. To discover translation bugs, our new fuzzer, called TRANSFUZZ, generates randomized RTL designs containing many operators with complex interconnections for triggering translation bugs. The expressiveness of RTL, however, makes the construction of a golden RTL model for detecting deviations due to translation bugs challenging. To address this, TRANSFUZZ relies on comparing signal outputs from multiple RTL simulators for detecting vulnerabilities. TRANSFUZZ uncovers 20 translation vulnerabilities among 31 new bugs (25 CVEs) in four popular open-source EDA applications. We show how MIRTL gadgets harden traditional backdoors against white-box countermeasures and demonstrate a real-world instance of a MIRTL-hardened backdoor in the CVA6 RISC-V core.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-98ec93e7",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Hardware Security 2",
@@ -91,6 +93,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-98ec93e7",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/solt",
+      "kind": "paper-page",
+      "title": "Lost in Translation: Enabling Confused Deputy Attacks on EDA Software with TransFuzz",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:20:38Z",
+      "content_hash": "sha256:2040b3a8ab63d4bc5ebffbfdef6a4d2a3f4f0e24916eec97c9200d0f5e9b3803",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

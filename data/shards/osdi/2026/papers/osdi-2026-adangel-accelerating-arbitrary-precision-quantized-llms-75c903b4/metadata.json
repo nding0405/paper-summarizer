@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2026-adangel-accelerating-arbitrary-precision-quantized-llms-75c903b4",
   "title": "ADAngel: Accelerating Arbitrary-Precision Quantized LLMs with Adaptive Computing Mapping",
+  "abstract": "Arbitrary-Precision Quantization (APQ), which uses asymmetric bit-widths for weights and activations (e.g., W4A8), is a prevalent technique for LLM inference because of its excellent accuracy-performance balance. APQ transforms the general matrix multiplications (GEMM), the core of LLM computation, into mixed-precision GEMM (mpGEMM) whose two operand matrices have different quantization bit-widths. However, we identify that the computation paradigms of mpGEMM in current APQ LLM inference systems are sub-optimal because the shapes and bit-widths of mpGEMM tasks in APQ LLM are highly variable, whereas existing static and workload-unaware paradigms can only accelerate mpGEMM tasks with the same or similar shapes and bit-widths.\n\nBased on this finding, we propose ADAngel, a framework for creating a workload-adaptive mpGEMM computation core for target LLMs. The theoretical foundation of ADAngel is the DPR (Decomposition-Partial Product-Reconstruction) computation model, which enables systematic generation of a diverse portfolio of mpGEMM algorithms by specifying different bit-partition schemes. Guided by this model, ADAngel constructs a Computation Strategy Set comprising several highly optimized mpGEMM kernels, and exhaustively analyzes the strategy set to create an Oracle Policy Map, which enables a lightweight dispatcher to select and execute the optimal kernel for runtime mpGEMM tasks with negligible overhead. Our evaluation shows that the ADAngel-specialized engine achieves up to a 5.10× speedup in decode throughput over llama.cpp; while in the prefill stage, it demonstrates its adaptivity by delivering speedups ranging from 1.17× to 2.38× over TensorRT-LLM in Time-To-First-Token (TTFT).",
+  "abstract_source_id": "src-abstract-osdi-2026-75c903b4",
   "venue": "osdi",
   "year": 2026,
   "track_or_session": "Resource-Efficient LLM Serving",
@@ -188,6 +190,19 @@
       "official": true,
       "supports": [
         "Official proceedings availability and canonical conference versions."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2026-75c903b4",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/liu-yao",
+      "kind": "paper-page",
+      "title": "ADAngel: Accelerating Arbitrary-Precision Quantized LLMs with Adaptive Computing Mapping",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:07:59Z",
+      "content_hash": "sha256:0aa091c676feb7e70173e06c5b03f165f5b82c0f799bebf8926247db9003c30a",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

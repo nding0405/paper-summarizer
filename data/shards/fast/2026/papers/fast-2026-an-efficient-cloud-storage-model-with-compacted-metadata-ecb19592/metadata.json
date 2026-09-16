@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "fast-2026-an-efficient-cloud-storage-model-with-compacted-metadata-ecb19592",
   "title": "An Efficient Cloud Storage Model with Compacted Metadata Management for Performance Monitoring Timeseries Systems",
+  "abstract": "Cloud-based performance monitoring timeseries systems are emerging due to their flexibility and pay-as-you-go capabilities. However, these systems encounter a major bottleneck in query performance, mainly attributed to the prolonged access latency of cloud storage and metadata redundancy of large number of timeseries. Thus, it is critical to optimize query performance within cloud environment and reduce metadata redundancy.\n\nIn this paper, we propose CloudTS, which is a novel timeseries data storage model with query optimization for cloud storage. CloudTS separately manages metadata and data, and introduces an efficient global metadata management for both space saving and query speedup. CloudTS also transparently supports the time-partitioned tag-based query model in performance monitoring timeseries systems. For metadata, a global tag dictionary is built to reduce metadata redundancy and a novel timeseries-tag mapping technique with a two-dimension bitmap is designed so the mapping of timeseries and tags can be efficiently accomplished to support tag-based queries. For data, the compressed data chunks are put into objects by timeseries group. We have implemented a fully functional prototype of CloudTS and evaluated it with production timeseries data and synthetic workloads based on Amazon S3. In comparison, Cortex, a cloud-based timeseries system widely adopted by industries, and Apache Parquet and JSON Time Series, two representative cloud storage formats, are utilized in the evaluation. Experimental results show that CloudTS can improve query performance by 1.37x on average compared with Cortex, and outperforms Apache Parquet and JSON Time Series as well.",
+  "abstract_source_id": "src-abstract-fast-2026-ecb19592",
   "venue": "fast",
   "year": 2026,
   "track_or_session": "Indexing",
@@ -118,6 +120,19 @@
         "proceedings page range and page count",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-fast-2026-ecb19592",
+      "url": "https://www.usenix.org/conference/fast26/presentation/zhang-kai",
+      "kind": "paper-page",
+      "title": "An Efficient Cloud Storage Model with Compacted Metadata Management for Performance Monitoring Timeseries Systems",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:01:22Z",
+      "content_hash": "sha256:22686c6a0e32f9dc35df44ee78dfae197683127033b5cc9c6ea53135b2ee23e9",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

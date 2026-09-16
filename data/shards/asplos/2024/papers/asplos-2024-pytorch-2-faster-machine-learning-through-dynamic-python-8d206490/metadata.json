@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2024-pytorch-2-faster-machine-learning-through-dynamic-python-8d206490",
   "title": "PyTorch 2: Faster Machine Learning Through Dynamic Python Bytecode Transformation and Graph Compilation",
+  "abstract": "This paper introduces two extensions to the popular PyTorch machine learning framework, TorchDynamo and TorchInductor, which implement the torch.compile feature released in PyTorch 2. TorchDynamo is a Python-level just-in-time (JIT) compiler that enables graph compilation in PyTorch programs without sacrificing the flexibility of Python. It achieves this by dynamically modifying Python bytecode before execution and extracting sequences of PyTorch operations into an FX graph, which is then JIT compiled using one of many extensible backends. TorchInductor is the default compiler backend for TorchDynamo, which translates PyTorch programs into OpenAI's Triton for GPUs and C++ for CPUs. Results show that TorchDynamo is able to capture graphs more robustly than prior approaches while adding minimal overhead, and TorchInductor is able to provide a 2.27× inference and 1.41× training geometric mean speedup on an NVIDIA A100 GPU across 180+ real-world models, which outperforms six other compilers. These extensions provide a new way to apply optimizations through compilers in eager mode frameworks like PyTorch.",
+  "abstract_source_id": "src-abstract-asplos-2024-8d206490",
   "venue": "asplos",
   "year": 2024,
   "track_or_session": "Session 6C: Optimization of Tensor Programs",
@@ -1104,6 +1106,19 @@
       "official": false,
       "supports": [
         "Indexed alternate-version and institutional-copy links; not used as the authoritative relevance source."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2024-8d206490",
+      "url": "https://api.openalex.org/works/doi:10.1145/3620665.3640366?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "PyTorch 2: Faster Machine Learning Through Dynamic Python Bytecode Transformation and Graph Compilation",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:00:27Z",
+      "content_hash": "sha256:1d17d95d535764f7819f04ed2ef3150a3fc370ce22f3743d03b55f935c05ae4b",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

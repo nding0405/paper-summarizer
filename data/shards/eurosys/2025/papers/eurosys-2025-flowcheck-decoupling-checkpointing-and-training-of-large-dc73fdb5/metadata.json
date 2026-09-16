@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "eurosys-2025-flowcheck-decoupling-checkpointing-and-training-of-large-dc73fdb5",
   "title": "FlowCheck: Decoupling Checkpointing and Training of Large-Scale Models",
+  "abstract": "Checkpointing is becoming a hotspot of interest in both academia and industry as the primary fault-tolerance method for large model training. However, existing checkpoint designs are tightly coupled with the training process, leading to interruptions that reduce overall training efficiency. To reduce the impact of checkpoints on training, this paper presents FlowCheck, a novel checkpointing system that decouples checkpoint operations from the training process, enabling checkpoint saving without blocking the training. Specifically, FlowCheck updates the checkpoints by extracting complete gradient information from the network traffic of normal training. FlowCheck deploys a traffic-mirroring network to support this design. To utilize mirrored traffic for checkpointing operations, two key challenges need to be addressed. First, we need to achieve precise identification and extraction of gradient packets from training traffic. Second, the transmission on the mirror link is unreliable due to its inability to trigger retransmission upon packet loss. Through two key designs: (1) packet-counting-based traffic identification, and (2) packet redundancy recovery mechanism, FlowCheck implements an efficient checkpointing system using the existing training network and solves the above two challenges. Experiments and estimations verify that FlowCheck achieves checkpoint operations with zero impact on training, and demonstrate that FlowCheck achieves over 98% effective training time under practical fault conditions.",
+  "abstract_source_id": "src-abstract-eurosys-2025-dc73fdb5",
   "venue": "eurosys",
   "year": 2025,
   "track_or_session": "Session-9.2: LLM Training - Location: Rotterdam hall 1B - Chair: Jacob Gorm Hansen",
@@ -272,6 +274,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-eurosys-2025-dc73fdb5",
+      "url": "https://api.openalex.org/works/doi:10.1145/3689031.3696088?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "FlowCheck: Decoupling Checkpointing and Training of Large-Scale Models",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:19:07Z",
+      "content_hash": "sha256:393e790e523c4a30e4a88aedd8ffa18677bf4a14d41d1b30cc7bffa20c5f18db",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

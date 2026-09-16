@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2026-syno-structured-synthesis-for-neural-operators-e5d8fb18",
   "title": "Syno: Structured Synthesis for Neural Operators",
+  "abstract": "The desires for better prediction accuracy and higher execution performance in neural networks never end. Neural architecture search (NAS) and tensor compilers are two popular techniques to optimize these two goals, but they are both limited to composing or optimizing existing manually designed operators rather than coming up with completely new designs. In this work, we explore the less studied direction of neural operator synthesis, which aims to automatically and efficiently discover novel neural operators with better accuracy and/or speed. We develop an end-to-end framework Syno, to realize practical neural operator synthesis. Syno makes use of a novel set of fine-grained primitives defined on tensor dimensions, which ensure various desired properties to ease model training, and also enable expression canonicalization techniques to avoid redundant candidates during search. Syno further adopts a novel guided synthesis flow to obtain valid operators matched with the specified input/output dimension sizes, and leverages efficient stochastic tree search algorithms to quickly explore the design space. We demonstrate that Syno discovers better operators with average speedups of 1.37× to 2.06× on various hardware and compiler choices, while keeping less than 1% accuracy loss even on NAS-optimized models.",
+  "abstract_source_id": "src-abstract-asplos-2026-e5d8fb18",
   "venue": "asplos",
   "year": 2026,
   "track_or_session": "Session 6A: Neural Network Acceleration",
@@ -152,6 +154,19 @@
       "official": false,
       "supports": [
         "Indexed abstract used for strict relevance classification and indexed arXiv identifier where available."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2026-e5d8fb18",
+      "url": "https://api.openalex.org/works/doi:10.1145/3676642.3736118?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Syno: Structured Synthesis for Neural Operators",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:06:40Z",
+      "content_hash": "sha256:a7f473f7d92980af5254f880d7104eeacfe2fadc599b82133d4bf6affdd5eebc",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

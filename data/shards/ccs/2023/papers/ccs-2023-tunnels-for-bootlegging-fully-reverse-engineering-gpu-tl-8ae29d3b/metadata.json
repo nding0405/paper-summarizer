@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2023-tunnels-for-bootlegging-fully-reverse-engineering-gpu-tl-8ae29d3b",
   "title": "TunneLs for Bootlegging: Fully Reverse-Engineering GPU TLBs for Challenging Isolation Guarantees of NVIDIA MIG",
+  "abstract": "Recent studies have revealed much detailed information about the translation lookaside buffers (TLBs) of modern CPUs, but we find that many properties of such components in modern GPUs still remain unknown or unclear. To fill this knowledge gap, we develop a new GPU TLB reverse-engineering method and apply it to a variety of consumer- and server-grade GPUs in Turing and Ampere generations. Aside from learning significantly more comprehensive and accurate GPU TLB properties, we discover a design flaw of NVIDIA Multi-Instance GPU (MIG) feature. MIG claims full partitioning of the entire GPU memory system for secure GPU sharing in cloud computing. However, we surprisingly find that MIG does not partition the last-level TLB, which is shared by all the compute units in a GPU. Exploiting this design flaw and learned TLB properties, we are able to construct a covert channel for data exfiltration across MIG-enforced isolation. To the best of our knowledge, this is the first attack on MIG. We evaluate the proposed attack on a commercial cloud platform, and we successfully achieve reliable data exfiltration from a victim tenant at a speed of up to 31 kbps with a very high accuracy around 99.8%. Even when the victim is using the GPU for deep neural network training, the transmission can still reach more than 25 kbps with a more than 99.5% accuracy. We propose and implement a mitigation approach that can effectively thwart data exfiltration through this covert channel. Additionally, we present a preliminary study on exploiting the access patterns of the last-level TLB to infer the identity of applications running in other MIG-created GPU instances.",
+  "abstract_source_id": "src-abstract-ccs-2023-8ae29d3b",
   "venue": "ccs",
   "year": 2023,
   "track_or_session": "Secure Hardware (Hardware, Side Channels, and CyberPhysical Systems)",
@@ -193,6 +195,19 @@
       "official": false,
       "supports": [
         "published title, author order, and page span"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2023-8ae29d3b",
+      "url": "https://api.openalex.org/works/doi:10.1145/3576915.3616672?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "T unne L s for B ootlegging: Fully Reverse-Engineering GPU TLBs for Challenging Isolation Guarantees of NVIDIA MIG",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:08:32Z",
+      "content_hash": "sha256:43574cea0a5c0491418d6ba8ef767ad80c0efedf34368973404b233692265c56",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

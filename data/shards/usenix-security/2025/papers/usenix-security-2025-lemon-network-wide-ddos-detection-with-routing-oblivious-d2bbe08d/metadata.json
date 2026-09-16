@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-lemon-network-wide-ddos-detection-with-routing-oblivious-d2bbe08d",
   "title": "Lemon: Network-Wide DDoS Detection with Routing-Oblivious Per-Flow Measurement",
+  "abstract": "Network-wide DDoS (Distributed Denial-of-Service) detection enables early attack detection and mitigates victim losses. However, unpredictable routing of DDoS traffic will invalidate the network administrator's prior knowledge of the network topology, causing existing sketch-based measurement systems to suffer from packet over-counting and processing stage mis-allocating issues. To address this gap, we propose Lemon, a routing-oblivious, resource-friendly, and scalable DDoS detection system that provides accurate detection of DDoS attacks without any assumption on the traffic routing. Specifically, we design a novel data structure (Lemon sketch) that supports over-counting-free and mis-allocating-free measurements in the data plane. Lemon control plane aggregates Lemon sketches from measurement points and leverages per-flow level network-wide measurement results for DDoS attack detection and victim identification. We implement Lemon in both software switch (Bmv2) and programmable switch hardware (Tofino). The evaluation results show that Lemon can achieve consistently high accuracy for DDoS detection in various topology and traffic distribution configurations.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-d2bbe08d",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Network Security 2: Routing and DoS",
@@ -196,6 +198,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-d2bbe08d",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/wu-wenhao",
+      "kind": "paper-page",
+      "title": "Lemon: Network-Wide DDoS Detection with Routing-Oblivious Per-Flow Measurement",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:20:31Z",
+      "content_hash": "sha256:1143fc8cf829b05c0acfe5f53bfd83d481f9711a9b0439ad555a272fd28ac7f5",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

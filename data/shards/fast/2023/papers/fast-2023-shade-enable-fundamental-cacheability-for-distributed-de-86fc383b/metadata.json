@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "fast-2023-shade-enable-fundamental-cacheability-for-distributed-de-86fc383b",
   "title": "SHADE: Enable Fundamental Cacheability for Distributed Deep Learning Training",
+  "abstract": "Deep learning training (DLT) applications exhibit unique I/O workload behaviors that pose new challenges for storage system design. DLT is I/O intensive since data samples need to be fetched continuously from a remote storage. Accelerators such as GPUs have been extensively used to support these applications. As accelerators become more powerful and more data-hungry, the I/O performance lags behind. This creates a crucial performance bottleneck, especially in distributed DLT. At the same time, the exponentially growing dataset sizes make it impossible to store these datasets entirely in memory. While today's DLT frameworks typically use a random sampling policy that treat all samples uniformly equally, recent findings indicate that not all samples are equally important and different data samples contribute differently towards improving the accuracy of a model. This observation creates an opportunity for DLT I/O optimizations by exploiting the data locality enabled by importance sampling.\n\nTo this end, we design and implement SHADE, a new DLT-aware caching system that detects fine-grained importance variations at per-sample level and leverages the variance to make informed caching decisions for a distributed DLT job. SHADE adopts a novel, rank-based approach, which captures the relative importance of data samples across different minibatches. SHADE then dynamically updates the importance scores of all samples during training. With these techniques, SHADE manages to significantly improve the cache hit ratio of the DLT job, and thus, improves the job's training performance. Evaluation with representative computer vision (CV) models shows that SHADE, with a small cache, improves the cache hit ratio by up to 4.5 times compared to the LRU caching policy.",
+  "abstract_source_id": "src-abstract-fast-2023-86fc383b",
   "venue": "fast",
   "year": 2023,
   "track_or_session": "AI and Storage",
@@ -224,6 +226,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-fast-2023-86fc383b",
+      "url": "https://www.usenix.org/conference/fast23/presentation/khan",
+      "kind": "paper-page",
+      "title": "SHADE: Enable Fundamental Cacheability for Distributed Deep Learning Training",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:00:40Z",
+      "content_hash": "sha256:6d1b1df90def6f1246db46a1f0588f33935702e27bdf74e267753b6d5c73501f",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

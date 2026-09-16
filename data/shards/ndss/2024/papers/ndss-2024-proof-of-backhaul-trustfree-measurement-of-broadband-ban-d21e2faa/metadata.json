@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2024-proof-of-backhaul-trustfree-measurement-of-broadband-ban-d21e2faa",
   "title": "Proof of Backhaul: Trustfree Measurement of Broadband Bandwidth",
+  "abstract": "Recent years have seen the emergence of decentralized wireless networks consisting of nodes hosted by many individuals and small enterprises, reawakening the decades-old dream of open networking. These networks have been deployed in an organic, distributed manner and are driven by new economic models resting on performance-based incentives. A critical requirement for the incentives to scale is the ability to prove network performance in a decentralized ``trustfree\" manner, i.e., a Byzantine fault tolerant network telemetry system.\n\nIn this paper, we present a Proof of Backhaul (PoB) protocol which measures the bandwidth of the (broadband) backhaul link of a wireless access point, termed prover, in a decentralized and trustfree manner. In particular, our proposed protocol is the first to satisfy the following two properties:\n\n(1) Trustfree. Bandwidth measurement is secure against Byzantine attacks by collusion of challenge servers and the prover.\n\n(2) Open. The barrier-to-entry for being a challenge server is low; there is no requirement of having a low latency and high throughput path to the measured link.\n\nAt a high-level, our protocol aggregates the challenge traffic from multiple challenge servers and uses cryptographic primitives to ensure that a subset of challengers or, even challengers and provers, cannot maliciously modify results in their favor. A formal security model allows us to establish guarantees of accurate bandwidth measurement as a function of the maximum fraction of malicious actors.\n\nWe implement our protocol with challengers spread across geographical locations and release the code~cite{multichallenger-pob}. Our evaluation shows that our PoB protocol can verify backhaul bandwidth of up to 1000 Mbps with less than 10% error using measurements lasting only 100 ms. The measurement accuracy is not affected in the presence of corrupted challengers. Importantly, the basic verification protocol lends itself to a minor modification that can measure available bandwidth even in the presence of cross-traffic.\n\nFinally, the security guarantees of our PoB protocol output are naturally composable with ``commitments\" on blockchain ledgers, which are commonly used for decentralized networks.",
+  "abstract_source_id": "src-abstract-ndss-2024-d21e2faa",
   "venue": "ndss",
   "year": 2024,
   "track_or_session": "Fall submission cycle",
@@ -210,6 +212,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2024-d21e2faa",
+      "url": "https://www.ndss-symposium.org/ndss-paper/proof-of-backhaul-trustfree-measurement-of-broadband-bandwidth/",
+      "kind": "paper-page",
+      "title": "Proof of Backhaul: Trustfree Measurement of Broadband Bandwidth",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:18:34Z",
+      "content_hash": "sha256:39940909f5d0910d2376d7ec56babaf182ef19032db86c711c7d6924aca8e233",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

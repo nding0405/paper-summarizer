@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-uncorebleed-aex-free-high-resolution-and-low-noise-side-735f71b5",
   "title": "UncoreBleed: AEX-Free, High-Resolution, and Low-Noise Side-Channel Attacks on SGX Enclaved Execution",
+  "abstract": "Trusted execution environments such as Intel SGX provide strong confidentiality and integrity guarantees by isolating enclaves from the OS and hypervisor. Prior works claim that SGX disables PMCs to mitigate side-channel attacks.\n\nIn this paper, we show that modern processors feature uncore PMCs whose behavior under SGX has not been fully evaluated. Leveraging this observation, we investigate the state of PMCs in production-mode SGX enclaves and overturn the long-held belief that performance monitoring is suppressed: uncore PMCs record events correlated with enclaved execution. We further identify a critical event in the mesh-to-memory uncore subsystem that allows address-based monitoring at 64 B granularity. Through reverse engineering, we uncover its filtering mechanism, programmability, availability, and address mapping across SGX-capable Xeon processors.\n\nBuilding on the event, we present UncoreBleed, the first PMC-based, AEX-free, high-resolution, and low-noise sidechannel attack against SGX. UncoreBleed can reconstruct pictures from enclaved Libjpeg and extract RSA private keys from a single decryption, in the presence of TLBlur with AEX-Notify, the most state-of-the-art software defense on off-the-shelf SGX platforms. Our findings demonstrate that active uncore PMCs pose a previously underestimated threat to enclave confidentiality, highlighting the need to reconsider SGX's security assumptions of performance monitoring.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-735f71b5",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Hardware Security 4",
@@ -177,6 +179,19 @@
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening",
         "prepublication PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-735f71b5",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/chen-decheng",
+      "kind": "paper-page",
+      "title": "UncoreBleed: AEX-Free, High-Resolution, and Low-Noise Side-Channel Attacks on SGX Enclaved Execution",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:26:02Z",
+      "content_hash": "sha256:99bd313e49b967868a51bc60b92089aa8402247bbc74240031d0e67b8c378697",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

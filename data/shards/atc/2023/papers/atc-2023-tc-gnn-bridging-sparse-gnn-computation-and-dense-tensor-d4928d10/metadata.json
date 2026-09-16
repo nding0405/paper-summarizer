@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "atc-2023-tc-gnn-bridging-sparse-gnn-computation-and-dense-tensor-d4928d10",
   "title": "TC-GNN: Bridging Sparse GNN Computation and Dense Tensor Cores on GPUs",
+  "abstract": "Recently, graph neural networks (GNNs), as the backbone of graph-based machine learning, demonstrate great success in various domains (e.g., e-commerce). However, the performance of GNNs is usually unsatisfactory due to the highly sparse and irregular graph-based operations. To this end, we propose TC-GNN, the first GNN acceleration framework based on GPU Tensor Core Units (TCUs). The core idea is to reconcile the \"Sparse\" GNN computation with the high-performance \"Dense\" TCUs. Specifically, we conduct an in-depth analysis of the sparse operations in mainstream GNN computing frameworks. We introduce a novel sparse graph translation technique to facilitate TCU processing of the sparse GNN workload. We implement an effective CUDA core and TCU collaboration design to fully utilize GPU resources. We integrate MGG with the PyTorch framework for high programmability. Rigorous experiments show an average of 1.70× speedup over the state-of-the-art DGL framework across various models and datasets.",
+  "abstract_source_id": "src-abstract-atc-2023-d4928d10",
   "venue": "atc",
   "year": 2023,
   "track_or_session": "Structuring Graphs",
@@ -180,6 +182,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-atc-2023-d4928d10",
+      "url": "https://www.usenix.org/conference/atc23/presentation/wang-yuke",
+      "kind": "paper-page",
+      "title": "TC-GNN: Bridging Sparse GNN Computation and Dense Tensor Cores on GPUs",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T21:58:17Z",
+      "content_hash": "sha256:7dbac316720a753e61e3b398b6628e192a20ee7729b79872f6573fc44e041c2a",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-posthammer-pervasive-browser-based-rowhammer-attacks-wit-1bf9d161",
   "title": "Posthammer: Pervasive Browser-based Rowhammer Attacks with Postponed Refresh Commands",
+  "abstract": "Rowhammer attacks are pervasive in client systems when launched natively. The biggest Rowhammer threat for such systems, however, lies in the browser. Our large-scale evaluation of browser-based Rowhammer attacks shows that they can only trigger bit flips on a small fraction of DRAM devices. Postponing refresh commands that trigger in-DRAM mitigations can boost the performance of Rowhammer attacks, but it has never been demonstrated in practice.\n\nWe introduce Posthammer, a new Rowhammer attack in JavaScript that forces the CPU's memory controller to postpone refresh commands by creating long durations of intense Rowhammer activity followed by sufficiently long delay windows to allow the memory controller to batch refresh commands. Posthammer features a new abstraction called lane, which enables a subset of addresses in a Rowhammer pattern to be accessed more often. Lanes enable Posthammer to support effective refresh-postponed non-uniform patterns in the browser for the first time. Our evaluation shows that Posthammer is 2.8× more effective than the state of the art, triggering bit flips on 86% of our 28 DDR4 test devices.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-1bf9d161",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Hardware Security 3: Side-Channel and Fault Injection Attacks",
@@ -112,6 +114,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-1bf9d161",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/de-ridder",
+      "kind": "paper-page",
+      "title": "Posthammer: Pervasive Browser-based Rowhammer Attacks with Postponed Refresh Commands",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:21:11Z",
+      "content_hash": "sha256:749fdb7e4a9409b8434de082a31ff05b29bf049369643b74e3b8c138456a9353",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

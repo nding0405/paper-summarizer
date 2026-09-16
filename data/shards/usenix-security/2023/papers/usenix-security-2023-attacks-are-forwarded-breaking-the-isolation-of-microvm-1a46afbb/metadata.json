@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2023-attacks-are-forwarded-breaking-the-isolation-of-microvm-1a46afbb",
   "title": "Attacks are Forwarded: Breaking the Isolation of MicroVM-based Containers Through Operation Forwarding",
+  "abstract": "People proposed to use virtualization techniques to reinforce the isolation between containers. In the design, each container runs inside a lightweight virtual machine (called microVM). MicroVM-based containers benefit from both the security of microVM and the high efficiency of the container, and thus are widely used on the public cloud.\n\nHowever, in this paper, we demonstrate a new attack surface that can be exploited to break the isolation of the microVM-based container, called operation forwarding attacks . Our key observation is that certain operations of the microVM-based container are forwarded to host system calls and host kernel functions. The attacker can leverage the operation forwarding to exploit the host kernel’s vulnerabilities and exhaust host resources. To fully understand the security risk of operation forwarding attacks, we divide the components of the microVM-based container into three layers according to their functionalities and present corresponding attacking strategies to exploit the operation forwarding of each layer. Moreover, we design eight attacks against Kata Containers and Firecracker-based containers and conduct experiments on the local environment, AWS, and Alibaba Cloud. Our results show that the attacker can trigger potential privilege escalation, downgrade 93.4% IO performance and 75.0% CPU performance of the victim container, and even crash the host. We further give security suggestions for mitigating these attacks.",
+  "abstract_source_id": "src-abstract-usenix-security-2023-1a46afbb",
   "venue": "usenix-security",
   "year": 2023,
   "track_or_session": "Attacking, Defending, and Analyzing",
@@ -217,6 +219,19 @@
       "official": true,
       "supports": [
         "authors, affiliations when published, abstract, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2023-1a46afbb",
+      "url": "https://www.usenix.org/conference/usenixsecurity23/presentation/xiao-jietao",
+      "kind": "paper-page",
+      "title": "Attacks are Forwarded: Breaking the Isolation of MicroVM-based Containers Through Operation Forwarding",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:09:50Z",
+      "content_hash": "sha256:a8d1a92026e0ecf408da1f8dffdb852a2e4386033d4987cfdb9c006ef290fa5e",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

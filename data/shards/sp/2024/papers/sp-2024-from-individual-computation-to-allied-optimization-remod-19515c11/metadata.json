@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2024-from-individual-computation-to-allied-optimization-remod-19515c11",
   "title": "From Individual Computation to Allied Optimization: Remodeling Privacy-Preserving Neural Inference with Function Input Tuning",
+  "abstract": "Privacy-preserving Machine Learning as a Service (MLaaS) enables the resource-limited client to cost-efficiently obtain inference output of a well-trained neural model that is possessed by the cloud server, with both client’s input and server’s model parameters protected. While efficiency plays a core role for practical implementation of privacy-preserving MLaaS and it is encouraging to witness recent advances towards efficiency improvement, there still exists a significant performance gap to real-world applications. The basic logic in state-of-the-art frameworks involves an individual computation for each function of the neural model, based on specific cryptographic primitives. While it is definitely logical, we look back to the necessity of this function-wise methodology and initiate the comprehensive exploration towards allied optimization for efficient privacy-preserving MLaaS. Under such fresh perspective, we remodel the computation process that is always from input to output of the same function in mainstream works, to the allied counterpart that is from one function’s input associated with the start of expensive overhead to another function’s output enabling effective circumvention of unnecessary cost within the procedure. As such we propose FIT (Function Input Tuning) which features by a computation module for composite function with a series of joint optimization strategies. Theoretically, FIT not only eliminates the most expensive crypto operations without invoking extra encryption enabler, but also makes the running-time crypto complexity independent of filter size. Experimentally, FIT demonstrates tens of times speedup over various function dimensions from modern models, and 4.5× to 35.5× speedup on the total computation time when plugged in neural networks with data from small-scale MNIST to large-scale ImageNet.",
+  "abstract_source_id": "src-abstract-sp-2024-19515c11",
   "venue": "sp",
   "year": 2024,
   "track_or_session": "Summer cycle",
@@ -159,6 +161,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2024-19515c11",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "From Individual Computation to Allied Optimization: Remodeling Privacy-Preserving Neural Inference with Function Input Tuning",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:32Z",
+      "content_hash": "sha256:be7515012a8c1ea1211f38a27ea4d2aa9cff6e0faac9417a2f58b1d64e91280e",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

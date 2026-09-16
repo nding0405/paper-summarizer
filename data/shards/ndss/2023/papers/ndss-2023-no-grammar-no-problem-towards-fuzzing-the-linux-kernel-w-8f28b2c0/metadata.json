@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2023-no-grammar-no-problem-towards-fuzzing-the-linux-kernel-w-8f28b2c0",
   "title": "No Grammar, No Problem: Towards Fuzzing the Linux Kernel without System-Call Descriptions",
+  "abstract": "The integrity of the entire computing ecosystem depends on the security of our operating systems (OSes). Unfortunately, due to the scale and complexity of OS code, hundreds of security issues are found in OSes, every year. As such, operating systems have constantly been prime use-cases for applying security-analysis tools. In recent years, fuzz-testing has appeared as the dominant technique for automatically finding security issues in software. As such, fuzzing has been adapted to find thousands of bugs in kernels. However, modern OS fuzzers, such as Syzkaller, rely on precise, extensive, manually created harnesses and grammars for each interface fuzzed within the kernel. Due to this reliance on grammars, current OS fuzzers are faced with scaling-issues.\n\nIn this paper, we present FuzzNG, our generic approach to fuzzing system-calls on OSes. Unlike Syzkaller, FuzzNG does not require intricate descriptions of system-call interfaces in order to function. Instead FuzzNG leverages fundamental Kernel design features in order to reshape and simplify the fuzzer’s input-space. As such FuzzNG only requires a small config, for each new target: essentially a list of files and system-call numbers the fuzzer should explore.\n\nWe implemented FuzzNG for the Linux kernel. Testing FuzzNG over 10 Linux components with extensive descrip tions in Syzkaller showed that, on average, FuzzNG achieves 102.5% of Syzkaller’s coverage. FuzzNG found 9 new bugs (5 in components that Syzkaller had already fuzzed extensively, for years). Additionally, FuzzNG’s lightweight configs are less than 1.7% the size of Syzkaller’s manually-written grammars. Crucially, FuzzNG achieves this without initial seed-inputs, or expert guidance.",
+  "abstract_source_id": "src-abstract-ndss-2023-8f28b2c0",
   "venue": "ndss",
   "year": 2023,
   "track_or_session": "Fuzzing",
@@ -147,6 +149,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2023-8f28b2c0",
+      "url": "https://www.ndss-symposium.org/ndss-paper/no-grammar-no-problem-towards-fuzzing-the-linux-kernel-without-system-call-descriptions/",
+      "kind": "paper-page",
+      "title": "No Grammar, No Problem: Towards Fuzzing the Linux Kernel without System-Call Descriptions",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:17:09Z",
+      "content_hash": "sha256:39619173ef76a587919db935736f5fba4e63fa58409e2b798a4c2816e7489bc2",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

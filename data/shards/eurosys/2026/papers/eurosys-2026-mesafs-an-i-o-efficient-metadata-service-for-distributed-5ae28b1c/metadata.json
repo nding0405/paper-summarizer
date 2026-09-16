@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "eurosys-2026-mesafs-an-i-o-efficient-metadata-service-for-distributed-5ae28b1c",
   "title": "MesaFS: An I/O-Efficient Metadata Service for Distributed File Systems",
+  "abstract": "Distributed file systems typically rely on an underlying storage backend, called a metadata store, to support metadata updates. Previous work focuses on efficient directory tree management, bridging the performance gap between metadata updates and metadata stores. However, there is still a huge performance gap between metadata updates and SSD performance. This gap is mainly caused by extra SSD writes from two sources. First, a single high-level operation often translates to multiple writes in the metadata store (called a divided update). Ensuring crash consistency for a divided update requires extra writes (e.g., journaling). Second, extra writes are required to maintain the physical order of metadata objects on the SSD (called layout ordering), which is necessary to support operations like directory listing.",
+  "abstract_source_id": "src-abstract-eurosys-2026-5ae28b1c",
   "venue": "eurosys",
   "year": 2026,
   "track_or_session": null,
@@ -138,6 +140,19 @@
       "official": false,
       "supports": [
         "Publisher-deposited proceedings identity and print publication date."
+      ]
+    },
+    {
+      "id": "src-abstract-eurosys-2026-5ae28b1c",
+      "url": "https://api.openalex.org/works/doi:10.1145/3767295.3803573?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "MesaFS: An I/O-Efficient Metadata Service for Distributed File Systems",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:20:43Z",
+      "content_hash": "sha256:d8cbb013ee9499c692da1ca9c4ed673ad0a79dad86cf0acf9bf5c2a29ed6ef09",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

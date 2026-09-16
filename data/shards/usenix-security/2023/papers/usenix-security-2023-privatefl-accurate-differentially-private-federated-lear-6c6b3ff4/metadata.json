@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2023-privatefl-accurate-differentially-private-federated-lear-6c6b3ff4",
   "title": "PrivateFL: Accurate, Differentially Private Federated Learning via Personalized Data Transformation",
+  "abstract": "Federated learning (FL) enables multiple clients to collaboratively train a model with the coordination of a central server. Although FL improves data privacy via keeping each client's training data locally, an attacker—e.g., an untrusted server—an still compromise the privacy of clients' local training data via various inference attacks. A de facto approach to preserving FL privacy is Differential Privacy (DP), which adds random noise during training. However, when applied to FL, DP suffers from a key limitation: it sacrifices the model accuracy substantially—which is even more severely than being applied to traditional centralized learning—to achieve a meaningful level of privacy.\n\nIn this paper, we study the accuracy degradation cause of FL+DP and then design an approach to improve the accuracy. First, we propose that such accuracy degradation is partially because DP introduces additional heterogeneity among FL clients when adding different random noise with clipping bias during local training. To the best of our knowledge, we are the first to associate DP in FL with client heterogeneity. Second, we design PrivateFL to learn accurate, differentially private models in FL with reduced heterogeneity. The key idea is to jointly learn a differentially private, personalized data transformation for each client during local training. The personalized data transformation shifts client's local data distribution to compensate the heterogeneity introduced by DP, thus improving FL model's accuracy.\n\nIn the evaluation, we combine and compare PrivateFL with eight state-of-the-art differentially private FL methods on seven benchmark datasets, including six image and one non-image datasets. Our results show that PrivateFL learns accurate FL models with a small ε, e.g., 93.3% on CIFAR-10 with 100 clients under (ε = 2, δ = 1 e – 3)-DP. Moreover, PrivateFL can be combined with prior works to reduce DP-induced heterogeneity and further improve their accuracy.",
+  "abstract_source_id": "src-abstract-usenix-security-2023-6c6b3ff4",
   "venue": "usenix-security",
   "year": 2023,
   "track_or_session": "Differential Privacy",
@@ -154,6 +156,19 @@
       "official": true,
       "supports": [
         "authors, affiliations when published, abstract, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2023-6c6b3ff4",
+      "url": "https://www.usenix.org/conference/usenixsecurity23/presentation/yang-yuchen",
+      "kind": "paper-page",
+      "title": "PrivateFL: Accurate, Differentially Private Federated Learning via Personalized Data Transformation",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:12:35Z",
+      "content_hash": "sha256:f4c883f86ec28a38cba617e7922a19ab56125f2c6f25b0d83d28e1d6db55a586",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

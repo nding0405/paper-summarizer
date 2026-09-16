@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2023-warpattack-bypassing-cfi-through-compiler-introduced-dou-87b62b0d",
   "title": "WarpAttack: Bypassing CFI through Compiler-Introduced Double-Fetches",
+  "abstract": "Code-reuse attacks are dangerous threats that attracted the attention of the security community for years. These attacks aim at corrupting important control-flow transfers for taking control of a process without injecting code. Nowadays, the combinations of multiple mitigations (e.g., ASLR, DEP, and CFI) drastically reduced this attack surface, making running code-reuse exploits more challenging.Unfortunately, security mitigations are combined with compiler optimizations, that do not distinguish between security-related and application code. Blindly deploying code optimizations over code-reuse mitigations may undermine their security guarantees. For instance, compilers may introduce double-fetch vulnerabilities that lead to concurrency issues such as Time-Of-Check to Time-Of-Use (TOCTTOU) attacks.In this work, we propose a new attack vector, called WarpAttack, that exploits compiler-introduced double-fetch optimizations to mount TOCTTOU attacks and bypass code-reuse mitigations. We study the mechanism underlying this attack and present a practical proof-of-concept exploit against the last version of Firefox. Additionally, we propose a lightweight analysis to locate vulnerable double-fetch code (with 3% false positives) and conduct research over six popular applications, five operating systems, and four architectures (32 and 64 bits) to study the diffusion of this threat. Moreover, we study the implication of our attack against six CFI implementations. Finally, we investigate possible research lines for addressing this threat and propose practical solutions to be deployed in existing projects.",
+  "abstract_source_id": "src-abstract-sp-2023-87b62b0d",
   "venue": "sp",
   "year": 2023,
   "track_or_session": "Session 5A: Software security",
@@ -193,6 +195,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2023-87b62b0d",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "WarpAttack: Bypassing CFI through Compiler-Introduced Double-Fetches",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:27Z",
+      "content_hash": "sha256:2c3c9cbfdcc9ef58a970a66aadb81bbaf8238409ab69d65565522a11e421be99",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

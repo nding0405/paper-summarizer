@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2023-honeycomb-secure-and-efficient-gpu-executions-via-static-e39eac21",
   "title": "Honeycomb: Secure and Efficient GPU Executions via Static Validation",
+  "abstract": "Graphics Processing Units (GPUs) unlock emerging use cases like large language models and autonomous driving. They process a large amount of sensitive data, where security is of critical importance. GPU Trusted Execution Environments (TEEs) generally provide security to GPU applications with modest overheads. Recent proposals for GPU TEEs are promising, but many of them require hardware changes that have a long lead time to deploy in production environments.\n\nThis paper presents Honeycomb, a software-based, secure and efficient TEE for GPU applications. The key idea of Honeycomb is to leverage static analysis to validate the security of GPU applications at load time. Co-designing with the CPU TEE, as well as adding OS and driver support, Honeycomb is able to remove both the OS and the driver from the trusted computing base (TCB). Validation also ensures that all applications inside the system are secure, enabling a concise and secure approach to exchange data in plaintext via shared device memory on the GPU.\n\nWe have prototyped Honeycomb targeting the AMD RX6900XT GPU. Honeycomb is evaluated on five representative benchmarks and 23 applications in total, covering workloads of high performance computing, deep learning, and image processing. The results show that Honeycomb is both practical and efficient to secure real-world GPU applications. Validating applications to run on Honeycomb requires modest developer efforts. The TCB is 18× smaller than the Linux-based systems. Secure inter-process communication is up to 529× faster. Moreover, running large language model workloads like BERT and NanoGPT has ∼2% overheads.",
+  "abstract_source_id": "src-abstract-osdi-2023-e39eac21",
   "venue": "osdi",
   "year": 2023,
   "track_or_session": "Secure Your Bits I",
@@ -285,6 +287,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2023-e39eac21",
+      "url": "https://www.usenix.org/conference/osdi23/presentation/mai",
+      "kind": "paper-page",
+      "title": "Honeycomb: Secure and Efficient GPU Executions via Static Validation",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:06:33Z",
+      "content_hash": "sha256:aedc036a9d941c3d0b55fbb839d07cede3dfdd3660ba7cf6465b29cb323ec92d",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

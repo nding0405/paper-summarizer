@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2023-patchverif-discovering-faulty-patches-in-robotic-vehicle-c2232e13",
   "title": "PatchVerif: Discovering Faulty Patches in Robotic Vehicles",
+  "abstract": "Modern software is continuously patched to fix bugs and security vulnerabilities. Patching is particularly important in robotic vehicles (RVs), in which safety and security bugs can cause severe physical damages. However, existing automated methods struggle to identify faulty patches in RVs, due to their inability to systematically determine patch-introduced behavioral modifications, which affect how the RV interacts with the physical environment.\n\nIn this paper, we introduce PATCHVERIF, an automated patch analysis framework. PATCHVERIF’s goal is to evaluate whether a given patch introduces bugs in the patched RV control software. To this aim, PATCHVERIF uses a combination of static and dynamic analysis to measure how the analyzed patch affects the physical state of an RV. Specifically, PATCHVERIF uses a dedicated input mutation algorithm to generate RV inputs that maximize the behavioral differences (in the physical space) between the original code and the patched one. Using the collected information about patch-introduced behavioral modifications, PATCHVERIF employs support vector machines (SVMs) to infer whether a patch is faulty or correct.\n\nWe evaluated PATCHVERIF on two popular RV control software (ArduPilot and PX4), and it successfully identified faulty patches with an average precision and recall of 97.9% and 92.1%, respectively. Moreover, PATCHVERIF discovered 115 previously unknown bugs, 103 of which have been acknowledged, and 51 of them have already been fixed.",
+  "abstract_source_id": "src-abstract-usenix-security-2023-c2232e13",
   "venue": "usenix-security",
   "year": 2023,
   "track_or_session": "Vehicles and Security",
@@ -154,6 +156,19 @@
       "official": true,
       "supports": [
         "authors, affiliations when published, abstract, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2023-c2232e13",
+      "url": "https://www.usenix.org/conference/usenixsecurity23/presentation/kim-hyungsub",
+      "kind": "paper-page",
+      "title": "PatchVerif: Discovering Faulty Patches in Robotic Vehicles",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:12:22Z",
+      "content_hash": "sha256:8c9e6154e1b2a55c93cc932fcd9cb1ed28d8e35c8c4735a502b96b48014d47e4",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2023-shelter-extending-arm-cca-with-isolation-in-user-space-8f0f94b3",
   "title": "SHELTER: Extending Arm CCA with Isolation in User Space",
+  "abstract": "The increasing adoption of confidential computing is providing individual users with a more seamless interaction with numerous mobile and server devices. TrustZone is a promising security technology for the use of partitioning sensitive private data into a trusted execution environment (TEE). Unfortunately, third-party developers have limited accessibility to TrustZone. This is because TEE vendors need to validate such security applications to preserve their security rigorously. Moreover, TrustZone-based systems suffer from vulnerabilities affecting Trusted App and trusted OS, possibly causing the entire system to be compromised.\n\nAdvanced virtualization-based TEE introduced in the recently new concept of Confidential Compute Architecture (CCA) creates a new physical address space called Realm world for confidential computing to protect the data confidentiality and integrity. The current version of CCA primarily targets the VM level in the Realm world and does not provide user-level isolated environments. To fill up this gap, we present SHELTER, which is a complement to CCA’s primary Realm VM-style architecture. SHELTER allows third-party developers to deploy their applications with isolation in userspace. SHELTER is designed by cooperating with Arm CCA hardware primitive available in Armv9.2 to provide hardware-based isolation while removing the need for software workloads to trust their data to a Host OS, hypervisor, or privileged software (e.g., trusted OS, Secure/Realm hypervisor). We have implemented and evaluated SHELTER, and the results demonstrated that SHELTER guarantees the security of applications with a modest performance overhead (<15%) on real-world workloads.",
+  "abstract_source_id": "src-abstract-usenix-security-2023-8f0f94b3",
   "venue": "usenix-security",
   "year": 2023,
   "track_or_session": "Arming and Disarming ARM",
@@ -217,6 +219,19 @@
       "official": true,
       "supports": [
         "authors, affiliations when published, abstract, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2023-8f0f94b3",
+      "url": "https://www.usenix.org/conference/usenixsecurity23/presentation/zhang-yiming",
+      "kind": "paper-page",
+      "title": "SHELTER: Extending Arm CCA with Isolation in User Space",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:12:56Z",
+      "content_hash": "sha256:c004e1ed0c419ff88a924c2d8f4482c5eabe4b76572d6a1dead3abedad0d9bf9",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

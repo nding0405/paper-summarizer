@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2025-edm-an-ultra-low-latency-ethernet-fabric-for-memory-disa-7b6c1f1f",
   "title": "EDM: An Ultra-Low Latency Ethernet Fabric for Memory Disaggregation",
+  "abstract": "Achieving low remote memory access latency remains the primary challenge in realizing memory disaggregation over Ethernet within the datacenters. We present EDM that attempts to overcome this challenge using two key ideas. First, while existing network protocols for remote memory access over the Ethernet, such as TCP/IP and RDMA, are implemented on top of the Ethernet MAC layer, EDM takes a radical approach by implementing the entire network protocol stack for remote memory access within the Physical layer (PHY) of the Ethernet. This overcomes fundamental latency and bandwidth overheads imposed by the MAC layer, especially for small memory messages. Second, EDM implements a centralized, fast, in-network scheduler for memory traffic within the PHY of the Ethernet switch. Inspired by the classic Parallel Iterative Matching (PIM) algorithm, the scheduler dynamically reserves bandwidth between compute and memory nodes by creating virtual circuits in the PHY, thus eliminating queuing delay and layer 2 packet processing delay at the switch for memory traffic, while maintaining high bandwidth utilization. Our FPGA testbed demonstrates that EDM's network fabric incurs a latency of only ~300 ns for remote memory access in an unloaded network, which is an order of magnitude lower than state-of-the-art Ethernet-based solutions such as RoCEv2 and comparable to emerging PCIe-based solutions such as CXL. Larger-scale network simulations indicate that even at high network loads, EDM's average latency remains within 1.3x its unloaded latency.",
+  "abstract_source_id": "src-abstract-asplos-2025-7b6c1f1f",
   "venue": "asplos",
   "year": 2025,
   "track_or_session": "Session 8B: Networking",
@@ -117,6 +119,19 @@
       "official": true,
       "supports": [
         "Author-deposited archival artifact associated with the conference paper."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2025-7b6c1f1f",
+      "url": "https://api.openalex.org/works/doi:10.1145/3669940.3707221?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "EDM: An Ultra-Low Latency Ethernet Fabric for Memory Disaggregation",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:01:43Z",
+      "content_hash": "sha256:75cdd24c28374c2181825bb8f18ed2774b416afe32e9a8ec7e8cf0c964d5bd3c",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

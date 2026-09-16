@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2023-scaledb-a-scalable-asynchronous-in-memory-database-1322f92b",
   "title": "ScaleDB: A Scalable, Asynchronous In-Memory Database",
+  "abstract": "ScaleDB is a serializable in-memory transactional database that achieves excellent scalability on multi-core machines by asynchronously updating range indexes. We find that asynchronous range index updates can significantly improve database scalability by applying updates in batches, reducing contention on critical sections. To avoid stale reads, ScaleDB uses small hash indexlets to hold delayed updates. We use indexlets to design ACC, an asynchronous concurrency control protocol providing serializability. With ACC, it is possible to delay range index updates without adverse performance effects on transaction execution in the common case.\n\nACC delivers scalable serializable isolation for transactions, with high throughput and low abort rate. Evaluation on a dual-socket server with 36 cores shows that ScaleDB achieves 9.5× better query throughput than Peloton on the YCSB benchmark and 1.8× better transaction throughput than Cicada on the TPC-C benchmark.",
+  "abstract_source_id": "src-abstract-osdi-2023-1322f92b",
   "venue": "osdi",
   "year": 2023,
   "track_or_session": "Query Your Bits",
@@ -159,6 +161,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2023-1322f92b",
+      "url": "https://www.usenix.org/conference/osdi23/presentation/mehdi",
+      "kind": "paper-page",
+      "title": "ScaleDB: A Scalable, Asynchronous In-Memory Database",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:06:44Z",
+      "content_hash": "sha256:d09a466020d9d3dfea5d0a1334247618c5d1696ca5e8302c9075f4b7108a0eb4",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sigcomm-2024-keeping-an-eye-on-congestion-control-in-the-wild-with-ne-21cc9856",
   "title": "Keeping an Eye on Congestion Control in the Wild with Nebby",
+  "abstract": "The Internet congestion control landscape is rapidly evolving. Since the introduction of BBR and the deployment of QUIC, it has become increasingly commonplace for companies to modify and implement their own congestion control algorithms (CCAs). To respond effectively to these developments, it is crucial to understand the state of CCA deployments in the wild. Unfortunately, existing CCA identification tools are not future-proof and do not work well with modern CCAs and encrypted protocols like QUIC. In this paper, we articulate the challenges in designing a future-proof CCA identification tool and propose a measurement methodology that directly addresses these challenges. The resulting measurement tool, called Nebby, can identify all the CCAs currently available in the Linux kernel and BBRv2 with an average accuracy of 96.7%. We found that among the Alexa Top 20k websites, the share of BBR has shrunk since 2019 and that only 8% of them responded to QUIC requests. Among these QUIC servers, CUBIC and BBR seem equally popular. We show that Nebby is extensible by extending it for Copa and an undocumented family of CCAs that is deployed by 6% of the measured websites, including major corporations like Hulu and Apple.",
+  "abstract_source_id": "src-abstract-sigcomm-2024-21cc9856",
   "venue": "sigcomm",
   "year": 2024,
   "track_or_session": "Sharing the network — Research Track",
@@ -150,6 +152,19 @@
         "publisher-deposited ORCIDs when available",
         "proceedings page range and online publication date",
         "empty publisher relation metadata for alternate-version checks"
+      ]
+    },
+    {
+      "id": "src-abstract-sigcomm-2024-21cc9856",
+      "url": "https://api.openalex.org/works/doi:10.1145/3651890.3672223?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Keeping an Eye on Congestion Control in the Wild with Nebby",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:23:07Z",
+      "content_hash": "sha256:ebbdca5274e25e62e253cfe4718f41028a97c9c8cd776cc584245f1a29f431b3",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2025-optimizing-datalog-for-the-gpu-4d949786",
   "title": "Optimizing Datalog for the GPU",
+  "abstract": "Modern Datalog engines (e.g., LogicBlox, Soufflé, ddlog) enable their users to write declarative queries which compute recursive deductions over extensional facts, leaving high-performance operationalization (query planning, semi-naïve evaluation, and parallelization) to the engine. Such engines form the backbone of modern high-throughput applications in static analysis, network monitoring, and social-media mining. In this paper, we present a methodology for implementing a modern in-memory Datalog engine on data center GPUs, allowing us to achieve significant (up to 45×) gains compared to Soufflé (a modern CPU-based engine) on context-sensitive points-to analysis of httpd. We present GPUlog, a Datalog engine backend that implements iterated relational algebra kernels over a novel range-indexed data structure we call the hash-indexed sorted array (HISA). HISA combines the algorithmic benefits of incremental range-indexed relations with the raw computation throughput of operations over dense data structures. Our experiments show that GPUlog is significantly faster than CPU-based Datalog engines, while achieving favorable memory footprint compared to contemporary GPU-based joins.",
+  "abstract_source_id": "src-abstract-asplos-2025-4d949786",
   "venue": "asplos",
   "year": 2025,
   "track_or_session": "Session 10A: GPGPU",
@@ -167,6 +169,19 @@
       "official": false,
       "supports": [
         "Indexed abstract and open-access links used for relevance classification and ancillary-link discovery."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2025-4d949786",
+      "url": "https://api.openalex.org/works/doi:10.1145/3669940.3707274?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Optimizing Datalog for the GPU",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:02:38Z",
+      "content_hash": "sha256:80828e38190551fa2fe1c4f97ffaecaae74db503178905b3fe45079c8326e6af",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

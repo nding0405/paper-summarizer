@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "atc-2024-a-difference-world-high-performance-nvm-invariant-softwa-6fb668ce",
   "title": "A Difference World: High-performance, NVM-invariant, Software-only Intermittent Computation",
+  "abstract": "Supporting long life, high performance, intermittent computation is an essential challenge in allowing energy harvesting devices to fulfill the vision of smart dust. Intermittent computation is the extension of long-running computation across the frequent, unexpected, power cycles that result from replacing batteries with harvested energy. The most promising intermittent computation support strategies combine programmer direction and compiler analysis to minimize run-time overhead and provide programmer control—without specialized hardware support. While such strategies succeed in reducing the size of non-volatile memory writes due to checkpointing, they must checkpoint continuously. Unfortunately, for Flash-based devices (by far the most ubiquitous), writing checkpoints is slow and gradually kills the device. Without intervention, Flash devices and software-only intermittent computation are fundamentally incompatible.\n\nTo enable ubiquitous programmer-guided intermittent computation we design and implement Camel. The key idea behind Camel is the systematic bifurcation of program state into two \"worlds'' of differing volatility. Programmers compose intermittent programs by stitching together atomic units of computation called tasks. The Camel compiler ensures that all within-task data is placed in the volatile world and all between-task data is placed in the non-volatile world. Between tasks, Camel swaps the worlds, atomically locking-in the forward progress of the preceding task. In preparation for the next task, Camel resolves differences in world view by copying only differences due to the preceding task's updates. This systematic decomposition into a mixed-volatility memory allows—for the first time—long-life and high performance programmer-guided intermittent computation on Flash devices: Camel outperforms the state-of-the-art checkpointing system for Flash-based devices by up to 5x while eliminating the need for hardware support. Beyond Flash, Camel's differential buffer system improves performance by a factor of 2x compared to existing task-based approaches on FRAM platforms.",
+  "abstract_source_id": "src-abstract-atc-2024-6fb668ce",
   "venue": "atc",
   "year": 2024,
   "track_or_session": "Potpourri",
@@ -138,6 +140,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-atc-2024-6fb668ce",
+      "url": "https://www.usenix.org/conference/atc24/presentation/williams",
+      "kind": "paper-page",
+      "title": "A Difference World: High-performance, NVM-invariant, Software-only Intermittent Computation",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T21:58:23Z",
+      "content_hash": "sha256:f0223dcb6a1075e7a970ab11121f65cf5c1d6ac8be7548f7acfd3de8736b393b",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

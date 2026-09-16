@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2024-thc-accelerating-distributed-deep-learning-using-tensor-c988d745",
   "title": "THC: Accelerating Distributed Deep Learning Using Tensor Homomorphic Compression",
+  "abstract": "Deep neural networks (DNNs) are the de facto standard for essential use cases, such as image classification, computer vision, and natural language processing. As DNNs and datasets get larger, they require distributed training on increasingly larger clusters. A main bottleneck is the resulting communication overhead where workers exchange model updates (i.e., gradients) on a per-round basis. To address this bottleneck and accelerate training, a widely-deployed approach is compression. However, previous deployments often apply bi-directional compression schemes by simply using a uni-directional gradient compression scheme in each direction. This results in significant computational overheads at the parameter server and increased compression error, leading to longer training and lower accuracy.\n\nWe introduce Tensor Homomorphic Compression (THC), a novel bi-directional compression framework that enables the direct aggregation of compressed values and thus eliminating the aforementioned computational overheads. Moreover, THC is compatible with in-network aggregation (INA), which allows for further acceleration. Our evaluation shows that training representative vision and language models with THC reaches target accuracy by 1.40× to 1.47× faster using INA and 1.28× to 1.33× faster using a software PS compared with state-of-the-art systems.",
+  "abstract_source_id": "src-abstract-nsdi-2024-c988d745",
   "venue": "nsdi",
   "year": 2024,
   "track_or_session": "ML but Faster",
@@ -202,6 +204,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2024-c988d745",
+      "url": "https://www.usenix.org/conference/nsdi24/presentation/li-minghao",
+      "kind": "paper-page",
+      "title": "THC: Accelerating Distributed Deep Learning Using Tensor Homomorphic Compression",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:03:48Z",
+      "content_hash": "sha256:0922292da7aee5a40d9270432a248a59a743ec7515158ab0bb22de943865ee29",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

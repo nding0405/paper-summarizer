@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2026-jwmalloc-a-verified-memory-allocator-for-mobile-devices-67e20f6c",
   "title": "jwmalloc: A Verified Memory Allocator for Mobile Devices",
+  "abstract": "Dynamic memory allocators provide memory allocation and release functionality to languages such as C, C++, and Rust. Existing allocators have been primarily optimized for performance and timely memory release. However, emerging mobile workloads also emphasize CPU, energy, and memory usage under soft real-time constraints.\n\nWe present jwmalloc, a novel memory allocator built from the ground up to address these mobile-specific challenges. It is based on three key innovations: a uniform slab size with pooling that enables immediate cross-size-class reuse of any emptied slab; the closed sibling tree , a new data structure for efficiently managing fragments; and a two-buffer lifetime tracker that categorizes short- and long-lived objects to guide memory reclamation. For timely response in soft real-time and oversubscription scenarios, all operations are non-blocking. We verified jwmalloc with a bounded model checker under weak memory models. Replacing jemalloc on a flagship smartphone running real-world workloads, jwmalloc reduces whole-system instructions by 10% and cuts allocator-side instruction counts by 3.84x, while lowering CPU power consumption by 5-11%, all at a comparable memory footprint. jwmalloc has been deployed in production on 12 million commercial mobile devices, operating stably for over 30 billion user hours.",
+  "abstract_source_id": "src-abstract-osdi-2026-67e20f6c",
   "venue": "osdi",
   "year": 2026,
   "track_or_session": "The Session about Correctness",
@@ -188,6 +190,19 @@
       "official": true,
       "supports": [
         "Official proceedings availability and canonical conference versions."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2026-67e20f6c",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/wang-jiawei",
+      "kind": "paper-page",
+      "title": "jwmalloc: A Verified Memory Allocator for Mobile Devices",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:08:29Z",
+      "content_hash": "sha256:c029420ce66473c2434b3dbbc1b892fd33f4ffae0e7f3a1a0e636cfa8e77b9e9",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

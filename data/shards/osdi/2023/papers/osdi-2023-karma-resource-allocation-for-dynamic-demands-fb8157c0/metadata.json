@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2023-karma-resource-allocation-for-dynamic-demands-fb8157c0",
   "title": "Karma: Resource Allocation for Dynamic Demands",
+  "abstract": "The classical max-min fairness algorithm for resource allocation provides many desirable properties, e.g., Pareto efficiency, strategy-proofness and fairness. This paper builds upon the observation that max-min fairness guarantees these properties under a strong assumption---user demands being static over time---and that, for the realistic case of dynamic user demands, max-min fairness loses one or more of these properties.\n\nWe present Karma, a generalization of max-min fairness for dynamic user demands. The key insight in Karma is to introduce \"memory\" into max-min fairness --- when allocating resources, Karma takes users' past allocations into account: in each quantum, users donate their unused resources and are assigned credits when other users borrow these resources; Karma carefully orchestrates exchange of credits across users (based on their instantaneous demands, donated resources and borrowed resources), and performs prioritized resource allocation based on users' credits. We prove theoretically that Karma guarantees Pareto efficiency, online strategy-proofness, and optimal fairness for dynamic user demands (without future knowledge of user demands). Empirical evaluations over production workloads show that these properties translate well into practice: Karma is able to reduce disparity in performance across users to a bare minimum while maintaining Pareto-optimal system-wide performance.",
+  "abstract_source_id": "src-abstract-osdi-2023-fb8157c0",
   "venue": "osdi",
   "year": 2023,
   "track_or_session": "Manage Your Bits II",
@@ -201,6 +203,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2023-fb8157c0",
+      "url": "https://www.usenix.org/conference/osdi23/presentation/vuppalapati",
+      "kind": "paper-page",
+      "title": "Karma: Resource Allocation for Dynamic Demands",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:06:36Z",
+      "content_hash": "sha256:5b40a28023886d050dddc326a56a86882fda93445079f9a701953d91222ff757",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

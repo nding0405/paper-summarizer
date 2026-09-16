@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2023-basecomp-a-comparative-analysis-for-integrity-protection-97636217",
   "title": "BASECOMP: A Comparative Analysis for Integrity Protection in Cellular Baseband Software",
+  "abstract": "Baseband software is an important component in cellular communication. Unfortunately, it is almost impossible to implement baseband software correctly due to the complexity and the large volume of cellular specifications. As a result, dynamic testing has been widely used to discover implementation bugs in them. However, this approach suffers from the reachability problem, resulting in many missed bugs. Recently, BaseSpec proposed a static approach for analyzing baseband. However, BaseSpec requires heavy manual analysis and is limited to message decoding, failing to support integrity protection, the most critical step in mobile communication. In this paper, we propose a novel, semi-automated approach, BASECOMP, for analyzing integrity protection. To tame the complexity of baseband firmware, BASECOMP utilizes probabilistic inference to identify the integrity protection function. In particular, BASECOMP builds a factor graph from the firmware based on specifications and discovers the most probable function for integrity protection. Then, with additional manual analysis, BASECOMP performs symbolic analysis to validate that its behavior conforms to the specification and reports any discrepancies. We applied BASECOMP to 16 firmware images from two vendors (Samsung and MediaTek) in addition to srsRAN, an open-source 4G and 5G software radio suite. As a result, we discovered 29 bugs, including a NAS AKA bypass vulnerability in Samsung which was assigned critical severity. Moreover, BASECOMP can narrow down the number of functions to be manually analyzed to 1.56 on average. This can significantly reduce manual efforts for analysis, the primary limitation of the previous static analysis approach for baseband.",
+  "abstract_source_id": "src-abstract-usenix-security-2023-97636217",
   "venue": "usenix-security",
   "year": 2023,
   "track_or_session": "Cellular Networks",
@@ -175,6 +177,19 @@
       "official": true,
       "supports": [
         "authors, affiliations when published, abstract, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2023-97636217",
+      "url": "https://www.usenix.org/conference/usenixsecurity23/presentation/kim-eunsoo",
+      "kind": "paper-page",
+      "title": "BASECOMP: A Comparative Analysis for Integrity Protection in Cellular Baseband Software",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:10:00Z",
+      "content_hash": "sha256:566b5d1daa51e703e329322a6787b95e72dbc5c8f10301f1186174a3c439e779",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

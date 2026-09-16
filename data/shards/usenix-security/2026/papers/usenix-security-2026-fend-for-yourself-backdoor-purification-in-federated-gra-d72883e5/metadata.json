@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-fend-for-yourself-backdoor-purification-in-federated-gra-d72883e5",
   "title": "Fend for Yourself! Backdoor Purification in Federated Graph Learning with an Evolving Knowledge Anchor",
+  "abstract": "Federated Graph Learning (FedGL) enables collaborative training on decentralized graph data while preserving privacy, yet its distributed nature makes it highly vulnerable to backdoor attacks. These attacks compromise the integrity of the global model by injecting malicious triggers. Existing defenses, however, are often ineffective on complex graph data or rely on a trusted server, creating an architectural conflict with modern privacy-preserving technologies. To overcome these limitations, we propose GBHINDER, a novel and practical trusted-server-free defense framework where each benign participant defends itself. GBHINDER establishes a virtuous cycle: it leverages its own trusted historical knowledge as a benign anchor to purify the downloaded global model, and in turn, selectively incorporates the global model's benign knowledge to progressively evolve the anchor itself. Specifically, this cycle is driven by two key components. A Historical Channel Attention Regularization module uses the anchor to constrain the global model's representations and disrupt backdoor propagation. To resolve the tension between local trust and global collaboration, an Adaptive Momentum Information Update mechanism enables the anchor to safely evolve by dynamically integrating robust global information, ensuring the anchor remains effective with federated iteration. Extensive experiments on several benchmark datasets demonstrate that GBHINDER significantly outperforms state-of-the-art (SOTA) defenses, successfully reducing the backdoor attack success rate to below 10% while preserving high accuracy on the main task.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-d72883e5",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Security of ML 1",
@@ -156,6 +158,19 @@
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening",
         "prepublication PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-d72883e5",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/zhu-chengcheng",
+      "kind": "paper-page",
+      "title": "Fend for Yourself! Backdoor Purification in Federated Graph Learning with an Evolving Knowledge Anchor",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:23:57Z",
+      "content_hash": "sha256:9160d8474c21e964defa6270450fde66edf4c3b0d29803f210e1b26631495b0f",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

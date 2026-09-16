@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2023-onewan-is-better-than-two-unifying-a-split-wan-architect-60c23406",
   "title": "OneWAN is better than two: Unifying a split WAN architecture",
+  "abstract": "Many large cloud providers operate two wide-area networks (WANs) — a software-defined WAN to carry inter-datacenter traffic and a standards-based WAN for Internet traffic. Our experience with operating two heterogeneous planet-scale WANs has revealed the operational complexity and cost inefficiency of the split-WAN architecture. In this work, we present the unification of Microsoft's split-WAN architecture consisting of SWAN and CORE networks into ONEWAN. ONEWAN serves both Internet and inter-datacenter traffic using software-defined control. ONEWAN grappled with the order of magnitude increase in network and routing table sizes. We developed a new routing and forwarding paradigm called traffic steering to manage the increased network scale using existing network equipment. Increased network and traffic matrix size posed scaling challenges to SDN traffic engineering in ONEWAN. We developed techniques to find paths in the network and chain multiple TE optimization solvers to compute traffic allocations within a few seconds. ONEWAN is the first to apply software-defined techniques in an Internet backbone and scales to a network that is 10× larger than SWAN.",
+  "abstract_source_id": "src-abstract-nsdi-2023-60c23406",
   "venue": "nsdi",
   "year": 2023,
   "track_or_session": "Internet-Scale Networks",
@@ -350,6 +352,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2023-60c23406",
+      "url": "https://www.usenix.org/conference/nsdi23/presentation/krishnaswamy",
+      "kind": "paper-page",
+      "title": "OneWAN is better than two: Unifying a split WAN architecture",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:02:20Z",
+      "content_hash": "sha256:e089509736f3728549301d63eaee4b013dcda42f02ef7279f39779528ecb7842",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

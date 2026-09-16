@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2025-query-provenance-analysis-efficient-and-robust-defense-a-59767b40",
   "title": "Query Provenance Analysis: Efficient and Robust Defense against Query-based Black-box Attacks",
+  "abstract": "Query-based black-box attacks have emerged as a significant threat to machine learning systems, where adversaries can manipulate the input queries to generate adversarial examples that can cause misclassification of the system. To counter these attacks, researchers have proposed Stateful Defense Models (SDMs) such as BlackLight and PIHA, which can reject queries that are “similar” to historical queries. However, recent studies show that existing approaches are vulnerable to a stronger adaptive attack, Oracle-guided Adaptive Rejection Sampling (OARS). OARS can be easily integrated with existing attack algorithms to evade the SDMs by generating queries with fine-tuned direction and step size of perturbations utilizing the leaked decision boundary from the SDMs. In this paper, we propose a novel approach, Query Provenance Analysis (QPA), for defending against query-based black-box attacks robustly (against both non-adaptive and adaptive attacks) and efficiently (in real-time). Our key insight is that, instead of focusing on individual queries, utilizing features from the query sequence (termed query provenance) can distinguish malicious queries from benign queries more effectively. We construct a query provenance graph to capture the relationship between a new query and prior historical queries, and then design efficient algorithms to detect malicious queries based on the query provenance graphs. We evaluate QPA on four datasets against six query-based attacks and compare QPA with state-of-the-art SDM defenses. The results show that QPA outperforms the baselines regarding defense robustness and efficiency on both non-adaptive and adaptive attacks. Specifically, QPA reduces the Attack Success Rate (ASR) of OARS to 4.08%, which is roughly 20× lower than the baselines. Moreover, QPA achieves higher throughput (up to 7.67×) and lower latency (up to 11.09×) than baselines.",
+  "abstract_source_id": "src-abstract-sp-2025-59767b40",
   "venue": "sp",
   "year": 2025,
   "track_or_session": "Cycle 1",
@@ -175,6 +177,19 @@
       "official": true,
       "supports": [
         "DOI, authors, affiliations, abstract, publication date, pages, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2025-59767b40",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Query Provenance Analysis: Efficient and Robust Defense Against Query-Based Black-Box Attacks",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:52Z",
+      "content_hash": "sha256:b15ce02bcc49da611fdd791ecc56741e7d91d84154b58c1a7f72a5c6902e6e46",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

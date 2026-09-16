@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sigcomm-2026-concord-airtime-aware-contention-control-for-taming-tail-62cfc5b0",
   "title": "Concord: Airtime-Aware Contention Control for Taming Tail Latency from Wi-Fi Frame Bursting",
+  "abstract": "In congested Wi-Fi, sending less does not guarantee lower latency. Based on measurements on commodity Wi-Fi routers in the wild, sparse microflows can suffer bulk-like tail latency even at negligible load. This latency is driven by MAC-level contention dynamics rather than a flow's sending rate, rendering rate-based congestion control ineffective. We present Concord, a Wi-Fi MAC mechanism that makes burst airtime an explicit control signal and penalizes excessive medium holding. Concord operates entirely within the Wi-Fi driver, requires no flow classification, no client or protocol changes, and incurs only O(1) work per burst. Concord shows that controlling medium-holding time, rather than transmission rate, is key to tail latency in WLANs. With four saturated downlink contenders, Concord reduces the 99.9th-percentile enqueue-to-ACK latency of 100 B microflows from 298/461 ms (IEEE baseline / vendor bursting) to 42 ms without sacrificing bulk throughput. For interactive workloads (cloud gaming), it cuts 99.9th-percentile latency from 231/441 ms to 92 ms and reduces starvation by up to 10× versus the default IEEE stack.",
+  "abstract_source_id": "src-abstract-sigcomm-2026-62cfc5b0",
   "venue": "sigcomm",
   "year": 2026,
   "track_or_session": "Research Session 7: Wireless, Backscatter & Sensing — Research Paper",
@@ -170,6 +172,19 @@
       "official": true,
       "supports": [
         "official main-paper scope and track definitions"
+      ]
+    },
+    {
+      "id": "src-abstract-sigcomm-2026-62cfc5b0",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/search/match?query=Concord%3A%20Airtime-Aware%20Contention%20Control%20for%20Taming%20Tail%20Latency%20from%20Wi-Fi%20Frame%20Bursting&fields=title,abstract",
+      "kind": "semantic-scholar",
+      "title": "Concord: Airtime-Aware Contention Control for Taming Tail Latency from Wi-Fi Frame Bursting",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:58:57Z",
+      "content_hash": "sha256:9a9309e7f1353af238e0dda80fc9fe5b445b9180d557085f847738a76d8252e0",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2026-gossamer-lightweight-and-linear-communication-asynchrono-d15c5236",
   "title": "GoSSamer: Lightweight and Linear-Communication Asynchronous (Dynamic Proactive) Secret Sharing and the Applications",
+  "abstract": "Asynchronous complete secret sharing (ACSS) and asynchronous dynamic proactive secret sharing (ADPSS) are fundamental primitives for secret sharing and resharing in modern threshold systems, such as multi-party computation, distributed key management, and blockchain. However, existing ACSS constructions that employ homomorphic commitments incur notable computational overhead, while the lightweightcomputation constructions require quadratic per-secret communication, limiting scalability as the number of parties grows. ADPSS constructions inevitably inherit these inefficiencies due to their tight coupling to the commitment-based ACSS and requiring at least quadratic cross-committee communication. To break these bottlenecks, we design GoSSamer, a concretely and asymptotically efficient protocol suite, where both our ACSS and ADPSS achieve (1) lightweight computation with only hash function and symmetric encryption; (2) asymptotically optimal, linear per-secret communication; (3) optimal resilience in asynchronous networks; and (4) postquantum security. In GoSSamer-ACSS, we propose an originalevaluation propagation paradigm for linear communication without commitment-requiring interpolation, which further unlocks our lightweight bivariate-polynomial-based degree checking for share verification. Building on this foundation, GoSSamer-ADPSS contributes two further techniques: a consistency verification technique that decouples the ADPSS framework from the commitment-based ACSS, and a dualcommittee reconstruction technique that yields linear per-secret communication. When deployed in distributed AWS instances, GoSSamer-ACSS reduces the runtime by 95.6 % compared to the linear-communication scheme hbACSS (NDSS'22) and $\\mathbf{4 5. 8} \\boldsymbol{\\%}$ compared to lightweight SS24 (JoC'24). GoSSamerADPSS reduces the runtime by at least 67.7 % compared to LongLive (Usenix Security'23). Moreover, when applied to practical distributed key management systems, the GoSSamer-ACSS-based distributed key generation is $\\mathbf{7}-\\mathbf{1 1} \\times$ faster than DXK+23 (Usenix Security'23), and GoSSamer-ADPSS-based key resharing reaches a throughput of $1994 \\text{keys} / \\mathrm{s}$ across 10 -node committees, compared to $85 \\text{keys} / \\mathrm{s}$ in LongLive.",
+  "abstract_source_id": "src-abstract-sp-2026-d15c5236",
   "venue": "sp",
   "year": 2026,
   "track_or_session": "Cycle 2",
@@ -217,6 +219,19 @@
       "official": true,
       "supports": [
         "DOI, published-order authors and affiliations, abstract, publication date, page span, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2026-d15c5236",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "GoSSamer: Lightweight and Linear-Communication Asynchronous (Dynamic Proactive) Secret Sharing and the Applications",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:57Z",
+      "content_hash": "sha256:303a9b5e5ef8908a3cfe67f02eb8a87be978a5fe3281c7ecec8c0cdb512517e0",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2025-peekaboo-i-see-your-queries-passive-attacks-against-dsse-fb2e73f0",
   "title": "Peekaboo, I See Your Queries: Passive Attacks Against DSSE Via Intermittent Observations",
+  "abstract": "Dynamic Searchable Symmetric Encryption (DSSE) allows secure searches over a dynamic encrypted database but suffers from inherent information leakage. Existing passive attacks against DSSE rely on persistent leakage monitoring to infer leakage patterns, whereas this work targets intermittent observation - a more practical threat model. We propose Peekaboo - a new universal attack framework - and the core design relies on inferring the search pattern and further combining it with auxiliary knowledge and other leakage. We instantiate Peekaboo over the SOTA attacks, Sap (USENIX' 21) and Jigsaw (USENIX' 24), to derive their ''+'' variants (Sap+ and Jigsaw+). Extensive experiments demonstrate that our design achieves >0.9 adjusted rand index for search pattern recovery and ∼90% query accuracy vs. FMA's ∼30% (CCS' 23). Peekaboo's accuracy scales with observation rounds and the number of observed queries but also it resists SOTA countermeasures, with >40% accuracy against file size padding and >80% against obfuscation.",
+  "abstract_source_id": "src-abstract-ccs-2025-fb2e73f0",
   "venue": "ccs",
   "year": 2025,
   "track_or_session": "Cycle 2",
@@ -211,6 +213,19 @@
         "published-order authors",
         "publication-time affiliations",
         "publication date and page span"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2025-fb2e73f0",
+      "url": "https://api.openalex.org/works/doi:10.1145/3719027.3765075?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Peekaboo, I See Your Queries: Passive Attacks Against DSSE Via Intermittent Observations",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:15:39Z",
+      "content_hash": "sha256:0650404208a1e520b2f4cc4508bdfa1d46b2434161de49bc45e95fe2893cddac",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

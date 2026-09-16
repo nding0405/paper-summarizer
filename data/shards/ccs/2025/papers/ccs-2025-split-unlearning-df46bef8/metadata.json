@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2025-split-unlearning-df46bef8",
   "title": "Split Unlearning",
+  "abstract": "We introduce Split Unlearning, a novel machine unlearning technology designed for Split Learning (SL), enabling the first-ever implementation of Sharded, Isolated, Sliced, and Aggregated (SISA) unlearning in SL frameworks. Particularly, the tight coupling between clients and the server in existing SL frameworks results in frequent bidirectional data flows and iterative training across all clients, violating the ''Isolated'' principle and making them struggle to implement SISA for independent and efficient unlearning. To address this, we propose SplitWiper with a new one-way-one-off propagation scheme, which leverages the inherently ''Sharded'' structure of SL and decouples neural signal propagation between clients and the server, enabling effective SISA unlearning even in scenarios with absent clients. We further design SplitWiper+ to enhance client label privacy, which integrates differential privacy and label expansion strategy to defend the privacy of client labels against the server and other potential adversaries. Experiments across diverse data distributions and tasks demonstrate that SplitWiper achieves 0% accuracy for unlearned labels, and 8% better accuracy for retained labels than non-SISA unlearning in SL. Moreover, the one-way-one-off propagation maintains constant overhead, reducing computational and communication costs by 99%. SplitWiper+ preserves 90% of label privacy when sharing masked labels with the server.",
+  "abstract_source_id": "src-abstract-ccs-2025-df46bef8",
   "venue": "ccs",
   "year": 2025,
   "track_or_session": "Cycle 1",
@@ -232,6 +234,19 @@
         "published-order authors",
         "publication-time affiliations",
         "publication date and page span"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2025-df46bef8",
+      "url": "https://api.openalex.org/works/doi:10.1145/3719027.3744787?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Split Unlearning",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:17:07Z",
+      "content_hash": "sha256:ccdb7714310dab190a03f9d8184dd1465662d608c28f37200aa45eed5a9e0e94",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

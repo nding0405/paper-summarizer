@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2025-ratte-fuzzing-for-miscompilations-in-multi-level-compile-182e0bf7",
   "title": "Ratte: Fuzzing for Miscompilations in Multi-Level Compilers Using Composable Semantics",
+  "abstract": "Multi-level intermediate representation (MLIR) is a rapidly growing compiler framework, with its defining feature being an ecosystem of modular language fragments called dialects. Specifying dialect semantics and validating dialect implementations presents novel challenges, as existing techniques do not cater for the modularity and composability required by MLIR. We present Ratte, a framework for specifying composable dialect semantics and modular dialect fuzzers. We introduce a novel technique for the development of semantics and fuzzers for MLIR dialects, enabling a harmonious cycle where the fuzzer validates the semantics via test-case generation, whilst at the same time the semantics allow the generation of high-quality test cases that are free from undefined behaviour. The composability of semantics and fuzzers allows generators to be cheaply derived to test combinations of dialects. We have used Ratte to find 6 previously-unknown miscompilation bugs in the production MLIR implementation. To our knowledge, Ratte is the first MLIR fuzzer capable of finding such bugs. Our work identified several aspects of the MLIR specification that were unclear, for which we proposed fixes that were adopted. Our technique provides composable reference interpreters for important MLIR dialects, validated against the production implementation, which can be used in future compiler development and testing research.",
+  "abstract_source_id": "src-abstract-asplos-2025-182e0bf7",
   "venue": "asplos",
   "year": 2025,
   "track_or_session": "Session 7D: Fuzz Testing",
@@ -125,6 +127,19 @@
       "official": false,
       "supports": [
         "Indexed abstract and open-access links used for relevance classification and ancillary-link discovery."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2025-182e0bf7",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Ratte: Fuzzing for Miscompilations in Multi-Level Compilers Using Composable Semantics",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:12Z",
+      "content_hash": "sha256:aa9c23a45f6ec9973f40e6c9520c69d42bb49fc1f526891570edfdb1976cff82",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

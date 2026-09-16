@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2025-picsou-enabling-replicated-state-machines-to-communicate-25747773",
   "title": "Picsou: Enabling Replicated State Machines to Communicate Efficiently",
+  "abstract": "Replicated state machines (RSMs) cannot communicate effectively today as there is no formal framework or efficient protocol to do so. To address this issue, we introduce a new primitive, Cross-Cluster Consistent Broadcast (C3B) and present Picsou, a practical C3B implementation. Picsou draws inspiration from networking and TCP to allow two RSMs to communicate with constant metadata overhead in the failure-free case and a minimal number of message resends in the case of failures. Picsou is flexible and allows both crash fault tolerant and Byzantine fault tolerant protocols to communicate. At the heart of Picsou's good performance and generality is the concept of Quacks (quorum acknowledgments). Quacks allow nodes in each RSM to precisely determine when messages have definitely been received, or likely lost. Our results are promising: we obtain up to 24× better performance than prior solutions on microbenchmarks and applications, ranging from disaster recovery to data reconciliation.",
+  "abstract_source_id": "src-abstract-osdi-2025-25747773",
   "venue": "osdi",
   "year": 2025,
   "track_or_session": "Distributed Systems and Data Centers I",
@@ -243,6 +245,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2025-25747773",
+      "url": "https://www.usenix.org/conference/osdi25/presentation/frank",
+      "kind": "paper-page",
+      "title": "Picsou: Enabling Replicated State Machines to Communicate Efficiently",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:07:42Z",
+      "content_hash": "sha256:5b8cf4ae3eecc21635585367d0e199054494f5aa7f9a248f3913bb261be68da7",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

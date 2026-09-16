@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2025-flippedrag-black-box-opinion-manipulation-adversarial-at-8416675e",
   "title": "FlippedRAG: Black-Box Opinion Manipulation Adversarial Attacks to Retrieval-Augmented Generation Models",
+  "abstract": "Retrieval-Augmented Generation (RAG) enriches LLMs by dynamically retrieving external knowledge, reducing hallucinations and satisfying real-time information needs. While existing research mainly targets RAG's performance and efficiency, emerging studies highlight critical security concerns. Yet, current adversarial approaches remain limited, mostly addressing white-box scenarios or heuristic black-box attacks without fully investigating vulnerabilities in the retrieval phase. Additionally, prior works mainly focus on factoid Q&A tasks, their attacks lack complexity and can be easily corrected by advanced LLMs. In this paper, we investigate a more realistic and critical threat scenario: adversarial attacks intended for opinion manipulation against black-box RAG models, particularly on controversial topics. Specifically, we propose FlippedRAG, a transfer-based adversarial attack against black-box RAG-like systems. We first demonstrate that the underlying retriever of a black-box RAG can be reverse-engineered and approximated by enumerating critical queries, candidates, and answers, enabling us to train a surrogate retriever. Leveraging the surrogate retriever, we further craft target poisoning triggers, altering vary few documents to effectively manipulate both retrieval and subsequent generation, transferring the attack to the original black-box RAG model. Extensive empirical results show that FlippedRAG substantially outperforms baseline methods, improving the average attack success rate by 16.7%. Across four diverse domains, FlippedRAG achieves on average a 50% directional shift in the opinion polarity of RAG-generated responses, ultimately causing a notable 20% shift in user cognition. Furthermore, we actively evaluate the performance of several potential defensive measures, concluding that existing mitigation strategies remain insufficient against such sophisticated manipulation attacks. These results highlight an urgent need for developing innovative defensive solutions to ensure the security and trustworthiness of RAG systems.",
+  "abstract_source_id": "src-abstract-ccs-2025-8416675e",
   "venue": "ccs",
   "year": 2025,
   "track_or_session": "Cycle 2",
@@ -253,6 +255,19 @@
         "published-order authors",
         "publication-time affiliations",
         "publication date and page span"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2025-8416675e",
+      "url": "https://api.openalex.org/works/doi:10.1145/3719027.3765023?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "FlippedRAG: Black-Box Opinion Manipulation Adversarial Attacks to Retrieval-Augmented Generation Models",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:14:38Z",
+      "content_hash": "sha256:90c901716e184f351917bec4cd8c092d1ea64e6ea46506cd405efa27edbba058",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

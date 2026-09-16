@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-are-captchas-still-bot-hard-generalized-visual-captcha-s-7ed21d48",
   "title": "Are CAPTCHAs Still Bot-hard? Generalized Visual CAPTCHA Solving with Agentic Vision Language Model",
+  "abstract": "Visual CAPTCHAs, such as reCAPTCHA v2, hCaptcha, and GeeTest, are mainstream security mechanisms to deter bots online, based on the assumption that their visual challenges are bot-hard but human-friendly. While many deep-learning based solvers have been designed and trained to solve a specific type of visual challenge in a CAPTCHA, vendors can easily switch to out-of-distribution visual challenge of the same type or even new types of challenge with very low cost. However, the emergence of general-purpose AI models (e.g., ChatGPT) challenges the bot-hard assumption of existing visual challenges, potentially compromising the reliability of visual CAPTCHAs.\n\nIn this work, we report the first generalized visual CAPTCHA solver, Halligan, built upon the state-of-the-art vision language model (VLM), which can effectively solve unseen visual challenges in CAPTCHAs without making any adaptation. Our rationale lies in that a visual challenge can be reduced to a search problem where (i) its instruction is transformed into an optimization objective and (ii) its body is transformed into a search space for the objective. With well designed prompts built upon known VLMs, the transformation can be generalized to unseen visual challenges. Our extensive experiments show that Halligan is a game-changer to the known practice of adopting visual CAPTCHAs, which achieves a solving rate of 60.7% on 2,600 challenges belonging to 26 types of visual CAPTCHAs. Further, we use Halligan to infiltrate human-driven CAPTCHA farms, achieving an average solving rate of 70.6% on previously unseen visual challenges from CAPTCHAs in the wild over a 30-day period. Based on the experimental results, we further shed light on puzzle-less anti-bot alternatives in this era.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-7ed21d48",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "LLM Security 3",
@@ -196,6 +198,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-7ed21d48",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/teoh",
+      "kind": "paper-page",
+      "title": "Are CAPTCHAs Still Bot-hard? Generalized Visual CAPTCHA Solving with Agentic Vision Language Model",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:18:38Z",
+      "content_hash": "sha256:b2269faf91fcccb586311f8fa5521ef02ec37c924b92edbed780439291672bc2",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2024-alea-bft-practical-asynchronous-byzantine-fault-toleranc-c11ab2c5",
   "title": "Alea-BFT: Practical Asynchronous Byzantine Fault Tolerance",
+  "abstract": "Traditional Byzantine Fault Tolerance (BFT) state machine replication protocols assume a partial synchrony model, leading to a design where a leader replica drives the protocol and is replaced after a timeout. Recently, we witnessed a surge of asynchronous BFT protocols, which use randomization to remove the need for bounds on message delivery times, making them more resilient to adverse network conditions. However, existing research proposals still fall short of gaining practical adoption, plausibly because they are not able to combine good performance with a simple design that can be readily understood and adopted. In this paper, we present Alea-BFT, a simple and highly efficient asynchronous BFT protocol, which is gaining practical adoption, namely in Ethereum distributed validators. Alea-BFT brings the key design insight from classical protocols of concentrating part of the work on a single designated replica and incorporates this principle in a simple two-stage pipelined design, with an efficient broadcast led by the designated replica, followed by an inexpensive binary agreement. The evaluation of our research prototype implementation and two real-world integrations in cryptocurrency ecosystems shows excellent performance, improving on the fastest protocol (Dumbo-NG) in terms of latency and displaying good performance under faults.",
+  "abstract_source_id": "src-abstract-nsdi-2024-c11ab2c5",
   "venue": "nsdi",
   "year": 2024,
   "track_or_session": "Distributed Systems: Part 1",
@@ -181,6 +183,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2024-c11ab2c5",
+      "url": "https://www.usenix.org/conference/nsdi24/presentation/antunes",
+      "kind": "paper-page",
+      "title": "Alea-BFT: Practical Asynchronous Byzantine Fault Tolerance",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:02:51Z",
+      "content_hash": "sha256:9d05eacc0423bc88a4f00e23c1685197a442c2629d5c00a744dd7c9c3adb4783",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

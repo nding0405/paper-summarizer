@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2024-scalable-equi-join-queries-over-encrypted-database-c4653fef",
   "title": "Scalable Equi-Join Queries over Encrypted Database",
+  "abstract": "Secure join queries over encrypted databases, the most expressive class of SQL queries, have attracted extensive attention recently. The state-of-the-art JXT (Jutla et al. ASIACRYPT 2022) enables join queries on encrypted relational databases without pre-computing all possible joins. However, JXT can merely support join queries over two tables (in encrypted databases) with some high-entropy join attributes. In this paper, we propose an equi-join query protocol over two tables dubbed JXT+, that allows the join attributes with arbitrary names instead of JXT requiring the identical name for join attributes. JXT+ reduces the query complexity from O(\\ell_1 \\cdot \\ell_2) to O(\\ell_1) as compared to JXT, where \\ell_1 and \\ell_2 denote the numbers of matching records in two tables respectively. Furthermore, we present JXT++, the first equi-join queries across three or more tables over encrypted databases without pre-computation. Specifically, JXT++ supports joins of arbitrary attributes, i.e., all attributes (even low-entropy) can be candidates for join, while JXT requires high-entropy join attributes. In addition, JXT++ can alleviate sub-query leakage on three or more tables, which hides the leakage from the matching records of two-table join. Finally, we implement and compare our proposed schemes with the state-of-the-art JXT. The experimental results demonstrate that both of our schemes are superior to JXT in search and storage costs. In particular, JXT+ (resp., JXT++) brings a saving of 49% (resp., 68%) in server storage cost and achieves a speedup of 51.7× (resp., 54.3×) in search latency.",
+  "abstract_source_id": "src-abstract-ccs-2024-c4653fef",
   "venue": "ccs",
   "year": 2024,
   "track_or_session": "Cycle 2",
@@ -159,6 +161,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2024-c4653fef",
+      "url": "https://api.openalex.org/works/doi:10.1145/3658644.3690377?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Scalable Equi-Join Queries over Encrypted Database",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:11:58Z",
+      "content_hash": "sha256:75480cb3355029700791cd421f2f7d5b60d565491abc3c0737a9938f76e6d7ca",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

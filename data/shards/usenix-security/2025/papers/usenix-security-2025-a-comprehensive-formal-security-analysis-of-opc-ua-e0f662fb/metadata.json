@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-a-comprehensive-formal-security-analysis-of-opc-ua-e0f662fb",
   "title": "A Comprehensive Formal Security Analysis of OPC UA",
+  "abstract": "OPC UA is a standardized Industrial Control System (ICS) protocol, deployed in critical infrastructures, that aims to ensure security. The forthcoming version 1.05 includes major changes in the underlying cryptographic design, including a Diffie-Hellmann based key exchange, as opposed to the previous RSA based version. Version 1.05 is supposed to offer stronger security, including Perfect Forward Secrecy (PFS).\n\nWe perform a formal security analysis of the security protocols specified in OPC UA v1.05 and v1.04, for the RSA-based and the new DH-based mode, using the state-of-the-art symbolic protocol verifier ProVerif. Compared to previous studies, our model is much more comprehensive, including the new protocol version, combination of the different sub-protocols for establishing secure channels, sessions and their management, covering a large range of possible configurations. This results in one of the largest models ever studied in ProVerif raising many challenges related to its verification mainly due to the complexity of the state machine. We discuss how we mitigated this complexity to obtain meaningful analysis results. Our analysis uncovered several new vulnerabilities, that have been reported to and acknowledged by the OPC Foundation. We designed and proposed provably secure fixes, most of which are included in the upcoming version of the standard.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-e0f662fb",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Network Security 4: Internet and Beyond",
@@ -112,6 +114,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-e0f662fb",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/diemunsch",
+      "kind": "paper-page",
+      "title": "A Comprehensive Formal Security Analysis of OPC UA",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:18:20Z",
+      "content_hash": "sha256:aa1ef75b04153ef29cc99b8ab65408d422f03cfb2d284060b07d08fad2378796",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

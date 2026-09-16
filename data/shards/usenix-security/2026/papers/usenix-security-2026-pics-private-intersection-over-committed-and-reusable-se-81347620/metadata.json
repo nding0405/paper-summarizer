@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-pics-private-intersection-over-committed-and-reusable-se-81347620",
   "title": "PICS: Private Intersection over Committed (and reusable) Sets",
+  "abstract": "Private Set Intersection (PSI) enables two parties to compute the intersection of their private sets without revealing any additional information. While maliciously secure PSI protocols prevent many attacks, adversaries can still exploit them by using inconsistent inputs across multiple sessions. This limitation stems from the definition of malicious security in secure multiparty computation, but is particularly problematic in PSI because: (1) real-world applications—such as Apple's PSI protocol for CSAM detection and private contact discovery in messaging apps—often require multiple PSI executions over consistent inputs, and (2) the PSI functionality makes it relatively easy for adversaries to infer additional information.\n\nWe propose Private Intersection over Committed Sets (PICS), a new framework that enforces input consistency across multiple sessions via committed sets. Building on the state-of-the-art maliciously secure PSI framework (i.e., VOLE-PSI [EUROCRYPT 2021]), we present an efficient instantiation of PICS using lightweight cryptographic tools. Our protocol achieves strong receiver-side input consistency (i.e., the receiver uses the exact committed set) and weak sender-side input consistency (i.e., the sender cannot inject new elements into the committed set but can potentially use a subset of the committed set). We implement our protocol to demonstrate concrete efficiency. Compared to VOLE-PSI, our communication overhead is a small constant between 1.57 - 2.04× for set sizes between 2 16 -2 24 , and the total end-to-end running time overhead is 1.22 - 1.98× across various network settings.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-81347620",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Applications of Cryptography 3",
@@ -135,6 +137,19 @@
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening",
         "prepublication PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-81347620",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/goel",
+      "kind": "paper-page",
+      "title": "PICS: Private Intersection over Committed (and reusable) Sets",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:25:02Z",
+      "content_hash": "sha256:9bfff8846b33d212e4b0f74db46152e330b7c80e942f75aaf27f276209857fae",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

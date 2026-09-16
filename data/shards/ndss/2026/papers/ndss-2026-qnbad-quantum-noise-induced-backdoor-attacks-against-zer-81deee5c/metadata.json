@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2026-qnbad-quantum-noise-induced-backdoor-attacks-against-zer-81deee5c",
   "title": "QNBAD: Quantum Noise-induced Backdoor Attacks against Zero Noise Extrapolation",
+  "abstract": "Variational quantum algorithms (VQAs) have emerged as one of the most promising paradigms for achieving practical quantum advantage in the noisy intermediate-scale quantum (NISQ) era. To enhance the computational accuracy of VQAs on noisy hardware, zero noise extrapolation (ZNE) has become a widely adopted and effective error mitigation technique. However, the growing reliance on ZNE also increases the importance of identifying potential adversarial exploits. We examine existing backdoor attacks and highlight why they struggle to compromise ZNE. Specifically, quantum backdoor attacks that modify circuit structures merely shift the ideal output without affecting the noise-dependent extrapolation process, leaving ZNE intact. Likewise, parameter-level backdoors that are trained without accounting for device-specific noise exhibit inconsistent behavior across different hardware platforms, resulting in unreliable or ineffective attacks. Building on these observations, we uncover a new class of backdoor vulnerabilities that specifically target the unique properties of ZNE.\n\nIn this study, we propose QNBAD, a novel and stealthy backdoor attack targeting ZNE. QNBAD is carefully designed to preserve the correct functionality of variational quantum circuits on most devices. However, under a specific noise model, it leverages subtle interactions between quantum noise and circuit structure to systematically manipulate the sampled expectation values across different noise levels. This targeted perturbation corrupts the ZNE fitting process and leads to significantly biased final estimates. Compared to prior backdoor methods, QNBAD achieves substantially greater absolute error amplification, ranging from 1.68× to 11.7× across four platforms and six applications. Furthermore, it remains effective across a variety of fitting functions and ZNE variants.",
+  "abstract_source_id": "src-abstract-ndss-2026-81deee5c",
   "venue": "ndss",
   "year": 2026,
   "track_or_session": "Fall submission cycle",
@@ -160,6 +162,19 @@
       "official": false,
       "supports": [
         "independent proceedings identity reconciliation"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2026-81deee5c",
+      "url": "https://www.ndss-symposium.org/ndss-paper/qnbad-quantum-noise-induced-backdoor-attacks-against-zero-noise-extrapolation/",
+      "kind": "paper-page",
+      "title": "QNBAD: Quantum Noise-induced Backdoor Attacks against Zero Noise Extrapolation",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:22:57Z",
+      "content_hash": "sha256:b4ab4e65a93286a0a849f1d927bc72ea4ca1ebe6018243a2a6e117987dbe5e84",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

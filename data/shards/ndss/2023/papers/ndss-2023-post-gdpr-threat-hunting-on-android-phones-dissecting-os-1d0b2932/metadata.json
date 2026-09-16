@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2023-post-gdpr-threat-hunting-on-android-phones-dissecting-os-1d0b2932",
   "title": "Post-GDPR Threat Hunting on Android Phones: Dissecting OS-level Safeguards of User-unresettable Identifiers",
+  "abstract": "Ever since its genesis, Android has enabled apps to access data and services on mobile devices. This however involves a wide variety of user-unresettable identifiers (UUIs), e.g., the MAC address, which are associated with a device permanently. Given their privacy sensitivity, Android has tightened its UUI access policy since its version 10, in response to the increasingly strict privacy protection regulations around the world. Non-system apps are restricted from accessing them and are required to use user-resettable alternatives such as advertising IDs.\n\nIn this work, we conduct a systematic study on the effectiveness of the UUI safeguards on Android phones including both Android Open Source Project (AOSP) and Original Equipment Manufacturer (OEM) phones. To facilitate our large-scale study, we propose a set of analysis techniques that discover and assess UUI access channels. Our approach features a hybrid analysis that consists of static program analysis of Android Framework and forensic analysis of OS images to uncover access channels. These channels are then tested with differential analysis to identify weaknesses that open any attacking opportunity. We have conducted a vulnerability assessment on 13 popular phones of 9 major manufacturers, most of which are top-selling and installed with the recent Android versions. Our study reveals that UUI mishandling pervasively exists, evidenced by 51 unique vulnerabilities found (8 listed by CVE). Our work unveils the status quo of the UUI protection in Android phones, complementing the existing studies that mainly focus on apps' UUI harvesting behaviors. Our findings should raise an alert to phone manufacturers and would encourage policymakers to further extend the scope of regulations with device-level data protection.",
+  "abstract_source_id": "src-abstract-ndss-2023-1d0b2932",
   "venue": "ndss",
   "year": 2023,
   "track_or_session": "Mobile Security and Privacy",
@@ -252,6 +254,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2023-1d0b2932",
+      "url": "https://www.ndss-symposium.org/ndss-paper/post-gdpr-threat-hunting-on-android-phones-dissecting-os-level-safeguards-of-user-unresettable-identifiers/",
+      "kind": "paper-page",
+      "title": "Post-GDPR Threat Hunting on Android Phones: Dissecting OS-level Safeguards of User-unresettable Identifiers",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:17:15Z",
+      "content_hash": "sha256:51ac273572e2d42841d698559209a6e01b78646d1ba6921e9507ecf178e3e281",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

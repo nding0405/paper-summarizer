@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-collisionrepair-first-aid-and-automated-patching-for-sto-154a0303",
   "title": "CollisionRepair: First-Aid and Automated Patching for Storage Collision Vulnerabilities in Smart Contracts",
+  "abstract": "Storage collision vulnerabilities, a significant security risk in upgradeable smart contracts, often arise when a user-facing proxy contract and a backend logic contract share storage space. While static analysis techniques can detect such issues, they often over-approximate program states, leading to false positives and requiring developers to manually verify each issue, giving attackers time to exploit any overlooked vulnerabilities. To address this, we propose CollisionRepair, an automated patching technique for mitigating storage collision risks. CollisionRepair monitors storage access sequences between proxy and logic contracts by defining an \"ownership\" property for storage locations. It then replays historical transactions to recover existing storage ownership, ensuring the patched code aligns with the current state. A gas impact-aware differential analysis is applied to verify the patch, distinguishing genuine behavioral changes from variations caused by gas usage. Our evaluation on 12,526 real-world vulnerable upgradeable contracts shows that CollisionRepair effectively detects and mitigates storage collision attacks without interfering with normal contract operations.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-154a0303",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Blockchain Security 2: Infrastructure, Protocol Design, and Governance",
@@ -133,6 +135,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-154a0303",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/pan-yu",
+      "kind": "paper-page",
+      "title": "CollisionRepair: First-Aid and Automated Patching for Storage Collision Vulnerabilities in Smart Contracts",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:19:08Z",
+      "content_hash": "sha256:d7d72d3756a25b6404b518e1eab642ab66bb8a7d2789372b21595e70c2f69ae9",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

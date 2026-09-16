@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2024-hypertheft-thieving-model-weights-from-tee-shielded-neur-edca9c85",
   "title": "HyperTheft: Thieving Model Weights from TEE-Shielded Neural Networks via Ciphertext Side Channels",
+  "abstract": "Trusted execution environments (TEEs) are widely employed to protect deep neural networks (DNNs) from untrusted hosts (e.g., hypervisors). By shielding DNNs as fully black-box via encryption, TEEs mitigate model weight leakage and its follow-up white-box attacks. However, this paper uncovers that the confidentiality of TEE-shielded DNNs can be violated due to an emerging threat towards TEEs: ciphertext side channels of TEEs create weight-dependent observations during a DNN's execution. Despite the potential of inferring DNN weights from ciphertext side channels, existing techniques are inapplicable due to their over-strong requirements and the high precision required by DNN weights. A DNN can have millions of weight elements, and even a few incorrectly recovered weight elements may make the DNN non-functional.",
+  "abstract_source_id": "src-abstract-ccs-2024-edca9c85",
   "venue": "ccs",
   "year": 2024,
   "track_or_session": "Cycle 2",
@@ -222,6 +224,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2024-edca9c85",
+      "url": "https://api.openalex.org/works/doi:10.1145/3658644.3690317?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "HyperTheft: Thieving Model Weights from TEE-Shielded Neural Networks via Ciphertext Side Channels",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:10:30Z",
+      "content_hash": "sha256:3234d6ff3328fc5c879394cf57db7d978e1d5208c245f48cc45129f4dd4b9e8b",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

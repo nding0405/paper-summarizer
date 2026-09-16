@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "eurosys-2026-mitigating-cdn-cache-misses-with-scheduling-an-origin-sh-2d8be554",
   "title": "Mitigating CDN Cache Misses with Scheduling: An Origin Shield for Billion-QPS Social Platforms",
+  "abstract": "The explosive growth of modern short-video platforms like WeChat Channels — approaching 1.4 billion monthly active users (MAU) while serving over one billion queries per second (QPS) — has exposed fundamental limitations in conventional content delivery network (CDN) architectures, particularly their inability to handle highly dynamic content popularity patterns. The traditional cache-centric approach proves to be catastrophic when faced with ephemeral content exhibiting a \"million-item waist\" distribution. This phenomenon results in severe cache pollution (manifesting as 5–40% origin miss ratios) and introduces prohibitive back-to-origin bandwidth costs. Our TritonFlow overcomes these challenges by introducing access point scheduling as a novel origin traffic compensator, which reduces the operational cost of back-to-origin fetches by enhancing CDN cache affinity. Through analysis of production traces (peak >1B QPS), we demonstrate that TritonFlow reduces scheduling fluctuations by 96% and decreases back-to-origin traffic caused by non-compulsory cache misses by 35%, all while maintaining sub-200ms fetch latency.",
+  "abstract_source_id": "src-abstract-eurosys-2026-2d8be554",
   "venue": "eurosys",
   "year": 2026,
   "track_or_session": null,
@@ -264,6 +266,19 @@
       "official": false,
       "supports": [
         "Publisher-deposited proceedings identity and print publication date."
+      ]
+    },
+    {
+      "id": "src-abstract-eurosys-2026-2d8be554",
+      "url": "https://api.openalex.org/works/doi:10.1145/3767295.3803578?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Mitigating CDN Cache Misses with Scheduling: An Origin Shield for Billion-QPS Social Platforms",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:20:44Z",
+      "content_hash": "sha256:bad1f3654ffc401912619b61215fe335ebcc53275054796ebcf599310da46543",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

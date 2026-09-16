@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2024-bounded-and-unbiased-composite-differential-privacy-ad045ac7",
   "title": "Bounded and Unbiased Composite Differential Privacy",
+  "abstract": "The objective of differential privacy (DP) is to protect privacy by producing an output distribution that is indistinguishable between any two neighboring databases. However, traditional differentially private mechanisms tend to produce unbounded outputs in order to achieve maximum disturbance range, which is not always in line with real-world applications. Existing solutions attempt to address this issue by employing post-processing or truncation techniques to restrict the output results, but at the cost of introducing bias issues. In this paper, we propose a novel differentially private mechanism which uses a composite probability density function to generate bounded and unbiased outputs for any numerical input data. The composition consists of an activation function and a base function, providing users with the flexibility to define the functions according to the DP constraints. We also develop an optimization algorithm that enables the iterative search for the optimal hyper-parameter setting without the need for repeated experiments, which prevents additional privacy overhead. Furthermore, we evaluate the utility of the proposed mechanism by assessing the variance of the composite probability density function and introducing two alternative metrics that are simpler to compute than variance estimation. Our extensive evaluation on three benchmark datasets demonstrates consistent and significant improvement over the traditional Laplace and Gaussian mechanisms. The proposed bounded and unbiased composite differentially private mechanism will underpin the broader DP arsenal and foster future privacy-preserving studies.",
+  "abstract_source_id": "src-abstract-sp-2024-ad045ac7",
   "venue": "sp",
   "year": 2024,
   "track_or_session": "Summer cycle",
@@ -243,6 +245,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2024-ad045ac7",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Bounded and Unbiased Composite Differential Privacy",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:32Z",
+      "content_hash": "sha256:be7515012a8c1ea1211f38a27ea4d2aa9cff6e0faac9417a2f58b1d64e91280e",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

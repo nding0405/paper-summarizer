@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-oblivious-signaling-572fdf80",
   "title": "Oblivious Signaling",
+  "abstract": "An anonymous messaging service has to solve a basic routing problem: a server must deliver an encrypted message to its recipient without learning who the recipient is. Broadcasting all ciphertexts hides the destination but forces every recipient to constantly scan for new messages. Oblivious Message Retrieval (OMR; CRYPTO~'22) tackles this by using fully homomorphic encryption (FHE) to let an untrusted server perform message retrieval on a recipient's behalf without learning which messages are pertinent.\n\nWe introduce Oblivious Signaling , which shifts this cost from retrieval to sending . The server maintains a fixed-size encrypted inbox for each recipient. When a sender submits a message, the server applies the same homomorphic update to every inbox: the intended inbox absorbs the message, and the rest remain unchanged at the plaintext level. The update is uniform, can be parallelized across inboxes, and ties the delivery cost strictly to the size of the anonymity set rather than global traffic. Recipients retrieve by fetching and decrypting their inbox, so checking for new messages is independent of the global traffic.\n\nWe formalize receiver privacy against an untrusted server, even when it colludes with other users, give a concrete construction based on fully homomorphic encryption, and analyze the resulting ``digital postage'' trade-off: delivery is expensive, but checking is cheap. Our prototype identifies practical regimes in which this cost-model shift is preferable to scan-based retrieval, even with highly optimized OMR implementations. This cost model is well-suited to settings where recipients check frequently, and messages arrive sporadically, and it naturally discourages high-volume spam.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-572fdf80",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Applications of Cryptography 4",
@@ -113,6 +115,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-572fdf80",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/shuhan",
+      "kind": "paper-page",
+      "title": "Oblivious Signaling",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:24:51Z",
+      "content_hash": "sha256:1ce2a97cc639810abd46d7e23c514d17a3a368266dbbc7a07a4c8de7d4d75356",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

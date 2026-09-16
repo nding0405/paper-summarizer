@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sosp-2023-xfaas-hyperscale-and-low-cost-serverless-functions-at-me-e21a9cd6",
   "title": "XFaaS: Hyperscale and Low Cost Serverless Functions at Meta",
+  "abstract": "Function-as-a-Service (FaaS) has become a popular programming paradigm in Serverless Computing. As the responsibility of resource provisioning shifts from users to cloud providers, the ease of use of FaaS for users may come at the expense of extra hardware costs for cloud providers. Currently, there is no report on how FaaS platforms address this challenge and the level of hardware utilization they achieve. This paper presents the FaaS platform called XFaaS in Meta's hyperscale private cloud. XFaaS currently processes trillions of function calls per day on more than 100,000 servers. We describe a set of optimizations that help XFaaS achieve a daily average CPU utilization of 66%. Based on our anecdotal knowledge, this level of utilization might be several times higher than that of typical FaaS platforms. Specifically, to eliminate the cold start time of functions, XFaaS strives to approximate the effect that every worker can execute every function immediately. To handle load spikes without over-provisioning resources, XFaaS defers the execution of delay-tolerant functions to off-peak hours and globally dispatches function calls across datacenter regions. To prevent functions from overloading downstream services, XFaaS uses a TCP-like congestion-control mechanism to pace the execution of functions.",
+  "abstract_source_id": "src-abstract-sosp-2023-e21a9cd6",
   "venue": "sosp",
   "year": 2023,
   "track_or_session": "Session 4: Cloud",
@@ -461,6 +463,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-sosp-2023-e21a9cd6",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "XFaaS: Hyperscale and Low Cost Serverless Functions at Meta",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:12Z",
+      "content_hash": "sha256:aa9c23a45f6ec9973f40e6c9520c69d42bb49fc1f526891570edfdb1976cff82",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

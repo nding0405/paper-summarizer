@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "atc-2024-every-mapping-counts-in-large-amounts-folio-accounting-b78327db",
   "title": "Every Mapping Counts in Large Amounts: Folio Accounting",
+  "abstract": "Operating systems can significantly enhance performance by utilizing large contiguous memory regions, even when the memory is not mapped using huge pages, by streamlining memory management. To harness these advantages, Linux has introduced \"folios,\" representing multiple contiguous pages. Unlike traditional huge pages, folios can be partially mapped, which complicates folio accounting and hinders both performance and memory savings.\n\nAccurate and efficient folio accounting is crucial for optimizing memory management operations, enforcing various memory management policies, and performing Unique Set Size accounting in the operating system. In particular, determining whether a folio is exclusively mapped in a single address space is essential for avoiding unnecessary Copy-On-Write operations when memory is no longer shared.\n\nWe introduce a novel tracking scheme to determine, with negligible overhead, whether a folio is exclusively mapped in a single address space. Our solution achieves a memory overhead that grows sublinearly with the number of pages per folio. By implementing our method in Linux, we demonstrate a notable improvement in fork and unmap operations by 1.9x and 4.2x respectively, and in the performance of fork-intensive workloads, such as Redis, achieving up to a 2.2x speedup.",
+  "abstract_source_id": "src-abstract-atc-2024-b78327db",
   "venue": "atc",
   "year": 2024,
   "track_or_session": "Potpourri",
@@ -138,6 +140,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-atc-2024-b78327db",
+      "url": "https://www.usenix.org/conference/atc24/presentation/hildenbrand",
+      "kind": "paper-page",
+      "title": "Every Mapping Counts in Large Amounts: Folio Accounting",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T21:58:36Z",
+      "content_hash": "sha256:7549fbf24e71b9d54e5354e7bf773f0a6009e29b53a8cfa6b35ea53a6e2a2615",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2026-chimera-harnessing-multi-agent-llms-for-automatic-inside-512a3fb5",
   "title": "Chimera: Harnessing Multi-Agent LLMs for Automatic Insider Threat Simulation",
+  "abstract": "Insider threats represent a significant and persistent security risk, yet remain difficult to detect in complex enterprise environments, where malicious activities are often concealed within subtle user behaviors. While machine-learning–based insider threat detection (ITD) techniques have shown promising results, their effectiveness is fundamentally constrained by the lack of high-quality and realistic training data. This challenge stems from the highly sensitive nature of enterprise internal data that is rarely accessible and from the limitations of existing datasets, where public datasets are typically small in scale, and synthetic datasets often lack sufficient generalization, rich semantic context, and realistic behavioral patterns.\n\nTo address this challenge, we propose Chimera , a large language model (LLM)-based multi-agent framework that automatically simulates both benign and malicious insider activities and monitors comprehensive system logs across diverse enterprise environments. Chimera models each agent as an individual employee with fine-grained roles and incorporates group meetings, pairwise interactions, and self-organized scheduling to capture realistic organizational dynamics. Based on 15 insider attack types abstracted from real-world incidents, we deploy Chimera in three representative data-sensitive organizational scenarios and construct a new dataset, ChimeraLog , for supporting the development and evaluation of ITD methods.\n\nWe evaluate ChimeraLog through comprehensive human studies and quantitative analyses, demonstrating its diversity and realism. Experiments with existing ITD methods show that detection performance on ChimeraLog is substantially lower than existing ITD datasets, indicating a more challenging and realistic benchmark. Despite distribution shifts, ITD models trained on ChimeraLog exhibit strong generalization capability, highlighting the practical value of LLM-based multi-agent simulation for advancing ITD.",
+  "abstract_source_id": "src-abstract-ndss-2026-512a3fb5",
   "venue": "ndss",
   "year": 2026,
   "track_or_session": "Fall submission cycle",
@@ -181,6 +183,19 @@
       "official": false,
       "supports": [
         "independent proceedings identity reconciliation"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2026-512a3fb5",
+      "url": "https://www.ndss-symposium.org/ndss-paper/chimera-harnessing-multi-agent-llms-for-automatic-insider-threat-simulation/",
+      "kind": "paper-page",
+      "title": "Chimera: Harnessing Multi-Agent LLMs for Automatic Insider Threat Simulation",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:21:36Z",
+      "content_hash": "sha256:a7b15bf05a7173e6f712ac43b0666fac894129a978c6dd2dd37d4542f195fdfa",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

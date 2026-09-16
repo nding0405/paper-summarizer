@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2026-ghost-in-the-shell-a-gpu-to-host-memory-attack-and-its-m-5c21d210",
   "title": "GHost in the SHELL: A GPU-to-Host Memory Attack and Its Mitigation",
+  "abstract": "Modern heterogeneous computing platforms increasingly unify CPU and GPU address spaces for improved programmability and performance. To this end, recent Linux kernels and NVIDIA GPU drivers adopt Heterogeneous Memory Management (HMM), which allows GPU kernels to directly access host memory. While this simplifies development, it may introduce a critical security risk. In this paper, we expose a new attack surface introduced by HMM and present GHost-Attack, the first GPU-originated exploitation technique capable of compromising host process memory. By exploiting memory-safety bugs in GPU kernels or executing attacker-supplied kernels, GHost-Attack enables attackers to bypass Address Space Layout Randomization (ASLR) and hijack control flow in widely used applications such as PyTorch and Chrome. To counter this threat, we further propose Shell (Secure HMM Enforcement with LLVM), a practical defense that restores memory isolation between GPU and host in HMMenabled systems. Shell statically identifies shared memory regions and enforces fine-grained access control at runtime using the GPU driver's page-fault mechanism. We implement Shell by modifying Clang/LLVM and the open-source NVIDIA GPU driver. Our evaluation demonstrates that Shell effectively blocks all variants of GHOST-ATTACK with negligible performance overhead, preserving the security, compatibility, and performance benefits of HMM.",
+  "abstract_source_id": "src-abstract-sp-2026-5c21d210",
   "venue": "sp",
   "year": 2026,
   "track_or_session": "Cycle 1",
@@ -175,6 +177,19 @@
       "official": true,
       "supports": [
         "DOI, published-order authors and affiliations, abstract, publication date, page span, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2026-5c21d210",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "GHost in the Shell: A GPU-to-Host Memory Attack and its Mitigation",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:57Z",
+      "content_hash": "sha256:303a9b5e5ef8908a3cfe67f02eb8a87be978a5fe3281c7ecec8c0cdb512517e0",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

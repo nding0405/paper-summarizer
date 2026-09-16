@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2023-celldam-user-space-rootless-detection-and-mitigation-for-68f86775",
   "title": "CellDAM: User-Space, Rootless Detection and Mitigation for 5G Data Plane",
+  "abstract": "Despite all deployed security fences in 5G, attacks against its data plane are still feasible. A smart attacker can fabricate data packets or intelligently forge/drop/modify data-plane signaling messages between the 5G infrastructure and the device to inflict damage. In this work, we propose CellDAM, a new solution that is used at the device without any infrastructure upgrades or standard changes. CellDAM exploits the key finding that such data-plane attacks by the adversary would trigger unexpected data signaling operations. It thus detects all known and even currently unreported attacks via verifying data signaling correctness with novel state-dependent model checking. CellDAM could work with or without firmware access at the device using inference on low-level 5G signaling and configurations. It mitigates the damage upon detection by inducing frequency band switches at the device via the existing handover procedure. The prototype and empirical evaluation in our testbed confirm the viability of CellDAM.",
+  "abstract_source_id": "src-abstract-nsdi-2023-68f86775",
   "venue": "nsdi",
   "year": 2023,
   "track_or_session": "Cellular",
@@ -140,6 +142,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2023-68f86775",
+      "url": "https://www.usenix.org/conference/nsdi23/presentation/tan",
+      "kind": "paper-page",
+      "title": "CellDAM: User-Space, Rootless Detection and Mitigation for 5G Data Plane",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:01:56Z",
+      "content_hash": "sha256:512bb75d876bff2e7833d1f220e0b22bd82116837e80ef38c2fc858e9c752273",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

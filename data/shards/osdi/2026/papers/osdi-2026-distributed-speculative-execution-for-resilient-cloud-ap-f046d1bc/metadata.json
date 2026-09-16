@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2026-distributed-speculative-execution-for-resilient-cloud-ap-f046d1bc",
   "title": "Distributed Speculative Execution for Resilient Cloud Applications",
+  "abstract": "Fault-tolerance is critically important in highly distributed modern cloud applications. Solutions such as Temporal, Azure Durable Functions, and Beldi hide fault-tolerance complexity from developers by automatically persisting execution state and resuming seamlessly after failure. This pattern, often called durable execution, usually forces frequent and synchronous persistence, resulting in significant latency overheads. In this paper, we propose distributed speculative execution (DSE), a technique for implementing the durable execution abstraction without incurring this penalty. With DSE, developers write code assuming synchronous persistence, and a DSE runtime is responsible for transparently eliding persistence and reactively repairing application state on failure. We present libDSE, the first DSE application framework that achieves this vision. To hide speculation from application code, we design a novel programming model centered around message-passing, atomic code blocks, and lightweight threads, and show that it allows developers to build a variety of speculative services, including write-ahead logs, key-value stores, event brokers, and fault-tolerant workflows. Our evaluation shows that libDSE reduces end-to-end latency by up to an order of magnitude for persistence-bound applications compared to current durable execution systems with minimal runtime overhead and complexity.",
+  "abstract_source_id": "src-abstract-osdi-2026-f046d1bc",
   "venue": "osdi",
   "year": 2026,
   "track_or_session": "Serverless Plus Resilence",
@@ -146,6 +148,19 @@
       "official": true,
       "supports": [
         "Official proceedings availability and canonical conference versions."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2026-f046d1bc",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/li-tianyu",
+      "kind": "paper-page",
+      "title": "Distributed Speculative Execution for Resilient Cloud Applications",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:08:10Z",
+      "content_hash": "sha256:92c3c4cdd454ab9f067e035e1a3ed6cf5fa41a46dc8d257a9ea2bc2f473b1230",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2023-tva-a-multi-party-computation-system-for-secure-and-expr-4f78de69",
   "title": "TVA: A multi-party computation system for secure and expressive time series analytics",
+  "abstract": "We present TVA, a multi-party computation (MPC) system for secure analytics on secret-shared time series data. TVA achieves strong security guarantees in the semi-honest and malicious settings, and high expressivity by enabling complex analytics on inputs with unordered and irregular timestamps. TVA is the first system to support arbitrary composition of oblivious window operators, keyed aggregations, and multiple filter predicates, while keeping all data attributes private, including record timestamps and user-defined values in query predicates. At the core of the TVA system lie novel protocols for secure window assignment: (i) a tumbling window protocol that groups records into fixed-length time buckets and (ii) two session window protocols that identify periods of activity followed by periods of inactivity. We also contribute a new protocol for secure division with a public divisor, which may be of independent interest. We evaluate TVA on real LAN and WAN environments and show that it can efficiently compute complex window-based analytics on inputs of 2 22 records with modest use of resources. When compared to the state-of-the-art, TVA achieves up to 5.8× lower latency in queries with multiple filters and two orders of magnitude better performance in window aggregation.",
+  "abstract_source_id": "src-abstract-usenix-security-2023-4f78de69",
   "venue": "usenix-security",
   "year": 2023,
   "track_or_session": "Distributed Secure Computations",
@@ -154,6 +156,19 @@
       "official": true,
       "supports": [
         "authors, affiliations when published, abstract, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2023-4f78de69",
+      "url": "https://www.usenix.org/conference/usenixsecurity23/presentation/faisal",
+      "kind": "paper-page",
+      "title": "TVA: A multi-party computation system for secure and expressive time series analytics",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:13:29Z",
+      "content_hash": "sha256:5b96481eee04a8a3c68049156f349ee7d8fb4905d7a2c26fa3eada80834c0b6d",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

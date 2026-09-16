@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2024-load-is-not-what-you-should-balance-introducing-prequal-3e7fad89",
   "title": "Load is not what you should balance: Introducing Prequal",
+  "abstract": "We present PReQuaL (Probing to Reduce Queuing and Latency) , a load balancer for distributed multi-tenant systems. PReQuaL is designed to minimize real-time request latency in the presence of heterogeneous server capacities and non-uniform, time-varying antagonist load. To achieve this, PReQuaL actively probes server load and leverages the power of d choices paradigm , extending it with asynchronous and reusable probes. Cutting against received wisdom, PReQuaL does not balance CPU load, but instead selects servers according to estimated latency and active requests-in-flight (RIF). We explore the major design features of PReQuaL on a testbed system and describe our experience using it to balance load within YouTube, where it has been running for more than a year. PReQuaL has dramatically decreased tail latency, error rates, and resource use, enabling YouTube and other production systems at Google to run at much higher utilization.",
+  "abstract_source_id": "src-abstract-nsdi-2024-3e7fad89",
   "venue": "nsdi",
   "year": 2024,
   "track_or_session": "Distributed Systems: Part 2",
@@ -139,6 +141,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2024-3e7fad89",
+      "url": "https://www.usenix.org/conference/nsdi24/presentation/wydrowski",
+      "kind": "paper-page",
+      "title": "Load is not what you should balance: Introducing Prequal",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:03:21Z",
+      "content_hash": "sha256:bf85d30dbb6a88138feac3d11ae7f5b7d7de5085399d3e6f04e05ab5716123d5",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-maestro-multi-party-aes-using-lookup-tables-17fb70c3",
   "title": "MAESTRO: Multi-Party AES Using Lookup Tables",
+  "abstract": "Secure multi-party computation (MPC) enables multiple distrusting parties to jointly compute a function while keeping their inputs private. Computing the AES block cipher in MPC, where the key and/or the input are secret-shared among the parties is important for various applications, particularly threshold cryptography.\n\nIn this work, we propose a family of dedicated, high-performance MPC protocols to compute the non-linear S-box part of AES in the honest majority setting. Our protocols come in both semi-honest and maliciously secure variants. The core technique is a combination of lookup table protocols based on random one-hot vectors and the decomposition of finite field inversion in GF(2^8) into multiplications and inversion in the smaller field GF(2^4), taking inspiration from ideas used for hardware implementations of AES. We also apply and improve the analysis of a batch verification technique for checking inner products with logarithmic communication. This allows us to obtain malicious security with almost no communication overhead, and we use it to obtain new, secure table lookup protocols with only O(\\sqrt{N}) communication for a table of size N, which may be useful in other applications.\n\nOur protocols have different trade-offs, such as having a similar round complexity as previous state-of-the-art by Chida et al. [WAHC '18] but 37% lower bandwidth costs, or having 27% fewer rounds and 16% lower bandwidth costs. An experimental evaluation in various network conditions using three party replicated secret sharing shows improvements in throughput between 28% and 71% in the semi-honest setting. For malicious security, we improve throughput by 319% to 384% in LAN and by 717% in WAN due to sublinear batch verification.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-17fb70c3",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Crypto 1: Zero Knowledge and Multi-Party Computation",
@@ -175,6 +177,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-17fb70c3",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/morita",
+      "kind": "paper-page",
+      "title": "MAESTRO: Multi-Party AES Using Lookup Tables",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:20:40Z",
+      "content_hash": "sha256:7f1860c647459b0f0b667cfdcd5996abe48aa09f857f70138785cf253332bf34",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

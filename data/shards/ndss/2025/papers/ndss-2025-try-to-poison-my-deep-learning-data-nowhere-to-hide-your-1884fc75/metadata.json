@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2025-try-to-poison-my-deep-learning-data-nowhere-to-hide-your-1884fc75",
   "title": "Try to Poison My Deep Learning Data? Nowhere to Hide Your Trajectory Spectrum!",
+  "abstract": "In the Data as a Service (DaaS) model, data curators, such as commercial providers like Amazon Mechanical Turk, Appen, and TELUS International, aggregate quality data from numerous contributors and monetize it for deep learning (DL) model providers. However, malicious contributors can poison this data, embedding backdoors in the trained DL models. Existing methods for detecting poisoned samples face significant limitations: they often rely on reserved clean data; they are sensitive to the poisoning rate, trigger type, and backdoor type; and they are specific to classification tasks. These limitations hinder their practical adoption by data curators.\n\nThis work, for the first time, investigates the textit{training trajectory} of poisoned samples in the textit{spectrum domain}, revealing distinctions from benign samples that are not apparent in the original non-spectrum domain. Building on this novel perspective, we propose TellTale to detect and sanitize poisoned samples as a one-time effort, addressing textit{all} of the aforementioned limitations of prior work. Through extensive experiments, TellTale demonstrates the ability to defeat both universal and challenging partial backdoor types without relying on any reserved clean data. TellTale is also validated to be agnostic to various trigger types, including the advanced clean-label trigger attack, Narcissus (CCS'2023). Moreover, TellTale proves effective across diverse data modalities (e.g., image, audio and text) and non-classification tasks (e.g., regression)---making it the only known training phase poisoned sample detection method applicable to non-classification tasks. In all our evaluations, TellTale achieves a detection accuracy (i.e., accurately identifying poisoned samples) of at least 95.52% and a false positive rate (i.e., falsely recognizing benign samples as poisoned ones) no higher than 0.61%. Comparisons with state-of-the-art methods, ASSET (Usenix'2023) and CT (Usenix'2023), further affirm TellTale's superior performance. More specifically, ASSET fails to handle partial backdoor types and incurs an unbearable false positive rate with clean/benign datasets common in practice, while CT fails against the Narcissus trigger. In contrast, TellTale proves highly effective across testing scenarios where prior work fails. The source code is released at https://github.com/MPaloze/Telltale.",
+  "abstract_source_id": "src-abstract-ndss-2025-1884fc75",
   "venue": "ndss",
   "year": 2025,
   "track_or_session": "Fall submission cycle",
@@ -252,6 +254,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2025-1884fc75",
+      "url": "https://www.ndss-symposium.org/ndss-paper/try-to-poison-my-deep-learning-data-nowhere-to-hide-your-trajectory-spectrum/",
+      "kind": "paper-page",
+      "title": "Try to Poison My Deep Learning Data? Nowhere to Hide Your Trajectory Spectrum!",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:20:49Z",
+      "content_hash": "sha256:fb752dd05c0f3366a97d6c7e1db38e2fe7f051fcf503a228d16260b94261770a",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

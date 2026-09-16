@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-jailbreakscope-interpreting-jailbreak-mechanism-through-7e608a58",
   "title": "JailbreakScope: Interpreting Jailbreak Mechanism through Representation and Circuit Analyses",
+  "abstract": "Large Language Models (LLMs) exhibit impressive performance but remain vulnerable to jailbreak attacks, where adversarial prompts are crafted to bypass safety alignments and elicit unexpected responses. Despite their prevalence, the underlying mechanisms that enable jailbreaks are still not well understood. Recent studies primarily focus on static representation shifts or on identifying components associated with generation safety. However, these studies neither explore diverse jailbreak patterns nor provide a fine-grained explanation from the failure of circuit to representation changes, leaving significant gaps in uncovering jailbreak mechanism. In this paper, we propose JailbreakScope, an interpretation framework that analyzes jailbreak mechanisms from both representation (how jailbreaks distort LLM's harmfulness perception) and circuit (how jailbreaks impact circuits that are important for generation safety) perspectives, tracking their evolution throughout the entire generation process. We conduct in-depth evaluations on 5 mainstream LLMs under 7 jailbreak strategies. Our evaluation reveals a general pattern that jailbreaks amplify components that reinforce affirmative responses while suppressing those producing refusal, which shifts representations towards safe regions, leading LLMs to provide responses instead of refusals. Moreover, we find a strong and consistent correlation between representation deception and circuit activation shift across diverse jailbreaks and multiple LLMs.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-7e608a58",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Security of ML 3",
@@ -198,6 +200,19 @@
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening",
         "prepublication PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-7e608a58",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/he-zeqing",
+      "kind": "paper-page",
+      "title": "JailbreakScope: Interpreting Jailbreak Mechanism through Representation and Circuit Analyses",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:24:25Z",
+      "content_hash": "sha256:e3b971f432bdf0133c097a1ca06b11101f684c1cc4ef48090fa73debc2bc488c",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

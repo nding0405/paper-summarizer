@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2026-privcode-when-code-generation-meets-differential-privacy-c62abef5",
   "title": "PrivCode: When Code Generation Meets Differential Privacy",
+  "abstract": "Large language models (LLMs) have presented outstanding performance in code generation and completion. However, fine-tuning these models on private datasets can raise privacy and proprietary concerns, such as the leakage of sensitive personal information. Differentially private (DP) code generation provides theoretical guarantees for protecting sensitive code by generating synthetic datasets that preserve statistical properties while reducing privacy leakage concerns. However, DP code generation faces significant challenges due to the strict syntactic dependencies and the privacy-utility trade-off.\n\nWe propose PrivCode, the first DP synthesizer specifically designed for code datasets. It incorporates a two-stage framework to improve both privacy and utility. In the first stage, termed \"privacy-sanitizing\", PrivCode generates DP-compliant synthetic code by training models using DP-SGD while introducing syntactic information to preserve code structure. The second stage, termed \"utility-boosting,\" fine-tunes a larger pre-trained LLM on the synthetic privacy-free code to mitigate the utility loss caused by DP, enhancing the utility of the generated code. Extensive experiments on four LLMs show that PrivCode generates higher-utility code across various testing tasks under four benchmarks. The experiments also confirm its ability to protect sensitive data under varying privacy budgets. We provide the replication package at the GitHub link.",
+  "abstract_source_id": "src-abstract-ndss-2026-c62abef5",
   "venue": "ndss",
   "year": 2026,
   "track_or_session": "Fall submission cycle",
@@ -223,6 +225,19 @@
       "official": false,
       "supports": [
         "independent proceedings identity reconciliation"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2026-c62abef5",
+      "url": "https://www.ndss-symposium.org/ndss-paper/privcode-when-code-generation-meets-differential-privacy/",
+      "kind": "paper-page",
+      "title": "PrivCode: When Code Generation Meets Differential Privacy",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:22:53Z",
+      "content_hash": "sha256:4f8563475ad7e6cf462f001054131e816e014983d74d8869b7254eac1ce3babd",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

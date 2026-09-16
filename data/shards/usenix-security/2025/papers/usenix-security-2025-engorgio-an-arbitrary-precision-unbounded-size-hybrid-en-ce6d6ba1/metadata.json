@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-engorgio-an-arbitrary-precision-unbounded-size-hybrid-en-ce6d6ba1",
   "title": "Engorgio: An Arbitrary-Precision Unbounded-Size Hybrid Encrypted Database via Quantized Fully Homomorphic Encryption",
+  "abstract": "This work proposes an encrypted hybrid database framework that combines vectorized data search and relational data query over quantized fully homomorphic encryption (FHE). We observe that, due to the lack of efficient encrypted data ordering capabilities, most existing encrypted database (EDB) frameworks do not support hybrid queries involving both vectorized and relational data. To further enrich query expressiveness while retaining evaluation efficiency, we propose Engorgio, a hybrid EDB framework based on quantized data ordering techniques over FHE. Specifically, we design a new quantized data encoding scheme along with a set of novel comparison and permutation algorithms to accurately generate and apply orders between large-precision data items. Furthermore, we optimize specific query types, including full table scan, batched query, and Top-k query to enhance the practical performance of the proposed framework. In the experiment, we show that, compared to the state-of-the-art EDB frameworks, Engorgio is up to 28x–854x faster in homomorphic comparison, 65x–687x faster in homomorphic sorting and 15x–1,640x faster over a variety of end-to-end relational, vectorized, and hybrid SQL benchmarks. Using Engorgio, the amortized runtime for executing a relational and hybrid query on a 48-core processor is under 3 and 75 seconds, respectively, over a 10K-row hybrid database.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-ce6d6ba1",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Crypto 5: HE, MPC, Oblivious Computation",
@@ -280,6 +282,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-ce6d6ba1",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/bian",
+      "kind": "paper-page",
+      "title": "Engorgio: An Arbitrary-Precision Unbounded-Size Hybrid Encrypted Database via Quantized Fully Homomorphic Encryption",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:19:39Z",
+      "content_hash": "sha256:4f6a0b89ad138b6ae6685cb7ae6b9efac43b828ad3109492c0cecba83d4dcaf2",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

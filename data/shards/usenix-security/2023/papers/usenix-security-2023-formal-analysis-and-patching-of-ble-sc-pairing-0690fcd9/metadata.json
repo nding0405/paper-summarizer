@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2023-formal-analysis-and-patching-of-ble-sc-pairing-0690fcd9",
   "title": "Formal Analysis and Patching of BLE-SC Pairing",
+  "abstract": "Bluetooth Low Energy (BLE) is the mainstream Bluetooth standard and BLE Secure Connections (BLC-SC) pairing is a protocol that authenticates two Bluetooth devices and derives a shared secret key between them. Although BLE-SC pairing employs well-studied cryptographic primitives to guarantee its security, a recent study revealed a logic flaw in the protocol.\n\nIn this paper, we develop the first comprehensive formal model of the BLE-SC pairing protocol. Our model is compliant with the latest Bluetooth specification version 5.3 and covers all association models in the specification to discover attacks caused by the interplay between different association models. We also partly loosen the perfect cryptography assumption in traditional symbolic analysis approaches by designing a low-entropy key oracle to detect attacks caused by the poorly derived keys. Our analysis confirms two existing attacks and discloses a new attack. We propose a countermeasure to fix the flaws found in the BLE-SC pairing protocol and discuss the backward compatibility. Moreover, we extend our model to verify the countermeasure, and the results demonstrate its effectiveness in our extended model.",
+  "abstract_source_id": "src-abstract-usenix-security-2023-0690fcd9",
   "venue": "usenix-security",
   "year": 2023,
   "track_or_session": "Breaking Wireless Protocols",
@@ -175,6 +177,19 @@
       "official": true,
       "supports": [
         "authors, affiliations when published, abstract, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2023-0690fcd9",
+      "url": "https://www.usenix.org/conference/usenixsecurity23/presentation/shi-min",
+      "kind": "paper-page",
+      "title": "Formal Analysis and Patching of BLE-SC Pairing",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:11:04Z",
+      "content_hash": "sha256:d3aa307bcce299b084818cc45ae7a3c4b096cdf7585d4baa4eaef0543be6ad99",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

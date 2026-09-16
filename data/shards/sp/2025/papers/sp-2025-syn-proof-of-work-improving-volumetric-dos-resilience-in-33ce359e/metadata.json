@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2025-syn-proof-of-work-improving-volumetric-dos-resilience-in-33ce359e",
   "title": "SYN Proof-of-Work: Improving Volumetric DoS Resilience in TCP",
+  "abstract": "This paper presents and evaluates SYN PoW, a novel approach to mitigating TCP SYN flooding attacks using minia-ture proofs-of-work. SYN Floods have been a common threat on the Internet for decades, and have increased dramatically in both scale and frequency in recent years. Currently, SYN Cookies are widely deployed as a mitigation against this threat, but as we demonstrate they scale poorly with the volume of attack and can be detrimental to performance. SYN PoW plays a similar role, but with several key advantages: (1) it protects bandwidth by dropping malicious SYN s without sending SYN-ACKs in response; (2) it facilitates in-network verification, enabling middle boxes to detect and drop malicious packets before they reach their target; (3) it shifts the primary cost burden of mitigation from attack victims to attackers themselves; and (4) it protects against spoofing attacks without requiring source address validation. We explain how proofs-of-work can be added to SYN packets in a way that complies with the current TCP standard, and demonstrate how SYN Po W outperforms SYN Cookies under high-volume SYN floods in controlled testbed experiments.",
+  "abstract_source_id": "src-abstract-sp-2025-33ce359e",
   "venue": "sp",
   "year": 2025,
   "track_or_session": "Cycle 2",
@@ -91,6 +93,19 @@
       "official": true,
       "supports": [
         "DOI, authors, affiliations, abstract, publication date, pages, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2025-33ce359e",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "SYN Proof-of- Work: Improving Volumetric DoS Resilience in TCP",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:52Z",
+      "content_hash": "sha256:b15ce02bcc49da611fdd791ecc56741e7d91d84154b58c1a7f72a5c6902e6e46",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

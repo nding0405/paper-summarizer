@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sigcomm-2025-zenith-towards-a-formally-verified-highly-available-cont-72157328",
   "title": "ZENITH: Towards A Formally Verified Highly-Available Control Plane",
+  "abstract": "Today, large-scale software-defined networks use microservice-based controllers. Bugs in these controllers can reduce network availability by making the data plane state inconsistent with the high-level intent. To recover from such inconsistencies, modern controllers periodically reconcile the state of all the switches with the desired intent. However, periodic reconciliation limits the availability and performance of the network at scale. We introduce Zenith, a microservice-based controller that avoids inconsistencies by design rather than always relying on recovery mechanisms. We have formally verified Zenith's specifications and have proved that it ensures the network state will eventually be consistent with intent. We automatically generate Zenith's code from its specification to minimize the likelihood of errors in the final implementation. Zenith's guarantees and abstractions also enable developers to independently verify SDN applications and ensure end-to-end safety and correctness. Zenith resolves inconsistencies 5× faster than today's designs and significantly improves availability.",
+  "abstract_source_id": "src-abstract-sigcomm-2025-72157328",
   "venue": "sigcomm",
   "year": 2025,
   "track_or_session": "Datacenter Networking",
@@ -213,6 +215,19 @@
         "DOI and ACM publisher landing/PDF links",
         "publisher-deposited ORCIDs when available",
         "proceedings page range and online publication date"
+      ]
+    },
+    {
+      "id": "src-abstract-sigcomm-2025-72157328",
+      "url": "https://api.openalex.org/works/doi:10.1145/3718958.3750533?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "ZENITH: Towards A Formally Verified Highly-Available Control Plane",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:23:38Z",
+      "content_hash": "sha256:5decbbc6a6e3727493635d071cddfaea895d03430991b8b2d91e0e3519b3b833",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

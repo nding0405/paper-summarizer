@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2026-attack-of-the-bubbles-straggler-resilient-pipeline-paral-81ae30e2",
   "title": "Attack of the Bubbles: Straggler-Resilient Pipeline Parallelism for Large Model Training",
+  "abstract": "Training large Deep Neural Network (DNN) models at scale often encounters straggler issues, mostly in communications due to network congestion, RNIC/switch defects, or topological asymmetry. Under advanced pipeline parallelism, even minor communication delays can induce significant training slowdowns. This occurs because (1) slow communication disrupts the pipeline schedule, creating cascading “bubbles” in a domino effect, and (2) current GPU kernel scheduling is susceptible to head-of-line blocking, where slow communication blocks subsequent computations, further adding to these bubbles. To address these challenges, we present PIPEMORPH, a straggler-resilient training system with two key optimizations. First, it optimally adapts the pipeline schedule in the presence of stragglers to absorb communication delays without inducing cascading bubbles, using a simple yet effective algorithm guided by an analytical model. Second, upon detecting slow communication, PIPEMORPH offloads communication operations from GPU to host memory and utilizes CPU-side RDMA for data transfer. This eliminates head-of-line blocking as subsequent computation kernels can be scheduled immediately on GPUs. Together, these optimizations effectively reduce pipeline stalls in the presence of communication stragglers, improving the training iteration time by 1.2-3.5× in our experiments under various settings.",
+  "abstract_source_id": "src-abstract-nsdi-2026-81ae30e2",
   "venue": "nsdi",
   "year": 2026,
   "track_or_session": "Clouds with Benefits",
@@ -286,6 +288,19 @@
         "proceedings page range and page count",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2026-81ae30e2",
+      "url": "https://www.usenix.org/conference/nsdi26/presentation/wu-tianyuan",
+      "kind": "paper-page",
+      "title": "Attack of the Bubbles: Straggler-Resilient Pipeline Parallelism for Large Model Training",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:04:49Z",
+      "content_hash": "sha256:a8ddcf88e4e81058669c28549357c3a561db89f8b7aa08ebd7f01d73ba1e2239",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

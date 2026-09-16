@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-when-the-aggregator-cheats-data-free-backdoors-in-federa-0a763f1d",
   "title": "When the Aggregator Cheats: Data-Free Backdoors in Federated LLM-based QA Systems",
+  "abstract": "Large Language Model (LLM)-based question-answering (QA) systems are increasingly deployed in sensitive domains such as healthcare, mental health counseling, and legal consultation. Federated learning (FL) enables collaborative training without sharing raw client data, for which locally trained models are aggregated at a central server (i.e., a cloud service provider) to obtain a global model. In this paper, we explore the potential vulnerability where a malicious aggregator, who may collude with a third-party vendor, stealthily implants advertisement-type backdoors into federated QA models, without ever accessing client data. The attacker's goals are twofold: (1) preserve clean QA fidelity (i.e., the poisoned model behaves like a clean model on non-triggered queries); and (2) generate highly natural, contextually relevant responses with target advertisements when a trigger appears. Achieving these two goals simultaneously is highly challenging, as naive backdoor injection without knowledge about private data may degrade model's clean performance or fail to inject the target. Motivated by this, we propose to leverage clients' uploaded gradients during training, and develop a two-stage framework for data-free and stealthy poisoning: (1) recover representative training samples from client gradients, and (2) construct poisoning datasets utilizing recovered samples and trigger phrases to inject backdoors into the global model. Experiments across representative QA datasets and LLM families under full fine-tuning and LoRA settings demonstrate that, our method achieves nearly 100% Attack Success Rate (ASR) while incurring negligible degradation on clean tasks. Crucially, reconstructing only 5–20% of gradients suffices to mount a reliable attack, exposing a practical blind spot in the pipeline of federated training of QA LLMs.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-0a763f1d",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Security of ML 1",
@@ -155,6 +157,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-0a763f1d",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/zhu-chenqing",
+      "kind": "paper-page",
+      "title": "When the Aggregator Cheats: Data-Free Backdoors in Federated LLM-based QA Systems",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:26:17Z",
+      "content_hash": "sha256:48328c79942be86e493356c16467e53294c7bb7f73da5e358ab7698a37877169",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

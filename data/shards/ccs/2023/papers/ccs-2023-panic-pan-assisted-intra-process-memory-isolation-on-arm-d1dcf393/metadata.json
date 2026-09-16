@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2023-panic-pan-assisted-intra-process-memory-isolation-on-arm-d1dcf393",
   "title": "PANIC: PAN-assisted Intra-process Memory Isolation on ARM",
+  "abstract": "Intra-process memory isolation is a well-known technique to enforce least privilege within a process. In this paper, we propose a generic and efficient intra-process memory isolation technique named PANIC, by leveraging Privileged Access Never (PAN) and load/store unprivileged (LSU) instructions on AArch64. PANIC executes process code in kernel mode and compartments code into trusted and untrusted components. The untrusted code is restricted from accessing the isolated memory region, which is located on user pages, and the trusted code is allowed to access the isolated memory region by using LSU instructions. To mitigate threats induced by running user code in kernel mode, PANIC provides two novel security mechanisms: shim-based memory isolation and sensitive instruction emulation. PANIC provides a generic and efficient isolation primitive that can be applied in three different isolation scenarios: protecting sensitive data in CFI, creating isolated execution environments, and hardening JIT code cache. We have implemented a prototype of PANIC and experimental evaluation shows that PANIC incurs very low performance overhead, and performs better than existing methods.",
+  "abstract_source_id": "src-abstract-ccs-2023-d1dcf393",
   "venue": "ccs",
   "year": 2023,
   "track_or_session": "Defenses (Software Security)",
@@ -436,6 +438,19 @@
       "official": false,
       "supports": [
         "published title, author order, and page span"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2023-d1dcf393",
+      "url": "https://api.openalex.org/works/doi:10.1145/3576915.3623206?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "PANIC: PAN-assisted Intra-process Memory Isolation on ARM",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:07:58Z",
+      "content_hash": "sha256:21a82068015c6fcd6a49511e6685c333c28ed144421fcc8a2a2101f7b03f153b",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sigcomm-2025-scx-stateless-kv-cache-encoding-for-cloud-scale-confiden-1884fbff",
   "title": "SCX: Stateless KV-Cache Encoding for Cloud-Scale Confidential Transformer Serving",
+  "abstract": "Transformer models have revolutionized fields like natural language processing and computer vision but face privacy concerns in sensitive applications such as medical diagnostics. Existing confidential serving methods, including cryptography-based, memory isolation-based, and access control-based, offer trade-offs between privacy and efficiency but often struggle with high latency or hardware dependencies. This work proposes stateless KV-cache encoding (SCX), a novel framework that encodes the intermediate key-value cache during Transformer inference using user-controlled keys. SCX ensures that the cloud can neither recover the input nor independently complete the next token prediction, effectively preserving privacy. By introducing efficient encoding and decoding schemes, SCX addresses communication complexity and attack vulnerabilities while ensuring zero loss of inference quality. Experiments on large Transformer models demonstrate that SCX achieves lower latency (e.g., 36ms for LLaMA-7B), outperforming state-of-the-art cryptography and memory isolation methods by orders of magnitude. Moreover, SCX can complementarily work with advanced KV-cache management techniques to further enhance KV-cache communication efficiency by 85%, marking a significant step toward practical, privacy-preserving large Transformer serving.",
+  "abstract_source_id": "src-abstract-sigcomm-2025-1884fbff",
   "venue": "sigcomm",
   "year": 2025,
   "track_or_session": "NetAI",
@@ -213,6 +215,19 @@
         "DOI and ACM publisher landing/PDF links",
         "publisher-deposited ORCIDs when available",
         "proceedings page range and online publication date"
+      ]
+    },
+    {
+      "id": "src-abstract-sigcomm-2025-1884fbff",
+      "url": "https://api.openalex.org/works/doi:10.1145/3718958.3750509?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "SCX: Stateless KV-Cache Encoding for Cloud-Scale Confidential Transformer Serving",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:23:34Z",
+      "content_hash": "sha256:d848e5340d420b1230d2680fdcd33cebc6ec3868d7e44ea78b4fa7b182e59f4b",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

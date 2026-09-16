@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2026-eco-an-ai-driven-code-efficiency-optimizer-for-warehouse-f04bdf5b",
   "title": "ECO: An AI-Driven Code Efficiency Optimizer for Warehouse Scale Computers (Operational Systems)",
+  "abstract": "Large Language Models (LLMs) have shown significant promise in automating code efficiency optimization. While prior work demonstrates these techniques on artificial datasets such as programming competitions or small benchmarks, deploying these techniques at scale in production has remained an open problem. Arguably, two challenges have prevented the adoption in large-scale real-world systems: opportunity localization and reliability. First, applying an LLM to every line across a large code base is expensive and prone to generating an overwhelming number of low-quality suggestions, placing unsustainable cognitive load on human code reviewers. Second, the inherent unreliability of LLM-generated code risks introducing errors that can lead to production incidents. These challenges are largely orthogonal to the ML techniques prior work has focused on; they are real-world systems problems.\n\nThis paper introduces ECO, a system that automatically modifies source code to improve performance at scale. ECO overcomes the localization problem by combining fleet-wide continuous profiling to identify performance-critical code with an embedding-based search to pinpoint specific optimization candidates, guided by a mined dictionary of performance anti-patterns. It overcomes the reliability problem through a multi-stage verification approach that uses automated testing, LLM-based self-review, and post-deployment monitoring to ensure changes are both correct and effective. Fully productionized and deployed within Google’s hyperscale production fleet, ECO has successfully landed over 6,400 commits, changing more than 25,000 lines of production code. Incorrect changes are caught before they are submitted to production, and 99.5% of the submitted commits did not cause any rollbacks. These optimizations have resulted in savings equivalent to several hundred thousand normalized CPU cores, showing that ECO makes LLM-based optimization both practical at scale and highly impactful in real-world settings.",
+  "abstract_source_id": "src-abstract-osdi-2026-f04bdf5b",
   "venue": "osdi",
   "year": 2026,
   "track_or_session": "Agentic AI and LLM Operations",
@@ -482,6 +484,19 @@
       "official": true,
       "supports": [
         "Official proceedings availability and canonical conference versions."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2026-f04bdf5b",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/lin-hannah",
+      "kind": "paper-page",
+      "title": "ECO: An AI-Driven Code Efficiency Optimizer for Warehouse Scale Computers (Operational Systems)",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:08:14Z",
+      "content_hash": "sha256:eaab9c9679c5690c56ddaac11f95540465ace362b51c21726f6b91fda6cabca1",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

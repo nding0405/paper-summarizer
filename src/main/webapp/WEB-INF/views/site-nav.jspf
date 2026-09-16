@@ -1,0 +1,5 @@
+<%-- Page switcher shown on every page. Expects searchPath, proceedingsPath, and currentPage ("search" | "proceedings" | "paper"). --%>
+<nav class="site-nav" aria-label="Pages">
+  <a href="<c:out value='${searchPath}' />"<c:if test="${currentPage == 'search'}"> aria-current="page"</c:if>>Search</a>
+  <a href="<c:out value='${proceedingsPath}' />"<c:if test="${currentPage == 'proceedings'}"> aria-current="page"</c:if>>Proceedings</a>
+</nav>

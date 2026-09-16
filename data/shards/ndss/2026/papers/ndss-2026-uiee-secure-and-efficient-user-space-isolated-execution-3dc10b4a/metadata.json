@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2026-uiee-secure-and-efficient-user-space-isolated-execution-3dc10b4a",
   "title": "UIEE: Secure and Efficient User-space Isolated Execution Environment for Embedded TEE Systems",
+  "abstract": "Trusted execution environments (TEE) have been widely explored to enhance security for embedded systems. Existing embedded TEE systems run with a small memory footprint and only provide security critical functionalities in order to maintain a minimal trusted computing base (TCB). Unfortunately, such design choice results in the dilemma that these TEE systems are short in software resources, making it difficult to execute complex applications with large code bases inside of embedded TEEs. In this paper, we propose a user-space isolated execution environment (UIEE) so as to augment TEE capabilities by directly running un-modified data processing applications inside of TEEs without increasing the TCB size. UIEE constructs a sandboxed environment by dynamically allocating a sufficient memory region for applications and isolates it from both the rich execution environment (REE) and TEE, defending UIEE from REE attacks while protecting TEE from a potentially compromised UIEE application. Additionally, we propose a library OS (i.e., Linux kernel library, LKL) based UIEE runtime environment that can provide standard C runtime APIs to UIEE applications. In order to solve the LKL concurrency issues, we propose an LKL thread synchronization mechanism to run the multi-threaded LKL inside of the UIEE which features a singled thread execution model. Furthermore, we design a novel on-demand thread migration mechanism to realize LKL context switching inside of UIEE. We implement and deploy a UIEE prototype on an NXP IMX6Q SABRE-SD evaluation board, and successful run 8 real-world libc -based applications inside of UIEE without modification. The experimental results show that UIEE incurs negligible performance overhead. We are the first to propose a TrustZone-oriented LibOS and evaluate its feasibility as well as security features.",
+  "abstract_source_id": "src-abstract-ndss-2026-3dc10b4a",
   "venue": "ndss",
   "year": 2026,
   "track_or_session": "Summer submission cycle",
@@ -265,6 +267,19 @@
       "official": false,
       "supports": [
         "independent proceedings identity reconciliation"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2026-3dc10b4a",
+      "url": "https://www.ndss-symposium.org/ndss-paper/uiee-secure-and-efficient-user-space-isolated-execution-environment-for-embedded-tee-systems/",
+      "kind": "paper-page",
+      "title": "UIEE: Secure and Efficient User-space Isolated Execution Environment for Embedded TEE Systems",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:23:27Z",
+      "content_hash": "sha256:2cb36b3c0a68aace4a9a8f78cbf0525dcc6f8b6c2d07f9a110bd0b6c788f3e7a",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

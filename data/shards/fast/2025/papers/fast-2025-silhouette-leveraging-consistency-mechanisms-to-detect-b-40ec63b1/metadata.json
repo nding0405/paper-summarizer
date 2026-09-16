@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "fast-2025-silhouette-leveraging-consistency-mechanisms-to-detect-b-40ec63b1",
   "title": "Silhouette: Leveraging Consistency Mechanisms to Detect Bugs in Persistent Memory-Based File Systems",
+  "abstract": "The emergence of persistent memory (PM), with its non-volatile and byte-addressable characteristics, has led to a novel storage programming paradigm. However, PM programs need to flush stores from CPU caches and correctly order them to avoid inconsistencies after a crash. As a result, many bug-detection tools have been developed for checking crash-consistency bugs in PM software. These bug detectors focus on reordering in-flight stores, crashing the system, and then checking for crash consistency during recovery. However, large-scale systems such as file systems have many in-flight stores, resulting in a large exploration space that makes exhaustive testing prohibitive.\n\nThis paper presents Silhouette, a bug-detection framework that targets PM-based file systems. These file systems use standard crash-consistency mechanisms such as journaling and replication. Silhouette uses a novel combination of static instrumentation and data-type-based dynamic analysis to check whether these file systems implement their consistency mechanisms correctly. If these checks pass, then all stores associated with the consistency mechanism (e.g., logging and checkpointing stores for journaling) are considered protected and only the unprotected stores are reordered during exploration. Our evaluation shows that Silhouette dramatically reduces the exploration space, finds all bugs found by existing tools 10x faster, and finds several new bugs in various PM file systems.",
+  "abstract_source_id": "src-abstract-fast-2025-40ec63b1",
   "venue": "fast",
   "year": 2025,
   "track_or_session": "Security, Integrity, and Consistency",
@@ -119,6 +121,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-fast-2025-40ec63b1",
+      "url": "https://www.usenix.org/conference/fast25/presentation/jiao",
+      "kind": "paper-page",
+      "title": "Silhouette: Leveraging Consistency Mechanisms to Detect Bugs in Persistent Memory-Based File Systems",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:01:18Z",
+      "content_hash": "sha256:6222f72a0b65926a9c5d316992a7250bc91134155f2bea2abc804baf82333d4b",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

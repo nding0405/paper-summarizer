@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2025-plrv-o-advancing-differentially-private-deep-learning-vi-ff7b3fda",
   "title": "PLRV-O: Advancing Differentially Private Deep Learning via Privacy Loss Random Variable Optimization",
+  "abstract": "Differentially Private Stochastic Gradient Descent (DP-SGD) is a standard method for enforcing privacy in deep learning, typically using the Gaussian mechanism to perturb gradient updates. However, conventional mechanisms such as Gaussian and Laplacian noise are parameterized only by variance or scale. This single degree of freedom ties the magnitude of noise directly to both privacy loss and utility degradation, preventing independent control of these two factors. The problem becomes more pronounced when the number of composition rounds T and batch size B vary across tasks, as these variations induce task-dependent shifts in the privacy–utility trade-off, where small changes in noise parameters can disproportionately affect model accuracy. To address this limitation, we introduce PLRV-O, a framework that defines a broad search space of parameterized DP-SGD noise distributions, where privacy loss moments are tightly characterized yet can be optimized more independently with respect to utility loss. This formulation enables systematic adaptation of noise to task-specific requirements, including (i) model size, (ii) training duration, (iii) batch sampling strategies, and (iv) clipping thresholds under both training and fine-tuning settings. Empirical results demonstrate that PLRV-O substantially improves utility under strict privacy constraints. On CIFAR-10, a fine-tuned ViT achieves 94.03% accuracy at ∈ ≈ 0.5, compared to 83.93% with Gaussian noise. On SST-2, RoBERTa-large reaches 92.20% accuracy at ∈ ≈ 0.2, versus 50.25% with Gaussian. Source code is available at https://github.com/datasec-lab/plrvo.",
+  "abstract_source_id": "src-abstract-ccs-2025-ff7b3fda",
   "venue": "ccs",
   "year": 2025,
   "track_or_session": "Cycle 2",
@@ -253,6 +255,19 @@
         "published-order authors",
         "publication-time affiliations",
         "publication date and page span"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2025-ff7b3fda",
+      "url": "https://api.openalex.org/works/doi:10.1145/3719027.3765151?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "PLRV-O: Advancing Differentially Private Deep Learning via Privacy Loss Random Variable Optimization",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:15:41Z",
+      "content_hash": "sha256:135770c5b29fd5408bc91d58ce35c295ff1f58f923c45863f3d03251780d1815",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

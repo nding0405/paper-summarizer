@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sigcomm-2025-hack-homomorphic-acceleration-via-compression-of-the-key-f1c96106",
   "title": "HACK: Homomorphic Acceleration via Compression of the Key-Value Cache for Disaggregated LLM Inference",
+  "abstract": "Disaggregated Large Language Model (LLM) inference decouples the compute-intensive prefill stage from the memory-intensive decode stage, allowing low-end, compute-focused GPUs for prefill and high-end, memory-rich GPUs for decode, which reduces cost while maintaining high throughput. However, transmitting Key-Value (KV) data between the two stages can be a bottleneck, especially for long prompts. Additionally, the computational overhead in the two stages is key for optimizing Job Completion Time (JCT), and KV data size can become prohibitive for long prompts and sequences. Existing KV quantization methods can alleviate transmission and memory bottlenecks, but they introduce significant dequantization overhead, exacerbating the computation time.",
+  "abstract_source_id": "src-abstract-sigcomm-2025-f1c96106",
   "venue": "sigcomm",
   "year": 2025,
   "track_or_session": "Shorts",
@@ -192,6 +194,19 @@
         "DOI and ACM publisher landing/PDF links",
         "publisher-deposited ORCIDs when available",
         "proceedings page range and online publication date"
+      ]
+    },
+    {
+      "id": "src-abstract-sigcomm-2025-f1c96106",
+      "url": "https://api.openalex.org/works/doi:10.1145/3718958.3750481?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "HACK: Homomorphic Acceleration via Compression of the Key-Value Cache for Disaggregated LLM Inference",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:23:24Z",
+      "content_hash": "sha256:a6ab88b8c8e4c31aba61afa2320215b07be4e764d15f05fd5dd4254226ff892a",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

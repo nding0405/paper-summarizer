@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "atc-2025-hypereca-distributed-heterogeneous-in-memory-embedding-d-63a7af2d",
   "title": "HypeReca: Distributed Heterogeneous In-Memory Embedding Database for Training Recommender Models",
+  "abstract": "Making high-quality recommendations is important in online applications. To improve user satisfaction and effectiveness of advertising, deep learning-based recommender models (DLRM) are widely studied and deployed. Training these models on massive data demands increasing computation power, commonly provided by a cluster of numerous GPUs. Meanwhile, the embedding tables of the models are huge, posing challenges on the memory. Existing systems exploit host memory and hashing techniques to accommodate them. However, the simple offloading design is hard to scale up to multiple nodes. The sparse access to the distributed embedding tables introduces high data management and all-to-all communication overhead.\n\nWe find that a distributed in-memory key-value database is the best abstraction to serve and maintain embedding vectors in DLRM training. To achieve high scalability, our system, HypeReca, utilizes both GPU and CPU memory. We improve the throughput of data management according to the batching pattern of DNN training, using a pipeline over decentralized indexing tables and a contentionavoiding schedule for data exchange. A two-fold parallel strategy is used to guarantee consistency of all embedding vectors. The communication overhead is reduced by replicating a few frequently accessed embedding vectors, exploiting the sparse pattern with a performance model. In our evaluation on 32 GPUs over real-world datasets, HypeReca achieves 2.16−16.8× end-to-end speedup over HugeCTR, TorchRec and TFDE. The source code is available at https://github.com/thu-pacman/hypereca/ .",
+  "abstract_source_id": "src-abstract-atc-2025-63a7af2d",
   "venue": "atc",
   "year": 2025,
   "track_or_session": "Scaling Complex Models: Distribution, Heterogeneity, and Efficiency",
@@ -159,6 +161,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-atc-2025-63a7af2d",
+      "url": "https://www.usenix.org/conference/atc25/presentation/he-jiaao",
+      "kind": "paper-page",
+      "title": "HypeReca: Distributed Heterogeneous In-Memory Embedding Database for Training Recommender Models",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T21:59:47Z",
+      "content_hash": "sha256:4f7951805f4a6511c5de759e7cf5eb3a8562ddba48ac60758b6042de8fa0848e",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

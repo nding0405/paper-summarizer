@@ -14,15 +14,6 @@
         "Morgan Sample"
       ],
       "takeaway": "A synthetic kernel extension mechanism isolates untrusted modules while preserving a narrow, inspectable interface.",
-      "story": {
-        "background": "Operating-system kernels often extend privileged behavior through modules that share a large trusted computing base.",
-        "villain": "One faulty extension can corrupt kernel memory, and coarse isolation makes frequent extension calls expensive.",
-        "approach": "The fictional design combines capability-scoped memory access with a checked eBPF-style call boundary.",
-        "impact": "The fixture demonstrates how a systems mechanism, its assumptions, and its group signal appear in the interface.",
-        "evaluation": "A synthetic prototype comparison uses microbenchmarks and a toy storage service; no reported number is real.",
-        "limitations": "The imaginary design assumes special compiler instrumentation and does not cover device firmware.",
-        "phd_group_signal": "This fictional group favors implementation-heavy operating-systems work with explicit security boundaries."
-      },
       "mechanisms": [
         "capability-scoped memory",
         "checked extension boundary",
@@ -104,7 +95,55 @@
           "type": "fixture"
         }
       ],
-      "is_fixture": true
+      "is_fixture": true,
+      "track_or_session": "Session 1A: Synthetic Kernels",
+      "abstract": "[Synthetic fixture abstract] Operating-system kernels often extend privileged behavior through modules that share a large trusted computing base. The fictional design combines capability-scoped memory access with a checked eBPF-style call boundary.",
+      "summary": {
+        "status": "APPROVED",
+        "written_by": "fixture-writer",
+        "updated_at": "2026-01-01T00:00:00Z",
+        "confidence": "HIGH",
+        "background": "Operating-system kernels often extend privileged behavior through modules that share a large trusted computing base.",
+        "villain": "One faulty extension can corrupt kernel memory, and coarse isolation makes frequent extension calls expensive.",
+        "approach": "The fictional design combines capability-scoped memory access with a checked eBPF-style call boundary.",
+        "impact": "The fixture demonstrates how a systems mechanism, its assumptions, and its group signal appear in the interface.",
+        "evaluation": {
+          "overview": "A synthetic prototype comparison uses microbenchmarks and a toy storage service; no reported number is real.",
+          "implemented": "A synthetic prototype.",
+          "setting": "An imaginary testbed.",
+          "baselines": [
+            "Fixture baseline"
+          ],
+          "results": [
+            {
+              "text": "The fixture reports an invented improvement.",
+              "locator": "Fixture §0"
+            }
+          ],
+          "study_types": [
+            "prototype"
+          ]
+        },
+        "limitations": "The imaginary design assumes special compiler instrumentation and does not cover device firmware.",
+        "phd_group_signal": "This fictional group favors implementation-heavy operating-systems work with explicit security boundaries.",
+        "beginner_concepts": [
+          "synthetic concept one",
+          "synthetic concept two",
+          "synthetic concept three"
+        ],
+        "reading_coverage": {
+          "abstract": "READ",
+          "introduction": "READ",
+          "conclusion": "SKIMMED"
+        }
+      },
+      "review": {
+        "status": "APPROVED",
+        "decision": "APPROVED",
+        "reviewer": "fixture-reviewer",
+        "updated_at": "2026-01-02T00:00:00Z",
+        "issues": []
+      }
     },
     {
       "id": "fixture-distributed-debugging",
@@ -118,15 +157,6 @@
         "Taylor Placeholder"
       ],
       "takeaway": "A fictional tracing system connects symptoms across regions without collecting every event from every service.",
-      "story": {
-        "background": "Distributed services scatter requests across machines and regions, so a single failure can leave evidence in many logs.",
-        "villain": "Centralizing every trace is expensive, while sampling can discard the rare causal chain an operator needs.",
-        "approach": "The made-up system builds compact causal sketches near each service and requests detailed traces only after an anomaly.",
-        "impact": "The synthetic example supports phrase search across observability, geo-distribution, and trace analysis.",
-        "evaluation": "A fictional trace replay compares storage overhead and diagnosis coverage on generated incidents.",
-        "limitations": "The example assumes clocks have bounded drift and does not model malicious services.",
-        "phd_group_signal": "This invented group combines distributed-systems prototypes with production-style trace analysis."
-      },
       "mechanisms": [
         "causal sketches",
         "adaptive trace collection",
@@ -205,7 +235,11 @@
           "type": "fixture"
         }
       ],
-      "is_fixture": true
+      "is_fixture": true,
+      "track_or_session": "Session 1B: Synthetic Debugging",
+      "abstract": "[Synthetic fixture abstract] Distributed services scatter requests across machines and regions, so a single failure can leave evidence in many logs. The made-up system builds compact causal sketches near each service and requests detailed traces only after an anomaly.",
+      "summary": null,
+      "review": null
     },
     {
       "id": "fixture-security-isolation",
@@ -218,15 +252,6 @@
         "Quinn Demonstration"
       ],
       "takeaway": "A fabricated state-aware fuzzer explores container boundary failures while recording which runtime transitions exposed them.",
-      "story": {
-        "background": "Container runtimes combine kernel isolation primitives with privileged setup code and complex lifecycle transitions.",
-        "villain": "Ordinary fuzzers mutate isolated calls but miss failures that require a precise sequence of namespace and privilege changes.",
-        "approach": "The fictional tool learns a small transition model and directs mutations toward unexplored security states.",
-        "impact": "This adjacent-systems fixture illustrates security-venue screening without implying that every security paper belongs in the corpus.",
-        "evaluation": "A synthetic dynamic-analysis study exercises invented runtime implementations and seeded bugs.",
-        "limitations": "The example considers one operating-system family and cannot establish exploitability.",
-        "phd_group_signal": "The imaginary lab works at the boundary of systems security, testing, and runtime internals."
-      },
       "mechanisms": [
         "state-aware fuzzing",
         "runtime transition model",
@@ -310,7 +335,62 @@
           "type": "fixture"
         }
       ],
-      "is_fixture": true
+      "is_fixture": true,
+      "track_or_session": "Session 2A: Synthetic Security",
+      "abstract": "[Synthetic fixture abstract] Container runtimes combine kernel isolation primitives with privileged setup code and complex lifecycle transitions. The fictional tool learns a small transition model and directs mutations toward unexplored security states.",
+      "summary": {
+        "status": "READY_FOR_REVIEW",
+        "written_by": "fixture-writer",
+        "updated_at": "2026-01-01T00:00:00Z",
+        "confidence": "HIGH",
+        "background": "Container runtimes combine kernel isolation primitives with privileged setup code and complex lifecycle transitions.",
+        "villain": "Ordinary fuzzers mutate isolated calls but miss failures that require a precise sequence of namespace and privilege changes.",
+        "approach": "The fictional tool learns a small transition model and directs mutations toward unexplored security states.",
+        "impact": "This adjacent-systems fixture illustrates security-venue screening without implying that every security paper belongs in the corpus.",
+        "evaluation": {
+          "overview": "A synthetic dynamic-analysis study exercises invented runtime implementations and seeded bugs.",
+          "implemented": "A synthetic prototype.",
+          "setting": "An imaginary testbed.",
+          "baselines": [
+            "Fixture baseline"
+          ],
+          "results": [
+            {
+              "text": "The fixture reports an invented improvement.",
+              "locator": "Fixture §0"
+            }
+          ],
+          "study_types": [
+            "prototype"
+          ]
+        },
+        "limitations": "The example considers one operating-system family and cannot establish exploitability.",
+        "phd_group_signal": "The imaginary lab works at the boundary of systems security, testing, and runtime internals.",
+        "beginner_concepts": [
+          "synthetic concept one",
+          "synthetic concept two",
+          "synthetic concept three"
+        ],
+        "reading_coverage": {
+          "abstract": "READ",
+          "introduction": "READ",
+          "conclusion": "SKIMMED"
+        }
+      },
+      "review": {
+        "status": "CHANGES_REQUESTED",
+        "decision": "CHANGES_REQUESTED",
+        "reviewer": "fixture-reviewer",
+        "updated_at": "2026-01-02T00:00:00Z",
+        "issues": [
+          {
+            "severity": "WARNING",
+            "stage": "summary",
+            "description": "Synthetic issue for interface testing.",
+            "status": "OPEN"
+          }
+        ]
+      }
     },
     {
       "id": "fixture-architecture-ml",
@@ -324,15 +404,6 @@
         "Parker Sample"
       ],
       "takeaway": "A fictional hardware–software scheduler moves inference stages across chiplets as memory pressure changes.",
-      "story": {
-        "background": "Accelerator packages can combine specialized chiplets whose compute and memory resources differ.",
-        "villain": "Static model placement leaves resources idle when request shapes and memory demand change.",
-        "approach": "The made-up runtime coordinates a hardware queue with a latency-aware placement policy.",
-        "impact": "The fixture exposes architecture, ML-systems, hardware-prototype, and industrial-collaboration filters.",
-        "evaluation": "A synthetic hardware prototype runs invented inference workloads; all performance descriptions are placeholders.",
-        "limitations": "The imaginary scheduler targets one package topology and assumes models can be partitioned at supported boundaries.",
-        "phd_group_signal": "The fictional collaboration crosses computer architecture, runtime implementation, and ML serving."
-      },
       "mechanisms": [
         "chiplet-aware placement",
         "elastic inference pipeline",
@@ -419,7 +490,11 @@
           "type": "fixture"
         }
       ],
-      "is_fixture": true
+      "is_fixture": true,
+      "track_or_session": "Session 2B: Synthetic Architecture",
+      "abstract": "[Synthetic fixture abstract] Accelerator packages can combine specialized chiplets whose compute and memory resources differ. The made-up runtime coordinates a hardware queue with a latency-aware placement policy.",
+      "summary": null,
+      "review": null
     },
     {
       "id": "fixture-storage-crash",
@@ -432,15 +507,6 @@
         "Emerson Placeholder"
       ],
       "takeaway": "A made-up recovery protocol rebuilds flash metadata incrementally so unaffected tenants continue issuing requests.",
-      "story": {
-        "background": "Shared flash services maintain metadata that maps many tenants' logical data to physical devices.",
-        "villain": "A metadata failure can force a full scan and pause unrelated tenants during recovery.",
-        "approach": "The fictional protocol isolates recovery epochs and reconstructs only metadata reachable by active requests.",
-        "impact": "This fixture exercises storage, reliability, European geography, award, and code filters.",
-        "evaluation": "A synthetic prototype replays generated storage traces against imaginary recovery baselines.",
-        "limitations": "The example assumes replicated allocation logs and does not address simultaneous device loss.",
-        "phd_group_signal": "The fictional group studies storage internals through prototypes, fault injection, and trace replay."
-      },
       "mechanisms": [
         "recovery epochs",
         "demand-driven metadata rebuild",
@@ -524,7 +590,62 @@
           "type": "fixture"
         }
       ],
-      "is_fixture": true
+      "is_fixture": true,
+      "track_or_session": "Session 3A: Synthetic Storage",
+      "abstract": "[Synthetic fixture abstract] Shared flash services maintain metadata that maps many tenants' logical data to physical devices. The fictional protocol isolates recovery epochs and reconstructs only metadata reachable by active requests.",
+      "summary": {
+        "status": "READY_FOR_REVIEW",
+        "written_by": "fixture-writer",
+        "updated_at": "2026-01-01T00:00:00Z",
+        "confidence": "HIGH",
+        "background": "Shared flash services maintain metadata that maps many tenants' logical data to physical devices.",
+        "villain": "A metadata failure can force a full scan and pause unrelated tenants during recovery.",
+        "approach": "The fictional protocol isolates recovery epochs and reconstructs only metadata reachable by active requests.",
+        "impact": "This fixture exercises storage, reliability, European geography, award, and code filters.",
+        "evaluation": {
+          "overview": "A synthetic prototype replays generated storage traces against imaginary recovery baselines.",
+          "implemented": "A synthetic prototype.",
+          "setting": "An imaginary testbed.",
+          "baselines": [
+            "Fixture baseline"
+          ],
+          "results": [
+            {
+              "text": "The fixture reports an invented improvement.",
+              "locator": "Fixture §0"
+            }
+          ],
+          "study_types": [
+            "prototype"
+          ]
+        },
+        "limitations": "The example assumes replicated allocation logs and does not address simultaneous device loss.",
+        "phd_group_signal": "The fictional group studies storage internals through prototypes, fault injection, and trace replay.",
+        "beginner_concepts": [
+          "synthetic concept one",
+          "synthetic concept two",
+          "synthetic concept three"
+        ],
+        "reading_coverage": {
+          "abstract": "READ",
+          "introduction": "READ",
+          "conclusion": "SKIMMED"
+        }
+      },
+      "review": {
+        "status": "CHANGES_REQUESTED",
+        "decision": "CHANGES_REQUESTED",
+        "reviewer": "fixture-reviewer",
+        "updated_at": "2026-01-02T00:00:00Z",
+        "issues": [
+          {
+            "severity": "WARNING",
+            "stage": "summary",
+            "description": "Synthetic issue for interface testing.",
+            "status": "OPEN"
+          }
+        ]
+      }
     },
     {
       "id": "fixture-network-congestion",
@@ -537,15 +658,6 @@
         "Harper Sample"
       ],
       "takeaway": "A synthetic transport protocol exposes uncertainty in path estimates before it changes its sending rate.",
-      "story": {
-        "background": "Congestion controllers infer network capacity from delayed and noisy acknowledgements.",
-        "villain": "A controller that treats an uncertain estimate as fact can oscillate or overfill queues.",
-        "approach": "The fictional design tracks a confidence interval and switches between probing and conservative modes.",
-        "impact": "The record demonstrates networking, formal-model, simulation, and United Kingdom filters.",
-        "evaluation": "An imaginary simulator and small emulation testbed compare queue delay across generated paths.",
-        "limitations": "The fixture does not model adversarial receivers or wireless mobility.",
-        "phd_group_signal": "The invented group pairs transport modeling with implementation and controlled experiments."
-      },
       "mechanisms": [
         "uncertainty-aware rate control",
         "confidence-bounded probing",
@@ -622,7 +734,11 @@
           "type": "fixture"
         }
       ],
-      "is_fixture": true
+      "is_fixture": true,
+      "track_or_session": "Session 3B: Synthetic Networks",
+      "abstract": "[Synthetic fixture abstract] Congestion controllers infer network capacity from delayed and noisy acknowledgements. The fictional design tracks a confidence interval and switches between probing and conservative modes.",
+      "summary": null,
+      "review": null
     },
     {
       "id": "fixture-cloud-energy",
@@ -635,15 +751,6 @@
         "Sage Example"
       ],
       "takeaway": "A fictional serverless scheduler shifts flexible work across regions while keeping latency constraints visible.",
-      "story": {
-        "background": "Serverless platforms place short functions across regions with different capacity, delay, and energy conditions.",
-        "villain": "Optimizing only immediate latency can concentrate flexible work where the synthetic carbon signal is highest.",
-        "approach": "The made-up scheduler separates hard latency budgets from a configurable carbon-aware placement objective.",
-        "impact": "The fixture exercises incomplete-2026, cloud, energy, production-deployment, and Europe filters.",
-        "evaluation": "A fabricated deployment replay uses generated demand and carbon traces; it makes no real environmental claim.",
-        "limitations": "The imaginary approach assumes regional signals are timely and functions can move without data-residency constraints.",
-        "phd_group_signal": "The fictional collaboration studies datacenter scheduling with operational constraints and trace-driven evaluation."
-      },
       "mechanisms": [
         "constraint-aware regional placement",
         "carbon signal smoothing",
@@ -724,7 +831,62 @@
           "type": "fixture"
         }
       ],
-      "is_fixture": true
+      "is_fixture": true,
+      "track_or_session": "Session 4A: Synthetic Cloud",
+      "abstract": "[Synthetic fixture abstract] Serverless platforms place short functions across regions with different capacity, delay, and energy conditions. The made-up scheduler separates hard latency budgets from a configurable carbon-aware placement objective.",
+      "summary": {
+        "status": "READY_FOR_REVIEW",
+        "written_by": "fixture-writer",
+        "updated_at": "2026-01-01T00:00:00Z",
+        "confidence": "HIGH",
+        "background": "Serverless platforms place short functions across regions with different capacity, delay, and energy conditions.",
+        "villain": "Optimizing only immediate latency can concentrate flexible work where the synthetic carbon signal is highest.",
+        "approach": "The made-up scheduler separates hard latency budgets from a configurable carbon-aware placement objective.",
+        "impact": "The fixture exercises incomplete-2026, cloud, energy, production-deployment, and Europe filters.",
+        "evaluation": {
+          "overview": "A fabricated deployment replay uses generated demand and carbon traces; it makes no real environmental claim.",
+          "implemented": "A synthetic prototype.",
+          "setting": "An imaginary testbed.",
+          "baselines": [
+            "Fixture baseline"
+          ],
+          "results": [
+            {
+              "text": "The fixture reports an invented improvement.",
+              "locator": "Fixture §0"
+            }
+          ],
+          "study_types": [
+            "prototype"
+          ]
+        },
+        "limitations": "The imaginary approach assumes regional signals are timely and functions can move without data-residency constraints.",
+        "phd_group_signal": "The fictional collaboration studies datacenter scheduling with operational constraints and trace-driven evaluation.",
+        "beginner_concepts": [
+          "synthetic concept one",
+          "synthetic concept two",
+          "synthetic concept three"
+        ],
+        "reading_coverage": {
+          "abstract": "READ",
+          "introduction": "READ",
+          "conclusion": "SKIMMED"
+        }
+      },
+      "review": {
+        "status": "CHANGES_REQUESTED",
+        "decision": "CHANGES_REQUESTED",
+        "reviewer": "fixture-reviewer",
+        "updated_at": "2026-01-02T00:00:00Z",
+        "issues": [
+          {
+            "severity": "WARNING",
+            "stage": "summary",
+            "description": "Synthetic issue for interface testing.",
+            "status": "OPEN"
+          }
+        ]
+      }
     },
     {
       "id": "fixture-formal-memory",
@@ -737,15 +899,6 @@
         "Reese Placeholder"
       ],
       "takeaway": "A fabricated proof framework composes small memory-safety arguments into a model of a concurrent runtime.",
-      "story": {
-        "background": "Concurrent runtimes combine allocators, synchronization, and unsafe low-level code whose invariants interact.",
-        "villain": "Verifying each component alone does not show that their assumptions remain true when the components share memory.",
-        "approach": "The fictional framework expresses rely-guarantee contracts and checks their composition in a theorem prover.",
-        "impact": "This adjacent-systems fixture exposes formal verification, runtime, proof, and artifact filtering.",
-        "evaluation": "A synthetic proof case study covers invented allocator and scheduler models; no real theorem or artifact is claimed.",
-        "limitations": "The imaginary proof assumes sequential consistency and omits device interaction.",
-        "phd_group_signal": "The fictional group emphasizes formal models connected to low-level runtime mechanisms."
-      },
       "mechanisms": [
         "rely-guarantee contracts",
         "compositional invariant checking",
@@ -826,7 +979,11 @@
           "type": "fixture"
         }
       ],
-      "is_fixture": true
+      "is_fixture": true,
+      "track_or_session": "Session 4B: Synthetic Verification",
+      "abstract": "[Synthetic fixture abstract] Concurrent runtimes combine allocators, synchronization, and unsafe low-level code whose invariants interact. The fictional framework expresses rely-guarantee contracts and checks their composition in a theorem prover.",
+      "summary": null,
+      "review": null
     }
   ]
 }

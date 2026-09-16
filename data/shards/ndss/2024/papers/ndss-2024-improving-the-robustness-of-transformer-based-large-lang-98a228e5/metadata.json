@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2024-improving-the-robustness-of-transformer-based-large-lang-98a228e5",
   "title": "Improving the Robustness of Transformer-based Large Language Models with Dynamic Attention",
+  "abstract": "Transformer-based models, such as BERT and GPT, have been widely adopted in natural language processing (NLP) due to their exceptional performance. However, recent studies show their vulnerability to textual adversarial attacks where the model's output can be misled by intentionally manipulating the text inputs. Despite various methods that have been proposed to enhance the model's robustness and mitigate this vulnerability, many require heavy consumption resources (e.g., adversarial training) or only provide limited protection (e.g., defensive dropout).\n\nIn this paper, we propose a novel method called dynamic attention, tailored for the transformer architecture, to enhance the inherent robustness of the model itself against various adversarial attacks. Our method requires no downstream task knowledge and does not incur additional costs. The proposed dynamic attention consists of two modules: *(i) attention rectification*, which masks or weakens the attention value of the chosen tokens, and *(ii) dynamic modeling*, which dynamically builds the set of candidate tokens. Extensive experiments demonstrate that dynamic attention significantly mitigates the impact of adversarial attacks, improving up to 33% compared to previous methods against widely used adversarial attacks. The model-level design of dynamic attention enables it to be easily combined with other defense methods (e.g., adversarial training) to further enhance the model's robustness. Furthermore, we demonstrate that dynamic attention preserves the state-of-the-art robustness space of the original model compared to other dynamic modeling methods.",
+  "abstract_source_id": "src-abstract-ndss-2024-98a228e5",
   "venue": "ndss",
   "year": 2024,
   "track_or_session": "Fall submission cycle",
@@ -210,6 +212,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2024-98a228e5",
+      "url": "https://www.ndss-symposium.org/ndss-paper/improving-the-robustness-of-transformer-based-large-language-models-with-dynamic-attention/",
+      "kind": "paper-page",
+      "title": "Improving the Robustness of Transformer-based Large Language Models with Dynamic Attention",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:18:13Z",
+      "content_hash": "sha256:d13d23bb919fcbe7f512d68987d5a86e062789535fab8410364ee6ce728f36a0",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

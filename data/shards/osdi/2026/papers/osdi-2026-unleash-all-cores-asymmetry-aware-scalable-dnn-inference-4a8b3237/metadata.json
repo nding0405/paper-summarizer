@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2026-unleash-all-cores-asymmetry-aware-scalable-dnn-inference-4a8b3237",
   "title": "Unleash All Cores: Asymmetry-Aware Scalable DNN Inference on Mobile CPUs",
+  "abstract": "Asymmetric Multiprocessing (AMP) CPUs are now central to mobile devices, but exploiting them for efficient Deep Neural Network (DNN) inference remains challenging. Naive scheduling across heterogeneous cores often triggers a performance-collapse paradox: adding LITTLE cores degrades throughput due to workload imbalance. Existing approaches rely on static partitioning, which partially mitigates imbalance but fails to adapt to runtime interference, incurs extra task acquisition overhead, and ignores core–kernel affinities—leaving substantial performance untapped.\n\nWe present SANI, a scalable, asymmetry-aware inference framework that unleashes the full potential of AMP architectures. SANI introduces three key mechanisms: (1) an affinity-aware kernel issuer that selects cluster-optimal kernels to exploit core–kernel efficiency from the outset; (2) an adaptive granularity scheduler that dynamically merges or splits tasks, balancing load under runtime interference by mapping smaller tasks to slower cores and larger ones to faster cores; and (3) an on-demand kernel switcher that efficiently transforms kernels during workload migration, preserving affinity across clusters. We implement SANI atop Arm-CL and evaluate it on five mobile SoCs. SANI reduces DNN inference latency by 17.6%–23.7% on average (up to 29.5% on some models) while lowering energy consumption by up to 39% compared to state-of-the-art baselines, scaling efficiently across both symmetric and asymmetric CPU configurations.",
+  "abstract_source_id": "src-abstract-osdi-2026-4a8b3237",
   "venue": "osdi",
   "year": 2026,
   "track_or_session": "Mobile and Edge Systems",
@@ -209,6 +211,19 @@
       "official": true,
       "supports": [
         "Official proceedings availability and canonical conference versions."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2026-4a8b3237",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/sang",
+      "kind": "paper-page",
+      "title": "Unleash All Cores: Asymmetry-Aware Scalable DNN Inference on Mobile CPUs",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:09:11Z",
+      "content_hash": "sha256:38da130f9399030cd24302895acbee88b62bf1b2951572bc72d20b2000406cce",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "atc-2025-minos-a-lightweight-and-dynamic-defense-against-traffic-286da8b9",
   "title": "Minos : A Lightweight and Dynamic Defense against Traffic Analysis in Programmable Data Planes",
+  "abstract": "Encrypted traffic analysis techniques extract valuable information from encrypted traffic and pose significant threats to user privacy. However, existing defense mechanisms against traffic analysis either incur significant bandwidth overhead and lack scalability, or fail to provide sufficient defense against evolving attacks. The emerging programmable switches provide data plane programmability with line rate packet processing to support advanced defense mechanisms.\n\nIn this work, we present Minos, a lightweight and scalable programmable switch-based defense mechanism while providing both identity anonymity and traffic anonymity. Minos comprises three key modules: the Proxy Module, the Traffic Morphing Module, and the Schedule Module. In the Proxy Module, we design encryption round compression to take advantage of the match-action pipeline of programmable switches and realize line rate packet header encryption. The Schedule Module incorporates a lightweight dynamic flow scheduling method to interleave packets from different flows, so as to simulate dummy packets without causing bandwidth and delay overhead on the data plane.\n\nThe Traffic Morphing Module further obfuscates the flows by dummy packet insertion and packet padding. Specifically, we devise a lightweight dummy packet scheduling method using priority dummy queues, minimizing bandwidth and delay overhead within the switch pipeline. We implement our defense on Tofino1 switches and adapt our method to defend Website Fingerprinting and IoT Fingerprinting. The results show that Minos can reduce the accuracy of previous attacks to less than 20% with only one-tenth of the overhead of existing defenses.",
+  "abstract_source_id": "src-abstract-atc-2025-286da8b9",
   "venue": "atc",
   "year": 2025,
   "track_or_session": "The Programmable Data Plane: SmartNICs and Beyond",
@@ -243,6 +245,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-atc-2025-286da8b9",
+      "url": "https://www.usenix.org/conference/atc25/presentation/wang-zihao",
+      "kind": "paper-page",
+      "title": "Minos : A Lightweight and Dynamic Defense against Traffic Analysis in Programmable Data Planes",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T21:59:55Z",
+      "content_hash": "sha256:525812a6f5db2dc220c3600548c1ca50deccbf6a0527fc9c2fe55e365ed866bc",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

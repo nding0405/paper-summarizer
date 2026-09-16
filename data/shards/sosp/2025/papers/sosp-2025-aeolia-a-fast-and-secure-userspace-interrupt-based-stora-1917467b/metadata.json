@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sosp-2025-aeolia-a-fast-and-secure-userspace-interrupt-based-stora-1917467b",
   "title": "Aeolia: A Fast and Secure Userspace Interrupt-Based Storage Stack",
+  "abstract": "Polling-based userspace storage stacks achieve great I/O performance. However, they cannot efficiently and securely share disks and CPUs among multiple tasks. In contrast, interrupt-based kernel stacks inherently suffer from subpar I/O performance but achieve advantages in resource sharing. We present Aeolia, a novel storage stack that achieves great I/O performance while offering efficient and secure resource sharing. Aeolia is an interrupt-based userspace storage stack, representing a new point in the design space previously considered unfeasible. Our main observation is that, contrary to conventional wisdom, polling offers only marginal disk performance improvements over interrupts. Aeolia exploits user interrupt, an emerging hardware feature commonly used for userspace IPIs, in a novel way to deliver storage interrupts directly to userspace, thereby achieving high I/O performance with direct access. Aeolia leverages the hardware intra-process isolation features and sched_ext, an eBPF-based userspace scheduling framework, to efficiently and securely share CPUs and disks among multiple tasks, challenging the common belief that these are inherent disadvantages of userspace storage stacks. The above design enables Aeolia to realize AeoFS, a high-performance library file system that securely and directly accesses disks. Our evaluation shows that Aeolia outperforms Linux by 2× and AeoFS outperforms ext4 by up to 19.1×, respectively.",
+  "abstract_source_id": "src-abstract-sosp-2025-1917467b",
   "venue": "sosp",
   "year": 2025,
   "track_or_session": null,
@@ -272,6 +274,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-sosp-2025-1917467b",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Aeolia: A Fast and Secure Userspace Interrupt-Based Storage Stack",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:19Z",
+      "content_hash": "sha256:b613162f9e7d53fac5fe410aff94d06ac71f23c6c31e2e9cc362b51e87d1bb79",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

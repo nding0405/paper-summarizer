@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2025-siguard-guarding-secure-inference-with-post-data-privacy-edd60449",
   "title": "SIGuard: Guarding Secure Inference with Post Data Privacy",
+  "abstract": "Secure inference is designed to enable encrypted machine learning model prediction over encrypted data. It will ease privacy concerns when models are deployed in Machine Learning as a Service (MLaaS). For efficiency, most of recent secure inference protocols are constructed using secure multi-party computation (MPC) techniques. They can ensure that MLaaS computes inference without knowing the inputs of users and model owners. However, MPC-based protocols do not hide information revealed from their output. In the context of secure inference, prediction outputs (i.e., inference results of encrypted user inputs) are revealed to the users. As a result, adversaries can compromise textbf{output privacy} of secure inference, i.e., launching Membership Inference Attacks (MIAs) by querying encrypted models, just like MIAs in plaintext inference.\n\nWe observe that MPC-based secure inference often yields perturbed predictions due to approximations of nonlinear functions like softmax compared to its plaintext version on identical user inputs. Thus, we evaluate whether or not MIAs can still exploit such perturbed predictions on known secure inference protocols. Our results show that secure inference remains vulnerable to MIAs. The adversary can steal membership information with high successful rates comparable to plaintext MIAs.\n\nTo tackle this open challenge, we propose textbf{SIGuard}, a framework to guard the output privacy of secure inference from being exploited by MIAs. textbf{SIGuard}'s protocol can seamlessly be integrated into existing MPC-based secure inference protocols without intruding on their computation. It proceeds with encrypted predictions outputted from secure inference, and then crafts noise for perturbing encrypted predictions without compromising inference accuracy; only the perturbed predictions are revealed to users at the end of protocol execution. textbf{SIGuard} achieves stringent privacy guarantees via a co-design of MPC techniques and machine learning. We further conduct comprehensive evaluations to find the optimal hyper-parameters for balanced efficiency and defense effectiveness against MIAs. Together, our evaluation shows textbf{SIGuard} effectively defends against MIAs by reducing the attack accuracy to be around the random guess with overhead (1.1s), occupying ~24.8% of secure inference (3.29s) on widely used ResNet34 over CIFAR-10.",
+  "abstract_source_id": "src-abstract-ndss-2025-edd60449",
   "venue": "ndss",
   "year": 2025,
   "track_or_session": "Fall submission cycle",
@@ -168,6 +170,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2025-edd60449",
+      "url": "https://www.ndss-symposium.org/ndss-paper/siguard-guarding-secure-inference-with-post-data-privacy/",
+      "kind": "paper-page",
+      "title": "SIGuard: Guarding Secure Inference with Post Data Privacy",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:20:32Z",
+      "content_hash": "sha256:1088b290e8af906e01e455af1d084622f934b30c667578cd6b7116d978092a3b",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

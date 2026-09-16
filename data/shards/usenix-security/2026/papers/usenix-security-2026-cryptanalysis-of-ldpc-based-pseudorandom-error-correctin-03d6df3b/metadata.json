@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-cryptanalysis-of-ldpc-based-pseudorandom-error-correctin-03d6df3b",
   "title": "Cryptanalysis of LDPC-Based Pseudorandom Error-Correcting Codes",
+  "abstract": "Pseudorandom error-correcting codes (PRCs), a novel cryptographic primitive recently proposed at CRYPTO 2024, are primarily applied in undetectable watermarking schemes for large generative models. However, the security of PRCs has not yet been systematically analyzed. To fill this gap, we present the first cryptanalysis of PRCs. Specifically, focusing on LDPC-PRC, the only known practical instantiation of PRCs, we propose three novel attacks that challenge its undetectability and robustness. To rigorously demonstrate the practical threat, we analyze the concrete attack complexity under realistic parameters and validate the attack effectiveness on both real-world large language models and generative image models, including DeepSeek and Stable Diffusion. Our analysis shows that the claimed security guarantees of LDPC-PRC are undermined across all practically feasible regimes. For example, our attacks can detect the presence of a watermark with overwhelming probability at a cost of 2 22 operations. Beyond attacks, we further propose three defenses: parameter recommendation, implementation suggestion, and a revised key generation function. However, PRC-based watermarking schemes still fail to achieve 128-bit security due to inherent constraints of large generative models, such as the maximum output length of large language models. Overall, our work clarifies the concrete security limits of PRCs in real-world watermarking applications.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-03d6df3b",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Applications of Cryptography 4",
@@ -176,6 +178,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-03d6df3b",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/wang-tianrui",
+      "kind": "paper-page",
+      "title": "Cryptanalysis of LDPC-Based Pseudorandom Error-Correcting Codes",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:23:32Z",
+      "content_hash": "sha256:423ae37d295091d06ef1fd31f1c5cf93ed623060c13e3d9b2389dbac7ec2ac11",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

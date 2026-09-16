@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2025-decentralized-epoch-based-f2fs-journaling-with-fine-grai-89cc04d5",
   "title": "Decentralized, Epoch-based F2FS Journaling with Fine-grained Crash Recovery",
+  "abstract": "F2FS, a log-structured filesystem, has gained widespread adoption in Android systems. However, F2FS relies on coarse-grained checkpointing for crash recovery. When triggered, this mechanism significantly degrades system performance by blocking file writes. Additionally, F2FS’s checkpointing approach may not fully recover file data and metadata to a consistent state after a crash. Given these limitations, it is crucial to design a new journaling mechanism for F2FS that provides fine-grained crash recovery. While journaling methods are well-studied for in-place-update filesystems (such as JBD2 for EXT4), directly applying these state-of-the-art techniques to F2FS - an out-of-place-update filesystem - does not yield similar benefits.\n\nIn this paper, we propose a novel journaling technique, called F2FSJ, for F2FS with ordered journal mode. Catering to the out-of-place update features of F2FS, F2FSJ incorporate several innovative designs. First, in F2FSJ, only metadata changes are journaled and committed after data flushing, by which I/O and storage overheads can be mitigated. Second, we propose a decentralized journal design by embedding journal logs into inodes, which significantly reduces lock contention and interference when recording metadata changes. Third, we propose an epoch-based approach with a novel data/control-plane decoupling mechanism, which eliminates waiting times during journal period transfers. Finally, for journal apply, we propose a fast-forward-to-latest approach to consolidate multiple small updates into one update for reducing small writes. We have implemented a fully functional prototype of F2FSJ and conducted extensive experiments. Our experimental results demonstrate that F2FSJ can effectively reduce the checkpointing time by up to 4.9x and reduce the latency by up to 35% compared with F2FS. F2FSJ is open-sourced for public access.",
+  "abstract_source_id": "src-abstract-osdi-2025-89cc04d5",
   "venue": "osdi",
   "year": 2025,
   "track_or_session": "File and Storage Systems",
@@ -159,6 +161,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2025-89cc04d5",
+      "url": "https://www.usenix.org/conference/osdi25/presentation/cui",
+      "kind": "paper-page",
+      "title": "Decentralized, Epoch-based F2FS Journaling with Fine-grained Crash Recovery",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:07:28Z",
+      "content_hash": "sha256:7bded8eb415cd2e5a9b42a766a15e68efa7f1e3429c433456ae30232d2fe86c6",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

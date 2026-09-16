@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2023-tight-auditing-of-differentially-private-machine-learnin-b2c0b59a",
   "title": "Tight Auditing of Differentially Private Machine Learning",
+  "abstract": "Auditing mechanisms for differential privacy use probabilistic means to empirically estimate the privacy level of an algorithm. For private machine learning, existing auditing mechanisms are tight: the empirical privacy estimate (nearly) matches the algorithm's provable privacy guarantee. But these auditing techniques suffer from two limitations. First, they only give tight estimates under implausible worst-case assumptions (e.g., a fully adversarial dataset). Second, they require thousands or millions of training runs to produce nontrivial statistical estimates of the privacy leakage.\n\nThis work addresses both issues. We design an improved auditing scheme that yields tight privacy estimates for natural (not adversarially crafted) datasets—if the adversary can see all model updates during training. Prior auditing works rely on the same assumption, which is permitted under the standard differential privacy threat model. This threat model is also applicable, e.g., in federated learning settings. Moreover, our auditing scheme requires only two training runs (instead of thousands) to produce tight privacy estimates, by adapting recent advances in tight composition theorems for differential privacy. We demonstrate the utility of our improved auditing schemes by surfacing implementation bugs in private machine learning code that eluded prior auditing techniques.",
+  "abstract_source_id": "src-abstract-usenix-security-2023-b2c0b59a",
   "venue": "usenix-security",
   "year": 2023,
   "track_or_session": "Differential Privacy",
@@ -217,6 +219,19 @@
       "official": true,
       "supports": [
         "authors, affiliations when published, abstract, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2023-b2c0b59a",
+      "url": "https://www.usenix.org/conference/usenixsecurity23/presentation/nasr",
+      "kind": "paper-page",
+      "title": "Tight Auditing of Differentially Private Machine Learning",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:13:18Z",
+      "content_hash": "sha256:7cae976887304cc0f5ccb7d825106673e00d5b8f67248c548bacf27f0bdc5b81",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

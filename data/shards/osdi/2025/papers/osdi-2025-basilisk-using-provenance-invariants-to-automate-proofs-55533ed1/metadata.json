@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2025-basilisk-using-provenance-invariants-to-automate-proofs-55533ed1",
   "title": "Basilisk: Using Provenance Invariants to Automate Proofs of Undecidable Protocols",
+  "abstract": "Distributed protocols are challenging to design correctly. One promising approach to improve their reliability uses formal verification to prove that a protocol satisfies a desired safety property. These proofs require finding an inductive invariant that holds initially, implies safety, and is inductive. Devising an inductive invariant is a difficult task that prior work has either automated by requiring the protocol to be expressed in a decidable but restrictive fragment of logic, or required the developer to find by a painful search process.\n\nIn this work we aim to automatically find inductive invariants without restricting the logic. We do so using two key insights. Our first insight is that many of the complex inter-host properties that prior work required the developer to provide can instead be derived using Provenance Invariants , a class of invariants that relate a local variable in a host to its provenance, i.e., the protocol step that caused it to have its current value. By tracing the provenance of one host variable back to another host, we can derive an invariant relating the two hosts' states. Second, we develop an algorithm called Atomic Sharding to derive Provenance Invariants automatically by statically analyzing the protocol's steps.\n\nWe implement these ideas in a tool called Basilisk and apply it to 16 distributed protocols. Basilisk automatically finds a set of invariants and proves their inductiveness, with little or no developer assistance. In all cases, these generated invariants are sufficient for us to prove safety without needing to identify any new inductive invariants.",
+  "abstract_source_id": "src-abstract-osdi-2025-55533ed1",
   "venue": "osdi",
   "year": 2025,
   "track_or_session": "Distributed Systems and Data Centers I",
@@ -180,6 +182,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2025-55533ed1",
+      "url": "https://www.usenix.org/conference/osdi25/presentation/zhang-tony",
+      "kind": "paper-page",
+      "title": "Basilisk: Using Provenance Invariants to Automate Proofs of Undecidable Protocols",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T21:57:22Z",
+      "content_hash": "sha256:8e72c44a156f5b6edb070e50f8d18c4c7a9e93a1f74b48ac629f72d2beeffba2",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

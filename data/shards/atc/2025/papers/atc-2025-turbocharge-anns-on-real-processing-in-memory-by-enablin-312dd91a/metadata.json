@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "atc-2025-turbocharge-anns-on-real-processing-in-memory-by-enablin-312dd91a",
   "title": "Turbocharge ANNS on Real Processing-in-Memory by Enabling Fine-Grained Per-PIM-Core Scheduling",
+  "abstract": "Approximate Nearest Neighbor Search (ANNS) plays a key role in database and AI infrastructure. It exhibits extremely high memory intensity with a ∼1:1 compute-to-memory access ratio. Commodity Processing-in-Memory (PIM) hardware such as UPMEM is promising for overcoming the memory wall in ANNS. However, its reuse of the system DDR bus prevents the CPU and PIM cores from accessing memory simultaneously. This necessitates batch scheduling in existing systems, which, in turn, leads to severe underutilization in two scenarios: 1) inter-batch, where PIM remains idle while the CPU is copying data, and 2) intra-batch, caused by uneven load distribution of PIM cores in a batch.\n\nThis paper proposes an efficient PIM-capable ANNS system named PIMANN. We observe that each PIM core has an additional, undocumented, and little-known control interface (originally used for control commands like launching PIM kernels), which could be retrofitted for fine-grained arbitration of DDR bus access. Thus, PIMANN can break the traditional batching scheduling paradigm and adopt a fine-grained, per-PIM-core scheduling paradigm. With this key idea, PIMANN introduces 1) persistent PIM kernel technique to eliminate the idle state between two batches, and 2) per-PU query dispatching technique that dispatches queries based on the real-time load of PIM cores. Experiments show that PIMANN can boost throughput by 2.4-10.4× compared to existing ANNS systems on CPU or GPU. The implementation of PIMANN is available at https://github.com/cds-ruc/PIM-ANNS .",
+  "abstract_source_id": "src-abstract-atc-2025-312dd91a",
   "venue": "atc",
   "year": 2025,
   "track_or_session": "Software-Hardware Synergy: Accelerators, Memory, and Interconnects",
@@ -243,6 +245,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-atc-2025-312dd91a",
+      "url": "https://www.usenix.org/conference/atc25/presentation/wu-puqing",
+      "kind": "paper-page",
+      "title": "Turbocharge ANNS on Real Processing-in-Memory by Enabling Fine-Grained Per-PIM-Core Scheduling",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:00:19Z",
+      "content_hash": "sha256:34e72337ef9acfe2c7ec9e30feded3c6a03a70771bf27db5ce6ae755a1254f23",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

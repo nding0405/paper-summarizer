@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-phantom-trails-practical-pre-silicon-discovery-of-transi-efb4d65e",
   "title": "Phantom Trails: Practical Pre-Silicon Discovery of Transient Data Leaks",
+  "abstract": "Transient execution vulnerabilities have affected CPUs for the better part of the decade, yet, we are still missing methods to efficiently uncover them at the design stage. Existing approaches try to find programs that leak explicitly defined secrets, sometimes including the transmission over a sidechannel, which severely restricts the space of programs that can trigger detection. As a result, current fuzzers are forced to constrain the search space using templates of known vulnerabilities, which risks overfitting. What is missing is a general detection mechanism that (1) makes it easy for the fuzzer to trigger a violation and (2) catches vulnerabilities at their root cause — similarly to sanitizers in software. In this paper, we propose Phantom Trails, an efficient yet generic method for discovering transient execution vulnerabilities. Phantom Trails relies on a fuzzer-friendly detection model that can be applied without the need for templating. Ourndetector builds on two key design choices. First, it concentrates on finding microarchitectural data leaks independently of the covert channel, thereby focusing on the core of the attack. Second, it automatically infers all secret locations from the architectural behavior of a program, making it easier for the detector to find leaks. We evaluate Phantom Trails by fuzzing the BOOM RISC-V CPU, where it finds all known speculative vulnerabilities in 24-hours, starting from an empty seed and without pre-defined templates, as well as a new Spectre variant specific to BOOM — Spectre-LoopPredictor.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-efb4d65e",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Hardware Security 1: Microarchitectures",
@@ -175,6 +177,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-efb4d65e",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/de-faveri-tron",
+      "kind": "paper-page",
+      "title": "Phantom Trails: Practical Pre-Silicon Discovery of Transient Data Leaks",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:21:05Z",
+      "content_hash": "sha256:318bbb5c637fd8385d59e9b3e9ac21adfa612cb2040c71d4e9e9b344260a7fa8",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

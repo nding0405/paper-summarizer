@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-phantom-undermining-mobile-system-availability-via-malfo-64e29be5",
   "title": "PHANTOM: Undermining Mobile System Availability via Malformed Installation Metadata",
+  "abstract": "Modern mobile operating systems rely on package metadata to manage application lifecycles, permissions, and system integration. While these platforms enforce stringent code signing and sandboxing to prevent malicious code execution, they implicitly treat package metadata as benign configuration.\n\nWe challenge this assumption by introducing PHANTOM (P ackage-based Harmful Attack via No-code Triggered OS Malfunction), a new class of attacks that weaponizes malformed installation metadata to undermine mobile system availability without executing any code. Our key insight is that package metadata crosses privilege boundaries and is parsed by highly privileged system services during installation and boot, yet lacks systematic validation and robust bounds checking. PHANTOM leverages four attack primitives—long string injection, repetitive tag construction, signature chain inflation, and indirect resource references—to trigger resource exhaustion, inter-process communication (IPC) buffer overflows, and unhandled exceptions in critical system components. Crucially, PHANTOM requires no code execution: the attack activates as soon as a crafted package reaches a valid installation path, and severe effects can recur at boot when static metadata is re-parsed.\n\nWe systematically evaluate PHANTOM across Android and iOS, testing 979 configuration fields through a two-phase methodology combining documentation-driven and source-code-driven analysis. We identify 65 exploitable attack vectors (33 in Android and 32 in iOS) capable of causing impacts ranging from partial service disruption to persistent boot loops requiring factory reset or Device Firmware Update (DFU) reflashing with complete data loss. Notably, on iOS, an enterprise-signed iPhone Application Archive (IPA) delivered through a valid installation channel such as AirDrop can trigger metadata parsing before application launch or execution trust, creating a proximal persistent denial-of-service (DoS) risk. We responsibly disclosed our findings to Google and Apple, resulting in five CVE assignments. Several of our proposed mitigations have been integrated into production systems.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-64e29be5",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Security and Privacy for Web, Mobile, and Emerging Technologies 2",
@@ -155,6 +157,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-64e29be5",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/zhang-bo",
+      "kind": "paper-page",
+      "title": "PHANTOM: Undermining Mobile System Availability via Malformed Installation Metadata",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:25:00Z",
+      "content_hash": "sha256:3dfd700e01c2e3721ecc4a0193be780c967d21c15e1bcd17e3a61e460a2f0e50",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

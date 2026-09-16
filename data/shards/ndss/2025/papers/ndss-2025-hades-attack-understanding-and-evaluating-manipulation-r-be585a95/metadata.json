@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2025-hades-attack-understanding-and-evaluating-manipulation-r-be585a95",
   "title": "HADES Attack: Understanding and Evaluating Manipulation Risks of Email Blocklists",
+  "abstract": "DNS-Based Blocklist (DNSBL) has been a longstanding, effective mitigation against malicious emails. While works have focused on evaluating the quality of such blocklists, much less is known about their adoption, end-to-end operation, and security problems. Powered by industrial datasets of nondelivery reports within 15 months, this paper first performs largescale measurements on the adoption of DNSBLs, reporting their prevalent usage by busy email servers. From an empirical study on the end-to-end operation of 29 DNSBL providers, we find they heavily rely on capture servers, concealed infrastructure to lure blind senders of spam, in generating blocklists. However, we find such capture servers can be exploited and report the HADES attack, where non-abusive email servers are deliberately injected into popular DNSBLs. Legitimate emails from victims will then be broadly rejected by their peers. Through field tests, we demonstrate the attack is effective at low costs: we successfully inject our experimental email servers into 14 DNSBLs, within a time frame ranging from as fast as three minutes to no longer than 24 hours. Practical assessment also uncovers significant attack potential targeting high-profile victims, e.g., large email service providers and popular websites. Upon responsible disclosure, five DNSBL providers have acknowledged the issue, and we also propose possible mitigation. Findings of this paper highlight the need for revisiting DNSBL security and guidelines in its operation.",
+  "abstract_source_id": "src-abstract-ndss-2025-be585a95",
   "venue": "ndss",
   "year": 2025,
   "track_or_session": "Fall submission cycle",
@@ -299,6 +301,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2025-be585a95",
+      "url": "https://www.ndss-symposium.org/ndss-paper/hades-attack-understanding-and-evaluating-manipulation-risks-of-email-blocklists/",
+      "kind": "paper-page",
+      "title": "HADES Attack: Understanding and Evaluating Manipulation Risks of Email Blocklists",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:19:41Z",
+      "content_hash": "sha256:93de6436fb519f57c4aa7e64411a212e2c66ada7bf085e8c4065f5f8e6f3ce0d",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

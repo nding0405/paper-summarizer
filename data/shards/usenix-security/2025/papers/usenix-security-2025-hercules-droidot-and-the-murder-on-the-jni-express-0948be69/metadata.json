@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-hercules-droidot-and-the-murder-on-the-jni-express-0948be69",
   "title": "Hercules Droidot and the murder on the JNI Express",
+  "abstract": "Android developers rely on native libraries to improve app performance, often overlooking the increased security risk. Executed in the same process as the app Dalvik bytecode, vulnerable libraries expose the app to low-level security threats such as access to the app's private data. Vulnerability discovery in this environment exposes several key challenges: (i) coping with complex cross-language interactions between the app running on a high-level runtime environment and the low-level code of native libraries, (ii) inference of a precise interaction model between the app and the library, and (iii) scaling to the breadth of the Android ecosystem.\n\nAutomatic harness generation for libraries is challenging, especially in mixed language environments such as Android. Existing work either slices snippets of program code, ignoring the cross-language challenges of bringing up the Android runtime environment or require heavy manual efforts on a limited selection of applications. The current best practice to discover vulnerabilities in native libraries on Android is to task a human analyst to reverse engineer both the app and the library along with manually writing a test harness.\n\nOur solution, named POIROT, automatically synthesizes fuzzing harnesses for Android native libraries without source code or manual effort. POIROT supports bidirectional JNI (Java Native Interface) interactions, mimics the app's usage of a native API, and scales to the largest apps on the Google Play Store. We evaluated POIROT on the 3,967 most popular Android apps that use native libraries and report 4,282 unique crashes affecting 934 apps. We triaged 200 crashes and identified 25 bugs affecting 16 native libraries included in 34 high-impact apps such as WeChat (with 3 CVEs assigned). All the bugs have been responsibly disclosed to the respective vendors.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-0948be69",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Web and Mobile Security",
@@ -259,6 +261,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-0948be69",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/di-bartolomeo",
+      "kind": "paper-page",
+      "title": "Hercules Droidot and the murder on the JNI Express",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:20:14Z",
+      "content_hash": "sha256:861adbcde57e0e7da1dbede19c6ce50fd953522aa8a1c12996fa4e87e7faf655",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

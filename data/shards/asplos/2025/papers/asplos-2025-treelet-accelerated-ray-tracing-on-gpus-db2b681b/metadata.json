@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2025-treelet-accelerated-ray-tracing-on-gpus-db2b681b",
   "title": "Treelet Accelerated Ray Tracing on GPUs",
+  "abstract": "Despite advances in hardware acceleration, ray tracing use in real-time rendering is limited and often lowers frame rates, leading users such as video game players to disable the feature entirely. Prior work has shown that dividing the BVH tree into smaller subtrees (treelets) and traversing all rays that visit a treelet before switching treelets can significantly reduce memory traffic on a specialized accelerator, but there are many challenges to applying treelets to GPUs. We find that a naive treelet implementation is ineffective and propose optimizations to improve performance. Virtualized Treelet Queues consist of two main components. Ray virtualization increases the number of concurrent rays in flight to create more cache reuse opportunities by terminating raygen shaders that have already issued their trace ray instruction, reclaiming CUDA cores and allowing more raygen shaders to be executed. To take advantage of the increased concurrent rays, we propose a dynamic treelet queue architecture that dynamically switches between traversal modes to increase efficiency. We also find that performing warp repacking boosts SIMT efficiency of warps in the RT unit which is crucial to achieving good traversal performance with treelet queues. Our simulations show virtualized treelet queues achieve on average 95% speedup compared to a baseline GPU with ray tracing acceleration across all scenes in LumiBench rendered with path tracing at one sample per pixel with three max bounces per ray.",
+  "abstract_source_id": "src-abstract-asplos-2025-db2b681b",
   "venue": "asplos",
   "year": 2025,
   "track_or_session": "Session 3B: Graphics",
@@ -117,6 +119,19 @@
       "official": true,
       "supports": [
         "Author-deposited archival artifact associated with the conference paper."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2025-db2b681b",
+      "url": "https://api.openalex.org/works/doi:10.1145/3676641.3716279?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Treelet Accelerated Ray Tracing on GPUs",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:04:19Z",
+      "content_hash": "sha256:fe09cc8e2439f0da518a37d6b3b29c1a03b713d2b84f168c0ba9bb02b6aef2ab",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

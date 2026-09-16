@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-mulcotaint-towards-efficient-multi-tag-dynamic-taint-ana-ea677e9e",
   "title": "MULCOTAINT: Towards Efficient Multi-tag Dynamic Taint Analysis via Hardware/Software Co-design",
+  "abstract": "Multi-tag dynamic taint analysis (M-DTA) is critical in fine-grained analysis scenarios such as vulnerability analysis. However, current software solutions have serious performance problems. Although hardware solutions are promising, they are single-tag and difficult to extend to M-DTA. We propose an efficient M-DTA framework named MULCOTAINT via hardware/software co-design. We decouple the taint analysis from the normal execution with the coprocessor architecture and solve several challenges, such as designing taint calculation as vectorized calculation, managing taint tags with page tables, and providing functionality interfaces of the taint analysis engine. We build a dataset of 32 programs with 5 types and conduct the performance evaluation and vulnerability analysis experiments. The results show that MULCOTAINT has high performance and acceptable memory usage with abilities of detailed vulnerability analysis. MULCOTAINT outperforms the software solutions (TaintRabbit and PANDA) and hardware solutions (HardTaint, RAFT, and FineDIFT). The maximum difference of overhead increase based on the respective baselines could be '1.14x vs. 4409.09x' for 'MULCOTAINT vs. PANDA', while HardTaint's average overhead increase is 19.57 times that of MULCOTAINT. Although the prototype of MULCOTAINT's hardware cost is higher than embedded-oriented works RAFT and FineDIFT, it is acceptable due to M-DTA's complex logic.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-ea677e9e",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Software Security 4",
@@ -177,6 +179,19 @@
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening",
         "prepublication PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-ea677e9e",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/qi-bing",
+      "kind": "paper-page",
+      "title": "MULCOTAINT: Towards Efficient Multi-tag Dynamic Taint Analysis via Hardware/Software Co-design",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:24:47Z",
+      "content_hash": "sha256:475842da4b648cad4f1c390242754657756724edfc238a660bea0f2253d21266",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

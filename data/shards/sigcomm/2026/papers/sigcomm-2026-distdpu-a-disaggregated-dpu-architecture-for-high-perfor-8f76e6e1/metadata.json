@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sigcomm-2026-distdpu-a-disaggregated-dpu-architecture-for-high-perfor-8f76e6e1",
   "title": "DistDPU: A Disaggregated DPU Architecture for High-Performance and Cost-Efficient AI Clouds",
+  "abstract": "AI training and inference are driving cloud networks toward terabit-per-second (Tbps) bandwidth per server, challenging the scalability and efficiency of today's cloud network architectures. A prevalent design scales bandwidth by stacking monolithic Data Processing Units (DPUs), but this approach tightly couples control and data plane resources, leading to excessive cost, power consumption, and operational complexity. We identify a fundamental control-data plane divergence in AI clouds: while data plane bandwidth demand grows rapidly, control plane demand remains largely flat due to the dominance of elephant flows. As a result, monolithic DPUs become systematically over-provisioned when used as bandwidth scaling primitives. We present DistDPU, a disaggregated DPU architecture that redefines the scaling abstraction for high-bandwidth cloud networking. DistDPU decomposes a monolithic DPU into lightweight, bandwidth-provisioning Execution Modules (EMs) and a shared, control-centric Orchestration Module (OM), enabling independent scaling of data and control plane resources. By scaling out low-cost EMs under a single OM, DistDPU exposes a unified, high-bandwidth logical DPU interface to the cloud management plane. To preserve RDMA performance and multi-tenant isolation at scale, we co-design the EM-OM functions and the inter-module fabric to minimize virtualization overhead while enforcing security and manageability invariants equivalent to those of a monolithic DPU. DistDPU has been deployed in production for two years. It serves more than 10,000 GPUs and delivers higher efficiency and strong performance on real-world AI workloads than state-of-the-art designs.",
+  "abstract_source_id": "src-abstract-sigcomm-2026-8f76e6e1",
   "venue": "sigcomm",
   "year": 2026,
   "track_or_session": "Experience Session 1: AI Datacenter Networks & Communication — Experience Paper",
@@ -443,6 +445,19 @@
       "official": true,
       "supports": [
         "official main-paper scope and track definitions"
+      ]
+    },
+    {
+      "id": "src-abstract-sigcomm-2026-8f76e6e1",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/search/match?query=DistDPU%3A%20A%20Disaggregated%20DPU%20Architecture%20for%20High-Performance%20and%20Cost-Efficient%20AI%20Clouds&fields=title,abstract",
+      "kind": "semantic-scholar",
+      "title": "DistDPU: A Disaggregated DPU Architecture for High-Performance and Cost-Efficient AI Clouds",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:59:57Z",
+      "content_hash": "sha256:dc3e519722fcd60390a3917396a11415378acee0526db636a8fee32cb36b624c",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

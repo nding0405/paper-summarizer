@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2023-relational-debugging-pinpointing-root-causes-of-performa-70345fd8",
   "title": "Relational Debugging --- Pinpointing Root Causes of Performance Problems",
+  "abstract": "Performance debugging is notoriously elusive—real-world performance problems are rarely clear-cut failures, but manifest through the accumulation of fine-grained symptoms. Oftentimes, it is challenging to determine performance anomalies—absolute measures are unreliable, as system performance is inherently relative to workloads. Existing techniques focus on identifying absolute predicates that deviate between executions, which limits their application to performance problems.\n\nThis paper introduces relational debugging, a new technique that automatically pinpoints the root causes of performance problems. The core idea is to capture and reason out relations between fine-grained runtime events. We show that relations provide immense utilities to explain performance anomalies and locate root causes. Relational debugging is highly effective with a minimal two executions (a good and a bad run), eliminating the pain point of producing and labeling many different executions required by traditional techniques.\n\nWe realize relational debugging by developing a practical tool named Perspect. Perspect directly operates on x86 binaries to accommodate real-world diagnosis scenarios. We evaluate Perspect on twelve challenging performance issues with various symptoms in Go runtime, MongoDB, Redis, and Coreutils. Perspect accurately located (or excluded) the root causes of these issues. In particular, we used Perspect to diagnose two open bugs, where developers failed to find root causes—the root causes reported by Perspect were confirmed by developers. A controlled user study shows that Perspect can speed up debugging by at least 10.87 times.",
+  "abstract_source_id": "src-abstract-osdi-2023-70345fd8",
   "venue": "osdi",
   "year": 2023,
   "track_or_session": "Make Your Bits Go Faster",
@@ -222,6 +224,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2023-70345fd8",
+      "url": "https://www.usenix.org/conference/osdi23/presentation/ren",
+      "kind": "paper-page",
+      "title": "Relational Debugging --- Pinpointing Root Causes of Performance Problems",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:06:42Z",
+      "content_hash": "sha256:85cfb7a4ef23fb9715df70da1740349c574ab35cd5616fd84b720ae80bb033aa",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

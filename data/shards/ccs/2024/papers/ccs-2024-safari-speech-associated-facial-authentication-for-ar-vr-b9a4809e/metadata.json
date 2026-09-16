@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2024-safari-speech-associated-facial-authentication-for-ar-vr-b9a4809e",
   "title": "SAFARI: Speech-Associated Facial Authentication for AR/VR Settings via Robust VIbration Signatures",
+  "abstract": "In AR/VR devices, the voice interface, serving as one of the primary AR/VR control mechanisms, enables users to interact naturally using speeches (voice commands) for accessing data, controlling applications, and engaging in remote communication/meetings. Voice authentication can be adopted to protect against unauthorized speech inputs. However, existing voice authentication mechanisms are usually susceptible to voice spoofing attacks and are unreliable under the variations of phonetic content. In this work, we propose SAFARI, a spoofing-resistant and text-independent speech authentication system that can be seamlessly integrated into AR/VR voice interfaces. The key idea is to elicit phonetic-invariant biometrics from the facial muscle vibrations upon the headset. During speech production, a user's facial muscles are deformed for articulating phoneme sounds. The facial deformations associated with the phonemes are referred to as visemes. They carry rich biometrics of the wearer's muscles, tissue, and bones, which can propagate through the head and vibrate the headset. SAFARI aims to derive reliable facial biometrics from the viseme-associated facial vibrations captured by the AR/VR motion sensors. Particularly, it identifies the vibration data segments that contain rich viseme patterns (prominent visemes) less susceptible to phonetic variations. Based on the prominent visemes, SAFARI learns on the correlations among facial vibrations of different frequencies to extract biometric representations invariant to the phonetic context. The key advantages of SAFARI are that it is suitable for commodity AR/VR headsets (no additional sensors) and is resistant to voice spoofing attacks as the conductive property of the facial vibrations prevents biometric disclosure via the air media or the audio channel. To mitigate the impacts of body motions in AR/VR scenarios, we also design a generative diffusion model trained to reconstruct the viseme patterns from the data distorted by motion artifacts. We conduct extensive experiments with two representative AR/VR headsets and 35 users under various usage and attack settings. We demonstrate that SAFARI can achieve over 96% true positive rate on verifying legitimate users while successfully rejecting different kinds of spoofing attacks with over 97% true negative rates.",
+  "abstract_source_id": "src-abstract-ccs-2024-b9a4809e",
   "venue": "ccs",
   "year": 2024,
   "track_or_session": "Cycle 1",
@@ -264,6 +266,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2024-b9a4809e",
+      "url": "https://api.openalex.org/works/doi:10.1145/3658644.3670358?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "SAFARI: Speech-Associated Facial Authentication for AR/VR Settings via Robust VIbration Signatures",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:11:56Z",
+      "content_hash": "sha256:3cb348fb484db2c07bc80986d07a56b2c5bce79b21d5d19909086a8352c28d84",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

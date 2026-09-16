@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2024-epverifier-accelerating-update-storms-verification-with-1dd3f213",
   "title": "EPVerifier: Accelerating Update Storms Verification with Edge-Predicate",
+  "abstract": "Data plane verification is designed to automatically verify network correctness by directly analyzing the data plane. Recent data plane verifiers have achieved sub-millisecond verification for per rule update by partitioning packets into equivalence classes (ECs). A large number of data plane updates can be generated in a short interval, known as update storms , due to network events such as end-to-end establishments, disruption or recovery. When it comes to update storms, however, the verification speed of current EC-based methods is often slowed down by the maintenance of their EC-based network model (EC-model).\n\nThis paper presents EPVerifier, a fast, partitioned data plane verification for update storms to further accelerate update storms verification. EPVerifier uses a novel edge-predicate-based (EP-based) local modeling approach to avoid drastic oscillations of the EC-model caused by changes in the set of equivalence classes. In addition, with local EPs, EPVerifier can achieve a partition of verification tasks by switches that EC-based methods cannot to get better parallel performance. We implement EPVerifier as an easy-to-use tool, allowing users to quickly get the appropriate verification results at any moment by providing necessary input. Both dataset trace-driven simulations and deployments in the wild show that EPVerifier achieves robustly fast update storm verification and superior parallel performance and these advantages expand with the data plane's complexity and storm size growth. The verification time of EPVerifier for an update storm of size 1M is around 10s on average, a 2-10× improvement over the state-of-the-art.",
+  "abstract_source_id": "src-abstract-nsdi-2024-1dd3f213",
   "venue": "nsdi",
   "year": 2024,
   "track_or_session": "Verification",
@@ -244,6 +246,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2024-1dd3f213",
+      "url": "https://www.usenix.org/conference/nsdi24/presentation/zhao",
+      "kind": "paper-page",
+      "title": "EPVerifier: Accelerating Update Storms Verification with Edge-Predicate",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:03:08Z",
+      "content_hash": "sha256:70a1c7b8ddc6e31d16af38fe7f395a859201e2117b5155aa702eeb385991aa61",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2023-a-generic-service-to-provide-in-network-aggregation-for-ba0424ab",
   "title": "A Generic Service to Provide In-network Aggregation for Key-value Streams",
+  "abstract": "Key-value stream aggregation is a common operation in distributed systems, which requires intensive computation and network resources. We propose a generic in-network aggregation service for key-value streams, ASK, to accelerate the aggregation operations in diverse distributed applications. ASK is a switch-host co-designed system, where the programmable switch provides a best-effort aggregation service, and the host runs a daemon to interact with applications. ASK makes in-depth optimization tailored to traffic characteristics, hardware restrictions, and network unreliable natures: it vectorizes multiple key-value tuples’ aggregation of one packet in one switch pipeline pass, which improves the per-host’s goodput; it develops a lightweight reliability mechanism for key-value stream’s asynchronous aggregation, which guarantees computation correctness; it designs a hot-key agnostic prioritization for key-skewed workloads, which improves the switch memory utilization. We prototype ASK and use it to support Spark and BytePS. The evaluation shows that ASK could accelerate pure key-value aggregation tasks by up to 155 times and big data jobs by 3-5 times, and be backward compatible with existing INA-empowered distributed training solutions with the same speedup.",
+  "abstract_source_id": "src-abstract-asplos-2023-ba0424ab",
   "venue": "asplos",
   "year": 2023,
   "track_or_session": "Session 2C: Clouds/Datacenters",
@@ -167,6 +169,19 @@
       "official": false,
       "supports": [
         "Indexed abstract used with the official technical-session context for relevance classification, plus alternate-copy and explicitly printed ancillary links."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2023-ba0424ab",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1145%2F3575693.3575708?fields=title,abstract",
+      "kind": "semantic-scholar",
+      "title": "A Generic Service to Provide In-Network Aggregation for Key-Value Streams",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T21:57:49Z",
+      "content_hash": "sha256:7d4c864f2d2b351520f7444b9b188f990f62a74431941d60916b02204aa8f69a",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

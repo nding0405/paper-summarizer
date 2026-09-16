@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-viper-strike-defeating-visual-reasoning-captchas-via-str-1865c2bb",
   "title": "VIPER Strike: Defeating Visual Reasoning CAPTCHAs via Structured Vision–Language Inference",
+  "abstract": "Visual Reasoning CAPTCHAs (VRCs) combine visual scenes with natural-language queries that demand compositional inference over objects, attributes, and spatial relations. They are increasingly deployed as a primary defense against automated bots. Existing solvers fall into two paradigms: vision-centric , which rely on template-specific detectors but fail on novel layouts, and reasoning-centric , which leverage LLMs but struggle with fine-grained visual perception. Both lack the generality needed to handle heterogeneous VRC deployments.\n\nWe present VIPER, a unified attack framework that integrates structured multi-object visual perception with adaptive LLM-based reasoning. VIPER parses visual layouts, grounds attributes to question semantics, and infers target coordinates within a modular pipeline. Evaluated on six major VRC providers (VTT, Geetest, NetEase, Dingxiang, Shumei, Xiaodun), VIPER achieves up to 93.2% success, surpassing human accuracy on most benchmarks. Compared to prior solvers, GraphNet (83.2%), Oedipus (65.8%), and the Holistic approach (89.5%), VIPER consistently outperforms all baselines. The framework further maintains robustness across alternative LLM backbones (GPT, Grok, DeepSeek, Kimi), sustaining accuracy above 90%.\n\nTo anticipate defense, we further introduce Template-Space Randomization (TSR), a lightweight strategy that perturbs linguistic templates without altering task semantics. TSR measurably reduces solver (i.e., attacker) performance. Our proposed design suggests directions for human-solvable but machine-resistant CAPTCHAs.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-1865c2bb",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Security and Privacy for Web, Mobile, and Emerging Technologies 4",
@@ -135,6 +137,19 @@
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening",
         "prepublication PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-1865c2bb",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/qi-minfeng",
+      "kind": "paper-page",
+      "title": "VIPER Strike: Defeating Visual Reasoning CAPTCHAs via Structured Vision–Language Inference",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:26:07Z",
+      "content_hash": "sha256:31b435bc4f0110571417a309b2cc8fe116ad39bfa202752a16bd817d82a6b935",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

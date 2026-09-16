@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2026-simple-is-better-multiplication-may-be-all-you-need-for-b0172f7f",
   "title": "Simple Is Better: Multiplication May Be All You Need for LLM Request Scheduling",
+  "abstract": "High-quality LLM request scheduling requires meeting two key objectives: ensuring the routed instance has KV$ to accelerate request execution, and ensuring that the workload is balanced across instances. Achieving both objectives is challenging because pursuing one may compromise the other. Current approaches use various combinators (e.g., linear combinations) to compute a scheduling score that combines indicators for the two objectives. These approaches are complex: they either require significant workload-specific hyperparameter tuning or model-hardware-aware simulator development, yet could still lead to suboptimal performance.\n\nIn this paper, we show that using a simple multiplication of two carefully chosen indicators—one KV$-aware (new prefill tokens if routed to an instance) and one load-balancing-aware (current batch size of the instance)—as the scheduling score (LMetric) can achieve both objectives simultaneously without any hyperparameter tuning. The key idea is that the simply multiplied score considers both objectives in a manner similar to a linear combination, but the original hyperparameters cancel out during comparison, so no tuning is needed to find the best parameters. The two indicators are chosen based on our analysis of LLM characteristics. Our extensive experiments show that this simple approach can reduce TTFT by 92% and 39%, and TPOT by 24% and 51%, compared to vLLM-v1 and an in-production scheduler on real-world workloads covering chatbots and coding agents. We also derive the mathematical conditions under which multiplication may fail, and find that such conditions are extremely rare in practice and can be detected (and mitigated) beforehand.\n\nLMetric has been deployed in production and canary release confirms its effectiveness.",
+  "abstract_source_id": "src-abstract-osdi-2026-b0172f7f",
   "venue": "osdi",
   "year": 2026,
   "track_or_session": "KV Cache and Long Context",
@@ -251,6 +253,19 @@
       "official": true,
       "supports": [
         "Official proceedings availability and canonical conference versions."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2026-b0172f7f",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/zhang-dingyan",
+      "kind": "paper-page",
+      "title": "Simple Is Better: Multiplication May Be All You Need for LLM Request Scheduling",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:08:57Z",
+      "content_hash": "sha256:615b0393df978eeaa1c29d4083267a078ea96c723aa8a6de042180d50086acde",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

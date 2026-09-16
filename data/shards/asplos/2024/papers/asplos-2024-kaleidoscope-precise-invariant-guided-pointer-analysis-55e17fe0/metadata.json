@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2024-kaleidoscope-precise-invariant-guided-pointer-analysis-55e17fe0",
   "title": "Kaleidoscope: Precise Invariant-Guided Pointer Analysis",
+  "abstract": "Pointer analysis techniques are crucial for many software security mitigation approaches. However, these techniques suffer from imprecision; hence, the reported points-to sets are a superset of the actual points-to sets that can possibly form during program execution. To improve the precision of pointer analysis techniques, we propose Kaleidoscope. By using an invariant-guided optimistic (IGO) pointer analysis approach, Kaleidoscope makes optimistic assumptions during the pointer analysis that it later validates at runtime. If these optimistic assumptions do not hold true at runtime, Kaleidoscope falls back to an imprecise baseline analysis, thus preserving soundness. We show that Kaleidoscope reduces the average points-to set size by 13.15× across a set of 9 applications over the current state-of-the-art pointer analysis framework. Furthermore, we demonstrate how Kaleidoscope can implement control flow integrity (CFI) to increase the security of traditional CFI policies.",
+  "abstract_source_id": "src-abstract-asplos-2024-55e17fe0",
   "venue": "asplos",
   "year": 2024,
   "track_or_session": "Session 4D: Static Analysis and Verification",
@@ -130,6 +132,19 @@
       "official": true,
       "supports": [
         "Author-deposited archival artifact associated with the conference paper."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2024-55e17fe0",
+      "url": "https://api.openalex.org/works/doi:10.1145/3620666.3651340?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Kaleidoscope: Precise Invariant-Guided Pointer Analysis",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:00:15Z",
+      "content_hash": "sha256:50ebd4abfc862ae9f720c43b78b22b1d8cefb613d130252a23ee920db57532a2",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

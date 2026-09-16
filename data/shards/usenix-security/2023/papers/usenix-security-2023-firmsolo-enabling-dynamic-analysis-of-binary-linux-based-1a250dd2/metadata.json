@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2023-firmsolo-enabling-dynamic-analysis-of-binary-linux-based-1a250dd2",
   "title": "FirmSolo: Enabling dynamic analysis of binary Linux-based IoT kernel modules",
+  "abstract": "The Linux-based firmware running on Internet of Things (IoT) devices is complex and consists of user level programs as well as kernel level code. Both components have been shown to have serious security vulnerabilities, and the risk linked to kernel vulnerabilities is particularly high, as these can lead to full system compromise. However, previous work only focuses on the user space component of embedded firmware. In this paper, we present Firm ware Sol uti o n ( FirmSolo ), a system designed to incorporate the kernel space into firmware analysis. FirmSolo features the Kernel Configuration Reverse Engineering (K.C.R.E.) process that leverages information (i.e., exported and required symbols and version magic) from the kernel modules found in firmware images to build a kernel that can load the modules within an emulated environment. This capability allows downstream analysis to broaden their scope into code executing in privileged mode.\n\nWe evaluated FirmSolo on 1,470 images containing 56,688 kernel modules where it loaded 64% of the kernel modules. To demonstrate how FirmSolo aids downstream analysis, we integrate it with two representative analysis systems; the TriforceAFL kernel fuzzer and Firmadyne, a dynamic firmware analysis tool originally devoid of kernel mode analysis capabilities. Our TriforceAFL experiments on a subset of 75 kernel modules discovered 19 previously-unknown bugs in 11 distinct proprietary modules. Through Firmadyne we confirmed the presence of these previously-unknown bugs in 84 firmware images. Furthermore, by using FirmSolo , Firmadyne confirmed a previously-known memory corruption vulnerability in five different versions of the closed-source Kcodes' NetUSB module across 15 firmware images.",
+  "abstract_source_id": "src-abstract-usenix-security-2023-1a250dd2",
   "venue": "usenix-security",
   "year": 2023,
   "track_or_session": "Kernel Analysis",
@@ -112,6 +114,19 @@
       "official": true,
       "supports": [
         "authors, affiliations when published, abstract, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2023-1a250dd2",
+      "url": "https://www.usenix.org/conference/usenixsecurity23/presentation/angelakopoulos",
+      "kind": "paper-page",
+      "title": "FirmSolo: Enabling dynamic analysis of binary Linux-based IoT kernel modules",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:11:02Z",
+      "content_hash": "sha256:56409442aef6da5034e4aff608414ebfe38a48ba0e4cf7848f7a3e04fa42cbde",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-scase-automated-secret-recovery-via-side-channel-assiste-5566dae7",
   "title": "SCASE: Automated Secret Recovery via Side-Channel-Assisted Symbolic Execution",
+  "abstract": "In recent years, there has been an explosion of research on software-based side-channel attacks, which commonly require an in-depth understanding of the victim application to extract sensitive information. With evermore leakage sources and targets, an important remaining challenge is how to automatically reconstruct secrets from side-channel traces.\n\nThis paper proposes SCASE, a novel methodology for inferring secrets from an opaque victim binary using symbolic execution, guided by a concrete side-channel trace. Our key innovation is in utilizing the memory accesses observed in the side-channel trace to effectively prune the symbolic-execution space, thus avoiding state explosion. To demonstrate the effectiveness of our approach, we introduce Athena, a proof-of-concept framework to automatically recover secrets from Intel SGX enclaves via controlled channels. We show that Athena can automatically recover the 2048-bit secret key of an enclave running RSA within 4 minutes and the 256-bit key from an RC4 KSA implementation within 5 minutes. Furthermore, we demonstrate key recovery of OpenSSL's 256-bit AES S-Box implementation and recover the inputs to OpenSSL's binary extended Euclidean algorithm. To demonstrate the versatility of our approach beyond cryptographic applications, we further recover the input to a poker-hand evaluator. In conclusion, our findings indicate that constraining symbolic execution via side-channel traces is an effective way to automate software-based side-channel attacks without requiring an in-depth understanding of the victim application.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-5566dae7",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Hardware Security 3: Side-Channel and Fault Injection Attacks",
@@ -175,6 +177,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-5566dae7",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/weber",
+      "kind": "paper-page",
+      "title": "SCASE: Automated Secret Recovery via Side-Channel-Assisted Symbolic Execution",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:21:35Z",
+      "content_hash": "sha256:27886ddb99be71c296462446d19875c03f68e154eebfef14e9f00a7dfc4197a4",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

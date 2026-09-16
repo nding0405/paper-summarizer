@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2026-typecraft-a-lightweight-data-type-profiler-with-high-res-a555efd1",
   "title": "TypeCraft: A Lightweight Data Type Profiler with High Resolution",
+  "abstract": "Improving software efficiency often involves optimizing data locality to reduce memory stalls. However, identifying such optimization opportunities, particularly in complex production software like the Linux kernel, is challenging. Existing profiling tools typically provide metrics such as cache and TLB misses for instructions, loops, functions, or heap allocations, still requiring substantial manual efforts to identify optimization opportunities. To overcome this, we introduce TypeCraft, a lightweight, high-resolution data type profiler, integrated into the Linux perf tool, that annotates individual memory access instructions with their associated data types and fields. TypeCraft provides detailed type-centric telemetry such as access counts, CPU cycle costs, cache or TLB misses, which helps identify optimization opportunities around the expensive types. Applying TypeCraft to the Linux kernel, we gain insights that guide us in implementing simple yet effective optimizations. These optimizations, including reordering structure fields and removing pointer chasing patterns, result in significant performance improvements for both benchmarks and real-world workloads.",
+  "abstract_source_id": "src-abstract-osdi-2026-a555efd1",
   "venue": "osdi",
   "year": 2026,
   "track_or_session": "Tooling Potpourri",
@@ -188,6 +190,19 @@
       "official": true,
       "supports": [
         "Official proceedings availability and canonical conference versions."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2026-a555efd1",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/li-zecheng",
+      "kind": "paper-page",
+      "title": "TypeCraft: A Lightweight Data Type Profiler with High Resolution",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:09:09Z",
+      "content_hash": "sha256:355359239bfc9b6cd6180827cce3e75d2b6c0b497dc0d4395739bf80a3418994",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

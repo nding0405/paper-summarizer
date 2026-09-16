@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2024-countdown-refcount-guided-fuzzing-for-exposing-temporal-7c9875f8",
   "title": "CountDown: Refcount-guided Fuzzing for Exposing Temporal Memory Errors in Linux Kernel",
+  "abstract": "Kernel use-after-free (UAF) bugs are severe threats to system security due to their complex root causes and high exploitability.We find that 36.1% of recent kernel UAF bugs are caused by improper uses of reference counters, dubbed refcount-related UAF bugs.Current kernel fuzzing tools based on code coverage can detect common memory errors, but none of them is aware of the root cause.As a consequence, they only trigger refcount-related UAF bugs passively and coincidentally, and may miss many deep hidden vulnerabilities.To actively trigger refcount-related UAF bugs, in this paper, we propose CountDown, a novel refcount-guided kernel fuzzer.CountDown collects diverse refcount operations from kernel executions and reshapes syscall relations based on commonly accessed refcounts.When generating user-space programs, CountDown prefers to combine syscalls that ever access the same refcounts, aiming to trigger complex refcount behaviors.It also injects refcountdecreasing and refcount-accessing syscalls to intentionally free the refcounted object and trigger invalid accesses through dangling pointers.We test CountDown on mainstream Linux kernels and compare it with popular fuzzers.On average, our tool can detect 66.1% more UAF bugs and 32.9% more KASAN reports than stateof-the-art tools.CountDown has found nine new kernel memory bugs, where two are fixed and one is confirmed.",
+  "abstract_source_id": "src-abstract-ccs-2024-7c9875f8",
   "venue": "ccs",
   "year": 2024,
   "track_or_session": "Cycle 2",
@@ -138,6 +140,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2024-7c9875f8",
+      "url": "https://api.openalex.org/works/doi:10.1145/3658644.3690320?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "CountDown: Refcount-guided Fuzzing for Exposing Temporal Memory Errors in Linux Kernel",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:09:46Z",
+      "content_hash": "sha256:b356661c54b8b9b5c6be6dcf4b5f6aed658b99cae60f13a456289fda26432c42",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

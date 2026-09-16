@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2026-transparent-domain-extensions-breaking-intel-tee-impleme-5b6dea75",
   "title": "Transparent Domain eXtensions: Breaking Intel TEE Implementations via DDR5 Memory Bus Interposition",
+  "abstract": "Trusted execution environments (TEEs) aim to offer strong privacy and integrity guarantees even in the presence of root level attackers capable of arbitrarily modifying the system's software. Recently however, there has been a pivotal shift in TEE deployment, moving TEEs from enclaves running on PC-oriented hardware to confidential virtual machines executing on server-grade CPUs. Under the hood, this change has also resulted in significant modifications to the underlying memory encryption engine, removing integrity guarantees and protections against replay attacks. While Intel's and AMD's change in TEE implementation is clearly significant and substantial, most TEE deployments appear to fail to acknowledge the difference in security guarantees, assuming a stronger security model than truly afforded by the implementation. Thus, in this work we investigate the true protection offered by Intel's and AMD's newest TEE offerings against entry-level physical side-channel attacks. We show that, contrary to popular belief, bus interposition attacks on DDR5 server memory can be constructed cheaply by hobbyists, using parts easily obtained on e-commerce websites. Next, combining our ability to monitor DDR5 bus transactions with deterministic memory encryption used by Intel's SGX and TDX as well as AMD's SEV-SNP, we are able to extract secret key material (such as attestation keys in some cases) from machines in fully trusted status. Finally, we demonstrate the implications of our attacks on multiple real world TEE deployments.",
+  "abstract_source_id": "src-abstract-sp-2026-5b6dea75",
   "venue": "sp",
   "year": 2026,
   "track_or_session": "Cycle 1",
@@ -175,6 +177,19 @@
       "official": true,
       "supports": [
         "DOI, published-order authors and affiliations, abstract, publication date, page span, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2026-5b6dea75",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "TEE.Fail: Breaking Trusted Execution Environments via DDR5 Memory Bus Interposition",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:58:06Z",
+      "content_hash": "sha256:5353b9384fd86d54ad3dc674f6041a164ea560a1a98a9c02cc1bb37e317e508e",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

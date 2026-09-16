@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sosp-2024-nope-strengthening-domain-authentication-with-succinct-p-51406d5a",
   "title": "NOPE: Strengthening Domain Authentication with Succinct Proofs",
+  "abstract": "Server authentication assures users that they are communicating with a server that genuinely represents a claimed domain. Today, server authentication relies on certification authorities (CAs), third parties who sign statements binding public keys to domains. CAs remain a weak spot in Internet security, as any faulty CA can issue a certificate for any domain. This paper describes the design, implementation, and experimental evaluation of nope, a new mechanism for server authentication that uses succinct proofs (for example, zero-knowledge proofs) to prove that a DNSSEC chain exists that links a public key to a specified domain. The use of DNSSEC dramatically reduces reliance on CAs, and the small size of the proofs enables compatibility with legacy infrastructure, including TLS servers, certificate formats, and certificate transparency. nope proofs add minimal performance overhead to clients, increasing the size of a typical certificate chain by about 10% and requiring just over 1 ms to verify. nope's core technical contributions (which generalize beyond nope) include efficient techniques for representing parsing and cryptographic operations within succinct proofs, which reduce proof generation time and memory requirements by nearly an order of magnitude.",
+  "abstract_source_id": "src-abstract-sosp-2024-51406d5a",
   "venue": "sosp",
   "year": 2024,
   "track_or_session": "Session 10: Security 13:30 - 15:30 Session Chair: Jay Lorch",
@@ -146,6 +148,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-sosp-2024-51406d5a",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "NOPE: Strengthening domain authentication with succinct proofs",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:19Z",
+      "content_hash": "sha256:b613162f9e7d53fac5fe410aff94d06ac71f23c6c31e2e9cc362b51e87d1bb79",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

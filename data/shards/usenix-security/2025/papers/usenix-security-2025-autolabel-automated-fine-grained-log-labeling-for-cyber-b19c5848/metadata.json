@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-autolabel-automated-fine-grained-log-labeling-for-cyber-b19c5848",
   "title": "AutoLabel: Automated Fine-Grained Log Labeling for Cyber Attack Dataset Generation",
+  "abstract": "High-quality labeled log datasets are essential for log-based cyber-security research, such as anomaly detection and forensic analysis. However, such datasets are scarce and generally not publicly accessible. Existing methods for generating labeled log datasets have several limitations: they are labor-intensive, require specialized expertise, provide inadequate support for multi-source logs, and produce coarse-grained labels.\n\nThis paper presents AutoLabel, which automates fine-grained log labeling by reducing the labeling problem to obtaining an accurate attack subgraph in a provenance graph. It modifies the environment, applications, and attack tools to generate auxiliary information during attacks. Then, from the resulting audit logs, it builds a provenance graph and leverages the auxiliary information to correlate application and traffic logs with audit logs, identify key attack-related edges, refine the graph to mitigate dependency explosion, and ultimately extract an attack subgraph for precise labeling.\n\nExperiments in 29 scenarios, including 25 real CVE vulnerabilities across 12 widely-used applications (spanning 5 programming languages) plus a Sandworm threat simulation by MITRE CTID, show that AutoLabel achieves 100% labeling accuracy, substantially reduces manual log-analysis effort, and produces labeled datasets in no more than 96 minutes per scenario. AutoLabel has generated over 580 datasets that could be served as benchmarks.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-b19c5848",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "System Security 1: Threat Detection, Exploitation, and Adaptive Defenses",
@@ -196,6 +198,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-b19c5848",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/peng-yihao",
+      "kind": "paper-page",
+      "title": "AutoLabel: Automated Fine-Grained Log Labeling for Cyber Attack Dataset Generation",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:18:45Z",
+      "content_hash": "sha256:dcf69e0460b7155326e32a56c72621015b459752eaf472a759927f8c00835c8d",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2023-miner-a-hybrid-data-driven-approach-for-rest-api-fuzzing-20a53a83",
   "title": "MINER: A Hybrid Data-Driven Approach for REST API Fuzzing",
+  "abstract": "In recent years, REST API fuzzing has emerged to explore errors on a cloud service. Its performance highly depends on the sequence construction and request generation. However, existing REST API fuzzers have trouble generating long sequences with well-constructed requests to trigger hard-to-reach states in a cloud service, which limits their performance of finding deep errors and security bugs. Further, they cannot find the specific errors caused by using undefined parameters during request generation. Therefore, in this paper, we propose a novel hybrid data-driven solution, named MINER, with three new designs working together to address the above limitations. First, MINER collects the valid sequences whose requests pass the cloud service's checking as the templates, and assigns more executions to long sequence templates. Second, to improve the generation quality of requests in a sequence template, MINER creatively leverages the state-of-the-art neural network model to predict key request parameters and provide them with appropriate parameter values. Third, MINER implements a new data-driven security rule checker to capture the new kind of errors caused by undefined parameters. We evaluate MINER against the state-of-the-art fuzzer RESTler on GitLab, Bugzilla, and WordPress via 11 REST APIs. The results demonstrate that the average pass rate of MINER is 23.42% higher than RESTler. MINER finds 97.54% more unique errors than RESTler on average and 142.86% more reproducible errors after manual analysis. We have reported all the newly found errors, and 7 of them have been confirmed as logic bugs by the corresponding vendors.",
+  "abstract_source_id": "src-abstract-usenix-security-2023-20a53a83",
   "venue": "usenix-security",
   "year": 2023,
   "track_or_session": "Warm and Fuzzing",
@@ -259,6 +261,19 @@
       "official": true,
       "supports": [
         "authors, affiliations when published, abstract, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2023-20a53a83",
+      "url": "https://www.usenix.org/conference/usenixsecurity23/presentation/lyu",
+      "kind": "paper-page",
+      "title": "MINER: A Hybrid Data-Driven Approach for REST API Fuzzing",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:12:01Z",
+      "content_hash": "sha256:68c8e8ff76aa46fab4f3820d05741d621ef0ff3b7b805df631e02a07d4c6c951",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

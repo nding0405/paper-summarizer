@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2026-stop-starving-or-stuffing-me-boosting-firmware-fuzzing-e-c23ec854",
   "title": "Stop Starving or Stuffing Me: Boosting Firmware Fuzzing Efficiency with On-demand Input Delivery",
+  "abstract": "Firmware fuzzing has gained attention for its ability to identify firmware bugs. While progress has been made in firmware emulation to support fuzzing, current approaches often directly integrate fuzzing tools for general software. However, unlike general software, which receives input as it encounters I/O functions, firmware input can be received asynchronously and independently of the firmware's execution, with uncertain timing and quantity. Without full awareness of firmware's exceptions, existing solutions often imprudently deliver fuzzer-generated input to the firmware in an ad-hoc way. This either overwhelms the processing function of the firmware (i.e., stuffing problem) or fails to deliver enough input data to trigger input processing functions (i.e., starving problem). In both cases, fuzzing capability is weakened. In this paper, we comprehensively investigate the input delivery issue, a unique and less studied field in firmware fuzzing. To accurately determine the optimal timing and quantity for delivering test cases, we leverage the fact that firmware has to check input availability before using any data. Therefore, we employ static and dynamic analysis to map each input processing route into three stages: input retrieval, availability check, and processing. This recovered semantic information allows the fuzzer to accurately deliver input at the availability check points within the expected length range. Since firmware may have multiple input routes, we also optimize the scheduling algorithm to reach more diverse routes. Our prototype, named FIDO, can serve as an add-on to existing firmware fuzzers to enhance their test-case delivery effectiveness. Compared to ad-hoc input delivery methods used in Fuzzware and MULTIFUZZ, FIDO increases their median code coverage by up to 115 % and 54 %, respectively. Compared to SEmu, which requires humans to manually specify input delivery points, FIDO still improves its coverage by up to 19 %. As a result of improved input delivery strategy, FIDO discovers known bugs significantly faster and also identifies five previously unknown bugs.",
+  "abstract_source_id": "src-abstract-sp-2026-c23ec854",
   "venue": "sp",
   "year": 2026,
   "track_or_session": "Cycle 2",
@@ -175,6 +177,19 @@
       "official": true,
       "supports": [
         "DOI, published-order authors and affiliations, abstract, publication date, page span, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2026-c23ec854",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Stop Starving or Stuffing Me: Boosting Firmware Fuzzing Efficiency with On-Demand Input Delivery",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:58:06Z",
+      "content_hash": "sha256:5353b9384fd86d54ad3dc674f6041a164ea560a1a98a9c02cc1bb37e317e508e",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

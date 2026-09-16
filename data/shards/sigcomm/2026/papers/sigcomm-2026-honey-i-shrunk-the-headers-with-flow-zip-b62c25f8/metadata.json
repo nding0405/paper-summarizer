@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sigcomm-2026-honey-i-shrunk-the-headers-with-flow-zip-b62c25f8",
   "title": "Honey, I Shrunk the Headers With Flow.ZIP",
+  "abstract": "Packet header overhead is a persistent source of inefficiency in packet-switched networks, reducing goodput and increasing network load. Trends like tunneling further increase this overhead, significantly impacting flow completion times. While, in principle, it is possible to compress these headers, existing methods require specialized hardware on every hop to compress/decompress the packet to/from custom header formats. In this paper, we present Flow.zip, a backward-compatible header compression mechanism designed for existing data center networks. Our solution leverages a combination of last-hop network offload and MPLS support, both of which are ubiquitous in modern data center deployments. Flow.zip overcomes scalability limitations in these components by selectively and intelligently coordinating compression for a subset of flows. Doing so, Flow.zip achieves up to 58% reduction in average flow completion time on real-world data center workloads.",
+  "abstract_source_id": "src-abstract-b62c25f8",
   "venue": "sigcomm",
   "year": 2026,
   "track_or_session": "Research Session 12: Host Networking & Packet Processing — Research Paper",
@@ -170,6 +172,19 @@
       "official": true,
       "supports": [
         "official main-paper scope and track definitions"
+      ]
+    },
+    {
+      "id": "src-abstract-b62c25f8",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/search/match?query=Honey%2C%20I%20Shrunk%20the%20Headers%20With%20Flow.ZIP&fields=title,abstract",
+      "kind": "semantic-scholar",
+      "title": "Honey, I Shrunk the Headers With Flow.ZIP",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T23:02:07Z",
+      "content_hash": "sha256:3442e43c867fbec21cd17a7bf902912029a929a23ee0863b7ace74542886a03b",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

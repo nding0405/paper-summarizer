@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2024-when-cryptography-needs-a-hand-practical-post-quantum-au-bd680a2c",
   "title": "When Cryptography Needs a Hand: Practical Post-Quantum Authentication for V2V Communications",
+  "abstract": "We tackle the atypical challenge of supporting post-quantum cryptography (PQC) and its significant overhead in safety-critical vehicle-to-vehicle (V2V) communications, dealing with strict overhead and latency restrictions within the limited radio spectrum for V2V. For example, we show that the current use of spectrum to support signature verification in V2V makes it nearly impossible to adopt PQC. Accordingly, we propose a scheduling technique for message signing certificate transmissions (which we find are currently up to 93% redundant) that learns to adaptively reduce the use of radio spectrum. In combination, we design the first integration of PQC and V2V, which satisfies the above stringent constraints given the available spectrum. Specifically, we analyze the three PQ signature algorithms selected for standardization by NIST, as well as XMSS (RFC 8391), and propose a Partially Hybrid authentication protocol—a tailored fusion of classical cryptography and PQC—for use in the V2V ecosystem during the nascent transition period we outline towards fully PQ V2V. Our provably secure protocol efficiently balances security and performance, as demonstrated experimentally with software-defined radios (USRPs), commercial V2V devices, and road traffic and V2V simulators. We show our joint transmission scheduling optimization and Partially Hybrid design are scalable and reliable under realistic conditions, adding a negligible average delay (0.39 ms per message) against the current state-of-the-art.",
+  "abstract_source_id": "src-abstract-ndss-2024-bd680a2c",
   "venue": "ndss",
   "year": 2024,
   "track_or_session": "Fall submission cycle",
@@ -147,6 +149,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2024-bd680a2c",
+      "url": "https://www.ndss-symposium.org/ndss-paper/when-cryptography-needs-a-hand-practical-post-quantum-authentication-for-v2v-communications/",
+      "kind": "paper-page",
+      "title": "When Cryptography Needs a Hand: Practical Post-Quantum Authentication for V2V Communications",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:18:56Z",
+      "content_hash": "sha256:ea2f93d0d87a7239adab75ab662993eab2c5353b96ef3de46c2346083de9e2b2",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

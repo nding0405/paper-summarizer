@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-meerkat-pushing-the-practical-limits-of-dynamic-bisectio-a789e8e1",
   "title": "Meerkat: Pushing the Practical Limits of Dynamic Bisection with PoC Mutation",
+  "abstract": "Once a Linux kernel bug is identified, the developers perform the difficult task of patching it. Triage tools such as Syz-bisect provide a form of root cause analysis called bisection, which systematically checks historical kernel commits for the presence of the bug until it determines the Bug-Introducing Commit (BiC). Unfortunately, Syz-bisect correctly identifies the BiC for only 35% of bugs. In order to improve Syz-bisect while remaining within its time and resource constraints, we identify three areas where Syz-bisect could be improved: bug deduplication, the use of all available PoCs, and PoC mutation. Our solution Meerkat is the first dynamic bisection tool to apply scalable PoC mutation, improving over Syz-bisect by 64%. Through an in-depth manual analysis of Meerkat's bisection results, we find that dynamic bisection is critically limited by bug detectors changing with kernel versions, changes near the buggy code, and unrelated bugs that block dynamic analysis. Based on the nature of these issues, we argue that Meerkat is approaching the practical limits of what is possible with dynamic bisection in the real world. Furthermore, we correct the ground truth for 13 bugs, thus improving the dataset for future research.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-a789e8e1",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Software Security 4",
@@ -134,6 +136,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-a789e8e1",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/bursey",
+      "kind": "paper-page",
+      "title": "Meerkat: Pushing the Practical Limits of Dynamic Bisection with PoC Mutation",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:24:40Z",
+      "content_hash": "sha256:b0f8c918129b9a4f4704cbaf552df4241a2ba01b2b72cf2800d8c8d3148f00c3",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

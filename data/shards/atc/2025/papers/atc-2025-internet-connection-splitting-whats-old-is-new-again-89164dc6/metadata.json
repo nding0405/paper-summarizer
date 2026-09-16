@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "atc-2025-internet-connection-splitting-whats-old-is-new-again-89164dc6",
   "title": "Internet Connection Splitting: What’s Old is New Again",
+  "abstract": "In the 1990s, many networks deployed performance-enhancing proxies (PEPs) that transparently split TCP connections to aid performance, especially over lossy, long-delay paths. Two recent developments have cast doubts on their relevance: the BBR congestion-control algorithm, which de-emphasizes loss as a congestion signal, and the QUIC transport protocol, which prevents transparent connection-splitting yet empirically matches or exceeds TCP's performance in wide deployment, using the same congestion control.\n\nIn light of this, are PEPs obsolete? This paper presents a range of emulation measurements indicating: \"probably not.\" While BBR's original 2016 version didn't benefit markedly from connection-splitting, more recent versions of BBR do and, in some cases, even more so than earlier \"loss-based\" congestion-control algorithms. We also find that QUIC implementations of the \"same\" congestion-control algorithms vary dramatically and further differ from those of Linux TCP–-frustrating head-to-head comparisons. Notwithstanding their controversial nature, our results suggest that PEPs remain relevant to Internet performance for the foreseeable future.",
+  "abstract_source_id": "src-abstract-atc-2025-89164dc6",
   "venue": "atc",
   "year": 2025,
   "track_or_session": "Network Performance & Protocols: From Space to VR",
@@ -138,6 +140,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-atc-2025-89164dc6",
+      "url": "https://www.usenix.org/conference/atc25/presentation/yuan",
+      "kind": "paper-page",
+      "title": "Internet Connection Splitting: What’s Old is New Again",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T21:59:48Z",
+      "content_hash": "sha256:23aa1d1872778fbecc417390ced67a0b6339a1c465f191c7b5a77bcde3872b86",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

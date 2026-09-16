@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2024-fast-rs-iop-multivariate-polynomial-commitments-and-veri-d5150494",
   "title": "Fast RS-IOP Multivariate Polynomial Commitments and Verifiable Secret Sharing",
+  "abstract": "Supporting proofs of evaluations, polynomial commitment schemes (PCS) are crucial in secure distributed systems. Schemes based on fast Reed–Solomon interactive oracle proofs (RS-IOP) of proximity have recently emerged, offering transparent setup, plausible post-quantum security, efficient operations, and, notably, sublinear proof size and verification. Manifesting a new paradigm, PCS with one-to-many proof can enhance the performance of (asynchronous) verifiable secret sharing ((A)VSS), a cornerstone in distributed computing, for proving multiple evaluations to multiple verifiers. Current RS-IOP-based multivariate PCS, including HyperPlonk (Eurocrypt '23) and Virgo (S&P '20), however, only offer quasi-linear prover complexity in the polynomial size.\n\nWe propose PolyFRIM, a fast RS-IOP-based multivariate PCS with optimal linear prover complexity, 5-25× faster than prior arts while ensuring competent proof size and verification. Heeding the challenging absence of FFT circuits for multivariate evaluation, PolyFRIM surpasses Zhang et al.'s (Usenix Sec. '22) one-to-many univariate PCS, accelerating proving by 4-7× and verification by 2-4× with 25% shorter proof. Leveraging PolyFRIM, we propose an AVSS scheme FRISS with a better efficiency tradeoff than prior arts from multivariate PCS, including Bingo (Crypto '23) and Haven (FC '21).",
+  "abstract_source_id": "src-abstract-usenix-security-2024-d5150494",
   "venue": "usenix-security",
   "year": 2024,
   "track_or_session": "Cryptographic Protocols II",
@@ -196,6 +198,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2024-d5150494",
+      "url": "https://www.usenix.org/conference/usenixsecurity24/presentation/zhang-zongyang",
+      "kind": "paper-page",
+      "title": "Fast RS-IOP Multivariate Polynomial Commitments and Verifiable Secret Sharing",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:15:12Z",
+      "content_hash": "sha256:d20745d16a7c3a143033aef82cda330612050f581ed02ae5cbfb9c9f158b5012",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

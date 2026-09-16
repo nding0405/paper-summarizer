@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2026-vboids-taming-chaos-via-coarse-grained-scheduling-abstra-e4d86874",
   "title": "vBOIDs: Taming Chaos via Coarse-Grained Scheduling Abstraction for Containers",
+  "abstract": "Today’s high-density container deployment often descends into scheduling chaos, where fine-grained, per-thread scheduling decisions lead to thrashing and unpredictable performance. We present vBOIDS, a container scheduling system that tames this chaos with two key techniques: a coarse-grained BOID abstraction and a two-level balancing scheme. The BOID abstraction groups tasks into larger units to dramatically reduce scheduling churn, while two-level balancing coordinates global and local scheduling to ensure efficient resource utilization without oscillation. Our evaluation shows that vBOIDS improves the throughput of containerized microservices with thousands of threads by up to 3× under highly dynamic workloads compared with existing approaches, while incurring minimal overhead and yielding negligible performance impact even in high parallel workloads. vBOIDS effectively restores order to container scheduling, delivering high performance even under chaotic conditions.",
+  "abstract_source_id": "src-abstract-osdi-2026-e4d86874",
   "venue": "osdi",
   "year": 2026,
   "track_or_session": "Virtualization and Live Migration",
@@ -167,6 +169,19 @@
       "official": true,
       "supports": [
         "Official proceedings availability and canonical conference versions."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2026-e4d86874",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/manakkal",
+      "kind": "paper-page",
+      "title": "vBOIDs: Taming Chaos via Coarse-Grained Scheduling Abstraction for Containers",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:09:14Z",
+      "content_hash": "sha256:fa727a83e77039d9586127b7f8ab503cb1f8724dace23d340f43ce69ab0dc9ac",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

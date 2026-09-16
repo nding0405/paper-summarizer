@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sigcomm-2026-turbo-efficiently-serving-long-context-large-language-mo-32ca8c68",
   "title": "Turbo: Efficiently Serving Long-Context Large Language Models with In-Network Aggregation",
+  "abstract": "LLM supporting long contexts faces a critical memory bottleneck due to the linear growth of KV cache. Distributing the storage across multiple GPUs alleviates this burden but introduces significant communication overhead or traffic incast, especially during the decoding phase. We propose Turbo, a first-of-its-kind in-network aggregation system that accelerates long-context inference by offloading query broadcast and attention aggregation to switches. We address three key challenges to map complex attention mechanisms onto restricted switch hardware: (i) To bypass the switch's inability to buffer global states or perform complex operations, we devise online table-based aggregation, which decomposes global reduction into pairwise operations and approximates nonlinear functions via lookup tables. (ii) To circumvent the restriction on retroactive state access in RMT pipelines, we introduce a rolling forward scheme that propagates states to enable cross-stage updates. (iii) To mitigate aggregation stragglers caused by topology-induced load imbalance, we construct a load-aware aggregation tree that optimizes workload distribution. Evaluations on a Tofino2-based testbed show that Turbo reduces end-to-end inference latency by up to 37%. Large-scale simulations on NS-3 demonstrate that Turbo significantly outperforms state-of-the-art baselines in both inference latency and network traffic reduction with negligible accuracy loss.",
+  "abstract_source_id": "src-abstract-32ca8c68",
   "venue": "sigcomm",
   "year": 2026,
   "track_or_session": "Research Session 5: In-Network Aggregation for ML — Research Paper",
@@ -275,6 +277,19 @@
       "official": true,
       "supports": [
         "official main-paper scope and track definitions"
+      ]
+    },
+    {
+      "id": "src-abstract-32ca8c68",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/search/match?query=Turbo%3A%20Efficiently%20Serving%20Long-Context%20Large%20Language%20Models%20with%20In-Network%20Aggregation&fields=title,abstract",
+      "kind": "semantic-scholar",
+      "title": "Turbo: Efficiently Serving Long-Context Large Language Models with In-Network Aggregation",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T23:09:02Z",
+      "content_hash": "sha256:3c1ad2264b33f35e95f0e01d353830ca769fd0fa067016776454737a8a8f129c",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

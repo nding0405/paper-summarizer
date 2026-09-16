@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2024-intfail-using-spurious-vc-interrupts-to-break-amd-sev-sn-d07842c2",
   "title": "INTFAIL: Using Spurious #VC Interrupts to Break AMD SEV-SNP",
+  "abstract": "AMD SEV-SNP offers VM-level trusted execution environments (TEEs) to protect the confidentiality and integrity for sensitive cloud workloads from untrusted hypervisor controlled by the cloud provider. AMD introduced a new exception, #VC, to facilitate the communication between the VM and the untrusted hypervisor. We present WeSee attack, where the hypervisor injects malicious #VC into a victim VM’s CPU to compromise the security guarantees of AMD SEV-SNP. Specifically, WeSee injects interrupt number 29, which delivers a #VC exception to the VM who then executes the corresponding handler that performs data and register copies between the VM and the hypervisor. WeSee shows that using well-crafted #VC injections, the attacker can induce arbitrary behavior in the VM. Our case-studies demonstrate that WeSee can leak sensitive VM information (kTLS keys for NGINX), corrupt kernel data (firewall rules), and inject arbitrary code (launch a root shell from the kernel space).",
+  "abstract_source_id": "src-abstract-sp-2024-d07842c2",
   "venue": "sp",
   "year": 2024,
   "track_or_session": "Winter cycle",
@@ -159,6 +161,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2024-d07842c2",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "WeSee: Using Malicious #VC Interrupts to Break AMD SEV-SNP",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:32Z",
+      "content_hash": "sha256:be7515012a8c1ea1211f38a27ea4d2aa9cff6e0faac9417a2f58b1d64e91280e",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

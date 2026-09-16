@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2026-performance-predictability-in-heterogeneous-memory-f0b925ed",
   "title": "Performance Predictability in Heterogeneous Memory",
+  "abstract": "Heterogeneous memory combining DRAM and CXL exhibits variable performance, yet existing metrics correlate weakly with actual slowdown. We present CAMP, a principled framework for predicting CXL-induced slowdown. Our key insight is that a DRAM run (plus a CXL run for bandwidth-bound workloads) exposes the causal microarchitectural pressure points where CXL latency translates into additional processor stall cycles. CAMP captures these signals using 12 performance counters to analytically decompose slowdown into three orthogonal components: demand reads, cache/prefetching, and stores. CAMP also introduces a closed-form model for software-based weighted interleaving that predicts performance across DRAM--CXL ratios. Across 265 workloads on NUMA and three CXL devices, CAMP achieves 91--97% prediction accuracy within 10% absolute error. We demonstrate that these models enable practical system policies, including ''Best-shot'' interleaving and colocated workload placement, improving performance by up to 21% and 23% over existing tiering and colocation approaches.",
+  "abstract_source_id": "src-abstract-asplos-2026-f0b925ed",
   "venue": "asplos",
   "year": 2026,
   "track_or_session": "Session 8C: Memory Hierarchy & Performance",
@@ -167,6 +169,19 @@
       "official": false,
       "supports": [
         "Indexed abstract used for strict relevance classification and indexed arXiv identifier where available."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2026-f0b925ed",
+      "url": "https://api.openalex.org/works/doi:10.1145/3779212.3790201?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Performance Predictability in Heterogeneous Memory",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:05:40Z",
+      "content_hash": "sha256:ea7542ccdac6155fb4d22ca11ee0b271d8e69fa37ab750495505a55fad6d51a1",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2026-hcdn-coordinated-stream-scheduling-for-cost-effective-li-d00d1191",
   "title": "HCDN: Coordinated Stream Scheduling for Cost-Effective Live Video Delivery",
+  "abstract": "Live video streaming is a major source of today's Internet traffic, yet its delivery through CDNs incurs massive bandwidth costs from both CDN edge traffic (to users) and internal traffic (between CDN nodes). To understand these costs, we conduct a large-scale measurement study of ByteDance’s global in-production live CDN. It reveals two opportunities to reduce CDN bandwidth cost: (i) lowering average edge price by incorporating cost-effective best-effort infrastructure into the CDN edge, and (ii) improving CDN tree efficiency via finer-grained stream scheduling, accounting for detailed stream characteristics such as non-uniform popularity, heterogeneous stream formats, which amplify internal traffic on cache misses in our prior CDN. To exploit these opportunities into a practical system while addressing challenges in scheduling strategy management and user quality of experience, we design, implement, and deploy HCDN. It comprises (i) an augmented CDN edge with cost-effective best-effort nodes and multihomed nodes , (ii) the OpenTiga scheduling framework, which coordinates strategies through modular orchestration and proactive client-side Quality-of-Experience (QoE) assurance, and (iii) a set of redirection-based stream scheduling strategies. Over four years of incremental deployment across more than 500 edge clusters, HCDN reduces relative bandwidth cost by 36% while incurring modest overhead and preserving QoE. We further report the deployment experience of HCDN.",
+  "abstract_source_id": "src-abstract-nsdi-2026-d00d1191",
   "venue": "nsdi",
   "year": 2026,
   "track_or_session": "Distributed Data Systems",
@@ -370,6 +372,19 @@
         "proceedings page range and page count",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2026-d00d1191",
+      "url": "https://www.usenix.org/conference/nsdi26/presentation/wang-liying",
+      "kind": "paper-page",
+      "title": "HCDN: Coordinated Stream Scheduling for Cost-Effective Live Video Delivery",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:05:24Z",
+      "content_hash": "sha256:1250f27efb0b381ead576616c0bda5cba170af1989db28c84c7dcec133d0950e",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

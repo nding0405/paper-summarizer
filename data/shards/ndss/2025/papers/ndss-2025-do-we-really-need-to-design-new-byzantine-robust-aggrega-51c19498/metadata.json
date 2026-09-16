@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2025-do-we-really-need-to-design-new-byzantine-robust-aggrega-51c19498",
   "title": "Do We Really Need to Design New Byzantine-robust Aggregation Rules?",
+  "abstract": "Federated learning (FL) allows multiple clients to collaboratively train a global machine learning model through a server, without exchanging their private training data. However, the decentralized aspect of FL makes it susceptible to poisoning attacks, where malicious clients can manipulate the global model by sending altered local model updates. To counter these attacks, a variety of aggregation rules designed to be resilient to Byzantine failures have been introduced. Nonetheless, these methods can still be vulnerable to sophisticated attacks or depend on unrealistic assumptions about the server. In this paper, we demonstrate that there is no need to design new Byzantine-robust aggregation rules; instead, FL can be secured by enhancing the robustness of well-established aggregation rules. To this end, we present FoundationFL, a novel defense mechanism against poisoning attacks. FoundationFL involves the server generating synthetic updates after receiving local model updates from clients. It then applies existing Byzantine-robust foundational aggregation rules, such as Trimmed-mean or Median, to combine clients' model updates with the synthetic ones. We theoretically establish the convergence performance of FoundationFL under Byzantine settings. Comprehensive experiments across several real-world datasets validate the efficiency of our FoundationFL method.",
+  "abstract_source_id": "src-abstract-ndss-2025-51c19498",
   "venue": "ndss",
   "year": 2025,
   "track_or_session": "Fall submission cycle",
@@ -189,6 +191,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2025-51c19498",
+      "url": "https://www.ndss-symposium.org/ndss-paper/do-we-really-need-to-design-new-byzantine-robust-aggregation-rules/",
+      "kind": "paper-page",
+      "title": "Do We Really Need to Design New Byzantine-robust Aggregation Rules?",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:19:29Z",
+      "content_hash": "sha256:d2ee1f99bf0fa4a34f02dc0419e04cc5bc14f3175639f00727b3a110fc8e8786",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "eurosys-2024-validating-database-system-isolation-level-implementatio-7b6d1dec",
   "title": "Validating Database System Isolation Level Implementations with Version Certificate Recovery",
+  "abstract": "Transactions are a key feature of database systems and isolation levels specify the behavior of concurrently executing transactions. Ensuring their correct behavior is crucial. Recently, many isolation anomalies have been found in production database systems. Checkers can be used to validate that a particular execution conforms to a desired isolation level. However, state-of-the-art checkers cannot handle predicate operations, which are both common in real-world workloads and essential for distinguishing between the repeatable read and serializable isolation levels. In this work, we address this issue by proposing an efficient white-box checker, Emme. Our key idea is to use information that is easily provided by database systems to efficiently check the isolation level of a given transaction history. We present version certificate recovery, a method of recovering the version order and each operation's version from the database system under test. For efficiency, we also propose the concept of an expected serialization order, which obviates the need to define and recover a version certificate for many serializable concurrency control protocols. We have implemented version certificate recovery for three widely used database systems---PostgreSQL, CockroachDB, and TiDB. We demonstrate that Emme is 1.2-3.6× faster than Elle, a state-of-the-art checker. Using the expected serialization order, we obtain a further speedup of 34-430× compared to Emme when checking histories containing predicate operations. We show that our approach can identify invalid histories that cannot be detected by Elle and also show that it can find realistic bugs purposely introduced by an engineer.",
+  "abstract_source_id": "src-abstract-eurosys-2024-7b6d1dec",
   "venue": "eurosys",
   "year": 2024,
   "track_or_session": null,
@@ -146,6 +148,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-eurosys-2024-7b6d1dec",
+      "url": "https://api.openalex.org/works/doi:10.1145/3627703.3650080?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Validating Database System Isolation Level Implementations with Version Certificate Recovery",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:18:58Z",
+      "content_hash": "sha256:34c30e3246973f92dca14c3049c5502ecaf94a6bf61f011e10b61efe0673cd9f",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

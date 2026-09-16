@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-mbfuzzer-a-multi-party-protocol-fuzzer-for-mqtt-brokers-9ce279d5",
   "title": "MBFuzzer: A Multi-Party Protocol Fuzzer for MQTT Brokers",
+  "abstract": "MQTT is a multi-party communication protocol widely used in IoT environments, where MQTT brokers act as servers that connect with numerous devices. Consequently, any flaws in brokers will seriously impact all participants. Given the success of fuzzing techniques in finding bugs in programs, existing fuzzing works targeting MQTT brokers face the limitation of insufficient fuzzing input space because they all adopt a two-party fuzzing model. Accordingly, the code responsible for handling multi-party communication will not be examined. Moreover, existing fuzzers focus on either memory corruption bugs or logic errors without considering whether a broker implementation is specification-compliant.\n\nIn this paper, we design a black-box fuzzing approach, MBFuzzer, for brokers to address the above limitations. We first design a multi-party fuzzing framework containing two fuzzing input senders to facilitate the exploration of code space that handles multi-party communication. To improve fuzzing efficiency, we design a message priority scheduler and a model based on Petri net to guide test case generation and coordinate the message sending of the two senders, respectively. We leverage differential testing to identify non-compliance bugs and design an LLM-based non-compliance bug analysis method to automatically analyze the bug report and validate whether it is a non-compliance bug. We implemented a prototype MBFuzzer and evaluated it with six mainstream MQTT brokers. MBFuzzer successfully identified 73 bugs including 20 memory corruption and 53 non-compliance bugs with 11 CVEs assigned. The comparison with state-of-the-art fuzzers indicates that MBFuzzer outperforms them in both code coverage and bug finding capabilities.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-9ce279d5",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Software Security 3: Fuzzing",
@@ -196,6 +198,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-9ce279d5",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/song-xiangpu",
+      "kind": "paper-page",
+      "title": "MBFuzzer: A Multi-Party Protocol Fuzzer for MQTT Brokers",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:20:42Z",
+      "content_hash": "sha256:4d6645d4d6633c19e04cce0bd7766da045749bd0b9691aeebec456fb2758d7b6",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

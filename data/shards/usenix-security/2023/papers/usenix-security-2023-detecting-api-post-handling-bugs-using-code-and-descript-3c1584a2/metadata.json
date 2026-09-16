@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2023-detecting-api-post-handling-bugs-using-code-and-descript-3c1584a2",
   "title": "Detecting API Post-Handling Bugs Using Code and Description in Patches",
+  "abstract": "Program APIs must be used in accordance with their specifications. API post-handling (APH) is a common type of specification that deals with APIs' return checks, resource releases, etc. Violation of APH specifications (aka, APH bug) could cause serious security problems, including memory corruption, resource leaks, etc. API documents, as a good source of APH specifications, are often analyzed to extract specifications for APH bug detection. However, documents are not always complete, which makes many bugs fail to be detected. In this paper, we find that patches could be another good source of APH specifications. In addition to the code differences introduced by patches, patches also contain descriptions, which help to accurately extract APH specifications. In order to make bug detection accurate and efficient, we design API specification-based graph for reducing the number of paths to be analyzed and perform partial path-sensitive analysis. We implement a prototype named APHP (API Post-Handling bugs detector using Patches) for static detection of APH bugs. We evaluate APHP on four popular open-source programs, including the Linux kernel, QEMU, Git and Redis, and detect 410 new bugs, outperforming existing state-of-the-art work. 216 of the bugs have been confirmed by the maintainers, and 2 CVEs have been assigned. Some bugs have existed for more than 12 years. Till now, many submitted patches have been backported to long-term stable versions of the Linux kernel.",
+  "abstract_source_id": "src-abstract-usenix-security-2023-3c1584a2",
   "venue": "usenix-security",
   "year": 2023,
   "track_or_session": "Entomology",
@@ -112,6 +114,19 @@
       "official": true,
       "supports": [
         "authors, affiliations when published, abstract, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2023-3c1584a2",
+      "url": "https://www.usenix.org/conference/usenixsecurity23/presentation/lin",
+      "kind": "paper-page",
+      "title": "Detecting API Post-Handling Bugs Using Code and Description in Patches",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:10:29Z",
+      "content_hash": "sha256:1af06dee20596d03b3e59f2410a1dc9da96aa959b89463235f066f5f5ce3ab84",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

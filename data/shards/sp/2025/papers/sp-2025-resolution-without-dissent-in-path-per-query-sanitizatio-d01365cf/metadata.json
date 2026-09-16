@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2025-resolution-without-dissent-in-path-per-query-sanitizatio-d01365cf",
   "title": "Resolution Without Dissent: In-Path Per-Query Sanitization to Defeat Surreptitious Communication Over DNS",
+  "abstract": "As one of the most fundamental Internet components, DNS has served various purposes and thus DNS traffic usually exhibits diverse patterns and is probably the least blocked by network administrators. These make DNS an attractive channel for attackers to establish surreptitious communications (i.e., DNS tunneling). In fact, such a surreptitious channel has been widely abused for command and control (C2) and enterprise-unapproved virtual private network (VPN). Existing approaches exclusively rely on the statistical characteristics of a sequence of DNS queries to detect DNS tunneling. Unfortunately, these approaches by nature cannot guarantee zero data leakage and can be evaded when the stolen data is exfiltrated over many root domains. As a result, state-of-the-art approaches are more suitable for threat investigation and forensic analysis, but not for DNS tunneling prevention. To fill this protection gap, we propose TunTight, the first system that is able to achieve in-path per-query DNS tunneling prevention. Our key insight is that DNS tunneling domains have unique characteristics in their authoritative nameservers, domain usage, and domain name patterns. Based on these characteristics, a set of unique features are defined and extracted which are fed to a machine learning model. To validate the efficacy of TunTight, we integrate it into the cloud backend of an enterprise firewall product by one of the largest security vendors. In our two-months real-world deployment, TunTight has successfully detected 349 confirmed tunnels at the very first query with negligible false positives and negatives. We also conduct the first large-scale study of DNS tunneling activities in the wild. One interesting finding is that most DNS tunneling traffic in enterprise networks come from public tunneling tools and enterprise-unapproved VPN services.",
+  "abstract_source_id": "src-abstract-sp-2025-d01365cf",
   "venue": "sp",
   "year": 2025,
   "track_or_session": "Cycle 1",
@@ -112,6 +114,19 @@
       "official": true,
       "supports": [
         "DOI, authors, affiliations, abstract, publication date, pages, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2025-d01365cf",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Resolution Without Dissent: In-Path Per-Query Sanitization to Defeat Surreptitious Communication Over DNS",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:52Z",
+      "content_hash": "sha256:b15ce02bcc49da611fdd791ecc56741e7d91d84154b58c1a7f72a5c6902e6e46",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

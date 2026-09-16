@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2024-sprinter-speeding-up-high-fidelity-crawling-of-the-moder-67149163",
   "title": "Sprinter: Speeding Up High-Fidelity Crawling of the Modern Web",
+  "abstract": "Crawling the web at scale forms the basis of many important systems: web search engines, smart assistants, generative AI, web archives, and so on. Yet, the research community has paid little attention to this workload in the last decade. In this paper, we highlight the need to revisit the notion that web crawling is a solved problem. Specifically, to discover and fetch all page resources dependent on JavaScript and modern web APIs, crawlers today have to employ compute-intensive web browsers. This significantly inflates the scale of the infrastructure necessary to crawl pages at high throughput.\n\nTo make web crawling more efficient without any loss of fidelity, we present Sprinter, which combines browser-based and browserless crawling to get the best of both. The key to Sprinter’s design is our observation that crawling workloads typically include many pages from every site that is crawled and, unlike in traditional user-facing page loads, there is significant potential to reuse client-side computations across pages. Taking advantage of this property, Sprinter crawls a small, carefully chosen, subset of pages on each site using a browser, and then efficiently identifies and exploits opportunities to reuse the browser’s computations on other pages. Sprinter was able to crawl a corpus of 50,000 pages 5x faster than browser-based crawling, while still closely matching a browser in the set of resources fetched.",
+  "abstract_source_id": "src-abstract-nsdi-2024-67149163",
   "venue": "nsdi",
   "year": 2024,
   "track_or_session": "Wide-Area and Edge",
@@ -139,6 +141,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2024-67149163",
+      "url": "https://www.usenix.org/conference/nsdi24/presentation/goel",
+      "kind": "paper-page",
+      "title": "Sprinter: Speeding Up High-Fidelity Crawling of the Modern Web",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:03:45Z",
+      "content_hash": "sha256:1411d90775651e3dcfe8b0b5de90238c3325bbb864006c2618d0b560550a43d6",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

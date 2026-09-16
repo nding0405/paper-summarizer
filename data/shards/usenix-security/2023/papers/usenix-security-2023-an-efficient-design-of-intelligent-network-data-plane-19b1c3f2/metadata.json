@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2023-an-efficient-design-of-intelligent-network-data-plane-19b1c3f2",
   "title": "An Efficient Design of Intelligent Network Data Plane",
+  "abstract": "Deploying machine learning models directly on the network data plane enables intelligent traffic analysis at line-speed using data-driven models rather than predefined protocols. Such a capability, referred to as Intelligent Data Plane (IDP), may potentially transform a wide range of networking designs. The emerging programmable switches provide crucial hardware support to realize IDP. Prior art in this regard is divided into two major categories: (i) focusing on extract useful flow information from the data plane, while placing the learning-based traffic analysis on the control plane; and (ii) taking a step further to embed learning models into the data plane, while failing to use flow-level features that are critical to achieve high learning accuracies. In this paper, we propose NetBeacon to advance the state-of-the-art in both model accuracy and model deployment efficiency. In particular, NetBeacon proposes a multi-phase sequential model architecture to perform dynamic packet analysis at different phases of a flow as it proceeds, by incorporating flow-level features that are computable at line-speed to boost learning accuracies. Further, NetBeacon designs efficient model representation mechanisms to address the table entry explosion problem when deploying tree-based models on the network data plane. Finally, NetBeacon hardens its scalability for handling concurrent flows via multiple tightly-coupled designs for managing stateful storage used to store per-flow state. We implement a prototype of NetBeacon and extensively evaluate its performance over multiple traffic analysis tasks.",
+  "abstract_source_id": "src-abstract-usenix-security-2023-19b1c3f2",
   "venue": "usenix-security",
   "year": 2023,
   "track_or_session": "Networks and Security",
@@ -154,6 +156,19 @@
       "official": true,
       "supports": [
         "authors, affiliations when published, abstract, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2023-19b1c3f2",
+      "url": "https://www.usenix.org/conference/usenixsecurity23/presentation/zhou-guangmeng",
+      "kind": "paper-page",
+      "title": "An Efficient Design of Intelligent Network Data Plane",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:09:41Z",
+      "content_hash": "sha256:7ce77db38e4ace6964eff7c8e09968122e80698abe3407656035378e45810ee8",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

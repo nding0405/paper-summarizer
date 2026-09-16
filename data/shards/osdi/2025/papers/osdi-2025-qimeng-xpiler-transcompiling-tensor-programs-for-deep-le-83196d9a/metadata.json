@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2025-qimeng-xpiler-transcompiling-tensor-programs-for-deep-le-83196d9a",
   "title": "QiMeng-Xpiler: Transcompiling Tensor Programs for Deep Learning Systems with a Neural-Symbolic Approach",
+  "abstract": "Heterogeneous deep learning systems (DLS) such as GPUs and ASICs have been widely deployed in industrial data centers, which requires to develop multiple low-level tensor programs for different platforms. An attractive solution to relieve the programming burden is to transcompile the legacy code of one platform to others. However, current transcompilation techniques struggle with either tremendous manual efforts or functional incorrectness, rendering “Write Once, Run Anywhere” of tensor programs an open question.\n\nWe propose a novel transcompiler, i.e., QiMeng-Xpiler, for automatically translating tensor programs across DLS via both large language models (LLMs) and symbolic program synthesis, i.e., neural-symbolic synthesis. The key insight is leveraging the powerful code generation ability of LLM to make costly search-based symbolic synthesis computationally tractable. Concretely, we propose multiple LLM-assisted compilation passes via pre-defined meta-prompts for program transformation. During each program transformation, efficient symbolic program synthesis is employed to repair incorrect code snippets with a limited scale. To attain high performance, we propose a hierarchical auto-tuning approach to systematically explore both the parameters and sequences of transformation passes. Experiments on 4 DLS with distinct programming interfaces, i.e., Intel DL Boost with VNNI, NVIDIA GPU with CUDA, AMD MI with HIP, and Cambricon MLU with BANG, demonstrate that QiMeng-Xpiler correctly translates different tensor programs at the accuracy of 95% on average.",
+  "abstract_source_id": "src-abstract-osdi-2025-83196d9a",
   "venue": "osdi",
   "year": 2025,
   "track_or_session": "AI + Systems I",
@@ -369,6 +371,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2025-83196d9a",
+      "url": "https://www.usenix.org/conference/osdi25/presentation/dong",
+      "kind": "paper-page",
+      "title": "QiMeng-Xpiler: Transcompiling Tensor Programs for Deep Learning Systems with a Neural-Symbolic Approach",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:07:45Z",
+      "content_hash": "sha256:38d69bce7e156f578da9b55d500a8371d5e9d1aa7d88e734ca402e0fd6ce7073",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2025-unizk-accelerating-zero-knowledge-proof-with-unified-har-5becf0ce",
   "title": "UniZK: Accelerating Zero-Knowledge Proof with Unified Hardware and Flexible Kernel Mapping",
+  "abstract": "Zero-knowledge proof (ZKP) is an important cryptographic tool that sees wide applications in real-world scenarios where privacy must be protected, including privacy-preserving blockchains and zero-knowledge machine learning. Existing ZKP acceleration approaches using GPUs, FPGAs, and ASICs focus only on classic protocols that rely on expensive elliptic curve arithmetics. Emerging ZKP protocols based on hash functions can greatly reduce the algorithmic complexity, but they also introduce much more diverse computation kernels that cannot be efficiently handled by a single accelerator chip if dedicated units for each kernel are used. Our approach is to leverage a unified hardware architecture that is able to efficiently support the common primitives in ZKP, and then use smart mapping strategies to flexibly map various kernels to such hardware while ensuring high resource utilization. We design UniZK as such a ZKP accelerator, with a systolic-array-based hardware architecture enhanced with extra local links and a new vector processing mode. We propose novel mapping strategies to support diverse kernels including number theoretic transforms, hash functions, and general polynomial computations. UniZK provides 97x and 46x speedups on average compared to the CPU and GPU implementations of the same protocols, and is also 840x faster than previous ZKP accelerators using different protocols.",
+  "abstract_source_id": "src-abstract-asplos-2025-5becf0ce",
   "venue": "asplos",
   "year": 2025,
   "track_or_session": "Session 9D: Trust",
@@ -104,6 +106,19 @@
       "official": false,
       "supports": [
         "Indexed abstract and open-access links used for relevance classification and ancillary-link discovery."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2025-5becf0ce",
+      "url": "https://api.openalex.org/works/doi:10.1145/3669940.3707228?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "UniZK: Accelerating Zero-Knowledge Proof with Unified Hardware and Flexible Kernel Mapping",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:04:19Z",
+      "content_hash": "sha256:c889b6915b9464cee38403f26182a4f7318d53d1ad6d0637541ef5c306675b36",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

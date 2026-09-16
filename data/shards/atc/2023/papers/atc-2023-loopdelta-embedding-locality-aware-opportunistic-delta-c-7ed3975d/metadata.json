@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "atc-2023-loopdelta-embedding-locality-aware-opportunistic-delta-c-7ed3975d",
   "title": "LoopDelta: Embedding Locality-aware Opportunistic Delta Compression in Inline Deduplication for Highly Efficient Data Reduction",
+  "abstract": "As a complement to data deduplication, delta compression further reduces the data volume by compressing non-duplicate data chunks relative to their similar chunks (base chunks). However, existing post-deduplication delta compression approaches for backup storage either suffer from the low similarity between many detected chunks or miss some potential similar chunks, or suffer from low (backup and restore) throughput due to extra I/Os for reading base chunks or add additional service-disruptive operations to backup systems.\n\nIn this paper, we propose LoopDelta to address the above-mentioned problems by an enhanced embedding delta compression scheme in deduplication in a non-intrusive way. The enhanced delta compression scheme combines four key techniques: (1) dual-locality-based similarity tracking to detect potential similar chunks by exploiting both logical and physical locality, (2) locality-aware prefetching to prefetch base chunks to avoid extra I/Os for reading base chunks on the write path, (3) cache-aware filter to avoid extra I/Os for base chunks on the read path, and (4) inversed delta compression to perform delta compression for data chunks that are otherwise forbidden to serve as base chunks by rewriting techniques designed to improve restore performance.\n\nExperimental results indicate that LoopDelta increases the compression ratio by 1.24∼10.97 times on top of deduplication, without notably affecting the backup throughput, and it improves the restore performance by 1.2∼3.57 times.",
+  "abstract_source_id": "src-abstract-atc-2023-7ed3975d",
   "venue": "atc",
   "year": 2023,
   "track_or_session": "Deduplication",
@@ -201,6 +203,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-atc-2023-7ed3975d",
+      "url": "https://www.usenix.org/conference/atc23/presentation/zhang-yucheng",
+      "kind": "paper-page",
+      "title": "LoopDelta: Embedding Locality-aware Opportunistic Delta Compression in Inline Deduplication for Highly Efficient Data Reduction",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T21:58:03Z",
+      "content_hash": "sha256:531ce264192b36c6c5afa4338b52d285e2dc36c645bbb2e91c2673a3c0568240",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

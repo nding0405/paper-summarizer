@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2024-defending-against-data-reconstruction-attacks-in-federat-c5c52ea6",
   "title": "Defending Against Data Reconstruction Attacks in Federated Learning: An Information Theory Approach",
+  "abstract": "Federated Learning (FL) trains a black-box and high-dimensional model among different clients by exchanging parameters instead of direct data sharing, which mitigates the privacy leak incurred by machine learning. However, FL still suffers from membership inference attacks (MIA) or data reconstruction attacks (DRA). In particular, an attacker can extract the information from local datasets by constructing DRA, which cannot be effectively throttled by existing techniques, e.g., Differential Privacy (DP).\n\nIn this paper, we aim to ensure a strong privacy guarantee for FL under DRA. We prove that econstruction errors under DRA are constrained by the information acquired by an attacker, which means that constraining the transmitted information can effectively throttle DRA. To quantify the information leakage incurred by FL, we establish a channel model, which depends on the upper bound of joint mutual information between the local dataset and multiple transmitted parameters. Moreover, the channel model indicates that the transmitted information can be constrained through data space operation, which can improve training efficiency and the model accuracy under constrained information. According to the channel model, we propose algorithms to constrain the information transmitted in a single round of local training. With a limited number of training rounds, the algorithms ensure that the total amount of transmitted information is limited. Furthermore, our channel model can be applied to various privacy-enhancing techniques (such as DP) to enhance privacy guarantees against DRA. Extensive experiments with real-world datasets validate the effectiveness of our methods.",
+  "abstract_source_id": "src-abstract-usenix-security-2024-c5c52ea6",
   "venue": "usenix-security",
   "year": 2024,
   "track_or_session": "ML I: Federated Learning",
@@ -175,6 +177,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2024-c5c52ea6",
+      "url": "https://www.usenix.org/conference/usenixsecurity24/presentation/tan",
+      "kind": "paper-page",
+      "title": "Defending Against Data Reconstruction Attacks in Federated Learning: An Information Theory Approach",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:14:43Z",
+      "content_hash": "sha256:4e80591897551b6386fd3d3d00d62bc0ffd4169beaf0721ef4844af9a49854d7",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

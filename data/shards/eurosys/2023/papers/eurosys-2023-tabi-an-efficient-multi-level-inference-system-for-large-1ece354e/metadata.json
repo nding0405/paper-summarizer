@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "eurosys-2023-tabi-an-efficient-multi-level-inference-system-for-large-1ece354e",
   "title": "Tabi: An Efficient Multi-Level Inference System for Large Language Models",
+  "abstract": "Today's trend of building ever larger language models (LLMs), while pushing the performance of natural language processing, adds significant latency to the inference stage. We observe that due to the diminishing returns of adding parameters to LLMs, a smaller model could make the same prediction as a costly LLM for a majority of queries. Based on this observation, we design Tabi, an inference system with a multi-level inference engine that serves queries using small models and optional LLMs for demanding applications. Tabi is optimized for discriminative models (i.e., not generative LLMs) in a serving framework. Tabi uses the calibrated confidence score to decide whether to return the accurate results of small models extremely fast or re-route them to LLMs. For re-routed queries, it uses attention-based word pruning and weighted ensemble techniques to offset the system overhead and accuracy loss. We implement and evaluate Tabi with multiple tasks and models. Our result shows that Tabi achieves 21%-40% average latency reduction (with comparable tail latency) over the state-of-the-art while meeting LLM-grade high accuracy targets.",
+  "abstract_source_id": "src-abstract-eurosys-2023-1ece354e",
   "venue": "eurosys",
   "year": 2023,
   "track_or_session": null,
@@ -146,6 +148,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-eurosys-2023-1ece354e",
+      "url": "https://api.openalex.org/works/doi:10.1145/3552326.3587438?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Tabi: An Efficient Multi-Level Inference System for Large Language Models",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:18:40Z",
+      "content_hash": "sha256:ae6babc22fb11cee4ec30434de5221e27e4559e1a3a60d367d373b97eb11b40a",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

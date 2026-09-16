@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2024-towards-intelligent-automobile-cockpit-via-a-new-contain-fbb8fd0e",
   "title": "Towards Intelligent Automobile Cockpit via A New Container Architecture",
+  "abstract": "An intelligent cockpit is now crucial in automobiles, not just to provide digital instrumentation and in-vehicle controls but also to offer a wide range of entertainment functionalities. To cater to the demands of these intelligent vehicles, the automotive industry starts employing virtualization technology to offer a unified hardware and software architecture that can simplify system management and enhance resource utilization. Particularly in the domain of intelligent cockpits, virtualization can tightly integrate systems with different criticality levels (e.g., safety and real-time) on a single hardware platform, improving inter-system communication quality and the timely response to user-initiated requests. Currently, microhypervisor virtualization has been used in production to achieve intelligent automobile cockpit. However, in addition to the performance concern and high production costs, this solution is suffering from the global shortage of chips capable of running microhypervisor systems.\n\nOur key insight is that, most functions within intelligent cockpit systems are non-safety-critical and non-real-time multimedia tasks. Based on this characteristic, in this paper we present AutoVP , a new cockpit virtualization architecture. The hardware foundation of AutoVP consists of two low-cost chips: 1) a consumer-grade System-on-Chip (SoC) multi-core processor as the main chip; 2) a typical automotive-grade Microcontroller Unit (MCU) as the auxiliary chip. The MCU auxiliary chip is responsible for hosting real-time and safety-critical tasks, while the SoC main chip primarily handles multimedia tasks, such as entertainment systems and digital instrumentation. Further more, we construct an Android container virtual environment on the SoC main chip. This environment integrates multiple media functions onto a single chip, resulting in efficient utilization of chip computational resources and high system scalability. Our comparative performance evaluation demonstrates that AutoVP is a cost-effective and efficient solution to build intelligent cockpits.",
+  "abstract_source_id": "src-abstract-nsdi-2024-fbb8fd0e",
   "venue": "nsdi",
   "year": 2024,
   "track_or_session": "Serverless",
@@ -118,6 +120,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2024-fbb8fd0e",
+      "url": "https://www.usenix.org/conference/nsdi24/presentation/jiang-lin",
+      "kind": "paper-page",
+      "title": "Towards Intelligent Automobile Cockpit via A New Container Architecture",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:03:51Z",
+      "content_hash": "sha256:a7daca36cff3379db1b69a2fab64d4fe1e5818b98184b9593a16d7d2cef28cda",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

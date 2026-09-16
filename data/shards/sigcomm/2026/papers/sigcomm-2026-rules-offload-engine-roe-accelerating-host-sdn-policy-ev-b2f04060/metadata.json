@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sigcomm-2026-rules-offload-engine-roe-accelerating-host-sdn-policy-ev-b2f04060",
   "title": "Rules Offload Engine (ROE): Accelerating Host SDN Policy Evaluation",
+  "abstract": "Software Defined Networking (SDN) policy evaluation analyzes and verifies network rules to enable accurate packet routing, manage access controls, and ensure security and privacy. Therefore, SDN policy evaluation is a mandatory step that each network packet must go through in virtual machines hosted on public cloud services, such as Azure. Evaluating SDN policies requires up to several hundred microseconds, which severely limits performance. The problem exacerbates at cloud scale where more connections per second (CPS) are desirable across millions of virtual machines. In this paper, we present Rules Offload Engine (ROE), a hardwaresoftware co-designed solution that accelerates SDN policy evaluation through FPGA-based SmartNICs. We propose the ROE Instruction Set Architecture (RISA) that features dedicated networking-friendly instructions. RISA fuses control policy data and operation directly into the instructions to facilitate an efficient FPGA implementation. We develop an ROE compiler that translates SDN rules into RISA instructions. We also design the ROE-Core that implements RISA and other components for seamless integration with existing hardware and software stacks. Overall, ROE enables up to 400K CPS, achieving 10× higher throughput compared to prior software-centric approaches. ROE is deployed in Azure and was featured as a part of the second-generation Azure Boost.",
+  "abstract_source_id": "src-abstract-b2f04060",
   "venue": "sigcomm",
   "year": 2026,
   "track_or_session": "Experience Session 4: Cloud Data Planes & Network Virtualization — Experience Paper",
@@ -653,6 +655,19 @@
       "official": true,
       "supports": [
         "official main-paper scope and track definitions"
+      ]
+    },
+    {
+      "id": "src-abstract-b2f04060",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/search/match?query=Rules%20Offload%20Engine%20%28ROE%29%3A%20Accelerating%20Host%20SDN%20Policy%20Evaluation&fields=title,abstract",
+      "kind": "semantic-scholar",
+      "title": "Rules Offload Engine (ROE): Accelerating Host SDN Policy Evaluation",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T23:06:10Z",
+      "content_hash": "sha256:c72b5da042f42567383925b51251b4bc3ec8fad8164025e34fabcd84c0662917",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

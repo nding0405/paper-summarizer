@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-secure-distributed-rsa-modulus-generation-revisited-a-fa-16bc4c16",
   "title": "Secure Distributed RSA Modulus Generation Revisited: A Faster and More Communication-Efficient Construction",
+  "abstract": "Securely generating an RSA modulus N = p q N=pq in a distributed n n-party setting while keeping its factors private is a core challenge in threshold cryptography. This paper revisits this problem and improves the state‑of‑the‑art distributed Miller–Rabin primality test by replacing its core component—the divisibility test—with a novel zero‑testing protocol.\n\nOur key innovation is an elegant distributed design of Montgomery reduction, which transforms checking δmodf=0 (given shares of δ and f) into testing whether a product equals zero. This approach enables efficient distributed evaluation and offers: (1) Perfect correctness. Unlike prior approaches that are probabilistic or require impractically large shares, our zero test decides δmodf=0 deterministically. (2) Improved efficiency. Our zero test runs in only 7 rounds and uses 5 secure multiplications, improving over previous divisibility tests that require either 3+⌈log 2 n⌉ rounds with n+3 multiplications or 8 rounds with 5n−1 multiplications. Extensive experiments under honest-majority settings show increasing speedups for n ≥ 9, with the efficiency advantage growing as the number of parties increases. Moreover, our semi-honest protocol supports both honest- and dishonest-majority settings via appropriate secure multiplication primitives, and can be upgraded to malicious security with standard compilers.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-16bc4c16",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Applications of Cryptography 7",
@@ -155,6 +157,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-16bc4c16",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/zhang-shaojing",
+      "kind": "paper-page",
+      "title": "Secure Distributed RSA Modulus Generation Revisited: A Faster and More Communication-Efficient Construction",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:25:19Z",
+      "content_hash": "sha256:c27ec364ca423cf909c5c001c8e1966a1feab821319c78bcdce4ce9ed911a5ca",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

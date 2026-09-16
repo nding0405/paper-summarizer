@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2025-iris-dynamic-privacy-preserving-search-in-authenticated-5ee2e26a",
   "title": "Iris: Dynamic Privacy Preserving Search in Authenticated Chord Peer-to-Peer Networks",
+  "abstract": "In structured peer-to-peer networks, like Chord, users find data by\n\nasking a number of intermediate nodes in the network. Each node\n\nprovides the identity of the closet known node to the address of the\n\ndata, until eventually the node responsible for the data is reached.\n\nThis structure means that the intermediate nodes learn the address of\n\nthe sought after data. Revealing this information to other nodes makes\n\nChord unsuitable for applications that require query privacy so in\n\nthis paper we present a scheme Iris to provide query privacy while\n\nmaintaining compatibility with the existing Chord protocol. This means\n\nthat anyone using it will be able to execute a privacy preserving\n\nquery but it does not require other nodes in the network to use it (or\n\neven know about it).\n\nIn order to better capture the privacy achieved by the iterative\n\nnature of the search we propose a new privacy notion, inspired by\n\n$k$-anonymity. This new notion called $(alpha,delta)$-privacy, allows us to formulate\n\nprivacy guarantees against adversaries that collude and take advantage\n\nof the total amount of information leaked in all iterations of the\n\nsearch.\n\nWe present a security analysis of the proposed algorithm based on the\n\nprivacy notion we introduce. We also develop a prototype of the\n\nalgorithm in Matlab and evaluate its performance. Our analysis proves\n\nIris to be $(alpha,delta)$-private while introducing a modest performance\n\noverhead. Importantly the overhead is tunable and proportional to the\n\nrequired level of privacy, so no privacy means no overhead.",
+  "abstract_source_id": "src-abstract-ndss-2025-5ee2e26a",
   "venue": "ndss",
   "year": 2025,
   "track_or_session": "Fall submission cycle",
@@ -105,6 +107,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2025-5ee2e26a",
+      "url": "https://www.ndss-symposium.org/ndss-paper/iris-dynamic-privacy-preserving-search-in-authenticated-chord-peer-to-peer-networks/",
+      "kind": "paper-page",
+      "title": "Iris: Dynamic Privacy Preserving Search in Authenticated Chord Peer-to-Peer Networks",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:19:47Z",
+      "content_hash": "sha256:6add2dbe35b9071e26656889f50baa17937b99925d43c757f5879c1aa6cc3c5f",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sigcomm-2024-megate-extending-wan-traffic-engineering-to-millions-of-7fb68747",
   "title": "MegaTE: Extending WAN Traffic Engineering to Millions of Endpoints in Virtualized Cloud",
+  "abstract": "In today's virtualized cloud, containers and virtual machines (VMs) are prevailing methods to deploy applications with different tenant requirements. However, these requirements are at odds with the resource allocation capabilities of conventional networking stacks in wide-area networks (WANs). In particular, existing WAN traffic engineering (TE) systems at the granularity of aggregated traffic flows are not designed to cater to each individual flow. In this paper, we advocate for a radical new approach to extend TE systems to involve millions of virtual instance endpoints. We propose and implement a first-of-its-kind system, called MegaTE, to satisfy the needs of each fine-grained traffic flow at the virtual instance level. At the core of the MegaTE system is the paradigm shift from the top-down centralized control to the bottom-up asynchronous query in the TE control loop, combined with eBPF-based segment routing on the data plane and TE optimization contraction on the control plane. We evaluate MegaTE using flow-level simulations with production traffic traces. Our results show that MegaTE supports 20× more endpoints with the similar algorithm run time compared to prior work. MegaTE has been adopted by large-scale public cloud providers. Notably, Tencent rolled out MegaTE in its cloud WAN since December 2022. Our production analysis shows that MegaTE reduces the packet latency of real-time applications by up to 51%.",
+  "abstract_source_id": "src-abstract-sigcomm-2024-7fb68747",
   "venue": "sigcomm",
   "year": 2024,
   "track_or_session": "Moving bits over the WAN — Research Track",
@@ -339,6 +341,19 @@
         "publisher-deposited ORCIDs when available",
         "proceedings page range and online publication date",
         "empty publisher relation metadata for alternate-version checks"
+      ]
+    },
+    {
+      "id": "src-abstract-sigcomm-2024-7fb68747",
+      "url": "https://api.openalex.org/works/doi:10.1145/3651890.3672242?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "MegaTE: Extending WAN Traffic Engineering to Millions of Endpoints in Virtualized Cloud",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:23:08Z",
+      "content_hash": "sha256:69f1e8ee16937d49fdfe6f75201156d11d938f060aa5bd6e0734a74e5715f619",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

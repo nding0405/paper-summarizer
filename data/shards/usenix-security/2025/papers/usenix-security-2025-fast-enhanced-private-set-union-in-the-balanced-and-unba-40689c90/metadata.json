@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-fast-enhanced-private-set-union-in-the-balanced-and-unba-40689c90",
   "title": "Fast Enhanced Private Set Union in the Balanced and Unbalanced Scenarios",
+  "abstract": "Private set union (PSU) allows two parties to compute the union of their sets without revealing anything else. It can be categorized into balanced and unbalanced scenarios depending on the size of the set on both sides. Recently, Jia et al. (USENIX Security 2024) highlight that existing scalable PSU solutions suffer from during-execution leakage and propose a PSU with enhanced security for the balanced setting. However, their protocol's complexity is superlinear with the size of the set. Thus, the problem of constructing a linear enhanced PSU remains open, and no unbalanced enhanced PSU exists. In this work, we address these two open problems:\n\nBalanced case: We propose the first linear enhanced PSU. Compared to the state-of-the-art enhanced PSU (Jia et al., USENIX Security 2024), our protocol achieves a 2.2 - 8.8x reduction in communication cost and a 1.2 - 8.6x speedup in running time, depending on set sizes and network environments. Unbalanced case: We present the first unbalanced enhanced PSU, which achieves sublinear communication complexity in the size of the large set. Experimental results demonstrate that the larger the difference between the two set sizes, the better our protocol performs. For unbalanced set sizes (2^10, 2^20) with single thread in 1Mbps bandwidth, our protocol requires only 2.322 MB of communication. Compared with the state-of-the-art enhanced PSU, there is 38.1x shrink in communication and roughly 17.6x speedup in the running time.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-40689c90",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Crypto 2: Private Information Retrieval and Computation",
@@ -154,6 +156,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-40689c90",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/tu",
+      "kind": "paper-page",
+      "title": "Fast Enhanced Private Set Union in the Balanced and Unbalanced Scenarios",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:19:49Z",
+      "content_hash": "sha256:e3844dc0173c27146e816000742c9453571aba5447fd2c6f5d91cca1883d42ef",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

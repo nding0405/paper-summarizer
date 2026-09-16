@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-parallelizing-universal-atomic-swaps-for-multi-chain-cry-b2203025",
   "title": "Parallelizing Universal Atomic Swaps for Multi-Chain Cryptocurrency Exchanges",
+  "abstract": "Universal atomic swap is an emerging technique for secure cryptocurrency exchanges across diverse blockchains, eliminating the need for custom scripting language support from blockchains. While existing schemes primarily focus on exchanges among two users, extending these to multiple users across multiple blockchains incurs significant overheads due to the need for performing multiple two-party swaps serially. An intuitive insight is to parallelize the universal processes, but this idea still faces two technical challenges: (i) avoid asset theft during parallel asset locking; (ii) ensure atomicity by preventing partial execution of transactions with a uniform refund time used to avoid asset deadlock in parallel.\n\nIn this paper, we present ParaSwap, the first framework to parallelize universal atomic swaps for cryptocurrency exchanges among multiple users across multiple blockchains. We replace the serial multiple two-party swaps with a concurrent mechanism, where each participant concurrently locks and withdraws coins, achieving parallel execution. To prevent asset theft, the necessary witness for swaps is collaboratively determined by all participants. Then we introduce a novel re-lock approach to ensure atomicity with a uniform refund time, allowing participants to re-lock their assets to new addresses when the remaining time is insufficient to complete their withdrawal. Notably, ParaSwap employs adaptor signatures and verifiable timed discrete logarithm (VTD) technology, relying only on the bare minimum ability of blockchain to verify transaction signatures. We implement ParaSwap on four public blockchain test networks: Bitcoin, Ethereum, Avalanche, and Binance Smart Chain. Our evaluation demonstrates that ParaSwap reduces the exchange time complexity from O(n) to O(1), where n is the number of participants, and lowers gas costs by 26.2x to 46.8x, compared to existing methods.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-b2203025",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Blockchain Security 2: Infrastructure, Protocol Design, and Governance",
@@ -175,6 +177,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-b2203025",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/xiao-danlei",
+      "kind": "paper-page",
+      "title": "Parallelizing Universal Atomic Swaps for Multi-Chain Cryptocurrency Exchanges",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:21:01Z",
+      "content_hash": "sha256:b2030a03215d61aa221d2441992aa9a11dae9f23dc072f091c9de7d1dce7a9f1",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

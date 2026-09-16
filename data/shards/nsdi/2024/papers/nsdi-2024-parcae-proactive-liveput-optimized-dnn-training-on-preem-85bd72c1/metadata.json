@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2024-parcae-proactive-liveput-optimized-dnn-training-on-preem-85bd72c1",
   "title": "Parcae: Proactive, Liveput-Optimized DNN Training on Preemptible Instances",
+  "abstract": "Deep neural networks (DNNs) are becoming progressively large and costly to train. This paper aims to reduce DNN training costs by leveraging preemptible instances on modern clouds, which can be allocated at a much lower price when idle but may be preempted by the cloud provider at any time. Prior work that supports DNN training on preemptive instances employs a reactive approach to handling instance preemptions and allocations after their occurrence, which only achieves limited performance and scalability.\n\nWe present Parcae, a system that enables cheap, fast, and scalable DNN training on preemptible instances by proactively adjusting the parallelization strategy of a DNN training job to adapt to predicted resource changes before instance preemptions and allocations really happen, which significantly reduces the cost of handling these events. Parcae optimizes liveput , a novel metric that measures the expected training throughput of a DNN job under various possible preemption scenarios. Compared to existing reactive, throughput-optimized systems, Parcae's proactive, live-optimized solution considers both the throughput of a job and its robustness under preemptions. To optimize liveput, Parcae supports lightweight instance migration and uses an availability predictor to forecast future preemptions. It then uses a liveput optimizer to discover an optimal strategy to parallelize DNN training under predicted preemptions. We evaluate Parcae on a variety of DNNs and preemption traces and show that Parcae outperforms existing spot-instance DNN training systems by up to 10×. More importantly, Parcae achieves near-optimal performance for training large DNNs under frequent preemptions, in which case existing approaches cannot make any progress.",
+  "abstract_source_id": "src-abstract-nsdi-2024-85bd72c1",
   "venue": "nsdi",
   "year": 2024,
   "track_or_session": "ML but Faster",
@@ -223,6 +225,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2024-85bd72c1",
+      "url": "https://www.usenix.org/conference/nsdi24/presentation/duan",
+      "kind": "paper-page",
+      "title": "Parcae: Proactive, Liveput-Optimized DNN Training on Preemptible Instances",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:03:32Z",
+      "content_hash": "sha256:c8d6a42653c4af5b957c40038909c5f5eb83addc761abec7d13067d47a8b4ce2",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

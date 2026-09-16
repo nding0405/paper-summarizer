@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2025-finemem-breaking-the-allocation-overhead-vs-memory-waste-11ea2663",
   "title": "FineMem: Breaking the Allocation Overhead vs. Memory Waste Dilemma in Fine-Grained Disaggregated Memory Management",
+  "abstract": "RDMA-enabled memory disaggregation has emerged as an attractive approach to reducing memory costs in modern data centers. While RDMA enables efficient remote read/write operations, it presents challenges in remote memory (de)allocation. Consequently, existing systems adopt coarse-grained allocations (in GBs), leading to memory waste.\n\nWe introduce FineMem, an RDMA-connected remote memory management system that enables high-performance, fine-grained memory allocation. FineMem addresses latency and scalability challenges related to fine-grained allocations. It removes RDMA memory region (MR) registration costs from allocation paths through per-compute node MR pre-registration, while ensuring remote memory isolation using RDMA memory windows and a trusted allocation service on each compute node. It employs a lock-free, one-sided RDMA-based protocol to allocate memory chunks (e.g., 4KB, 2MB) without involving the memory node's CPU and maintains metadata consistency during compute node failures via logging. We show that FineMem reduces remote memory allocation latency by as much as 95% compared to state-of-the-art remote memory management systems. It enables memory malloc systems, key-value stores systems, and swap systems running on FineMem to achieve low memory waste with minimal overhead.",
+  "abstract_source_id": "src-abstract-osdi-2025-11ea2663",
   "venue": "osdi",
   "year": 2025,
   "track_or_session": "Distributed Systems and Data Centers I",
@@ -201,6 +203,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2025-11ea2663",
+      "url": "https://www.usenix.org/conference/osdi25/presentation/wang-xiaoyang",
+      "kind": "paper-page",
+      "title": "FineMem: Breaking the Allocation Overhead vs. Memory Waste Dilemma in Fine-Grained Disaggregated Memory Management",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:07:34Z",
+      "content_hash": "sha256:300a221cd014e4809989a9d21f6f119ae0d87b37b39bd9f26035f6ddb7092cd6",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

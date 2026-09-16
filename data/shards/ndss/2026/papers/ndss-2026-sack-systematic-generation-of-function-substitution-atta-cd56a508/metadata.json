@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2026-sack-systematic-generation-of-function-substitution-atta-cd56a508",
   "title": "SACK: Systematic Generation of Function Substitution Attacks Against Control-Flow Integrity",
+  "abstract": "Control-flow integrity (CFI) is a widely adopted defense against control-flow hijacking attacks, designed to restrict indirect control transfers to a set of legitimate targets. However, even under a precise static CFI policy, attackers can still hijack control flow through function substitution attacks (Sub attacks), by replacing one valid target with another that remains within the allowed set. While prior work has demonstrated the feasibility of such attacks through manual construction, no approach constructs them systematically, scalably, and in an end-to-end manner.\n\nIn this work, we present SACK, the first systematic framework for automatically constructing Sub attacks at scale. SACK collects triggered indirect call targets from benign executions and synthesizes security oracles with the assistance of a large language model. It then automatically performs target substitutions and leverages security oracles to detect security violations, while ensuring that execution strictly adheres to precise CFI policies. We apply SACK to seven widely used applications and successfully construct 419 Sub attacks that compromise critical security features. We further develop five end-to-end exploits based on historical bugs in SQLite3, V8 and Nginx, enabling arbitrary command execution or authentication bypass. Our results demonstrate that SACK provides a scalable and automated pipeline capable of uncovering large numbers of end-to-end attacks across diverse applications.",
+  "abstract_source_id": "src-abstract-ndss-2026-cd56a508",
   "venue": "ndss",
   "year": 2026,
   "track_or_session": "Fall submission cycle",
@@ -160,6 +162,19 @@
       "official": false,
       "supports": [
         "independent proceedings identity reconciliation"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2026-cd56a508",
+      "url": "https://www.ndss-symposium.org/ndss-paper/sack-systematic-generation-of-function-substitution-attacks-against-control-flow-integrity/",
+      "kind": "paper-page",
+      "title": "SACK: Systematic Generation of Function Substitution Attacks Against Control-Flow Integrity",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:23:04Z",
+      "content_hash": "sha256:3571f30a188d5ad4afd38b193e35a75514d55ef0671588dadd5a222022fb1d47",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

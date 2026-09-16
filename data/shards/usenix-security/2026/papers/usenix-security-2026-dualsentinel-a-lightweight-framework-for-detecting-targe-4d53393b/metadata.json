@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-dualsentinel-a-lightweight-framework-for-detecting-targe-4d53393b",
   "title": "DualSentinel: A Lightweight Framework for Detecting Targeted Attacks in Black-box LLM via Dual Entropy Lull Pattern",
+  "abstract": "Recent intelligent systems integrate powerful Large Language Models (LLMs) through APIs, but their trustworthiness may be critically undermined by sequence-coercing targeted attacks that force the model to emit an attacker-chosen payload, including malicious URLs, system commands, and specific misinformation. Existing defensive approaches for such threats typically rely on high access rights, impose prohibitive costs, and hinder normal inference, rendering them impractical for real-world scenarios. To solve these limitations, we introduce DualSentinel, a lightweight defense framework that can accurately and promptly detect the activation of targeted attacks alongside the LLM generation process. We first identify a characteristic of compromised LLMs, termed Entropy Lull: when a sequence-coercing targeted attack successfully hijacks the generation process, the LLM exhibits a distinct period of abnormally low and stable token probability entropy, indicating it is following a fixed path rather than making creative choices. DualSentinel leverages this pattern by developing an innovative dual-check approach. It first employs a magnitude and trend-aware monitoring method to proactively and sensitively flag an entropy lull pattern at runtime. Upon such flagging, it triggers a lightweight yet powerful secondary verification based on task-flipping. An attack is confirmed only if the entropy lull pattern persists across both the original and the flipped task, proving that the LLM's output is coercively controlled. Extensive evaluations show that DualSentinel is both highly effective (superior detection accuracy with the lowest false positives) and remarkably efficient (negligible additional cost), offering a truly practical path toward securing deployed LLMs.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-4d53393b",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Security of ML 2",
@@ -176,6 +178,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-4d53393b",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/pang-xiaoyi",
+      "kind": "paper-page",
+      "title": "DualSentinel: A Lightweight Framework for Detecting Targeted Attacks in Black-box LLM via Dual Entropy Lull Pattern",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:23:47Z",
+      "content_hash": "sha256:ec89faf9414d2b9289d980f1e0334e5f17d39ab57b8cf2d52d089b7c7b7b8863",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "atc-2024-qdsr-accelerating-layer-7-load-balancing-by-direct-serve-4e9322fe",
   "title": "QDSR: Accelerating Layer-7 Load Balancing by Direct Server Return with QUIC",
+  "abstract": "Layer-7(L7) load balancing is a crucial capability for cloud service providers to maintain stable and reliable services. However, high flexibility of the L7 load balancers(LBs) and increasing downlink relaying service result in a heavy workload, which significantly increases the cost of cloud service providers and reduces end-to-end service quality. We proposes QDSR, a new L7 load balancing scheme that uses Q UIC and D irect S erver R eturn(DSR) technology. QDSR divides the QUIC connection into independent streams and distributes them to multiple real servers(RSs), enabling real servers to send data directly to the client simultaneously. Due to the lack of redundant relaying, QDSR enables high performance, low latency, and nearly eliminates additional downlink relaying overhead.\n\nTo evaluate the performance of QDSR, we implemented all its components using Nginx and Apache Traffic Server, deployed them in a real environment testbed, and conducted large-scale simulation experiments using mahimahi. The experimental results show that QDSR can process an additional 4.8%-18.5% of client requests compared to traditional L7 proxy-based load balancing schemes. It can achieve a maximum throughput that is 12.2 times higher in high-load scenarios and significantly reduce end-to-end latency and first packet latency.",
+  "abstract_source_id": "src-abstract-atc-2024-4e9322fe",
   "venue": "atc",
   "year": 2024,
   "track_or_session": "Networks 2",
@@ -264,6 +266,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-atc-2024-4e9322fe",
+      "url": "https://www.usenix.org/conference/atc24/presentation/wei",
+      "kind": "paper-page",
+      "title": "QDSR: Accelerating Layer-7 Load Balancing by Direct Server Return with QUIC",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T21:58:59Z",
+      "content_hash": "sha256:42e43d6cf2aae7527ae2b996540c18fbb3206bafcfafff42099dfce66eb9bed3",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2026-apiecho-training-less-anomaly-detection-via-intra-api-be-8bebb32a",
   "title": "APIEcho: Training-less Anomaly Detection via Intra-API Behavioral Comparison for Web Applications",
+  "abstract": "Anomaly detection is crucial for web application security, yet existing methods like rule-based validation and learning-based models face significant limitations. Rule-based systems struggle with novel attacks, while learning-based approaches require frequent, costly retraining to adapt to dynamic application updates, often leading to high false positives. While recent self-comparison methods address retraining by comparing replicas in microservice scenarios, they are ill-suited for monolithic applications due to functional heterogeneity, offer coarse-grained detection, lack adaptive comparison baselines, and are vulnerable to coordinated poisoning. This paper presents APIEcho, a novel web server intrusion detection method for monolithic applications that operates without large-scale pre-training. APIEcho's core insight is that legitimate requests to the same API endpoint exhibit highly similar underlying behavioral patterns. Our system shifts the comparison granularity from replicas to individual requests within the same API, employing dynamic API classification, fine-grained behavioral feature extraction (including sequential and set-based features), per-API adaptive similarity thresholds, and an antipoisoning sliding window update mechanism. Extensive evaluations on 16 real-world scenarios demonstrate that APIEcho significantly outperforms state-of-the-art methods. It effectively adapts to application updates without retraining, resists coordinated poisoning attacks, surpasses existing methods in average detection score, and achieves attack recall rates exceeding 90% while maintaining benign event detection accuracy above 99%, all with low overhead, processing more than 12000 log events per second with less than 7 GB memory consumption.",
+  "abstract_source_id": "src-abstract-sp-2026-8bebb32a",
   "venue": "sp",
   "year": 2026,
   "track_or_session": "Cycle 1",
@@ -175,6 +177,19 @@
       "official": true,
       "supports": [
         "DOI, published-order authors and affiliations, abstract, publication date, page span, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2026-8bebb32a",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "APIECHO: Training-Less Anomaly Detection via Intra-API Behavioral Comparison for Web Applications",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:57Z",
+      "content_hash": "sha256:303a9b5e5ef8908a3cfe67f02eb8a87be978a5fe3281c7ecec8c0cdb512517e0",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

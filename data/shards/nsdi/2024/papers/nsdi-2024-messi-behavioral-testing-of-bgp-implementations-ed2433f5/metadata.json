@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2024-messi-behavioral-testing-of-bgp-implementations-ed2433f5",
   "title": "MESSI: Behavioral Testing of BGP Implementations",
+  "abstract": "Complex network protocols like the Border Gateway Protocol (BGP) are prone to implementation errors that cause unintended behaviors with potentially global consequences. We introduce an approach and tool called MESSI (Modular Exploration of State and Structure Inclusively) to automatically generate tests for black-box BGP implementations. Our approach is model-based, leveraging an executable model of BGP to generate behavioral tests. However, doing so effectively requires addressing new challenges such as the stateful nature of BGP and the need to generate complex structures like regular expressions in route maps. We used MESSI to generate roughly 150K tests that capture different aspects of BGP, such as route-map filtering, the decision process, route aggregation, and dynamics. These tests identified 22 correctness bugs across several widely used open-source BGP implementations (FRR, Quagga, GoBGP, BIRD, Batfish) and one closed-source implementation. Eight of these errors have already been fixed. While our models are BGP-specific our approach is not: thus we expect it can be adapted to test other stateful protocols with complex structures.",
+  "abstract_source_id": "src-abstract-nsdi-2024-ed2433f5",
   "venue": "nsdi",
   "year": 2024,
   "track_or_session": "Verification",
@@ -181,6 +183,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2024-ed2433f5",
+      "url": "https://www.usenix.org/conference/nsdi24/presentation/singha",
+      "kind": "paper-page",
+      "title": "MESSI: Behavioral Testing of BGP Implementations",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:03:24Z",
+      "content_hash": "sha256:d21ef6ff87dab9e7ebc23fd82c9cacbc4d4e9340470c9cc4c6b4151a052820d0",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

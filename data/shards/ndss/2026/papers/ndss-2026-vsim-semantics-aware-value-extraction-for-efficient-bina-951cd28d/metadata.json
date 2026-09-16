@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2026-vsim-semantics-aware-value-extraction-for-efficient-bina-951cd28d",
   "title": "vSim: Semantics-Aware Value Extraction for Efficient Binary Code Similarity Analysis",
+  "abstract": "Binary Code Similarity Analysis (BCSA) plays a vital role in many security tasks, including malware analysis, vulnerability detection, and software supply chain security. While numerous BCSA techniques have been proposed over the past decade, few leverage the semantics of register and memory values for comparison, despite promising initial results. Existing value-based approaches often focus narrowly on values that remain invariant across compilation settings, thereby overlooking a broader spectrum of semantically rich information. In this paper, we identify three core challenges limiting the effectiveness of value-based BCSA: (1) unscalable value extraction that fails to cover diverse value-producing behaviors, (2) insufficient noise filtering that allows semantically irrelevant artifacts (e.g., global addresses) to dominate, and (3) inefficient comparison that makes value-based matching expensive and brittle. To make value-based BCSA practical at scale, we propose VSIM, a novel framework that systematically captures values computed from register and memory operations, filters out semantically irrelevant values (e.g., global addresses), and normalizes and propagates the remaining values to enable robust and scalable similarity analysis. Extensive evaluation shows that VSIM consistently outperforms state-of-the-art BCSA systems in accuracy, robustness, and scalability, and generalizes across architectures and toolchains, delivering reliable results on diverse real-world datasets.",
+  "abstract_source_id": "src-abstract-ndss-2026-951cd28d",
   "venue": "ndss",
   "year": 2026,
   "track_or_session": "Fall submission cycle",
@@ -118,6 +120,19 @@
       "official": false,
       "supports": [
         "independent proceedings identity reconciliation"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2026-951cd28d",
+      "url": "https://www.ndss-symposium.org/ndss-paper/vsim-semantics-aware-value-extraction-for-efficient-binary-code-similarity-analysis/",
+      "kind": "paper-page",
+      "title": "vSim: Semantics-Aware Value Extraction for Efficient Binary Code Similarity Analysis",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:23:35Z",
+      "content_hash": "sha256:8ce5dbeef79af97e700fab0b0df28325aab7d1f5a47b58aeee4b5caf611febe1",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

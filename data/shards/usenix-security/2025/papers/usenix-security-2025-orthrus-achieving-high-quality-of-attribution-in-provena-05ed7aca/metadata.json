@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-orthrus-achieving-high-quality-of-attribution-in-provena-05ed7aca",
   "title": "ORTHRUS: Achieving High Quality of Attribution in Provenance-based Intrusion Detection Systems",
+  "abstract": "Past success in applying machine learning to data provenance graphs – a structured representation of the history of operating system activities – to detect host system intrusions has fueled continued interest in the security community. Recent solutions, particularly anomaly-based approaches using graph neural networks to detect previously unknown attacks, have reported near-perfect accuracy. Surprisingly, despite this high performance, the industry remains reluctant to adopt these intrusion detection systems (IDSs).\n\nWe identify Quality of Attribution (QoA) as the key factor contributing to this disconnect. QoA refers to the amount of effort required from a human analyst to investigate an IDS's detection output, uncover the root causes of an attack, understand its ramifications, and dismiss potential false alarms. Unfortunately, prior work often generates large volumes of low-QoA output, much of which is irrelevant to attack activities, leading to alert fatigue and analyst burnout.We introduce ORTHRUS, the first IDS to achieve high-QoA detection on data provenance graphs at the node level. ORTHRUS detects malicious hosts using a graph neural network (GNN) encoder designed to capture the fine-grained spatio-temporal dynamics of system events. It then reconstructs the attack path through dependency analysis to ensure high-QoA detection.\n\nWe compare ORTHRUS against five state-of-the-art IDSs. ORTHRUS reduces the number of nodes requiring manual inspection for attack attribution by several orders of magnitude, significantly easing the burden on security analysts while achieving strong detection performance.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-05ed7aca",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Network Security 4: Internet and Beyond",
@@ -217,6 +219,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-05ed7aca",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/jiang-baoxiang",
+      "kind": "paper-page",
+      "title": "ORTHRUS: Achieving High Quality of Attribution in Provenance-based Intrusion Detection Systems",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:20:59Z",
+      "content_hash": "sha256:49603a78ed92601905fc9ebb240740bed80e86f51db0f83591e0cd7ec8cfa09e",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

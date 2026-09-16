@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2023-inception-exposing-new-attack-surfaces-with-training-in-682f9311",
   "title": "Inception: Exposing New Attack Surfaces with Training in Transient Execution",
+  "abstract": "To protect against transient control-flow hijacks, software relies on a secure state of microarchitectural buffers that are involved in branching decisions. To achieve this secure state, hardware and software mitigations restrict or sanitize these microarchitectural buffers when switching the security context, e.g., when a user process enters the kernel. Unfortunately, we show that these mitigations do not prevent an attacker from manipulating the state of these microarchitectural buffers in many cases of interest. In particular, we present Training in Transient Execution (TTE), a new class of transient execution attacks that enables an attacker to train a target microarchitectural buffer after switching to the victim context. To show the impact of TTE, we build an end-to-end exploit called INCEPTION that creates an infinite transient loop in hardware to train the return stack buffer with an attacker-controlled target in all existing AMD Zen microarchitectures. INCEPTION leaks arbitrary kernel memory at a rate of 39 bytes/s on AMD Zen 4 despite all mitigations against transient control-flow hijacks, including the recent Automatic IBRS.",
+  "abstract_source_id": "src-abstract-usenix-security-2023-682f9311",
   "venue": "usenix-security",
   "year": 2023,
   "track_or_session": "More Hardware Side Channels",
@@ -112,6 +114,19 @@
       "official": true,
       "supports": [
         "authors, affiliations when published, abstract, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2023-682f9311",
+      "url": "https://www.usenix.org/conference/usenixsecurity23/presentation/trujillo",
+      "kind": "paper-page",
+      "title": "Inception: Exposing New Attack Surfaces with Training in Transient Execution",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:11:38Z",
+      "content_hash": "sha256:2a5851288f7a358bf9ee51d07cc50c38e259448c13b4cc87ce890db6ad6239e9",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

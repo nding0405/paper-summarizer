@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2023-waverunner-an-elegant-approach-to-hardware-acceleration-91b11592",
   "title": "Waverunner: An Elegant Approach to Hardware Acceleration of State Machine Replication",
+  "abstract": "State machine replication (SMR) is a core mechanism for building highly available and consistent systems. In this paper, we propose Waverunner, a new approach to accelerate SMR using FPGA-based SmartNICs. Our approach does not implement the entire SMR system in hardware; instead, it is a hybrid software/hardware system. We make the observation that, despite the complexity of SMR, the most common routine—the data replication—is actually simple. The complex parts (leader election, failure recovery, etc.) are rarely used in modern datacenters where failures are only occasional. These complex routines are not performance critical; their software implementations are fast enough and do not need acceleration. Therefore, our system uses FPGA assistance to accelerate data replication, and leaves the rest to the traditional software implementation of SMR.\n\nOur Waverunner approach is beneficial in both the common and the rare case situations. In the common case, the system runs at the speed of the network, with a 99th percentile latency of 1.8 μs achieved without batching on minimum-size packets at network line rate (85.5 Gbps in our evaluation). In rare cases, to handle uncommon situations such as leader failure and failure recovery, the system uses traditional software to guarantee correctness, which is much easier to develop and maintain than hardware-based implementations. Overall, our experience confirms Waverunner as an effective and practical solution for hardware accelerated SMR—achieving most of the benefits of hardware acceleration with minimum added complexity and implementation effort.",
+  "abstract_source_id": "src-abstract-nsdi-2023-91b11592",
   "venue": "nsdi",
   "year": 2023,
   "track_or_session": "Distributed Systems",
@@ -182,6 +184,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2023-91b11592",
+      "url": "https://www.usenix.org/conference/nsdi23/presentation/alimadadi",
+      "kind": "paper-page",
+      "title": "Waverunner: An Elegant Approach to Hardware Acceleration of State Machine Replication",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:02:45Z",
+      "content_hash": "sha256:73a1deaf71e45db277876ebef6c1f04838d583b74c9b2f7f98ecb4f74dacea15",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

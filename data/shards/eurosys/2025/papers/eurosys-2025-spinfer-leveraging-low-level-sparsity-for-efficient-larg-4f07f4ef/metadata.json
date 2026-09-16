@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "eurosys-2025-spinfer-leveraging-low-level-sparsity-for-efficient-larg-4f07f4ef",
   "title": "SpInfer: Leveraging Low-Level Sparsity for Efficient Large Language Model Inference on GPUs",
+  "abstract": "Large Language Models (LLMs) have demonstrated remarkable capabilities, but their immense scale poses significant challenges in terms of both memory and computational costs. While unstructured pruning offers promising solutions by introducing sparsity to reduce resource requirements, realizing its benefits in LLM inference remains elusive. This is primarily due to the storage overhead of indexing non-zero elements and the inefficiency of sparse matrix multiplication (SpMM) kernels at low sparsity levels (around 50%). In this paper, we present SpInfer, a high-performance framework tailored for sparsified LLM inference on GPUs. SpInfer introduces Tensor-Core-Aware Bitmap Encoding (TCA-BME), a novel sparse format that minimizes indexing overhead by leveraging efficient bitmap-based indexing, optimized for GPU Tensor Core architectures. Furthermore, SpInfer integrates an optimized SpMM kernel with Shared Memory Bitmap Decoding (SMBD) and asynchronous pipeline design to enhance computational efficiency. Experimental results show that SpInfer significantly outperforms state-of-the-art SpMM implementations (up to 2.14× and 2.27× over Flash-LLM and SparTA, respectively) across a range of sparsity levels (30% to 70%), with substantial improvements in both memory efficiency and end-to-end inference speed (up to 1.58×). SpInfer outperforms highly optimized cuBLAS at sparsity levels as low as 30%, marking the first effective translation of unstructured pruning's theoretical advantages into practical performance gains for LLM inference.",
+  "abstract_source_id": "src-abstract-eurosys-2025-4f07f4ef",
   "venue": "eurosys",
   "year": 2025,
   "track_or_session": "Session-2.2: LLM Serving - Location: Rotterdam hall 1A - Chair: Luo Mai",
@@ -230,6 +232,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-eurosys-2025-4f07f4ef",
+      "url": "https://api.openalex.org/works/doi:10.1145/3689031.3717481?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "SpInfer: Leveraging Low-Level Sparsity for Efficient Large Language Model Inference on GPUs",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:19:35Z",
+      "content_hash": "sha256:e97fe97041791fc3ed74e6e3a5a91cf0ad73400ed5881bcab619a52659f34a70",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2026-modm-efficient-serving-for-image-generation-via-m-ixture-88c61a36",
   "title": "MoDM: Efficient Serving for Image Generation via M ixture- o f- D iffusion M odels",
+  "abstract": "Diffusion-based text-to-image generation models trade latency for quality: small models are fast but generate lower quality images, while large models produce better images but are slow. We present MoDM, a novel caching-based serving system for diffusion models that dynamically balances latency and quality through a mixture of diffusion models. Unlike prior approaches that rely on model-specific internal features, MoDM caches final images, allowing seamless retrieval and reuse across multiple diffusion model families. This design enables adaptive serving by dynamically balancing latency and image quality: using smaller models for cache-hit requests to reduce latency while reserving larger models for cache-miss requests to maintain quality. Small model image quality is preserved using retrieved cached images. We design a global monitor that optimally allocates GPU resources and balances inference workload, ensuring high throughput while meeting Service-Level Objectives (SLOs) under varying request rates. Our evaluations show that MoDM significantly reduces average serving time by 2.5× while retaining image quality, making it a practical solution for scalable and resource-efficient model deployment.",
+  "abstract_source_id": "src-abstract-asplos-2026-88c61a36",
   "venue": "asplos",
   "year": 2026,
   "track_or_session": "Session 3B: Mixture-of-Experts & Efficient Inference",
@@ -173,6 +175,19 @@
       "official": false,
       "supports": [
         "Indexed abstract used for strict relevance classification and indexed arXiv identifier where available."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2026-88c61a36",
+      "url": "https://api.openalex.org/works/doi:10.1145/3760250.3762220?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "MoDM: Efficient Serving for Image Generation via M ixture- o f- D iffusion M odels",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:05:35Z",
+      "content_hash": "sha256:9e9fa44b6aaacc3ae90ee4231eea40fba3133e8851772c98619daaebe0574972",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

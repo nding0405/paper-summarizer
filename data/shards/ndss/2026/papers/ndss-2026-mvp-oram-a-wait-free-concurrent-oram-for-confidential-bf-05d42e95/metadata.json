@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2026-mvp-oram-a-wait-free-concurrent-oram-for-confidential-bf-05d42e95",
   "title": "MVP-ORAM: a Wait-free Concurrent ORAM for Confidential BFT Storage",
+  "abstract": "It is well known that encryption alone is not enough to protect data privacy. Access patterns, revealed when operations are performed, can also be leveraged in inference attacks. Oblivious RAM (ORAM) hides access patterns by making client requests oblivious. However, existing protocols are still limited in supporting concurrent clients and Byzantine fault tolerance (BFT). We present MVP-ORAM, the first wait-free ORAM protocol that supports concurrent fail-prone clients. In contrast to previous works, MVP-ORAM avoids using trusted proxies, which necessitate additional security assumptions, and concurrency control mechanisms based on inter-client communication or distributed locks, which limit overall throughput and the capability to tolerate faulty clients. Instead, MVP-ORAM enables clients to perform concurrent requests and merge conflicting updates as they happen, satisfying wait-freedom, i.e., clients make progress independently of the performance or failures of other clients . Since wait and collision freedom are fundamentally contradictory goals that cannot be achieved simultaneously in an asynchronous concurrent ORAM service, we define a weaker notion of obliviousness that depends on the application workload and number of concurrent clients, and prove MVP-ORAM is secure in practical scenarios where clients perform skewed block accesses . By being wait-free, MVP-ORAM can be seamlessly integrated into existing confidential BFT data stores, creating the first BFT ORAM construction. We implement MVP-ORAM on top of a confidential BFT data store and show our prototype can process hundreds of 4KB accesses per second in modern clouds.",
+  "abstract_source_id": "src-abstract-ndss-2026-05d42e95",
   "venue": "ndss",
   "year": 2026,
   "track_or_session": "Fall submission cycle",
@@ -160,6 +162,19 @@
       "official": false,
       "supports": [
         "independent proceedings identity reconciliation"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2026-05d42e95",
+      "url": "https://www.ndss-symposium.org/ndss-paper/mvp-oram-a-wait-free-concurrent-oram-for-confidential-bft-storage/",
+      "kind": "paper-page",
+      "title": "MVP-ORAM: a Wait-free Concurrent ORAM for Confidential BFT Storage",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:22:33Z",
+      "content_hash": "sha256:ee33a3ae12011f90a2c48435c34b9344be8da6c5b1713cd55ea0d66fc1a98752",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

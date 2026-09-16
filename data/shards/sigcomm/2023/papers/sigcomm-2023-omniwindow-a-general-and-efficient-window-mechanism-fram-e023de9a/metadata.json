@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sigcomm-2023-omniwindow-a-general-and-efficient-window-mechanism-fram-e023de9a",
   "title": "OmniWindow: A General and Efficient Window Mechanism Framework for Network Telemetry",
+  "abstract": "Recent network telemetry solutions typically target programmable switches to achieve high performance and in-network visibility. They partition the packet stream into windows and then apply various stream processing techniques to summarize flow-level statistics. However, existing studies focus on the measurement within each window. Window management is still a missing piece due to the resource limitation of programmable switches. In this paper, we propose OmniWindow, a general and efficient window mechanism framework. OmniWindow splits the original window into fine-grained sub-windows such that the sub-windows can be merged into various window types. To deal with the resource restriction, OmniWindow carefully designs its data plane memory layout and proposes a window synchronization method. It also employs a collaborative architecture that can collect and reset stateful data in sub-windows within a limited time. We prototype OmniWindow on Tofino. We incorporate OmniWindow into a SOTA query-driven telemetry system and eight sketch-based telemetry algorithms. Our experiments demonstrate that OmniWindow enables these telemetry solutions to achieve higher accuracy than conventional window mechanism.",
+  "abstract_source_id": "src-abstract-sigcomm-2023-e023de9a",
   "venue": "sigcomm",
   "year": 2023,
   "track_or_session": "Telemetry — Research Paper",
@@ -172,6 +174,19 @@
         "publisher-deposited ORCIDs",
         "proceedings page range and print publication date",
         "empty publisher relation metadata for alternate-version checks"
+      ]
+    },
+    {
+      "id": "src-abstract-sigcomm-2023-e023de9a",
+      "url": "https://api.openalex.org/works/doi:10.1145/3603269.3604847?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "OmniWindow: A General and Efficient Window Mechanism Framework for Network Telemetry",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:22:57Z",
+      "content_hash": "sha256:272b84ef6d7ded318e8c1d240425098cc57a20533f9701b125cbb642ddd7b084",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

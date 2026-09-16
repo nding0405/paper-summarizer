@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-unsafe-llm-based-search-quantitative-analysis-and-mitiga-7215777a",
   "title": "Unsafe LLM-Based Search: Quantitative Analysis and Mitigation of Safety Risks in AI Web Search",
+  "abstract": "Recent advancements in Large Language Models (LLMs) have significantly enhanced the capabilities of AI-Powered Search Engines (AIPSEs), offering precise and efficient responses by integrating external databases with pre-existing knowledge. However, we observe that these AIPSEs raise risks such as quoting malicious content or citing malicious websites, leading to harmful or unverified information dissemination. In this study, we conduct the first safety risk quantification on seven production AIPSEs by systematically defining the threat model, risk type, and evaluating responses to various query types. With data collected from PhishTank, ThreatBook, and LevelBlue, our findings reveal that AIPSEs frequently generate harmful content that contains malicious URLs even with benign queries (e.g., with benign keywords). We also observe that directly querying a URL will increase the number of main risk-inclusive responses, while querying with natural language will slightly mitigate such risk. Compared to traditional search engines, AIPSEs outperform in both utility and safety. We further perform two case studies on online document spoofing and phishing to show the ease of deceiving AIPSEs in the real-world setting. To mitigate these risks, we develop an agent-based defense with a GPT-4.1-based content refinement tool and a URL detector. Our evaluation shows that our defense can effectively reduce the risk, with only a minor cost of reducing available information by approximately 10.7%. Our research highlights the urgent need for robust safety measures in AIPSEs.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-7215777a",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Vulnerabilities in LLMs: Privacy, Safety, and Defense",
@@ -196,6 +198,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-7215777a",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/luo-zeren",
+      "kind": "paper-page",
+      "title": "Unsafe LLM-Based Search: Quantitative Analysis and Mitigation of Safety Risks in AI Web Search",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:22:33Z",
+      "content_hash": "sha256:0534750e74a52a2eb5db16db5393211261c69b66015a8134481730ec88a9355b",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

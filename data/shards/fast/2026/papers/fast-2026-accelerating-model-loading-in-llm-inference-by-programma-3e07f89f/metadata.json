@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "fast-2026-accelerating-model-loading-in-llm-inference-by-programma-3e07f89f",
   "title": "Accelerating Model Loading in LLM Inference by Programmable Page Cache",
+  "abstract": "This paper examines the model loading bottleneck during the LLM inference startup. Existing solutions often optimize model loading performance at the expense of compatibility. However, compatibility is a crucial factor determining whether a technology can be widely applied in real-world scenarios. This work achieves both high performance and strong compatibility by optimizing the cache policy of the kernel file system. We design PPC, a programmable page cache framework that allows users to customize page cache policies in a non-intrusive, flexible, and lightweight manner. Furthermore, we design MAIO, a cache policy implemented based on PPC, to optimize model loading. MAIO introduces an I/O template-based mechanism to fully utilize SSD bandwidth, XPU affinity, and data locality to enhance the efficiency of prefetching and eviction. Our evaluation shows that MAIO reduces the model loading latency by up to 79% compared to existing optimizations. In a real-world application, MAIO achieves up to 36% improvement in inference throughput over other tested solutions in the elastic deployment scenario.",
+  "abstract_source_id": "src-abstract-fast-2026-3e07f89f",
   "venue": "fast",
   "year": 2026,
   "track_or_session": "AI and LLMs I",
@@ -223,6 +225,19 @@
         "proceedings page range and page count",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-fast-2026-3e07f89f",
+      "url": "https://www.usenix.org/conference/fast26/presentation/liu-yubo",
+      "kind": "paper-page",
+      "title": "Accelerating Model Loading in LLM Inference by Programmable Page Cache",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:01:19Z",
+      "content_hash": "sha256:4172f2ac545c84584d3b894c6b4c27de4dae5da64cf4e1e55a8598cd38a09ac9",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2025-kronos-a-secure-and-generic-sharding-blockchain-consensu-8764a3d6",
   "title": "Kronos: A Secure and Generic Sharding Blockchain Consensus with Optimized Overhead",
+  "abstract": "Sharding enhances blockchain scalability by dividing the network into shards, each managing specific unspent transaction outputs or accounts. As an introduced new transaction type, cross-shard transactions pose a critical challenge to the security and efficiency of sharding blockchains.\n\nCurrently, there is a lack of a generic sharding blockchain consensus pattern that achieves both security and low overhead.\n\nIn this paper, we present Kronos, a secure sharding blockchain consensus achieving optimized overhead.\n\nIn particular, we propose a new textit{secure sharding blockchain consensus pattern}, based on a textit{buffer} managed jointly by shard members. Valid transactions are transferred to the payee via the buffer, while invalid ones are rejected through happy or unhappy paths.\n\nKronos is proved to achieve textit{security} textit{with atomicity} under malicious clients while maintaining textit{optimal intra-shard overhead}. Efficient rejection even requires no Byzantine fault tolerance (BFT) protocol execution in happy paths, and the cost in unhappy paths is still not higher than a two-phase commit.\n\nBesides, we propose secure cross-shard certification methods. Handling $b$ transactions, Kronos is proved to achieve cross-shard communication with low textit{cross-shard overhead} $mathcal{O}(n b lambda)$ ($n$ for the shard size and $lambda$ for the security parameter).\n\nNotably, Kronos imposes no restrictions on BFT and does not rely on timing assumptions, offering optional constructions in various modules. Kronos could serve as a universal framework for enhancing the performance and scalability of existing BFT protocols. Kronos supports generic models, including asynchronous networks, and can increase the throughput by several orders of magnitude.\n\nWe implement Kronos using two prominent BFT protocols: asynchronous Speeding Dumbo (NDSS'22) and partially synchronous Hotstuff (PODC'19). Extensive experiments (over up to 1000 AWS EC2 nodes across 4 AWS regions) demonstrate Kronos scales the consensus nodes to thousands, achieving a substantial throughput of 320 ktx/sec with 2.0 sec latency. Compared with the past solutions, Kronos outperforms, achieving up to a 12$times$ improvement in throughput and a 50% reduction in latency when cross-shard transactions dominate the workload.",
+  "abstract_source_id": "src-abstract-ndss-2025-8764a3d6",
   "venue": "ndss",
   "year": 2025,
   "track_or_session": "Summer submission cycle",
@@ -231,6 +233,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2025-8764a3d6",
+      "url": "https://www.ndss-symposium.org/ndss-paper/kronos-a-secure-and-generic-sharding-blockchain-consensus-with-optimized-overhead/",
+      "kind": "paper-page",
+      "title": "Kronos: A Secure and Generic Sharding Blockchain Consensus with Optimized Overhead",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:19:50Z",
+      "content_hash": "sha256:17c790313f378af360c66c7326cb050b1baf0ff17601b5a62bae1eccf4f017e0",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

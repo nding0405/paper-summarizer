@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2025-towards-verifiable-fhe-in-practice-proving-correct-execu-16546087",
   "title": "Towards Verifiable FHE in Practice: Proving Correct Execution of TFHE's Bootstrapping using plonky2",
+  "abstract": "In this work we demonstrate for the first time that a full FHE bootstrapping operation can be proven using a SNARK in practice. We do so by designing an arithmetic circuit for the bootstrapping operation and prove it using plonky2. We are able to prove the circuit on an AWS Hpc7a instance in under 20 minutes. Proof size is about 200 kB and verification takes less than 10 ms. As the basis of our bootstrapping operation we use TFHE's programmable bootstrapping and modify it in a few places to more efficiently represent it as an arithmetic circuit (while maintaining full functionality and security). In order to achieve our results in a memory-efficient way, we take advantage of the structure of the computation and plonky2's ability to efficiently prove its own verification circuit to implement a recursion-based IVC scheme. Lastly, we present a security proof in the UC model that captures active attacks in real world applications of verifiable FHE and augment our prototype to fit such applications.",
+  "abstract_source_id": "src-abstract-ccs-2025-16546087",
   "venue": "ccs",
   "year": 2025,
   "track_or_session": "Cycle 2",
@@ -106,6 +108,19 @@
         "published-order authors",
         "publication-time affiliations",
         "publication date and page span"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2025-16546087",
+      "url": "https://api.openalex.org/works/doi:10.1145/3719027.3765097?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Towards Verifiable FHE in Practice: Proving Correct Execution of TFHE's Bootstrapping using plonky2",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:17:49Z",
+      "content_hash": "sha256:0a46c136a1af92465b4ad4c6a1ffdbcf5fc30bcfb9a078ea748a6498855414d7",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

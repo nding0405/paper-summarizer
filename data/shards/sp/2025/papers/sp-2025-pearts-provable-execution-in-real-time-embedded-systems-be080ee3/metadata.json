@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2025-pearts-provable-execution-in-real-time-embedded-systems-be080ee3",
   "title": "PEARTS: Provable Execution in Real-Time Embedded Systems",
+  "abstract": "Embedded devices are increasingly ubiquitous and vital, often supporting safety-critical functions. However, due to strict cost and energy constraints, they are typically implemented with Micro-Controller Units (MCUs) that lack advanced architectural security features. Within this space, recent efforts have created low-cost architectures capable of generating Proofs of Execution (PoX) of software on potentially compromised MCUs. This capability can ensure the integrity of sensor data from the outset, by binding sensed results to an unforgeable cryptographic proof of execution on edge sensor MCUs. However, the security of existing PoX requires the proven execution to occur atomically (i.e., uninterrupted). This requirement precludes the application of PoX to (1) time-shared systems, and (2) applications with real-time constraints, creating a direct conflict between execution integrity and the real-time availability needs of several embedded system uses. In this paper, we formulate a new security goal called Real-Time Proof of Execution (RT-PoX) that retains the integrity guarantees of classic PoX while enabling its application to existing real-time systems. This is achieved by relaxing the atomicity requirement of PoX while dispatching interference attempts from other potentially malicious tasks (or compromised operating systems) executing on the same device. To realize the RT-PoX goal, we develop Provable Execution Architecture for Real-Time Systems (PEARTS). To the best of our knowledge, PEARTS is the first PoX system that can be directly deployed alongside a commodity embedded real-time operating system (FreeRTOS). This enables both real-time scheduling and execution integrity guarantees on commodity MCUs. To showcase this capability, we develop a PEARTS open-source prototype atop FreeRTOS on a single-core ARM Cortex- M33processor. Based on this prototype, we evaluate and report on PEARTS security and (modest) overheads.",
+  "abstract_source_id": "src-abstract-sp-2025-be080ee3",
   "venue": "sp",
   "year": 2025,
   "track_or_session": "Cycle 1",
@@ -112,6 +114,19 @@
       "official": true,
       "supports": [
         "DOI, authors, affiliations, abstract, publication date, pages, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2025-be080ee3",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "PEARTS: Provable Execution in Real-Time Embedded Systems",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:47Z",
+      "content_hash": "sha256:d48e5e27e72297ce02860f066764bd9c5cd6e8191e2ebf4b4f15da0fffb6959f",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2023-mtsan-a-feasible-and-practical-memory-sanitizer-for-fuzz-2bcf8bb2",
   "title": "MTSan: A Feasible and Practical Memory Sanitizer for Fuzzing COTS Binaries",
+  "abstract": "Fuzzing has been widely adopted for finding vulnerabilities in programs, especially when source code is not available. But the effectiveness and efficiency of binary fuzzing are curtailed by the lack of memory sanitizers for binaries. This lack of binary sanitizers is due to the information loss in compiling programs and challenges in binary instrumentation.\n\nIn this paper, we present a feasible and practical hardware-assisted memory sanitizer, MTSan, for binary fuzzing. MTSan can detect both spatial and temporal memory safety violations at runtime. It adopts a novel progressive object recovery scheme to recover objects in binaries and uses a customized binary rewriting solution to instrument binaries with the memory-tagging-based memory safety sanitizing policy. Further, MTSan uses a hardware feature, ARM Memory Tagging Extension (MTE) to significantly reduce its runtime overhead. We implemented a prototype of MTSan on AArch64 and systematically evaluated its effectiveness and performance. Our evaluation results show that MTSan could detect more memory safety violations than existing binary sanitizers whiling introducing much lower runtime and memory overhead.",
+  "abstract_source_id": "src-abstract-usenix-security-2023-2bcf8bb2",
   "venue": "usenix-security",
   "year": 2023,
   "track_or_session": "Memory",
@@ -217,6 +219,19 @@
       "official": true,
       "supports": [
         "authors, affiliations when published, abstract, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2023-2bcf8bb2",
+      "url": "https://www.usenix.org/conference/usenixsecurity23/presentation/chen-xingman",
+      "kind": "paper-page",
+      "title": "MTSan: A Feasible and Practical Memory Sanitizer for Fuzzing COTS Binaries",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:12:05Z",
+      "content_hash": "sha256:1f4f5698a59898a562a46a163bea97906b480038b59027c9a13bf291f3f1bbaf",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

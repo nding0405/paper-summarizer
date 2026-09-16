@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "fast-2025-hidpu-a-dpu-oriented-hybrid-indexing-scheme-for-disaggre-308c4a59",
   "title": "HiDPU: A DPU-Oriented Hybrid Indexing Scheme for Disaggregated Storage Systems",
+  "abstract": "Data Processing Units (DPUs) have been deployed in disaggregated storage systems to accelerate data transmission. However, in this paper, we observe that during data access in disaggregated storage, the address translation process incurs significant CPU computation overhead and leads to high system latency. Additionally, in large-scale storage systems, the address indexing structures also consume substantial memory space, incurring high costs.\n\nTo address these challenges, we propose HiDPU, a DPU-oriented hybrid indexing scheme optimized for disaggregated storage systems. Our solution introduces a multi-level indexing structure to alleviate the limitations of DPU memory resources, constrained computational power, and the high DPU-host interaction overhead. Mapping entries for the storage space are divided into different kinds of segments (i.e., accurate, PTHash, and LPTHash) to leverage address continuity. A layered learned index is constructed across these segments to enhance memory efficiency. To further reduce DPU-host interactions, small upper-layer indexes and frequently accessed metadata are maintained on the DPU, limiting interactions to a single instance. HiDPU also implements a two-phase asynchronous index update strategy to ensure index consistency between the DPU and host memory, while minimizing performance overhead. Experimental results on Huawei’s Hi1823 DPU demonstrate that HiDPU achieves up to 92% memory savings and improves query performance by up to 6.3 times compared to existing solutions.",
+  "abstract_source_id": "src-abstract-fast-2025-308c4a59",
   "venue": "fast",
   "year": 2025,
   "track_or_session": "More Machine Learning",
@@ -203,6 +205,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-fast-2025-308c4a59",
+      "url": "https://www.usenix.org/conference/fast25/presentation/zhu",
+      "kind": "paper-page",
+      "title": "HiDPU: A DPU-Oriented Hybrid Indexing Scheme for Disaggregated Storage Systems",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:01:07Z",
+      "content_hash": "sha256:64ccc4eee734afbad85194d23a36ef2b0b3cf77afb85e31534c05e971e75e39c",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

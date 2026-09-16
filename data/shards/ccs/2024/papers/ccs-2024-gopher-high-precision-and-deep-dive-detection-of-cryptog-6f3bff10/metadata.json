@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2024-gopher-high-precision-and-deep-dive-detection-of-cryptog-6f3bff10",
   "title": "Gopher: High-Precision and Deep-Dive Detection of Cryptographic API Misuse in the Go Ecosystem",
+  "abstract": "The complexity of cryptographic APIs and developers' expertise gaps often leads to their improper use, seriously threatening information security. Existing cryptographic API misuse detection tools that rely on black/white-list methods require experts to manually establish detection rules. They struggle to dynamically update rules and scale to cover numerous unofficial cryptographic libraries. Furthermore, as these tools are primarily aimed at non-Go languages, they have limited applicability and accuracy in the Go ecosystem, which is extensively used for security-centric applications. To mitigate these challenges, we present Gopher, a novel cryptographic misuse detection framework, that excels in encapsulated API and cross-library detection. In this framework, we have designed CryDict to convert rules into unified and standardized constraints, capable of deriving new usage rules and elucidating implicit knowledge during scanning. Gopher leverages CryDict to create a logical separation between rule formulation and Detector detection, enabling dynamic updating of constraints and enhancing detection capabilities. This significantly improves the Gopher 's compatibility and scalability. Utilizing Gopher, we have conducted an extensive analysis of the Go ecosystem, examining 19,313 Go projects. In our rigorous testing, Gopher demonstrated a remarkable 98.9% accuracy rate and identified 64.1% of previously undetected misuses. This scrutiny has surfaced numerous hidden security vulnerabilities, and highlighted misuse tendencies across diverse project categories.",
+  "abstract_source_id": "src-abstract-ccs-2024-6f3bff10",
   "venue": "ccs",
   "year": 2024,
   "track_or_session": "Cycle 2",
@@ -222,6 +224,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2024-6f3bff10",
+      "url": "https://api.openalex.org/works/doi:10.1145/3658644.3690276?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Gopher: High-Precision and Deep-Dive Detection of Cryptographic API Misuse in the Go Ecosystem",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:10:08Z",
+      "content_hash": "sha256:b2a06a7d4d1711e39233427eab512d1f47440187d572e9c9b95e849b919423e7",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2026-chorus-secret-recovery-with-ephemeral-client-committees-b5975409",
   "title": "Chorus: Secret Recovery with Ephemeral Client Committees",
+  "abstract": "End-to-end encrypted applications protect user data by ensuring that user secrets are only available on client devices. However, if a user loses all of their devices, they need a way to recover their data using only a short password. To realize a password-based secret recovery system resilient to brute-force attacks, prior works relied on secure hardware or a few non-colluding servers. In this work, we take a conceptually different approach that distributes trust across the many clients already in the system, while using the server only as an orchestrator without relying on it for privacy. To achieve this, we design and implement Chorus, a secret recovery system that employs ephemeral committees, each consisting of approximately a thousand clients, to provide strong privacy with high scalability. Committees change frequently in Chorus, typically on the order of a few minutes, to severely limit an attacker's ability to compromise clients on a committee. We design Chorus for unreliable, resource-constrained clients and show that the perclient overhead decreases as more clients join the system. Assuming each user performs recovery once a year, the expected per-client overhead in Chorus is under 30 s of computation on a mobile device and 13.2 MB of communication, both incurred only once every four months in a configuration with 100 M clients, up to 50 M of which may be offline and at most 10 M may be compromised. To achieve this performance, we contribute two key techniques: (i) a password-based secret recovery scheme that confines expensive committee interactions to infrequent, latency-tolerant operations, and (ii) a non-interactive verifiable secret-sharing scheme that reduces client overhead by two orders of magnitude by delegating computation to the server.",
+  "abstract_source_id": "src-abstract-sp-2026-b5975409",
   "venue": "sp",
   "year": 2026,
   "track_or_session": "Cycle 2",
@@ -133,6 +135,19 @@
       "official": true,
       "supports": [
         "DOI, published-order authors and affiliations, abstract, publication date, page span, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2026-b5975409",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "CHORUS: Secret Recovery with Ephemeral Client Committees",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:57Z",
+      "content_hash": "sha256:303a9b5e5ef8908a3cfe67f02eb8a87be978a5fe3281c7ecec8c0cdb512517e0",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

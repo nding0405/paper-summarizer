@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2026-vigtext-deepfake-image-detection-with-vision-language-mo-6ace6d7b",
   "title": "ViGText: Deepfake Image Detection with Vision-Language Model Explanations and Graph Neural Networks",
+  "abstract": "The rapid rise of deepfake technology, which produces realistic but fraudulent digital content, threatens the authenticity of media. Deepfakes manipulate videos, images, and audio, spread misinformation, blur the line between real and fake, and highlight the need for effective detection approaches. Traditional deepfake detection approaches often struggle with sophisticated, customized deepfakes, especially in terms of generalization and robustness against malicious attacks. This paper introduces ViGText, a novel approach that integrates images with Vision Large Language Model (VLLM) Text explanations within a Graph-based framework to improve deepfake detection. The novelty of ViGText lies in its integration of detailed explanations with visual data, as it provides a more context-aware analysis than captions, which often lack specificity and fail to reveal subtle inconsistencies. ViGText systematically divides images into patches, constructs image and text graphs, and integrates them for analysis using Graph Neural Networks (GNNs) to identify deepfakes. Through the use of multi-level feature extraction across spatial and frequency domains, ViGText captures details that enhance its robustness and accuracy to detect sophisticated deepfakes. Extensive experiments demonstrate that ViGText significantly enhances generalization and achieves a notable performance boost when it detects user-customized deepfakes. Specifically, average F1 scores rise from 72.45% to 98.32% under generalization evaluation, and reflects the model’s superior ability to generalize to unseen, fine-tuned variations of stable diffusion models. As for robustness, ViGText achieves an increase of 11.1% in recall compared to other deepfake detection approaches against state-of-the-art foundation model-based adversarial attacks. ViGText limits classification performance degradation to less than 4% when it faces targeted attacks that exploit its graph-based architecture and marginally increases the execution cost. ViGText combines granular visual analysis with textual interpretation, establishes a new benchmark for deepfake detection, and provides a more reliable framework to preserve media authenticity and information integrity.",
+  "abstract_source_id": "src-abstract-ndss-2026-6ace6d7b",
   "venue": "ndss",
   "year": 2026,
   "track_or_session": "Summer submission cycle",
@@ -181,6 +183,19 @@
       "official": false,
       "supports": [
         "independent proceedings identity reconciliation"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2026-6ace6d7b",
+      "url": "https://www.ndss-symposium.org/ndss-paper/vigtext-deepfake-image-detection-with-vision-language-model-explanations-and-graph-neural-networks/",
+      "kind": "paper-page",
+      "title": "ViGText: Deepfake Image Detection with Vision-Language Model Explanations and Graph Neural Networks",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:23:34Z",
+      "content_hash": "sha256:d6152daf78dc61bf6c1d432c0e445e09f19837797ea9d2ce6f6ece1e4e40dcd0",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

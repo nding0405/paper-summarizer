@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2025-rcontainer-a-secure-container-architecture-through-exten-10812a37",
   "title": "RContainer: A Secure Container Architecture through Extending ARM CCA Hardware Primitives",
+  "abstract": "Containers have become widely adopted in cloud platforms due to their efficient deployment and high resource utilization. However, their weak isolation has always posed a significant security concern. In this paper, we propose RContainer, a novel secure container architecture that protects containers from untrusted operating systems and enforces strong isolation among containers by extending ARM Confidential Computing Architecture (CCA) hardware primitives. RContainer introduces a small, trusted mini-OS that runs alongside the deprivileged OS, responsible for monitoring the control flow between the operating system and containers. Additionally, RContainer uses shim-style isolation, creating an isolated physical address space called con-shim for each container at the kernel layer through the Granule Protection Check mechanism. We have implemented RContainer on ARMv9-A Fixed Virtual Platform and ARMv8 hardware SoC for security analysis and performance evaluation. Experimental results demonstrate that RContainer can significantly enhance container security with a modest performance overhead and a minimal Trusted Computing Base (TCB).",
+  "abstract_source_id": "src-abstract-ndss-2025-10812a37",
   "venue": "ndss",
   "year": 2025,
   "track_or_session": "Fall submission cycle",
@@ -270,6 +272,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2025-10812a37",
+      "url": "https://www.ndss-symposium.org/ndss-paper/rcontainer-a-secure-container-architecture-through-extending-arm-cca-hardware-primitives/",
+      "kind": "paper-page",
+      "title": "RContainer: A Secure Container Architecture through Extending ARM CCA Hardware Primitives",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:20:15Z",
+      "content_hash": "sha256:53811febe77d9896307346b3b634270514cc32b77436028e19bc9f0227a9ffb1",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

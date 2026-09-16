@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2023-practical-asynchronous-high-threshold-distributed-key-ge-8860985f",
   "title": "Practical Asynchronous High-threshold Distributed Key Generation and Distributed Polynomial Sampling",
+  "abstract": "Distributed Key Generation (DKG) is a technique to bootstrap threshold cryptosystems without a trusted party. DKG is an essential building block to many decentralized protocols such as randomness beacons, threshold signatures, Byzantine consensus, and multiparty computation. While significant progress has been made recently, existing asynchronous DKG constructions are inefficient when the reconstruction threshold is larger than one-third of the total nodes. In this paper, we present a simple and concretely efficient \\emph{asynchronous} DKG (ADKG) protocol among n = 3 t + 1 nodes that can tolerate up to t malicious nodes and support any reconstruction threshold ℓ ≥ t . Our protocol has an expected O (κn 3 ) communication cost, where κ is the security parameter, and only assumes the hardness of the Discrete Logarithm. The core ingredient of our ADKG protocol is an asynchronous protocol to secret share a random polynomial of degree ℓ ≥ t , which has other applications, such as asynchronous proactive secret sharing and asynchronous multiparty computation. We implement our high-threshold ADKG protocol and evaluate it using a network of up to 128 geographically distributed nodes. Our evaluation shows that our high-threshold ADKG protocol reduces the running time by 90% and bandwidth usage by 80% over the state-of-the-art.",
+  "abstract_source_id": "src-abstract-usenix-security-2023-8860985f",
   "venue": "usenix-security",
   "year": 2023,
   "track_or_session": "Distributed Secure Computations",
@@ -133,6 +135,19 @@
       "official": true,
       "supports": [
         "authors, affiliations when published, abstract, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2023-8860985f",
+      "url": "https://www.usenix.org/conference/usenixsecurity23/presentation/das",
+      "kind": "paper-page",
+      "title": "Practical Asynchronous High-threshold Distributed Key Generation and Distributed Polynomial Sampling",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:12:33Z",
+      "content_hash": "sha256:30077f5a2fbde2cbc337cbaa12e7245e56cf2a093fc6f7f53b9e2609a6f7fde5",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

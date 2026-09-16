@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "fast-2023-on-stacking-a-persistent-memory-file-system-on-legacy-fi-02fca6e6",
   "title": "On Stacking a Persistent Memory File System on Legacy File Systems",
+  "abstract": "In this work, we design and implement a Stackable Persistent memory File System (SPFS), which serves NVMM as a persistent writeback cache to NVMM-oblivious filesystems. SPFS can be stacked on a disk-optimized file system to improve I/O performance by absorbing frequent order-preserving small synchronous writes in NVMM while also exploiting the VFS cache of the underlying disk-optimized file system for non-synchronous writes. A stackable file system must be lightweight in that it manages only NVMM and not the disk or VFS cache. Therefore, SPFS manages all file system metadata including extents using simple but highly efficient dynamic hash tables. To manage extents using hash tables, we design a novel Extent Hashing algorithm that exhibits fast insertion as well as fast scan performance. Our performance study shows that SPFS effectively improves I/O performance of the lower file system by up to 9.9×.",
+  "abstract_source_id": "src-abstract-fast-2023-02fca6e6",
   "venue": "fast",
   "year": 2023,
   "track_or_session": "Persistent Memory Systems",
@@ -161,6 +163,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-fast-2023-02fca6e6",
+      "url": "https://www.usenix.org/conference/fast23/presentation/woo",
+      "kind": "paper-page",
+      "title": "On Stacking a Persistent Memory File System on Legacy File Systems",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:00:36Z",
+      "content_hash": "sha256:5f2c3a0116e81d1b9f2aa09c64839ca2875c2aa30369259e60331adf3e723c3c",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

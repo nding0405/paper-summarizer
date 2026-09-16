@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "fast-2025-awupf-rediscovered-atomic-writes-to-unleash-pivotal-faul-72e04053",
   "title": "AWUPF Rediscovered: Atomic Writes to Unleash Pivotal Fault-Tolerance in SSDs",
+  "abstract": "From their inception, SSDs have ensured the atomicity of writes at the flash page level, guaranteeing their completion even during power failures. This functionality has been standardized as Atomic Write Unit Power Fail (AWUPF) in the NVMe standard. Despite SSDs providing AWUPF ranging from several to tens of KBs, there has been little effort on the host side to utilize this capability. For instance, if a transaction is smaller than the AWUPF size, leveraging AWUPF can eliminate the need for write-ahead logging or journaling. In this paper, we showcase how AWUPF reduces the overhead of host-side transactional writes through a light-weight crash consistency implementation for log-structured RAID (Log-RAID). Log-RAID manages the mapping of externally-exposed logical block numbers to their dynamically changing physical locations. Our approach bypasses journaling for updates of these mappings within the AWUPF limit, allowing direct writes instead. For larger updates, conventional journaling is applied. Additionally, our approach addresses the ordering issues between these two update paths. The evaluation of the proposed approach on Poseidon OS showed up to 3.6x improvement in random write performance.",
+  "abstract_source_id": "src-abstract-fast-2025-72e04053",
   "venue": "fast",
   "year": 2025,
   "track_or_session": "Security, Integrity, and Consistency",
@@ -140,6 +142,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-fast-2025-72e04053",
+      "url": "https://www.usenix.org/conference/fast25/presentation/jeon",
+      "kind": "paper-page",
+      "title": "AWUPF Rediscovered: Atomic Writes to Unleash Pivotal Fault-Tolerance in SSDs",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:00:59Z",
+      "content_hash": "sha256:5fa323ecb4dab18718c313c26b2d871e499c75634d4bf3c5a6ec4a1d416572b9",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

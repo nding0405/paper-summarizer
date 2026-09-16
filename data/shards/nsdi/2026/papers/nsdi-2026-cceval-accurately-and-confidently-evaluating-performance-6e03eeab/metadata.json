@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2026-cceval-accurately-and-confidently-evaluating-performance-6e03eeab",
   "title": "CCEval: Accurately and Confidently Evaluating Performance Metrics of Congestion Control Algorithms for Datacenter Networks",
+  "abstract": "Congestion control in datacenter networks (DCNs) is a highly active research area. Typical CCA evaluation workflows contain three steps: generate experimental configurations, execute the experiments, and estimate performance metrics using results from multiple trials. However, due to variability brought by random traffic workloads and single-digit trial counts, common experimental methodologies fail to provide enough confidence to properly evaluate CCA performance.\n\nWe propose CCEval, an evaluation framework for accurately and confidently estimating performance metrics of CCAs in DCNs. The key idea is using confidence intervals and more trials to quantify and improve the accuracy and confidence of performance metrics. To this end, we propose a model-free estimation algorithm to calculate the confidence intervals and forecast the required trial count for a given accuracy, confidence level, metric, and CCA. We further design a model-based tail quantile estimation algorithm to reduce the needed trial counts significantly without losing accuracy and confidence. Extensive experiments on simulators and real-world testbeds with four CCAs on typical topologies and flow distributions show that CCEval can produce estimations of performance metrics accurately and confidently, with 1% relative margin of error and 95% confidence level, and can reduce trial counts by 75%~80% for tail quantile estimation.",
+  "abstract_source_id": "src-abstract-nsdi-2026-6e03eeab",
   "venue": "nsdi",
   "year": 2026,
   "track_or_session": "Self-Managing Networks",
@@ -286,6 +288,19 @@
         "proceedings page range and page count",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2026-6e03eeab",
+      "url": "https://www.usenix.org/conference/nsdi26/presentation/liu-tianfeng",
+      "kind": "paper-page",
+      "title": "CCEval: Accurately and Confidently Evaluating Performance Metrics of Congestion Control Algorithms for Datacenter Networks",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:04:58Z",
+      "content_hash": "sha256:eabad73f7ee00137db79099e755b53b5cf6a4476158b9000dba2997d51d08d40",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

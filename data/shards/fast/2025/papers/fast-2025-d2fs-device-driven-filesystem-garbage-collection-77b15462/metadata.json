@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "fast-2025-d2fs-device-driven-filesystem-garbage-collection-77b15462",
   "title": "D2FS: Device-Driven Filesystem Garbage Collection",
+  "abstract": "In this work, we propose a mechanism to free the log-structured filesystem from running the garbage collection. We exploit the garbage collection functionality of the underlying flash storage to reclaim the invalid sections in the filesystem partition. We call it a Log-structured Filesystem with Device-Driven Garbage Collection, D2FS . D2FS consists of three key ingredients: Coupled Garbage Collection, Migration Upcall, and Virtual Overprovisioning. Coupled Garbage Collection consolidates the valid flash pages at the storage device and remaps the migrated flash pages to new filesystem locations so that the valid pages are clustered not only physically but also logically. Migration Upcall asynchronously notifies the host about the file mappings updated by the Coupled Garbage Collection, minimizing interference with the foreground filesystem operations. Virtual Overprovisioning separates the size of the filesystem partition from the physical capacity of the associated storage partition and sets the size of the filesystem partition larger than the physical storage partition. Virtual overprovisioning ensures that FTL runs the device-level garbage collection on time so that the filesystem partition never runs out of free sections. By integrating these techniques, we save the log-structured filesystem from the garbage collection overhead, a primary obstacle hindering its widespread adoption in production environments. D2FS outperforms F2FS by 3× (FIO), zoned F2FS by 1.7× (FIO), and IPLFS by 1.5× (MySQL YCSB-F).",
+  "abstract_source_id": "src-abstract-fast-2025-77b15462",
   "venue": "fast",
   "year": 2025,
   "track_or_session": "Hardware Assist",
@@ -161,6 +163,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-fast-2025-77b15462",
+      "url": "https://www.usenix.org/conference/fast25/presentation/kim-juwon",
+      "kind": "paper-page",
+      "title": "D2FS: Device-Driven Filesystem Garbage Collection",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:01:01Z",
+      "content_hash": "sha256:7b4e095947db3e8665571294edecf95f0f365e71537c790593895b7f37cbb80a",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

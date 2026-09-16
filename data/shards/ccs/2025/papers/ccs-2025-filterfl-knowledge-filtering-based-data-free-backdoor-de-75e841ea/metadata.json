@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2025-filterfl-knowledge-filtering-based-data-free-backdoor-de-75e841ea",
   "title": "FilterFL: Knowledge Filtering-based Data-Free Backdoor Defense for Federated Learning",
+  "abstract": "Due to the lack of data auditing techniques for untrusted clients, Federated Learning (FL) is vulnerable to backdoor attacks.Although various methods have been proposed to protect FL against backdoor attacks, they still exhibit poor defense performance in extreme data heterogeneity scenarios.Worse still, these methods strongly rely on additional datasets, violating the privacy protection requirements of FL.To overcome the above shortcomings, this paper proposes a novel data-free backdoor defense approach for FL, named FilterFL, which strives to prevent uploaded client models with backdoor knowledge from participating in the aggregation operation in each FL communication round.Based on our knowledge extraction and backdoor filtering schemes using two well-designed Conditional Generative Adversarial Networks (CGANs), FilterFL extracts incremental knowledge learned by a newly updated global model and filters its backdoor components, which can be used to generate one sample that reflects backdoor knowledge for each category.If an uploaded local model can confidently classify a generated sample into its target category, the knowledge contributed by the model will be excluded from the aggregation.In this way, FilterFL can effectively defend against backdoor attacks without using any additional auxiliary data.Comprehensive experiments on well-known datasets demonstrate that, compared with state-of-the-art methods, our approach achieves the best defense performance within various data heterogeneity scenarios.",
+  "abstract_source_id": "src-abstract-ccs-2025-75e841ea",
   "venue": "ccs",
   "year": 2025,
   "track_or_session": "Cycle 1",
@@ -211,6 +213,19 @@
         "published-order authors",
         "publication-time affiliations",
         "publication date and page span"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2025-75e841ea",
+      "url": "https://api.openalex.org/works/doi:10.1145/3719027.3744883?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "FilterFL: Knowledge Filtering-based Data-Free Backdoor Defense for Federated Learning",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:14:37Z",
+      "content_hash": "sha256:fbbd9cb7199ba3058f781580a4cd70c01bb3a12b47dfc5b52d2917e9351e84f0",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

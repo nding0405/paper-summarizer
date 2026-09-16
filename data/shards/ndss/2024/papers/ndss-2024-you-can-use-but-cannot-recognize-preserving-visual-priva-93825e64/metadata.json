@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2024-you-can-use-but-cannot-recognize-preserving-visual-priva-93825e64",
   "title": "You Can Use But Cannot Recognize: Preserving Visual Privacy in Deep Neural Networks",
+  "abstract": "Image data have been extensively used in Deep Neural Network (DNN) tasks in various scenarios, e.g., autonomous driving and medical image analysis, which incurs significant privacy concerns. Existing privacy protection techniques are unable to efficiently protect such data. For example, Differential Privacy (DP) that is an emerging technique protects data with strong privacy guarantee cannot effectively protect visual features of exposed image dataset. In this paper, we propose a novel privacy-preserving framework VisualMixer that protects the training data of visual DNN tasks by pixel shuffling, while not injecting any noises. VisualMixer utilizes a new privacy metric called Visual Feature Entropy (VFE) to effectively quantify the visual features of an image from both biological and machine vision aspects. In VisualMixer, we devise a task-agnostic image obfuscation method to protect the visual privacy of data for DNN training and inference. For each image, it determines regions for pixel shuffling in the image and the sizes of these regions according to the desired VFE. It shuffles pixels both in the spatial domain and in the chromatic channel space in the regions without injecting noises so that it can prevent visual features from being discerned and recognized, while incurring negligible accuracy loss. Extensive experiments on real-world datasets demonstrate that VisualMixer can effectively preserve the visual privacy with negligible accuracy loss, i.e., at average 2.35 percentage points of model accuracy loss, and almost no performance degradation on model training.",
+  "abstract_source_id": "src-abstract-ndss-2024-93825e64",
   "venue": "ndss",
   "year": 2024,
   "track_or_session": "Fall submission cycle",
@@ -168,6 +170,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2024-93825e64",
+      "url": "https://www.ndss-symposium.org/ndss-paper/you-can-use-but-cannot-recognize-preserving-visual-privacy-in-deep-neural-networks/",
+      "kind": "paper-page",
+      "title": "You Can Use But Cannot Recognize: Preserving Visual Privacy in Deep Neural Networks",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:18:56Z",
+      "content_hash": "sha256:873586638913935eace41149f65769911ad7f73a3e4664260e16685850fcaed2",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

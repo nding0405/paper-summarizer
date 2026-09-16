@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2026-hs-speculative-script-reordering-at-subprocess-granulari-0672e309",
   "title": "hS: Speculative Script Reordering at Subprocess Granularity",
+  "abstract": "Shell scripts are pervasive, acting as the glue between commands and subprocesses that are written in a variety of languages and perform complex, system-wide effects. Given the black-box nature of these subprocesses, all work that optimizes script performance until now has relied on handwritten annotations that describe subprocess effects. In this paper we introduce hS, a system that brings out-of-order, speculative execution to scripts that invoke subprocesses without requiring any user input or annotations about them. hS speculatively executes command instances—typically simple commands, pipelines, or small synchronization regions—dynamically detecting their effects: blocking unsafe ones, like network accesses, and selectively committing independent effects, like file writes, given no conflicts. On a wide range of real-world scripts, hS offers up to 9.3× speedups compared to bash, and up to 7× speedups over PaSh—all while not requiring any developer involvement or command annotations.",
+  "abstract_source_id": "src-abstract-osdi-2026-0672e309",
   "venue": "osdi",
   "year": 2026,
   "track_or_session": "Program Analysis",
@@ -314,6 +316,19 @@
       "official": true,
       "supports": [
         "Official proceedings availability and canonical conference versions."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2026-0672e309",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/liargkovas",
+      "kind": "paper-page",
+      "title": "hS: Speculative Script Reordering at Subprocess Granularity",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:08:24Z",
+      "content_hash": "sha256:a5d2ca3e7dbcd0296ce3cc865b8c226b76d780f851fa3a886de30552918b9608",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2024-whisperfuzz-white-box-fuzzing-for-detecting-and-locating-b11a4ba2",
   "title": "WhisperFuzz: White-Box Fuzzing for Detecting and Locating Timing Vulnerabilities in Processors",
+  "abstract": "Timing vulnerabilities in processors have emerged as a potent threat. As processors are the foundation of any computing system, identifying these flaws is imperative. Recently fuzzing techniques, traditionally used for detecting software vulnerabilities, have shown promising results for uncovering vulnerabilities in large-scale hardware designs, such as processors. Researchers have adapted black-box or grey-box fuzzing to detect timing vulnerabilities in processors. However, they cannot identify the locations or root causes of these timing vulnerabilities, nor do they provide coverage feedback to enable the designer's confidence in the processor's security.\n\nTo address the deficiencies of the existing fuzzers, we present WhisperFuzz —the first white-box fuzzer with static analysis—aiming to detect and locate timing vulnerabilities in processors and evaluate the coverage of microarchitectural timing behaviors. WhisperFuzz uses the fundamental nature of processors' timing behaviors, microarchitectural state transitions, to localize timing vulnerabilities. WhisperFuzz automatically extracts microarchitectural state transitions from a processor design at the register-transfer level (RTL) and instruments the design to monitor the state transitions as coverage. Moreover, WhisperFuzz measures the time a design-under-test (DUT) takes to process tests, identifying any minor, abnormal variations that may hint at a timing vulnerability. WhisperFuzz detects 12 new timing vulnerabilities across advanced open-sourced RISC-V processors: BOOM, Rocket Core, and CVA6. Eight of these violate the zero latency requirements of the Zkt extension and are considered serious security vulnerabilities. Moreover, WhisperFuzz also pinpoints the locations of the new and the existing vulnerabilities.",
+  "abstract_source_id": "src-abstract-usenix-security-2024-b11a4ba2",
   "venue": "usenix-security",
   "year": 2024,
   "track_or_session": "Fuzzing IV: Hardware and Firmware",
@@ -217,6 +219,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2024-b11a4ba2",
+      "url": "https://www.usenix.org/conference/usenixsecurity24/presentation/borkar",
+      "kind": "paper-page",
+      "title": "WhisperFuzz: White-Box Fuzzing for Detecting and Locating Timing Vulnerabilities in Processors",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:18:10Z",
+      "content_hash": "sha256:765cb8543211ed19a71e75be26d231ee2e4f2ec223b242b5610dfa1b3a4c5205",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

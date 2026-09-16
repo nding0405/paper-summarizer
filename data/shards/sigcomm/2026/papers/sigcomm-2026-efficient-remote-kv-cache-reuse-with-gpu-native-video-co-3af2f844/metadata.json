@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sigcomm-2026-efficient-remote-kv-cache-reuse-with-gpu-native-video-co-3af2f844",
   "title": "Efficient Remote KV Cache Reuse with GPU-native Video Codec",
+  "abstract": "Remote KV cache reuse fetches KV cache for identical contexts from remote storage, avoiding recomputation, accelerating LLM inference. While it excels in high-speed networks, its performance degrades significantly in bandwidth-limited scenarios. Recent studies address this by transmitting KV caches in compressed form, but the associated heavyweight decompression counteracts the KV reuse benefits. In this paper, we propose an efficient and widely deployable remote KV cache reuse solution that leverages GPU-native video codecs. Our system, KVCodec, enables effective KV cache coding with two techniques. The codec-friendly tensor layout compresses the KV cache in a highly compact video format, enabling fast transmission. The efficient KV fetcher orchestrates the transmission, decoding, and restoration of compressed KV caches in an efficient pipelined manner, eliminating resource contention, masking network fluctuations, and achieving minimum time-to-first-token (TTFT). We prototype KVCodec on diverse GPUs from high- to low-end. Experiments reveal that it reduces TTFT by up to 3.51X while maintaining lossless accuracy, compared to SOTA methods.",
+  "abstract_source_id": "src-abstract-sigcomm-2026-3af2f844",
   "venue": "sigcomm",
   "year": 2026,
   "track_or_session": "Research Session 1: LLM Inference & Serving — Research Paper",
@@ -191,6 +193,19 @@
       "official": true,
       "supports": [
         "official main-paper scope and track definitions"
+      ]
+    },
+    {
+      "id": "src-abstract-sigcomm-2026-3af2f844",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/search/match?query=Efficient%20Remote%20KV%20Cache%20Reuse%20with%20GPU-native%20Video%20Codec&fields=title,abstract",
+      "kind": "semantic-scholar",
+      "title": "Efficient Remote KV Cache Reuse with GPU-native Video Codec",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T23:00:47Z",
+      "content_hash": "sha256:4a0c901d88b518b278d6b5ca4d47ba233c8ba9712229f5ba17166e0724ebd35e",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

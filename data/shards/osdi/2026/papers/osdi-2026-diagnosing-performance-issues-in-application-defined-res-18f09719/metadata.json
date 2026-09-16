@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2026-diagnosing-performance-issues-in-application-defined-res-18f09719",
   "title": "Diagnosing Performance Issues in Application-Defined Resources",
+  "abstract": "Many performance issues in large software systems are caused by application-defined resources, such as buffer pools, query caches, and temporary data structures. These resources are managed within the application logic and can strongly affect program execution. However, their resource-specific semantics are often not visible through system-level metrics. As a result, inefficient designs in the management of these resources can cause performance degradation that is difficult to observe and diagnose with existing profilers.\n\nThis paper presents gigiprofiler, a profiler that diagnoses performance problems caused by application-defined resources. gigiprofiler uses a hybrid method that combines LLM-based semantic inference with static analysis: LLM identifies candidate application-defined resources and their usage events from semantic cues, while static analysis validates these candidates against the code. gigiprofiler then tracks how each request interacts with inferred resources and records usage events at runtime. gigiprofiler detects bottlenecks from aggregate usage events and attributes each resource bottleneck to responsible requests and links the runtime evidence back to code paths to explain how the bottleneck occurs.\n\nWe evaluated gigiprofiler on 15 real-world performance issues in five widely deployed applications. gigiprofiler detects and diagnoses all 15 issues and further uncovers two previously unknown performance issues in MariaDB, both later confirmed by the developers.",
+  "abstract_source_id": "src-abstract-osdi-2026-18f09719",
   "venue": "osdi",
   "year": 2026,
   "track_or_session": "Agentic AI and LLM Operations",
@@ -188,6 +190,19 @@
       "official": true,
       "supports": [
         "Official proceedings availability and canonical conference versions."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2026-18f09719",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/hu-yigong",
+      "kind": "paper-page",
+      "title": "Diagnosing Performance Issues in Application-Defined Resources",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:08:09Z",
+      "content_hash": "sha256:d74e1daac7da4d0be817833ebc0820608ce8a01d47fb59d4da9ac62cb05ee098",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

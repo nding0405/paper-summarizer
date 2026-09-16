@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sigcomm-2026-aida-accelerating-root-cause-analysis-for-multi-vendor-d-c475926a",
   "title": "AIDA: Accelerating Root Cause Analysis for Multi-Vendor Device Failures with LLM-Powered Reasoning",
+  "abstract": "Root cause analysis (RCA) of network device failures is critical to cloud reliability. While monitoring can identify which device has failed, diagnosing why remains a slow, manual process, increasing the risk of recurring failures and cascading service disruptions. Existing automated methods are inadequate: traditional methods lack precision, while prior machine learning (ML) and large language model (LLM) approaches are often too coarse-grained, require heavy manual configuration, or fail to produce verifiable reasoning essential for operator trust. This paper presents AIDA, the first system to deliver automated, fine-grained RCA of network device failures, deployed at scale in Alibaba Cloud's production network. AIDA's contributions include: (1) fine-tuning an LLM with reinforcement learning to distill expert logic into interpretable reasoning chains; (2) synthesizing these chains into an evolving knowledge graph (KG) to support retrieval-augmented generation (RAG); and (3) employing RAG-driven multi-step inference wherein the LLM is sequentially guided by the KG to construct robust, verifiable reasoning. Deployed for over a year, AIDA has achieved 95.4% precision with interpretable output and reduced the median RCA time from 72.6 hours to 1.6 minutes. Notably, it curtails the 90th-percentile diagnosis latency from 329.9 hours to 19.4 hours.",
+  "abstract_source_id": "src-abstract-sigcomm-2026-c475926a",
   "venue": "sigcomm",
   "year": 2026,
   "track_or_session": "Experience Session 3: Diagnosis & Root-Cause Analysis — Experience Paper",
@@ -233,6 +235,19 @@
       "official": true,
       "supports": [
         "official main-paper scope and track definitions"
+      ]
+    },
+    {
+      "id": "src-abstract-sigcomm-2026-c475926a",
+      "url": "https://api.openalex.org/works?filter=title.search:AIDA%3A%20Accelerating%20Root%20Cause%20Analysis%20for%20Multi-Vendor%20Device%20Failures%20with%20LLM-Powered%20Reasoning&select=id,title,abstract_inverted_index&per-page=3&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "AIDA: Accelerating Root Cause Analysis for Multi-Vendor Device Failures with LLM-Powered Reasoning",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:23:48Z",
+      "content_hash": "sha256:8edfcaba99496cc6f74b2f34ac46aea67e18a83f758ea01885d763c183d46757",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

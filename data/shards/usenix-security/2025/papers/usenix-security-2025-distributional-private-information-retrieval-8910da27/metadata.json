@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-distributional-private-information-retrieval-8910da27",
   "title": "Distributional Private Information Retrieval",
+  "abstract": "A private-information-retrieval (PIR) scheme lets a client fetch a record from a remote database without revealing which record it fetched. Classic PIR schemes treat all database records the same but, in practice, some database records are much more popular (i.e., commonly fetched) than others. We introduce distributional PIR, a new type of PIR that can run faster than classic PIR—both asymptotically and concretely—when the popularity distribution is skewed. Distributional PIR provides exactly the same cryptographic privacy as classic PIR. The speedup comes from a relaxed form of correctness: distributional PIR guarantees that in-distribution queries succeed with good probability, while out-of-distribution queries succeed with lower probability. Because of its relaxed correctness, distributional PIR is best suited for applications where \"best-effort\" retrieval is acceptable. Moreover, for security, a client's decision to query the server must be independent of whether its past queries were successful.\n\nWe construct a distributional-PIR scheme that makes black-box use of classic PIR protocols, and prove a lower bound on the server runtime of a natural class of distributional-PIR schemes. On two real-world popularity distributions, our construction reduces compute costs by 5-77x compared to existing techniques. Finally, we build CrowdSurf, an end-to-end system for privately fetching tweets, and show that distributional-PIR reduces the end-to-end server cost by 8x.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-8910da27",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Crypto 2: Private Information Retrieval and Computation",
@@ -112,6 +114,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-8910da27",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/lehmkuhl",
+      "kind": "paper-page",
+      "title": "Distributional Private Information Retrieval",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:19:23Z",
+      "content_hash": "sha256:2c06bc3fa784c527c2eb4797d906c2edc3495c1f0d3746e3e487a4e722ded442",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

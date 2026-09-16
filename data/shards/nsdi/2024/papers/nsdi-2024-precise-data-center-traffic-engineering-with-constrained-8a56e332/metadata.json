@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2024-precise-data-center-traffic-engineering-with-constrained-8a56e332",
   "title": "Precise Data Center Traffic Engineering with Constrained Hardware Resources",
+  "abstract": "Data center traffic engineering (TE) routes flows over a set of available paths following custom weight distributions to achieve optimal load balancing or flow throughput. However, as a result of hardware constraints, it is challenging, and often impossible for larger data center networks, to precisely implement the TE weight distributions on the data plane switches. The resulting precision loss in the TE implementation causes load imbalances that can result in congestion and traffic loss.\n\nInstead of treating all flows equally, we adapt the hardware resource allocation to a flow’s traffic volume and its contribution to the overall precision loss. We intelligently prune select ports in weight distributions and merge identical distributions to free up hardware resources. Evaluation using realistic traffic loads shows that our techniques approximate ideal TE solutions under various scenarios within 7% error, compared to a 67% error for today’s state-of-the-art approach. In addition, our design avoids traffic loss triggered by switch rule overflow. Finally, the execution time is 10× faster than the current approach.",
+  "abstract_source_id": "src-abstract-nsdi-2024-8a56e332",
   "venue": "nsdi",
   "year": 2024,
   "track_or_session": "Sharing the Network",
@@ -160,6 +162,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2024-8a56e332",
+      "url": "https://www.usenix.org/conference/nsdi24/presentation/chen-shawn",
+      "kind": "paper-page",
+      "title": "Precise Data Center Traffic Engineering with Constrained Hardware Resources",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:03:34Z",
+      "content_hash": "sha256:01b5e0f791c77f9f8f8fda65a4532b660a781d8f1b2916f976fb3a31af73b43e",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

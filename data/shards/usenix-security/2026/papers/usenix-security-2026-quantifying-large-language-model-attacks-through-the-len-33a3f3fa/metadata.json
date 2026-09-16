@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-quantifying-large-language-model-attacks-through-the-len-33a3f3fa",
   "title": "Quantifying Large Language Model Attacks Through the Lens of Model Cognition",
+  "abstract": "Large language models (LLMs) are vulnerable to malicious inputs that elicit harmful content. Current safety mechanisms, such as keyword filters or output moderation, largely ignore internal model dynamics. We show that safety-relevant features correlated with harmful prompting are strongly separable under lightweight probes in intermediate hidden states (up to 99% accuracy) before generation, revealing that such features persist internally even when models produce compliant outputs. Leveraging this observation, we introduce layer-wise toxicity probes and a multi-layer complementary detection framework that fuses signals from diverse depths. Our lightweight Sentinel (<5M parameters) halves false negatives compared to generation-level refusal and maintains over 94% detection accuracy under adversarial attacks—where baselines drop by 32%. Sentinel also outperforms Llama-Guard-3-8B on heterogeneous harmful prompting across seven open-weight LLMs (1.5B→72B) and multiple benchmarks (I2P, SneakyPrompt, MMA, Labelled, PIJ, ChatAlpaca, and Multi-turn Jailbreak). Beyond detection, our method provides the first quantitative, layer-resolved map of how safety-relevant signals emerge, propagate, and degrade within LLMs, enabling interpretable, inside-out alignment and diagnostics. This paper contains potentially sensitive and offensive content, including but not limited to NSFW material, hate speech, discrimination, and other harmful text. Reader discretion is advised.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-33a3f3fa",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Security of ML 6",
@@ -303,6 +305,19 @@
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening",
         "prepublication PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-33a3f3fa",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/liu-xiuming",
+      "kind": "paper-page",
+      "title": "Quantifying Large Language Model Attacks Through the Lens of Model Cognition",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:25:07Z",
+      "content_hash": "sha256:37dbe31ac54b21c940c7ecd129af50185806a2ea7c59f9f2ee3303161c698313",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

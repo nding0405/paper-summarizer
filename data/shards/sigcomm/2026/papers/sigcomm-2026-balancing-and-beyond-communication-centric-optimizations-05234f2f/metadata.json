@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sigcomm-2026-balancing-and-beyond-communication-centric-optimizations-05234f2f",
   "title": "Balancing and Beyond: Communication-Centric Optimizations in Expert Parallelism",
+  "abstract": "The Mixture-of-Experts (MoE) architecture scales large language models (LLMs) to trillions of parameters by activating only a small subset of experts per token. In practice, MoE inference is commonly deployed with Expert Parallelism (EP), which places whole experts on different GPUs to preserve kernel efficiency. However, production EP deployments often suffer from two bottlenecks: (1) expert workload imbalance, which creates computation and communication stragglers, and (2) communication inefficiency, where inter-GPU transfers dominate latency even after balancing. We present EPIC, an experience-driven EP inference system that addresses these issues progressively for real deployments. EPIC mitigates imbalance via performance-aware expert migration and runtime expert activation, and then improves communication with topology-adaptive transport kernels and fine-grained computation-communication overlap. EPIC has been deployed at scale across O(10K) GPUs in our online inference service for both open-source models (e.g., Qwen3-Coder and DeepSeek-R1) and internal models, reducing communication time and per-token latency by up to 40% and 21%, respectively.",
+  "abstract_source_id": "src-abstract-sigcomm-2026-05234f2f",
   "venue": "sigcomm",
   "year": 2026,
   "track_or_session": "Experience Session 1: AI Datacenter Networks & Communication — Experience Paper",
@@ -359,6 +361,19 @@
       "official": true,
       "supports": [
         "official main-paper scope and track definitions"
+      ]
+    },
+    {
+      "id": "src-abstract-sigcomm-2026-05234f2f",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/search/match?query=Balancing%20and%20Beyond%3A%20Communication-Centric%20Optimizations%20in%20Expert%20Parallelism&fields=title,abstract",
+      "kind": "semantic-scholar",
+      "title": "Balancing and Beyond: Communication-Centric Optimizations in Expert Parallelism",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:32:53Z",
+      "content_hash": "sha256:cc66e9ccd87223f724e9a5b892d855f9ddd887dd8e9ad23a9f73eafebba54baa",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

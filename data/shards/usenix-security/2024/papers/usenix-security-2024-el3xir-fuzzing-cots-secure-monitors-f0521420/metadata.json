@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2024-el3xir-fuzzing-cots-secure-monitors-f0521420",
   "title": "EL3XIR: Fuzzing COTS Secure Monitors",
+  "abstract": "ARM TrustZone forms the security backbone of mobile devices. TrustZone-based Trusted Execution Environments (TEEs) facilitate security-sensitive tasks like user authentication, disk encryption, and digital rights management (DRM). As such, bugs in the TEE software stack may compromise the entire system's integrity.\n\nEL3XIR introduces a framework to effectively rehost and fuzz the secure monitor firmware layer of proprietary TrustZone-based TEEs. While other approaches have focused on naively rehosting or fuzzing Trusted Applications (EL0) or the TEE OS (EL1), EL3XIR targets the highly-privileged but unexplored secure monitor (EL3) and its unique challenges. Secure monitors expose complex functionality dependent on multiple peripherals through diverse secure monitor calls.\n\nIn our evaluation, we demonstrate that state-of-the-art fuzzing approaches are insufficient to effectively fuzz COTS secure monitors. While naive fuzzing appears to achieve reasonable coverage it fails to overcome coverage walls due to missing peripheral emulation and is limited in the capability to trigger bugs due to the large input space and low quality of inputs. We followed responsible disclosure procedures and reported a total of 34 bugs, out of which 17 were classified as security critical. Affected vendors confirmed 14 of these bugs, and as a result, EL3XIR was assigned six CVEs.",
+  "abstract_source_id": "src-abstract-usenix-security-2024-f0521420",
   "venue": "usenix-security",
   "year": 2024,
   "track_or_session": "Fuzzing IV: Hardware and Firmware",
@@ -112,6 +114,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2024-f0521420",
+      "url": "https://www.usenix.org/conference/usenixsecurity24/presentation/lindenmeier",
+      "kind": "paper-page",
+      "title": "EL3XIR: Fuzzing COTS Secure Monitors",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:14:59Z",
+      "content_hash": "sha256:33ceca2bdab37ef1dd5bb049fc92a870914e002bf4c9006e0309e97c9271469d",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

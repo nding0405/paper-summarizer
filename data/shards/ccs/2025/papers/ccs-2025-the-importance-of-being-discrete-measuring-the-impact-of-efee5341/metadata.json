@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2025-the-importance-of-being-discrete-measuring-the-impact-of-efee5341",
   "title": "The Importance of Being Discrete: Measuring the Impact of Discretization in End-to-End Differentially Private Synthetic Data",
+  "abstract": "Differentially Private (DP) generative marginal models are often used in the wild to release synthetic tabular datasets in lieu of sensitive data while providing formal privacy guarantees. These models approximate low-dimensional marginals or query workloads; crucially, they require the training data to be pre-discretized, i.e., continuous values need to first be partitioned into bins. However, as the range of values (or their domain) is often inferred directly from the training data, with the number of bins and bin edges typically defined arbitrarily, this approach can ultimately break end-to-end DP guarantees and may not always yield optimal utility. In this paper, we present an extensive measurement study of four discretization strategies in the context of DP marginal generative models. More precisely, we design DP versions of three discretizers (uniform, quantile, and k-means) and reimplement the PrivTree algorithm. We find that optimizing both the choice of discretizer and bin count can improve utility, on average, by almost 30% across six DP marginal models, compared to the default strategy and number of bins, with PrivTree being the best-performing discretizer in the majority of cases. We demonstrate that, while DP generative models with non-private discretization remain vulnerable to membership inference attacks, applying DP during discretization effectively mitigates this risk. Finally, we improve on an existing approach for automatically selecting the optimal number of bins, and achieve high utility while reducing both privacy budget consumption and computational overhead.",
+  "abstract_source_id": "src-abstract-ccs-2025-efee5341",
   "venue": "ccs",
   "year": 2025,
   "track_or_session": "Cycle 2",
@@ -148,6 +150,19 @@
         "published-order authors",
         "publication-time affiliations",
         "publication date and page span"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2025-efee5341",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "The Importance of Being Discrete: Measuring the Impact of Discretization in End-to-End Differentially Private Synthetic Data",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:12Z",
+      "content_hash": "sha256:aa9c23a45f6ec9973f40e6c9520c69d42bb49fc1f526891570edfdb1976cff82",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

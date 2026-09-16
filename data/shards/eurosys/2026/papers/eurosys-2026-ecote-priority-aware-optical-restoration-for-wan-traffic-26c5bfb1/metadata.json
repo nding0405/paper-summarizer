@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "eurosys-2026-ecote-priority-aware-optical-restoration-for-wan-traffic-26c5bfb1",
   "title": "ECOTE: Priority-Aware Optical Restoration for WAN Traffic Engineering",
+  "abstract": "Fiber cuts are among the most common and disruptive failures in cloud networks. They can prevent cloud providers from maintaining committed service availability, causing Service Level Agreement (SLA) violations that directly translate into monetary penalties. Existing traffic engineering (TE) approaches enhance failure resilience, and recent systems further incorporate optical restoration to recover lost bandwidth after failures. However, they still treat services largely uniformly and optimize primarily for network throughput rather than the economic impact of heterogeneous SLA penalties. In this paper, we present ECOTE, the first priority-aware TE system with optical restoration that explicitly minimizes revenue loss. Specifically, ECOTE introduces a new optical restoration formulation with a dedicated capacity restoration solver to compute an optimal restoration plan that maximizes restorable capacity under physical constraints. ECOTE also designs a priority-aware TE algorithm that allocates the restored bandwidth capacity according to SLA penalties, thereby reducing monetary cost. We evaluate ECOTE using a production-level WAN testbed and through large-scale simulations. The testbed evaluation demonstrates ECOTE achieves zero loss for high-priority services and more than 10× revenue loss reduction compared to state-of-the-art. Our large-scale simulation results show that ECOTE can support at least 2.5× and 2.0× more demand for different high priority services compared to the state-of-the-art solutions. Meanwhile, ECOTE reduces the revenue loss by at least an order of magnitude less than existing solutions.",
+  "abstract_source_id": "src-abstract-eurosys-2026-26c5bfb1",
   "venue": "eurosys",
   "year": 2026,
   "track_or_session": null,
@@ -201,6 +203,19 @@
       "official": false,
       "supports": [
         "Publisher-deposited proceedings identity and print publication date."
+      ]
+    },
+    {
+      "id": "src-abstract-eurosys-2026-26c5bfb1",
+      "url": "https://api.openalex.org/works/doi:10.1145/3767295.3803592?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "ECOTE: Priority-Aware Optical Restoration for WAN Traffic Engineering",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:20:15Z",
+      "content_hash": "sha256:76609c0c2da21fac5b3b34181c65063f5d967eb10ca868f30b051eb88bb480eb",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

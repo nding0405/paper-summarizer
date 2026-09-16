@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "eurosys-2024-gmorph-accelerating-multi-dnn-inference-via-model-fusion-dc432da0",
   "title": "GMorph: Accelerating Multi-DNN Inference via Model Fusion",
+  "abstract": "AI-powered applications often involve multiple deep neural network (DNN)-based prediction tasks to support application-level functionalities. However, executing multi-DNNs can be challenging due to the high resource demands and computation costs that increase linearly with the number of DNNs. Multi-task learning (MTL) addresses this problem by designing a multi-task model that shares parameters across tasks based on a single backbone DNN. This paper explores an alternative approach called model fusion: rather than training a single multi-task model from scratch as MTL does, model fusion fuses multiple task-specific DNNs that are pre-trained separately and can have heterogeneous architectures into a single multi-task model. We materialize model fusion in a software framework called GMorph to accelerate multi-DNN inference while maintaining task accuracy. GMorph features three main technical contributions: graph mutations to fuse multi-DNNs into resource-efficient multi-task models, search-space sampling algorithms, and predictive filtering to reduce the high search costs. Our experiments show that GMorph can outperform MTL baselines and reduce the inference latency of multi-DNNs by 1.1-3× while meeting the target task accuracy.",
+  "abstract_source_id": "src-abstract-eurosys-2024-dc432da0",
   "venue": "eurosys",
   "year": 2024,
   "track_or_session": null,
@@ -209,6 +211,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-eurosys-2024-dc432da0",
+      "url": "https://api.openalex.org/works/doi:10.1145/3627703.3650074?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "GMorph: Accelerating Multi-DNN Inference via Model Fusion",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:18:49Z",
+      "content_hash": "sha256:55c1abe6a9b8db49f015a5876d00ce4c350810f44ba82bfb756f5407e8fb2989",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

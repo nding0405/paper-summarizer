@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2025-manta-hybrid-sensitive-type-inference-toward-type-assist-ab5d9d47",
   "title": "Manta: Hybrid-Sensitive Type Inference Toward Type-Assisted Bug Detection for Stripped Binaries",
+  "abstract": "Static binary bug detection has been a prominent approach for ensuring the security of binaries used in our daily lives. However, the type information lost in binaries prevents the improvement opportunity for a static analyzer to utilize type information to prune away infeasible facts and increase analysis precision. To make binary bug detection more practical with higher precision, in this work, we propose the first hybrid-sensitive type inference, Manta, that combines data-flow analysis with different sensitivities to complement each other and infer precise types for many variables. The inferred types are then used to assist with bug detection by pruning infeasible indirect call targets and data dependencies. Our experiments indicate Manta outperforms prior work by inferring types with 78.7% precision and 97.2% recall. Based on the inferred types, we can prune away 63.9% more infeasible indirect-call targets compared to existing type analysis techniques and perform program slicing on binaries with 61.1% similarity to that on source code. Moreover, Manta has led to 86 new developer-confirmed vulnerabilities in many popular IoT firmware, with 64 CVE/PSV IDs assigned.",
+  "abstract_source_id": "src-abstract-asplos-2025-ab5d9d47",
   "venue": "asplos",
   "year": 2025,
   "track_or_session": "Session 6D: Testing",
@@ -188,6 +190,19 @@
       "official": false,
       "supports": [
         "Indexed abstract and open-access links used for relevance classification and ancillary-link discovery."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2025-ab5d9d47",
+      "url": "https://api.openalex.org/works/doi:10.1145/3622781.3674177?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Manta: Hybrid-Sensitive Type Inference Toward Type-Assisted Bug Detection for Stripped Binaries",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:02:11Z",
+      "content_hash": "sha256:7529fe4edb785bfffae1906f1c92345e7f9bacf5b766244b0744eb36bbc4c9a2",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

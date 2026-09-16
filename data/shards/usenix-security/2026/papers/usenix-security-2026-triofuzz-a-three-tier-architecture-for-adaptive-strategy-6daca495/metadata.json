@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-triofuzz-a-three-tier-architecture-for-adaptive-strategy-6daca495",
   "title": "TrioFuzz: A Three-Tier Architecture for Adaptive Strategy Selection in Fuzzing",
+  "abstract": "Adaptive strategy selection is a promising direction for improving fuzzing effectiveness, yet existing learning-based approaches often fail to outperform random selection in practice. We identify the root cause as an architectural mismatch rather than an algorithmic limitation. Our empirical study reveals that strategy effectiveness shifts at minute-level timescales, while existing in-loop architectures require tens of minutes per learning cycle. This order-of-magnitude gap prevents timely adaptation regardless of which learning algorithm is used.\n\nWe propose TrioFuzz, a new fuzzing engine that decouples learning from execution through a three-tier thread architecture. A centralized learning thread aggregates feedback from parallel execution threads, compressing the adaptation cycle to under one minute. TrioFuzz integrates the same learning algorithms as prior work, isolating the architectural contribution from algorithmic factors. Our ablation study shows that learning algorithms perform significantly better under our proposed architecture than under their original in-loop implementations. Notably, native MOpt underperforms baselines, but becomes the top performer under TrioFuzz's architecture. Evaluation on FuzzBench and OSS-Fuzz shows that TrioFuzz achieves the highest coverage on 7 out of 9 FuzzBench targets and 8 out of 10 OSS-Fuzz projects, triggers 17% more vulnerabilities than AFL++ on Magma, and discovers 19 new CVEs in 6 real-world projects",
+  "abstract_source_id": "src-abstract-usenix-security-2026-6daca495",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Software Security 3",
@@ -260,6 +262,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-6daca495",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/dong-ruiqi",
+      "kind": "paper-page",
+      "title": "TrioFuzz: A Three-Tier Architecture for Adaptive Strategy Selection in Fuzzing",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:25:58Z",
+      "content_hash": "sha256:f29d71d3a7477f6ba9609d1435890c870d3aa69501cd25101963a26adac050e8",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

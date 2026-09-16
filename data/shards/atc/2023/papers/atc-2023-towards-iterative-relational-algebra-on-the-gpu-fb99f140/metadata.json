@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "atc-2023-towards-iterative-relational-algebra-on-the-gpu-fb99f140",
   "title": "Towards Iterative Relational Algebra on the GPU",
+  "abstract": "Iterative relational algebra (RA kernels in a fixed-point loop) enables bottom-up logic programming languages such as Datalog. Such declarative languages are attractive targets for high-performance implementations of relational data analytics in fields such as graph mining, program analysis, and social-media analytics. Language-level constructs are implemented via high-performance relational algebra primitives (e.g., projections, reorderings, and joins). Such primitives would appear a natural target for GPUs, obtaining high throughput on large datasets. However, state-of-the-art Datalog engines are still CPU-based, scaling best between 8--16 threads. While much has explored standalone RA operations on the GPU, relatively less work focuses on iterative RA, which exposes new challenges (e.g., deduplication and memory management). In this short paper, we present a GPU-based hash-join implementation, leveraging (a) a novel open-addressing-based hash table implementation, (b) operator fusing to optimize memory access and (c) two variant implementations of deduplication. To evaluate our work, we implement transitive closure using our hash-join-based CUDA library and compared its performance against cuDF (GPU-based) and Souffl'e (CPU-based). We show favorable results against both, with gains up to 10.8× against cuDF and 3.9× against Souffl'e.",
+  "abstract_source_id": "src-abstract-atc-2023-fb99f140",
   "venue": "atc",
   "year": 2023,
   "track_or_session": "GPU",
@@ -159,6 +161,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-atc-2023-fb99f140",
+      "url": "https://www.usenix.org/conference/atc23/presentation/shovon",
+      "kind": "paper-page",
+      "title": "Towards Iterative Relational Algebra on the GPU",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T21:58:19Z",
+      "content_hash": "sha256:bcdacc16baa3f62dc4f1cb95feeb051f45eaf406ab58b61b99ab53f47e4fba17",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

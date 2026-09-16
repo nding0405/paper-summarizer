@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-a-formal-analysis-of-apple-s-imessage-pq3-protocol-ae6fe941",
   "title": "A Formal Analysis of Apple's iMessage PQ3 Protocol",
+  "abstract": "We present the formal verification of Apple's iMessage PQ3, a highly performant, device-to-device messaging protocol offering strong security guarantees even against an adversary with quantum computing capabilities. PQ3 leverages Apple's identity services together with a custom, post-quantum secure initialization phase and afterwards it employs a double ratchet construction in the style of Signal, extended to provide post-quantum, post-compromise security.\n\nWe present a detailed formal model of PQ3, a precise specification of its fine-grained security properties, and machine-checked security proofs using the TAMARIN prover. Particularly novel is the integration of post-quantum secure key encapsulation into the relevant protocol phases and the detailed security claims along with their complete formal analysis. Our analysis covers both key ratchets, including unbounded loops, which was believed by some to be out of scope of symbolic provers like TAMARIN (it is not!).",
+  "abstract_source_id": "src-abstract-usenix-security-2025-ae6fe941",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Crypto 3: Formal Methods and Private Computation",
@@ -112,6 +114,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-ae6fe941",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/linker",
+      "kind": "paper-page",
+      "title": "A Formal Analysis of Apple's iMessage PQ3 Protocol",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:18:22Z",
+      "content_hash": "sha256:66db12971599c59ec46879e3b78fc62a35cb35505c8210d9b4893e9f4a194730",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

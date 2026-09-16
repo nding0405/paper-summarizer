@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2023-phyauth-physical-layer-message-authentication-for-zigbee-e78245f8",
   "title": "PhyAuth: Physical-Layer Message Authentication for ZigBee Networks",
+  "abstract": "ZigBee is a popular wireless communication standard for Internet of Things (IoT) networks. Since each ZigBee network uses hop-by-hop network-layer message authentication based on a common network key, it is highly vulnerable to packet-injection attacks, in which the adversary exploits the compromised network key to inject arbitrary fake packets from any spoofed address to disrupt network operations and consume the network/device resources. In this paper, we present PhyAuth, a PHY hop-by-hop message authentication framework to defend against packet-injection attacks in ZigBee networks. The key idea of PhyAuth is to let each ZigBee transmitter embed into its PHY signals a PHY one-time password (called POTP) derived from a device-specific secret key and an efficient cryptographic hash function. An authentic POTP serves as the transmitter's PHY transmission permission for the corresponding packet. PhyAuth provides three schemes to embed, detect, and verify POTPs based on different features of ZigBee PHY signals. In addition, PhyAuth involves lightweight PHY signal processing and no change to the ZigBee protocol stack. Comprehensive USRP experiments confirm that PhyAuth can efficiently detect fake packets with very low false-positive and false-negative rates while having a negligible negative impact on normal data transmissions.",
+  "abstract_source_id": "src-abstract-usenix-security-2023-e78245f8",
   "venue": "usenix-security",
   "year": 2023,
   "track_or_session": "Breaking Wireless Protocols",
@@ -196,6 +198,19 @@
       "official": true,
       "supports": [
         "authors, affiliations when published, abstract, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2023-e78245f8",
+      "url": "https://www.usenix.org/conference/usenixsecurity23/presentation/li-ang",
+      "kind": "paper-page",
+      "title": "PhyAuth: Physical-Layer Message Authentication for ZigBee Networks",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:12:26Z",
+      "content_hash": "sha256:534306699e28ce31b6536f6f964c0b7c0da54aa141630d8db7145f56f768d8a4",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

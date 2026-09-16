@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2024-tarot-a-cxl-smartnic-based-defense-against-multi-bit-err-fbd2f594",
   "title": "TAROT: A CXL SmartNIC-Based Defense Against Multi-bit Errors by Row-Hammer Attacks",
+  "abstract": "Row Hammer (RH) has been demonstrated as a security vulnerability in modern systems. Although commodity CPUs can handle RH-induced single-bit errors in DRAM through ECC, RH can still give rise to multi-bit uncorrectable errors (UEs) and crash the systems. Meanwhile, recent work has indicated that the DRAM cells vulnerable to RH are determined by manufacturing imperfections and resulting defects. Taking one step further from the recent work, we first conduct RH experiments on contemporary DRAM modules for 3 weeks. This demonstrates that RH-induced UEs occur only at specific DRAM addresses (RH-UE-vulnerable addresses) and the percentage of such addresses is small in these DRAM modules. Second, to protect the systems from RH-induced UEs, we propose two RH defense solutions: H- and S-TAROT (TArgeted ROw-Hammer Therapy). H-TAROT is a software-based solution running on the host CPU. It obtains RH-UE-vulnerable addresses during the system boot and then periodically accesses such addresses before UEs may occur. Since it accesses only a small percentage of addresses, it does not incur a notable performance penalty for throughput applications (e.g., a 1.5% increase in execution time of the SPECrate 2017 benchmark suite running on a system even with 128GB of DRAM). Yet, it imposes a significant performance penalty on latency-sensitive applications (e.g., a 28.2% increase in tail latency of Redis). To minimize the performance penalty, for a system with a SmartNIC (SNIC), S-TAROT offloads H-TAROT from the host CPU to the SNIC CPU. Our experiment shows that S-TAROT increases the execution time and tail latency of the SPECrate 2017 benchmark suite and Redis by only 0.1% and 1.0%, respectively.",
+  "abstract_source_id": "src-abstract-asplos-2024-fbd2f594",
   "venue": "asplos",
   "year": 2024,
   "track_or_session": "Session 1D: Attacks and Mitigations",
@@ -319,6 +321,19 @@
       "official": true,
       "supports": [
         "Author-deposited archival artifact associated with the conference paper."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2024-fbd2f594",
+      "url": "https://api.openalex.org/works/doi:10.1145/3620666.3651325?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "TAROT: A CXL SmartNIC-Based Defense Against Multi-bit Errors by Row-Hammer Attacks",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:00:35Z",
+      "content_hash": "sha256:dd355cfe3d81c8f35f4193d762f2f85c1e5136fb5cd8e60ad957176a22f77c3b",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

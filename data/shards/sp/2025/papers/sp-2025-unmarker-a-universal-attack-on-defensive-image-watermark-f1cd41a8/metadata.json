@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2025-unmarker-a-universal-attack-on-defensive-image-watermark-f1cd41a8",
   "title": "UnMarker: A Universal Attack on Defensive Image Watermarking",
+  "abstract": "Reports regarding the misuse of Generative AI (GenAI) to create deepfakes are frequent. Defensive watermarking enables GenAI providers to hide fingerprints in their images and use them later for deepfake detection. Yet, its potential has not been fully explored. We present UnMarker— the first practical universal attack on defensive watermarking. Unlike existing attacks, UnMarker requires no detector feedback, no unrealistic knowledge of the watermarking scheme or similar models, and no advanced denoising pipelines that may not be available. Instead, being the product of an in-depth analysis of the watermarking paradigm revealing that robust schemes must construct their watermarks in the spectral amplitudes, UnMarker employs two novel adversarial optimizations to disrupt the spectra of watermarked images, erasing the watermarks. Evaluations against SOTA schemes prove UnMarker's effectiveness. It not only defeats traditional schemes while retaining superior quality compared to existing attacks but also breaks semantic watermarks that alter an image's structure, reducing the best detection rate to 43% and rendering them useless. To our knowledge, UnMarker is the first practical attack on semantic watermarks, which have been deemed the future of defensive watermarking. Our findings show that defensive watermarking is not a viable defense against deepfakes, and we urge the community to explore alternatives.",
+  "abstract_source_id": "src-abstract-sp-2025-f1cd41a8",
   "venue": "sp",
   "year": 2025,
   "track_or_session": "Cycle 1",
@@ -91,6 +93,19 @@
       "official": true,
       "supports": [
         "DOI, authors, affiliations, abstract, publication date, pages, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2025-f1cd41a8",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "UnMarker: A Universal Attack on Defensive Image Watermarking",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:52Z",
+      "content_hash": "sha256:b15ce02bcc49da611fdd791ecc56741e7d91d84154b58c1a7f72a5c6902e6e46",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

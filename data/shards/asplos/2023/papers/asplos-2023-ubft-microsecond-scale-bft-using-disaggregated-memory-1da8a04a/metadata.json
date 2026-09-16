@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2023-ubft-microsecond-scale-bft-using-disaggregated-memory-1da8a04a",
   "title": "uBFT: Microsecond-scale BFT using Disaggregated Memory",
+  "abstract": "We propose uBFT, the first State Machine Replication (SMR) system to achieve microsecond-scale latency in data centers, while using only 2f+1 replicas to tolerate f Byzantine failures. The Byzantine Fault Tolerance (BFT) provided by uBFT is essential as pure crashes appear to be a mere illusion with real-life systems reportedly failing in many unexpected ways. uBFT relies on a small non-tailored trusted computing base—disaggregated memory—and consumes a practically bounded amount of memory. uBFT is based on a novel abstraction called Consistent Tail Broadcast, which we use to prevent equivocation while bounding memory. We implement uBFT using RDMA-based disaggregated memory and obtain an end-to-end latency of as little as 10 us. This is at least 50× faster than MinBFT, a state-of-the-art 2f+1 BFT SMR based on Intel’s SGX. We use uBFT to replicate two KV-stores (Memcached and Redis), as well as a financial order matching engine (Liquibook). These applications have low latency (up to 20 us) and become Byzantine tolerant with as little as 10 us more. The price for uBFT is a small amount of reliable disaggregated memory (less than 1 MiB), which in our prototype consists of a small number of memory servers connected through RDMA and replicated for fault tolerance.",
+  "abstract_source_id": "src-abstract-asplos-2023-1da8a04a",
   "venue": "asplos",
   "year": 2023,
   "track_or_session": "Session 9B: Distributed Systems",
@@ -194,6 +196,19 @@
       "official": false,
       "supports": [
         "Indexed abstract used with the official technical-session context for relevance classification, plus alternate-copy and explicitly printed ancillary links."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2023-1da8a04a",
+      "url": "https://api.openalex.org/works/doi:10.1145/3575693.3575732?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "uBFT: Microsecond-Scale BFT using Disaggregated Memory",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T21:59:48Z",
+      "content_hash": "sha256:0fb53c34d11c5e76e2aec8ffbaa0413c8371df97147532d98fdccd22e15c1e10",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

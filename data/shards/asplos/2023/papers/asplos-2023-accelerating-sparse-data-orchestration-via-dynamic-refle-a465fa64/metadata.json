@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2023-accelerating-sparse-data-orchestration-via-dynamic-refle-a465fa64",
   "title": "Accelerating Sparse Data Orchestration via Dynamic Reflexive Tiling",
+  "abstract": "Tensor algebra involving multiple sparse operands is severely memory bound, making it a challenging target for acceleration. Furthermore, irregular sparsity complicates traditional techniques—such as tiling—for ameliorating memory bottlenecks. Prior sparse tiling schemes are sparsity unaware: they carve tensors into uniform coordinate-space shapes, which leads to low-occupancy tiles and thus lower exploitable reuse. To address these challenges, this paper proposes dynamic reflexive tiling (DRT), a novel tiling method that improves data reuse over prior art for sparse tensor kernels, unlocking significant performance improvement opportunities. DRT’s key idea is dynamic sparsity-aware tiling. DRT continuously re-tiles sparse tensors at runtime based on the current sparsity of the active regions of all input tensors, to maximize accelerator buffer utilization while retaining the ability to co-iterate through tiles of distinct tensors.",
+  "abstract_source_id": "src-abstract-asplos-2023-a465fa64",
   "venue": "asplos",
   "year": 2023,
   "track_or_session": "Session 4C: Tensor Computation",
@@ -293,6 +295,19 @@
       "official": false,
       "supports": [
         "Indexed abstract used with the official technical-session context for relevance classification, plus alternate-copy and explicitly printed ancillary links."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2023-a465fa64",
+      "url": "https://api.openalex.org/works/doi:10.1145/3582016.3582064?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Accelerating Sparse Data Orchestration via Dynamic Reflexive Tiling",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T21:59:19Z",
+      "content_hash": "sha256:c8c7c5ae0fcbba24f64d0ff62096627bb1538b1cbb97775421890f0c3e335c74",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

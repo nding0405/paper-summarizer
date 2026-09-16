@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sigcomm-2024-accelerating-model-training-in-multi-cluster-environment-1a80e01e",
   "title": "Accelerating Model Training in Multi-cluster Environments with Consumer-grade GPUs",
+  "abstract": "Rapid advances in machine learning necessitate significant computing power and memory for training, which is accessible only to large corporations today. Small-scale players like academics often only have consumer-grade GPU clusters locally and can afford cloud GPU instances to a limited extent. However, training performance significantly degrades in this multi-cluster setting. In this paper, we identify unique opportunities to accelerate training and propose StellaTrain, a holistic framework that achieves near-optimal training speeds in multi-cloud environments. StellaTrain dynamically adapts a combination of acceleration techniques to minimize time-to-accuracy in model training. StellaTrain introduces novel acceleration techniques such as cache-aware gradient compression and a CPU-based sparse optimizer to maximize GPU utilization and optimize the training pipeline. With the optimized pipeline, StellaTrain holistically determines the training configurations to optimize the total training time. We show that StellaTrain achieves up to 104× speedup over PyTorch DDP in inter-cluster settings by adapting training configurations to fluctuating dynamic network bandwidth. StellaTrain demonstrates that we can cope with the scarce network bandwidth through systematic optimization, achieving up to 257.3× and 78.1× speed-ups on the network bandwidths of 100 Mbps and 500 Mbps, respectively. Finally, StellaTrain enables efficient co-training using on-premises and cloud clusters to reduce costs by 64.5% in conjunction with a reduced training time of 28.9%.",
+  "abstract_source_id": "src-abstract-sigcomm-2024-1a80e01e",
   "venue": "sigcomm",
   "year": 2024,
   "track_or_session": "Moving bits for AI(2) — Research Track",
@@ -150,6 +152,19 @@
         "publisher-deposited ORCIDs when available",
         "proceedings page range and online publication date",
         "empty publisher relation metadata for alternate-version checks"
+      ]
+    },
+    {
+      "id": "src-abstract-sigcomm-2024-1a80e01e",
+      "url": "https://api.openalex.org/works/doi:10.1145/3651890.3672228?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Accelerating Model Training in Multi-cluster Environments with Consumer-grade GPUs",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:23:02Z",
+      "content_hash": "sha256:b3cd314d450fce725c8b4c53c9894883150619f7becf7fe811ac42c8ba9fb49a",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

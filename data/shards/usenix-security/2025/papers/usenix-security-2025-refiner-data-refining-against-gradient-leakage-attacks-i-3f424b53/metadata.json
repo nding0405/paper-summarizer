@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-refiner-data-refining-against-gradient-leakage-attacks-i-3f424b53",
   "title": "Refiner: Data Refining against Gradient Leakage Attacks in Federated Learning",
+  "abstract": "Recent works highlight the vulnerability of Federated Learning (FL) systems to gradient leakage attacks, where attackers reconstruct clients' data from shared gradients, undermining FL's privacy guarantees. However, existing defenses show limited resilience against sophisticated attacks. This paper introduces a novel defensive paradigm that departs from conventional gradient perturbation approaches and instead focuses on the construction of robust data. Our theoretical analysis indicates such data, which exhibits low semantic similarity to the clients' raw data while maintaining good gradient alignment to clients' raw data, is able to effectively obfuscate attackers and yet maintain model performance. We refer to such data as robust data, and to generate it, we design Refiner that jointly optimizes two metrics for privacy protection and performance maintenance. The utility metric promotes the gradient consistency of key parameters between robust data and clients' data, while the privacy metric guides the generation of robust data towards enlarging the semantic gap with clients' data. Extensive empirical evaluations on multiple benchmark datasets demonstrate the superior performance of Refiner at defending against state-of-the-art attacks.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-3f424b53",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "ML and AI Privacy 1: Federated Learning and Protecting Data",
@@ -154,6 +156,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-3f424b53",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/fan-refiner",
+      "kind": "paper-page",
+      "title": "Refiner: Data Refining against Gradient Leakage Attacks in Federated Learning",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:21:25Z",
+      "content_hash": "sha256:c6e51063820570cc0fef54fe7a41afd6863d4600d4dea324e5548ce7be3d7f05",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

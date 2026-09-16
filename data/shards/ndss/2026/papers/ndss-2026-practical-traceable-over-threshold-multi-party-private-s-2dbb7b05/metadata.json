@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2026-practical-traceable-over-threshold-multi-party-private-s-2dbb7b05",
   "title": "Practical Traceable Over-Threshold Multi-Party Private Set Intersection",
+  "abstract": "Multi-Party Private Set Intersection (MP-PSI) with threshold enhances the flexibility of MP-PSI by disclosing elements present in at least $t$ participants' sets, rather than requiring elements to appear in all $n$ sets.\n\nIn scenarios where each participant is responsible for its dataset, e.g., digital forensics, MP-PSI with threshold is expected to disclose both intersection elements and corresponding holders such that elements are traceable and hence the reliability of intersection is guaranteed. We refer to MP-PSI with threshold supporting traceability as Traceable Over-Threshold Multi-Party Private Set Intersection (T-OT-MP-PSI). However, research on such protocols remains limited, and the current solution is resistant to $t-2$ semi-honest participants at the cost of considerable computational overhead.\n\nIn this paper, we propose two novel Traceable OT-MP-PSI protocols. The first protocol is the underline{E}fficient underline{T}raceable OT-MP-PSI (ET-OT-MP-PSI), which combines Shamir's secret sharing with oblivious programmable pseudorandom function, achieving significantly improved efficiency with resistance to at most $t-2$ semi-honest participants.\n\nThe second one is the underline{S}ecurity-enhanced underline{T}raceable OT-MP-PSI (ST-OT-MP-PSI), which achieves security against up to $n-1$ semi-honest participants by further leveraging oblivious linear evaluation protocol.\n\nCompared to the recent Traceable OT-MP-PSI protocol by Mahdavi et al., our protocols eliminate the security assumption that certain special parties do not collude and provide stronger security guarantees.\n\nWe implemented our proposed protocols and conducted extensive experiments under various settings.\n\nWe compared the performance of our protocols with that of Mahdavi et al.'s protocol.\n\nWhile our Traceable OT-MP-PSI protocols enhance security, experimental results demonstrate high efficiency. For instance, given 5 participants, with threshold of 3, and set sizes are $2^{14}$, our ET-OT-MP-PSI protocol is 15056$times$ faster, and the ST-OT-MP-PSI is 505$times$ faster, compared to Mahdavi et al.'s protocol.",
+  "abstract_source_id": "src-abstract-ndss-2026-2dbb7b05",
   "venue": "ndss",
   "year": 2026,
   "track_or_session": "Summer submission cycle",
@@ -181,6 +183,19 @@
       "official": false,
       "supports": [
         "independent proceedings identity reconciliation"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2026-2dbb7b05",
+      "url": "https://www.ndss-symposium.org/ndss-paper/practical-traceable-over-threshold-multi-party-private-set-intersection/",
+      "kind": "paper-page",
+      "title": "Practical Traceable Over-Threshold Multi-Party Private Set Intersection",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:22:51Z",
+      "content_hash": "sha256:f22531cc7711df1a31724aff7d6492873de916d6f04d6e8a466872de231038cb",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2025-concerto-automatic-communication-optimization-and-schedu-4b74ea3d",
   "title": "Concerto: Automatic Communication Optimization and Scheduling for Large-Scale Deep Learning",
+  "abstract": "With the exponential growth of deep learning (DL), there arises an escalating need for scalability. Despite significant advancements in communication hardware capabilities, the time consumed by communication remains a bottleneck during training. The existing various optimizations are coupled within parallel systems to implement specific computation-communication overlap. These approaches pose challenges in terms of performance, programmability, and generality. In this paper, we introduce Concerto, a compiler framework designed to address these challenges by automatically optimizing and scheduling communication. We formulate the scheduling problem as a resource-constrained project scheduling problem and use off-the-shelf solver to get the near-optimal scheduling. And use auto-decomposition to create overlap opportunity for critical (synchronous) communication. Our evaluation shows Concerto can match or outperform state-of-the-art parallel frameworks, including Megatron-LM, JAX/XLA, DeepSpeed, and Alpa, all of which include extensive hand-crafted optimization. Unlike previous works, Concerto decouples the parallel approach and communication optimization, then can generalize to a wide variety of parallelisms without manual optimization.",
+  "abstract_source_id": "src-abstract-asplos-2025-4b74ea3d",
   "venue": "asplos",
   "year": 2025,
   "track_or_session": "Session 6A: ML Systems 2",
@@ -293,6 +295,19 @@
       "official": false,
       "supports": [
         "Indexed abstract and open-access links used for relevance classification and ancillary-link discovery."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2025-4b74ea3d",
+      "url": "https://api.openalex.org/works/doi:10.1145/3669940.3707223?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Concerto: Automatic Communication Optimization and Scheduling for Large-Scale Deep Learning",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:00:46Z",
+      "content_hash": "sha256:a4647a79d18d8f89cf80c7530416370e3b81a3837ad91ef54dc424ef07b657c3",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

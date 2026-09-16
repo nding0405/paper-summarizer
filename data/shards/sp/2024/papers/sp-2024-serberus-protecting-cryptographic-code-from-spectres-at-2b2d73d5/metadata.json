@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2024-serberus-protecting-cryptographic-code-from-spectres-at-2b2d73d5",
   "title": "Serberus: Protecting Cryptographic Code from Spectres at Compile-Time",
+  "abstract": "We present Serberus, the first comprehensive mitigation for hardening constant-time (CT) code against Spectre attacks (involving the PHT, BTB, RSB, STL, and/or PSF speculation primitives) on existing hardware. Serberus is based on three insights. First, some hardware control-flow integrity (CFI) protections restrict transient control-flow to the extent that it may be comprehensively considered by software analyses. Second, conformance to the accepted CT code discipline permits two code patterns that are unsafe in the post-Spectre era. Third, once these code patterns are addressed, all Spectre leakage of secrets in CT programs can be attributed to one of four classes of taint primitives—instructions that can transiently assign a secret value to a publicly-typed register. We evaluate Serberus on cryptographic primitives in the OpenSSL, Libsodium, and Hacl* libraries. Serberus introduces 21.3% runtime overhead on average, compared to 24.9% for the next closest state-of-the-art software mitigation, which is less secure.",
+  "abstract_source_id": "src-abstract-sp-2024-2b2d73d5",
   "venue": "sp",
   "year": 2024,
   "track_or_session": "Spring cycle",
@@ -159,6 +161,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2024-2b2d73d5",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Serberus: Protecting Cryptographic Code from Spectres at Compile-Time",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:37Z",
+      "content_hash": "sha256:d186972817127125a98a71b907d7b283fa37f2e757aaf5b9ae232aa389caabc0",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-recstruct-recovering-nested-struct-types-from-stripped-b-45e5a2b8",
   "title": "RecStruct: Recovering Nested Struct Types from Stripped Binaries via Stack-Driven Unification",
+  "abstract": "Recovering composite data types from stripped binaries is critical for reverse engineering and vulnerability analysis. Existing approaches either rely on heavyweight decompilers with limited type reasoning, or employ expensive constraint solvers that fail to scale. While some methods can handle nested structures, they struggle with large real-world binaries due to prohibitive computational costs. We present RecStruct, a fast type recovery framework that reconstructs nested structures without dependence on any decompiler. RecStruct lifts binaries directly, performs flow-insensitive symbolic execution to reduce memory aliases, and introduces Stack-Driven Unification—a novel union-find algorithm that maintains an offset stack during traversal to merge types only when their nesting depths align. This enables precise recovery of recursive structures. We implement an end-to-end pipeline and evaluate it on 418 binaries comprising 744,770 functions, including benchmarks from prior work and large-scale programs such as QEMU and OpenSSL. Experimental results demonstrate competitive accuracy compared to existing tools, with substantial improvements in efficiency and scalability, enabling analysis of binaries that were previously intractable.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-45e5a2b8",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Software Security 3",
@@ -197,6 +199,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-45e5a2b8",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/chen-yuxin",
+      "kind": "paper-page",
+      "title": "RecStruct: Recovering Nested Struct Types from Stripped Binaries via Stack-Driven Unification",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:25:10Z",
+      "content_hash": "sha256:5b281c2049f4224e2fc06d79793f3dc557b3616bc82ec553e55f5e0701591898",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

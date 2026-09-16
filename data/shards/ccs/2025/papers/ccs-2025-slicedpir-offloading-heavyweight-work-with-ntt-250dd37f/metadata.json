@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2025-slicedpir-offloading-heavyweight-work-with-ntt-250dd37f",
   "title": "SlicedPIR: Offloading Heavyweight Work with NTT",
+  "abstract": "We present SlicedPIR, a distributed Private Information Retrieval (PIR) protocol. SlicedPIR efficiently alleviates the server's compute bottleneck by offloading its load across multiple untrusted client machines. In contrast to prior work, SlicedPIR induces only a modest network overhead when the server offloads its work. It achieves those communication savings by exploiting the polynomial encoding of homomorphic encryption schemes typically used in PIR protocols. This encoding lets the server make novel use of the Number Theoretic Transform (NTT) to distribute points on the polynomials as ''slices'' of its data rather than the polynomials themselves. Using NTT allows the clients to process recursive PIR queries on their slices and return a succinct result to the server. The server efficiently verifies the clients' results by leveraging the Schwartz-Zippel lemma, which we adapt to the PIR use case. We show how to integrate SlicedPIR into a private messaging system, where clients write messages to the server's database and then use PIR to secretly query for messages from their friends. We implement a prototype of SlicedPIR and run experiments to show that it scales well with the number of clients and database size. Concretely, SlicedPIR achieves better performance and cuts network usage by over 95% compared to the state-of-the-art.",
+  "abstract_source_id": "src-abstract-ccs-2025-250dd37f",
   "venue": "ccs",
   "year": 2025,
   "track_or_session": "Cycle 2",
@@ -106,6 +108,19 @@
         "published-order authors",
         "publication-time affiliations",
         "publication date and page span"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2025-250dd37f",
+      "url": "https://api.openalex.org/works/doi:10.1145/3719027.3765154?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "SlicedPIR: Offloading Heavyweight Work with NTT",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:17:06Z",
+      "content_hash": "sha256:433a770dda661a724be5bf877227572b6dd0a43b454596ff6c328b8558157057",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

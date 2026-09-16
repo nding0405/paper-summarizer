@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2025-redefining-indirect-call-analysis-with-kallgraph-bae7fd2d",
   "title": "Redefining Indirect Call Analysis with KallGraph",
+  "abstract": "Call graph construction is a crucial prerequisite for a wide range of static analysis applications. State-of-the-art methods minimize precise but expensive pointer tracking by falling back to so-called “type analysis” which scales well to large programs such as the Linux kernel. In this paper, we undertake an in-depth evaluation and analysis of type-based methods that reveal new insights into flaws due to their adhoc nature. First, we find that in a number of cases, the soundness claims of recent type-based methods do not hold, resulting in missing indirect call targets. Second, we find the analysis is overly conservative in multiple aspects, leading to a large number of false indirect call targets. Based on these insights, we make the observation that such type-based methods can be converted into a hybrid pointer analysis framework that unifies the traditional pointer tracking methods and type-based methods. Based on such a framework, we develop a practical indirect call analysis that addresses both soundness and precision limitations. Our results demonstrate a remarkable level of soundness and precision improvements. KallGraph simultaneously improves precision and soundness by pruning up to 90% of indirect call targets and eliminating hundreds to thousands of missed indirect calls. Finally, KallGraph is fully parallelizable and can complete the analysis of Linux kernels in times ranging from tens of minutes to a few hours.",
+  "abstract_source_id": "src-abstract-sp-2025-bae7fd2d",
   "venue": "sp",
   "year": 2025,
   "track_or_session": "Cycle 2",
@@ -112,6 +114,19 @@
       "official": true,
       "supports": [
         "DOI, authors, affiliations, abstract, publication date, pages, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2025-bae7fd2d",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Redefining Indirect Call Analysis with KallGraph",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:52Z",
+      "content_hash": "sha256:b15ce02bcc49da611fdd791ecc56741e7d91d84154b58c1a7f72a5c6902e6e46",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

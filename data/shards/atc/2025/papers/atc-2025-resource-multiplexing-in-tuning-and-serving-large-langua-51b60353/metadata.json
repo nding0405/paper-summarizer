@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "atc-2025-resource-multiplexing-in-tuning-and-serving-large-langua-51b60353",
   "title": "Resource Multiplexing in Tuning and Serving Large Language Models",
+  "abstract": "Large language models (LLMs) have been increasingly adopted in a variety of application scenarios. However, in spite of the high demand for both tuning and inference, GPUs are often underutilized because they are devoted to a single task. A common argument for single-purpose deployments is the need to meet strict service-level objectives (SLOs). As LLM workloads become more complex, there are, indeed, significant challenges in achieving high utilization while still guaranteeing the necessary low latency. In this paper, we present LLMStation, a flexible spatial-temporal multiplexing and scheduling system for concurrent LLM fine-tuning and inference. LLMStation adopts several novel approaches, including a new iteration-level multitasking scheduling mechanism, an Autograd engine that transforms a tuning task into a suspendable pipeline, and an inference engine capable of batching inference and tuning requests. Our evaluation shows that LLMStation delivers 1.38× to 14.77× the throughput of state-of-the-art systems while meeting inference latency SLOs. These performance gains remain under various setups and workloads, proving LLMStation to be an effective tool to increase the efficiency of LLM deployments.",
+  "abstract_source_id": "src-abstract-atc-2025-51b60353",
   "venue": "atc",
   "year": 2025,
   "track_or_session": "Intelligent Resource Management: Federation, Colocation, and ML for Systems",
@@ -180,6 +182,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-atc-2025-51b60353",
+      "url": "https://www.usenix.org/conference/atc25/presentation/he-yongjun",
+      "kind": "paper-page",
+      "title": "Resource Multiplexing in Tuning and Serving Large Language Models",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:00:07Z",
+      "content_hash": "sha256:ce8634fe91de2cdf1d9bcbb6a6bbaebe02b8a07f71836628fe7289c98af94669",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

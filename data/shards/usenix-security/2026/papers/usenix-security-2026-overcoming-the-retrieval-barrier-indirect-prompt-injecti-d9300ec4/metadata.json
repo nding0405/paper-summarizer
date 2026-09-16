@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-overcoming-the-retrieval-barrier-indirect-prompt-injecti-d9300ec4",
   "title": "Overcoming the Retrieval Barrier: Indirect Prompt Injection in the Wild for LLM Systems",
+  "abstract": "Large language models (LLMs) increasingly rely on retrieving information from external corpora, creating a new attack surface: indirect prompt injection (IPI). Previous studies have highlighted this risk but often avoid the hardest step: ensuring that malicious content is actually retrieved. In practice, unoptimized IPI is rarely retrieved under natural queries, which leaves its real-world impact unclear.\n\nWe address this challenge by decomposing the malicious content into a trigger fragment that guarantees retrieval and an attack fragment that encodes arbitrary attack objectives. Based on this idea, we design an efficient and effective black-box attack algorithm that constructs a compact trigger fragment to guarantee retrieval for any attack fragement. Our attack requires only API access to embedding models, is cost-efficient (as little as $0.21 per target user query on OpenAI's embedding models), and achieves near-100% retrieval across 11 benchmarks and 8 embedding models (including both open-source models and proprietary services).\n\nBased on this attack, we present the first end-to-end IPI exploits under natural queries and realistic external corpora, spanning both RAG and agentic systems with diverse attack objectives. These results establish IPI as a practical and severe threat: when a user issued a natural query to summarize emails on frequently asked topics, a single poisoned email was sufficient to coerce GPT-4o into exfiltrating SSH keys with over 80% success in a multi-agent workflow. We further evaluate several defenses and find that they are insufficient to prevent the retrieval of malicious text, highlighting retrieval as a critical open vulnerability.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-d9300ec4",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Security of ML 2",
@@ -135,6 +137,19 @@
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening",
         "prepublication PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-d9300ec4",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/chang-hongyan",
+      "kind": "paper-page",
+      "title": "Overcoming the Retrieval Barrier: Indirect Prompt Injection in the Wild for LLM Systems",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:24:57Z",
+      "content_hash": "sha256:70228c219dbfc0ab202e149c0f33b64b6ed1fa0a8d802ebe8f59ce89be2f187b",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

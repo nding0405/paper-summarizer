@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-lightshed-defeating-perturbation-based-image-copyright-p-7e083473",
   "title": "LightShed: Defeating Perturbation-based Image Copyright Protections",
+  "abstract": "Recently, image generation models like Stable Diffusion have gained significant popularity due to their remarkable achievements. However, their widespread use has raised concerns about potential misuse, particularly regarding acquiring training data, including using copyright-protected material. Various schemes have been proposed to address these concerns by introducing inconspicuous perturbations (poisons) to prevent models from utilizing these samples for training.\n\nWe present LightShed, a generalizable depoisoning attack that effectively identifies poisoned images and removes adversarial perturbations, showing the limitations of current protection schemes. LightShed exploits the wide availability of these protection schemes to generate poisoned examples and models their characteristics. The fingerprints derived from this process enable LightShed to efficiently extract and neutralize the perturbation from a protected image. We demonstrate the effectiveness of LightShed against several popular perturbation-based image protection schemes, including NightShade, recently presented at IEEE S&P 2024, and Glaze, published at Usenix Security 2023. Our results show that LightShed can accurately identify poisoned samples, achieving a TPR of 99.98% and TNR of 100% on detecting NightShade and effectively depoisoning them. We show that LightShed generalizes across perturbation techniques, enabling a single model to recognize poisoned images.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-7e083473",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "ML and AI Security 4: Robustness",
@@ -154,6 +156,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-7e083473",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/foerster",
+      "kind": "paper-page",
+      "title": "LightShed: Defeating Perturbation-based Image Copyright Protections",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:20:34Z",
+      "content_hash": "sha256:e150625ba18af457ed354fed36115ec51c1c3e8f0904664ae8e392b1431bc828",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

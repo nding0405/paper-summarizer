@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "fast-2026-odinann-direct-insert-for-consistently-stable-performanc-dac52bac",
   "title": "OdinANN: Direct Insert for Consistently Stable Performance in Billion-Scale Graph-Based Vector Search",
+  "abstract": "Approximate Nearest Neighbor Search (ANNS) is widely used in various scenarios. For billion-scale ANNS, on-disk graph-based indexes, which organize the vectors as a graph and store them on disk, are favored for their performance and cost-efficiency. However, existing indexes can not maintain a stable search performance while inserting new vectors.\n\nIn this paper, we propose to use direct insert, which directly inserts vectors into the on-disk index, rather than buffering them in memory and merging them to disk in batches like existing systems. This approach can even out the interference of insert with frontend search, thus stabilizing the performance. We evaluate direct insert by integrating it into a billion-scale graph-based ANNS index named OdinANN. With a fixed insert rate, OdinANN outperforms state-of-the-art ANNS indexes in search latency and throughput, and it consistently shows stable performance in billion-scale vector datasets.",
+  "abstract_source_id": "src-abstract-fast-2026-dac52bac",
   "venue": "fast",
   "year": 2026,
   "track_or_session": "Indexing",
@@ -97,6 +99,19 @@
         "proceedings page range and page count",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-fast-2026-dac52bac",
+      "url": "https://www.usenix.org/conference/fast26/presentation/guo",
+      "kind": "paper-page",
+      "title": "OdinANN: Direct Insert for Consistently Stable Performance in Billion-Scale Graph-Based Vector Search",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:01:36Z",
+      "content_hash": "sha256:5e80882dddf31f623a52ab53b3371322d83e750cc8550318004c8dcf5954c3bc",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

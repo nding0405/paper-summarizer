@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "atc-2023-beware-of-fragmentation-scheduling-gpu-sharing-workloads-0da0e7a0",
   "title": "Beware of Fragmentation: Scheduling GPU-Sharing Workloads with Fragmentation Gradient Descent",
+  "abstract": "Large tech companies are piling up a massive number of GPUs in their server fleets to run diverse machine learning (ML) workloads. However, these expensive devices often suffer from significant underutilization. To tackle this issue, GPU sharing techniques have been developed to enable multiple ML tasks to run on a single GPU. Nevertheless, our analysis of Alibaba production traces reveals that allocating partial GPUs can result in severe GPU fragmentation in large clusters, leaving hundreds of GPUs unable to be allocated. Existing resource packing algorithms fall short in addressing this problem, as GPU sharing mandates a new scheduling formulation beyond the classic bin packing.\n\nIn this paper, we propose a novel measure of fragmentation to statistically quantify the extent of GPU fragmentation caused by different sources. Building upon this measure, we propose to schedule GPU-sharing workloads towards the direction of the steepest descent of fragmentation, an approach we call Fragmentation Gradient Descent (FGD). Intuitively, FGD packs tasks to minimize the growth of GPU fragmentation, thereby achieving the maximum GPU allocation rate. We have implemented FGD as a new scheduler in Kubernetes and evaluated its performance using production traces on an emulated cluster comprising more than 6,200 GPUs. Compared to the existing packing-based schedulers, FGD reduces unallocated GPUs by up to 49%, resulting in the utilization of additional 290 GPUs.",
+  "abstract_source_id": "src-abstract-atc-2023-0da0e7a0",
   "venue": "atc",
   "year": 2023,
   "track_or_session": "GPU",
@@ -222,6 +224,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-atc-2023-0da0e7a0",
+      "url": "https://www.usenix.org/conference/atc23/presentation/weng",
+      "kind": "paper-page",
+      "title": "Beware of Fragmentation: Scheduling GPU-Sharing Workloads with Fragmentation Gradient Descent",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T21:57:48Z",
+      "content_hash": "sha256:ede1d106f7b4cd572ef7ed702e9490e32b5c015b71d549978cc76dbf26f015e2",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

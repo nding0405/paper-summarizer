@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2026-hybridmesh-a-hardware-software-hybrid-approach-for-accel-bbc1281b",
   "title": "HybridMesh: A Hardware-software Hybrid Approach for Accelerating Service Mesh Ingress",
+  "abstract": "Service meshes have become essential for enabling microservice communication in cloud environments. Despite their benefits, they impose significant network overhead. We identify the ingress gateway, a main entry point for external traffic, has emerged as a major performance bottleneck. This overhead stems from two key limitations of current ingress gateways: (1) CPU-intensive traffic analysis and (2) a complex packet forwarding path. Our analysis shows that these inefficiencies can reduce network throughput by up to 4× while substantially increasing CPU utilization. In response, we propose HybridMesh, a hardware-software hybrid ingress gateway that leverages a SmartNIC for high-performance traffic analysis and efficient traffic routing. This process is augmented by a lightweight CPU-side proxy that provides various traffic management features not suitable for SmartNIC execution. Evaluations show that HybridMesh outperforms existing ingress gateways, achieving a 4.4× increase in HTTP throughput. Furthermore, compared to software-only and hardware-only designs, our hybrid design delivers 2.3× higher cost-effectiveness and 2.8× better power-efficiency.",
+  "abstract_source_id": "src-abstract-nsdi-2026-bbc1281b",
   "venue": "nsdi",
   "year": 2026,
   "track_or_session": "Cloudy with a Chance of Tenants",
@@ -160,6 +162,19 @@
         "proceedings page range and page count",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2026-bbc1281b",
+      "url": "https://www.usenix.org/conference/nsdi26/presentation/you",
+      "kind": "paper-page",
+      "title": "HybridMesh: A Hardware-software Hybrid Approach for Accelerating Service Mesh Ingress",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:05:28Z",
+      "content_hash": "sha256:2d479a25c33314da460432959ea895855fcd3d7bd7c7df804593b02839b1a54c",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

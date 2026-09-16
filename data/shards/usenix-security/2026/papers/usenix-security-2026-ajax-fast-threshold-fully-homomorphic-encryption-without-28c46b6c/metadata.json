@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-ajax-fast-threshold-fully-homomorphic-encryption-without-28c46b6c",
   "title": "Ajax: Fast Threshold Fully Homomorphic Encryption without Noise Flooding",
+  "abstract": "Threshold fully homomorphic encryption (ThFHE) enables multiple parties to perform arbitrary computation over encrypted data, while the secret key is distributed across the parties. The main task of designing ThFHE is to construct threshold key-generation and decryption protocols for FHE schemes. Among existing FHE schemes, FHEW-like cryptosystems enjoy the advantage of fast bootstrapping and small parameters. However, known ThFHE solutions use the \"noise-flooding\" technique to realize threshold decryption, which requires either large parameters or switching to a scheme with large parameters via bootstrapping, leading to a slow decryption process. Besides, for key generation, existing ThFHE schemes either assume a generic MPC or a trusted setup, or incur noise growth that is linear in the number n of parties.\n\nIn this paper, we propose a fast ThFHE scheme Ajax, by designing threshold key-generation and decryption protocols for FHEW-like cryptosystems. In particular, for threshold decryption, we eliminate the need for noise flooding, and instead present a new technique called \"mask-then-open\" based on random double sharings over different rings, while keeping the advantage of small parameters. For threshold key generation, we show a simple approach to reduce the noise growth from n times to max(0.038n,2) times in the honest-majority setting, where at most t=(n-1)/2 parties are corrupted. Our end-to-end implementation reports the running time 17.6 s and 0.9 ms (resp., 91.9 s and 4.4 ms) of generating a set of keys and decrypting a single ciphertext respectively, for n=3 (resp., n=21) parties under the network of 1 Gbps bandwidth and 1 ms ping time. Compared to the state-of-the-art implementation, our protocol improves the end-to-end performance of the threshold decryption protocol by a factor of at least 5.7× 283.6× across different network latencies from t=1 to t=13. Our approaches can also be applied in other types of FHE schemes like BGV, BFV, and CKKS.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-28c46b6c",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Applications of Cryptography 1",
@@ -198,6 +200,19 @@
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening",
         "prepublication PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-28c46b6c",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/hu-zhenkai",
+      "kind": "paper-page",
+      "title": "Ajax: Fast Threshold Fully Homomorphic Encryption without Noise Flooding",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:22:55Z",
+      "content_hash": "sha256:73cc3e5f4caa7cc93bc4d85bff60a82d33eead33bf1eb9ca88d8eb099c02afe8",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

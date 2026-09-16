@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2026-verifiable-pir-with-small-client-storage-feba014b",
   "title": "Verifiable PIR with Small Client Storage",
+  "abstract": "Efficient Verifiable Private Information Retrieval (vPIR) protocols, and more generally Verifiable Linearly Homomorphic Encryption (vLHE), suffer from high client storage. VeriSimplePIR (USENIX Security 2024), the state-of-theart vPIR protocol, requires clients to persistently maintain over 1 GiB of local storage to privately access an 8 GiB remote database. We present a new vPIR protocol that reduces the client state by orders of magnitude while preserving online latency. In our protocol, clients only need to store 512 KiB for an 8 GiB database, achieving a $2000 \\times$ improvement. Our vPIR protocol is built over our new vLHE scheme. Unlike VeriSimplePIR, our scheme doesn't use random oracles and relies only on standard lattice assumptions - (R)LWE and SIS. These improvements come at a $2.5 \\times$ cost in server throughput over VeriSimplePIR. Despite this throughput overhead, we achieve a comparable online latency to VeriSimplePIR by implementing several optimizations including query-level preprocessing. We also introduce the notion of covert vPIR (cvPIR), where stateful clients enjoy full vPIR security, while even stateless clients benefit from covert security against a malicious server.",
+  "abstract_source_id": "src-abstract-sp-2026-feba014b",
   "venue": "sp",
   "year": 2026,
   "track_or_session": "Cycle 1",
@@ -112,6 +114,19 @@
       "official": true,
       "supports": [
         "DOI, published-order authors and affiliations, abstract, publication date, page span, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2026-feba014b",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Verifiable PIR with Small Client Storage",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:58:06Z",
+      "content_hash": "sha256:5353b9384fd86d54ad3dc674f6041a164ea560a1a98a9c02cc1bb37e317e508e",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

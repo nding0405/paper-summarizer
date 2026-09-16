@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-jscamd-an-automated-static-taint-analysis-framework-for-90e44504",
   "title": "JScamd: An Automated Static Taint Analysis Framework for Detecting Cryptographic API Misuses in JavaScript",
+  "abstract": "Cryptographic APIs are essential to application security, yet frequent developer misuse leads to widespread vulnerabilities. Detecting cryptographic misuse in JavaScript is challenging due to its dynamic semantics and fragmented cryptographic library ecosystem, which hinder static analysis tools from accurately modeling data flows and covering non-standard or evolving libraries, leading to high false-negative rates.\n\nIn this paper, we propose JScamd, a static analysis framework for scalable detection of cryptographic misuse in JavaScript. JScamd integrates an enhanced program representation engine, an LLM-assisted taint rule generation pipeline, and a precise static taint analysis engine to address JavaScript dynamic features. Building upon 16 systematically defined cryptographic security constraints, JScamd automatically analyzes cryptographic APIs, identifies security-sensitive taint sources and sinks, and synthesizes comprehensive taint analysis rules. This design enables accurate detection of cryptographic misuse across diverse JavaScript libraries and application scenarios. We performed a comprehensive large-scale evaluation on 322 widely adopted JavaScript projects. JScamd detects 1,059 misuses and achieves 97.78% precision, significantly outperforming three state-of-the-art tools. Our analysis further uncovers previously unknown vulnerabilities, resulting in 41 assigned CVEs. These results demonstrate that JScamd effectively bridges cryptographic security specifications and ecosystem-scale vulnerability detection in JavaScript.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-90e44504",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Security and Privacy for Web, Mobile, and Emerging Technologies 3",
@@ -197,6 +199,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-90e44504",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/jia-shijie",
+      "kind": "paper-page",
+      "title": "JScamd: An Automated Static Taint Analysis Framework for Detecting Cryptographic API Misuses in JavaScript",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:24:25Z",
+      "content_hash": "sha256:c5e9a3dc6bc9382cc04229557b55d11b58dddedd91734ed1961611eacaed62ee",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

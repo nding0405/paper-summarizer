@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2023-cat-a-solver-aided-compiler-for-packet-processing-pipeli-a889aed7",
   "title": "CaT: A Solver-Aided Compiler for Packet-Processing Pipelines",
+  "abstract": "Compiling high-level programs to high-speed packet-processing pipelines is a challenging combinatorial optimization problem. The compiler must configure the pipeline’s resources to match the semantics of the program’s high-level specification, while packing all of the program’s computation into the pipeline’s limited resources. State of the art approaches tackle individual aspects of this problem. Yet, they miss opportunities to produce globally high-quality outcomes within reasonable compilation times. We develop a framework to decompose the compilation problem for such pipelines into three phases—making extensive use of solver engines (e.g., ILP, SMT, and program synthesis) to simplify the development of these phases. Transformation rewrites programs to use more abundant pipeline resources, avoiding scarce ones. Synthesis breaks complex transactional code into configurations of pipelined compute units. Allocation maps the program’s compute and memory to the pipeline’s hardware resources. We prototype these ideas in a compiler, CaT, which targets (1) the Tofino programmable switch pipeline and (2) Menshen, a cycle-accurate simulator of a Verilog description of the RMT pipeline. CaT can handle programs that existing compilers cannot currently run on pipelines and generates code faster than existing compilers, where the generated code uses fewer pipeline resources.",
+  "abstract_source_id": "src-abstract-asplos-2023-a889aed7",
   "venue": "asplos",
   "year": 2023,
   "track_or_session": "Session 4A: Design Tools",
@@ -230,6 +232,19 @@
       "official": false,
       "supports": [
         "Indexed abstract used with the official technical-session context for relevance classification, plus alternate-copy and explicitly printed ancillary links."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2023-a889aed7",
+      "url": "https://api.openalex.org/works/doi:10.1145/3582016.3582036?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "CaT: A Solver-Aided Compiler for Packet-Processing Pipelines",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T21:59:21Z",
+      "content_hash": "sha256:62a4f3a0c62e5f0ddb3a44c518e13b2bc01c77ba3dd98aafeb67b0e142e389bd",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

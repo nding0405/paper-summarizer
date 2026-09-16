@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "eurosys-2023-efficient-and-safe-i-o-operations-for-intermittent-syste-3e52dc8c",
   "title": "Efficient and Safe I/O Operations for Intermittent Systems",
+  "abstract": "Task-based intermittent software systems always re-execute peripheral input/output (I/O) operations upon power failures since tasks have all-or-nothing semantics. Re-executed I/O wastes significant time and energy and risks memory inconsistency. This paper presents EaseIO, a new task-based intermittent system that remedies these problems. EaseIO programming interface introduces re-execution semantics for I/O operations to facilitate safe and efficient I/O management for intermittent applications. EaseIO compiler front-end considers the programmer-annotated I/O re-execution semantics to preserve the task's energy efficiency and idem-potency. EaseIO runtime introduces regional privatization to eliminate memory inconsistency caused by idempotence bugs. Our evaluation shows that EaseIO reduces the wasted useful I/O work by up to 3× and total execution time by up to 44% by avoiding 76% of the redundant I/O operations, as compared to the state-of-the-art approaches for intermittent computing. Moreover, for the first time, EaseIO ensures memory consistency during DMA-based I/O operations.",
+  "abstract_source_id": "src-abstract-eurosys-2023-3e52dc8c",
   "venue": "eurosys",
   "year": 2023,
   "track_or_session": null,
@@ -167,6 +169,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-eurosys-2023-3e52dc8c",
+      "url": "https://api.openalex.org/works/doi:10.1145/3552326.3587435?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Efficient and Safe I/O Operations for Intermittent Systems",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:18:32Z",
+      "content_hash": "sha256:e3176d621188b75dc40e52d9d05f0a31eec08d6bd58e304481ee88e61752d0aa",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

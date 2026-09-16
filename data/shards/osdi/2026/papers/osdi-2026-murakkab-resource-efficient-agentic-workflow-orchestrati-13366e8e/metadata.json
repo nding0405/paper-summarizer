@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2026-murakkab-resource-efficient-agentic-workflow-orchestrati-13366e8e",
   "title": "Murakkab: Resource-Efficient Agentic Workflow Orchestration in Cloud Platforms",
+  "abstract": "Agentic workflows commonly coordinate multiple models and tools with complex control logic. They are quickly becoming the dominant paradigm for AI applications. However, serving them remains inefficient with today’s frameworks. The key problem is that they expose workflows as opaque sequences of model and tool calls that tightly couple agent logic with model and hardware choices. This prevents systems from holistically reasoning about trade-offs across accuracy, latency, energy, and cost. This leads to resource waste and degraded service-level objectives (SLOs).\n\nWe present Murakkab, a resource-efficient serving system for agentic workflows. Murakkab introduces a declarative abstraction that decouples workflow specification from execution configuration. A profile-guided optimizer and adaptive runtime jointly manage the full stack: orchestrating workflow components, mapping them to models and hardware, and dynamically reconfiguring execution to satisfy user-defined SLOs. By exposing the internal structure of agentic workflows, Murakkab enables cross-layer optimization that existing frameworks and cloud schedulers cannot achieve.\n\nOur evaluation on diverse workflows shows that, compared to state-of-the-art systems, Murakkab reduces GPU usage by up to 2.8×, energy consumption by 3.7×, and cost by 4.3× while maintaining SLOs.",
+  "abstract_source_id": "src-abstract-osdi-2026-13366e8e",
   "venue": "osdi",
   "year": 2026,
   "track_or_session": "Agentic AI and LLM Operations",
@@ -209,6 +211,19 @@
       "official": true,
       "supports": [
         "Official proceedings availability and canonical conference versions."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2026-13366e8e",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/chaudhry",
+      "kind": "paper-page",
+      "title": "Murakkab: Resource-Efficient Agentic Workflow Orchestration in Cloud Platforms",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:08:38Z",
+      "content_hash": "sha256:a17edff92acb6afefa7e708ece3a1263cc3a16cbdad38bc24f42b47b16f5aedf",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

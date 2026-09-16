@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2024-erasan-efficient-rust-address-sanitizer-98cafa68",
   "title": "ERASAN: Efficient Rust Address Sanitizer",
+  "abstract": "Rust is a rapidly growing system programming language that ensures a speed comparable to traditional C/C++ system programming languages, along with the additional benefit of guaranteed memory safety. However, Rust’s strict security rules make implementing and executing some features challenging. To address this, Rust has introduced unsafe Rust, which is less constrained by these strict rules. Nevertheless, these unsafe Rust, where strict Rust security rules are not fully applied, can cause temporal and spatial memory bugs that account for 22% of the Rust bugs reported between 2016 and 2023.In this paper, we propose an efficient address sanitizer design customized for Rust, called ERASan, to detect memory bugs in Rust programs more efficiently than prior work. Based on our thorough analysis of safe and unsafe Rust programming language standards as well as memory bugs found in real-world Rust programs over the past years, we design and implement ERASan to only instrument memory accesses in both safe and unsafe code areas where Rust cannot guarantee safety. We evaluate ERASan with several real-world applications. ERASan removes an average of 90.03% of ASan’s memory access checks. Due to this, ERASan significantly reduces ASan’s performance overhead by an average of 239.05% without harming its bug-finding ability.",
+  "abstract_source_id": "src-abstract-sp-2024-98cafa68",
   "venue": "sp",
   "year": 2024,
   "track_or_session": "Winter cycle",
@@ -180,6 +182,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2024-98cafa68",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "ERASan: Efficient Rust Address Sanitizer",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:32Z",
+      "content_hash": "sha256:be7515012a8c1ea1211f38a27ea4d2aa9cff6e0faac9417a2f58b1d64e91280e",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

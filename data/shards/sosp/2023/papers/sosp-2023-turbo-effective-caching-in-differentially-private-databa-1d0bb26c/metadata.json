@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sosp-2023-turbo-effective-caching-in-differentially-private-databa-1d0bb26c",
   "title": "Turbo: Effective Caching in Differentially-Private Databases",
+  "abstract": "Differentially-private (DP) databases allow for privacy-preserving analytics over sensitive datasets or data streams. In these systems, user privacy is a limited resource that must be conserved with each query. We propose Turbo, a novel, state-of-the-art caching layer for linear query workloads over DP databases. Turbo builds upon private multiplicative weights (PMW), a DP mechanism that is powerful in theory but ineffective in practice, and transforms it into a highly-effective caching mechanism, PMW-Bypass, that uses prior query results obtained through an external DP mechanism to train a PMW to answer arbitrary future linear queries accurately and \"for free\" from a privacy perspective. Our experiments on public Covid and CitiBike datasets show that Turbo with PMW-Bypass conserves 1.7 -- 15.9× more budget compared to vanilla PMW and simpler cache designs, a significant improvement. Moreover, Turbo provides support for range query workloads, such as timeseries or streams, where opportunities exist to further conserve privacy budget through DP parallel composition and warm-starting of PMW state. Our work provides a theoretical foundation and general system design for effective caching in DP databases.",
+  "abstract_source_id": "src-abstract-sosp-2023-1d0bb26c",
   "venue": "sosp",
   "year": 2023,
   "track_or_session": "Session 9: Data and databases",
@@ -167,6 +169,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-sosp-2023-1d0bb26c",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Turbo: Effective Caching in Differentially-Private Databases",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:12Z",
+      "content_hash": "sha256:aa9c23a45f6ec9973f40e6c9520c69d42bb49fc1f526891570edfdb1976cff82",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

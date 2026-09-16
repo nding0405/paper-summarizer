@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2025-mole-breaking-gpu-tee-with-gpu-embedded-mcu-5be55081",
   "title": "MOLE : Breaking GPU TEE with GPU-Embedded MCU",
+  "abstract": "Graphics Processing Units (GPUs) are extensively used for applications such as machine learning, scientific computing, and graphics rendering. To protect sensitive data processed by GPUs, Trusted Execution Environments (TEEs) for GPUs have been proposed. GPU TEEs, built with hardware-based isolation primitives, can defend against high-privilege attackers like OS kernels. However, in this paper, we present MOLE, a novel attack that compromises the security of GPU TEEs on Arm Mali GPUs by exploiting the GPU-embedded Microcontroller Unit (MCU). By injecting malicious firmware into the MCU, an attacker can bypass GPU TEEs' security guarantees. We evaluated MOLE with state-of-the-art GPU TEE proposals under multiple real-world attack scenarios, such as in-GPU AES encryption and object detection tasks. Our evaluation shows that MOLE can successfully extract sensitive data or manipulate the computation results of GPU TEEs. We responsibly disclosed our findings to the authors of the affected GPU TEE proposals and received acknowledgments from all of them. Moreover, our findings prompted Arm to enhance the security of its GPU firmware supply chains.",
+  "abstract_source_id": "src-abstract-ccs-2025-5be55081",
   "venue": "ccs",
   "year": 2025,
   "track_or_session": "Cycle 1",
@@ -169,6 +171,19 @@
         "published-order authors",
         "publication-time affiliations",
         "publication date and page span"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2025-5be55081",
+      "url": "https://api.openalex.org/works/doi:10.1145/3719027.3744823?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "MOLE : Breaking GPU TEE with GPU-Embedded MCU",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:15:12Z",
+      "content_hash": "sha256:f67250126fa303b7264d58eeb90e2f4c08dc05bd83b35155c534e338354e0bc8",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-ted-abusing-tunnel-hosts-and-ipv6-extension-headers-for-15a897ac",
   "title": "TED: Abusing Tunnel Hosts and IPv6 Extension Headers for Pulsing DoS Attacks",
+  "abstract": "IP tunneling mechanisms are widely deployed to facilitate the Internet's transition from IPv4 to IPv6, yet their security implications remain insufficiently scrutinized. In this paper, we present TED, a novel pulsing denial-of-service attack that exploits structural vulnerabilities in IP tunneling and IPv6 Extension Headers (EHs) processing. Unlike prior reflection attacks that depend on application-layer services, TED operates entirely at the network layer, requiring no victim interaction, prolonged traffic accumulation, or protocol-specific dependencies. Delay lines are constructed by TED through nested EHs, capitalizing on the tunnel hosts' blind forwarding logic and lack of deep packet inspection. These artificial delay lines allow attackers to solve the send-time schedule problem, converging asynchronous, low-rate traffic into a destructive, high-magnitude pulse at the victim. Our Internet-wide measurement identified over 1.9 million vulnerable tunnel hosts acting as unwitting relays, including hosts within critical satellite infrastructure. Evaluation results demonstrate that TED achieves normalized pulse amplitude exceeding 180× while successfully evading existing low-rate and pulsing attack detection mechanisms based on specific application layer protocols. We discuss the root causes of these transitional vulnerabilities and possible mitigation strategies for network operators and equipment vendors.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-15a897ac",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Network Security 3",
@@ -176,6 +178,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-15a897ac",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/gai",
+      "kind": "paper-page",
+      "title": "TED: Abusing Tunnel Hosts and IPv6 Extension Headers for Pulsing DoS Attacks",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:25:47Z",
+      "content_hash": "sha256:8a088d50a1add9ee6586ebc6d620964979c00635b3b75f0ea7cfe50f46bbff84",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2026-exia-trusted-transitions-for-enclaves-via-external-input-bb4b55d4",
   "title": "EXIA: Trusted Transitions for Enclaves via External-Input Attestation",
+  "abstract": "Trusted Execution Environment (TEE) has been adopted to secure computation outsourced to untrusted clouds, and the associated remote attestation mechanism enables the user to verify the integrity of the outsourced computation at launch time. However, memory corruption attacks break TEE’s security guarantees without being detected after launch-time attestation. While control-flow attestation (CFA) schemes aim to detect runtime compromises, most existing CFA schemes lack concrete verification methods and can be bypassed by data-only attacks. In this paper, we propose the concept of External-Input Attestation to attest all writes to TEE-protected applications, based on the observation that memory corruption attacks typically start with unintended writes. This approach ensures a trusted enclave state by verifying all writes match expectations, transforming security issues, such as control-flow hijacking, into reliability issues, such as a software crash due to unexpected input. For efficient reference measurement derivation and verification, the current version of External-Input Attestation is limited to enclaved applications whose inputs are known to the verifier. This design is validated by implementing and evaluating prototypes on AMD SEV-SNP and Penglai, where security and performance evaluations show a minimal performance overhead in case studies, including secure model training, model inference, database workloads, and key management.",
+  "abstract_source_id": "src-abstract-ndss-2026-bb4b55d4",
   "venue": "ndss",
   "year": 2026,
   "track_or_session": "Fall submission cycle",
@@ -202,6 +204,19 @@
       "official": false,
       "supports": [
         "independent proceedings identity reconciliation"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2026-bb4b55d4",
+      "url": "https://www.ndss-symposium.org/ndss-paper/exia-trusted-transitions-for-enclaves-via-external-input-attestation/",
+      "kind": "paper-page",
+      "title": "EXIA: Trusted Transitions for Enclaves via External-Input Attestation",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:21:58Z",
+      "content_hash": "sha256:37f4a3cc1cc0891a2e45d885846e6b17e7357517a7094100361c3f0846d8529a",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

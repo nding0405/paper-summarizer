@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-big-help-or-big-brother-auditing-tracking-profiling-and-e4e746da",
   "title": "Big Help or Big Brother? Auditing Tracking, Profiling, and Personalization in Generative AI Assistants",
+  "abstract": "Browser assistants have started to integrate powerful capabilities of GenAI in web browsers to offer functionalities such as question answering, content summarization, and agentic web navigation. These assistants, available today as browser extensions, raise significant privacy concerns because they can track detailed browsing activity (e.g., searches, clicks) and autonomously perform tasks such as form filling. In this paper, we analyze the design and behavior of GenAI browser extensions, focusing on how they collect, process, and share user data, and whether they profile users based on explicit or inferred demographic attributes and interests. We develop a novel prompting framework and perform network traffic analysis to audit the nine GenAI browser assistants for tracking, profiling, and personalization.\n\nWe find that GenAI browser assistants typically rely on server-side APIs rather than local models, and can be invoked automatically without explicit user interaction. GenAI browser assistants often collect and share full webpage content, including the HTML DOM and user form inputs in some cases, with their first-party servers. Some also share identifiers and user prompts with third-party trackers such as Google Analytics. This data collection and sharing happens even on pages containing sensitive information, such as health records or personal information such as names or social security numbers entered in a web form. Moreover, several GenAI browser assistants infer attributes (e.g., age, gender, income, interests) and use them to personalize responses across browsing contexts. Our findings show that GenAI browser assistants collect and share personal and sensitive information for profiling and personalization, highlighting the need for safeguards as they increasingly mediate web browsing.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-e4e746da",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Vulnerabilities in LLMs: Privacy, Safety, and Defense",
@@ -196,6 +198,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-e4e746da",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/vekaria",
+      "kind": "paper-page",
+      "title": "Big Help or Big Brother? Auditing Tracking, Profiling, and Personalization in Generative AI Assistants",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:18:52Z",
+      "content_hash": "sha256:ee963926ba56c84881f07f050bc5ff8ada706e96eb3dbcb3c18214df9c9f20ff",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

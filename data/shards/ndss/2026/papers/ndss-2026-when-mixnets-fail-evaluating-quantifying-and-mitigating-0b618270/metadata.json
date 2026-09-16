@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2026-when-mixnets-fail-evaluating-quantifying-and-mitigating-0b618270",
   "title": "When Mixnets Fail: Evaluating, Quantifying, and Mitigating the Impact of Adversarial Nodes in Mix Networks",
+  "abstract": "Mix networks (mixnets) provide clients with communication anonymity against strong network adversaries by traversing their packets independently through randomly selected hops (mixnodes), which disrupt packet linkability. Although this approach, implemented in Nym, maximizes obfuscation against network adversaries, it enables an adversary who compromises a subset of mixnodes ($10$%/$5$% of nodes) to entirely nullify the anonymity of all clients whose communication volume with their destination exceeds a certain threshold ($4$MB/$30$MB).\n\nTo mitigate such vulnerabilities, this work develops a set of novel path selection techniques that achieve a trade-off between resistance to network adversaries and resilience against compromised mixnodes. Observing that existing anonymity metrics are insufficient to quantify adversarial risk in mixnets, we additionally introduce effective empirical and simulation-based metrics.\n\nThrough theoretical, empirical, and simulation-based evaluations, we comprehensively assess our proposals, demonstrating that the proposed approaches reduce the vulnerability to compromised nodes by up to $80%$, while conferring limited advantage to network adversaries. Our analysis further reveals that state-of-the-art anonymity metrics, in contrast to our proposed metrics, produce misleading results that influenced certain design choices in Nym.",
+  "abstract_source_id": "src-abstract-ndss-2026-0b618270",
   "venue": "ndss",
   "year": 2026,
   "track_or_session": "Fall submission cycle",
@@ -97,6 +99,19 @@
       "official": false,
       "supports": [
         "independent proceedings identity reconciliation"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2026-0b618270",
+      "url": "https://www.ndss-symposium.org/ndss-paper/when-mixnets-fail-evaluating-quantifying-and-mitigating-the-impact-of-adversarial-nodes-in-mix-networks/",
+      "kind": "paper-page",
+      "title": "When Mixnets Fail: Evaluating, Quantifying, and Mitigating the Impact of Adversarial Nodes in Mix Networks",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:23:40Z",
+      "content_hash": "sha256:6f63576bb7500ed5d7a31994a7e506dfbe747e7550928605ad2a25cfee6b498b",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

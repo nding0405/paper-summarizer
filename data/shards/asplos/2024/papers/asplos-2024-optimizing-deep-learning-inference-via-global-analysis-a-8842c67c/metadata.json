@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2024-optimizing-deep-learning-inference-via-global-analysis-a-8842c67c",
   "title": "Optimizing Deep Learning Inference via Global Analysis and Tensor Expressions",
+  "abstract": "Optimizing deep neural network (DNN) execution is important but becomes increasingly difficult as DNN complexity grows. Existing DNN compilers cannot effectively exploit optimization opportunities across operator boundaries, leaving room for improvement. To address this challenge, we present Souffle, an open-source compiler that optimizes DNN inference across operator boundaries. Souffle creates a global tensor dependency graph using tensor expressions, traces data flow and tensor information, and partitions the computation graph into subprograms based on dataflow analysis and resource constraints. Within a subprogram, Souffle performs local optimization via semantic-preserving transformations, finds an optimized program schedule, and improves instruction-level parallelism and data reuse. We evaluated Souffle using six representative DNN models on an NVIDIA A100 GPU. Experimental results show that Souffle consistently outperforms six state-of-the-art DNN optimizers by delivering a geometric mean speedup of up to 3.7× over TensorRT and 7.8× over Tensorflow XLA.",
+  "abstract_source_id": "src-abstract-asplos-2024-8842c67c",
   "venue": "asplos",
   "year": 2024,
   "track_or_session": "Session 6C: Optimization of Tensor Programs",
@@ -347,6 +349,19 @@
       "official": true,
       "supports": [
         "Author-deposited archival artifact associated with the conference paper."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2024-8842c67c",
+      "url": "https://api.openalex.org/works/doi:10.1145/3617232.3624858?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Optimizing Deep Learning Inference via Global Analysis and Tensor Expressions",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:00:23Z",
+      "content_hash": "sha256:a34b6a886cae0776c90f6fe905133cb5bd69d26df5b41d0cad485e46fcbdf948",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

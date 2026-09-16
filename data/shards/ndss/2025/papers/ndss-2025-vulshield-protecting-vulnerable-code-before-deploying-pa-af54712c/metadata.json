@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2025-vulshield-protecting-vulnerable-code-before-deploying-pa-af54712c",
   "title": "VulShield: Protecting Vulnerable Code Before Deploying Patches",
+  "abstract": "Despite the high frequency of vulnerabilities exposed in software, patching these vulnerabilities remains slow and challenging, which leaves a potential attack window. To mitigate this threat, researchers seek temporary solutions to prevent vulnerabilities from being exploited or triggered before they are officially patched. However, prior approaches have limited protection scope, often require code modification of the target vulnerable programs, and rely on recent system features. These limitations significantly reduce their usability and practicality.\n\nIn this work, we introduce VulShield, an automated temporary protection system that addresses these limitations. VulShield leverages sanitizer reports, and automatically generates security policies that describe the vulnerability triggering conditions. The policies are then enforced through a Linux kernel module that can efficiently detect and prevent vulnerability from being triggered or exploited at runtime. By carefully designing the kernel module, VulShield is capable of protecting both vulnerable kernels and user-space programs running on them. It does not rely on recent system features like eBPF and Linux security modules. VulShield is also pluggable and non-invasive as it does not need to modify the code of target vulnerable software. We evaluated\n\nVulShield’s capability in a comprehensive set of vulnerabilities in 9 different types and found that VulShield mitigated all cases in an automated and effective manner. For Nginx, the latency introduced per request does not exceed 0.001 ms, while the peak performance overhead observed in UnixBench is 1.047%.",
+  "abstract_source_id": "src-abstract-ndss-2025-af54712c",
   "venue": "ndss",
   "year": 2025,
   "track_or_session": "Fall submission cycle",
@@ -210,6 +212,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2025-af54712c",
+      "url": "https://www.ndss-symposium.org/ndss-paper/vulshield-protecting-vulnerable-code-before-deploying-patches/",
+      "kind": "paper-page",
+      "title": "VulShield: Protecting Vulnerable Code Before Deploying Patches",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:20:58Z",
+      "content_hash": "sha256:38b06cbf9a2db64ddf536ce418ab2447b5e86b39e71b75c9e66bea801da237aa",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

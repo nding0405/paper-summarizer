@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "eurosys-2024-scalecache-a-scalable-page-cache-for-multiple-solid-stat-de0cc7e0",
   "title": "ScaleCache: A Scalable Page Cache for Multiple Solid-State Drives",
+  "abstract": "This paper presents a scalable page cache called ScaleCache for improving SSD scalability. Specifically, we first propose a concurrent data structure of page cache based on XArray (ccXArray) to enable access and update the page cache concurrently. Second, we introduce a direct page flush (dflush) which directly flushes pages to storage devices in a parallel and opportunistic manner. We implement ScaleCache with two techniques in the Linux kernel and evaluate it on a 64-core machine with eight NVMe SSDs. Our evaluations show that ScaleCache improves the performance of Linux file systems by up to 6.81× and 4.50× compared with the existing scheme and scalable scheme for multiple SSDs, respectively.",
+  "abstract_source_id": "src-abstract-eurosys-2024-de0cc7e0",
   "venue": "eurosys",
   "year": 2024,
   "track_or_session": null,
@@ -251,6 +253,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-eurosys-2024-de0cc7e0",
+      "url": "https://api.openalex.org/works/doi:10.1145/3627703.3629588?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "ScaleCache: A Scalable Page Cache for Multiple Solid-State Drives",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:18:55Z",
+      "content_hash": "sha256:c74157d4d59255a0ea541d43aa0b082a0af73ea4aefb5ec53e2e096893ff8f11",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

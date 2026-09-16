@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2024-harvesting-memory-bound-cpu-stall-cycles-in-software-wit-01f7e8bb",
   "title": "Harvesting Memory-bound CPU Stall Cycles in Software with MSH",
+  "abstract": "Memory-bound stalls account for a significant portion of CPU cycles in datacenter workloads, which makes harvesting them to execute other useful work highly valuable. However, mainstream implementations of the hardware harvesting mechanism, simultaneous multithreading (SMT), are unsatisfactory. They incur high latency overhead and do not offer fine-grained configurability of the trade-off between latency and harvesting throughput, which hinders wide adoption for latency-critical services; and they support only limited degrees of concurrency, which prevents full harvesting of memory stall cycles.\n\nWe present MSH, the first system that transparently and efficiently harvests memory-bound stall cycles in software. MSH makes full use of stall cycles with concurrency scaling, while incurring minimal and configurable latency overhead. MSH achieves these with a novel co-design of profiling, program analysis, binary instrumentation and runtime scheduling. Our evaluation shows that MSH achieves up to 72% harvesting throughput of SMT for latency SLOs under which SMT has to be disabled, and that strategically combining MSH with SMT leads to higher throughput than SMT due to MSH's capability to fully harvest memory-bound stall cycles.",
+  "abstract_source_id": "src-abstract-osdi-2024-01f7e8bb",
   "venue": "osdi",
   "year": 2024,
   "track_or_session": "Memory Management",
@@ -159,6 +161,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2024-01f7e8bb",
+      "url": "https://www.usenix.org/conference/osdi24/presentation/luo",
+      "kind": "paper-page",
+      "title": "Harvesting Memory-bound CPU Stall Cycles in Software with MSH",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:07:06Z",
+      "content_hash": "sha256:7c48fd3cb7c38fcab999ab287b23976a52502464b752fe31b673f1f4d4800203",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

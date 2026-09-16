@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2024-merlin-multi-tier-optimization-of-ebpf-code-for-performa-6bec0f2a",
   "title": "Merlin: Multi-tier Optimization of eBPF Code for Performance and Compactness",
+  "abstract": "eBPF (extended Berkeley Packet Filter) significantly enhances observability, performance, and security within the Linux kernel, playing a pivotal role in various real-world applications. Implemented as a register-based kernel virtual machine, eBPF features a customized Instruction Set Architecture (ISA) with stringent kernel safety requirements, e.g., a limited number of instructions. This constraint necessitates substantial optimization efforts for eBPF programs to meet performance objectives. Despite the availability of compilers supporting eBPF program compilation, existing tools often overlook key optimization opportunities, resulting in suboptimal performance. In response, this paper introduces Merlin, an optimization framework leveraging customized LLVM passes and bytecode rewriting for Instruction Representation (IR) transformation and bytecode refinement. Merlin employs two primary optimization strategies, i.e., instruction merging and strength reduction. These optimizations are deployed before eBPF verification. We evaluate Merlin across 19 XDP programs (drawn from the Linux kernel, Meta, hXDP, and Cilium) and three eBPF-based systems (Sysdig, Tetragon, and Tracee, each comprising several hundred eBPF programs). The results show that all optimized programs pass the kernel verification. Meanwhile, Merlin can reduce number of instructions by 73% and runtime overhead by 60% compared with the original programs. Merlin can also improve the throughput by 0.59% and reduce the latency by 5.31%, compared to state-of-the-art technique K2, while being 106 times faster and more scalable to larger and more complex programs without additional manual efforts.",
+  "abstract_source_id": "src-abstract-asplos-2024-6bec0f2a",
   "venue": "asplos",
   "year": 2024,
   "track_or_session": "Session 5A: Compiler and Optimization Techniques",
@@ -159,6 +161,19 @@
       "official": false,
       "supports": [
         "Indexed alternate-version and institutional-copy links; not used as the authoritative relevance source."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2024-6bec0f2a",
+      "url": "https://api.openalex.org/works/doi:10.1145/3620666.3651387?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Merlin: Multi-tier Optimization of eBPF Code for Performance and Compactness",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:00:19Z",
+      "content_hash": "sha256:4e80e2a9a3c5377c4b0777a86fb919934ef02d0583073306bd3e4062689408c5",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

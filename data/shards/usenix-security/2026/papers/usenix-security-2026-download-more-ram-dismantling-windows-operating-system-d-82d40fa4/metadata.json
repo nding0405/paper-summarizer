@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-download-more-ram-dismantling-windows-operating-system-d-82d40fa4",
   "title": "Download More RAM: Dismantling Windows Operating System Defences with Mischievous Memory",
+  "abstract": "Virtualisation-Based Security (VBS) is the cornerstone of modern Windows desktop defences, relied upon by both the operating system and third-party software, with a virtualised secure kernel providing strong security guarantees against even privileged attackers. In this paper, we introduce Download More RAM, software-only memory aliasing attack that breaks these guarantees without physical access. On systems running the most common consumer DIMMs, our attack allows arbitrary memory read/write, letting a privileged user compromise the OS at every level, including the secure kernel, Hypervisor Enforced Code Integrity (HVCI), and all defences it provides. With this access we develop a series of case study attacks targeting VBS-protected processes, Windows Defender, anti-virus & EDR software, and game anti-cheats. Our work breaks the strongest security guarantees offered by the Windows OS, questioning key trust assumptions on such systems. Microsoft have assigned CVE-2026-23670 to our findings and issued a patch that partially mitigates our attack.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-82d40fa4",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "System Security 2",
@@ -155,6 +157,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-82d40fa4",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/collins",
+      "kind": "paper-page",
+      "title": "Download More RAM: Dismantling Windows Operating System Defences with Mischievous Memory",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:23:45Z",
+      "content_hash": "sha256:1f41d7a48952a84c7c4fb5a36f20e1a7cc3f239f59a0d8f3444cc655949ad940",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

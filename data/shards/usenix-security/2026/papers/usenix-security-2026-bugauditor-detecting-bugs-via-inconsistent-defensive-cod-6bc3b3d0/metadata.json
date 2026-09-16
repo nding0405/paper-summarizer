@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-bugauditor-detecting-bugs-via-inconsistent-defensive-cod-6bc3b3d0",
   "title": "BugAuditor: Detecting Bugs via Inconsistent Defensive Code Auditing",
+  "abstract": "Modern software systems contain complex behaviors that are prone to bugs when handled incorrectly. Detecting such bugs requires reliable oracles, which are difficult to construct as they require project-specific knowledge. Prior studies mainly obtain oracles from comparable code deviations, documentation, or historical bugs. However, these sources are inherently limited, leaving many project-specific bugs undetected.\n\nIn this paper, we propose inconsistent defensive handling as a new bug oracle for LLM-driven bug auditing. Specifically, we observe that real-world systems contain abundant defensive code, where developers proactively apply defensive handling in security-sensitive contexts to prevent bugs, and inconsistencies in such handling can indicate bugs. To realize this idea, we design BugAuditor, a framework that performs bug auditing via inconsistent defensive handling. BugAuditor first locates defensive code snippets across the codebase. It then reasons about the code to infer its security intent and underlying defensive patterns, characterizing the associated security-sensitive behaviors and defensive handling. Finally, BugAuditor applies the inferred patterns to audit the codebase and reports inconsistent defensive handling of the same security-sensitive behaviors across different contexts.\n\nWe evaluate BugAuditor on the Linux kernel. The results show that BugAuditor effectively mines project-specific knowledge embedded in defensive code that existing methods miss. Using the inferred defensive patterns, BugAuditor detects 54 long-latent bugs, including resource leaks, information leaks, and invalid pointer dereferences. To date, 20 bugs have been confirmed and fixed in the latest version, and two have been assigned CVE identifiers.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-6bc3b3d0",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Software Security 3",
@@ -113,6 +115,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-6bc3b3d0",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/lin-miaoqian",
+      "kind": "paper-page",
+      "title": "BugAuditor: Detecting Bugs via Inconsistent Defensive Code Auditing",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:23:16Z",
+      "content_hash": "sha256:0c2f86a2d18c4db5b793854ccda3fefb1b1927391c5f0db7378035ef67f41b87",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

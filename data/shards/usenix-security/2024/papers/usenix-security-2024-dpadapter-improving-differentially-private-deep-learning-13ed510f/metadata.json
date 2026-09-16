@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2024-dpadapter-improving-differentially-private-deep-learning-13ed510f",
   "title": "DPAdapter: Improving Differentially Private Deep Learning through Noise Tolerance Pre-training",
+  "abstract": "Recent developments have underscored the critical role of differential privacy (DP) in safeguarding individual data for training machine learning models. However, integrating DP oftentimes incurs significant model performance degradation due to the perturbation introduced into the training process, presenting a formidable challenge in the differentially private machine learning (DPML) field. To this end, several mitigative efforts have been proposed, typically revolving around formulating new DPML algorithms or relaxing DP definitions to harmonize with distinct contexts. In spite of these initiatives, the diminishment induced by DP on models, particularly large-scale models, remains substantial and thus, necessitates an innovative solution that adeptly circumnavigates the consequential impairment of model utility.\n\nIn response, we introduce DPAdapter, a pioneering technique designed to amplify the model performance of DPML algorithms by enhancing parameter robustness. The fundamental intuition behind this strategy is that models with robust parameters are inherently more resistant to the noise introduced by DP, thereby retaining better performance despite the perturbations. DPAdapter modifies and enhances the sharpness-aware minimization (SAM) technique, utilizing a two-batch strategy to provide a more accurate perturbation estimate and an efficient gradient descent, thereby improving parameter robustness against noise. Notably, DPAdapter can act as a plug-and-play component and be combined with existing DPML algorithms to further improve their performance. Our experiments show that DPAdapter vastly enhances state-of-the-art DPML algorithms, increasing average accuracy from 72.92% to 77.09% with a privacy budget of ϵ = 4.",
+  "abstract_source_id": "src-abstract-usenix-security-2024-13ed510f",
   "venue": "usenix-security",
   "year": 2024,
   "track_or_session": "Differential Privacy I",
@@ -196,6 +198,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2024-13ed510f",
+      "url": "https://www.usenix.org/conference/usenixsecurity24/presentation/wang-zihao-dpadapter",
+      "kind": "paper-page",
+      "title": "DPAdapter: Improving Differentially Private Deep Learning through Noise Tolerance Pre-training",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:14:55Z",
+      "content_hash": "sha256:0c003c58b47a25b016b4176ffa7fc4663a2e8d96ba7b62dbae25248f76ea6f6e",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-khost-kvm-based-near-native-mcu-firmware-rehosting-7b15dad9",
   "title": "Khost: KVM-based Near Native MCU Firmware Rehosting",
+  "abstract": "Microcontroller Unit (MCU)-based devices constitute a critical layer of the Internet of Things (IoT) infrastructure, so ensuring their security is of paramount importance. Rehosting-based dynamic MCU firmware analysis is an effective approach to securing these devices. However, existing rehosting frameworks commonly suffer from substantial performance overhead due to emulation or diminished execution scope.\n\nTo address these limitations, we propose Khost, a near-native, scope-preserving rehosting framework. It extends the KVM by introducing a lightweight extended CPU, an auxiliary page table, and a software-based interrupt controller, enabling MCU firmware to be rehosted on high-performance platforms with minimum overhead. It also provides a memory-mapped I/O (MMIO) monitor for quick peripheral interactions and a wrapper for firmware to enable coverage collection and configure the existing fuzzing engines flexibly. Evaluations on two standard benchmarks show that Khost reduces overhead by 90.0% to 95.5% for complex computational tasks and by up to 98.5% for MCU system-level operations, compared to QEMU. Furthermore, fuzzing on 12 real-world firmware with Khost achieves up to 197.5× higher throughput and improves basic block coverage by 6x compared to existing fuzzing tools. Additionally, Khost successfully uncovers 5 previously unknown bugs.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-7b15dad9",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Hardware Security 1",
@@ -177,6 +179,19 @@
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening",
         "prepublication PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-7b15dad9",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/wang-chunlin",
+      "kind": "paper-page",
+      "title": "Khost: KVM-based Near Native MCU Firmware Rehosting",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:24:27Z",
+      "content_hash": "sha256:32d77813aea4762665d1f8387f20b1cdf1f721c6453130262b5e05f64985d190",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

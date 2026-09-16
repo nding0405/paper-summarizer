@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2026-toasty-speeding-up-network-i-o-with-cache-warm-buffers-f0e7b894",
   "title": "Toasty: Speeding Up Network I/O with Cache-Warm Buffers",
+  "abstract": "Modern NICs DMA packets directly to the LLC using technologies like DDIO, reducing access latencies for networking applications. Prior work has observed several performance issues with DDIO when the working set of packet buffers does not fit into LLC. For example, the leaky DMA problem arises when incoming packets evict older packets that have not yet been processed by the application from LLC, causing them to be fetched again from main memory. While using a smaller pool of packet buffers that fits in cache is an obvious solution, this may result in the NIC running out of buffers to DMA packets into when a burst of packets arrives. This paper proposes Toasty, a system that mitigates this tradeoff between high throughput and resilience to packet loss that arises when sizing the network packet buffer pool. While prior work has proposed hardware-based solutions to this problem, Toasty is a software-only solution that can be deployed on commodity NIC hardware. Toasty manages the packet buffer pool as a LIFO stack instead of a FIFO queue, and adapts the number of buffers populated into the NIC hardware RX ring based on incoming packet load and application processing rate. Together, these changes enable Toasty to recirculate a small working set of cache-warm buffers in steady state, while falling back to a larger pool of buffers during traffic bursts. We implement Toasty over the AF_XDP kernel bypass framework, and our evaluation shows that Toasty improves network throughput for a variety of network functions by up to 78% over the default buffer pool implementation of AF_XDP. We also show that Toasty matches the performance of a small buffer pool that fits in cache, while being more resilient to traffic bursts.",
+  "abstract_source_id": "src-abstract-asplos-2026-f0e7b894",
   "venue": "asplos",
   "year": 2026,
   "track_or_session": "Session 5D: Storage & Caching",
@@ -146,6 +148,19 @@
       "official": false,
       "supports": [
         "Indexed abstract used for strict relevance classification and indexed arXiv identifier where available."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2026-f0e7b894",
+      "url": "https://api.openalex.org/works/doi:10.1145/3779212.3790235?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Toasty: Speeding Up Network I/O with Cache-Warm Buffers",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:06:59Z",
+      "content_hash": "sha256:fa10f0ba94c9ee742376e79ee2c473e53b2de32e746d0d9620517054d95d28d1",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2026-upfuzz-detecting-data-format-incompatibility-bugs-during-61b47256",
   "title": "UpFuzz: Detecting Data Format Incompatibility Bugs during Distributed Storage System Upgrade",
+  "abstract": "Data format incompatibility is a significant cause of cloud incidents during distributed system upgrades, often resulting in severe consequences such as data corruption and service unavailability. A majority of such bugs are only discovered post-release, largely due to the lack of automated testing techniques tailored specifically for the upgrade process. Traditional automated test generation methods face a unique challenge when applied to upgrade testing: the high cost associated with upgrading distributed storage systems due to system initialization. Therefore, the accurate selection of potential failure-inducing tests from the extensive pool of automatically generated tests becomes critical.\n\nIn this work, we address this problem by proposing a novel approach to prioritize upgrade tests through analyzing data format properties over transitively persisted states : program states that are persisted to disk, directly or indirectly, through chains of memory copies by the old version, and eventually read by the new version after upgrade. Because data format incompatibility bugs happen due to translation errors of such states across versions, transitively persisted states satisfying unique data format properties related to changed data formats are particularly essential for testing.\n\nWe build a likely invariant analysis engine that captures such properties as feedback for seed test selection in UPFUZZ, the automated testing engine for the distributed storage system upgrade procedure. UPFUZZ has detected 15 previously unknown upgrade failures caused by data format incompatibilities in the latest stable versions of Cassandra, HBase, and HDFS; developers have confirmed 8 of them. 7 are triggered exclusively with UPFUZZ’s data format analysis. The detected bugs have severe consequences, with 6 crashing the cluster and 4 causing data loss or corruption.",
+  "abstract_source_id": "src-abstract-nsdi-2026-61b47256",
   "venue": "nsdi",
   "year": 2026,
   "track_or_session": "Scalable Storage Systems",
@@ -223,6 +225,19 @@
         "proceedings page range and page count",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2026-61b47256",
+      "url": "https://www.usenix.org/conference/nsdi26/presentation/han",
+      "kind": "paper-page",
+      "title": "UpFuzz: Detecting Data Format Incompatibility Bugs during Distributed Storage System Upgrade",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:06:15Z",
+      "content_hash": "sha256:32cdd26eb81370e2a6ad52ab3148f4f5c0c4d02d42fb3b7b3a374a425937214b",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

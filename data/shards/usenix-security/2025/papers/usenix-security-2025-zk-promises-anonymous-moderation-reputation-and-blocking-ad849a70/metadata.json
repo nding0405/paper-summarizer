@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-zk-promises-anonymous-moderation-reputation-and-blocking-ad849a70",
   "title": "zk-promises: Anonymous Moderation, Reputation, and Blocking from Anonymous Credentials with Callbacks",
+  "abstract": "Anonymity is essential for free speech and expressing dissent, but platform moderators need ways to police bad actors. For anonymous clients, this may involve banning their accounts, docking their reputation, or updating their state in a complex access control scheme. Frequently, these operations happen asynchronously when some violation, e.g., a forum post, is found well after the offending action occurred. Malicious clients, naturally, wish to evade this asynchronous negative feedback. This raises a challenge: how can multiple parties interact with private state stored by an anonymous client while ensuring state integrity and supporting oblivious updates?\n\nWe propose zk-promises, a framework supporting stateful anonymous credentials where the state machines are Turing-complete and support asynchronous callbacks. Client state is stored in what we call a zk-object held by the client, zero-knowledge proofs ensure the object can only be updated as programmed, and callbacks allow third party updates even for anonymous clients, e.g, for downvotes or banning. Clients scan for callbacks periodically and update their state. When clients authenticate, they anonymously assert some predicate on their state and that they have scanned recently (e.g, within the past 24 hours).\n\nzk-promises allows us to build a privacy-preserving account model. State that would normally be stored on a trusted server can be privately outsourced to the client while preserving the server's ability to update the account.\n\nTo demonstrate the feasibility of our approach, we design, implement, and benchmark an anonymous reputation system with better-than-state-of-the-art performance and features, supporting asynchronous reputation updates, banning, and reputation-dependent rate limiting to better protect against Sybil attacks.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-ad849a70",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Crypto 3: Formal Methods and Private Computation",
@@ -133,6 +135,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-ad849a70",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/shih",
+      "kind": "paper-page",
+      "title": "zk-promises: Anonymous Moderation, Reputation, and Blocking from Anonymous Credentials with Callbacks",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:22:49Z",
+      "content_hash": "sha256:f268bc19f4c6a2cc6b76964d7ccd8f7794f46f21d65e90f6e08ff2df1c0f7274",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

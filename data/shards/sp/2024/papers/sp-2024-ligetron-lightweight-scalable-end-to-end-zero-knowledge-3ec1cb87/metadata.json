@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2024-ligetron-lightweight-scalable-end-to-end-zero-knowledge-3ec1cb87",
   "title": "Ligetron: Lightweight Scalable End-to-End Zero-Knowledge Proofs. Post-Quantum ZK-SNARKs on a Browser",
+  "abstract": "Zero-Knowledge (ZK) proofs were introduced in the seminal work of Goldwasser, Micali, and Rackoff (STOC 1985) and remain one of the cornerstones of modern cryptography. With the advent of Blockchains, there has been reinvigorated interest in deploying ZK-proof systems in the form of ZK-SNARKs. ZKSNARKs are an attractive variant as they are non-interactive (in fact, publicly verifiable) and succinct. Yet, current deployments require huge running times and/or very large memory, and scaling them to large circuits cannot be accomplished on commodity hardware. We design and implement an efficient sublinear non-interactive zero-knowledge system, Ligetron that can be deployed as a web application and scales to billions of gates. Core to our construction is identifying a good intermediate representation, namely Web Assembly (WASM) that is: (1) versatile to represent complex computations, (2) can be compiled from most popular high-level languages, and (3) embodies rich semantics to derive space-efficiency. On the backend, we design and implement a space-efficient variant of the Ligero ZK system introduced in the work of Ames et al. (ACM CCS 2017) that can leverage the semantics of WASM. Ligetron is the first post-quantum ZK-SNARK to scale to billion gates and run from a browser. On commodity hardware, Ligetron scales to arbitrarily large circuits while showcasing competitive prover/verifier running times and better proof lengths than all previous post-quantum ZK-SNARKs.",
+  "abstract_source_id": "src-abstract-sp-2024-3ec1cb87",
   "venue": "sp",
   "year": 2024,
   "track_or_session": "Spring cycle",
@@ -138,6 +140,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2024-3ec1cb87",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Ligetron: Lightweight Scalable End-to-End Zero-Knowledge Proofs Post-Quantum ZK-SNARKs on a Browser",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:37Z",
+      "content_hash": "sha256:d186972817127125a98a71b907d7b283fa37f2e757aaf5b9ae232aa389caabc0",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

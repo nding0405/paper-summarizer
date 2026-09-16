@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2024-a-formal-analysis-of-sctp-attack-synthesis-and-patch-ver-3fdde7da",
   "title": "A Formal Analysis of SCTP: Attack Synthesis and Patch Verification",
+  "abstract": "SCTP is a transport protocol offering features such as multi-homing, multi-streaming, and message-oriented delivery. Its two main implementations were subjected to conformance tests using the PacketDrill tool. Conformance testing is not exhaustive and a recent vulnerability (CVE-2021-3772) showed SCTP is not immune to attacks. Changes addressing the vulnerability were implemented, but the question remains whether other flaws might persist in the protocol design.\n\nWe study the security of the SCTP design, taking a rigorous approach rooted in formal methods. We create a formal Promela model of SCTP, and define 10 properties capturing the essential protocol functionality based on its RFC specification and consultation with the lead RFC author. Then we show using the SPIN model checker that our model satisfies these properties. We next define 4 representative attacker models – Off-Path, where the attacker is an outsider that can spoof the port and IP of a peer; Evil-Server, where the attacker is a malicious peer; Replay, where an attacker can capture and replay, but not modify, packets; and On-Path, where the attacker controls the channel between peers. SCTP was designed to be secure against Off-Path attackers, and we study the additional models in order to understand how its security degrades for successively more powerful attacker types. We modify an attack synthesis tool designed for transport protocols, KORG, to support our SCTP model and 4 attacker models.\n\nWe synthesize the vulnerability reported in CVE-2021- 3772 in the Off-Path attacker model, when the patch is disabled, and we show that when enabled, the patch eliminates the vulnerability. We also manually identify two ambiguities in the RFC, and using KORG, we show that each, if misinterpreted, opens the protocol to a new Off-Path attack. We show that SCTP is vulnerable to a variety of attacks when it is misused in the Evil-Server, Replay, or On-Path attacker models (for which it was not designed). We discuss these and, when possible, mitigations thereof. Finally, we propose two RFC errata – one to eliminate each ambiguity – of which so far, the SCTP RFC committee has accepted one.",
+  "abstract_source_id": "src-abstract-usenix-security-2024-3fdde7da",
   "venue": "usenix-security",
   "year": 2024,
   "track_or_session": "Security Analysis III: Protocol",
@@ -154,6 +156,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2024-3fdde7da",
+      "url": "https://www.usenix.org/conference/usenixsecurity24/presentation/ginesin",
+      "kind": "paper-page",
+      "title": "A Formal Analysis of SCTP: Attack Synthesis and Patch Verification",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:13:55Z",
+      "content_hash": "sha256:9e124ae1b5763233ed0d46cdee482dcd3e5de5413c2d0f793c0679753c4b40c8",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

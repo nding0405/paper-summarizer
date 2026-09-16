@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "eurosys-2026-arena-efficiently-training-large-models-via-dynamic-sche-34bef61e",
   "title": "Arena: Efficiently Training Large Models via Dynamic Scheduling and Adaptive Parallelism Co-Design",
+  "abstract": "Efficiently training large-scale models (LMs) in GPU clusters involves two separate avenues: inter-job dynamic scheduling and intra-job adaptive parallelism (AP). However, existing dynamic schedulers struggle with large-model scheduling due to the mismatch between static parallelism (SP)-aware scheduling and AP-based execution, leading to cluster inefficiencies such as degraded throughput and prolonged job queuing. This paper presents Arena, a large-model training system that co-designs dynamic scheduling and adaptive parallelism to achieve high cluster efficiency. To reduce scheduling costs while improving decision quality, Arena designs low-cost, disaggregated profiling and AP-tailored, load-aware performance estimation, while unifying them by sharding the joint scheduling-parallelism optimization space via a grid abstraction. Building on this, Arena dynamically schedules profiled jobs in elasticity and heterogeneity dimensions, and executes them using efficient AP with pruned search space. Evaluated on heterogeneous testbeds and production workloads, Arena reduces job completion time by up to 49.3% and improves cluster throughput by up to 1.6X.",
+  "abstract_source_id": "src-abstract-eurosys-2026-34bef61e",
   "venue": "eurosys",
   "year": 2026,
   "track_or_session": null,
@@ -348,6 +350,19 @@
       "official": false,
       "supports": [
         "Publisher-deposited proceedings identity and print publication date."
+      ]
+    },
+    {
+      "id": "src-abstract-eurosys-2026-34bef61e",
+      "url": "https://api.openalex.org/works/doi:10.1145/3767295.3803571?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Arena: Efficiently Training Large Models via Dynamic Scheduling and Adaptive Parallelism Co-Design",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:19:44Z",
+      "content_hash": "sha256:ef81db2656e7cf10ef8e5e6483222d18c692e091c7a40ded109be4cb688e2a0e",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

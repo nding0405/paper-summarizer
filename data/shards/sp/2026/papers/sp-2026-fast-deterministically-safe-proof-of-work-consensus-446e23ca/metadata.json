@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2026-fast-deterministically-safe-proof-of-work-consensus-446e23ca",
   "title": "Fast Deterministically Safe Proof-of-Work Consensus",
+  "abstract": "Permissionless blockchains achieve consensus while allowing unknown nodes to join and leave the system at any time. They typically come in two flavors: proof of work (PoW) and proof of stake (PoS), and both are vulnerable to attacks. PoS protocols suffer from long-range attacks, wherein attackers alter execution history at little cost, and PoW protocols are vulnerable to attackers with enough computational power to subvert execution history. PoS protocols respond by relying on external mechanisms like social consensus; PoW protocols either fall back to probabilistic guarantees, or are slow. We present Sieve-MMR, the first fully-permissionless protocol with deterministic security and constant expected latency that does not rely on external mechanisms. We obtain SieveMMR by porting a PoS protocol (MMR) to the PoW setting. From MMR we inherit constant expected latency and deterministic security, and proof-of-work gives us resilience against long-range attacks. The main challenge to porting MMR to the PoW setting is what we call time-travel attacks, where attackers use PoWs generated in the distant past to increase their perceived PoW power in the present. We respond by proposing Sieve, a novel algorithm that implements a new broadcast primitive we dub time-travel-resilient broadcast (TTRB). Sieve relies on a black-box, deterministic PoW primitive to implement TTRB, which we use as the messaging layer for MMR.",
+  "abstract_source_id": "src-abstract-sp-2026-446e23ca",
   "venue": "sp",
   "year": 2026,
   "track_or_session": "Cycle 1",
@@ -133,6 +135,19 @@
       "official": true,
       "supports": [
         "DOI, published-order authors and affiliations, abstract, publication date, page span, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2026-446e23ca",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Fast Deterministically Safe Proof-of-Work Consensus",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:57Z",
+      "content_hash": "sha256:303a9b5e5ef8908a3cfe67f02eb8a87be978a5fe3281c7ecec8c0cdb512517e0",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

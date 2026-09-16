@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2023-real-threshold-ecdsa-dc0ea909",
   "title": "Real Threshold ECDSA",
+  "abstract": "Threshold ECDSA recently regained popularity due to decentralized applications such as DNSSEC and cryptocurrency asset custody. Latest (communication-optimizing) schemes often assume all n or at least n' >= t participating users remain honest throughout the pre-signing phase, essentially degenerating to n'-out-of-n' multiparty signing instead of t-out-of-n threshold signing. When anyone misbehaves, all signers must restart from scratch, rendering prior computation and communication in vain. This hampers the adoption of threshold ECDSA in time-critical situations and confines its use to a small signing committee.\n\nTo mitigate such denial-of-service vulnerabilities prevalent in state-of-the-art, we propose a robust threshold ECDSA scheme that achieves the t-out-of-n threshold flexibility \"for real\" throughout the whole pre-signing and signing phases without assuming an honest majority. Our scheme is desirable when computational resources are scarce and in a decentralized setting where faults are easier to be induced. Our design features 4-round pre-signing, O(n) cheating identification, and self-healing machinery over distributive shares. Prior arts mandate abort after an O(n^2)-cost identification, albeit with 3-round pre-signing (Canetti et al., CCS '20), or O(n) using 6 rounds (Castagnos et al., TCS '23). Empirically, our scheme saves up to ~30% of the communication cost, depending on at which stage the fault occurred.",
+  "abstract_source_id": "src-abstract-ndss-2023-dc0ea909",
   "venue": "ndss",
   "year": 2023,
   "track_or_session": "Blockchains I",
@@ -147,6 +149,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2023-dc0ea909",
+      "url": "https://www.ndss-symposium.org/ndss-paper/real-threshold-ecdsa/",
+      "kind": "paper-page",
+      "title": "Real Threshold ECDSA",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:17:20Z",
+      "content_hash": "sha256:52594c106fc456eedbd29b40e8195795a582a9056ce7ec955c16f9c7ab9a576e",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

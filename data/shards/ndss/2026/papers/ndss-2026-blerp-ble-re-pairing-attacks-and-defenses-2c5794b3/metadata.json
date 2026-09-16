@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2026-blerp-ble-re-pairing-attacks-and-defenses-2c5794b3",
   "title": "BLERP: BLE Re-Pairing Attacks and Defenses",
+  "abstract": "Bluetooth Low Energy (BLE) is a ubiquitous wireless technology used by billions of devices to exchange sensitive data. As defined in the Bluetooth Core Specification v6.1, BLE security relies on two primary protocols: pairing, which establishes a long-term key, and session establishment, which encrypts communications using a fresh session key. While the standard permits paired devices to re-pair to negotiate a new security level, the security implications of this mechanism remain unexplored, despite the associated risks of device impersonation and Machine-in-the-Middle (MitM) attacks.\n\nWe analyze BLE re-pairing as defined in the standard v6.1 and identify six design vulnerabilities, including four novel ones, such as unauthenticated re-pairing and security level downgrade. These vulnerabilities are design flaws and affect any standard-compliant BLE device that uses pairing, regardless of its Bluetooth version or security level. We also present four new re-pairing attacks exploiting these vulnerabilities, which we call BLERP. The attacks enable impersonation and MitM of paired devices with minimal or no user interaction (1-click or 0-click). Our attacks are the first to target BLE re-pairing, exploit the interplay between BLE pairing and session establishment, and abuse the SMP security request message.\n\nWe develop a novel toolkit that implements our attacks and supports testing of BLE pairing, including end-to-end MitM attacks. Reproducing the toolkit only requires low-cost hardware (nRF52) and open-source software (Mynewt, NimBLE, and Scapy). Our large-scale evaluation demonstrates the attacks’ impact across 22 targets, including 15 BLE Hosts, 12 BLE Controllers, Bluetooth versions up to 5.4, and the most secure configurations (SC, SCO, and authenticated pairing). During our experiments, we also discovered implementation re-pairing flaws affecting the Apple, Android, and NimBLE BLE stacks.\n\nWe implement and evaluate two complementary mitigations: a backward-compatible hardening of the re-pairing logic that is immediately deployable by vendors, and an authenticated re-pairing protocol that addresses the attacks by design. We empirically validate the effectiveness of hardened re-pairing and formally model and verify authenticated re-pairing using ProVerif.",
+  "abstract_source_id": "src-abstract-ndss-2026-2c5794b3",
   "venue": "ndss",
   "year": 2026,
   "track_or_session": "Fall submission cycle",
@@ -118,6 +120,19 @@
       "official": false,
       "supports": [
         "independent proceedings identity reconciliation"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2026-2c5794b3",
+      "url": "https://www.ndss-symposium.org/ndss-paper/blerp-ble-re-pairing-attacks-and-defenses/",
+      "kind": "paper-page",
+      "title": "BLERP: BLE Re-Pairing Attacks and Defenses",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:21:25Z",
+      "content_hash": "sha256:24a48a5c1adf1c93cab5363919fd981adbc0c1408812dfab8650e99d84a3852b",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "eurosys-2026-tao-tolerance-aware-optimistic-verification-for-floating-9974f168",
   "title": "TAO: Tolerance-Aware Optimistic Verification for Floating-Point Neural Networks",
+  "abstract": "Neural networks increasingly run on hardware outside the user's control (cloud GPUs, inference marketplaces, edge specialized accelerators) for both training and inference. Yet ML-as-a-Service reveals little about what actually ran or whether returned outputs faithfully reflect the intended inputs and models. Users lack recourse against service downgrades such as model swaps, quantization, graph rewrites, or discrepancies like altered advertisement embeddings. Verifying outputs is especially difficult because floating-point execution on heterogeneous accelerators is inherently non-deterministic. Existing approaches like zkML, deterministic replay, TEEs, and replication are either impractical for real floating-point neural networks or reintroduce the need to trust the vendor. We present TAO: a Tolerance-Aware Optimistic verification protocol for floating-point neural networks that accepts outputs within principled operator-level acceptance regions rather than requiring bitwise equality. TAO combines two complementary error models: (i) sound per-operator IEEE-754 worst-case bounds and (ii) tight empirical percentile profiles calibrated across hardware types. Discrepancies are resolved via a Merkle-anchored, threshold-guided interactive dispute game that recursively partitions the traced computation graph until one operator remains; at the leaf, adjudication reduces to either a lightweight theoretical-bound check or a small honest-majority vote against empirical thresholds. Unchallenged results finalize after a challenge window, without requiring trusted hardware or deterministic kernels.",
+  "abstract_source_id": "src-abstract-eurosys-2026-9974f168",
   "venue": "eurosys",
   "year": 2026,
   "track_or_session": null,
@@ -222,6 +224,19 @@
       "official": false,
       "supports": [
         "Publisher-deposited proceedings identity and print publication date."
+      ]
+    },
+    {
+      "id": "src-abstract-eurosys-2026-9974f168",
+      "url": "https://api.openalex.org/works/doi:10.1145/3767295.3803612?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "TAO: Tolerance-Aware Optimistic Verification for Floating-Point Neural Networks",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:22:12Z",
+      "content_hash": "sha256:48f302ab44565b043b2bf42c7396fc353a5a8b74440902ed28065bae4a8af998",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

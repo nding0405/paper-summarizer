@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-gpuhammer-rowhammer-attacks-on-gpu-memories-are-practica-beaa4221",
   "title": "GPUHammer: Rowhammer Attacks on GPU Memories are Practical",
+  "abstract": "Rowhammer is a read disturbance vulnerability in modern DRAM that causes bit-flips, compromising security and reliability. While extensively studied on Intel and AMD CPUs with DDR and LPDDR memories, its impact on GPUs using GDDR memories, critical for emerging machine learning applications, remains unexplored. Rowhammer attacks on GPUs face unique challenges: (1) proprietary mapping of physical memory to GDDR banks and rows, (2) high memory latency and faster refresh rates that hinder effective hammering, and (3) proprietary mitigations in GDDR memories, difficult to reverse-engineer without FPGA-based test platforms.\n\nWe introduce GPUHammer, the first Rowhammer attack on NVIDIA GPUs with GDDR6 DRAM. GPUHammer proposes novel techniques to reverse-engineer GDDR DRAM row mappings, and employs GPU-specific memory access optimizations to amplify hammering intensity and bypass mitigations. Thus, we demonstrate the first successful Rowhammer attack on a discrete GPU, injecting up to 8 bit-flips across 4 DRAM banks on an NVIDIA A6000 with GDDR6 memory. We also show how an attacker can use these to tamper with ML models, causing significant accuracy drops (up to 80%).",
+  "abstract_source_id": "src-abstract-usenix-security-2025-beaa4221",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Hardware Security 3: Side-Channel and Fault Injection Attacks",
@@ -112,6 +114,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-beaa4221",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/lin-shaopeng",
+      "kind": "paper-page",
+      "title": "GPUHammer: Rowhammer Attacks on GPU Memories are Practical",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:20:07Z",
+      "content_hash": "sha256:e0d99124b7d3485733abd1fb8aaf1237918cc58114864fcf259033a780ef62f2",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

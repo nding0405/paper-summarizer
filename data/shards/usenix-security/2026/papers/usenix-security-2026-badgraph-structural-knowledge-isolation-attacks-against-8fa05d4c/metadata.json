@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-badgraph-structural-knowledge-isolation-attacks-against-8fa05d4c",
   "title": "BadGraph: Structural Knowledge Isolation Attacks against Graph Retrieval-Augmented Generation",
+  "abstract": "Graph Retrieval-Augmented Generation (GraphRAG) improves cross-document reasoning by introducing graph structures into retrieval. However, these graph structures also expose an under-studied topological attack surface. Existing research on GraphRAG attacks primarily focuses on targeted attacks based on text or relation manipulation, which induce the model to generate specific incorrect answers by injecting factual errors. These attacks often rely on explicit false-answer payloads, poisoned relations, or corpus rewriting, and their documents can be easier to flag during content auditing.\n\nIn this paper, we propose a targeted availability attack against GraphRAG: Structural Knowledge Isolation. Unlike traditional wrong-answer manipulation attacks, this attack targets the system's availability by degrading retrieval of critical evidence through topological manipulation. The resulting context can lack the evidence needed for grounded answer generation. We first mathematically analyze three topological vulnerabilities of graph algorithms used in GraphRAG systems when subjected to topological perturbations. Based on this analysis, we propose the BadGraph attack framework. By injecting a small amount of semantically neutral text, it generates adversarial subgraphs in the knowledge graph and reduces the visibility of target evidence in top-ranked retrieval contexts. Experiments show that with a small document injection budget (49 documents on HotpotQA and 30 on 2WikiMultiHopQA), BadGraph consistently lowers source recall and end-to-end QA F1 on three mainstream GraphRAG systems (MS-GraphRAG, LightRAG, and FastGraphRAG), while using neutral linker documents.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-8fa05d4c",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Security of ML 5",
@@ -113,6 +115,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-8fa05d4c",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/yan-leiming",
+      "kind": "paper-page",
+      "title": "BadGraph: Structural Knowledge Isolation Attacks against Graph Retrieval-Augmented Generation",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:23:08Z",
+      "content_hash": "sha256:139d23be23cc50af88dcfa44c40c0abccc12e8eac57a49a5fa5945d82c59c92f",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

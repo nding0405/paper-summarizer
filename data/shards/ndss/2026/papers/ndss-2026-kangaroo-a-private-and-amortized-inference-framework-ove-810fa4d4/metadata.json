@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2026-kangaroo-a-private-and-amortized-inference-framework-ove-810fa4d4",
   "title": "Kangaroo: A Private and Amortized Inference Framework over WAN for Large-Scale Decision Tree Evaluation",
+  "abstract": "With the rapid adoption of Models-as-a-Service, concerns about data and model privacy have become increasingly critical. To solve these problems, various privacy-preserving inference schemes have been proposed. In particular, due to the efficiency and interpretability of decision trees, private decision tree evaluation (PDTE) has garnered significant attention. However, existing PDTE schemes suffer from significant limitations: their communication and computation costs scale with the number of trees, the number of nodes, or the tree depth, which makes them inefficient for large-scale models, especially over WAN networks. To address these issues, we propose Kangaroo, a private and amortized decision tree inference framework build upon packed homomorphic encryption. Specifically, we design a novel model hiding and encoding scheme, together with secure feature selection, oblivious comparison, and secure path evaluation protocols, enabling full amortization of the overhead as the number of nodes or trees scales. Furthermore, we enhance the performance and functionality of the framework through optimizations, including same-sharing-for-same-model, latency-aware, and adaptive encoding adjustment strategies. Kangaroo achieves a 14× to 59× performance improvement over state-of-the-art (SOTA) one-round interactive schemes in WAN environments. For large-scale decision tree inference tasks, it delivers a 3× to 44× speedup compared to existing schemes. Notably, Kangaroo enables the evaluation of a random forest with 969 trees and 411825 nodes in approximately 60 ms per tree (amortized) under WAN environments.",
+  "abstract_source_id": "src-abstract-ndss-2026-810fa4d4",
   "venue": "ndss",
   "year": 2026,
   "track_or_session": "Summer submission cycle",
@@ -244,6 +246,19 @@
       "official": false,
       "supports": [
         "independent proceedings identity reconciliation"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2026-810fa4d4",
+      "url": "https://www.ndss-symposium.org/ndss-paper/kangaroo-a-private-and-amortized-inference-framework-over-wan-for-large-scale-decision-tree-evaluation/",
+      "kind": "paper-page",
+      "title": "Kangaroo: A Private and Amortized Inference Framework over WAN for Large-Scale Decision Tree Evaluation",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:22:18Z",
+      "content_hash": "sha256:42c3393a231aa399eb6ada5245e10c026d5d179e47e8beb33dd16b24303cbb55",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

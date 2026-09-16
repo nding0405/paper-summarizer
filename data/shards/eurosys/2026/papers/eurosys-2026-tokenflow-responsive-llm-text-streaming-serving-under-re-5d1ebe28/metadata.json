@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "eurosys-2026-tokenflow-responsive-llm-text-streaming-serving-under-re-5d1ebe28",
   "title": "TokenFlow: Responsive LLM Text Streaming Serving under Request Burst via Preemptive Scheduling",
+  "abstract": "Real-time LLM interactions demand streamed token generations, where text tokens are progressively generated and delivered to users while balancing two objectives: responsiveness (i.e., low time-to-first-token) and steady generation (i.e., required time-between-tokens). Standard LLM serving systems suffer from the inflexibility caused by non-preemptive request scheduling and reactive memory management, leading to poor resource utilization and low request processing parallelism under request bursts. Therefore, we present TokenFlow, a novel LLM serving system with enhanced text streaming performance via preemptive request scheduling and proactive key-value (KV) cache management. TokenFlow dynamically prioritizes requests based on real-time token buffer occupancy and token consumption rate, while actively transferring KV cache between GPU and CPU memory in the background and overlapping I/O with computation to minimize request preemption overhead. Extensive experiments on Llama3-8B and Qwen2.5-32B across multiple GPUs (RTX 4090, A6000, H200) demonstrate that TokenFlow achieves up to 82.5% higher effective throughput (accounting for actual user consumption) while reducing P99 TTFT by up to 80.2%, without degrading overall token throughput.",
+  "abstract_source_id": "src-abstract-eurosys-2026-5d1ebe28",
   "venue": "eurosys",
   "year": 2026,
   "track_or_session": null,
@@ -264,6 +266,19 @@
       "official": false,
       "supports": [
         "Publisher-deposited proceedings identity and print publication date."
+      ]
+    },
+    {
+      "id": "src-abstract-eurosys-2026-5d1ebe28",
+      "url": "https://api.openalex.org/works/doi:10.1145/3767295.3769328?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "TokenFlow: Responsive LLM Text Streaming Serving under Request Burst via Preemptive Scheduling",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:22:13Z",
+      "content_hash": "sha256:22381d492775548a5dabbe4dea6fef98942e1bc7cb1a3b80aeee7e328c1881f1",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-os-sanitizer-system-wide-latent-defect-inference-in-linu-ecf1d948",
   "title": "OS-Sanitizer: System-wide Latent Defect Inference in Linux Applications",
+  "abstract": "Dynamic testing has historically focused on finding situations in which software does something unwanted, typically by triggering failure or undesirable states. However, such testing is often limited to finding these scenarios by example. Can we determine that software could do something unwanted by inspecting benign behavior ? In this paper, we explore this question by leveraging eBPF for dynamic defect inference in Linux applications. eBPF is uniquely positioned as a system introspection tool that accrues data from both user- and kernelspace events and processes them as programs in the kernel. Our prototype, OS-Sanitizer, implements such eBPF programs using heuristics which report the suspected presence of defects in all applications across the entire system. Conceptually, OS-Sanitizer brings the idea of code smells from static testing into dynamic testing, while simultaneously profiting from the insights of runtime events. In doing so, we infer the presence of latent contextual defects in software that would only induce a failure in certain environments or are otherwise difficult to test for. We consider and evaluate the strengths and weaknesses of this approach from the perspectives of performance, complexity, maintainability, and usage, differentiating the theoretical limits of eBPF versus the specific limits of our prototype. Targeting well-known types of software defects, we were able to identify more than 40 issues (including severe vulnerabilities) in widely used applications, some of which are older than a decade and present on a majority of Linux distributions. Our findings demonstrate that dynamic defect inference is both feasible and effective, highlighting opportunities for expanding this underexplored direction in software testing.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-ecf1d948",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Software Security 2",
@@ -156,6 +158,19 @@
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening",
         "prepublication PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-ecf1d948",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/crump",
+      "kind": "paper-page",
+      "title": "OS-Sanitizer: System-wide Latent Defect Inference in Linux Applications",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:24:56Z",
+      "content_hash": "sha256:5cf165a004876a0c4a490fb8491a1952cb783a6d0674ae59766a04b0a376a79f",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

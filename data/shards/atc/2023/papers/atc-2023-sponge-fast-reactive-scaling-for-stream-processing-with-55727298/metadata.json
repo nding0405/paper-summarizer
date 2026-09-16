@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "atc-2023-sponge-fast-reactive-scaling-for-stream-processing-with-55727298",
   "title": "Sponge: Fast Reactive Scaling for Stream Processing with Serverless Frameworks",
+  "abstract": "Streaming workloads deal with data that is generated in real-time. This data is often unpredictable and changes rapidly in volume. To deal with these fluctuations, current systems aim to dynamically scale in and out, redistribute, and migrate computing tasks across a cluster of machines. While many prior works have focused on reducing the overhead of system reconfiguration and state migration on pre-allocated cluster resources, these approaches still face significant challenges in meeting latency SLOs at low operational costs, especially upon facing unpredictable bursty loads.\n\nIn this paper, we propose Sponge, a new stream processing system that enables fast reactive scaling of long-running stream queries by leveraging serverless framework (SF) instances. Sponge absorbs sudden, unpredictable increases in input loads from existing VMs with low latency and cost by taking advantage of the fact that SF instances can be initiated quickly, in just a few hundred milliseconds. Sponge efficiently tracks a small number of metrics to quickly detect bursty loads and make fast scaling decisions based on these metrics. Moreover, by incorporating optimization logic at compile-time and triggering fast data redirection and partial-state merging mechanisms at runtime, Sponge avoids optimization and state migration overheads during runtime while efficiently offloading bursty loads from existing VMs to new SF instances. Our evaluation on AWS EC2 and Lambda using the NEXMark benchmark shows that Sponge promptly reacts to bursty input loads, reducing 99th-percentile tail latencies by 88% on average compared to other stream query scaling methods on VMs. Sponge also reduces cost by 83% compared to methods that over-provision VMs to handle unpredictable bursty loads.",
+  "abstract_source_id": "src-abstract-atc-2023-55727298",
   "venue": "atc",
   "year": 2023,
   "track_or_session": "Serverless",
@@ -180,6 +182,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-atc-2023-55727298",
+      "url": "https://www.usenix.org/conference/atc23/presentation/song",
+      "kind": "paper-page",
+      "title": "Sponge: Fast Reactive Scaling for Stream Processing with Serverless Frameworks",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T21:58:16Z",
+      "content_hash": "sha256:9000fbc4e2dcfaac89d6b353dfd967d897627bc3d41bcec2adef48d49025d207",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

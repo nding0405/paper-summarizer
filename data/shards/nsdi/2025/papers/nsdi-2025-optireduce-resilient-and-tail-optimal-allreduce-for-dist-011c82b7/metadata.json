@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2025-optireduce-resilient-and-tail-optimal-allreduce-for-dist-011c82b7",
   "title": "OptiReduce: Resilient and Tail-Optimal AllReduce for Distributed Deep Learning in the Cloud",
+  "abstract": "We present OptiReduce, a new collective-communication system for the cloud with bounded, predictable completion times for deep-learning jobs in the presence of varying computation (stragglers) and communication (congestion and gradient drops) variabilities. OptiReduce exploits the inherent resiliency and the stochastic nature of distributed deep-learning (DDL) training and fine-tuning to work with approximated (or lost) gradients—providing an efficient balance between (tail) performance and the resulting accuracy of the trained models.\n\nExploiting this domain-specific characteristic of DDL, OptiReduce introduces (1) mechanisms (e.g., unreliable bounded transport with adaptive timeout) to improve the DDL jobs’ tail execution time, and (2) strategies (e.g., Transpose AllReduce and Hadamard Transform) to mitigate the impact of gradient drops on model accuracy. Our evaluation shows that OptiReduce achieves 70% and 30% faster time-to-accuracy (TTA), on average, when operating in shared, cloud environments (e.g., CloudLab) compared to Gloo and NCCL, respectively.",
+  "abstract_source_id": "src-abstract-nsdi-2025-011c82b7",
   "venue": "nsdi",
   "year": 2025,
   "track_or_session": "Infra For ML",
@@ -224,6 +226,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2025-011c82b7",
+      "url": "https://www.usenix.org/conference/nsdi25/presentation/warraich",
+      "kind": "paper-page",
+      "title": "OptiReduce: Resilient and Tail-Optimal AllReduce for Distributed Deep Learning in the Cloud",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:04:25Z",
+      "content_hash": "sha256:338368752f7402d003f400bea404448689a0ed1a0a76a6fd693095f48fbbd824",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2025-krr-efficient-and-scalable-kernel-record-replay-4321e16d",
   "title": "KRR: Efficient and Scalable Kernel Record Replay",
+  "abstract": "Modern kernels are large, complex, and plagued with bugs. Unfortunately, their large size and complexity make kernel failures very challenging for developers to diagnose since failures encountered in deployment are often notoriously difficult to reproduce. Although record-replay techniques provide the powerful ability to accurately record a failed execution and deterministically replay it, enabling advanced manual and automated analysis techniques, they are inefficient and do not scale with modern I/O-intensive, concurrent workloads.\n\nThis paper introduces KRR, a kernel record-replay framework that provides a highly efficient execution recording mechanism by narrowing the scope of the record and replay boundary to the kernel. Unlike previous record-replay whole-stack approaches, KRR adopts a split-recorder design that employs the guest and the host to jointly record the kernel execution. Our evaluation demonstrates that KRR scales efficiently up to 8 cores, across a range of different workloads, including kernel compilation, RocksDB, and Nginx. When recording 8-core VMs that run RocksDB and kernel compilation, KRR incurs only a 1.52× ~ 2.79× slowdown compared to native execution, while traditional whole-VM RR suffers from 8.97× ~ 29.94× slowdown. We validate that KRR is practical and has a broad recording scope by reproducing 17 bugs across different Linux versions, including 6 non-deterministic bugs and 5 high-risk CVEs; KRR was able to record and reproduce all but one non-deterministic bug.",
+  "abstract_source_id": "src-abstract-osdi-2025-4321e16d",
   "venue": "osdi",
   "year": 2025,
   "track_or_session": "Kernel and Operating Systems I",
@@ -138,6 +140,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2025-4321e16d",
+      "url": "https://www.usenix.org/conference/osdi25/presentation/zhang-tianren",
+      "kind": "paper-page",
+      "title": "KRR: Efficient and Scalable Kernel Record Replay",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:07:36Z",
+      "content_hash": "sha256:a109733e6639bcc2ff34e15e463b375acd47389e17da276dbc1c73ce5c4266b6",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "atc-2023-sowalker-an-i-o-optimized-out-of-core-graph-processing-s-eefcde40",
   "title": "SOWalker: An I/O-Optimized Out-of-Core Graph Processing System for Second-Order Random Walks",
+  "abstract": "Random walks serve as a powerful tool for extracting information that exists in a wide variety of real-world scenarios. Different from the traditional first-order random walk, the second-order random walk considers recent walk history in selecting the next stop, which facilitates to model higher-order structures in real-world data. To meet the scalability of random walks, researchers have developed many out-of-core graph processing systems based on a single machine. However, the main focus of out-of-core graph processing systems is to support first-order random walks, which no longer perform well for second-order random walks.\n\nIn this paper, we propose an I/O-optimized out-of-core graph processing system for second-order random walks, called SOWalker. First, we propose a walk matrix to avoid loading non-updatable walks and eliminate useless walk I/Os. Second, we develop a benefit-aware I/O model to load multiple blocks with the maximum accumulated updatable walks, so as to improve the I/O utilization. Finally, we adopt a block set-oriented walk updating scheme, which allows each walk to move as many steps as possible in the loaded block set, thus significantly boosting the walk updating rate. Compared with two state-of-the-art random walk systems, GraphWalker and GraSorw, SOWalker yields significant performance speedups (up to 10.2×).",
+  "abstract_source_id": "src-abstract-atc-2023-eefcde40",
   "venue": "atc",
   "year": 2023,
   "track_or_session": "Searching Graphs",
@@ -243,6 +245,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-atc-2023-eefcde40",
+      "url": "https://www.usenix.org/conference/atc23/presentation/wu",
+      "kind": "paper-page",
+      "title": "SOWalker: An I/O-Optimized Out-of-Core Graph Processing System for Second-Order Random Walks",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T21:58:15Z",
+      "content_hash": "sha256:da02e0d7a43da6c4a51276c8f74fb97f95a16a55b5c6e0bca9fd7fd15ebd5fb2",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

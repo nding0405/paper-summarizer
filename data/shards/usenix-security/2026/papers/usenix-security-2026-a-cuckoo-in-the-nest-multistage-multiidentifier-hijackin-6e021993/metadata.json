@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-a-cuckoo-in-the-nest-multistage-multiidentifier-hijackin-6e021993",
   "title": "A Cuckoo in the Nest: Multi‑Stage, Multi‑Identifier Hijacking in BACnet/SC",
+  "abstract": "To address the well-known security limitations of legacy Building Automation and Control Network (BACnet), BACnet Secure Connect (BACnet/SC) introduces mutually authenticated WebSocket Secure (WSS) channels and mandates PKI-based certificate management. Despite these protections, we identify a fundamental identifier-binding failure in BACnet/SC's security model: X.509 certificate authentication is not cryptographically bound to the logical identifiers used for connection management (UUID) and message forwarding (VMAC). Through a systematic analysis of BACnet/SC connection state machines, we show that this decoupling enables a multi-stage, multi-identifier hijacking attack , in which malicious roles progressively displace a legitimate device's authenticated connection state and persistently intercept its traffic. We term this attack the Cuckoo Attack and validate it across the official BACnet/SC Reference Stack, the open-source BACnet-Stack, and commercial building automation platforms from major vendors, including Siemens, Johnson Controls, Honeywell, and Carrier. We further propose mitigation measures to address this vulnerability. Our findings provide the first systematic characterization of an authentication-identifier decoupling flaw in BACnet/SC, highlight a broader class of identifier-binding risks in stateful secure protocols, and have been presented to and acknowledged by ASHRAE SSPC 135 , the standards committee responsible for BACnet.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-6e021993",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Hardware Security 3",
@@ -218,6 +220,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-6e021993",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/zhang-qiguang",
+      "kind": "paper-page",
+      "title": "A Cuckoo in the Nest: Multi‑Stage, Multi‑Identifier Hijacking in BACnet/SC",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:22:51Z",
+      "content_hash": "sha256:2189a2b8a7e5d9155e8bded1aaa58d246b4b7353e819bebd1e5ea8b843e70335",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2026-memory-backdoor-attacks-on-neural-networks-79768ca3",
   "title": "Memory Backdoor Attacks on Neural Networks",
+  "abstract": "Neural networks are often trained on proprietary datasets, making them attractive attack targets. We present a novel dataset extraction method leveraging an innovative training-time backdoor attack, allowing a malicious federated learning (FL) server to systematically and deterministically extract complete client training samples through a simple indexing process. Unlike prior techniques, our approach guarantees exact data recovery rather than probabilistic reconstructions or hallucinations, provides precise control over which samples are memorized and how many, and shows high capacity and robustness. Infected models output data samples when they receive a pattern-based index trigger, enabling systematic extraction of meaningful patches from each client’s local data without disrupting global model utility. To address small model output sizes, we extract patches and then recombined them.\n\nThe attack requires only a minor modification to the training code that can easily evade detection during client-side verification. Hence, this vulnerability represents a realistic FL supply-chain threat, where a malicious server can distribute modified training code to clients and later recover private data from their updates. Evaluations across classifiers, segmentation models, and large language models demonstrate that thousands of sensitive training samples can be recovered from client models with minimal impact on task performance, and a client's entire dataset can be stolen after multiple FL rounds. For instance, a medical segmentation dataset can be extracted with only a 3% utility drop. These findings expose a critical privacy vulnerability in FL systems, emphasizing the need for stronger integrity and transparency in distributed training pipelines.",
+  "abstract_source_id": "src-abstract-ndss-2026-79768ca3",
   "venue": "ndss",
   "year": 2026,
   "track_or_session": "Fall submission cycle",
@@ -202,6 +204,19 @@
       "official": false,
       "supports": [
         "independent proceedings identity reconciliation"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2026-79768ca3",
+      "url": "https://www.ndss-symposium.org/ndss-paper/memory-backdoor-attacks-on-neural-networks/",
+      "kind": "paper-page",
+      "title": "Memory Backdoor Attacks on Neural Networks",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:22:28Z",
+      "content_hash": "sha256:ee8f7b12daf49dabd10cc5fb78a8a770ec3f6b0d13245d2d3975b80d08ccb388",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

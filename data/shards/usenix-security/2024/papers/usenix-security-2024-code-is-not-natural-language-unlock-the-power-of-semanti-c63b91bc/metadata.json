@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2024-code-is-not-natural-language-unlock-the-power-of-semanti-c63b91bc",
   "title": "Code is not Natural Language: Unlock the Power of Semantics-Oriented Graph Representation for Binary Code Similarity Detection",
+  "abstract": "Binary code similarity detection (BCSD) has garnered significant attention in recent years due to its crucial role in various binary code-related tasks, such as vulnerability search and software plagiarism detection. Currently, BCSD systems are typically based on either instruction streams or control flow graphs (CFGs). However, these approaches have limitations. Instruction stream-based approaches treat binary code as natural languages, overlooking well-defined semantic structures. CFG-based approaches exploit only the control flow structures, neglecting other essential aspects of code. Our key insight is that unlike natural languages, binary code has well-defined semantic structures, including intra-instruction structures, inter-instruction relations (e.g., def-use, branches), and implicit conventions (e.g. calling conventions). Motivated by that, we carefully examine the necessary relations and structures required to express the full semantics and expose them directly to the deep neural network through a novel semantics-oriented graph representation. Furthermore, we propose a lightweight multi-head softmax aggregator to effectively and efficiently fuse multiple aspects of the binary code. Extensive experiments show that our method significantly outperforms the state-of-the-art (e.g., in the x64-XC retrieval experiment with a pool size of 10000, our method achieves a recall score of 184%, 220%, and 153% over Trex, GMN, and jTrans, respectively).",
+  "abstract_source_id": "src-abstract-usenix-security-2024-c63b91bc",
   "venue": "usenix-security",
   "year": 2024,
   "track_or_session": "ML for Security",
@@ -238,6 +240,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2024-c63b91bc",
+      "url": "https://www.usenix.org/conference/usenixsecurity24/presentation/he-haojie",
+      "kind": "paper-page",
+      "title": "Code is not Natural Language: Unlock the Power of Semantics-Oriented Graph Representation for Binary Code Similarity Detection",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:14:32Z",
+      "content_hash": "sha256:f5733f008f59a02ee796e38c1de6c899603e8d82f1eb3d864d9c157c555644d5",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

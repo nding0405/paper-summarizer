@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2024-badmerging-backdoor-attacks-against-model-merging-64207c51",
   "title": "BadMerging: Backdoor Attacks Against Model Merging",
+  "abstract": "Fine-tuning pre-trained models for downstream tasks has led to a proliferation of open-sourced task-specific models. Recently, Model Merging (MM) has emerged as an effective approach to facilitate knowledge transfer among these independently fine-tuned models. MM directly combines multiple fine-tuned task-specific models into a merged model without additional training, and the resulting model shows enhanced capabilities in multiple tasks. Although MM provides great utility, it may come with security risks because an adversary can exploit MM to affect multiple downstream tasks. However, the security risks of MM have barely been studied. In this paper, we first find that MM, as a new learning paradigm, introduces unique challenges for existing backdoor attacks due to the merging process. To address these challenges, we introduce BadMerging, the first backdoor attack specifically designed for MM. Notably, BadMerging allows an adversary to compromise the entire merged model by contributing as few as one backdoored task-specific model. BadMerging comprises a two-stage attack mechanism and a novel feature-interpolation-based loss to enhance the robustness of embedded backdoors against the changes of different merging parameters. Considering that a merged model may incorporate tasks from different domains, BadMerging can jointly compromise the tasks provided by the adversary (on-task attack) and other contributors (off-task attack) and solve the corresponding unique challenges with novel attack designs. Extensive experiments show that BadMerging achieves remarkable attacks against various MM algorithms. Our ablation study demonstrates that the proposed attack designs can progressively contribute to the attack performance. Finally, we show that prior defense mechanisms fail to defend against our attacks, highlighting the need for more advanced defense. Our code is available at: https://github.com/jzhang538/BadMerging.",
+  "abstract_source_id": "src-abstract-ccs-2024-64207c51",
   "venue": "ccs",
   "year": 2024,
   "track_or_session": "Cycle 2",
@@ -201,6 +203,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2024-64207c51",
+      "url": "https://api.openalex.org/works/doi:10.1145/3658644.3690284?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "BadMerging: Backdoor Attacks Against Model Merging",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:09:01Z",
+      "content_hash": "sha256:ec4812f63d3ce8b06681a9bc3fa4cd18d5e0059b78e649efad3f27134241ec24",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

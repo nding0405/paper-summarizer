@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2023-backdoor-attacks-against-dataset-distillation-f26e9f25",
   "title": "Backdoor Attacks Against Dataset Distillation",
+  "abstract": "Dataset distillation has emerged as a prominent technique to improve data efficiency when training machine learning models. It encapsulates the knowledge from a large dataset into a smaller synthetic dataset. A model trained on this smaller distilled dataset can attain comparable performance to a model trained on the original training dataset. However, the existing dataset distillation techniques mainly aim at achieving the best trade-off between resource usage efficiency and model utility. The security risks stemming from them have not been explored. This study performs the first backdoor attack against the models trained on the data distilled by dataset distillation models in the image domain. Concretely, we inject triggers into the synthetic data during the distillation procedure rather than during the model training stage, where all previous attacks are performed. We propose two types of backdoor attacks, namely NAIVEATTACK and DOORPING. NAIVEATTACK simply adds triggers to the raw data at the initial distillation phase, while DOORPING iteratively updates the triggers during the entire distillation procedure. We conduct extensive evaluations on multiple datasets, architectures, and dataset distillation techniques. Empirical evaluation shows that NAIVEATTACK achieves decent attack success rate (ASR) scores in some cases, while DOORPING reaches higher ASR scores (close to 1.0) in all cases. Furthermore, we conduct a comprehensive ablation study to analyze the factors that may affect the attack performance. Finally, we evaluate multiple defense mechanisms against our backdoor attacks and show that our attacks can practically circumvent these defense mechanisms.",
+  "abstract_source_id": "src-abstract-ndss-2023-f26e9f25",
   "venue": "ndss",
   "year": 2023,
   "track_or_session": "ML and AI I",
@@ -168,6 +170,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2023-f26e9f25",
+      "url": "https://www.ndss-symposium.org/ndss-paper/backdoor-attacks-against-dataset-distillation/",
+      "kind": "paper-page",
+      "title": "Backdoor Attacks Against Dataset Distillation",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:16:44Z",
+      "content_hash": "sha256:79eeab4d1c3ab54bff0f5054d7f03cfcfc246c4d13bce61ff7d009b323defce9",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

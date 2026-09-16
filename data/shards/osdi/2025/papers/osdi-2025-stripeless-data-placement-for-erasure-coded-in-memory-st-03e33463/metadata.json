@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2025-stripeless-data-placement-for-erasure-coded-in-memory-st-03e33463",
   "title": "Stripeless Data Placement for Erasure-Coded In-Memory Storage",
+  "abstract": "Erasure coding plays a crucial role in distributed storage systems to provide fault tolerance at a low storage cost. Conventional erasure coding schemes are based on stripes. However, placing data into stripes can incur non-negligible performance overheads that will manifest in emerging fast in-memory storage systems, making conventional erasure coding schemes suboptimal in such scenarios.\n\nAiming to eliminate such overheads, we present Nos, a stripeless erasure coding scheme. It lets each node in the storage system independently replicate data to other nodes and encode received data replica into parities with XOR. Thus, Nos avoids the overheads caused by stripes. To enable failure recovery, Nos uses a combinatoric structure called symmetric balanced incomplete block design (SBIBD) to decide primary-to-backup node affinities during replication. Atop Nos, we further build Nostor, a distributed in-memory key-value store. Evaluations demonstrate that Nostor achieves 1.61x and 2.60x throughputs with similar or lower latencies than stripe-based erasure coding baselines.",
+  "abstract_source_id": "src-abstract-osdi-2025-03e33463",
   "venue": "osdi",
   "year": 2025,
   "track_or_session": "File and Storage Systems",
@@ -180,6 +182,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2025-03e33463",
+      "url": "https://www.usenix.org/conference/osdi25/presentation/gao",
+      "kind": "paper-page",
+      "title": "Stripeless Data Placement for Erasure-Coded In-Memory Storage",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:07:49Z",
+      "content_hash": "sha256:6a2e788a3040df8ee3a7c5cd3d2dccf6f5e3c7bc00a9ef4b5e007f08dcbd6eba",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

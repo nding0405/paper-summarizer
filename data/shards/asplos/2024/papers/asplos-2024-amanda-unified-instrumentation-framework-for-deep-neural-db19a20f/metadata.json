@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2024-amanda-unified-instrumentation-framework-for-deep-neural-db19a20f",
   "title": "Amanda: Unified Instrumentation Framework for Deep Neural Networks",
+  "abstract": "The success of deep neural networks (DNNs) has sparked efforts to analyze (e.g., tracing) and optimize (e.g., pruning) them. These tasks have specific requirements and ad-hoc implementations in current execution backends like TensorFlow/PyTorch, which require developers to manage fragmented interfaces and adapt their codes to diverse models. In this study, we propose a new framework called Amanda to streamline the development of these tasks. We formalize the implementation of these tasks as neural network instrumentation, which involves introducing instrumentation into the operator level of DNNs. This allows us to abstract DNN analysis and optimization tasks as instrumentation tools on various DNN models. We build Amanda with two levels of APIs to achieve a unified, extensible, and efficient instrumentation design. The user-level API provides a unified operator-grained instrumentation API for different backends. Meanwhile, internally, we design a set of callback-centric APIs for managing and optimizing the execution of original and instrumentation codes in different backends. Through these design principles, the Amanda framework can accommodate a broad spectrum of use cases, such as tracing, profiling, pruning, and quantization, across different backends (e.g., TensorFlow/PyTorch) and execution modes (graph/eager mode). Moreover, our efficient execution management ensures that the performance overhead is typically kept within 5%.",
+  "abstract_source_id": "src-abstract-asplos-2024-db19a20f",
   "venue": "asplos",
   "year": 2024,
   "track_or_session": "Session 3A: Dynamic Analysis and Instrumentation",
@@ -400,6 +402,19 @@
       "official": false,
       "supports": [
         "Indexed alternate-version and institutional-copy links; not used as the authoritative relevance source."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2024-db19a20f",
+      "url": "https://api.openalex.org/works/doi:10.1145/3617232.3624864?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Amanda: Unified Instrumentation Framework for Deep Neural Networks",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T21:59:53Z",
+      "content_hash": "sha256:f06b56653e902a897ea26445be7a2556e6bf76437808104411628da7cbc6b114",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

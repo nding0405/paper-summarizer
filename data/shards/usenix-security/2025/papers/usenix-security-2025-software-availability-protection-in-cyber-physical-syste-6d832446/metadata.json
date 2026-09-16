@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-software-availability-protection-in-cyber-physical-syste-6d832446",
   "title": "Software Availability Protection in Cyber-Physical Systems",
+  "abstract": "Existing efforts in software protection have mostly focused on how to detect violations of confidentiality or integrity, with the goal of safeguarding information or ensuring the correctness of execution. Little has been done to study the handling of such violations, where the common practice is to crash the program. However, such strategies sacrifice availability, which is not acceptable in real-time safety-critical cyber-physical systems (CPSs), where untimely computation can have catastrophic physical-world consequences.\n\nTo bridge this gap, we present Gecko, an attack recovery approach that not only timely recovers the execution from the attack but also disables exploited features to improve system availability. Realizing Gecko presents two technical challenges. To defend against repeated exploitation, Gecko utilizes compartmentalization for runtime attack input identification and introduces fail-safe shadow compartments to disable the exploited features while ensuring graceful degradation. To remove attack impacts in a timely manner, Gecko employs selective data reset through snapshot recovery. It further uses an I/O reference monitor to avoid peripheral re-configuration. We developed a prototype of Gecko and evaluated it on three CPS platforms: ArduPilot, Jackal UGV, and OpenManipulator. Gecko achieves recovery with 83.3% task deadline hits while incurring a runtime overhead of 8.28%.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-6d832446",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Embedded and Hardware Security",
@@ -112,6 +114,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-6d832446",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/li-ao",
+      "kind": "paper-page",
+      "title": "Software Availability Protection in Cyber-Physical Systems",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:21:46Z",
+      "content_hash": "sha256:d80016f0359c76eb5d71f3b36e05a9461510177fef03b826de67589f9422fa42",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

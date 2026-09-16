@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "atc-2023-accelerating-distributed-moe-training-and-inference-with-9a461b9f",
   "title": "Accelerating Distributed MoE Training and Inference with Lina",
+  "abstract": "Scaling model parameters improves model quality at the price of high computation overhead. Sparsely activated models, usually in the form of Mixture of Experts (MoE) architecture, have sub-linear scaling of computation cost with model size, thus providing opportunities to train and serve a larger model at a lower cost. However, distributed MoE training and inference are inefficient, mainly due to the interleaved all-to-all communication during model computation.\n\nThis paper makes two main contributions. First, we systematically analyze all-to-all overhead in distributed MoE and present the main causes for it to be the bottleneck in training and inference, respectively. Second, we design and build Lina to address the all-to-all bottleneck head-on. Lina opportunistically prioritizes all-to-all over the concurrent allreduce whenever feasible using tensor partitioning, so all-to-all and training step time is improved. Lina further exploits the inherent pattern of expert selection to dynamically schedule resources during inference, so that the transfer size and bandwidth of all-to-all across devices are balanced amid the highly skewed expert popularity in practice. Experiments on an A100 GPU testbed show that Lina reduces the training step time by up to 1.73x and reduces the 95%tile inference time by an average of 1.63x over the state-of-the-art systems.",
+  "abstract_source_id": "src-abstract-atc-2023-9a461b9f",
   "venue": "atc",
   "year": 2023,
   "track_or_session": "Optimizing ML",
@@ -180,6 +182,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-atc-2023-9a461b9f",
+      "url": "https://www.usenix.org/conference/atc23/presentation/li-jiamin",
+      "kind": "paper-page",
+      "title": "Accelerating Distributed MoE Training and Inference with Lina",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T21:57:43Z",
+      "content_hash": "sha256:3e78ba7cd2099a7d67999400798a0ee1eca8cfa6ffac3246a6f79354f8cce744",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

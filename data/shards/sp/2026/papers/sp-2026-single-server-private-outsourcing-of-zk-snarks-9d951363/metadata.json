@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2026-single-server-private-outsourcing-of-zk-snarks-9d951363",
   "title": "Single-Server Private Outsourcing of zk-SNARKs",
+  "abstract": "Succinct zero-knowledge arguments (zk-SNARKs) enable a prover to convince a verifier of the truth of a statement via a succinct and efficiently verifiable proof without revealing any additional information about the witness. A barrier to the practical deployment of zk-SNARKs is their high proving cost. With this motivation, we study server-aided zk-SNARKs, where a client/prover outsources most of its work to a single, untrusted server, while the server learns nothing about the witness, the statement, or even the final proof. We formalize this notion and show how to efficiently realize server-aided proving for widely deployed zk-SNARKs such as Nova, Groth16, and Plonk. The key building block underlying our designs is a new primitive, encrypted multi-scalar multiplication (EMSM), that enables private delegation of multi-scalar multiplications (MSMs). We construct an EMSM from variants of the LPN assumption in which the client does $O(1)$ group operations, while the server's work matches that of the plaintext MSM. We implement and evaluate our constructions. Compared to local proving, our techniques lower the client's computation by up to $18 \\times$ and reduce the proving latency by up to $8 \\times$.",
+  "abstract_source_id": "src-abstract-sp-2026-9d951363",
   "venue": "sp",
   "year": 2026,
   "track_or_session": "Cycle 2",
@@ -133,6 +135,19 @@
       "official": true,
       "supports": [
         "DOI, published-order authors and affiliations, abstract, publication date, page span, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2026-9d951363",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Single-Server Private Outsourcing of zk-SNARKs",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:58:02Z",
+      "content_hash": "sha256:4204efad9387253e2c70bd18217fac7c5220b9cd43ecd6179fdc27c5a043343e",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

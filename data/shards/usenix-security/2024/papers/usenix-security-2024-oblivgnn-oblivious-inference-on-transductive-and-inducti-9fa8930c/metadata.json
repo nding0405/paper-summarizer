@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2024-oblivgnn-oblivious-inference-on-transductive-and-inducti-9fa8930c",
   "title": "OblivGNN: Oblivious Inference on Transductive and Inductive Graph Neural Network",
+  "abstract": "Graph Neural Networks (GNNs) have emerged as a powerful tool for analysing graph-structured data across various domains, including social networks, banking, and bioinformatics. In the meantime, graph data contains sensitive information, such as social relations, financial transactions, and chemical structures, and GNN models are IPs of the model owner. Thus, deploying GNNs in cloud-based Machine Learning as a Service (MLaaS) raises significant privacy concerns.\n\nIn this paper, we present a comprehensive solution to enable secure GNN inference in MLaaS, named OblivGNN. OblivGNN is designed to support both transductive (static graph) and inductive (dynamic graph) inference services without revealing either graph data or GNN models. In particular, we adopt a lightweight cryptographic primitive, i.e., function secret sharing, to achieve low communication and computation overhead during inference. Furthermore, we are the first to propose a secure update protocol for the inductive setting, which can obliviously update the graph without revealing which parts of the graph are updated. Particularly, our results with three widely-used graph datasets (Cora, Citeseer, and Pubmed) show that OblivGNN can achieve comparable accuracy to an Additive Secret Sharing-based baseline. Nonetheless, our design reduces the runtime cost by up to 38% and the communication cost by 10x to 151x, highlighting its practicality when processing large graphs with GNN models.",
+  "abstract_source_id": "src-abstract-usenix-security-2024-9fa8930c",
   "venue": "usenix-security",
   "year": 2024,
   "track_or_session": "ML III: Secure ML",
@@ -175,6 +177,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2024-9fa8930c",
+      "url": "https://www.usenix.org/conference/usenixsecurity24/presentation/xu-zhibo",
+      "kind": "paper-page",
+      "title": "OblivGNN: Oblivious Inference on Transductive and Inductive Graph Neural Network",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:16:24Z",
+      "content_hash": "sha256:ac7127c05493af2516e3fbeebf942669d683a50db51c6ae6836b26ef9a8db024",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

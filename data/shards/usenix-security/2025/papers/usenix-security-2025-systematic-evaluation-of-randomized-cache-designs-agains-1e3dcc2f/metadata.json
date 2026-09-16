@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-systematic-evaluation-of-randomized-cache-designs-agains-1e3dcc2f",
   "title": "Systematic Evaluation of Randomized Cache Designs against Cache Occupancy",
+  "abstract": "Randomizing the address-to-set mapping and partitioning of the cache has been shown to be an effective mechanism in designing secured caches. Several designs have been proposed on a variety of rationales: (1) randomized design, (2) randomized-and-partitioned design, and (3) psuedo-fully associative design. This work fills in a crucial gap in current literature on randomized caches: currently most randomized cache designs defend only contention-based attacks, and leave out considerations of cache occupancy. We perform a systematic evaluation of 5 randomized cache designs- CEASER, CEASER-S, MIRAGE, ScatterCache, and SassCache against cache occupancy wrt. both performance as well as security.\n\nWith respect to performance, we first establish that benchmarking strategies used by contemporary designs are unsuitable for a fair evaluation (because of differing cache configurations, choice of benchmarking suites, additional implementation-specific assumptions). We thus propose a uniform benchmarking strategy, which allows us to perform a fair and comparative analysis across all designs under various replacement policies. Likewise, with respect to security against cache occupancy attacks, we evaluate the cache designs against various threat assumptions: (1) covert channels, (2) process fingerprinting, and (3) AES key recovery (to the best of our knowledge, this work is the first to demonstrate full AES key recovery on a randomized cache design using cache occupancy attack). Our results establish the need to also consider cache occupancy side-channel in randomized cache design considerations.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-1e3dcc2f",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Hardware Security 1: Microarchitectures",
@@ -154,6 +156,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-1e3dcc2f",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/chakraborty",
+      "kind": "paper-page",
+      "title": "Systematic Evaluation of Randomized Cache Designs against Cache Occupancy",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:22:06Z",
+      "content_hash": "sha256:fda0192a299b6da737a261f980526e2a1e9f3b7b4211f80fc6fbd97b48e88613",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

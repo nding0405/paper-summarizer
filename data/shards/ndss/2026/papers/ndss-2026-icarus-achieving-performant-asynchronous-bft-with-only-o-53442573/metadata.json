@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2026-icarus-achieving-performant-asynchronous-bft-with-only-o-53442573",
   "title": "Icarus: Achieving Performant Asynchronous BFT with Only Optimistic Paths",
+  "abstract": "The emergence of blockchain technology has revitalized research interest in Byzantine Fault Tolerant (BFT) consensus, particularly asynchronous BFT due to its resilience against network attacks. To improve the performance of traditional asynchronous BFT, recent studies propose the dual-path paradigm: an optimistic path for efficiency under favorable situations and a pessimistic path—typically implemented through a Multi-valued Validated Byzantine Agreement (MVBA) protocol—to guarantee liveness in unfavorable situations. However, owing to the inherent complexity and inefficiency of the MVBA protocol, existing dual-path protocols exhibit high implementation complexity and poor performance in unfavorable situations. Moreover, the two constituent types within the dual-path paradigm—serial-path and parallel-path—each face additional limitations. Specifically, the serial-path type encounters difficulties in switching between the optimistic and pessimistic paths, whereas the parallel-path type discards blocks from one of the paths, resulting in bandwidth waste and reduced throughput.\n\nTo address these limitations, we propose Icarus, a single-path asynchronous BFT protocol that exclusively leverages optimistic paths without pessimistic paths. The optimistic path ensures Icarus’s efficiency under favorable situations. To guarantee liveness in unfavorable conditions, Icarus employs a rotating-chain mechanism: each node broadcasts a chain of blocks in parallel, and these chains take turns serving as the optimistic path in a round-robin fashion. Since non-faulty nodes’ chains continuously grow, once a chain accumulating enough blocks becomes the optimistic path, its blocks can be committed, ensuring liveness even in unfavorable conditions. To maintain consistency during path transitions, Icarus introduces the Two-consecutive-validatedvalue Byzantine Agreement (tcv2-BA) protocol, which aligns heights of committed blocks on the previous path. We have verified Icarus’s correctness through theoretical analysis and validated its high performance through various experiments.",
+  "abstract_source_id": "src-abstract-ndss-2026-53442573",
   "venue": "ndss",
   "year": 2026,
   "track_or_session": "Fall submission cycle",
@@ -202,6 +204,19 @@
       "official": false,
       "supports": [
         "independent proceedings identity reconciliation"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2026-53442573",
+      "url": "https://www.ndss-symposium.org/ndss-paper/icarus-achieving-performant-asynchronous-bft-with-only-optimistic-paths/",
+      "kind": "paper-page",
+      "title": "Icarus: Achieving Performant Asynchronous BFT with Only Optimistic Paths",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:22:12Z",
+      "content_hash": "sha256:4684ddf3b74671df667a593992e1fd7d8067409302f7d03b6edecc363466f13a",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

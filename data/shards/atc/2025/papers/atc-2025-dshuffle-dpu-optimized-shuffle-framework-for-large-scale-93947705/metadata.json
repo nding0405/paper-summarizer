@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "atc-2025-dshuffle-dpu-optimized-shuffle-framework-for-large-scale-93947705",
   "title": "DShuffle: DPU-Optimized Shuffle Framework for Large-scale Data Processing",
+  "abstract": "Shuffle is a crucial operation in distributed data processing, responsible for transferring intermediate data between nodes. However, it is highly resource-intensive, consuming significant CPU power and often becoming a major performance bottleneck, particularly in data analysis tasks involving large datasets.\n\nIn this paper, we introduce DShuffle, an efficient framework that leverages DPUs to offload and accelerate shuffle operations. The DPU, with its specialized compute and I/O hardware, is ideally suited for offloading on-path shuffle tasks. However, its complex architecture requires careful design for effective offloading. To fully harness the DPU’s capabilities, DShuffle divides the shuffle process into three stages: serialization, preprocessing, and I/O, and organizes them in a pipelined manner for efficient execution on the DPU. By leveraging high-concurrency memory access units to accelerate the serialization phase and using the DPU to directly write intermediate data to disk, DShuffle effectively accelerates the shuffle process and eliminates unnecessary data copies. Our experiments on a real DPU platform with industrial-grade Spark demonstrate that DShuffle enhances both host CPU and I/O efficiency and effectively reduce Spark task completion times.",
+  "abstract_source_id": "src-abstract-atc-2025-93947705",
   "venue": "atc",
   "year": 2025,
   "track_or_session": "Hardware-Specific Optimizations: Space, Accelerators, and AI Chips",
@@ -264,6 +266,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-atc-2025-93947705",
+      "url": "https://www.usenix.org/conference/atc25/presentation/ding",
+      "kind": "paper-page",
+      "title": "DShuffle: DPU-Optimized Shuffle Framework for Large-scale Data Processing",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T21:59:37Z",
+      "content_hash": "sha256:89c6135bbdb182ef8b94cf8fdbbe893b21d9e99fee99ecba6e96472e50964ae4",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

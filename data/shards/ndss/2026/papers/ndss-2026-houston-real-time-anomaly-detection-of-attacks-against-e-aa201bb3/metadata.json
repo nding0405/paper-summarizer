@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2026-houston-real-time-anomaly-detection-of-attacks-against-e-aa201bb3",
   "title": "HOUSTON: Real-Time Anomaly Detection of Attacks against Ethereum DeFi Protocols",
+  "abstract": "As decentralized finance (DeFi) continues to innovate the financial system, the security of its building blocks remains a critical concern to its large-scale adoption. In DeFi, the stakes are exceptionally high, marked by recurring instances of financial losses totaling millions of dollars every week. All major blockchain-based financial applications (i.e., DeFi protocols) are built from – and interact with – programs known as smart contracts. While many security tools have been developed to identify specific classes of vulnerabilities (e.g., reentrancy) in individual smart contracts, considerably less effort has been invested in automatically identifying – in real time – attacks against DeFi protocols.\n\nIn this paper, we propose a novel approach for real-time, generic, explainable identification of attacks against DeFi protocols. Specifically, we identify potentially risky transactions without relying on any known vulnerability patterns. Our approach, implemented in HOUSTON, first automatically identifies the set of smart contracts that together implement a DeFi application and then, while monitoring new relevant transactions, builds and updates custom anomaly-detection models. Our models include information about typical execution paths (control flows) as well as information about how the protocol processes data, captured as likely invariants between the contract functions’ arguments and storage variables. HOUSTON offers explainable warnings that can be used for attack triaging.\n\nWe evaluated HOUSTON on a large corpus of over 22 million transactions, covering 115 DeFi incidents. In our experiments, HOUSTON achieved a detection true-positive rate of 94.8% while maintaining a low false-positive rate. When compared with state-of-the-art anomaly detection systems, HOUSTON achieves a higher number of true positives and lower false-positive rates. Finally, we deployed HOUSTON in a real-world setting, where it demonstrated real-time monitoring capabilities on commodity hardware while sustaining high accuracy.",
+  "abstract_source_id": "src-abstract-ndss-2026-aa201bb3",
   "venue": "ndss",
   "year": 2026,
   "track_or_session": "Fall submission cycle",
@@ -223,6 +225,19 @@
       "official": false,
       "supports": [
         "independent proceedings identity reconciliation"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2026-aa201bb3",
+      "url": "https://www.ndss-symposium.org/ndss-paper/houston-real-time-anomaly-detection-of-attacks-against-ethereum-defi-protocols/",
+      "kind": "paper-page",
+      "title": "HOUSTON: Real-Time Anomaly Detection of Attacks against Ethereum DeFi Protocols",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:22:10Z",
+      "content_hash": "sha256:3bd69587f268cd48e914924f31244af6f05c31d6e9c95d6a58555b862633e2c1",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

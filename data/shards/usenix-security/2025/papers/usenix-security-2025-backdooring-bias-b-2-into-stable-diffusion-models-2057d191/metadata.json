@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-backdooring-bias-b-2-into-stable-diffusion-models-2057d191",
   "title": "Backdooring Bias (B^2) into Stable Diffusion Models",
+  "abstract": "Recent advances in large text-conditional diffusion models have revolutionized image generation by enabling users to create realistic, high-quality images from textual prompts, significantly enhancing artistic creation and visual communication. However, these advancements also introduce an underexplored attack opportunity: the possibility of inducing biases by an adversary into the generated images for malicious intentions, e.g., to influence public opinion and spread propaganda. In this paper, we study an attack vector that allows an adversary to inject arbitrary bias into a target model. The attack leverages low-cost backdooring techniques using a targeted set of natural textual triggers embedded within a small number of malicious data samples produced with public generative models. An adversary could pick common sequences of words that can then be inadvertently activated by benign users during inference. We investigate the feasibility and challenges of such attacks, demonstrating how modern generative models have made this adversarial process both easier and more adaptable. On the other hand, we explore various aspects of the detectability of such attacks and demonstrate that the model's utility remains intact in the absence of the triggers. Our extensive experiments using over 200,000 generated images and against hundreds of fine-tuned models demonstrate the feasibility of the presented backdoor attack. We illustrate how these biases maintain strong text-image alignment, highlighting the challenges in detecting biased images without knowing that bias in advance. Our cost analysis confirms the low financial barrier ($10-$15) to executing such attacks, underscoring the need for robust defensive strategies against such vulnerabilities in diffusion models.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-2057d191",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "ML and AI Security 1: Images",
@@ -133,6 +135,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-2057d191",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/naseh",
+      "kind": "paper-page",
+      "title": "Backdooring Bias (B^2) into Stable Diffusion Models",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:18:48Z",
+      "content_hash": "sha256:90463bfa5da84e5272eff9df190267aed26524e782441432527cb9085c9c3c6d",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

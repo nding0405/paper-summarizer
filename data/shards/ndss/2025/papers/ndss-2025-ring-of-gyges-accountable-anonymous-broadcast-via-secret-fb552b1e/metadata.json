@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2025-ring-of-gyges-accountable-anonymous-broadcast-via-secret-fb552b1e",
   "title": "Ring of Gyges: Accountable Anonymous Broadcast via Secret-Shared Shuffle",
+  "abstract": "Anonymous broadcast systems, which allow users to post messages on a public bulletin board without revealing their identities, have been of persistent interest over the years.\n\nRecent designs utilizing multi-party computation (MPC) techniques have shown competitive computational efficiency (CCS'20, NDSS'22, PETS'23).\n\nHowever, these systems still fall short in communication overhead, which also dominates the overall performance.\n\nBesides, they fail to adequately address threats from misbehaving users, such as repeatedly spamming the system with inappropriate, illegal content.\n\nThese tangible issues usually undermine the practical adoption of anonymous systems.\n\nThis work introduces _Gyges_, an MPC-based anonymous broadcast system that minimizes its inter-server communication while reconciling critical anonymity and accountability guarantees.\n\nAt the crux of _Gyges_ lies an honest-majority four-party secret-shared relay.\n\nThese relay parties jointly execute two key protocols: 1) a \"silent shuffling\" protocol that requires no online communication but relies solely on non-interactive, local computations to unlink users from their messages, thereby ensuring sender anonymity; 2) a companion fast and lean tracing protocol capable of relinking a specific shuffled message back to its originator when the content severely violates moderation policy, without jeopardizing others' anonymity guarantees.\n\nAdditionally, _Gyges_ adheres to the private robustness to resist potential malicious disruptions, guaranteeing output delivery while preserving sender anonymity.\n\nTo better support a large user base, the system also supports both vertical and horizontal scaling.\n\nOur evaluation results show that _Gyges_'s communication-efficient shuffle designs outperform state-of-the-art MPC-based anonymous broadcast solutions, such as Clarion (NDSS'22) and RPM (PETS'23), while its shared trace technique can swiftly track down the misbehaving users (when necessary), giving orders of magnitude cost reductions compared to traceable mixnets (PETS'24) that offers similar capabilities.",
+  "abstract_source_id": "src-abstract-ndss-2025-fb552b1e",
   "venue": "ndss",
   "year": 2025,
   "track_or_session": "Fall submission cycle",
@@ -202,6 +204,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2025-fb552b1e",
+      "url": "https://www.ndss-symposium.org/ndss-paper/ring-of-gyges-accountable-anonymous-broadcast-via-secret-shared-shuffle/",
+      "kind": "paper-page",
+      "title": "Ring of Gyges: Accountable Anonymous Broadcast via Secret-Shared Shuffle",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:20:23Z",
+      "content_hash": "sha256:75f28d0413231347f8c49874d6542dd1746f9958958c5856dcff834a4a6fca48",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2024-horus-granular-in-network-task-scheduler-for-cloud-datac-04dd31dd",
   "title": "Horus: Granular In-Network Task Scheduler for Cloud Datacenters",
+  "abstract": "Short-lived tasks are prevalent in modern interactive datacenter applications. However, designing schedulers to assign these tasks to workers distributed across the whole datacenter is challenging, because such schedulers need to make decisions at a microsecond scale, achieve high throughput, and minimize the tail response time. Current task schedulers in the literature are limited to individual racks. We present Horus, a new in-network task scheduler for short tasks that operates at the datacenter scale. Horus efficiently tracks and distributes the worker state among switches, which enables it to schedule tasks in parallel at line rate while optimizing the scheduling quality. We propose a new distributed task scheduling policy that minimizes the state and communication overheads, handles dynamic loads, and does not buffer tasks in switches. We compare Horus against the state-of-the-art in-network scheduler in a testbed with programmable switches as well as using simulations of datacenters with more than 27K hosts and thousands of switches handling diverse and dynamic workloads. Our results show that Horus efficiently scales to large datacenters, and it substantially outperforms the state-of-the-art across all performance metrics, including tail response time and throughput.",
+  "abstract_source_id": "src-abstract-nsdi-2024-04dd31dd",
   "venue": "nsdi",
   "year": 2024,
   "track_or_session": "Clouds but Faster",
@@ -153,6 +155,19 @@
       "supports": [
         "canonical author line and publication-time affiliations",
         "resolution of conflicting or malformed citation metadata on the official paper page"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2024-04dd31dd",
+      "url": "https://www.usenix.org/conference/nsdi24/presentation/yassini",
+      "kind": "paper-page",
+      "title": "Horus: Granular In-Network Task Scheduler for Cloud Datacenters",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:03:15Z",
+      "content_hash": "sha256:b22ce853336c944e4a0f2ff800da653b8073ac2aa713945197e40da4a2f316ec",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

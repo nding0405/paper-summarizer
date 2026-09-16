@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-sharpness-aware-initialization-improving-differentially-72623906",
   "title": "Sharpness-Aware Initialization: Improving Differentially Private Machine Learning from First Principles",
+  "abstract": "Recent advances in privacy-preserving machine learning underscore the critical role of differential privacy (DP) in protecting individual data. However, the noise introduced during DP training often leads to significant performance degradation, creating a major challenge for differentially private machine learning (DPML).\n\nIn this work, we address this challenge by controlling the detrimental effects of DP noise. Specifically, we focus on enhancing a model's robustness to random perturbations, thereby mitigating their negative impact on convergence—a central factor in maintaining high utility under DP. To this end, we propose sharpness-aware initialization (SAI), a method for improving the accuracy of DPML algorithms by achieving a flatter loss landscape. Our approach employs a two-phase training framework: SAI followed by standard Differentially Private Stochastic Gradient Descent (DPSGD). This strategy capitalizes on the observation that loss-landscape flatness converges more rapidly than the training loss, enabling an early stop on flatness optimization to limit divergence risk, followed by a phase dedicated to training-loss optimization. Moreover, splitting the training into two distinct phases allows for different privacy budgets in each phase, aligning their respective optimization objectives and tolerance to DP noise, which further mitigates performance degradation. Our experimental results show that SAI substantially improves the accuracy of state-of-the-art DPML algorithms across a range of datasets and model architectures, achieving gains of over 6% on CIFAR-10 under epsilon=1.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-72623906",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "ML and AI Privacy 1: Federated Learning and Protecting Data",
@@ -175,6 +177,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-72623906",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/wang-zihao",
+      "kind": "paper-page",
+      "title": "Sharpness-Aware Initialization: Improving Differentially Private Machine Learning from First Principles",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:21:43Z",
+      "content_hash": "sha256:7649a1cc2f2583e2bf140888771468ffde1e6158dbc8bca39e91cc7bfd879edc",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "eurosys-2023-dilos-do-not-trade-compatibility-for-performance-in-memo-81513db3",
   "title": "DiLOS: Do Not Trade Compatibility for Performance in Memory Disaggregation",
+  "abstract": "Memory disaggregation has replaced the landscape of dat-acenters by physically separating compute and memory nodes, achieving improved utilization. As early efforts, kernel paging-based approaches offer transparent virtual memory abstraction for remote memory with paging schemes but suffer from expensive page fault handling. This paper revisits the paging-based approaches and challenges their performance in paging schemes. We posit that the overhead of the paging-based approaches is not a fundamental limitation. We propose DiLOS, a new library operating system (LibOS) specialized for paging-based memory disaggregation. We have revamped the page fault handler to get away with the swap cache and incorporated known techniques in our prefetcher, page manager, and communication module for performance optimization. Furthermore, we provide APIs to augment the LibOS with application semantics. We present two app-aware guides, app-aware prefetching and bandwidth-reducing memory allocator in DiLOS. Through extensive evaluation of microbenchmarks and applications, we demonstrate that DiLOS outperforms the state-of-the-art kernel paging-based system (Fastswap) up to 2.24× and a recent user-level system (AIFM) 1.54× on a real-world data analytic workload.",
+  "abstract_source_id": "src-abstract-eurosys-2023-81513db3",
   "venue": "eurosys",
   "year": 2023,
   "track_or_session": null,
@@ -167,6 +169,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-eurosys-2023-81513db3",
+      "url": "https://api.openalex.org/works/doi:10.1145/3552326.3567488?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "DiLOS: Do Not Trade Compatibility for Performance in Memory Disaggregation",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:18:31Z",
+      "content_hash": "sha256:387f9359fa575a4a4ba33b1f494b3403f6a39006745689a2664a166a6e708acf",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

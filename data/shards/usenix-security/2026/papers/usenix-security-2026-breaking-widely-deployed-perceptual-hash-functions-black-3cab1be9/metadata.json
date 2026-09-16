@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-breaking-widely-deployed-perceptual-hash-functions-black-3cab1be9",
   "title": "Breaking Widely Deployed Perceptual Hash Functions: Black-Box Collisions in Apple NeuralHash and Microsoft PhotoDNA",
+  "abstract": "Perceptual hash functions have been designed to detect multimedia copyright violations and illegal content. To achieve their purpose, they map inputs that are perceived as similar to close outputs. For many widely deployed schemes, however, both the design strategy and detailed specifications remain proprietary. Governments are now considering their extension to Client-Side Scanning (CSS) for end-to-end encrypted services, verifying content against illegal material before encryption. In 2021, Apple presented a detailed proposal for CSS based on the NeuralHash perceptual hash function. After strong criticism over privacy and security concerns, Apple withdrew the proposal, but NeuralHash remains deployed on all devices, with its current purpose undisclosed.\\ In theory, brute-force collisions for NeuralHash (96-bit hash value) require 2 48 evaluations. Shortly after the NeuralHash release, researchers showed it is easy to craft perceptually dissimilar collisions, to incriminate any user by sending an innocent image sharing the same hash value as illegal content. This work shows a more serious weakness: when inputs are restricted to human faces, we found several collisions between perceptually different images after only 2 16 hash function evaluations. Unlike targeted attacks, our black-box approach requires no knowledge of the hash function design. We also demonstrate a high false negative rate (images that should share the same hash but do not). We further confirm the generality of our approach by studying PhotoDNA, Microsoft's widely deployed 1152-bit perceptual hash function. In the case of PhotoDNA, we found near-collisions at thresholds significantly lower than previously reported, appearing after between 2 14.6 and 2 17 evaluations depending on the threshold used. This is the first work to demonstrate exact collisions in NeuralHash and to identify near-collisions in PhotoDNA at such low thresholds. These results cast serious doubts on the suitability of these designs for large-scale client scanning, as they produce high false positive and false negative rates, and highlight the need to reassess their security and feasibility, particularly for large-scale applications where privacy risks and false positives have serious consequences.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-3cab1be9",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Privacy Anonymity 2",
@@ -93,6 +95,19 @@
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening",
         "prepublication PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-3cab1be9",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/leblanc-albarel",
+      "kind": "paper-page",
+      "title": "Breaking Widely Deployed Perceptual Hash Functions: Black-Box Collisions in Apple NeuralHash and Microsoft PhotoDNA",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:23:14Z",
+      "content_hash": "sha256:d5be7680f3d37671c6c6b00c94751374a906414dc9dab2117689ee79f306bbd5",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

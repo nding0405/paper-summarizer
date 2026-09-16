@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-quorus-efficient-scalable-threshold-ml-dsa-signatures-fr-ebb9c47c",
   "title": "Quorus: Efficient, Scalable Threshold ML-DSA Signatures from MPC",
+  "abstract": "A threshold signature protocol divides a secret signing key among multiple parties, enabling any subset above a threshold to jointly create a signature. While post-quantum (PQ) threshold signatures are being studied, especially following NIST's call for threshold schemes, most solutions focus on specially designed, threshold-friendly signature schemes. However, real-world applications like distributed certificate authorities and digital currencies require signatures verifiable under existing standardized procedures. With NIST's standardization of PQ signatures and ongoing industry deployment, designing an efficient threshold scheme compatible with NIST-standardized verification remains a critical challenge.\n\nIn this work, we present the first efficient and scalable solution for multi-party generation of the module-lattice digital signature algorithm (ML-DSA), one of NIST's PQ signature standards. Our contributions are two-fold. First, we present a variant of the ML-DSA signing algorithm that is amenable to efficient multi-party computation (MPC) and prove that this variant achieves the same security as the original ML-DSA scheme. Second, we present several efficient & scalable MPC protocols to instantiate the threshold signing functionality. Our protocols can produce threshold signatures with as little as 150 KB (per party) of online communication per rejection-sampling round. In addition, we instantiate our protocols in the honest-majority setting, which allows us to avoid any additional public key assumptions.\n\nOur signatures verify under the same ML-DSA implementation for all security levels, with signature and verification key sizes matching ML-DSA; previous lattice-based threshold schemes could not match both of these sizes. Our solution provides the first method for producing threshold post-quantum signatures compatible with NIST-standardized verification, scalable to any number of parties, without new assumptions.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-ebb9c47c",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Applications of Cryptography 7",
@@ -156,6 +158,19 @@
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening",
         "prepublication PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-ebb9c47c",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/bienstock",
+      "kind": "paper-page",
+      "title": "Quorus: Efficient, Scalable Threshold ML-DSA Signatures from MPC",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:25:08Z",
+      "content_hash": "sha256:011967917771d32109bbbeda16a222079640b7505be47fe8e36526097cd3ae81",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

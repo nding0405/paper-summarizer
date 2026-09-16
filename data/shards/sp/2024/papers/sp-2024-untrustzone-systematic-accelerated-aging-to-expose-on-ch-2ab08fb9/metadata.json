@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2024-untrustzone-systematic-accelerated-aging-to-expose-on-ch-2ab08fb9",
   "title": "UnTrustZone: Systematic Accelerated Aging to Expose On-chip Secrets",
+  "abstract": "As technology scaling brings society closer to the vision of smart dust, system designers must address the threat of physical attacks. To address the threat of physical access to computing devices, defenders move secrets on the chip, keeping them out of reach of non-nation-state-level attackers. Modern systems allow hardware-backed security enclaves called Trusted Execution Environments (TEEs); TEEs add hardware-level protections on top of keeping secrets on chips that extend protection against privileged software and flaws within the untrusted parts of the software. While the best TEEs protect against concurrent and temporally recent attacks (e.g., the cold boot attack), we uncover a new threat to all forms of on-chip crypto: long-term data remanence.We show that the most ubiquitous form of on-chip memory, Static Random-Access Memory (SRAM), changes at the analog-domain-level in a data-dependent way as software uses it. Under normal conditions, these changes occur gradually over a device’s lifetime, but we show how an attacker can systematically accelerate this data imprinting on SRAM’s analog domain to effectively burn-in on-chip secrets. We then reveal the imprinted secrets through measurements of SRAM’s power-on state. We use this capability to demonstrate three attacks: one that reveals an AES key protected by TrustZone, proprietary firmware protected by TrustZone, and secrets stored in cache memory. Overall, we show that it is possible to imprint and exfiltrate secrets from a range of SRAM-based memories across 13 devices, from 8 manufacturers, produced across three decades—with up to 98% accuracy. To address this threat, we provide guidance to chip vendors and programmers on the defensive trade space.",
+  "abstract_source_id": "src-abstract-sp-2024-2ab08fb9",
   "venue": "sp",
   "year": 2024,
   "track_or_session": "Spring cycle",
@@ -117,6 +119,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2024-2ab08fb9",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "UnTrustZone: Systematic Accelerated Aging to Expose On-chip Secrets",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:42Z",
+      "content_hash": "sha256:d62dac834635b4cd1890a53da454ceae7aaa151189662d990ac591dfd5cb6b3e",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

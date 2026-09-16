@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2026-smarttalk-teaching-smart-logs-to-talk-to-llms-de116e79",
   "title": "SMARTTalk: Teaching SMART Logs to Talk to LLMs",
+  "abstract": "SMART attributes are the main telemetry for monitoring Solid State Drives (SSDs) and predicting failures in large fleets, but existing methods rely on heavy feature engineering and large supervised pipelines that must be retrained as hardware or workloads change and that compress rich temporal behavior into opaque numeric scores. Large Language Models (LLMs) offer structured reasoning and explanations, yet perform poorly on raw SMART logs because the histories are long and multivariate, their temporal inductive bias is weak, and they hallucinate on numeric inputs. We present SMARTTalk , a new systems architecture that introduces a representation layer for device telemetry. SMARTTalk converts each n day SMART window into a sequence of symbolic trend tokens that an LLM can reliably reason over. The system separates numerical trend extraction from language based reasoning through three stages. (1) It slices n-day SMART windows into short temporal patches and encodes them with lightweight Convolutional Neural Network (CNN), then it clusters the resulting embeddings to form compact libraries of attribute-level and cross-attribute temporal patterns; (2) It converts each pattern into concise, human-readable text tokens that are stable across drives and over time; and (3) It feeds these pattern summaries to an LLM with chain-of-thought prompting, augmented with an online pattern memory that detects and incorporates previously unseen behaviors without retraining. By reasoning in natural language, SMARTTalk gives transparent explanations and interactive workflows.\n\nEvaluations on production datacenter SSD traces, across both open-source and proprietary LLMs, show that SMARTTalk delivers roughly 50× higher F 0.5 than Raw-LLM, about 4× higher than the Heuristic-LLM, and approximately 25% more accurate health classification than existing SMART-based methods, while achieving time-to-failure estimates with bucketed MAE near 10 days. SMARTTalk’s natural-language outputs are rated highly by LLM-as-judge, with explanation and recommendation scores around 4.5 out of 5 and perturbation robustness above 80%, making the system operator friendly and ready for the deployment.",
+  "abstract_source_id": "src-abstract-osdi-2026-de116e79",
   "venue": "osdi",
   "year": 2026,
   "track_or_session": "Wild Cards",
@@ -146,6 +148,19 @@
       "official": true,
       "supports": [
         "Official proceedings availability and canonical conference versions."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2026-de116e79",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/akewar",
+      "kind": "paper-page",
+      "title": "SMARTTalk: Teaching SMART Logs to Talk to LLMs",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:08:58Z",
+      "content_hash": "sha256:9d595a9c936cc16f6a2318d12a49bd006581b9abd088950affb48ec0a65f5575",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

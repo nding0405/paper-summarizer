@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2025-resolving-packets-from-counters-enabling-multi-scale-net-eeae8e75",
   "title": "Resolving Packets from Counters: Enabling Multi-scale Network Traffic Super Resolution via Composable Large Traffic Model",
+  "abstract": "Realistic fine-grained traffic traces are valuable to numerous applications in both academia and industry. However, obtaining them directly from devices is significantly challenging, while coarse-grained counters are readily available on almost all network devices. None of existing work can restore fine-grained traffic traces from counters, which we call network traffic super-resolution (TSR). To this end, we propose ZOOMSYNTH, the first TSR system that can achieve packet-level trace synthesis with counter traces as input. Following the basic structure of the TSR task, we design the Granular Traffic Transformer (GTT) model and the Composable Large Traffic Model (CLTM). CLTM is a tree of GTT models, and the GTT models in each layer perform upscaling on a particular granularity, which allows each GTT model to capture the traffic characteristics at this resolution. Using CLTM, we synthesize fine-grained traces from counters. We also leverage a rule-following model to comprehend counter rules (e.g. ACLs) when available, guiding the generations of fine-grained traces. We implement ZOOMSYNTH and perform extensive evaluations. Results show that, with only second-level counter traces, ZOOMSYNTH achieves synthesis quality comparable to existing solutions that takes packet-level traces as input. CLTM can also be fine-tuned to support downstream tasks. For example, ZOOMSYNTH with fine-tuned CLTM outperforms the existing solution by 27.5% and 9.8% in anomaly detection and service recognition tasks, respectively. To promote future research, we release the pre-trained CLTM-1.8B model weights along with its source code.",
+  "abstract_source_id": "src-abstract-nsdi-2025-eeae8e75",
   "venue": "nsdi",
   "year": 2025,
   "track_or_session": "ML for Networks",
@@ -182,6 +184,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2025-eeae8e75",
+      "url": "https://www.usenix.org/conference/nsdi25/presentation/wang-xizheng-resolving",
+      "kind": "paper-page",
+      "title": "Resolving Packets from Counters: Enabling Multi-scale Network Traffic Super Resolution via Composable Large Traffic Model",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:04:32Z",
+      "content_hash": "sha256:a575fe658181816684d80313cf20fd91dbc6b13ec12ba2036965155849a5ca96",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

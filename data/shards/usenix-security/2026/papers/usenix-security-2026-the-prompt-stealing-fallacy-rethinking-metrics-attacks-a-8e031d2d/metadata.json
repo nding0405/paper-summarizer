@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-the-prompt-stealing-fallacy-rethinking-metrics-attacks-a-8e031d2d",
   "title": "The Prompt Stealing Fallacy: Rethinking Metrics, Attacks, and Defenses",
+  "abstract": "Text-to-image (T2I) models are increasingly embedded in creative workflows, where well-crafted prompts function as valuable forms of intellectual property (IP). However, these models are susceptible to prompt stealing attacks (PSAs), where adversaries aim to reconstruct the original prompts used to generate images. In this paper, 1) we identify key shortcomings in current evaluation practices and propose two improved metrics: Style Similarity (SS) and a novel Prompt Significance (PS) score, which together provide a more faithful assessment of PSA effectiveness. Rather than existing metrics that rely solely on semantic similarity between original and stolen information across text or image modalities, the new metrics PS and SS assess attack effectiveness with a more practical focus by explicitly accounting for the importance of modifiers and the style replication of images generated from stolen prompts. 2) Through extensive evaluation using these metrics, we find that existing PSA methods, ranging from soft prompt stealing in white-box settings to hard prompt stealing in black-box settings, are not as effective as reported, especially in recovering high-contribution prompt components. We attribute this to fundamental constrains: white-box methods suffer from mismatched optimization objectives that poorly align with token-level visual semantics, while black-box approaches experience severe information loss due to their decoupling from the target T2I model's generation process. 3) We further introduce PromptThief, a black-box PSA framework that addresses the information loss in prior methods by leveraging reinforcement learning with STS and SS to guide high token-level contribution recovery. PromptThief significantly outperforms existing baselines across multiple metrics and real-world scenarios. 4) We propose and evaluate two defense mechanisms: an adversarial-example-based active approach and a passive scheme through feature-level prompt watermarking. Our evaluation reveals that the active defense offers only limited robustness against adaptive PSAs, highlighting the need for further exploration in this direction. In contrast, the passive watermarking scheme demonstrates strong and consistent detection performance, even under various image transformations, offering a practical and reliable path forward for prompt IP protection.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-8e031d2d",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Security of ML 6",
@@ -240,6 +242,19 @@
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening",
         "prepublication PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-8e031d2d",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/deng",
+      "kind": "paper-page",
+      "title": "The Prompt Stealing Fallacy: Rethinking Metrics, Attacks, and Defenses",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:25:52Z",
+      "content_hash": "sha256:2bb54657c4216d2018bb616056f30c8058325b420631297502a0378719f16bc2",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

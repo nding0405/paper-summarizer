@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "atc-2025-ddlumos-understanding-and-detecting-atomic-ddl-bugs-in-d-09437477",
   "title": "DDLumos: Understanding and Detecting Atomic DDL Bugs in DBMSs",
+  "abstract": "Atomic Data Definition Language (Atomic DDL) is fundamental in DBMSs, ensuring that schema modifications are executed completely or not at all, preserving database integrity. Despite their critical importance, bugs persist in the Atomic DDL, leading to severe consequences such as data corruption and system inconsistencies. However, there is a limited understanding of the characteristics and root causes of these bugs. Furthermore, existing testing methods often fail to effectively identify Atomic DDL bugs, particularly under conditions of high concurrency and unexpected system failures.\n\nThis paper presents a comprehensive study of 207 Atomic DDL bugs across three widely used DBMSs. It reveals that Atomic DDL bugs primarily manifest as incorrect results, post-recovery data inconsistency, and system unavailability, which are mainly triggered by metadata conflicts between DDL statements. Based on these findings, we developed DDLUMOS, a testing tool that detects Atomic DDL bugs with metadata conflict-guided DDL synthesis and graph-based consistency analysis. We applied DDLUMOS to six popular DBMSs (e.g., PostgreSQL and MySQL) and found 73 previously unknown Atomic DDL bugs. DBMS vendors responded promptly, fixing 14 issues, highlighting the effectiveness of DDLUMOS in improving the reliability of DBMSs.",
+  "abstract_source_id": "src-abstract-atc-2025-09437477",
   "venue": "atc",
   "year": 2025,
   "track_or_session": "Securing the Stack: Attestation, Memory Protection, and Privacy",
@@ -180,6 +182,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-atc-2025-09437477",
+      "url": "https://www.usenix.org/conference/atc25/presentation/wu-zhiyong",
+      "kind": "paper-page",
+      "title": "DDLumos: Understanding and Detecting Atomic DDL Bugs in DBMSs",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T21:59:34Z",
+      "content_hash": "sha256:3c2887c42b1823f9b797d0cdbccbf900d5efaf24fefc67541afca006ccf6ba11",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

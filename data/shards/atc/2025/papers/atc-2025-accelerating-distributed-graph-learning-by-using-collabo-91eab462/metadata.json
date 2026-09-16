@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "atc-2025-accelerating-distributed-graph-learning-by-using-collabo-91eab462",
   "title": "Accelerating Distributed Graph Learning by Using Collaborative In-Network Multicast and Aggregation",
+  "abstract": "Distributed GNN training systems typically partition large graphs into multiple subgraphs and train them across multiple workers to eliminate single-GPU memory limitations. However, the graph propagation in each iteration involves numerous one-to-many multicast and many-to-one aggregation operations across workers, resulting in massive redundant traffic and severe bandwidth bottlenecks. Offloading multicast and aggregation operations into programmable switches has the potential to reduce the traffic volume significantly. Unfortunately, the complex dependencies among graph data and the limited switch-aggregator resources lead to performance degradation. The graph-agnostic sending order results in excessive traffic in multicast operations, leading to a severe backlog. Additionally, a small number of vertices may consume the major part of aggregator resources, while most traffic misses the opportunity for in-network aggregation.\n\nTo tackle these challenges, we propose SwitchGNN, which accelerates graph learning through coordinated in-network multicast and aggregation. First, to alleviate the link under-utilization and queue backlog, we design a graph-aware multicast reordering algorithm, which prioritizes the upload of multicast vertices with the higher number of neighbors to reduce the communication time. Second, to prevent aggregator overflow, SwitchGNN employs a multi-level graph partitioning mechanism that further partitions boundary vertices into independent blocks to perform in-network aggregation in batches while ensuring the correctness of the graph propagation. We implement SwitchGNN using P4 programmable switch and DPDK host stack. The experimental results of the real testbed and NS3 simulations show that SwitchGNN effectively reduces the communication overhead and speeds up the training time by up to 74%.",
+  "abstract_source_id": "src-abstract-atc-2025-91eab462",
   "venue": "atc",
   "year": 2025,
   "track_or_session": "Networking: From Cloud to In-Network Intelligence",
@@ -390,6 +392,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-atc-2025-91eab462",
+      "url": "https://www.usenix.org/conference/atc25/presentation/li-zhaoyi",
+      "kind": "paper-page",
+      "title": "Accelerating Distributed Graph Learning by Using Collaborative In-Network Multicast and Aggregation",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T21:59:23Z",
+      "content_hash": "sha256:ed19d39c64815ec8a26ba5a20e4aa3c3c1ef558ebae33550a4d26c1ff72d63fd",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

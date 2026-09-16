@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2025-constant-latency-and-finality-for-dynamically-available-db29b6e1",
   "title": "Constant latency and finality for dynamically available DAG",
+  "abstract": "Directed Acyclic Graph (DAG) based protocols have shown great promise to improve the performance of blockchains. The CAP theorem shows that it is impossible to have a single system that achieves both liveness (known as dynamic availability) and safety under network partition. This paper explores two types of DAG-based protocols prioritizing liveness or safety, named structured dissemination and Graded Common Prefix (GCP), respectively. For the former, we introduce the first DAG-based protocol with constant expected latency, providing high throughput dynamic availability under the sleepy model. Its expected latency is 3Δ and its throughput linearly scales with participation. We validate these expected performance improvements over existing constant latency sleepy model BFT by running prototypes of each protocol across multiple machines. The latter, GCP, is a primitive that provides safety under network partition, while being weaker than standard consensus. As a result, we are able to obtain a construction that runs in only 2 communication steps, as opposed to the 4 steps of existing low latency partially synchronous BFT. In addition, GCP can easily avoid relying on single leaders' proposals, becoming more resilient to crashes. We also validate these theoretical benefits of GCP experimentally. We leverage our findings to extend the Ebb-and-Flow framework, where two BFT sub-protocols allow different types of clients in the same system to prioritize either liveness or safety. Our extension integrates our two types of DAG-based protocols. This provides a hybrid DAG-based protocol with high throughput, dynamical availability, and finality under network partitions, without running a standard consensus protocol twice as required in existing work.",
+  "abstract_source_id": "src-abstract-sp-2025-db29b6e1",
   "venue": "sp",
   "year": 2025,
   "track_or_session": "Cycle 2",
@@ -154,6 +156,19 @@
       "official": true,
       "supports": [
         "DOI, authors, affiliations, abstract, publication date, pages, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2025-db29b6e1",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Constant Latency and Finality for Dynamically Available DAG",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:42Z",
+      "content_hash": "sha256:d62dac834635b4cd1890a53da454ceae7aaa151189662d990ac591dfd5cb6b3e",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

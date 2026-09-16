@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2025-the-inadequacy-of-similarity-based-privacy-metrics-priva-70a82d0b",
   "title": "The Inadequacy of Similarity-based Privacy Metrics: Privacy Attacks against ``Truly Anonymous'' Synthetic Datasets",
+  "abstract": "Generative models producing synthetic data are meant to provide a privacy-friendly approach to releasing data. However, their privacy guarantees are only considered robust when models satisfy Differential Privacy (DP). Alas, this is not a ubiquitous standard, as many leading companies (and, in fact, research papers) use ad-hoc privacy metrics based on testing the statistical similarity between synthetic and real data. In this paper, we examine the privacy metrics used in real-world synthetic data deployments and demonstrate their unreliability in several ways. First, we provide counter-examples where severe privacy violations occur even if the privacy tests pass and instantiate accurate membership and attribute inference attacks with minimal cost. We then introduce Recon-Syn, a reconstruction attack that generates multiple synthetic datasets that are considered private by the metrics but actually leak information unique to individual records. We show that ReconSyn recovers 78-100% of the outliers in the train data with only black-box access to a single fitted generative model and the privacy metrics. In the process, we show that applying DP only to the model does not mitigate this attack, as using privacy metrics breaks the end-to-end DP pipeline.",
+  "abstract_source_id": "src-abstract-sp-2025-70a82d0b",
   "venue": "sp",
   "year": 2025,
   "track_or_session": "Cycle 2",
@@ -91,6 +93,19 @@
       "official": true,
       "supports": [
         "DOI, authors, affiliations, abstract, publication date, pages, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2025-70a82d0b",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "The Inadequacy of Similarity-Based Privacy Metrics: Privacy Attacks Against “Truly Anonymous” Synthetic Datasets",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:52Z",
+      "content_hash": "sha256:b15ce02bcc49da611fdd791ecc56741e7d91d84154b58c1a7f72a5c6902e6e46",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

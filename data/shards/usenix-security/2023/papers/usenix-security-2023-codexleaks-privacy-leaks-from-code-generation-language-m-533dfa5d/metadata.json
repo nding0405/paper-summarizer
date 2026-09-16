@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2023-codexleaks-privacy-leaks-from-code-generation-language-m-533dfa5d",
   "title": "CodexLeaks: Privacy Leaks from Code Generation Language Models in GitHub Copilot",
+  "abstract": "Code generation language models are trained on billions of lines of source code to provide code generation and auto-completion features, like those offered by code assistant GitHub Copilot with more than a million users. These datasets may contain sensitive personal information—personally identifiable, private, or secret—that these models may regurgitate.\n\nThis paper introduces and evaluates a semi-automated pipeline for extracting sensitive personal information from the Codex model used in GitHub Copilot. We employ carefully-designed templates to construct prompts that are more likely to result in privacy leaks. To overcome the non-public training data, we propose a semi-automated filtering method using a blind membership inference attack. We validate the effectiveness of our membership inference approach on different code generation models. We utilize hit rate through the GitHub Search API as a distinguishing heuristic followed by human-in-the-loop evaluation, uncovering that approximately 8% (43) of the prompts yield privacy leaks. Notably, we observe that the model tends to produce indirect leaks, compromising privacy as contextual integrity by generating information from individuals closely related to the queried subject in the training corpus.",
+  "abstract_source_id": "src-abstract-usenix-security-2023-533dfa5d",
   "venue": "usenix-security",
   "year": 2023,
   "track_or_session": "Private Data Leaks",
@@ -133,6 +135,19 @@
       "official": true,
       "supports": [
         "authors, affiliations when published, abstract, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2023-533dfa5d",
+      "url": "https://www.usenix.org/conference/usenixsecurity23/presentation/niu",
+      "kind": "paper-page",
+      "title": "CodexLeaks: Privacy Leaks from Code Generation Language Models in GitHub Copilot",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:10:15Z",
+      "content_hash": "sha256:67356972978921fdbf36aaa07395d8ec0b753098093ded0327d81942db2301c6",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

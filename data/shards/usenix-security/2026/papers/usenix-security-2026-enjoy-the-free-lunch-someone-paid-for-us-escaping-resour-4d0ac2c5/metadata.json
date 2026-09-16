@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-enjoy-the-free-lunch-someone-paid-for-us-escaping-resour-4d0ac2c5",
   "title": "Enjoy the Free Lunch, Someone Paid for Us: Escaping Resource Limits of MicroVM-based Containers",
+  "abstract": "MicroVM-based containers are increasingly deployed in public clouds (e.g., AWS, Azure, and Alibaba Cloud) to combine container efficiency with strong isolation. However, we demonstrate that microVM-based architectures introduce a new class of resource accounting vulnerabilities which cause discrepancies between the physical resources consumed by a guest and the resource usage accounted by the host. To systematically uncover such issues, we propose a resource accounting analysis framework that examines accounting inconsistencies across both memory and storage subsystems. Using this framework, we identify three easily exploitable attack vectors: (i) writable memory accounting evasion via shared file-backed mappings, (ii) read-only memory accounting evasion via private file-backed mappings, and (iii) a storage accounting evasion that enables unbounded disk consumption through unmonitored file paths.\n\nWe further combine these attack vectors into FREE (File-based Resource Expansion & Exploitation), a consolidated attack that freely inflates both memory and storage usage while evading associated resource accounting and billings. We also present a practical attack implementation capable of seamless integration into real-world applications, leveraging a custom dynamic shared library that transparently redirects standard allocations (e.g., malloc) to unaccounted file-backed mappings. We validate the feasibility of the FREE attack on MicroVM-based containers deployed in AWS, Azure and Alibaba Cloud, and use a billing evaluation model to quantify the economic profit of adversarial tenants. Our evaluation demonstrates that FREE can reduce the attacker's billed cost to 42.12% (Kata) and 41.93% (Firecracker) of the original payment. FREE can also be used to degrade the performance of co-located tenants, including up to 57.1% reduction in memory bandwidth and 67.06% loss in I/O throughput.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-4d0ac2c5",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "System Security 2",
@@ -239,6 +241,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-4d0ac2c5",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/wang-shiwen",
+      "kind": "paper-page",
+      "title": "Enjoy the Free Lunch, Someone Paid for Us: Escaping Resource Limits of MicroVM-based Containers",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:23:53Z",
+      "content_hash": "sha256:4ee43ef403bca071f137a4a5e5b0c9c3dd5e427d66136b20896abd85a9809ac7",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

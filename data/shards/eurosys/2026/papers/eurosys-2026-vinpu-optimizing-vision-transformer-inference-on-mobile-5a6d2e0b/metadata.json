@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "eurosys-2026-vinpu-optimizing-vision-transformer-inference-on-mobile-5a6d2e0b",
   "title": "viNPU: Optimizing Vision Transformer Inference on Mobile NPUs",
+  "abstract": "Vision Transformers (ViTs) have emerged as the dominant architecture for visual understanding, powering Vision Foundation Models (VFMs) that excel in zero-shot prediction across diverse environments in spatial computing applications. These applications demand efficient, on-device execution to meet stringent latency requirements, yet deploying large VFMs on mobile Neural Processing Units (NPUs) presents two critical bottlenecks: performance imbalance between the NPU's heterogeneous compute units, and severe DRAM access overhead in scaled Transformers due to limited on-chip memory. To address these challenges, we propose viNPU, an inference optimization framework that enables efficient execution of VFMs on mobile NPUs. viNPU incorporates (1) sensitivity-guided mixed-precision quantization that effectively balances accuracy and latency; (2) dataflow optimization to maximize on-chip data locality and hardware utilization; and (3) a profiling-based offline stage to ensure real-time performance on mobile NPUs with minimal accuracy drop. Our evaluation on representative VFMs (e.g., Depth Anything V2, Segment Anything) across commercial mobile devices equipped with Qualcomm Hexagon NPUs demonstrates that viNPU achieves an average 11.5× speedup and up to 44.9× energy savings over baselines, while incurring negligible accuracy degradation compared to floatingpoint executions.",
+  "abstract_source_id": "src-abstract-eurosys-2026-5a6d2e0b",
   "venue": "eurosys",
   "year": 2026,
   "track_or_session": null,
@@ -201,6 +203,19 @@
       "official": false,
       "supports": [
         "Publisher-deposited proceedings identity and print publication date."
+      ]
+    },
+    {
+      "id": "src-abstract-eurosys-2026-5a6d2e0b",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1145%2F3767295.3803619?fields=title,abstract",
+      "kind": "semantic-scholar",
+      "title": "viNPU: Optimizing Vision Transformer Inference on Mobile NPUs",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:22:43Z",
+      "content_hash": "sha256:2682ca5c175013dbb06cf7a87b42cee64fe34c0a41683e5c730b4606b63ab7c8",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

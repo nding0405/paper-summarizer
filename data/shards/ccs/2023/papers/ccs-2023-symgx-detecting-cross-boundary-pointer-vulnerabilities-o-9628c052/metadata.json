@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2023-symgx-detecting-cross-boundary-pointer-vulnerabilities-o-9628c052",
   "title": "SymGX: Detecting Cross-boundary Pointer Vulnerabilities of SGX Applications via Static Symbolic Execution",
+  "abstract": "Intel Security Guard Extensions (SGX) have shown effectiveness in critical data protection. Recent symbolic execution-based techniques reveal that SGX applications are susceptible to memory corruption vulnerabilities. While existing approaches focus on conventional memory corruption in ECalls of SGX applications, they overlook an important type of SGX dedicated vulnerability: cross-boundary pointer vulnerabilities. This vulnerability is critical for SGX applications since they heavily utilize pointers to exchange data between secure enclaves and untrusted environments. Unfortunately, none of the existing symbolic execution approaches can effectively detect cross-boundary pointer vulnerabilities due to the lack of an SGX-specific analysis model that properly handles three unique features of SGX applications: Multi-entry Arbitrary-order Execution, Stateful Execution, and Context-aware Pointers. To address such problems, we propose a new analysis model named Global State Transition Graph with Context Aware Pointers (GSTG-CAP) that simulates properties-preserving execution behaviors for SGX applications and drives symbolic execution for vulnerability detection. Based on GSTG-CAP, we build a novel symbolic execution-based vulnerability detector named SYMGX to detect cross-boundary pointer vulnerabilities. According to our evaluation, SYMGX can find 30 0-DAY vulnerabilities in 14 open-source projects, three of which have been confirmed by developers. SYMGX also outperforms two state-of-the-art tools, COIN and TeeRex, in terms of effectiveness, efficiency, and accuracy.",
+  "abstract_source_id": "src-abstract-ccs-2023-9628c052",
   "venue": "ccs",
   "year": 2023,
   "track_or_session": "Program Analysis & Instrumentation (Software Security)",
@@ -277,6 +279,19 @@
       "official": false,
       "supports": [
         "published title, author order, and page span"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2023-9628c052",
+      "url": "https://api.openalex.org/works/doi:10.1145/3576915.3623213?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "SymGX: Detecting Cross-boundary Pointer Vulnerabilities of SGX Applications via Static Symbolic Execution",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:08:27Z",
+      "content_hash": "sha256:dbf6940d8d7a7fe2b36d6410b3135ea06f64a23f26e412d3f57ac35d2260ffb6",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

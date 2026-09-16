@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sigcomm-2026-capybara-dynamic-load-balancing-with-microsecond-scale-t-29d0dc33",
   "title": "Capybara: Dynamic Load Balancing with Microsecond-Scale TCP Migration",
+  "abstract": "Layer-4 load balancers are a popular solution to high tail latencies but perform poorly under unpredictable skewed workloads because they statically assign connections to servers. We present Capybara, a new load balancer architecture that enables dynamic rebalancing of established connections. Capybara divides load balancing responsibility into a fast L4 load balancer, a host-switch co-designed connection migration protocol, and a transport interface for application-level connection state migration. Capybara leverages two trends - programmable switches and kernel-bypass - to efficiently implement connection migration without disruption, while maintaining transparency to clients. Under realistic workloads, Capybara achieves up to 149× lower tail latency and more than 2× higher throughput for scale-out services compared to state-of-the-art load balancing approaches.",
+  "abstract_source_id": "src-abstract-sigcomm-2026-29d0dc33",
   "venue": "sigcomm",
   "year": 2026,
   "track_or_session": "Research Session 15: Programmable Switches & Data-Plane Hardware — Research Paper",
@@ -254,6 +256,19 @@
       "official": true,
       "supports": [
         "official main-paper scope and track definitions"
+      ]
+    },
+    {
+      "id": "src-abstract-sigcomm-2026-29d0dc33",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/search/match?query=Capybara%3A%20Dynamic%20Load%20Balancing%20with%20Microsecond-Scale%20TCP%20Migration&fields=title,abstract",
+      "kind": "semantic-scholar",
+      "title": "Capybara: Dynamic Load Balancing with Microsecond-Scale TCP Migration",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:58:37Z",
+      "content_hash": "sha256:c28afa46ed4bd0dd131286c83c1c52b531c9c4dab048c4a090cab10161aea819",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

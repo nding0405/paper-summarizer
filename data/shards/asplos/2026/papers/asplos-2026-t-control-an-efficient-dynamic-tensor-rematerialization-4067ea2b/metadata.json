@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2026-t-control-an-efficient-dynamic-tensor-rematerialization-4067ea2b",
   "title": "T-Control: An Efficient Dynamic Tensor Rematerialization System for DNN Training",
+  "abstract": "With the continuous growth of model and batch sizes, DNN model training increasingly suffers from excessive memory consumption. Tensor rematerialization has emerged as an effective technique to enable training under limited memory constraints. However, dynamic rematerialization methods often underperform static approaches, primarily due to their greedy tensor eviction schedules and runtime overhead. In this work, we develop T-Control, a dynamic tensor rematerialization system for DNN model training. T-Control integrates the topology of the traced tensor dependency graph with real-time memory usage to make informed, adaptive tensor retention decisions, preserving critical tensors and reducing eviction-induced recomputation. Furthermore, by extending PyTorch's native memory manager with our fine-grained memory management strategy, T-control effectively improves memory utilization, thereby reducing unnecessary tensor eviction. Experimental results demonstrate that T-Control boosts throughput by up to 1.58× and 1.91× over state-of-the-art static and dynamic tensor rematerialization systems.",
+  "abstract_source_id": "src-abstract-asplos-2026-4067ea2b",
   "venue": "asplos",
   "year": 2026,
   "track_or_session": "Session 4A: ML Training & Monitoring",
@@ -230,6 +232,19 @@
       "official": false,
       "supports": [
         "Indexed abstract used for strict relevance classification and indexed arXiv identifier where available."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2026-4067ea2b",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "T-Control: An Efficient Dynamic Tensor Rematerialization System for DNN Training",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:12Z",
+      "content_hash": "sha256:aa9c23a45f6ec9973f40e6c9520c69d42bb49fc1f526891570edfdb1976cff82",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

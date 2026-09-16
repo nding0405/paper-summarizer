@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "eurosys-2025-hourglass-enabling-efficient-split-federated-learning-wi-b9d9b838",
   "title": "Hourglass: Enabling Efficient Split Federated Learning with Data Parallelism",
+  "abstract": "Federated learning (FL) has emerged as a promising solution for training machine learning (ML) models with privacy preservation. One of the key challenges is the computational burden on clients caused by training large-sized models. To tackle this challenge, researchers are trying to incorporate split learning into federated learning so that an ML model can be partitioned into two parts, one for training on clients and the other on a cloud server or an edge server. In current split FL systems, each client's server-side model partition is trained with an individual GPU on the fed server before model aggregation. This demands massive GPU resources and does not scale in real-world scenarios. This paper presents Hourglass, a new split FL system that trains clients' server-side model partitions on multiple GPUs with data parallelism. Unlike existing systems that maintain one model partition for each client and pass clients' intermediate features through corresponding model partitions, Hourglass maintains model partitions shared by clients and passes their intermediate features through GPUs in groups based on their differences. In this way, Hourglass prevents the overhead incurred by swapping model partitions in and out of GPUs and improves knowledge sharing between clients. Extensive experiments are conducted on four widely-used public datasets to evaluate the performance of Hourglass. The results demonstrate that, compared to state-of-the-art systems, Hourglass accelerates model convergence by up to 35.2x, and improves model accuracy by up to 9.28%.",
+  "abstract_source_id": "src-abstract-eurosys-2025-b9d9b838",
   "venue": "eurosys",
   "year": 2025,
   "track_or_session": "Session-9.2: LLM Training - Location: Rotterdam hall 1B - Chair: Jacob Gorm Hansen",
@@ -209,6 +211,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-eurosys-2025-b9d9b838",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1145%2F3689031.3717467?fields=title,abstract",
+      "kind": "semantic-scholar",
+      "title": "Hourglass: Enabling Efficient Split Federated Learning with Data Parallelism",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:19:26Z",
+      "content_hash": "sha256:5d45ca650b9f838c5808b1e0fd85cffa851b901d46ca88b8373a660cb5696233",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

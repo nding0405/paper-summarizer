@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sigcomm-2023-neobft-accelerating-byzantine-fault-tolerance-using-auth-19cb7a68",
   "title": "NeoBFT: Accelerating Byzantine Fault Tolerance Using Authenticated In-Network Ordering",
+  "abstract": "Mission critical systems deployed in data centers today are facing more sophisticated failures. Byzantine fault-tolerant (BFT) protocols are capable of masking these types of failures, but are rarely deployed due to their performance cost and complexity. In this work, we propose a new approach to designing high performance BFT protocols in data centers. By re-examining the ordering responsibility between the network and the BFT protocol, we advocate a new abstraction offered by the data center network infrastructure. Concretely, we design a new authenticated ordered multicast primitive (aom) that provides transferable authentication and non-equivocation guarantees. Feasibility of the design is demonstrated by two hardware implementations of aom- one using HMAC and the other using public key cryptography for authentication - on new-generation programmable switches. We then co-design a new BFT protocol, NeoBFT, that leverages the guarantees of aom to eliminate cross-replica coordination and authentication in the common case. Evaluation results show that NeoBFT outperforms state-of-the-art protocols on both latency and throughput metrics by a wide margin, demonstrating the benefit of our new network ordering abstraction for BFT systems.",
+  "abstract_source_id": "src-abstract-sigcomm-2023-19cb7a68",
   "venue": "sigcomm",
   "year": 2023,
   "track_or_session": "Well Optimized — Research Paper",
@@ -172,6 +174,19 @@
         "publisher-deposited ORCIDs",
         "proceedings page range and print publication date",
         "empty publisher relation metadata for alternate-version checks"
+      ]
+    },
+    {
+      "id": "src-abstract-sigcomm-2023-19cb7a68",
+      "url": "https://api.openalex.org/works/doi:10.1145/3603269.3604874?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "NeoBFT: Accelerating Byzantine Fault Tolerance Using Authenticated In-Network Ordering",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:22:56Z",
+      "content_hash": "sha256:8b2a81f3897800b3097426149c2ac538c0aaca2f58bff1dd003e371351c561f5",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

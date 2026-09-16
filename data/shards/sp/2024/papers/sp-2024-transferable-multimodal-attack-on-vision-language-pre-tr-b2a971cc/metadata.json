@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2024-transferable-multimodal-attack-on-vision-language-pre-tr-b2a971cc",
   "title": "Transferable Multimodal Attack on Vision-Language Pre-training Models",
+  "abstract": "Vision-Language Pre-training (VLP) models have achieved remarkable success in practice, while easily being misled by adversarial attack. Though harmful, adversarial attacks are valuable in revealing the blind-spots of VLP models and promoting their robustness. However, existing adversarial attacking studies pay insufficient attention to the key roles of different modality-correlated features, leading to unsatisfactory transferable attacking performance. To tackle this issue, we propose the Transferable MultiModal (TMM) attack framework, which tailors both the modality consistency and modality discrepancy features. To promote transferability, we propose the attention-directed feature perturbation to disturb the modality-consistency features in critical attention regions. In light of the commonly employed cross-attention can represent the consistent features among diverse models, it is more possible to mislead the similar model perception for activating stronger transferability. For improving attacking ability, we proposed the orthogonal-guided feature heterogenization to guide the adversarial perturbation to contain more modality-discrepancy features in the encoded embeddings. Since VLP models rely more on aligned features among different modalities during decision-making, increasing the modality-discrepant could confuse the learned representation for better attacking ability. Extensive experiments under diverse settings demonstrate that the proposed TMM outperforms the comparisons by large margins, i.e., 20.47% improvements in transferable attacking ability on average. Moreover, we highlight that our TMM also shows outstanding attacking performance on large models, such as MiniGPT-4, Otter, etc.",
+  "abstract_source_id": "src-abstract-sp-2024-b2a971cc",
   "venue": "sp",
   "year": 2024,
   "track_or_session": "Summer cycle",
@@ -243,6 +245,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2024-b2a971cc",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Transferable Multimodal Attack on Vision-Language Pre-training Models",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:42Z",
+      "content_hash": "sha256:d62dac834635b4cd1890a53da454ceae7aaa151189662d990ac591dfd5cb6b3e",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

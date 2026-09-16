@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2025-i-know-what-you-asked-prompt-leakage-via-kv-cache-sharin-7cce2d9a",
   "title": "I Know What You Asked: Prompt Leakage via KV-Cache Sharing in Multi-Tenant LLM Serving",
+  "abstract": "Large Language Models (LLMs), which laid the groundwork for Artificial General Intelligence (AGI), have recently gained significant traction in academia and industry due to their disruptive applications. In order to enable scalable applications and efficient resource management, various multi-tenant LLM serving frameworks have been proposed, in which the LLM caters to the needs of multiple users simultaneously. One notable mechanism in recent works, such as SGLang and vLLM, is sharing the Key-Value (KV) cache for identical token sequences among multiple users, saving both memory and computation. This paper presents the first investigation on security risks\n\nassociated with multi-tenant LLM serving. We show that the state-of-the-art mechanisms of KV cache sharing may lead to new side channel attack vectors, allowing unauthorized reconstruction\n\nof user prompts and compromising sensitive user information among mutually distrustful users. Specifically, we introduce our attack, PROMPTPEEK, and apply it to three scenarios where the\n\nadversary, with varying degrees of prior knowledge, is capable of reverse-engineering prompts from other users. This study underscores the need for careful resource management in multi-tenant LLM serving and provides critical insights for future security enhancement.",
+  "abstract_source_id": "src-abstract-ndss-2025-7cce2d9a",
   "venue": "ndss",
   "year": 2025,
   "track_or_session": "Fall submission cycle",
@@ -210,6 +212,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2025-7cce2d9a",
+      "url": "https://www.ndss-symposium.org/ndss-paper/i-know-what-you-asked-prompt-leakage-via-kv-cache-sharing-in-multi-tenant-llm-serving/",
+      "kind": "paper-page",
+      "title": "I Know What You Asked: Prompt Leakage via KV-Cache Sharing in Multi-Tenant LLM Serving",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:19:44Z",
+      "content_hash": "sha256:784336a6af4eb91865d76fcb8fc1a554f818a69a9e615b62445715f86d307b67",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

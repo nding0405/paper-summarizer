@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sosp-2023-siloz-leveraging-dram-isolation-domains-to-prevent-inter-c442578f",
   "title": "Siloz: Leveraging DRAM Isolation Domains to Prevent Inter-VM Rowhammer",
+  "abstract": "Today's cloud DRAM lacks strong isolation primitives, highlighted by Rowhammer bit flips. Rowhammer poses an increasing threat to cloud security/reliability, given (1) DRAM activation rates in commodity and malicious workloads already exceed Rowhammer thresholds, and (2) thresholds are decreasing in newer DRAM. Deployed hardware mitigations remain vulnerable, turning cloud providers toward software defenses. However, existing defenses incur high performance or memory overhead or contain significant protection gaps. Accordingly, we introduce Siloz, a hypervisor that uses subarray groups as DRAM isolation domains to enable efficient protection against inter-VM Rowhammer. Siloz exploits the insights that (a) Rowhammer can only flip bits in DRAM rows located in the same subarray---not across subarrays---and (b) VMs can be isolated to groups of subarrays without sacrificing bank-level parallelism, a key component of DRAM performance. Siloz thus prevents inter-VM bit flips by placing each VM's and the host's data into private subarray groups. To additionally ensure that a VM cannot escape its provisioned subarray group(s), Siloz provides integrity protection for extended page tables (EPTs). We show that Siloz's implementation has negligible effect on average performance across various cloud workloads, SPEC CPU 2017, and PARSEC 3.0 (within ±0.5% of baseline Linux/KVM).",
+  "abstract_source_id": "src-abstract-sosp-2023-c442578f",
   "venue": "sosp",
   "year": 2023,
   "track_or_session": "Session 7: Security and Privacy",
@@ -188,6 +190,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-sosp-2023-c442578f",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Siloz: Leveraging DRAM Isolation Domains to Prevent Inter-VM Rowhammer",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:12Z",
+      "content_hash": "sha256:aa9c23a45f6ec9973f40e6c9520c69d42bb49fc1f526891570edfdb1976cff82",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

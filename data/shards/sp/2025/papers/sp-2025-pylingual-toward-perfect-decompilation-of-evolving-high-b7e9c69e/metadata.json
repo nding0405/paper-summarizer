@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2025-pylingual-toward-perfect-decompilation-of-evolving-high-b7e9c69e",
   "title": "PyLingual: Toward Perfect Decompilation of Evolving High-Level Languages",
+  "abstract": "Python is one of the most popular programming languages among both industry developers and malware authors. Despite demand for Python decompilers, community efforts to maintain automatic Python decompilation tools have been hindered by Python's aggressive language improvements and unstable bytecode specification. Every year, language features are added, code generation undergoes significant changes, and opcodes are added, deleted, and modified. Our research aims to integrate Natural Language Processing (NLP) techniques with classical Programming Language (PL) theory to create a Python decompiler that accomodates evolving language features and changes to the bytecode specification with minimal human maintenance effort. PyLINGUAL plugs in data-driven NLP components to a version-agnostic core to automatically absorb superficial bytecode and compiler changes, while leveraging programmatic components for abstract control flow reconstruction. To establish trust in the decompilation results, we introduce a stringent correctness measure based on “perfect decompilation”, a statically verifiable refinement of semantic equivalence. We demonstrate the efficacy of our approach with extensive real-world datasets of benign and malicious Python source code and their corresponding compiled PYC binaries. Our research makes three major contributions: (1) we present PyLINGUAL, a scalable, data-driven decompilation framework with state-of-the-art support for Python versions 3.6 through 3.12, improving the perfect decompilation rate by an average of 45% over the best results of existing decompiler across four datasets; (2) we provide a Python decompiler evaluation framework that verifies decompilation results with perfect decompilation; and (3) we launch PyLINGUAL as a public online service.",
+  "abstract_source_id": "src-abstract-sp-2025-b7e9c69e",
   "venue": "sp",
   "year": 2025,
   "track_or_session": "Cycle 1",
@@ -196,6 +198,19 @@
       "official": true,
       "supports": [
         "DOI, authors, affiliations, abstract, publication date, pages, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2025-b7e9c69e",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "PyLingual: Toward Perfect Decompilation of Evolving High-Level Languages",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:52Z",
+      "content_hash": "sha256:b15ce02bcc49da611fdd791ecc56741e7d91d84154b58c1a7f72a5c6902e6e46",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

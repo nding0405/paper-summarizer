@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2024-program-environment-fuzzing-d32aacb1",
   "title": "Program Environment Fuzzing",
+  "abstract": "Computer programs are not executed in isolation, but rather interact with the execution environment which drives the program behaviors. Software validation methods thus need to capture the effect of possibly complex environmental interactions. Program environments may come from files, databases, configurations, network sockets, human-user interactions, and more. Conventional approaches for environment capture in symbolic execution and model checking employ environment modeling, which involves manual effort. In this paper, we take a different approach based on an extension of greybox fuzzing. Given a program, we first record all observed environmental interactions at the kernel/user-mode boundary in the form of system calls. Next, we replay the program under the original recorded interactions, but this time with selective mutations applied, in order to get the effect of different program environments---all without environment modeling. Via repeated (feedback-driven) mutations over a fuzzing campaign, we can search for program environments that induce crashing behaviors. Our EnvFuzz tool found 33 previously unknown bugs in well-known real-world protocol implementations and GUI applications. Many of these are security vulnerabilities and 16 CVEs were assigned.",
+  "abstract_source_id": "src-abstract-ccs-2024-d32aacb1",
   "venue": "ccs",
   "year": 2024,
   "track_or_session": "Cycle 2",
@@ -138,6 +140,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2024-d32aacb1",
+      "url": "https://api.openalex.org/works/doi:10.1145/3658644.3690229?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Program Environment Fuzzing",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:11:13Z",
+      "content_hash": "sha256:08add4f9a38d4dc200ca918a33fca6659201d0327c6046f29b71ead624a749d8",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

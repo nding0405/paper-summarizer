@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-dfs-delegation-friendly-zksnark-and-private-delegation-o-070cc4dd",
   "title": "DFS: Delegation-friendly zkSNARK and Private Delegation of Provers",
+  "abstract": "Zero-Knowledge Succinct Non-interactive Arguments of Knowledge (zkSNARKs) lead to proofs that can be succinctly verified but require huge computational resources to generate. Prior systems outsource proof generation either through public delegation, which reveals the witness to the third party, or, more preferably, private delegation that keeps the witness hidden using multiparty computation (MPC). However, current private delegation schemes struggle with scalability and efficiency due to MPC inefficiencies, poor resource utilization, and suboptimal design of zkSNARK protocols.\n\nIn this paper, we introduce DFS, a new zkSNARK that is delegation-friendly for both public and private scenarios. Prior work focused on optimizing the MPC protocols for existing zkSNARKs, while DFS uses co-design between MPC and zkSNARK so that the protocol is efficient for both distributed computing and MPC. In particular, DFS achieves linear prover time and logarithmic verification cost in the non-delegated setting. For private delegation, DFS introduces a scheme with zero communication overhead in MPC and achieves malicious security for free, which results in logarithmic overall communication; while prior work required linear communication. Our evaluation shows that DFS is as efficient as state-of-the-art zkSNARKs in public delegation; when used for private delegation, it scales better than previous work. In particular, for 2^24 constraints, the total communication of DFS is less than 500KB, while prior work incurs 300GB, which is linear to the circuit size. Additionally, we identify and address a security flaw in prior work, EOS (USENIX'23).",
+  "abstract_source_id": "src-abstract-usenix-security-2025-070cc4dd",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Crypto 1: Zero Knowledge and Multi-Party Computation",
@@ -196,6 +198,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-070cc4dd",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/hu-yuncong",
+      "kind": "paper-page",
+      "title": "DFS: Delegation-friendly zkSNARK and Private Delegation of Provers",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:19:19Z",
+      "content_hash": "sha256:ff85da235fcddee71b4f74eddf49c2d75317ac0577cfcd1a68d5527ce899222e",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

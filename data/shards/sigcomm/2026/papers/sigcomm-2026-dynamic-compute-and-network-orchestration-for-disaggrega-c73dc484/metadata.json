@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sigcomm-2026-dynamic-compute-and-network-orchestration-for-disaggrega-c73dc484",
   "title": "Dynamic Compute and Network Orchestration for Disaggregated RL",
+  "abstract": "Disaggregating the generation and training stages in RL is widely adopted to scale LLM post-training. There are two critical challenges here. First, the generation stage often becomes a bottleneck due to dynamic workload shifts and severe execution imbalances. Second, the decoupled stages result in diverse and dynamic network traffic patterns that strain the conventional static fabric. We build Silverstone to orchestrate dynamically both compute and network in disaggregated RL. Silverstone employs an adaptive compute scheduler that adjusts parallelism configuration to match changing workload characteristics within and across generation steps. Silverstone adopts a reconfigurable optical-electrical fabric called RFabric: It leverages optical circuit switches to reconfigure the aggregation and core layers of the topology on demand, tailoring bandwidth resources to the unique communication patterns across various phases of training, generation, and weight synchronization. Evaluated on a 64-H800 GPU testbed, Silverstone demonstrates up to a 1.42× throughput improvement over static baselines. Using a high-fidelity simulator, we also show that RFabric achieves superior performance-cost efficiency at scale over static Fat-Tree networks.",
+  "abstract_source_id": "src-abstract-sigcomm-2026-c73dc484",
   "venue": "sigcomm",
   "year": 2026,
   "track_or_session": "Research Session 11: Scheduling for ML Training Clusters — Research Paper",
@@ -191,6 +193,19 @@
       "official": true,
       "supports": [
         "official main-paper scope and track definitions"
+      ]
+    },
+    {
+      "id": "src-abstract-sigcomm-2026-c73dc484",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/search/match?query=Dynamic%20Compute%20and%20Network%20Orchestration%20for%20Disaggregated%20RL&fields=title,abstract",
+      "kind": "semantic-scholar",
+      "title": "Dynamic Compute and Network Orchestration for Disaggregated RL",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T23:00:32Z",
+      "content_hash": "sha256:1e23fea4938bc037f95a90cd9c294c3fcdddac783a9cc78b45640d5675c2253a",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

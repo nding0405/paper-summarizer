@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sigcomm-2025-hawkeye-diagnosing-rdma-network-performance-anomalies-wi-47699369",
   "title": "Hawkeye: Diagnosing RDMA Network Performance Anomalies with PFC Provenance",
+  "abstract": "RDMA is becoming increasingly prevalent from private data centers to public multi-tenant clouds, due to its remarkable performance improvement. However, its lossless traffic control, i.e., PFC, introduces new complexities in network performance anomalies (NPAs) due to its cascading congestion spreading property, which usually incurs complaints from customers/applications about certain flows' performance degradation. Existing studies fall short in fine-grained visibility of PFC impact and traceability of PFC causality, and are thus ineffective in diagnosing the root causes for RDMA NPAs. In this paper, we propose Hawkeye, an accurate and efficient RDMA NPA diagnosis system based on PFC provenance. Hawkeye comprises 1) a fine-grained PFC-aware telemetry mechanism to record the PFC impact on flows; 2) an in-network PFC causality analysis and tracing mechanism to quickly and efficiently collect causal telemetry for diagnosis; and 3) a provenance-based diagnosis algorithm to comprehensively present the anomaly breakdown, identifying the anomaly type and root causes accurately. Through extensive evaluations on both NS-3 simulations and a Tofino testbed, Hawkeye can quickly and accurately diagnose multiple RDMA NPAs with over 90% precision and 1–4 orders of magnitude lower overhead than baselines.",
+  "abstract_source_id": "src-abstract-sigcomm-2025-47699369",
   "venue": "sigcomm",
   "year": 2025,
   "track_or_session": "NetMon",
@@ -276,6 +278,19 @@
         "DOI and ACM publisher landing/PDF links",
         "publisher-deposited ORCIDs when available",
         "proceedings page range and online publication date"
+      ]
+    },
+    {
+      "id": "src-abstract-sigcomm-2025-47699369",
+      "url": "https://api.openalex.org/works/doi:10.1145/3718958.3750490?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Hawkeye: Diagnosing RDMA Network Performance Anomalies with PFC Provenance",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:23:25Z",
+      "content_hash": "sha256:8831ca8294e1d909cf904d4bde2305dcdb06f7d4c549e57f60649629e52c603c",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

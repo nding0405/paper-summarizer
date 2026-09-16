@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2026-iland-an-instruction-level-dynamic-binary-instrumentatio-6456b3cf",
   "title": "iLand: An Instruction-Level Dynamic Binary Instrumentation Framework for iOS",
+  "abstract": "Dynamic binary instrumentation (DBI) enables monitoring and modification of executing programs and forms the foundation for a range of program analysis and security testing. On iOS, however, no DBI is available for non-jailbroken devices. Existing approaches on other platforms (e.g., Android) rely on JIT compilation, which is prohibited by the iOS sandbox. The limited CPU and memory resources of mobile devices further constrain the practical deployment of DBI.\n\nWe propose iLand, a novel instruction-level DBI framework for iOS. Instead of JIT compilation, it translates instructions into predefined micro-operations and interprets using precompiled atomic execution units. To reduce CPU and memory overhead, it employs application-only emulation: only the app’s code is interpreted, while system libraries run natively. We implement iLand as a standard sandboxed iOS app capable of emulating other apps. It preserves the emulated apps’ original functionality and user experience such as dynamic UI rendering, real-time interaction, live video streaming.\n\nBased on this DBI framework, we further implemented an instruction-level dynamic tracing tool and used it to study policy‑violation behaviors on 60 top-ranked App Store apps. We found that 13 (21%) apps are still invoking private APIs, of which 2 invoke APIs explicitly prohibited by Apple. Our analysis further revealed the new and stealthy methods employed by apps to evade Apple’s App Review. In particular, in 15 (25%) of the apps, we observed a new way to collect sensitive information by direct invocation of the SVC instruction.",
+  "abstract_source_id": "src-abstract-osdi-2026-6456b3cf",
   "venue": "osdi",
   "year": 2026,
   "track_or_session": "Sandboxing, Access Control, and Drivers",
@@ -125,6 +127,19 @@
       "official": true,
       "supports": [
         "Official proceedings availability and canonical conference versions."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2026-6456b3cf",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/xie-kaitao",
+      "kind": "paper-page",
+      "title": "iLand: An Instruction-Level Dynamic Binary Instrumentation Framework for iOS",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:08:25Z",
+      "content_hash": "sha256:1c8a600190e1c354c5377b4297484322b08e15b67dbc09c71bf6323af81010fc",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

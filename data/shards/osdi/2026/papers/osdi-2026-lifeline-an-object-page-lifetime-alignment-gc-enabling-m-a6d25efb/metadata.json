@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2026-lifeline-an-object-page-lifetime-alignment-gc-enabling-m-a6d25efb",
   "title": "LifeLine: An Object-Page Lifetime Alignment GC Enabling Minimal Memory Copying for Mobile Devices",
+  "abstract": "LifeLine is a garbage collection (GC) framework for Android that tackles the fundamental object–page lifetime mismatch. Existing copying collectors move objects, while the OS manages pages; mixed lifetimes within a page force excessive object copying instead of efficient page remapping. LifeLine explicitly aligns object lifetimes with physical pages via three components. First, lifetime-based graph partitioning monitors reference updates and partitions the object graph into subgraphs with strong lifetime affinity. Second, lifetime-aligned GC packs these subgraphs into pages so that each page contains almost entirely live or dead objects, enabling effective page-level management. Third, near-zero-copy GC exploits this bimodal per-page liveness by remapping mostly-live pages and copying only the few surviving objects from mostly-dead pages in cooperation with the OS. Implemented in the Android Runtime and evaluated on real smartphones and popular mobile applications, LifeLine significantly cuts GC copy volume by 57.4%, reduces GC time by 22.7% on average, and improves user-visible responsiveness with modest CPU and memory overhead.",
+  "abstract_source_id": "src-abstract-osdi-2026-a6d25efb",
   "venue": "osdi",
   "year": 2026,
   "track_or_session": "Mobile and Edge Systems",
@@ -167,6 +169,19 @@
       "official": true,
       "supports": [
         "Official proceedings availability and canonical conference versions."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2026-a6d25efb",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/huang-jiacheng",
+      "kind": "paper-page",
+      "title": "LifeLine: An Object-Page Lifetime Alignment GC Enabling Minimal Memory Copying for Mobile Devices",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:08:32Z",
+      "content_hash": "sha256:e54da12b85a3a190c4f28d9057403e1d56935f449f63f41ce30c4e5afc2e34fa",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

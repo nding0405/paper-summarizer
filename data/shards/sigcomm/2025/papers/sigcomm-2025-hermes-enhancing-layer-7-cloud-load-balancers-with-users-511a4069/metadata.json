@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sigcomm-2025-hermes-enhancing-layer-7-cloud-load-balancers-with-users-511a4069",
   "title": "Hermes: Enhancing Layer-7 Cloud Load Balancers with Userspace-Directed I/O Event Notification",
+  "abstract": "Layer-7 load balancers (L7 LBs) improve service performance, availability, and scalability in public clouds. They rely on I/O event notification mechanisms such as epoll to dispatch connections from the kernel to userspace workers. However, early epoll versions suffered from the thundering herd problem. Epoll exclusive (available since Linux 4.5) mitigates this but introduces LIFO wakeups, causing connection concentration on a few workers. Reuseport (Linux 3.9) hashes connections across workers but suffers from hash collisions and lacks awareness of worker load. Since each worker serves multi-tenant traffic, inter-worker load balancing is critical to avoid worker overload and preserve tenant performance isolation.",
+  "abstract_source_id": "src-abstract-sigcomm-2025-511a4069",
   "venue": "sigcomm",
   "year": 2025,
   "track_or_session": "Datacenter Networking",
@@ -444,6 +446,19 @@
         "DOI and ACM publisher landing/PDF links",
         "publisher-deposited ORCIDs when available",
         "proceedings page range and online publication date"
+      ]
+    },
+    {
+      "id": "src-abstract-sigcomm-2025-511a4069",
+      "url": "https://api.openalex.org/works/doi:10.1145/3718958.3750469?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Hermes: Enhancing Layer-7 Cloud Load Balancers with Userspace-Directed I/O Event Notification",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:23:26Z",
+      "content_hash": "sha256:1d8896003fbe47ca761442eb47d4152b998674d491df662769c929ea900a8515",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

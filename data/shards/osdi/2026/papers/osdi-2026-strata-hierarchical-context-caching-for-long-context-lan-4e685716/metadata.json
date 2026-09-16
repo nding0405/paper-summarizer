@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2026-strata-hierarchical-context-caching-for-long-context-lan-4e685716",
   "title": "Strata: Hierarchical Context Caching for Long Context Language Model Serving",
+  "abstract": "Long-context large language models (LLMs) enable applications that reason over hundreds of thousands to millions of tokens, but serving these workloads efficiently is challenging. Modern systems cache key-value (KV) states and rely on hierarchical context caching across GPU HBM, CPU memory, and SSDs. We show that naïve designs often become I/O-bound: fragmented KV layouts lead to small transfers that underutilize bandwidth, cache loading stalls prefill, and schedulers that ignore cache-loading latency and delay hits (concurrent requests for the same context during a cache miss) suffer severe throughput degradation.\n\nWe present Strata, a hierarchical context caching framework for long-context LLM serving. Strata introduces a GPU-assisted I/O mechanism that decouples GPU and host layouts to enable efficient large transfers, and a cache-aware scheduler that mitigates delay hits, balances batches to hide cache-loading latency, and opportunistically overlaps complementary work. Implemented as part of SGLang and deployed in production, Strata improves throughput by up to 5× over vLLM-LMCache and 3.75× over NVIDIA TensorRT-LLM, without hurting short-context performance.",
+  "abstract_source_id": "src-abstract-osdi-2026-4e685716",
   "venue": "osdi",
   "year": 2026,
   "track_or_session": "KV Cache and Long Context",
@@ -230,6 +232,19 @@
       "official": true,
       "supports": [
         "Official proceedings availability and canonical conference versions."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2026-4e685716",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/xie-zhiqiang",
+      "kind": "paper-page",
+      "title": "Strata: Hierarchical Context Caching for Long Context Language Model Serving",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:09:01Z",
+      "content_hash": "sha256:595afb8d670e38c0c9221aa550eca6280be649b699e88bbd56d15ebf1afdf46b",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

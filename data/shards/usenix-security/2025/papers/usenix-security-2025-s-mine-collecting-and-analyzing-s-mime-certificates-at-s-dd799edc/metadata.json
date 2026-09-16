@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-s-mine-collecting-and-analyzing-s-mime-certificates-at-s-dd799edc",
   "title": "S/MINE: Collecting and Analyzing S/MIME Certificates at Scale",
+  "abstract": "We report on the first broad analysis of real-world S/MIME certificates for digitally signing and encrypting emails. We collected more than 41 million unique X.509 certificates from public address books, i.e., LDAP servers, of which 38 million fulfill the requirements for use with S/MIME in email clients. Despite the surprisingly complex construction of trust chains for S/MIME certificates, we could build chains for a large subset of certificates and show which are trusted in widely used applications. Our results show that many of those S/MIME certificates are issued by non-publicly trusted CAs.\n\nOur analysis of the cryptographic keys, certificate attributes, and new regulations, i.e., the CA/Browser Forum's S/MIME Baseline Requirements, shows that the S/MIME PKI is generally heading in the right direction. Most certificates using compromised or weak key material have expired, weak cryptographic algorithms are being phased out, and CAs are generally issuing more secure certificates. However, the underlying RFCs and email clients should be more stringent about what is considered an S/MIME certificate. Additionally, CAs should improve the distribution of certificate chains to improve user experience and security.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-dd799edc",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Crypto 4: Systems and Protocols",
@@ -175,6 +177,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-dd799edc",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/oendaroe",
+      "kind": "paper-page",
+      "title": "S/MINE: Collecting and Analyzing S/MIME Certificates at Scale",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:21:32Z",
+      "content_hash": "sha256:0041b4ce2b9a4d0f60871cf468bcb2f3ba61f6ec1c4ec086ceaec3607d647b5e",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2023-fast-approximate-vector-queries-on-very-large-unstructur-a036c675",
   "title": "Fast, Approximate Vector Queries on Very Large Unstructured Datasets",
+  "abstract": "The breakthroughs in deep learning enable unstructured data to be represented as high-dimensional feature vectors for serving a wide range of applications. Processing vector queries (i.e., finding the nearest neighbor vectors for an input vector) for large unstructured datasets (with billions of items) is challenging, especially for applications with strict service level objectives (SLOs). Existing solutions trade query accuracy for latency, but without any guarantees, causing SLO violations.\n\nThis paper presents Auncel, a vector query engine for large unstructured datasets that provides bounded query errors and bounded query latencies. The core idea of Auncel is to exploit local geometric properties of individual query vectors to build a precise error-latency profile (ELP) for each query. This profile enables Auncel to sample the right amount of data to process a given query while satisfying its error or latency requirements. Auncel is a distributed solution that can scale out with multiple workers. We evaluate Auncel with a variety of benchmarking datasets. The experimental results show that Auncel outperforms state-of-the-art approximate solutions by up to 10× on query latency with the same error bound (≤ 10%). In particular, Auncel only takes 25 ms to process a vector query on the DEEP1B dataset that contains one billion items with four c5.metal EC2 instances.",
+  "abstract_source_id": "src-abstract-nsdi-2023-a036c675",
   "venue": "nsdi",
   "year": 2023,
   "track_or_session": "Data",
@@ -161,6 +163,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2023-a036c675",
+      "url": "https://www.usenix.org/conference/nsdi23/presentation/zhang-zili",
+      "kind": "paper-page",
+      "title": "Fast, Approximate Vector Queries on Very Large Unstructured Datasets",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:02:05Z",
+      "content_hash": "sha256:f6577b985314cdc22490e04d4efe7a3b57d0cfc6c6077791c277629a83a5395a",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

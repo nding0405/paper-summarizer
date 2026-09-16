@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2023-triangulating-python-performance-issues-with-scalene-d00fc384",
   "title": "Triangulating Python Performance Issues with SCALENE",
+  "abstract": "This paper proposes the Scalene Python profiler. Scalene precisely and simultaneously profiles CPU, memory, and GPU usage, all with low overhead. Scalene's CPU and memory profilers help Python programmers direct their optimization efforts by distinguishing between inefficient Python and efficient native execution time and memory usage. Scalene's memory profiler employs a novel sampling algorithm that lets it operate with low overhead yet high precision. It also incorporates a novel algorithm that automatically pinpoints memory leaks within Python or across the Python/native boundary. Scalene tracks a new metric called copy volume, which highlights costly copying operations that can occur when Python silently converts between native and Python data representations, or between CPU and GPU. Since its introduction, Scalene has been widely adopted, with over 675,000 downloads to date. We present experience reports from developers who used Scalene to achieve significant performance improvements and memory savings.",
+  "abstract_source_id": "src-abstract-osdi-2023-d00fc384",
   "venue": "osdi",
   "year": 2023,
   "track_or_session": "Make Your Bits Go Faster",
@@ -138,6 +140,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2023-d00fc384",
+      "url": "https://www.usenix.org/conference/osdi23/presentation/berger",
+      "kind": "paper-page",
+      "title": "Triangulating Python Performance Issues with SCALENE",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:06:51Z",
+      "content_hash": "sha256:f75984fddfad396dcd8a172461a3cab058307407f346020dc3152359d3b7233d",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

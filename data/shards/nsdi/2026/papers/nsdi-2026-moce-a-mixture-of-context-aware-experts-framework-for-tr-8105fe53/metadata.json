@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2026-moce-a-mixture-of-context-aware-experts-framework-for-tr-8105fe53",
   "title": "MoCE: A Mixture-of-Context Aware Experts Framework for Troubleshooting Internet-scale Services",
+  "abstract": "Modern Internet-scale services need to rapidly identify root causes of customer impacting incidents and remediate them. While there are many algorithms (including LLM-assisted solutions) for root cause analysis, these have significant limitations in terms of coverage , extensibility , and scalability due to the diversity of incidents that can occur at Internet-scale and the complexity of telemetry analysis. We argue the need for a paradigm shift in root cause analysis to depart from algorithm development to a systems approach.\n\nTo this end, we introduce a mixture of context-aware experts framework where each “expert” represents a root-cause hypothesis exploration. To enable rapid development of new experts and allow computational reuse across the ensemble for scalability, we design an abstraction that allows us to express an expert as a dataflow DAG combining relational, stateful and statistical operations. To ensure scalability and extensibility, we develop a lazy DAG runtime system that lazily schedules execution of DAG nodes. We implement this idea in MoCE and demonstrate its value using a mix of real-world incident data from four large application analytics providers and synthetically generated incidents. We show many existing and novel approaches can be expressed succinctly in our framework. We find that MoCE achieves high RCA accuracy (>95%) across diverse incidents compared to 34% for the closest single expert (including prior works) achieving high coverage. We also show the value of the mixture paradigm and the lazy DAG runtime using controlled experiments.",
+  "abstract_source_id": "src-abstract-nsdi-2026-8105fe53",
   "venue": "nsdi",
   "year": 2026,
   "track_or_session": "Self-Managing Networks",
@@ -181,6 +183,19 @@
         "proceedings page range and page count",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2026-8105fe53",
+      "url": "https://www.usenix.org/conference/nsdi26/presentation/harsh",
+      "kind": "paper-page",
+      "title": "MoCE: A Mixture-of-Context Aware Experts Framework for Troubleshooting Internet-scale Services",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:05:41Z",
+      "content_hash": "sha256:04fd028fbf3f194fecd0467c7e3bfed99d3ecdcd88d13ff588b99ebd8f13cec2",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

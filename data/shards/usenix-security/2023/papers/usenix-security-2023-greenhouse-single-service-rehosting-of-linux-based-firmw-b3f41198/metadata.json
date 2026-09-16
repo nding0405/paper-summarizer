@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2023-greenhouse-single-service-rehosting-of-linux-based-firmw-b3f41198",
   "title": "Greenhouse: Single-Service Rehosting of Linux-Based Firmware Binaries in User-Space Emulation",
+  "abstract": "As IoT devices grow more widespread, scaling current analysis techniques to match becomes an increasingly critical task. Part of this challenge involves not only rehosting the firmware of these embedded devices in an emulated environment, but to do so and discover real vulnerabilities. Current state-of-the-art approaches for rehosting must account for the discrepancies between emulated and physical devices, and thus generally focus on improving the emulation fidelity. However, this pursuit of fidelity ignores other potential solutions.\n\nIn this paper, we propose a novel rehosting technique, user-space single-service rehosting, which emulates a single firmware service in user space. We study the rehosting process involved in hundreds of firmware samples to generalize a set of roadblocks that prevent emulation and create interventions to resolve them. Our prototype Greenhouse automatically rehosts 2,841 (39.7%) of our collected 7,140 firmware images from nine different vendors. Our approach sidesteps many of the challenges encountered by previous rehosting techniques and enables us to apply common vulnerability discovery techniques to our rehosted images such as user-space coverage-guided fuzzing. Using these techniques, we find 717 N-day vulnerabilities and 26 zero-day vulnerabilities on a subset of our rehosted firmware services.",
+  "abstract_source_id": "src-abstract-usenix-security-2023-b3f41198",
   "venue": "usenix-security",
   "year": 2023,
   "track_or_session": "Embedded Systems and Firmware",
@@ -343,6 +345,19 @@
       "official": true,
       "supports": [
         "authors, affiliations when published, abstract, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2023-b3f41198",
+      "url": "https://www.usenix.org/conference/usenixsecurity23/presentation/tay",
+      "kind": "paper-page",
+      "title": "Greenhouse: Single-Service Rehosting of Linux-Based Firmware Binaries in User-Space Emulation",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:11:18Z",
+      "content_hash": "sha256:bdf591587040cb0aee4315a462359df3746fd8b88bc687eff53fee43268a28f4",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

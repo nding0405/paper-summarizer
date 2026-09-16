@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2026-wave-leveraging-architecture-observation-for-privacy-pre-b17d31a7",
   "title": "Wave : Leveraging Architecture Observation for Privacy-Preserving Model Oversight",
+  "abstract": "Large Language Models (LLMs) inference increasingly require mechanisms that provide runtime visibility into what is actually executing, without exposing model weights or code. We present WAVE, a hardware-grounded monitoring framework that leverages GPU performance counters (PMCs) to observe LLM inference. WAVE is built on the insight that legitimate executions of a given model must satisfy hardware-constrained invariants, such as memory accesses, instruction mix, and tensor-core utilization, induced by the model's linear-algebraic structure. WAVE collects lightweight PMC traces and applies a two-stage pipeline: (1) inferring architectural properties (e.g., parameter count, layer depth, hidden dimension, batch size) from the observed traces; and (2) using an SMT-based consistency checker to assess whether the execution aligns with the provisioned compute and the claimed model's constraints. We evaluate WAVE on common open-source LLM architectures, such as LLaMA, GPT, and Qwen, across multiple GPU architectures, including NVIDIA Ada Lovelace, Hopper, and Blackwell. Results show that WAVE recovers key model parameters with an average error of 6.8% and identifies disguised executions under realistic perturbations. By grounding oversight in hardware invariants, WAVE provides a practical avenue for continuous, privacy-preserving runtime monitoring of LLM services.",
+  "abstract_source_id": "src-abstract-asplos-2026-b17d31a7",
   "venue": "asplos",
   "year": 2026,
   "track_or_session": "Session 3D: Trusted Execution Environments",
@@ -188,6 +190,19 @@
       "official": false,
       "supports": [
         "Indexed abstract used for strict relevance classification and indexed arXiv identifier where available."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2026-b17d31a7",
+      "url": "https://api.openalex.org/works/doi:10.1145/3779212.3790247?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Wave : Leveraging Architecture Observation for Privacy-Preserving Model Oversight",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:07:03Z",
+      "content_hash": "sha256:739ddbbbcd14c937caa127d507cb233cd39725f398ede0cd333b5ad0868996cc",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

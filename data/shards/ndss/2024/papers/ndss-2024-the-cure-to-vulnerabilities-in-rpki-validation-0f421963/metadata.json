@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2024-the-cure-to-vulnerabilities-in-rpki-validation-0f421963",
   "title": "The CURE to Vulnerabilities in RPKI Validation",
+  "abstract": "Over recent years, the Resource Public Key Infrastructure (RPKI) has seen increasing adoption, with now 37.8% of the major networks filtering bogus BGP routes. Systems interact with the RPKI over Relying Party (RP) implementations that fetch RPKI objects and feed BGP routers with the validated prefix-ownership data. Consequently, any vulnerabilities or flaws within the RP software can substantially threaten the stability and security of Internet routing.\n\nWe uncover severe flaws in all popular RP implementations, making them susceptible to path traversal attacks, remotely triggered crashes, and inherent inconsistencies, violating RPKI standards. We report a total of 18 vulnerabilities that can be exploited to downgrade RPKI validation in border routers or, worse, enable poisoning of the validation process, resulting in malicious prefixes being wrongfully validated and legitimate RPKI-covered prefixes failing validation. Furthermore, our research discloses inconsistencies in the validation process, with two popular implementations leaving 8149 prefixes unprotected from hijacks, 6405 of which belong to Amazon.\n\nWhile these findings are significant in their own right, our principal contribution lies in developing CURE, the first-of-its-kind system to systematically detect bugs, vulnerabilities, and RFC compliance issues in RP implementations via automated test generation. The statefulness of RPKI, the lack of rigorous RPKI specifications for recognizing bugs in the object suite, the complexity and diversity of RP implementations, and the inaccessibility of their critical functionalities render this a highly challenging research task. CURE is a powerful RPKI publication point emulator that enables easy and efficient fuzzing of complex RP validation pipelines. It is designed with a set of novel tech-\n\nniques, utilizing differential and stateful fuzzing. We generated over 600 million test cases and tested all popular RPs on them.\n\nFollowing our disclosure, the vendors already assigned CVEs to the vulnerabilities we found. We are releasing our fuzzing system along with the CURE tool to enable the vendors improve the quality of RP implementations",
+  "abstract_source_id": "src-abstract-ndss-2024-0f421963",
   "venue": "ndss",
   "year": 2024,
   "track_or_session": "Fall submission cycle",
@@ -147,6 +149,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2024-0f421963",
+      "url": "https://www.ndss-symposium.org/ndss-paper/the-cure-to-vulnerabilities-in-rpki-validation/",
+      "kind": "paper-page",
+      "title": "The CURE to Vulnerabilities in RPKI Validation",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:18:47Z",
+      "content_hash": "sha256:b8555ad2158138e8735c98c67717c8c317326cbe39db59a0996deb7525fc5c8c",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2026-equal-opportunity-a-correctness-condition-for-ordered-co-1c97803c",
   "title": "Equal Opportunity: A Correctness Condition for Ordered Consensus",
+  "abstract": "In proof-of-stake blockchains based on State Machine Replication (SMR), the order of transactions directly affects client-visible financial outcomes. Ordered consensus augments the SMR specification by imposing correctness conditions on transaction ordering, with a focus on limiting Byzantine influence. However, real-world ordering attacks can occur even when these conditions hold, often enabled by advantages such as faster networks or proximity to the blockchain infrastructure that allow an adversary to systematically bias outcomes without violating the conditions. To address this gap, we extend ordered consensus with a new model and correctness condition based on equal opportunity , a notion of fairness widely used in legal contexts. Equal opportunity requires that candidates who are equally qualified—according to criteria deemed relevant —have equal chances of being selected (here, for a given position in the total order). We show how carefully introduced randomness can bound ordering bias, and we introduce the Secret Random Oracle (SRO), a fault-tolerant abstraction for generating such randomness. We present two SRO constructions, based on trusted hardware and threshold verifiable random functions, respectively, and use them to build Pompē-SRO, a new ordered consensus protocol that mitigates well-known ordering attacks. Our evaluation shows that Pompē-SRO effectively mitigates front-running and sandwich attacks at a moderate cost to latency.",
+  "abstract_source_id": "src-abstract-osdi-2026-1c97803c",
   "venue": "osdi",
   "year": 2026,
   "track_or_session": "Consensus and Byzantine Fault Tolerance",
@@ -251,6 +253,19 @@
       "official": true,
       "supports": [
         "Official proceedings availability and canonical conference versions."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2026-1c97803c",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/zhang-yunhao",
+      "kind": "paper-page",
+      "title": "Equal Opportunity: A Correctness Condition for Ordered Consensus",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:08:17Z",
+      "content_hash": "sha256:8fcbee410adfde87dabc627b30ba2f70f3d0402bbb5adb353d6fdbc27502f8b3",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

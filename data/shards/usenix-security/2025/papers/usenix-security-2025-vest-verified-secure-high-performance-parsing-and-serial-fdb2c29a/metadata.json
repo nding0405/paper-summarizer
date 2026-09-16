@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-vest-verified-secure-high-performance-parsing-and-serial-fdb2c29a",
   "title": "Vest: Verified, Secure, High-Performance Parsing and Serialization for Rust",
+  "abstract": "Many software vulnerabilities lurk in parsers and serializers, due to their need to be both high-performance and conformant with complex binary formats. To categorically eliminate these vulnerabilities, prior efforts have sought to deliver provable guarantees for parsing and serialization. Unfortunately, security, performance, and usability issues with these efforts mean that unverified parsers and serializers remain the status quo.\n\nHence, we present Vest, the first framework for high-performance, formally verified binary parsers and serializers that combines expressivity and ease of use with state-of-the-art correctness and security guarantees, including—for the first time—resistance to basic digital side-channel attacks. Most developers interact with Vest by defining their binary format in an expressive, RFC-like DSL. Vest then generates and automatically verifies high-performance parser and serializer implementations in Rust. This process relies on an extensible library of verified parser/serializer combinators we have developed, and that expert developers can use directly.\n\nWe evaluate Vest via three case studies: the Bitcoin block format, TLS 1.3 handshake messages, and the WebAssembly binary format. We show that Vest has executable performance on-par (or better) than hand-written, unverified parsers and serializers, and has orders of magnitude better verification performance relative to comparable prior work.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-fdb2c29a",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Software Security 4: Fuzzing and Other Software Analysis",
@@ -196,6 +198,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-fdb2c29a",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/cai-yi",
+      "kind": "paper-page",
+      "title": "Vest: Verified, Secure, High-Performance Parsing and Serialization for Rust",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:22:36Z",
+      "content_hash": "sha256:b2dd776fca7727810c16859d8c0028c1a06755ad240c14153aad94c7dc58401c",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

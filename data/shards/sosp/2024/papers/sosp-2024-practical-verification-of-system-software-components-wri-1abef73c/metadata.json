@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sosp-2024-practical-verification-of-system-software-components-wri-1abef73c",
   "title": "Practical Verification of System-Software Components Written in Standard C",
+  "abstract": "Systems code is challenging to verify, because it uses constructs (like raw pointers, pointer arithmetic, and bit twiddling) that are hard for tools to reason about. Existing approaches either sacrifice programmer friendliness, by demanding significant manual effort and verification expertise, or generality, by restricting the programming language or requiring that the code adapt to the verification tool. We identify a new point in the design space of verifiers that enables a different set of trade-offs, which prove practical in the context of verifying critical system components. We use several novel techniques to develop the TPot verification framework, targeted specifically at systems code written in C. With TPot, developers verify critical components they implement in standard, unrestricted C, using a C-based language to write \"proof-oriented tests\" (POTs) that specify the desired behavior. TPot then runs the POTs to prove correctness. We evaluate TPot on 6 different systemscode bases, and show that it can verify them at the same level as 4 state-of-the-art verifiers, while consistently reducing the annotation burden, ranging up to more than 3×. TPot does not require these code bases to be adapted for verification and achieves verification times compatible with typical continuous-integration workflows. TPot is open-source and freely available at https://github.com/dslab-epfl/tpot.",
+  "abstract_source_id": "src-abstract-sosp-2024-1abef73c",
   "venue": "sosp",
   "year": 2024,
   "track_or_session": "Session 7: Verification and Compilers 16:00 - 18:00 Session Chair: Manos Kapritsos",
@@ -167,6 +169,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-sosp-2024-1abef73c",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Practical Verification of System-Software Components Written in Standard C",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:19Z",
+      "content_hash": "sha256:b613162f9e7d53fac5fe410aff94d06ac71f23c6c31e2e9cc362b51e87d1bb79",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

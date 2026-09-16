@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2024-smudged-fingerprints-characterizing-and-improving-the-pe-c5b8fd4c",
   "title": "Smudged Fingerprints: Characterizing and Improving the Performance of Web Application Fingerprinting",
+  "abstract": "Open-source web applications have given everyone the ability to deploy complex web applications on their site(s), ranging from blogs and personal clouds, to server administration tools and webmail clients. Given that there exists millions of deployments of this software in the wild, the ability to fingerprint a particular release of a web application residing at a web endpoint is of interest to both attackers and defenders alike.\n\nIn this work, we study modern web application fingerprinting techniques and identify their inherent strengths and weaknesses. We design WASABO, a web application testing framework and use it to measure the performance of six web application fingerprinting tools against 1,360 releases of popular web applications. While 94.8% of all web application releases were correctly labeled by at least one fingerprinting tool in ideal conditions, many tools are unable to produce a single version prediction for a particular release. This leads to instances where a release is labeled as multiple disparate versions, resulting in administrator confusion on the security posture of an unknown web application.\n\nWe also measure the accuracy of each tool against real-world deployments of the studied web applications, observing up to an 80% drop-off in performance compared to our offline results. To identify causes for this performance degradation, as well as to improve the robustness of these tools in the wild, we design a web-application-agnostic middleware which applies a series of transformations to the traffic of each fingerprinting tool. Overall, we are able to improve the performance of popular web application fingerprinting tools by up to 22.9%, without any modification to the evaluated tools.",
+  "abstract_source_id": "src-abstract-usenix-security-2024-c5b8fd4c",
   "venue": "usenix-security",
   "year": 2024,
   "track_or_session": "Measurement IV: Web",
@@ -91,6 +93,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2024-c5b8fd4c",
+      "url": "https://www.usenix.org/conference/usenixsecurity24/presentation/kondracki",
+      "kind": "paper-page",
+      "title": "Smudged Fingerprints: Characterizing and Improving the Performance of Web Application Fingerprinting",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:17:16Z",
+      "content_hash": "sha256:f74f5abb2367d2da7bc07cbdf4936942ecf80b600418bfc3018d1bf5139f8ac2",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

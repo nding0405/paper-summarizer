@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sosp-2025-optimistic-recovery-for-high-availability-software-via-p-1ead6449",
   "title": "Optimistic Recovery for High-Availability Software via Partial Process State Preservation",
+  "abstract": "Achieving high availability for modern software requires fast and correct recovery from inevitable faults. This is notoriously difficult. Existing techniques either guarantee correctness by discarding all state but suffer from long downtime, or preserve all state to recover quickly but reintroduce the fault. We present Phoenix, a framework that enables a new design point of optimistic custom recovery for high-availability software through partial process state preservation. Phoenixmode recovery allows an application to selectively preserve long-lived state, discard transient state, and reset the execution. In the common cases, it combines the effectiveness of full restart with the speed of state reuse. Phoenix offers simple APIs for annotation, supports consistency checks via unsafe region detection, and provides cross-checking validation with default recovery paths for strong correctness. We implement Phoenix in Linux kernel and apply it on six large server applications. Our extensive evaluation of real bugs and fault injection testing shows that Phoenix recovery significantly improves availability while not sacrificing correctness.",
+  "abstract_source_id": "src-abstract-sosp-2025-1ead6449",
   "venue": "sosp",
   "year": 2025,
   "track_or_session": null,
@@ -230,6 +232,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-sosp-2025-1ead6449",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Optimistic Recovery for High-Availability Software via Partial Process State Preservation",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:19Z",
+      "content_hash": "sha256:b613162f9e7d53fac5fe410aff94d06ac71f23c6c31e2e9cc362b51e87d1bb79",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

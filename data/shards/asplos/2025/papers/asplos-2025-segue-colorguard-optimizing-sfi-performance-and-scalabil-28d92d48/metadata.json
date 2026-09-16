@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2025-segue-colorguard-optimizing-sfi-performance-and-scalabil-28d92d48",
   "title": "Segue & ColorGuard: Optimizing SFI Performance and Scalability on Modern Architectures",
+  "abstract": "Software-based fault isolation (SFI) enables in-process isolation through compiler instrumentation of memory accesses, and is a critical part of WebAssembly (Wasm). We present two optimizations that improve SFI performance and scalability: Segue uses x86-64 segmentation to reduce the cost of instrumentation on memory accesses, e.g., it eliminates 44.7% of Wasm's overhead on a Wasm-compatible subset of SPEC CPU 2006, and reduces overhead of Wasm-sandboxed font rendering in Firefox by 75%; ColorGuard leverages memory tagging (e.g., MPK), to enable up to a 15× increase in the number of Wasm instances that can run concurrently in a single address space, improving efficiency for high scale server-side workloads. We also explore the challenges of deploying these optimizations in three production toolchains: Wasm2c, WAMR and Wasmtime.",
+  "abstract_source_id": "src-abstract-asplos-2025-28d92d48",
   "venue": "asplos",
   "year": 2025,
   "track_or_session": "Session 8D: Security",
@@ -335,6 +337,19 @@
       "official": false,
       "supports": [
         "Indexed abstract and open-access links used for relevance classification and ancillary-link discovery."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2025-28d92d48",
+      "url": "https://api.openalex.org/works/doi:10.1145/3669940.3707249?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Segue & ColorGuard: Optimizing SFI Performance and Scalability on Modern Architectures",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:03:53Z",
+      "content_hash": "sha256:81d1522ae250f0ea57995e66c07f1d2a5a7af194fb677f6badd3c4a431593ec7",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

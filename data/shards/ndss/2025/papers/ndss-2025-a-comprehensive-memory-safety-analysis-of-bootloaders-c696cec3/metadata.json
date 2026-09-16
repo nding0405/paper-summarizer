@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2025-a-comprehensive-memory-safety-analysis-of-bootloaders-c696cec3",
   "title": "A Comprehensive Memory Safety Analysis of Bootloaders",
+  "abstract": "The bootloader plays an important role during the boot process, as it connects two crucial components: the firmware and the operating system. After powering on, the bootloader takes control from the firmware, prepares the early boot environment, and then hands control over to the operating system. Modern computers often use a feature called secure boot to prevent malicious software from loading at startup. As a key part of the secure boot chain, the bootloader is responsible for verifying the operating system, loading its image into memory, and launching it. Therefore, the bootloader must be designed and implemented in a secure manner. However, bootloaders have increasingly provided more features and functionalities for end users. As the code base grows, bootloaders inevitably expose more attack surfaces. In recent years, vulnerabilities, particularly memory safety violations, have been discovered in various bootloaders. Some of these vulnerabilities can lead to denial of service or even bypass secure boot protections. Despite the bootloader’s critical role in the secure boot chain, a comprehensive memory safety analysis of bootloaders has yet to be conducted. In this paper, we present the first comprehensive and systematic memory safety analysis of bootloaders, based on a survey of previous bootloader vulnerabilities. We examine the potential attack surfaces of various bootloaders and how these surfaces lead to vulnerabilities. We observe that malicious input from peripherals such as storage devices and networks is a primary method attackers use to exploit bootloader vulnerabilities. To assist bootloader developers in detecting vulnerabilities at scale, we designed and implemented a bootloader fuzzing framework based on our analysis. In our experiments, we discovered 39 vulnerabilities in nine bootloaders, of which 38 are new vulnerabilities. In particular, 14 vulnerabilities were found in the widely used Linux standard bootloader GRUB, some of which can even lead to secure boot bypass if properly exploited. So far, five CVEs have been assigned to our findings.",
+  "abstract_source_id": "src-abstract-ndss-2025-c696cec3",
   "venue": "ndss",
   "year": 2025,
   "track_or_session": "Fall submission cycle",
@@ -210,6 +212,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2025-c696cec3",
+      "url": "https://www.ndss-symposium.org/ndss-paper/a-comprehensive-memory-safety-analysis-of-bootloaders/",
+      "kind": "paper-page",
+      "title": "A Comprehensive Memory Safety Analysis of Bootloaders",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:18:57Z",
+      "content_hash": "sha256:56fa2ea98e9abc5303e16f415b412787e8084aa1f9a2be152269982d8764516c",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

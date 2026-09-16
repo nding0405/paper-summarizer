@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-principled-and-automated-approach-for-investigating-ar-v-95697618",
   "title": "Principled and Automated Approach for Investigating AR/VR Attacks",
+  "abstract": "As Augmented and Virtual Reality (AR/VR) adoption grows across sectors, auditing systems are needed to enable provenance analysis of AR/VR attacks. However, traditional auditing systems often generate inaccurate and incomplete provenance graphs, or fail to work due to operational restrictions in AR/VR devices. This paper presents REALITYCHECK, a provenance-based auditing system designed to support accurate root cause analysis and impact assessments of complex AR/VR attacks. Our system first enhances the W3C PROV data model with additional ontology to capture AR/VR-specific entities and causal relationships. Then, we employ a novel adaptation of natural language processing and feature-based log correlation techniques to transparently extract entities and relationships from dispersed, unstructured AR/VR logs into provenance graphs. Finally, we introduce an AR/VR-aware execution partitioning technique to filter out forensically irrelevant data and false causal relationships from these provenance graphs, improving analysis accuracy and investigation speed. We built a REALITYCHECK prototype for Meta Quest 2 and evaluated it against 25 real-world AR/VR attacks. The results show that REALITYCHECK generates accurate provenance graphs for all AR/VR attacks and incurs low runtime overhead across benchmarked applications. Notably, our execution partitioning approach drastically reduces the size of the graph without sacrificing essential investigation details. Our system operates non-intrusively, requires no additional installation, and is generalizable across various AR/VR devices.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-95697618",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "System Security 3: Mobile Platforms",
@@ -112,6 +114,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-95697618",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/shoaib",
+      "kind": "paper-page",
+      "title": "Principled and Automated Approach for Investigating AR/VR Attacks",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:21:16Z",
+      "content_hash": "sha256:ed479934723ec11216c82622d7f2093f90992422c105c1482ad2acdab4455aec",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

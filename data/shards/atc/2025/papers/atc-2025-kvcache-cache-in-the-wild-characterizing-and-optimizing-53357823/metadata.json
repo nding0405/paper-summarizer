@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "atc-2025-kvcache-cache-in-the-wild-characterizing-and-optimizing-53357823",
   "title": "KVCache Cache in the Wild: Characterizing and Optimizing KVCache Cache at a Large Cloud Provider",
+  "abstract": "Serving large language models (LLMs) is important for cloud providers, and caching intermediate results (KV$) after processing each request substantially improves serving throughput and latency. However, there is limited understanding of how LLM serving benefits from KV$ caching, where system design decisions like cache eviction policies are highly workload-dependent.\n\nIn this paper, we present the first systematic characterization of the KV$ workload patterns from one of the leading LLM service providers. We draw observations that were not covered by previous studies focusing on synthetic workloads, including: KV$ reuses are skewed across requests, where reuses between single-turn requests are equally important as multi-turn requests; the reuse time and probability are diverse considering all requests, but for a specific request category, the pattern tends to be predictable; and the overall cache size required for an ideal cache hit ratio is moderate. Based on the characterization, we further propose a workload-aware cache eviction policy that improves the serving performance under real-world traces, especially with limited cache capacity.",
+  "abstract_source_id": "src-abstract-atc-2025-53357823",
   "venue": "atc",
   "year": 2025,
   "track_or_session": "Performance: Benchmarking, Caching, and Workload Characterization",
@@ -264,6 +266,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-atc-2025-53357823",
+      "url": "https://www.usenix.org/conference/atc25/presentation/wang-jiahao",
+      "kind": "paper-page",
+      "title": "KVCache Cache in the Wild: Characterizing and Optimizing KVCache Cache at a Large Cloud Provider",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T21:59:51Z",
+      "content_hash": "sha256:baebbccb378da0c71a2289b8736770ed65cc7a815531e3db0e8c99f792848e51",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

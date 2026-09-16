@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2026-cottontail-large-language-model-driven-concolic-executio-9db78817",
   "title": "Cottontail: Large Language Model-Driven Concolic Execution for Highly Structured Test Input Generation",
+  "abstract": "How can we perform concolic execution to generate highly structured test inputs for systematically testing parsing programs? Existing concolic execution engines are significantly restricted by (1) input structure-agnostic path constraint selection, leading to the waste of testing effort or missing coverage; (2) limited constraint-solving capability, yielding many syntactically invalid test inputs; (3) reliance on manual acquisition of highly-structured seeds, resulting in non-continuous testing. This paper proposes Cottontail, a new Large Language Model (LLM)-driven concolic execution engine, to mitigate the above limitations. A more complete program path representation, named Expressive Coverage Tree (ECT), is first constructed to help select structure-aware path constraints. Later, an LLM-driven constraint solver based on a SolveComplete paradigm is designed to solve the path constraints smartly to get test inputs that are not only satisfiable to the constraints but also valid to the input syntax. Finally, a historyguided seed acquisition is employed to obtain new highly structured test inputs either before testing starts or after testing is saturated. We implemented Cottontail on top of SymCC and evaluated eight extensively tested open-source libraries across four different formats (XML, SQL, JavaScript, and JSON). The experimental results are promising: Cottontail significantly outperforms baseline approaches by 30.73 % and 41.32 % on average in terms of line and branch coverage. Besides, Cottontail found six previously unknown vulnerabilities (six CVEs assigned). We have reported these issues to developers, and four out of them have been fixed so far.",
+  "abstract_source_id": "src-abstract-sp-2026-9db78817",
   "venue": "sp",
   "year": 2026,
   "track_or_session": "Cycle 1",
@@ -175,6 +177,19 @@
       "official": true,
       "supports": [
         "DOI, published-order authors and affiliations, abstract, publication date, page span, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2026-9db78817",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Cottontail: Large Language Model-Driven Concolic Execution for Highly Structured Test Input Generation",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:57Z",
+      "content_hash": "sha256:303a9b5e5ef8908a3cfe67f02eb8a87be978a5fe3281c7ecec8c0cdb512517e0",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

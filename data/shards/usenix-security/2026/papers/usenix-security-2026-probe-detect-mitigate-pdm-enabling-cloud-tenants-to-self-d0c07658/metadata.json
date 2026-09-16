@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-probe-detect-mitigate-pdm-enabling-cloud-tenants-to-self-d0c07658",
   "title": "PROBE+DETECT+MITIGATE (PDM): Enabling Cloud Tenants to Self-Defend against Microarchitectural Attacks",
+  "abstract": "Microarchitectural attacks represent a critical security concern in public cloud environments, as they can cause information leakage between cloud tenants with conflicting interests. Existing solutions usually require provider-level resources, such as hardware performance counters or host processes, which may be inaccessible to cloud tenants. The lack of awareness among cloud tenants may persuade cloud providers to postpone the deployment of vendor patches, as evidenced by patched-yet-active threats, such as PRIME+PROBE and Spectre variants. In this paper, we propose PDM, a solution that enables cloud tenants to independently detect and mitigate microarchitectural attacks without providers' help. First, PDM introduces tenant-based detection based on an interesting observation, i.e., probing the memory space of victim applications using the popular FLUSH+RELOAD attack technique can actually enable detection. Second, PDM achieves efficient tenant-based mitigation by selectively triggering obfuscation and in-memory encryption techniques upon detection. Third, we tackle several key challenges including (i) attacks not involving evictions (e.g., Spectre), (ii) the need for source code or binary instrumentation, (iii) benign noises from the victim or co-resident tenants, and (iv) the tradeoff between accuracy, delay, and overhead. Our experiments show that PDM allows tenants to detect and mitigate various microarchitectural attacks, including PRIME+PROBE and Spectre, in an accurate (e.g., ≥99.72% TPR and ≤0.13% FPR on our testbed, and ≥98.63% TPR and ≤0.83% FPR on AWS Fargate), timely (e.g., 7ms lead time for triggering mitigation), efficient (e.g., ≤2.47% overhead on SPEC CPU 2017), and robust (against both noises and evasive attacks) manner.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-d0c07658",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Hardware Security 4",
@@ -177,6 +179,19 @@
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening",
         "prepublication PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-d0c07658",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/daneshmand",
+      "kind": "paper-page",
+      "title": "PROBE+DETECT+MITIGATE (PDM): Enabling Cloud Tenants to Self-Defend against Microarchitectural Attacks",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:25:05Z",
+      "content_hash": "sha256:49fa8d366c737aa59b1064230afb1080350ad6386e9dbd704b45629f023c8254",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

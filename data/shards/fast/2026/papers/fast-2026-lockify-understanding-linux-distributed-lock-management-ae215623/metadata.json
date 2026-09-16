@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "fast-2026-lockify-understanding-linux-distributed-lock-management-ae215623",
   "title": "Lockify: Understanding Linux Distributed Lock Management Overheads in Shared Storage",
+  "abstract": "This paper presents Lockify, a novel distributed lock manager (DLM) for shared-disk file systems. Our key observation in shared-storage scenarios is that, for file or directory creation, lock acquisition overhead in the Linux kernel DLM increases with the number of clients, even in low-contention scenarios. Lockify minimizes this lock acquisition latency by avoiding unnecessary communication with remote directory nodes through self-owner notifications and asynchronous ownership management . We implement Lockify in the Linux kernel and evaluate its performance on real-world workloads using two representative shared-disk file systems, GFS2 and OCFS2. Our experimental results demonstrate that Lockify improves overall throughput by ~6.4× compared to the kernel DLM and O2CB, consistently across different numbers of clients.",
+  "abstract_source_id": "src-abstract-fast-2026-ae215623",
   "venue": "fast",
   "year": 2026,
   "track_or_session": "OS",
@@ -160,6 +162,19 @@
         "proceedings page range and page count",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-fast-2026-ae215623",
+      "url": "https://www.usenix.org/conference/fast26/presentation/park",
+      "kind": "paper-page",
+      "title": "Lockify: Understanding Linux Distributed Lock Management Overheads in Shared Storage",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:01:35Z",
+      "content_hash": "sha256:a981d9075f0b573527f28e0c0f576ac50adb4e23445840ef49fce5183bf5cadd",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

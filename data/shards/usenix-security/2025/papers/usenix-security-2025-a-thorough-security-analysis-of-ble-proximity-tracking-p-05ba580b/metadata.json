@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-a-thorough-security-analysis-of-ble-proximity-tracking-p-05ba580b",
   "title": "A Thorough Security Analysis of BLE Proximity Tracking Protocols",
+  "abstract": "Recent advances in Bluetooth Low Energy (BLE) and the ubiquity of mobile infrastructures promote the prevalence of BLE proximity tracking services (e.g., Apple Find My and Samsung Find My Mobile) that use the proximity measured from other surrounding mobile devices (e.g., smartphones). Accordingly, it raises severe security and privacy concerns that are inherent to the basis of the technique (i.e., BLE) and the design of the proximity tracking protocol on top of it. Unfortunately, a systematic and comprehensive analysis of these protocols is still missing since the analysis of these protocols in existing research either focuses on a single participant in the service or lacks formal guarantees. As such, in this paper, we aim to fill in the missing piece by (1) recovering the closed-source protocol via reverse engineering; (2) building formal models based on reverse engineering; (3) extracting and formalizing the designed security goals of these protocols, and (4) formally verifying whether these security goals can be guaranteed. We reverse-engineered and verified two of the most popular real-world proximity tracking services, i.e., Apple Find My and Samsung Find My Mobile. In total, our analysis reveals seven new vulnerabilities confirmed by related vendors, out of which, four CVE/SVE numbers are assigned, including three high-severity vulnerabilities. We also propose mitigations to the discovered vulnerabilities and formally confirm that all security goals can be achieved with our mitigations. At the time of paper writing, Samsung has fixed five vulnerabilities with our assistance.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-05ba580b",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Network Security 3: BLE and Cellular",
@@ -196,6 +198,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-05ba580b",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/liu-xiaofeng",
+      "kind": "paper-page",
+      "title": "A Thorough Security Analysis of BLE Proximity Tracking Protocols",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:18:26Z",
+      "content_hash": "sha256:649147af324781bbc06b6d610b74edc09ebaaea0fb70be5d1f747651e6d7c1c9",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "fast-2026-discard-based-garbage-collection-for-distributed-log-str-33eb3688",
   "title": "Discard-Based Garbage Collection for Distributed Log-Structured Storage Systems in ByteDance",
+  "abstract": "ByteStore is a distributed append-only storage system that serves as the foundational storage layer of the ByteDance infrastructure. Initially, storage services on ByteStore use compaction for garbage collection (GC). Additional writes induced by compaction and the SSD space occupied by stale data result in millions of dollars in extra Total Cost of Ownership (TCO) per month. Aggressive compaction releases the SSD space, but at the cost of more write operations and faster SSD wear, thus failing to reduce TCO.\n\nBased on our analysis of the traces from the block storage service (ByteDrive) deployed on ByteStore, we propose DisCoGC, a Discard-and-Compaction combined Garbage Collection scheme, which employs a discard mechanism to reclaim the space occupied by stale data without moving valid data. Production cluster metrics monitor and offline experiments demonstrate that DisCoGC achieves approximately 20% reduction in TCO, without sacrificing performance.",
+  "abstract_source_id": "src-abstract-fast-2026-33eb3688",
   "venue": "fast",
   "year": 2026,
   "track_or_session": "Cloud Technologies II",
@@ -475,6 +477,19 @@
         "proceedings page range and page count",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-fast-2026-33eb3688",
+      "url": "https://www.usenix.org/conference/fast26/presentation/bian",
+      "kind": "paper-page",
+      "title": "Discard-Based Garbage Collection for Distributed Log-Structured Storage Systems in ByteDance",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:01:27Z",
+      "content_hash": "sha256:84e077210ff17acaf9aac1fd78cea6f16830916531450e8067c6851ef6d2578a",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

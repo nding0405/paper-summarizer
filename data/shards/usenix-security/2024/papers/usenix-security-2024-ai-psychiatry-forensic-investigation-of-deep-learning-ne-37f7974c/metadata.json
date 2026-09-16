@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2024-ai-psychiatry-forensic-investigation-of-deep-learning-ne-37f7974c",
   "title": "AI Psychiatry: Forensic Investigation of Deep Learning Networks in Memory Images",
+  "abstract": "Online learning is widely used in production to refine model parameters after initial deployment. This opens several vectors for covertly launching attacks against deployed models. To detect these attacks, prior work developed black-box and white-box testing methods. However, this has left prohibitive open challenge: how the investigator is supposed to recover the model (uniquely refined on an in-the-field device) for testing in the first place. We propose a novel memory forensic technique, named AiP, which automatically recovers the unique deployment model and rehosts it in a lab environment for investigation. AiP navigates through both main memory and GPU memory spaces to recover complex ML data structures, using recovered Python objects to guide the recovery of lower-level C objects, ultimately leading to the recovery of the uniquely refined model. AiP then rehosts the model within the investigator's device, where the investigator can apply various white-box testing methodologies. We have evaluated AiP using three versions of TensorFlow and PyTorch with the CIFAR-10, LISA, and IMDB datasets. AiP recovered 30 models from main memory and GPU memory with 100% accuracy and rehosted them into a live process successfully.",
+  "abstract_source_id": "src-abstract-usenix-security-2024-37f7974c",
   "venue": "usenix-security",
   "year": 2024,
   "track_or_session": "Forensics",
@@ -175,6 +177,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2024-37f7974c",
+      "url": "https://www.usenix.org/conference/usenixsecurity24/presentation/oygenblik",
+      "kind": "paper-page",
+      "title": "AI Psychiatry: Forensic Investigation of Deep Learning Networks in Memory Images",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:14:07Z",
+      "content_hash": "sha256:4f84cf15c19da86c46cf2fb0474d8ad9c672c29db693b0a2b109267dcd826fbe",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

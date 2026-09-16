@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2026-rounding-guided-backdoor-injection-in-deep-learning-mode-74d8aa5a",
   "title": "Rounding-Guided Backdoor Injection in Deep Learning Model Quantization",
+  "abstract": "Model quantization is a popular technique for deploying deep learning models on resource-constrained environments. However, it may also introduce previously overlooked security risks. In this work, we present QuRA, a novel backdoor attack that exploits model quantization to embed malicious behaviors. Unlike conventional backdoor attacks relying on training data poisoning or model training manipulation, QuRA solely works using the quantization operations. In particular, QuRA first employs a novel weight selection strategy to identify critical weights that influence the backdoor target (with the goal of perserving the model's overall performance in mind). Then, by optimizing the rounding direction of these weights, we amplify the backdoor effect across model layers without degrading accuracy. Extensive experiments demonstrate that QuRA achieves nearly 100% attack success rates in most cases, with negligible performance degradation. Furthermore, we show that QuRA can adapt to bypass existing backdoor defenses, underscoring its threat potential. Our findings highlight critical vulnerability in widely used model quantization process, emphasizing the need for more robust security measures. Our implementation is available at https://github.com/cxx122/QuRA.",
+  "abstract_source_id": "src-abstract-ndss-2026-74d8aa5a",
   "venue": "ndss",
   "year": 2026,
   "track_or_session": "Summer submission cycle",
@@ -181,6 +183,19 @@
       "official": false,
       "supports": [
         "independent proceedings identity reconciliation"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2026-74d8aa5a",
+      "url": "https://www.ndss-symposium.org/ndss-paper/rounding-guided-backdoor-injection-in-deep-learning-model-quantization/",
+      "kind": "paper-page",
+      "title": "Rounding-Guided Backdoor Injection in Deep Learning Model Quantization",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:23:02Z",
+      "content_hash": "sha256:9a30f0306383c5c965846dd9a30a92467b21da9729dcd5ec65f96402666bba3a",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

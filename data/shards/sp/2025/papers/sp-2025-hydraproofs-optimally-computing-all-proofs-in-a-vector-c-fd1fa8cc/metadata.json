@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2025-hydraproofs-optimally-computing-all-proofs-in-a-vector-c-fd1fa8cc",
   "title": "HydraProofs: Optimally Computing All Proofs in a Vector Commitment (with applications to efficient zkSNARKs over data from multiple users)",
+  "abstract": "In this work, we introduce HydraProofs, the first vector commitment (VC) scheme that achieves the following two properties. (i) The prover can produce all the opening proofs for different elements (or consecutive sub-arrays) for a vector of size $N$ in optimal time $\\mathcal{O}(N)$. (ii) It is directly compatible with a family of zkSNARKs that encode their input as a multi-linear polynomial, i.e., our VC can be directly used when running the zkSNARK on its pre-image, without the need to “open” the entire vector pre-image inside the zkSNARK. To the best of our knowledge, all prior VC schemes either achieve (i) but are not efficiently “pluggable” into zkSNARKs (e.g., a Merkle tree commitment that requires re-computing the entire hash tree inside the circuit), or achieve (ii) but take $\\mathrm{O}(N\\log N)$ time. We then combine HydraProofs with the seminal GKR protocol and apply the resulting zkSNARK in a setting where multiple users participate in a computation executed by an untrusted server and each user wants to ensure the correctness of the result and that her data was included. Our experimental evaluation shows our approach outperforms prior ones by 4 - 16× for prover times on general circuits. Finally, we consider two concrete application use cases, verifiable secret sharing and verifiable robust aggregation. For the former, our construction achieves the first scheme for Shamir's secret sharing with linear time prover (lower than the time needed for the dealer computation). For the second, we propose a scheme that works against misbehaving aggregators and our experiments show it can be reasonably deployed in existing schemes with minimal slow-downs.",
+  "abstract_source_id": "src-abstract-sp-2025-fd1fa8cc",
   "venue": "sp",
   "year": 2025,
   "track_or_session": "Cycle 2",
@@ -112,6 +114,19 @@
       "official": true,
       "supports": [
         "DOI, authors, affiliations, abstract, publication date, pages, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2025-fd1fa8cc",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "HydraProofs: Optimally Computing All Proofs in a Vector Commitment (With Applications to Efficient zkSNARKs Over Data from Multiple Users)",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:47Z",
+      "content_hash": "sha256:d48e5e27e72297ce02860f066764bd9c5cd6e8191e2ebf4b4f15da0fffb6959f",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

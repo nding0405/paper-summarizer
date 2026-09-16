@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2023-hard-label-black-box-universal-adversarial-patch-attack-6dce7f9a",
   "title": "Hard-label Black-box Universal Adversarial Patch Attack",
+  "abstract": "Deep learning models are widely used in many applications. Despite their impressive performance, the security aspect of these models has raised serious concerns. Universal adversarial patch attack is one of the security problems in deep learning, where an attacker can generate a patch trigger on pre-trained models using gradient information. Whenever the trigger is pasted on an input, the model will misclassify it to a target label. Existing attacks are realized with access to the model's gradient or its output confidence. In this paper, we propose a novel attack method HardBeat that generates universal adversarial patches with access only to the predicted label. It utilizes historical data points during the search for an optimal patch trigger and performs focused/directed search through a novel importance-aware gradient approximation to explore the neighborhood of the current trigger. The evaluation is conducted on four popular image datasets with eight models and two online commercial services. The experimental results show HardBeat is significantly more effective than eight baseline attacks, having more than twice high-ASR (attack success rate) patch triggers (>90%) on local models and 17.5% higher ASR on online services. Three existing advanced defense techniques fail to defend against HardBeat.",
+  "abstract_source_id": "src-abstract-usenix-security-2023-6dce7f9a",
   "venue": "usenix-security",
   "year": 2023,
   "track_or_session": "Adversarial Patches and Images",
@@ -154,6 +156,19 @@
       "official": true,
       "supports": [
         "authors, affiliations when published, abstract, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2023-6dce7f9a",
+      "url": "https://www.usenix.org/conference/usenixsecurity23/presentation/tao",
+      "kind": "paper-page",
+      "title": "Hard-label Black-box Universal Adversarial Patch Attack",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:11:19Z",
+      "content_hash": "sha256:3974f55b810f45615cac9015a271a44198de94261d0d07418617e74fe81cb922",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

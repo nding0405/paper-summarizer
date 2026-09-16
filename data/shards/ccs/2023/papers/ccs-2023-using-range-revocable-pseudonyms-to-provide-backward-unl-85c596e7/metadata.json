@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2023-using-range-revocable-pseudonyms-to-provide-backward-unl-85c596e7",
   "title": "Using Range-Revocable Pseudonyms to Provide Backward Unlinkability in the Edge",
+  "abstract": "In this paper we propose a novel abstraction that we have named Range-Revocable Pseudonyms (RRPs). RRPs are a new class of pseudonyms whose validity can be revoked for any time-range within its original validity period. The key feature of RRPs is that the information provided to revoke a pseudonym for a given time-range cannot be linked with the information provided when using the pseudonym outside the revoked range. We provide an algorithm to implement RRPs using efficient cryptographic primitives where the space complexity of the pseudonym is constant, regardless of the granularity of the revocation range, and the space complexity of the revocation information only grows logarithmically with the granularity; this makes the use of RRPs far more efficient than the use of many short-lived pseudonyms. We have used RRPs to design EDGAR, an access control system for VANET scenarios that offers backward unlinkability. The experimental evaluation of EDGAR shows that, when using RRPs, the revocation can be performed efficiently (even when using time slots as small as 1 second) and that users can authenticate with low latency (0.5-3.5ms ).",
+  "abstract_source_id": "src-abstract-ccs-2023-85c596e7",
   "venue": "ccs",
   "year": 2023,
   "track_or_session": "Privacy in Systems (Privacy and Anonymity)",
@@ -190,6 +192,19 @@
       "official": false,
       "supports": [
         "published title, author order, and page span"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2023-85c596e7",
+      "url": "https://api.openalex.org/works/doi:10.1145/3576915.3623111?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Using Range-Revocable Pseudonyms to Provide Backward Unlinkability in the Edge",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:08:35Z",
+      "content_hash": "sha256:8c07a67a1f236ccfff91fe9814000d82f85eb1b7d0791ca1c49cb1751b6f4cf1",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

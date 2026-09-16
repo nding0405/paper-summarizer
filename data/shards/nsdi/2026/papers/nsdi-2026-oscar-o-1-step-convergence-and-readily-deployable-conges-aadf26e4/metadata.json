@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2026-oscar-o-1-step-convergence-and-readily-deployable-conges-aadf26e4",
   "title": "OSCAR: O(1)-Step Convergence and Readily-deployable Congestion Control",
+  "abstract": "Datacenter CCs typically target full bandwidth utilization and minimal queueing delay and strive to converge to these targets as quickly as possible. State-of-the-art CCs exhibit different convergence speeds, with the fastest ones converging in O (1) steps, which means reaching the target in constant time regardless of network conditions. However, their reliance on network features makes them not readily deployable. For instance, precise-INT-based CCs, such as HPCC and PowerTCP, achieve O (1)-step convergence through MIMD operations based on precise congestion information from the lengthy INT header, which is challenging to support for high-speed commodity hardware. Our key insight is that delay and delay gradient can exhibit precision comparable to INT, enabling O (1)-step convergence without specialized network features. Based on this insight, we propose OSCAR, the first O (1)-Step Convergence And Readily-deployable CC. OSCAR introduces novel techniques to accurately estimate the delay gradient with minimal overhead, eliminate overreaction in MIMD updates, and coordinate independent control loops to converge to one target. Testbed evaluations demonstrate OSCAR can rapidly converge to the fair share under real-world noise. In large-scale simulations with realistic workloads, OSCAR consistently outperforms precise-INT-based CCs by 12%-48% on average FCT and 40%-74% on tail FCT.",
+  "abstract_source_id": "src-abstract-nsdi-2026-aadf26e4",
   "venue": "nsdi",
   "year": 2026,
   "track_or_session": "Clouds with Benefits",
@@ -335,6 +337,19 @@
         "proceedings page range and page count",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2026-aadf26e4",
+      "url": "https://www.usenix.org/conference/nsdi26/presentation/zhang-zhaochen",
+      "kind": "paper-page",
+      "title": "OSCAR: O(1)-Step Convergence and Readily-deployable Congestion Control",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:05:48Z",
+      "content_hash": "sha256:082bd70b383fb35664802f17b9c2e2a71082543688ab12b1c38e6c3d24d08dd5",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

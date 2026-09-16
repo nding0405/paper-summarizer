@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "eurosys-2024-finding-correctness-bugs-in-ebpf-verifier-with-structure-d602879b",
   "title": "Finding Correctness Bugs in eBPF Verifier with Structured and Sanitized Program",
+  "abstract": "eBPF is an inspiring technique in Linux that allows user space processes to extend the kernel by dynamically injecting programs. However, it poses security issues, since the untrusted user code is now executed in the kernel space. eBPF utilizes a verifier to validate the safety of the provided programs, thus its correctness is of paramount importance as attackers may exploit vulnerabilities within it to inject malicious programs. Bug-finding tools like kernel fuzzers currently can detect memory bugs in eBPF system calls, but they experience difficulties in finding correctness bugs in the verifier, e.g., incorrect validations that allow the loading of unsafe programs. Because, unlike detecting memory bugs, where sanitizers can capture such errors once observed, automatically uncovering correctness bugs is very difficult, without an effective test oracle that determines if the verifier behaves correctly for given programs.",
+  "abstract_source_id": "src-abstract-eurosys-2024-d602879b",
   "venue": "eurosys",
   "year": 2024,
   "track_or_session": null,
@@ -188,6 +190,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-eurosys-2024-d602879b",
+      "url": "https://api.openalex.org/works/doi:10.1145/3627703.3629562?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Finding Correctness Bugs in eBPF Verifier with Structured and Sanitized Program",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:18:49Z",
+      "content_hash": "sha256:d3dab0ddf4e6f21308959fd29b8801bd2f5d2e8f81468cae4bd53272a39826ff",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-e2e-akma-an-end-to-end-secure-and-privacy-enhancing-akma-34f5c96a",
   "title": "E2E-AKMA: An End-to-End Secure and Privacy-Enhancing AKMA Protocol Against the Anchor Function Compromise",
+  "abstract": "The Authentication and Key Management for Applications (AKMA) system represents a recently developed protocol established by 3GPP, which is anticipated to become a pivotal component of the 5G standards. AKMA enables application service providers to delegate user authentication processes to mobile network operators, thereby eliminating the need for these providers to store and manage authentication-related data themselves. This delegation enhances the efficiency of authentication procedures but simultaneously introduces certain security and privacy challenges that warrant thorough analysis and mitigation.\n\nThe 5G AKMA service is facilitated by the AKMA Anchor Function (AAnF), which may operate outside the boundaries of the 5G core network. A compromise of the AAnF could potentially allow malicious actors to exploit vulnerabilities, enabling them to monitor user login activities or gain unauthorized access to sensitive communication content. Furthermore, the exposure of the Subscription Permanent Identifier (SUPI) to external Application Functions poses substantial privacy risks, as the SUPI could be utilized to correlate a user's real-world identity with their online activities, thereby undermining user privacy.\n\nTo mitigate these vulnerabilities, we propose a novel protocol named E2E-AKMA, which facilitates the establishment of a session key between the User Equipment (UE) and the Application Function (AF) with end-to-end security, even in scenarios where the AAnF has been compromised. Furthermore, the protocol ensures that no entity, aside from the 5G core network, can link account activities to the user's actual identity. This architecture preserves the advantages of the existing AKMA scheme, such as eliminating the need for complex dynamic secret data management and avoiding reliance on specialized hardware (apart from standard SIM cards). Experimental evaluations reveal that the E2E-AKMA framework incurs an overhead of approximately 9.4% in comparison to the original 5G AKMA scheme, which indicates its potential efficiency and practicality for deployment.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-34f5c96a",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Network Security 1",
@@ -135,6 +137,19 @@
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening",
         "prepublication PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-34f5c96a",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/li-yueming",
+      "kind": "paper-page",
+      "title": "E2E-AKMA: An End-to-End Secure and Privacy-Enhancing AKMA Protocol Against the Anchor Function Compromise",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:23:49Z",
+      "content_hash": "sha256:0b83fdf9afd499c0d43ee848eaac0783ed62d4037987c95e35342bd021b7e6c1",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

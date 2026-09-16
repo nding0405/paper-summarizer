@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2026-prmpt-sanitizing-sensitive-prompts-for-llms-3ab397cc",
   "title": "Prεεmpt: Sanitizing Sensitive Prompts for LLMs",
+  "abstract": "The rise of large language models (LLMs) has introduced new privacy challenges, particularly during inference where sensitive information in prompts may be exposed to proprietary LLM APIs. In this paper, we address the problem of formally protecting the sensitive information contained in a prompt while maintaining response quality. To this end, first, we introduce a cryptographically inspired notion of a prompt sanitizer which transforms an input prompt to protect its sensitive tokens. Second, we propose Prϵϵmpt, a novel system that implements a prompt sanitizer, focusing on the sensitive information that can be derived solely from the individual tokens. Prϵϵmpt categorizes sensitive tokens into two types: (1) those where the LLM’s response depends solely on the format (such as SSNs, credit card numbers), for which we use format-preserving encryption (FPE); and (2) those where the response depends on specific values, (such as age, salary) for which we apply metric differential privacy (mDP). Our evaluation demonstrates that Prϵϵmpt is a practical method to achieve meaningful privacy guarantees, while maintaining high utility compared to unsanitized prompts, and outperforming prior methods.",
+  "abstract_source_id": "src-abstract-ndss-2026-3ab397cc",
   "venue": "ndss",
   "year": 2026,
   "track_or_session": "Summer submission cycle",
@@ -223,6 +225,19 @@
       "official": false,
       "supports": [
         "independent proceedings identity reconciliation"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2026-3ab397cc",
+      "url": "https://www.ndss-symposium.org/ndss-paper/pr%ce%b5%ce%b5mpt-sanitizing-sensitive-prompts-for-llms/",
+      "kind": "paper-page",
+      "title": "Prεεmpt: Sanitizing Sensitive Prompts for LLMs",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:22:54Z",
+      "content_hash": "sha256:659fd991396e31e96fb2998441237b8ae1e4300532a1b1f6fc945f71eff27d3e",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

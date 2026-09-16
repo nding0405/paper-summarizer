@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2023-threshold-signatures-from-inner-product-argument-succinc-43db089e",
   "title": "Threshold Signatures from Inner Product Argument: Succinct, Weighted, and Multi-threshold",
+  "abstract": "Threshold signatures protect the signing key by sharing it among a group of signers so that an adversary must corrupt a threshold number of signers to be able to forge signatures. Existing threshold signatures with succinct signatures and constant verification times do not work if signers have different weights. Such weighted settings are seeing increasing importance in decentralized systems, especially in the Proof-of-Stake blockchains. This paper presents a new paradigm for threshold signatures for pairing and discrete logarithm-based cryptosystems. Our scheme has a compact verification key consisting of only 7 group elements, and a signature consisting of 8 group elements. Verifying the signature requires 8 exponentiations and 8 bilinear pairings. Our scheme supports arbitrary weight distributions among signers and arbitrary thresholds. It requires non-interactive preprocessing after a universal powers-of-tau setup. We prove the security of our scheme in the Algebraic Group Model and implement it using Golang. Our evaluation shows that our scheme achieves a comparable signature size and verification time to a standard (unweighted) threshold signature. Compared to existing multisignature schemes, our scheme has a much smaller public verification key.",
+  "abstract_source_id": "src-abstract-ccs-2023-43db089e",
   "venue": "ccs",
   "year": 2023,
   "track_or_session": "Digital Signatures (Applied Cryptography)",
@@ -214,6 +216,19 @@
       "official": false,
       "supports": [
         "published title, author order, and page span"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2023-43db089e",
+      "url": "https://api.openalex.org/works/doi:10.1145/3576915.3623096?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Threshold Signatures from Inner Product Argument: Succinct, Weighted, and Multi-threshold",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:08:30Z",
+      "content_hash": "sha256:b1993a497c4d3ce976185a814ae56499bb86b0d6400abe548a93a1eb48ad55f8",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

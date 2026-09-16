@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2026-cc-pipe-breaking-systemic-bottlenecks-in-rpki-data-suppl-05219735",
   "title": "cc-pipe: Breaking Systemic Bottlenecks in RPKI Data Supply Chain with Concurrent and Conflict-Free Pipelines",
+  "abstract": "While the Resource Public Key Infrastructure (RPKI) is essential for securing BGP, the high latency, limited scalability, and vulnerabilities in the data supply chain severely undermine its security guarantees and impede network operations. Within this supply chain, existing research identifies the Relying Party (RP) validation process as the primary performance bottleneck. This bottleneck originates from the standard monolithic architecture, which enforces strong consistency but incurs high latency. Previous work has pursued incremental optimizations within this architecture, yet achieving substantial gains remains difficult.\n\nBased on extensive measurements, we identify inherent blocking within the paradigm as the root cause. To address this, we propose cc-pipe, a novel pipeline architecture that breaks the fundamental consistency—latency trade-off. By leveraging a predictive conflict graph, cc-pipe enables low-latency incremental data dissemination while preserving strong consistency guarantees. Evaluation with real-world deployment demonstrates that cc-pipe reduces average latency by up to 73.3% across all data with negligible router overhead. It also delivers significant scalability under projected future workloads, as well as robust resilience to misbehaving publication points.",
+  "abstract_source_id": "src-abstract-nsdi-2026-05219735",
   "venue": "nsdi",
   "year": 2026,
   "track_or_session": "Security in Networked Systems",
@@ -181,6 +183,19 @@
         "proceedings page range and page count",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2026-05219735",
+      "url": "https://www.usenix.org/conference/nsdi26/presentation/yu",
+      "kind": "paper-page",
+      "title": "cc-pipe: Breaking Systemic Bottlenecks in RPKI Data Supply Chain with Concurrent and Conflict-Free Pipelines",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:04:56Z",
+      "content_hash": "sha256:33bb6494f309268ea305b42a248743d1d21d035adc8420f5487591d1b6d3144c",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2024-membership-inference-attacks-against-vision-transformers-f7a57897",
   "title": "Membership Inference Attacks against Vision Transformers: Mosaic MixUp Training to the Defense",
+  "abstract": "Vision transformers (ViTs) have demonstrated great success in various fundamental CV tasks, mainly benefiting from their self-attention-based transformer architectures, and the paradigm of pre-training followed by fine-tuning. However, such advantages may lead to significant data privacy risks, such as membership inference attacks (MIAs), which remain unclear. This paper presents the first comprehensive study on MIAs and corresponding defenses against ViTs. Our first contribution is a rollout-attention-based MIA method (RAMIA), based on an experimental observation that the attention, more precisely the rollout attention, behaves disproportionately for members and non-members. We evaluate RAMIA on the standard ViT architecture proposed by Google (ICLR 2021), achieving high accuracy, precision, and recall performance. Further, inspired by another experimental observation on a strong connection between positional embeddings (PEs) and attentions, we propose a novel framework for training ViTs, named Mosaic MixUp Training (MMUT), as a defense against RAMIA. Intuitively, MMUT mixes up private images and public ones at a patch level, and mosaics the corresponding PEs with a global learnable mosaic embedding. Our empirical results show MMUT achieves a much better accuracy-privacy trade-off than some common defense mechanisms. Extensive experiments are conducted to rigorously evaluate both RAMIA and MMUT.",
+  "abstract_source_id": "src-abstract-ccs-2024-f7a57897",
   "venue": "ccs",
   "year": 2024,
   "track_or_session": "Cycle 2",
@@ -180,6 +182,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2024-f7a57897",
+      "url": "https://api.openalex.org/works/doi:10.1145/3658644.3690268?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Membership Inference Attacks against Vision Transformers: Mosaic MixUp Training to the Defense",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:11:01Z",
+      "content_hash": "sha256:42f771913178378b9a71accbff5b1abfb5900c639b00748314d534ab1bf65af2",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

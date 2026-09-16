@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2023-enso-a-streaming-interface-for-nic-application-communica-528f16ff",
   "title": "Ensō: A Streaming Interface for NIC-Application Communication",
+  "abstract": "Today, most communication between the NIC and software involves exchanging fixed-size packet buffers. This packetized interface was designed for an era when NICs implemented few offloads and software implemented the logic for translating between application data and packets. However, both NICs and networked software have evolved: modern NICs implement hardware offloads, e.g., TSO, LRO, and serialization offloads that can more efficiently translate between application data and packets. Furthermore, modern software increasingly batches network I/O to reduce overheads. These changes have led to a mismatch between the packetized interface, which assumes that the NIC and software exchange fixed-size buffers, and the features provided by modern NICs and used by modern software. This incongruence between interface and data adds software complexity and I/O overheads, which in turn limits communication performance.\n\nThis paper proposes Ensō, a new streaming NIC-to-software interface designed to better support how NICs and software interact today. At its core, Ensō eschews fixed-size buffers, and instead structures communication as a stream that can be used to send arbitrary data sizes. We show that this change reduces software overheads, reduces PCIe bandwidth requirements, and leads to fewer cache misses. These improvements allow an Ensō-based NIC to saturate a 100 Gbps link with minimum-sized packets (forwarding at 148.8 Mpps) using a single core, improve throughput for high-performance network applications by 1.5-6x, and reduce latency by up to 43%.",
+  "abstract_source_id": "src-abstract-osdi-2023-528f16ff",
   "venue": "osdi",
   "year": 2023,
   "track_or_session": "Transfer Your Bits",
@@ -243,6 +245,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2023-528f16ff",
+      "url": "https://www.usenix.org/conference/osdi23/presentation/sadok",
+      "kind": "paper-page",
+      "title": "Ensō: A Streaming Interface for NIC-Application Communication",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:06:30Z",
+      "content_hash": "sha256:cb6109f3ca65b01dc033fc46a936295494491d858524fd291dd861770b7f7c64",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

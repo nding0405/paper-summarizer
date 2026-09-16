@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2024-motor-enabling-multi-versioning-for-distributed-transact-d951956c",
   "title": "Motor: Enabling Multi-Versioning for Distributed Transactions on Disaggregated Memory",
+  "abstract": "In modern datacenters, memory disaggregation unpacks monolithic servers to build network-connected distributed compute and memory pools to improve resource utilization and deliver high performance. The compute pool leverages distributed transactions to access remote data in the memory pool to provide atomicity and strong consistency. Existing single-versioning designs have been constrained due to limited system concurrency and high logging overheads. Although the multi-versioning design in the conventional monolithic servers is promising to offer high concurrency and reduce logging overheads, which however fails to work in the disaggregated memory. In order to bridge the gap between the multi-versioning design and the disaggregated memory, we propose Motor that holistically redesigns the version structure and transaction protocol to enable multi-versioning for fast distributed transaction processing on the disaggregated memory. To efficiently organize different versions of data in the memory pool, Motor leverages a new consecutive version tuple (CVT) structure to store the versions together in a continuous manner, which allows the compute pool to obtain the target version in a single network round trip. On top of CVT, Motor leverages a fully one-sided RDMA-based MVCC protocol to support fast distributed transactions with flexible isolation levels. Experimental results demonstrate that Motor improves the throughput by up to 98.1% and reduces the latency by up to 55.8% compared with state-of-the-art systems.",
+  "abstract_source_id": "src-abstract-osdi-2024-d951956c",
   "venue": "osdi",
   "year": 2024,
   "track_or_session": "Data Management",
@@ -138,6 +140,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2024-d951956c",
+      "url": "https://www.usenix.org/conference/osdi24/presentation/zhang-ming",
+      "kind": "paper-page",
+      "title": "Motor: Enabling Multi-Versioning for Distributed Transactions on Disaggregated Memory",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:07:14Z",
+      "content_hash": "sha256:7057639476ba1aeb5fb2c170d73e9050c52fec95331b1e539fe64e85fa8809a1",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2026-latticebox-a-hardware-software-co-designed-framework-for-0c5da3f0",
   "title": "LatticeBox: A Hardware-Software Co-Designed Framework for Scalable and Low-Latency Compartmentalization",
+  "abstract": "Modern software systems increasingly rely on compartmentalization to isolate untrusted or potentially vulnerable components, such as third-party drivers and JIT-compiled code.\n\nHowever, existing hardware isolation techniques suffer from scalability constraints, high switching latency, and inadequate security guarantees. In particular, permission-changing instructions used by some compartmentalization technology, such as Intel MPK’s WRPKRU, can be exploited by untrusted code, which complicates the secure deployment process.\n\nIn this paper, we introduce LatticeBox, a hardware-software co-designed framework that addresses these limitations using a lattice-based access control model. LatticeBox encodes permissions and memory regions as compact, hierarchical N-bit vectors. This design enables a hardware architecture that reduces domain-switching latency to a single CPU cycle and inherently prevents misuse of permission-switching instructions. Additionally, LatticeBox employs a customized instruction (lp_land) to enforce strict cross-domain control-flow integrity, effectively preventing unauthorized indirect function calls. We implement LatticeBox on a RISC-V BOOM core and evaluate it using both microbenchmarks and real-world applications, including WebAssembly runtimes and Linux kernel modules. Our results show that LatticeBox achieves domain switching up to 180× faster than Intel MPK while supporting fine-grained, scalable isolation. Evaluation on real-world workloads demonstrates only a modest performance impact, with only 2% slowdown for enhanced WebAssembly runtimes and just 3% lower throughput for ApacheBench running isolated Linux kernel modules.",
+  "abstract_source_id": "src-abstract-ndss-2026-0c5da3f0",
   "venue": "ndss",
   "year": 2026,
   "track_or_session": "Fall submission cycle",
@@ -244,6 +246,19 @@
       "official": false,
       "supports": [
         "independent proceedings identity reconciliation"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2026-0c5da3f0",
+      "url": "https://www.ndss-symposium.org/ndss-paper/latticebox-a-hardware-software-co-designed-framework-for-scalable-and-low-latency-compartmentalization/",
+      "kind": "paper-page",
+      "title": "LatticeBox: A Hardware-Software Co-Designed Framework for Scalable and Low-Latency Compartmentalization",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:22:20Z",
+      "content_hash": "sha256:d251db27bb7df2c241a39c4e4f389de3e8dfd4c1cb1b884c1c10a6aa143e5703",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

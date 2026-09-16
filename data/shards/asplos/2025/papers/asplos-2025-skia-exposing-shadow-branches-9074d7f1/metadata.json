@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2025-skia-exposing-shadow-branches-9074d7f1",
   "title": "Skia: Exposing Shadow Branches",
+  "abstract": "Modern processors implement a decoupled front-end, often using a form of Fetch Directed Instruction Prefetching (FDIP), to avoid front-end stalls. FDIP is driven by the Branch Prediction Unit (BPU), relying on the BPU's accuracy and branch target tracking structures to speculatively fetch instructions into the Instruction Cache (L1-I cache). As contemporary data center applications become more complex, their code footprints also grow, resulting in a high number of Branch Target Buffer (BTB) misses. These BTB missing branches typically have previously been decoded and placed in the BTB, but have since been evicted, leading to BTB misses now. FDIP can alleviate L1-I cache misses, but its reliance on the BPU's tracking structures means that when it encounters a BTB miss, the BPU may not identify the current instruction as a branch to FDIP. This can prevent FDIP from prefetching or cause it to speculate down the wrong path, further polluting the L1-I cache.",
+  "abstract_source_id": "src-abstract-asplos-2025-9074d7f1",
   "venue": "asplos",
   "year": 2025,
   "track_or_session": "Session 5B: Microarchitecture",
@@ -230,6 +232,19 @@
       "official": false,
       "supports": [
         "Indexed abstract and open-access links used for relevance classification and ancillary-link discovery."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2025-9074d7f1",
+      "url": "https://api.openalex.org/works/doi:10.1145/3676641.3716273?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Skia: Exposing Shadow Branches",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:03:54Z",
+      "content_hash": "sha256:0d6a9bc49bbddbddf71e96584b695fb722736886368d411fd9c3bd5d7a68b867",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sigcomm-2026-near-optimal-online-traffic-engineering-f8b927aa",
   "title": "Near-optimal Online Traffic Engineering",
+  "abstract": "Most deployed WAN Traffic Engineering (TE) systems use a logically centralized controller that periodically gathers traffic demands, runs a TE optimization or heuristic, and then programs the network. At scale, these solutions are often suboptimal and can take minutes to react to demand changes or failures. In this paper, we introduce OnlineTE, a system that reacts immediately to demand changes and failures and delivers near-optimal solutions within seconds of a change. OnlineTE builds on the theory of optimization decomposition to devise scalable, near-optimal, distributed TE solvers for path-based MLU and Max-Flow problems. In OnlineTE, switches each solve a local subproblem, and a central coordinator coordinates their convergence. As such, a switch can trigger a re-optimization as soon as it detects a demand change or failure, enabling high reactivity. OnlineTE scales to large WANs, and its computational requirements are well within the capabilities of modern WAN switches. It also enables a novel paradigm, edge-based TE, which can utilize resources more efficiently than today's path-based approaches. On a testbed emulation of a 750-node WAN topology, OnlineTE outperforms the state-of-the-art by up to an order of magnitude.",
+  "abstract_source_id": "src-abstract-f8b927aa",
   "venue": "sigcomm",
   "year": 2026,
   "track_or_session": "Research Session 10: Internet Measurement & Routing — Research Paper",
@@ -170,6 +172,19 @@
       "official": true,
       "supports": [
         "official main-paper scope and track definitions"
+      ]
+    },
+    {
+      "id": "src-abstract-f8b927aa",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/search/match?query=Near-optimal%20Online%20Traffic%20Engineering&fields=title,abstract",
+      "kind": "semantic-scholar",
+      "title": "Near-optimal Online Traffic Engineering",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T23:03:18Z",
+      "content_hash": "sha256:2419571c999106b66fdea6e7275646ebfdab8e3387f991e05ec705ed343b1777",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

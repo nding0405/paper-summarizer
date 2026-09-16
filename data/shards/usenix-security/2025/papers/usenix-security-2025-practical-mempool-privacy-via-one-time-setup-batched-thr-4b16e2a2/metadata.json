@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-practical-mempool-privacy-via-one-time-setup-batched-thr-4b16e2a2",
   "title": "Practical Mempool Privacy via One-time Setup Batched Threshold Encryption",
+  "abstract": "An important consideration with the growth of the DeFi ecosystem is the protection of clients who submit transactions to the system. As it currently stands, the public visibility of these transactions in the memory pool (mempool) makes them susceptible to market manipulations such as frontrunning and backrunning. More broadly, for various reasons—ranging from avoiding market manipulation to including time-sensitive information in their transactions—clients may want the contents of their transactions to remain private until they are executed, i.e. they have pending transaction privacy. Therefore, mempool privacy is becoming an increasingly important feature as DeFi applications continue to spread.\n\nWe construct the first practical mempool privacy scheme that uses a one-time DKG setup for n decryption servers. Our scheme ensures the strong privacy requirement by not only hiding the transactions until they are decrypted but also guaranteeing privacy for transactions that were not selected in the epoch (pending transaction privacy). For each epoch (or block), clients can encrypt their transactions so that, once B (encrypted) transactions are selected for the epoch, they can be decrypted by each decryption server while communicating only O(1) information.\n\nOur result improves upon the best-known prior works, which either: (i) require an expensive initial setup involving a (special purpose) multiparty computation protocol executed by the n decryption servers, along with an additional per-epoch setup; (ii) require each decryption server to communicate O(B) information; or (iii) do not guarantee pending transaction privacy.\n\nWe implement our scheme and find that transactions can be encrypted in approximately 8.5 ms, independent of committee size, and the communication required to decrypt an entire batch of transactions is 48 bytes per party, independent of the number of transactions. If deployed on Ethereum, which processes close to 500 transactions per block, it takes close to 3.2 s for each committee member to compute a partial decryption and 3.0 s to decrypt all transactions for a block in single-threaded mode. Compared to prior work, which had an expensive setup phase per epoch, we incur < 2x overhead in the worst case. On some metrics such as partial decryptions size, we actually fare better.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-4b16e2a2",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Crypto 2: Private Information Retrieval and Computation",
@@ -133,6 +135,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-4b16e2a2",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/choudhuri",
+      "kind": "paper-page",
+      "title": "Practical Mempool Privacy via One-time Setup Batched Threshold Encryption",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:21:12Z",
+      "content_hash": "sha256:7285944ee2b253f4816e9c09c8a6ac3344744238bf8640fc0c69c1226e6a0cdf",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

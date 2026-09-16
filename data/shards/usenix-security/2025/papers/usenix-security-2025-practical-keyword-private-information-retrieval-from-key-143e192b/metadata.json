@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-practical-keyword-private-information-retrieval-from-key-143e192b",
   "title": "Practical Keyword Private Information Retrieval from Key-to-Index Mappings",
+  "abstract": "This paper introduces practical schemes for keyword Private Information Retrieval (keyword PIR), enabling private queries on public databases using keywords. Unlike standard index-based PIR, keyword PIR presents greater challenges, since the query's position within the database is unknown and the domain of keywords is vast. Our key insight is to construct an efficient and compact key-to-index mapping, thereby reducing the keyword PIR problem to standard PIR. To achieve this, we propose three constructions incorporating several new techniques. The high-level approach involves (1) encoding the server's key-value database into an indexable database with a key-to-index mapping and (2) invoking standard PIR on the encoded database to retrieve specific positions based on the mapping. We conduct comprehensive experiments, with results showing substantial improvements over the state-of-the-art keyword PIR, ChalametPIR (CCS '24), i.e., a 15∼178 x reduction in communication and 1.1 ∼ 2.4 x runtime improvement, depending on database size and entry length. Our constructions are practical, executing keyword PIR in just 47 ms for a database containing 1 million 32-byte entries.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-143e192b",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Crypto 2: Private Information Retrieval and Computation",
@@ -217,6 +219,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-143e192b",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/hao",
+      "kind": "paper-page",
+      "title": "Practical Keyword Private Information Retrieval from Key-to-Index Mappings",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:21:11Z",
+      "content_hash": "sha256:67a1f59b1109604541fe44f15aca0d5c6bf36d9d6a369a80f97d506533b09a5c",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

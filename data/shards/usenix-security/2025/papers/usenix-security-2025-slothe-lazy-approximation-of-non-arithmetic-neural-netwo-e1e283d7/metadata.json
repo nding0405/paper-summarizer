@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-slothe-lazy-approximation-of-non-arithmetic-neural-netwo-e1e283d7",
   "title": "SLOTHE : Lazy Approximation of Non-Arithmetic Neural Network Functions over Encrypted Data",
+  "abstract": "Machine Learning as a Service (MLaaS) introduces strong privacy concerns for both clients and model providers. Fully Homomorphic Encryption (FHE) offers a promising solution by enabling inference over encrypted data, but its limited expressiveness requires approximating non-arithmetic functions (NAFs) with polynomials, often leading to significant accuracy and performance trade-offs. Existing works adopt an eager approximation (EA) strategy, which statically replaces each NAF with a fixed polynomial, locking in computational errors and limiting optimization opportunities. We propose SLOTHE, a lazy approximation (LA) solution that recursively decomposes NAF codes into arithmetic and non-arithmetic sub-functions, selectively approximating only the non-arithmetic components when required. SLOTHE introduces a tunable cost model to balance accuracy and latency, and incorporates FHE-aware optimizations to eliminate redundant computation. Implemented using CKKS, SLOTHE achieves up to 42,378× lower maximum error than EA-based works, with improved inference accuracy and latency across BERT-based transformers. SLOTHE can also be adapted for MPC-based protocols, making it a flexible tool for secure neural network inference.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-e1e283d7",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "ML and AI Privacy 1: Federated Learning and Protecting Data",
@@ -133,6 +135,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-e1e283d7",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/nam-slothe",
+      "kind": "paper-page",
+      "title": "SLOTHE : Lazy Approximation of Non-Arithmetic Neural Network Functions over Encrypted Data",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:21:45Z",
+      "content_hash": "sha256:7af6c639b7efa3abe8a5ad75189b350613ae67d4e65dfeca4db1d9a00bbbe011",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

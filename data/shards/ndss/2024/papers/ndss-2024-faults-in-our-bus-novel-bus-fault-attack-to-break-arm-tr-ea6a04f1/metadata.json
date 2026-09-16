@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2024-faults-in-our-bus-novel-bus-fault-attack-to-break-arm-tr-ea6a04f1",
   "title": "Faults in Our Bus: Novel Bus Fault Attack to Break ARM TrustZone",
+  "abstract": "The ever-increasing growth of Internet-of-Things (IoT) has led to wide-scale deployment of high-frequency, highly complex Systems-on-a-Chip (SoCs), which are capable of running a full-fledged operating system (OS). The presence of OS and other software countermeasures make SoCs resilient against the traditional fault attacks that are relevant on FPGAs and microprocessors. In this work, we present the first practical implications of targeting an orthogonal aspect of SoC's architecture: the system bus. We inject electromagnetic pulses onto the system bus during the execution of instructions involving processor-memory interaction. We show how address bus faults compromise software implementations of masked implementations of ciphers, illustrated using implementations of state-of-the-art post-quantum cryptography (PQC) schemes, leaking entire secret keys with a single fault. We also demonstrate that data bus faults can be controlled and exploited to launch Differential Fault Analysis (DFA) attacks on table-based implementation of the Advanced Encryption Standard (AES). Furthermore, we demonstrate that the impact of such bus faults can be far-reaching and mislead the security guarantees of the popular and widely used ARM TrustZone. We use data-bus faults (along with loopholes in the GlobalPlatform API specification) to mislead the signature verification step to load a malicious Trusted Application (TA) inside the TrustZone. We follow this up with address bus faults to steal symmetric encryption keys of other benign TAs in the system, leading to complete breakdown of security on TrustZone. We note that since the attack relies upon loopholes in the GlobalPlatform API specification, it is portable to any TEE following this specification. To emphasize upon this portability of the attack, we demonstrate successful installation of malicious TAs on two TrustZone implementations (OP-TEE and MyTEE) on two different platforms (Raspberry Pi 3 and Raspberry Pi 4). Finally, we propose countermeasures that can be integrated into the SoC environment to defend against these attack vectors.",
+  "abstract_source_id": "src-abstract-ndss-2024-ea6a04f1",
   "venue": "ndss",
   "year": 2024,
   "track_or_session": "Fall submission cycle",
@@ -126,6 +128,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2024-ea6a04f1",
+      "url": "https://www.ndss-symposium.org/ndss-paper/faults-in-our-bus-novel-bus-fault-attack-to-break-arm-trustzone/",
+      "kind": "paper-page",
+      "title": "Faults in Our Bus: Novel Bus Fault Attack to Break ARM TrustZone",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:18:03Z",
+      "content_hash": "sha256:5ee9cd5ebb8ff8665bbb8f6640907105576690f56424475f1587ad5c2ee02015",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

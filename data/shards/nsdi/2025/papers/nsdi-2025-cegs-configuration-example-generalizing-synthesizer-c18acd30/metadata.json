@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2025-cegs-configuration-example-generalizing-synthesizer-c18acd30",
   "title": "CEGS: Configuration Example Generalizing Synthesizer",
+  "abstract": "Network configuration synthesis promises to increase the efficiency of network management by reducing human involvement. However, despite significant advances in this field, existing synthesizers still require much human effort in drafting configuration templates or coding in a domain-specific language. We argue that the main reason for this is that a core capability is missing for current synthesizers: identifying and following configuration examples in configuration manuals and generalizing them to arbitrary topologies.\n\nIn this work, we fill this capability gap with two recent advancements in artificial intelligence: graph neural networks (GNNs) and large language models (LLMs). We build CEGS, which can automatically identify appropriate configuration examples, follow and generalize them to fit target network scenarios. CEGS features a GNN-based Querier to identify relevant examples from device documentations, a GNN-based Classifier to generalize the example to arbitrary topology, and an efficient LLM-driven synthesis method to quickly and correctly synthesize configurations that comply with the intents. Evaluations of real-world networks and complex intents show that CEGS can automatically synthesize correct configurations for a network of 1094 devices without human involvement. In contrast, the state-of-the-art LLM-based synthesizer are more than 30 times slower than CEGS on average, even when human experts are in the loop.",
+  "abstract_source_id": "src-abstract-nsdi-2025-c18acd30",
   "venue": "nsdi",
   "year": 2025,
   "track_or_session": "Verification 2",
@@ -140,6 +142,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2025-c18acd30",
+      "url": "https://www.usenix.org/conference/nsdi25/presentation/liu-jianmin",
+      "kind": "paper-page",
+      "title": "CEGS: Configuration Example Generalizing Synthesizer",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:04:02Z",
+      "content_hash": "sha256:ef0fe94f99d9c347eb13331832988dde8ced3ad17181e58e7789edafb829d1e7",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

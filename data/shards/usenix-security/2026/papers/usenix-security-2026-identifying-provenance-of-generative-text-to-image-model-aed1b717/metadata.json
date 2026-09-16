@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-identifying-provenance-of-generative-text-to-image-model-aed1b717",
   "title": "Identifying Provenance of Generative Text-to-Image Models",
+  "abstract": "Fine-tuning provides a fast and cheap way to produce new text-to-image models that are often indistinguishable from ones trained from scratch. Unfortunately, misrepresentation of fine-tuned models creates problems for AI companies and users alike, by disincentivizing competition and misleading users on model quality and ethics of its training process.\n\nIn this paper, we propose a model provenance system that identifies models produced by fine-tuning on existing text-to-image models, using only black-box query access. Our design is informed by analysis showing that one can quantify the feature space difference between text-to-image models by analyzing their responses to detailed prompts. Our system analyzes model output, extracts visual features using a generic feature extractor, and compares their distributions against those from a reference pool of base models using Jensen-Shannon divergence. Applying statistical hypothesis testing then determines if a target model is trained from scratch or fine-tuned, and if the latter, the likely base (parent) model. We evaluate our system across seven widely used diffusion models and numerous fine-tuned variants. Our results show high accuracy in attributing model lineage, even under adversarial conditions such as image post-processing or weight perturbations. Finally, we demonstrate real world efficacy of our system by tracing provenance of in-the-wild models from popular online platforms.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-aed1b717",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Security of ML 4",
@@ -177,6 +179,19 @@
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening",
         "prepublication PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-aed1b717",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/ha",
+      "kind": "paper-page",
+      "title": "Identifying Provenance of Generative Text-to-Image Models",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:24:17Z",
+      "content_hash": "sha256:9e2a1ee4649946357cfd7be8aae6851c8e5633cd2a3c6a0747a45c6bd5f14b61",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

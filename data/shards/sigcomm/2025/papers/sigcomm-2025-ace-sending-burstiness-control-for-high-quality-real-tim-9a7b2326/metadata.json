@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sigcomm-2025-ace-sending-burstiness-control-for-high-quality-real-tim-9a7b2326",
   "title": "ACE: Sending Burstiness Control for High-Quality Real-time Communication",
+  "abstract": "Modern real-time communication (RTC) demands both ultra-low latency and consistently high visual quality. Yet, as content becomes more dynamic and RTTs shrink, we reveal a previously overlooked problem: long-tail queuing latency in the sender's pacing queue between encoder and network. This phenomenon is rooted in a mismatch between the bursty frame stream produced by the encoder and the smooth traffic expected by the network. Existing approaches trying to smoothen the bitrate inevitably force an undesirable trade-off between latency and video quality. To address this, we propose a dual-control approach that manages both the encoding and transmission burstiness. At the sender, we dynamically adjust the bucket size of a token-based pacer to control burstiness at the granularity of frame level. Within the encoder, we introduce an adaptive complexity mechanism that smoothens frame sizes without sacrificing quality. Trace-driven emulation and real-world experiments show our solution ACE reduces end-to-end 95th percentile latency by up to 43% while maintaining superior visual quality versus the state of the art.",
+  "abstract_source_id": "src-abstract-sigcomm-2025-9a7b2326",
   "venue": "sigcomm",
   "year": 2025,
   "track_or_session": "Video & QoE",
@@ -213,6 +215,19 @@
         "DOI and ACM publisher landing/PDF links",
         "publisher-deposited ORCIDs when available",
         "proceedings page range and online publication date"
+      ]
+    },
+    {
+      "id": "src-abstract-sigcomm-2025-9a7b2326",
+      "url": "https://api.openalex.org/works/doi:10.1145/3718958.3750520?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "ACE: Sending Burstiness Control for High-Quality Real-time Communication",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:23:17Z",
+      "content_hash": "sha256:09a1ce1b7c6cb958a4de83060231bdb35f57fec11cefa095dbf30c591f6a2e87",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2024-servicelab-preventing-tiny-performance-regressions-at-hy-794cf183",
   "title": "ServiceLab: Preventing Tiny Performance Regressions at Hyperscale through Pre-Production Testing",
+  "abstract": "This paper presents ServiceLab, a large-scale performance testing platform developed at Meta. Currently, the diverse set of applications and ML models it tests consumes millions of machines in production, and each year it detects performance regressions that could otherwise lead to the wastage of millions of machines. A major challenge for ServiceLab is to detect small performance regressions, sometimes as tiny as 0.01%. These minor regressions matter due to our large fleet size and their potential to accumulate over time. For instance, the median regression detected by ServiceLab for our large serverless platform, running on more than half a million machines, is only 0.14%. Another challenge is running performance tests in our private cloud, which, like the public cloud, is a noisy environment that exhibits inherent performance variances even for machines of the same instance type. To address these challenges, we conduct a large-scale study with millions of performance experiments to identify machine factors, such as the kernel, CPU, and datacenter location, that introduce variance to test results. Moreover, we present statistical analysis methods to robustly identify small regressions. Finally, we share our seven years of operational experience in dealing with a diverse set of applications.",
+  "abstract_source_id": "src-abstract-osdi-2024-794cf183",
   "venue": "osdi",
   "year": 2024,
   "track_or_session": "Cloud Computing",
@@ -474,6 +476,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2024-794cf183",
+      "url": "https://www.usenix.org/conference/osdi24/presentation/chow",
+      "kind": "paper-page",
+      "title": "ServiceLab: Preventing Tiny Performance Regressions at Hyperscale through Pre-Production Testing",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:07:20Z",
+      "content_hash": "sha256:ea01d280a865011df2550ae4f5b0322c183d8f8c74c5eea59059f9310cfb778b",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2024-secret-shared-shuffle-with-malicious-security-fb239b32",
   "title": "Secret-Shared Shuffle with Malicious Security",
+  "abstract": "A secret-shared shuffle (SSS) protocol permutes a secret-shared vector using a random secret permutation. It has found numerous applications, however, it is also an expensive operation and often a performance bottleneck. Chase et al. (Asiacrypt'20) recently proposed a highly efficient semi-honest two-party SSS protocol known as the CGP protocol. It utilizes purposely designed pseudorandom correlations that facilitate a communication-efficient online shuffle phase. That said, semi-honest security is insufficient in many real-world application scenarios since shuffle is usually used for highly sensitive applications. Considering this, recent works (CANS'21, NDSS'22) attempted to enhance the CGP protocol with malicious security over authenticated secret sharings. However, we find that these attempts are flawed, and malicious adversaries can still learn private information via malicious deviations. This is demonstrated with concrete attacks proposed in this paper. Then the question is how to fill the gap and design a maliciously secure CGP shuffle protocol. We answer this question by introducing a set of lightweight correlation checks and a leakage reduction mechanism. Then we apply our techniques with authenticated secret sharings to achieve malicious security. Notably, our protocol, while increasing security, is also efficient. In the two-party setting, experiment results show that our maliciously secure protocol introduces an acceptable overhead compared to its semi-honest version and is more efficient than the state-of-the-art maliciously secure SSS protocol from the MP-SPDZ library.",
+  "abstract_source_id": "src-abstract-ndss-2024-fb239b32",
   "venue": "ndss",
   "year": 2024,
   "track_or_session": "Fall submission cycle",
@@ -168,6 +170,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2024-fb239b32",
+      "url": "https://www.ndss-symposium.org/ndss-paper/secret-shared-shuffle-with-malicious-security/",
+      "kind": "paper-page",
+      "title": "Secret-Shared Shuffle with Malicious Security",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:18:37Z",
+      "content_hash": "sha256:5e996d908864428bd6091c218b9cd91089e35faab5adb3fb97ed24d550092226",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

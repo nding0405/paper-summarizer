@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2023-bleem-packet-sequence-oriented-fuzzing-for-protocol-impl-09531eb6",
   "title": "Bleem: Packet Sequence Oriented Fuzzing for Protocol Implementations",
+  "abstract": "Protocol implementations are essential components in network infrastructures. Flaws hidden in the implementations can easily render devices vulnerable to adversaries. Therefore, guaranteeing their correctness is important. However, commonly used vulnerability detection techniques, such as fuzz testing, face increasing challenges in testing these implementations due to ineffective feedback mechanisms and insufficient protocol state-space exploration techniques.\n\nThis paper presents Bleem, a packet-sequence-oriented black-box fuzzer for vulnerability detection of protocol implementations. Instead of focusing on individual packet generation, Bleem generates packets on a sequence level. It provides an effective feedback mechanism by analyzing the system output sequence noninvasively, supports guided fuzzing by resorting to state-space tracking that encompasses all parties timely, and utilizes interactive trafﬁc information to generate protocol-logic-aware packet sequences. We evaluate Bleem on 15 widely-used implementations of well-known protocols (e.g., TLS and QUIC). Results show that, compared to the state-of-the-art protocol fuzzers such as Peach, Bleem achieves substantially higher branch coverage (up to 174.93% improvement) within 24 hours. Furthermore, Bleem exposed 15 security-critical vulnerabilities in prominent protocol implementations, with 10 CVEs assigned.",
+  "abstract_source_id": "src-abstract-usenix-security-2023-09531eb6",
   "venue": "usenix-security",
   "year": 2023,
   "track_or_session": "Warm and Fuzzing",
@@ -217,6 +219,19 @@
       "official": true,
       "supports": [
         "authors, affiliations when published, abstract, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2023-09531eb6",
+      "url": "https://www.usenix.org/conference/usenixsecurity23/presentation/luo-zhengxiong",
+      "kind": "paper-page",
+      "title": "Bleem: Packet Sequence Oriented Fuzzing for Protocol Implementations",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:10:03Z",
+      "content_hash": "sha256:7594381f81d793ee68a08a597748e86764ecc900b6008a297b5db60fcc4f9fe4",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

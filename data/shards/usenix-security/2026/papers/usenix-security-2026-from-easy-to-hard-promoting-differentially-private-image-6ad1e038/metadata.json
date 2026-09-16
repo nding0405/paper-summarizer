@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-from-easy-to-hard-promoting-differentially-private-image-6ad1e038",
   "title": "From Easy to Hard++: Promoting Differentially Private Image Synthesis Through Spatial-Frequency Curriculum",
+  "abstract": "Differentially private (DP) synthetic images serve as a critical tool for reducing privacy concerns by mimicking the statistical properties of sensitive data while ensuring privacy guarantees. To improve the quality of synthetic images, most studies have focused on improving the core optimization techniques (e.g., DP-SGD). Recently, we have witnessed a paradigm shift that takes these techniques off the shelf and studies how to use them together to achieve the best results. One notable work is DP-FETA, which proposes using 'central images' for 'warming up' the DP training and then using traditional DP-SGD.\n\nInspired by DP-FETA, we are curious whether there are other such tools we can use together with DP-SGD. We first observe that using 'central images' only works for datasets where there are many samples that look similar. To handle scenarios where images could vary significantly, we propose FETA-Pro, which introduces frequency features as 'training shortcuts.' The complexity of frequency features lies between that of spatial features (captured by 'central images') and full images, allowing for a finer-grained curriculum for DP training. To incorporate these two types of shortcuts together, one challenge is to handle the training discrepancy between spatial and frequency features. To address it, we leverage the pipeline generation property of generative models (instead of having one model trained with multiple features/objectives, we can have multiple models working on different features, then feed the generated results from one model into another) and use a more flexible design. Specifically, FETA-Pro introduces an auxiliary generator to produce images aligned with noisy frequency features. Then, another model is trained with these images, together with spatial features and DP-SGD. Evaluated across five sensitive image datasets, FETA-Pro shows an average of 25.7% higher fidelity and 4.1% greater utility than the best-performing baseline, under a privacy budget ε = 1.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-6ad1e038",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Privacy of ML 2",
@@ -135,6 +137,19 @@
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening",
         "prepublication PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-6ad1e038",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/gong-easy-hard",
+      "kind": "paper-page",
+      "title": "From Easy to Hard++: Promoting Differentially Private Image Synthesis Through Spatial-Frequency Curriculum",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:24:03Z",
+      "content_hash": "sha256:f6b50c3427d53f6318cd763908a6ba392619b459dfa32ba4d35e72a31c2188c8",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

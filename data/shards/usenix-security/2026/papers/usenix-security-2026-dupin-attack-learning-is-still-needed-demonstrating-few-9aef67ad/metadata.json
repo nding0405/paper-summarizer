@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-dupin-attack-learning-is-still-needed-demonstrating-few-9aef67ad",
   "title": "DUPIN: Attack Learning Is Still Needed! Demonstrating Few-Shot after Unsupervised Pretraining Is A Nimble Forensics Learner",
+  "abstract": "Advanced persistent threats (APTs) pose a significant challenge in cybersecurity, involving staged and prolonged operations that often remain undetected until postmortem indicators, such as sabotage or financial loss, emerge. In consequence, human analysts are facing a needle-in-a-haystack challenge among vast accumulation of daily audit logs. However, leveraging a learning system for attack forensics is limited due to the scarcity of attack data, as attacks occur infrequently. In addition, since malicious behaviors are usually embedded in massive benign ones, they are very hard to label by humans. Thus, the recent approaches leverage self-supervised learning methods, where models rely solely on benign data and perform outlier detection. However, these methods struggle with the increasing complexity and dynamics of large-scale audit logs, often resulting in non-trivial false positives. Therefore, we propose a novel approach to learning-based attack forensics called DUPIN. First, DUPIN performs unsupervised pre-training on an enormous amount of audit events in the form of provenance graphs. It then proceeds to a few-shot learning stage, leveraging a small number of labeled attack examples to fine-tune its detection capabilities. We pretrain DUPIN on up to 38 - 52 days of audit logs (7.3TB total) and evaluate it against various baselines on 25 APT campaigns across four different data sources, facilitating the scalable evaluation.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-9aef67ad",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Network Security 2",
@@ -134,6 +136,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-9aef67ad",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/bae",
+      "kind": "paper-page",
+      "title": "DUPIN: Attack Learning Is Still Needed! Demonstrating Few-Shot after Unsupervised Pretraining Is A Nimble Forensics Learner",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:23:48Z",
+      "content_hash": "sha256:e303e45e1531519e563bce39de83088f569a1eb38a5c64dae8df5d1036b06b61",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

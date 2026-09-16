@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-understanding-implicit-trust-errors-in-core-carrier-netw-1936cdba",
   "title": "Understanding Implicit Trust Errors in Core Carrier Networks through Multi-Agent Flaw Discovery and Analysis",
+  "abstract": "Core network (CN) is at the center of a cellular system and was historically protected by physical isolation, but the shift to cloud-native deployments breaks this protection and introduces new attack interfaces. Indeed, from reported GitHub issues, we found that many security flaws within CNs can be attributed to blind trust underlying interactions across different CN components. Under such trust assumptions, one component may fail to properly verify the syntactic and semantic content of messages received from other internal components, and may also grant resources to requesters without validation of resource availability. These weaknesses, once coupled with the risks of exposing internal interfaces to unauthorized external parties, as observed in our research, will lead to serious consequences, including session hijacking and denial of services. In our research, we call these newly discovered weaknesses implicit trust errors or iTrue .\n\nTo detect iTrues and understand their security impacts, we designed and implemented a multi-agent framework, dubbed iFinder . iFinder automatically analyzes and summarizes known security flaws, and uses them as ``seeds'' to detect related vulnerabilities from the CN simulators. To suppress hallucinations produced by large language models (LLMs), not only have we developed a Chain of Thought (CoT) reasoning to guide agents, but we also build an innovative strategy that cross-checks both 3GPP specifications and CN code to capture existing protection missed by the agents. Further, we developed a technique that uses LLMs to generate proof-of-concept (PoC) exploits for potential iTrues and iteratively refine the PoCs by automatically executing them against CN simulators and analyzing results. Running iFinder on 7 prominent simulators, we discovered 84 previously unknown vulnerabilities. Among them 70 have already been confirmed with 40 CVE assignments already awarded. Our findings highlight the pervasiveness of iTrue risks across the cellular core networks and the urgent needs for elevated protection within the original trust domains. We plan to make the service of iFinder publicly available to help enhance the security qualities of cellular core networks.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-1936cdba",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Network Security 4",
@@ -155,6 +157,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-1936cdba",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/lin-ziyu",
+      "kind": "paper-page",
+      "title": "Understanding Implicit Trust Errors in Core Carrier Networks through Multi-Agent Flaw Discovery and Analysis",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:26:02Z",
+      "content_hash": "sha256:b7014a6beaec12657bfc1215ea56ce2bd055f1f15864da17198783510b34f936",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

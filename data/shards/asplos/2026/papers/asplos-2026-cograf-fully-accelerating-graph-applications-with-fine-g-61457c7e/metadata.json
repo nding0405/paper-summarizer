@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2026-cograf-fully-accelerating-graph-applications-with-fine-g-61457c7e",
   "title": "CoGraf: Fully Accelerating Graph Applications with Fine-Grained PIM",
+  "abstract": "Processing-in-Memory (PIM) delivers enormous performance by taking advantage of internal DRAM bandwidth and parallelism. However, graph applications are difficult to adapt to PIM due to their irregular access patterns.We present the first Fine-Grained PIM (FGPIM) design that fully accelerates vertex-centric push-based graph applications by accelerating both their update (computing vertex updates) and apply (summing up the updates) phases. For the update phase, we design a tuple-based LLC that can coalesce at different granularities to group graph updates together and propose multi-DRAM column processing FGPIM instructions to match the cache coalescing to the row-level parallelism of the FGPIM. With this acceleration, the apply phase becomes the bottleneck, and we propose bank-parallel FGPIM instructions with predicates to allow FGPIM to accelerate the conditional updates as well. We achieve an average speedup in the region of interest of 1.8x/3x compared to naive FGPIM and 4.4x/9.8x compared to state-of-the-art non-PIM baseline (HBM2/DDR4), and DRAM energy reduction of 67%/86% and 88%/94%.These results show the importance of providing a complete solution that accelerates both the update and apply phases.",
+  "abstract_source_id": "src-abstract-asplos-2026-61457c7e",
   "venue": "asplos",
   "year": 2026,
   "track_or_session": "Session 4D: Processing-in-Memory",
@@ -146,6 +148,19 @@
       "official": false,
       "supports": [
         "Indexed abstract used for strict relevance classification and indexed arXiv identifier where available."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2026-61457c7e",
+      "url": "https://api.openalex.org/works/doi:10.1145/3779212.3790142?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "CoGraf: Fully Accelerating Graph Applications with Fine-Grained PIM",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:05:04Z",
+      "content_hash": "sha256:3b24030711f1175761368639e0368983969fbef7304b2dd91b3ea942affc90ab",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

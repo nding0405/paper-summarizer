@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2026-attntrace-contextual-attribution-of-prompt-injection-and-382d5efe",
   "title": "AttnTrace: Contextual Attribution of Prompt Injection and Knowledge Corruption",
+  "abstract": "Long-context large language models (LLMs), such as GPT-5, Gemini-2.5-Pro, and Claude-Sonnet-4, are increasingly used to empower advanced AI systems, including retrievalaugmented generation (RAG) systems and autonomous agents. In these systems, an LLM receives an instruction along with a context-often consisting of texts retrieved from a knowledge database, memory, or the Internet-and generates a response that is contextually grounded by following the instruction. Many recent studies showed that these LLM-empowered systems are vulnerable to prompt injection and knowledge corruption attacks, where an attacker can inject malicious texts into the context such that the LLM generates an output as the attacker desires. One important research question is how to trace back to these malicious texts from a long context in leading to the attacker-desired output of the LLM. While significant efforts have been made, state-of-the-art solutions still achieve a sub-optimal performance and/or incur high computation cost. In this work, we propose AttnTrace, a new context traceback method based on the attention weights produced by an LLM for a prompt. To effectively utilize attention weights, we introduce two techniques designed to enhance the effectiveness of AttnTrace, and we provide theoretical insights for our design choice. We also perform a systematic evaluation for AttnTrace. The results demonstrate that AttnTrace is more accurate and efficient than existing state-of-the-art context traceback methods. We also show AttnTrace can improve state-of-the-art methods in detecting prompt injection under long contexts through the attribution-before-detection paradigm. As a real-world application, we demonstrate that AttnTrace can effectively pinpoint injected instructions in a paper designed to manipulate LLM-generated reviews. The code and data are available: https://github.com/Wang-Yanting/AttnTrace.",
+  "abstract_source_id": "src-abstract-sp-2026-382d5efe",
   "venue": "sp",
   "year": 2026,
   "track_or_session": "Cycle 2",
@@ -133,6 +135,19 @@
       "official": true,
       "supports": [
         "DOI, published-order authors and affiliations, abstract, publication date, page span, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2026-382d5efe",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "AttnTrace: Contextual Attribution of Prompt Injection and Knowledge Corruption",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:57Z",
+      "content_hash": "sha256:303a9b5e5ef8908a3cfe67f02eb8a87be978a5fe3281c7ecec8c0cdb512517e0",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2026-surviving-the-impossible-trinity-revisiting-cpu-scheduli-d453a56c",
   "title": "Surviving the Impossible Trinity: Revisiting CPU Scheduling Problem on Modern COTS Mobile Devices (Operational Systems)",
+  "abstract": "CPU scheduling performance on mobile devices, especially under user interactions, is hindered by a fundamental semantic gap: the kernel scheduler lacks visibility into the user interaction context, treating latency-critical UI threads and background tasks equally. In this paper, we identify an impossible trinity, i.e., scarce prime cores, cross-process IPC dependencies, and tight latency deadlines, which exacerbate the mobile scheduling problem. To survive the impossible trinity, we present MUSched, a semantic-aware scheduling framework for modern mobile devices that makes interaction capability a first-class scheduling objective. MUSched disentangles cross-process dependencies for critical threads along the interaction path and places these threads in a new VIP scheduling class between RT and CFS, allowing interaction-critical tasks to preempt normal background work without compromising system stability. Furthermore, MUSched proposes a scheduling policy plug-and-play mechanism that facilitates on-demand policy update in the user space without kernel recompilation for COTS mobile devices. In laboratory evaluations, MUSched reduces average application cold-start time by 14.8%. Furthermore, MUSched has been deployed on more than 20 million mobile devices since 2024. The deployment results show that MUSched reduces real-world startup anomalies by more than 30.7%. This deployment underscores the pivotal role of semantic-aware scheduling in achieving optimal mobile Quality of Experience.",
+  "abstract_source_id": "src-abstract-osdi-2026-d453a56c",
   "venue": "osdi",
   "year": 2026,
   "track_or_session": "Mobile and Edge Systems",
@@ -251,6 +253,19 @@
       "official": true,
       "supports": [
         "Official proceedings availability and canonical conference versions."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2026-d453a56c",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/xiao",
+      "kind": "paper-page",
+      "title": "Surviving the Impossible Trinity: Revisiting CPU Scheduling Problem on Modern COTS Mobile Devices (Operational Systems)",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:09:02Z",
+      "content_hash": "sha256:bde2ce9935d0a1537b3dc12c76ba90e993d55d3aaaf1f53338eb0ef965adade9",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

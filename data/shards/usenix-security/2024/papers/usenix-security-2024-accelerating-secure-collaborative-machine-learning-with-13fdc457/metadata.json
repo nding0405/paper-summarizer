@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2024-accelerating-secure-collaborative-machine-learning-with-13fdc457",
   "title": "Accelerating Secure Collaborative Machine Learning with Protocol-Aware RDMA",
+  "abstract": "Secure Collaborative Machine Learning (SCML) suffers from high communication cost caused by secure computation protocols. While modern datacenters offer high-bandwidth and low-latency networks with Remote Direct Memory Access (RDMA) capability, existing SCML implementation remains to use TCP sockets, leading to inefficiency. We present CORA1 to implement SCML over RDMA. By using a protocol-aware design, CORA identifies the protocol used by the SCML program and sends messages directly to the remote party's protocol buffer, improving the efficiency of message exchange. CORA exploits the chance that the SCML task is determined before execution and the pattern is largely input-irrelevant, so that CORA can plan message destinations on remote hosts at compile time. CORA can be readily deployed with existing SCML frameworks such as Piranha with its socket-like interface. We evaluate CORA in SCML training tasks, and our results show that CORA can reduce communication cost by up to 11x and achieve 1.2x - 4.2x end-to-end speedup over TCP in SCML training.",
+  "abstract_source_id": "src-abstract-usenix-security-2024-13fdc457",
   "venue": "usenix-security",
   "year": 2024,
   "track_or_session": "ML III: Secure ML",
@@ -217,6 +219,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2024-13fdc457",
+      "url": "https://www.usenix.org/conference/usenixsecurity24/presentation/ren",
+      "kind": "paper-page",
+      "title": "Accelerating Secure Collaborative Machine Learning with Protocol-Aware RDMA",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:14:03Z",
+      "content_hash": "sha256:c2cbc1ba985dfc465a63a50b2887c854528a4ab7fb3faa413832bf509854883c",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

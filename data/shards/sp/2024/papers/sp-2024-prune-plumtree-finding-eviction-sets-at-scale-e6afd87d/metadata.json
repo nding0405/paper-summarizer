@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2024-prune-plumtree-finding-eviction-sets-at-scale-e6afd87d",
   "title": "Prune+PlumTree - Finding Eviction Sets at Scale",
+  "abstract": "Finding eviction sets for a large fraction of the cache is an essential preprocessing step for Prime+Probe based cache side-channel attacks. Previous work on this problem reduces it to finding an eviction set for each cache set independently. In a w-way, set-associative cache with s cache sets this approach requires Ω(s2w) time.This work introduces the Prune+PlumTree algorithm, which finds eviction sets for any constant fraction of the cache in time O(sw log s), assuming the LRU cache replacement policy. We complement the asymptotic result with tests on current Intel processors, with 16k sets in the Last Level Cache (LLC) and 4 Kbyte memory pages, finding eviction sets for more than 98% of the LLC in 40–63 milliseconds, improving over previous work by two orders of magnitude. Simulating Prune+PlumTree on a standard, i.e. unskewed, randomized cache, mapping addresses to random cache sets, results in finding eviction sets for more than 98% of a 12-way cache with 214 sets in less than 7.4 seconds.We further adapt Prune+PlumTree to caches with a random replacement policy based on a novel method to prune a large set of random memory lines to a union of minimal eviction sets in this setting. This variant of Prune+PlumTree runs in time O(sw2 log s). As a final contribution, we show that Prune+PlumTree for the LRU replacement policy has asymptotically tight running time by proving that any algorithm that maps a constant fraction of the cache runs in time Ω(sw log s).",
+  "abstract_source_id": "src-abstract-sp-2024-e6afd87d",
   "venue": "sp",
   "year": 2024,
   "track_or_session": "Summer cycle",
@@ -117,6 +119,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2024-e6afd87d",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Prune+PlumTree - Finding Eviction Sets at Scale",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:37Z",
+      "content_hash": "sha256:d186972817127125a98a71b907d7b283fa37f2e757aaf5b9ae232aa389caabc0",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

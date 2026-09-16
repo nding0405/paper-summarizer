@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-obliviator-oblivious-parallel-joins-and-other-operators-4ee79dc5",
   "title": "OBLIVIATOR: OBLIVIous Parallel Joins and other OperATORs in Shared Memory Environments",
+  "abstract": "We introduce oblivious parallel operators designed for both non-foreign key and foreign key equi-joins. Obliviousness ensures nothing is revealed about the data besides input/output sizes, even against a strong adversary that can observe memory access patterns. Our solution achieves this by combining trusted hardware with efficient oblivious primitives for compaction and sorting, and two oblivious algorithms: (i) an oblivious aggregation tree, which can be described as a variation of the parallel prefix sum, customized for trusted hardware, and (ii) a novel algorithm for obliviously expanding the elements of a relation. In the sequential setting, our oblivious join performs 4.6x - 5.14x faster than the prior state-of-the-art solution (Krastnikov et al., VLDB 2020) on data sets of size n=2^24. In the parallel setting, our algorithm achieves a speedup of up to roughly 16x over the sequential version, when running with 32 threads (becoming up to 80x compared to the sequential algorithm of Krastnikov et al.). Finally, our oblivious operators can be used independently to support other oblivious relational database queries, such as oblivious selection and oblivious group-by.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-4ee79dc5",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Crypto 5: HE, MPC, Oblivious Computation",
@@ -154,6 +156,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-4ee79dc5",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/mavrogiannakis",
+      "kind": "paper-page",
+      "title": "OBLIVIATOR: OBLIVIous Parallel Joins and other OperATORs in Shared Memory Environments",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:20:55Z",
+      "content_hash": "sha256:00b258bbcbbe250ae256e9b0cceb17b2b35996543401f9dd257f659b3b32cbb2",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2026-dualstrike-accurate-real-time-eavesdropping-and-injectio-e8f89c9b",
   "title": "DualStrike: Accurate, Real-time Eavesdropping and Injection of Keystrokes on Commodity Keyboards",
+  "abstract": "We discover that enabling both eavesdropping and non-invasive, per-key injection is viable on keyboards, in particular, the fast-emerging commodity Hall-effect keyboards. This paper introduces DualStrike, a new attack system that allows attackers to remotely listen to victim input and control any key on a Hall-effect keyboard. This capability opens doors to severe attacks (e.g., file deletion, private key theft, and tampering) based on the victim’s input and context, all without requiring hardware or software modifications to the victim’s computer. We present several key innovations in DualStrike, including a novel, compact electromagnet-based hardware design for high-frequency magnetic spoofing, a synchronization-free attack scheme, and a magnetometer-based listening mechanism using commercial off-the-shelf components. Our real-world experiments demonstrate that DualStrike can reliably compromise arbitrary keys across six recent Hall-effect keyboard models. Specifically, DualStrike achieves over 98.9% keystroke injection accuracy across all tested models. In an end-to-end test, the eavesdropping module achieves a high listening accuracy (i.e., above 99%). To improve the robustness of DualStrike, we implement a calibration algorithm to account for keyboard displacement, allowing it to maintain 98.5% injection accuracy even with offsets up to 4cm. We also identified DualStrike’s immunity to existing magnetic shielding mechanisms and proposed a novel shielding approach for Hall-effect keyboards. The demo video of DualStrike can be found in [30].",
+  "abstract_source_id": "src-abstract-ndss-2026-e8f89c9b",
   "venue": "ndss",
   "year": 2026,
   "track_or_session": "Summer submission cycle",
@@ -202,6 +204,19 @@
       "official": false,
       "supports": [
         "independent proceedings identity reconciliation"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2026-e8f89c9b",
+      "url": "https://www.ndss-symposium.org/ndss-paper/dualstrike-accurate-real-time-eavesdropping-and-injection-of-keystrokes-on-commodity-keyboards/",
+      "kind": "paper-page",
+      "title": "DualStrike: Accurate, Real-time Eavesdropping and Injection of Keystrokes on Commodity Keyboards",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:21:54Z",
+      "content_hash": "sha256:965a8183778bfb38fb6afc4fc71fd731f215ace12ebf08dbde32fc41ada92aab",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

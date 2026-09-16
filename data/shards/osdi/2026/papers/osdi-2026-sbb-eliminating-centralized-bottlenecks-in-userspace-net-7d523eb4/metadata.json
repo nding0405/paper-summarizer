@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2026-sbb-eliminating-centralized-bottlenecks-in-userspace-net-7d523eb4",
   "title": "SBB: Eliminating Centralized Bottlenecks in Userspace Network Runtime",
+  "abstract": "To achieve high throughput, low latency, and high CPU efficiency, userspace network runtimes must perform three types of scheduling: 1) request preemption to minimize tail latency, 2) CPU allocation among services to avoid wasting CPU cycles when the load is low, and 3) request load balancing across worker cores to achieve work conservation. However, prior designs rely on centralized components, which inevitably become scalability bottlenecks as the number of CPU workers increases, limiting system performance scaling.\n\nThis paper presents SBB, a purely decentralized userspace network runtime that simultaneously delivers high performance, high CPU efficiency, and high scalability by advancing in both system mechanism and scheduling policy. For system mechanism, SBB leverages the emerging User Interrupt mechanism in a novel way, delivering two types of device interrupts to the userspace runtime: 1) user-level timer interrupts for request preemption, and 2) user-level NIC interrupts for packet arrival to perform CPU allocation. For scheduling policy, SBB introduces a two-level algorithm, which marries flow migration (for persistent imbalance) with task stealing (for temporary imbalance), challenging the conventional wisdom that centralized load balancing outperforms decentralized approaches. Evaluation shows that SBB achieves 1.7× to 5.2× higher throughput when scaling to 48 cores, while meeting the same tail latency target.",
+  "abstract_source_id": "src-abstract-osdi-2026-7d523eb4",
   "venue": "osdi",
   "year": 2026,
   "track_or_session": "Kernel Scheduling and Tail Latency",
@@ -314,6 +316,19 @@
       "official": true,
       "supports": [
         "Official proceedings availability and canonical conference versions."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2026-7d523eb4",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/hu-kang",
+      "kind": "paper-page",
+      "title": "SBB: Eliminating Centralized Bottlenecks in Userspace Network Runtime",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:08:54Z",
+      "content_hash": "sha256:fff17653f3c683f14d55a30bd68261888b2931427af58e71fbe04512503ab92a",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

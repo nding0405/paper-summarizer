@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2023-dsfuzz-detecting-deep-state-bugs-with-dependent-state-ex-e5eb5fb8",
   "title": "DSFuzz: Detecting Deep State Bugs with Dependent State Exploration",
+  "abstract": "Traditional random mutation-based fuzzers are ineffective at reaching deep program states that require specific input values. Consequently, a large number of deep bugs remain undiscovered. To enhance the effectiveness of input mutation, previous research has utilized taint analysis to identify control-dependent critical bytes and only mutates those bytes. However, existing works do not consider indirect control dependencies, in which the critical bytes for taking one branch can only be set in a basic block that is control dependent on a series of other basic blocks. These critical bytes cannot be identified unless that series of basic blocks are visited in the execution path. Existing approaches would take an unacceptably long time and computation resources to attempt multiple paths before setting these critical bytes. In other words, the search space for identifying the critical bytes cannot be effectively explored by the current mutation strategies.",
+  "abstract_source_id": "src-abstract-ccs-2023-e5eb5fb8",
   "venue": "ccs",
   "year": 2023,
   "track_or_session": "Fuzzing I (approaches) (Software Security)",
@@ -130,6 +132,19 @@
       "official": false,
       "supports": [
         "published title, author order, and page span"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2023-e5eb5fb8",
+      "url": "https://api.openalex.org/works/doi:10.1145/3576915.3616594?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "DSFuzz: Detecting Deep State Bugs with Dependent State Exploration",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:07:35Z",
+      "content_hash": "sha256:b47b8df624d3bfba5fed4dc8f6ff5ebd25acbb40db1dd5f66fa348bd48b74020",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

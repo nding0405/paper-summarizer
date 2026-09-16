@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2025-augmenting-search-based-program-synthesis-with-local-inf-2ed301c8",
   "title": "Augmenting Search-based Program Synthesis with Local Inference Rules to Improve Black-box Deobfuscation",
+  "abstract": "Code obfuscation aims to protect programs from reverse engineering, with applications ranging from intellectual property protection to malware hardening. Recent works on black-box analyses propose to leverage program synthesis in order to infer the semantics of highly obfuscated code blocks. Being fully black-box, these approaches are immune to syntactic complexity and can thus bypass standard obfuscation mechanisms. Yet, they are restricted by their synthesis capabilities and can only be applied to semantically simple code blocks. It explains why they have mainly been used on virtual machine handlers, where behaviors are usually simple enough. Applying black-box deobfuscation at scale beyond virtualization is still an open problem, notably because black-box methods cannot synthesize complex behaviors involving, for example, arbitrary constant values or affine or polynomial relations over mixed-boolean-arithmetic expressions. In this article, we show how to combine search-based program synthesis with local inference rules, resulting in a new method named Search Modulo Inference Rules (Smir that boosts search-based program synthesis while keeping its generality and flexibility. We instantiate Smir with inference rules for hard synthesis problems like arbitrary constant values and affine or polynomial relations over mixed boolean expressions, yielding the new black-box deobfuscation tool: XSmir. Experiments on obfuscated codes, real-world binaries, and synthetic benchmarks demonstrate that XSmir significantly outperforms prior black-box deobfuscators, synthesizing overall 76% and 84% of the expressions from our real-world obfuscated and non-obfuscated benchmarks where prior works recover 63% and 55%, together with 2 to 3 times less false positive and slightly improved compression rate.",
+  "abstract_source_id": "src-abstract-ccs-2025-2ed301c8",
   "venue": "ccs",
   "year": 2025,
   "track_or_session": "Cycle 2",
@@ -169,6 +171,19 @@
         "published-order authors",
         "publication-time affiliations",
         "publication date and page span"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2025-2ed301c8",
+      "url": "https://api.openalex.org/works/doi:10.1145/3719027.3765134?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Augmenting Search-based Program Synthesis with Local Inference Rules to Improve Black-box Deobfuscation",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:12:53Z",
+      "content_hash": "sha256:ccf5e8d394660ee159c3a7bcce35ed87758ccd83b6aeaaa6a52030862f62204f",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

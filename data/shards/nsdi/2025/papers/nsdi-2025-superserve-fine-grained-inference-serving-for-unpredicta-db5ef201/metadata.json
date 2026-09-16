@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2025-superserve-fine-grained-inference-serving-for-unpredicta-db5ef201",
   "title": "SuperServe: Fine-Grained Inference Serving for Unpredictable Workloads",
+  "abstract": "The increasing deployment of ML models on the critical path of production applications requires ML inference serving systems to serve these models under unpredictable and bursty request arrival rates. Serving many models under such conditions requires a careful balance between each application’s latency and accuracy requirements and the overall efficiency of utilization of scarce resources. Faced with this tension, state-of-the-art systems either choose a single model representing a static point in the latency-accuracy tradeoff space to serve all requests or incur latency target violations by loading specific models on the critical path of request serving. Our work instead resolves this tension through a resource-efficient serving of the entire range of models spanning the latency-accuracy tradeoff space. Our novel mechanism, SubNetAct, achieves this by carefully inserting specialized control-flow operators in pre-trained, weight-shared super-networks. These operators enable SubNetAct to dynamically route a request through the network to actuate a specific model that meets the request’s latency and accuracy target. Thus, SubNetAct can serve a vastly higher number of models than prior systems while requiring upto 2.6× lower memory. More crucially, SubNetAct’s near-instantaneous actuation of a wide-range of models unlocks the design space of fine-grained, reactive scheduling policies. We design one such extremely effective policy, SlackFit, and instantiate both SubNetAct and SlackFit in a real system, SuperServe. On real-world traces derived from a Microsoft workload, SuperServe achieves 4.67% higher accuracy for the same latency targets and 2.85× higher latency target attainment for the same accuracy.",
+  "abstract_source_id": "src-abstract-nsdi-2025-db5ef201",
   "venue": "nsdi",
   "year": 2025,
   "track_or_session": "Infra For ML",
@@ -182,6 +184,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2025-db5ef201",
+      "url": "https://www.usenix.org/conference/nsdi25/presentation/khare",
+      "kind": "paper-page",
+      "title": "SuperServe: Fine-Grained Inference Serving for Unpredictable Workloads",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:04:38Z",
+      "content_hash": "sha256:db2ceb1fed06fc5ca0a4ac265d128bca802fdeec66dcd80277841b9e9ccb4934",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

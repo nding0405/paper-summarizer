@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-idfuzz-intelligent-directed-grey-box-fuzzing-72b2d541",
   "title": "IDFuzz: Intelligent Directed Grey-box Fuzzing",
+  "abstract": "Directed grey-box fuzzing aims to test target code in programs and is widely utilized in various scenarios, including patch testing, candidate vulnerability confirmation, and known vulnerability reproduction. However, we find that existing directed fuzzers generally lack effective input mutation strategies and resort to the randomness and empiricism inherent in AFL-based strategies, which prove to be inefficient in directed fuzzing contexts.\n\nThis paper presents IDFuzz, an intelligent input mutation solution for directed fuzzing. Our key insight is to leverage a neural network model to learn from historically mutated inputs and extract useful experience that can guide input mutation towards the target code. We introduce several novel techniques in model construction and model training, which help build a model that well captures experience on how to cover both explored and unexplored code relevant to the target. We further devise a refined model gradient-guided scheme that leverages the experience to locate critical input fields and develop a directed input mutation strategy. We implement IDFuzz as an input mutation module that complements most open-source state-of-the-art directed fuzzers. In our evaluation, IDFuzz significantly accelerates existing directed fuzzers by over 2.48x in reproducing target vulnerabilities on the Google Fuzzer Test Suite. Moreover, we demonstrate that IDFuzz helps existing directed fuzzers reduce ineffective mutations by 91.86%. Lastly, we detected 6 previously unknown vulnerabilities with 4 CVE IDs assigned so far and 1 incomplete fix of a high-severity vulnerability in well-tested real-world software using IDFuzz.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-72b2d541",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Software Security 3: Fuzzing",
@@ -238,6 +240,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-72b2d541",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/chen-yiyang",
+      "kind": "paper-page",
+      "title": "IDFuzz: Intelligent Directed Grey-box Fuzzing",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:20:24Z",
+      "content_hash": "sha256:840930e8e318cb5b683f6415d652068c5d75aecd85a9046ecaf8be2d84f563d5",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

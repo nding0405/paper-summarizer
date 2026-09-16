@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2024-verify-your-labels-trustworthy-predictions-and-datasets-c9898126",
   "title": "Verify your Labels! Trustworthy Predictions and Datasets via Confidence Scores",
+  "abstract": "Machine learning is a rapidly evolving technology with manifold benefits. At its core lies the mapping between samples and corresponding target labels (SL-Mappings). Such mappings can originate from labeled dataset samples or from prediction generated during model inference. The correctness of SL-Mappings is crucial, both during training and for model predictions, especially when considering poisoning attacks.\n\nExisting standalone works from the dataset cleaning and prediction confidence scoring domains lack a dual-use tool offering an SL-Mappings score, which is impractical. Moreover, these works have drawbacks, e.g., dependence on specific model architectures and reliance on large datasets, which may not be accessible, or lack a meaningful confidence score.\n\nIn this paper, we introduce LabelTrust, a versatile tool designed to generate confidence scores for SL-Mappings. We propose pipelines facilitating dataset cleaning and confidence scoring, mitigating the limitations of existing standalone approaches from each domain. Thereby, LabelTrust leverages a Siamese network trained via few-shot learning, requiring minimal clean samples and is agnostic to datasets and model architectures. We demonstrate LabelTrust's efficacy in detecting poisoning attacks within samples and predictions alike, with a modest one-time training overhead of 34.56 seconds and an evaluation time of less than 1 second per SL-Mapping.",
+  "abstract_source_id": "src-abstract-usenix-security-2024-c9898126",
   "venue": "usenix-security",
   "year": 2024,
   "track_or_session": "ML V: Backdoor Defense",
@@ -112,6 +114,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2024-c9898126",
+      "url": "https://www.usenix.org/conference/usenixsecurity24/presentation/krauss-verify",
+      "kind": "paper-page",
+      "title": "Verify your Labels! Trustworthy Predictions and Datasets via Confidence Scores",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:17:58Z",
+      "content_hash": "sha256:06aeba189b4ab92ed11208e734dab28280c6be4ac5c566e0fea4efab79fa9659",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

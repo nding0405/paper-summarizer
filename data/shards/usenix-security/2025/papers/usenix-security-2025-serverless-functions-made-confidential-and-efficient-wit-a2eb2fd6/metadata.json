@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-serverless-functions-made-confidential-and-efficient-wit-a2eb2fd6",
   "title": "Serverless Functions Made Confidential and Efficient with Split Containers",
+  "abstract": "The increasing adoption of serverless computing in security-critical fields (e.g., finance and healthcare) motivates confidential serverless. This paper explores confidential virtual machines (CVMs), a promising hardware security feature offered by various CPU architectures, for securing serverless functions. However, our analysis reveals a mismatch between current CVM implementations and function needs, resulting in performance bottlenecks, resource inefficiency, and an expanded trusted computing base (TCB).\n\nWe present split container, a design that separates security and management to create confidential containers with a minimal TCB. Our observation is that real-world serverless functions often require a limited set of OS functionalities. Thus, our design deploys a function-oriented OS (microkernel + library OS) within the CVM for secure execution of multiple functions while reusing an untrusted commodity OS like Linux outside for container management. Based on the split container design, we have implemented CoFunc, a system prototype that works on both AMD SEV and Intel TDX. With FunctionBench and ServerlessBench, CoFunc demonstrates significant performance improvements (up to 60× on SEV and 215× on TDX) compared to the only known CVM-based confidential container (Kata-CVM with optimizations), while incurring <14% performance overhead on average compared to a state-of-the-art non-confidential container system (lean container).",
+  "abstract_source_id": "src-abstract-usenix-security-2025-a2eb2fd6",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "System Security 2: Trusted and Robust Computing",
@@ -133,6 +135,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-a2eb2fd6",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/shi-jiacheng",
+      "kind": "paper-page",
+      "title": "Serverless Functions Made Confidential and Efficient with Split Containers",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:21:41Z",
+      "content_hash": "sha256:1bd3dc8128aab65970881a8811b0d5716554eb2fc8b2cac034933a0f70c0e065",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2026-breaking-isolation-a-new-perspective-on-hypervisor-explo-aaf904d1",
   "title": "Breaking Isolation: A New Perspective on Hypervisor Exploitation via Cross-Domain Attacks",
+  "abstract": "Hypervisors are under threat by critical memory safety vulnerabilities, with pointer corruption being one of the most prevalent and severe forms. Existing exploitation frameworks depend on identifying highly-constrained structures in the host machine and accurately determining their runtime addresses, which is ineffective in hypervisor environments where such structures are rare and further obfuscated by Address Space Layout Randomization (ASLR). We instead observe that modern virtualization environments exhibit weak memory isolation — guest memory is fully attacker-controlled yet accessible from the host, providing a reliable primitive for exploitation. Based on this observation, we present the first systematic characterization and taxonomy of Cross-Domain Attacks (CDA), a class of exploitation techniques that enable capability escalation through guest memory reuse. To automate this process, we develop a system that identifies cross-domain gadgets, matches them with corrupted pointers, synthesizes triggering inputs, and assembles complete exploit chains. Our evaluation on 15 real-world vulnerabilities across QEMU and VirtualBox shows that CDA is widely applicable and effective.",
+  "abstract_source_id": "src-abstract-ndss-2026-aaf904d1",
   "venue": "ndss",
   "year": 2026,
   "track_or_session": "Fall submission cycle",
@@ -223,6 +225,19 @@
       "official": false,
       "supports": [
         "independent proceedings identity reconciliation"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2026-aaf904d1",
+      "url": "https://www.ndss-symposium.org/ndss-paper/breaking-isolation-a-new-perspective-on-hypervisor-exploitation-via-cross-domain-attacks/",
+      "kind": "paper-page",
+      "title": "Breaking Isolation: A New Perspective on Hypervisor Exploitation via Cross-Domain Attacks",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:21:26Z",
+      "content_hash": "sha256:7925531e9a0c88640694f633e6e10914554c37562555db5a2cd3f4e7007d40dd",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

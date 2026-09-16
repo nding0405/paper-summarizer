@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2023-lifting-network-protocol-implementation-to-precise-forma-ef22f7cf",
   "title": "Lifting Network Protocol Implementation to Precise Format Specification with Security Applications",
+  "abstract": "While inferring protocol formats is critical for many security applications, existing techniques often fall short of coverage, inasmuch as almost all of them are in a fashion of dynamic analysis and driven by a limited number of network packets. If a feature is not present in the input packets, the feature will be missed in the resulting formats. To tackle this problem, we develop a novel static program analysis that infers protocol message formats from the implementation of common top-down protocol parsers. However, to achieve the trifecta of coverage, precision, and efficiency, we have to address two challenges, namely path explosion and disordered path constraints. To this end, our approach uses abstract interpretation to produce a novel data structure called the abstract format graph. The graph structure delimits precise but costly operations to only small regions, thus ensuring precision and efficiency at the same time. Our inferred formats are of high coverage and precisely specify both field boundaries and semantic constraints among packet fields. Our evaluation shows that we can infer formats for a protocol in one minute with over 95% precision and recall, much better than four baselines. Our inferred formats can substantially enhance existing protocol fuzzers, improving the coverage by 20% to 260% and discovering 53 zero-days with 47 assigned CVEs. We also provide case studies of adopting our inferred formats in network traffic auditing and network intrusion detection.",
+  "abstract_source_id": "src-abstract-ccs-2023-ef22f7cf",
   "venue": "ccs",
   "year": 2023,
   "track_or_session": "Fuzzing I (approaches) (Software Security)",
@@ -193,6 +195,19 @@
       "official": false,
       "supports": [
         "published title, author order, and page span"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2023-ef22f7cf",
+      "url": "https://api.openalex.org/works/doi:10.1145/3576915.3616614?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Lifting Network Protocol Implementation to Precise Format Specification with Security Applications",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:07:53Z",
+      "content_hash": "sha256:767eaf9b1f8223af6296101d8773d5699f5b96f6041e6080da23f104403089dd",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

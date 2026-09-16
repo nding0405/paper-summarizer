@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2023-security-and-privacy-failures-in-popular-2fa-apps-df2a1d5c",
   "title": "Security and Privacy Failures in Popular 2FA Apps",
+  "abstract": "The Time-based One-Time Password (TOTP) algorithm is a 2FA method that is widely deployed because of its relatively low implementation costs and purported security benefits over SMS 2FA. However, users of TOTP 2FA apps face a critical usability challenge: maintain access to the secrets stored within the TOTP app, or risk getting locked out of their accounts. To help users avoid this fate, popular TOTP apps implement a wide range of backup mechanisms, each with varying security and privacy implications. In this paper, we define an assessment methodology for conducting systematic security and privacy analyses of the backup and recovery functionality of TOTP apps. We identified all general purpose Android TOTP apps in the Google Play Store with at least 100k installs that implemented a backup mechanism ( n = 22). Our findings show that most backup strategies end up placing trust in the same technologies that TOTP 2FA is meant to supersede: passwords, SMS, and email. Many backup implementations shared personal user information with third parties, had serious cryptographic flaws, and/or allowed the app developers to access the TOTP secrets in plaintext. We present our findings and recommend ways to improve the security and privacy of TOTP 2FA app backup mechanisms.",
+  "abstract_source_id": "src-abstract-usenix-security-2023-df2a1d5c",
   "venue": "usenix-security",
   "year": 2023,
   "track_or_session": "Authentication",
@@ -133,6 +135,19 @@
       "official": true,
       "supports": [
         "authors, affiliations when published, abstract, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2023-df2a1d5c",
+      "url": "https://www.usenix.org/conference/usenixsecurity23/presentation/gilsenan",
+      "kind": "paper-page",
+      "title": "Security and Privacy Failures in Popular 2FA Apps",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:12:55Z",
+      "content_hash": "sha256:aa7e50338807d61b0883482a04a4033953f9f844b15be54061b610a806c049ca",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

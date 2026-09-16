@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "eurosys-2026-harp-orchestrating-automated-parallel-training-on-hetero-61ac4e2e",
   "title": "HARP: Orchestrating Automated Parallel Training on Heterogeneous GPU Clusters",
+  "abstract": "With the rapid evolution of GPU architectures, the heterogeneity of model training infrastructures is steadily increasing. In such environments, effectively utilizing all available heterogeneous accelerators becomes critical for distributed model training. However, existing frameworks, which are primarily designed for homogeneous clusters, often exhibit significant resource underutilization when deployed on heterogeneous accelerators and networks. In this paper, we present Harp, an automated parallel training framework designed specifically for heterogeneous clusters. Harp introduces a fine-grained planner that efficiently searches a wide space for the inter-operator parallel strategy, enabling Harp to alleviate communication overheads while maintaining balanced loads across heterogeneous accelerators. In addition, Harp implements a heterogeneity-aware 1F1B scheduler that adaptively adjusts the execution timing and ordering of microbatches based on network characteristics, maximizing computation-communication overlap under cross-cluster interconnects while incurring only minimal memory overhead. Our evaluation results show that Harp can deliver 1.3×–1.6× higher performance on heterogeneous clusters than state-of-the-art training frameworks.",
+  "abstract_source_id": "src-abstract-eurosys-2026-61ac4e2e",
   "venue": "eurosys",
   "year": 2026,
   "track_or_session": null,
@@ -264,6 +266,19 @@
       "official": false,
       "supports": [
         "Publisher-deposited proceedings identity and print publication date."
+      ]
+    },
+    {
+      "id": "src-abstract-eurosys-2026-61ac4e2e",
+      "url": "https://api.openalex.org/works/doi:10.1145/3767295.3803603?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "HARP: Orchestrating Automated Parallel Training on Heterogeneous GPU Clusters",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:20:22Z",
+      "content_hash": "sha256:04431587d61d4d93aedde0beb3795794565aa62f3df41a9051e058f5a64a47fb",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

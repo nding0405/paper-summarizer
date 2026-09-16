@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-hijackkv-new-threat-in-position-independent-kv-cache-reu-cccd2a0d",
   "title": "HijackKV: New Threat in Position-Independent KV Cache Reuse",
+  "abstract": "Key-Value (KV) cache reduces inference latency in large language models (LLMs). Traditional prefix-based reuse has low cache hit rates across inference requests because it requires exact token and position matches. To improve efficiency, recent system optimizations introduce position-independent KV reuse, allowing KV cache to be reused whenever identical text chunks appear, regardless of their position in the sequence.\n\nWe show this design introduces a new threat, KV Cache Hijacking. Since KV caches are retrieved by token match but encode the context in which they were originally computed, the KV tied to a benign-looking token chunk may encode an attacker-controlled prefix. When later reused in a victim query, this contaminated KV silently hijacks the model's behavior, even if no attacker-controlled text appears in the input.\n\nWe introduce HIJACKKV, the first attack framework that systematically exploits this vulnerability, demonstrating its severity and practicality. HIJACKKV optimizes an attacker-controlled prefix, so that the KV computed for a subsequent common benign text encodes the attacker's goal, while the text remains unchanged for future cache hits. HIJACKKV achieves an average 94% success rate in a single attempt, remains effective under realistic constraints including low hit rates (10%) and frequent recomputation (50%), persists over multi-turn interactions, and transfers across models in black-box settings. We further provide design insights for building secure KV reuse systems.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-cccd2a0d",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Security of ML 5",
@@ -134,6 +136,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-cccd2a0d",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/zhang-yichi",
+      "kind": "paper-page",
+      "title": "HijackKV: New Threat in Position-Independent KV Cache Reuse",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:24:14Z",
+      "content_hash": "sha256:b001d8c303bcaf7b296f77ef07d06c03e7ad7b9f2db049f63b4fd9499e8c9dac",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

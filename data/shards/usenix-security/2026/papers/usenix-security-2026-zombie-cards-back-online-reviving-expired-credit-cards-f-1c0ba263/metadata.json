@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-zombie-cards-back-online-reviving-expired-credit-cards-f-1c0ba263",
   "title": "Zombie Cards Back Online: Reviving Expired Credit Cards for Contactless Payments",
+  "abstract": "Contactless payment cards are widely assumed to stop working past their printed expiration dates, and many stakeholders rely on this assumption for authorization and access control. This paper shows that banks enforce the expiration as a transaction policy check, rather than an intrinsic property of the card, which allows an expired card to still initiate contactless payments. We demonstrate a practical \"Zombie Card\" attack that makes an expired card appear unexpired, allowing successful transactions despite the card being past its printed date. We evaluate the attack across real-world transaction configurations spanning multiple EMV kernels (Visa, Mastercard, and Discover), POS terminals, merchants, and five (5) major US banks. Our results show that Visa contactless transactions are susceptible to man-in-the-middle tampering due to a lack of effective integrity protection. We further find that banks often rely on the POS terminal's decisions and skip critical security checks during transaction authorization for faster payments. Across our trials, the attack remains operational under typical in-store conditions using commodity NFC transceivers and does not require specialized hardware. Together, these findings indicate that the outcome of a \"zombie card\" transaction is determined by how security responsibility is divided between terminals, card manufacturers, and issuers, and by how consistently issuers enforce card lifecycle state. Based on these findings, we propose countermeasures that span kernels, issuers, and payments to ensure end-to-end transaction integrity and security.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-1c0ba263",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "System Security 3",
@@ -113,6 +115,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-1c0ba263",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/anwar",
+      "kind": "paper-page",
+      "title": "Zombie Cards Back Online: Reviving Expired Credit Cards for Contactless Payments",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:26:26Z",
+      "content_hash": "sha256:1e0b18165c605805e52fd7da7a5104cc19e2946324b88010cdeaa2d98240d886",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

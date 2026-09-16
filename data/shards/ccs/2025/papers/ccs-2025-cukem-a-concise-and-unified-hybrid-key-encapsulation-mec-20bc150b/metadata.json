@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2025-cukem-a-concise-and-unified-hybrid-key-encapsulation-mec-20bc150b",
   "title": "CuKEM: A Concise and Unified Hybrid Key Encapsulation Mechanism",
+  "abstract": "In the post-quantum migration of the traditional key establishment protocol, hybrid key encapsulation mechanisms (KEMs) are recommended by standards bodies, including NIST, ETSI, and national security agencies like NCSC-UK, BSI-Germany etc. Recently, several hybrid KEMs with CCA security such as XOR-then-MAC, Dual-PRF and X-Wing (being standardized by IETF) are proposed based on CCA KEMs obtained by applying the complicated Fujisaki-Okamoto transform to public-key encryption (PKE) schemes. In some cryptographic protocols such as PQ-Noise and Signal, 1CCA security (similar to the CCA security except that the adversary is restricted to one single decapsulation query) is required. However, no specific scheme has been designed to specifically achieve 1CCA security (excluding the schemes that aim to achieve CCA security, as they inherently encompass 1CCA security). In this paper, we propose CuKEM, a concise and unified hybrid KEM framework directly built on PKEs. We prove that CuKEM, equipped with different modules, achieves security notions in both the random oracle model and the quantum random oracle model, including IND-CPA, IND-1CCA, and IND-CCA. Compared to the existing KEM-based designs, CuKEM is more concise because it simplifies or even eliminates certain hash operations without compromising security. The evaluation shows that CuKEM can significantly improve efficiency over current hybrid KEMs, e.g., the encapsulation(decapsulation) of CCA-secure CuKEM efficiency gains of up to 22.28% (16.22%) compared to X-Wing, while the 1CCA-secure CuKEM gains up to 13.97% (104.31%).",
+  "abstract_source_id": "src-abstract-ccs-2025-20bc150b",
   "venue": "ccs",
   "year": 2025,
   "track_or_session": "Cycle 1",
@@ -127,6 +129,19 @@
         "published-order authors",
         "publication-time affiliations",
         "publication date and page span"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2025-20bc150b",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "CuKEM: A Concise and Unified Hybrid Key Encapsulation Mechanism",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:12Z",
+      "content_hash": "sha256:aa9c23a45f6ec9973f40e6c9520c69d42bb49fc1f526891570edfdb1976cff82",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

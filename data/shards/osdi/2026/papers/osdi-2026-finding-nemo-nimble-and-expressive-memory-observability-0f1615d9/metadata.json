@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2026-finding-nemo-nimble-and-expressive-memory-observability-0f1615d9",
   "title": "Finding NEMO: Nimble and Expressive Memory Observability",
+  "abstract": "Modern datacenter servers increasingly deploy heterogeneous, multi-tier memory hierarchies. For these new architectures, OSes depend on measurements of memory usage to make intelligent placement and control decisions. However, existing hardware and software mechanisms for tracking memory usage on these systems require difficult tradeoffs between coverage, timeliness, granularity, flexibility, and overhead.\n\nWe present NEMO, a nimble and expressive hardware memory telemetry engine for server memory controllers (MCs) that gives OS subsystems policy-specific views of memory behavior. NEMO enables flexible telemetry rules that filter memory operations, map accesses to counters, and apply simple updates to per-counter state. We prototype NEMO on an FPGA-based CXL-attached memory expander. Evaluating three diverse use cases, we show that NEMO provides higher-fidelity signals at substantially lower CPU overhead across a range of state-of-the-art memory management systems: it speeds up HeMem’s reaction to hot-set changes by 5×, accelerates THP splitting in MEMTIS by 10.4×, and detects noisy neighbors in Linux with 350× lower overhead. These telemetry improvements yield up to 1.7× higher throughput and 23% lower latency across key-value stores and databases.",
+  "abstract_source_id": "src-abstract-osdi-2026-0f1615d9",
   "venue": "osdi",
   "year": 2026,
   "track_or_session": "Memory Tiering and CXL",
@@ -230,6 +232,19 @@
       "official": true,
       "supports": [
         "Official proceedings availability and canonical conference versions."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2026-0f1615d9",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/li-shihang",
+      "kind": "paper-page",
+      "title": "Finding NEMO: Nimble and Expressive Memory Observability",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:08:19Z",
+      "content_hash": "sha256:49e0dd6017af9846a16c258643b4f2bb18107c841d381e58599bf0510a9ea8a2",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

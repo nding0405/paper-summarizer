@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "atc-2025-qfactory-accelerating-quantized-large-language-model-ser-fe6cee90",
   "title": "QFactory: Accelerating Quantized Large Language Model Serving with Qtile Graphs",
+  "abstract": "Quantization is a critical technique for accelerating large language models. To achieve tangible speedups, weight dequantization must be performed on-the-fly, necessitating tailored quantized kernels for various quantization algorithms and precision formats. Existing methods typically rely on a static eager execution paradigm for dequantization operations, which overlooks a broader range of potential optimizations, leading to suboptimal performance.\n\nIn this paper, we present QFactory, an efficient compilation framework designed to generate high-performance quantized kernels. QFactory introduces a novel Qtile abstraction that facilitates the representation of quantized tensors, transforming the traditional tensor computation graph into a Qtile-graph (Qgraph). Leveraging this QGraph abstraction, QFactory first explores graph-level Qtile computation transformations to generate equivalent QGraphs, thereby expanding the search space for optimizations. Subsequently, QFactory employs operator-level Qtile scheduling to identify optimal memory loading strategies for each Qtile within the QGraph before generating the final code. Experimental results demonstrate that QFactory achieves an average performance improvement of 1.66× over existing systems and delivers 1.23× end-toend generation speedup when integrated into state-of-the-art large language model serving systems.",
+  "abstract_source_id": "src-abstract-atc-2025-fe6cee90",
   "venue": "atc",
   "year": 2025,
   "track_or_session": "Serving Intelligence: Efficient LLM Inference at the Edge and Cloud",
@@ -159,6 +161,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-atc-2025-fe6cee90",
+      "url": "https://www.usenix.org/conference/atc25/presentation/zhang-qihao",
+      "kind": "paper-page",
+      "title": "QFactory: Accelerating Quantized Large Language Model Serving with Qtile Graphs",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:00:07Z",
+      "content_hash": "sha256:d3a104345f682c5b39ff9e8dd2d6b45e1ef77431f6e9727c32294d8ebfc00731",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

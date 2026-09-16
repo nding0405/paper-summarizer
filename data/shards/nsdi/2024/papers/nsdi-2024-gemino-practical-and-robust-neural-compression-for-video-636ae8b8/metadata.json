@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2024-gemino-practical-and-robust-neural-compression-for-video-636ae8b8",
   "title": "Gemino: Practical and Robust Neural Compression for Video Conferencing",
+  "abstract": "Video conferencing systems suffer from poor user experience when network conditions deteriorate because current video codecs simply cannot operate at extremely low bitrates. Recently, several neural alternatives have been proposed that reconstruct talking head videos at very low bitrates using sparse representations of each frame such as facial landmark information. However, these approaches produce poor reconstructions in scenarios with major movement or occlusions over the course of a call, and do not scale to higher resolutions. We design Gemino, a new neural compression system for video conferencing based on a novel high-frequency-conditional super-resolution pipeline. Gemino upsamples a very low-resolution version of each target frame while enhancing high-frequency details (e.g., skin texture, hair, etc.) based on information extracted from a single high-resolution reference image. We use a multi-scale architecture that runs different components of the model at different resolutions, allowing it to scale to resolutions comparable to 720p, and we personalize the model to learn specific details of each person, achieving much better fidelity at low bitrates. We implement Gemino atop aiortc, an open-source Python implementation of WebRTC, and show that it operates on 1024x1024 videos in real-time on a Titan X GPU, and achieves 2.2–5x lower bitrate than traditional video codecs for the same perceptual quality.",
+  "abstract_source_id": "src-abstract-nsdi-2024-636ae8b8",
   "venue": "nsdi",
   "year": 2024,
   "track_or_session": "Video",
@@ -223,6 +225,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2024-636ae8b8",
+      "url": "https://www.usenix.org/conference/nsdi24/presentation/sivaraman",
+      "kind": "paper-page",
+      "title": "Gemino: Practical and Robust Neural Compression for Video Conferencing",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:03:11Z",
+      "content_hash": "sha256:b4a83b55d1301f929fcaea5282732aaf57f2bd6397aaabdc2ae2d6f1f24a0185",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

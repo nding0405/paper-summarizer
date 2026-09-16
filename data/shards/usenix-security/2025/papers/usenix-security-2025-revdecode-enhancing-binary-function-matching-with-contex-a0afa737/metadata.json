@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-revdecode-enhancing-binary-function-matching-with-contex-a0afa737",
   "title": "REVDECODE: Enhancing Binary Function Matching with Context-Aware Graph Representations and Relevance Decoding",
+  "abstract": "Binary reverse engineering is important for security tasks, including vulnerability discovery, malware analysis, and code reuse detection. These tasks often involve analyzing binaries without source code or debug symbols. A common yet challenging step in this process is function matching, i.e., comparing functions in unknown binaries to known reference corpora. Function matching becomes complicated due to variations introduced by differences in compilers, optimization levels, and versions. Existing matching techniques primarily focus on similarity but reverse engineers prioritize relevance—whether a match provides meaningful insights.\n\nWe present REVDECODE, a context-aware framework designed to improve function matching by leveraging interdependencies within binaries through relevance decoding, a technique that identifies meaningful matches based on contextual information. REVDECODE represents binaries as directed layered graphs and employs a Viterbi-inspired algorithm to determine the most relevant matches. Additionally, we propose GPU-optimized variants of REVDECODE which partition the graph traversal workload into independent subsets, maximizing GPU resource utilization and enabling greater parallelization. Experimental results demonstrate that REVDECODE significantly enhances the performance of existing function matchers, improving rankings for 56.3% to 98.8% of the evaluated functions across multiple datasets and matchers.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-a0afa737",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Software Security 4: Fuzzing and Other Software Analysis",
@@ -154,6 +156,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-a0afa737",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/ren",
+      "kind": "paper-page",
+      "title": "REVDECODE: Enhancing Binary Function Matching with Context-Aware Graph Representations and Relevance Decoding",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:21:28Z",
+      "content_hash": "sha256:06c9ecf49ed153cf40e27dd0dc2b7789be2285816dfc27182655f9a18830c7ce",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

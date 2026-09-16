@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2023-uswitch-fast-kernel-context-isolation-with-implicit-cont-cc3dc6ff",
   "title": "uSWITCH: Fast Kernel Context Isolation with Implicit Context Switches",
+  "abstract": "Isolating application components is crucial to limit the exposure of sensitive data and code to vulnerabilities in the untrusted components. Process-based isolation is the de facto isolation used in practice, e.g., web browsers. However, it incurs significant performance overhead and is typically infeasible when frequent switches between isolation domains are expected. To address this problem, many intra-process memory isolation techniques have been proposed using novel kernel abstractions, recent CPU extensions (e.g., Intel® MPK), and software-based fault isolation (e.g., WebAssembly). However, these techniques insufficiently isolate kernel resources, such as file descriptors, or do so by incurring high overheads when resources are accessed. Other work virtualizes the kernel context inside a privileged user space domain, but this is ad-hoc, error-prone, and provides only limited kernel functionalities.We propose μSwitch, an efficient kernel context isolation mechanism with memory protection that addresses these limitations. We use a protected structure, shared by the kernel and the user space, for context switching and propose implicit context switching to improve its performance by deferring the kernel resource switch to the next system call. We apply μSWITCH to isolate libraries in the Firefox web browser and an HTTP server, and reduce the overhead of isolation by 32.7% to 98.4% compared with other isolation techniques.",
+  "abstract_source_id": "src-abstract-sp-2023-cc3dc6ff",
   "venue": "sp",
   "year": 2023,
   "track_or_session": "Session 11A: Software isolation",
@@ -214,6 +216,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2023-cc3dc6ff",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "μSwitch: Fast Kernel Context Isolation with Implicit Context Switches",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:27Z",
+      "content_hash": "sha256:2c3c9cbfdcc9ef58a970a66aadb81bbaf8238409ab69d65565522a11e421be99",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

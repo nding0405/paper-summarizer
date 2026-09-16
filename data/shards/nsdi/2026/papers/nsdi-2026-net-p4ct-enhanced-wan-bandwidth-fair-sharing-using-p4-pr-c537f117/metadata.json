@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2026-net-p4ct-enhanced-wan-bandwidth-fair-sharing-using-p4-pr-c537f117",
   "title": "Net-P4ct: Enhanced WAN Bandwidth Fair Sharing Using P4 Programmable Switches",
+  "abstract": "At growing internet companies like ByteDance, Wide Area Network (WAN) bandwidth sharing across diverse services with varying SLO requirements is a fundamental challenge. Conventional host-based enforcement systems, where agents identify and throttle traffic at the server end, face practical challenges such as \"blind spot\" traffic, kernel-dependent operational complexity, and significant server resource overhead. To address these issues, we present Net-P4ct, an in-network bandwidth enforcement system using P4 programmable switches. Net-P4ct improves both bandwidth guarantees and fair sharing by shifting dynamic QoS control into the switch data plane. Specifically, it achieves broader traffic coverage by combining host-side traffic tagging with a P4-switch pipeline, where service classification and QoS class assignment are performed. Based on observed traffic metrics, a centralized control plane determines real-time policy updates according to the max-min fair bandwidth allocation. We demonstrate the system's benefits including improved bandwidth utilization, reduced operational complexity, and lower per-byte processing cost. Net-P4ct has been deployed in ByteDance's production WAN for nearly a year, and we hope to share our experience with the community.",
+  "abstract_source_id": "src-abstract-nsdi-2026-c537f117",
   "venue": "nsdi",
   "year": 2026,
   "track_or_session": "Sandboxes, Containers, and Beyond",
@@ -475,6 +477,19 @@
       "supports": [
         "canonical author line and publication-time affiliations",
         "resolution of conflicting citation metadata or an explicitly absent affiliation"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2026-c537f117",
+      "url": "https://www.usenix.org/conference/nsdi26/presentation/chen",
+      "kind": "paper-page",
+      "title": "Net-P4ct: Enhanced WAN Bandwidth Fair Sharing Using P4 Programmable Switches",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:05:44Z",
+      "content_hash": "sha256:b63c8522489976f796baf9d7a667684e9f4024041657bde658802823f2355125",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

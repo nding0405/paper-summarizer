@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2025-helix-serving-large-language-models-over-heterogeneous-g-bdf17c0e",
   "title": "Helix: Serving Large Language Models over Heterogeneous GPUs and Network via Max-Flow",
+  "abstract": "This paper introduces Helix, a distributed system for high-throughput, low-latency large language model (LLM) serving in heterogeneous GPU clusters. The key idea behind Helix is to formulate inference computation of LLMs over heterogeneous GPUs and network connections as a max-flow problem on directed, weighted graphs, whose nodes represent GPU instances and edges capture both GPU and network heterogeneity through their capacities. Helix then uses a mixed integer linear programming (MILP) algorithm to discover highly optimized strategies to serve LLMs on heterogeneous GPUs. This approach allows Helix to jointly optimize model placement and request scheduling, two highly entangled tasks in heterogeneous LLM serving. Our evaluation on several heterogeneous clusters ranging from 24 to 42 GPU nodes shows that Helix improves serving throughput by up to 3.3x and reduces prompting and decoding latency by up to 66% and 24%, respectively, compared to existing approaches. Helix is available at https://github.com/Thesys-lab/Helix-ASPLOS25.",
+  "abstract_source_id": "src-abstract-asplos-2025-bdf17c0e",
   "venue": "asplos",
   "year": 2025,
   "track_or_session": "Session 5C: Large Language Models",
@@ -201,6 +203,19 @@
       "official": true,
       "supports": [
         "Author-deposited archival artifact associated with the conference paper."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2025-bdf17c0e",
+      "url": "https://api.openalex.org/works/doi:10.1145/3669940.3707215?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Helix: Serving Large Language Models over Heterogeneous GPUs and Network via Max-Flow",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:01:52Z",
+      "content_hash": "sha256:b32b62850e7f2de9f64813405aab78cc0b331832b75aa9951fbc24e0197f1467",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

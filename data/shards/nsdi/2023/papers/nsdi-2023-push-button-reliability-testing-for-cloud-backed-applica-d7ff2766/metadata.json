@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2023-push-button-reliability-testing-for-cloud-backed-applica-d7ff2766",
   "title": "Push-Button Reliability Testing for Cloud-Backed Applications with Rainmaker",
+  "abstract": "Modern applications have been emerging towards a cloud-based programming model where applications depend on cloud services for various functionalities. Such “cloud native” practice greatly simplifies application deployment and realizes cloud benefits (e.g., availability). Meanwhile, it imposes emerging reliability challenges for addressing fault models of the opaque cloud and less predictable Internet connections.\n\nIn this paper, we discuss these reliability challenges. We develop a taxonomy of bugs that render cloud-backed applications vulnerable to common transient faults. We show that (mis)handling transient error(s) of even one REST call interaction can adversely affect application correctness.\n\nWe take a first step to address the challenges by building a “push-button” reliability testing tool named Rainmaker, as a basic SDK utility for any cloud-backed application. Rainmaker helps developers anticipate the myriad of errors under the cloud-based fault model, without a need to write new policies, oracles, or test cases. Rainmaker directly works with existing test suites and is a plug-and-play tool for existing test environments. Rainmaker injects faults in the interactions between the application and cloud services. It does so at the REST layer, and thus is transparent to applications under test. More importantly, it encodes automatic fault injection policies to cover the various taxonomized bug patterns, and automatic oracles that embrace existing in-house software tests. To date, Rainmaker has detected 73 bugs (55 confirmed and 51 fixed) in 11 popular cloud-backed applications.",
+  "abstract_source_id": "src-abstract-nsdi-2023-d7ff2766",
   "venue": "nsdi",
   "year": 2023,
   "track_or_session": "Testing",
@@ -161,6 +163,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2023-d7ff2766",
+      "url": "https://www.usenix.org/conference/nsdi23/presentation/chen-yinfang",
+      "kind": "paper-page",
+      "title": "Push-Button Reliability Testing for Cloud-Backed Applications with Rainmaker",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:02:23Z",
+      "content_hash": "sha256:996eea836582a5638506215d63410d7210d5a1d4b9459b9949186efa8ecfe2a3",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

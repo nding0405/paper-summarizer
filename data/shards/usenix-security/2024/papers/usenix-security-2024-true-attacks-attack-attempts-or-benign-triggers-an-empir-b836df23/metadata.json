@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2024-true-attacks-attack-attempts-or-benign-triggers-an-empir-b836df23",
   "title": "True Attacks, Attack Attempts, or Benign Triggers? An Empirical Measurement of Network Alerts in a Security Operations Center",
+  "abstract": "Security Operations Centers (SOCs) face the key challenge of handling excessive security alerts. While existing works have studied this problem qualitatively via user studies, there is still a lack of quantitative understanding of the impact of excessive alerts and their effectiveness and limitations in capturing true attacks.\n\nIn this paper, we fill the gap by working with a real-world SOC and collecting and analyzing their network alert logs over 4 years (115 million alerts, from 2018 to 2022). To further understand how alerts are associated with true attacks, we also obtain the ground truth of 227 successful attacks in the past 20 years (11 during the overlapping period). Through analysis, we observe that SOC analysts are facing excessive alerts (24K–134K per day), but only a small percentage of the alerts (0.01%) are associated with true attacks. While the majority of true attacks can be detected within the same day, the post-attack investigation takes much longer time (53 days on average). Furthermore, we observe a significant portion of the alerts are related to \"attack attempts'' (attacks that did not lead to true compromises, 27%), and \"benign triggers'' (correctly matched security events but had business-justified explanations, 49%). Empirically, we show there are opportunities to use rare/abnormal alert patterns to help isolate signals related to true attacks. Given that enterprise SOCs rarely disclose internal data, this paper helps contextualize SOCs' pain points and refine existing problem definitions.",
+  "abstract_source_id": "src-abstract-usenix-security-2024-b836df23",
   "venue": "usenix-security",
   "year": 2024,
   "track_or_session": "Measurement I: Fraud and Malware and Spam",
@@ -280,6 +282,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2024-b836df23",
+      "url": "https://www.usenix.org/conference/usenixsecurity24/presentation/yang-limin",
+      "kind": "paper-page",
+      "title": "True Attacks, Attack Attempts, or Benign Triggers? An Empirical Measurement of Network Alerts in a Security Operations Center",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:17:47Z",
+      "content_hash": "sha256:db57f05352fad164b0cab50ae83570d0c61d7f8f756e1a823b3148b034776bcd",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

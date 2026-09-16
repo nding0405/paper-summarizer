@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "atc-2025-xrt-an-accelerator-aware-runtime-for-accelerated-chip-mu-bf1a55d0",
   "title": "XRT: An Accelerator-Aware Runtime for Accelerated Chip Multiprocessors",
+  "abstract": "Datacenter applications spend a considerable portion of compute resources executing common functions. This has led to the deployment of accelerators capable of executing these functions with higher performance and energy efficiency. At the same time, datacenter applications require microsecond-scale response times and low tail latency. To meet these strict requirements, recent Chip Multi-Processors (CMPs) incorporate several on-chip accelerators. This enables fast communication between the general-purpose cores, direct accelerator access to the on-chip memory subsystem, and scalable sharing of accelerator resources across applications running on many general-purpose cores. Despite hardware support for on-chip accelerators, a lack of support at the runtime level prevents their efficient use at scale.\n\nOur key insight in this work is that current runtimes are unsuitable for applications that make heavy use of on-chip accelerators, yielding suboptimal throughput–sometimes even worse than a system without accelerators. To address this problem, we develop XRT, a runtime for accelerated CMPs designed to scale to many-core, many-accelerator CPUs. Across a set of representative services, XRT achieves up to 3.2× higher throughput-under-SLO compared to an unoptimized runtime and never experiences slowdowns compared to a system that executes all request processing on general-purpose cores.",
+  "abstract_source_id": "src-abstract-atc-2025-bf1a55d0",
   "venue": "atc",
   "year": 2025,
   "track_or_session": "Hardware-Specific Optimizations: Space, Accelerators, and AI Chips",
@@ -117,6 +119,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-atc-2025-bf1a55d0",
+      "url": "https://www.usenix.org/conference/atc25/presentation/patel",
+      "kind": "paper-page",
+      "title": "XRT: An Accelerator-Aware Runtime for Accelerated Chip Multiprocessors",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:00:24Z",
+      "content_hash": "sha256:2194fbb1de7f49e0ee2651b78639ed272d043c5b52c45fe6fbd0129eefca4886",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

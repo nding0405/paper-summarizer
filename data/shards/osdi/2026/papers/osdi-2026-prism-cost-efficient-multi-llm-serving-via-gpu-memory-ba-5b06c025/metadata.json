@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2026-prism-cost-efficient-multi-llm-serving-via-gpu-memory-ba-5b06c025",
   "title": "Prism: Cost-Efficient Multi-LLM Serving via GPU Memory Ballooning",
+  "abstract": "Inference providers must maintain availability for many LLMs, including low-volume but essential models, making resource efficiency increasingly important as token prices fall. Analysis of production traces reveals a dynamic bursty-group pattern in which sets of models become active together and shift over time; existing space- and time-sharing approaches lack principled mechanisms to adapt to this variability, forcing trade-offs between SLO adherence and efficiency. We observe that elastic memory allocation can unify spatial and temporal sharing. Based on this insight, we have developed Prism, a memory-centric LLM co-serving framework that applies memory ballooning to reclaim memory across models and support both forms of sharing under a single scheme. Prism’s balloon driver, referred to as kvcached , has been open-sourced at https://github.com/ovg-project/kvcached , and deployed in production environments across 10K+ GPUs.",
+  "abstract_source_id": "src-abstract-osdi-2026-5b06c025",
   "venue": "osdi",
   "year": 2026,
   "track_or_session": "KV Cache and Long Context",
@@ -503,6 +505,19 @@
       "official": true,
       "supports": [
         "Official proceedings availability and canonical conference versions."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2026-5b06c025",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/yu-shan",
+      "kind": "paper-page",
+      "title": "Prism: Cost-Efficient Multi-LLM Serving via GPU Memory Ballooning",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:08:47Z",
+      "content_hash": "sha256:9eb0c1a60485cf4c7b291155df775de8949876e9b05f761913dc4790c6f315b0",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

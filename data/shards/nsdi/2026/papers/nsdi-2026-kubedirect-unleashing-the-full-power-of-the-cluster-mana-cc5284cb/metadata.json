@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2026-kubedirect-unleashing-the-full-power-of-the-cluster-mana-cc5284cb",
   "title": "KUBEDIRECT: Unleashing the Full Power of the Cluster Manager for Serverless Computing",
+  "abstract": "FaaS platforms rely on cluster managers like Kubernetes for resource management. Kubernetes is popular due to its extensible state-centric APIs and modular architecture. However, to scale out a burst of FaaS instances, message passing becomes the primary bottleneck as controllers have to exchange extensive state through the API Server. Existing solutions opt for a clean-slate redesign of cluster managers, at the expense of ecosystem compatibility and substantial engineering effort.\n\nWe present KUBEDIRECT, a Kubernetes-based cluster manager for FaaS. We find that there exists a common narrow waist across FaaS platforms that allows us to achieve both efficiency and external compatibility. The narrow waist has a sequential structure that obviates the need for a single source of truth, allowing us to bypass the API Server and perform lightweight direct message passing. However, our approach introduces distributed and ephemeral state across controllers, making it challenging to enforce end-to-end semantics without centralized coordination. KUBEDIRECT performs novel state management that leverages the narrow waist as a hierarchical write-back cache , ensuring consistency and convergence to the desired state. KUBEDIRECT can seamlessly integrate with Kubernetes, adding ~150 LoC per controller. KUBEDIRECT can reduce serving latency by 26.7× over Knative, and has similar performance as the state-of-the-art clean-slate platform Dirigent.",
+  "abstract_source_id": "src-abstract-nsdi-2026-cc5284cb",
   "venue": "nsdi",
   "year": 2026,
   "track_or_session": "Living Large in Shared Clouds",
@@ -139,6 +141,19 @@
         "proceedings page range and page count",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2026-cc5284cb",
+      "url": "https://www.usenix.org/conference/nsdi26/presentation/qi",
+      "kind": "paper-page",
+      "title": "KUBEDIRECT: Unleashing the Full Power of the Cluster Manager for Serverless Computing",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:05:33Z",
+      "content_hash": "sha256:afb3c70a00029751c4dda3b83ea52592553dc4cdea23ad6bf51568c3490da575",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

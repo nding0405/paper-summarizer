@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2023-browser-permission-mechanisms-demystified-92bbd2a8",
   "title": "Browser Permission Mechanisms Demystified",
+  "abstract": "Modern Web services provide rich content by accessing resources on user devices, including hardware devices such as cameras, microphones, and GPSs. Web browser vendors have adopted permission mechanisms that achieve appropriate control over access to such resources to protect user privacy. The permission mechanism gives users the ability to grant or deny their browser access to resources for each website. Despite the importance of permission mechanisms in protecting user privacy, previous studies have not been conducted to systematically understand their behavior and implementation. In this study, we developed Permium, a web browser analysis framework that automatically analyzes the behavior of permission mechanisms implemented by various browsers. Using the Permium framework, we systematically studied the behavior of permission mechanisms for 22 major browser implementations running on five different operating systems, including mobile and desktop. We determined that the implementation and behavior of permission mechanisms are fragmented and inconsistent between operating systems, even for the same browser (i.e., Windows Chrome vs. iOS Chrome) and that the implementation inconsistencies can lead to privacy risks. Based on the behavior and implementation inconsistencies of the permission mechanism revealed by our measurement study, we developed two proof-of-concept attacks and evaluated their feasibility. The first attack uses the permission information collected by exploiting the inconsistencies to secretly track the user. The second attack aims to create a situation in which the user cannot correctly determine the origin of the permission request, and the user incorrectly grants permission to a malicious site. Finally, we clarify the technical issues that must be standardized in privacy mechanisms and provide recommendations to OS/browser vendors to mitigate the threats identified in this study.",
+  "abstract_source_id": "src-abstract-ndss-2023-92bbd2a8",
   "venue": "ndss",
   "year": 2023,
   "track_or_session": "Software Security II",
@@ -168,6 +170,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2023-92bbd2a8",
+      "url": "https://www.ndss-symposium.org/ndss-paper/browser-permission-mechanisms-demystified/",
+      "kind": "paper-page",
+      "title": "Browser Permission Mechanisms Demystified",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:16:48Z",
+      "content_hash": "sha256:fbb038a90ab3d4edaa06ad7dedbd7c21829765316c5f4707f01cf0fba3fc96a9",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

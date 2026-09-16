@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "eurosys-2023-fast-and-efficient-model-serving-using-multi-gpus-with-d-430fab8b",
   "title": "Fast and Efficient Model Serving Using Multi-GPUs with Direct-Host-Access",
+  "abstract": "As deep learning (DL) inference has been widely adopted for building user-facing applications in many domains, it is increasingly important for DL inference servers to achieve high throughput while preserving bounded latency. DL inference requests can be immediately served if the corresponding model is already in the GPU memory. Otherwise, it needs to load the model from host to GPU, adding a significant delay to inference. This paper proposes DeepPlan to minimize inference latency while provisioning DL models from host to GPU in server environments. First, we take advantage of the direct-host-access facility provided by commodity GPUs, allowing access to particular layers of models in the host memory directly from GPU without loading. Second, we parallelize model transmission across multiple GPUs to reduce the time for loading models from host to GPU. We show that a single inference can achieve a 1.94× speedup compared with the state-of-the-art pipelining approach for BERT-Base. When deploying multiple BERT, RoBERTa, and GPT-2 instances on a DL inference serving system, DeepPlan shows a significant performance improvement compared to the pipelining technique and stable 99% tail latency.",
+  "abstract_source_id": "src-abstract-eurosys-2023-430fab8b",
   "venue": "eurosys",
   "year": 2023,
   "track_or_session": null,
@@ -125,6 +127,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-eurosys-2023-430fab8b",
+      "url": "https://api.openalex.org/works/doi:10.1145/3552326.3567508?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Fast and Efficient Model Serving Using Multi-GPUs with Direct-Host-Access",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:18:33Z",
+      "content_hash": "sha256:db21630610a84de6fb86f4ec8f4c21e386e936efaed30f133f8a6d36b61cbec2",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

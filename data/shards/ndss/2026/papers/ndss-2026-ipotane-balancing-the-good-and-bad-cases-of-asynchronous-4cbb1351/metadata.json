@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2026-ipotane-balancing-the-good-and-bad-cases-of-asynchronous-4cbb1351",
   "title": "Ipotane: Balancing the Good and Bad Cases of Asynchronous BFT",
+  "abstract": "State-of-the-art asynchronous textit{Byzantine Fault Tolerance} (BFT) protocols integrate a partially-synchronous optimistic path. Their ultimate goal is to match the performance of a partially-synchronous protocol in favorable situations and that of a purely asynchronous protocol in unfavorable situations. While prior works have excelled in favorable situations, they fall short when conditions are unfavorable. To address these shortcomings, a recent work, Abraxas (CCS'23), retains stable throughput in all situations but incurs very high worst-case latency in unfavorable situations due to slow detection of optimistic path failures. Another recent work, ParBFT (CCS'23) ensures good latency in all situations but suffers from reduced throughput in unfavorable situations due to the use of extra emph{Asynchronous Binary Agreement} (ABA) instances.\n\nWe propose Ipotane, a protocol that attains performance comparable to partially-synchronous protocols in favorable situations and to purely asynchronous ones in unfavorable situations, in terms of both throughput emph{and} latency. Ipotane also runs two paths simultaneously: 2-chain HotStuff as the optimistic path and a new primitive textit{Dual-functional Byzantine Agreement} (DBA) for the pessimistic path. DBA packs the functionalities of biased ABA and textit{Validated Asynchronous Byzantine Agreement} (VABA). In Ipotane, each replica inputs $0$ to DBA if its optimistic path is faster, and $1$ if its pessimistic path is faster. DBA's ABA functionality promptly signals the optimistic path's failure by outputting $1$, ensuring Ipotane's low latency in unfavorable situations. Meanwhile, Ipotane executes DBA instances to continuously produce pessimistic blocks through their VABA functionality. Upon detecting a failure, Ipotane commits the last two pessimistic blocks to maintain high throughput. Moreover, Ipotane leverages DBA's biased property to ensure the safety of committing pessimistic blocks. Extensive experiments validate Ipotane's high throughput and low latency across all situations.",
+  "abstract_source_id": "src-abstract-ndss-2026-4cbb1351",
   "venue": "ndss",
   "year": 2026,
   "track_or_session": "Summer submission cycle",
@@ -181,6 +183,19 @@
       "official": false,
       "supports": [
         "independent proceedings identity reconciliation"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2026-4cbb1351",
+      "url": "https://www.ndss-symposium.org/ndss-paper/ipotane-balancing-the-good-and-bad-cases-of-asynchronous-bft/",
+      "kind": "paper-page",
+      "title": "Ipotane: Balancing the Good and Bad Cases of Asynchronous BFT",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:22:16Z",
+      "content_hash": "sha256:bb4fe153841e56f8fb8e707725bf7d7247a91c97b802e04ee4f60e98da588453",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

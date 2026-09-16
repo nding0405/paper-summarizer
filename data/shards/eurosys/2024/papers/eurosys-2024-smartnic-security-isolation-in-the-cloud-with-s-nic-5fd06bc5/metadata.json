@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "eurosys-2024-smartnic-security-isolation-in-the-cloud-with-s-nic-5fd06bc5",
   "title": "SmartNIC Security Isolation in the Cloud with S-NIC",
+  "abstract": "Modern smart NICs provide little isolation between the network functions belonging to different tenants. These NICs also do not protect network functions from the datacenter-provided management OS which runs on the smart NIC. We describe concrete attacks which allow a network function's state to leak to (or be modified by) another network function or the management OS. We then introduce S-NIC, a new hardware design for smart NICs that provides strong isolation guarantees. S-NIC pervasively virtualizes hardware accelerators, enforces single-owner semantics for each line in on-NIC cache and RAM, and provides dedicated bus bandwidth for each network function. Using this design, we eliminate side channels involving shared hardware state, and give each network function the illusion of having a private smart NIC. We show how these virtual NICs can be integrated with preexisting datacenter technologies for virtual LANs and trusted host-level computations like SGX enclaves. The overall result is that S-NIC enables strongly-isolated, NIC-accelerated datacenter applications; in these applications, network functions and host-level code receive hardware-guaranteed isolation from other applications and the datacenter provider.",
+  "abstract_source_id": "src-abstract-eurosys-2024-5fd06bc5",
   "venue": "eurosys",
   "year": 2024,
   "track_or_session": null,
@@ -146,6 +148,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-eurosys-2024-5fd06bc5",
+      "url": "https://api.openalex.org/works/doi:10.1145/3627703.3650071?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "SmartNIC Security Isolation in the Cloud with S-NIC",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:18:56Z",
+      "content_hash": "sha256:dfdbf8545c4e9832814c6b2cdb368ed464ff1f63d608ccf9980767873708b104",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2026-uep-portable-expert-parallel-communication-9ce4271a",
   "title": "UEP: Portable Expert-Parallel Communication",
+  "abstract": "Modern Mixture-of-Experts (MoE) workloads rely on expert parallelism (EP) to achieve high GPU efficiency. State-of-the-art EP communication libraries, such as DeepEP, rely on GPU-initiated RDMA communication. Although performant, they have poor portability across heterogeneous GPU and NIC hardware. The poor portability is rooted in its architecture: GPU-initiated RDMA communication requires tight vertical integration between GPUs and NICs, e.g., GPU writing to NIC driver/MMIO interfaces. We present UEP, a portable EP communication system that delivers high performance across heterogeneous GPU and NIC hardware. UEP replaces GPU-initiated RDMA with a high-throughput GPU-CPU control channel: compact token-routing commands are transferred to multithreaded CPU proxies, which then issue GPUDirect RDMA operations on behalf of GPUs. UEP further emulates various ordering semantics required by specialized EP communication modes using RDMA immediate data, enabling correctness on NICs that lack such ordering, e.g., AWS EFA. We implement UEP on NVIDIA and AMD GPUs with EFA and Broadcom NICs. On EFA, it outperforms the best existing EP solution by 2.1× for dispatch and combine throughput. UEP also improves token throughput on SGLang by up to 40% on the NVIDIA+EFA platform, and improves DeepSeek-V3 training throughput over the AMD Primus/Megatron-LM framework by up to 45% on a 16-node AMD+Broadcom platform.",
+  "abstract_source_id": "src-abstract-osdi-2026-9ce4271a",
   "venue": "osdi",
   "year": 2026,
   "track_or_session": "Expert Mixture",
@@ -314,6 +316,19 @@
       "official": true,
       "supports": [
         "Official proceedings availability and canonical conference versions."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2026-9ce4271a",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/mao-ziming-uep",
+      "kind": "paper-page",
+      "title": "UEP: Portable Expert-Parallel Communication",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:09:10Z",
+      "content_hash": "sha256:0d072e8f322fbec71ad03c20ceeb644f501205b9e9708d3ce3d347d96a60bb63",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

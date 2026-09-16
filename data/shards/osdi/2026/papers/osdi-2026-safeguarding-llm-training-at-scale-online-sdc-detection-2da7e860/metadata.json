@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2026-safeguarding-llm-training-at-scale-online-sdc-detection-2da7e860",
   "title": "Safeguarding LLM Training at Scale: Online SDC Detection and Insights from 35 Million GPU Hours",
+  "abstract": "Silent Data Corruption (SDC) poses a critical threat to large-scale LLM training. Existing offline tests and online detection methods provide solutions for large-scale systems, yet they suffer from high overhead or low detection accuracy in LLM training. This paper presents AEGIS, an online SDC detection framework for large-scale LLM training. We introduce a two-stage cSensor-cVerifier abstraction that decouples SDC detection into lightweight corruption sensing and definitive corruption verification. Based on this abstraction, AEGIS co-designs new detection techniques by integrating the inherent features of LLM training with GPU characteristics, enabling practical online SDC detection. In a production deployment spanning 3.5 × 10 7 GPU-hours, AEGIS identified 18 real-world SDC incidents and 13 faulty GPUs while incurring only 0.86% performance overhead, enabling a systematic empirical characterization of SDCs in large-scale LLM training.",
+  "abstract_source_id": "src-abstract-osdi-2026-2da7e860",
   "venue": "osdi",
   "year": 2026,
   "track_or_session": "Training Reliability and Silent Errors",
@@ -419,6 +421,19 @@
       "official": true,
       "supports": [
         "Official proceedings availability and canonical conference versions."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2026-2da7e860",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/lei",
+      "kind": "paper-page",
+      "title": "Safeguarding LLM Training at Scale: Online SDC Detection and Insights from 35 Million GPU Hours",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:08:53Z",
+      "content_hash": "sha256:cede15cae7cbf25cb5161566d11b6de3fdfe2983713e5a868da7be9de5937b19",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

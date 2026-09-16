@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2026-constructive-noise-defeats-adversarial-noise-adversarial-2e00e9c9",
   "title": "Constructive Noise Defeats Adversarial Noise: Adversarial Example Detection for Commercial DNN Services",
+  "abstract": "Commercial DNN services have been developed in the form of machine learning as a service (MLaaS). To mitigate the potential threats of adversarial examples, various detection methods have been proposed. However, the existing methods usually require access to details or the training dataset of the target model, which is commonly unavailable in MLaaS scenarios. Their detection accuracy experiences a significant drop in a setting where neither the details nor the training dataset of the target model can be acquired.\n\nIn this paper, we propose Falcon, an adversarial example detection method offered by a third party, which achieves accuracy and efficiency simultaneously. Based on the disparity in noise tolerance between clean and adversarial examples, we explore constructive noise that cannot affect the model’s output labels when added to clean examples while causing noticeable changes in model outputs when added to adversarial examples. For each input, Falcon generates constructive noise with a specific distribution and intensity and achieves detection through differences in the output of the target model before and after adding constructive noise. Extensive experiments are conducted on 4 public datasets to evaluate the performance of Falcon in detecting 10 typical attacks. Falcon outperforms SOTA detection methods with the highest True Positive Rate (TPR) of adversarial examples and the lowest False Positive Rate (FPR) of clean examples. Furthermore, Falcon achieves a TPR of about 80% with an FPR of 5% on 6 well-known commercial DNN services, which outperforms the SOTA methods. Falcon can also maintain its accuracy although the adversary has complete knowledge of the detection details.",
+  "abstract_source_id": "src-abstract-ndss-2026-2e00e9c9",
   "venue": "ndss",
   "year": 2026,
   "track_or_session": "Summer submission cycle",
@@ -202,6 +204,19 @@
       "official": false,
       "supports": [
         "independent proceedings identity reconciliation"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2026-2e00e9c9",
+      "url": "https://www.ndss-symposium.org/ndss-paper/constructive-noise-defeats-adversarial-noise-adversarial-example-detection-for-commercial-dnn-services/",
+      "kind": "paper-page",
+      "title": "Constructive Noise Defeats Adversarial Noise: Adversarial Example Detection for Commercial DNN Services",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:21:39Z",
+      "content_hash": "sha256:90cd6bae6d270cc454a494c3ef688a84aa470e4071af27bf6678ea988f9ed408",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

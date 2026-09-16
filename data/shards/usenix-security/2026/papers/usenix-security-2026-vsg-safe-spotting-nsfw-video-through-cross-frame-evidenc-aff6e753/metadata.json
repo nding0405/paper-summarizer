@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-vsg-safe-spotting-nsfw-video-through-cross-frame-evidenc-aff6e753",
   "title": "VSG-Safe: Spotting NSFW Video through Cross-Frame Evidence",
+  "abstract": "Recent advances in text-to-video (T2V) models enable high-fidelity videos that closely follow textual prompts. However, this expands practical applications while amplifying serious security and societal concerns from the automated synthesis of visual content that may be inappropriate in certain usage contexts, such as public or workplace settings, including sexual or violent content (e.g., the Grok can generate sexual videos in the \"Spicy\" mode). We observe that such visual content is often distributed across frames, embedded in visual entities, their attributes, and inter-entity relations. In contrast, existing moderation pipelines primarily treat video content as either individual frames or raw frame sequences, overlooking the fact that critical semantics can manifest through the combination of specific frames. This gap prevents them from reasoning across frames, confining detection to low-level visual cues, such as gore or explicit conflict, and causing frequent failures when cross-frame inference is required, including illegal activities or threats. To address these limitations, we propose leveraging scene graphs as the core intermediate semantic representation. Scene graphs naturally encode entities, their attributes, and inter-entity relationships, while also supporting reasoning over cross-frame content. Grounded on this insight, we further propose VSG-Safe, a novel scene-graph-driven framework for T2V content moderation. Concretely, our approach first extracts cross-frame content from videos to build scene graphs. With these graphs, we leverage a graph-oriented model to jointly capture entities, attributes, and inter-entity relations, enabling effective detection. To evaluate its effectiveness, we conduct extensive experiments on both SOTA benchmarks and our self-constructed video datasets. VSGSafe attains an average F1-score of 97.62%, outperforming seven baselines by 42.32% on average.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-aff6e753",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Security and Privacy for Web, Mobile, and Emerging Technologies 4",
@@ -219,6 +221,19 @@
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening",
         "prepublication PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-aff6e753",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/zhang-yuyang",
+      "kind": "paper-page",
+      "title": "VSG-Safe: Spotting NSFW Video through Cross-Frame Evidence",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:26:09Z",
+      "content_hash": "sha256:8666cb7c2cfc56908889c6a28b3027c6c09a3e215b60f7bd47c2eb9435abbba8",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

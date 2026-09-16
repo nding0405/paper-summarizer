@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2023-callee-recovering-call-graphs-for-binaries-with-transfer-c8e939c9",
   "title": "Callee: Recovering Call Graphs for Binaries with Transfer and Contrastive Learning",
+  "abstract": "Recovering binary programs’ call graphs is crucial for inter-procedural analysis tasks and applications based on them. One of the core challenges is recognizing targets of indirect calls (i.e., indirect callees). Existing solutions all have high false positives and negatives, making call graphs inaccurate. In this paper, we propose a new solution Callee combining transfer learning and contrastive learning. The key insight is that, deep neural networks (DNNs) can automatically identify patterns concerning indirect calls. Inspired by the advances in question-answering applications, we utilize contrastive learning to answer the callsite-callee question. However, one of the toughest challenges is that DNNs need large datasets to achieve high performance, while collecting large-scale indirect-call ground truths can be computational-expensive. Therefore, we leverage transfer learning to pre-train DNNs with easy-to-collect direct calls and further fine-tune DNNs for indirect-calls. We evaluate Callee on several groups of targets, and results show that our solution could match callsites to callees with an F1-Measure of 94.6%, much better than state-of-the-art solutions. Further, we apply Callee to two applications – binary code similarity detection and hybrid fuzzing, and found it could greatly improve their performance.",
+  "abstract_source_id": "src-abstract-sp-2023-c8e939c9",
   "venue": "sp",
   "year": 2023,
   "track_or_session": "Session 9A: Model-based software security",
@@ -235,6 +237,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2023-c8e939c9",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Callee: Recovering Call Graphs for Binaries with Transfer and Contrastive Learning",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:22Z",
+      "content_hash": "sha256:1bed15e4c1c4d6e59eecfd74eeffd17f506467abd5cdd4e0f536f68bd1e694ee",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

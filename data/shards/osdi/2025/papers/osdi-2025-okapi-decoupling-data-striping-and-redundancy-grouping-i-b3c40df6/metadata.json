@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2025-okapi-decoupling-data-striping-and-redundancy-grouping-i-b3c40df6",
   "title": "Okapi: Decoupling Data Striping and Redundancy Grouping in Cluster File Systems",
+  "abstract": "The Okapi cluster file system decouples how data is spread across disks (data striping) for IO efficiency from how data is erasure coded together (redundancy grouping) for durability. Existing systems couple these two mechanisms’ configurations, inducing significant inefficiencies. Decoupling allows grouping to be configured based on reliability and space efficiency goals, while simultaneously allowing striping to be configured based on performance goals. Decoupling also allows redundancy scheme changes from one EC scheme to another (e.g., to react to data temperature or disk failure rate changes) to occur without having to re-write data. Evaluation of an Okapi prototype shows that decoupling can be accomplished with <1% increase in metadata size and file manager memory, and minimal file creation and degraded read resource increase. Experiments demonstrate that decoupling can improve read throughput by 80% and reduce seeks per second by up to 70%, without yielding any data reliability, and reduce the overhead of redundancy transitions by up to 70%.",
+  "abstract_source_id": "src-abstract-osdi-2025-b3c40df6",
   "venue": "osdi",
   "year": 2025,
   "track_or_session": "File and Storage Systems",
@@ -243,6 +245,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2025-b3c40df6",
+      "url": "https://www.usenix.org/conference/osdi25/presentation/athlur",
+      "kind": "paper-page",
+      "title": "Okapi: Decoupling Data Striping and Redundancy Grouping in Cluster File Systems",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:07:40Z",
+      "content_hash": "sha256:c35376f97645856cd90fd0ede0bc6521795c0434da86331de994fd58d9a59d7c",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

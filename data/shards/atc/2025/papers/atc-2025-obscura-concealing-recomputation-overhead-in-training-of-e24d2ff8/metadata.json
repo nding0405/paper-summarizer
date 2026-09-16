@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "atc-2025-obscura-concealing-recomputation-overhead-in-training-of-e24d2ff8",
   "title": "Obscura: Concealing Recomputation Overhead in Training of Large Language Models with Bubble-filling Pipeline Transformation",
+  "abstract": "Pipeline parallelism has become a widely adopted strategy for training large language models (LLMs) by distributing computational workloads across multiple nodes. However, it faces a significant challenge in the form of memory bottlenecks at early stages. While recomputation can mitigate this issue, it incurs additional computational overhead.\n\nTo address this limitation, we propose Obscura, a computationally efficient pipeline training system designed to optimize recomputation overhead under the given memory constraints. Leveraging the observation that bubbles following backward passes can conceal recomputation overhead in pipeline parallelism, Obscura introduces a novel pipeline transformation to enhance overhead concealment. Furthermore, we integrate swapping techniques into the pipeline and model the execution time as an optimization problem to identify an optimal recomputation strategy. A partition adjustment algorithm is also implemented to balance computation across stages under the transformation. Evaluations on Llama-2 and GPT-3 models of various sizes demonstrate that Obscura achieves throughput improvements of up to 1.33× compared to widely used recomputation baselines.",
+  "abstract_source_id": "src-abstract-atc-2025-e24d2ff8",
   "venue": "atc",
   "year": 2025,
   "track_or_session": "Optimizing ML Execution: Compilers, Pipelines, and Runtimes",
@@ -243,6 +245,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-atc-2025-e24d2ff8",
+      "url": "https://www.usenix.org/conference/atc25/presentation/huang-yuzhou",
+      "kind": "paper-page",
+      "title": "Obscura: Concealing Recomputation Overhead in Training of Large Language Models with Bubble-filling Pipeline Transformation",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T21:59:57Z",
+      "content_hash": "sha256:d7d6057ff100b4de08935dcc6c8388e07bb5db355434c25a28920f366ceebdc3",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

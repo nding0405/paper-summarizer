@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2024-fairness-in-serving-large-language-models-eaa02262",
   "title": "Fairness in Serving Large Language Models",
+  "abstract": "High-demand LLM inference services (e.g., ChatGPT and BARD) support a wide range of requests from short chat conversations to long document reading. To ensure that all client requests are processed fairly, most major LLM inference services have request rate limits, to ensure that no client can dominate the request queue. However, this rudimentary notion of fairness also results in under-utilization of the resources and poor client experience when there is spare capacity. While there is a rich literature on fair scheduling, serving LLMs presents new challenges due to their unpredictable request lengths and their unique batching characteristics on parallel accelerators. This paper introduces the definition of LLM serving fairness based on a cost function that accounts for the number of input and output tokens processed. To achieve fairness in serving, we propose a novel scheduling algorithm, the Virtual Token Counter (VTC), a fair scheduler based on the continuous batching mechanism. We prove a 2× tight upper bound on the service difference between two backlogged clients, adhering to the requirement of work-conserving. Through extensive experiments, we demonstrate the superior performance of VTC in ensuring fairness, especially in contrast to other baseline methods, which exhibit shortcomings under various conditions. The reproducible code is available at https://github.com/Ying1123/VTC-artifact .",
+  "abstract_source_id": "src-abstract-osdi-2024-eaa02262",
   "venue": "osdi",
   "year": 2024,
   "track_or_session": "ML Scheduling",
@@ -243,6 +245,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2024-eaa02262",
+      "url": "https://www.usenix.org/conference/osdi24/presentation/sheng",
+      "kind": "paper-page",
+      "title": "Fairness in Serving Large Language Models",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:07:03Z",
+      "content_hash": "sha256:cf21bed3837d6710d915a7335c27b854f518c1e2b03ccc6a9be9c9e10594bf6c",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

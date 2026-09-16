@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-united-we-defend-collaborative-membership-inference-defe-fbd5f716",
   "title": "United We Defend: Collaborative Membership Inference Defenses in Federated Learning",
+  "abstract": "Membership inference attacks (MIAs), which determine whether a specific data point was included in the training set of a target model, have posed severe threats in federated learning (FL). Unfortunately, existing MIA defenses, typically applied independently to each client in FL, are ineffective against powerful trajectory-based MIAs that exploit temporal information throughout the training process to infer membership status. In this paper, we investigate a new FL defense scenario driven by heterogeneous privacy needs and privacy-utility trade-offs, where only a subset of clients are defended, as well as a collaborative defense mode where clients cooperate to mitigate membership privacy leakage. To this end, we introduce CoFedMID, a collaborative defense framework against MIAs in FL, which limits local model memorization of training samples and, through a defender coalition, enhances privacy protection and model utility. Specifically, CoFedMID consists of three modules: a class-guided partition module for selective local training samples, a utility-aware compensation module to recycle contributive samples and prevent their overconfidence, and an aggregation-neutral perturbation module that injects noise for cancellation at the coalition level into client updates. Extensive experiments on three datasets show that our defense framework significantly reduces the performance of seven MIAs while incurring only a small utility loss. These results are consistently verified across various defense settings.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-fbd5f716",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Privacy Anonymity 2",
@@ -177,6 +179,19 @@
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening",
         "prepublication PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-fbd5f716",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/bai",
+      "kind": "paper-page",
+      "title": "United We Defend: Collaborative Membership Inference Defenses in Federated Learning",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:26:03Z",
+      "content_hash": "sha256:1c791493a7e57d7be297bf40356b3328c0090eb3c3ac88fe08188789a537f5fd",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

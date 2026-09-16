@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-careless-retention-and-management-understanding-and-dete-d9903c26",
   "title": "Careless Retention and Management: Understanding and Detecting Data Retention Denial-of-Service Vulnerabilities in Java Web Containers",
+  "abstract": "Denial-of-Service (DoS) attacks have long been a major threat to the availability of the World Wide Web. While prior works have extensively studied network-layer DoS and certain types of application-layer DoS, such as Regular Expression DoS (ReDoS), little attention has been paid to memory exhaustion DoS, especially in Java Web containers. Our research target is a special type of memory exhaustion DoS vulnerabilities that retain user data in web containers, which is defined as Data Retention DoS (DRDoS) in this paper. To the best of our knowledge, there are no systematic academic studies of such DRDoS vulnerabilities of Java Web Containers except for a few manually found vulnerabilities in the Common Vulnerabilities and Exposures (CVE) database.\n\nIn this paper, we design and implement a novel static analysis approach, called DR. D, to detect and assess DRDoS vulnerabilities in Java web containers. Our key insight is to analyze the request handling process of web containers and detect whether client-controlled request data may be retained in the containers, thus leading to DRDoS vulnerabilities. We apply DR. D on four popular open-source Java web containers, discovering that all of them have DRDoS vulnerabilities. Specifically, DR. D finds 25 zero-day, exploitable vulnerabilities. We have responsibly reported all of them to corresponding developers and received confirmations. So far, we have received seventeen CVE identifiers (three of them assigned with high severity). Based on scan results from search engine, e.g., Shodan, we identify that over 1.5 million public IP addresses are hosting vulnerable versions of Java web containers potentially with DRDoS found by DR. D, demonstrating the spread of DRDoS vulnerability.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-d9903c26",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Web Security",
@@ -217,6 +219,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-d9903c26",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/lian",
+      "kind": "paper-page",
+      "title": "Careless Retention and Management: Understanding and Detecting Data Retention Denial-of-Service Vulnerabilities in Java Web Containers",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:19:00Z",
+      "content_hash": "sha256:c961f40499d781ef026c4c834fe9c4694f7f7c885dec99e2f8c940601963186d",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

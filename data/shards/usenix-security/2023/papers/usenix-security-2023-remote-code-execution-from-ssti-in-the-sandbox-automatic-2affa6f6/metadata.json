@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2023-remote-code-execution-from-ssti-in-the-sandbox-automatic-2affa6f6",
   "title": "Remote Code Execution from SSTI in the Sandbox: Automatically Detecting and Exploiting Template Escape Bugs",
+  "abstract": "Template engines are widely used in web applications to ease the development of user interfaces. The powerful capabilities provided by the template engines can be abused by attackers through server-side template injection (SSTI), enabling severe attacks on the server side, including remote code execution (RCE). Hence, modern template engines have provided a sandbox mode to prevent SSTI attacks from RCE.\n\nIn this paper, we study an overlooked sandbox bypass vulnerability in template engines, called template escape, that could elevate SSTI attacks to RCE. By escaping the template rendering process, template escape bugs can be used to inject executable code on the server side. Template escape bugs are subtle to detect and exploit, due to their dependencies on the template syntax and the template rendering logic. Consequently, little knowledge is known about their prevalence and severity in the real world. To this end, we conduct the first in-depth study on template escape bugs and present TEFuzz, an automatic tool to detect and exploit such bugs. By incorporating several new techniques, TEFuzz does not need to learn the template syntax and can generate PoCs and exploits for the discovered bugs. We apply TEFuzz to seven popular PHP template engines. In all, TEFuzz discovers 135 new template escape bugs and synthesizes RCE exploits for 55 bugs. Our study shows that template escape bugs are prevalent and pose severe threats.",
+  "abstract_source_id": "src-abstract-usenix-security-2023-2affa6f6",
   "venue": "usenix-security",
   "year": 2023,
   "track_or_session": "Entomology",
@@ -112,6 +114,19 @@
       "official": true,
       "supports": [
         "authors, affiliations when published, abstract, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2023-2affa6f6",
+      "url": "https://www.usenix.org/conference/usenixsecurity23/presentation/zhao-yudi",
+      "kind": "paper-page",
+      "title": "Remote Code Execution from SSTI in the Sandbox: Automatically Detecting and Exploiting Template Escape Bugs",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:12:45Z",
+      "content_hash": "sha256:360ce1d290caae34a4aaa160b189b794a668ed78b5abecb51f5184107297db81",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

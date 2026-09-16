@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2024-zenhammer-rowhammer-attacks-on-amd-zen-based-platforms-ebe9e0b8",
   "title": "ZenHammer: Rowhammer Attacks on AMD Zen-based Platforms",
+  "abstract": "AMD has gained a significant market share in recent years with the introduction of the Zen microarchitecture. While there are many recent Rowhammer attacks launched from Intel CPUs, they are completely absent on these newer AMD CPUs due to three non-trivial challenges: 1) reverse engineering the unknown DRAM addressing functions, 2) synchronizing with refresh commands for evading in-DRAM mitigations, and 3) achieving a sufficient row activation throughput. We address these challenges in the design of ZenHammer, the first Rowhammer attack on recent AMD CPUs. ZenHammer reverse engineers DRAM addressing functions despite their non-linear nature, uses specially crafted access patterns for proper synchronization, and carefully schedules flush and fence instructions within a pattern to increase the activation throughput while preserving the access order necessary to bypass in-DRAM mitigations. Our evaluation with ten DDR4 devices shows that ZenHammer finds bit flips on seven and six devices on AMD Zen 2 and Zen 3, respectively, enabling Rowhammer exploitation on current AMD platforms. Furthermore, ZenHammer triggers Rowhammer bit flips on a DDR5 device for the first time.",
+  "abstract_source_id": "src-abstract-usenix-security-2024-ebe9e0b8",
   "venue": "usenix-security",
   "year": 2024,
   "track_or_session": "Side Channel II: RowHammer",
@@ -175,6 +177,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2024-ebe9e0b8",
+      "url": "https://www.usenix.org/conference/usenixsecurity24/presentation/jattke",
+      "kind": "paper-page",
+      "title": "ZenHammer: Rowhammer Attacks on AMD Zen-based Platforms",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:18:17Z",
+      "content_hash": "sha256:12a83bd6b60a322ef30af2505393fdc79fe51d6410c682fc0f17df0e0537d8a3",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

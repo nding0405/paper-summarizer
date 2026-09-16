@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-autofail-breaking-web-boundaries-using-android-s-autofil-8ee40337",
   "title": "AutoFail: Breaking Web Boundaries using Android's Autofill Framework",
+  "abstract": "Password managers (PWMs) are widely used to improve both usability and security in password-based authentication. On Android, PWMs typically rely on the Autofill Framework (AF) to provide automatic credential filling in native applications and web browsers. The AF acts as an intermediary between apps and PWMs by offering a unified interface for credential extraction and injection. However, web content does not natively match the object structure expected by the AF, which forces browsers to translate a website's Document Object Model (DOM) into an Android-specific representation. This translation step introduces a complex and security-sensitive layer in the autofill pipeline.\n\nIn this paper, we present the first systematic security analysis of Android's Autofill Framework pipeline. We introduce ADAPT, a differential-testing based approach that enables an end-to-end inspection of the autofill flow, from the browser's DOM translation process to the PWM's credential matching and filling logic. We identify multiple critical vulnerabilities affecting 9 password managers and 5 widely used mobile browsers. These flaws allow attackers to leak credentials to attacker-controlled origins, bypass web isolation mechanisms, and infer user account relationships across services. We precisely define preconditions for the attacks and evaluate their prevalence in the wild.\n\nWe also propose concrete mitigations and a standardized design for secure DOM translation and context-aware credential filling. We disclosed our findings to the affected vendors. Major browser and password manager developers have confirmed our results and are implementing the suggested fixes.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-8ee40337",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Security and Privacy for Web, Mobile, and Emerging Technologies 2",
@@ -113,6 +115,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-8ee40337",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/lamarca",
+      "kind": "paper-page",
+      "title": "AutoFail: Breaking Web Boundaries using Android's Autofill Framework",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:23:06Z",
+      "content_hash": "sha256:cf4f21e69453f85a52fb10adcd2f5eb8d85114eff7ad6d7059ef5ba7226ae52d",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2023-glowing-in-the-dark-uncovering-ipv6-address-discovery-an-7b48ce43",
   "title": "Glowing in the Dark: Uncovering IPv6 Address Discovery and Scanning Strategies in the Wild",
+  "abstract": "In this work we identify scanning strategies of IPv6 scanners on the Internet. We offer a unique perspective on the behavior of IPv6 scanners by conducting controlled experiments leveraging a large and unused /56 IPv6 subnet. We selectively make parts of the subnet visible to scanners by hosting applications that make direct or indirect contact with IPv6- capable servers on the Internet. By careful experiment design, we mitigate the effects of hidden variables on scans sent to our /56 subnet and establish causal relationships between IPv6 host activity types and the scanner attention they evoke. We show that IPv6 host activities e.g., Web browsing, membership in the NTP pool and Tor network, cause scanners to send a magnitude higher number of unsolicited IP scans and reverse DNS queries to our subnet than before. DNS scanners focus their scans in narrow regions of the address space where our applications are hosted whereas IP scanners broadly scan the entire subnet. Even after the host activity from our subnet subsides, we observe persistent residual scanning to portions of the address space that previously hosted applications.",
+  "abstract_source_id": "src-abstract-usenix-security-2023-7b48ce43",
   "venue": "usenix-security",
   "year": 2023,
   "track_or_session": "Networks and Security",
@@ -133,6 +135,19 @@
       "official": true,
       "supports": [
         "authors, affiliations when published, abstract, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2023-7b48ce43",
+      "url": "https://www.usenix.org/conference/usenixsecurity23/presentation/bin-tanveer",
+      "kind": "paper-page",
+      "title": "Glowing in the Dark: Uncovering IPv6 Address Discovery and Scanning Strategies in the Wild",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:11:16Z",
+      "content_hash": "sha256:d85fc17086f4640fdfc1a7b6652598294c094f9bfe9d74c5b5aa396cf088a2f9",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

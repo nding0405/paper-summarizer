@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2026-enhancing-semantic-aware-binary-diffing-with-high-confid-5940ff2c",
   "title": "Enhancing Semantic-Aware Binary Diffing with High-Confidence Dynamic Instruction Alignment",
+  "abstract": "Binary diffing, which detects differences between two pieces of binary code, is the fundamental technique in various security analysis tasks.\n\nExisting work shows that a sufficient number of fine-grained alignments as anchor points can significantly improve the overall accuracy of binary diffing. However, existing methods still suffer from numerous limitations that hinder accurate and efficient anchor point identification. Syntax-based techniques are known to be vulnerable to aggressive compiler optimizations, while semantic-based methods are limited by high computation cost or low code coverage.\n\nIn this paper, we revisit dynamic analysis to seek new insights to address the limitations of existing approaches. Our main insight is that not all dynamic semantics are necessary or equally effective for identifying valid instruction alignment. Therefore, we can prioritize dynamic execution resources to partially reveal the runtime values that can effectively derive instruction alignment. Based on the above insight, we propose Barracuda, a high-confidence instruction alignment technique based on partial instruction semantics extracted from forced execution. We have implemented Barracuda and conducted extensive experiments to evaluate its effectiveness. Extensive experimental results demonstrate that Barracuda can detect 24.0% more instruction alignment as anchor points with a high precision of 92.1%. The anchor points detected by Barracuda can enhance state-of-the-art binary diffing tools, DeepBinDiff and SigmaDiff, with percentage point increases in F1 scores ranging from 12.3% to 42.7% and 2.2% to 4.1%, respectively, across various binary diffing scenarios.",
+  "abstract_source_id": "src-abstract-ndss-2026-5940ff2c",
   "venue": "ndss",
   "year": 2026,
   "track_or_session": "Fall submission cycle",
@@ -139,6 +141,19 @@
       "official": false,
       "supports": [
         "independent proceedings identity reconciliation"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2026-5940ff2c",
+      "url": "https://www.ndss-symposium.org/ndss-paper/enhancing-semantic-aware-binary-diffing-with-high-confidence-dynamic-instruction-alignment/",
+      "kind": "paper-page",
+      "title": "Enhancing Semantic-Aware Binary Diffing with High-Confidence Dynamic Instruction Alignment",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:21:56Z",
+      "content_hash": "sha256:3a28d9896b5304a6ebdc6b361cb2a56f6595c2ab8a20a133ba5ea14f1e6908a1",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

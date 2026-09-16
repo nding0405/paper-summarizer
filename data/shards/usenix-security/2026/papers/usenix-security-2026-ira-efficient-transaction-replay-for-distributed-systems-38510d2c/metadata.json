@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-ira-efficient-transaction-replay-for-distributed-systems-38510d2c",
   "title": "Ira: Efficient Transaction Replay for Distributed Systems",
+  "abstract": "In primary-backup replication, the consensus latency is bounded by the time for backup nodes to replay (re-execute) transactions proposed by the primary. Our key insight is that the primary, having already executed transactions, possesses knowledge of future access patterns which is the information needed for optimal replay by the backups. In this work, we present Ira, a framework to accelerate backup replay by transmitting compact hints alongside transaction batches.\n\nWe use Ethereum for our case study and present a concrete protocol, Ira-L, within our framework to improve cache management of Ethereum block execution. The primaries implementing Ira-L provide hints that consist of the working set of keys used in an Ethereum block and one byte of metadata per key indicating the table to read from, and backups use these hints for efficient block replay.\n\nWe evaluated Ira-L against the state-of-the-art Ethereum client reth over two weeks of Ethereum blocks (100,800) blocks, 24 million transactions). Our hint generation adds 10.9% overhead to primary execution time. On the backup, our hint-driven prefetching speeds up aggregate replay by 5.2× with a single prefetch thread, and by 23.6× with 16 threads. Our hints add a median of 47 KB compressed metadata per block (∼5%) of block payload).",
+  "abstract_source_id": "src-abstract-usenix-security-2026-38510d2c",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "System Security 3",
@@ -113,6 +115,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-38510d2c",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/bhat",
+      "kind": "paper-page",
+      "title": "Ira: Efficient Transaction Replay for Distributed Systems",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:24:23Z",
+      "content_hash": "sha256:750b31f1cd57c380ada24a28b0b5284538af544cb256e29d69c3aa085c59ecd4",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

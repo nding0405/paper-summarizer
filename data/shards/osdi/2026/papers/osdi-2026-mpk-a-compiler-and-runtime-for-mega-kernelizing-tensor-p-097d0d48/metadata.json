@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2026-mpk-a-compiler-and-runtime-for-mega-kernelizing-tensor-p-097d0d48",
   "title": "MPK: A Compiler and Runtime for Mega-Kernelizing Tensor Programs",
+  "abstract": "We introduce Mirage Persistent Kernel (MPK), the first compiler and runtime system that automatically transforms multi-GPU model inference into a single high-performance mega-kernel. MPK introduces an SM-level graph representation that captures data dependencies at the granularity of individual streaming multiprocessors (SMs), enabling cross-operator software pipelining, fine-grained overlap of computation and communication, and other optimizations that are infeasible under the conventional kernel-per-operator execution model. The MPK compiler lowers tensor programs into optimized SM-level task graphs and generates fast CUDA implementations for each task, while the MPK in-kernel parallel runtime executes these tasks within a single persistent mega-kernel using decentralized scheduling across SMs. Together, these components provide end-to-end kernel fusion with minimal developer effort, while preserving the flexibility of existing programming models. Our evaluation shows that MPK significantly outperforms existing kernel-per-operator LLM serving systems, achieving up to 1.7× lower end-to-end inference latency and pushing LLM inference performance close to the limits of the underlying hardware. MPK is publicly available at https://github.com/mirage-project/mirage .",
+  "abstract_source_id": "src-abstract-osdi-2026-097d0d48",
   "venue": "osdi",
   "year": 2026,
   "track_or_session": "GPU Compilers and Kernels",
@@ -503,6 +505,19 @@
       "official": true,
       "supports": [
         "Official proceedings availability and canonical conference versions."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2026-097d0d48",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/cheng",
+      "kind": "paper-page",
+      "title": "MPK: A Compiler and Runtime for Mega-Kernelizing Tensor Programs",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:08:37Z",
+      "content_hash": "sha256:b751315fcc61dad2e88143490c516315a2a1a844a0f90c2cca404c4579d69f38",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

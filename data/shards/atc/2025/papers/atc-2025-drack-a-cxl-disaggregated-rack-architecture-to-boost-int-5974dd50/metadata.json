@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "atc-2025-drack-a-cxl-disaggregated-rack-architecture-to-boost-int-5974dd50",
   "title": "DRack: A CXL-Disaggregated Rack Architecture to Boost Inter-Rack Communication",
+  "abstract": "Data-intensive applications are scaling out across more and more racks, and boosted with advanced computing units with enhanced throughput, which necessitates increased NIC capacity and network bandwidth to transport inter-rack traffic. As a result, when running them over ToR-centric racks, inter-rack traffic can be bottlenecked at host NICs and core network due to oversubscription. However, we observe that, although a large volume of inter-rack traffic exists, the utilization of the host’s NICs within a rack remains low. If those underutilized NICs within a rack can be utilized by any host, inter-rack communication can be accelerated. Therefore, we propose DRack. At its core, DRack disaggregates all NICs within a rack from their hosts, forming a shared NIC pool. As the local memory bandwidth or the PCIe link at a host is much smaller than the NIC pool capacity, the host cannot fully utilize the NIC pool. DRack also disaggregates memory devices within a rack from their hosts, so that data from the NIC pool can be written and read from multiple memory with full capacity, while host processors can directly access the memory pool with memory semantics. We realize DRack with CXL as it supports device pooling and memory semantics, which is well-suited to our designs. We have implemented DRack prototype and evaluated it with real applications, such as DNN training and graph processing. The result shows that DRack can reduce the communication stage by an average of 37.3% compared to ToR-centric rack.",
+  "abstract_source_id": "src-abstract-atc-2025-5974dd50",
   "venue": "atc",
   "year": 2025,
   "track_or_session": "Software-Hardware Synergy: Accelerators, Memory, and Interconnects",
@@ -306,6 +308,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-atc-2025-5974dd50",
+      "url": "https://www.usenix.org/conference/atc25/presentation/zhang-xu",
+      "kind": "paper-page",
+      "title": "DRack: A CXL-Disaggregated Rack Architecture to Boost Inter-Rack Communication",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T21:59:35Z",
+      "content_hash": "sha256:30fc420f82fc80be0074a775d3d063006b1892ed0a9370760acb7f300283383a",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2024-scavy-automated-discovery-of-memory-corruption-targets-i-0a24120b",
   "title": "SCAVY: Automated Discovery of Memory Corruption Targets in Linux Kernel for Privilege Escalation",
+  "abstract": "Kernel privilege-escalation exploits typically leverage memory-corruption vulnerabilities to overwrite particular target locations. These memory corruption targets play a critical role in the exploits, as they determine which privileged resources (e.g., files, memory, and operations) the adversary may access and what privileges (e.g., read, write, and unrestricted) they may gain. While prior research has made important advances in discovering vulnerabilities and achieving privilege escalation, in practice, the exploits rely on the few memory corruption targets that have been discovered manually so far.\n\nWe propose SCAVY, a framework that automatically discovers memory corruption targets for privilege escalation in the Linux kernel. SCAVY's key insight lies in broadening the search scope beyond the kernel data structures explored in prior work, which focused on function pointers or pointers to structures that include them, to encompass the remaining 90% of Linux kernel structures. Additionally, the search is bug-type agnostic, as it considers any memory corruption capability. To this end, we develop novel and scalable techniques that combine fuzzing and differential analysis to automatically explore and detect privilege escalation by comparing the accessibility of resources between executions with and without corruption. This allows SCAVY to determine that corrupting a certain field puts the system in an exploitable state, independently of the vulnerability exploited. SCAVY found 955 PoC, from which we identify 17 new fields in 12 structures that can enable privilege escalation. We utilize these targets to develop 6 exploits for 5 CVE vulnerabilities. Our findings show that new memory corruption targets can change the security implications of vulnerabilities, urging researchers to proactively discover memory corruption targets.",
+  "abstract_source_id": "src-abstract-usenix-security-2024-0a24120b",
   "venue": "usenix-security",
   "year": 2024,
   "track_or_session": "System Security V: Memory II",
@@ -112,6 +114,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2024-0a24120b",
+      "url": "https://www.usenix.org/conference/usenixsecurity24/presentation/avllazagaj",
+      "kind": "paper-page",
+      "title": "SCAVY: Automated Discovery of Memory Corruption Targets in Linux Kernel for Privilege Escalation",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:17:06Z",
+      "content_hash": "sha256:bd2a39f7b9f0d697a84dd625d0b53c2305b9b844bb204c7c46cb83b0ec3dd130",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

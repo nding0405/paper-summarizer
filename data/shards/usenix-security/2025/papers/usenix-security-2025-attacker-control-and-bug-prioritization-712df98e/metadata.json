@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-attacker-control-and-bug-prioritization-712df98e",
   "title": "Attacker Control and Bug Prioritization",
+  "abstract": "As bug-finding methods improve, bug-fixing capabilities are exceeded, resulting in an accumulation of potential vulnerabilities. There is thus a need for efficient and precise bug prioritization based on exploitability. In this work, we explore the notion of control of an attacker over a vulnerability's parameters, which is an often overlooked factor of exploitability. We show that taint as well as straightforward qualitative and quantitative notions of control are not enough to effectively differentiate vulnerabilities. Instead, we propose to focus analysis on feasible value sets, which we call domains of control, in order to better take into account threat models and expert insight. Our new Shrink and Split algorithm efficiently extracts domains of control from path constraints obtained with symbolic execution and renders them in an easily processed, human-readable form. This in turn allows to automatically compute more complex control metrics, such as weighted Quantitative Control, which factors in the varying threat levels of different values. Experiments show that our method is both efficient and precise. In particular, it is the only one able to distinguish between vulnerabilities such as cve-2019-14192 and cve-2022-30552, while revealing a mistake in the human evaluation of cve-2022-30790. The high degree of automation of our tool also brings us closer to a fully-automated evaluation pipeline.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-712df98e",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Software Security 2: Patching and Repair",
@@ -91,6 +93,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-712df98e",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/lacombe",
+      "kind": "paper-page",
+      "title": "Attacker Control and Bug Prioritization",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:18:42Z",
+      "content_hash": "sha256:81f2aef56b51b039dad746556a513affab5f8770e800b736bb6c5b70e02d7ba2",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

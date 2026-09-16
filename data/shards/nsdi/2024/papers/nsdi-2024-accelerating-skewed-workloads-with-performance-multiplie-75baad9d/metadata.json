@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2024-accelerating-skewed-workloads-with-performance-multiplie-75baad9d",
   "title": "Accelerating Skewed Workloads With Performance Multipliers in the TurboDB Distributed Database",
+  "abstract": "Distributed databases suffer from performance degradation under skewed workloads. Such workloads cause high contention, which is exacerbated by cross-node network latencies. In contrast, single-machine databases better handle skewed workloads because their centralized nature enables performance optimizations that execute contended requests more efficiently. Based on this insight, we propose a novel hybrid architecture that employs a single-machine database inside a distributed database and present TurboDB, the first distributed database that leverages this hybrid architecture to achieve up to an order of magnitude better performance than representative solutions under skewed workloads.\n\nTurboDB introduces two designs to tackle the core challenges unique to its hybrid architecture. First, Hybrid Concurrency Control is a specialized technique that coordinates the single-machine and distributed databases to collectively ensure process-ordered serializability. Second, Phalanx Replication provides fault tolerance for the single-machine database without significantly sacrificing its performance benefits. We implement TurboDB using CockroachDB and Cicada as the distributed and single-machine databases, respectively. Our evaluation shows that TurboDB significantly improves the performance of CockroachDB under skewed workloads.",
+  "abstract_source_id": "src-abstract-nsdi-2024-75baad9d",
   "venue": "nsdi",
   "year": 2024,
   "track_or_session": "Distributed Systems: Part 2",
@@ -139,6 +141,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2024-75baad9d",
+      "url": "https://www.usenix.org/conference/nsdi24/presentation/lam",
+      "kind": "paper-page",
+      "title": "Accelerating Skewed Workloads With Performance Multipliers in the TurboDB Distributed Database",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:02:49Z",
+      "content_hash": "sha256:1c8681fd6e73b6ac0be8de9b4ffdd49ee4719fafbef0ddcb70bc349cfe37f2c3",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

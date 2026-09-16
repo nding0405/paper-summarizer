@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "fast-2026-polarstore-high-performance-data-compression-for-large-s-a8f39746",
   "title": "PolarStore: High-Performance Data Compression for Large-Scale Cloud-Native Databases",
+  "abstract": "In recent years, resource elasticity and cost optimization have become essential for RDBMSs. While cloud-native RDBMSs provide elastic computing resources via disaggregated computing and storage, storage costs remain a critical user concern. Consequently, data compression emerges as an effective strategy to reduce storage costs. However, existing compression approaches in RDBMSs present a stark trade-off: software-based approaches incur significant performance overheads, while hardware-based alternatives lack the flexibility required for diverse database workloads.\n\nIn this paper, we present PolarStore, a compressed shared storage system for cloud-native RDBMSs. PolarStore employs a dual-layer compression mechanism that combines in-storage compression in PolarCSD hardware with lightweight compression in software. This design leverages the strengths of both approaches. PolarStore also incorporates database-oriented optimizations to maintain high performance on critical I/O paths. Drawing from large-scale deployment experiences, we also introduce hardware improvements for PolarCSD to ensure host-level stability and propose a compression-aware scheduling scheme to improve cluster-level space efficiency. PolarStore is currently deployed on thousands of storage servers within PolarDB, managing over 100 PB of data. It achieves a compression ratio of 3.55 and reduces storage costs by approximately 60%. Remarkably, these savings are achieved while maintaining performance comparable to uncompressed clusters.",
+  "abstract_source_id": "src-abstract-fast-2026-a8f39746",
   "venue": "fast",
   "year": 2026,
   "track_or_session": "Cloud Technologies II",
@@ -307,6 +309,19 @@
         "proceedings page range and page count",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-fast-2026-a8f39746",
+      "url": "https://www.usenix.org/conference/fast26/presentation/hu",
+      "kind": "paper-page",
+      "title": "PolarStore: High-Performance Data Compression for Large-Scale Cloud-Native Databases",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:01:38Z",
+      "content_hash": "sha256:cfba2d5b8074887457eb2b0dcfaa244a4a554231df69a872434789c4201ad3df",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

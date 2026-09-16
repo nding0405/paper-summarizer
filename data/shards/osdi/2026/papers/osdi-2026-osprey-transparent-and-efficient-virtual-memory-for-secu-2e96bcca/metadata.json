@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2026-osprey-transparent-and-efficient-virtual-memory-for-secu-2e96bcca",
   "title": "Osprey: Transparent and Efficient Virtual Memory for Secure Computation",
+  "abstract": "There is increasing interest in privacy-preserving data analytics applications. These applications rely on Secure Computation (SC), a family of cryptographic techniques for computing on encrypted data. Unfortunately, SC amplifies the memory overhead of data-intensive data analytics applications, presenting a serious obstacle to their widespread deployment.\n\nOsprey is a memory management framework that enables SC to efficiently page to an SSD. It works at runtime and is transparent to SC applications, similar to classical OS virtual memory. This resolves a serious limitation in prior SC-aware memory management, which requires up-front planning and rewriting applications in a new programming framework.\n\nOsprey achieves this using speculative execution. While speculative execution is powerful, it normally requires complex and error-prone in-kernel support, and therefore is not widely deployed for OS processes. Our central observation in Osprey is that, by carefully leveraging SC’s obliviousness, we can make speculative execution for SC workloads practical and efficient. Osprey requires changing < 200 lines of code in each SC library that we tested, and no lines of code in SC applications written against those libraries.",
+  "abstract_source_id": "src-abstract-osdi-2026-2e96bcca",
   "venue": "osdi",
   "year": 2026,
   "track_or_session": "Confidential Computing",
@@ -167,6 +169,19 @@
       "official": true,
       "supports": [
         "Official proceedings availability and canonical conference versions."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2026-2e96bcca",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/liu-yicheng",
+      "kind": "paper-page",
+      "title": "Osprey: Transparent and Efficient Virtual Memory for Secure Computation",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:08:43Z",
+      "content_hash": "sha256:fb5dbda8a47b920e7aa68e4c3d87662d9b616dc0390d604e7b48539a9102961e",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

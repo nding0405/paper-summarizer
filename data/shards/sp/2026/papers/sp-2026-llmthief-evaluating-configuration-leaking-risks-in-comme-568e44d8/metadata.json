@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2026-llmthief-evaluating-configuration-leaking-risks-in-comme-568e44d8",
   "title": "LLMThief: Evaluating Configuration Leaking Risks in Commercial LLM App Stores",
+  "abstract": "Configuration leaking attack is an emerging security threat in large language model applications (LLM apps), where adversaries can manipulate the LLM app to reveal its sensitive configurations, such as system prompts, external APIs, and knowledge files. Despite their critical implications, these attacks remain understudied within commercial LLM app stores, leaving open questions about their real-world effectiveness, prevalence, and impacts. In this paper, we propose LLMThief, a novel end-to-end framework designed to systematically evaluate configuration leaking risks in LLM app stores. LLMThief comprises three phases. First, it extracts grounding information from store-level features to construct a high-quality seed pool of attack prompts. Second, it leverages shadow LLM apps as probing oracles and a genetic algorithm to identify adaptive mutation strategies. Third, it fuzzes victim LLM apps with the resulting insightful prompts and uses a fine-tuned LLM to determine whether a configuration leakage has occurred. We evaluated LLMThief on ground truth datasets across 6 widely used LLM app stores, including OpenAI GPT Store, ByteDance Coze, and Baidu Wenxin. Evaluation results show that LLMThief can effectively leak the confidential configuration of LLM apps and significantly outperforms baselines. Beyond performance evaluation, our large-scale analysis of 4,164 real-world LLM apps reveals a range of critical risks, including system prompt leaks, external API exposures, and knowledge file leaks. Those issues can not only compromise developers' intellectual property but also leak personal privacy and even disclose corporate secrets. We have responsibly disclosed our findings to the affected vendors and received acknowledgments and bug bounties from Baidu, ByteDance, Alibaba, etc.",
+  "abstract_source_id": "src-abstract-sp-2026-568e44d8",
   "venue": "sp",
   "year": 2026,
   "track_or_session": "Cycle 2",
@@ -238,6 +240,19 @@
       "official": true,
       "supports": [
         "DOI, published-order authors and affiliations, abstract, publication date, page span, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2026-568e44d8",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "LLMThief: Evaluating Configuration Leaking Risks in Commercial LLM App Stores",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:58:02Z",
+      "content_hash": "sha256:4204efad9387253e2c70bd18217fac7c5220b9cd43ecd6179fdc27c5a043343e",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

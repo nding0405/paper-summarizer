@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "atc-2025-efi-a-microkernel-style-uefi-with-isolation-and-transpar-53003aa9",
   "title": "μEFI: A Microkernel-Style UEFI with Isolation and Transparency",
+  "abstract": "The Unified Extensible Firmware Interface (UEFI) has established itself as the leading firmware standard in modern devices, offering enhanced extensibility, user-friendly graphical interface, and improved security capabilities. At the core of UEFI security is UEFI Secure Boot, designed to ensure that only trusted drivers and applications are loaded during system startup. However, the growing number of UEFI-related CVEs and the emergence of attacks that bypass UEFI Secure Boot have highlighted its limitations, exposing vulnerabilities that could be exploited by attackers.\n\nWe propose μEFI, the first isolation framework for UEFI firmware that can transparently run UEFI modules in sandboxes. Drawing inspiration from microkernel design, we deprivilege UEFI modules to user mode and isolate them in different address spaces (sandboxes). To enable the transparent execution of UEFI modules, we propose trampoline injection and protocol analysis. To further strengthen UEFI security, we incorporate a seccomp-like mechanism to restrict module capabilities and perform automated input validation to detect and prevent invalid inputs. Evaluation results demonstrate that our system can run complex UEFI modules without modifications, which incurs a small overhead of 1.91% for UEFI boot phase.",
+  "abstract_source_id": "src-abstract-atc-2025-53003aa9",
   "venue": "atc",
   "year": 2025,
   "track_or_session": "Operating Systems: Scheduling, Security, and Extensibility",
@@ -180,6 +182,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-atc-2025-53003aa9",
+      "url": "https://www.usenix.org/conference/atc25/presentation/chen-le",
+      "kind": "paper-page",
+      "title": "μEFI: A Microkernel-Style UEFI with Isolation and Transparency",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T21:59:38Z",
+      "content_hash": "sha256:3d03fec9886a3e840809510fad1eca5051e3212e4f3ba9d5e9951390f54f6887",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

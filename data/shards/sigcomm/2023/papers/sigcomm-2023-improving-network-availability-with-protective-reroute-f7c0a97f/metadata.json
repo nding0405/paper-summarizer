@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sigcomm-2023-improving-network-availability-with-protective-reroute-f7c0a97f",
   "title": "Improving Network Availability with Protective ReRoute",
+  "abstract": "We present PRR (Protective ReRoute), a transport technique for shortening user-visible outages that complements routing repair. It can be added to any transport to provide benefits in multipath networks. PRR responds to flow connectivity failure signals, e.g., retransmission timeouts, by changing the FlowLabel on packets of the flow, which causes switches and hosts to choose a different network path that may avoid the outage. To enable it, we shifted our IPv6 network architecture to use the FlowLabel, so that hosts can change the paths of their flows without application involvement. PRR is deployed fleetwide at Google for TCP and Pony Express, where it has been protecting all production traffic for several years. It is also available to our Cloud customers. We find it highly effective for real outages. In a measurement study on our network backbones, adding PRR reduced the cumulative region-pair outage time for RPC traffic by 63--84%. This is the equivalent of adding 0.4--0.8 \"nines\" of availability.",
+  "abstract_source_id": "src-abstract-sigcomm-2023-f7c0a97f",
   "venue": "sigcomm",
   "year": 2023,
   "track_or_session": "Multiple Paths — Experience Paper",
@@ -277,6 +279,19 @@
         "publisher-deposited ORCIDs",
         "proceedings page range and print publication date",
         "empty publisher relation metadata for alternate-version checks"
+      ]
+    },
+    {
+      "id": "src-abstract-sigcomm-2023-f7c0a97f",
+      "url": "https://api.openalex.org/works/doi:10.1145/3603269.3604867?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Improving Network Availability with Protective ReRoute",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:22:53Z",
+      "content_hash": "sha256:1772dc1b9dc87944d01016a91e579abd8d56243fe6a31949b27d61b01e25046b",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

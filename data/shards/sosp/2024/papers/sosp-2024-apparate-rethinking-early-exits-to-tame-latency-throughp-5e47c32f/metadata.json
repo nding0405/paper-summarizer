@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sosp-2024-apparate-rethinking-early-exits-to-tame-latency-throughp-5e47c32f",
   "title": "Apparate: Rethinking Early Exits to Tame Latency-Throughput Tensions in ML Serving",
+  "abstract": "Machine learning (ML) inference platforms are tasked with balancing two competing goals: ensuring high throughput given many requests, and delivering low-latency responses to support interactive applications. Unfortunately, existing platform knobs (e.g., batch sizes) fail to ease this fundamental tension, and instead only enable users to harshly trade off one property for the other. This paper explores an alternate strategy to taming throughput-latency tradeoffs by changing the granularity at which inference is performed. We present Apparate, a system that automatically applies and manages early exits (EEs) in ML models, whereby certain inputs can exit with results at intermediate layers. To cope with the time-varying overhead and accuracy challenges that EEs bring, Apparate repurposes exits to provide continual feedback that powers several novel runtime monitoring and adaptation strategies. Apparate lowers median response latencies by 40.5--91.5% and 10.0--24.2% for diverse CV and NLP classification workloads, and median time-per-token latencies by 22.6--77.9% for generative scenarios, without affecting throughputs or violating tight accuracy constraints.",
+  "abstract_source_id": "src-abstract-sosp-2024-5e47c32f",
   "venue": "sosp",
   "year": 2024,
   "track_or_session": "Session 9: ML Serving 11:00 - 12:30 Session Chair: Ram Alagappan",
@@ -167,6 +169,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-sosp-2024-5e47c32f",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Apparate: Rethinking Early Exits to Tame Latency-Throughput Tensions in ML Serving",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:12Z",
+      "content_hash": "sha256:aa9c23a45f6ec9973f40e6c9520c69d42bb49fc1f526891570edfdb1976cff82",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

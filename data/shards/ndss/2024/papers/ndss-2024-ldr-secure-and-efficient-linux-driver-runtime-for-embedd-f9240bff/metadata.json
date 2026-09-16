@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2024-ldr-secure-and-efficient-linux-driver-runtime-for-embedd-f9240bff",
   "title": "LDR: Secure and Efficient Linux Driver Runtime for Embedded TEE Systems",
+  "abstract": "Trusted execution environments (TEEs), like TrustZone, are pervasively employed to protect security sensitive programs and data from various attacks. We target compact TEE operating systems like OP-TEE, which implement minimum TEE internal core APIs. Such a TEE OS often has poor device driver support and we want to alleviate such issue by reusing existing Linux drivers inside TEE OSes. An intuitive approach is to port all its dependency functions into the TEE OS so that the driver can directly execute inside the TEE. But this approach significantly enlarges the trusted computing base (TCB), making the TEE OS no longer compact.\n\nIn this paper, we propose a TEE driver execution environment---Linux driver runtime (LDR). A Linux driver needs two types of functions, library functions and Linux kernel subsystem functions that a compact TEE OS does not have. The LDR reuses the existing TEE OS library functions whenever possible and redirects the kernel subsystem function calls to the Linux kernel in the normal world. LDR is realized as a sandbox environment, which confines the Linux driver inside the TEE through the ARM domain access control features to address associated security issues. The sandbox mediates the driver's TEE functions calls, sanitizing arguments and return values as well as enforcing forward control flow integrity. We implement and deploy an LDR prototype on an NXP IMX6Q SABRE-SD evaluation board, adapt 6 existing Linux drivers into LDR, and evaluate their performance. The experimental results show that the LDR drivers can achieve comparable performance with their Linux counterparts with negligible overheads. We are the first to reuse functions in both the TEE OS and normal world Linux kernel to run a TEE device driver and address related security issues.",
+  "abstract_source_id": "src-abstract-ndss-2024-f9240bff",
   "venue": "ndss",
   "year": 2024,
   "track_or_session": "Summer submission cycle",
@@ -273,6 +275,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2024-f9240bff",
+      "url": "https://www.ndss-symposium.org/ndss-paper/ldr-secure-and-efficient-linux-driver-runtime-for-embedded-tee-systems/",
+      "kind": "paper-page",
+      "title": "LDR: Secure and Efficient Linux Driver Runtime for Embedded TEE Systems",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:18:17Z",
+      "content_hash": "sha256:f7a03bffbacc74ee9b7bc91ab1d70b957c1b6e302b246690f4b66d4e3920ba98",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

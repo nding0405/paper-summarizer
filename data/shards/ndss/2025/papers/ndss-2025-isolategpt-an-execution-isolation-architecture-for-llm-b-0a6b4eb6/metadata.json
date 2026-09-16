@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2025-isolategpt-an-execution-isolation-architecture-for-llm-b-0a6b4eb6",
   "title": "IsolateGPT: An Execution Isolation Architecture for LLM-Based Agentic Systems",
+  "abstract": "Large language models (LLMs) extended as systems, such as ChatGPT, have begun supporting third-party applications. These LLM apps leverage the de facto natural language-based automated execution paradigm of LLMs: that is, apps and their interactions are defined in natural language, provided access to user data, and allowed to freely interact with each other and the system. These LLM app ecosystems resemble the settings of earlier computing platforms, where there was insufficient isolation between apps and the system. Because third-party apps may not be trustworthy, and exacerbated by the imprecision of natural language interfaces, the current designs pose security and privacy risks for users. In this paper, we evaluate whether these issues can be addressed through execution isolation and what that isolation might look like in the context of LLM-based systems, where there are arbitrary natural language-based interactions between system components, between LLM and apps, and between apps. To that end, we propose IsolateGPT, a design architecture that demonstrates the feasibility of execution isolation and provides a blueprint for implementing isolation, in LLM-based systems. We evaluate IsolateGPT against a number of attacks and demonstrate that it protects against many security, privacy, and safety issues that exist in non-isolated LLM-based systems, without any loss of functionality. The performance overhead incurred by IsolateGPT to improve security is under 30% for three-quarters of tested queries.",
+  "abstract_source_id": "src-abstract-ndss-2025-0a6b4eb6",
   "venue": "ndss",
   "year": 2025,
   "track_or_session": "Fall submission cycle",
@@ -168,6 +170,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2025-0a6b4eb6",
+      "url": "https://www.ndss-symposium.org/ndss-paper/isolategpt-an-execution-isolation-architecture-for-llm-based-agentic-systems/",
+      "kind": "paper-page",
+      "title": "IsolateGPT: An Execution Isolation Architecture for LLM-Based Agentic Systems",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:19:48Z",
+      "content_hash": "sha256:cb9dc6239f6a1426227b49cddf25933f645b9ab915e34de6dcc4fd2ea189d435",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

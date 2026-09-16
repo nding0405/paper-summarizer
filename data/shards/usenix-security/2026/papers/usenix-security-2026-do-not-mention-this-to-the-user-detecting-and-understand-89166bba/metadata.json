@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-do-not-mention-this-to-the-user-detecting-and-understand-89166bba",
   "title": "\"Do Not Mention This to the User\": Detecting and Understanding Malicious Agent Skills in the Wild",
+  "abstract": "LLM-based coding agents increasingly rely on third-party extensions called skills , which bundle natural language instructions and helper scripts that execute with full user privileges. Community registries have emerged to distribute these skills, but the security implications remain unstudied due to the absence of labeled threat data. This paper presents a systematic security analysis of 98,380 skills collected from two major registries. Through a combination of static pattern matching and dynamic behavioral verification, we identify 157 skills exhibiting confirmed malicious behavior, encompassing 632 distinct vulnerabilities across 13 attack techniques. Our analysis reveals that these threats are deliberate rather than accidental: each malicious skill contains an average of 4.03 vulnerabilities spanning multiple attack phases. We identify two dominant attack strategies with statistically significant negative correlation---credential theft via remote code execution, and agent manipulation through adversarial instructions embedded in documentation. Over half of all confirmed cases originate from a single threat actor employing templated brand impersonation at scale. We further observe that attack sophistication correlates with concealment investment, with advanced skills universally employing undocumented capabilities while also exploiting platform-native trust mechanisms. Following responsible disclosure, registry maintainers removed all 157 (100%) of the reported skills. Our dataset and detection pipeline are publicly available to facilitate future research on securing LLM agent ecosystems.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-89166bba",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Human Aspects 1",
@@ -197,6 +199,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-89166bba",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/liu-yi",
+      "kind": "paper-page",
+      "title": "\"Do Not Mention This to the User\": Detecting and Understanding Malicious Agent Skills in the Wild",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:23:43Z",
+      "content_hash": "sha256:a6ebb3686673a0b043e9fdfc5873cc140233da289da54fe7b476bf141d14dae1",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

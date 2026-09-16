@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sigcomm-2026-when-static-verification-is-not-enough-revealing-bgp-bug-4e5537ed",
   "title": "When static verification is not enough: revealing BGP bugs at runtime",
+  "abstract": "Operators go to great lengths to ensure their BGP networks are correct. Yet, despite their efforts, faults still happen due to software or hardware bugs which can often have detrimental network-wide consequences. Today, all operators can do is react to such failures, often only once it is already too late. We present GhostBuster, a runtime system which monitors the execution of BGP routers and verifies their compliance with the protocol specification. Concretely, GhostBuster checks whether observed outgoing BGP messages could have been produced by incoming ones. The key challenge in doing so is that BGP routers do not necessarily process incoming messages in order, forcing one to consider all possible reorderings of input messages. While this obviously does not scale, we show that one can solve this problem efficiently by reasoning about sets of messages instead of orderings. We fully implemented GhostBuster and use it to detect (confirmed and previously unknown) bugs in production routers. Our evaluation on simulated networks further confirms that GhostBuster is both scalable and accurate: it never falsely reports a bug while detecting over 60% of the bugs.",
+  "abstract_source_id": "src-abstract-4e5537ed",
   "venue": "sigcomm",
   "year": 2026,
   "track_or_session": "Research Session 2: Network Verification & Formal Methods — Research Paper",
@@ -128,6 +130,19 @@
       "official": true,
       "supports": [
         "official main-paper scope and track definitions"
+      ]
+    },
+    {
+      "id": "src-abstract-4e5537ed",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/search/match?query=When%20static%20verification%20is%20not%20enough%3A%20revealing%20BGP%20bugs%20at%20runtime&fields=title,abstract",
+      "kind": "semantic-scholar",
+      "title": "When static verification is not enough: revealing BGP bugs at runtime",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T23:09:42Z",
+      "content_hash": "sha256:a99d6a2218137ff286bed3c0eb4b2da57eb115a0bdd1ac1a7f139a0e26415abc",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2023-replicating-persistent-memory-key-value-stores-with-effi-a5f2593c",
   "title": "Replicating Persistent Memory Key-Value Stores with Efficient RDMA Abstraction",
+  "abstract": "Combining persistent memory (PM) with RDMA is a promising approach to performant replicated distributed key-value stores (KVSs). However, existing replication approaches do not work well when applied to PM KVSs: 1) Using RPC induces software queueing and execution at backups, increasing request latency; 2) Using one-sided RDMA WRITE causes numerous streams of small PM writes, leading to severe device-level write amplification (DLWA) on PM.\n\nIn this paper, we propose Rowan, an efficient RDMA abstraction to handle replication writes in PM KVSs; it aggregates massive concurrent remote writes from different servers, and lands these writes to PM in a sequential (thus low DLWA) and one-sided (thus low latency) manner. We realize Rowan with off-the-shelf RDMA NICs. Further, we build Rowan-KV, a log-structured PM KVS using Rowan for replication. Evaluation shows that under write-intensive workloads, compared with PM KVSs using RPC and RDMA WRITE for replication, Rowan-KV boosts throughput by 1.22× and 1.39× as well as lowers median PUT latency by 1.77× and 2.11×, respectively, while largely eliminating DLWA.",
+  "abstract_source_id": "src-abstract-osdi-2023-a5f2593c",
   "venue": "osdi",
   "year": 2023,
   "track_or_session": "Store Your Bits",
@@ -159,6 +161,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2023-a5f2593c",
+      "url": "https://www.usenix.org/conference/osdi23/presentation/wang-qing",
+      "kind": "paper-page",
+      "title": "Replicating Persistent Memory Key-Value Stores with Efficient RDMA Abstraction",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:06:42Z",
+      "content_hash": "sha256:6c31fa1af45875a63bf37090bdbb3299c952386c695e233d6da58e8d484c4fc9",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

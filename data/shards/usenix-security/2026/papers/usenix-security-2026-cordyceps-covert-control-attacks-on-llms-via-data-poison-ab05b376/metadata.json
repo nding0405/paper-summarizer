@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-cordyceps-covert-control-attacks-on-llms-via-data-poison-ab05b376",
   "title": "Cordyceps: Covert Control Attacks on LLMs via Data Poisoning",
+  "abstract": "Large language models (LLMs) are often fine-tuned on uncurated text datasets that adversaries can poison. Existing poisoning attacks primarily rely on fixed trigger phrases that defenses such as outlier detection, clean-data regularization, or online monitoring can neutralize. In this paper, we propose a data poisoning method that teaches an LLM an information hiding scheme reliably and stealthily through semantic associations between shared knowledge such as facts or concepts and attacker-chosen phrases. The induced hiding scheme can encode and decode arbitrary malicious instructions, thus revealing a new and subtle poisoning-induced vulnerability: covert control attacks .\n\nWe precisely characterize covert control attacks and evaluate them across 5 LLMs, 3 backdoor defenses, and 4 prompt injection defenses. With a small poisoned fraction, covert control attacks outperform heuristic-based prompt injection attacks in average attack success rate by about 40% relative to clean fine-tuned models. They also circumvent defenses based on detection and fine-tuning, maintaining up to 93% attack success rate after backdoor defenses and up to 98% after prompt injection defenses. Our code and data are available at https://github.com/Sadcardation/cordyceps .",
+  "abstract_source_id": "src-abstract-usenix-security-2026-ab05b376",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Security of ML 2",
@@ -113,6 +115,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-ab05b376",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/shao-zedian",
+      "kind": "paper-page",
+      "title": "Cordyceps: Covert Control Attacks on LLMs via Data Poisoning",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:23:29Z",
+      "content_hash": "sha256:21a0e7b209c2a5919746483bd5c3c4c5161484840a291b1bcb362bb8e61eb783",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

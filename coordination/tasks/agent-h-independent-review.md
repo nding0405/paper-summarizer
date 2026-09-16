@@ -71,9 +71,7 @@ replicate scientific results or rank paper/group quality.
 ## Validation
 
 ```sh
-PYTHONPATH=src python3 -m systems_phd_explorer.cli validate \
-  --root data/shards \
-  --profile draft
+./mvnw -q compile exec:java -Dexec.args="validate --root data/shards"
 ```
 
 The coordinator, not you, runs the final release merge.

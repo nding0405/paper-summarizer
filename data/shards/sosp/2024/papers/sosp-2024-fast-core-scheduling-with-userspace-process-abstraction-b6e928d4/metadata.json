@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sosp-2024-fast-core-scheduling-with-userspace-process-abstraction-b6e928d4",
   "title": "Fast Core Scheduling with Userspace Process Abstraction",
+  "abstract": "We introduce uProcess, a pure userspace process abstraction that enables CPU cores to be rescheduled among applications at sub-microsecond timescale without trapping into the kernel. We achieve this by constructing a special privileged mode in userspace to achieve safe and efficient separation among uProcesses. The core idea is a careful combination of two emerging hardware features - userspace interrupts (Uintr) and memory protection keys (MPK). We materialize the uProcess abstraction by implementing Vessel, a userspace core scheduler that colocates latency-critical and best-effort applications with minimal switching overhead when they time-share CPU cores. Our experiment result shows that Vessel exhibits better overall performance and low latency when multiple applications are colocated.",
+  "abstract_source_id": "src-abstract-sosp-2024-b6e928d4",
   "venue": "sosp",
   "year": 2024,
   "track_or_session": "Session 4: Kernels 9:00 - 10:30 Session Chair: Malte Schwarzkopf",
@@ -146,6 +148,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-sosp-2024-b6e928d4",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Fast Core Scheduling with Userspace Process Abstraction",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:19Z",
+      "content_hash": "sha256:b613162f9e7d53fac5fe410aff94d06ac71f23c6c31e2e9cc362b51e87d1bb79",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

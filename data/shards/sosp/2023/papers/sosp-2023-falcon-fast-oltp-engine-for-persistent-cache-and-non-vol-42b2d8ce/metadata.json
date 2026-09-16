@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sosp-2023-falcon-fast-oltp-engine-for-persistent-cache-and-non-vol-42b2d8ce",
   "title": "Falcon: Fast OLTP Engine for Persistent Cache and Non-Volatile Memory",
+  "abstract": "Non-volatile memory(NVM) has the properties of both byte addressable and persistence, which provides new opportunities for building on-line transaction processing (OLTP) engines. Recently, a new feature called eADR puts CPU cache also in the persistence domain. Existing OLTP engines are based on volatile cache and now have the opportunity to improve performance further and reduce programming complexity with persistent cache. This paper studies the impact of persistent cache on OLTP engines and revisits the existing designs. We have observed that naively removing the flush instructions can trigger the write amplification because of the granularity mismatch between the cache line and NVM access. We propose Falcon, a new OLTP engine for eADR-enabled NVM. Falcon is based on the in-place update architecture. The small log window design in Falcon avoids the NVM writes while logging. The selective data flush design reduces the data flush and the write amplification while flushing data. Evaluations show that under TPC-C workloads, Falcon achieves 1.21× ~ 1.35× improvement over the state-of-the-art OLTP engine.",
+  "abstract_source_id": "src-abstract-sosp-2023-42b2d8ce",
   "venue": "sosp",
   "year": 2023,
   "track_or_session": "Session 9: Data and databases",
@@ -167,6 +169,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-sosp-2023-42b2d8ce",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Falcon: Fast OLTP Engine for Persistent Cache and Non-Volatile Memory",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:12Z",
+      "content_hash": "sha256:aa9c23a45f6ec9973f40e6c9520c69d42bb49fc1f526891570edfdb1976cff82",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2023-multiview-finding-blind-spots-in-access-deny-issues-diag-746b9a65",
   "title": "Multiview: Finding Blind Spots in Access-Deny Issues Diagnosis",
+  "abstract": "Access-deny issues are hard to fix because it implies both availability and security requirements. On one hand, system administrators (sysadmins) need to make a change quickly to enable legitimate access. On the other hand, sysadmins need to make sure the change does not allow excessive access. Fulfilling the second requirement on security is especially challenging because it highly requires the sysadmins’ knowledge of the system environments and security context. Blind spots in knowledge and system settings may hinder sysadmins from finding the solutions that align with the security context. Insecure fixes can over-grant permissions, which may only get noticed after the security vulnerability gets exploited.\n\nThis paper aims to help sysadmins reduce blind spots in diagnosis by providing multiple directions to resolve access-deny issues. We propose a system, called Multiview, that automatically mutates the configurations to explore possible directions to fix the access-deny issue and lets the configuration changes on each direction grant as few permissions as possible. Multiview provides a detailed diagnosis report, including access-control configurations that are related to the denial, possible configuration changes on different directions to allow the request, as well as the impact on the access-control state of the entire system.\n\nWe conducted a user study to evaluate Multiview with 20 participants on five real-world access-deny issues. Multiview can reduce the percentage of insecure fixes from 44.0% to 2.0% and reduce the diagnosis time by 62.0% on average. We also evaluated Multiview on 112 real-world failure cases from eight different systems and server applications, and it can successfully diagnose 89 of them. Multiview accurately identifies the failure-causing configurations and provides possible directions to each access-deny issue within one minute.",
+  "abstract_source_id": "src-abstract-usenix-security-2023-746b9a65",
   "venue": "usenix-security",
   "year": 2023,
   "track_or_session": "Attacking, Defending, and Analyzing",
@@ -112,6 +114,19 @@
       "official": true,
       "supports": [
         "authors, affiliations when published, abstract, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2023-746b9a65",
+      "url": "https://www.usenix.org/conference/usenixsecurity23/presentation/shen-bingyu-multiview",
+      "kind": "paper-page",
+      "title": "Multiview: Finding Blind Spots in Access-Deny Issues Diagnosis",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:12:06Z",
+      "content_hash": "sha256:508cc5debee6faa77c3f4f5b1d6f26d17941a575d706b72df32f50d4301231f1",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2026-octopus-enhancing-cxl-memory-pods-via-sparse-topology-7a06fa52",
   "title": "Octopus: Enhancing CXL Memory Pods via Sparse Topology",
+  "abstract": "The Compute Express Link (CXL) interconnect enables compute \"pods\" that pool memory across servers to reduce cost and improve efficiency. These pods also facilitate pairwise communication whose needs conflict with pooling. Importantly, existing pod designs are small or require indirection through expensive switches. These conventional designs implicitly assume that pods must fully connect all servers to all CXL pooling devices.\n\nThis paper breaks with this conventional wisdom by introducing Octopus pods. Octopus directly connects servers to low-port-count CXL pooling devices (e.g., 4 ports) yet scales to large pods without switches by constructing a sparse CXL topology in which each pooling device connects to a carefully chosen subset of servers. Octopus explicitly balances \"overlap\", where two servers connect to the same pooling device: overlap reduces pooling efficiency but enables low-latency communication. Octopus resolves this tension by grouping servers into \"islands\" with low-latency intra-island communication and interconnecting islands to favor pooling.\n\nWe build a three-server CXL pod prototype and simulate scaled pods with 96 servers under measured device characteristics and physical constraints (1.5m copper cables). On hardware, Octopus RPCs are 3.2× faster than in-rack RDMA and 2.4× faster than CXL switches. In simulation, Octopus achieves net server cost savings of 3–5.4% whereas CXL switches result in a net cost increase.",
+  "abstract_source_id": "src-abstract-nsdi-2026-7a06fa52",
   "venue": "nsdi",
   "year": 2026,
   "track_or_session": "Living Large in Shared Clouds",
@@ -202,6 +204,19 @@
         "proceedings page range and page count",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2026-7a06fa52",
+      "url": "https://www.usenix.org/conference/nsdi26/presentation/zhong",
+      "kind": "paper-page",
+      "title": "Octopus: Enhancing CXL Memory Pods via Sparse Topology",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:05:45Z",
+      "content_hash": "sha256:6c81f567090b9f3f394665a863c24b9286bfb521b9b77304303ae285af5acce5",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

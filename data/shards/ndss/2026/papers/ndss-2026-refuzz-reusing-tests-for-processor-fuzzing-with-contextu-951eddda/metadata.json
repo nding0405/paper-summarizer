@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2026-refuzz-reusing-tests-for-processor-fuzzing-with-contextu-951eddda",
   "title": "ReFuzz: Reusing Tests for Processor Fuzzing with Contextual Bandits",
+  "abstract": "Processor designs rely on iterative modifications and reuse well-established designs. However, this reuse of prior designs also leads to similar vulnerabilities across multiple processors. As processors grow increasingly complex with iterative modifications, efficiently detecting vulnerabilities from modern processors is critical. Inspired by software fuzzing, hardware fuzzing has recently demonstrated its effectiveness in detecting processor vulnerabilities. Yet, to our best knowledge, existing processor fuzzers fuzz each design individually, lacking the capability to understand known vulnerabilities in prior processors to fine-tune fuzzing to identify similar or new variants of vulnerabilities.\n\nTo address this gap, we present ReFuzz, an adaptive fuzzing framework that leverages contextual bandit to reuse highly effective tests from prior processors to fuzz a processor-undertest (PUT) within a given ISA. By intelligently mutating tests that trigger vulnerabilities in prior processors, ReFuzz detects similar and new variants of vulnerabilities in PUTs. ReFuzz uncovered three new security vulnerabilities and two new functional bugs. ReFuzz detected one vulnerability by reusing a test that triggers a known vulnerability in a prior processor. One functional bug exists across three processors that share design modules. The second bug has two variants. Additionally, ReFuzz reuses highly effective tests to enhance efficiency in coverage, achieving an average 511.23× coverage speedup and up to 9.33% more total coverage, compared to existing fuzzers.",
+  "abstract_source_id": "src-abstract-ndss-2026-951eddda",
   "venue": "ndss",
   "year": 2026,
   "track_or_session": "Fall submission cycle",
@@ -223,6 +225,19 @@
       "official": false,
       "supports": [
         "independent proceedings identity reconciliation"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2026-951eddda",
+      "url": "https://www.ndss-symposium.org/ndss-paper/refuzz-reusing-tests-for-processor-fuzzing-with-contextual-bandits/",
+      "kind": "paper-page",
+      "title": "ReFuzz: Reusing Tests for Processor Fuzzing with Contextual Bandits",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:22:58Z",
+      "content_hash": "sha256:72167c246bf04a6da2186e297a30a2bb905262657e6c09f286fa7163ccc5f3c0",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

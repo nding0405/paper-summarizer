@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "fast-2024-physical-vs-logical-indexing-with-idea-inverted-deduplic-5ea68f12",
   "title": "Physical vs. Logical Indexing with IDEA: Inverted Deduplication-Aware Index",
+  "abstract": "In the realm of information retrieval, the need to maintain reliable term-indexing has grown more acute in recent years, with vast amounts of ever-growing online data searched by a large number of search-engine users and used for data mining and natural language processing. At the same time, an increasing portion of primary storage systems employ data deduplication, where duplicate logical data chunks are replaced with references to a unique physical copy.\n\nWe show that indexing deduplicated data with deduplication-oblivious mechanisms might result in extreme inefficiencies: the index size would increase in proportion to the logical data size, regardless of its duplication ratio, consuming excessive storage and memory and slowing down lookups. In addition, the logically sequential accesses during index creation would be transformed into random and redundant accesses to the physical chunks. Indeed, to the best of our knowledge, term indexing is not supported by any deduplicating storage system.\n\nIn this paper, we propose the design of a deduplication-aware term-index that addresses these challenges. IDEA maps terms to the unique chunks that contain them, and maps each chunk to the files in which it is contained. This basic design concept improves the index performance and can support advanced functionalities such as inline indexing, result ranking, and proximity search. Our prototype implementation based on Lucene (the search engine at the core of Elasticsearch) shows that IDEA can reduce the index size and indexing time by up to 73% and 94%, respectively, and reduce term-lookup latency by up to 82% and 59% for single and multi-term queries, respectively.",
+  "abstract_source_id": "src-abstract-fast-2024-5ea68f12",
   "venue": "fast",
   "year": 2024,
   "track_or_session": "Key-Value Systems",
@@ -139,6 +141,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-fast-2024-5ea68f12",
+      "url": "https://www.usenix.org/conference/fast24/presentation/levi",
+      "kind": "paper-page",
+      "title": "Physical vs. Logical Indexing with IDEA: Inverted Deduplication-Aware Index",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:00:51Z",
+      "content_hash": "sha256:182955e409282a07635ddaffb591d88497b6094ff8377e4b75cae2b9e0b6eb07",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

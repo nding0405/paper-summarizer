@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2023-face-auditor-data-auditing-in-facial-recognition-systems-a5c4989e",
   "title": "FACE-AUDITOR: Data Auditing in Facial Recognition Systems",
+  "abstract": "Few-shot-based facial recognition systems have gained increasing attention due to their scalability and ability to work with a few face images during the model deployment phase. However, the power of facial recognition systems enables anyone with moderate resources to canvas the Internet and build well-performed facial recognition models without people's awareness and consent. To prevent the face images from being misused, one straightforward approach is to modify the raw face images before sharing them, which inevitably destroys the semantic information and is still prone to adaptive attacks. Therefore, an auditing method that does not interfere with the facial recognition model's utility and cannot be quickly bypassed is urgently needed.\n\nIn this paper, we formulate the auditing process as a user-level membership inference problem, and propose a complete toolkit FACE-AUDITOR that can carefully choose the probing set to query the few-shot-based facial recognition model and determine whether any of a user's face images is used in training the model. We further propose to use the similarity scores between the original face images as reference information to improve the auditing performance. Extensive experiments on multiple real-world face image datasets show that FACE-AUDITOR can achieve auditing accuracy of up to 99%. Finally, we show that FACE-AUDITOR is robust in the presence of several perturbation mechanisms to the training images or the target models. The source code of our experiments can be found at https://anonymous.4open.science/r/FACE-AUDITOR .",
+  "abstract_source_id": "src-abstract-usenix-security-2023-a5c4989e",
   "venue": "usenix-security",
   "year": 2023,
   "track_or_session": "Facing the Facts",
@@ -154,6 +156,19 @@
       "official": true,
       "supports": [
         "authors, affiliations when published, abstract, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2023-a5c4989e",
+      "url": "https://www.usenix.org/conference/usenixsecurity23/presentation/chen-min",
+      "kind": "paper-page",
+      "title": "FACE-AUDITOR: Data Auditing in Facial Recognition Systems",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:10:58Z",
+      "content_hash": "sha256:9a2b9ebf70942b60b477bdfee7654c6dc675c2822e362d6f2d8ab492bb73c7f0",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

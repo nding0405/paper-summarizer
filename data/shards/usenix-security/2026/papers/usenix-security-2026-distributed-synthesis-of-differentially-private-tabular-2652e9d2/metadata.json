@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-distributed-synthesis-of-differentially-private-tabular-2652e9d2",
   "title": "Distributed Synthesis of Differentially Private Tabular Datasets",
+  "abstract": "Differentially private synthetic data generation has emerged as a powerful tool for sharing data while protecting individuals' privacy. However, when the attributes of sensitive data are distributed across multiple entities such as hospitals, companies, or government agencies, accurately generating synthetic data becomes challenging. In particular, it is difficult to capture informative statistical correlations and use them to guide data synthesis without gathering the entire private dataset. In response to this challenge, we propose a secure multi-party computation protocol for differentially private tabular data synthesis in the distributed setting. Our protocol contains two new primitives. The first is a protocol that exploits distributed point functions to efficiently estimate two-way marginals (pairwise joint distributions of attributes) across vertically distributed data. The second is a protocol for generating noise via batched lookups in the cumulative distribution function table. As a concrete demonstration, we build a distributed version of AIM, a state-of-the-art DP data-synthesis algorithm. Our implementation achieves the same utility as its centralized version while reducing end-to-end runtime by orders of magnitude compared with prior work. For example, we can synthesize the \"Adult\" dataset in 24 minutes in a real-world WAN setting, whereas the existing protocol is estimated to take 57 days.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-2652e9d2",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Privacy Anonymity 1",
@@ -135,6 +137,19 @@
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening",
         "prepublication PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-2652e9d2",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/fu",
+      "kind": "paper-page",
+      "title": "Distributed Synthesis of Differentially Private Tabular Datasets",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:23:41Z",
+      "content_hash": "sha256:e87e2066100a31267c7a9b472a678dae02b5f2c3cb211c2eca6440427584cf2c",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-arguzz-testing-zkvms-for-soundness-and-completeness-bugs-a749c112",
   "title": "Arguzz: Testing zkVMs for Soundness and Completeness Bugs",
+  "abstract": "Zero-knowledge virtual machines (zkVMs) are increasingly deployed in decentralized applications and blockchain rollups since they enable verifiable off-chain computation. These VMs execute general-purpose programs, frequently written in Rust, and produce succinct cryptographic proofs. However, zkVMs are complex, and bugs in their constraint systems or execution logic can cause critical soundness (accepting invalid executions) or completeness (rejecting valid ones) issues.\n\nWe present ARGUZZ, the first automated tool for testing zkVMs for soundness and completeness bugs. To detect such bugs, ARGUZZ combines a novel variant of metamorphic testing with fault injection. In particular, it generates semantically equivalent program pairs, merges them into a single Rust program with a known output, and runs it inside a zkVM. By injecting faults into the VM, ARGUZZ mimics malicious or buggy provers to uncover overly weak constraints.\n\nWe used ARGUZZ to test six real-world zkVMs—RISC Zero, Nexus, Jolt, SP1, OpenVM, and Pico—and found eleven bugs in three of them. One RISC Zero bug resulted in a $50,000 bounty, despite prior audits, demonstrating the critical need for systematic testing of zkVMs.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-a749c112",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Software Security 1",
@@ -114,6 +116,19 @@
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening",
         "prepublication PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-a749c112",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/hochrainer",
+      "kind": "paper-page",
+      "title": "Arguzz: Testing zkVMs for Soundness and Completeness Bugs",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:23:00Z",
+      "content_hash": "sha256:f311cd9ffa3e86c2f03ac7d6fc92f6f0b6fbefa183cb670164ed43856db4ee7d",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

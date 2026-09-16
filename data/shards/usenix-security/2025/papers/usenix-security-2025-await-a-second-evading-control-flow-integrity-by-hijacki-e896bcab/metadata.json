@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-await-a-second-evading-control-flow-integrity-by-hijacki-e896bcab",
   "title": "Await() a Second: Evading Control Flow Integrity by Hijacking C++ Coroutines",
+  "abstract": "Code reuse attacks exploit legitimate code sequences in a binary to execute malicious actions without introducing new code. Control Flow Integrity (CFI) defenses mitigate these attacks by restricting program execution to valid code paths. However, new programming paradigms, like C++20 coroutines, expose gaps in current CFI protections. We demonstrate that, despite rigorous standardization, C++ coroutines present new vulnerabilities that undermine both coarse-grained and fine-grained CFI defenses. Coroutines, widely used in asynchronous programming, store critical execution data in writable heap memory, making them susceptible to exploitation. This paper introduces Coroutine Frame-Oriented Programming (CFOP), a novel code reuse attack that leverages these vulnerabilities across major compilers. We demonstrate how CFOP allows attackers to hijack program execution and manipulate data in CFI-protected environments. Through a series of Proof of Concept (PoC) exploits, we show the practical impact of CFOP. We also propose defensive measures to enhance coroutine security and address this emerging threat.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-e896bcab",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "System Security 4: Kernel and Low-Level System Security",
@@ -91,6 +93,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-e896bcab",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/bajo",
+      "kind": "paper-page",
+      "title": "Await() a Second: Evading Control Flow Integrity by Hijacking C++ Coroutines",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:18:47Z",
+      "content_hash": "sha256:0ff8348ef694e5c4c3e940265fa572faa172ca8bb77cbb3284dca0975b1aee31",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

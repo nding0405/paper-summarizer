@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2026-harvesting-spare-cpu-resources-in-container-systems-28d37402",
   "title": "Harvesting Spare CPU Resources in Container Systems",
+  "abstract": "Platforms like Kubernetes are widely adopted for deploying latency-sensitive cloud services in containers, and CPU resources for these containers are over-provisioned to ensure low 99th percentile tail latency under peak load. At the same time, cloud services exhibit bursty traffic patterns resulting in CPU usage variability that creates opportunity to harvest ephemerally unused CPU cores to run latency-tolerant containers. However, existing resource controls do not allow latency-sensitive containers to share unused cores without compromising their low tail latency objectives. Prior research on performance isolation is inadequate for container systems because it requires modifying applications and system software, employs offline profiling, and does not account for interference from processing container networking interrupts. We present HarvestContainers , a system that protects latency-sensitive containers from all sources of interference while harvesting their spare CPU cores to run latency-tolerant containers. Our solution dynamically determines the safe number of CPU cores to harvest and does not require rewriting applications or OS. We implement HarvestContainers integrated with Kubernetes and evaluate it experimentally. Our evaluation shows that latency-sensitive containers with microsecond-scale service level objectives can share up to 75% of their unused CPU cores while maintaining tail latency within 4% of standalone operation.",
+  "abstract_source_id": "src-abstract-nsdi-2026-28d37402",
   "venue": "nsdi",
   "year": 2026,
   "track_or_session": "Designing Robust Networked Systems",
@@ -159,6 +161,19 @@
         "official paper page and PDF",
         "proceedings page range and page count",
         "official BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2026-28d37402",
+      "url": "https://www.usenix.org/conference/nsdi26/presentation/hall",
+      "kind": "paper-page",
+      "title": "Harvesting Spare CPU Resources in Container Systems",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:05:24Z",
+      "content_hash": "sha256:0354ad9da9ced3e8e0a410e398496ae9aabfc18819228670a93f4336594c8fbb",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

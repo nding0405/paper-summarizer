@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "atc-2023-luci-loader-based-dynamic-software-updates-for-off-the-s-48770572",
   "title": "Luci: Loader-based Dynamic Software Updates for Off-the-shelf Shared Objects",
+  "abstract": "Shared libraries indisputably facilitate software development but also significantly increase the attack surface, and when using multiple libraries, frequent patches for vulnerabilities are to be expected. However, such a bugfix commonly requires restarting all services depending on the compromised library, which causes downtimes and unavailability of services. This can be prevented by dynamic software updating, but existing approaches are often costly and incur additional maintenance due to necessary source or infrastructure modifications.\n\nWith Luci, we present a lightweight linker/loader technique to unobtrusively and automatically update shared libraries during runtime by exploiting the indirection mechanisms of position-independent code, hence avoiding severe runtime overhead. Luci further adds no additional requirements, such as adjusting the source or interfering with the build chain, as it fully adapts to today's build and package-update mechanisms of common Linux distributions. We demonstrate our approach on popular libraries (like Expat and libxcrypt) using off-the-shelf (i.e., unmodified) binaries from Debian and Ubuntu packages, being able to update the majority of releases without the necessity of a process restart.",
+  "abstract_source_id": "src-abstract-atc-2023-48770572",
   "venue": "atc",
   "year": 2023,
   "track_or_session": "Updating Code",
@@ -138,6 +140,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-atc-2023-48770572",
+      "url": "https://www.usenix.org/conference/atc23/presentation/heinloth",
+      "kind": "paper-page",
+      "title": "Luci: Loader-based Dynamic Software Updates for Off-the-shelf Shared Objects",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T21:58:04Z",
+      "content_hash": "sha256:e9e7799a5481423b80aeab7016de9cd51edf9e572dd938af8c7ebb88c5275fff",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

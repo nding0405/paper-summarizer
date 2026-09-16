@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-on-the-atomicity-and-efficiency-of-blockchain-payment-ch-5c22e25a",
   "title": "On the Atomicity and Efficiency of Blockchain Payment Channels",
+  "abstract": "Payment channels are a promising solution for scaling cryptocurrency payments by enabling secure off-chain transactions. However, existing protocols, including the widely-deployed Lightning Network and the state-of-the-art Sleepy Channels, suffer from a fundamental flaw: non-atomic state transitions can result in multiple valid states coexisting, introducing race conditions and ambiguity in protocol execution. This ambiguity can be exploited to cause unexpected financial loss. We first formalize existing protocols into a common paradigm and prove that such flaws are inherent to their design, preventing balance security. To overcome this, we propose an atomic paradigm that guarantees atomic state transitions while preserving all desired functionality. Based on this paradigm, we design Ultraviolet, the first payment channel protocol that achieves atomicity by introducing the novel Resolve Mechanism. We formally prove that Ultraviolet satisfies balance security under the Universal Composability framework. In addition, Ultraviolet reduces the number of required messages per transaction by half compared to existing solutions. Our evaluation across multiple regions shows that Ultraviolet reduces latency by 37% and 52% compared to the Lightning Network and Sleepy Channels, respectively, and achieves comparable throughput to the Lightning Network and 2× that of Sleepy Channels.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-5c22e25a",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Blockchain Security 2: Infrastructure, Protocol Design, and Governance",
@@ -217,6 +219,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-5c22e25a",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/wu-di",
+      "kind": "paper-page",
+      "title": "On the Atomicity and Efficiency of Blockchain Payment Channels",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:20:56Z",
+      "content_hash": "sha256:130d4be7a161f182b0618bb3d60bc205fbeb7b831db49ad0a1c449796d4121ee",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

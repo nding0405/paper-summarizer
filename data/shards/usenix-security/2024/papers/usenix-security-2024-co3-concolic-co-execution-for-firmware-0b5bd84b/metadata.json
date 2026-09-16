@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2024-co3-concolic-co-execution-for-firmware-0b5bd84b",
   "title": "CO3: Concolic Co-execution for Firmware",
+  "abstract": "Firmware running on resource-constrained embedded microcontrollers (MCUs) is critical in this IoT era, yet their security is under-analyzed. At the same time, concolic execution has proven to be a successful program analysis technique on conventional workstation platforms. However, porting it to the MCUs faces challenges, such as incomplete and inaccurate emulation of hardware peripherals, reliance on customized hardware, and low execution speed.\n\nCO3 is a firmware-oriented concolic executor attempting to address these limitations. CO3 runs the firmware concretely on a real MCU to utilize its fidelity. Unlike previous designs, CO3 gets rid of the slow or proprietary debugging interfaces for synchronization between the MCU and workstation. Instead, CO3 instruments the firmware source code to strategically report runtime information via a basic serial port to a workstation where symbolic constraints are constructed and solved. We further combine CO3 with a semi-hosted firmware fuzzing framework to create a hybrid fuzzer (SHACO).\n\nThe evaluation shows that CO3 outperforms state-of-the-art (SoTA) firmware-oriented concolic executors by three orders of magnitude while incurring mild memory and runtime overheads. It is also faster than SymCC, a general concolic executor. When evaluated on the existing benchmark, SHACO finds all known bugs in a much shorter time. It also found seven bugs from three new firmware samples. All new bugs have been confirmed and patched responsibly.",
+  "abstract_source_id": "src-abstract-usenix-security-2024-0b5bd84b",
   "venue": "usenix-security",
   "year": 2024,
   "track_or_session": "Hardware Security IV: Firmware",
@@ -154,6 +156,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2024-0b5bd84b",
+      "url": "https://www.usenix.org/conference/usenixsecurity24/presentation/liu-changming",
+      "kind": "paper-page",
+      "title": "CO3: Concolic Co-execution for Firmware",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:14:31Z",
+      "content_hash": "sha256:3fc8030218a1be5c1ade59c68383e73bc752e5c3f1621ad71465573b41e0c938",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

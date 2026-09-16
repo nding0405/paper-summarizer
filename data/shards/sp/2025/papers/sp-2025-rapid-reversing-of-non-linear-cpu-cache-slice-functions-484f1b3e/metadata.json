@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2025-rapid-reversing-of-non-linear-cpu-cache-slice-functions-484f1b3e",
   "title": "Rapid Reversing of Non-Linear CPU Cache Slice Functions: Unlocking Physical Address Leakage",
+  "abstract": "Microarchitectural attacks are a growing threat to modern computing systems. CPU caches are an essential but complex element in many microarchitectural attacks, making it crucial to understand the inner workings. Despite progress in reverse-engineering techniques, non-linear cache-slice functions remain challenging to analyze, especially in recent Intel hybrid microarchitectures. In this paper, we introduce a novel approach towards reverse-engineering complex, non-linear cache-slice functions, particularly on modern Intel CPUs with hybrid microarchi-tectures. Our method significantly advances prior work by understanding the specific structure of microarchitectural hash functions, reducing the time required for reverse-engineering from days to minutes. In contrast to prior work, our technique successfully handles systems with 512 GB of memory and diverse slice configurations. We present 13 newly identified functions used for cache-slice addressing and extend existing functions to support systems with more DRAM for multiple CPU generations. Additionally, we introduce an unprivileged virtual-to-physical address oracle that is a direct consequence of the complexity of the non-linear slice functions. Our method is particularly effective on modern Intel hybrid CPUs, in-cluding Alder Lake and Meteor Lake, where previously used methods for measuring slices or leaking physical addresses are unavailable. In 3 case studies, we validate our approach, demonstrating its effectiveness in executing targeted Spectre attacks on non-attacker-mapped memory, enabling DRAMA attacks, and creating cache eviction sets. Our findings em-phasize the increased attack surface introduced by complex cache-slice functions in modern CPU s.",
+  "abstract_source_id": "src-abstract-sp-2025-484f1b3e",
   "venue": "sp",
   "year": 2025,
   "track_or_session": "Cycle 2",
@@ -196,6 +198,19 @@
       "official": true,
       "supports": [
         "DOI, authors, affiliations, abstract, publication date, pages, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2025-484f1b3e",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Rapid Reversing of Non-Linear CPU Cache Slice Functions: Unlocking Physical Address Leakage",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:52Z",
+      "content_hash": "sha256:b15ce02bcc49da611fdd791ecc56741e7d91d84154b58c1a7f72a5c6902e6e46",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

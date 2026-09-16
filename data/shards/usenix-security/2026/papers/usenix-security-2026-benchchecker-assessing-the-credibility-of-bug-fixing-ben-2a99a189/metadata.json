@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-benchchecker-assessing-the-credibility-of-bug-fixing-ben-2a99a189",
   "title": "BenchChecker: Assessing the Credibility of Bug-Fixing Benchmarks for LLMs",
+  "abstract": "While Large Language Models (LLMs) show promise for Automatic Program Repair (APR), existing benchmarks suffer from data contamination, in which test samples appear in training sets, artificially inflating performance. To address this, we propose BenchChecker, a framework compatible with both open-source and closed-source models that supports more credible evaluation by detecting such contamination. Grounded in the observation that persistent patches likely remain in recent repository snapshots used for training, BenchChecker employs a forensics-based two-stage detection process using only textual model outputs together with public repository history. The first stage conducts a repository presence test by probing the model with code prefixes to infer training inclusion; the second stage performs a patch presence test to verify patch persistence via similarity alignment and test-suite verification. Evaluations using StarCoder-15B, StarCoder2-15B, and CodeGen2-16B trained on The Stack v2 demonstrate that BenchChecker achieves robust detection with AUC scores around 0.9 across six benchmarks. Furthermore, applying BenchChecker to SWE-bench Verified and Multi-SWE-bench reveals that filtering contaminated samples reduces the reported resolution rates of most LLMs by more than 20% relative to the original rates on medium-difficulty tasks.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-2a99a189",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Software Security 4",
@@ -134,6 +136,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-2a99a189",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/wu-di",
+      "kind": "paper-page",
+      "title": "BenchChecker: Assessing the Credibility of Bug-Fixing Benchmarks for LLMs",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:23:10Z",
+      "content_hash": "sha256:7c7a83d38c15d112c057d6785ab985ec4d771b6f0b9f58beb71ccdb6f8b8f474",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

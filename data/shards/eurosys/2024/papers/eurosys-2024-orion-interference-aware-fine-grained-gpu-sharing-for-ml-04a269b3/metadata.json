@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "eurosys-2024-orion-interference-aware-fine-grained-gpu-sharing-for-ml-04a269b3",
   "title": "Orion: Interference-aware, Fine-grained GPU Sharing for ML Applications",
+  "abstract": "GPUs are critical for maximizing the throughput-per-Watt of deep neural network (DNN) applications. However, DNN applications often underutilize GPUs, even when using large batch sizes and eliminating input data processing or communication stalls. DNN workloads consist of data-dependent operators, with different compute and memory requirements. While an operator may saturate GPU compute units or memory bandwidth, it often leaves other GPU resources idle. Despite the prevalence of GPU sharing techniques, current approaches are not sufficiently fine-grained or interference-aware to maximize GPU utilization while minimizing interference at the granularity of 10s of μs. We propose Orion, a system that transparently intercepts GPU kernel launches from multiple clients sharing a GPU. Orion schedules work on the GPU at the granularity of individual operators and minimizes interference by taking into account each operator's compute and memory requirements. We integrate Orion in PyTorch and demonstrate its benefits in various DNN workload collocation use cases. Orion significantly improves tail latency compared to state-of-the-art baselines for a high-priority inference job while collocating best-effort inference jobs to increase per-GPU request throughput by up to 7.3×, or while collocating DNN training, saving up to 1.49× in training costs compared to dedicated GPU allocation.",
+  "abstract_source_id": "src-abstract-eurosys-2024-04a269b3",
   "venue": "eurosys",
   "year": 2024,
   "track_or_session": null,
@@ -125,6 +127,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-eurosys-2024-04a269b3",
+      "url": "https://api.openalex.org/works/doi:10.1145/3627703.3629578?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Orion: Interference-aware, Fine-grained GPU Sharing for ML Applications",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:18:54Z",
+      "content_hash": "sha256:b301eb4cf19d46147fa65006e1e08b3beb17118cafc9cba545a76225be2a20bf",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

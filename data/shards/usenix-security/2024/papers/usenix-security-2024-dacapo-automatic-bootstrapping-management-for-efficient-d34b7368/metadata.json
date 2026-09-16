@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2024-dacapo-automatic-bootstrapping-management-for-efficient-d34b7368",
   "title": "DaCapo: Automatic Bootstrapping Management for Efficient Fully Homomorphic Encryption",
+  "abstract": "By supporting computation on encrypted data, fully homomorphic encryption (FHE) offers the potential for privacy-preserving computation offloading. However, its applicability is constrained to small programs because each FHE multiplication increases the scale of a ciphertext with a limited scale capacity. By resetting the accumulated scale, bootstrapping enables a longer FHE multiplication chain. Nonetheless, manual bootstrapping placement poses a significant programming burden to avoid scale overflow from insufficient bootstrapping or the substantial computational overhead of unnecessary bootstrapping. Additionally, the bootstrapping placement affects costs of FHE operations due to changes in scale management, further complicating the overall management process.\n\nThis work proposes DaCapo, the first automatic bootstrapping management compiler. Aiming to reduce bootstrapping counts, DaCapo analyzes live-out ciphertexts at each program point and identifies candidate points for inserting bootstrapping operations. DaCapo estimates the FHE operation latencies under different scale management scenarios for each bootstrapping placement plan at each candidate point, and decides the bootstrapping placement plan with minimal latency. This work evaluates DaCapo with deep learning models that existing FHE compilers cannot compile due to a lack of bootstrapping support. The evaluation achieves 1.21x speedup on average compared to manually implemented FHE programs.",
+  "abstract_source_id": "src-abstract-usenix-security-2024-d34b7368",
   "venue": "usenix-security",
   "year": 2024,
   "track_or_session": "Cryptographic Protocols III",
@@ -217,6 +219,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2024-d34b7368",
+      "url": "https://www.usenix.org/conference/usenixsecurity24/presentation/cheon",
+      "kind": "paper-page",
+      "title": "DaCapo: Automatic Bootstrapping Management for Efficient Fully Homomorphic Encryption",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:14:37Z",
+      "content_hash": "sha256:a2b5f70d453e681b43d2805941bb44fde41248b31586c7f4111f9a10738d6b47",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

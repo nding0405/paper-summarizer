@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2026-trainmover-an-interruption-resilient-runtime-for-ml-trai-d66911d2",
   "title": "TrainMover: An Interruption-Resilient Runtime for ML Training",
+  "abstract": "Large-scale ML training jobs are frequently interrupted by hardware and software anomalies, failures, and management events. Existing solutions like checkpoint-restart or runtime reconfiguration suffer from long downtimes and degraded performance. We present TrainMover, a resilient LLM training runtime that leverages elastic and standby machines to handle interruptions with minimal downtime and zero memory overhead. To achieve these goals, TrainMover introduces three key techniques: two-phase, delta-based communication group setup; communication-free sandboxed warmup; and general standby design that enables failure recovery from any role. Our evaluation shows that TrainMover consistently achieves around 20 seconds of downtime when handling various interruptions at the 1024-GPU scale. TrainMover is projected to reduce wasted GPU hours by 55% compared to the best alternative, saving 1.4 million GPU-hours per week at the 64K-GPU scale.",
+  "abstract_source_id": "src-abstract-osdi-2026-d66911d2",
   "venue": "osdi",
   "year": 2026,
   "track_or_session": "Serverless Plus Resilence",
@@ -398,6 +400,19 @@
       "official": true,
       "supports": [
         "Official proceedings availability and canonical conference versions."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2026-d66911d2",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/lao",
+      "kind": "paper-page",
+      "title": "TrainMover: An Interruption-Resilient Runtime for ML Training",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:09:08Z",
+      "content_hash": "sha256:2a5208bc67bcec29f7c671688e8c67e3800ebaee65262cd7723a41826a25eb7b",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

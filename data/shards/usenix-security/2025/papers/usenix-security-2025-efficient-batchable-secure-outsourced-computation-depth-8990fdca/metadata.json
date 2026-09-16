@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-efficient-batchable-secure-outsourced-computation-depth-8990fdca",
   "title": "Efficient Batchable Secure Outsourced Computation: Depth-Aware Arithmetization of Common Primitives for BFV & BGV",
+  "abstract": "Homomorphic encryption enables secure outsourced computation, in which computations on sensitive data can be confidentially outsourced to another party. Homomorphic encryption cryptographically guarantees confidentiality while allowing an evaluator to manipulate the encrypted data using additions and multiplications. However, a remaining challenge is to translate complex computations into efficient circuits consisting of only additions and multiplications. We refer to this problem as arithmetization. The objective in arithmetization has typically been to minimize the number of multiplications (multiplicative size), as multiplications in most secure computation techniques are significantly more expensive than additions. However, the multiplicative depth of a circuit arguably plays an even more important role in deciding the computational cost: For homomorphic encryption schemes like BFV and BGV, it determines the choice of cryptographic parameters that allow evaluating the circuit without requiring expensive bootstrapping operations. We argue that arithmetization should be treated as a multi-objective minimization problem, in which a trade-off can be made between a circuit's multiplicative size and depth. We present efficient depth-aware arithmetization methods for many primitive operations such as exponentiation, univariate functions, equality checks, comparisons, and ANDs and ORs, which further take into account that squaring can be cheaper than multiplying, and we study how to compose these operations. We show that our circuits can outperform more recent homomorphic encryption schemes like TFHE, which can perform significantly faster homomorphic operations but only on one input at a time by batching several inputs into one ciphertext.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-8990fdca",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Crypto 5: HE, MPC, Oblivious Computation",
@@ -112,6 +114,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-8990fdca",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/vos",
+      "kind": "paper-page",
+      "title": "Efficient Batchable Secure Outsourced Computation: Depth-Aware Arithmetization of Common Primitives for BFV & BGV",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:19:32Z",
+      "content_hash": "sha256:e7b2be32573ddfe5a6a243a592a2e6683764a37289eec8f0c75726bc3751bf03",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

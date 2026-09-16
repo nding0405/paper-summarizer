@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "fast-2024-rfuse-modernizing-userspace-filesystem-framework-through-89af4fa9",
   "title": "RFUSE: Modernizing Userspace Filesystem Framework through Scalable Kernel-Userspace Communication",
+  "abstract": "With the advancement of storage devices and the increasing scale of data, filesystem design has transformed in response to this progress. However, implementing new features within an in-kernel filesystem is a challenging task due to development complexity and code security concerns. As an alternative, userspace filesystems are gaining attention, owing to their ease of development and reliability. FUSE is a renowned framework that allows users to develop custom filesystems in userspace. However, the complex internal stack of FUSE leads to notable performance overhead, which becomes even more prominent in modern hardware environments with high-performance storage devices and a large number of cores.\n\nIn this paper, we present RFUSE, a novel userspace filesystem framework that utilizes scalable message communication between the kernel and userspace. RFUSE employs a per-core ring buffer structure as a communication channel and effectively minimizes transmission overhead caused by context switches and request copying. Furthermore, RFUSE enables users to utilize existing FUSE-based filesystems without making any modifications. Our evaluation results indicate that RFUSE demonstrates comparable throughput to in-kernel filesystems on high-performance devices while exhibiting high scalability in both data and metadata operations.",
+  "abstract_source_id": "src-abstract-fast-2024-89af4fa9",
   "venue": "fast",
   "year": 2024,
   "track_or_session": "File Systems",
@@ -139,6 +141,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-fast-2024-89af4fa9",
+      "url": "https://www.usenix.org/conference/fast24/presentation/cho",
+      "kind": "paper-page",
+      "title": "RFUSE: Modernizing Userspace Filesystem Framework through Scalable Kernel-Userspace Communication",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:00:52Z",
+      "content_hash": "sha256:5f7b9a2eb7fc26e8a52b9bd86ce52cb1919f78048778b809bba6ea989c72517e",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

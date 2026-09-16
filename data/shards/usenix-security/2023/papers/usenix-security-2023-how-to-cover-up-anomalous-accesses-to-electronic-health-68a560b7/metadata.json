@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2023-how-to-cover-up-anomalous-accesses-to-electronic-health-68a560b7",
   "title": "How to Cover up Anomalous Accesses to Electronic Health Records",
+  "abstract": "Illegitimate access detection systems in hospital logs perform post hoc detection instead of runtime access restriction to allow widespread access in emergencies. We study the effectiveness of adversarial machine learning strategies against such detection systems on a large-scale dataset consisting of a year of access logs at a major hospital. We study a range of graph-based anomaly detection systems, including heuristic-based and Graph Neural Network (GNN)-based models. We find that evasion attacks, in which covering accesses (that is, accesses made to disguise a target access) are injected during evaluation period of the target access, can successfully fool the detection system. We also show that such evasion attacks can transfer among different detection algorithms. On the other hand, we find that poisoning attacks, in which adversaries inject covering accesses during the training phase of the model, do not effectively mislead the trained detection system unless the attacker is given unrealistic capabilities such as injecting over 10,000 accesses or imposing a high weight on the covering accesses in the training algorithm. To examine the generalizability of the results, we also apply our attack against a state-of-the-art detection model on the LANL network lateral movement dataset, and observe similar conclusions.",
+  "abstract_source_id": "src-abstract-usenix-security-2023-68a560b7",
   "venue": "usenix-security",
   "year": 2023,
   "track_or_session": "Adversarial ML beyond ML",
@@ -196,6 +198,19 @@
       "official": true,
       "supports": [
         "authors, affiliations when published, abstract, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2023-68a560b7",
+      "url": "https://www.usenix.org/conference/usenixsecurity23/presentation/xu-xiaojun",
+      "kind": "paper-page",
+      "title": "How to Cover up Anomalous Accesses to Electronic Health Records",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:11:31Z",
+      "content_hash": "sha256:b39a1d5f54f2b94d00357bbd45001c1895431016cdbcc4d25874a3aa9dc8d50b",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-qelect-lattice-based-single-secret-leader-election-made-4ea421cc",
   "title": "Qelect: Lattice-based Single Secret Leader Election Made Practical",
+  "abstract": "In a single secret leader election (SSLE) protocol, all parties collectively and obliviously elect one leader. No one else should learn its identity unless it reveals itself as the leader. The problem is first formalized by Boneh et al. (AFT '20), which proposes an efficient construction based on the Decision Diffie-Hellman (DDH) assumption. Considering the potential risk of quantum computers, several follow-ups focus on designing a post-quantum secure SSLE protocol based on pure lattices or fully homomorphic encryption. However, no concrete benchmarks demonstrate the feasibility of deploying such heavy cryptographic primitives.\n\nIn this work, we present Qelect, the first practical constant-round post-quantum secure SSLE protocol. We first adapt the commitment scheme in Boneh et al. (AFT '23) into a multi-party randomizable commitment scheme, and propose our novel construction based on an adapted version of ring learning with errors (RLWE) problem. We then use it as a building block and construct a constant-round single secret leader election (crSSLE) scheme. We utilize the single instruction multiple data (SIMD) property of a specific threshold fully homomorphic encryption (tFHE) scheme to evaluate our election circuit efficiently. Finally, we built Qelect from the crSSLE scheme, with performance optimizations including a preprocessing phase to amortize the local computation runtime and a retroactive detection phase to avoid the heavy zero-knowledge proofs during the election phase. Qelect achieves asymptotic improvements and is concretely practical. We implemented a prototype of Qelect and evaluated its performance in a WAN. Qelect is at least two orders of magnitude faster than the state-of-the-art.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-4ea421cc",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Crypto 5: HE, MPC, Oblivious Computation",
@@ -91,6 +93,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-4ea421cc",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/wang-yunhao",
+      "kind": "paper-page",
+      "title": "Qelect: Lattice-based Single Secret Leader Election Made Practical",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:21:22Z",
+      "content_hash": "sha256:6421f7c39865da67ea402b87e684d9fcfcc24e5991d4bf2611721e74cf8f6480",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

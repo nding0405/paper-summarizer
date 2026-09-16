@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-icefish-practical-zk-snarks-for-verifiable-genomics-69e7723b",
   "title": "Icefish: Practical zk-SNARKs for Verifiable Genomics",
+  "abstract": "Individual genomic data is a uniquely sensitive type of user data. While many papers have considered using Multi-Party Computation (MPC) or Fully Homomorphic Encryption (FHE) to allow collaborators to study combined genomic datasets they cannot share, few have considered verifying the results of genomic computations, either in research studies or in the emerging area of personalized genetic therapies.\n\nIn this paper, we initiate the first systematic study of zero-knowledge proofs for verifiable genomics, providing both building blocks for verifying common operations in computational genomics, such as sequence alignment, and exploring two end-to-end applications:\n\nVerifiable Genome-Wide Association Studies: A Genome-Wide Association Study (GWAS) study operates over a repository of genomic data, identifying statistical correlations between genetic variations and observed traits or medical conditions. Our system enables third parties to verify that research was honestly computed over an authenticated, untampered database, ensuring both the integrity of the underlying data set and the correctness of the resulting science. We achieve practical performance (<40 minutes proving time) for studies of sizes equal to those in the existing genomics literature.\n\nVerifiable CRISPR eligibility: We propose using zk-SNARKs in the context of gene engineering (e.g. CRISPR). To our knowledge, this is a new use case for zk-SNARKs. We implement and optimize models for detecting \"on-target\" and \"off-target\" sites for a CRISPR probe in zk-SNARKs, so users can, for example, demonstrate eligibility for a therapy or trial without having to reveal their own DNA sequence.\n\nIn support of these applications, we develop new building blocks, like zero-knowledge proofs of sequence alignment that are 30x faster than the prior state of the art, and storage-efficient indexes for Merkle trees for large scale genomic data that asymptotically reduce storage costs.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-69e7723b",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Applications of Cryptography 6",
@@ -134,6 +136,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-69e7723b",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/frolov",
+      "kind": "paper-page",
+      "title": "Icefish: Practical zk-SNARKs for Verifiable Genomics",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:24:16Z",
+      "content_hash": "sha256:11fa4d2c8b630cc81af5f16e2e947282a02bae0e46ab106ef4a98f77fd5fea6e",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

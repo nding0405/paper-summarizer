@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2026-cache-me-catch-you-cache-related-security-threats-in-llm-2012a24a",
   "title": "Cache Me, Catch You: Cache Related Security Threats in LLM Serving Frameworks",
+  "abstract": "Large Language Models (LLMs) are rapidly reshaping digital interactions. Their performance and efficiency are critically dependent on advanced caching mechanisms, such as prefix caching and semantic caching.\n\nHowever, these mechanisms introduce a new attack surface. Unlike prior work focused on LLMs poisoning attacks during the training phase, this paper presents the first comprehensive investigation into cache-related security risks that arise during the LLM inference-time.\n\nWe conducted a systematic study of the cache implementations in mainstream LLM serving frameworks and then identified six novel attack vectors categorized as: (1) User-oriented Fraud Attacks, which manipulate cache entries to deliver malicious content to users via prefix cache collisions and semantic fuzzy poisoning; and (2) System Integrity Attacks, which exploit cache vulnerabilities to bypass security checks, such as using block-wise or multimodal collisions to evade content moderation.\n\nOur experiments on leading open-source frameworks validated these attack vectors and evaluated their impact and cost.\n\nFurthermore, we proposed five multilayer defense strategies and assessed their effectiveness.\n\nWe responsibly disclosed our findings to affected vendors, including vLLM, SGLang, GPTCache, AIBrix, rtp-llm and LMDeploy. All of them have acknowledged the vulnerabilities, and notably, vLLM, GPTCache, and AIBrix have adopted our proposed mitigation methods and fixed their vulnerabilities.\n\nOur findings underscore the importance of secure the caching infrastructure in the rapidly expanding LLM ecosystem.",
+  "abstract_source_id": "src-abstract-ndss-2026-2012a24a",
   "venue": "ndss",
   "year": 2026,
   "track_or_session": "Fall submission cycle",
@@ -207,6 +209,19 @@
       "official": false,
       "supports": [
         "independent proceedings identity reconciliation"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2026-2012a24a",
+      "url": "https://www.ndss-symposium.org/ndss-paper/cache-me-catch-you-cache-related-security-threats-in-llm-serving-frameworks/",
+      "kind": "paper-page",
+      "title": "Cache Me, Catch You: Cache Related Security Threats in LLM Serving Frameworks",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:21:29Z",
+      "content_hash": "sha256:a9d780e219d018c5dac26f9c301835bf720f82ea19cd4278f3c8d751b87c0d9b",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

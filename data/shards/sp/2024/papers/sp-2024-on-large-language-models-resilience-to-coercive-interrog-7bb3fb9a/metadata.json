@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2024-on-large-language-models-resilience-to-coercive-interrog-7bb3fb9a",
   "title": "On Large Language Models' Resilience to Coercive Interrogation",
+  "abstract": "Large Language Models (LLMs) are increasingly employed in numerous applications. It is hence important to ensure that their ethical standard aligns with humans’. However, existing jail-breaking efforts show that such alignment could be compromised by well-crafted prompts. In this paper, we disclose a new threat to LLMs alignment when a malicious actor has access to the top-k token predictions at each output position of the model, such as in all open-source LLMs and many commercial LLMs that provide the needed APIs (e.g., some GPT versions). It does not require crafting any prompt. Instead, it leverages the observation that even when an LLM declines a toxic query, the harmful response is concealed deep within the output logits. We can coerce the model to disclose it by forcefully using low-ranked output tokens during auto-regressive output generation, and such forcing is only needed in a very small number of selected output positions. We call it model interrogation. Since our method operates differently from jail-breaking, it has better effectiveness than state-of-the- art jail-breaking techniques (92% versus 62%) and is 10 to 20 times faster. The toxic content elicited by our method is also of better quality. More importantly, it is complementary to jail-breaking, and a synergetic integration of the two exhibits superior performance over individual methods. We also find that with interrogation, harmful content can even be extracted from models customized for coding tasks.",
+  "abstract_source_id": "src-abstract-sp-2024-7bb3fb9a",
   "venue": "sp",
   "year": 2024,
   "track_or_session": "Winter cycle",
@@ -180,6 +182,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2024-7bb3fb9a",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "On Large Language Models’ Resilience to Coercive Interrogation",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:37Z",
+      "content_hash": "sha256:d186972817127125a98a71b907d7b283fa37f2e757aaf5b9ae232aa389caabc0",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

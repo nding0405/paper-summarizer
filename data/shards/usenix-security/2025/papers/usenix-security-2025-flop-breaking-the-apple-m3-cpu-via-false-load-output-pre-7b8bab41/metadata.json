@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-flop-breaking-the-apple-m3-cpu-via-false-load-output-pre-7b8bab41",
   "title": "FLOP: Breaking the Apple M3 CPU via False Load Output Predictions",
+  "abstract": "To bridge the ever-increasing gap between the fast execution speed of modern processors and the long latency of memory accesses, CPU vendors continue to introduce newer and more advanced optimizations. While these optimizations improve performance, research has repeatedly demonstrated that they may also have an adverse impact on security.\n\nIn this work, we identify that recent Apple M- and A-series processors implement a load value predictor (LVP), an optimization that predicts the contents of memory that the processor loads before the contents are actually available. This allows processors to alleviate slowdowns from Read-After-Write dependencies, as instructions can now be executed in parallel rather than sequentially.\n\nTo evaluate the security impact of Apple's LVP implementation, we first investigate the implementation, identifying the conditions for prediction. We then show that although the LVP cannot directly predict 64-bit values (e.g., pointers), prediction of smaller-size values can be leveraged to achieve arbitrary memory access. Finally, we demonstrate end-to-end attack exploit chains that build on the LVP to obtain a 64-bit read primitive within the Safari and Chrome browsers.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-7b8bab41",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Hardware Security 1: Microarchitectures",
@@ -133,6 +135,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-7b8bab41",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/kim-jason",
+      "kind": "paper-page",
+      "title": "FLOP: Breaking the Apple M3 CPU via False Load Output Predictions",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:19:53Z",
+      "content_hash": "sha256:ca661f89169d3ab0c02fc3fdc42c378a7601ae3b956366fd55b8ccf11f0a5a2e",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

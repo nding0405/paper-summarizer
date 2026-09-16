@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-catch-22-uncovering-compromised-hosts-using-ssh-public-k-78c0d43e",
   "title": "Catch-22: Uncovering Compromised Hosts using SSH Public Keys",
+  "abstract": "Attackers regularly use SSH (Secure SHell) to compromise systems, e.g., via brute-force attacks, establishing persistence by deploying SSH public keys. This ranges from IoT botnets like Mirai, over loader and dropper systems, to the back-ends of malicious operations. Identifying compromised systems at the Internet scale would be a major break-through for combatting malicious activity by enabling targeted clean-up efforts.\n\nIn this paper, we present a method to identify compromised SSH servers at scale. For this, we use SSH's behavior to only send a challenge during public key authentication, to check if the key is present on the system. Our technique neither allows us to access compromised systems (unlike, e.g., testing known attacker passwords), nor does it require access for auditing.\n\nWith our methodology used at an Internet-wide scan, we identify more than 21,700 unique systems (1,649 ASes, 144 countries) where attackers installed at least one of 52 verified malicious keys provided by a threat intelligence company, including critical Internet infrastructure. Furthermore, we find new context on the activities of malicious campaigns like, e.g., the 'fritzfrog' IoT botnet, malicious actors like 'teamtnt', and even the presence of state-actor associated keys within sensitive ASes. Comparing to honeypot data, we find these to under-/over-represent attackers' activity, even underestimating some APTs' activities. Finally, we collaborate with a national CSIRT and the Shadowserver Foundation to notify and remediate compromised systems. We run our measurements continuously and automatically share notifications.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-78c0d43e",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Network Security 1: Censorship, Evasion, and Trustworthy Infrastructure",
@@ -133,6 +135,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-78c0d43e",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/munteanu",
+      "kind": "paper-page",
+      "title": "Catch-22: Uncovering Compromised Hosts using SSH Public Keys",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:19:01Z",
+      "content_hash": "sha256:3a5a7371e9334462a1cc1cf30f2efdf530ab11dbe7dec4280df075db576fb152",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

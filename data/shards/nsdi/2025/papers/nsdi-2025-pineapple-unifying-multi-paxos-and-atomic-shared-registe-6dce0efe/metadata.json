@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2025-pineapple-unifying-multi-paxos-and-atomic-shared-registe-6dce0efe",
   "title": "Pineapple: Unifying Multi-Paxos and Atomic Shared Registers",
+  "abstract": "Linearizable storage systems reduce the complexity of developing correct large-scale customer-facing applications, in the presence of concurrent operations and failures. A common approach for providing linearizability is to use consensus to order operations invoked by applications. This paper explores designs that offload operations (from the consensus component) to improve overall performance.\n\nThis paper presents Pineapple, which uses logical timestamps to unify Multi-Paxos and atomic shared registers so that any node in the system can serve read and write operations. Compared to Multi-Paxos (or leader-based consensus), Pineapple reduces bottlenecks at the leader. Compared to Gryff, which unifies EPaxos and atomic shared registers, Pineapple has better performance because Pineapple has “non-blocking operation execution.”\n\nOur evaluation shows that Pineapple improves both throughput and tail latency, compared to state-of-the-art systems (e.g., Gryff, Multi-Paxos, EPaxos), in both wide-area networks and local-area networks. We also integrate Pineapple with etcd. In a balanced workload, Pineapple reduces median latency by more than 50%, compared to the original system that uses an optimized version of Raft.",
+  "abstract_source_id": "src-abstract-nsdi-2025-6dce0efe",
   "venue": "nsdi",
   "year": 2025,
   "track_or_session": "Fast Scalable Consensus",
@@ -161,6 +163,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2025-6dce0efe",
+      "url": "https://www.usenix.org/conference/nsdi25/presentation/bantikyan",
+      "kind": "paper-page",
+      "title": "Pineapple: Unifying Multi-Paxos and Atomic Shared Registers",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:04:27Z",
+      "content_hash": "sha256:1c6953442e7f313f647026b1d67983302b241c9eeab9bbb92a3c7b1593f2bab5",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

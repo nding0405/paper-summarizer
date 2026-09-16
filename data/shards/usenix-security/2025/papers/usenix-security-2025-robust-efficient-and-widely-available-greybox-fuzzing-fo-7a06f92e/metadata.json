@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-robust-efficient-and-widely-available-greybox-fuzzing-fo-7a06f92e",
   "title": "Robust, Efficient, and Widely Available Greybox Fuzzing for COTS Binaries with System Call Pattern Feedback",
+  "abstract": "Currently, greybox fuzzing is a crucial technique for identifying software bugs. However, applying greybox fuzzing to Commercial-Off-the-Shelf ( COTS ) binaries is still a difficult task because gathering code coverage data is challenging. Existing methods for collecting code coverage in COTS binaries often lead to program crashes, notable performance reductions, and limited compatibility with various hardware platforms. As a result, none of the current approaches can effectively handle all COTS binaries.\n\nThis paper introduces a new feedback mechanism called system call pattern coverage, which is designed to support binaries that cannot be handled by existing approaches. Unlike other methods, system call pattern coverage does not involve rewriting binaries, using emulators, or relying on hardware such as Intel-PT. As a result, it enables fuzzing of binaries without the risk of breaking target applications, slow performance, or the need for specific hardware. To demonstrate the effectiveness of this mechanism, we developed fuzzers called SPFuzz and SPFuzz++ and conducted an evaluation using 29 real-world benchmarks. The results of our evaluation show that SPFuzz and SPFuzz++ perform comparably to conventional code coverage guidance and are capable of identifying new bugs even without access to the source code. In fact, we discovered six new CVEs in commercial applications like CUDA using SPFuzz.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-7a06f92e",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Software Security 3: Fuzzing",
@@ -175,6 +177,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-7a06f92e",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/xiao-jifan",
+      "kind": "paper-page",
+      "title": "Robust, Efficient, and Widely Available Greybox Fuzzing for COTS Binaries with System Call Pattern Feedback",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:21:29Z",
+      "content_hash": "sha256:c595026f1ec35ecfaec17d6aa22d07e925988bc2cf1d4f4dbc40edac9699248b",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2025-bulkhead-secure-scalable-and-efficient-kernel-compartmen-7f4ffa98",
   "title": "BULKHEAD: Secure, Scalable, and Efficient Kernel Compartmentalization with PKS",
+  "abstract": "The endless stream of vulnerabilities urgently calls for principled mitigation to confine the effect of exploitation. However, the monolithic architecture of commodity OS kernels, like the Linux kernel, allows an attacker to compromise the entire system by exploiting a vulnerability in any kernel component. Kernel compartmentalization is a promising approach that follows the least-privilege principle. However, existing mechanisms struggle with the trade-off on security, scalability, and performance, given the challenges stemming from mutual untrustworthiness among numerous and complex components.\n\nIn this paper, we present BULKHEAD, a secure, scalable, and efficient kernel compartmentalization technique that offers bi-directional isolation for unlimited compartments. It leverages Intel's new hardware feature PKS to isolate data and code into mutually untrusted compartments and benefits from its fast compartment switching. With untrust in mind, BULKHEAD introduces a lightweight in-kernel monitor that enforces multiple important security invariants, including data integrity, execute-only memory, and compartment interface integrity. In addition, it provides a locality-aware two-level scheme that scales to unlimited compartments. We implement a prototype system on Linux v6.1 to compartmentalize loadable kernel modules (LKMs). Extensive evaluation confirms the effectiveness of our approach. As the system-wide impacts, BULKHEAD incurs an average performance overhead of 2.44% for real-world applications with 160 compartmentalized LKMs. While focusing on a specific compartment, ApacheBench tests on ipv6 show an overhead of less than 2%. Moreover, the performance is almost unaffected by the number of compartments, which makes it highly scalable.",
+  "abstract_source_id": "src-abstract-ndss-2025-7f4ffa98",
   "venue": "ndss",
   "year": 2025,
   "track_or_session": "Summer submission cycle",
@@ -181,6 +183,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2025-7f4ffa98",
+      "url": "https://www.ndss-symposium.org/ndss-paper/bulkhead-secure-scalable-and-efficient-kernel-compartmentalization-with-pks/",
+      "kind": "paper-page",
+      "title": "BULKHEAD: Secure, Scalable, and Efficient Kernel Compartmentalization with PKS",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:19:13Z",
+      "content_hash": "sha256:6c16128be899fcb714c151fe8e765130b1e22a6523c0d406ca57eafc669b57b7",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

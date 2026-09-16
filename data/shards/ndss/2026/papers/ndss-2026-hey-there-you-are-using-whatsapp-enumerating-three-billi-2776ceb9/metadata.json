@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2026-hey-there-you-are-using-whatsapp-enumerating-three-billi-2776ceb9",
   "title": "Hey there! You are using WhatsApp: Enumerating Three Billion Accounts for Security and Privacy",
+  "abstract": "WhatsApp, with 3.5 billion active accounts as of early 2025, is the world's largest instant messaging platform. Given its massive user base, WhatsApp plays a critical role in global communication.\n\nTo initiate conversations, users must first discover whether their contacts are registered on the platform. This is achieved by querying WhatsApp's servers with mobile phone numbers extracted from the user’s address book (if they allowed access). This architecture inherently enables phone number enumeration, as the service must allow legitimate users to query contact availability. While rate limiting is a standard defense against abuse, we revisit the problem and show that WhatsApp remains highly vulnerable to enumeration at scale.\n\nIn our study, we were able to probe over a hundred million phone numbers per hour without encountering blocking or effective rate limiting.\n\nOur findings demonstrate not only the persistence but the severity of this vulnerability. We further show that nearly half of the phone numbers disclosed in the 2021 Facebook data leak are still active on WhatsApp, underlining the enduring risks associated with such exposures. Moreover, we were able to perform a census of WhatsApp users, providing a glimpse on the macroscopic insights a large messaging service is able to generate even though the messages themselves are end-to-end encrypted. Using the gathered data, we also discovered the re-use of certain X25519 keys across different devices and phone numbers, indicating either insecure (custom) implementations, or fraudulent activity.",
+  "abstract_source_id": "src-abstract-ndss-2026-2776ceb9",
   "venue": "ndss",
   "year": 2026,
   "track_or_session": "Summer submission cycle",
@@ -181,6 +183,19 @@
       "official": false,
       "supports": [
         "independent proceedings identity reconciliation"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2026-2776ceb9",
+      "url": "https://www.ndss-symposium.org/ndss-paper/hey-there-you-are-using-whatsapp-enumerating-three-billion-accounts-for-security-and-privacy/",
+      "kind": "paper-page",
+      "title": "Hey there! You are using WhatsApp: Enumerating Three Billion Accounts for Security and Privacy",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:22:08Z",
+      "content_hash": "sha256:d3a38904eb64e54fa7d542b5f90dd54c169da51948bfdf331ecc7ef076d8fd94",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

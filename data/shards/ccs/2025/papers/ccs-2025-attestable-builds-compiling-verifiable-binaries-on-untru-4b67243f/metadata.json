@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2025-attestable-builds-compiling-verifiable-binaries-on-untru-4b67243f",
   "title": "Attestable Builds: Compiling Verifiable Binaries on Untrusted Systems using Trusted Execution Environments",
+  "abstract": "In this paper we present attestable builds, a new paradigm to provide strong source-to-binary correspondence in software artifacts. We tackle the challenge of opaque build pipelines that disconnect the trust between source code, which can be understood and audited, and the final binary artifact which is difficult to inspect. Our system uses modern trusted execution environments (TEEs) and sandboxed build containers to provide strong guarantees that a given artifact was correctly built from a specific source code snapshot. As such it complements existing approaches like reproducible builds which typically require time-intensive modifications to existing build configurations and dependencies, and require independent parties to continuously build and verify artifacts. In comparison, an attestable build requires only minimal changes to an existing project, and offers nearly instantaneous verification of the correspondence between a given binary and the source code and build pipeline used to construct it. We evaluate it by building open-source software libraries - focusing on projects which are important to the trust chain and have proven difficult to be built deterministically. The overhead (42 seconds start-up latency and 14% increase in build duration) is small in comparison to the overall build time. Importantly, our prototype can build complex projects such as LLVM Clang without requiring any modifications to their source code and build scripts. Finally, we formally model and verify the attestable build design to demonstrate its security against well-resourced adversaries.",
+  "abstract_source_id": "src-abstract-ccs-2025-4b67243f",
   "venue": "ccs",
   "year": 2025,
   "track_or_session": "Cycle 2",
@@ -148,6 +150,19 @@
         "published-order authors",
         "publication-time affiliations",
         "publication date and page span"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2025-4b67243f",
+      "url": "https://api.openalex.org/works/doi:10.1145/3719027.3765128?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Attestable Builds: Compiling Verifiable Binaries on Untrusted Systems using Trusted Execution Environments",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:12:53Z",
+      "content_hash": "sha256:3f0b208ef90517df7ffacff9ceecd3c04712b5bfe1448a222db32fdf8ca1a291",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

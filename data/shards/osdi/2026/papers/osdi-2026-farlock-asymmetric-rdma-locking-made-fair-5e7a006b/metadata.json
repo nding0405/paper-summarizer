@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2026-farlock-asymmetric-rdma-locking-made-fair-5e7a006b",
   "title": "FARLock: Asymmetric RDMA Locking Made Fair",
+  "abstract": "Distributed locking is essential for coordinating access to shared resources in modern RDMA-based distributed systems. While state-of-the-art RDMA locks can deliver high-performance by introducing asymmetry (i.e., treating requests that are local and remote to the lock differently), they often trade off fairness as they fail to grant locks in the expected first-come first-serve manner. This can lead to long delays for critical tasks, missing service level objectives.\n\nWe present FARLock, a fast and fair RDMA lock to solve this problem. Drawing inspiration from ticket and MCS locks, FARLock employs tickets and MCS-style handover to ensure that locks are granted strictly by arrival order. Through careful coordination between request queues and the ticket, FARLock provides strong fairness semantics with high performance. Our evaluation on a range of workloads shows that FARLock guarantees fairness and achieves lower latencies compared to prior state-of-the-art. Incorporating FARLock in a recent RDMA-based distributed indexing solution improves its query tail latencies.",
+  "abstract_source_id": "src-abstract-osdi-2026-5e7a006b",
   "venue": "osdi",
   "year": 2026,
   "track_or_session": "Close to the Network",
@@ -146,6 +148,19 @@
       "official": true,
       "supports": [
         "Official proceedings availability and canonical conference versions."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2026-5e7a006b",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/hu-yuehao",
+      "kind": "paper-page",
+      "title": "FARLock: Asymmetric RDMA Locking Made Fair",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:08:19Z",
+      "content_hash": "sha256:51eada809c0db106ff4c7975cc5e63683e2de114cbb866ee24e10e419c57795a",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

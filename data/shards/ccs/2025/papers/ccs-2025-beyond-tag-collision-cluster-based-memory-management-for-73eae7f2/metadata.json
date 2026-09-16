@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2025-beyond-tag-collision-cluster-based-memory-management-for-73eae7f2",
   "title": "Beyond Tag Collision: Cluster-based Memory Management for Tag-based Sanitizers",
+  "abstract": "Tag-based sanitizers attach a small ''key'' to each pointer and a matching ''lock'' tag to its target memory object, enabling runtime verification of pointer-object consistency and helping developers to detect potential memory violations. However, the limited tag encoding space challenges existing studies in assigning distinct tags to memory objects across temporal and spatial dimensions, leading to potential tag collisions. Such limitations reduce the probabilistic protection capabilities of sanitizers and make them vulnerable to sophisticated tag probing attacks. In this paper, we present ClusterTag, a novel cluster-based memory allocator aimed at simultaneously mitigating tag collisions in both temporal and spatial dimensions. The core design of ClusterTag effectively balances the significant mismatch between tag encoding space and memory objects: it divides memory objects into multiple independent clusters, thereby limiting tag collisions to finite chunks within each cluster. To mitigate tag collisions across clusters, we design a cluster-grained heap randomization scheme. This approach introduces random address intervals between clusters and further breaks the entropy limitation of the tag space. ClusterTag has been implemented as an independent memory allocator that seamlessly integrates with tag-based sanitizers such as HWASan, and maintains comparable performance overhead (within 1%) at various randomization densities. Security evaluations on the Juliet dataset indicate that ClusterTag exhibits deterministic results across 500 repeated tests (5,652 reported and 1,530 missed), while the existing three types of tag assignment strategies all exhibit probabilistic false negatives due to tag collisions. Quantitative analysis across three tag collision distance metrics-minimum, average, and unpredictability-demonstrates that ClusterTag achieves balanced improvements across all three, whereas prior tag assignment schemes (random, staggered, fixed) show significant trade-offs in at least one metric.",
+  "abstract_source_id": "src-abstract-ccs-2025-73eae7f2",
   "venue": "ccs",
   "year": 2025,
   "track_or_session": "Cycle 2",
@@ -190,6 +192,19 @@
         "published-order authors",
         "publication-time affiliations",
         "publication date and page span"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2025-73eae7f2",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1145%2F3719027.3765059?fields=title,abstract",
+      "kind": "semantic-scholar",
+      "title": "Beyond Tag Collision: Cluster-based Memory Management for Tag-based Sanitizers",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:12:57Z",
+      "content_hash": "sha256:48110fbb81e913684f89619b8d4f66c84f3da4bdfd64b13482b013a785cd332f",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2024-ubfuzz-finding-bugs-in-sanitizer-implementations-0f0e667a",
   "title": "UBFuzz: Finding Bugs in Sanitizer Implementations",
+  "abstract": "In this paper, we propose a testing framework for validating sanitizer implementations in compilers. Our core components are (1) a program generator specifically designed for producing programs containing undefined behavior (UB), and (2) a novel test oracle for sanitizer testing. The program generator employs Shadow Statement Insertion, a general and effective approach for introducing UB into a valid seed program. The generated UB programs are subsequently utilized for differential testing of multiple sanitizer implementations. Nevertheless, discrepant sanitizer reports may stem from either compiler optimization or sanitizer bugs. To accurately determine if a discrepancy is caused by sanitizer bugs, we introduce a new test oracle called crash-site mapping.",
+  "abstract_source_id": "src-abstract-asplos-2024-0f0e667a",
   "venue": "asplos",
   "year": 2024,
   "track_or_session": "Session 6A: Bug Finding and Testing",
@@ -136,6 +138,19 @@
       "official": true,
       "supports": [
         "Author-deposited archival artifact associated with the conference paper."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2024-0f0e667a",
+      "url": "https://api.openalex.org/works/doi:10.1145/3617232.3624874?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "UBFuzz: Finding Bugs in Sanitizer Implementations",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:00:37Z",
+      "content_hash": "sha256:1cc4a46d0e5132e9f271007b0f1f41da14b39b2892fc03c39fc62e1dfb88d1af",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2023-devfuzz-automatic-device-model-guided-device-driver-fuzz-f3b9544b",
   "title": "DEVFUZZ: Automatic Device Model-Guided Device Driver Fuzzing",
+  "abstract": "The security of device drivers is critical for the entire operating system’s reliability. Yet, it remains very challenging to validate if a device driver can properly handle potentially malicious input from a hardware device. Unfortunately, existing symbolic execution-based solutions often do not scale, while fuzzing solutions require real devices or manual device models, leaving many device drivers under-tested and insecure.This paper presents DevFuzz, a new model-guided device driver fuzzing framework that does not require a physical device. DevFuzz uses symbolic execution to automatically generate the probe model that can guide a fuzzer to properly initialize a device driver under test. DevFuzz also leverages both static and dynamic program analyses to construct MMIO, PIO, and DMA device models to improve the effectiveness of fuzzing further. DevFuzz successfully tested 191 device drivers of various bus types (PCI, USB, RapidIO, I2C) from different operating systems (Linux, FreeBSD, and Windows) and detected 72 bugs, 41 of which have been patched and merged into the mainstream.",
+  "abstract_source_id": "src-abstract-sp-2023-f3b9544b",
   "venue": "sp",
   "year": 2023,
   "track_or_session": "Session 12A: Bug finding",
@@ -172,6 +174,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2023-f3b9544b",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "DevFuzz: Automatic Device Model-Guided Device Driver Fuzzing",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:22Z",
+      "content_hash": "sha256:1bed15e4c1c4d6e59eecfd74eeffd17f506467abd5cdd4e0f536f68bd1e694ee",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

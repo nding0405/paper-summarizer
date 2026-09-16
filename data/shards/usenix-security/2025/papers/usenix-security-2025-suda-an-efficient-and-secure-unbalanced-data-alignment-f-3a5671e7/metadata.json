@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-suda-an-efficient-and-secure-unbalanced-data-alignment-f-3a5671e7",
   "title": "Suda: An Efficient and Secure Unbalanced Data Alignment Framework for Vertical Privacy-Preserving Machine Learning",
+  "abstract": "Secure data alignment, which securely aligns the data between parties, is the first and crucial step in vertical privacy-preserving machine learning (VPPML). Practical applications, e.g. advertising, require VPPML for personalized services. Meanwhile, the data held by parties in these applications are usually unbalanced. Existing secure unbalanced data alignment approaches typically rely on Cuckoo Hashing, which introduces redundant data outside the intersection, leading to significantly increasing communication size during secure training in VPPML. Though secure shuffle operations can trim these redundant data, these operations would incur huge communication overhead. As a result, these secure approaches should be optimized for efficiency in VPPML scenarios.\n\nIn this paper, we propose Suda, an efficient and secure unbalanced data alignment framework for VPPML. By leveraging polynomial-based operations rather than Cuckoo Hashing, Suda efficiently, directly, and exclusively outputs data shares in the intersection without expensive secure shuffle operations. Consequently, Suda efficiently and seamlessly aligns with secure training in VPPML. Specifically, we first design a novel and efficient batch private information retrieval (PIR) protocol based on the oblivious polynomial reduction and evaluation protocols. Second, we design a batch PIR-to-share protocol extended from the batch PIR protocol with the oblivious polynomial interpolation protocol. Note that the batch PIR-to-share protocol securely obtains feature shares rather than the plaintext features which are the outputs of the batch PIR protocol. Comprehensive experiment results demonstrate that: (1) Suda outperforms the state-of-the-art secure data alignment framework by 31.14 x ∼ 210.78 x in communication size and up to 8.21 x in running time; and (2) Suda outperforms the state-of-the-art batch PIR framework by up to 11.53 x in server time.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-3a5671e7",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Privacy 4: Privacy-Preserving Computation",
@@ -259,6 +261,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-3a5671e7",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/song-lushan",
+      "kind": "paper-page",
+      "title": "Suda: An Efficient and Secure Unbalanced Data Alignment Framework for Vertical Privacy-Preserving Machine Learning",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:22:03Z",
+      "content_hash": "sha256:046663ac30ba44960ec6abdd154f1a3e8748a336fa328a02d817ff4d08badbe3",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

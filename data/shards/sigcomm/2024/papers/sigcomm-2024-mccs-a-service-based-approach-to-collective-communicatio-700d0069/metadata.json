@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sigcomm-2024-mccs-a-service-based-approach-to-collective-communicatio-700d0069",
   "title": "MCCS: A Service-based Approach to Collective Communication for Multi-Tenant Cloud",
+  "abstract": "Performance of collective communication is critical for distributed systems. Using libraries to implement collective communication algorithms is not a good fit for a multi-tenant cloud environment because the tenant is not aware of the underlying physical network configuration or how other tenants use the shared cloud network---this lack of information prevents the library from selecting an optimal algorithm. In this paper, we explore a new approach for collective communication that more tightly integrates the implementation with the cloud network instead of the applications. We introduce MCCS, or Managed Collective Communication as a Service, which exposes traditional collective communication abstractions to applications while providing control and flexibility to the cloud provider for their implementations. Realizing MCCS involves overcoming several key challenges to integrate collective communication as part of the cloud network, including memory management of tenant GPU buffers, synchronizing changes to collective communication strategies, and supporting policies that involve cross-layer traffic optimization. Our evaluations show that MCCS improves tenant collective communication performance by up to 2.4× compared to one of the state-of-the-art collective communication libraries (NCCL), while adding more management features including dynamic algorithm adjustment, quality of service, and network-aware traffic engineering.",
+  "abstract_source_id": "src-abstract-sigcomm-2024-700d0069",
   "venue": "sigcomm",
   "year": 2024,
   "track_or_session": "Moving bits for AI(2) — Research Track",
@@ -213,6 +215,19 @@
         "publisher-deposited ORCIDs when available",
         "proceedings page range and online publication date",
         "empty publisher relation metadata for alternate-version checks"
+      ]
+    },
+    {
+      "id": "src-abstract-sigcomm-2024-700d0069",
+      "url": "https://api.openalex.org/works/doi:10.1145/3651890.3672252?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "MCCS: A Service-based Approach to Collective Communication for Multi-Tenant Cloud",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:23:08Z",
+      "content_hash": "sha256:3097ada7a36a6b0e4f535d7048f5370d40c51e084a7c8a0029090230f58594e3",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

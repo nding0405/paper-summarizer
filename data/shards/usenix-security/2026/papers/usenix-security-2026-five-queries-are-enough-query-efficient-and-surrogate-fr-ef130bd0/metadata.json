@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-five-queries-are-enough-query-efficient-and-surrogate-fr-ef130bd0",
   "title": "Five Queries Are Enough: Query-Efficient and Surrogate-Free Membership Inference Attacks on RAG via Entailment",
+  "abstract": "Retrieval‑Augmented Generation (RAG) has become central to large language model (LLM) deployments, grounding responses in enterprise or proprietary data to reduce hallucinations. However, this design introduces a new privacy risk: model outputs may signal the presence of specific documents in the retrieval corpus, enabling membership inference attacks (MIAs) that leak sensitive information. Existing MIAs are feasible, but they often rely on easily-detected templated queries or require many non-templated yet costly and repetitive queries, limiting practicality. We ask: Can an adversary launch a limited-budget, surrogate-free, stealthy, and defense-agnostic membership inference attack using non-templated queries? We present MEntA (Membership Entailment Attack)—a query‑efficient MIA that leverages natural‑language entailment to maximize information gained per query. By asking low-cost, broad, information‑seeking questions and measuring entailment between model responses and candidate documents, MEntA eliminates the need for costly shadow LLMs and large query budgets. Across NFCorpus, SCIDOCS, and TREC‑COVID, MEntA achieves up to 0.991 AUC with only 5 queries, outperforming prior methods by up to 0.42 AUC under equivalent conditions. It remains effective under state‑of‑the‑art (SOTA) RAG defenses, while current detectors miss MEntA or flag benign queries at high rates. Regarding cost, MEntA reduces total attack cost by up to 65× lower compared to SOTA attacks under the same attack setting. Our findings expose the feasibility of realistic, low‑cost privacy leakage in RAG systems and highlight the urgent need for privacy‑aware retrieval and defense mechanisms.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-ef130bd0",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Privacy of ML 1",
@@ -197,6 +199,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-ef130bd0",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/nguyen-nguyen",
+      "kind": "paper-page",
+      "title": "Five Queries Are Enough: Query-Efficient and Surrogate-Free Membership Inference Attacks on RAG via Entailment",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:24:00Z",
+      "content_hash": "sha256:dadc775dfb5d63c8e4eece1569206d5a9858199b7e6eb13ce8250752b0b691de",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

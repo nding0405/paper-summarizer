@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2026-concretely-efficient-multi-key-homomorphic-secret-sharin-631e8d10",
   "title": "Concretely-Efficient Multi-Key Homomorphic Secret Sharing and Applications",
+  "abstract": "Homomorphic secret sharing (HSS) is a powerful cryptographic primitive that enables efficient, lowcommunication secure computation without the use of fully homomorphic encryption. Public-key HSS is a well-known variant that supports inputs from multiple parties, but all parties must agree on a joint public key before any party can encode their inputs, requiring extra rounds of communication in applications. Recently, Couteau et al. (EUROCRYPT 2025) constructed multi-key HSS (MKHSS)—a new primitive which allows parties to encode their inputs under independent keys—under the DCR assumption. MKHSS assumes only a reusable common reference string, without the need for prior interactions between parties or a public-key infrastructure. In this paper, we construct and implement the first concretely-efficient MKHSS scheme under the same assumptions used by Couteau et al. Using an algorithmic insight that reduces the largest modulus in Couteau et al. from $N^{4}$ to $N^{2}$, our optimized implementation can homomorphically multiply inputs in 5.0 milliseconds—while an implementation of Couteau et al. requires 224.6 milliseconds—thereby achieving a $45 \\times$ speedup. A powerful application of MKHSS is to realize attributebased non-interactive key exchange (ANIKE), which generalizes password-authenticated key exchange (PAKE) to arbitrary attribute policies. ANIKE is currently only known from MKHSS. We use our implementation to evaluate the first concretelyefficient ANIKE schemes for a range of practically useful policies. Using our implementation, two parties can perform a geolocation-based key exchange in under one second and a fuzzy PAKE on an 8-word passphrase in a few seconds for realistic parameters, on a single core, achieving a roughly $30 \\times$ speedup over Couteau et al. for both applications.",
+  "abstract_source_id": "src-abstract-sp-2026-631e8d10",
   "venue": "sp",
   "year": 2026,
   "track_or_session": "Cycle 1",
@@ -133,6 +135,19 @@
       "official": true,
       "supports": [
         "DOI, published-order authors and affiliations, abstract, publication date, page span, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2026-631e8d10",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Concretely-Efficient Multi-Key Homomorphic Secret Sharing and Applications",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:57Z",
+      "content_hash": "sha256:303a9b5e5ef8908a3cfe67f02eb8a87be978a5fe3281c7ecec8c0cdb512517e0",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2025-composing-distributed-computations-through-task-and-kern-3dd2ec56",
   "title": "Composing Distributed Computations Through Task and Kernel Fusion",
+  "abstract": "We introduce Diffuse, a system that dynamically performs task and kernel fusion in distributed, task-based runtime systems. The key component of Diffuse is an intermediate representation of distributed computation that enables the necessary analyses for the fusion of distributed tasks to be performed in a scalable manner. We pair task fusion with a JIT compiler to fuse together the kernels within fused tasks. We show empirically that Diffuse's intermediate representation is general enough to be a target for two real-world, task-based libraries (cuPyNumeric and Legate Sparse), letting Diffuse find optimization opportunities across function and library boundaries. Diffuse accelerates unmodified applications developed by composing task-based libraries by 1.86x on average (geo-mean), and by between 0.93x--10.7x on up to 128 GPUs. Diffuse also finds optimization opportunities missed by the original application developers, enabling high-level Python programs to match or exceed the performance of an explicitly parallel MPI library.",
+  "abstract_source_id": "src-abstract-asplos-2025-3dd2ec56",
   "venue": "asplos",
   "year": 2025,
   "track_or_session": "Session 2B: Distributed Computing",
@@ -209,6 +211,19 @@
       "official": false,
       "supports": [
         "Indexed abstract and open-access links used for relevance classification and ancillary-link discovery."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2025-3dd2ec56",
+      "url": "https://api.openalex.org/works/doi:10.1145/3669940.3707216?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Composing Distributed Computations Through Task and Kernel Fusion",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:00:46Z",
+      "content_hash": "sha256:cb7c27e4ea600599b073edf120591170c9b7171db87112e604b05b32bfaa326f",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

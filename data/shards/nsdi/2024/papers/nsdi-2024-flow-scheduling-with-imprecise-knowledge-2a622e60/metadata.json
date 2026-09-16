@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2024-flow-scheduling-with-imprecise-knowledge-2a622e60",
   "title": "Flow Scheduling with Imprecise Knowledge",
+  "abstract": "Most existing data center network (DCN) flow scheduling solutions aim to minimize flow completion times (FCT). However, these solutions either require precise flow information (e.g., per-flow size), which is challenging to implement on commodity switches (e.g., pFabric), or no prior flow information at all, which is at the cost of performance (e.g., PIAS). In this work, we present QCLIMB, a new flow scheduling solution designed to minimize FCT by utilizing imprecise flow information. Our key observation is that although obtaining precise flow information can be challenging, it is possible to accurately estimate each flow's lower and upper bounds with machine learning techniques.\n\nQCLIMB has two key parts: i) a novel scheduling algorithm that leverages the lower bounds of different flows to prioritize small flow over large flows from the beginning of transmission, rather than at later stages; and ii) an efficient out-of-order handling mechanism that addresses practical reordering issues resulting from the algorithm. We show that QCLIMB significantly outperforms PIAS (88% lower average FCT of small flows) and is surprisingly close to pFabric (around 9% gap) while not requiring any switch modifications.",
+  "abstract_source_id": "src-abstract-nsdi-2024-2a622e60",
   "venue": "nsdi",
   "year": 2024,
   "track_or_session": "Scheduling the Network",
@@ -265,6 +267,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2024-2a622e60",
+      "url": "https://www.usenix.org/conference/nsdi24/presentation/li-wenxin",
+      "kind": "paper-page",
+      "title": "Flow Scheduling with Imprecise Knowledge",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:03:11Z",
+      "content_hash": "sha256:6d3ab76dd392b5efbef5e5d50f551088e655bb7eac25b9eeebde2563d06eaf34",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

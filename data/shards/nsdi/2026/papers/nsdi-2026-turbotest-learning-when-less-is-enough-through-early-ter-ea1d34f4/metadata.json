@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2026-turbotest-learning-when-less-is-enough-through-early-ter-ea1d34f4",
   "title": "TurboTest: Learning When Less is Enough through Early Termination of Internet Speed Tests",
+  "abstract": "Internet speed tests are indispensable for users, ISPs, and policymakers, but their static flooding-based design imposes growing costs: a single high-speed test can transfer hundreds of MB, and collectively, platforms like Ookla, M-Lab, and Fast.com generate petabytes of traffic each month. Reducing this burden requires deciding when a test can be stopped early without sacrificing accuracy. We frame this as an optimal stopping problem and show that existing heuristics—static thresholds, BBR pipe-full signals, or throughput stability rules from Fast.com and FastBTS—capture only a narrow slice of the achievable accuracy—savings trade-off. This paper introduces TURBOTEST, a systematic framework for speed test termination that sits atop existing platforms. The key idea is to decouple throughput prediction (Stage~1) from test termination (Stage~2): Stage~1 trains a regressor to estimate final throughput from partial measurements, while Stage~2 trains a classifier to decide when sufficient evidence has accumulated to stop. Leveraging richer transport-level features (RTT, retransmissions, congestion window) alongside throughput, TURBOTEST exposes a single tunable parameter ε for accuracy tolerance and includes a fallback mechanism for high-variability cases. Evaluation on 1 million M-Lab NDT speed tests (2024–2025) shows that TURBOTEST achieves 1.8-4.4× higher data savings than an approach based on BBR signals while reducing median error. These results demonstrate that adaptive ML-based termination can deliver accurate, efficient, and deployable speed tests at scale.",
+  "abstract_source_id": "src-abstract-nsdi-2026-ea1d34f4",
   "venue": "nsdi",
   "year": 2026,
   "track_or_session": "Smart Pipes, Smarter Learning",
@@ -244,6 +246,19 @@
         "proceedings page range and page count",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2026-ea1d34f4",
+      "url": "https://www.usenix.org/conference/nsdi26/presentation/manda",
+      "kind": "paper-page",
+      "title": "TurboTest: Learning When Less is Enough through Early Termination of Internet Speed Tests",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:06:13Z",
+      "content_hash": "sha256:e0e15f396e017ca81a4cd7559908c99994586fadbd128295cd031df3ee30363c",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

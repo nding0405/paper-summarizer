@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sigcomm-2026-psn-path-when-multipath-rdma-meets-lossy-networks-06246cd2",
   "title": "PSN-PATH: When Multipath RDMA Meets Lossy Networks",
+  "abstract": "Remote Direct Memory Access (RDMA) is widely adopted for high-performance datacenter workloads, but its strict ordering requirement conflicts with multipath transport in lossy networks. RDMA Network Interface Cards (RNICs) may interpret Out-of-Order (OOO) arrivals caused by diverse path latencies as packet loss. This triggers unnecessary retransmissions, severely degrading goodput collapse and inflating Flow Completion Time (FCT). We present PSN-PATH, a novel RDMA protocol to distinguish packet loss from OOO and avoid unnecessary retransmission, improving goodput and FCT of multi-path RDMA in lossy networks. PSN-PATH maps Packet Sequence Numbers (PSN) to network paths, enabling the receiver to verify packet continuity within each mapped path and distinguish real losses from OOO arrivals. PSN-PATH only retransmits lost packets and redirects traffic away from degraded paths. We implement PSN-PATH on Xilinx Alveo U50 FPGA using Vitis HLS and validate it via extensive simulation experiments. Experimental results demonstrate that PSN-PATH significantly outperforms existing solutions, reducing FCT by 95.81%, enhancing goodput by 5.11×, and reducing retransmissions by over 99% under high-load, lossy conditions.",
+  "abstract_source_id": "src-abstract-06246cd2",
   "venue": "sigcomm",
   "year": 2026,
   "track_or_session": "Research Session 13: Datacenter Transport: RDMA & Congestion Control — Research Paper",
@@ -254,6 +256,19 @@
       "official": true,
       "supports": [
         "official main-paper scope and track definitions"
+      ]
+    },
+    {
+      "id": "src-abstract-06246cd2",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/search/match?query=PSN-PATH%3A%20When%20Multipath%20RDMA%20Meets%20Lossy%20Networks&fields=title,abstract",
+      "kind": "semantic-scholar",
+      "title": "PSN-PATH: When Multipath RDMA Meets Lossy Networks",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T23:05:24Z",
+      "content_hash": "sha256:c3f8085429868d153be6428904284de5ba4ead299ad2bcdeb53b4e031a5b9c28",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

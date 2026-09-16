@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2023-abndp-co-optimizing-data-access-and-load-balance-in-near-6a399d2c",
   "title": "ABNDP: Co-Optimizing Data Access and Load Balance in Near-Data Processing",
+  "abstract": "Near-Data Processing (NDP) has been a promising architectural paradigm to address the memory wall challenge for data-intensive applications. Typical NDP systems based on 3D-stacked memories contain massive parallel processing units, each of which can access its local memory as well as other remote memory regions in the system. In such an architecture, minimizing remote data accesses and achieving computation load balance exhibit a fundamental tradeoff, where existing solutions can only improve one but sacrifice the other. We propose ABNDP, which leverages novel hardware-software co-optimizations to simultaneously alleviate these two issues without making tradeoffs. ABNDP uses a novel and efficient distributed DRAM cache to allow additional data caching locations in the system, where the computation load at the original data hotspots can be distributed and balanced, without significantly increasing remote accesses. ABNDP also adopts a hybrid task scheduling policy that considers both the remote access cost and the load imbalance impact, and exploits the flexibility of the multiple data caching locations to decide the best computation place. Our evaluation shows that ABNDP successfully achieves the two goals of minimizing remote access cost and maintaining load balance, and significantly outperforms the baseline systems in terms of both performance (1.7×) and energy consumption (25%).",
+  "abstract_source_id": "src-abstract-asplos-2023-6a399d2c",
   "venue": "asplos",
   "year": 2023,
   "track_or_session": "Session 4B: Memory Mgmt. / Near Data Processing",
@@ -125,6 +127,19 @@
       "official": false,
       "supports": [
         "Indexed abstract used with the official technical-session context for relevance classification, plus alternate-copy and explicitly printed ancillary links."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2023-6a399d2c",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1145%2F3582016.3582026?fields=title,abstract",
+      "kind": "semantic-scholar",
+      "title": "ABNDP: Co-optimizing Data Access and Load Balance in Near-Data Processing",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T21:58:07Z",
+      "content_hash": "sha256:bfd42c07bedc8cee31257a0934fd4949c921fd671b31b93ddd3adeea8ac25648",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

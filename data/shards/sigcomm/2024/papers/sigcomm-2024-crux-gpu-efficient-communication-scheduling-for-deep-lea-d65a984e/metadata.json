@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sigcomm-2024-crux-gpu-efficient-communication-scheduling-for-deep-lea-d65a984e",
   "title": "Crux: GPU-Efficient Communication Scheduling for Deep Learning Training",
+  "abstract": "Deep learning training (DLT), e.g., large language model (LLM) training, has become one of the most important services in multitenant cloud computing. By deeply studying in-production DLT jobs, we observed that communication contention among different DLT jobs seriously influences the overall GPU computation utilization, resulting in the low efficiency of the training cluster. In this paper, we present Crux, a communication scheduler that aims to maximize GPU computation utilization by mitigating the communication contention among DLT jobs. Maximizing GPU computation utilization for DLT, nevertheless, is NP-Complete; thus, we formulate and prove a novel theorem to approach this goal by GPU intensity-aware communication scheduling. Then, we propose an approach that prioritizes the DLT flows with high GPU computation intensity, reducing potential communication contention. Our 96-GPU testbed experiments show that Crux improves 8.3% to 14.8% GPU computation utilization. The large-scale production trace-based simulation further shows that Crux increases GPU computation utilization by up to 23% compared with alternatives including Sincronia, TACCL, and CASSINI.",
+  "abstract_source_id": "src-abstract-sigcomm-2024-d65a984e",
   "venue": "sigcomm",
   "year": 2024,
   "track_or_session": "Moving bits for AI — Research Track",
@@ -255,6 +257,19 @@
         "publisher-deposited ORCIDs when available",
         "proceedings page range and online publication date",
         "empty publisher relation metadata for alternate-version checks"
+      ]
+    },
+    {
+      "id": "src-abstract-sigcomm-2024-d65a984e",
+      "url": "https://api.openalex.org/works/doi:10.1145/3651890.3672239?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Crux: GPU-Efficient Communication Scheduling for Deep Learning Training",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:23:04Z",
+      "content_hash": "sha256:b597b63feb9704cfc00e795ae76ce41dedb59a104029029facf73a89ceeff5bf",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

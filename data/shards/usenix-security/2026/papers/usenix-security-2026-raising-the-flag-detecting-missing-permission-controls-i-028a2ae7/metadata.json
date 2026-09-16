@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-raising-the-flag-detecting-missing-permission-controls-i-028a2ae7",
   "title": "Raising the Flag: Detecting Missing Permission Controls in Mini-Program APIs",
+  "abstract": "Mini-programs embedded within super-apps like WeChat have surged in popularity due to their flexibility and convenience, offering rich functionalities through underlying APIs. However, this tight integration introduces serious security risks: mini-programs often inherit the mobile operating system's permissions granted to their host super-app, potentially bypassing critical security checks. In this paper, we address the urgent need for more fine-grained access control tailored to mini-programs. We propose PERMSCOPE, a systematic framework to detect and analyze missing scope checks in mini-program APIs, revealing instances where Android permissions are implicitly inherited and exercised in mini-program APIs, i.e., cases where \"ask and check'' primitives are absent. Our empirical analysis of four major super-apps reveals that 183 (8.85%) APIs are not properly protected at the mini-program API layer. We discuss the challenges underlying this issue and advocate for super-app developers to enforce fine-grained access control mechanisms at the API boundary, thereby strengthening the trustworthiness of the mobile super-app ecosystem.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-028a2ae7",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Security and Privacy for Web, Mobile, and Emerging Technologies 3",
@@ -176,6 +178,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-028a2ae7",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/wei-zhiao",
+      "kind": "paper-page",
+      "title": "Raising the Flag: Detecting Missing Permission Controls in Mini-Program APIs",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:25:08Z",
+      "content_hash": "sha256:d10529554b87cc02a0e0e98fdc0e1b448651575b993c39d56b6f07ac2f7f36e1",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "eurosys-2026-squeezy-rapid-vm-memory-reclamation-for-serverless-funct-0e0437c4",
   "title": "Squeezy: Rapid VM Memory Reclamation for Serverless Functions",
+  "abstract": "Resource elasticity is one of the key defining characteristics of the Function-as-a-Service (FaaS) serverless computing paradigm. While compute resources assigned to VM-sandboxed functions can be seamlessly adjusted on the fly, memory elasticity remains challenging. Hot(un)plugging memory resources suffers from long reclamation latencies and occupies valuable CPU resources. We identify the obliviousness of the OS memory manager to the hotplugged memory as the key issue hindering hot-unplug performance, and design Squeezy, a novel approach for fast and efficient VM memory hot(un)plug, targeting VM-sandboxed serverless functions. Our key insight is that by segregating hotplugged memory regions from regular VM memory, we are able to bound the lifetime of allocations within these regions thus enabling their fast and efficient reclamation. We implement Squeezy in Linux v6.6 as an extension to the OS memory manager. Our evaluation reveals that Squeezy is an order-of-magnitude faster than state-of-the-art, keeping tail latency bounded, when reclaiming VM memory, achieving sub-second reclamation of multiple GiBs of memory while serving realistic FaaS load.",
+  "abstract_source_id": "src-abstract-eurosys-2026-0e0437c4",
   "venue": "eurosys",
   "year": 2026,
   "track_or_session": null,
@@ -180,6 +182,19 @@
       "official": false,
       "supports": [
         "Publisher-deposited proceedings identity and print publication date."
+      ]
+    },
+    {
+      "id": "src-abstract-eurosys-2026-0e0437c4",
+      "url": "https://api.openalex.org/works/doi:10.1145/3767295.3769357?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Squeezy: Rapid VM Memory Reclamation for Serverless Functions",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:22:06Z",
+      "content_hash": "sha256:3a1ff2e52481975037002f1ba2ae7d8c35c25e84648bbc1f4935a8218612cd54",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

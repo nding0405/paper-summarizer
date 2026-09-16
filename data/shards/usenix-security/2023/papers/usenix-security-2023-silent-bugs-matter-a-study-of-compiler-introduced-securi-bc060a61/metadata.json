@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2023-silent-bugs-matter-a-study-of-compiler-introduced-securi-bc060a61",
   "title": "Silent Bugs Matter: A Study of Compiler-Introduced Security Bugs",
+  "abstract": "Compilers assure that any produced optimized code is semantically equivalent to the original code. However, even \"correct\" compilers may introduce security bugs as security properties go beyond translation correctness. Security bugs introduced by such correct compiler behaviors can be disputable; compiler developers expect users to strictly follow language specifications and understand all assumptions, while compiler users may incorrectly assume that their code is secure. Such bugs are hard to find and prevent, especially when it is unclear whether they should be fixed on the compiler or user side. Nevertheless, these bugs are real and can be severe, thus should be studied carefully.\n\nWe perform a comprehensive study on compiler-introduced security bugs (CISB) and their root causes. We collect a large set of CISB in the wild by manually analyzing 4,827 potential bug reports of the most popular compilers (GCC and Clang), distilling them into a taxonomy of CISB. We further conduct a user study to understand how compiler users view compiler behaviors. Our study shows that compiler-introduced security bugs are common and may have serious security impacts. It is unrealistic to expect compiler users to understand and comply with compiler assumptions. For example, the \"no-undefined-behavior\" assumption has become a nightmare for users and a major cause of CISB.",
+  "abstract_source_id": "src-abstract-usenix-security-2023-bc060a61",
   "venue": "usenix-security",
   "year": 2023,
   "track_or_session": "Entomology",
@@ -217,6 +219,19 @@
       "official": true,
       "supports": [
         "authors, affiliations when published, abstract, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2023-bc060a61",
+      "url": "https://www.usenix.org/conference/usenixsecurity23/presentation/xu-jianhao",
+      "kind": "paper-page",
+      "title": "Silent Bugs Matter: A Study of Compiler-Introduced Security Bugs",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:12:58Z",
+      "content_hash": "sha256:246ea9613bc1e50d47f6175fafd327ffd6fd7fee4a71ce38b243019fb482bbec",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2024-crossing-shifted-moats-replacing-old-bridges-with-new-tu-10a5d2aa",
   "title": "Crossing Shifted Moats: Replacing Old Bridges with New Tunnels to Confidential Containers",
+  "abstract": "The Confidential Containers (CoCo) project, as an open-source community initiative, inherits the system architecture of Kata Containers while integrating confidential computing to protect cloud-native container workloads. However, there exists a misalignment in the threat model and trusted computing base (TCB) between Kata Containers and confidential computing. The shifted trust boundaries could potentially expose a range of vulnerabilities, particularly in scenarios where a malicious actor on the host gains access to the CoCo's unprotected control interface. This paper conducts a thorough examination of CoCo's system architecture, exploring the attack surface resulting from the discord in trust boundaries. We have assessed all API endpoints of CoCo's control interface, categorizing them based on their security properties. Drawing from these insights, we have developed a bifurcation approach to splitting CoCo's control interface. This involves establishing an owner-side controller and minimizing the capabilities of the existing host-side controller. Under this framework, the host-side controller is exclusively responsible for allocating and recycling compute resources, while dedicated workload owners can directly manage their containers through alternative secure tunnels. This approach ensures seamless integration with cloud-native orchestration layers and aligns CoCo with the threat model of confidential computing. By doing so, it effectively prevents untrusted hosts from accessing confidential data and interfering with the execution of workloads within protected domains.",
+  "abstract_source_id": "src-abstract-ccs-2024-10a5d2aa",
   "venue": "ccs",
   "year": 2024,
   "track_or_session": "Cycle 1",
@@ -201,6 +203,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2024-10a5d2aa",
+      "url": "https://api.openalex.org/works/doi:10.1145/3658644.3670352?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Crossing Shifted Moats: Replacing Old Bridges with New Tunnels to Confidential Containers",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:09:47Z",
+      "content_hash": "sha256:8b87b5a7c9bf6141d5432c627902d97ae6ea74e5cd7fd731c93efcbc1dcd6482",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

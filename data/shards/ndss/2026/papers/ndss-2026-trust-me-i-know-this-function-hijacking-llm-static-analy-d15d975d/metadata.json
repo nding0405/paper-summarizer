@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2026-trust-me-i-know-this-function-hijacking-llm-static-analy-d15d975d",
   "title": "Trust Me, I Know This Function: Hijacking LLM Static Analysis using Bias",
+  "abstract": "Large Language Models (LLMs) are increasingly trusted to perform automated code review and static analysis at scale, supporting tasks such as vulnerability detection, summarization, and refactoring. In this paper, we identify and exploit a critical vulnerability in LLM-based code analysis: an abstraction bias that causes models to overgeneralize familiar programming patterns and overlook small, meaningful bugs. Adversaries can exploit this blind spot to hijack the control flow of the LLM’s interpretation with minimal edits and without affecting actual runtime behavior. We refer to this attack as a Familiar Pattern Attack (FPA).\n\nWe develop a fully automated, black-box algorithm that discovers and injects FPAs into target code. Our evaluation shows that FPAs are not only effective against basic and reasoning models, but are also transferable across model families (OpenAI, Anthropic, Google), and universal across programming languages (Python, C, Rust, Go). Moreover, FPAs remain effective even when models are explicitly warned about the attack via robust system prompts. Finally, we explore positive, defensive uses of FPAs and discuss their broader implications for the reliability and safety of code-oriented LLMs.",
+  "abstract_source_id": "src-abstract-ndss-2026-d15d975d",
   "venue": "ndss",
   "year": 2026,
   "track_or_session": "Fall submission cycle",
@@ -181,6 +183,19 @@
       "official": false,
       "supports": [
         "independent proceedings identity reconciliation"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2026-d15d975d",
+      "url": "https://www.ndss-symposium.org/ndss-paper/trust-me-i-know-this-function-hijacking-llm-static-analysis-using-bias/",
+      "kind": "paper-page",
+      "title": "Trust Me, I Know This Function: Hijacking LLM Static Analysis using Bias",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:23:27Z",
+      "content_hash": "sha256:e633d6660f27bad70339c52a6ec2c71409e3769dc3a62cd54c72c406b58a6494",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

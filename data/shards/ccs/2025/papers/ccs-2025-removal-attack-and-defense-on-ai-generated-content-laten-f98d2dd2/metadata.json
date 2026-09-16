@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2025-removal-attack-and-defense-on-ai-generated-content-laten-f98d2dd2",
   "title": "Removal Attack and Defense on AI-generated Content Latent-based Watermarking",
+  "abstract": "Digital watermarks can be embedded into AI-generated content (AIGC) by initializing the generation process with starting points sampled from a secret distribution. When combined with pseudorandom error-correcting codes, such watermarked outputs can remain indistinguishable from unwatermarked objects, while maintaining robustness under whitenoise. In this paper, we go beyond indistinguishability and investigate security under removal attacks. We demonstrate that indistinguishability alone does not necessarily guarantee resistance to adversarial removal. Specifically, we propose a novel attack that exploits boundary information leaked by the locations of watermarked objects. This attack significantly reduces the distortion required to remove watermarks—by up to a factor of 15 × compared to a baseline whitenoise attack under certain settings. To mitigate such attacks, we introduce a defense mechanism that applies a secret transformation to hide the boundary, and prove that the secret transformation effectively rendering any attacker's perturbations equivalent to those of a naïve whitenoise adversary. Our empirical evaluations, conducted on multiple versions of Stable Diffusion, validate the effectiveness of both the attack and the proposed defense, highlighting the importance of addressing boundary leakage in latent-based watermarking schemes.",
+  "abstract_source_id": "src-abstract-ccs-2025-f98d2dd2",
   "venue": "ccs",
   "year": 2025,
   "track_or_session": "Cycle 2",
@@ -148,6 +150,19 @@
         "published-order authors",
         "publication-time affiliations",
         "publication date and page span"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2025-f98d2dd2",
+      "url": "https://api.openalex.org/works/doi:10.1145/3719027.3765175?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Removal Attack and Defense on AI-generated Content Latent-based Watermarking",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:15:47Z",
+      "content_hash": "sha256:52c43d6be353ef7617ee6ff15eee2da1680b2b62cb39c4a07b81e4a2261b568c",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

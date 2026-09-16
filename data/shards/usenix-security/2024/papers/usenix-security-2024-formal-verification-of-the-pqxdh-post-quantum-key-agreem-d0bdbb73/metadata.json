@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2024-formal-verification-of-the-pqxdh-post-quantum-key-agreem-d0bdbb73",
   "title": "Formal verification of the PQXDH Post-Quantum key agreement protocol for end-to-end secure messaging",
+  "abstract": "The Signal Messenger recently introduced a new asynchronous key agreement protocol called PQXDH (PostQuantum Extended Diffie-Hellman) that seeks to provide post-quantum forward secrecy, in addition to the authentication and confidentiality guarantees already provided by the previous X3DH (Extended Diffie-Hellman) protocol. More precisely, PQXDH seeks to protect the confidentiality of messages against harvest-now-decrypt-later attacks.\n\nIn this work, we formally specify the PQXDH protocol and analyze its security using two formal verification tools, PROVERIF and CRYPTOVERIF. In particular, we ask whether PQXDH preserves the guarantees of X3DH, whether it provides post-quantum forward secrecy, and whether it can be securely deployed alongside X3DH. Our analysis identifies several flaws and potential vulnerabilities in the PQXDH specification, although these vulnerabilities are not exploitable in the Signal application, thanks to specific implementation choices which we describe in this paper. To prove the security of the current implementation, our analysis notably highlighted the need for an additional binding property of the KEM, which we formally define and prove for Kyber.\n\nWe collaborated with the protocol designers to develop an updated protocol specification based on our findings, where each change was formally verified and validated with a security proof. This work identifies some pitfalls that the community should be aware of when upgrading protocols to be post-quantum secure. It also demonstrates the utility of using formal verification hand-in-hand with protocol design.",
+  "abstract_source_id": "src-abstract-usenix-security-2024-d0bdbb73",
   "venue": "usenix-security",
   "year": 2024,
   "track_or_session": "Crypto I: Secret Key Exchange",
@@ -133,6 +135,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2024-d0bdbb73",
+      "url": "https://www.usenix.org/conference/usenixsecurity24/presentation/bhargavan",
+      "kind": "paper-page",
+      "title": "Formal verification of the PQXDH Post-Quantum key agreement protocol for end-to-end secure messaging",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:15:18Z",
+      "content_hash": "sha256:6727343b93ed613bfb114833b1a339d51e94bfbc9b9d1b85f14b5ad06e2ed4f8",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

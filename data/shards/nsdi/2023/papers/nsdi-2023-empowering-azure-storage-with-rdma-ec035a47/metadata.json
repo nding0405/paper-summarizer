@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2023-empowering-azure-storage-with-rdma-ec035a47",
   "title": "Empowering Azure Storage with RDMA",
+  "abstract": "Given the wide adoption of disaggregated storage in public clouds, networking is the key to enabling high performance and high reliability in a cloud storage service. In Azure, we choose Remote Direct Memory Access (RDMA) as our transport and aim to enable it for both storage frontend traffic (between compute virtual machines and storage clusters) and backend traffic (within a storage cluster) to fully realize its benefits. As compute and storage clusters may be located in different datacenters within an Azure region, we need to support RDMA at regional scale.\n\nThis work presents our experience in deploying intra-region RDMA to support storage workloads in Azure. The high complexity and heterogeneity of our infrastructure bring a series of new challenges, such as the problem of interoperability between different types of RDMA network interface cards. We have made several changes to our network infrastructure to address these challenges. Today, around 70% of traffic in Azure is RDMA and intra-region RDMA is supported in all Azure public regions. RDMA helps us achieve significant disk I/O performance improvements and CPU core savings.",
+  "abstract_source_id": "src-abstract-nsdi-2023-ec035a47",
   "venue": "nsdi",
   "year": 2023,
   "track_or_session": "RDMA",
@@ -1547,6 +1549,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2023-ec035a47",
+      "url": "https://www.usenix.org/conference/nsdi23/presentation/bai",
+      "kind": "paper-page",
+      "title": "Empowering Azure Storage with RDMA",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:02:01Z",
+      "content_hash": "sha256:d44510b570627052fc047e68dd88e051461daa1c065c8a84ca58a53e197349cf",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

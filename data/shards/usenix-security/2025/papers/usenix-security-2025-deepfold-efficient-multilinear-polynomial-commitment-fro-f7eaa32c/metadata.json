@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-deepfold-efficient-multilinear-polynomial-commitment-fro-f7eaa32c",
   "title": "DeepFold: Efficient Multilinear Polynomial Commitment from Reed-Solomon Code and Its Application to Zero-knowledge Proofs",
+  "abstract": "This work presents Deepfold, a novel multilinear polynomial commitment scheme (PCS) based on Reed-Solomon code that offers optimal prover time and a more concise proof size. For the first time, Deepfold adapts the FRI-based multilinear PCS to the list decoding radius setting, requiring significantly fewer query repetitions and thereby achieving a 3x reduction in proof size compared to Basefold (Crypto '24), while preserving its advantages in prover time. Compared with PolyFRIM (USENIX Security '24), Deepfold achieves a 2x improvement in prover time, verifier time, and proof size. Another contribution of this work is a batch evaluation scheme, which enables the FRI-based multilinear PCS to handle polynomials whose size is not a power of two more efficiently.\n\nOur scheme has broad applications in zk-SNARKs, since PCS is a key component in modern zk-SNARK constructions. For example, when replacing the PCS component of Virgo (S&P '20) with Deepfold, our scheme achieves a 2.5x faster prover time when proving the knowledge of a Merkle tree with 256 leaves, while maintaining the similar proof size. When replacing the PCS component of HyperPlonk (Eurocrypt '23) with Deepfold, our scheme has about 3.6x faster prover time. Additionally, when applying our arbitrary length input commitment to verifiable matrix multiplications for matrices of size 1200x768 and 768x2304, which are actual use cases in GPT-2 model, the performance showcases a 2.4x reduction in prover time compared to previous approaches.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-f7eaa32c",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Crypto 2: Private Information Retrieval and Computation",
@@ -175,6 +177,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-f7eaa32c",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/guo-yanpei",
+      "kind": "paper-page",
+      "title": "DeepFold: Efficient Multilinear Polynomial Commitment from Reed-Solomon Code and Its Application to Zero-knowledge Proofs",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:19:16Z",
+      "content_hash": "sha256:619a95bc83bf1cffd9474722fae6cfc96bd40b2de732456cb53d37d90dc0be48",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

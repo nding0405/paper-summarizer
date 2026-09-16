@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-hasteboots-proving-tfhe-programmable-bootstrapping-in-se-9c438747",
   "title": "HasteBoots: Proving TFHE Programmable Bootstrapping in Seconds",
+  "abstract": "Fully Homomorphic Encryption (FHE) enables computations on encrypted data, ensuring privacy for outsourced computation. However, verifying the integrity of FHE computations remains a significant challenge, especially for bootstrapping, the most computationally intensive operation in FHE. Prior approaches, including zkVM-based solutions and general-purpose SNARKs, suffer from inefficiencies, with proof generation time ranging from several hours to days.\n\nIn this work, we propose HasteBoots, a succinct argument tailored for TFHE with programmable bootstrapping. By designing efficient protocols for arithmetic operations over quotient rings, HasteBoots achieves proof generation in a few seconds for TFHE evaluation with programmable bootstrapping, significantly outperforming the state-of-the-art, Zama (CCS'25). Moreover, HasteBoots supports batching multiple TFHE evaluations and bootstrappings, a feature that prior work cannot practically support due to prohibitive proving cost. HasteBoots can prove a batch of 16 operations within one minute, while maintaining succinct verification, requiring only 126 ms and a proof size of 0.28 MB. Our approach demonstrates the potential for scalable and efficient verifiable FHE, paving the way for practical, privacy-preserving computations.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-9c438747",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Applications of Cryptography 1",
@@ -176,6 +178,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-9c438747",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/liu-fengrun",
+      "kind": "paper-page",
+      "title": "HasteBoots: Proving TFHE Programmable Bootstrapping in Seconds",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:24:11Z",
+      "content_hash": "sha256:adeb3753c14a6ca32a5b6e4fc3d4f4621921c5a91ae877b38253da321acf5a29",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

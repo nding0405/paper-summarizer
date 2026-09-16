@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2025-breaking-the-barrier-post-barrier-spectre-attacks-3fc4a25a",
   "title": "Breaking the Barrier: Post-Barrier Spectre Attacks",
+  "abstract": "The effectiveness of transient execution defenses rests on obscure model-specific operations that must be correctly implemented in microcode and applied by software. In this paper, we study branch predictor invalidation through Indirect Branch Predictor Barrier (IBPB) for x86 processors, which is a cornerstone defense against cross-context and cross-privilege Spectre attacks, and discover new vulnerabilities in both its microcode implementation and application by software. Concretely, we demonstrate two new post-barrier speculative return target hijacks on Intel and AMD CPUs. First, we show an end-to-end cross-process attack that leaks the hash of the root password from a suid process. This attack works despite IBPB on recent generations of Intel processors due to a microcode implementation flaw. Second, we show that an unprivileged attacker can leak privileged memory on AMD Zen 1(+)/2 processors despite the deployed IBPB mitigation, due to how IBPB is applied by the Linux kernel. We propose using a chicken bit to disable exploitable return predictions on affected Intel CPUs and a software patch for the Linux kernel to safely use IBPB on affected AMD CPUs.",
+  "abstract_source_id": "src-abstract-sp-2025-3fc4a25a",
   "venue": "sp",
   "year": 2025,
   "track_or_session": "Cycle 1",
@@ -91,6 +93,19 @@
       "official": true,
       "supports": [
         "DOI, authors, affiliations, abstract, publication date, pages, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2025-3fc4a25a",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Breaking the Barrier: Post-Barrier Spectre Attacks",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:42Z",
+      "content_hash": "sha256:d62dac834635b4cd1890a53da454ceae7aaa151189662d990ac591dfd5cb6b3e",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "fast-2025-gphash-an-efficient-hash-index-for-gpu-with-byte-granula-1de38335",
   "title": "GPHash: An Efficient Hash Index for GPU with Byte-Granularity Persistent Memory",
+  "abstract": "GPU with persistent memory (GPM) enables GPU-powered applications to directly manage the data in persistent memory at the byte granularity. Hash indexes have been widely used to achieve efficient data management. However, conventional hash indexes become inefficient for GPM systems due to warp-agnostic execution manner, high-overhead consistency guarantee, and significant bandwidth gap between PM and GPU. In this paper, we propose GPHash, an efficient hash index for GPM systems with high performance and consistency guarantee. To fully exploit the parallelism of GPU, GPHash executes all index operations in a lock-free and warp-cooperative manner. Moreover, by using CAS primitive and slot states, GPHash ensures consistency guarantee with low overhead. To further bridge the bandwidth gap between PM and GPU, GPHash caches hot items in GPU memory while minimizing the overhead for cache management. Extensive evaluations on YCSB and real-world workloads show that GPHash outperforms state-of-the-art CPU-assisted data management approaches and GPM hash indexes by up to 27.62×.",
+  "abstract_source_id": "src-abstract-fast-2025-1de38335",
   "venue": "fast",
   "year": 2025,
   "track_or_session": "Machine Learning and Storage",
@@ -161,6 +163,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-fast-2025-1de38335",
+      "url": "https://www.usenix.org/conference/fast25/presentation/chen-menglei",
+      "kind": "paper-page",
+      "title": "GPHash: An Efficient Hash Index for GPU with Byte-Granularity Persistent Memory",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:01:05Z",
+      "content_hash": "sha256:e315a139ff2fc757a78b2d089c000cb8a67075e317c95e38a0d803826f7124b0",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

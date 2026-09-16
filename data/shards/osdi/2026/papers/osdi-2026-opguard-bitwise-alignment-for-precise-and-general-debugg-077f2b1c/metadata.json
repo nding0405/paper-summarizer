@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2026-opguard-bitwise-alignment-for-precise-and-general-debugg-077f2b1c",
   "title": "OpGuard: Bitwise Alignment for Precise and General Debugging of Production LLM Training",
+  "abstract": "Large-scale LLM training runs on many GPUs for weeks atop rapidly evolving software stacks. Bugs or hardware glitches can silently corrupt the computation and only surface much later. Debugging becomes finding a needle in a haystack across time. Developers often use another training run and compare their loss, gradient norms, etc. But these aggregate signals are noisy and easily diluted across millions of operations, offering little guidance on why the divergence occurs. This paper introduces bitwise alignment as a correctness oracle and debugging primitive for LLM training, and OpGuard, a practical system that realizes it at production scale. OpGuard discovers semantic-stable operator boundaries across heterogeneous training stacks, and wraps them with lightweight fingerprinting. A schedule-tolerant mapper computes the longest prefix where two executions produce bitwise-identical tensors. The first mismatching point becomes a pivot for debugging and is presented with rich context. By carefully controlling benign nondeterminism, OpGuard makes the first mismatch strong evidence of error. OpGuard has been deployed at ByteDance across pre-training and post-training workloads. It diagnosed over twenty production issues, including subtle kernel races and silent data corruptions missed by existing checks, reducing debugging time from days to minutes.",
+  "abstract_source_id": "src-abstract-osdi-2026-077f2b1c",
   "venue": "osdi",
   "year": 2026,
   "track_or_session": "Training Reliability and Silent Errors",
@@ -251,6 +253,19 @@
       "official": true,
       "supports": [
         "Official proceedings availability and canonical conference versions."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2026-077f2b1c",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/zhou-ziming",
+      "kind": "paper-page",
+      "title": "OpGuard: Bitwise Alignment for Precise and General Debugging of Production LLM Training",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:08:42Z",
+      "content_hash": "sha256:99f87a52c328e21386a366e7aa6f5e5589922a76df71601965683623417fd32f",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

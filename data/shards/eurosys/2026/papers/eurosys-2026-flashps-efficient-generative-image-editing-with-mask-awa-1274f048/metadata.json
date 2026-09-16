@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "eurosys-2026-flashps-efficient-generative-image-editing-with-mask-awa-1274f048",
   "title": "FlashPS: Efficient Generative Image Editing with Mask-aware Caching and Scheduling",
+  "abstract": "Generative image editing using diffusion models has become a prevalent application in today's AI cloud services. In production environments, image editing typically involves a mask that specifies the regions of an image template to be edited. The use of mask provides direct control over the editing process and introduces sparsity in the model inference. In this paper, we present FlashPS, a system that efficiently serves image editing requests. The key insight behind FlashPS is that image editing only modifies the masked regions of image templates, while preserving the original content in the unmasked areas. Driven by this insight, FlashPS judiciously skips redundant computations associated with the unmask areas by reusing cached intermediate activations from previous inferences. To mitigate the high cache loading overhead, FlashPS employs a bubble-free pipeline scheme that overlaps computation with cache loading. Additionally, to reduce queuing latency in online serving while improving the GPU utilization, FlashPS proposes a novel continuous batching strategy for diffusion model serving, allowing newly arrived requests to join the running batch in just one step of denoising computation, without waiting for the entire batch to complete. As heterogenous masks induce imbalanced load, FlashPS also develops a load balancing strategy that takes into account the loads of both computation and cache loading. Collectively, FlashPS outperforms state-of-the-art diffusion serving systems for image editing, achieving up to 3× higher throughput and reducing average request latency by up to 14.7× while ensuring image quality.",
+  "abstract_source_id": "src-abstract-eurosys-2026-1274f048",
   "venue": "eurosys",
   "year": 2026,
   "track_or_session": null,
@@ -390,6 +392,19 @@
       "official": false,
       "supports": [
         "Publisher-deposited proceedings identity and print publication date."
+      ]
+    },
+    {
+      "id": "src-abstract-eurosys-2026-1274f048",
+      "url": "https://api.openalex.org/works/doi:10.1145/3767295.3769379?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "FlashPS: Efficient Generative Image Editing with Mask-aware Caching and Scheduling",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:20:19Z",
+      "content_hash": "sha256:10e47f273bef526f3d211089924a924cb55aa975b02781ddcf40977f62ed6c8e",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

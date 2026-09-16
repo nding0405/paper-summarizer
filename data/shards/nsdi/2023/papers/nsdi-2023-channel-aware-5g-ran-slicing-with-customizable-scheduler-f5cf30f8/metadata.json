@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2023-channel-aware-5g-ran-slicing-with-customizable-scheduler-f5cf30f8",
   "title": "Channel-Aware 5G RAN Slicing with Customizable Schedulers",
+  "abstract": "This paper focuses on 5G RAN slicing, where the 5G radio resources must be divided across slices (or enterprises) so as to achieve high spectrum efficiency, fairness and isolation across slices, and the ability for each slice to customize how the radio resources are divided across its own users. Realizing these goals requires accounting for the channel quality for each user (that varies over time and frequency domain) at both levels – inter-slice scheduling (i.e. dividing resources across slices) and enterprise scheduling (i.e. dividing resources within a slice). However, a cyclic dependency between the inter-slice and enterprise schedulers makes it difficult to incorporate channel awareness at both levels. We observe that the cyclic dependency can be broken if both the inter-slice and enterprise schedulers are greedy. Armed with this insight, we design RadioSaber, the first RAN slicing mechanism to do channel-aware inter-slice and enterprise scheduling. We implement RadioSaber on an open-source RAN simulator, and our evaluation shows how RadioSaber can achieve 17%-72% better throughput than the state-of-theart RAN slicing technique (that performs channel-agnostic inter-slice scheduling), while meeting the primary goals of fairness across slices and the ability to support a wide variety of customizable enterprise scheduling policies.",
+  "abstract_source_id": "src-abstract-nsdi-2023-f5cf30f8",
   "venue": "nsdi",
   "year": 2023,
   "track_or_session": "Physical Layer",
@@ -140,6 +142,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2023-f5cf30f8",
+      "url": "https://www.usenix.org/conference/nsdi23/presentation/chen-yongzhou",
+      "kind": "paper-page",
+      "title": "Channel-Aware 5G RAN Slicing with Customizable Schedulers",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:01:56Z",
+      "content_hash": "sha256:f3d7e3d7a539fe847def0e0628476ca72fa65fbe11388ff5a9e5a009913948de",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

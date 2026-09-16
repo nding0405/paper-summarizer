@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2026-notebookos-a-replicated-notebook-platform-for-interactiv-ce58ca6b",
   "title": "NotebookOS: A Replicated Notebook Platform for Interactive Training with On-Demand GPUs",
+  "abstract": "Interactive notebook programming is universal in modern ML and AI workflows, with interactive deep learning training (IDLT) emerging as a dominant use case.To ensure responsiveness, platforms like Jupyter and Colab reserve GPUs for long-running notebook sessions, despite their intermittent and sporadic GPU usage, leading to extremely low GPU utilization and prohibitively high costs.In this paper, we introduce NotebookOS, a GPU-efficient notebook platform tailored for the unique requirements of IDLT.NotebookOS employs replicated notebook kernels with Raft-synchronized replicas distributed across GPU servers.To optimize GPU utilization, NotebookOS oversubscribes server resources, leveraging high inter-arrival times in IDLT workloads, and allocates GPUs only during active cell execution.It also supports replica migration and automatic cluster scaling under high load.Altogether, this design enables interactive training with minimal delay.In evaluation on production workloads, NotebookOS saved over 1,187 GPU hours in 17.5 hours of real-world IDLT, while significantly improving interactivity.",
+  "abstract_source_id": "src-abstract-asplos-2026-ce58ca6b",
   "venue": "asplos",
   "year": 2026,
   "track_or_session": "Session 4A: ML Training & Monitoring",
@@ -173,6 +175,19 @@
       "official": false,
       "supports": [
         "Indexed abstract used for strict relevance classification and indexed arXiv identifier where available."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2026-ce58ca6b",
+      "url": "https://api.openalex.org/works/doi:10.1145/3760250.3762230?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "NotebookOS: A Replicated Notebook Platform for Interactive Training with On-Demand GPUs",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:05:38Z",
+      "content_hash": "sha256:5b27badf2c418bf89dbac56f33ccdcd59b60fe3fc6f499a57eb3c28d797bfa15",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

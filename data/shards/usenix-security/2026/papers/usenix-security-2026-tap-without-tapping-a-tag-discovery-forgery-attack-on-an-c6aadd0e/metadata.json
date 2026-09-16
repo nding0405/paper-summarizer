@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-tap-without-tapping-a-tag-discovery-forgery-attack-on-an-c6aadd0e",
   "title": "\"Tap\" Without Tapping: A Tag Discovery Forgery Attack on Android NFC",
+  "abstract": "Tap-to-X, such as tap-to-pay, which uses an NFC tag tap to trigger the logic flow, is widely used today. Tap-to-X apps treat the tap as proof of user proximity and intent, i.e., the tap is assumed to be intentional and user-aware. On Android, the OS reads data from the tag and eventually dispatches the data to an expected app, yet the security of this post-discovery dispatch process remains under-investigated. In this paper, we analyze Android's post-tap tag dispatch and identify two OS-level design weaknesses that create a semantic origin gap, allowing a local malicious app to mimic a physical tap without any NFC interaction. Exploiting these weaknesses, we develop the tag-dispatch forgery attack (TDFA) and demonstrate that TDFA affects several real-world apps, including Alipay, Huawei AI Life, and Samsung Galaxy Wearable. To measure the impact of TDFA at ecosystem scale, we conduct a large-scale analysis of 76,333 Google Play apps, identify 601 potentially affected apps with externally startable RW handlers, and confirm successful forged delivery in 498 of 597 installable and testable apps through on-device validation. We propose an OS-level fix to fundamentally mitigate TDFA and provide suggestions for app developers while the OS-level mitigation is unavailable. We responsibly reported our findings to relevant stakeholders, including the Android Security team, Alipay, and Huawei. They confirmed and acknowledged the corresponding findings and awarded us 7,000, ¥2,000 (∼300), and ¥4,000 (∼$600) as bug bounties, respectively. Google assigned CVE-2026-0081 to the Android vulnerability.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-c6aadd0e",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Security and Privacy for Web, Mobile, and Emerging Technologies 2",
@@ -218,6 +220,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-c6aadd0e",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/li-yilin",
+      "kind": "paper-page",
+      "title": "\"Tap\" Without Tapping: A Tag Discovery Forgery Attack on Android NFC",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:25:46Z",
+      "content_hash": "sha256:141b866cbbeb6409a6be6637dcab015c97c1ca02996c2c269604ed00b934a2b5",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

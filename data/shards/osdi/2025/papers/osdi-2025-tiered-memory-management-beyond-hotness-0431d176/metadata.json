@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2025-tiered-memory-management-beyond-hotness-0431d176",
   "title": "Tiered Memory Management Beyond Hotness",
+  "abstract": "Tiered memory systems often rely on access frequency (''hotness'') to guide data placement. However, hot data is not always performance-critical, limiting the effectiveness of hotness-based policies. We introduce amortized offcore latency (AOL), a novel metric that precisely captures the true performance impact of memory accesses by accounting for memory access latency and memory-level parallelism (MLP). Leveraging AOL, we present two powerful tiering mechanisms: SOAR, a profile-guided allocation policy that places objects based on their performance contribution, and ALTO, a lightweight page migration regulation policy to eliminate unnecessary migrations. SOAR and ALTO outperform four state-of-the-art tiering designs across a diverse set of workloads by up to 12.4×, while underperforming in a few cases by no more than 3%.",
+  "abstract_source_id": "src-abstract-osdi-2025-0431d176",
   "venue": "osdi",
   "year": 2025,
   "track_or_session": "Kernel and Operating Systems II",
@@ -159,6 +161,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2025-0431d176",
+      "url": "https://www.usenix.org/conference/osdi25/presentation/liu",
+      "kind": "paper-page",
+      "title": "Tiered Memory Management Beyond Hotness",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:07:50Z",
+      "content_hash": "sha256:366095bab47b5154024936ecec3396b2c1ac17fabee241c1deef2fc40205bf8a",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

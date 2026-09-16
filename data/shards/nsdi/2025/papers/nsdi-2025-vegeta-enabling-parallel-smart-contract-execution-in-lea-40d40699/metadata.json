@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2025-vegeta-enabling-parallel-smart-contract-execution-in-lea-40d40699",
   "title": "Vegeta: Enabling Parallel Smart Contract Execution in Leaderless Blockchains",
+  "abstract": "Consensus and smart contract execution play complementary roles in blockchain systems. Leaderless consensus, as a promising direction in the blockchain context, can better utilize the resources of each node and/or avoid incurring the extra burden of timing assumptions. As modern Byzantine-Fault Tolerant (BFT) consensus protocols can order several hundred thousand transactions per second, contract execution is becoming the performance bottleneck. Adding concurrency to contract execution is a natural way to boost its performance, but none of the existing frameworks is a perfect fit for leaderless consensus.\n\nWe propose speculate-order-replay, a generic framework tailored to leaderless consensus protocols. Our framework allows each proposer to (pre-)process transactions prior to consensus, better utilizing its computing resources. We instantiate the framework with a concrete concurrency control protocol Vegeta. Vegeta speculatively executes a series of transactions and analyzes their dependencies before consensus, and later deterministically replays the schedule. We ran experiments under the real-world Ethereum workload on 16vCPU virtual machines. Our evaluation results show that Vegeta achieved up to 7.8× speedup compared to serial execution. When deployed on top of a leaderless consensus protocol with 10 nodes, Vegeta still achieved 6.9× speedup.",
+  "abstract_source_id": "src-abstract-nsdi-2025-40d40699",
   "venue": "nsdi",
   "year": 2025,
   "track_or_session": "Fast Scalable Consensus",
@@ -203,6 +205,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2025-40d40699",
+      "url": "https://www.usenix.org/conference/nsdi25/presentation/xu-tianjing",
+      "kind": "paper-page",
+      "title": "Vegeta: Enabling Parallel Smart Contract Execution in Leaderless Blockchains",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:04:43Z",
+      "content_hash": "sha256:b5ec1286d932a38753b33f740319211c3ca6a23fb0d29f02c132a5684ffc6489",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

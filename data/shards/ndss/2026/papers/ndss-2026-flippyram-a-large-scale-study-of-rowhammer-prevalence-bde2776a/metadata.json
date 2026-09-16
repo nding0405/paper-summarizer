@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2026-flippyram-a-large-scale-study-of-rowhammer-prevalence-bde2776a",
   "title": "FLIPPYRAM: A Large-Scale Study of Rowhammer Prevalence",
+  "abstract": "Rowhammer is a disturbance error in Dynamic Random-Access Memory (DRAM) that can be deliberately triggered from software by repeatedly reading, i.e., hammering, proximate memory locations in different DRAM rows. While numerous studies evaluated the Rowhammer effect, in particular how it can be triggered and how it can be exploited, most studies only use a small sample size of Dual In-line Memory Modules (DIMMs). Only few studies provided indication for the prevalence of the effect, with clear limitations to specific hardware configurations or FPGA-based experiments with precise control of the DIMM, limiting how far the results can be generalized.\n\nIn this paper, we perform the first large-scale study of the Rowhammer effect involving 1006 data sets from 822 systems. We measure Rowhammer prevalence in a fully automated cross-platform framework, FlippyRAM, using the available state-of-the-art software-based DRAM and Rowhammer tools. Our framework automatically gathers information about the DRAM and uses 5 tools to reverse-engineer the DRAM addressing functions, and based on the reverse-engineered functions uses 7 tools to mount Rowhammer. We distributed the framework online and via USB thumb drives to thousands of participants from December 30, 2024, to June 30, 2025. Overall, we collected 1006 datasets from systems with various CPUs, DRAM generations, and vendors. Our study reveals that out of 1006 datasets, 453 (371 of the 822 unique systems) succeeded in the first stage of reverse-engineering the DRAM addressing functions, indicating that successfully and reliably recovering DRAM addressing functions remains a significant open problem. In the second stage, 126 (12.5% of all datasets) exhibited bit flips in our fully automated Rowhammer attacks. Our results show that fully-automated, i.e., weaponizable, Rowhammer attacks work on a lower share of systems than FPGA-based and lab experiments indicated but with 12.5% enough to be a practical vector for threat actors. Furthermore, our results highlight that the two most pressing research challenges around Rowhammer exploitability are more reliable reverse-engineering addressing functions, as 50% of datasets without bit flips failed in the DRAM reverse-engineering stage, and reliable Rowhammer attacks across diverse processor microarchitectures, as only 12.5% of datasets contained bit flips. Addressing each of these challenges could double the number of systems susceptible to Rowhammer and make Rowhammer a more pressing threat in real-world scenarios.",
+  "abstract_source_id": "src-abstract-ndss-2026-bde2776a",
   "venue": "ndss",
   "year": 2026,
   "track_or_session": "Fall submission cycle",
@@ -202,6 +204,19 @@
       "official": false,
       "supports": [
         "independent proceedings identity reconciliation"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2026-bde2776a",
+      "url": "https://www.ndss-symposium.org/ndss-paper/flippyram-a-large-scale-study-of-rowhammer-prevalence/",
+      "kind": "paper-page",
+      "title": "FLIPPYRAM: A Large-Scale Study of Rowhammer Prevalence",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:22:03Z",
+      "content_hash": "sha256:4d935293a2cfc98a9eb0f038908a39db6b9e3b0fd679f87b37f10756932a2d0f",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

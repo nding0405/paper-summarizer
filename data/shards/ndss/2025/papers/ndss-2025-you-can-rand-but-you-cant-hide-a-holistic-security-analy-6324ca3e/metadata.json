@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2025-you-can-rand-but-you-cant-hide-a-holistic-security-analy-6324ca3e",
   "title": "You Can Rand but You Can’t Hide: A Holistic Security Analysis of Google Fuchsia’s (and gVisor’s) Network Stack",
+  "abstract": "This research is the first holistic analysis of the algorithmic security of the Google Fuchsia/gVisor network stack. Google Fuchsia is a new operating system developed by Google in a \"clean slate\" fashion. It is conjectured to eventually replace Android as an operating system for smartphones, tablets, and IoT devices. Fuchsia is already running in millions of Google Nest Hub consumer products. Google gVisor is an application kernel used by Google's App Engine, Cloud Functions, Cloud ML Engine, Cloud Run, and Google Kubernetes\n\nEngine (GKE). Google Fuchsia uses the gVisor network stack code for its TCP/IP implementation.\n\nWe report multiple vulnerabilities in the algorithms used by Fuchsia/gVisor to populate network protocol header fields, specifically the TCP initial sequence number, TCP timestamp, TCP and UDP source ports, and IPv4/IPv6 fragment ID fields. In our holistic analysis, we show how a combination of multiple attacks results in the exposure of a PRNG seed and a hashing key used to generate the above fields. This enables an attacker to predict future values of the fields, which facilitates several network attacks. Our work focuses on web-based device tracking based on the stability and relative uniqueness of the PRNG seed and the hashing key. We demonstrate our device tracking techniques over the Internet with browsers running on multiple Fuchsia devices, in multiple browser modes (regular/privacy), and over multiple networks (including IPv4 vs. IPv6). Our tests verify that device tracking for Fuchsia is practical and yields a reliable device ID.\n\nWe conclude with recommendations on mitigating the attacks and their root causes. We reported our findings to Google, which issued CVEs and patches for the security vulnerabilities we disclosed.",
+  "abstract_source_id": "src-abstract-ndss-2025-6324ca3e",
   "venue": "ndss",
   "year": 2025,
   "track_or_session": "Fall submission cycle",
@@ -126,6 +128,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2025-6324ca3e",
+      "url": "https://www.ndss-symposium.org/ndss-paper/you-can-rand-but-you-cant-hide-a-holistic-security-analysis-of-google-fuchsias-and-gvisors-network-stack/",
+      "kind": "paper-page",
+      "title": "You Can Rand but You Can’t Hide: A Holistic Security Analysis of Google Fuchsia’s (and gVisor’s) Network Stack",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:21:02Z",
+      "content_hash": "sha256:42a18fa206f0cfa2785223754de933a923310671dda10f9b0b8b1c1829363921",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

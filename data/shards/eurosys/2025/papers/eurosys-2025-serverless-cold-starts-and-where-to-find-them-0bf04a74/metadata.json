@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "eurosys-2025-serverless-cold-starts-and-where-to-find-them-0bf04a74",
   "title": "Serverless Cold Starts and Where to Find Them",
+  "abstract": "This paper analyzes a month-long trace of 85 billion user requests and 11.9 million cold starts from Huawei's serverless cloud platform. Our analysis spans workloads from five data centers. We focus on cold starts and provide a comprehensive examination of the underlying factors influencing the number and duration of cold starts. These factors include trigger types, request synchronicity, runtime languages, and function resource allocations. We investigate components of cold starts, including pod allocation time, code and dependency deployment time, and scheduling delays, and examine their relationships with runtime languages, trigger types, and resource allocation. We introduce pod utility ratio to measure the pod's useful lifetime relative to its cold start time, giving a more complete picture of cold starts, and see that some pods with long cold start times have longer useful lifetimes. Our findings reveal the complexity and multifaceted origins of the number, duration, and characteristics of cold starts, driven by differences in trigger types, runtime languages, and function resource allocations. For example, cold starts in Region 1 take up to 7 seconds, dominated by dependency deployment time and scheduling. In Region 2, cold starts take up to 3 seconds and are dominated by pod allocation time. Based on this, we identify opportunities to reduce the number and duration of cold starts using strategies for multi-region scheduling. Finally, we suggest directions for future research to address these challenges and enhance the performance of serverless cloud platforms.",
+  "abstract_source_id": "src-abstract-eurosys-2025-0bf04a74",
   "venue": "eurosys",
   "year": 2025,
   "track_or_session": "Session-7.1: Cloud and Serverless Computing - Location: Rotterdam hall 1B - Chair: Martin Kleppmann",
@@ -230,6 +232,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-eurosys-2025-0bf04a74",
+      "url": "https://api.openalex.org/works/doi:10.1145/3689031.3696073?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Serverless Cold Starts and Where to Find Them",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:19:34Z",
+      "content_hash": "sha256:231c7add1498320b1b14a4af48682483e500236376bd2507c33c281e64561841",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

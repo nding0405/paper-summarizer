@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2026-decor-delegated-computation-on-randomness-for-secure-eva-ff3e950b",
   "title": "Decor: Delegated Computation on Randomness for Secure Evaluation of Nonlinear Functions",
+  "abstract": "Secure multiparty computation (MPC) enables privacy-preserving data analysis across distributed computing parties, but its practicality remains limited by the cost and inaccuracy of evaluating complex nonlinear functions. Although secure multiplications are efficiently supported by Beaver multiplication triples-a cornerstone technique in MPC-existing protocols rely on polynomial approximations to evaluate more sophisticated functions, often incurring significant computational overhead and numerical imprecision. We present Decor, a framework that generalizes the core principle behind the Beaver triples to a broad class of nonlinear functions, enabling the construction of efficient MPC primitives. Decor delegates costly nonlinear operations to computations involving only random values, which can be executed in an offline preprocessing phase by a trusted dealer without access to private data. This design enables efficient and accurate evaluation of diverse functions, including trigonometric, hyperbolic, exponential, and sigmoid functions, and introduces a new general-purpose function approximation method for MPC based on Fourier series. Our experiments show that Decor achieves orders-ofmagnitude improvements in accuracy while maintaining comparable or faster runtimes than existing approaches, leading to substantial utility gains for downstream applications such as implicit neural representation of images and logistic model estimation in genome-wide association studies. By demonstrating how randomized preprocessing can yield enhanced MPC primitives, Decor establishes a new framework for practical, privacy-preserving computation.",
+  "abstract_source_id": "src-abstract-sp-2026-ff3e950b",
   "venue": "sp",
   "year": 2026,
   "track_or_session": "Cycle 2",
@@ -154,6 +156,19 @@
       "official": true,
       "supports": [
         "DOI, published-order authors and affiliations, abstract, publication date, page span, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2026-ff3e950b",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Decor: Delegated Computation on Randomness for Secure Evaluation of Nonlinear Functions",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:57Z",
+      "content_hash": "sha256:303a9b5e5ef8908a3cfe67f02eb8a87be978a5fe3281c7ecec8c0cdb512517e0",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

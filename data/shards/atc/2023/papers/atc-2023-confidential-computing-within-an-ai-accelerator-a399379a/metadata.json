@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "atc-2023-confidential-computing-within-an-ai-accelerator-a399379a",
   "title": "Confidential Computing within an AI Accelerator",
+  "abstract": "We present IPU Trusted Extensions (ITX), a set of hardware extensions that enables trusted execution environments in Graphcore’s AI accelerators. ITX enables the execution of AI workloads with strong confidentiality and integrity guarantees at low performance overheads. ITX isolates workloads from untrusted hosts, and ensures their data and models remain encrypted at all times except within the accelerator’s chip. ITX includes a hardware root-of-trust that provides attestation capabilities and orchestrates trusted execution, and on-chip programmable cryptographic engines for authenticated encryption of code/data at PCIe bandwidth.\n\nWe also present software for ITX in the form of compiler and runtime extensions that support multi-party training without requiring a CPU-based TEE.\n\nWe included experimental support for ITX in Graphcore’s GC200 IPU taped out at TSMC’s 7nm node. Its evaluation on a development board using standard DNN training workloads suggests that ITX adds < 5% performance overhead and delivers up to 17x better performance compared to CPU-based confidential computing systems based on AMD SEV-SNP.",
+  "abstract_source_id": "src-abstract-atc-2023-a399379a",
   "venue": "atc",
   "year": 2023,
   "track_or_session": "Hardware and Software for Security and Performance",
@@ -327,6 +329,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-atc-2023-a399379a",
+      "url": "https://www.usenix.org/conference/atc23/presentation/vaswani",
+      "kind": "paper-page",
+      "title": "Confidential Computing within an AI Accelerator",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T21:57:52Z",
+      "content_hash": "sha256:771369c30782c9b52f5f32d047bc8b92733e30a2ed61bdf7919d7eaf171bb21d",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

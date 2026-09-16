@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2026-faster-than-ever-a-new-lightweight-private-set-intersect-54ac8d1b",
   "title": "Faster Than Ever: A New Lightweight Private Set Intersection and Its Variants",
+  "abstract": "In this work, we present a new lightweight two-party Private Set Intersection (PSI) paradigm in both the semi-honest and malicious models. It requires only a small number of base OTs and a single Oblivious Key-Value Stores (OKVS) encoding and decoding. All computations (except for the base OTs) can be implemented using SIMD-accelerated symmetric cryptographic instructions and efficient bitwise operations. Furthermore, we extend the proposed PSI protocol to circuit PSI and, subsequently, to several PSI variants, including PSI-cardinality, PSI-sum, and Private Join and Compute (PJC). All proposed protocols are evaluated under both LAN and WAN settings, with performance compared against existing works. Experimental results show that the proposed PSI outperforms the most efficient VOLE-based PSI by approximately 40% in runtime, while consistently incurring lower communication overhead under the same settings. For circuit PSI, it is up to $3.7times$ faster and reduces communication by a factor of $1.5$ compared to VOLE-based circuit PSI constructions. In the cases of PSI-cardinality and PSI-sum, it achieves speedups of up to $12.4times$ and $10times$, respectively, while incurring only moderate communication overhead. For PJC, the proposed protocol outperforms prior work by $762times$ in runtime and achieves a $3.2times$ reduction in communication, maintaining high efficiency even under a low-bandwidth condition.",
+  "abstract_source_id": "src-abstract-ndss-2026-54ac8d1b",
   "venue": "ndss",
   "year": 2026,
   "track_or_session": "Fall submission cycle",
@@ -181,6 +183,19 @@
       "official": false,
       "supports": [
         "independent proceedings identity reconciliation"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2026-54ac8d1b",
+      "url": "https://www.ndss-symposium.org/ndss-paper/faster-than-ever-a-new-lightweight-private-set-intersection-and-its-variants/",
+      "kind": "paper-page",
+      "title": "Faster Than Ever: A New Lightweight Private Set Intersection and Its Variants",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:22:01Z",
+      "content_hash": "sha256:b52234a951c72440b03a75459cd48a27053268a9a680b37c8329c001cb46e7de",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

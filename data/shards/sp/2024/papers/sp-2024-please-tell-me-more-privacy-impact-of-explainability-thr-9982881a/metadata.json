@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2024-please-tell-me-more-privacy-impact-of-explainability-thr-9982881a",
   "title": "Please Tell Me More: Privacy Impact of Explainability through the Lens of Membership Inference Attack",
+  "abstract": "Explainability is increasingly recognized as an enabling technology for the broader adoption of machine learning (ML), particularly for safety-critical applications. This has given rise to explainable ML, which seeks to enhance the explainability of neural networks through the use of explanators. Yet, the pursuit for better explainability inadvertently leads to increased security and privacy risks. While there has been considerable research into the security risks of explainable ML, its potential privacy risks remain under-explored.To bridge this gap, we present a systematic study of privacy risks in explainable ML through the lens of membership inference. Building on the observation that, besides the accuracy of the model, robustness also exhibits observable differences among member samples and non-member samples, we develop a new membership inference attack. This attack extracts additional membership features from changes in model confidence under different levels of perturbations guided by the importance highlighted by the attribution maps in the explanators. Intuitively, perturbing important features generally results in a bigger loss in confidence for member samples. Using the member-non-member differences in both model performance and robustness, an attack model is trained to distinguish the membership. We evaluated our approach with seven popular explanators across various benchmark models and datasets. Our attack demonstrates there is non-trivial privacy leakage in current explainable ML methods. Furthermore, such leakage issue persists even if the attacker lacks the knowledge of training datasets or target model architectures. Lastly, we also found existing model and output-based defense mechanisms are not effective in mitigating this new attack.",
+  "abstract_source_id": "src-abstract-sp-2024-9982881a",
   "venue": "sp",
   "year": 2024,
   "track_or_session": "Summer cycle",
@@ -159,6 +161,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2024-9982881a",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Please Tell Me More: Privacy Impact of Explainability through the Lens of Membership Inference Attack",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:37Z",
+      "content_hash": "sha256:d186972817127125a98a71b907d7b283fa37f2e757aaf5b9ae232aa389caabc0",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

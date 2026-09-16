@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2026-prvtel-lightweight-models-for-private-and-accurate-telem-cfb484c8",
   "title": "PrvTel: Lightweight Models for Private and Accurate Telemetry Data Retention",
+  "abstract": "Network operators rely on telemetry for performance and security analysis, but long-term retention at scale remains difficult due to privacy requirements, resource constraints, and the need for high-fidelity query answers. We present PrvTel, a framework for privacy-preserving telemetry retention. Instead of storing raw records, PrvTel learns a compact generative model using a domain-specialized variational autoencoder. It combines field-aware encodings for NetFlow and cloud telemetry with a correlation-aware objective to preserve cross-field dependencies. To enforce differential privacy (DP) without sacrificing utility, PrvTel injects structure-aware noise before training, rather than during gradient updates. We prove that PrvTel satisfies DP based on post-processing theorem. Across six real-world datasets and one synthetic workload, PrvTel improves query accuracy by up to 60% over prior DP-compliant generative baselines and reduces ownership cost by up to 50× compared to lossless retention.",
+  "abstract_source_id": "src-abstract-nsdi-2026-cfb484c8",
   "venue": "nsdi",
   "year": 2026,
   "track_or_session": "When ML Meets Its Network",
@@ -202,6 +204,19 @@
         "proceedings page range and page count",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2026-cfb484c8",
+      "url": "https://www.usenix.org/conference/nsdi26/presentation/zhou-yajie",
+      "kind": "paper-page",
+      "title": "PrvTel: Lightweight Models for Private and Accurate Telemetry Data Retention",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:05:54Z",
+      "content_hash": "sha256:672b10ad555b7582627121e846ffe609b33e562802f2b95b2624c69506a7f426",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-exposing-the-guardrails-reverse-engineering-and-jailbrea-ee36d534",
   "title": "Exposing the Guardrails: Reverse-Engineering and Jailbreaking Safety Filters in DALL·E Text-to-Image Pipelines",
+  "abstract": "We investigate the specific design and implementation of safety guardrails in black-box text-to-image (T2I) models, such as DALL·E, which are implemented to prevent potential misuse from generating harmful image content. Specifically, we introduce a novel timing-based side-channel analysis approach to reverse engineer the safety mechanisms of DALL·E models. By measuring and analyzing the differential response times of these systems, we reverse-engineer the architecture of previously unknown cascading safety filters at various stages of the T2I pipeline. Our analysis reveals key takeaways by contrasting safety mechanisms in DALL·E 2 and DALL·E 3: DALL·E 2 uses blocklist-based filtering, whereas DALL·E 3 employs an LLM-based prompt revision stage to improve image quality and filter harmful content. We find discrepancies between the LLM's language understanding and the CLIP embedding used for image generation, which we exploit to develop a negation-based jailbreaking attack. We further uncover gaps in the multilingual coverage of safety measures, which render DALL·E 3 vulnerable to a new class of low-resource language attacks for T2I systems. Lastly, we outline six distinct countermeasures techniques and research directions to address our findings. This work emphasizes the challenges of aligning the diverse components of these systems and underscores the need to improve the consistency and robustness of guardrails across the entire T2I pipeline.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-ee36d534",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "ML and AI Security 1: Images",
@@ -112,6 +114,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-ee36d534",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/villa",
+      "kind": "paper-page",
+      "title": "Exposing the Guardrails: Reverse-Engineering and Jailbreaking Safety Filters in DALL·E Text-to-Image Pipelines",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:19:48Z",
+      "content_hash": "sha256:332a1e148edcc13b55d53eb888607c45dd3896e0f7d26664d89711b6d1fea2fd",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

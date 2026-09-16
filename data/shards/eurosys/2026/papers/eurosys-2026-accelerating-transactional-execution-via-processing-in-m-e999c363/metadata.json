@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "eurosys-2026-accelerating-transactional-execution-via-processing-in-m-e999c363",
   "title": "Accelerating Transactional Execution via Processing-In-Memory",
+  "abstract": "Processing-in-Memory (PIM) integrates compute capabilities directly into memory modules to reduce costly data movement, promising large performance gains for data-intensive workloads. In PIM systems, small processors—Data Processing Units (DPUs)—are embedded near memory banks to execute computations close to where data resides. Although PIM has shown strong benefits for analytical tasks, supporting transactional workloads such as online transaction processing (OLTP) remains challenging due to decentralized DPUs and the lack of efficient hardware coordination mechanisms. We present PIM-TIDE (Processing-in-Memory with Transactional Isolation via Deterministic Execution), a new transaction execution platform designed for PIM architectures. PIM-TIDE provides a lightweight software-based coordination mechanism that enables transactions to span multiple DPUs, while ensuring consistency, atomicity, and isolation. By using the CPU selectively for transaction coordination, PIM-TIDE avoids the performance penalties of frequent inter-DPU communication. We evaluate PIM-TIDE on real PIM hardware (UPMEM) and show that it achieves scalable transaction processing with low overhead, both in terms of performance and energy efficiency, in TPC-C based workloads.",
+  "abstract_source_id": "src-abstract-eurosys-2026-e999c363",
   "venue": "eurosys",
   "year": 2026,
   "track_or_session": null,
@@ -138,6 +140,19 @@
       "official": false,
       "supports": [
         "Publisher-deposited proceedings identity and print publication date."
+      ]
+    },
+    {
+      "id": "src-abstract-eurosys-2026-e999c363",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1145%2F3767295.3803621?fields=title,abstract",
+      "kind": "semantic-scholar",
+      "title": "Accelerating Transactional Execution via Processing-In-Memory",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:19:43Z",
+      "content_hash": "sha256:ecb01bf6eb3d8e75441c000cc319f53686aa94bf58bce0bea88d6647d1b3fa69",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

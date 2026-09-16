@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2025-be-cim-or-be-memory-a-dual-mode-aware-dnn-compiler-for-c-d7cb3889",
   "title": "Be CIM or Be Memory: A Dual-mode-aware DNN Compiler for CIM Accelerators",
+  "abstract": "Computing-in-memory (CIM) architectures demonstrate superior performance over traditional architectures. To unleash the potential of CIM accelerators, many compilation methods have been proposed, focusing on application scheduling optimization specific to CIM. However, existing compilation methods often overlook CIM's capability to switch dynamically between compute and memory modes, which is crucial for accommodating the diverse memory and computational needs of real-world deep neural network architectures, especially the emerging large language models. To fill this gap, we introduce CMSwitch, a novel compiler to optimize resource allocation for CIM accelerators with adaptive mode-switching capabilities, thereby enhancing the performance of DNN applications. Specifically, our approach integrates the compute-memory mode switch into the CIM compilation optimization space by introducing a new hardware abstraction attribute. Then, we propose a novel compilation optimization pass that identifies the optimal network segment and the corresponding mode resource allocations using dynamic programming and mixed-integer programming. CMSwitch uses the tailored meta-operator to express the compilation result in a generalized manner. Evaluation results demonstrate that CMSwitch achieves an average speedup of 1.31x compared to existing SOTA CIM compilation works, highlighting CMSwitch's effectiveness in fully exploiting the potential of CIM processors for a wide range of real-world DNN applications.",
+  "abstract_source_id": "src-abstract-asplos-2025-d7cb3889",
   "venue": "asplos",
   "year": 2025,
   "track_or_session": "Session 9B: Processing in Memory",
@@ -209,6 +211,19 @@
       "official": false,
       "supports": [
         "Indexed abstract and open-access links used for relevance classification and ancillary-link discovery."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2025-d7cb3889",
+      "url": "https://api.openalex.org/works/doi:10.1145/3676641.3716248?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Be CIM or Be Memory: A Dual-mode-aware DNN Compiler for CIM Accelerators",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:00:42Z",
+      "content_hash": "sha256:16fa9654e234010add00de2d1322de9d02e847b23e560dd12493267db3c75543",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2025-rethinking-tamper-evident-logging-a-high-performance-co-63b357cc",
   "title": "Rethinking Tamper-Evident Logging: A High-Performance, Co-Designed Auditing System",
+  "abstract": "Existing tamper-evident logging systems suffer from high overhead and severe data loss in high-load settings, yet only provide coarse-grained tamper detection. Moreover, installing such systems requires recompiling kernel code. To address these challenges, we present Nitro, a high-performance, tamper-evident audit logging system that supports fine-grained detection of log tampering. Even better, our system avoids kernel recompilation by using the eBPF technology. To formally justify the security of Nitro, we provide a new definitional framework for logging systems, and give a practical cryptographic construction meeting this new goal. Unlike prior work that focus only on the cryptographic processing, we codesign the cryptographic part with the pre- and post-processing of the logs to exploit all system-level optimizations. Our evaluations demonstrate Nitro's superior performance, achieving 10X-25X improvements in high-stress conditions and 2X-10X in real-world scenarios while maintaining near-zero data loss. We also provide an advanced variant, Nitro-R that introduces in-kernel log reduction techniques to reduce runtime overhead even further.",
+  "abstract_source_id": "src-abstract-ccs-2025-63b357cc",
   "venue": "ccs",
   "year": 2025,
   "track_or_session": "Cycle 2",
@@ -148,6 +150,19 @@
         "published-order authors",
         "publication-time affiliations",
         "publication date and page span"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2025-63b357cc",
+      "url": "https://api.openalex.org/works/doi:10.1145/3719027.3765024?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Rethinking Tamper-Evident Logging: A High-Performance, Co-Designed Auditing System",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:15:48Z",
+      "content_hash": "sha256:75c0fa8de0d8d95cbc9342a1af211b07539174ec5f81dc1bb2cc1f7bb111d46f",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

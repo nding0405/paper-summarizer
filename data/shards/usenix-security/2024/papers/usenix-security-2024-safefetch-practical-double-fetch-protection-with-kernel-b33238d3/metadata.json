@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2024-safefetch-practical-double-fetch-protection-with-kernel-b33238d3",
   "title": "SafeFetch: Practical Double-Fetch Protection with Kernel-Fetch Caching",
+  "abstract": "Double-fetch bugs (or vulnerabilities) stem from in-kernel system call execution fetching the same user data twice without proper data (re)sanitization, enabling TOCTTOU attacks and posing a major threat to operating systems security. Existing double-fetch protection systems rely on the MMU to trap on writes to syscall-accessed user pages and provide the kernel with a consistent snapshot of user memory. While this strategy can hinder attacks, it also introduces nontrivial runtime performance overhead due to the cost of trapping/remapping and the coarse (page-granular) write interposition mechanism.\n\nIn this paper, we propose SafeFetch, a practical solution to protect the kernel from double-fetch bugs. The key intuition is that most system calls fetch small amounts of user data (if at all), hence caching this data in the kernel can be done at a small performance cost. To this end, SafeFetch creates per-syscall caches to persist fetched user data and replay them when they are fetched again within the same syscall. This strategy neutralizes all double-fetch bugs, while eliminating trapping/remapping overheads and relying on efficient byte-granular interposition. Our Linux prototype evaluation shows SafeFetch can provide comprehensive protection with low performance overheads (e.g., 4.4% geomean on LMBench), significantly outperforming state-of-the-art solutions.",
+  "abstract_source_id": "src-abstract-usenix-security-2024-b33238d3",
   "venue": "usenix-security",
   "year": 2024,
   "track_or_session": "System Security II: OS Kernel",
@@ -112,6 +114,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2024-b33238d3",
+      "url": "https://www.usenix.org/conference/usenixsecurity24/presentation/duta",
+      "kind": "paper-page",
+      "title": "SafeFetch: Practical Double-Fetch Protection with Kernel-Fetch Caching",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:17:02Z",
+      "content_hash": "sha256:931545fe286345e1d94c32de471536edbec65b20ecd33e18996b3b32d06f79b1",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

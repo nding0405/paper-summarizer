@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2025-automatic-insecurity-exploring-email-auto-configuration-89c8d0d0",
   "title": "Automatic Insecurity: Exploring Email Auto-configuration in the Wild",
+  "abstract": "Email clients that support auto-configuration mechanisms automatically retrieve server configuration information, such as the hostname, port number, and connection type, allowing users to log in by simply entering email addresses and passwords. Auto-configuration mechanisms are being increasingly adopted. However, the security implications of these mechanisms, both in terms of implementation and deployment, have not yet been thoroughly studied. In this paper, we present the first systematic analysis of security threats associated with email auto-configuration and evaluate their impacts. We summarize 10 attack scenarios, covering 17 defects (including 8 newly identified ones), along with 4 inadequate client UI notifications. These attack scenarios can either cause a victim to connect to an attacker-controlled server or establish an insecure connection, putting the victim’s credentials at risk. Moreover, our large-scale measurements and in-depth analysis revealed serious insecurity of auto-configuration applications in the wild. On the server-side, we discovered 49,013 domains, including 19 of the Top-1K popular domains, were misconfigured. On the client-side, 22 out of 29 clients were vulnerable to those threats. Moreover, 27 out of 29 clients exhibited at least one UI-notification defect that facilitates silent attacks. These defects arise from misconfiguration, mismanagement, flawed implementation and compatibility. We hope this paper raises attention to email auto-configuration security.",
+  "abstract_source_id": "src-abstract-ndss-2025-89c8d0d0",
   "venue": "ndss",
   "year": 2025,
   "track_or_session": "Fall submission cycle",
@@ -202,6 +204,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2025-89c8d0d0",
+      "url": "https://www.ndss-symposium.org/ndss-paper/automatic-insecurity-exploring-email-auto-configuration-in-the-wild/",
+      "kind": "paper-page",
+      "title": "Automatic Insecurity: Exploring Email Auto-configuration in the Wild",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:19:07Z",
+      "content_hash": "sha256:1864455f924f5324033a69f63adc3fcd67d48591f5a00e1f4d35a57c944970e7",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

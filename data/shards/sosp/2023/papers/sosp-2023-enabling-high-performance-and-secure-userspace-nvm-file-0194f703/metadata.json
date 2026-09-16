@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sosp-2023-enabling-high-performance-and-secure-userspace-nvm-file-0194f703",
   "title": "Enabling High-Performance and Secure Userspace NVM File Systems with the Trio Architecture",
+  "abstract": "Userspace library file systems (LibFSes) promise to unleash the performance potential of non-volatile memory (NVM) by directly accessing it and enabling unprivileged applications to customize their LibFSes to their workloads. Unfortunately, such benefits pose a significant challenge to ensuring metadata integrity. Existing works either underutilize NVM's performance or forgo critical file system security guarantees. We present Trio, a userspace NVM file system architecture that resolves this inherent tension with a clean decoupling among file system design, access control, and metadata integrity enforcement. Our key insight is that other state (i.e., auxiliary state) in a file system can be regenerated from its \"ground truth\" state (i.e., core state). Thus, Trio explicitly defines the data structure of a single core state and shares it as common knowledge among its LibFSes and the trusted entity. Enabled by this, a LibFS can directly access NVM without involving the trusted entity and can be customized with its private auxiliary state. The trusted entity enforces metadata integrity by verifying the core state of a file when its write access is transferred from one LibFS to another. We design a generic POSIX-like file system called ArckFS and two customized file systems based on the Trio architecture. Our evaluation shows that ArckFS outperforms existing NVM file systems by 3.1× to 17× on LevelDB while the customized file systems further outperform ArckFS by 1.3×.",
+  "abstract_source_id": "src-abstract-sosp-2023-0194f703",
   "venue": "sosp",
   "year": 2023,
   "track_or_session": "Session 3: Storage",
@@ -188,6 +190,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-sosp-2023-0194f703",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Enabling High-Performance and Secure Userspace NVM File Systems with the Trio Architecture",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:12Z",
+      "content_hash": "sha256:aa9c23a45f6ec9973f40e6c9520c69d42bb49fc1f526891570edfdb1976cff82",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

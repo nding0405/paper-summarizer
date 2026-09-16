@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2023-recursion-over-public-coin-interactive-proof-systems-fas-4f6e9b00",
   "title": "Recursion over Public-Coin Interactive Proof Systems; Faster Hash Verification",
+  "abstract": "SNARK is a well-known family of cryptographic tools that is increasingly used in the field of computation integrity at scale. In this area, multiple works have introduced SNARK-friendly cryptographic primitives: hashing, but also encryption and signature verification. Despite all the efforts to create cryptographic primitives that can be proved faster, it remains a major performance hole in practice. In this paper, we present a recursive technique that can improve the efficiency of the prover by an order of magnitude compared to proving MiMC hashes (a SNARK-friendly hash function, Albrecht et al. 2016) with a Groth16 (Eurocrypt 2016) proof. We use GKR (a well-known public-coin argument system by Goldwasser et al., STOC 2008) to prove the integrity of hash computations and embed the GKR verifier inside a SNARK circuit. The challenge comes from the fact that GKR is a public-coin interactive protocol, and applying Fiat-Shamir naively may result in worse performance than applying existing techniques directly. This is because Fiat-Shamir itself is involved with hash computation over a large string. We take advantage of a property that SNARK schemes commonly have, to build a protocol in which the Fiat-Shamir hashes have very short inputs. The technique we present is generic and can be applied over any SNARK-friendly hash, most known SNARK schemes, and any (one-round) public-coin argument system in place of GKR. We emphasize that while our general compiler is secure in the random oracle model, our concrete instantiation (i.e., GKR plus outer SNARK) is only proved to be heuristically secure. This is due to the fact we first need to convert the GKR protocol to a one-round protocol. Thus, the random oracle of GKR, starting from the second round, is replaced with a concrete hash inside the outer layer SNARK which makes the security-proof heuristic.",
+  "abstract_source_id": "src-abstract-ccs-2023-4f6e9b00",
   "venue": "ccs",
   "year": 2023,
   "track_or_session": "Zero Knowledge Proofs (Applied Cryptography)",
@@ -190,6 +192,19 @@
       "official": false,
       "supports": [
         "published title, author order, and page span"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2023-4f6e9b00",
+      "url": "https://api.openalex.org/works/doi:10.1145/3576915.3623078?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Recursion over Public-Coin Interactive Proof Systems; Faster Hash Verification",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:08:04Z",
+      "content_hash": "sha256:afa5f90c5469d27b5a0935b4a2e94020cc0f47b8cba9d7dc6539e9af56636095",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

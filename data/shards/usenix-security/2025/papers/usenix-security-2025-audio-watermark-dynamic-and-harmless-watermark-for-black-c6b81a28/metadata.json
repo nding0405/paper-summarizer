@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-audio-watermark-dynamic-and-harmless-watermark-for-black-c6b81a28",
   "title": "AUDIO WATERMARK: Dynamic and Harmless Watermark for Black-box Voice Dataset Copyright Protection",
+  "abstract": "Many open-sourced audio datasets require that they can only be adopted for academic or educational purposes, yet there is currently no effective method to ensure compliance with these conditions. Ideally, the dataset owner can apply a watermark to their dataset, enabling them to identify any model that utilizes the watermarked data. While traditional backdoor-based approaches can achieve this objective, they present significant drawbacks: 1) they introduce harmful backdoors into the model; 2) they are ineffective with black-box models; 3) they compromise audio quality; 4) they are easily detectable due to their static backdoor patterns. In this paper, we introduce AUDIO WATERMARK, a dynamic and harmless watermark specifically designed for black-box voice dataset copyright protection. The dynamism of the watermark is achieved through a style-transfer generative model and random reference style patterns; its harmlessness is ensured by utilizing an out-of-domain (OOD) feature, which allows the watermark to be correctly recognized by the watermarked model without altering the ground truth label. The efficacy in black-box settings is accomplished through a bi-level adversarial optimization strategy, which trains a generalized model to counteract the watermark generator, thereby enhancing the watermark's stealthiness across multiple target models. We evaluate our watermark across 2 voice datasets and 10 speaker recognition models, comparing it with 10 existing protections and testing it in 8 attack scenarios. We achieve minimal harmful impact, with nearly 100% benign accuracy, a 95% verification success rate, and demonstrate resistance to all tested attacks.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-c6b81a28",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "ML and AI Security 2",
@@ -217,6 +219,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-c6b81a28",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/guo-hanqing",
+      "kind": "paper-page",
+      "title": "AUDIO WATERMARK: Dynamic and Harmless Watermark for Black-box Voice Dataset Copyright Protection",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:18:43Z",
+      "content_hash": "sha256:cb95493c0b03ffae279899d630c5c9324119d5cfd0ca06b41d97470509035113",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

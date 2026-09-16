@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sigcomm-2026-detection-and-localization-of-end-to-end-bitflip-errors-014a2088",
   "title": "Detection and Localization of End-to-end Bitflip Errors in Data Centers",
+  "abstract": "Packet corrupting devices can cause bitflips and data corruption, and, depending on exactly where the corruption occurs, can evade even strong link-level checks. Even though such instances are probabilistically rare, they are all too common at hyper-scale. At Meta, they have been causing end-to-end errors for years in our datacenter fleet, resulting in dozens of instances of performance impact to services, and rare instances of data corruption. Over the years, we have developed three tools that have progressively improved our ability to localize this problem to specific hosts, rack switches, links, and even specific ports on those switches. They include a fleet wide passive monitoring service to track Layer-4 checksum errors detected by hosts, an active monitoring and fault localization system to probe for corruption on devices and localize them to individual links at any layer of the topology; and a loopback test to reproduce and confirm packet corruption on specific ports on localized switches. Together, they comprise Flipperino, a system that detects and localizes packet corrupting devices, making it easy to identify them for remediation. We share our experience from investigations, and recent results from Flipperino, which has localized devices causing 97% of Layer-4 checksum errors. We have also reproduced corruption on 8 switches in the last 3 months, including 7 rack switches and a fabric switch.",
+  "abstract_source_id": "src-abstract-sigcomm-2026-014a2088",
   "venue": "sigcomm",
   "year": 2026,
   "track_or_session": "Experience Session 3: Diagnosis & Root-Cause Analysis — Experience Paper",
@@ -191,6 +193,19 @@
       "official": true,
       "supports": [
         "official main-paper scope and track definitions"
+      ]
+    },
+    {
+      "id": "src-abstract-sigcomm-2026-014a2088",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/search/match?query=Detection%20and%20Localization%20of%20End-to-end%20Bitflip%20Errors%20in%20Data%20Centers&fields=title,abstract",
+      "kind": "semantic-scholar",
+      "title": "Detection and Localization of End-to-end Bitflip Errors in Data Centers",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:59:47Z",
+      "content_hash": "sha256:1698caae4c58b5476b880da4e66727cb3365bbfeba3dcc291cba6db9e66de0b2",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

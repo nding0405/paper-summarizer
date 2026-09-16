@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sigcomm-2023-masking-corruption-packet-losses-in-datacenter-networks-c90714ce",
   "title": "Masking Corruption Packet Losses in Datacenter Networks with Link-local Retransmission",
+  "abstract": "Packet loss due to link corruption is a major problem in large warehouse-scale datacenters. The current state-of-the-art approach of disabling corrupting links is not adequate because, in practice, all the corrupting links cannot be disabled due to capacity constraints. In this paper, we show that, it is feasible to implement link-local retransmission at sub-RTT timescales to completely mask corruption packet losses from the transport endpoints. Our system, LinkGuardian, employs a range of techniques to (i) keep the packet buffer requirement low, (ii) recover from tail packet losses without employing timeouts, and (iii) preserve packet ordering. We implement LinkGuardian on the Intel Tofino switch and show that for a 100G link with a loss rate of 10−3, LinkGuardian can reduce the loss rate by up to 6 orders of magnitude while incurring only 8% reduction in effective link speed. By eliminating tail packet losses, LinkGuardian improves the 99.9th percentile flow completion time (FCT) for TCP and RDMA by 51x and 66x respectively. Finally, we also show that in the context of datacenter networks, simple out-of-order retransmission is often sufficient to significantly mitigate the impact of corruption packet loss for short TCP flows.",
+  "abstract_source_id": "src-abstract-sigcomm-2023-c90714ce",
   "venue": "sigcomm",
   "year": 2023,
   "track_or_session": "Congestion Control — Research Paper",
@@ -214,6 +216,19 @@
         "publisher-deposited ORCIDs",
         "proceedings page range and print publication date",
         "empty publisher relation metadata for alternate-version checks"
+      ]
+    },
+    {
+      "id": "src-abstract-sigcomm-2023-c90714ce",
+      "url": "https://api.openalex.org/works/doi:10.1145/3603269.3604853?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Masking Corruption Packet Losses in Datacenter Networks with Link-local Retransmission",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:22:55Z",
+      "content_hash": "sha256:fabb2245b235389debea96a0d486d0bfa0cdf7f0357da4dae358eb6f9ee7669d",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

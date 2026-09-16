@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2026-it-takes-two-to-entangle-020291ba",
   "title": "It Takes Two to Entangle",
+  "abstract": "Distributed machine learning training and inference is common today because today's large models require more memory and compute than can be provided by a single GPU. Distributed models are generally produced by programmers who take a sequential model specification and apply several distribution strategies to distribute state and computation across GPUs. Unfortunately, bugs can be introduced in the process, and a distributed model implementation's outputs might differ from the sequential model's outputs. In this paper, we describe an approach to statically identify such bugs by checking model refinement, that is, can the sequential model's outputs be reconstructed from the distributed model's outputs? Our approach, implemented in Entangle, uses iterative rewriting to prove model refinement. Our approach can scale to today's large models and deployments: we evaluate it using GPT and Llama-3. Further, it provides actionable outputs that aids in bug localization.",
+  "abstract_source_id": "src-abstract-asplos-2026-020291ba",
   "venue": "asplos",
   "year": 2026,
   "track_or_session": "Session 5A: Generative Model Serving",
@@ -167,6 +169,19 @@
       "official": false,
       "supports": [
         "Indexed abstract used for strict relevance classification and indexed arXiv identifier where available."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2026-020291ba",
+      "url": "https://api.openalex.org/works/doi:10.1145/3779212.3790178?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "It Takes Two to Entangle",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:05:32Z",
+      "content_hash": "sha256:041787d1797d5441b5153e7d8bdc4f48b8e11a2a361496c9f864603b353596a7",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

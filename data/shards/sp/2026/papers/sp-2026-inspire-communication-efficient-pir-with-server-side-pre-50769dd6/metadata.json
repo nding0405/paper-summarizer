@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2026-inspire-communication-efficient-pir-with-server-side-pre-50769dd6",
   "title": "InsPIRe: Communication-Efficient PIR with Server-side Preprocessing",
+  "abstract": "We present InsPIRe that is the first private information retrieval (PIR) construction simultaneously obtaining both high-throughput and low query communication while using only server-side preprocessing (meaning no offline communication). Prior PIR schemes with both high-throughput and low query communication required substantial offline communication of either downloading a database hint that is $10-100 \\mathrm{x}$ larger than the communication cost of a single query (such as SimplePIR and DoublePIR [Henzinger et al., USENIX Security 2023]) or streaming the entire database (such as Piano [Zhou et al., S&P 2024]). In contrast, recent works such as YPIR [Menon and Wu, USENIX Security 2024] avoid offline communication at the cost of increasing the query size by $1.8-2 \\mathrm{x}$, up to $1-2 \\text{MB}$ per query. Our new PIR protocol, InsPIRe, obtains the best of both worlds by obtaining high-throughput and low communication without requiring any offline communication. Compared to YPIR, InsPIRe requires 5x smaller cryptographic keys, requires up to 50 % less online query communication while obtaining up to 25 % higher throughput. We show that InsPIRe enables improvements across a wide range of applications and database shapes including the InterPlanetary File System and private device enrollment. At the core of InsPIR, we develop a novel ring packing algorithm, InspiRING, for transforming LWE ciphertexts into RLWE ciphertexts. InspiRING is more amenable to the server-side preprocessing setting that allows moving the majority of the necessary operations to offline preprocessing. InspiRING only requires two key-switching matrices whereas prior approaches needed logarithmic key-switching matrices. We also show that InspiRING has smaller noise growth and faster packing times than prior works in the setting when the total key-switching material sizes must be small. To further reduce communication costs in the PIR protocol, InsPIRe performs the second level of PIR using homomorphic polynomial evaluation, which only requires one additional ciphertext from the client.",
+  "abstract_source_id": "src-abstract-sp-2026-50769dd6",
   "venue": "sp",
   "year": 2026,
   "track_or_session": "Cycle 1",
@@ -133,6 +135,19 @@
       "official": true,
       "supports": [
         "DOI, published-order authors and affiliations, abstract, publication date, page span, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2026-50769dd6",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "InsPIRe: Communication-Efficient PIR with Server-Side Preprocessing",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:58:02Z",
+      "content_hash": "sha256:4204efad9387253e2c70bd18217fac7c5220b9cd43ecd6179fdc27c5a043343e",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

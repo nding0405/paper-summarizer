@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2025-decouple-and-decompose-scaling-resource-allocation-with-e24b4a2a",
   "title": "Decouple and Decompose: Scaling Resource Allocation with DeDe",
+  "abstract": "Efficient resource allocation is essential in cloud systems to facilitate resource sharing among tenants. However, the growing scale of these optimization problems have outpaced commercial solvers commonly employed in production. To accelerate resource allocation, prior approaches either customize solutions for narrow domains or impose workload-specific assumptions. In this work, we revisit real-world resource allocation problems and uncover a common underlying structure: the vast majority of these problems are inherently separable , i.e., they optimize the aggregate utility of individual resource and demand allocations, under separate constraints for each resource and each demand. Building on this observation, we develop DeDe, a scalable and theoretically rooted optimization framework for large-scale resource allocation. At the core of DeDe is a decouple-and-decompose approach: it decouples entangled resource and demand constraints and thereby decomposes the overall optimization into alternating per-resource and per-demand subproblems that can be solved efficiently and in parallel. We have implemented and released DeDe as a Python package with a familiar modeling interface. Our experiments on three representative resource allocation tasks — cluster scheduling, traffic engineering, and load balancing — demonstrate that DeDe delivers significant speedups while generating higher-quality allocations.",
+  "abstract_source_id": "src-abstract-osdi-2025-e24b4a2a",
   "venue": "osdi",
   "year": 2025,
   "track_or_session": "Scheduling and Resource Management",
@@ -138,6 +140,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2025-e24b4a2a",
+      "url": "https://www.usenix.org/conference/osdi25/presentation/xu",
+      "kind": "paper-page",
+      "title": "Decouple and Decompose: Scaling Resource Allocation with DeDe",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:07:29Z",
+      "content_hash": "sha256:312f1193000e5f7993c29e9eccb27d7387e462ed69742c3e899461c2d7dba00a",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2025-mvq-towards-efficient-dnn-compression-and-acceleration-w-dac4010e",
   "title": "MVQ: Towards Efficient DNN Compression and Acceleration with Masked Vector Quantization",
+  "abstract": "Vector quantization(VQ) is a hardware-friendly DNN compression method that can reduce the storage cost and weight-loading datawidth of hardware accelerators. However, conventional VQ techniques lead to significant accuracy loss because the important weights are not well preserved. To tackle this problem, a novel approach called MVQ is proposed, which aims at better approximating important weights with a limited number of codewords. At the algorithm level, our approach removes the less important weights through N:M pruning and then minimizes the vector clustering error between the remaining weights and codewords by the masked k-means algorithm. Only distances between the unpruned weights and the codewords are computed, which are then used to update the codewords. At the architecture level, our accelerator implements vector quantization on an EWS (Enhanced weight stationary) CNN accelerator and proposes a sparse systolic array design to maximize the benefits brought by masked vector quantization.",
+  "abstract_source_id": "src-abstract-asplos-2025-dac4010e",
   "venue": "asplos",
   "year": 2025,
   "track_or_session": "Session 5A: ML Systems 1",
@@ -236,6 +238,19 @@
       "official": false,
       "supports": [
         "Indexed abstract and open-access links used for relevance classification and ancillary-link discovery."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2025-dac4010e",
+      "url": "https://api.openalex.org/works/doi:10.1145/3669940.3707268?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "MVQ: Towards Efficient DNN Compression and Acceleration with Masked Vector Quantization",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:02:20Z",
+      "content_hash": "sha256:b9b0b8b088230db9b167dd49dd8bfbed52172ca99c1f61b7445a5de3cded3e56",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

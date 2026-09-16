@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-cutting-the-fuse-actionable-apt-attack-blocking-in-prove-3913229c",
   "title": "Cutting the Fuse: Actionable APT Attack Blocking in Provenance-based IDS",
+  "abstract": "Provenance-based Intrusion Detection Systems (PIDS) are a critical line of defense against Advanced Persistent Threats (APTs). However, their practical deployment is crippled by alert flooding; state-of-the-art PIDS focus on detection performance, outputting thousands of low-information, unactionable alerts. These outputs fail to isolate the true cause of the detector's alert and cannot provide the security operations center(SOC) with actionable blocking strategies.\n\nTo address this challenge, we propose ProvX, a novel APT defense framework designed for blocking attack steps within alerts. Unlike existing works, ProvX does not aim to merely improve attack detection performance; it is dedicated to transforming unactionable raw alerts into a core edge list for immediate review. Specifically, we introduce counterfactual explanation logic to reduce the alerts and find the minimal structural subset (i.e., the core attack edges) within an alert that determines its malicious prediction. This subset, when perturbed, can subvert the model's original prediction. The framework then applies a staged solidification strategy to enhance the precision and stability of the alert analysis. Ultimately, ProvX outputs an actionable core edge list for immediate response and blocking of critical attack steps. Experiments on DARPA datasets demonstrate that ProvX can locate key behaviors within alerts that are highly relevant to real-world attacks, and the identified core edges can flip many detector alerts under the simulated intervention used in our model-level evaluation. Furthermore, we explore and provide a preliminary validation of an alert-feedback enhancement framework, showing that ProvX's analysis results can guide model optimization in adversarial scenarios.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-3913229c",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Network Security 2",
@@ -197,6 +199,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-3913229c",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/wu-weiheng",
+      "kind": "paper-page",
+      "title": "Cutting the Fuse: Actionable APT Attack Blocking in Provenance-based IDS",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:23:35Z",
+      "content_hash": "sha256:c403b011d056618d6725e8e0a236cb972df543f0eccbee3f94c3135fe816419e",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "atc-2023-aware-automate-workload-autoscaling-with-reinforcement-l-aff54d2c",
   "title": "AWARE: Automate Workload Autoscaling with Reinforcement Learning in Production Cloud Systems",
+  "abstract": "Workload autoscaling is widely used in public and private cloud systems to maintain stable service performance and save resources. However, it remains challenging to set the optimal resource limits and dynamically scale each workload at runtime. Reinforcement learning (RL) has recently been proposed and applied in various systems tasks, including resource management. In this paper, we first characterize the state-of-the-art RL approaches for workload autoscaling in a public cloud and point out that there is still a large gap in taking the RL advances to production systems. We then propose AWARE, an extensible framework for deploying and managing RL-based agents in production systems. AWARE leverages meta-learning and bootstrapping to (a) automatically and quickly adapt to different workloads, and (b) provide safe and robust RL exploration. AWARE provides a common OpenAI Gym-like RL interface to agent developers for easy integration with different systems tasks. We illustrate the use of AWARE in the case of workload autoscaling. Our experiments show that AWARE adapts a learned autoscaling policy to new workloads 5.5x faster than the existing transfer-learning-based approach and provides stable online policy-serving performance with less than 3.6% reward degradation. With bootstrapping, AWARE helps achieve 47.5% and 39.2% higher CPU and memory utilization while reducing SLO violations by a factor of 16.9x during policy training.",
+  "abstract_source_id": "src-abstract-atc-2023-aff54d2c",
   "venue": "atc",
   "year": 2023,
   "track_or_session": "Cloud and Microservices",
@@ -243,6 +245,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-atc-2023-aff54d2c",
+      "url": "https://www.usenix.org/conference/atc23/presentation/qiu-haoran",
+      "kind": "paper-page",
+      "title": "AWARE: Automate Workload Autoscaling with Reinforcement Learning in Production Cloud Systems",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T21:57:47Z",
+      "content_hash": "sha256:f1a477bda63682c17c663479f9f5ecd551b40ceb4a71653c7baaca99f4ce813a",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

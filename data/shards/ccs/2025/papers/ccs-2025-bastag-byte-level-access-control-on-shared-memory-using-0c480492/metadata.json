@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2025-bastag-byte-level-access-control-on-shared-memory-using-0c480492",
   "title": "BASTAG: Byte-level Access Control on Shared Memory using ARM Memory Tagging Extension",
+  "abstract": "As software grows in size and complexity, modular designs are increasingly adopted, leading to frequent interactions via shared memory between components. This design however increases the risk of vulnerabilities from uncontrolled memory access to shared memory. Enforcing byte-level access control can mitigate these risks by enabling byte-level permissions on complex shared objects and their sub-elements. However, existing approaches face performance limitations as they increase the granularity of control to byte level. In this paper, we present BASTAG, a novel system that leverages ARM's Memory Tagging Extension (MTE) to tack this challenge. Although MTE enforces tag-matching between pointers and memory, its hardware-defined granularity is too coarse to support byte-level control on its own. To address the inherent limitations of applying MTE for nuanced access control, BASTAG incorporates a technique known as shadow memory tagging that places separate, but associated MTE tags for the actual memory targets, allowing for more flexible and finer access control with efficiency. We implemented a BASTAG prototype on AArch64 hardware with MTE support and evaluated it on three real-world use cases. Our results demonstrate that BASTAG significantly outperforms existing byte-level access control mechanisms.",
+  "abstract_source_id": "src-abstract-ccs-2025-0c480492",
   "venue": "ccs",
   "year": 2025,
   "track_or_session": "Cycle 1",
@@ -169,6 +171,19 @@
         "published-order authors",
         "publication-time affiliations",
         "publication date and page span"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2025-0c480492",
+      "url": "https://api.openalex.org/works/doi:10.1145/3719027.3744849?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "BASTAG: Byte-level Access Control on Shared Memory using ARM Memory Tagging Extension",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:12:54Z",
+      "content_hash": "sha256:afa44a7f0275bacbec1ac8e5f40122262940baed529cc3b670a3037b53fb677f",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

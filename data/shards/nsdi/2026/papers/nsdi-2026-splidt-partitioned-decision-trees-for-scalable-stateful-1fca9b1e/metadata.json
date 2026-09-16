@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2026-splidt-partitioned-decision-trees-for-scalable-stateful-1fca9b1e",
   "title": "SPLIDT: Partitioned Decision Trees for Scalable Stateful Inference at Line Rate",
+  "abstract": "Machine learning (ML) is increasingly being deployed in programmable data planes (switches and SmartNICs) to enable real-time traffic analysis, security monitoring, and in-network decision-making. Decision trees (DTs) are particularly well-suited for these tasks due to their interpretability and compatibility with data-plane architectures, i.e., match-action tables (MATs). However, existing in-network DT implementations are constrained by the need to compute all input features upfront, forcing models to rely on a small, fixed set of features per flow. This significantly limits model accuracy and scalability under stringent hardware resource constraints.\n\nWe present SPLIDT, a system that rethinks DT deployment in the data plane by enabling partitioned inference over sliding windows of packets. SPLIDT introduces two key innovations: (1) it groups individual subtrees of a DT into partitions and allows each subtree to have its own feature set, and (2) it leverages an in-band control channel (via recirculation) to reuse data-plane resources (both stateful registers and match keys) across partitions at line rate. These insights allow SPLIDT to scale the number of stateful features a model can use without exceeding hardware limits. To support this architecture, SPLIDT incorporates a custom training and design-space exploration (DSE) framework that jointly optimizes feature allocation, tree partitioning, and DT model depth. Evaluation across multiple real-world datasets shows that SPLIDT achieves higher accuracy while supporting up to 5x more stateful features than prior approaches (e.g., NetBeacon and Leo). It maintains the same low time-to-detection (TTD) as these systems, while scaling to millions of flows with minimal recirculation overhead (≤ 0.05%).",
+  "abstract_source_id": "src-abstract-nsdi-2026-1fca9b1e",
   "venue": "nsdi",
   "year": 2026,
   "track_or_session": "Overfitting the Internet",
@@ -202,6 +204,19 @@
         "proceedings page range and page count",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2026-1fca9b1e",
+      "url": "https://www.usenix.org/conference/nsdi26/presentation/parvez",
+      "kind": "paper-page",
+      "title": "SPLIDT: Partitioned Decision Trees for Scalable Stateful Inference at Line Rate",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:06:05Z",
+      "content_hash": "sha256:d90303a4df141ddbb4058999b23407962f41769dad278c410203954a21c70818",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

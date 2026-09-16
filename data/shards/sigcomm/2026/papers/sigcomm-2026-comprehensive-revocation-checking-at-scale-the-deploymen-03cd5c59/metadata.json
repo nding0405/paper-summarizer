@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sigcomm-2026-comprehensive-revocation-checking-at-scale-the-deploymen-03cd5c59",
   "title": "Comprehensive Revocation Checking at Scale: the Deployment of CRLite in Mozilla Firefox",
+  "abstract": "This paper describes the multi-year effort undertaken by Mozilla to incorporate and deploy CRLite, a TLS certificate revocation checking system, in the Firefox browser. With the deprecation of the Online Certificate Status Protocol (OCSP) by Let's Encrypt and others, CRLite is now the only broadly deployed mechanism capable of checking the revocation status of every TLS certificate. The successful seven-year evolution of CRLite from a research prototype to a widely used tool required improvements in the original data structures (now using partitioned Ribbon filters), changes in Certificate Authority revocation practices, and correctly synchronizing with Certificate Transparency logs to eliminate false positives. Using data from Firefox's opt-in telemetry, we report that CRLite achieves an effective revocation coverage of 87.8% while maintaining moderate bandwidth costs, even during real revocation events like the November 2025 Microsoft incident. Through simulations, we also examine the potential impacts of shorter certificate lifetimes and hypothetical mass revocations on CRLite. CRLite demonstrates that low-latency, private, comprehensive certificate revocation checking is possible using moderate bandwidth.",
+  "abstract_source_id": "src-abstract-sigcomm-2026-03cd5c59",
   "venue": "sigcomm",
   "year": 2026,
   "track_or_session": "Experience Session 6: Deployment Experiences: Security, Transport & Core — Experience Paper",
@@ -212,6 +214,19 @@
       "official": true,
       "supports": [
         "official main-paper scope and track definitions"
+      ]
+    },
+    {
+      "id": "src-abstract-sigcomm-2026-03cd5c59",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/search/match?query=Comprehensive%20Revocation%20Checking%20at%20Scale%3A%20the%20Deployment%20of%20CRLite%20in%20Mozilla%20Firefox&fields=title,abstract",
+      "kind": "semantic-scholar",
+      "title": "Comprehensive Revocation Checking at Scale: the Deployment of CRLite in Mozilla Firefox",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:58:52Z",
+      "content_hash": "sha256:f9f1ba36f14341149ca7eb7542d11aa4859f131718d04e6d31ce4544ed63e540",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

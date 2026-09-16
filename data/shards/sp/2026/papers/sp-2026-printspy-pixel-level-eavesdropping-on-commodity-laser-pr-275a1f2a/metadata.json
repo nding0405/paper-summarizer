@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2026-printspy-pixel-level-eavesdropping-on-commodity-laser-pr-275a1f2a",
   "title": "PrintSpy: Pixel-Level Eavesdropping on Commodity Laser Printers via Electromagnetic Side Channels",
+  "abstract": "Laser printers are among the most widely used output devices, serving as the final gateway for sensitive information to transition from the digital domain to physical media. However, the high-speed switching of the laser diode and the complex driving of the scanning system inevitably generate electromagnetic emissions. While traditionally regarded merely as byproducts of electromagnetic compatibility, these signals in fact carry information closely correlated with printed content, thus forming a potential physical-layer side channel. This paper presents PrintSpy, an EM side-channel analysis framework capable of non-intrusive, pixel-level reconstruction of printed content. PrintSpy establishes a cross-domain mapping mechanism that converts one-dimensional temporal EM waveforms into two-dimensional pixel matrices through energybased signal modeling and anchor-based projection, enabling robust alignment between temporal samples and printed pixels for high-fidelity page reconstruction. To address structural degradation under low signal-to-noise ratios, we further design a dual-constraint conditional diffusion model that jointly incorporates pixel priors and projection-consistency guidance to reconstruct fine-grained textures and stroke structures under noise-dominated degradation. Experimental results on multiple consumer-grade printers and real-world environments demonstrate that PrintSpy achieves stable and quantifiable content recovery, with an average character error rate below 17.91 % and reconstructable font sizes down to 6.5 pt.",
+  "abstract_source_id": "src-abstract-sp-2026-275a1f2a",
   "venue": "sp",
   "year": 2026,
   "track_or_session": "Cycle 2",
@@ -175,6 +177,19 @@
       "official": true,
       "supports": [
         "DOI, published-order authors and affiliations, abstract, publication date, page span, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2026-275a1f2a",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "PrintSpy: Pixel-Level Eavesdropping on Commodity Laser Printers via Electromagnetic Side Channels",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:58:02Z",
+      "content_hash": "sha256:4204efad9387253e2c70bd18217fac7c5220b9cd43ecd6179fdc27c5a043343e",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

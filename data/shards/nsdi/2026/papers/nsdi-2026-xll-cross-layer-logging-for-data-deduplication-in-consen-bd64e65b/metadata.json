@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2026-xll-cross-layer-logging-for-data-deduplication-in-consen-bd64e65b",
   "title": "XLL: Cross-Layer Logging for Data Deduplication in Consensus-Based Storage",
+  "abstract": "Modern distributed storage systems exhibit cross-layer data duplication, writing data to disk once during a consensus phase and again during a local database logging phase. The result is poor performance and significant write amplification. To remedy this cross-layer redundancy, we design and implement Cross-Layer Log (XLL), a shared log built upon the principle of key-value separation. We use XLL to deduplicate updates within a distributed key-value store (TiKV), leading to a 5.5x increase in write throughput while reducing write amplification by 73%. We also demonstrate the effectiveness of our crash recovery protocol in maintaining data integrity.",
+  "abstract_source_id": "src-abstract-nsdi-2026-bd64e65b",
   "venue": "nsdi",
   "year": 2026,
   "track_or_session": "Distributed Data Systems",
@@ -139,6 +141,19 @@
         "proceedings page range and page count",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2026-bd64e65b",
+      "url": "https://www.usenix.org/conference/nsdi26/presentation/shawger",
+      "kind": "paper-page",
+      "title": "XLL: Cross-Layer Logging for Data Deduplication in Consensus-Based Storage",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:06:17Z",
+      "content_hash": "sha256:c982febb9b68c75dea5e9b3e1bed15c964e5468cc6137f8424c1bbda1f4bdd58",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

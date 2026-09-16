@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2024-is-difficulty-calibration-all-we-need-towards-more-pract-cf73c9ec",
   "title": "Is Difficulty Calibration All We Need? Towards More Practical Membership Inference Attacks",
+  "abstract": "The vulnerability of machine learning models to Membership Inference Attacks (MIAs) has garnered considerable attention in recent years. These attacks determine whether a data sample belongs to the model's training set or not. Recent research has focused on reference-based attacks, which leverage difficulty calibration with independently trained reference models. While empirical studies have demonstrated its effectiveness, there is a notable gap in our understanding of the circumstances under which it succeeds or fails. In this paper, we take a further step towards a deeper understanding of the role of difficulty calibration. Our observations reveal inherent limitations in calibration methods, leading to the misclassification of non-members and suboptimal performance, particularly on high-loss samples. We further identify that these errors stem from an imperfect sampling of the potential distribution and a strong dependence of membership scores on the model parameters. By shedding light on these issues, we propose RAPID: a query-efficient and computation-efficient MIA that directly Re-leverAges the original membershiP scores to mItigate the errors in Difficulty calibration. Our experimental results, spanning 9 datasets and 5 model architectures, demonstrate that RAPID outperforms previous state-of-the-art attacks (e.g., LiRA and Canary offline) across different metrics while remaining computationally efficient. Our observations and analysis challenge the current de facto paradigm of difficulty calibration in high-precision inference, encouraging greater attention to the persistent risks posed by MIAs in more practical scenarios.",
+  "abstract_source_id": "src-abstract-ccs-2024-cf73c9ec",
   "venue": "ccs",
   "year": 2024,
   "track_or_session": "Cycle 2",
@@ -222,6 +224,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2024-cf73c9ec",
+      "url": "https://api.openalex.org/works/doi:10.1145/3658644.3690316?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Is Difficulty Calibration All We Need? Towards More Practical Membership Inference Attacks",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:10:56Z",
+      "content_hash": "sha256:ced468969c3d0cf5951b5e4e2771413cfd9df951c2c807c1d46371098d053138",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

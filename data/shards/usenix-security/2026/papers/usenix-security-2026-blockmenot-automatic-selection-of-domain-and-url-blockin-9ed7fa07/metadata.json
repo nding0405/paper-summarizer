@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-blockmenot-automatic-selection-of-domain-and-url-blockin-9ed7fa07",
   "title": "BlockMeNot: Automatic Selection of Domain and URL Blocking Granularity to Minimize Collateral Damage and Evasion",
+  "abstract": "Domain and URL blocking is a fundamental mechanism for mitigating malicious, illegal, and inappropriate online content. Yet, selecting the right blocking granularity remains a largely unexplored problem. Overblocking can cause severe collateral damage if the content to be blocked uses the infrastructure of benign services, which may be unintentionally disrupted. Underblocking instead enables trivial evasion. This paper addresses this gap by proposing a novel approach that, given a domain or URL to be blocked, automatically selects the most appropriate blocking granularity (URL, subdomain, or apex) to minimize collateral damage and evasion opportunities. At the core of our approach are two novel machine learning classifiers to identify URL-leasing and subdomain-leasing apexes. The classifiers are trained and evaluated using a manually labeled dataset of 10,843 apexes, achieving F1 scores over 0.9. We implement our approach into BlockMeNot, a tool for identifying potential collateral damage prior to enforcement. We evaluate BlockMeNot on 225,355 entries (i.e., domains and URLs) collected from six blocklists and two threat exchanges. Although only 2.6% of apexes belong to leasers, they host 34.7% of the entries, and up to 71.7% in phishing-focused blocklists, underscoring the importance of fine-grained blocking. BlockMeNot identifies 1,976 leasing apexes, 59.3% of which were not in our ground truth, demonstrating the limitations of static lists and the need for our classifiers. Only 37.2% of blocklist entries are listed at the optimal granularity, 1.3% produce collateral damage, and 61.6% enable easy evasion. Overall, our work provides the first automated solution for domain and URL blocking granularity selection and offers practical guidance for block requesters, executors, and blocklist maintainers.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-9ed7fa07",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Security and Privacy for Web, Mobile, and Emerging Technologies 3",
@@ -155,6 +157,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-9ed7fa07",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/ahmed",
+      "kind": "paper-page",
+      "title": "BlockMeNot: Automatic Selection of Domain and URL Blocking Granularity to Minimize Collateral Damage and Evasion",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:23:11Z",
+      "content_hash": "sha256:42cf568ccae733f4a12aebcda4c8146260bb9c320643e66ba688313d14f5fe4f",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

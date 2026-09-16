@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2024-diffie-hellman-picture-show-key-exchange-stories-from-co-e83e3565",
   "title": "Diffie-Hellman Picture Show: Key Exchange Stories from Commercial VoWiFi Deployments",
+  "abstract": "Voice over Wi-Fi (VoWiFi) uses a series of IPsec tunnels to deliver IP-based telephony from the subscriber's phone (User Equipment, UE) into the Mobile Network Operator's (MNO) core network via an Internet-facing endpoint, the Evolved Packet Data Gateway (ePDG). IPsec tunnels are set up in phases. The first phase negotiates the cryptographic algorithm and parameters and performs a key exchange via the Internet Key Exchange protocol, while the second phase (protected by the above-established encryption) performs the authentication. An insecure key exchange would jeopardize the later stages and the data's security and confidentiality.\n\nIn this paper, we analyze the phase 1 settings and implementations as they are found in phones as well as in commercially deployed networks worldwide. On the UE side, we identified a recent 5G baseband chipset from a major manufacturer that allows for fallback to weak, unannounced modes and verified it experimentally. On the MNO side –among others– we identified 13 operators (totaling an estimated 140 million subscribers) on three continents that all use the same globally static set of ten private keys, serving them at random. Those not-so-private keys allow the decryption of the shared keys of every VoWiFi user of all those operators. All these operators deployed their core network from one common manufacturer.",
+  "abstract_source_id": "src-abstract-usenix-security-2024-e83e3565",
   "venue": "usenix-security",
   "year": 2024,
   "track_or_session": "Crypto I: Secret Key Exchange",
@@ -154,6 +156,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2024-e83e3565",
+      "url": "https://www.usenix.org/conference/usenixsecurity24/presentation/gegenhuber",
+      "kind": "paper-page",
+      "title": "Diffie-Hellman Picture Show: Key Exchange Stories from Commercial VoWiFi Deployments",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:14:47Z",
+      "content_hash": "sha256:e4e407f249b4f09660b98fc7d46df99bd55e94e20f755837da67f59b92632ba2",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

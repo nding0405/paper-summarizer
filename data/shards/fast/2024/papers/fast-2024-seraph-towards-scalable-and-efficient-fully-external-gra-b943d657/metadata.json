@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "fast-2024-seraph-towards-scalable-and-efficient-fully-external-gra-b943d657",
   "title": "Seraph: Towards Scalable and Efficient Fully-external Graph Computation via On-demand Processing",
+  "abstract": "Fully-external graph computation systems exhibit optimal scalability by computing the ever-growing, large-scale graph with constant amount of memory on a single machine. In particular, they keep the entire massive graph data in storage and iteratively load parts of them into memory for computation. Nevertheless, despite the merit of optimal scalability, their unreasonably-low efficiency often makes them uncompetitive, and even unpractical, to the other types of graph computation systems. The key rationale is that most existing fully-external graph computation systems over-emphasize retrieving graph data from storage through sequential access. Although this principle achieves high storage bandwidth, it often causes reading excessive and irrelevant data, which can severely degrade their overall efficiency.\n\nTherefore, this work presents Seraph, a fully-external graph computation system that achieves optimal S calability while toward satisfactory E fficiency improvement. Particularly, inspired by the modern storage offering comparable sequential and random access speeds, Seraph adopts the principle of on-demand processing to access the necessary graph data for saving I/O while enjoying the decent speed in random access. On the basis of this principle, Seraph further devises three practical designs to bring excellent performance leap to fully-external graph computation: 1) the hybrid format to represent the graph data for striking a good balance between I/O amount and access locality, 2) the vertex passing to enable efficient vertex updates on top of hybrid format, and 3) the selective pre-computation to re-use the loaded data for I/O reduction. Our evaluations reveal that Seraph notably outperforms other state-of-the-art fully-external systems under all the evaluated billion-scale graphs and representative graph algorithms by up to two orders of magnitude.",
+  "abstract_source_id": "src-abstract-fast-2024-b943d657",
   "venue": "fast",
   "year": 2024,
   "track_or_session": "AI and Storage",
@@ -139,6 +141,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-fast-2024-b943d657",
+      "url": "https://www.usenix.org/conference/fast24/presentation/yang-tsun-yu",
+      "kind": "paper-page",
+      "title": "Seraph: Towards Scalable and Efficient Fully-external Graph Computation via On-demand Processing",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:00:52Z",
+      "content_hash": "sha256:1151caf4ef95e1e203deee4de6c5c0b0ed7ac26fbd79055f71d0a4b6a133c4a2",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

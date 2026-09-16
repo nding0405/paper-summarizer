@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-towards-lifecycle-unlearning-commitment-management-measu-b48599f4",
   "title": "Towards Lifecycle Unlearning Commitment Management: Measuring Sample-level Unlearning Completeness",
+  "abstract": "Growing concerns over data privacy and security highlight the importance of machine unlearning--removing specific data influences from trained models without full retraining. Techniques like Membership Inference Attacks (MIAs) are widely used to externally assess successful unlearning. However, existing methods face two key limitations: (1) maximizing MIA effectiveness (e.g., via online attacks) requires prohibitive computational resources, often exceeding retraining costs; (2) MIAs, designed for binary inclusion tests, struggle to capture granular changes in approximate unlearning. To address these challenges, we propose the Interpolated Approximate Measurement (IAM), a framework natively designed for unlearning inference. IAM quantifies sample-level unlearning completeness by interpolating the model's generalization-fitting behavior gap on queried samples. IAM achieves strong performance in binary inclusion tests for exact unlearning and high correlation for approximate unlearning--scalable to LLMs using just one pre-trained shadow model. We theoretically analyze how IAM's scoring mechanism maintains performance efficiently. We then apply IAM to recent approximate unlearning algorithms, revealing general risks of both over-unlearning and under-unlearning, underscoring the need for stronger safeguards in approximate unlearning systems. The code is available at https://github.com/Happy2Git/Unlearning_Inference_IAM .",
+  "abstract_source_id": "src-abstract-usenix-security-2025-b48599f4",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "ML and AI Security 3: Backdoors, Poisoning, Unlearning",
@@ -154,6 +156,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-b48599f4",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/wang-cheng-long",
+      "kind": "paper-page",
+      "title": "Towards Lifecycle Unlearning Commitment Management: Measuring Sample-level Unlearning Completeness",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:22:24Z",
+      "content_hash": "sha256:dcc5900296aa9da6d5220c55363f270b17d9387563865f4d9e4cf2bd16ee8500",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

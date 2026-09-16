@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2026-trinity-three-dimensional-tensor-program-optimization-vi-b1002906",
   "title": "Trinity: Three-Dimensional Tensor Program Optimization via Tile-level Equality Saturation",
+  "abstract": "Modern tensor program optimizers operate at two separate levels: graph-level optimizations (operator fusion, algebraic rewrites) and operator-level scheduling (tiling, parallelization). This separation prevents them from discovering cross-operator, tile-level optimizations that make hand-tuned kernels like FlashAttention effective. We present Trinity, the first tensor program optimizer that achieves scalable joint optimization through tile-level equality saturation. Our key insight is that optimal performance requires simultaneously optimizing three interdependent dimensions -- algebraic equivalence, memory I/O, and compute orchestration. To enable this, Trinity introduces a novel fine-grained IR that exposes all three axes as first-class, rewritable entities and applies equality saturation to perform scalable joint optimization. As a result, Trinity automatically discovers complex optimizations that require coordinated reasoning across all three dimensions. Across diverse Transformer variants, Trinity achieves up to 2.09× speedup over TensorRT and 2.35× over TorchInductor, both state-of-the-art production compilers.",
+  "abstract_source_id": "src-abstract-asplos-2026-b1002906",
   "venue": "asplos",
   "year": 2026,
   "track_or_session": "Session 4B: ML Compilers & Tensor Programs",
@@ -188,6 +190,19 @@
       "official": false,
       "supports": [
         "Indexed abstract used for strict relevance classification and indexed arXiv identifier where available."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2026-b1002906",
+      "url": "https://api.openalex.org/works/doi:10.1145/3779212.3790240?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Trinity: Three-Dimensional Tensor Program Optimization via Tile-level Equality Saturation",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:07:01Z",
+      "content_hash": "sha256:82461bd8202b372b2ccaf39d6fec52a34fd181cf2b6a73eb863057abd1b1be99",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

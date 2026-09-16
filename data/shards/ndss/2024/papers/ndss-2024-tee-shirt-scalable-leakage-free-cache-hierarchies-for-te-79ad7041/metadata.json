@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2024-tee-shirt-scalable-leakage-free-cache-hierarchies-for-te-79ad7041",
   "title": "TEE-SHirT: Scalable Leakage-Free Cache Hierarchies for TEEs",
+  "abstract": "Protection of cache hierarchies from side-channel attacks is critical for building secure systems, particularly the ones using Trusted Execution Environments (TEEs). In this paper, we consider the problem of efficient and secure fine-grained partitioning of cache hierarchies and propose a framework, called Secure Hierarchies for TEEs (TEE-SHirT). In the context of a three-level cache system, TEE-SHirT consists of partitioned shared last-level cache, partitioned private L2 caches, and non-partitioned L1 caches that are flushed on context switches and system calls. Efficient and correct partitioning requires careful design. Towards this goal, TEE-SHirT makes three contributions: 1) we demonstrate how the hardware structures used for holding cache partitioning metadata can be effectively virtualized to avoid flushing of cache partition content on context switches and system calls; 2) we show how to support multi-threaded enclaves in TEE-SHirT, addressing the issues of coherency and consistency that arise with both intra-core and inter-core data sharing; 3) we develop a formal security model for TEE-SHirT to rigorously reason about the security of our design.",
+  "abstract_source_id": "src-abstract-ndss-2024-79ad7041",
   "venue": "ndss",
   "year": 2024,
   "track_or_session": "Fall submission cycle",
@@ -231,6 +233,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2024-79ad7041",
+      "url": "https://www.ndss-symposium.org/ndss-paper/tee-shirt-scalable-leakage-free-cache-hierarchies-for-tees/",
+      "kind": "paper-page",
+      "title": "TEE-SHirT: Scalable Leakage-Free Cache Hierarchies for TEEs",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:18:46Z",
+      "content_hash": "sha256:8ad9d217e3e75a23115751cbd7aa378c3d576aabbd630c8e6f7eac4f01393826",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

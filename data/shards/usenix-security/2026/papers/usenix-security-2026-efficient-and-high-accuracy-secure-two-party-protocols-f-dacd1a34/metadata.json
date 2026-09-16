@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-efficient-and-high-accuracy-secure-two-party-protocols-f-dacd1a34",
   "title": "Efficient and High-Accuracy Secure Two-Party Protocols for a Class of Functions with Real-number Inputs",
+  "abstract": "In two-party secret sharing scheme, values are typically encoded as unsigned integers uint(x), whereas real-world applications often require computations on signed real numbers Real(x). To enable secure evaluation of practical functions, it is essential to computing Real(x) from shared inputs, as protocols take shares as input. At USENIX'25, Guo et al. proposed an efficient method for computing signed integer values int(x) from shares, which can be extended to computing Real(x). However, their approach imposes a restrictive input constraint |x| < L ⁄ 3 for x ∈ Z L , limiting its applicability in real-world scenarios. In this work, we significantly relax this constraint to |x| < B for any B ≤ L ⁄ 2 , where B = L ⁄ 2 corresponding to the natural representable range in x ∈ Z L . This relaxes the restrictions and enables the computation of Real(x) with loose or no input constraints. Building upon this foundation, we present a generalized framework for designing secure protocols for a broad class of functions, including integer division ( x ⁄ d \\rfloor), trigonometric (\\sin(x)) and exponential (e -x ) functions. Our experimental evaluation demonstrates that the proposed protocols achieve both high efficiency and high accuracy. Notably, our protocol for evaluating e -x reduces communication costs to approximately 31% of those in SirNN (S&P'21) and Bolt (S&P'24), with runtime speedups of up to 5.53 × and 3.09 ×, respectively. In terms of accuracy, our protocol achieves a maximum ULP error of 1.435, compared to 2.64 for SirNN and 8.681 for Bolt.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-dacd1a34",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Applications of Cryptography 3",
@@ -198,6 +200,19 @@
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening",
         "prepublication PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-dacd1a34",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/guo-hao",
+      "kind": "paper-page",
+      "title": "Efficient and High-Accuracy Secure Two-Party Protocols for a Class of Functions with Real-number Inputs",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:23:49Z",
+      "content_hash": "sha256:864458c88ee7d123c87da2c0ddd8ef802ab89feadd1cb845772816cd668fc6cb",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

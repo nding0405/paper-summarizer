@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2026-agentix-an-efficient-serving-engine-for-llm-agents-as-ge-93668a1f",
   "title": "Agentix: An Efficient Serving Engine for LLM Agents as General Programs",
+  "abstract": "Large language model (LLM) applications are evolving beyond simple chatbots into dynamic, general-purpose agentic programs, which scale LLM calls and output tokens to help AI agents reason, explore, and solve complex tasks. However, existing LLM serving systems ignore dependencies between programs and calls, missing significant opportunities for optimization. Our analysis reveals that programs submitted to LLM serving engines experience long cumulative wait times, primarily due to head-of-line blocking at both the individual LLM request and the program.\n\nTo address this, we introduce Agentix, an LLM serving system that treats programs as first-class citizens to minimize their end-to-end latencies. Agentix intercepts LLM calls submitted by programs, enriching schedulers with program-level context. We propose two scheduling algorithms—for single-threaded and distributed programs—that preempt and prioritize LLM calls based on their programs' previously completed calls. Our evaluation demonstrates that across diverse LLMs and agentic workloads, Agentix improves throughput of programs by 4-15× at the same latency compared to state-of-the-art systems, such as vLLM.",
+  "abstract_source_id": "src-abstract-nsdi-2026-93668a1f",
   "venue": "nsdi",
   "year": 2026,
   "track_or_session": "Virtualization Revisited",
@@ -286,6 +288,19 @@
         "proceedings page range and page count",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2026-93668a1f",
+      "url": "https://www.usenix.org/conference/nsdi26/presentation/luo",
+      "kind": "paper-page",
+      "title": "Agentix: An Efficient Serving Engine for LLM Agents as General Programs",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:04:48Z",
+      "content_hash": "sha256:56d7e199660c218984cf72e5ac7d38e57999972eba76208b3a1b17aab046fa24",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

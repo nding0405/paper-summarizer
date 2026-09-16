@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-memclave-secure-in-memory-enclave-for-untrusted-hosts-66d49647",
   "title": "Memclave: Secure In-Memory Enclave for Untrusted Hosts",
+  "abstract": "Cloud platforms run data-intensive workloads in multi-tenant settings, where frequent CPU–memory traffic can leak access patterns via cache side channels. Processing-in-Memory (PIM) devices such as UPMEM move computation into DRAM, sharply reducing data movement and shrinking the CPU cache footprint. However, commercial PIM architectures expose a host-programmed control plane and host-shared module memory, leaving device-resident code and data vulnerable to a compromised host. Existing secure-PIM proposals either add encryption/access-control hardware or rely on heavyweight host-side cryptographic protocols, complicating practical deployment.\n\nWe present Memclave, a software-only framework that brings code integrity and data confidentiality to commodity PIM without hardware changes. A TPM-attested hypervisor permanently isolates the PIM's control plane from host access at boot. On each in-memory core, a trusted loader authenticates the user kernel and establishes a per-session protected data path. Memclave preserves the programming model and kernel code: host applications replace a small set of data-movement calls with secure drop-ins, keeping the trusted computing base small and porting effort low. We implement Memclave on off-the-shelf UPMEM DIMMs and evaluate it across the PrIM benchmark suite, covering heterogeneous memory-access, compute, and synchronization patterns. After a one-time 100ms authenticated load, in-memory kernel time remains close to the PIM baseline: Multilayer Perceptron (MLP) stays within 1.5× at practical sizes, and First Search (BFS) is 1.1× on some graphs with modest rise as number of frontier levels increase.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-66d49647",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Hardware Security 5",
@@ -114,6 +116,19 @@
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening",
         "prepublication PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-66d49647",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/choudhari",
+      "kind": "paper-page",
+      "title": "Memclave: Secure In-Memory Enclave for Untrusted Hosts",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:24:42Z",
+      "content_hash": "sha256:3463ab83e907360eae3448a074d1eed2ad2db2e021ba556ebbf9009a1721c2a9",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

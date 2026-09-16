@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-camp-in-the-odyssey-provably-robust-reinforcement-learni-f874eb7d",
   "title": "CAMP in the Odyssey: Provably Robust Reinforcement Learning with Certified Radius Maximization",
+  "abstract": "Deep reinforcement learning (DRL) has gained widespread adoption in control and decision-making tasks due to its strong performance in dynamic environments. However, DRL agents are vulnerable to noisy observations and adversarial attacks, and concerns about the adversarial robustness of DRL systems have emerged. Recent efforts have focused on addressing these robustness issues by establishing rigorous theoretical guarantees for the returns achieved by DRL agents in adversarial settings. Among these approaches, policy smoothing has proven to be an effective and scalable method for certifying the robustness of DRL agents. Nevertheless, existing certifiably robust DRL relies on policies trained with simple Gaussian augmentations, resulting in a suboptimal trade-off between certified robustness and certified return. To address this issue, we introduce a novel paradigm dubbed Certified-rAdius-Maximizing Policy (CAMP) training. CAMP is designed to enhance DRL policies, achieving better utility without compromising provable robustness. By leveraging the insight that the global certified radius can be derived from local certified radii based on training-time statistics, CAMP formulates a surrogate loss related to the local certified radius and optimizes the policy guided by this surrogate loss. We also introduce policy imitation as a novel technique to stabilize CAMP training. Experimental results demonstrate that CAMP significantly improves the robustness-return trade-off across various tasks. Based on the results, CAMP can achieve up to twice the certified expected return compared to that of baselines. Our code is available at https://github.com/NeuralSec/camp-robust-rl .",
+  "abstract_source_id": "src-abstract-usenix-security-2025-f874eb7d",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "ML and AI Security 4: Robustness",
@@ -280,6 +282,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-f874eb7d",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/wang-derui",
+      "kind": "paper-page",
+      "title": "CAMP in the Odyssey: Provably Robust Reinforcement Learning with Certified Radius Maximization",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:19:00Z",
+      "content_hash": "sha256:f7c3c71d9d9c1d4b6b317bad86aacd36b3e9f883499862c06553611f68626466",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-owlc-compiling-security-protocols-to-verified-secure-hig-37f4e2a2",
   "title": "OwlC: Compiling Security Protocols to Verified, Secure, High-Performance Libraries",
+  "abstract": "Cryptographic security protocols, such as TLS or WireGuard, form the foundation of a secure Internet; hence, a long line of research has shown how to formally verify their high-level designs. Unfortunately, these formal guarantees have not yet reached real-world implementations of these protocols, which still rely on testing and ad-hoc manual audits for security and correctness. This gap may be explained, in part, by the substantial performance and/or development overhead imposed by prior efforts to verify implementations.\n\nTo make it more practical to deploy verified implementations of security protocols, we present OwlC, the first fully automated , security-preserving compiler for verified, high-performance implementations of security protocols. From a high-level protocol specification proven computationally secure in the Owl language, OwlC emits an efficient, interoperable, side-channel resistant Rust library that is automatically formally verified to be correct.\n\nWe produce verified libraries for all previously written Owl protocols, and we also evaluate OwlC on two new verified case studies: WireGuard and Hybrid Public-Key Encryption (HPKE). Our verified implementations interoperate with existing implementations, and their performance matches unverified industrial baselines on end-to-end benchmarks.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-37f4e2a2",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Crypto 3: Formal Methods and Private Computation",
@@ -112,6 +114,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-37f4e2a2",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/singh",
+      "kind": "paper-page",
+      "title": "OwlC: Compiling Security Protocols to Verified, Secure, High-Performance Libraries",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:21:00Z",
+      "content_hash": "sha256:564f4089ecfdeb464d2b51de87d6aa477e77585769461ca72e57fd132a3fb99b",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

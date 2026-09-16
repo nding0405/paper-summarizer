@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-towards-internet-based-state-learning-of-tls-state-machi-22083fc3",
   "title": "Towards Internet-Based State Learning of TLS State Machines",
+  "abstract": "State machine learning extracts a Mealy state machine hypothesis from a given implementation. This approach was repeatedly used on open-source TLS implementations to find security vulnerabilities and bugs. Until now, TLS state learning has been conducted exclusively in controlled local environments, effectively avoiding various challenges, such as jitter, IDS interference, unknown network infrastructures (load balancers), timeouts, and most notably, non-determinism resulting from all these factors.\n\nFor the first time, we address these challenges by extending state learning beyond a controlled local environment and using it to learn TLS state machines over the Internet in a large-scale study. We improve the scope of state-of-the-art learning approaches by considering previously excluded features and directions, like ID-based session resumption, renegotiation, and CBC padding oracles. To enable a fully autonomous analysis of large numbers of servers, we develop novel techniques for dealing with large alphabets and automatically analyzing the retrieved Mealy automata.\n\nWe demonstrate the feasibility of our approach in a large-scale study across 7337 domains, successfully extracting 1304 state machine models. These models provide unique insights into the state machines deployed in the TLS ecosystem. Leveraging our automated analysis techniques, we uncovered a handshake transcript integrity vulnerability in Citrix NetScaler and the first CBC padding oracle vulnerabilities detected through state machine learning.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-22083fc3",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Network Security 4: Internet and Beyond",
@@ -154,6 +156,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-22083fc3",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/maehren",
+      "kind": "paper-page",
+      "title": "Towards Internet-Based State Learning of TLS State Machines",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:22:23Z",
+      "content_hash": "sha256:ddc182a40c59d5b04a607a051a34c168618c6342abcf92ad35adfed22aee2162",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

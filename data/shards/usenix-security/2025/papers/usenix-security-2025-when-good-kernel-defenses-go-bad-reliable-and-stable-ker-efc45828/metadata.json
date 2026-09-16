@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-when-good-kernel-defenses-go-bad-reliable-and-stable-ker-efc45828",
   "title": "When Good Kernel Defenses Go Bad: Reliable and Stable Kernel Exploits via Defense-Amplified TLB Side-Channel Leaks",
+  "abstract": "Over the past decade, the Linux kernel has seen a significant number of memory-safety vulnerabilities. However, exploiting these vulnerabilities becomes substantially harder as defenses increase. A fundamental defense of the Linux kernel is the randomization of memory locations for security-critical objects, which greatly limits or prevents exploitation.\n\nIn this paper, we show that we can exploit side-channel leakage in defenses to leak the locations of security-critical kernel objects. These location disclosure attacks enable successful exploitations on the latest Linux kernel, facilitating reliable and stable system compromise both with re-enabled and new exploit techniques. To identify side-channel leakages of defenses, we systematically analyze 127 defenses. Based on this analysis, we show that enabling any of 3 defenses – enforcing strict memory permissions or virtualizing the kernel heap or kernel stack – allows us to obtain fine-grained TLB contention patterns via an Evict+Reload TLB side-channel attack. We combine these patterns with kernel allocator massaging to present location disclosure attacks, leaking the locations of kernel objects, i.e., heap objects, page tables, and stacks. To demonstrate the practicality of these attacks, we evaluate them on recent Intel CPUs and multiple kernel versions, with a runtime of 0.3 s to 17.8 s and almost no false positives. Since these attacks work due to side-channel leakage in defenses, we argue that the virtual stack defense makes the system less secure.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-efc45828",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "System Security 4: Kernel and Low-Level System Security",
@@ -133,6 +135,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-efc45828",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/maar-kernel",
+      "kind": "paper-page",
+      "title": "When Good Kernel Defenses Go Bad: Reliable and Stable Kernel Exploits via Defense-Amplified TLB Side-Channel Leaks",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:22:44Z",
+      "content_hash": "sha256:19610eee9fadbcbf3a7cfa67675edcfcef6b3d055753004ab6bd6a6e341d187f",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

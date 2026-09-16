@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2024-collapse-like-a-house-of-cards-hacking-building-automati-66f6e16a",
   "title": "Collapse Like A House of Cards: Hacking Building Automation System Through Fuzzing",
+  "abstract": "Building Automation Systems (BAS) play a pivotal role in modern smart buildings, integrating sensors, controllers, and software to manage crucial functions such as HVAC, lighting, and more. The global smart building market is on the rise, underscoring the importance of securing BAS networks. This paper introduces the Building Automation System Evaluator (BASE), a specialized fuzzer designed to assess the security of BAS networks. BAS networks typically involve a BAS client communicating with a BAS server through BAS protocols (e.g., BACnet, KNX), each presenting unique challenges in BAS network fuzzing. These challenges encompass complex packet structures and sequencing in BAS protocols, closed-source clients with indeterminable code coverage, and unobservable server status with limited throughput. BASE automatically identifies protocol structures, dynamically instruments clients for code coverage analysis, and monitors responses for new coverage areas. Collected timestamps are used to estimate the input scan intervals of servers, optimizing throughput. We evaluated BASE on various BAS servers and clients, uncovering 13 new vulnerabilities. Furthermore, we present three attack case studies, highlighting the real-world security implications of these vulnerabilities in BAS systems, such as delayed fire detection, loss of climate control, and security breaches. We reported our findings to the respective vendors, who acknowledged the implications, and some have subsequently patched their systems based on our reports.",
+  "abstract_source_id": "src-abstract-ccs-2024-66f6e16a",
   "venue": "ccs",
   "year": 2024,
   "track_or_session": "Cycle 2",
@@ -222,6 +224,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2024-66f6e16a",
+      "url": "https://api.openalex.org/works/doi:10.1145/3658644.3690216?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Collapse Like A House of Cards: Hacking Building Automation System Through Fuzzing",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:09:44Z",
+      "content_hash": "sha256:3ee1e49c9487931ab03f047b0129824fc9dcba7b17d35b9d920872ebe38f9a1f",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

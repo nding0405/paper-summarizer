@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2026-pilot-execution-simulating-failure-recovery-in-situ-for-22107a6a",
   "title": "Pilot Execution: Simulating Failure Recovery In Situ for Production Distributed Systems",
+  "abstract": "Modern distributed systems rely on failure recovery to ensure availability and correctness—ironically, recovery itself often introduces severe and irreversible failures. In this paper, we first study 75 real-world recovery failures to understand common pitfalls in the recovery mechanisms. We find that the challenges primarily arise from cross-component interactions, which are difficult to expose in traditional approaches.\n\nTo address this gap, we introduce pilot execution, a new execution model that simulates dry-runs of recovery actions in production distributed systems to enable safe and predictable failure recovery. It enables systems and operators to observe recovery action effects before applying them, reducing the risk of cascading failures and unintended side effects.\n\nWe realize pilot execution with PILOT, an analysis framework with a runtime library that makes pilot execution easy to adopt. We evaluate PILOT on five large-scale distributed systems and show that PILOT uncovers 17 out of 20 recovery failures with modest overhead. Our use of PILOT also exposes an unknown recovery bug in the latest version of HBase.",
+  "abstract_source_id": "src-abstract-nsdi-2026-22107a6a",
   "venue": "nsdi",
   "year": 2026,
   "track_or_session": "The Care and Feeding of Networked Systems",
@@ -118,6 +120,19 @@
         "proceedings page range and page count",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2026-22107a6a",
+      "url": "https://www.usenix.org/conference/nsdi26/presentation/li-zhenyu",
+      "kind": "paper-page",
+      "title": "Pilot Execution: Simulating Failure Recovery In Situ for Production Distributed Systems",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:05:50Z",
+      "content_hash": "sha256:f60ad3a265a8312d9d253b81edf75286c44252f0f73c5b2baa8491182272466e",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

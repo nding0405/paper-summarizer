@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sigcomm-2026-odin-rethinking-congestion-control-under-all-to-all-traf-d8007ca8",
   "title": "Odin: Rethinking Congestion Control under All-to-All Traffic",
+  "abstract": "All-to-All (A2A) communication dominates the training and inference time of large language models, especially under the Mixture-of-Experts (MoE) architecture where expert dispatch induces dense concurrent flows. We observe that A2A traffic consistently builds up large total buffer occupancy (TBO) at switches. Analyzing the accompanying counterintuitive phenomena, we reveal that the A2A traffic saturates ingress bandwidth, interferes with rate adjustment of congestion control (CC) through sparse congestion signals and rate inflation, and causes ingress-egress bandwidth mismatch. Unaware of these issues, existing CC algorithms would be easy to trigger PFC with large TBO, suffer from ineffectual congestion response, and lead to throughput loss. Based on these insights, we propose Odin to enhance CC under A2A traffic. Odin suppresses large TBO based on the switch-level TBO signals, proactively allocate ingress bandwidth to eliminate rate inflation, and make bandwidth compensation for ingress-egress matching. Experiments and simulations show that Odin achieves low TBO and high throughput under A2A traffic, accelerating the training process. Meanwhile, it keeps strong performance under non-A2A traffic.",
+  "abstract_source_id": "src-abstract-d8007ca8",
   "venue": "sigcomm",
   "year": 2026,
   "track_or_session": "Research Session 13: Datacenter Transport: RDMA & Congestion Control — Research Paper",
@@ -233,6 +235,19 @@
       "official": true,
       "supports": [
         "official main-paper scope and track definitions"
+      ]
+    },
+    {
+      "id": "src-abstract-d8007ca8",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/search/match?query=Odin%3A%20Rethinking%20Congestion%20Control%20under%20All-to-All%20Traffic&fields=title,abstract",
+      "kind": "semantic-scholar",
+      "title": "Odin: Rethinking Congestion Control under All-to-All Traffic",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T23:03:38Z",
+      "content_hash": "sha256:a0f2b0b8d5af953772770051539ac72b957bb903097ad36e68b3db3de9cde879",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

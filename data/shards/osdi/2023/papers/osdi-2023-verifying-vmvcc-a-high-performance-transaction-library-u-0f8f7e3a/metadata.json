@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2023-verifying-vmvcc-a-high-performance-transaction-library-u-0f8f7e3a",
   "title": "Verifying vMVCC, a high-performance transaction library using multi-version concurrency control",
+  "abstract": "Multi-version concurrency control (MVCC) is a widely used, sophisticated approach for handling concurrent transactions. vMVCC is the first MVCC-based transaction library that comes with a machine-checked proof of correctness, providing clients with a guarantee that it will correctly handle all transactions despite a complicated design and implementation that might otherwise be error-prone. vMVCC is implemented in Go, stores data in memory, and uses several optimizations, such as RDTSC-based timestamps, to achieve high performance (25–96% the throughput of Silo, a state-of-the-art in-memory database, for YCSB and TPC-C workloads). Formally specifying and verifying vMVCC required adopting advanced proof techniques, such as logical atomicity and prophecy variables, owing to the fact that MVCC transactions can linearize at timestamp generation prior to transaction execution.",
+  "abstract_source_id": "src-abstract-osdi-2023-0f8f7e3a",
   "venue": "osdi",
   "year": 2023,
   "track_or_session": "Verify Your Bits",
@@ -201,6 +203,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2023-0f8f7e3a",
+      "url": "https://www.usenix.org/conference/osdi23/presentation/chang",
+      "kind": "paper-page",
+      "title": "Verifying vMVCC, a high-performance transaction library using multi-version concurrency control",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:06:52Z",
+      "content_hash": "sha256:e621c7489fbba67095394f8b158f3187ca81fb8fc3c1207b6ff31b56e4f064d4",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

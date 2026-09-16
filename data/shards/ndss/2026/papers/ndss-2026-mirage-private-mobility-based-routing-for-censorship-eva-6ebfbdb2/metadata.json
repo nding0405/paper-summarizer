@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2026-mirage-private-mobility-based-routing-for-censorship-eva-6ebfbdb2",
   "title": "Mirage: Private, Mobility-based Routing for Censorship Evasion",
+  "abstract": "In authoritarian and highly surveilled environments, traditional communication networks are vulnerable to censorship, monitoring, and disruption. While decentralized anonymity networks such as Tor provide strong privacy guarantees, they remain dependent on centralized Internet infrastructure, making them susceptible to large-scale blocking or shutdowns. To address these limitations, we present MIRAGE, a privacy-preserving mobility-based messaging system designed for censorship-resistant communication. MIRAGE uses a district-based routing scheme that probabilistically forwards messages based on the high-level mobility patterns of the population. To prevent leakage of individual mobility behavior, MIRAGE protects users’ mobility patterns with local differential privacy, ensuring that participation in the network does not reveal an individual’s location history through observable routing decisions.\n\nWe implement MIRAGE within Cadence , an open-source simulator that provides a unified framework for evaluating mobility-based protocols using approximated geographical encounters between nodes over time. We analyze the privacy and efficiency tradeoffs of MIRAGE and evaluate its performance against (1) traditional epidemic and random-walk-based routing protocols and (2) the state-of-the-art privacy-preserving geography-based routing protocol, using real-world trajectories—one from pedestrian movement patterns collected in various urban locations and another consisting of GPS traces from taxi operations. Our results demonstrate that MIRAGE significantly reduces message overhead compared to epidemic routing, and outperforms probabilistic flooding in terms of delivery rate, while providing stronger privacy guarantees than existing techniques.",
+  "abstract_source_id": "src-abstract-ndss-2026-6ebfbdb2",
   "venue": "ndss",
   "year": 2026,
   "track_or_session": "Summer submission cycle",
@@ -202,6 +204,19 @@
       "official": false,
       "supports": [
         "independent proceedings identity reconciliation"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2026-6ebfbdb2",
+      "url": "https://www.ndss-symposium.org/ndss-paper/mirage-private-mobility-based-routing-for-censorship-evasion/",
+      "kind": "paper-page",
+      "title": "Mirage: Private, Mobility-based Routing for Censorship Evasion",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:22:31Z",
+      "content_hash": "sha256:374ba804c6af0c6110434d49081c6f8f695babb61696b06629cc1b8d5930c567",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

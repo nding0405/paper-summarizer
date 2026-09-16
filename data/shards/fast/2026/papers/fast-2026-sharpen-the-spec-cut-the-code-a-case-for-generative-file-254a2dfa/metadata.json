@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "fast-2026-sharpen-the-spec-cut-the-code-a-case-for-generative-file-254a2dfa",
   "title": "Sharpen the Spec, Cut the Code: A Case for Generative File System with SYSSPEC",
+  "abstract": "File systems are critical OS components that require constant evolution to support new hardware and emerging application needs. However, the traditional paradigm of developing features, fixing bugs, and maintaining the system incurs significant overhead, especially as systems grow in complexity. This paper proposes a new paradigm, generative file systems , which leverages Large Language Models (LLMs) to generate and evolve a file system from prompts, effectively addressing the need for robust evolution. Despite the widespread success of LLMs in code generation, attempts to create a functional file system have thus far been unsuccessful, mainly due to the ambiguity of natural language prompts.\n\nThis paper introduces SYSSPEC, a framework for developing generative file systems. Its key insight is to replace ambiguous natural language with principles adapted from formal methods . Instead of imprecise prompts, SYSSPEC employs a multi-part specification that accurately describes a file system's functionality, modularity, and concurrency. The specification acts as an unambiguous blueprint, guiding LLMs to generate expected code flexibly. To manage evolution, we develop a DAG-structured patch that operates on the specification itself, enabling new features to be added without violating existing invariants. Moreover, the SYSSPEC toolchain features a set of LLM-based agents with mechanisms to mitigate hallucination during construction and evolution. We demonstrate our approach by generating SPECFS, a concurrent file system. SPECFS demonstrates equivalent level of correctness to that of a manually-coded baseline across hundreds of regression tests. We further confirm its evolvability by seamlessly integrating 10 real-world features from Ext4. Our work shows that a specification-guided approach makes generating and evolving complex systems not only feasible but also highly effective.",
+  "abstract_source_id": "src-abstract-fast-2026-254a2dfa",
   "venue": "fast",
   "year": 2026,
   "track_or_session": "AI and LLMs II",
@@ -181,6 +183,19 @@
         "proceedings page range and page count",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-fast-2026-254a2dfa",
+      "url": "https://www.usenix.org/conference/fast26/presentation/liu-qingyuan",
+      "kind": "paper-page",
+      "title": "Sharpen the Spec, Cut the Code: A Case for Generative File System with SYSSPEC",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:01:41Z",
+      "content_hash": "sha256:1c87fcf52c1b42218534196bc5d47599787dab7528afa7014b6cca091bd939dd",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

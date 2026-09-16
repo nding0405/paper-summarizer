@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "eurosys-2025-groot-graph-centric-row-reordering-with-tree-for-sparse-02aab402",
   "title": "Groot: Graph-Centric Row Reordering with Tree for Sparse Matrix Multiplications on Tensor Cores",
+  "abstract": "Sparse matrix multiplications are essential in scientific computing and machine learning applications. Recent researches offload sparse operations, such as sparse matrix-matrix multiplication (SpMM) and sampled dense-dense matrix multiplication (SDDMM), on Tensor Cores (TCs) for improved performance. However, their performance is often limited by the matrix's inherent sparsity and irregularity. In this paper, we find row reordering can potentially improve sparse operations on TCs, but existing reordering techniques exhibit limitations that hinder their effectiveness. To address the issues, we propose Groot, a graph-centric row reordering algorithm with tree. Groot aims to minimize row differences across the matrix, which is proved to be a NP-hard problem. To approximate the optimal solution, Groot firstly captures the local structure of the sparse matrix by constructing a k-nearest neighbor graph, where rows are represented as nodes. Then, it extracts a minimum spanning tree from the constructed graph for global structure optimization. Lastly, Groot traverses the extracted tree to obtain the final ordering. We evaluate Groot using real-world datasets in comparison with state-of-the-art reordering algorithms. Our results show that Groot significantly enhances the computational intensity of SpMM and SDDMM on TCs, delivering the average speedups of 1.8× and 2.0×, respectively. Furthermore, the performance gains extend broadly to sparse computations on CUDA cores and GNN systems.",
+  "abstract_source_id": "src-abstract-eurosys-2025-02aab402",
   "venue": "eurosys",
   "year": 2025,
   "track_or_session": "Session-6.1: ML systems - Location: Mees - Chair: Haibo Chen",
@@ -167,6 +169,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-eurosys-2025-02aab402",
+      "url": "https://api.openalex.org/works/doi:10.1145/3689031.3717460?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Groot: Graph-Centric Row Reordering with Tree for Sparse Matrix Multiplications on Tensor Cores",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:19:08Z",
+      "content_hash": "sha256:8939d63f51a1a9405deac38cfaeb145499ba62c027d2ce0465f2ea9519cc56e2",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

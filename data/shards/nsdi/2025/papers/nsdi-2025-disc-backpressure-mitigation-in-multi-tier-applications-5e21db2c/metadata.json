@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2025-disc-backpressure-mitigation-in-multi-tier-applications-5e21db2c",
   "title": "DISC: Backpressure Mitigation In Multi-tier Applications With Distributed Shared Connection",
+  "abstract": "Most data-center applications are based on a multi-tier architecture, involving either coarse-grained software components (e.g., traditional 3-tier web applications) or fine-grained ones (e.g., microservices). Such applications are prone to the backpressure problem, which introduces a strong performance coupling between tiers, thus degrading scalability and resource consumption. This problem is due to the fact that, on the response path towards the initial client, a significant fraction of the payloads in the messages exchanged between tiers correspond to “final” data that are simply relayed (i.e., without further modifications) from a backend tier such as a database. This traffic results in additional pressure on the intermediate and frontend tiers.\n\nTo address this problem, we introduce DISC, a system allowing several tiers within a multi-tier chain to jointly act as endpoints of the same TCP connection. This enables the selective bypass of one or several tiers on the response path. Unlike existing solutions, DISC is (1) flexible — it accommodates arbitrary multi-tier topologies and heterogeneous application-level protocols, (2) fine-grained — it allows multiple tiers to be involved in the generation and emission of a given response message (e.g., to decouple the network path of the response headers and footers from the path of the response body), (3) and non-intrusive — it requires only minor and localized/modular modifications to the code base of legacy applications and is transparent for external clients. Evaluation results with several micro- and macro-benchmarks show that DISC can reduce the cumulative CPU load on servers by up to 41.5%, decrease the average and tail latencies respectively by up to 74.1% and 5.71×, and also improve the request rate by up to 45%.",
+  "abstract_source_id": "src-abstract-nsdi-2025-5e21db2c",
   "venue": "nsdi",
   "year": 2025,
   "track_or_session": "Data Centers Queuing and Routing",
@@ -182,6 +184,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2025-5e21db2c",
+      "url": "https://www.usenix.org/conference/nsdi25/presentation/ekane",
+      "kind": "paper-page",
+      "title": "DISC: Backpressure Mitigation In Multi-tier Applications With Distributed Shared Connection",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:04:04Z",
+      "content_hash": "sha256:7d72580d9dd0f488d845e35a47a8dee27d4241fb7a4b8ce7fd32823a347c44cc",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

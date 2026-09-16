@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2025-zhe-efficient-zero-knowledge-proofs-for-he-evaluations-f9f8b770",
   "title": "ZHE: Efficient Zero-Knowledge Proofs for HE Evaluations",
+  "abstract": "Homomorphic Encryption (HE) allows computations on encrypted data without decryption. It can be used where the users' information are to be processed by an untrustful server, and has been a popular choice in privacy-preserving applications. However, in order to obtain meaningful results, we have to assume an honest-but-curious server, i.e., it will faithfully follow what was asked to do. If the server is malicious, there is no guarantee that the computed result is correct. The notion of verifiable HE (vHE) is introduced to detect malicious server's behaviors, but current vHE schemes are either more than four orders of magnitude slower than the underlying HE operations (Atapoor et. al, CIC 2024) or fast but incompatible with server-side private inputs (Chatel et. al, CCS 2024). In this work, we propose a vHE framework ZHE: efficient Zero-Knowledge Proofs (ZKPs) that prove the correct execution of HE evaluations while protecting the server's private inputs. More precisely, we first design two new highly-efficient ZKPs for modulo operations and (Inverse) Number Theoretic Transforms (NTTs), two of the basic operations of HE evaluations. Then we build a customized ZKP for HE evaluations, which is scalable, enjoys a fast prover time and has a non-interactive online phase. Our ZKP is applicable to all Ring-LWE based HE schemes, such as BGV and CKKS. Finally, we implement our protocols for both BGV and CKKS and conduct extensive experiments on various HE workloads. Compared to the state-of-the-art works, both of our prover time and verifier time are improved; especially, our prover cost is only roughly 27–36× more expensive than the underlying HE operations, this is two to three orders of magnitude cheaper than state-of-the-arts.",
+  "abstract_source_id": "src-abstract-sp-2025-f9f8b770",
   "venue": "sp",
   "year": 2025,
   "track_or_session": "Cycle 2",
@@ -217,6 +219,19 @@
       "official": true,
       "supports": [
         "DOI, authors, affiliations, abstract, publication date, pages, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2025-f9f8b770",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "ZHE: Efficient Zero-Knowledge Proofs for HE Evaluations",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:57Z",
+      "content_hash": "sha256:303a9b5e5ef8908a3cfe67f02eb8a87be978a5fe3281c7ecec8c0cdb512517e0",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

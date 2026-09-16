@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2024-fast-instruction-selection-for-fast-digital-signal-proce-cf2021fa",
   "title": "Fast Instruction Selection for Fast Digital Signal Processing",
+  "abstract": "Modern vector processors support a wide variety of instructions for fixed-point digital signal processing. These instructions support a proliferation of rounding, saturating, and type conversion modes, and are often fused combinations of more primitive operations. While these are common idioms in fixed-point signal processing, it is difficult to use these operations in portable code. It is challenging for programmers to write down portable integer arithmetic in a C-like language that corresponds exactly to one of these instructions, and even more challenging for compilers to recognize when these instructions can be used. Our system, Pitchfork, defines a portable fixed-point intermediate representation, FPIR, that captures common idioms in fixed-point code. FPIR can be used directly by programmers experienced with fixed-point, or Pitchfork can automatically lift from integer operations into FPIR using a term-rewriting system (TRS) composed of verified manual and automatically-synthesized rules. Pitchfork then lowers from FPIR into target-specific fixed-point instructions using a set of target-specific TRSs. We show that this approach improves runtime performance of portably-written fixed-point signal processing code in Halide, across a range of benchmarks, by geomean 1.31x on x86 with AVX2, 1.82x on ARM Neon, and 2.44x on Hexagon HVX compared to a standard LLVM-based compiler flow, while maintaining or improving existing compile times.",
+  "abstract_source_id": "src-abstract-asplos-2024-cf2021fa",
   "venue": "asplos",
   "year": 2024,
   "track_or_session": "Session 5A: Compiler and Optimization Techniques",
@@ -201,6 +203,19 @@
       "official": false,
       "supports": [
         "Indexed alternate-version and institutional-copy links; not used as the authoritative relevance source."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2024-cf2021fa",
+      "url": "https://api.openalex.org/works/doi:10.1145/3623278.3624768?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Fast Instruction Selection for Fast Digital Signal Processing",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:00:06Z",
+      "content_hash": "sha256:63f8a4cd4db8c7b3b13f76471e42390ae45af130441e4894658e05b79d66a01b",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

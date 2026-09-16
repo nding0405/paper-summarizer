@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2026-copilotio-cpu-as-a-co-pilot-for-gpu-i-o-to-free-gpu-comp-bb123873",
   "title": "CoPilotIO: CPU as a Co-Pilot for GPU I/O to Free GPU Compute",
+  "abstract": "Limited GPU memory increasingly forces modern AI and data analytics workloads to access terabyte-scale datasets and model states from storage, making efficient GPU I/O critical. Existing GPU I/O engines are either CPU-centric or GPU-centric. CPU-centric approaches avoid consuming GPU resources but often fail to provide high-throughput, on-demand GPU access due to kernel overheads and limited parallelism. GPU-centric approaches enable fine-grained on-demand I/O but require intensive I/O polling that consumes valuable GPU resources and introduces intra-warp, inter-warp, and inter-SM I/O stalls. We present CoPilotIO, a novel GPU I/O engine that delivers high-throughput, on-demand storage access without sacrificing GPU compute resources. CoPilotIO adopts an asynchronous GPU I/O architecture in which GPUs initiate I/O while CPU cores act as I/O co-pilots responsible for completion polling. To enable efficient coordination, CoPilotIO introduces a split SQ/CQ architecture, hardware barrier-based synchronization, a lock-free barrier-table, and adaptive CPU-GPU co-polling. Across microbenchmarks and real applications, including GoFS, LLM Mixture-of-Experts (MoE) inference, and Deep Learning Recommendation Models (DLRM), CoPilotIO reduces I/O-induced stalls by up to 55.5%, requires 50% fewer SMs to saturate the GPU PCIe bandwidth, accelerates GoFS by up to 17.4%, and improves application performance by up to 85%.",
+  "abstract_source_id": "src-abstract-osdi-2026-bb123873",
   "venue": "osdi",
   "year": 2026,
   "track_or_session": "Filesystems and I/O Acceleration",
@@ -146,6 +148,19 @@
       "official": true,
       "supports": [
         "Official proceedings availability and canonical conference versions."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2026-bb123873",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/chen-guanyi",
+      "kind": "paper-page",
+      "title": "CoPilotIO: CPU as a Co-Pilot for GPU I/O to Free GPU Compute",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:08:07Z",
+      "content_hash": "sha256:fb86575e8d67246f27f1c2998d53a5fedabd3f9d5b79533fccc03043f942e0cc",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

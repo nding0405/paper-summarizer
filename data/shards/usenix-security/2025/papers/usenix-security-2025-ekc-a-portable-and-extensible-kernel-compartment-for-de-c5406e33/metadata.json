@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-ekc-a-portable-and-extensible-kernel-compartment-for-de-c5406e33",
   "title": "EKC: A Portable and Extensible Kernel Compartment for De-Privileging Commodity OS",
+  "abstract": "Kernel compartmentalization through privilege separation is an effective solution for reducing the trusted computing base of modern operating systems (OS) with monolithic kernels. However, existing approaches to kernel compartmentalization often depend on higher-privileged software or platform-specific hardware features, posing challenges to their portable deployment and practical application. In this paper, we propose Embedded Kernel Compartment (EKC), a kernel compartment that embeds itself to a commodity OS as a privileged, isolated compartment. EKC is both portable across multiple ISAs without hardware modification and extensible to multiple OSes, even those developed in different languages. Moreover, EKC can serve both kernel components and user-space applications, enabling security critical tasks and providing sensitive data storage. We implemented a prototype of EKC in Rust, which has been successfully ported to run on multiple ISAs (RISC-V and ARM) and extended to be compatible with various OS kernels (FreeRTOS, rCore, and TinyLinux) with additional security services. Through comprehensive analysis and evaluation, the results demonstrate that EKC is a practical and effective solution for kernel compartmentalization.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-c5406e33",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "System Security 4: Kernel and Low-Level System Security",
@@ -175,6 +177,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-c5406e33",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/yan-jiaqin",
+      "kind": "paper-page",
+      "title": "EKC: A Portable and Extensible Kernel Compartment for De-Privileging Commodity OS",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:19:34Z",
+      "content_hash": "sha256:6173b17805af50021841452652f5c4c3019894a8ddd8e55f4b6bbe4c03ab215b",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2024-optimization-based-prompt-injection-attack-to-llm-as-a-j-43996a8b",
   "title": "Optimization-based Prompt Injection Attack to LLM-as-a-Judge",
+  "abstract": "LLM-as-a-Judge uses a large language model (LLM) to select the best response from a set of candidates for a given question. LLM-as-a-Judge has many applications such as LLM-powered search, reinforcement learning with AI feedback (RLAIF), and tool selection. In this work, we propose JudgeDeceiver, an optimization-based prompt injection attack to LLM-as-a-Judge. JudgeDeceiver injects a carefully crafted sequence into an attacker-controlled candidate response such that LLM-as-a-Judge selects the candidate response for an attacker-chosen question no matter what other candidate responses are. Specifically, we formulate finding such sequence as an optimization problem and propose a gradient based method to approximately solve it. Our extensive evaluation shows that JudgeDeceive is highly effective, and is much more effective than existing prompt injection attacks that manually craft the injected sequences and jailbreak attacks when extended to our problem. We also show the effectiveness of JudgeDeceiver in three case studies, i.e., LLM-powered search, RLAIF, and tool selection. Moreover, we consider defenses including known-answer detection, perplexity detection, and perplexity windowed detection. Our results show these defenses are insufficient, highlighting the urgent need for developing new defense strategies.",
+  "abstract_source_id": "src-abstract-ccs-2024-43996a8b",
   "venue": "ccs",
   "year": 2024,
   "track_or_session": "Cycle 2",
@@ -222,6 +224,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2024-43996a8b",
+      "url": "https://api.openalex.org/works/doi:10.1145/3658644.3690291?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Optimization-based Prompt Injection Attack to LLM-as-a-Judge",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:11:07Z",
+      "content_hash": "sha256:60292e96a7ef70f6f7f7c2d429b96e090fc2a033629f40b6d34b282e634b0e96",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

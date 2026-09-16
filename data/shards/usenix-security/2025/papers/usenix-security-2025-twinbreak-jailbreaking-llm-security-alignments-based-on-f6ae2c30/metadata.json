@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-twinbreak-jailbreaking-llm-security-alignments-based-on-f6ae2c30",
   "title": "TwinBreak: Jailbreaking LLM Security Alignments based on Twin Prompts",
+  "abstract": "Machine learning is advancing rapidly, with applications bringing notable benefits, such as improvements in translation and code generation. Models like ChatGPT, powered by Large Language Models (LLMs), are increasingly integrated into daily life. However, alongside these benefits, LLMs also introduce social risks. Malicious users can exploit LLMs by submitting harmful prompts, such as requesting instructions for illegal activities. To mitigate this, models often include a security mechanism that automatically rejects such harmful prompts. However, they can be bypassed through LLM jailbreaks. Current jailbreaks often require significant manual effort, high computational costs, or result in excessive model modifications that may degrade regular utility.\n\nWe introduce TwinBreak, an innovative safety alignment removal method. Building on the idea that the safety mechanism operates like an embedded backdoor, TwinBreak identifies and prunes parameters responsible for this functionality. By focusing on the most relevant model layers, TwinBreak performs fine-grained analysis of parameters essential to model utility and safety. TwinBreak is the first method to analyze intermediate outputs from prompts with high structural and content similarity to isolate safety parameters. We present the TwinPrompt dataset containing 100 such twin prompts. Experiments confirm TwinBreak's effectiveness, achieving 89% to 98% success rates with minimal computational requirements across 16 LLMs from five vendors.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-f6ae2c30",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "LLM Security 2: Jailbreaking and Prompt Stealing",
@@ -112,6 +114,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-f6ae2c30",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/krauss",
+      "kind": "paper-page",
+      "title": "TwinBreak: Jailbreaking LLM Security Alignments based on Twin Prompts",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:22:30Z",
+      "content_hash": "sha256:3caf9070788b78e723ad6b8a341f84127ce36c15ac6c9d6da8d968dd5f5abb22",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

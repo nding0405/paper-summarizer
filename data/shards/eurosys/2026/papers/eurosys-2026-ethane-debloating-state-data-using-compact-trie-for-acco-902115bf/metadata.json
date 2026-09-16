@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "eurosys-2026-ethane-debloating-state-data-using-compact-trie-for-acco-902115bf",
   "title": "Ethane: Debloating State Data using Compact Trie for Account-based Blockchain",
+  "abstract": "Account-based blockchains can suffer from huge state data as the number of accounts soars, as in the current Ethereum. This makes it hard to synchronize and operate as a full node to verify transactions, or as an archive node to maintain all archive data for provenance queries. The problem is mostly caused by the state trie, a tree-like data structure to store account states in its leaves, where an account has a path key to follow to access the account. Whenever an account is updated in the state trie, all trie nodes along the path key from the leaf to the root are newly created, which causes a data explosion. In this paper, we propose a novel state optimization technique called Ethane. Instead of assigning a fixed, hash-based path key for an account as in Ethereum, Ethane assigns a variable, counter-based path key. So, when a transaction creates or updates an account, Ethane creates a new leaf node for the account and assigns a path key of the next counter value, which has an effect of adding the leaf to the rightmost slot of the trie. This compact trie maximizes common parent nodes and minimizes the creation of new non-leaf nodes, significantly reducing the archive data size. In addition, Ethane maintains two types of compact tries: an active trie for frequently updated accounts and an inactive trie for dormant accounts not updated for a long time (e.g., three months). Dormant accounts are transferred to the inactive trie but can be reactivated at any time via a restore transaction. When synchronizing as a full node, we only need to download the active trie and the rightmost path of the inactive trie to function fully, significantly reducing both storage requirements and synchronization overhead. Our evaluation shows that Ethane can downsize the archive state data by 60–85% and the current state trie by 60–94%. It also doubles the block execution performance.",
+  "abstract_source_id": "src-abstract-eurosys-2026-902115bf",
   "venue": "eurosys",
   "year": 2026,
   "track_or_session": null,
@@ -172,6 +174,19 @@
       "official": false,
       "supports": [
         "Confirms that the publisher deposit repeats the invalid 934–851 page range, so page_count must remain unresolved."
+      ]
+    },
+    {
+      "id": "src-abstract-eurosys-2026-902115bf",
+      "url": "https://api.openalex.org/works/doi:10.1145/3767295.3769340?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Ethane: Debloating State Data using Compact Trie for Account-based Blockchain",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:20:17Z",
+      "content_hash": "sha256:9b579751b8ce90565c3d2f82c147dbca9e866225856494e5100b2625d9630014",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

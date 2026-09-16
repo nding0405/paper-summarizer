@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2025-tide-an-efficient-kernel-level-isolation-execution-envir-e220aebc",
   "title": "Tide: An Efficient Kernel-level Isolation Execution Environment on AArch64 via Dynamically Adjusting Output Address Size",
+  "abstract": "To enforce the privilege separation in the kernel, kernel-level isolated execution environment (IEE) has become a recent research trend because it can protect critical resources and monitors. Our research found that to isolate the IEE memory, all existing IEEs must act as a reference monitor to isolate page tables and validate their updates, bringing a significant performance overhead. Hence, we propose Tide, a new kernel-level IEE based on the output address size hardware feature on AArch64, which could offload such checks to the hardware. However, it still faces the flexibility and security challenges. To address them, Tide presents using the stage-2 translation to expand the physical address range to flexibly map the IEE memory and perform extra access controls on the physical memory; it designs a novel gate to enter (sneak) into the IEE securely by disabling translation temporarily, and ensures it can only be executed at the fixed locations. The experimental results show that Tide is performant than all existing IEEs on protecting critical kernel structures and security tools.",
+  "abstract_source_id": "src-abstract-ccs-2025-e220aebc",
   "venue": "ccs",
   "year": 2025,
   "track_or_session": "Cycle 2",
@@ -274,6 +276,19 @@
         "published-order authors",
         "publication-time affiliations",
         "publication date and page span"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2025-e220aebc",
+      "url": "https://api.openalex.org/works/doi:10.1145/3719027.3765111?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Tide: An Efficient Kernel-level Isolation Execution Environment on AArch64 via Dynamically Adjusting Output Address Size",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:17:47Z",
+      "content_hash": "sha256:cdbe016d23bf2a3d967acaf4e6ae8ab0c8deb8f67479274e4846a318ef3205e6",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

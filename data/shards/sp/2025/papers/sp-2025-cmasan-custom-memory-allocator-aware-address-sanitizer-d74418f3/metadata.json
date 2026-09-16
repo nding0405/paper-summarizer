@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2025-cmasan-custom-memory-allocator-aware-address-sanitizer-d74418f3",
   "title": "CMASan: Custom Memory Allocator-aware Address Sanitizer",
+  "abstract": "Custom Memory Allocator (CMA) replaces the standard memory allocator for various purposes, such as improving memory efficiency or enhancing security. However, memory objects allocated by CMA are vulnerable to memory bugs similar to those allocated by the standard memory allocator. Unfortunately, existing memory bug detection approaches, including Address Sanitizer (ASan), do not work properly with these CMAs because existing approaches are mainly designed for the standard memory allocator. This paper presents CMASan, the first CMA-aware address sanitizer designed to effectively detect memory bugs on CMA objects that ASan misses without requiring expert knowledge, manual code modifications, or changing the unique internal logic of CMAs. According to our evaluation, CMASan successfully identifies 19 previously unknown CMA memory bugs undetected by ASan, including some undetected for 9 years. Compared to ASan, CMASan incurs only an additional 9.63% overhead.",
+  "abstract_source_id": "src-abstract-sp-2025-d74418f3",
   "venue": "sp",
   "year": 2025,
   "track_or_session": "Cycle 1",
@@ -175,6 +177,19 @@
       "official": true,
       "supports": [
         "DOI, authors, affiliations, abstract, publication date, pages, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2025-d74418f3",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "CMASan: Custom Memory Allocator-aware Address Sanitizer",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:42Z",
+      "content_hash": "sha256:d62dac834635b4cd1890a53da454ceae7aaa151189662d990ac591dfd5cb6b3e",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

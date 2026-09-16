@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-beat-mev-epochless-approach-to-batched-threshold-encrypt-fb8b83cd",
   "title": "BEAT-MEV: Epochless Approach to Batched Threshold Encryption for MEV Prevention",
+  "abstract": "In decentralized finance (DeFi), the public availability of pending transactions presents significant privacy concerns, enabling market manipulation through miner extractable value (MEV). MEV occurs when block proposers exploit the ability to reorder, omit, or include transactions, causing financial loss to users from frontrunning. Recent research has focused on encrypting pending transactions, hiding transaction data until block finalization. To this end, Choudhuri et al. (USENIX '24) introduce an elegant new primitive called Batched Threshold Encryption (BTE) where a batch of encrypted transactions is selected by a committee and only decrypted after block finalization. Crucially, BTE achieves low communication complexity during decryption and guarantees that all encrypted transactions outside the batch remain private. An important shortcoming of their construction is, however, that it progresses in epochs and requires a costly setup in MPC for each batch decryption. In this work, we introduce a novel BTE scheme addressing the limitations by eliminating the need for an expensive epoch setup while achieving practical encryption and decryption times. Additionally, we explore a previously ignored question of how users can coordinate their transactions, which is crucial for the functionality of the system. Along the way, we present several optimizations and trade-offs between communication and computational complexity that allows us to achieve practical performance on standard hardware (< 2 ms for encryption and < 440 ms for decrypting 512 transactions). Finally, we prove our constructions secure in a model that captures practical attacks on MEV-prevention mechanisms.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-fb8b83cd",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Crypto 2: Private Information Retrieval and Computation",
@@ -133,6 +135,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-fb8b83cd",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/bormet",
+      "kind": "paper-page",
+      "title": "BEAT-MEV: Epochless Approach to Batched Threshold Encryption for MEV Prevention",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:18:49Z",
+      "content_hash": "sha256:30ad71bc99d1f0231b391a576c02d403f3e14d0580525977f299bf3ddfb304ce",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

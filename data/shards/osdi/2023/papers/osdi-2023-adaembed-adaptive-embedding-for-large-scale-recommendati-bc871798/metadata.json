@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2023-adaembed-adaptive-embedding-for-large-scale-recommendati-bc871798",
   "title": "AdaEmbed: Adaptive Embedding for Large-Scale Recommendation Models",
+  "abstract": "Deep learning recommendation models (DLRMs) are using increasingly larger embedding tables to represent categorical sparse features such as video genres. Each embedding row of the table represents the trainable weight vector for a specific instance of that feature. While increasing the number of embedding rows typically improves model accuracy by considering more feature instances, it can lead to larger deployment costs and slower model execution.\n\nUnlike existing efforts that primarily focus on optimizing DLRMs for the given embedding, we present a complementary system, AdaEmbed, to reduce the size of embeddings needed for the same DLRM accuracy via in-training embedding pruning. Our key insight is that the access patterns and weights of different embeddings are heterogeneous across embedding rows, and dynamically change over the training process, implying varying embedding importance with respect to model accuracy. However, identifying important embeddings and then enforcing pruning for modern DLRMs with up to billions of embeddings (terabytes) is challenging. Given the total embedding size, AdaEmbed considers embeddings with higher runtime access frequencies and larger training gradients to be more important, and it dynamically prunes less important embeddings at scale to automatically determine per-feature embeddings. Our evaluations in industrial settings show that AdaEmbed saves 35-60% embedding size needed in deployment and improves model execution speed by 11-34%, while achieving noticeable accuracy gains.",
+  "abstract_source_id": "src-abstract-osdi-2023-bc871798",
   "venue": "osdi",
   "year": 2023,
   "track_or_session": "Train Your Bits II",
@@ -411,6 +413,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2023-bc871798",
+      "url": "https://www.usenix.org/conference/osdi23/presentation/lai",
+      "kind": "paper-page",
+      "title": "AdaEmbed: Adaptive Embedding for Large-Scale Recommendation Models",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:06:20Z",
+      "content_hash": "sha256:f42cc8390f95b5621e5a89d0a977c8143942494a739e863fa1ebfcab24cf6783",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

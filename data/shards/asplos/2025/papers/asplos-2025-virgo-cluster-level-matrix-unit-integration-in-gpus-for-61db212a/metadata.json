@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2025-virgo-cluster-level-matrix-unit-integration-in-gpus-for-61db212a",
   "title": "Virgo: Cluster-level Matrix Unit Integration in GPUs for Scalability and Energy Efficiency",
+  "abstract": "Modern GPUs incorporate specialized matrix units such as Tensor Cores to accelerate GEMM operations, which are central to deep learning workloads. However, existing matrix unit designs are tightly coupled to the SIMT core, restricting operation size due to register file capacity and bandwidth constraints. Such a limitation in scalability makes it difficult to simultaneously improve compute throughput and energy efficiency in GPUs. To address this challenge, we propose Virgo, a GPU microarchitecture that integrates dedicated matrix units at the SIMT core cluster level. By decoupling the matrix unit from the SIMT core, Virgo eliminates scalability constraints imposed by the core microarchitecture. Consequently, Virgo increases operation granularity at the hardware level, reducing energy overhead from core instruction processing. Physical disaggregation also enables a unified matrix unit design and offloading both operand and accumulator accesses from the register file, improving data reuse and energy efficiency. Furthermore, this disaggregation supports efficient concurrent execution of the SIMT core and matrix unit, optimizing mapping for fused DNN workloads. Our evaluations using synthesizable RTL demonstrate that Virgo achieves 67.3% and 24.2% reduction in on-chip active power consumption, compared to the baseline Ampere-style and Hopper-style core-coupled designs.",
+  "abstract_source_id": "src-abstract-asplos-2025-61db212a",
   "venue": "asplos",
   "year": 2025,
   "track_or_session": "Session 10A: GPGPU",
@@ -180,6 +182,19 @@
       "official": true,
       "supports": [
         "Author-deposited archival artifact associated with the conference paper."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2025-61db212a",
+      "url": "https://api.openalex.org/works?filter=title.search:Virgo%3A%20Cluster-level%20Matrix%20Unit%20Integration%20in%20GPUs%20for%20Scalability%20and%20Energy%20Efficiency&select=id,title,abstract_inverted_index&per-page=3&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Virgo: Cluster-level Matrix Unit Integration in GPUs for Scalability and Energy Efficiency",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:04:22Z",
+      "content_hash": "sha256:9f3b37574d61adc68f96a561b5482f4cefad57a2fe2b9b3531db40da1bdc40d8",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

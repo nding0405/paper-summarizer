@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2026-pando-extremely-scalable-bft-based-on-committee-sampling-cf68ee43",
   "title": "Pando: Extremely Scalable BFT Based on Committee Sampling",
+  "abstract": "Byzantine fault-tolerant (BFT) protocols are known to suffer from the scalability issue. Indeed, their performance degrades drastically as the number of replicas n grows. While a long line of work has attempted to achieve the scalability goal, these works can only scale to roughly a hundred replicas, particularly on low-end machines.\n\nIn this paper, we develop BFT protocols from the so-called committee sampling approach that selects a small committee for consensus and conveys the results to all replicas. Such an approach, however, has been focused on the Byzantine agreement (BA) problem (considering replicas only) instead of the BFT problem (in the client-replica model); also, the approach is mainly of theoretical interest only, as concretely, it works for impractically large n.\n\nWe build an extremely efficient, scalable, and adaptively secure BFT protocol called Pando in partially synchronous environments based on the committee sampling approach. Our evaluation on Amazon EC2 shows that in contrast to existing protocols, Pando can easily scale to a thousand replicas in the WAN environment, achieving a throughput of 62.57 ktx/sec.",
+  "abstract_source_id": "src-abstract-ndss-2026-cf68ee43",
   "venue": "ndss",
   "year": 2026,
   "track_or_session": "Summer submission cycle",
@@ -160,6 +162,19 @@
       "official": false,
       "supports": [
         "independent proceedings identity reconciliation"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2026-cf68ee43",
+      "url": "https://www.ndss-symposium.org/ndss-paper/pando-extremely-scalable-bft-based-on-committee-sampling/",
+      "kind": "paper-page",
+      "title": "Pando: Extremely Scalable BFT Based on Committee Sampling",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:22:43Z",
+      "content_hash": "sha256:4e21ea2bf5d84f077618a022ae2faa70701756daa2eb81eaea93ae80639d2c30",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

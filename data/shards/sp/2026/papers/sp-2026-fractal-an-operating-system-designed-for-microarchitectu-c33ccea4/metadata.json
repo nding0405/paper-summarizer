@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2026-fractal-an-operating-system-designed-for-microarchitectu-c33ccea4",
   "title": "Fractal: An Operating System Designed for Microarchitecture Reverse Engineering",
+  "abstract": "Modern microarchitecture security research requires a deep understanding of the microarchitecture designs of commodity hardware, specifically how the hardware is isolated between privilege domains. Since these details are usually undocumented, researchers must conduct reverse engineering experiments to learn the microarchitecture parameters of various processors. Currently, the state of the art approach is to modify commodity operating systems in an ad-hoc manner to enable these experiments. Our objective is to systematize the requirements of microarchitecture security research workflows, and to create new lightweight system software precisely tailored to these requirements. We present Fractal, a new operating system kernel built from the ground up to enable practical low-noise microarchitecture reverse engineering research at the user to kernel hardware boundary. Fractal enables seamless concurrency between privilege levels and a user-controlled scheduler for fine-grained thread ordering to enable new microarchitecture reverse engineering workflows with minimal noise. We ported Fractal to a variety of real systems and evaluate Fractal by using it to analyze the Apple M1 CPU. We uncovered a number of new insights about the branch predictor on M1, demonstrating for the first time evidence that limited Phantom speculation is present on Apple Silicon.",
+  "abstract_source_id": "src-abstract-sp-2026-c33ccea4",
   "venue": "sp",
   "year": 2026,
   "track_or_session": "Cycle 2",
@@ -91,6 +93,19 @@
       "official": true,
       "supports": [
         "DOI, published-order authors and affiliations, abstract, publication date, page span, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2026-c33ccea4",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Fractal: An Operating System Designed for Microarchitecture Reverse Engineering",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:57Z",
+      "content_hash": "sha256:303a9b5e5ef8908a3cfe67f02eb8a87be978a5fe3281c7ecec8c0cdb512517e0",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

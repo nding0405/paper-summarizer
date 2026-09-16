@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-red-bleed-a-pragmatic-near-infrared-presentation-attack-d6c1810a",
   "title": "Red Bleed: A Pragmatic Near-Infrared Presentation Attack on Facial Biometric Authentication Systems",
+  "abstract": "Facial recognition is the most prevalent biometric modality in commercial verification and identification systems (e.g. Windows Hello and Apple FaceID), which typically operate under near-infrared (NIR) illumination. Such systems are generally considered secure on the premise that no commercial screen display can readily enable a NIR-based video presentation attack. However, this work demonstrates a critical vulnerability of NIR biometric authentication systems by a presentation attack, named Red Bleed, mounted on a widely used commercial-off-the-shelf (COTS) enterprise-grade face authentication system through a custom-built liquid crystal display (LCD) that costs less than 400 USD.\n\nDue to the scarcity of NIR video samples, it is more feasible to sneak RGB images in the visible (VIS) spectrum through, for instance, covert secret photography, photos posted on social media or screen captures during video conferencing. Besides using live captured NIR video of the target subject's face, we also propose a novel identity-preserved NIR face generative framework that combines a Variational Autoencoder (VAE) to convert VIS images into the NIR domain for this attack. In conjunction with an advanced face swapping technique, an RGB video can be transformed into a video with NIR face, enabling a more sneaky and pragmatic 2D presentation attack on NIR face biometric authentication demonstrated on a commercially available Windows Hello face authentication module.\n\nThe hardware design and source code supporting our findings will be made publicly available at https://github.com following paper acceptance and the corresponding Common Vulnerabilities and Exposures (CVE) release. This vulnerability has been reported to Microsoft and the vendors of the three evaluated COTS Windows Hello face recognition modules. The reported behavior has been confirmed by the Microsoft Security Response Center (MSRC), and a CVE is scheduled for public disclosure in June 2025.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-d6c1810a",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Authentication",
@@ -112,6 +114,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-d6c1810a",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/hu-bowen",
+      "kind": "paper-page",
+      "title": "Red Bleed: A Pragmatic Near-Infrared Presentation Attack on Facial Biometric Authentication Systems",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:21:25Z",
+      "content_hash": "sha256:16471f025a00c4739af8f39ca8f5f67c5f97d4ffb6765d6860bb442072873113",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

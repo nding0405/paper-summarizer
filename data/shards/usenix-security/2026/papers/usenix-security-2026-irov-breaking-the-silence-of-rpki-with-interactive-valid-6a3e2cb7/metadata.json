@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-irov-breaking-the-silence-of-rpki-with-interactive-valid-6a3e2cb7",
   "title": "iROV: Breaking the Silence of RPKI with Interactive Validation",
+  "abstract": "While Route Origin Validation (ROV) effectively mitigates prefix hijacking, it drops BGP updates that are inconsistent with currently published ROAs without consulting the prefix owner. This silent-drop behavior creates a serious agility gap: when a resource owner must urgently redirect traffic during DDoS mitigation, the temporary route may deviate from the currently published ROAs and be dropped before a ROA update propagates. We propose iROV (interactive ROV), a lightweight extension to ROV, to address the agility gap by transforming validation from a static local decision into an interactive, owner-involved process. iROV enables routers to query prefix owners for \"Just-in-Time\" authorization of invalid routes. This interactivity also allows prefix owners to receive real-time visibility feedback on ROV-invalidation events, which helps them detect remote prefix-hijacking attempts or quickly discover their own benign misconfigurations. To mitigate availability threats introduced by this interactivity, iROV employs validity stapling to suppress redundant queries, and probabilistic querying to bound owner-side query load. Large-scale simulations and a prototype implementation demonstrate that iROV restores reachability for urgent route changes from 23% to up to nearly 90%, and delivers rapid feedback on anomalies with granular impact estimation, while incurring negligible overhead.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-6a3e2cb7",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Network Security 4",
@@ -155,6 +157,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-6a3e2cb7",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/kim-younsoo",
+      "kind": "paper-page",
+      "title": "iROV: Breaking the Silence of RPKI with Interactive Validation",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:24:24Z",
+      "content_hash": "sha256:d4973a9ec7a1c3ff951e4a0cea158e4853c3ff1a7cd1f448b73b9fd14ad81362",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

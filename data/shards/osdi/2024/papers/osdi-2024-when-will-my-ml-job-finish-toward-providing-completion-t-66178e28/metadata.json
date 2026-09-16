@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2024-when-will-my-ml-job-finish-toward-providing-completion-t-66178e28",
   "title": "When will my ML Job finish? Toward providing Completion Time Estimates through Predictability-Centric Scheduling",
+  "abstract": "In this paper, we make a case for providing job completion time estimates to GPU cluster users, similar to providing the delivery date of a package or arrival time of a booked ride. Our analysis reveals that providing predictability can come at the expense of performance and fairness. Existing GPU schedulers optimize for extreme points in the trade-off space, making them either extremely unpredictable or impractical.\n\nTo address this challenge, we present PCS, a new scheduling framework that aims to provide predictability while balancing other traditional objectives. The key idea behind PCS is to use Weighted-Fair-Queueing (WFQ) and find a suitable configuration of different WFQ parameters (e.g., queue weights) that meets specific goals for predictability. It uses a simulation-aided search strategy to efficiently discover WFQ configurations that lie around the Pareto front of the trade-off space between these objectives. We implement and evaluate PCS in the context of scheduling ML training workloads on GPUs. Our evaluation, on a small-scale GPU testbed and larger-scale simulations, shows that PCS can provide accurate completion time estimates while marginally compromising on performance and fairness.",
+  "abstract_source_id": "src-abstract-osdi-2024-66178e28",
   "venue": "osdi",
   "year": 2024,
   "track_or_session": "Cloud Computing",
@@ -180,6 +182,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2024-66178e28",
+      "url": "https://www.usenix.org/conference/osdi24/presentation/bin-faisal",
+      "kind": "paper-page",
+      "title": "When will my ML Job finish? Toward providing Completion Time Estimates through Predictability-Centric Scheduling",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:07:25Z",
+      "content_hash": "sha256:b88775fe999af46ca53d689331855c975aba71acd20cf5d2cd1d5e482d695e1b",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

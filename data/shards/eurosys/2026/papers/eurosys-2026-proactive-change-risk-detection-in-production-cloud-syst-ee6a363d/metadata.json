@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "eurosys-2026-proactive-change-risk-detection-in-production-cloud-syst-ee6a363d",
   "title": "Proactive Change Risk Detection in Production Cloud Systems: ByteDance’s Experience",
+  "abstract": "Modern cloud services rely on a high volume of changes for rapid innovation, yet these changes are a primary cause of production incidents. To manage this risk, industry practice employs tiered change management pipelines that concentrate static rules and human reviews. However, our analysis of ByteDance's cloud platform (Volcano Engine) reveals a critical long tail problem: while high-risk changes undergo extensive scrutiny, 78.1% of change-induced incidents originate from the sheer volume of low-risk changes that receive minimal review. At this scale, exhaustive manual review is fundamentally infeasible. To address this, we present Aegis, a novel knowledge-driven system that provides interpretable change risk assessment. Aegis automatically constructs a knowledge base from historical operational data, distilling it into generalized risk heuristics and identifying relevant precedent cases. When a new change is proposed, Aegis generates human-readable warnings grounded in this historical evidence, explaining why a change is risky. We have deployed Aegis in Volcano Engine's production environment for five months, where it processed tens of thousands of change requests. Its risk escalations achieved a 75% acceptance rate from production engineers and successfully prevented multiple potential incidents.",
+  "abstract_source_id": "src-abstract-eurosys-2026-ee6a363d",
   "venue": "eurosys",
   "year": 2026,
   "track_or_session": null,
@@ -264,6 +266,19 @@
       "official": false,
       "supports": [
         "Publisher-deposited proceedings identity and print publication date."
+      ]
+    },
+    {
+      "id": "src-abstract-eurosys-2026-ee6a363d",
+      "url": "https://api.openalex.org/works/doi:10.1145/3767295.3803614?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Proactive Change Risk Detection in Production Cloud Systems: ByteDance’s Experience",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:21:24Z",
+      "content_hash": "sha256:0bf8672a093eab174bd77ad4fe337432959511c6be249066c48bdfb90c3ca856",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

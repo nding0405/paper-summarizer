@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2025-a-large-scale-measurement-study-of-the-proxy-protocol-an-d71f006b",
   "title": "A Large-Scale Measurement Study of the PROXY Protocol and its Security Implications",
+  "abstract": "Reverse proxy servers play a critical role in optimizing Internet services, offering benefits ranging from load balancing to Denial of Service (DoS) protection. A known shortcoming of such proxies is that the backend server becomes oblivious to the IP address of the client who initiated the connection since all requests are forwarded by the proxy server. For HTTP, this issue is trivially solved by the X-Forwarded-For header, which allows the proxy server to pass to the backend server the IP address of the client that originated the request. Unfortunately, no such equivalent exists for many other protocols. To solve this issue, HAProxy created the PROXY protocol, which communicates client information from a proxy server to a backend server at a lower level in the network stack (Layer 4), making it protocol-agnostic.\n\nIn this work, we are the first to study the use of the PROXY protocol at Internet scale and investigate the security impact of its misconfigurations. We launched a measurement study on the full IPv4 address range and found that, over HTTP, more than 170,000 hosts accept PROXY protocol data from arbitrary sources. We demonstrate how to abuse this protocol to bypass on-path proxies (and their protections) and leak sensitive information from backend infrastructures. We discovered over 10,000 servers that are vulnerable to an access bypass, triggered by injecting a (spoofed) PROXY protocol header. Using this technique, we obtained access to over 500 internal servers providing control over IoT monitoring platforms and smart home automation devices, allowing us to, for example, regulate remote controlled window blinds or control security cameras and alarm systems. Beyond HTTP, we demonstrate how the PROXY protocol can be used to turn over 350 SMTP servers into open relays, enabling an attacker to send arbitrary emails from any email address. In sum, our study exposes how PROXY protocol misconfigurations lead to severe security issues that affect multiple protocols prominently used in the wild.",
+  "abstract_source_id": "src-abstract-ndss-2025-d71f006b",
   "venue": "ndss",
   "year": 2025,
   "track_or_session": "Fall submission cycle",
@@ -126,6 +128,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2025-d71f006b",
+      "url": "https://www.ndss-symposium.org/ndss-paper/a-large-scale-measurement-study-of-the-proxy-protocol-and-its-security-implications/",
+      "kind": "paper-page",
+      "title": "A Large-Scale Measurement Study of the PROXY Protocol and its Security Implications",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:18:59Z",
+      "content_hash": "sha256:2889a73632bf6de92a47566965e7adf2ae5031574f2534ba6f50710b58df47d1",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

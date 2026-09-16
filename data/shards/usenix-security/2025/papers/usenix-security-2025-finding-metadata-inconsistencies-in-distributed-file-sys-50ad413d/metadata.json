@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-finding-metadata-inconsistencies-in-distributed-file-sys-50ad413d",
   "title": "Finding Metadata Inconsistencies in Distributed File Systems via Cross-Node Operation Modeling",
+  "abstract": "Metadata consistency is crucial for distributed file systems (DFSes) as it ensures that different clients have a consistent view of the data. However, DFSes are inherently error-prone, leading to metadata inconsistencies. Though rare, such inconsistencies can have severe consequences, including data loss, service failures, and permission violations. Unfortunately, there is limited understanding of metadata inconsistency characteristics, let alone an effective method for detecting them.\n\nThis paper presents a comprehensive study of metadata inconsistencies over the past five years across four widely-used DFSes. We identified two key findings: 1) Metadata inconsistencies are mainly triggered by interrelated cross-node file operations rather than system faults. 2) The root cause of inconsistencies mainly lies in the metadata conflict resolution process. Inspired by these findings, we proposed Horcrux, a highly effective fuzzing framework for detecting metadata inconsistencies in DFSes. Horcrux uses cross-node operation modeling to reduce the infinite input combinations to a manageable space. In this way, Horcrux captures implicit cross-node operation relationships and triggers more conflict resolution logic. Currently, Horcrux has detected 10 previously unknown metadata inconsistencies. In addition, Horcrux covers 20.29%-146.21% more conflict resolution code than state-of-the-art tools.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-50ad413d",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "System Security 4: Kernel and Low-Level System Security",
@@ -175,6 +177,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-50ad413d",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/ma-fuchen",
+      "kind": "paper-page",
+      "title": "Finding Metadata Inconsistencies in Distributed File Systems via Cross-Node Operation Modeling",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:19:51Z",
+      "content_hash": "sha256:3981b446e28fb6eee250733b75e4ef34f348f4660d6e52d953a412331155a158",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2025-speak-up-im-listening-extracting-speech-from-zero-permis-48be913d",
   "title": "Speak Up, I’m Listening: Extracting Speech from Zero-Permission VR Sensors",
+  "abstract": "As Virtual Reality (VR) technologies advance, their application in privacy-sensitive contexts, such as meetings, lectures, simulations, and training, expands. These environments often involve conversations that contain privacy-sensitive information about users and the individuals with whom they interact. The presence of advanced sensors in modern VR devices raises concerns about possible side-channel attacks that exploit these sensor capabilities. In this paper, we introduce IMMERSPY, a novel acoustic side-channel attack that exploits motion sensors in VR devices to extract sensitive speech content from on-device speakers. We analyze two powerful attacker scenarios: informed attacker, where the attacker possesses labeled data about the victim, and uninformed attacker, where no prior victim information is available. We design a Mel-spectrogram CNN-LSTM model to extract digit information (e.g., social security or credit card numbers) by learning the speech-induced vibrations captured by motion sensors. Our experiments show that IMMERSPY detects four consecutive digits with 74% accuracy and 16-digit sequences, such as credit card numbers, with 62% accuracy. Additionally, we leverage Generative AI text-to-speech models in our attack experiments to illustrate how the attackers can create training datasets even without the need to use the victim’s labeled data. Our findings highlight the critical need for security measures in VR domains to mitigate evolving privacy risks. To address this, we introduce a defense technique that emits inaudible tones through the Head-Mounted Display (HMD) speakers, showing its effectiveness in mitigating acoustic side-channel attacks.",
+  "abstract_source_id": "src-abstract-ndss-2025-48be913d",
   "venue": "ndss",
   "year": 2025,
   "track_or_session": "Fall submission cycle",
@@ -231,6 +233,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2025-48be913d",
+      "url": "https://www.ndss-symposium.org/ndss-paper/speak-up-im-listening-extracting-speech-from-zero-permission-vr-sensors/",
+      "kind": "paper-page",
+      "title": "Speak Up, I’m Listening: Extracting Speech from Zero-Permission VR Sensors",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:20:36Z",
+      "content_hash": "sha256:bf32d71c9156cf54de57dbf14b5d30ddcb16334c47058ded59db7aa4ecf0345a",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

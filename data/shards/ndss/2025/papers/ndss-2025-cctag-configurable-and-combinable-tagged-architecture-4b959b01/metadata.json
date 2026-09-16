@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2025-cctag-configurable-and-combinable-tagged-architecture-4b959b01",
   "title": "CCTAG: Configurable and Combinable Tagged Architecture",
+  "abstract": "Memory safety violations are a significant concern in real-world programs, prompting the development of various mitigation methods. However, existing cost-efficient defenses provide limited protection and can be bypassed by sophisticated attacks, necessitating the combination of multiple defenses. Unfortunately, combining these defenses often results in performance degradation and compatibility issues.\n\nWe present CCTAG, a lightweight architecture that simplifies the integration of diverse tag-based defense mechanisms. It offers configurable tag verification and modification rules to build various security policies, acting as basic protection primitives for defense applications. Its policy-centric mask design boosts flexibility and prevents conflicts, enabling multiple defense mechanisms to run concurrently. Our RISC-V prototype on an FPGA board demonstrates that CCTAG incurs minimal hardware overhead, with a slight increase in LUTs (6.77%) and FFs (8.02%). With combined protections including ret address protection, code pointer and vtable pointer integrity, and memory coloring, the SPEC CPU CINT2006 and CINT2017 benchmarks report low runtime overheads of 4.71% and 7.93%, respectively. Security assessments with CVEs covering major memory safety vulnerabilities and various exploitation techniques verify CCTAG’s effectiveness in mitigating real-world threats.",
+  "abstract_source_id": "src-abstract-ndss-2025-4b959b01",
   "venue": "ndss",
   "year": 2025,
   "track_or_session": "Fall submission cycle",
@@ -231,6 +233,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2025-4b959b01",
+      "url": "https://www.ndss-symposium.org/ndss-paper/cctag-configurable-and-combinable-tagged-architecture/",
+      "kind": "paper-page",
+      "title": "CCTAG: Configurable and Combinable Tagged Architecture",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:19:16Z",
+      "content_hash": "sha256:077df48eafb42b3683e7d0da14135fdf34bba29886205222cfaeebbf801db646",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-trusting-what-you-cannot-see-auditable-fine-tuning-and-i-61af23dd",
   "title": "Trusting What You Cannot See: Auditable Fine-Tuning and Inference for Proprietary AI",
+  "abstract": "Cloud-based infrastructure has become the dominant platform for deploying large models, particularly large language models (LLMs). Fine-tuning and inference are increasingly delegated to cloud providers for simplified deployment and access to proprietary models, yet this creates a fundamental trust gap. Although cryptographic and TEE-based verification approaches exist, prohibitive proving costs and limited TEE memory prevent them from scaling to modern LLMs, leaving clients unable to practically audit these processes. This lack of transparency creates concrete security risks that can silently compromise service integrity.\n\nWe present AFTUNE, an auditable and verifiable framework that ensures the computational integrity of cloud-based fine-tuning and inference. AFTUNE incorporates a lightweight recording and spot-check mechanism that produces verifiable traces of execution. These traces enable clients to later audit whether the fine-tuning and inference processes followed the agreed configurations, by verifying sampled execution blocks inside a TEE, each covering only a small portion of the model and the execution trace. Our evaluation shows that AFTUNE adds modest overhead and makes auditing practical for clients.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-61af23dd",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Security of ML 6",
@@ -197,6 +199,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-61af23dd",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/jin",
+      "kind": "paper-page",
+      "title": "Trusting What You Cannot See: Auditable Fine-Tuning and Inference for Proprietary AI",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:25:59Z",
+      "content_hash": "sha256:f7503e3a868b4b0fcf1e1ad937ca06a321e410c9f8ede69e99281b21576f1246",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

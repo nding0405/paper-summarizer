@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2023-aifore-smart-fuzzing-based-on-automatic-input-format-rev-da3a6547",
   "title": "AIFORE: Smart Fuzzing Based on Automatic Input Format Reverse Engineering",
+  "abstract": "Knowledge of a program’s input format is essential for effective input generation in fuzzing. Automated input format reverse engineering represents an attractive but challenging approach to learning the format. In this paper, we address several challenges of automated input format reverse engineering, and present a smart fuzzing solution AIFORE which makes full use of the reversed format and benefits from it. The structures and semantics of input fields are determined by the basic blocks (BBs) that process them rather than the input specification. Therefore, we first utilize byte-level taint analysis to recognize the input bytes processed by each BB, then identify indivisible input fields that are always processed together with a minimum cluster algorithm, and learn their types with a neural network model that characterizes the behavior of BBs. Lastly, we design a new power scheduling algorithm based on the inferred format knowledge to guide smart fuzzing. We implement a prototype of AIFORE and evaluate both the accuracy of format inference and the performance of fuzzing against state-of-the-art (SOTA) format reversing solutions and fuzzers. AIFORE significantly outperforms SOTA baselines on the accuracy of field boundary and type recognition. With AIFORE, we uncovered 20 bugs in 15 programs that were missed by other fuzzers.",
+  "abstract_source_id": "src-abstract-usenix-security-2023-da3a6547",
   "venue": "usenix-security",
   "year": 2023,
   "track_or_session": "Warmer and Fuzzers",
@@ -238,6 +240,19 @@
       "official": true,
       "supports": [
         "authors, affiliations when published, abstract, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2023-da3a6547",
+      "url": "https://www.usenix.org/conference/usenixsecurity23/presentation/shi-ji",
+      "kind": "paper-page",
+      "title": "AIFORE: Smart Fuzzing Based on Automatic Input Format Reverse Engineering",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:09:36Z",
+      "content_hash": "sha256:8543a96a3b38c3a335ffbed106f52f617337d02dab31d68b84c8629aba0c7149",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

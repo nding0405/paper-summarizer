@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2024-timing-channels-in-adaptive-neural-networks-164db0c1",
   "title": "Timing Channels in Adaptive Neural Networks",
+  "abstract": "Current machine learning systems offer great predictive power but also require significant computational resources. As a result, the promise of a class of optimized machine learning models, called adaptive neural networks (ADNNs), has seen recent wide appeal. These models make dynamic decisions about the amount of computation to perform based on the given input, allowing for fast predictions on ”easy” input. While various considerations of ADNNs have been extensively researched, how these input-dependent optimizations might introduce vulnerabilities has been hitherto under-explored. Our work is the first to demonstrate and evaluate timing channels due to the optimizations of ADNNs with the capacity to leak sensitive attributes about a user’s input. We empirically study six ADNNs types and demonstrate how an attacker can significantly improve their ability to infer sensitive attributes, such as class label, of another user’s input from an observed timing measurement. Our results show that timing information can increase an attacker’s probability of correctly inferring the attribute of the user’s input by up to a factor of 9.89x. Our empirical evaluation uses four different datasets, including those containing sensitive medical and demographic information, and considers leakage across a variety of sensitive attributes of the user's input. We conclude by demonstrating how timing channels can be exploited across the public internet in two fictitious web applications — Fictitious Health Company and Fictitious HR — that makes use of ADNNs for serving predictions to their clients.",
+  "abstract_source_id": "src-abstract-ndss-2024-164db0c1",
   "venue": "ndss",
   "year": 2024,
   "track_or_session": "Fall submission cycle",
@@ -105,6 +107,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2024-164db0c1",
+      "url": "https://www.ndss-symposium.org/ndss-paper/timing-channels-in-adaptive-neural-networks/",
+      "kind": "paper-page",
+      "title": "Timing Channels in Adaptive Neural Networks",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:18:48Z",
+      "content_hash": "sha256:d3a2ac2f61a4d690fe76a9bfe4af16de6a27fb52da3ac8281f60887a76acfc52",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2025-skybridge-bounded-staleness-for-distributed-caches-4e09f67a",
   "title": "Skybridge: Bounded Staleness for Distributed Caches",
+  "abstract": "Meta Platforms Inc. is a social media company whose products require high availability and low latency. Meta’s services run in multiple geographic locations around the world and use asynchronous replication to keep the numerous cached copies of the datastore in sync. This setup reduces consistency in order to meet availability and latency requirements. Eventual consistency due to asynchronous replication causes issues for Meta’s services, ranging from minor annoyances to product-breaking bugs. Therefore, we ask: can we put meaningful bounds on how long it takes writes to be visible while maintaining the scalability afforded by eventual consistency?\n\nIn this work we present Skybridge, an out-of-band replication stream for providing bounded staleness for distributed caches. Skybridge takes advantage of the fact that Meta’s systems already have a reliable delivery stream and instead focuses on real-time delivery of updates. Skybridge is complementary to the main replication pipeline and avoids correlated failures while being lightweight. We show that Skybridge helps provide 2-second bounded staleness for 99.99998% of writes, while the main replication pipeline only achieves this 99.993% of the time. Skybridge is able to achieve this while only being 0.54% the size of cache deployments.",
+  "abstract_source_id": "src-abstract-osdi-2025-4e09f67a",
   "venue": "osdi",
   "year": 2025,
   "track_or_session": "Database Systems",
@@ -201,6 +203,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2025-4e09f67a",
+      "url": "https://www.usenix.org/conference/osdi25/presentation/lyerly",
+      "kind": "paper-page",
+      "title": "Skybridge: Bounded Staleness for Distributed Caches",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:07:48Z",
+      "content_hash": "sha256:74ccb56cbb95043ea083ebca441c7a4fb1dc408a8fd111b2c2cc4a19d2f3e4df",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

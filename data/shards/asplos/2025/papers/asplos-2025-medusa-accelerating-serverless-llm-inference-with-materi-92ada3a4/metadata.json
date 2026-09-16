@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2025-medusa-accelerating-serverless-llm-inference-with-materi-92ada3a4",
   "title": "Medusa: Accelerating Serverless LLM Inference with Materialization",
+  "abstract": "Serverless is a promising paradigm to provide scalable, cost-efficient, and easy-to-use model inference services. However, the cold start of model inference functions requires loading models to the devices, which incurs high latencies and undermines the benefits of serverless computing. In LLMs, things get even worse since two extra stages are introduced: a KV cache initialization stage that profiles and anticipates memory reservation for KV cache, and a capturing stage which dynamically constructs CUDA graphs for different batch sizes. Both stages are paramount to the inference performance, but become the main culprit of cold start latency.",
+  "abstract_source_id": "src-abstract-asplos-2025-92ada3a4",
   "venue": "asplos",
   "year": 2025,
   "track_or_session": "Session 10C: Serverless Computing",
@@ -167,6 +169,19 @@
       "official": false,
       "supports": [
         "Indexed abstract and open-access links used for relevance classification and ancillary-link discovery."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2025-92ada3a4",
+      "url": "https://api.openalex.org/works/doi:10.1145/3669940.3707285?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Medusa: Accelerating Serverless LLM Inference with Materialization",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:02:17Z",
+      "content_hash": "sha256:8b533a24e83e5ae0ce6c1028b61f57bb9a35f0a40d8d4f3f7600277469b52186",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

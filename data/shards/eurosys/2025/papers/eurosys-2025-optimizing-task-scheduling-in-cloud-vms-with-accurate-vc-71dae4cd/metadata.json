@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "eurosys-2025-optimizing-task-scheduling-in-cloud-vms-with-accurate-vc-71dae4cd",
   "title": "Optimizing Task Scheduling in Cloud VMs with Accurate vCPU Abstraction",
+  "abstract": "The paper shows that task scheduling in Cloud VMs hasn't evolved quickly to handle the dynamic vCPU resources. The existing vCPU abstraction cannot accurately depict the vCPU dynamics in capacity, activity, and topology, and these mismatches can mislead the scheduler, causing performance degradation and system anomalies. The paper proposes a novel solution, vSched, which probes accurate vCPU abstraction through a set of lightweight microbenchmarks (vProbers) without modifying the hypervisor, and leverages the probed information to optimize task scheduling in cloud VMs with three new techniques: biased vCPU selection, intra-VM harvesting, and relaxed work conservation. Our evaluation of vSched's implementation in x86 Linux Kernel demonstrates that it can effectively improve both system throughput and workload latency across various VM types in the dynamic multi-cloud environment.",
+  "abstract_source_id": "src-abstract-eurosys-2025-71dae4cd",
   "venue": "eurosys",
   "year": 2025,
   "track_or_session": "Session-5.2: Virtualization - Location: Penn - Chair: Reto Achermann",
@@ -146,6 +148,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-eurosys-2025-71dae4cd",
+      "url": "https://api.openalex.org/works/doi:10.1145/3689031.3696092?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Optimizing Task Scheduling in Cloud VMs with Accurate vCPU Abstraction",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:19:31Z",
+      "content_hash": "sha256:0acd426c902d89e21c6016128f33372836b11997cf8204301e0577bbab440351",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

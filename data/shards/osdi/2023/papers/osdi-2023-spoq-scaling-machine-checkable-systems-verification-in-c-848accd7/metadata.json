@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2023-spoq-scaling-machine-checkable-systems-verification-in-c-848accd7",
   "title": "Spoq: Scaling Machine-Checkable Systems Verification in Coq",
+  "abstract": "System software is often large and complex, resulting in many vulnerabilities that can potentially be exploited to compromise the security of a system. Formal verification offers a potential solution to creating bug-free software, but a key impediment to its adoption remains proof cost. We present Spoq, a highly automated verification framework to construct machine-checkable proofs in Coq for system software with much less proof cost. Spoq introduces a novel program structure reconstruction technique to leverage LLVM to translate C code into Coq, supporting full C semantics, including C macros, inline assembly, and compiler directives, so that source code no longer has to be manually modified to be verified. Spoq leverages a layering proof strategy and introduces novel Coq tactics and transformation rules to automatically generate layer specifications and refinement proofs to simplify verification of concurrent system software. Spoq also supports easy integration of manually written layer specifications and refinement proofs. We use Spoq to verify a multiprocessor KVM hypervisor implementation. Verification using Spoq required 70% less proof effort than the manually written specifications and proofs to verify an older implementation. Furthermore, the proofs using Spoq hold for the unmodified implementation that is directly compiled and executed.",
+  "abstract_source_id": "src-abstract-osdi-2023-848accd7",
   "venue": "osdi",
   "year": 2023,
   "track_or_session": "Verify Your Bits",
@@ -180,6 +182,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2023-848accd7",
+      "url": "https://www.usenix.org/conference/osdi23/presentation/li-xupeng",
+      "kind": "paper-page",
+      "title": "Spoq: Scaling Machine-Checkable Systems Verification in Coq",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:06:49Z",
+      "content_hash": "sha256:2755230ee1c44bc86462557408cc7bef438d402c06ccf6e426462d2095d18c30",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

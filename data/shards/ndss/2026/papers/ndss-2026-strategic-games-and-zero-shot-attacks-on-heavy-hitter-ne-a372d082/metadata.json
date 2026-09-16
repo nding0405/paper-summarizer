@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2026-strategic-games-and-zero-shot-attacks-on-heavy-hitter-ne-a372d082",
   "title": "Strategic Games and Zero Shot Attacks on Heavy-Hitter Network Flow Monitoring",
+  "abstract": "Heavy–hitter detection underpins line-rate DDoS mitigation and rate-limiting, yet its resilience against adaptive adversaries is largely unexplored. We build an end-to-end evaluation framework that embeds heavy-hitter detection logic in a switch-level simulator, and auto-tunes its parameters using reinforcement learning to rate-limit elephant flows in the network. We subsequently confront the protection system with an adaptive adversary that learns to maximize throughput while evading detection and show that it manages to breach the configured bandwidth cap by up to 299%, exposing systematic blind spots. To harden the monitoring system we apply a form of joint adversarial training: detector and adversary co-evolve and reach an attack-defense Nash equilibrium in which the attacker’s ability to exploit network bandwidth has been reduced by a factor 2.2×. Lastly, we show that it is possible to use machine learning to create smart packet-synthesizers which are able to perform bandwidth exploits on 8 out of 9 tested systems, without any prior knowledge on the targeted detection system. We refer to this as a zero-shot attack as it does not require knowledge about the targeted heavy-hitter detection system to perform its function. Our open-source framework helps quantify underilluminated attack surfaces and provides a constructive approach towards adversarially robust data-plane flow monitoring.",
+  "abstract_source_id": "src-abstract-ndss-2026-a372d082",
   "venue": "ndss",
   "year": 2026,
   "track_or_session": "Fall submission cycle",
@@ -118,6 +120,19 @@
       "official": false,
       "supports": [
         "independent proceedings identity reconciliation"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2026-a372d082",
+      "url": "https://www.ndss-symposium.org/ndss-paper/strategic-games-and-zero-shot-attacks-on-heavy-hitter-network-flow-monitoring/",
+      "kind": "paper-page",
+      "title": "Strategic Games and Zero Shot Attacks on Heavy-Hitter Network Flow Monitoring",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:23:14Z",
+      "content_hash": "sha256:3712be22804bb836fd55f43f0f6c36f4741d3013852f9209fac4d3fff1424f5a",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

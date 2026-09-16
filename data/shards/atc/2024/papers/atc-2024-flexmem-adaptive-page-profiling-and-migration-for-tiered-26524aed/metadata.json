@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "atc-2024-flexmem-adaptive-page-profiling-and-migration-for-tiered-26524aed",
   "title": "FlexMem: Adaptive Page Profiling and Migration for Tiered Memory",
+  "abstract": "Tiered memory, combining multiple memory components with different performance and capacity, provides a cost-effective solution to increase memory capacity and improve memory utilization. The existing system software to manage the tiered memory often has limitations: (1) rigid memory profiling methods that cannot timely capture emerging memory access patterns or lose profiling quality, (2) rigid page demotion (i.e., the number of pages for demotion is driven by an invariant requirement on free memory space), and (3) rigid warm page range (i.e., emerging hot pages) that leads to unnecessary page demotion from fast to slow memory. To address the above limitations, we introduce FlexMem, a page profiling and migration system for tiered memory. FlexMem combines the performance counter-based and page hinting fault-based profiling methods to improve profiling quality, dynamically decides the number of pages for demotion based on the needs of accommodating hot pages (i.e., frequently accessed pages), and dynamically decides the warm page range based on how often the pages in the range is promoted to hot pages. We evaluate FlexMem with common memory-intensive benchmarks. Compared to the state-of-the-art (Tiering-0.8, TPP, and MEMTIS), FlexMem improves performance by 32%, 23%, and 27% on average respectively.",
+  "abstract_source_id": "src-abstract-atc-2024-26524aed",
   "venue": "atc",
   "year": 2024,
   "track_or_session": "Memory",
@@ -201,6 +203,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-atc-2024-26524aed",
+      "url": "https://www.usenix.org/conference/atc24/presentation/xu-dong",
+      "kind": "paper-page",
+      "title": "FlexMem: Adaptive Page Profiling and Migration for Tiered Memory",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T21:58:41Z",
+      "content_hash": "sha256:c563a63c0a49e31b11da66e279aa9579a2b7c8fd7d1461b4a53a51be4ceb4e1c",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

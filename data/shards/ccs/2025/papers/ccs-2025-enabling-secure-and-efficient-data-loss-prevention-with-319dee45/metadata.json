@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2025-enabling-secure-and-efficient-data-loss-prevention-with-319dee45",
   "title": "Enabling Secure and Efficient Data Loss Prevention with a Retention-aware Versioning SSD",
+  "abstract": "Cyberattacks resulting in data loss remain a critical concern in modern data protection. To mitigate such threats, data versioning has been introduced to recover compromised data by reverting the storage to a prior uncompromised state. However, most current versioning solutions are implemented at the host level (e.g., within the operating system), making them vulnerable to adversaries with escalated privileges who can compromise OS-level protections. Thus, device-level methods have been proposed to shift the versioning logic to hardware-isolated storage devices outside the untrusted OS. Unfortunately, these solutions suffer from limited retention times for historical data, narrowing the protection window and leaving systems exposed to persistent attacks. In this paper, we propose LAST, an invaLidation-Aware VerSioning sysTem for flash-based SSDs, that enables data versioning with enhanced awareness of data retention time, ensuring long-term availability of historical data with small performance impact. LAST modifies the SSD's flash translation layer (FTL) to retain the data invalidation order for tracking data retention time. Then, it leverages an ordered garbage collection (GC) that always reclaims versioned data with the longest retention time, as determined by the invalidation sequence. Therefore, this approach prevents the premature deletion of data with shorter retention, significantly extending the protection window and reducing the risk of data loss. Evaluated under various real-world workloads, LAST achieves a small latency overhead of 1.5% over a regular SSD while maintaining data history for up to 126.4 days with an average of 52.6 days. This significantly outperforms the average retention of current versioning methods by 61.4% at least and 165.9% at most, enhancing the protection window against data loss from cyberattacks.",
+  "abstract_source_id": "src-abstract-ccs-2025-319dee45",
   "venue": "ccs",
   "year": 2025,
   "track_or_session": "Cycle 2",
@@ -148,6 +150,19 @@
         "published-order authors",
         "publication-time affiliations",
         "publication date and page span"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2025-319dee45",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1145%2F3719027.3765135?fields=title,abstract",
+      "kind": "semantic-scholar",
+      "title": "Enabling Secure and Efficient Data Loss Prevention with a Retention-aware Versioning SSD",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:14:16Z",
+      "content_hash": "sha256:6fe4a1c6b8f8947471194f49003f8a5bc689db14fbf3297ebf5879f0f6447403",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

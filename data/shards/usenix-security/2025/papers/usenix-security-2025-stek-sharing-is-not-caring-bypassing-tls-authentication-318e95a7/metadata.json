@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-stek-sharing-is-not-caring-bypassing-tls-authentication-318e95a7",
   "title": "STEK Sharing is Not Caring: Bypassing TLS Authentication in Web Servers using Session Tickets",
+  "abstract": "TLS session resumption with session tickets is a widely supported mechanism designed to accelerate TLS connections. It allows a server to use a symmetric Session Ticket Encryption Key (STEK) to encrypt a TLS context in a socalled session ticket, provide the ticket to the client, and later decrypt it during session resumption to obtain the context and seamlessly resume the session. Proper STEK handling is critical and may get complex in scenarios such as virtual hosting, where a single physical server accommodates multiple virtual hosts. Most importantly, these virtual hosts must remain securely isolated, even when they rely on the same TLS STEK for session protection.\n\nWe demonstrate how TLS session resumption in virtual hosting can introduce session ticket confusion vulnerabilities, potentially enabling the bypass of both server and client authentication. To validate the practicality of these attacks, we analyzed four implementations and conducted a large-scale evaluation. Our findings revealed that all four implementations – Apache, nginx, (Open)LiteSpeed, and Caddy – are vulnerable to client authentication bypasses. In our largescale scans, we identified six clusters of vulnerable providers, including Fastly, which are susceptible to server authentication bypasses. Our results highlight inconsistent isolation of virtual hosts following TLS session resumption, exposing critical security gaps in modern virtual hosting environments.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-318e95a7",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "System Security 5: Securing Systems and Protocols",
@@ -154,6 +156,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-318e95a7",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/hebrok",
+      "kind": "paper-page",
+      "title": "STEK Sharing is Not Caring: Bypassing TLS Authentication in Web Servers using Session Tickets",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:22:01Z",
+      "content_hash": "sha256:93fcdc2057c574b9b8e22698cad7af45db31a579e4a1bd0a9bc90603200b6129",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sigcomm-2023-bitsense-universal-and-nearly-zero-error-optimization-fo-5e6ae23d",
   "title": "BitSense: Universal and Nearly Zero-Error Optimization for Sketch Counters with Compressive Sensing",
+  "abstract": "Sketch algorithms have been widely deployed for network measurement as they achieve high accuracy with restricted resource usage. They store measurement results compactly in fixed-size counters. However, as sketch counters are skewed towards low values, higher bits in most counters remain zero. Such massive unused bits impair the space efficiency valued by sketch algorithms. Unfortunately, efforts to mitigate the issue either apply to specific algorithms or compromise accuracy. In this paper, we design BitSense, a novel optimization framework that integrates with existing sketch algorithms. The key idea is to regard higher bits in sketch counters as a sparse vector and leverage compressive sensing techniques to compress and restore counters. Further, BitSense provides a programming model to help developers easily realize sketch algorithms without dealing with the details of compression and recovery. Bit-Sense proposes an automatic approach for parameter configuration. It theoretically guarantees nearly zero error under the configuration. We have built a BitSense prototype in P4 and a software platform and integrated it with fourteen sketch solutions. Extensive experiments show that BitSense significantly reduces the memory usage of existing sketch solutions by 25%-80% while incurring little overhead and almost zero accuracy drop, outperforming five state-of-the-art optimization frameworks.",
+  "abstract_source_id": "src-abstract-sigcomm-2023-5e6ae23d",
   "venue": "sigcomm",
   "year": 2023,
   "track_or_session": "Well Optimized — Research Paper",
@@ -151,6 +153,19 @@
         "publisher-deposited ORCIDs",
         "proceedings page range and print publication date",
         "empty publisher relation metadata for alternate-version checks"
+      ]
+    },
+    {
+      "id": "src-abstract-sigcomm-2023-5e6ae23d",
+      "url": "https://api.openalex.org/works/doi:10.1145/3603269.3604865?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "BitSense: Universal and Nearly Zero-Error Optimization for Sketch Counters with Compressive Sensing",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:22:46Z",
+      "content_hash": "sha256:3df08b8830ae5c17c82bc2ccb95ca3287a77a6e74f4a9155bf794500f3afd80a",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

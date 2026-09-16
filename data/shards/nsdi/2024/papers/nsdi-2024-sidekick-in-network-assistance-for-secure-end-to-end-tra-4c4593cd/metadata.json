@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2024-sidekick-in-network-assistance-for-secure-end-to-end-tra-4c4593cd",
   "title": "Sidekick: In-Network Assistance for Secure End-to-End Transport Protocols",
+  "abstract": "In response to concerns about protocol ossification and privacy, post-TCP transport protocols such as QUIC and Web-RTC include end-to-end encryption and authentication at the transport layer. This makes their packets opaque to middleboxes, freeing the transport protocol to evolve but preventing some in-network innovations and performance improvements. This paper describes sidekick protocols : an approach to in-network assistance for opaque transport protocols where in-network intermediaries help endpoints by sending information adjacent to the underlying connection, which remains opaque and unmodified on the wire.\n\nA key technical challenge is how the sidekick connection can efficiently refer to ranges of packets of the underlying connection without the ability to observe cleartext sequence numbers. We present a mathematical tool called a quACK that concisely represents a selective acknowledgment of opaque packets, without access to cleartext sequence numbers.\n\nIn real-world and emulation-based evaluations, the sidekick improved performance in several scenarios: early retransmission over lossy Wi-Fi paths, proxy acknowledgments to save energy, and a path-aware congestion-control mechanism we call PACUBIC that emulates a \"split\" connection.",
+  "abstract_source_id": "src-abstract-nsdi-2024-4c4593cd",
   "venue": "nsdi",
   "year": 2024,
   "track_or_session": "Security",
@@ -181,6 +183,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2024-4c4593cd",
+      "url": "https://www.usenix.org/conference/nsdi24/presentation/yuan",
+      "kind": "paper-page",
+      "title": "Sidekick: In-Network Assistance for Secure End-to-End Transport Protocols",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:03:40Z",
+      "content_hash": "sha256:71a1f1a2f59e50a782aab0041752bb18612d25edca4c960a839093b77deed78c",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

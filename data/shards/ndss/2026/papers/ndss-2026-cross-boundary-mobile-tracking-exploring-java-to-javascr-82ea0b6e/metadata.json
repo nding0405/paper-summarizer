@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2026-cross-boundary-mobile-tracking-exploring-java-to-javascr-82ea0b6e",
   "title": "Cross-Boundary Mobile Tracking: Exploring Java-to-JavaScript Information Diffusion in WebViews",
+  "abstract": "WebViews are a prevalent method of embedding web-based content in Android apps. While they offer functionality similar to that of browsers and execute in an isolated context, apps can directly interfere with WebViews by dynamically injecting JavaScript code at runtime. While prior work has extensively analyzed apps' Java code, existing frameworks have limited visibility of the JavaScript code being executed inside WebViews. Consequently, there is limited understanding of the behaviors and characteristics of the scripts executed within WebViews, and whether privacy violations occur.\n\nTo address this gap, we propose WebViewTracer, a framework designed to dynamically analyze the execution of JavaScript code within WebViews at runtime. Our system combines within-WebView JavaScript execution traces with Java method-call information, to also capture the information exchange occurring between Java SDKs and web scripts. We leverage WebViewTracer to perform the first large-scale, dynamic analysis of privacy-violating behaviors inside WebViews, on a dataset of 10K Android apps. We detect 4,597 apps that load WebViews, and find that over 69% of them inject sensitive and tracking-related information that is typically inaccessible to JavaScript code into WebViews. This includes identifiers like the Advertising ID and Android build ID. Crucially, 90% of those apps use web-based APIs to exfiltrate this information to third-party servers. We also uncover concrete evidence of common web fingerprinting techniques being used by JavaScript code inside of WebViews, which can supplement their tracking information. We observe that the dynamic properties of WebViews are being actively leveraged for sensitive information diffusion across multiple actors in the mobile tracking ecosystem, demonstrating the privacy risks posed by Android WebViews. By shedding light on these ongoing privacy violations, our study seeks to prompt additional scrutiny from platform stakeholders on the use of embedded web technologies, and highlights the need for additional safeguards.",
+  "abstract_source_id": "src-abstract-ndss-2026-82ea0b6e",
   "venue": "ndss",
   "year": 2026,
   "track_or_session": "Summer submission cycle",
@@ -223,6 +225,19 @@
       "official": false,
       "supports": [
         "independent proceedings identity reconciliation"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2026-82ea0b6e",
+      "url": "https://www.ndss-symposium.org/ndss-paper/cross-boundary-mobile-tracking-exploring-java-to-javascript-information-diffusion-in-webviews/",
+      "kind": "paper-page",
+      "title": "Cross-Boundary Mobile Tracking: Exploring Java-to-JavaScript Information Diffusion in WebViews",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:21:43Z",
+      "content_hash": "sha256:d64b2ca5c567eace51471f579a7a98985d84cb9993dfb353e59082b2678a5df7",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "atc-2025-hec-equivalence-verification-checking-for-code-transform-f0b8409b",
   "title": "HEC: Equivalence Verification Checking for Code Transformation via Equality Saturation",
+  "abstract": "In modern computing systems, compilation employs numerous optimization techniques to enhance code performance. Source-to-source code transformations, which include control flow and datapath transformations, have been widely used in High-Level Synthesis (HLS) and compiler optimization.\n\nWhile researchers actively investigate methods to improve performance with source-to-source code transformations, they often overlook the significance of verifying their correctness. Current tools cannot provide a holistic verification of these transformations. This paper introduces HEC, a framework for equivalence checking that leverages the e-graph data structure to comprehensively verify functional equivalence between programs. HEC utilizes the MLIR as its frontend and integrates MLIR into the e-graph framework. Through the combination of dynamic and static e-graph rewriting, HEC facilitates the validation of comprehensive code transformations.\n\nWe demonstrate effectiveness of HEC on PolyBenchC benchmarks, successfully verifying loop unrolling, tiling, and fusion transformations. HEC processes over 100,000 lines of MLIR code in 40 minutes with predictable runtime scaling. Importantly, HEC identified two critical compilation errors in mlir-opt: loop boundary check errors causing unintended executions during unrolling, and memory read-after-write violations in loop fusion that alter program semantics. These findings demonstrate HEC practical value in detecting real-world compiler bugs and highlight the importance of formal verification in optimization pipelines.",
+  "abstract_source_id": "src-abstract-atc-2025-f0b8409b",
   "venue": "atc",
   "year": 2025,
   "track_or_session": "Hunting Elusive Bugs: Verification and Analysis from Compilers to Hardware",
@@ -180,6 +182,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-atc-2025-f0b8409b",
+      "url": "https://www.usenix.org/conference/atc25/presentation/yin",
+      "kind": "paper-page",
+      "title": "HEC: Equivalence Verification Checking for Code Transformation via Equality Saturation",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T21:59:45Z",
+      "content_hash": "sha256:68b1d3e01caaa5622ba6e3714513d28f53c6ac9fac2cc4c6243b08751cb95467",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

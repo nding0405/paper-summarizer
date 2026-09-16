@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-when-http-402-meets-the-blockchain-risks-on-emerging-x40-6818abd5",
   "title": "When HTTP 402 Meets the Blockchain: Risks on Emerging x402 Payments",
+  "abstract": "x402 is an emerging payment protocol for Web APIs and autonomous AI agents. It is driven by the rise of LLM-based agents that can autonomously purchase access to online services. x402 extends HTTP 402 with a payment negotiation flow and delegates payment proof verification and on-chain settlement to third-party facilitators. As a result, facilitators serve as a shared payment infrastructure for many independent merchants. This centralizes trust and validation in one component, so a single flaw can affect many services. Despite rapid adoption by major vendors and economically meaningful mainnet activity, the security posture of real-world x402 deployments remains poorly characterized.\n\nWe present the first systematic study of authorization correctness and execution safety in current facilitator-mediated x402 deployments in the wild, identifying eight security rules for facilitators as critical payment infrastructure. Based on our analysis of rule violations, we derive four new attack vectors, including Free Shopping , Asset Theft , Service Denial , and Gas Abuse . These attacks exploit weaknesses in the real-world facilitator and server implementations and cause severe harm, including direct financial loss to merchants, theft of facilitator-held assets, unbounded sponsor-paid gas/fees, and disruption of payment services. To assess the security of x402 deployments at scale, we propose a semi-automated black-box tool and apply it to 15 major x402 facilitators collectively used by over 60K sellers and 360K buyers. Alarmingly, we find violations in all evaluated facilitators. We responsibly disclosed our findings to the affected parties, who acknowledged the issues and adopted mitigations, including changes by Coinbase. Finally, we complement our controlled testing with an empirical measurement of over 119 million recent Base and Solana transactions, quantifying x402 adoption, facilitator centralization, and ecosystem-level risk indicators.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-6818abd5",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Security and Privacy for Web, Mobile, and Emerging Technologies 1",
@@ -155,6 +157,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-6818abd5",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/wang-qinying",
+      "kind": "paper-page",
+      "title": "When HTTP 402 Meets the Blockchain: Risks on Emerging x402 Payments",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:26:15Z",
+      "content_hash": "sha256:9847826fbb199a0a0f65a07e5b56eb68c2c0d60dbac091b8c79fcabc9d4e724d",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

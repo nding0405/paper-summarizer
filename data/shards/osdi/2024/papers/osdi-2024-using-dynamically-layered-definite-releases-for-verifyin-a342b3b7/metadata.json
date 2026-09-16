@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2024-using-dynamically-layered-definite-releases-for-verifyin-a342b3b7",
   "title": "Using Dynamically Layered Definite Releases for Verifying the RefFS File System",
+  "abstract": "RefFS is the first concurrent file system that guarantees both liveness and safety, backed by a machine-checkable proof. Unlike earlier concurrent file systems, RefFS provably avoids termination bugs such as livelocks and deadlocks, through the dynamically layered definite releases specification. This specification enables handling of general blocking scenarios (including ad-hoc synchronization), facilitates modular reasoning for nested blocking, and eliminates the possibility of circular blocking.\n\nThe methodology underlying the aforementioned specification is integrated into a framework called MoLi (Modular Liveness Verification). This framework helps developers verify concurrent file systems. We further validate the correctness of the locking scheme for the Linux Virtual File System (VFS). Remarkably, even without conducting code proofs, we uncovered a critical flaw in a recent version of the locking scheme, which may lead to deadlocks of the entire OS (confirmed by Linux maintainers). RefFS achieves better overall performance than AtomFS, a state-of-the-art, verified concurrent file system without the liveness guarantee.",
+  "abstract_source_id": "src-abstract-osdi-2024-a342b3b7",
   "venue": "osdi",
   "year": 2024,
   "track_or_session": "Formal Verification",
@@ -159,6 +161,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2024-a342b3b7",
+      "url": "https://www.usenix.org/conference/osdi24/presentation/zou",
+      "kind": "paper-page",
+      "title": "Using Dynamically Layered Definite Releases for Verifying the RefFS File System",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:07:23Z",
+      "content_hash": "sha256:b43eba4f85d7f1ff724895b83271a3ecff7a8dd92427bc5343f8623f671ead88",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

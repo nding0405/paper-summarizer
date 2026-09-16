@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "fast-2026-dmtree-towards-efficient-tree-indexing-on-disaggregated-e1da290b",
   "title": "DMTree: Towards Efficient Tree Indexing on Disaggregated Memory via Compute-side Collaborative Design",
+  "abstract": "Disaggregated memory (DM) separates computing and memory resources into distinct resource pools, enhancing resource utilization and scalability. However, this new architecture presents fundamental design challenges on range indexes. Existing works fail to achieve high performance: they either suffer from the network bandwidth bottleneck or are fragile due to high RDMA IOPS demands. The key reason is that they all follow a typical design paradigm that uses private compute-side caching , where each compute server holds a private cache space and aggressively consumes the bandwidth and IOPS between compute servers and memory servers.\n\nWe propose a new compute-side collaborative design . It offloads data locating and locking operations from memory servers to compute servers and thus fully utilizes unsaturated RDMA resources between compute servers to mitigate bottlenecks on memory servers. We implement a prototype called DMTree. Experiments show that DMTree outperforms existing state-of-the-art range indexes on DM for both point operations (i.e., searches, inserts, and updates) and range operations (i.e., scans) under various workloads and parameter settings.",
+  "abstract_source_id": "src-abstract-fast-2026-e1da290b",
   "venue": "fast",
   "year": 2026,
   "track_or_session": "Indexing",
@@ -202,6 +204,19 @@
         "proceedings page range and page count",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-fast-2026-e1da290b",
+      "url": "https://www.usenix.org/conference/fast26/presentation/wei",
+      "kind": "paper-page",
+      "title": "DMTree: Towards Efficient Tree Indexing on Disaggregated Memory via Compute-side Collaborative Design",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:01:28Z",
+      "content_hash": "sha256:286e827dfd260cbe7b9589ef7160e4a7094c996e65b0d44244f8d91e5a15baba",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

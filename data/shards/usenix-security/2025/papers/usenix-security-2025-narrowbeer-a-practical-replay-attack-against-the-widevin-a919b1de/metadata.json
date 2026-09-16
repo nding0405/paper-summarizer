@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-narrowbeer-a-practical-replay-attack-against-the-widevin-a919b1de",
   "title": "Narrowbeer: A Practical Replay Attack Against the Widevine DRM",
+  "abstract": "Streaming services like Netflix, Prime Video, and HBO Max rely on DRM solutions to ward off piracy. By enabling the distribution of encrypted content, DRM systems prevent subscribed users from downloading the streamed content, as well as unauthorized users from having access to it.\n\nGoogle Widevine, one of the most deployed DRMs, provides a fully software-based solution on desktop platforms to ensure portability. In this paper, we empirically investigate the security protections implemented by Widevine to counter an attacker tampering with its interactions within its environment, namely with the operating system and the hosting browser. Focusing on randomness and time, we uncover new flaws in the Widevine license acquisition process, particularly targeting the freshness and expiration of the licenses. To demonstrate the effectiveness of our findings, we develop Narrowbeer, a practical replay attack allowing legitimate users to generate never-expiring licenses, and enabling unauthorized users to reuse these licenses to access premium content without subscription. Finally, we validate our attack against real-world streaming services by succeeding in repeatedly playing the same license on different desktop devices.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-a919b1de",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Software Security 1",
@@ -91,6 +93,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-a919b1de",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/roudot",
+      "kind": "paper-page",
+      "title": "Narrowbeer: A Practical Replay Attack Against the Widevine DRM",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:20:48Z",
+      "content_hash": "sha256:3b97285845efc8778159f8aa62099f3e30d4a0dfd203bd5849d0964be6d67e40",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

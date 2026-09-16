@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2025-oncache-a-cache-based-low-overhead-container-overlay-net-d40fcf25",
   "title": "ONCache: A Cache-Based Low-Overhead Container Overlay Network",
+  "abstract": "Recent years have witnessed a widespread adoption of containers. While containers simplify and accelerate application development, existing container network technologies either incur significant overhead, which hurts performance for distributed applications, or lose flexibility or compatibility, which hinders the widespread deployment in production.\n\nWe carefully analyze the kernel data path of an overlay network, quantifying the time consumed by each segment of the data path and identifying the extra overhead in an overlay network compared to bare metal. We observe that this extra overhead generates repetitive results among packets, which inspires us to introduce caches within an overlay network.\n\nWe design and implement ONCache ( O verlay N etwork Cache ), a cache-based container overlay network, to eliminate the extra overhead while maintaining flexibility and compatibility. We implement ONCache using the extended Berkeley Packet Filter (eBPF) with only 524 lines of code, and integrate it as a plugin of Antrea. With ONCache, containers attain networking performance akin to that of bare metal. Compared to the standard overlay networks, ONCache improves throughput and request-response transaction rate by 12% and 36% for TCP (20% and 34% for UDP), respectively, while significantly reducing per-packet CPU overhead. Popular distributed applications also benefit from ONCache.",
+  "abstract_source_id": "src-abstract-nsdi-2025-d40fcf25",
   "venue": "nsdi",
   "year": 2025,
   "track_or_session": "Rethinking Data Center Efficiency",
@@ -245,6 +247,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2025-d40fcf25",
+      "url": "https://www.usenix.org/conference/nsdi25/presentation/lin-shengkai",
+      "kind": "paper-page",
+      "title": "ONCache: A Cache-Based Low-Overhead Container Overlay Network",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:04:24Z",
+      "content_hash": "sha256:7b5c9a86fef3fa2f28656bd312ef764c49211414541bb77d44fabb5e630af3b1",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2025-statically-discover-cross-entry-use-after-free-vulnerabi-f9707480",
   "title": "Statically Discover Cross-Entry Use-After-Free Vulnerabilities in the Linux Kernel",
+  "abstract": "Use-After-Free (UAF) is one of the most widely spread and severe memory safety issues, attracting lots of research efforts toward its automatic discovery. Existing UAF detection approaches include two major categories: dynamic and static. While dynamic methods like fuzzing can detect UAF issues with high precision, they are inherently limited in code coverage. Static approaches, on the other hand, can usually only discover simple sequential UAF cases, despite that many real-world UAF bugs involve intricate cross-entry control and data flows (e.g., concurrent UAFs). Limited static tools supporting cross-entry UAF detection also suffer from inaccuracy or narrowed scope (e.g., cannot handle complex codebases like the Linux kernel).\n\nIn this paper, we propose UAFX, a static analyzer capable of discovering cross-entry UAF vulnerabilities in the Linux kernel and potentially extensible to general C programs. UAFX is powered by a novel escape-fetch-based cross-entry alias analysis, enabling it to accurately analyze the alias relationships between the use and free sites even when they scatter in different entry functions. UAFX is also equipped with a systematic UAF validation framework based on partial-order constraints, allowing it to reliably reason about multiple UAF-related code aspects (e.g., locks, path conditions, threads) to filter out false alarms. Our evaluation shows that UAFX can discover new cross-entry UAF vulnerabilities in the kernel and one user-space program (80 true positive warnings), with reasonable reviewer-perceived precision (more than 40%) and performance.",
+  "abstract_source_id": "src-abstract-ndss-2025-f9707480",
   "venue": "ndss",
   "year": 2025,
   "track_or_session": "Fall submission cycle",
@@ -168,6 +170,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2025-f9707480",
+      "url": "https://www.ndss-symposium.org/ndss-paper/statically-discover-cross-entry-use-after-free-vulnerabilities-in-the-linux-kernel/",
+      "kind": "paper-page",
+      "title": "Statically Discover Cross-Entry Use-After-Free Vulnerabilities in the Linux Kernel",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:20:37Z",
+      "content_hash": "sha256:e2ae00013b38db933763002ebeace0020fdaf1e66d79762b2499cf5a419311e2",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

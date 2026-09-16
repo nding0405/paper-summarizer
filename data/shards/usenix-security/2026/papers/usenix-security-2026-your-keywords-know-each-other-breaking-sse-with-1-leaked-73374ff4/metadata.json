@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-your-keywords-know-each-other-breaking-sse-with-1-leaked-73374ff4",
   "title": "Your Keywords Know Each Other: Breaking SSE with <1% Leaked Documents",
+  "abstract": "Searchable symmetric encryption (SSE) schemes inevitably leak search, access, and volume patterns, which adversaries can exploit along with partial knowledge of the data to recover documents and queries. Prior passive attacks rely on document-keyword occurrence matching, but under realistic low leakage, many keywords induce identical patterns, forming large ambiguous groups that sharply limit recovery.\n\nWe observe this failure arises from missing relational signals among keywords. Keywords, however, exhibit stable semantic regularities across corpora even when direct co-occurrence is sparse, allowing external linguistic knowledge to augment observed leakage. Based on this insight, we present Whisper, a staged co-occurrence augmented query recovery framework that weaves LLM-synthesized corpora with pre-trained embeddings to densify co-occurrence matrices and disambiguate otherwise indistinguishable candidates.\n\nWe evaluate Whisper on six diverse real-world datasets, including three collected in late 2025 to test generalization beyond LLM training cutoffs. At 0.1% leakage, previously considered safe, Whisper boosts correct query recovery from 1727% under current SOTA to 36–49% across all datasets, a 22.5× improvement. Even at 1% leakage, Whisper approaches near-complete recovery, exceeding 80% on most datasets and peaking at 95%, while remaining effective against padding and volume hiding defenses, exposing a previously underestimated vulnerability in SSE.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-73374ff4",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Applications of Cryptography 5",
@@ -155,6 +157,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-73374ff4",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/bian-mingyu",
+      "kind": "paper-page",
+      "title": "Your Keywords Know Each Other: Breaking SSE with <1% Leaked Documents",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:26:24Z",
+      "content_hash": "sha256:242a387b739985203a9c259e1ee9beeb13269fc0737f8366dae92ea6dbe4b568",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

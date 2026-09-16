@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sigcomm-2023-adainf-data-drift-adaptive-scheduling-for-accurate-and-s-4e65e195",
   "title": "AdaInf: Data Drift Adaptive Scheduling for Accurate and SLO-guaranteed Multiple-Model Inference Serving at Edge Servers",
+  "abstract": "Various audio and video applications rely on multiple deep neural network (DNN) models deployed on edge servers to conduct inference with ms-level latency service-level-objectives (SLOs). To avoid accuracy decreases caused by data drift, continual retraining is necessary. However, this poses a challenge for GPU resource allocation to satisfy the tight SLOs while maintaining high accuracy in this scenario. There has been no research devoted to tackling this issue. In this paper, we conducted trace-based experimental analysis in this particular scenario, which shows that different models have varying degrees of impact from data drift, incremental retraining (proposed by us that retrains certain samples before inference) and early-exit model structures can help increase accuracy, and the interdependencies among tasks may lead to significant CPU-GPU memory communications. Leveraging these unique observations, we propose a data drift Adaptive scheduler for accurate and SLO-guaranteed Inference serving at edge servers (AdaInf). AdaInf uses incremental retraining and allocates GPU amount among applications based on their SLOs. For each application, it splits GPU time between retraining and inference to satisfy its SLO, and then allocates GPU time among retraining tasks based on their impact degrees. In addition, AdaInf proposes strategies that leverage the job features in this scenario to reduce the impact of CPU-GPU memory communications on latency. Our real trace-driven experimental evaluation shows that AdaInf can increase accuracy by up to 21% and reduce SLO violations by up to 54% compared to existing methods. Achieving similar accuracy as AdaInf requires 4× more GPU resources on the edge server for the existing method.",
+  "abstract_source_id": "src-abstract-sigcomm-2023-4e65e195",
   "venue": "sigcomm",
   "year": 2023,
   "track_or_session": "On Inference — Research Paper",
@@ -109,6 +111,19 @@
         "publisher-deposited ORCIDs",
         "proceedings page range and print publication date",
         "empty publisher relation metadata for alternate-version checks"
+      ]
+    },
+    {
+      "id": "src-abstract-sigcomm-2023-4e65e195",
+      "url": "https://api.openalex.org/works/doi:10.1145/3603269.3604830?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "AdaInf: Data Drift Adaptive Scheduling for Accurate and SLO-guaranteed Multiple-Model Inference Serving at Edge Servers",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:22:45Z",
+      "content_hash": "sha256:e375df0decdceead347dae4c62947f10afd52427657324ef946c0a65386bfba2",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

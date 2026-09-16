@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2023-horuseye-a-realtime-iot-malicious-traffic-detection-fram-59601a8a",
   "title": "HorusEye: A Realtime IoT Malicious Traffic Detection Framework using Programmable Switches",
+  "abstract": "The ever-growing volume of IoT traffic brings challenges to IoT anomaly detection systems. Existing anomaly detection systems perform all traffic detection on the control plane, which struggles to scale to the growing rates of traffic. In this paper, we propose HorusEye, a high throughput and accurate two-stage anomaly detection framework. In the first stage, preliminary burst-level anomaly detection is implemented on the data plane to exploit its high-throughput capability (e.g., 100Gbps). We design an algorithm that converts a trained iForest model into white list matching rules, and implement the first unsupervised model that can detect unseen attacks on the data plane. The suspicious traffic is then reported to the control plane for further investigation. To reduce the false-positive rate, the control plane carries out the second stage, where more thorough anomaly detection is performed over the reported suspicious traffic using flow-level features and a deep detection model. We implement a prototype of HorusEye and evaluate its performance through a comprehensive set of experiments. The experimental results illustrate that the data plane can detect 99% of the anomalies and offload 76% of the traffic from the control plane. Compared with the state-of-the-art schemes, our framework has superior throughput and detection performance.",
+  "abstract_source_id": "src-abstract-usenix-security-2023-59601a8a",
   "venue": "usenix-security",
   "year": 2023,
   "track_or_session": "Traffic Analysis",
@@ -259,6 +261,19 @@
       "official": true,
       "supports": [
         "authors, affiliations when published, abstract, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2023-59601a8a",
+      "url": "https://www.usenix.org/conference/usenixsecurity23/presentation/dong-yutao",
+      "kind": "paper-page",
+      "title": "HorusEye: A Realtime IoT Malicious Traffic Detection Framework using Programmable Switches",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:11:26Z",
+      "content_hash": "sha256:6d9dac6f2e5aac90f5ce05f3e5e6c9320492126229323cbb16b2bdbd8758ecb3",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

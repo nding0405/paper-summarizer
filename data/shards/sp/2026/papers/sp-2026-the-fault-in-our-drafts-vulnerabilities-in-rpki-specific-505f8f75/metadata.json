@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2026-the-fault-in-our-drafts-vulnerabilities-in-rpki-specific-505f8f75",
   "title": "The Fault in Our Drafts: Vulnerabilities in RPKI Specification and Software",
+  "abstract": "The Resource Public Key Infrastructure (RPKI) secures the Internet's routing system by defining a complex trust and validation framework for certificates, Route Origin Authorizations (ROAs), manifests, and Certificate Revocation Lists (CRLs). These mechanisms are specified across dozens of RFCs. This paper presents the first comprehensive analysis of the causal link between flaws in RPKI Requests for Comments (RFCs) and vulnerabilities in implementations and real-world deployments. We reveal how vague, conflicting, or underspecified requirements in 50 RPKI RFCs propagate into inconsistent implementation behavior and operational failures. We conduct the first large-scale, impact-driven evaluation of RPKI specifications. Our methodology combines differential fuzzing of major RPKI implementations with Internet-wide crawling and validation log analysis, enabling us to trace practical vulnerabilities back to flawed RFC requirements. We uncover 61 previously undocumented inconsistencies in validation behavior, trace 23 directly to RFC flaws, and identify two novel vulnerabilities that were assigned CVEs. Our findings reveal that these are not isolated coding errors but rather systemic issues inherent in how RPKI standards are written, interpreted, and implemented. To mitigate these threats, we propose concrete recommendations and introduce a novel alerting service that monitors and reports live inconsistencies in RPKI deployments. Our open-source datasets, code, and tools support reproducibility and further research.",
+  "abstract_source_id": "src-abstract-sp-2026-505f8f75",
   "venue": "sp",
   "year": 2026,
   "track_or_session": "Cycle 2",
@@ -154,6 +156,19 @@
       "official": true,
       "supports": [
         "DOI, published-order authors and affiliations, abstract, publication date, page span, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2026-505f8f75",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "The Fault in Our Drafts: Vulnerabilities in RPKI Specification and Software",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:58:06Z",
+      "content_hash": "sha256:5353b9384fd86d54ad3dc674f6041a164ea560a1a98a9c02cc1bb37e317e508e",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

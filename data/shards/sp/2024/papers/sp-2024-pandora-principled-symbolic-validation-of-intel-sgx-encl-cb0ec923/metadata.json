@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2024-pandora-principled-symbolic-validation-of-intel-sgx-encl-cb0ec923",
   "title": "Pandora: Principled Symbolic Validation of Intel SGX Enclave Runtimes",
+  "abstract": "The popularity of Intel SGX technology in recent years has given rise to a wide range of shielding runtimes to transparently safeguard secure enclave applications against a hostile operating system. Adequate validation of the crucial and numerous shielding runtimes is, however, a multi-faceted and fast-changing challenge, as new attack techniques against SGX enclaves are discovered regularly and commonly necessitate extensive software patches throughout the SGX ecosystem.This paper proposes Pandora, a practical, enclave-aware symbolic execution tool designed to address this challenge. In contrast to existing tools, Pandora’s truthful and runtime-agnostic symbolic execution of the exact attested enclave binary for the first time allows to validate the critical enclave shielding runtime itself. Furthermore, Pandora provides principled foundations to deal with the moving-target nature of enclave software security by implementing accurate taint tracking of attacker inputs, a precise symbolic enclave memory model, and support for pluggable vulnerability detectors.We extensively evaluate Pandora on 11 different SGX shielding runtimes with 4 detection plugins for a diverse set of vulnerability types. Our experiments show that Pandora can autonomously discover 200 new and 69 known vulnerable code locations. Notably, Pandora is the first tool that allows a wide-scale ecosystem investigation of recent pointer-alignment software mitigations in real-world SGX enclave runtimes.",
+  "abstract_source_id": "src-abstract-sp-2024-cb0ec923",
   "venue": "sp",
   "year": 2024,
   "track_or_session": "Summer cycle",
@@ -201,6 +203,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2024-cb0ec923",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Pandora: Principled Symbolic Validation of Intel SGX Enclave Runtimes",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:37Z",
+      "content_hash": "sha256:d186972817127125a98a71b907d7b283fa37f2e757aaf5b9ae232aa389caabc0",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

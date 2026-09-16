@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2026-revisiting-pipeline-parallelism-for-llm-serving-bc34c552",
   "title": "Revisiting Pipeline Parallelism for LLM Serving",
+  "abstract": "As the memory capacity of a single GPU is insufficient to accommodate large language models (LLMs), model parallelism has become the standard approach for serving LLMs across multiple GPUs. In online serving environments, tensor parallelism has become the de facto way in single-node multi-GPU systems because it can reduce the computation latency through parallel execution. Although pipeline parallelism can offer higher throughput, it suffers from pipeline imbalance that is exacerbated under online workloads, leading to resource underutilization and performance degradation.\n\nIn this study, we revisit pipeline parallelism for serving LLMs. Our analysis shows that computational imbalance between pipeline stages becomes exacerbated in online serving. To address these pipeline inefficiencies, we propose three techniques: two mechanisms, greedy and predictive schemes, that dynamically adjust the chunk size to mitigate prefill-induced bubbles, and a delay scheduling technique that dynamically rebalances decode workloads across pipeline stages to further reduce pipeline bubbles. We implement our techniques on top of SGLang and demonstrate that, for Qwen2.5 32B and 14B on four NVIDIA A100 40GB GPUs, pipeline parallelism with our mechanisms outperforms tensor parallelism.",
+  "abstract_source_id": "src-abstract-osdi-2026-bc34c552",
   "venue": "osdi",
   "year": 2026,
   "track_or_session": "Resource-Efficient LLM Serving",
@@ -104,6 +106,19 @@
       "official": true,
       "supports": [
         "Official proceedings availability and canonical conference versions."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2026-bc34c552",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/hwang",
+      "kind": "paper-page",
+      "title": "Revisiting Pipeline Parallelism for LLM Serving",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:08:50Z",
+      "content_hash": "sha256:a05bd5cbac9edd527a5737ee9259c47344fa545b156afd4e62d35ade43fde9c0",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

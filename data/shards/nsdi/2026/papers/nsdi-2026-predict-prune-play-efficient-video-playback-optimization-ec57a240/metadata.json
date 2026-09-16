@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2026-predict-prune-play-efficient-video-playback-optimization-ec57a240",
   "title": "Predict, Prune, Play: Efficient Video Playback Optimization Under Device Diversity and Drift",
+  "abstract": "Video-streaming platforms tune dozens of playback parameters across thousands of client devices. Our measurements from Amazon Prime Video show that device-specific tuning can enhance stream quality. Yet traditional tuning techniques like Bayesian optimization become prohibitively expensive due to the large configuration space and the constant emergence of new device types.\n\nWe introduce AZEEM, a scalable recommendation system leveraging few-shot prediction to rapidly identify promising configurations for new devices. The key insight behind AZEEM is that devices exhibit performance similarities that enable predictions from limited observations. Trained on offline data of device-playback configuration interactions, AZEEM efficiently narrows down the search space to a small set of configurations likely to contain optimal or near-optimal candidates. Additionally, AZEEM addresses temporal distribution shift—where the best-performing configurations change over time—by recommending a small, robust set of candidates rather than a single configuration. Evaluations using large-scale real-world datasets show that AZEEM reduces exploration cost by 5.8−13.6× and improves stream quality compared to state-of-the-art Bayesian optimization and multi-armed bandit approaches, enabling effective device-specific optimization at scale. We deploy AZEEM on a subset of Amazon Prime Video’s production traffic, where it achieved a relative QoE improvement of 2.7% on average and 10.6% at the 90th percentile over an existing treatment tuning system.",
+  "abstract_source_id": "src-abstract-nsdi-2026-ec57a240",
   "venue": "nsdi",
   "year": 2026,
   "track_or_session": "Self-Managing Networks",
@@ -160,6 +162,19 @@
         "proceedings page range and page count",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2026-ec57a240",
+      "url": "https://www.usenix.org/conference/nsdi26/presentation/sharma",
+      "kind": "paper-page",
+      "title": "Predict, Prune, Play: Efficient Video Playback Optimization Under Device Diversity and Drift",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:05:53Z",
+      "content_hash": "sha256:9162cafbe034c3050709b47e8dfb3a96859b38087cb4cbbddf2f4c544332ed2f",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2025-runtime-protocol-refinement-checking-for-distributed-pro-98850449",
   "title": "Runtime Protocol Refinement Checking for Distributed Protocol Implementations",
+  "abstract": "Despite significant progress in verifying protocols, services that implement distributed protocols (we refer to these as DPIs in what follows), e.g., Chubby or Etcd, can exhibit safety bugs in production deployments. These bugs are often introduced by programmers when converting protocol descriptions into code. This paper introduces Runtime Protocol Refinement Checking (RPRC) a runtime approach for detecting protocol implementation bugs in DPIs. RPRC systems observe a deployed DPI's runtime behavior and notify operators when this behavior evidences a protocol implementation bug, allowing operators to mitigate the bugs impact and developers to fix the bug. We have developed an algorithm for RPRC and implemented it in a system called Ellsberg that targets DPIs that assume fail-stop failures and the asynchronous (or partially synchronous) model. Our goal when designing Ellsberg was to make no assumptions about how DPIs are implemented, and to avoid additional coordination or communication. Therefore, Ellsberg builds on the observation that in the absence of Byzantine failures, a protocol safety properties are maintained if all live DPI processes correctly implement the protocol. Thus, Ellsberg checks RPRC by comparing messages sent and received by each DPI process to those produced by a simulated execution of the protocol. We apply Ellsberg to three open source DPIs, Etcd, Zookeeper and Redis Raft, and show that we can detect previously reported protocol bugs in these DPIs.",
+  "abstract_source_id": "src-abstract-nsdi-2025-98850449",
   "venue": "nsdi",
   "year": 2025,
   "track_or_session": "Verification 2",
@@ -140,6 +142,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2025-98850449",
+      "url": "https://www.usenix.org/conference/nsdi25/presentation/ding",
+      "kind": "paper-page",
+      "title": "Runtime Protocol Refinement Checking for Distributed Protocol Implementations",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:04:33Z",
+      "content_hash": "sha256:8cde916b731d7acae73c281b1f385757c7f005b2ed9705a82520536f02da1e4b",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

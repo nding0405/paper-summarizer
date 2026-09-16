@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sigcomm-2026-infiniflow-decoupling-virtual-channel-scalability-from-b-0c0fae4a",
   "title": "InfiniFlow: Decoupling Virtual Channel Scalability from Buffer Requirements in Lossless Datacenter Networks",
+  "abstract": "Modern datacenters increasingly rely on Remote Direct Memory Access (RDMA) for high throughput and low latency. To ensure lossless transmission, RDMA fabrics employ hop-by-hop flow control at the granularity of Virtual Channels (VCs). However, multiplexing multiple flows within the same VC couples their backpressure behavior, leading to severe congestion spreading, degrading throughput and tail latency significantly. Existing methods try to improve isolation by increasing the number of VCs but require per-VC buffer reservation, causing buffer requirements to scale linearly with the number of VCs and fundamentally limiting VC scalability. We present InfiniFlow, a credit-based hop-by-hop flow control method that supports massive VCs with a limited buffer budget via per-port buffer sharing. InfiniFlow introduces a paradigm shift in buffer management: Upstream Allocates Buffer for Downstream (UABD), where, for each link, the upstream scheduler maintains a per-port shared credit pool and dynamically allocates credits to VCs. Building on UABD, InfiniFlow further incorporates a Buffer Usage Control Protocol that enforces per-VC dynamic credit thresholds using real-time backlog feedback to bound credit consumption and prevent buffer monopolization. With InfiniFlow, the required buffer size per port becomes independent of the number of VCs and is instead bounded by a small budget proportional to per-hop Bandwidth-Delay Product (BDP) (approximately 3× BDP). We implement InfiniFlow on a Xilinx Alveo U280 FPGA and demonstrate support for over 16k VCs using only 401 KB of on-chip memory per port while sustaining 100 Gbps line-rate transmission, achieving 512× and 1024× higher VC scalability than CBFC and PFC, respectively. Extensive NS-3 simulations show that InfiniFlow achieves near-optimal flow completion times under realistic workloads without relying on slow end-to-end rate adaptation, outperforming prior hop-by-hop flow control methods and state-of-the-art congestion control schemes.",
+  "abstract_source_id": "src-abstract-0c0fae4a",
   "venue": "sigcomm",
   "year": 2026,
   "track_or_session": "Research Session 13: Datacenter Transport: RDMA & Congestion Control — Research Paper",
@@ -254,6 +256,19 @@
       "official": true,
       "supports": [
         "official main-paper scope and track definitions"
+      ]
+    },
+    {
+      "id": "src-abstract-0c0fae4a",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/search/match?query=InfiniFlow%3A%20Decoupling%20Virtual%20Channel%20Scalability%20from%20Buffer%20Requirements%20in%20Lossless%20Datacenter%20Networks&fields=title,abstract",
+      "kind": "semantic-scholar",
+      "title": "InfiniFlow: Decoupling Virtual Channel Scalability from Buffer Requirements in Lossless Datacenter Networks",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T23:02:27Z",
+      "content_hash": "sha256:a99a6f31acf599d5e39e68788450b27e9176473a6132164ff9bfca6b07a7250f",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

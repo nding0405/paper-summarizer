@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sigcomm-2025-the-sweet-danger-of-sugar-debunking-representation-learn-1b12bf99",
   "title": "The Sweet Danger of Sugar: Debunking Representation Learning for Encrypted Traffic Classification",
+  "abstract": "Recently we have witnessed the explosion of proposals that, inspired by Language Models like BERT, exploit Representation Learning models to create traffic representations. All of them promise astonishing performance in encrypted traffic classification (up to 98% accuracy). In this paper, with a networking expert mindset, we critically reassess their performance. Through extensive analysis, we demonstrate that the reported successes are heavily influenced by data preparation problems, which allow these models to find easy shortcuts - spurious correlation between features and labels - during fine-tuning that unrealistically boost their performance. When such shortcuts are not present - as in real scenarios - these models perform poorly. We also introduce Pcap-Encoder, an LM-based representation learning model that we specifically design to extract features from protocol headers. Pcap-Encoder appears to be the only model that provides an instrumental representation for traffic classification. Yet, its complexity questions its applicability in practical settings. Our findings reveal flaws in dataset preparation and model training, calling for a better and more conscious test design. We propose a correct evaluation methodology and stress the need for rigorous benchmarking.",
+  "abstract_source_id": "src-abstract-sigcomm-2025-1b12bf99",
   "venue": "sigcomm",
   "year": 2025,
   "track_or_session": "AI for SysNet",
@@ -171,6 +173,19 @@
         "DOI and ACM publisher landing/PDF links",
         "publisher-deposited ORCIDs when available",
         "proceedings page range and online publication date"
+      ]
+    },
+    {
+      "id": "src-abstract-sigcomm-2025-1b12bf99",
+      "url": "https://api.openalex.org/works/doi:10.1145/3718958.3750498?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "The Sweet Danger of Sugar: Debunking Representation Learning for Encrypted Traffic Classification",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:23:36Z",
+      "content_hash": "sha256:8bfb894de5f6048db6e4747a3d24c0f020a34476bf3f7692817c8e2e2df3e888",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

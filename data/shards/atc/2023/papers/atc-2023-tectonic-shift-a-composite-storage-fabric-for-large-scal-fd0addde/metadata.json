@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "atc-2023-tectonic-shift-a-composite-storage-fabric-for-large-scal-fd0addde",
   "title": "Tectonic-Shift: A Composite Storage Fabric for Large-Scale ML Training",
+  "abstract": "Tectonic-Shift is the storage fabric for Meta’s production machine learning (ML) training infrastructure. Industrial storage fabrics for ML need to meet both the intensive IO and high-capacity storage demands of training jobs. Our prior storage fabric, Tectonic, used hard disk drives (HDDs) to store training data. However, HDDs provide poor IO-per-watt performance. This inefficiency hindered the scalability of our storage fabric, and thus limited our ability to keep pace with rapidly growing training IO demands.\n\nThis paper describes our journey to build and deploy Tectonic-Shift, a composite storage fabric that efficiently serves the needs of our training infrastructure. We begin with a deep workload characterization that guided an extensive hardware and software design space exploration. We then present the principled design of Tectonic-Shift, which maximizes storage power efficiency by combining Shift, a flash storage tier, with Tectonic. Shift improves efficiency by absorbing reads using IO-efficient flash, reducing required HDD capacity. Shift maximizes IO absorption via novel application-aware cache policies that infer future access patterns from training dataset specifications. Shift absorbs 1.51-3.28x more IO than an LRU flash cache and reduces power demand in a petabyte-scale production Tectonic-Shift cluster by 29%.",
+  "abstract_source_id": "src-abstract-atc-2023-fd0addde",
   "venue": "atc",
   "year": 2023,
   "track_or_session": "Distributed Storage",
@@ -453,6 +455,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-atc-2023-fd0addde",
+      "url": "https://www.usenix.org/conference/atc23/presentation/zhao",
+      "kind": "paper-page",
+      "title": "Tectonic-Shift: A Composite Storage Fabric for Large-Scale ML Training",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T21:58:17Z",
+      "content_hash": "sha256:fab50dda7bfe7ebf1d6ad988fa255717ed6d32816e9acecf2086160ba4a1ae7c",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

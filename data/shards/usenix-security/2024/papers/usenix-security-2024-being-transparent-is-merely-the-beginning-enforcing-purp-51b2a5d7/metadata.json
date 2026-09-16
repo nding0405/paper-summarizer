@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2024-being-transparent-is-merely-the-beginning-enforcing-purp-51b2a5d7",
   "title": "Being Transparent is Merely the Beginning: Enforcing Purpose Limitation with Polynomial Approximation",
+  "abstract": "Obtaining the authorization of users (i.e., data owners) prior to data collection has become commonplace for online service providers (i.e., data processors), in light of the stringent data regulations around the world. However, it remains a challenge to uphold the principle of purpose limitation, which mandates that collected data should only be processed for the purpose that the data owner has originally authorized. In this work, we advocate algorithm specificity, as a means to enforce the purpose limitation principle. We propose AlgoSpec, which obscures data to restrict its usability solely to an authorized algorithm or algorithm group. AlgoSpec exploits the nature of polynomial approximation that given the input data and the highest order, any algorithm can be approximated with a unique polynomial. It converts the original authorized algorithm (or a part of it) into a polynomial and then creates a list of alternatives to the original data. To assess the efficacy and efficiency of AlgoSpec, we apply it to the entropy method and Naive Bayes classification under datasets of different magnitudes from 10^2 to 10^6. AlgoSpec significantly outperforms cryptographic solutions such as fully homomorphic encryption (FHE) in efficiency. On accuracy, it achieves a negligible Mean Squared Error (MSE) of 0.289 in the entropy method against computation over plaintext data, and identical accuracy (92.11%) and similar F1 score (87.67%) in the Naive Bayes classification.",
+  "abstract_source_id": "src-abstract-usenix-security-2024-51b2a5d7",
   "venue": "usenix-security",
   "year": 2024,
   "track_or_session": "Social Issues IV",
@@ -175,6 +177,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2024-51b2a5d7",
+      "url": "https://www.usenix.org/conference/usenixsecurity24/presentation/liu-shuofeng",
+      "kind": "paper-page",
+      "title": "Being Transparent is Merely the Beginning: Enforcing Purpose Limitation with Polynomial Approximation",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:14:17Z",
+      "content_hash": "sha256:f97fa8a526ce2c920e1371dedf1ace9548a287a44155930ac1b81588a8a0a2b8",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2025-dilu-enabling-gpu-resourcing-on-demand-for-serverless-dl-45d1b813",
   "title": "Dilu: Enabling GPU Resourcing-on-Demand for Serverless DL Serving via Introspective Elasticity",
+  "abstract": "Serverless computing, with its ease of management, auto-scaling, and cost-effectiveness, is widely adopted by deep learning (DL) applications. DL workloads, especially with large language models, require substantial GPU resources to ensure QoS. However, it is prone to produce GPU fragments (e.g., 15%-94%) in serverless DL systems due to the dynamicity of workloads and coarse-grained static GPU allocation mechanisms, gradually eroding the profits offered by serverless elasticity. Different from classical serverless systems that only scale horizontally, we present introspective elasticity (IE), a fine-grained and adaptive two-dimensional co-scaling mechanism to support GPU resourcing-on-demand for serverless DL tasks. Based on this insight, we build Dilu, a cross-layer and GPU-based serverless DL system with IE support. First, Dilu provides multi-factor profiling for DL tasks with efficient pruning search methods. Second, Dilu adheres to the resourcing-complementary principles in scheduling to improve GPU utilization with QoS guarantees. Third, Dilu adopts an adaptive 2D co-scaling method to enhance the elasticity of GPU provisioning in real time. Evaluations show that it can dynamically adjust the resourcing of various DL functions with low GPU fragmentation (10%-46% GPU defragmentation), high throughput (up to 1.8× inference and 1.1× training throughput increment) and QoS guarantees (11%-71% violation rate reduction), compared to the SOTA baselines.",
+  "abstract_source_id": "src-abstract-asplos-2025-45d1b813",
   "venue": "asplos",
   "year": 2025,
   "track_or_session": "Session 10C: Serverless Computing",
@@ -209,6 +211,19 @@
       "official": false,
       "supports": [
         "Indexed abstract and open-access links used for relevance classification and ancillary-link discovery."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2025-45d1b813",
+      "url": "https://api.openalex.org/works/doi:10.1145/3669940.3707251?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Dilu: Enabling GPU Resourcing-on-Demand for Serverless DL Serving via Introspective Elasticity",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:01:24Z",
+      "content_hash": "sha256:6fbab1037ddd6f4c7821018598037311d77b8ad47b101b170b89854cf2f9d688",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

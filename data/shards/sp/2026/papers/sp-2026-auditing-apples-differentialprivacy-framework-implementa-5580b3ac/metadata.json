@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2026-auditing-apples-differentialprivacy-framework-implementa-5580b3ac",
   "title": "Auditing Apple’s DifferentialPrivacy.framework: Implementation Bugs, Misconfigurations, and Practical Risks",
+  "abstract": "Since 2016, Apple claims that the device analytics it collects to improve user experience are protected by differential privacy (DP). Running on over 2.35 billion Apple devices today, 11Source: MacRumors report on Apple's worldwide active device count. their DP framework gathers a variety of sensitive data ranging from contents of photos to COVID-19 vaccination status. However, despite strong community interest, Apple has not open-sourced its privatization algorithms, impeding independent researchers from verifying its privacy claims and testing for privacy violations. We perform a deep audit of Apple's client-side DP framework on macOS Sonoma 14.2 and Sequoia 15.6 by reverse engineering its native binaries and building runtime interfaces to execute Apple's deployed mechanisms. Our audit covers nearly all deployed algorithms, including Count Median Sketch (CMS) and Hadamard-CMS from Apple's white paper [1], and the Prio protocol for secure aggregation (SecAgg), which Apple uses for learning iconic scenes [2]. We report multiple issues. Every algorithm in Apple's framework that relies on floating-point noise fails to meet its advertised DP and zero-knowledge (ZK) proof guarantees. These violations happen because the DP framework uses insecure noise generators that are known to have floating-point vulnerabilities since 2012. We also discover that the SecAgg protocols in Apple's DP framework are configured with local DP disabled, uploading data without any local DP protection. Our audit provides evidence of DP violations in 5 out of 9 audited mechanisms, impacting 87 % of data collection in macOS Sonoma and 68 % in Sequoia. These vulnerabilities are exploitable by any party with access to pre-aggregation logs. We found instances on the open internet of leaked iPhone logs that can be decoded to recover private information, such as domains visited in Safari and emojis typed on the iPhone keyboard. We responsibly disclosed these vulnerabilities to Apple; the concerned mechanisms are now deprecated.",
+  "abstract_source_id": "src-abstract-sp-2026-5580b3ac",
   "venue": "sp",
   "year": 2026,
   "track_or_session": "Cycle 2",
@@ -133,6 +135,19 @@
       "official": true,
       "supports": [
         "DOI, published-order authors and affiliations, abstract, publication date, page span, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2026-5580b3ac",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Auditing Apple's DifferentialPrivacy.framework: Implementation Bugs, Misconfigurations, and Practical Risks",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:57Z",
+      "content_hash": "sha256:303a9b5e5ef8908a3cfe67f02eb8a87be978a5fe3281c7ecec8c0cdb512517e0",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

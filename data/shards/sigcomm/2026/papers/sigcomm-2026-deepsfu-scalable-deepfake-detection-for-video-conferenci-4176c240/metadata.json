@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sigcomm-2026-deepsfu-scalable-deepfake-detection-for-video-conferenci-4176c240",
   "title": "DeepSFU: Scalable Deepfake Detection for Video Conferencing",
+  "abstract": "Deepfakes have emerged as a significant threat to online communications, enabling nearly indistinguishable impersonation of executives, public figures, and trusted contacts during video calls. While state-of-the-art deepfake detection models can achieve high accuracy offline, deploying them in real-time video conferencing systems remains challenging: the added computation quickly violates interactive latency budgets and greatly limits scalability. Our empirical analysis reveals that video decoding and frame movement dominate the detection pipeline, together accounting for approximately 86.6% of per-frame processing time. In this paper, we present DeepSFU, a novel video conferencing architecture that enables scalable deepfake detection as a native capability. DeepSFU reduces per-frame overhead by detecting anomalies directly on the encoded video bitstream, avoiding costly high-resolution video decoding and heavy detection model inference. To further improve scalability, DeepSFU offloads frequent packet encryption and data movement to Smart Network Interface Card (SmartNIC) by leveraging hardware-accelerated cryptography and GPUDirect RDMA. Intensive evaluation on a large-scale testbed shows that DeepSFU reduces per-frame processing latency by 143.7×, translating into 26.2× higher conferencing capacity while providing continuous deepfake detection for all participants.",
+  "abstract_source_id": "src-abstract-sigcomm-2026-4176c240",
   "venue": "sigcomm",
   "year": 2026,
   "track_or_session": "Research Session 14: Security, Privacy & Networked Systems — Research Paper",
@@ -296,6 +298,19 @@
       "official": true,
       "supports": [
         "official main-paper scope and track definitions"
+      ]
+    },
+    {
+      "id": "src-abstract-sigcomm-2026-4176c240",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/search/match?query=DeepSFU%3A%20Scalable%20Deepfake%20Detection%20for%20Video%20Conferencing&fields=title,abstract",
+      "kind": "semantic-scholar",
+      "title": "DeepSFU: Scalable Deepfake Detection for Video Conferencing",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:59:42Z",
+      "content_hash": "sha256:9f71bdfaabfe8f49ca636c3a5a06f84bc3d79a1c44bc4b9f21c82fdd93f8124c",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

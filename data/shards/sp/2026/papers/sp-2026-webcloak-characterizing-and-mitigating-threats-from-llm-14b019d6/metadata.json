@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2026-webcloak-characterizing-and-mitigating-threats-from-llm-14b019d6",
   "title": "WebCloak: Characterizing and Mitigating Threats from LLM-Driven Web Agents as Intelligent Scrapers",
+  "abstract": "The rise of web agents powered by large language models (LLMs) is reshaping the landscape of human-computer interaction, enabling users to automate complex web tasks with natural language commands. However, this progress introduces significant, yet largely unexplored security concerns: adversaries can employ such web agents to conduct largescale web scraping, particularly of visual content. This paper presents the first systematic characterization of the danger represented by such LLM-driven web agents as intelligent scrapers. We develop LLMCrawlBench, a large test set of 237 extracted real-world webpages (10,895 images) from 50 popular high-traffic websites in 5 critical categories, designed specifically for adversarial image extraction evaluation. Our metrics across over 32 scraper implementations, including LLM-to-Script (L2S), LLM-Native crawlers (LNC), and LLM-based web agents (LWA), demonstrate that while some tools exhibit working issues, advanced LLM-powered frameworks lower the bar for effective scraping. Such new agent-as-attacker threats motivate us to introduce WebCloak, an effective, lightweight defense that specifically targets the main weakness of LLM crawler agents' fundamental “Parse-then-Interpret” mechanism. Our key idea is dual-layered: (1) Dynamic Structural Obfuscation, which not only randomizes structural cues but also restores visual content client-side using non-traditional methods less amenable to direct LLM exploitation, and (2) Optimized Semantic Labyrinth to mislead the central LLM interpretation of the agent through added harmless-yetmisleading contextual clues, all while not sacrificing visual quality for legitimate users. Our evaluations demonstrate that WebCloak significantly reduces scraping recall rates from 88.7 % to 0 % against leading LLM-driven scraping agents, offering a robust and practical countermeasure.",
+  "abstract_source_id": "src-abstract-sp-2026-14b019d6",
   "venue": "sp",
   "year": 2026,
   "track_or_session": "Cycle 1",
@@ -217,6 +219,19 @@
       "official": true,
       "supports": [
         "DOI, published-order authors and affiliations, abstract, publication date, page span, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2026-14b019d6",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "WebCloak: Characterizing and Mitigating Threats From LLM-Driven Web Agents as Intelligent Scrapers",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:58:06Z",
+      "content_hash": "sha256:5353b9384fd86d54ad3dc674f6041a164ea560a1a98a9c02cc1bb37e317e508e",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

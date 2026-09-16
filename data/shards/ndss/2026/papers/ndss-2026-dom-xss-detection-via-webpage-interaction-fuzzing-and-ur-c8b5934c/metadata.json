@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2026-dom-xss-detection-via-webpage-interaction-fuzzing-and-ur-c8b5934c",
   "title": "DOM-XSS Detection via Webpage Interaction Fuzzing and URL Component Synthesis",
+  "abstract": "DOM-based cross-site scripting (DOM-XSS) is a prevalent form of web vulnerability. Prior work on automated detection and confirmation of such vulnerabilities at scale has several limitations. First, prior work does not interact with the page and thus misses vulnerabilities in event handlers whose execution depends on user actions. Second, prior work does not find URL components, such as GET parameters and fragment values that, when instantiated with specific keys/values, execute more code paths. To address this, we introduce SWIPE, a DOM-XSS analysis infrastructure that uses fuzzing to generate user interactions to trigger event handlers and leverages dynamic symbolic execution (DSE) to automatically synthesize URL parameters and fragments. We run SWIPE on 44,480 URLs found in pages from the Tranco top 30,000 popular domains. Compared to prior work, SWIPE’s fuzzer finds 15% more vulnerabilities. Additionally, we find that a lack of parameters and fragments in URLs significantly hinders DOM-XSS detection, and show that SWIPE’s DSE engine can synthesize previously unseen URL parameters and fragments that trigger 20 new vulnerabilities.",
+  "abstract_source_id": "src-abstract-ndss-2026-c8b5934c",
   "venue": "ndss",
   "year": 2026,
   "track_or_session": "Summer submission cycle",
@@ -202,6 +204,19 @@
       "official": false,
       "supports": [
         "independent proceedings identity reconciliation"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2026-c8b5934c",
+      "url": "https://www.ndss-symposium.org/ndss-paper/dom-xss-detection-via-webpage-interaction-fuzzing-and-url-component-synthesis/",
+      "kind": "paper-page",
+      "title": "DOM-XSS Detection via Webpage Interaction Fuzzing and URL Component Synthesis",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:21:53Z",
+      "content_hash": "sha256:0b1532a1a522d5b4eca2cfc29e1b001da6d27d1a2d6750989d44ac63c741d632",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

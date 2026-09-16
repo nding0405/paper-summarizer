@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2026-virtualizing-ebpf-with-late-binding-d7cc07ca",
   "title": "Virtualizing eBPF with Late-Binding",
+  "abstract": "While eBPF has become the de facto standard for kernel customization in cloud-native systems, its design implicitly assumes a single trust domain. Allowing multiple tenants to deploy their own eBPF programs breaks this assumption, making the system both insecure and inefficient. We identify the root cause as eBPF’s static-binding model, which rigidly couples logical eBPF programs to physical kernel hooks, forcing tenants to contend for shared execution contexts.\n\nWe propose vBPF, a virtualization layer that shifts to a late-binding model. By repurposing physical hooks as generic interposition points and deferring the binding until the event is attributed at runtime, vBPF decouples tenant context from the underlying kernel. vBPF achieves this via three key mechanisms: (1) a Sniffer that accurately attributes interrupt-driven events to tenants, (2) a Dispatcher that replaces linear traversal with scalable O(1) program lookup, and (3) a compiler-assisted framework for state isolation. Implemented on Linux 6.12, vBPF enables the secure coexistence of multi-tenant workloads. Our evaluation shows that vBPF reduces latency by up to 3.9× (lmbench) and improves throughput by 29% (PostgreSQL) compared to native contention.",
+  "abstract_source_id": "src-abstract-osdi-2026-d7cc07ca",
   "venue": "osdi",
   "year": 2026,
   "track_or_session": "Accelerator and Device Virtualization",
@@ -188,6 +190,19 @@
       "official": true,
       "supports": [
         "Official proceedings availability and canonical conference versions."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2026-d7cc07ca",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/zhang-jing",
+      "kind": "paper-page",
+      "title": "Virtualizing eBPF with Late-Binding",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:09:14Z",
+      "content_hash": "sha256:4c380fe99ea586c8ba6fdddab04f83717ce24d156eb09af23473591971bc4ab8",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

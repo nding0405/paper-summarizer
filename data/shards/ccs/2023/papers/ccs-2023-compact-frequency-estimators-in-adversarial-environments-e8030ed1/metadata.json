@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2023-compact-frequency-estimators-in-adversarial-environments-e8030ed1",
   "title": "Compact Frequency Estimators in Adversarial Environments",
+  "abstract": "Count-Min Sketch (CMS) and HeavyKeeper (HK) are two realizations of a compact frequency estimator (CFE). These are a class of probabilistic data structures that maintain a compact summary of (typically) high-volume streaming data, and provides approximately correct estimates of the number of times any particular element has appeared. CFEs are often the base structure in systems looking for the highest-frequency elements (i.e., top-K elements, heavy hitters, elephant flows). Traditionally, probabilistic guarantees on the accuracy of frequency estimates are proved under the implicit assumption that stream elements do not depend upon the internal randomness of the structure. Said another way, they are proved in the presence of data streams that are created by non-adaptive adversaries. Yet in many practical use-cases, this assumption is not well-matched with reality; especially, in applications where malicious actors are incentivized to manipulate the data stream. We show that the CMS and HK structures can be forced to make significant estimation errors, by concrete attacks that exploit adaptivity. We analyze these attacks analytically and experimentally, with tight agreement between the two. Sadly, these negative results seem unavoidable for (at least) sketch-based CFEs with parameters that are reasonable in practice. On the positive side, we give a new CFE (Count-Keeper) that can be seen as a composition of the CMS and HK structures. Count-Keeper estimates are typically more accurate (by at least a factor of two) than CMS for \"honest\" streams; our attacks against CMS and HK are less effective (and more resource intensive) when used against Count-Keeper; and Count-Keeper has a native ability to flag estimates that are suspicious, which neither CMS or HK (or any other CFE, to our knowledge) admits.",
+  "abstract_source_id": "src-abstract-ccs-2023-e8030ed1",
   "venue": "ccs",
   "year": 2023,
   "track_or_session": "Security of Cryptographic Protocols and Implementations (Applied Cryptography)",
@@ -151,6 +153,19 @@
       "official": false,
       "supports": [
         "published title, author order, and page span"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2023-e8030ed1",
+      "url": "https://api.openalex.org/works/doi:10.1145/3576915.3623216?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Compact Frequency Estimators in Adversarial Environments",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:07:29Z",
+      "content_hash": "sha256:eb226a5947722af3e23c0ba8087956b1cc5281cf388b3e23aeb9cc7e50401794",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

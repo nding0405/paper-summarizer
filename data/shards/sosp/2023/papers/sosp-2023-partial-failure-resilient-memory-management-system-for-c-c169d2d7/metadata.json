@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sosp-2023-partial-failure-resilient-memory-management-system-for-c-c169d2d7",
   "title": "Partial Failure Resilient Memory Management System for (CXL-based) Distributed Shared Memory",
+  "abstract": "The efficiency of distributed shared memory (DSM) has been greatly improved by recent hardware technologies. But, the difficulty of distributed memory management can still be a major obstacle to the democratization of DSM, especially when a partial failure of the participating clients (e.g., due to crashed processes or machines) should be tolerated. In this paper, we present CXL-SHM, an automatic distributed memory management system based on reference counting. The reference count maintenance in CXL-SHM is implemented with a special era-based non-blocking algorithm. Thus, there are no blocking synchronization, memory leak, double free, and wild pointer problems, even if some participating clients unexpectedly fail without freeing their possessed memory references. We evaluated our system on real CXL hardware with both micro-benchmarks and end-to-end applications, which demonstrate the efficiency of CXL-SHM and the simplicity/flexibility of using CXL-SHM to build efficient distributed applications.",
+  "abstract_source_id": "src-abstract-sosp-2023-c169d2d7",
   "venue": "sosp",
   "year": 2023,
   "track_or_session": "Session 11: Distributed and disaggregated memory",
@@ -272,6 +274,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-sosp-2023-c169d2d7",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Partial Failure Resilient Memory Management System for (CXL-based) Distributed Shared Memory",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:12Z",
+      "content_hash": "sha256:aa9c23a45f6ec9973f40e6c9520c69d42bb49fc1f526891570edfdb1976cff82",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

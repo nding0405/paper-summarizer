@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2023-enabling-users-to-control-their-internet-9dfa00cb",
   "title": "Enabling Users to Control their Internet",
+  "abstract": "Access link from the ISP tends to be the bottleneck for many users. However, users today have no control over how the access bandwidth (which is under the ISP's control) is divided across their incoming flows. In this paper, we present a system, CRAB, that runs at the receiver's devices – home routers and endpoints – and enforces user-specified weights across the incoming flows, without any explicit support from the ISP or the senders. It involves a novel control loop that continuously estimates available downlink capacity and flow demands by observing the incoming traffic, computes the max-min weighted fair share rates for the flows using these estimates, and throttles the flows to the computed rates. The key challenge that CRAB must tackle is that the demand and capacity estimated by observing the incoming traffic at the receiver (after the bottleneck) is inherently ambiguous – CRAB's control loop is designed to effectively avoid and correct these ambiguities. We implement CRAB on a Linux machine and Linksys WRT3200ACM home router. Our evaluation, involving real-world flows, shows how CRAB can enforce user preferences to achieve 2× lower web page load times and 3× higher video quality than the status quo.",
+  "abstract_source_id": "src-abstract-nsdi-2023-9dfa00cb",
   "venue": "nsdi",
   "year": 2023,
   "track_or_session": "Internet-Scale Networks",
@@ -98,6 +100,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2023-9dfa00cb",
+      "url": "https://www.usenix.org/conference/nsdi23/presentation/tahir",
+      "kind": "paper-page",
+      "title": "Enabling Users to Control their Internet",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:02:02Z",
+      "content_hash": "sha256:59879c3b6b35e338a0ba2f6cbd3aad1df3975ff1f0fc499b7c6c656503a6d0e4",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

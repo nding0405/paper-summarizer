@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2026-inside-out-a-paradigm-shift-in-vm-introspection-e588918b",
   "title": "Inside Out: A Paradigm Shift in VM Introspection",
+  "abstract": "We present GOODKIT, a new framework for live virtual machine introspection (LVMI) designed for performance, scalability, and safe integration in modern cloud environments. Unlike existing approaches—such as LibVMI—which rely on heavy VM pausing, GOODKIT executes observers as lightweight VMs colocated with the VMM, enabling nativespeed access to the target state while preserving strong isolation. GOODKIT introduces fine-grained, lock-aware memory–coherence mechanisms, a configurable probing subsystem for I/O and kernel-level events, and a mutualization layer that allows multiple observers to operate concurrently without degrading target performance. Across 21 real world use cases, including rootkit detection, ransomware monitoring, and scheduler introspection, GOODKIT delivers high performance (compared to LibVMI), strong isolation, and broad applicability.",
+  "abstract_source_id": "src-abstract-osdi-2026-e588918b",
   "venue": "osdi",
   "year": 2026,
   "track_or_session": "Virtualization and Live Migration",
@@ -230,6 +232,19 @@
       "official": true,
       "supports": [
         "Official proceedings availability and canonical conference versions."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2026-e588918b",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/teguia",
+      "kind": "paper-page",
+      "title": "Inside Out: A Paradigm Shift in VM Introspection",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:08:27Z",
+      "content_hash": "sha256:2c7e16ff4db095130b2f81dd30ea2cd9d2ced545faff237dbb75c394400cd6e3",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

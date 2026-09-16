@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-prompt-obfuscation-for-large-language-models-d6e47520",
   "title": "Prompt Obfuscation for Large Language Models",
+  "abstract": "System prompts that include detailed instructions to describe the task performed by the underlying LLM can easily transform foundation models into tools and services with minimal overhead. They are often considered intellectual property, similar to the code of a software product, because of their crucial impact on the utility. However, extracting system prompts is easily possible. As of today, there is no effective countermeasure to prevent the stealing of system prompts, and all safeguarding efforts could be evaded.\n\nIn this work, we propose an alternative to conventional system prompts. We introduce prompt obfuscation to prevent the extraction of the system prompt with little overhead. The core idea is to find a representation of the original system prompt that leads to the same functionality, while the obfuscated system prompt does not contain any information that allows conclusions to be drawn about the original system prompt. We evaluate our approach by comparing our obfuscated prompt output with the output of the original prompt, using eight distinct metrics to measure the lexical, character-level, and semantic similarity. We show that the obfuscated version is constantly on par with the original one. We further perform three different deobfuscation attacks with varying attacker knowledge—covering both black-box and white-box conditions—and show that in realistic attack scenarios an attacker is unable to extract meaningful information. Overall, we demonstrate that prompt obfuscation is an effective mechanism to safeguard the intellectual property of a system prompt while maintaining the same utility as the original prompt.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-d6e47520",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "LLM Security 2: Jailbreaking and Prompt Stealing",
@@ -133,6 +135,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-d6e47520",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/pape",
+      "kind": "paper-page",
+      "title": "Prompt Obfuscation for Large Language Models",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:21:21Z",
+      "content_hash": "sha256:2f84a5f2430c47c0fa64f39762cd885f72a38d66498f0b7fd188516d40a840fd",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

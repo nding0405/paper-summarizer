@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "atc-2024-fbmm-making-memory-management-extensible-with-filesystem-6bd85947",
   "title": "FBMM: Making Memory Management Extensible With Filesystems",
+  "abstract": "New memory technologies like CXL promise diverse memory configurations such as tiered memory, far memory, and processing in memory. Operating systems must be modified to support these new hardware configurations for applications to make use of them. While many parts of operating systems are extensible, memory management remains monolithic in most systems, making it cumbersome to add support for a diverse set of new memory policies and mechanisms.\n\nRather than creating a whole new extensible interface for memory managers, we propose to instead use the memory management callbacks provided by the Linux virtual file system (VFS) to write memory managers, called memory management filesystems (MFSs). Memory is allocated by creating and mapping a file in an MFS's mount directory and freed by deleting the file. Use of an MFS is transparent to applications. We call this system File Based Memory Management (FBMM).\n\nUsing FBMM, we created a diverse set of standalone memory managers for tiered memory, contiguous allocations, and memory bandwidth allocation, each comprising 500-1500 lines of code. Unlike current approaches that require custom kernels, with FBMM, an MFS can be compiled separately from the kernel and loaded dynamically when needed. We measure the overhead of using filesystems for memory management and found the overhead to be less than 8% when allocating a single page, and less than 0.1% when allocating as little as 128 pages. MFSs perform competitively with kernel implementations, and sometimes better due to simpler implementations.",
+  "abstract_source_id": "src-abstract-atc-2024-6bd85947",
   "venue": "atc",
   "year": 2024,
   "track_or_session": "Memory",
@@ -138,6 +140,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-atc-2024-6bd85947",
+      "url": "https://www.usenix.org/conference/atc24/presentation/tabatabai",
+      "kind": "paper-page",
+      "title": "FBMM: Making Memory Management Extensible With Filesystems",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T21:58:40Z",
+      "content_hash": "sha256:4a6b4c22de161622280075c54551f3a4c1725baa9b0666637d60e98cf55da092",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

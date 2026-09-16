@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2023-scalable-tail-latency-estimation-for-data-center-network-5a41bd30",
   "title": "Scalable Tail Latency Estimation for Data Center Networks",
+  "abstract": "In this paper, we consider how to provide fast estimates of flow-level tail latency performance for very large scale data center networks. Network tail latency is often a crucial metric for cloud application performance that can be affected by a wide variety of factors, including network load, inter-rack traffic skew, traffic burstiness, flow size distributions, oversubscription, and topology asymmetry. Network simulators such as ns-3 and OMNeT++ can provide accurate answers, but are very hard to parallelize, taking hours or days to answer what if questions for a single configuration at even moderate scale. Recent work with MimicNet has shown how to use machine learning to improve simulation performance, but at a cost of including a long training step per configuration, and with assumptions about workload and topology uniformity that typically do not hold in practice.\n\nWe address this gap by developing a set of techniques to provide fast performance estimates for large scale networks with general traffic matrices and topologies. A key step is to decompose the problem into a large number of parallel independent single-link simulations; we carefully combine these link-level simulations to produce accurate estimates of end-to-end flow level performance distributions for the entire network. LikeMimicNet, we exploit symmetry where possible to gain additional speedups, but without relying on machine learning, so there is no training delay. On a large-scale network where ns-3 takes 11 to 27 hours to simulate five seconds of network behavior, our techniques runin one to two minutes with accuracy within 9% for tail flow completion times.",
+  "abstract_source_id": "src-abstract-nsdi-2023-5a41bd30",
   "venue": "nsdi",
   "year": 2023,
   "track_or_session": "Data Centers",
@@ -140,6 +142,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2023-5a41bd30",
+      "url": "https://www.usenix.org/conference/nsdi23/presentation/zhao-kevin",
+      "kind": "paper-page",
+      "title": "Scalable Tail Latency Estimation for Data Center Networks",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:02:29Z",
+      "content_hash": "sha256:c5b527ee2214150403241719d8dcc215bced939473f5c8630cccb98f39223bc0",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

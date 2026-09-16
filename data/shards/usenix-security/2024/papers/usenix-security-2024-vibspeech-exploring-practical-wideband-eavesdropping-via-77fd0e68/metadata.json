@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2024-vibspeech-exploring-practical-wideband-eavesdropping-via-77fd0e68",
   "title": "VibSpeech: Exploring Practical Wideband Eavesdropping via Bandlimited Signal of Vibration-based Side Channel",
+  "abstract": "Vibration-based side channel is an ever-present threat to speech privacy. However, due to the target's frequency response with a rapid decay or limited sampling rate of malicious sensors, the acquired vibration signals are often distorted and narrowband, which fails an intelligible speech recovery. This paper tries to answer that when the side-channel data has only a very limited bandwidth (<500Hz), is it feasible to achieve a wideband eavesdropping based on a practical assumption? Our answer is YES based on the assumption that a short utterance (2s-4s) of the victim is exposed to the attacker. What is most surprising is that the attack can recover speech with a bandwidth of up to 8kHz. This covers almost all phonemes (voiced and unvoiced) in human speech and causes practical threat. The core idea of the attack is using vocal-tract features extracted from the victim's utterance to compensate for the side-channel data. To demonstrate the threat, we proposed a vocal-guided attack scheme called VibSpeech and built a prototype based on a mmWave sensor to penetrate soundproof walls for vibration sensing. We solved challenges of vibration artifact suppression and a generalized scheme free of any target's training data. We evaluated VibSpeech with extensive experiments and validated it on the IMU-based method. The results indicated that VibSpeech can recover intelligible speech with an average MCD/SNR of 3.9/5.4dB.",
+  "abstract_source_id": "src-abstract-usenix-security-2024-77fd0e68",
   "venue": "usenix-security",
   "year": 2024,
   "track_or_session": "Hardware Security III: Signals",
@@ -175,6 +177,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2024-77fd0e68",
+      "url": "https://www.usenix.org/conference/usenixsecurity24/presentation/wang-chao",
+      "kind": "paper-page",
+      "title": "VibSpeech: Exploring Practical Wideband Eavesdropping via Bandlimited Signal of Vibration-based Side Channel",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:18:00Z",
+      "content_hash": "sha256:2321ca7262ebf37f918ad09b81b82dbd982253d82dc39dbe3b1ae4eb1a0fd94d",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

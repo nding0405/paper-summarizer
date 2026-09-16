@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2024-understanding-routable-pcie-performance-for-composable-i-329a212b",
   "title": "Understanding Routable PCIe Performance for Composable Infrastructures",
+  "abstract": "Routable PCIe has become the predominant cluster interconnect to build emerging composable infrastructures. Empowered by PCIe non-transparent bridge devices, PCIe transactions can traverse multiple switching domains, enabling a server to elastically integrate a number of remote PCIe devices as local ones. However, it is unclear how to move data or perform communication efficiently over the routable PCIe fabric without understanding its capabilities and limitations.\n\nThis paper presents the design and implementation of rPCIeBench , a software-hardware co-designed benchmarking framework to systematically characterize the routable PCIe fabric. rPCIeBench provides flexible data communication primitives, exposes end-to-end PCIe transaction observability, and enables reconfigurable experiment deployment. Using rPCIeBench, we first analyze the communication characteristics of a routable PCIe path, quantify its performance tax, and compare it with the local PCIe link. We then use it to dissect in-fabric traffic orchestration behaviors and draw three interesting findings: approximate max-min bandwidth partition, fast end-to-end bandwidth synchronization, and interference-free among orthogonal data paths. Finally, we encode gathered characterization insights as traffic orchestration rules and develop an edge constraints relaxing algorithm to estimate PCIe flow transmission performance over a shared fabric. We validate its accuracy and demonstrate its potential to provide an optimization guide to design efficient flow schedulers.",
+  "abstract_source_id": "src-abstract-nsdi-2024-329a212b",
   "venue": "nsdi",
   "year": 2024,
   "track_or_session": "Network Protocols",
@@ -139,6 +141,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2024-329a212b",
+      "url": "https://www.usenix.org/conference/nsdi24/presentation/hou",
+      "kind": "paper-page",
+      "title": "Understanding Routable PCIe Performance for Composable Infrastructures",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:03:52Z",
+      "content_hash": "sha256:538f363d5e5a504f92b3ef1633a720eb3f3962d694a1863add9330afc70878d9",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

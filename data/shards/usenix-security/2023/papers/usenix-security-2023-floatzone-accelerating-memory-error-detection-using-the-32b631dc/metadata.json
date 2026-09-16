@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2023-floatzone-accelerating-memory-error-detection-using-the-32b631dc",
   "title": "FloatZone: Accelerating Memory Error Detection using the Floating Point Unit",
+  "abstract": "Memory sanitizers are powerful tools to detect spatial and temporal memory errors, such as buffer overflows and use-after-frees. Fuzzers and software testers often rely on these tools to discover the presence of bugs. Sanitizers, however, incur significant runtime overhead. For example, AddressSanitizer (ASan), the most widely used sanitizer, incurs a slowdown of 2x. The main source of this overhead consists of the sanitizer checks, which involve at least a memory lookup, a comparison, and a conditional branch instruction. Applying these checks to confirm the validity of the memory accesses in a program can greatly slow down the execution.\n\nWe introduce FloatZone, a compiler-based sanitizer to detect spatial and temporal memory errors in C/C++ programs using lightweight checks that leverage the Floating Point Unit (FPU). We show that the combined effects of \"lookup, compare, and branch\" can be achieved with a single floating point addition that triggers an underflow exception in the case of a memory violation. This novel method to detect illegal accesses greatly improves performance by avoiding the drawbacks of traditional comparisons: it prevents branch mispredictions, enables higher instruction-level parallelism due to offloading to the FPU, and also reduces the cache miss rate due to the lack of shadow memory.\n\nOur evaluation shows that FloatZone significantly outperforms existing systems, with just 37% runtime overhead on SPEC CPU2006 and CPU2017. Moreover, we measure an average 2.87x increase in fuzzing throughput compared to the state of the art. Finally, we confirm that FloatZone offers detection capabilities comparable with ASan on the Juliet test suite and a collection of OSS-Fuzz bugs.",
+  "abstract_source_id": "src-abstract-usenix-security-2023-32b631dc",
   "venue": "usenix-security",
   "year": 2023,
   "track_or_session": "Memory",
@@ -175,6 +177,19 @@
       "official": true,
       "supports": [
         "authors, affiliations when published, abstract, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2023-32b631dc",
+      "url": "https://www.usenix.org/conference/usenixsecurity23/presentation/gorter",
+      "kind": "paper-page",
+      "title": "FloatZone: Accelerating Memory Error Detection using the Floating Point Unit",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:11:03Z",
+      "content_hash": "sha256:1b063d91b8dcd50ea21f2c758b2c1a51ab2a6166f007428219be39612574bafe",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

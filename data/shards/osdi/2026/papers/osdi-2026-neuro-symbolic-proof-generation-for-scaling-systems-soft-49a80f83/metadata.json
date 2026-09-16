@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2026-neuro-symbolic-proof-generation-for-scaling-systems-soft-49a80f83",
   "title": "Neuro-Symbolic Proof Generation for Scaling Systems Software Verification",
+  "abstract": "Formal verification via interactive theorem proving is increasingly used to ensure the correctness of critical systems, yet constructing large proof scripts remains highly manual and limits scalability. Advances in large language models (LLMs), especially in mathematical reasoning, make their integration into software verification increasingly promising. This paper introduces a neuro-symbolic proof generation framework designed to automate proof search for system-level verification projects. The framework performs a best-first tree search over proof states, repeatedly querying an LLM for the next candidate proof step. On the neural side, we fine-tune LLMs using datasets of proof state–step pairs; on the symbolic side, we incorporate a range of ITP tools to repair rejected steps, filter and rank proof states, and automatically discharge subgoals when search progress stalls. This synergy enables data-efficient LLM adaptation and semantics-informed pruning of the search space. We implement the framework on a new Isabelle REPL that exposes fine-grained proof states and automation tools, and evaluate it on the FVEL seL4 benchmark and additional Isabelle developments. On seL4, the system proves up to 77.6% of the theorems, substantially surpassing previous LLM-based approaches and standalone Sledgehammer, while solving significantly more multi-step proofs. Results across further Isabelle benchmarks demonstrate strong generalization, indicating a viable path toward scalable automated software verification.",
+  "abstract_source_id": "src-abstract-osdi-2026-49a80f83",
   "venue": "osdi",
   "year": 2026,
   "track_or_session": "The Session about Correctness",
@@ -209,6 +211,19 @@
       "official": true,
       "supports": [
         "Official proceedings availability and canonical conference versions."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2026-49a80f83",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/he-baoding",
+      "kind": "paper-page",
+      "title": "Neuro-Symbolic Proof Generation for Scaling Systems Software Verification",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:08:39Z",
+      "content_hash": "sha256:306707beb1c67f676bf01eb1ca1558b7cd4a04118ad893d920fcf7a27c35970f",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

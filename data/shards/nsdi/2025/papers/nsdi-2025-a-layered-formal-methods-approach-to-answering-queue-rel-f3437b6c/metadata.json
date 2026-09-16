@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2025-a-layered-formal-methods-approach-to-answering-queue-rel-f3437b6c",
   "title": "A Layered Formal Methods Approach to Answering Queue-related Queries",
+  "abstract": "Queue dynamics introduce significant uncertainty in network management tasks such as debugging, performance monitoring, and analysis. Despite numerous queue-monitoring techniques, many networks today continue to collect only per-port packet counts (e.g., using SNMP). Although queue lengths are correlated with packet counts, deriving the precise correlation between them is very challenging since packet counts do not specify many quantities (e.g., packet arrival order) which affect queue lengths.\n\nThis paper presents QuASI, a system that can answer many queue-related queries using only coarse-grained per-port packet counts. QuASI checks whether there exists a packet trace that is consistent with the packet counts and satisfies a query. To scale on large problem instances, QuASI relies on a layered approach and on a novel enqueue-rate abstraction, which is lossless for the class of queries that QuASI answers. The first layer employs a novel and efficient algorithm that generates a cover-set of abstract traces, constructs representative abstract traces from the cover-set, and efficiently checks each representative abstract trace by leveraging a known result on (0,1)-matrix existence. The first layer guarantees no false negatives: if the first layer says \"No\", there is no packet trace consistent with the observed packet counts that makes the query true. If it says \"Yes\", further verification is needed, which the second layer resolves using an SMT solver. As a result, QuASI has no false positives and no false negatives.\n\nOur evaluations show that QuASI is up to 10 6 X faster than state-of-the-art, and can answer non-trivial queries about queue metrics (e.g., queue length) using minute-granularity packet counts. Our work is the first step toward more practical formal performance analysis under given measurements.",
+  "abstract_source_id": "src-abstract-nsdi-2025-f3437b6c",
   "venue": "nsdi",
   "year": 2025,
   "track_or_session": "Verification 2",
@@ -119,6 +121,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2025-f3437b6c",
+      "url": "https://www.usenix.org/conference/nsdi25/presentation/raghunathan",
+      "kind": "paper-page",
+      "title": "A Layered Formal Methods Approach to Answering Queue-related Queries",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:03:55Z",
+      "content_hash": "sha256:d9dcf03a1a1fe6b948247d556c039c55d5c94588f76ac95fa15d936864f083f4",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2025-pipellm-fast-and-confidential-large-language-model-servi-db52692c",
   "title": "PipeLLM: Fast and Confidential Large Language Model Services with Speculative Pipelined Encryption",
+  "abstract": "Confidential computing on GPUs, like NVIDIA H100, mitigates the security risks of outsourced Large Language Models (LLMs) by implementing strong isolation and data encryption. Nonetheless, this encryption incurs a significant performance overhead, reaching up to 52.8% and 88.2% throughput drop when serving OPT-30B and OPT-66B, respectively. To address this challenge, we introduce PipeLLM, a user-transparent runtime system. PipeLLM removes the overhead by overlapping the encryption and GPU computation through pipelining-an idea inspired by the CPU instruction pipelining-thereby effectively concealing the latency increase caused by encryption. The primary technical challenge is that, unlike CPUs, the encryption module lacks prior knowledge of the specific data needing encryption until it is requested by the GPUs. To this end, we propose speculative pipelined encryption to predict the data requiring encryption by analyzing the serving patterns of LLMs. Further, we have developed an efficient, low-cost pipeline relinquishing approach for instances of incorrect predictions. Our experiments show that compared with vanilla systems without confidential computing (e.g., vLLM, PEFT, and FlexGen), PipeLLM incurs modest overhead ( < 19.6% in throughput) across various LLM sizes, from 13B to 175B. PipeLLM's source code is available at https://github.com/SJTU-IPADS/PipeLLM.",
+  "abstract_source_id": "src-abstract-asplos-2025-db52692c",
   "venue": "asplos",
   "year": 2025,
   "track_or_session": "Session 3C: ML Security",
@@ -152,6 +154,19 @@
       "official": false,
       "supports": [
         "Indexed abstract and open-access links used for relevance classification and ancillary-link discovery."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2025-db52692c",
+      "url": "https://api.openalex.org/works/doi:10.1145/3669940.3707224?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "PipeLLM: Fast and Confidential Large Language Model Services with Speculative Pipelined Encryption",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:02:42Z",
+      "content_hash": "sha256:f224215297ca7d252de6d9611f013a6e63236a1c1a993821970ee6d4857be602",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

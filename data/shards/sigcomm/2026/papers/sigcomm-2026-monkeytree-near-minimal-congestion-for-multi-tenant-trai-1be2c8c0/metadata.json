@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sigcomm-2026-monkeytree-near-minimal-congestion-for-multi-tenant-trai-1be2c8c0",
   "title": "MonkeyTree: Near-Minimal Congestion for Multi-tenant Training via Migration",
+  "abstract": "We present MonkeyTree, the first system to mitigate network congestion in multi-tenant GPU clusters through job-migration based defragmentation rather than network-layer techniques. As cloud operators co-locate ML training jobs on shared, oversubscribed networks, congestion degrades training throughput for over a third of jobs. Prior approaches either rely on routing and flow scheduling—which we show have fundamental limits when traffic exceeds capacity, or require costly full-bisection bandwidth topologies with packet spraying. MonkeyTree exploits characteristics of ML training traffic: ring-based collectives generate exactly one cross-rack flow per rack a job spans, making congestion-free placements achievable. The sparse constraint structure admits abundant valid configurations, making them easy to reach with few migrations. Once reached, low fragmentation is self-reinforcing, as new arrivals disturb only a few racks. MonkeyTree formulates defragmentation as an integer linear program that minimizes worker movements, subject to per-rack fragmentation bounds. We prove a tight bound showing any placement can be defragmented to at most two cross-rack fragments per ToR, and extend the formulation to hybrid parallelism with multiple rings per server. Migration is implemented via in-memory checkpoint-and-restore over RDMA, incurring only 9.02 seconds of system overhead end-to-end per worker. We evaluate MonkeyTree using a custom simulator modeling clusters of up to 2,048 H200 GPUs and prototype on a five-node A100 testbed. MonkeyTree improves average job completion time by 14% over the next best baseline on a cluster of 1,024 GPUs with a 4:1 oversubscription. With a high 16:1 oversubscription ratio and 2,048 GPUs, MonkeyTree keeps p99 job completion time within 5% of ideal.",
+  "abstract_source_id": "src-abstract-1be2c8c0",
   "venue": "sigcomm",
   "year": 2026,
   "track_or_session": "Research Session 11: Scheduling for ML Training Clusters — Research Paper",
@@ -128,6 +130,19 @@
       "official": true,
       "supports": [
         "official main-paper scope and track definitions"
+      ]
+    },
+    {
+      "id": "src-abstract-1be2c8c0",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/search/match?query=MonkeyTree%3A%20Near-Minimal%20Congestion%20for%20Multi-tenant%20Training%20via%20Migration&fields=title,abstract",
+      "kind": "semantic-scholar",
+      "title": "MonkeyTree: Near-Minimal Congestion for Multi-tenant Training via Migration",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T23:03:13Z",
+      "content_hash": "sha256:7294f6667f3b75d31a20cad516ba0a79c15495c003a5ae8e88e3d36b4ebd3a8e",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

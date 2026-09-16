@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-the-perils-of-flexibility-uncovering-application-layer-v-8a16627f",
   "title": "The Perils of Flexibility: Uncovering Application-Layer Vulnerabilities in Cosmos SDK Customization Points",
+  "abstract": "The Cosmos SDK is a premier blockchain development framework that facilitates the construction of application-layer logic through reusable modules and extensible customization interfaces. Currently, the Cosmos ecosystem encompasses over one hundred production blockchains, reaching a peak total market capitalization exceeding $32 billion. While this modular architecture significantly lowers development barriers, it simultaneously expands the application-layer attack surface, as developer-accessible customization points are susceptible to misuse or incorrect composition.\n\nIn this work, we present a security analysis of application-layer pitfalls within Cosmos-based blockchains. By analyzing the transaction execution lifecycle and developer-accessible customization points, we formalize four execution invariants essential for correct transaction processing. Guided by these invariants, we identify eight recurring classes of error-prone development patterns in which violations compromise transaction safety, resulting in severe consequences ranging from asset theft to chain-halting failures. To assess the prevalence and impact of these pitfalls, we conducted an ecosystem-wide empirical analysis, uncovering 65 vulnerabilities across various Cosmos-based blockchains. Following responsible disclosure, 26 of these vulnerabilities were acknowledged by the affected project teams, with 19 subsequently receiving public fixes and two resulting in assigned CVE identifiers. These disclosures yielded $51,000 in bug bounty rewards and prevented potential asset theft affecting assets valued in the tens of millions of dollars. Our findings demonstrate that application-layer vulnerabilities are widespread in the Cosmos ecosystem and underscore the critical need for increased rigor in application-layer design, development, and auditing.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-8a16627f",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Applications of Cryptography 2",
@@ -155,6 +157,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-8a16627f",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/ma",
+      "kind": "paper-page",
+      "title": "The Perils of Flexibility: Uncovering Application-Layer Vulnerabilities in Cosmos SDK Customization Points",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:25:51Z",
+      "content_hash": "sha256:227d6e3e245003d43d5d654260ce3e37b00b7a38acfc3801c4778993563a5a66",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

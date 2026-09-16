@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2026-efficient-fuzzy-private-set-intersection-from-secret-sha-f42419b2",
   "title": "Efficient Fuzzy Private Set Intersection from Secret-shared OPRF",
+  "abstract": "Private set intersection (PSI) enables a sender holding a set $Q$ of size $m$ and a receiver holding a set $W$ of size $n$ to securely compute the intersection $Q \\cap W$ . Fuzzy PSI (FPSI) is a PSI variant where the receiver learns the items $q \\in Q$ for which there exists some $w \\in W$ satisfying $\\operatorname{dist}(q, w) \\leq \\delta$ under a given distance metric. Although several FPSI works are proposed for $L_{p}$ distance metrics with $p \\in[1, \\infty]$ , they either heavily rely on expensive homomorphic encryptions, or incur undesirable complexity, e.g., exponential to the element dimension, both of which lead to poor practical efficiency. In this work, we propose efficient FPSI protocols for $L_{p \\in[1, \\infty]}$ distance metrics, primarily leveraging significantly cheaper symmetric-key operations. Our protocols achieve linear communication and computation complexity in the set sizes $m, n$ , the dimension $d$ , and the distance threshold $\\delta$ . Our core building block is an oblivious programmable PRF with secret-shared outputs, which may be of independent interest. Furthermore, we incorporate a prefix technique that reduces the dependence on the distance threshold $\\delta$ to logarithmic, which is particularly suitable for large $\\delta$ . We implement our FPSI protocols and compare them with state-of-the-art constructions. Experimental results demonstrate that our protocols consistently and significantly outperform existing works across all settings. Specifically, our protocols achieve a speedup of $12 \\sim 145 \\times$ in running time and a reduction of $3 \\sim 8 \\times$ in communication cost compared to Gao et al. (ASIACRYPT'24) and a speedup of $9 \\sim 80 \\times$ in running time and a reduction of $5 \\sim 19 \\times$ in communication cost compared to Dang et al. (CCS'25).",
+  "abstract_source_id": "src-abstract-sp-2026-f42419b2",
   "venue": "sp",
   "year": 2026,
   "track_or_session": "Cycle 2",
@@ -175,6 +177,19 @@
       "official": true,
       "supports": [
         "DOI, published-order authors and affiliations, abstract, publication date, page span, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2026-f42419b2",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Efficient Fuzzy Private Set Intersection from Secret-Shared OPRF",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:57Z",
+      "content_hash": "sha256:303a9b5e5ef8908a3cfe67f02eb8a87be978a5fe3281c7ecec8c0cdb512517e0",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

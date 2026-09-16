@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2025-updatable-apake-security-against-bulk-precomputation-att-8cad1602",
   "title": "Updatable aPAKE: Security Against Bulk Precomputation Attacks",
+  "abstract": "Asymmetric Password-Authenticated Key Exchange (aPAKE) enables secure key establishment between a client and a server using a pre-shared password, while providing security against offline attacks. However, aPAKE does not guarantee any precomputation resistance, and considers passwords to become immediately available upon server compromise. A recent work by Dayanikli and Lehmann (EuroS&P'24) observed that many existing aPAKE protocols provide stronger precomputation attack resistance than what is guaranteed through the aPAKE model: they often rely on salted password hashes, where a unique salt makes precomputation attacks more difficult. While these salts are sent in clear to the client during authentication, and thus trivial to obtain for an attacker, this makes a difference in multi-user settings with millions of user accounts per server. In order to run bulk precomputation attacks on all users' passwords, the attacker needs to start an authentication session on behalf of every user to obtain their salts. However, this protection is still limited as salts are static, and the attacker can gradually extract all salt values for precomputation attacks.",
+  "abstract_source_id": "src-abstract-ccs-2025-8cad1602",
   "venue": "ccs",
   "year": 2025,
   "track_or_session": "Cycle 2",
@@ -106,6 +108,19 @@
         "published-order authors",
         "publication-time affiliations",
         "publication date and page span"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2025-8cad1602",
+      "url": "https://api.openalex.org/works/doi:10.1145/3719027.3765155?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Updatable aPAKE: Security Against Bulk Precomputation Attacks",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:18:07Z",
+      "content_hash": "sha256:a87743a570cd681723697d6b6e3f39b6748d8d48d9404f69cd607bdd5df85cc1",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

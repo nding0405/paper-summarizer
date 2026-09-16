@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2025-ceviche-capability-enhanced-secure-virtualization-of-cac-818b374a",
   "title": "Ceviche: Capability-Enhanced Secure Virtualization of Caches",
+  "abstract": "Modern systems make extensive use of resource virtualization to achieve high hardware utilization and minimize the total cost of ownership. However, sharing of physical resources invariably opens the door to side-channel exploitation where co-located attackers can covertly examine a victim's behavior and/or steal private information. Even though applications may not share data, they still compete for shared physical resources, notably for cache capacity. Since cache lookup is data/address-dependent, even the presence or absence of data in the cache can reveal sensitive information. This paper proposes Ceviche, a novel hardware virtualization strategy that allows for the secure allocation and use of physical cache resources among threads that belong to different trust domains. Ceviche enables a capability-based cache lookup by translating a given address-domain ID pair into a capability that encodes the access rights and the allowed set of operations on the physical cache line that it grants access to. By constraining cache lookup to occur based on a capability, Ceviche can achieve fine-grained partitioning of the cache at the granularity of a cache line, enforcing a wide set of confidentiality, availability, and fairness guarantees, while maximizing cache utilization. The paper presents detailed design mechanisms, policies, and optimizations along with extensive evaluation to demonstrate the feasibility of integrating the secure virtualization layer into modern multicore cache hierarchies. Ceviche caches offer protections at all levels of the cache hierarchy and incur an average performance degradation of 2.4% when compared to an insecure baseline, while only imposing 1.8% additional performance degradation over state-of-the-art secure caches Mirage and ScatterCache.",
+  "abstract_source_id": "src-abstract-sp-2025-818b374a",
   "venue": "sp",
   "year": 2025,
   "track_or_session": "Cycle 1",
@@ -133,6 +135,19 @@
       "official": true,
       "supports": [
         "DOI, authors, affiliations, abstract, publication date, pages, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2025-818b374a",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Ceviche: Capability-Enhanced Secure Virtualization of Caches",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:42Z",
+      "content_hash": "sha256:d62dac834635b4cd1890a53da454ceae7aaa151189662d990ac591dfd5cb6b3e",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

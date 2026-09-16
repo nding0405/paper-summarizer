@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2025-what-lurks-within-concept-auditing-for-shared-diffusion-eec70d65",
   "title": "What Lurks Within? Concept Auditing for Shared Diffusion Models at Scale",
+  "abstract": "Diffusion models (DMs) have revolutionized text-to-image generation, enabling the creation of highly realistic and customized images from text prompts. With the rise of parameter-efficient fine-tuning (PEFT) techniques like LoRA, users can now customize powerful pre-trained models using minimal computational resources. However, the widespread sharing of fine-tuned DMs on open platforms raises growing ethical and legal concerns, as these models may inadvertently or deliberately generate sensitive or unauthorized content, such as copyrighted material, private individuals, or harmful content. Despite increasing regulatory attention on generative AI, there are currently no practical tools for systematically auditing these models before deployment. In this paper, we address the problem of concept auditing: determining whether a fine-tuned DM has learned to generate a specific target concept. Existing approaches typically rely on prompt-based input crafting and output-based image classification but they suffer from critical limitations, including prompt uncertainty, concept drift, and poor scalability. To overcome these challenges, we introduce Prompt-Agnostic Image-Free Auditing (PAIA), a novel, model-centric concept auditing framework. By treating the DM as the object of inspection, PAIA enables direct analysis of internal model behavior, bypassing the need for optimized prompts or generated images. It integrates two key components: a prompt-agnostic strategy that mitigates prompt sensitivity by analyzing model behavior during late-stage denoising, and an image-free detection method based on conditional calibrated error, which compares the internal dynamics of a fine-tuned model against its base version. Our auditing setting assumes internal access to DMs, but does not require access to proprietary fine-tuning data or user prompts, an assumption aligned with how hosted platforms audit uploaded models. We evaluate PAIA on 320 controlled models trained with curated concept datasets and 771 real-world community models sourced from a public DM sharing platform, covering a wide range of concepts including celebrities, cartoon characters, videogame entities, and movie references. Evaluation results show that PAIA achieves over 90% detection accuracy while reducing auditing time by 18 - 40x compared to existing baselines, and remains robust under adaptive attacks. To our knowledge, PAIA is the first scalable and practical solution for pre-deployment concept auditing of diffusion models, providing a practical foundation for safer and more transparent diffusion model sharing.",
+  "abstract_source_id": "src-abstract-ccs-2025-eec70d65",
   "venue": "ccs",
   "year": 2025,
   "track_or_session": "Cycle 2",
@@ -148,6 +150,19 @@
         "published-order authors",
         "publication-time affiliations",
         "publication date and page span"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2025-eec70d65",
+      "url": "https://api.openalex.org/works/doi:10.1145/3719027.3765052?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "What Lurks Within? Concept Auditing for Shared Diffusion Models at Scale",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:18:09Z",
+      "content_hash": "sha256:c0c7e4ae82a73ccf5f1eb82a34d2c11a55b4545ce116b1663bd6c955ce6116d0",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

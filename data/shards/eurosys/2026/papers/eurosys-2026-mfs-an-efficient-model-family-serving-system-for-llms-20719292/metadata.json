@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "eurosys-2026-mfs-an-efficient-model-family-serving-system-for-llms-20719292",
   "title": "MFS: An Efficient Model Family Serving System for LLMs",
+  "abstract": "LLM serving providers typically offer a suite of structurally similar models, known as model families, such as the open-source Llama2 series featuring 7B, 13B, and 70B models. While numerous optimizations for LLM serving have been proposed, the potential for leveraging synergies between models within the same family has not been thoroughly explored. This paper introduces MFS, an innovative multi-tiered LLM model family serving system to exploit the structural similarities and parameter redundancies across different scales of models within a family. By utilizing a novel fine-tuning technique called Knowledge Precipitation, MFS restructures the largest model in a family to encapsulate smaller models within its architecture, enabling a unified multi-tiered serving pipeline. Based on the multi-tiered model, MFS realizes a highly parallelized tiered-level batching approach, significantly enhancing system efficiency. It also enables the sharing of intermediate features and KV-cache between models and facilitates multi-level sampling techniques during the inference phase. Experimental results demonstrate that MFS achieves substantial improvements over existing methods, including a 56.1% reduction in end-to-end token generation latency and a 47.8% decrease in GPU memory footprint without compromising the quality of generated content.",
+  "abstract_source_id": "src-abstract-eurosys-2026-20719292",
   "venue": "eurosys",
   "year": 2026,
   "track_or_session": null,
@@ -264,6 +266,19 @@
       "official": false,
       "supports": [
         "Publisher-deposited proceedings identity and print publication date."
+      ]
+    },
+    {
+      "id": "src-abstract-eurosys-2026-20719292",
+      "url": "https://api.openalex.org/works/doi:10.1145/3767295.3769355?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "MFS: An Efficient Model Family Serving System for LLMs",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:20:43Z",
+      "content_hash": "sha256:2bdb1c77ed511da9b32c6e41b81899c17d70cc0537ad4e3cdefc3710c36670c0",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2024-practical-data-only-attack-generation-71fe0c9c",
   "title": "Practical Data-Only Attack Generation",
+  "abstract": "As control-flow hijacking is getting harder due to increasingly sophisticated CFI solutions, recent work has instead focused on automatically building data-only attacks, typically using symbolic execution, simplifying assumptions that do not always match the attacker's goals, manual gadget chaining, or all of the above. As a result, the practical adoption of such methods is minimal. In this work, we abstract away unnecessary complexities and instead use a lightweight approach that targets the vulnerabilities that are both the most tractable for analysis, and the most promising for an attacker.\n\nIn particular, we present Einstein, a data-only attack exploitation pipeline that uses dynamic taint analysis policies to: (i) scan for chains of vulnerable system calls (e.g., to execute code or corrupt the filesystem), and (ii) generate exploits for those that take unmodified attacker data as input. Einstein discovers thousands of vulnerable syscalls in common server applications—well beyond the reach of existing approaches. Moreover, using nginx as a case study, we use Einstein to generate 944 exploits, and we discuss two such exploits that bypass state-of-the-art mitigations.",
+  "abstract_source_id": "src-abstract-usenix-security-2024-71fe0c9c",
   "venue": "usenix-security",
   "year": 2024,
   "track_or_session": "Security Analysis II: Program Analysis",
@@ -133,6 +135,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2024-71fe0c9c",
+      "url": "https://www.usenix.org/conference/usenixsecurity24/presentation/johannesmeyer",
+      "kind": "paper-page",
+      "title": "Practical Data-Only Attack Generation",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:16:42Z",
+      "content_hash": "sha256:f73ad5415090520130f5ae57bd35a0d40c964c29e0924d47a914a1d03e1682e6",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sigcomm-2026-ema-efficient-model-adaptation-for-learning-based-system-d7f5db26",
   "title": "EMA: Efficient Model Adaptation for Learning-based Systems",
+  "abstract": "Machine learning (ML) is increasingly applied to optimize system performance in tasks such as resource management and network simulation. Unlike traditional ML tasks (e.g., image classification), networked systems often operate in heterogeneous, long-running, and dynamic environment states, where input conditions (e.g., network loads) and operational objectives can shift over time and across settings. Existing learning-based systems offer little support for adaptation, resulting in costly model training, extensive data collection, degraded system performance, and slow responsiveness. This paper presents EMA, the first model adaptation system supporting learning-based systems to adapt to evolving environments with minimal operational overhead. EMA takes a system-driven, data-centric approach that accommodates diverse system and model designs while addressing two key deployment challenges. First, it reduces expensive model training by introducing state transformers that align the input state of a new environment with previously similar states, allowing models to warm-start adaptation. Second, it addresses the often-overlooked yet costly process of data labeling—collecting ground truth for exploring and training on various system decisions—by prioritizing labeling high-utility data while balancing the tradeoff between training and labeling cost. Evaluations on seven representative learning-based systems show that EMA reduces adaptation costs (e.g., GPU training hours) by 14.9–42.4% while improving system performance (e.g., network throughput) by 6.9–31.3%.",
+  "abstract_source_id": "src-abstract-sigcomm-2026-d7f5db26",
   "venue": "sigcomm",
   "year": 2026,
   "track_or_session": "Research Session 18: Learning-Based & Data-Driven Network Systems — Research Paper",
@@ -191,6 +193,19 @@
       "official": true,
       "supports": [
         "official main-paper scope and track definitions"
+      ]
+    },
+    {
+      "id": "src-abstract-sigcomm-2026-d7f5db26",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/search/match?query=EMA%3A%20Efficient%20Model%20Adaptation%20for%20Learning-based%20Systems&fields=title,abstract",
+      "kind": "semantic-scholar",
+      "title": "EMA: Efficient Model Adaptation for Learning-based Systems",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T23:00:57Z",
+      "content_hash": "sha256:047586a829b3b040693e4b8d78c0cad4021dbaa68a20e3d76c1852052427cae5",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

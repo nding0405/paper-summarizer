@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2023-do-not-give-a-dog-bread-every-time-he-wags-his-tail-stea-037f939e",
   "title": "Do Not Give a Dog Bread Every Time He Wags His Tail: Stealing Passwords through Content Queries (CONQUER) Attacks",
+  "abstract": "Android accessibility service was designed to assist individuals with disabilities in using Android devices. However, it has been exploited by attackers to steal user passwords due to design shortcomings. Google has implemented various countermeasures to make it difficult for these types of attacks to be successful on modern Android devices. In this paper, we present a new type of side channel attack called content queries (CONQUER) that can bypass these defenses. We discovered that Android does not prevent the content of passwords from being queried by the accessibility service, allowing malware with this service enabled to enumerate the combinations of content to brute force the password. While this attack seems simple to execute, there are several challenges that must be addressed in order to successfully launch it against real-world apps. These include the use of lazy query to differentiate targeted password strings, active query to determine the right timing for the attack, and timing- and state-based side channels to infer case-sensitive passwords. Our evaluation results demonstrate that the CONQUER attack is effective at stealing passwords, with an average one-time success rate of 64.91%. This attack also poses a threat to all Android versions from 4.1 to 12, and can be used against tens of thousands of apps. In addition, we analyzed the root cause of the CONQUER attack and discussed several countermeasures to mitigate the potential security risks it poses.",
+  "abstract_source_id": "src-abstract-ndss-2023-037f939e",
   "venue": "ndss",
   "year": 2023,
   "track_or_session": "Mobile Security and Privacy",
@@ -210,6 +212,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2023-037f939e",
+      "url": "https://www.ndss-symposium.org/ndss-paper/do-not-give-a-dog-bread-every-time-he-wags-his-tail-stealing-passwords-through-content-queries-conquer-attacks/",
+      "kind": "paper-page",
+      "title": "Do Not Give a Dog Bread Every Time He Wags His Tail: Stealing Passwords through Content Queries (CONQUER) Attacks",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:16:53Z",
+      "content_hash": "sha256:03a00932d855600f2fd44635ba73769e5e63da60d72d06ddb05e5a6d96edb649",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

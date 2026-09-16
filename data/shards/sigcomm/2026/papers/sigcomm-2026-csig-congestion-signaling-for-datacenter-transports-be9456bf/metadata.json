@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sigcomm-2026-csig-congestion-signaling-for-datacenter-transports-be9456bf",
   "title": "CSIG: Congestion Signaling for Datacenter Transports",
+  "abstract": "Optimizing burst-heavy datacenter workloads necessitates finegrained network control and visibility. We introduce CSIG, a protocol that delivers precise, multi-bit bottleneck congestion signals via a fixed-length Ethernet header. The architecture captures μsgranularity switch metrics, such as available bandwidth, and signals them to end-hosts using in-band, line-rate operations. We propose Fast Ramp-Up, a congestion control primitive that leverages these bottleneck signals to reduce median RPC latency by 20% and unclaimed bandwidth by 60% in production. Beyond transport-level performance, CSIG enables flow-aware observability by embedding μs-scale metrics into every packet, allowing individual application transfers to pinpoint their bottleneck location, such as the topology tier limiting their performance. CSIG thus transforms network telemetry from post-hoc correlation into a real time, context-aware capability. We demonstrate CSIG's broad deployability by validating it across five generations of commodity switch hardware (up to 102.4 Tbps), four NIC generations, and five transport stacks. Our design proves that a streamlined Layer 2 approach, focusing exclusively on the principal path bottleneck, provides transport-agnostic gains without requiring forklift hardware upgrades.",
+  "abstract_source_id": "src-abstract-sigcomm-2026-be9456bf",
   "venue": "sigcomm",
   "year": 2026,
   "track_or_session": "Research Session 13: Datacenter Transport: RDMA & Congestion Control — Research Paper",
@@ -296,6 +298,19 @@
       "official": true,
       "supports": [
         "official main-paper scope and track definitions"
+      ]
+    },
+    {
+      "id": "src-abstract-sigcomm-2026-be9456bf",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/search/match?query=CSIG%3A%20Congestion%20Signaling%20for%20Datacenter%20Transports&fields=title,abstract",
+      "kind": "semantic-scholar",
+      "title": "CSIG: Congestion Signaling for Datacenter Transports",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:59:27Z",
+      "content_hash": "sha256:1f5d1c1611d7e7059a94e55775033a1a58c3fa66525b16f81bbdec43ca00acf8",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2024-guideenricher-protecting-the-anonymity-of-ethereum-mixin-aef3f635",
   "title": "GuideEnricher: Protecting the Anonymity of Ethereum Mixing Service Users with Deep Reinforcement Learning",
+  "abstract": "Mixing services are widely employed to enhance anonymity on public blockchains. However, recent research has shown that user identities and transaction associations can be derived even with mixing services. This is mainly due to the lack of guidelines for properly using these services. In fact, mixing service developers often provide guidebooks with lists of actions that might break anonymity, and hence, should be avoided. However, such guidebooks remain incomplete, leaving users unaware of potential actions that might compromise their anonymity. This highlights the necessity for providing users with a more comprehensive guidebook. Unfortunately, existing methods for compiling anonymity compromising patterns rely on postmortem analyses, and they cannot proactively discover patterns before the mixing service is deployed.\n\nWe introduce GuideEnricher, a proactive approach for extending user guidebooks with limited human intervention. Our key novelty is a deep reinforcement learning (DRL) agent, which automatically explores patterns for transferring tokens via a mixing service. We introduce two customized designs to better guide the agent in discovering yet-unknown anonymity-compromising patterns: design proper tasks for the agent that possibly lead to compromised anonymity, and include a rule-based detector to detect the known patterns. We train the agent to finish the task while evading the detector. Using a trained agent, we conduct a second analysis step, employing clustering methods and manual inspection, to extract yet unknown patterns from the agent's actions. Through extensive evaluation, we demonstrate that GuideEnricher can train effective agents under multiple mixing services. We show that our agents facilitate the discovery of yet-unknown anonymity-compromising patterns. Furthermore, we demonstrate that GuideEnricher can continuously enrich the guidebook via an iterative update of the detector and our DRL agents.",
+  "abstract_source_id": "src-abstract-usenix-security-2024-aef3f635",
   "venue": "usenix-security",
   "year": 2024,
   "track_or_session": "Blockchain I",
@@ -175,6 +177,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2024-aef3f635",
+      "url": "https://www.usenix.org/conference/usenixsecurity24/presentation/de-silva",
+      "kind": "paper-page",
+      "title": "GuideEnricher: Protecting the Anonymity of Ethereum Mixing Service Users with Deep Reinforcement Learning",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:15:30Z",
+      "content_hash": "sha256:a1263884eb8369d9a25a7dff4f18ba099c4868a113e62e029a967b4847d0e05a",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

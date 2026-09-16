@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2024-ffxe-dynamic-control-flow-graph-recovery-for-embedded-fi-3633c13c",
   "title": "FFXE: Dynamic Control Flow Graph Recovery for Embedded Firmware Binaries",
+  "abstract": "Control Flow Graphs (CFG) play a significant role as an intermediary analysis in many advanced static and dynamic software analysis techniques. As firmware security and validation for embedded systems becomes a greater concern, accurate CFGs for embedded firmware binaries are crucial for adapting many valuable software analysis techniques to firmware, which can enable more thorough functionality and security analysis. In this work, we present a portable new dynamic CFG recovery technique based on dynamic forced execution that allows us to resolve indirect branches to registered callback functions, which are dependent on asynchronous changes to volatile memory. Our implementation, the Forced Firmware Execution Engine (FFXE), written in Python using the Unicorn emulation framework, is able to identify 100% of known callback functions in our test set of 36 firmware images, something none of the other techniques we tested against were able to do reliably. Using our results and observations, we compare our engine to 4 other CFG recovery techniques and provide both our thoughts on how this work might enhance other tools, and how it might be further developed. With our contributions, we hope to help enable the application of traditionally software-focused security analysis techniques to the hardware interactions that are integral to embedded system firmware.",
+  "abstract_source_id": "src-abstract-usenix-security-2024-3633c13c",
   "venue": "usenix-security",
   "year": 2024,
   "track_or_session": "Hardware Security IV: Firmware",
@@ -175,6 +177,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2024-3633c13c",
+      "url": "https://www.usenix.org/conference/usenixsecurity24/presentation/tsang",
+      "kind": "paper-page",
+      "title": "FFXE: Dynamic Control Flow Graph Recovery for Embedded Firmware Binaries",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:15:13Z",
+      "content_hash": "sha256:76def8abfcae80c153fe273623819aa55d84dab2aa227f0faff99d11e1632d41",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

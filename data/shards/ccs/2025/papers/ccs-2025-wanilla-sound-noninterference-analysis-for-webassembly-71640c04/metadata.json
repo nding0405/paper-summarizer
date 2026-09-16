@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2025-wanilla-sound-noninterference-analysis-for-webassembly-71640c04",
   "title": "Wanilla: Sound Noninterference Analysis for WebAssembly",
+  "abstract": "WebAssembly (Wasm) is rapidly gaining popularity as a distribution format for software components embedded in various security-critical domains. Unfortunately, despite its prudent design, WebAssembly's primary use case as a compilation target for memory-unsafe languages leaves some possibilities for memory corruption. Independently of that, Wasm is an inherently interesting target for information flow analysis due to its interfacing role. Both the information flows between a Wasm module and its embedding context, as well as the memory integrity within a module, can be described by the hyperproperty noninterference. So far, no sound, fully static noninterference analysis for Wasm has been presented, but sound reachability analyses were. This work presents a novel and general approach to lift reachability analyses to noninterference by tracking taints on values and using value-sensitive, relational reasoning to remove them when appropriate. We implement this approach in Wanilla, the first automatic, sound, and fully static noninterference analysis for WebAssembly, and demonstrate its performance and precision by verifying memory integrity and other noninterference properties with several synthetic and real-world benchmarks.",
+  "abstract_source_id": "src-abstract-ccs-2025-71640c04",
   "venue": "ccs",
   "year": 2025,
   "track_or_session": "Cycle 2",
@@ -148,6 +150,19 @@
         "published-order authors",
         "publication-time affiliations",
         "publication date and page span"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2025-71640c04",
+      "url": "https://api.openalex.org/works/doi:10.1145/3719027.3765156?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Wanilla: Sound Noninterference Analysis for WebAssembly",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:18:09Z",
+      "content_hash": "sha256:f0bcab5fbcac60b0682503da7c3bd487398c932d871180a05e42e127a5ecd9f9",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

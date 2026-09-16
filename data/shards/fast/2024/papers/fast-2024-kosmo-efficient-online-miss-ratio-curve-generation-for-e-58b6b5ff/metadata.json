@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "fast-2024-kosmo-efficient-online-miss-ratio-curve-generation-for-e-58b6b5ff",
   "title": "Kosmo: Efficient Online Miss Ratio Curve Generation for Eviction Policy Evaluation",
+  "abstract": "In-memory caches play an important role in reducing the load on backend storage servers for many workloads. Miss ratio curves (MRCs) are an important tool for configuring these caches with respect to cache size and eviction policy. MRCs provide insight into the trade-off between cache size (and thus costs) and miss ratio for a specific eviction policy. Over the years, many MRC-generation algorithms have been developed. However, to date, only Miniature Simulations is capable of efficiently generating MRCs for popular eviction policies, such as Least Frequently Used (LFU), First-In-First-Out (FIFO), 2Q, and Least Recently/Frequently Used (LRFU), that do not adhere to the inclusion property. One critical downside of Miniature Simulations is that it incurs significant memory overhead, precluding its use for online cache analysis at runtime in many cases.\n\nIn this paper, we introduce Kosmo, an MRC generation algorithm that allows for the simultaneous generation of MRCs for a variety of eviction policies that do not adhere to the inclusion property. We evaluate Kosmo using 52 publicly-accessible cache access traces with a total of roughly 126 billion accesses. Compared to Miniature Simulations configured with 100 simulated caches, Kosmo has lower memory overhead by a factor of 3.6 on average, and as high as 36, and a higher throughput by a factor of 1.3 making it far more suitable for online MRC generation.",
+  "abstract_source_id": "src-abstract-fast-2024-58b6b5ff",
   "venue": "fast",
   "year": 2024,
   "track_or_session": "Caching",
@@ -118,6 +120,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-fast-2024-58b6b5ff",
+      "url": "https://www.usenix.org/conference/fast24/presentation/shakiba",
+      "kind": "paper-page",
+      "title": "Kosmo: Efficient Online Miss Ratio Curve Generation for Eviction Policy Evaluation",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:00:48Z",
+      "content_hash": "sha256:065c7b5f851933e612f9204fad67138968997e4abed4e9bea82e51269bd95a26",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

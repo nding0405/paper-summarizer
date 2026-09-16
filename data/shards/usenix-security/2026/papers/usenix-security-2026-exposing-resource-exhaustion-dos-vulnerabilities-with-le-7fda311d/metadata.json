@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-exposing-resource-exhaustion-dos-vulnerabilities-with-le-7fda311d",
   "title": "Exposing Resource-Exhaustion DoS Vulnerabilities with Leak-Oriented Minimum Path Covers",
+  "abstract": "Resource leaks---failures to properly release scarce Garbage Collection (GC)-unmanaged resources such as file descriptors, sockets, and database connections---are a pervasive root cause of resource-exhaustion denial-of-service (DoS) risks in Java programs. Prior approaches typically enumerate execution paths and inspect them to identify resources that are not properly released. However, exceptions can trigger non-local control transfers that bypass resource releases, and determining which such exceptions are leak-relevant requires context-sensitive reasoning beyond simple heuristics. Worse still, exhaustive path enumeration may trigger path explosion, significantly reducing the practicality of existing methods.\n\nTherefore, we develop LeakHunter , a novel Java resource leak detector. LeakHunter first leverages an LLM to infer leak-relevant exceptions in context and statically validates them. Next, we propose a L eak-oriented M inimum P ath C over ( LMPC ) technique. Our insight is that there is no need to enumerate all paths: since (1) leak detection is existential, a single leak-prone path suffices to demonstrate that a resource-managing object is leak-prone, and (2) we can cover the resource-relevant code regions by leveraging a minimum path cover. Therefore, we aim to select a representative path set generated from MPC while being biased toward leak-prone behaviors. Accordingly, we construct witness paths from multiple MPCs and prioritize those with more acquisitions and fewer releases as the LMPC, as they are more likely to expose leaks. Across two public benchmarks, LeakHunter achieves the best detection performance while providing an 11.4 x speedup in path analysis over the latest approach. In our real-world study, LeakHunter identifies 67 true leaks with potential DoS impact, including 15 confirmed by developers.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-7fda311d",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Software Security 1",
@@ -155,6 +157,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-7fda311d",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/zhan",
+      "kind": "paper-page",
+      "title": "Exposing Resource-Exhaustion DoS Vulnerabilities with Leak-Oriented Minimum Path Covers",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:23:55Z",
+      "content_hash": "sha256:bf34cbb3b7c6b6b05ebce0171b37beea2f4744cf77ebd232db32252621ae03af",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

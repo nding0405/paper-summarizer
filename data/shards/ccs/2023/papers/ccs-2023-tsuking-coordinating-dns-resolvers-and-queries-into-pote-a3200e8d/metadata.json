@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2023-tsuking-coordinating-dns-resolvers-and-queries-into-pote-a3200e8d",
   "title": "TsuKing: Coordinating DNS Resolvers and Queries into Potent DoS Amplifiers",
+  "abstract": "In this paper, we present a new DNS amplification attack, named TsuKing. Instead of exploiting individual DNS resolvers independently to achieve an amplification effect, TsuKing deftly coordinates numerous vulnerable DNS resolvers and crafted queries together to form potent DoS amplifiers. We demconstrate that with TsuKing, an initial small amplification factor can inrease exponentially through the internal layers of coordinated amplifiers, resulting in an extremely powerful amplification attack. TsuKing has three variants, including DNSRetry, DNSChain, and DNSLoop, all of which exploit a suite of inconsistent DNS implementations to achieve enormous amplification effect. With comprehensive measurements, we found that about 14.5% of 1.3M open DNS resolvers are potentially vulnerable to TsuKing. Real-world controlled evaluations indicated that attackers can achieve a packet amplification factor of at least 3,700X (DNSChain). We have reported vulnerabilities to affected vendors and provided them with mitigation recommendations. We have received positive responses from 6 vendors, including Unbound, MikroTik, and AliDNS, and 3 CVEs were assigned. Some of them are implementing our recommendations.",
+  "abstract_source_id": "src-abstract-ccs-2023-a3200e8d",
   "venue": "ccs",
   "year": 2023,
   "track_or_session": "Crypto and DNS Mess (Network Security)",
@@ -295,6 +297,19 @@
       "official": false,
       "supports": [
         "published title, author order, and page span"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2023-a3200e8d",
+      "url": "https://api.openalex.org/works/doi:10.1145/3576915.3616668?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "TsuKing: Coordinating DNS Resolvers and Queries into Potent DoS Amplifiers",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:08:32Z",
+      "content_hash": "sha256:86a800dfdfee00a90bb14131017203f6fd7ca12af25c821e43ba6619dcb20fc5",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

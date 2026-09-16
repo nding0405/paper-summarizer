@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2026-merlin-an-efficient-adaptive-cache-eviction-algorithm-vi-6acf042b",
   "title": "Merlin: An Efficient Adaptive Cache Eviction Algorithm via Fine-Grained Characterization",
+  "abstract": "The diverse and complex modern workloads pose a major challenge for cache to remain effective across all scenarios, degrading the performance of critical systems such as web caches. Adaptive cache eviction algorithms promise to address this challenge by observing access patterns and adjusting their behavior accordingly. However, existing ones fail this promise, even underperforming static policies. Our analysis shows that this is because they adapt only to a few typical patterns, incurring poor performance on others. Moreover, they adapt by switching between supposedly complementary algorithms, which turn out to interfere with each other.\n\nWe present Merlin, an efficient adaptive algorithm that robustly handles diverse access patterns while maintaining low overhead and high multicore scalability. The efficiency of MERLIN stems from a principled pattern characterization method that can express a wide spectrum of access patterns rather than a few typical ones. This is achieved by characterizing at the level of individual objects while accounting for both access locality and cache size. Furthermore, MERLIN cleanly decouples responsibilities among its components, with each component performing a single task, thereby eliminating the costly interference between base algorithms. Our evaluation across 11 datasets with 5423 traces shows that MERLIN achieves robust improvements in hit rate over existing algorithms, increasing throughput by 1.4x to 7.8x.",
+  "abstract_source_id": "src-abstract-osdi-2026-6acf042b",
   "venue": "osdi",
   "year": 2026,
   "track_or_session": "A Coherent, Consistent Session on Caching",
@@ -272,6 +274,19 @@
       "official": true,
       "supports": [
         "Official proceedings availability and canonical conference versions."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2026-6acf042b",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/li-liujia",
+      "kind": "paper-page",
+      "title": "Merlin: An Efficient Adaptive Cache Eviction Algorithm via Fine-Grained Characterization",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:08:35Z",
+      "content_hash": "sha256:7726434fec72dd7703b39560dcace1f3f105dce355b5475abbc3eac87786d0e6",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

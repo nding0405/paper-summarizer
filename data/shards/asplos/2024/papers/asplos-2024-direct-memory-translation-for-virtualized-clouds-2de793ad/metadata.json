@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2024-direct-memory-translation-for-virtualized-clouds-2de793ad",
   "title": "Direct Memory Translation for Virtualized Clouds",
+  "abstract": "Virtual memory translation has become a key performance bottleneck of memory-intensive workloads in virtualized cloud environments. On the x86 architecture, a nested translation needs to sequentially fetch up to 24 page table entries (PTEs). This paper presents Direct Memory Translation (DMT), a hardware-software extension for x86-based virtual memory that minimizes translation overhead while maintaining backward compatibility with x86. In DMT, the OS manages last-level PTEs in a contiguous physical memory region, termed Translation Entry Areas (TEAs). DMT establishes a direct mapping from each virtual page in a Virtual Memory Area (VMA) to the corresponding PTE in a TEA. Since processes manage memory with a handful of major VMAs, the mapping can be maintained per VMA and effectively stored in a few dedicated registers. DMT further optimizes virtualized memory translation via guest-host cooperation by directly allocating guest TEAs in physical memory, bypassing intermediate virtualization layers. DMT is inherently scalable---it takes one, two, and three memory references in native, virtualized, and nested virtualized setups. Its scalability enables hardware-assisted translation for nested virtualization. Our evaluation shows that DMT significantly speeds up page walks by an average of 1.58x (1.65x with THP) in a virtualized setup, resulting in 1.20x (1.14x with THP) speedup of application execution on average.",
+  "abstract_source_id": "src-abstract-asplos-2024-2de793ad",
   "venue": "asplos",
   "year": 2024,
   "track_or_session": "Session 8B: Memory: Address Translation and Tiering",
@@ -214,6 +216,19 @@
       "official": true,
       "supports": [
         "Author-deposited archival artifact associated with the conference paper."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2024-2de793ad",
+      "url": "https://api.openalex.org/works/doi:10.1145/3620665.3640358?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Direct Memory Translation for Virtualized Clouds",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:00:01Z",
+      "content_hash": "sha256:9098c5088f88e8d3d299119a258e78cdf47246fb9130f1104ef939cf4acb959f",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

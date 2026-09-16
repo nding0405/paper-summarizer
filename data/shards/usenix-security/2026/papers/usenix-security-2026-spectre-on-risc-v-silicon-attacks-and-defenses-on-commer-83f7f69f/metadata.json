@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-spectre-on-risc-v-silicon-attacks-and-defenses-on-commer-83f7f69f",
   "title": "Spectre on RISC-V Silicon: Attacks and Defenses on Commercial Out-of-Order Processors",
+  "abstract": "Speculative execution attacks have been extensively studied on mainstream x86 and ARM architectures. However, on RISC-V, research has mostly concentrated on open-source academic designs. Commercially available RISC-V silicon is widely perceived as too simple to be vulnerable, and as a result, no end-to-end attacks have been demonstrated on real hardware to date and essential software such as the Linux kernel remains unmitigated.\n\nIn this paper, we challenge that assumption. We systematically assess all commercially available out-of-order RISC-V processors (SiFive P550 and T-Head Xuantie C910/C920), finding them vulnerable to a range of Spectre attacks, and demonstrate the first Spectre attack leaking arbitrary kernel memory on real RISC-V hardware. Concerningly, our analysis reveals that mitigations in compilers, operating systems, and applications remain largely absent, and that the RISC-V instruction set lacks a dedicated speculation barrier. As a stopgap solution, we empirically characterize which instructions can halt speculation on commercial processors. We additionally audit the Linux kernel for Spectre gadgets and contribute patches, several of which have been accepted upstream. Finally, we evaluate and benchmark software-based Spectre mitigations and derive recommendations for the evolving RISC-V ecosystem, laying the groundwork for securing real hardware as it enters security-critical deployments.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-83f7f69f",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Hardware Security 4",
@@ -155,6 +157,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-83f7f69f",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/gerlach",
+      "kind": "paper-page",
+      "title": "Spectre on RISC-V Silicon: Attacks and Defenses on Commercial Out-of-Order Processors",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:25:40Z",
+      "content_hash": "sha256:083e8b1d746ea82073a2e26c963461d7c1978cb1224694cc7a7d4cff3627213e",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

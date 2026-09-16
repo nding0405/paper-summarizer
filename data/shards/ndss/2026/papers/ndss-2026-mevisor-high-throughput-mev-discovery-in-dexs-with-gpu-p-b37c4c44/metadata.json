@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2026-mevisor-high-throughput-mev-discovery-in-dexs-with-gpu-p-b37c4c44",
   "title": "MEVisor: High-Throughput MEV Discovery in DEXs with GPU Parallelism",
+  "abstract": "Decentralized finance (DeFi) is an emerging financial service on blockchain, enabling automatic and anonymous transactions. Within DeFi, decentralized exchanges (DEXs) maintain reserves of a pair of tokens and determine the exchange rate to swap tokens. However, DEXs also create opportunities for Maximal Extractable Value (MEV), where attackers include, exclude, or reorder DEX transactions to exploit price discrepancies of tokens and extract profit. Uncovering MEV opportunities requires high throughput, as the 12-second block interval and the vast search space impose strict time constraints. However, existing tools suffer from low throughput, as they rely on CPU-bound execution, which is hindered by frequent state forking and slow DEX execution. In this paper, we take the first step in leveraging GPU parallel computing power to boost MEV-search throughput in arbitrage and sandwich strategies. More precisely, we compile an MEV bot into a GPU application and then launch thousands of GPU threads to search for profit in parallel. To this end, we design new solutions to address three major challenges: designing cheatcodes to simulate transactions on GPU, proposing a memory manager to reduce GPU memory usage, and designing strategy-aware mutations to improve input diversity. We implement\n\na prototype named MeVisor that runs DEXs on GPUs and searches for MEV using a parallel genetic algorithm. Evaluated on 3,941 real MEV cases from Ethereum, MeVisor achieves 3.3M-5.1M transactions per second, outperforming the CPU baseline by 100,000x. In a large-scale study of Q1 2025 data, MeVisor estimates MEV opportunities ranging from 2 to 14 transactions, yielding at most $1.1 million in MEV profit.",
+  "abstract_source_id": "src-abstract-ndss-2026-b37c4c44",
   "venue": "ndss",
   "year": 2026,
   "track_or_session": "Fall submission cycle",
@@ -118,6 +120,19 @@
       "official": false,
       "supports": [
         "independent proceedings identity reconciliation"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2026-b37c4c44",
+      "url": "https://www.ndss-symposium.org/ndss-paper/mevisor-high-throughput-mev-discovery-in-dexs-with-gpu-parallelism/",
+      "kind": "paper-page",
+      "title": "MEVisor: High-Throughput MEV Discovery in DEXs with GPU Parallelism",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:22:30Z",
+      "content_hash": "sha256:2d5fa9e269b0959a7493b10c5bd4bf76407704e0f95008797cd8ac84707e93eb",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

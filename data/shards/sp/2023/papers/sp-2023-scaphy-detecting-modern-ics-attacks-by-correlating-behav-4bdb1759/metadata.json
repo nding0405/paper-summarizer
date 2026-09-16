@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2023-scaphy-detecting-modern-ics-attacks-by-correlating-behav-4bdb1759",
   "title": "SCAPHY: Detecting Modern ICS Attacks by Correlating Behaviors in SCADA and PHYsical",
+  "abstract": "Modern Industrial Control Systems (ICS) attacks evade existing tools by using knowledge of ICS processes to blend their activities with benign Supervisory Control and Data Acquisition (SCADA) operation, causing physical world damages. We present Scaphy to detect ICS attacks in SCADA by leveraging the unique execution phases of SCADA to identify the limited set of legitimate behaviors to control the physical world in different phases, which differentiates from attacker’s activities. For example, it is typical for SCADA to setup ICS device objects during initialization, but anomalous during process-control. To extract unique behaviors of SCADA execution phases, Scaphy first leverages open ICS conventions to generate a novel physical process dependency and impact graph (PDIG) to identify disruptive physical states. Scaphy then uses PDIG to inform a physical process-aware dynamic analysis, whereby code paths of SCADA process-control execution is induced to reveal API call behaviors unique to legitimate process-control phases. Using this established behavior, Scaphy selectively monitors attacker’s physical world-targeted activities that violates legitimate process-control behaviors. We evaluated Scaphy at a U.S. national lab ICS testbed environment. Using diverse ICS deployment scenarios and attacks across 4 ICS industries, Scaphy achieved 95% accuracy & 3.5% false positives (FP), compared to 47.5% accuracy and 25% FP of existing work. We analyze Scaphy’s resilience to futuristic attacks where attacker knows our approach.",
+  "abstract_source_id": "src-abstract-sp-2023-4bdb1759",
   "venue": "sp",
   "year": 2023,
   "track_or_session": "Session 1A: Infrastructure security",
@@ -193,6 +195,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2023-4bdb1759",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Scaphy: Detecting Modern ICS Attacks by Correlating Behaviors in SCADA and PHYsical",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:27Z",
+      "content_hash": "sha256:2c3c9cbfdcc9ef58a970a66aadb81bbaf8238409ab69d65565522a11e421be99",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

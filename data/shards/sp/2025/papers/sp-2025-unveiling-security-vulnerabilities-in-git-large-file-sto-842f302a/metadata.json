@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2025-unveiling-security-vulnerabilities-in-git-large-file-sto-842f302a",
   "title": "Unveiling Security Vulnerabilities in Git Large File Storage Protocol",
+  "abstract": "As an extension to the Git version control system that optimizes the handling of large files and binary content, Git Large File Storage (LFS) has been widely adopted by nearly all Git platforms. While Git LFS offers significant improvements in managing large files, it introduces new security implications that remain largely unexplored. This paper presents the first comprehensive security analysis of Git LFS, identifying 11 critical security properties that LFS servers must uphold. Building on our analysis of these property violations, we propose four new attack vectors: Private LFS File Leakage, LFS File Replacement, Quota-based Denial of Service (DoS), and Quota Escape. These attacks exploit weaknesses in practical LFS server implementations and can lead to serious consequences, including unauthorized access to sensitive files, malware injection, denial of service affecting all public repositories, and resource abuse. To evaluate the security of LFS implementations, we develop a semi-automated black-box testing tool and apply it to 14 major Git platforms. We uncover 36 previously unknown vulnerabilities and have responsibly disclosed them to the respective platform maintainers, receiving positive feedback and over $1800 in bug bounty rewards.",
+  "abstract_source_id": "src-abstract-sp-2025-842f302a",
   "venue": "sp",
   "year": 2025,
   "track_or_session": "Cycle 2",
@@ -175,6 +177,19 @@
       "official": true,
       "supports": [
         "DOI, authors, affiliations, abstract, publication date, pages, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2025-842f302a",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Unveiling Security Vulnerabilities in Git Large File Storage Protocol",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:52Z",
+      "content_hash": "sha256:b15ce02bcc49da611fdd791ecc56741e7d91d84154b58c1a7f72a5c6902e6e46",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

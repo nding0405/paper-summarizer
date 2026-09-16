@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2026-inference-in-the-shadows-taming-memory-bandwidth-content-f822b290",
   "title": "Inference in the Shadows: Taming Memory Bandwidth Contention in Mobile LLM Inference with Sereno",
+  "abstract": "The proliferation of large language models (LLMs) on mobile devices introduces a new performance challenge: resource contention between compute-intensive inference and latency-sensitive foreground applications. We identify a severe and asymmetric interference where concurrent LLM inference substantially degrades foreground applications’ quality-of-service (QoS)—increasing the aggregate jank rate (the fraction of frames that appear as visible stutters) by 153%. In contrast, LLM throughput degrades by only 1.01% and 1.64% during prefill and decode stages, respectively. This imbalance arises because the hardware prioritizes NPU memory traffic—originally to guarantee critical media tasks (e.g., video recording)—a privilege that best-effort LLM inference inherits, causing aggressive bandwidth contention. To address this asymmetric degradation, we present SERENO, a foreground-QoS-friendly LLM inference framework that resolves bandwidth contention between foreground applications and background LLM inference, without hardware modification. SERENO repurposes speculative decoding to introduce fine-grained yield points for preemptible execution, letting the system detect memory contention and dynamically yield bandwidth to the foreground without losing inference progress. Extensive evaluations on commercial smartphones across diverse categories of popular applications demonstrate that SERENO reduces the foreground jank rate by up to 92.6% (58.5% on average) while boosting LLM throughput by up to 67.9% (26.4% on average). Compared with vanilla speculative decoding, SERENO can reduce the foreground jank rate by up to 72.1% while incurring only a 6.2% performance degradation.",
+  "abstract_source_id": "src-abstract-osdi-2026-f822b290",
   "venue": "osdi",
   "year": 2026,
   "track_or_session": "Mobile and Edge Systems",
@@ -146,6 +148,19 @@
       "official": true,
       "supports": [
         "Official proceedings availability and canonical conference versions."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2026-f822b290",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/xin",
+      "kind": "paper-page",
+      "title": "Inference in the Shadows: Taming Memory Bandwidth Contention in Mobile LLM Inference with Sereno",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:08:26Z",
+      "content_hash": "sha256:8b059313945658a05df3b524e7e0b9cf3b7b8ebb0357a7d07f09f1258842d094",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

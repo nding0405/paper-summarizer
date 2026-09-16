@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-trust-nothing-rtos-security-without-run-time-software-tc-29a83247",
   "title": "Trust Nothing: RTOS Security without Run-Time Software TCB",
+  "abstract": "Embedded devices face an ever-expanding threat landscape: vulnerabilities in application software, operating system kernels, and peripherals threaten the embedded device integrity. Existing computer-architectural defenses fully consider at most two of these threat vectors in their security model.\n\nThis paper aims at addressing this gap using a novel capability architecture. To this end, we combine a token capability approach suitable for building an untrusted operating system with protection against malicious devices without requiring hardware changes to peripherals.\n\nFirst, we develop and evaluate a full FPGA implementation of our capability architecture around legacy hardware components. Further, we present a soft real-time operating system based on Zephyr that has no run-time software TCB . To this end, we disaggregate Zephyr's subsystems into small, mutually isolated components. All subsystems that exist at run time, including scheduler, allocator and DMA drivers, and all peripherals are fully untrusted . We believe that our work offers a foundation for more rigorous security-by-design in tomorrow's security-critical embedded devices.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-29a83247",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "System Security 2",
@@ -92,6 +94,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-29a83247",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/ackermann",
+      "kind": "paper-page",
+      "title": "Trust Nothing: RTOS Security without Run-Time Software TCB",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:25:59Z",
+      "content_hash": "sha256:190723971ad3ea449160e9d0a84780bee3aa183e0063e82187b5ae1274f1cc76",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

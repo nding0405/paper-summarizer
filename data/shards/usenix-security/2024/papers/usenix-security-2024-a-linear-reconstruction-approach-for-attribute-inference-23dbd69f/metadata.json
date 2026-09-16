@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2024-a-linear-reconstruction-approach-for-attribute-inference-23dbd69f",
   "title": "A Linear Reconstruction Approach for Attribute Inference Attacks against Synthetic Data",
+  "abstract": "Recent advances in synthetic data generation (SDG) have been hailed as a solution to the difficult problem of sharing sensitive data while protecting privacy. SDG aims to learn statistical properties of real data in order to generate \"artificial\" data that are structurally and statistically similar to sensitive data. However, prior research suggests that inference attacks on synthetic data can undermine privacy, but only for specific outlier records.\n\nIn this work, we introduce a new attribute inference attack against synthetic data. The attack is based on linear reconstruction methods for aggregate statistics, which target all records in the dataset, not only outliers. We evaluate our attack on state-of-the-art SDG algorithms, including Probabilistic Graphical Models, Generative Adversarial Networks, and recent differentially private SDG mechanisms. By defining a formal privacy game, we show that our attack can be highly accurate even on arbitrary records, and that this is the result of individual information leakage (as opposed to population-level inference).\n\nWe then systematically evaluate the tradeoff between protecting privacy and preserving statistical utility. Our findings suggest that current SDG methods cannot consistently provide sufficient privacy protection against inference attacks while retaining reasonable utility. The best method evaluated, a differentially private SDG mechanism, can provide both protection against inference attacks and reasonable utility, but only in very specific settings. Lastly, we show that releasing a larger number of synthetic records can improve utility but at the cost of making attacks far more effective.",
+  "abstract_source_id": "src-abstract-usenix-security-2024-23dbd69f",
   "venue": "usenix-security",
   "year": 2024,
   "track_or_session": "ML IV: Privacy Inference I",
@@ -112,6 +114,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2024-23dbd69f",
+      "url": "https://www.usenix.org/conference/usenixsecurity24/presentation/annamalai-linear",
+      "kind": "paper-page",
+      "title": "A Linear Reconstruction Approach for Attribute Inference Attacks against Synthetic Data",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:13:57Z",
+      "content_hash": "sha256:06524be59bf5ed6743931638c3b810beb749dcf756fbda52516e8abad62ac0d6",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

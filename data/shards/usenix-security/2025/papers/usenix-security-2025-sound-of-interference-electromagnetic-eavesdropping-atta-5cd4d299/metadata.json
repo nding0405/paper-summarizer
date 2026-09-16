@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-sound-of-interference-electromagnetic-eavesdropping-atta-5cd4d299",
   "title": "Sound of Interference: Electromagnetic Eavesdropping Attack on Digital Microphones Using Pulse Density Modulation",
+  "abstract": "We introduce a novel electromagnetic (EM) side-channel attack that allows for acoustic eavesdropping on electronic devices. This method specifically targets modern digital microelectromechanical systems (MEMS) microphones, which transmit captured audio via pulse-density modulation (PDM), that translate the analog sound signal into the density of output pulses in the digital domain. We discover that each harmonic of these digital pulses retains acoustic information, allowing the original audio to be retrieved through simple FM demodulation using standard radio receivers. An attacker can exploit this phenomenon to capture what the victim microphone hears remotely without installing malicious software or tampering with the device. We verify the vulnerability presence by conducting real-world evaluation on several PDM microphones and electronic devices, including laptops and smart speakers. For example, we demonstrate that the attack achieves up to 94.2% accuracy in recognizing spoken digits, up to 2 meters from a victim laptop located behind a 25 cm concrete wall. We also evaluate the attacker capability to eavesdrop on speech using popular speech-to-text APIs (e.g., OpenAI) not trained on EM traces, achieving a maximum of 14% transcription error rate in recovering the Harvard Sentences dataset. We further demonstrate that similar accuracy can be achieved with a cheap and stealthy antenna made out of copper tape. We finally discuss the limited effectiveness of current defenses such as resampling, and we propose a new hardware defense based on clock randomization.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-5cd4d299",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Hardware Security 2",
@@ -154,6 +156,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-5cd4d299",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/onishi",
+      "kind": "paper-page",
+      "title": "Sound of Interference: Electromagnetic Eavesdropping Attack on Digital Microphones Using Pulse Density Modulation",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:21:58Z",
+      "content_hash": "sha256:2b40ae02c9880d2ae2e4b49011cab3f22a23db6dcd1a96e1b4e092184531ff41",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

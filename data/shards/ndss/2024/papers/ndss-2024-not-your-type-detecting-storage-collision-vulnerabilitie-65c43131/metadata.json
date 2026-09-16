@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2024-not-your-type-detecting-storage-collision-vulnerabilitie-65c43131",
   "title": "Not your Type! Detecting Storage Collision Vulnerabilities in Ethereum Smart Contracts",
+  "abstract": "In recent years, the Ethereum blockchain has seen significant growth and adoption. One of the key factors of its success is the possibility to run immutable programs known as smart contracts. Smart contracts allow for the automatic manipulation of digital assets and play a central role in the new decentralized finance (DeFi) ecosystem. With the growth of DeFi, the interactions between smart contracts have become increasingly complex, enabling advanced financial protocols and applications. However, bugs in smart contract interactions are also a common cause of critical vulnerabilities that result in considerable financial losses.\n\nIn this paper, we study and detect a type of cross-contract vulnerability known as a storage collision. A smart contract uses storage to persistently store its data on the blockchain. Typically, each contract has its own separate storage. However, it is also possible that two smart contracts share their storage (using a delegate call). Unfortunately, when these two contracts have different understandings of the types/semantics of their shared storage, a storage collision vulnerability can occur. This may lead to unexpected behavior such as denial of service (frozen funds), privilege escalation, and theft of financial assets.\n\nTo detect and investigate the impact of storage collision vulnerabilities at scale, we propose CRUSH, a novel analysis system that discovers these flaws and synthesizes proof-of-concept exploits. We leverage CRUSH to perform a large-scale analysis of 14,237,696 smart contracts deployed on the Ethereum blockchain since its genesis. CRUSH identifies 14,891 potentially vulnerable contracts and automatically synthesizes an end-to-end exploit for 956 of them. Our system uncovers more than $6 million of novel, previously unreported potential financial damage caused by storage collision vulnerabilities.",
+  "abstract_source_id": "src-abstract-ndss-2024-65c43131",
   "venue": "ndss",
   "year": 2024,
   "track_or_session": "Fall submission cycle",
@@ -189,6 +191,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2024-65c43131",
+      "url": "https://www.ndss-symposium.org/ndss-paper/not-your-type-detecting-storage-collision-vulnerabilities-in-ethereum-smart-contracts/",
+      "kind": "paper-page",
+      "title": "Not your Type! Detecting Storage Collision Vulnerabilities in Ethereum Smart Contracts",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:18:26Z",
+      "content_hash": "sha256:4ce2944791e5e8d9463bf81cc4fdf7053befaed8cc468739a415e885d90c0b65",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

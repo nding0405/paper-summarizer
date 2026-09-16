@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "atc-2023-llfree-scalable-and-optionally-persistent-page-frame-all-0daf5a28",
   "title": "LLFree: Scalable and Optionally-Persistent Page-Frame Allocation",
+  "abstract": "Within the operating-system’s memory-management subsystem, the page-frame allocator is the most fundamental component. It administers the physical-memory frames, which are required to populate the page-table tree. Although the appearance of heterogeneous, nonvolatile, and huge memories has drastically changed the memory hierarchy, we still manage our physical memory with the seminal methods from the 1960s.\n\nWith this paper, we argue that it is time to revisit the design of page-frame allocators. We demonstrate that the Linux frame allocator not only scales poorly on multi-core systems, but it also comes with a high memory overhead, suffers from huge-frame fragmentation, and uses scattered data structures that hinder its usage as a persistent-memory allocator. With LLFree, we provide a new lock- and log-free allocator design that scales well, has a small memory footprint, and is readily applicable to nonvolatile memory. LLFree uses cache-friendly data structures and exhibits antifragmentation behavior without inducing additional performance overheads. Compared to the Linux frame allocator, LLFree reduces the allocation time for concurrent 4 KiB allocations by up to 88 percent and for 2 MiB allocations by up to 98 percent. For memory compaction, LLFree decreases the number of required page movements by 64 percent.",
+  "abstract_source_id": "src-abstract-atc-2023-0daf5a28",
   "venue": "atc",
   "year": 2023,
   "track_or_session": "Kernel and Concurrency",
@@ -180,6 +182,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-atc-2023-0daf5a28",
+      "url": "https://www.usenix.org/conference/atc23/presentation/wrenger",
+      "kind": "paper-page",
+      "title": "LLFree: Scalable and Optionally-Persistent Page-Frame Allocation",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T21:58:02Z",
+      "content_hash": "sha256:7970247a04033ab830fe965c3087e1cbe51e2842a01fb1dec6ec731bf7c8d6d7",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

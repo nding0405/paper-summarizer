@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2026-analysis-of-the-security-design-engineering-and-implemen-0a291c23",
   "title": "Analysis of the Security Design, Engineering, and Implementation of the SecureDNA System",
+  "abstract": "We analyze security aspects of the SecureDNA system regarding its system design, engineering, and implementation. This system enables DNA synthesizers to screen order requests against a database of hazards. By applying novel cryptography involving distributed oblivious pseudorandom functions, the system aims to keep order requests and the database of hazards secret. Discerning the detailed operation of the system in part from source code (Version 1.0.8), our analysis examines key management, certificate infrastructure, authentication, and rate-limiting mechanisms. We also perform the first formal-methods analysis of the mutual authentication, basic request, and exemption-handling protocols.\n\nWithout breaking the cryptography, our main finding is that SecureDNA’s custom mutual authentication protocol SCEP achieves only one-way authentication: the hazards database and keyservers never learn with whom they communicate. This structural weakness violates the principle of defense in depth and enables an adversary to circumvent rate limits that protect the secrecy of the hazards database, if the synthesizer connects with a malicious or corrupted keyserver or hashed database. We point out an additional structural weakness that also violates the principle of defense in depth: inadequate cryptographic bindings prevent the system from detecting if responses, within a TLS channel, from the hazards database were modified. Consequently, if a synthesizer were to reconnect with the database over the same TLS session, an adversary could replay and swap responses from the database without breaking TLS. Although the SecureDNA implementation does not allow such reconnections, it would be stronger security engineering to avoid the underlying structural weakness. We identify these vulnerabilities and suggest and verify mitigations, including adding strong bindings. Software Version 1.1.0 fixes SCEP with our proposed SCEP+ protocol.\n\nOur work illustrates that a secure system needs more than sound mathematical cryptography; it also requires formal specifications, sound key management, proper binding of protocol message components, and careful attention to engineering and implementation details.",
+  "abstract_source_id": "src-abstract-ndss-2026-0a291c23",
   "venue": "ndss",
   "year": 2026,
   "track_or_session": "Fall submission cycle",
@@ -202,6 +204,19 @@
       "official": false,
       "supports": [
         "independent proceedings identity reconciliation"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2026-0a291c23",
+      "url": "https://www.ndss-symposium.org/ndss-paper/analysis-of-the-security-design-engineering-and-implementation-of-the-securedna-system/",
+      "kind": "paper-page",
+      "title": "Analysis of the Security Design, Engineering, and Implementation of the SecureDNA System",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:21:14Z",
+      "content_hash": "sha256:9d76a8a26565d3e4bb685906a56df8782f9c34e90f0f51cc6bb71f63aec46aac",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

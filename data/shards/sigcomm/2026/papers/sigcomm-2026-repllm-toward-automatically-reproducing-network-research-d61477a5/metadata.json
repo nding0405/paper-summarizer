@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sigcomm-2026-repllm-toward-automatically-reproducing-network-research-d61477a5",
   "title": "RepLLM: Toward Automatically Reproducing Network Research Results",
+  "abstract": "Result reproduction of computer networking research is challenging as the scarcity of open-source implementations and the complexity of heterogeneous system architectures. Even though Large Language Models have demonstrated potential in code generation, existing code generation frameworks often fail to address the long-context constraints and intricate logical dependencies, which are vital in reproducing network systems from academic papers. Thus, we introduce RepLLM, an end-to-end multi-agent framework designed to automate code reproduction from paper content. RepLLM features a collaborative architecture comprising four specialized agents—Content Parsing, Architecture Design, Code Generation, and Audit & Repair, which are coordinated through Shared Memory mechanism to ensure global context consistency. With the enhancement of Structured Chain-of-Thought LLM reasoning and a sandbox-isolated static-dynamic debugging methodology, our framework effectively resolves semantic discrepancies and runtime errors, thereby improving reliable reproductions. Extensive evaluations on representative papers in top conferences demonstrate that RepLLM outperforms state-of-the-art system-level LLM frameworks in generating compile-ready and logically correct systems. Our results show that, with the aid of RepLLM, we can reproduce 95% of the original benchmarks within approximately two hours while reducing token consumption by up to 10% compared with state-of-the-art baselines.",
+  "abstract_source_id": "src-abstract-d61477a5",
   "venue": "sigcomm",
   "year": 2026,
   "track_or_session": "Research Session 18: Learning-Based & Data-Driven Network Systems — Research Paper",
@@ -422,6 +424,19 @@
       "official": true,
       "supports": [
         "official main-paper scope and track definitions"
+      ]
+    },
+    {
+      "id": "src-abstract-d61477a5",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/search/match?query=RepLLM%3A%20Toward%20Automatically%20Reproducing%20Network%20Research%20Results&fields=title,abstract",
+      "kind": "semantic-scholar",
+      "title": "RepLLM: Toward Automatically Reproducing Network Research Results",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T23:05:55Z",
+      "content_hash": "sha256:b077fb6a68edb4b3e6aabb2f51bb35e146e85d7371febd2156c12c6033bcffb3",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2026-transient-architectural-execution-from-weird-gates-to-we-fca5df84",
   "title": "Transient Architectural Execution: From Weird Gates to Weird Programs",
+  "abstract": "An emerging body of work has explored the construction of weird gates—code segments computing on microarchitectural state not exposed by the instruction set architecture. Weird gates abstract microarchitectural state (e.g., CPU cache residency) as Boolean values and compute logical functions over these values. Researchers have used weird gates in applications like side-channel amplification and malware obfuscation. Indeed, in principle, the computational model of weird gates—a Boolean circuit of bounded size—can perform (bounded) arbitrary computation. In practice, however, this model is less efficient (both asymptotically and concretely) than the standard processor model, which supports conditional execution, indexed memory, and richer data types. In this paper, we show how to build weird computation in the processor model rather than the circuit model. The primitive that makes this possible is transient architectural execution: transiently loading microarchitectural state into registers, computing on it, and storing the results back into microarchitectural state—without exposing any state architecturally. Transient architectural execution, a generalization of prior weird gates and transient execution attacks, allows us to wield the full computational capability of the processor to operate on microarchitectural state. We also show how to use the state of the branch predictor to emulate wide variables of up to 16 bits. As a result, our weird programs are over two orders of magnitude faster than weird gates and can compute functions that are impractical using prior approaches.",
+  "abstract_source_id": "src-abstract-sp-2026-fca5df84",
   "venue": "sp",
   "year": 2026,
   "track_or_session": "Cycle 1",
@@ -175,6 +177,19 @@
       "official": true,
       "supports": [
         "DOI, published-order authors and affiliations, abstract, publication date, page span, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2026-fca5df84",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Transient Architectural Execution: From Weird Gates to Weird Programs",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:58:06Z",
+      "content_hash": "sha256:5353b9384fd86d54ad3dc674f6041a164ea560a1a98a9c02cc1bb37e317e508e",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

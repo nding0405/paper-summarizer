@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-improv-measurement-and-practical-mitigation-of-collatera-53cb9ee8",
   "title": "ImpROV: Measurement and Practical Mitigation of Collateral Damage in RPKI Route Origin Validation",
+  "abstract": "The Resource Public Key Infrastructure (RPKI) enhances Internet routing security. RPKI are effective only when routers employ them to validate and filter invalid BGP announcements, a process known as Route Origin Validation (ROV). However, the partial deployment of ROV has led to the phenomenon of collateral damage, where even ROV-enabled ASes can inadvertently direct traffic to incorrect origins if subsequent hops fail to perform proper validation.\n\nIn this paper, we conduct the first comprehensive study to measure the extent of collateral damage in the real world. Our analysis reveals that a staggering 85.6% of RPKI-invalid announcements are vulnerable to collateral damage attacks and 34% of ROV-enabled ASes are still susceptible to collateral damage attacks. To address this critical issue, we introduce ImpROV, which detects and avoids next hops that are likely to cause collateral damage for a specific RPKI-invalid prefix; our approach operates without affecting other IP address spaces on the data plane that are not impacted by this collateral damage.\n\nOur extensive evaluations show that ImpROV can reduce the hijack success ratio for most ASes that deployed ROV, while only introduce less than 3% and 4% of Memory and CPU overhead.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-53cb9ee8",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Network Security 2: Routing and DoS",
@@ -112,6 +114,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-53cb9ee8",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/li-weitong",
+      "kind": "paper-page",
+      "title": "ImpROV: Measurement and Practical Mitigation of Collateral Damage in RPKI Route Origin Validation",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:20:24Z",
+      "content_hash": "sha256:91d48921af4cadc2f34f98c689578a7879717d0d57bf6ffc43bed9c523aa80ff",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

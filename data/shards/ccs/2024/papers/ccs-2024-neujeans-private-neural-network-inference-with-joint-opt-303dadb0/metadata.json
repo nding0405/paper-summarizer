@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2024-neujeans-private-neural-network-inference-with-joint-opt-303dadb0",
   "title": "NeuJeans: Private Neural Network Inference with Joint Optimization of Convolution and FHE Bootstrapping",
+  "abstract": "Fully homomorphic encryption (FHE) is a promising cryptographic primitive for realizing private neural network inference (PI) services by allowing a client to fully offload the inference task to a cloud server while keeping the client data oblivious to the server. This work proposes NeuJeans, an FHE-based solution for the PI of deep convolutional neural networks (CNNs). NeuJeans tackles the critical problem of the enormous computational cost for the FHE evaluation of CNNs. We introduce a novel encoding method called Coefficients-in-Slot (CinS) encoding, which enables multiple convolutions in one HE multiplication without costly slot permutations. We further observe that CinS encoding is obtained by conducting the first several steps of the Discrete Fourier Transform (DFT) on a ciphertext in conventional Slot encoding. This property enables us to save the conversion between CinS and Slot encodings as bootstrapping a ciphertext starts with DFT. Exploiting this, we devise optimized execution flows for various two-dimensional convolution (conv2d) operations and apply them to end-to-end CNN implementations. NeuJeans accelerates the performance of conv2d-activation sequences by up to 5.68× compared to state-of-the-art FHE-based PI work and performs the PI of a CNN at the scale of ImageNet within a mere few seconds.",
+  "abstract_source_id": "src-abstract-ccs-2024-303dadb0",
   "venue": "ccs",
   "year": 2024,
   "track_or_session": "Cycle 2",
@@ -222,6 +224,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2024-303dadb0",
+      "url": "https://api.openalex.org/works/doi:10.1145/3658644.3690375?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "NeuJeans: Private Neural Network Inference with Joint Optimization of Convolution and FHE Bootstrapping",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:11:03Z",
+      "content_hash": "sha256:49d7a1bc771b9e0669b508125fcbd311e039f12d3a2b35e95f4657e0de6cae21",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

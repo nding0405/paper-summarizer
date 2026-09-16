@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "eurosys-2024-exploring-the-asynchrony-of-slow-memory-filesystem-with-36553153",
   "title": "Exploring the Asynchrony of Slow Memory Filesystem with EasyIO",
+  "abstract": "We introduce EasyIO, a new approach to explore asynchronous I/O on filesystems designed for (disaggregated) nonvolatile memories to improve CPU efficiency. EasyIO offloads expensive memory movement operations to the on-chip DMA engine and harvests the unleashed CPU cycles by transparently interleaving asynchronous I/Os with fine-grained application tasks. We further adopt a completion buffer-centric design to improve EasyIO's efficiency and schedulability; internally, orderless file operation and two-level locking are incorporated to break the serial order between file metadata and data, thus accelerating read and write operations and defusing deadlock risks. EasyIO also introduces a traffic-aware channel manager to fulfill the diverse performance goals of applications. Extensive experimental results show that, compared to conventional synchronous filesystems, EasyIO significantly reduces CPU consumption (using less than 88% of cores at most) while achieving comparable peak bandwidth; EasyIO also achieves 1.03-2.3× speedups across eight real-world applications. When achieving these goals, EasyIO exhibits higher but tolerable latencies for read operations due to the task interleaving.",
+  "abstract_source_id": "src-abstract-eurosys-2024-36553153",
   "venue": "eurosys",
   "year": 2024,
   "track_or_session": null,
@@ -125,6 +127,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-eurosys-2024-36553153",
+      "url": "https://api.openalex.org/works/doi:10.1145/3627703.3629586?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Exploring the Asynchrony of Slow Memory Filesystem with EasyIO",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:18:48Z",
+      "content_hash": "sha256:64f357659ae88387b16435f8d9840d97bf76d86d410de8b45f3fc2e72c566eb1",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2023-kenku-towards-efficient-and-stealthy-black-box-adversari-f12fa47b",
   "title": "KENKU: Towards Efficient and Stealthy Black-box Adversarial Attacks against ASR Systems",
+  "abstract": "Prior researchers show that existing automatic speech recognition (ASR) systems are vulnerable to adversarial examples. Most existing adversarial attacks against ASR systems are either white- or gray-box, limiting their practical usage in the real world. Some black-box attacks also assume the knowledge of output probability vectors to infer output distribution. Other black-box attacks leverage inefficient heavyweight processes, i.e., training auxiliary models or estimating gradients. Moreover, they require input-specific and manual hyperparameter tuning to improve the attack success rate against a specific ASR system. Despite such a heavyweight tuning process, nearly or even more than half of the generated adversarial examples are perceptible to humans.\n\nThis paper designs KENKU, an efficient and stealthy black-box adversarial attack framework against ASRs, supporting hidden voice command and integrated command attacks. It optimizes the novel acoustic feature loss and perturbation loss, based on Mel-frequency Cepstral Coefficients (MFCC). Both loss values can be calculated locally, avoiding training auxiliary models or estimating gradients, making the attack efficient. Furthermore, we introduce a hyperparameter in optimization that balances the attack effectiveness and imperceptibility automatically. KENKU uses the binary search algorithm to find its optimal value. We evaluated our prototype on eight real-world systems (including five digital and three physical attacks) and compared KENKU with five state-of-the-art works. Results show that KENKU can outperform existing works in the attack performance.",
+  "abstract_source_id": "src-abstract-usenix-security-2023-f12fa47b",
   "venue": "usenix-security",
   "year": 2023,
   "track_or_session": "Adversarial ML beyond ML",
@@ -196,6 +198,19 @@
       "official": true,
       "supports": [
         "authors, affiliations when published, abstract, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2023-f12fa47b",
+      "url": "https://www.usenix.org/conference/usenixsecurity23/presentation/wu-xinghui",
+      "kind": "paper-page",
+      "title": "KENKU: Towards Efficient and Stealthy Black-box Adversarial Attacks against ASR Systems",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:11:47Z",
+      "content_hash": "sha256:d64a8b1fba03c35b4e58f6f77de58b09533251c80ca80bbebb4ca6d84fa8f2c0",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

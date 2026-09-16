@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2024-single-pass-client-preprocessing-private-information-ret-7c43bca7",
   "title": "Single Pass Client-Preprocessing Private Information Retrieval",
+  "abstract": "Recently, many works have considered Private Information Retrieval (PIR) with client-preprocessing: In this model a client and a server jointly run a preprocessing phase, after which client queries run in time sublinear in the database size. However, the preprocessing phase is expensive—proportional to λ N , where λ is the security parameter (e.g., λ=128).\n\nIn this paper we propose SinglePass, the first PIR protocol that is concretely optimal with respect to client-preprocessing, requiring exactly a single linear pass over the database. Our approach yields a preprocessing speedup ranging from 45× to 100× and a query speedup of up to 20× when compared to previous state-of-the-art schemes (e.g., Checklist, USENIX SECURITY 2021, making preprocessing PIR more attractive for a myriad of use cases that are \"session-based\".\n\nIn addition to practical preprocessing, SinglePass features constant-time updates (additions/edits). Previously, the best known approach for handling updates in client-preprocessing PIR had complexity O log N , while also adding a log N factor to the bandwidth. We implement our update algorithm and show concrete speedups of about 20× over previous state-of-the-art updatable schemes (e.g., Checklist ).",
+  "abstract_source_id": "src-abstract-usenix-security-2024-7c43bca7",
   "venue": "usenix-security",
   "year": 2024,
   "track_or_session": "Crypto V: Private Information Retrieval",
@@ -91,6 +93,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2024-7c43bca7",
+      "url": "https://www.usenix.org/conference/usenixsecurity24/presentation/lazzaretti",
+      "kind": "paper-page",
+      "title": "Single Pass Client-Preprocessing Private Information Retrieval",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:17:14Z",
+      "content_hash": "sha256:403c5e9edaef58b1ed9485aefb8f022ba6be7a5d4a82632e0a5a019d12d784ad",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

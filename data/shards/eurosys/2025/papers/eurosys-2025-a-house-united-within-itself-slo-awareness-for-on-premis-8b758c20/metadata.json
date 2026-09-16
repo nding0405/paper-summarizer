@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "eurosys-2025-a-house-united-within-itself-slo-awareness-for-on-premis-8b758c20",
   "title": "A House United Within Itself: SLO-Awareness for On-Premises Containerized ML Inference Clusters via Faro",
+  "abstract": "This paper tackles the challenge of running multiple ML inference jobs (models) under time-varying workloads, on a constrained on-premises production cluster. Our system Faro takes in latency Service Level Objectives (SLOs) for each job, auto-distills them into utility functions, \"sloppifies\" these utility functions to make them amenable to mathematical optimization, automatically predicts workload via probabilistic prediction, and dynamically makes implicit cross-job resource allocations, in order to satisfy cluster-wide objectives, e.g., total utility, fairness, and other hybrid variants. A major challenge Faro tackles is that using precise utilities and high-fidelity predictors, can be too slow (and in a sense too precise!) for the fast adaptation we require. Faro's solution is to \"sloppify\" (relax) its multiple design components to achieve fast adaptation without overly degrading solution quality. Faro is implemented in a stack consisting of Ray Serve running atop a Kubernetes cluster. Trace-driven cluster deployments show that Faro achieves 2.3×-23× lower SLO violations compared to state-of-the-art systems.",
+  "abstract_source_id": "src-abstract-eurosys-2025-8b758c20",
   "venue": "eurosys",
   "year": 2025,
   "track_or_session": "Session-4.1: ML Systems - Location: Rotterdam Hall 1A - Chair: Yubin Xia",
@@ -167,6 +169,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-eurosys-2025-8b758c20",
+      "url": "https://api.openalex.org/works/doi:10.1145/3689031.3696071?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "A House United Within Itself: SLO-Awareness for On-Premises Containerized ML Inference Clusters via Faro",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:19:00Z",
+      "content_hash": "sha256:146cbeb394382a07051c0f4ce33e237f21be155f3ddbafafe7546f45b6591dac",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

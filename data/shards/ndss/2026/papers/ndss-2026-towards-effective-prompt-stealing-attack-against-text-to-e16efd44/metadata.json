@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2026-towards-effective-prompt-stealing-attack-against-text-to-e16efd44",
   "title": "Towards Effective Prompt Stealing Attack against Text-to-Image Diffusion Models",
+  "abstract": "Text-to-Image (T2I) models, represented by DALL$cdot$E and Midjourney, have gained huge popularity for creating realistic images. The quality of these images relies on the carefully engineered prompts, which have become valuable intellectual property. While skilled prompters showcase their AI-generated art on markets to attract buyers, this business incidentally exposes them to textit{prompt stealing attacks}. Existing state-of-the-art attack techniques reconstruct the prompts from a fixed set of modifiers (textit{i.e.,} style descriptions) with model-specific training, which exhibit restricted adaptability and effectiveness to diverse showcases (textit{i.e.,} target images) and diffusion models.\n\nTo alleviate these limitations, we propose textbf{Prometheus}, a training-free, proxy-in-the-loop, search-based prompt-stealing attack, which reverse-engineers the valuable prompts of the showcases by interacting with a local proxy model. It consists of three innovative designs.\n\nFirst, we introduce textit{dynamic modifiers}, as a supplement to static modifiers used in prior works. These dynamic modifiers provide more details specific to the showcases, and we exploit NLP analysis to generate them on the fly.\n\nSecond, we design a textit{contextual matching} algorithm to sort both dynamic and static modifiers. This offline process helps reduce the search space of the subsequent step.\n\nThird, we interact with a local proxy model to invert the prompts with a greedy search algorithm. Based on the feedback guidance, we refine the prompt to achieve higher fidelity.\n\nThe evaluation results show that textbf{Prometheus} successfully extracts prompts from popular platforms like PromptBase and AIFrog against diverse victim models, including Midjourney, Leonardo.ai, and DALL$cdot$E, with an ASR improvement of 25.0%.\n\nWe also validate that textbf{Prometheus} is resistant to extensive potential defenses, further highlighting its severity in practice.",
+  "abstract_source_id": "src-abstract-ndss-2026-e16efd44",
   "venue": "ndss",
   "year": 2026,
   "track_or_session": "Fall submission cycle",
@@ -286,6 +288,19 @@
       "official": false,
       "supports": [
         "independent proceedings identity reconciliation"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2026-e16efd44",
+      "url": "https://www.ndss-symposium.org/ndss-paper/towards-effective-prompt-stealing-attack-against-text-to-image-diffusion-models/",
+      "kind": "paper-page",
+      "title": "Towards Effective Prompt Stealing Attack against Text-to-Image Diffusion Models",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:23:25Z",
+      "content_hash": "sha256:4c8f63cf2e8c43c546263332e399f1713296d4e4ee717a02f3b36169b52b23c0",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

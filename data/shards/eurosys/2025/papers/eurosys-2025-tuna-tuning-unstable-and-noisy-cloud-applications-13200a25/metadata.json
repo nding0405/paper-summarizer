@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "eurosys-2025-tuna-tuning-unstable-and-noisy-cloud-applications-13200a25",
   "title": "TUNA: Tuning Unstable and Noisy Cloud Applications",
+  "abstract": "Autotuning plays a pivotal role in optimizing the performance of systems, particularly in large-scale cloud deployments. One of the main challenges in performing autotuning in the cloud arises from performance variability. We first investigate the extent to which noise slows autotuning and find that as little as 5% noise can lead to a 2.5x slowdown in converging to the best-performing configuration. We measure the magnitude of noise in cloud computing settings and find that while some components (CPU, disk) have almost no performance variability, there are still sources of significant variability (caches, memory). Furthermore, variability leads to autotuning finding unstable configurations. As many as 63.3% of the configurations selected as \"best\" during tuning can have their performance degrade by 30% or more when deployed. Using this as motivation, we propose a novel approach to improve the efficiency of autotuning systems by (a) detecting and removing outlier configurations and (b) using ML-based approaches to provide a more stable true signal of de-noised experiment results to the optimizer. The resulting system, TUNA (Tuning Unstable and Noisy Cloud Applications) enables faster convergence and robust configurations. Tuning PostgreSQL running mssales, an enterprise production workload, we find that TUNA can lead to 1.88x lower running time on average with 2.58x lower standard deviation compared to traditional sampling methodologies.",
+  "abstract_source_id": "src-abstract-eurosys-2025-13200a25",
   "venue": "eurosys",
   "year": 2025,
   "track_or_session": "Session-7.1: Cloud and Serverless Computing - Location: Rotterdam hall 1B - Chair: Martin Kleppmann",
@@ -146,6 +148,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-eurosys-2025-13200a25",
+      "url": "https://api.openalex.org/works/doi:10.1145/3689031.3717480?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "TUNA: Tuning Unstable and Noisy Cloud Applications",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:19:37Z",
+      "content_hash": "sha256:cfb36e8349a17e3370d21de18f91c9d3db31232e5b9972c0932e589fb98a2138",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

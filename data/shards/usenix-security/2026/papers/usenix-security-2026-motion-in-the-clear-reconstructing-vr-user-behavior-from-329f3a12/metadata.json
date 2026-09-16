@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-motion-in-the-clear-reconstructing-vr-user-behavior-from-329f3a12",
   "title": "Motion in the Clear: Reconstructing VR User Behavior from Network Traffic",
+  "abstract": "Virtual Reality (VR) applications stream high-rate head and hand motion to support real-time multi-user interaction. This motion telemetry is privacy sensitive, enabling behavioral inference such as user identification and virtual typing inference. We show that VR motion can be reconstructed from passively observed network traffic alone, even when the adversary has no application access, device compromise, or message-format knowledge. From an ecosystem measurement of 75 popular VR applications, we find that multiplayer uplink traffic is dominated by sustained, high-frequency UDP and that payload encryption is uncommon. Despite application-specific serialization and unknown encodings, motion updates retain a smooth temporal structure that remains visible in plaintext UDP payload bytes.\n\nLeveraging this property, we present PACMO, a passive, encoding-agnostic attack that uses controlled input patterns to automatically localize motion-related packet fields and reconstruct head and hand trajectories in a black-box manner. The reconstructed motion enables high-impact downstream attacks, achieving up to 96.2% user identification accuracy and 69.4% virtual typing inference accuracy. Our results expose a systemic network-layer privacy risk in immersive systems and motivate treating motion synchronization traffic as sensitive by default.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-329f3a12",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Security and Privacy for Web, Mobile, and Emerging Technologies 4",
@@ -155,6 +157,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "explicit notice that the abstract remains under embargo"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-329f3a12",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/lee-jiho",
+      "kind": "paper-page",
+      "title": "Motion in the Clear: Reconstructing VR User Behavior from Network Traffic",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:24:46Z",
+      "content_hash": "sha256:46af672ccea719b569b15afbdc738075c2111abbdb47a525a947d2835a816cb1",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

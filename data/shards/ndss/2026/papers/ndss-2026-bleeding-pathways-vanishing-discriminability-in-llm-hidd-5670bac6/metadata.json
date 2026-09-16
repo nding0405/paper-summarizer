@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2026-bleeding-pathways-vanishing-discriminability-in-llm-hidd-5670bac6",
   "title": "Bleeding Pathways: Vanishing Discriminability in LLM Hidden States Fuels Jailbreak Attacks",
+  "abstract": "Large Language Models (LLMs) remain vulnerable to jailbreak attacks that exploit adversarial prompts to circumvent safety measures. Current safety fine-tuning approaches face two critical limitations. First, they often fail to strike a balance between security and utility, where stronger safety measures tend to over-reject harmless user requests. Second, they frequently miss malicious intent concealed within seemingly benign tasks, leaving models exposed to exploitation. Our work identifies a fundamental cause of these issues: during response generation, an LLM's capacity to differentiate harmful from safe outputs deteriorates. Experimental evidence confirms this, revealing that the separability between hidden states for safe and harmful responses diminishes as generation progresses. This weakening discrimination forces models to make compliance judgments earlier in the generation process, restricting their ability to recognize developing harmful intent and contributing to both aforementioned failures. To mitigate this vulnerability, we introduce DEEPALIGN - an inherent defense framework that enhances the safety of LLMs. By applying contrastive hidden-state steering at the midpoint of response generation, DEEPALIGN amplifies the separation between harmful and benign hidden states, enabling continuous intrinsic toxicity detection and intervention throughout the generation process. Moreover, it facilitates contextually appropriate safe responses to harmful queries, thereby expanding the feasible space of safe responses. Evaluations demonstrate DEEPALIGN's efficacy. Across diverse LLMs spanning varying architectures and scales, it reduced attack success rates of nine distinct jailbreak attacks to near-zero or minimal. Crucially, it preserved model capability while reducing over-refusal. Models equipped with DEEPALIGN exhibited up to 3.5% lower error rates in rejecting challenging benign queries and maintained standard task performance with less than 1% decline. This marks a substantial advance in the safety-utility Pareto frontier.",
+  "abstract_source_id": "src-abstract-ndss-2026-5670bac6",
   "venue": "ndss",
   "year": 2026,
   "track_or_session": "Fall submission cycle",
@@ -233,6 +235,19 @@
       "official": false,
       "supports": [
         "independent proceedings identity reconciliation"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2026-5670bac6",
+      "url": "https://www.ndss-symposium.org/ndss-paper/bleeding-pathways-vanishing-discriminability-in-llm-hidden-states-fuels-jailbreak-attacks/",
+      "kind": "paper-page",
+      "title": "Bleeding Pathways: Vanishing Discriminability in LLM Hidden States Fuels Jailbreak Attacks",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:21:25Z",
+      "content_hash": "sha256:3504043570815c8619f0d480021a67347398a5c908c6ba86af6946c27e3cc8da",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

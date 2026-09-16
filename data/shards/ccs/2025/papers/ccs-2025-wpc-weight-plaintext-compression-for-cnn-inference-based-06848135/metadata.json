@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2025-wpc-weight-plaintext-compression-for-cnn-inference-based-06848135",
   "title": "WPC: Weight Plaintext Compression for CNN Inference based on RNS-CKKS",
+  "abstract": "Convolutional neural network (CNN) inference based on RNS-CKKS enables secure processing on encrypted data but introduces significant weight size overhead. Weight plaintext, weight in RNS-CKKS format, can reach tens to hundreds of gigabytes. Existing compression methods either add high computational cost or yield low compression rates. In this work, we propose WPC, Weight Plaintext Compression, to compress weight plaintext for RNS-CKKS-based CNN inference. We observe that the transformation from the weight in CNN models to the weight plaintext in RNS-CKKS format involves an operation akin to the Discrete Fourier Transform, which shifts data between the time and frequency domains while retaining redundant information from periodic and discrete data. Based on this observation, we first introduce the Periodic Transmit Theorem, which states that periodic patterns can be preserved during the transformation process, thereby enabling compression. We then propose Channel Innermost Packing Scheme and Rotation Padding to rearrange the weight data into periodic patterns for compression. Results show that WPC achieves 1.25 to 2.18 times speedup on an A100 GPU and 46.08 to 139.11 times compression rate.",
+  "abstract_source_id": "src-abstract-ccs-2025-06848135",
   "venue": "ccs",
   "year": 2025,
   "track_or_session": "Cycle 2",
@@ -274,6 +276,19 @@
         "published-order authors",
         "publication-time affiliations",
         "publication date and page span"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2025-06848135",
+      "url": "https://api.openalex.org/works/doi:10.1145/3719027.3765022?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "WPC: Weight Plaintext Compression for CNN Inference based on RNS-CKKS",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:18:27Z",
+      "content_hash": "sha256:0bfdb8f339010c9e08d604d5e95306f0f963f548599e00ad1e710e6379183c5f",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

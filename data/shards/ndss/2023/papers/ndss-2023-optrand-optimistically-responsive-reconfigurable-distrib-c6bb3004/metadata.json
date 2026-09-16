@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2023-optrand-optimistically-responsive-reconfigurable-distrib-c6bb3004",
   "title": "OptRand: Optimistically Responsive Reconfigurable Distributed Randomness",
+  "abstract": "Public random beacons publish random numbers at regular intervals, which anyone can obtain and verify. The design of public distributed random beacons has been an exciting research direction with significant implications for blockchains, voting, and beyond. Distributed random beacons, in addition to being bias-resistant and unpredictable, also need to have low communication overhead and latency, high resilience to faults, and ease of reconfigurability. Existing synchronous random beacon protocols sacrifice one or more of these properties.\n\nIn this work, we design an efficient unpredictable synchronous random beacon protocol, OptRand, with quadratic (in the number $n$ of system nodes) communication complexity per beacon output. First, we innovate by employing a novel combination of bilinear pairing based publicly verifiable secret-sharing and non-interactive zero-knowledge proofs to build a linear (in $n$) sized publicly verifiable random sharing. Second, we develop a state machine replication protocol with linear-sized inputs that is also optimistically responsive, i.e., it can progress responsively at actual network speed during optimistic conditions, despite the synchrony assumption, and thus incur low latency. In addition, we present an efficient reconfiguration mechanism for OptRand that allows nodes to leave and join the system. Our experiments show our protocols perform significantly better compared to state-of-the-art protocols under optimistic conditions and on par with state-of-the-art protocols in the normal case. We are also the first to implement a reconfiguration mechanism for distributed beacons and demonstrate that our protocol continues to be live during reconfigurations.",
+  "abstract_source_id": "src-abstract-ndss-2023-c6bb3004",
   "venue": "ndss",
   "year": 2023,
   "track_or_session": "Blockchains I",
@@ -147,6 +149,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2023-c6bb3004",
+      "url": "https://www.ndss-symposium.org/ndss-paper/optrand-optimistically-responsive-reconfigurable-distributed-randomness/",
+      "kind": "paper-page",
+      "title": "OptRand: Optimistically Responsive Reconfigurable Distributed Randomness",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:17:12Z",
+      "content_hash": "sha256:32fe2efe1167b9c8daa3cf234efdfbee7fe20eab6f8c477d33cf867500c6f3b1",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

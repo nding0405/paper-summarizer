@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sigcomm-2026-trivance-latency-optimal-allreduce-by-shortcutting-multi-7ded6ccd",
   "title": "Trivance: Latency-Optimal AllReduce by Shortcutting Multiport Networks",
+  "abstract": "AllReduce is a fundamental collective communication operation in distributed computing and a key performance bottleneck for large-scale training and inference. Its completion time is determined by the number of communication steps, which dominate latency-sensitive workloads, and the communication distance affecting both latency- and bandwidth-bound regimes. Direct-connect topologies, such as Google's TPUv4 tori, are particularly prone to large communication distances due to limited bisection bandwidth. In this paper, we present Trivance, a novel AllReduce algorithm that completes within log3 nsteps—a 50% improvement in comparison to Swing and Recursive Doubling, while reducing congestion compared to Bruck's algorithm by a factor of three and preserving bandwidth-optimality. Trivance exploits both transmission ports of a bidirectional ring within each step to triple the communication distance along both directions simultaneously. By performing joint reductions, Trivance improves both the number of steps and network congestion. We further show that Trivance extends naturally to multidimensional torus networks, retaining its latency advantage while achieving performance comparable to bandwidth-optimal algorithms for large AllReduce sizes. Our packet-level SST simulation shows that Trivance improves state-of-the-art approaches by 5–30% for AllReduce sizes up to 8 MiB, in high-bandwidth settings up to 32 MiB and for 3D tori up to 128 MiB. Throughout the evaluation, Trivance remains the best-performing latency-optimal algorithm.",
+  "abstract_source_id": "src-abstract-7ded6ccd",
   "venue": "sigcomm",
   "year": 2026,
   "track_or_session": "Research Session 3: Collective Communication Algorithms — Research Paper",
@@ -128,6 +130,19 @@
       "official": true,
       "supports": [
         "official main-paper scope and track definitions"
+      ]
+    },
+    {
+      "id": "src-abstract-7ded6ccd",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/search/match?query=Trivance%3A%20Latency-Optimal%20AllReduce%20by%20Shortcutting%20Multiport%20Networks&fields=title,abstract",
+      "kind": "semantic-scholar",
+      "title": "Trivance: Latency-Optimal AllReduce by Shortcutting Multiport Networks",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T23:08:37Z",
+      "content_hash": "sha256:0cb4dfaf9c8fdbf5b6af562f335c7bbb158a590bb925ebb15c9bcd731b5460bd",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

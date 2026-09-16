@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2026-scaling-the-io-wall-with-declarative-io-193ccb7d",
   "title": "Scaling the IO Wall with Declarative IO",
+  "abstract": "HDD capacities will greatly increase over the next ten years, lowering cost-per-TB in large-scale storage systems. Unfortunately, device bandwidth will not grow proportionally to device capacity. Hence, storage systems will face an IO wall where the demand for HDD IO will outstrip supply.\n\nWe find that, surprisingly, between 45% and 70% of after-cache HDD IO demand for 6 hyperscalers comes from crucial maintenance tasks that ensure data reliability and efficiency (e.g. scrubbing, garbage collection). Unfortunately, caching maintenance tasks is ineffective — individual tasks have little reuse and inter-task reuse is too far apart in time. Fortunately, maintenance tasks are flexible in the timing, ordering of data accesses, and even which data they access. However, the current imperative storage interface (e.g., read/write) hides maintenance tasks’ flexible nature. We propose Declarative IO, a new interface for distributed storage systems that allows developers to expose tasks’ flexibility to the storage system. This interface allows tasks to send a declaration to our distributed storage system, DINGO, specifying sets of data and their associated deadlines, such as “process all blocks of this device within 7 days”. In processing declarations, DINGO coordinates IO across different tasks to create timely data reuse. DINGO achieves a 26–51% IO savings for maintenance task mixes corresponding to real hyperscalers, enabling the deployment of 1.7×larger HDDs than in imperative systems.",
+  "abstract_source_id": "src-abstract-osdi-2026-193ccb7d",
   "venue": "osdi",
   "year": 2026,
   "track_or_session": "Filesystems and I/O Acceleration",
@@ -377,6 +379,19 @@
       "official": true,
       "supports": [
         "Official proceedings availability and canonical conference versions."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2026-193ccb7d",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/athlur",
+      "kind": "paper-page",
+      "title": "Scaling the IO Wall with Declarative IO",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:08:54Z",
+      "content_hash": "sha256:0e571816503c8680801be7fb3dc29b1d0f50718d9b34698ee46f7eeaf119651d",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

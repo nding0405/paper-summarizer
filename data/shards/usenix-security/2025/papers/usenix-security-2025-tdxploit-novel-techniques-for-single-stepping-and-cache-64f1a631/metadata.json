@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-tdxploit-novel-techniques-for-single-stepping-and-cache-64f1a631",
   "title": "TDXploit: Novel Techniques for Single-Stepping and Cache Attacks on Intel TDX",
+  "abstract": "Intel TDX is a trusted execution environment (TEE) protecting arbitrary code, e.g., an entire OS, from the host system in trust domains (TDs). While TDX isolates the memory of TDs, side channels are still a threat due to shared hardware. Prior work showed that single-stepping is a powerful technique for attacking TEEs. After TDX was found vulnerable to these attacks, Intel improved their mitigations with TDX module version 1.5.06, stopping all known single-stepping attacks.\n\nIn this paper, we introduce TDXploit, a novel technique to revive single-stepping attacks on Intel TDX. TDXploit exploits a fundamental flaw in Intel's single-stepping mitigation, ironically, achieving a higher (>99.99 %) single-stepping accuracy than without mitigations. We recover the mitigation's internal state using an attacker-controlled TD. We not only predict the mitigation's behavior without any side channel but also manipulate it for reliable single- and multi-stepping. TDXploit can perform one single-step every 3.7 ms. We evaluate TDXploit with an attack on ECDSA in OpenSSL. Furthermore, we systematically evaluate 6 state-of-the-art side-channel attack techniques on TDX and their compatibility with TDXploit. A key finding is that clflush bypasses Intel's defenses, allowing Flush+Flush attacks on TDX guest physical memory. Compared to all previous Flush+Flush attacks, our Flush+Flush attack requires no shared memory and can target any memory location of a TD. We demonstrate the impact of this finding in a full key recovery on an AES T-Table implementation, requiring only 8 986 encryption traces. Finally, we combine our novel Flush+Flush with TDXploit to leak TOTP secrets with a single trace. We conclude that further mitigations against single-stepping and side channels on TDX are necessary",
+  "abstract_source_id": "src-abstract-usenix-security-2025-64f1a631",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "System Security 2: Trusted and Robust Computing",
@@ -154,6 +156,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-64f1a631",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/rauscher",
+      "kind": "paper-page",
+      "title": "TDXploit: Novel Techniques for Single-Stepping and Cache Attacks on Intel TDX",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:22:09Z",
+      "content_hash": "sha256:ac13d45a093fbce3a56ca12b90539a20a784eb6c14d18513d484e7bb0a342c45",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2024-camp-compiler-and-allocator-based-heap-memory-protection-098ebf1e",
   "title": "CAMP: Compiler and Allocator-based Heap Memory Protection",
+  "abstract": "The heap is a critical and widely used component of many applications. Due to its dynamic nature, combined with the complexity of heap management algorithms, it is also a frequent target for security exploits. To enhance the heap's security, various heap protection techniques have been introduced, but they either introduce significant runtime overhead or have limited protection. We present CAMP, a new sanitizer for detecting and capturing heap memory corruption. CAMP leverages a compiler and a customized memory allocator. The compiler adds boundary-checking and escape-tracking instructions to the target program, while the memory allocator tracks memory ranges, coordinates with the instrumentation, and neutralizes dangling pointers. With the novel error detection scheme, CAMP enables various compiler optimization strategies and thus eliminates redundant and unnecessary check instrumentation. This design minimizes runtime overhead without sacrificing security guarantees. Our evaluation and comparison of CAMP with existing tools, using both real-world applications and SPEC CPU benchmarks, show that it provides even better heap corruption detection capability with lower runtime overhead.",
+  "abstract_source_id": "src-abstract-usenix-security-2024-098ebf1e",
   "venue": "usenix-security",
   "year": 2024,
   "track_or_session": "System Security III: Memory I",
@@ -175,6 +177,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2024-098ebf1e",
+      "url": "https://www.usenix.org/conference/usenixsecurity24/presentation/lin-zhenpeng",
+      "kind": "paper-page",
+      "title": "CAMP: Compiler and Allocator-based Heap Memory Protection",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:14:23Z",
+      "content_hash": "sha256:bd2cf79eccdf51f8e2e66c1936c1e5bc33a128ec7bd31ac8c4bdce61a6e4fdc1",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

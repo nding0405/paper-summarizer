@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "eurosys-2026-neuro-c-neural-inference-shaped-by-hardware-limits-4d28f14d",
   "title": "Neuro-C: Neural Inference Shaped by Hardware Limits",
+  "abstract": "We present Neuro-centric Networks (Neuro-C), a neural network architecture we design to eliminate multiply-accumulate operations for efficient inference on ultra-low-power microcontrollers (MCUs). Although some MCUs include specialized hardware for neural acceleration, many ultra-low-power MCUs do not, requiring neural networks to align with limited compute and memory resources. Rather than compressing existing models or assuming dedicated hardware, Neuro-C integrates hardware constraints directly into the architecture, effectively shaping the network design around the limitations of the target platform. We shift the computational burden from connections to neurons and encode connectivity with a fixed ternary adjacency matrix, overcoming the bottleneck of matrix multiplications and large weight storage. This design enables a specialized inference kernel implementation that reduces memory usage and latency through pointer-based traversal and sparse dynamic memory allocation, complex control flows, and index decoding logic common in sparse or compressed models. Experimental results show that Neuro-C achieves accuracy comparable to or better than standard multilayer perceptrons across multiple datasets, while reducing inference latency and program memory usage by up to 90%. Compared to conventional ternary neural networks, Neuro-C provides improved convergence and accuracy under identical architectural settings, with negligible impact on inference latency.",
+  "abstract_source_id": "src-abstract-eurosys-2026-4d28f14d",
   "venue": "eurosys",
   "year": 2026,
   "track_or_session": null,
@@ -138,6 +140,19 @@
       "official": false,
       "supports": [
         "Publisher-deposited proceedings identity and print publication date."
+      ]
+    },
+    {
+      "id": "src-abstract-eurosys-2026-4d28f14d",
+      "url": "https://api.openalex.org/works/doi:10.1145/3767295.3769380?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Neuro-C: Neural Inference Shaped by Hardware Limits",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:21:02Z",
+      "content_hash": "sha256:bd07e7c971b5c08c4abdc5e0b1ebc764c3e6b118e5dd07816304cdc718aa6699",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

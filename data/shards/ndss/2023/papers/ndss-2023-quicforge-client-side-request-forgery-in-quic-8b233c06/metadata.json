@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2023-quicforge-client-side-request-forgery-in-quic-8b233c06",
   "title": "QUICforge: Client-side Request Forgery in QUIC",
+  "abstract": "The QUIC protocol is gaining more and more traction through its recent standardization and the rising interest by various big tech companies, developing new implementations. QUIC promises to make security and privacy a first-class citizen; yet, challenging these claims is of utmost importance. To this end, this paper provides an initial analysis of client-side request forgery attacks that directly emerge from the QUIC protocol design and not from common vulnerabilities. In particular, we investigate three request forgery attack modalities with respect to their capabilities to be used for protocol impersonation and traffic amplification. We analyze the controllable attack space of the respective protocol messages and demonstrate that one of the attack modalities can indeed be utilized to impersonate other UDP-based protocols, e.g., DNS requests. Furthermore, we identify traffic amplification vectors. Although the QUIC protocol specification states anti-amplification limits, our evaluation of 13 QUIC server implementations shows that in some cases these mitigations are missing or insufficiently implemented. Lastly, we propose mitigation approaches for protocol impersonation and discuss ambiguities in the specification.",
+  "abstract_source_id": "src-abstract-ndss-2023-8b233c06",
   "venue": "ndss",
   "year": 2023,
   "track_or_session": "Network Protocols",
@@ -105,6 +107,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2023-8b233c06",
+      "url": "https://www.ndss-symposium.org/ndss-paper/quicforge-client-side-request-forgery-in-quic/",
+      "kind": "paper-page",
+      "title": "QUICforge: Client-side Request Forgery in QUIC",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:17:18Z",
+      "content_hash": "sha256:74131d9604e7bc5becca6d062863d3f33c0c35bfb304d50004ff698ff09a8f8d",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

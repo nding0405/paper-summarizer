@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2026-memory-band-aid-a-principled-rowhammer-defense-in-depth-b122ebac",
   "title": "Memory Band-Aid: A Principled Rowhammer Defense-in-Depth",
+  "abstract": "Rowhammer bit flips in DRAM enable software attackers to fully compromise a great variety of systems. Hardware mitigations can be precise and efficient, but they suffer from long deployment cycles and very limited or no update capabilities. Consequently, refined attack methods have repeatedly bypassed deployed hardware protections, leaving commodity systems vulnerable to Rowhammer attacks.\n\nIn this paper, we present Memory Band-Aid, a principled defense-in-depth against Rowhammer. Memory Band-Aid is no replacement for long-term, efficient hardware mitigations, but instead a defense-in-depth that is activated when hardware mitigations are insufficient for a specific system generation. For this purpose, Memory Band-Aid introduces per-thread and per-bank rate limits for DRAM accesses in the memory controller, ensuring that the minimum number of row activations for Rowhammer bit flips cannot be reached. We implement a proof-of-concept of Memory Band-Aid on Ubuntu Linux and test it on 2 Intel and 2 AMD systems, building on global bandwidth limits due to the lack of per-bank limits in current hardware. Using this PoC, we find that a full implementation including minor hardware changes would have a low overhead of 0 % to 9.4 % on a collection of realistic Phoronix macro-benchmarks. In a micro-benchmark to cause DRAM pressure, we observe a slowdown by a factor of 1 to 5.1. Both overheads only apply to untrusted, throttled workloads, e.g., all userspace programs or only selected sandboxes, such as those in browsers. Especially as Memory Band-Aid can be enabled on demand, we conclude that Memory Band-Aid is an important defense-in-depth that should be deployed in practice as a second defense layer.",
+  "abstract_source_id": "src-abstract-ndss-2026-b122ebac",
   "venue": "ndss",
   "year": 2026,
   "track_or_session": "Summer submission cycle",
@@ -244,6 +246,19 @@
       "official": false,
       "supports": [
         "independent proceedings identity reconciliation"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2026-b122ebac",
+      "url": "https://www.ndss-symposium.org/ndss-paper/memory-band-aid-a-principled-rowhammer-defense-in-depth/",
+      "kind": "paper-page",
+      "title": "Memory Band-Aid: A Principled Rowhammer Defense-in-Depth",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:22:29Z",
+      "content_hash": "sha256:4ae299b43038bf0dede44ad3c6cd325f1e47f141f9b5159e5fa6dcfcc00a9fc1",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

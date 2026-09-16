@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "fast-2025-leapgnn-accelerating-distributed-gnn-training-leveraging-146064db",
   "title": "LeapGNN: Accelerating Distributed GNN Training Leveraging Feature-Centric Model Migration",
+  "abstract": "Distributed training of graph neural networks (GNNs) has become a crucial technique for processing large graphs. Prevalent GNN frameworks are model-centric, necessitating the transfer of massive graph vertex features to GNN models, which leads to a significant communication bottleneck. Recognizing that the model size is often significantly smaller than the feature size, we propose LeapGNN, a feature-centric framework that reverses this paradigm by bringing GNN models to vertex features. To make it truly effective, we first propose a micrograph-based training strategy that leverages a refined structure to enhance locality, combined with the model migration technique, to minimize remote feature retrieval. Then, we devise a feature pre-gathering approach that merges multiple fetch operations into a single one to eliminate redundant feature transmissions. Finally, we employ a micrograph-based merging method that adjusts the number of micrographs for each worker to minimize kernel switches and synchronization overhead. Our experimental results demonstrate that LeapGNN achieves a performance speedup of up to 4.2× compared to the state-of-the-art method, namely P 3 .",
+  "abstract_source_id": "src-abstract-fast-2025-146064db",
   "venue": "fast",
   "year": 2025,
   "track_or_session": "More Machine Learning",
@@ -140,6 +142,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-fast-2025-146064db",
+      "url": "https://www.usenix.org/conference/fast25/presentation/chen-weijian-leap",
+      "kind": "paper-page",
+      "title": "LeapGNN: Accelerating Distributed GNN Training Leveraging Feature-Centric Model Migration",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:01:08Z",
+      "content_hash": "sha256:741d325b875031a45c119aff5a3d67568f6d40f360ef6a63fa7a2d1c63aff72c",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

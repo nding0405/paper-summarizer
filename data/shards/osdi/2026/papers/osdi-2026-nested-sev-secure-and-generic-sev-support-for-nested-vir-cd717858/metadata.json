@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2026-nested-sev-secure-and-generic-sev-support-for-nested-vir-cd717858",
   "title": "Nested SEV: Secure and Generic SEV Support for Nested Virtualization",
+  "abstract": "In cloud environments, sensitive information in virtual machines (VMs) is exposed to insider threats. To protect VMs from malicious cloud insiders, modern clouds provide confidential VMs based on technologies such as AMD SEV, which transparently encrypts the memory of VMs and the state of CPU registers while ensuring their integrity. However, existing SEV support is not sufficient for nested virtualization, where a guest hypervisor (L1 hypervisor) runs inside a host VM (L1 VM) managed by the host hypervisor (L0 hypervisor) and creates guest VMs (L2 VMs). This paper proposes nested SEV to provide more secure and generic SEV support for nested virtualization. Nested SEV allows SEV-enabled L2 VMs to run inside an SEV-enabled L1 VM. It supports two trust models: (1) both the L0 and L1 hypervisors are untrusted, and (2) the L0 hypervisor is untrusted but the L1 hypervisor is trusted. For these trust models, nested SEV provides two mechanisms. SEV virtualization protects L2 VMs against both the L0 and L1 hypervisors. In contrast, SEV passthrough protects them against the L0 hypervisor but allows the L1 hypervisor to access the memory of L2 VMs by sharing the SEV context. These mechanisms rely on emulation-less multiplexing and SEV context decoupling . We implemented nested SEV in three different types of hypervisors and showed that the average performance degradation ranged from 0.9% to 30% across three SEV variants.",
+  "abstract_source_id": "src-abstract-osdi-2026-cd717858",
   "venue": "osdi",
   "year": 2026,
   "track_or_session": "Confidential Computing",
@@ -104,6 +106,19 @@
       "official": true,
       "supports": [
         "Official proceedings availability and canonical conference versions."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2026-cd717858",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/takiguchi",
+      "kind": "paper-page",
+      "title": "Nested SEV: Secure and Generic SEV Support for Nested Virtualization",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:08:38Z",
+      "content_hash": "sha256:1a21b479037be7f6bfb227f26fd7b8ad52d5cac2f3576f5c9148624d580808ab",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

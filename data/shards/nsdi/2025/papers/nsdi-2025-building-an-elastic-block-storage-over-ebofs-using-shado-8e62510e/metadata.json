@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2025-building-an-elastic-block-storage-over-ebofs-using-shado-8e62510e",
   "title": "Building an Elastic Block Storage over EBOFs Using Shadow Views",
+  "abstract": "The EBOF (Ethernet-Bunch-Of-Flash) has emerged as an enticing and promising disaggregated storage platform due to its streamlined I/O processing, high scalability, and substantial energy/cost-efficiency improvement. An EBOF applies a smart-sender dumb-receiver design philosophy and provides backward-compatible storage volumes to expedite system deployment. Yet, the static and opaque internal I/O processing pipeline lacks resource allocation, I/O scheduling, and traffic orchestration capabilities, entailing bandwidth waste, workload non-adaptiveness, and performance interference.\n\nThis paper presents the design and implementation of a distributed telemetry system (called shadow view) to tackle the above challenges and facilitate the effective use of an EBOF. We model an EBOF as a two-layer multi-switch architecture and develop a view development protocol to construct the EBOF running snapshot and expose internal execution statistics at runtime. Our design is motivated by the observation that fast data center networks make the overheads of inter-server communication and synchronization negligible. We demonstrate the effectiveness of shadow view by building a block storage (dubbed Flint) atop EBOFs. The enhanced I/O data plane allows us to develop new three techniques–an elastic volume manager, a view-enabled bandwidth auction mechanism, and an eIO scheduler. Our evaluations using the Fungible FS1600 EBOF show that a Flint volume achieves 9.3/9.2 GB/s read/write bandwidth with no latency degradation, significantly outperforming the defacto EBOF volume. It achieves up to 2.9× throughput improvements when running an object store. Flint is tenant-aware and remote target-aware, delivering efficient multi-tenancy and workload adaptiveness.",
+  "abstract_source_id": "src-abstract-nsdi-2025-8e62510e",
   "venue": "nsdi",
   "year": 2025,
   "track_or_session": "Storage",
@@ -98,6 +100,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2025-8e62510e",
+      "url": "https://www.usenix.org/conference/nsdi25/presentation/jiang",
+      "kind": "paper-page",
+      "title": "Building an Elastic Block Storage over EBOFs Using Shadow Views",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:04:00Z",
+      "content_hash": "sha256:5facbc549671e68da279b51bca2c77cd29c02f56a93dfe512b70aa2703c75c6d",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

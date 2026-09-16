@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2024-watch-the-rhythm-breaking-privacy-with-accelerometer-at-6ed96955",
   "title": "Watch the Rhythm: Breaking Privacy with Accelerometer at the Extremely-Low Sampling Rate of 5Hz",
+  "abstract": "Considering the threat from on-board eavesdropping with smartphone motion sensors, Android 12 has limited the maximum sampling rate of motion sensors to 200Hz for zero-privilege access to prevent potential wiretapping.Unfortunately, there have been some attacks targeting 200Hz, making it not a safe sampling rate any more.Smartphone manufacturers may further reduce the maximum sampling rate of the accelerometer in response to this privacy concern.It can be expected that, the maximum sampling rate will gradually decrease to a very low level, as the battle between manufacturers and adversaries continues.Existing on-board eavesdropping approaches, utilizing spectral features, cannot provide acceptable accuracy at very low sampling rates, not even at 50Hz.Therefore, this paper explores the feasibility of using the onboard accelerometer for privacy breaking with an extremely-low sampling rate, specifically, 5Hz.5Hz is a minimum sampling rate to meet normal use, otherwise the applications can only choose to work without the accelerometer.Since the lowest fundamental frequency for humans is around 85Hz, such a low sampling rate poses a significant challenge for sound recognition.According to Nyquist's law, it seems impossible to capture 85Hz with the sampling rate of 5Hz.Fortunately, we observe that the rhythm features, including pause rhythm and intensity rhythm, of accelerometer data are relatively stable at various sampling rates.On this basis, we propose an eavesdropping approach with the accelerometer at an extremely-low sampling rate.Introducing the rhythm features, we * He completed his work on this paper as a graduate student at Xidian University, unrelated to his current institution.",
+  "abstract_source_id": "src-abstract-ccs-2024-6ed96955",
   "venue": "ccs",
   "year": 2024,
   "track_or_session": "Cycle 2",
@@ -201,6 +203,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2024-6ed96955",
+      "url": "https://api.openalex.org/works/doi:10.1145/3658644.3690370?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Watch the Rhythm: Breaking Privacy with Accelerometer at the Extremely-Low Sampling Rate of 5Hz",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:12:28Z",
+      "content_hash": "sha256:0cf6683c9983c62601218e900699dc20dcb6ecbbfb46912b93b529bfc802e976",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

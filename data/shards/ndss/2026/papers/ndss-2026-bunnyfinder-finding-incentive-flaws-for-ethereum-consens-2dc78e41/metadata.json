@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2026-bunnyfinder-finding-incentive-flaws-for-ethereum-consens-2dc78e41",
   "title": "BunnyFinder: Finding Incentive Flaws for Ethereum Consensus",
+  "abstract": "Ethereum, a leading blockchain platform, relies on incentive mechanisms to improve its stability. Recently, several attacks targeting the incentive mechanisms have been proposed. Examples include the so-called reorganization attacks that cause blocks proposed by honest validators to be discarded to gain more rewards. Finding these attacks, however, heavily relies on expert knowledge and may involve substantial manual effort.\n\nWe present BunnyFinder, a semi-automated framework for finding incentive flaws in Ethereum. BunnyFinder is inspired by failure injection, a technique commonly used in software testing for finding implementation vulnerabilities. Instead of finding implementation vulnerabilities, we aim to find design flaws. Our main technical contributions involve a carefully designed “strategy generator” that generates a large pool of attack instances, an automatic workflow that launches attacks and analyzes the results, and a workflow that integrates reinforcement learning to fine-tune the attack parameters and identify the most profitable attacks. We simulate a total of 9,354 attack instances using our framework and find the following results. First, our framework reproduces five known incentive attacks that were previously found manually. Second, we find three new attacks that can be identified as incentive flaws. Finally and surprisingly, one of our experiments also identified two implementation flaws.",
+  "abstract_source_id": "src-abstract-ndss-2026-2dc78e41",
   "venue": "ndss",
   "year": 2026,
   "track_or_session": "Summer submission cycle",
@@ -202,6 +204,19 @@
       "official": false,
       "supports": [
         "independent proceedings identity reconciliation"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2026-2dc78e41",
+      "url": "https://www.ndss-symposium.org/ndss-paper/bunnyfinder-finding-incentive-flaws-for-ethereum-consensus/",
+      "kind": "paper-page",
+      "title": "BunnyFinder: Finding Incentive Flaws for Ethereum Consensus",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:21:29Z",
+      "content_hash": "sha256:caff33509b47211e8f390c6c6f85217f485dc9ca71ef03579fe6eec526ad1843",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

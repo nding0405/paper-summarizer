@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-principled-design-of-indexing-functions-for-memory-color-47434d5a",
   "title": "Principled Design of Indexing Functions for Memory Coloring",
+  "abstract": "On shared multi-core CPUs, memory coloring achieves microarchitectural isolation by partitioning resources between trust domains. Previous work has shown that memory coloring can, in principle, be used to isolate multiple components simultaneously, e.g., both the last-level (L3) cache and DRAM. The number of colors obtained by these methods depends on the algebraic properties of the indexing functions, though, and today's off-the-shelf CPU designs are often not suited for multi-component memory coloring.\n\nWe develop algorithms to automatically synthesize indexing functions that guarantee a minimum number of colors. Given a set of typical workloads and some context on the CPU design, our algorithms compute a new linear indexing function that supports the requested number of colors while maximizing the performance on the workloads. Our approach is based on the observation that the number of colors depends on the overlap of the algebraic kernels of the involved indexing functions. Building on this observation, we translate the requirements that the CPU design imposes on the function into algebraic constraints that our algorithms enforce.\n\nIn a case study on a 16-core server-class CPU, we show that our framework yields a coloring scheme that partitions the L3 cache and DRAM banks, increasing the number of colors from 1 to 16 while incurring less than 2.5% performance overhead, on average across SPEC and PARSEC benchmarks.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-47434d5a",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Hardware Security 1",
@@ -134,6 +136,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-47434d5a",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/duebler",
+      "kind": "paper-page",
+      "title": "Principled Design of Indexing Functions for Memory Coloring",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:25:04Z",
+      "content_hash": "sha256:080bd84806d38a95a82d8a6ca69040444313f16979979c25e024eb07a6ad50c9",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2023-polyfuzz-holistic-greybox-fuzzing-of-multi-language-syst-f47beedd",
   "title": "PolyFuzz: Holistic Greybox Fuzzing of Multi-Language Systems",
+  "abstract": "While offering many advantages during software process, the practice of using multiple programming languages in constructing one software system also introduces additional security vulnerabilities in the resulting code. As this practice becomes increasingly prevalent, securing multi-language systems is of pressing criticality. Fuzzing has been a powerful security testing technique, yet existing fuzzers are commonly limited to single-language software. In this paper, we present PolyFuzz, a greybox fuzzer that holistically fuzzes a given multi-language system through cross-language coverage feedback and explicit modeling of the semantic relationships between (various segments of) program inputs and branch predicates across languages. PolyFuzz is extensible for supporting multilingual code written in different language combinations and has been implemented for C, Python, Java, and their combinations. We evaluated PolyFuzz versus state-of-the-art single-language fuzzers for these languages as baselines against 15 real-world multi-language systems and 15 single-language benchmarks. PolyFuzz achieved 25.3–52.3% higher code coverage and found 1–10 more bugs than the baselines against the multilingual programs, and even 10-20% higher coverage against the single-language benchmarks. In total, PolyFuzz has enabled the discovery of 12 previously unknown multilingual vulnerabilities and 2 single-language ones, with 5 CVEs assigned. Our results show great promises of PolyFuzz for cross-language fuzzing, while justifying the strong need for holistic fuzzing against trivially applying single-language fuzzers to multi-language software.",
+  "abstract_source_id": "src-abstract-usenix-security-2023-f47beedd",
   "venue": "usenix-security",
   "year": 2023,
   "track_or_session": "x-Fuzz",
@@ -175,6 +177,19 @@
       "official": true,
       "supports": [
         "authors, affiliations when published, abstract, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2023-f47beedd",
+      "url": "https://www.usenix.org/conference/usenixsecurity23/presentation/li-wen",
+      "kind": "paper-page",
+      "title": "PolyFuzz: Holistic Greybox Fuzzing of Multi-Language Systems",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:12:29Z",
+      "content_hash": "sha256:3d2eca982c7e0d5c50a6642db2da928449344d3252c24da51eba1acebab21208",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

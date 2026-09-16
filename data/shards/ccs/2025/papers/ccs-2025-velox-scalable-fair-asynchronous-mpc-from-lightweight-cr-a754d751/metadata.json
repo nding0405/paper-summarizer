@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2025-velox-scalable-fair-asynchronous-mpc-from-lightweight-cr-a754d751",
   "title": "Velox: Scalable Fair Asynchronous MPC from Lightweight Cryptography",
+  "abstract": "Multi-party computation (MPC) enables a set of mutually n distrusting parties to compute any function on their private inputs. Mainly, MPC facilitates agreement on the function's output while preserving the secrecy of honest inputs, even against a subset of t parties controlled by an adversary. With applications spanning from anonymous broadcast to private auctions, MPC is considered a cornerstone of distributed cryptography, and significant research efforts have been aimed at making MPC practical in the last decade. However, most libraries either make strong assumptions like the network being bounded synchronous, or incur high computation overhead from the extensive use of expensive public-key operations that prevent them from scaling beyond a few dozen parties. This work presents Velox, an asynchronous MPC protocol that offers fairness against an optimal adversary corrupting up to t < n/3 parties. Velox significantly enhances practicality by leveraging lightweight cryptographic primitives-such as symmetric-key encryption and hash functions-which are 2-3 orders of magnitude faster than public-key operations, resulting in substantial computational efficiency. Moreover, Velox is highly communication-efficient, with linear amortized communication relative to circuit size and only O(n3) field elements of additive overhead. Concretely, Velox requires just 9.33 field elements per party per multiplication gate, more than 10× reduction compared to the state of the art. Moreover, Velox also offers Post-Quantum Security as lightweight cryptographic primitives retain their security against a quantum adversary. We implement Velox comprehensively, covering both offline and online phases, and evaluate its performance on a geographically distributed testbed through a real-world application: anonymous broadcast. Our implementation securely shuffles a batch of k = 256 messages in 4 seconds with n = 16 parties and 18 seconds with n = 64 parties, a 36× and 28.6× reduction in latency compared to the prior best work. At scale with n = 112 parties, Velox is able to shuffle the same batch of messages in under 50 seconds from end to end, illustrating its effectiveness and scalability. Overall, our work removes significant barriers faced by prior asynchronous MPC solutions, making asynchronous MPC practical and efficient for large-scale deployments involving 100s of parties.",
+  "abstract_source_id": "src-abstract-ccs-2025-a754d751",
   "venue": "ccs",
   "year": 2025,
   "track_or_session": "Cycle 2",
@@ -190,6 +192,19 @@
         "published-order authors",
         "publication-time affiliations",
         "publication date and page span"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2025-a754d751",
+      "url": "https://api.openalex.org/works/doi:10.1145/3719027.3765114?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Velox: Scalable Fair Asynchronous MPC from Lightweight Cryptography",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:18:07Z",
+      "content_hash": "sha256:ae4ced66e063419662339caad7e9a355f103f2a7cd62b6cbe0b2f10b48e23608",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

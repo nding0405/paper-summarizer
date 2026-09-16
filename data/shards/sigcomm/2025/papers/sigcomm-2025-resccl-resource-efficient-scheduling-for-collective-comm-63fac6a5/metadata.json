@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sigcomm-2025-resccl-resource-efficient-scheduling-for-collective-comm-63fac6a5",
   "title": "ResCCL: Resource-Efficient Scheduling for Collective Communication",
+  "abstract": "As distributed deep learning training (DLT) systems scale, collective communication has become a significant performance bottleneck. While current approaches optimize bandwidth utilization and task completion time, existing communication libraries (CCLs) backends fail to efficiently manage GPU resources during algorithm execution, limiting the performance of advanced algorithms. This paper proposes ResCCL, a novel CCL backend designed for Resource-Efficient Scheduling to address key limitations in current systems. ResCCL enhances execution efficiency by optimizing scheduling at the primitive level (e.g., send and recvReduceCopy), enabling flexible thread block (TB) allocation, and generating lightweight communication kernels to minimize runtime overhead. Our approach tackles the global scheduling problem, reduces idle TB resources, and enhances communication bandwidth. Evaluation results demonstrate that ResCCL achieves up to 2.5× improvement in bandwidth performance compared to both NCCL and MSCCL. It reduces SM resource overhead by 77.8% and increases TB utilization by 41.6% while running the same algorithms. In end-to-end DLT, ResCCL boosts Megatron's throughput by up to 39%.",
+  "abstract_source_id": "src-abstract-sigcomm-2025-63fac6a5",
   "venue": "sigcomm",
   "year": 2025,
   "track_or_session": "NetAI",
@@ -234,6 +236,19 @@
         "DOI and ACM publisher landing/PDF links",
         "publisher-deposited ORCIDs when available",
         "proceedings page range and online publication date"
+      ]
+    },
+    {
+      "id": "src-abstract-sigcomm-2025-63fac6a5",
+      "url": "https://api.openalex.org/works/doi:10.1145/3718958.3750514?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "ResCCL: Resource-Efficient Scheduling for Collective Communication",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:23:32Z",
+      "content_hash": "sha256:c39df7b049c865dede485e63ceb3c67146677bd60f13df65af36e884838addaa",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

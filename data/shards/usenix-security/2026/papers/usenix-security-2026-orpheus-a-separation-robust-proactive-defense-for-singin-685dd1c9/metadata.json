@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-orpheus-a-separation-robust-proactive-defense-for-singin-685dd1c9",
   "title": "ORPHEUS: A Separation-Robust Proactive Defense for Singing Voice Conversion",
+  "abstract": "Recent advances in singing voice conversion enable realistic cloning of a singer's voice, raising concerns about unauthorized voice misuse. Existing proactive defenses inject imperceptible perturbations to disrupt such conversion, and they are designed for vocal signals rather than mixed music. In real-world scenarios, however, attackers usually obtain mixed music and apply source separation to decompose the mixture into vocal and backing tracks before conversion. Since separation models are trained to distinguish vocals from background components, perturbations are often treated as backing, causing the perturbations to be filtered out. To address this, we present ORPHEUS, the first proactive defense framework tailored for singing voice conversion involving source separation. Specifically, we jointly (i) interfere with the separation model via mask-misguiding and cross-track losses, (ii) disrupt identity information using an ensemble of heterogeneous speaker encoders to enhance transferability, and (iii) optimize perceptual quality through tonality harmony constraints and psychoacoustic masking. To evaluate ORPHEUS, we conduct experiments on two datasets with three source separation models and four singing voice conversion systems. Compared with the best-performing baseline, ORPHEUS further reduces identity similarity by 8.02% and 5.61% on two speaker verification models, respectively, demonstrating consistently stronger defense effectiveness and cross-model transferability.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-685dd1c9",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Security of ML 4",
@@ -239,6 +241,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-685dd1c9",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/wei-zhaolin",
+      "kind": "paper-page",
+      "title": "ORPHEUS: A Separation-Robust Proactive Defense for Singing Voice Conversion",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:24:55Z",
+      "content_hash": "sha256:fd6be8ebf663dc8fff537eccb1e34a7aa259ab7c8d317496a3ec49f8f97eb82e",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2026-seqass-using-sequential-associative-caches-to-mitigate-c-5874fc86",
   "title": "SeqAss: Using Sequential Associative Caches to Mitigate Conflict-Based Cache Attacks With Reduced Cache Misses and Performance Overhead",
+  "abstract": "Cache randomization has been proposed as an effective defense against conflict-based cache attacks. Mirage and Chameleon are two of the state-of-the-art randomized lastlevel caches achieving a strong defense. However, they rely on techniques intrusive to the traditional cache structure, such as cache skews, over-provided metadata space, and separated data storage, and prohibit the use of the LRU replacement policy. Mirage incurs 22% extra area and 21% extra power. When running memory heavy applications, Chameleon consumes significant dynamic power due to its high relocation rate. This paper proposes to mitigate conflict-based cache at tacks using sequential associativity. The proposed SeqAss cache retains the set-associative structure and supports LRU. It achieves a defense as strong as Mirage. Instead of raising cache miss rate, SeqAss actually reduces it by 11.4%. Its area and power overhead is 28.8% and 22.1%, respectively, lower than Mirage. When running memory heavy applications, it incurs $\\sim 50 \\%$ lower dynamic power overhead compared to Mirage and Chameleon.",
+  "abstract_source_id": "src-abstract-sp-2026-5874fc86",
   "venue": "sp",
   "year": 2026,
   "track_or_session": "Cycle 1",
@@ -175,6 +177,19 @@
       "official": true,
       "supports": [
         "DOI, published-order authors and affiliations, abstract, publication date, page span, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2026-5874fc86",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "SeqAss: Using SeqUential Associative Caches to Mitigate Conflict-Based Cache Attacks with Reduced Cache Misses and Performance Overhead",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:58:02Z",
+      "content_hash": "sha256:4204efad9387253e2c70bd18217fac7c5220b9cd43ecd6179fdc27c5a043343e",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

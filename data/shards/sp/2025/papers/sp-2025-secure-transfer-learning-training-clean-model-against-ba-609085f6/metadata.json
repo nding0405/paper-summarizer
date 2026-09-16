@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2025-secure-transfer-learning-training-clean-model-against-ba-609085f6",
   "title": "Secure Transfer Learning: Training Clean Model Against Backdoor in Pre-Trained Encoder and Downstream Dataset",
+  "abstract": "Transfer learning from pre-trained encoders has become essential in modern machine learning, enabling efficient model adaptation across diverse tasks. However, this combination of pre-training and downstream adaptation creates an expanded attack surface, exposing models to sophisticated backdoor embedding at both the encoder and dataset levels—an area often overlooked in prior research. Additionally, the limited computational resources typically available to users of pre-trained encoders constrain the effectiveness of generic backdoor defenses compared to end-to-end training from scratch. In this work, we investigate how to mitigate potential backdoor risks in resource-constrained transfer learning scenarios. Specifically, we first conduct an exhaustive analysis of existing defense strategies, revealing that many follow a reactive workflow based on assumptions that do not scale to unknown threats, novel attack types, or different training paradigms. In response, we introduce a proactive mindset focused on identifying clean elements and propose the Trusted Core (T-Core) Bootstrapping framework, which emphasizes the importance of pinpointing trustworthy data and neurons to enhance model security. Our empirical evaluations demonstrate the effectiveness and superiority of T-Core, specifically assessing 5 encoder poisoning attacks, 7 dataset poisoning attacks, and 14 baseline defenses across 5 benchmark datasets, addressing 4 scenarios of 3 potential backdoor threats.",
+  "abstract_source_id": "src-abstract-sp-2025-609085f6",
   "venue": "sp",
   "year": 2025,
   "track_or_session": "Cycle 2",
@@ -196,6 +198,19 @@
       "official": true,
       "supports": [
         "DOI, authors, affiliations, abstract, publication date, pages, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2025-609085f6",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Secure Transfer Learning: Training Clean Model Against Backdoor in Pre-Trained Encoder and Downstream Dataset",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:52Z",
+      "content_hash": "sha256:b15ce02bcc49da611fdd791ecc56741e7d91d84154b58c1a7f72a5c6902e6e46",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

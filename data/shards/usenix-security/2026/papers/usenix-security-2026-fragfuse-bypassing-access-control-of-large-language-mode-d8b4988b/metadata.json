@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-fragfuse-bypassing-access-control-of-large-language-mode-d8b4988b",
   "title": "FragFuse: Bypassing Access Control of Large Language Model Agents via Memory-Based Query Fragmentation and Fusion",
+  "abstract": "Large language model (LLM) agents increasingly rely on long-term memory to support complex task execution, user personalization, and domain adaptation. Meanwhile, emerging access-control mechanisms for LLM agents are being explored to block policy-violating requests, aiming to prevent misuse and improve resource efficiency. In this paper, we reveal a novel attack surface arising from agents' memory operations: prohibited content triggering access control can be fragmented across interactions, stored in long-term memory in a benign-appearing form, and later reconstructed through memory retrieval, without appearing explicitly in the final user query. Specifically, we propose FragFuse, the first attack that enables unprivileged users to bypass agent access control by exploiting this temporal channel introduced by long-term memory. FragFuse operates in three stages: (1) identifying rejection-responsible fragments via black-box adaptive querying with fragment masking; (2) injecting these fragments into memory using marked carrier queries; and (3) retrieving and fusing the stored fragments through a follow-up attack query. While FragFuse can be instantiated manually for individual agents, we propose an optimization scheme that tunes fusion instructions and marker designs on surrogate models, enabling automated attack generation without violating the attacker's threat model assumptions. We evaluate FragFuse across four representative agent settings and task domains, covering three state-of-the-art agent access-control mechanisms. FragFuse achieves an average bypass success rate of 86.3% and an average end-to-end harmful task success rate of 41.1% across all settings, with only 4.4% average task success rate degradation compared to configurations without access control. Additionally, we show that alternative defenses, such as state-of-the-art prompt-injection detectors and perplexity detectors, cannot effectively address our attack.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-d8b4988b",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Security of ML 5",
@@ -218,6 +220,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-d8b4988b",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/rao",
+      "kind": "paper-page",
+      "title": "FragFuse: Bypassing Access Control of Large Language Model Agents via Memory-Based Query Fragmentation and Fusion",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:24:01Z",
+      "content_hash": "sha256:db21f919f582214e6aa65e67b7dac49f4ed0a3fa51ad9cfc2beb4d3dc465bc45",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

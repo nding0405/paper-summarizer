@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2026-queue-mem-energy-efficient-hardware-storage-for-advanced-d1ee94e9",
   "title": "Queue-Mem: Energy-Efficient Hardware Storage for Advanced Network Function Acceleration",
+  "abstract": "General-purpose CPU servers have been widely used to deploy Network Functions (NFs) thanks to their high flexibility and simplicity of deployment. Due to their high energy consumption, best practices advocate for only processing packet headers on CPU cores while temporary storing the corresponding packet payloads on either network interface cards or external RDMA-enabled memory.\n\nWe show that the seemingly minor decision of where to store a packet payload greatly impacts overall energy consumption in state-of-the-art NF systems operating at terabit-per-second speeds. In fact, we show that if one could ideally store packet payloads on today's hardware switches , while processing headers externally, one could reduce energy use by 1.8× to 10.9× compared to current practices.\n\nIn this paper, we introduce Queue-Mem, a general-purpose, energy-efficient storage solution to enhance NF deployment that is amenable for implementation with various existing hardware switches. Building Queue-Mem involves addressing significant challenges associated with payload storage, as hardware switches lack such functionality. By carefully exploiting the buffer queues of existing switches, we are the first ones to build and showcase a robust, energy-efficient packet processing pipeline capable of handling terabit-per-second speeds and supporting advanced per-flow network functions, all while using just a single commodity server connected to an ASIC switch.",
+  "abstract_source_id": "src-abstract-nsdi-2026-d1ee94e9",
   "venue": "nsdi",
   "year": 2026,
   "track_or_session": "Virtualization Revisited",
@@ -160,6 +162,19 @@
         "proceedings page range and page count",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2026-d1ee94e9",
+      "url": "https://www.usenix.org/conference/nsdi26/presentation/scazzariello",
+      "kind": "paper-page",
+      "title": "Queue-Mem: Energy-Efficient Hardware Storage for Advanced Network Function Acceleration",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:05:55Z",
+      "content_hash": "sha256:9fda123c2092cbc9b0ea7fb573eefc2407382a028c4c19cf4378355970a99c3b",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2026-ambulance-saving-bft-through-racing-c4fd69c4",
   "title": "Ambulance: Saving BFT through Racing",
+  "abstract": "Today’s practical Byzantine Fault Tolerant (BFT) state machine replication deployments are vulnerable to slowdowns. The main culprit is timeouts. Aggressive timeouts spuriously trigger expensive leader changes, while conservative timeouts leave the system idle and let slowdowns severely inflate latency. Two main alternatives exist: hedging, which improves recovery from slow leaders but still incurs a time-based hedging delay, and cooperative asynchronous protocols, which recover quickly from slowdowns but suffer from high common-case latency and low throughput. This paper presents Ambulance: a BFT state machine replication protocol that sidesteps this trade-off through protocol-rigged races , where replicas, rather than race against the clock, race against each other by executing protocol steps. This enables Ambulance to achieve high throughput and low latency comparable to state-of-the-art timeout-based BFT, while matching the robustness of cooperative approaches.",
+  "abstract_source_id": "src-abstract-osdi-2026-c4fd69c4",
   "venue": "osdi",
   "year": 2026,
   "track_or_session": "Consensus and Byzantine Fault Tolerance",
@@ -230,6 +232,19 @@
       "official": true,
       "supports": [
         "Official proceedings availability and canonical conference versions."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2026-c4fd69c4",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/giridharan",
+      "kind": "paper-page",
+      "title": "Ambulance: Saving BFT through Racing",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:08:01Z",
+      "content_hash": "sha256:3faddac724c843b12e6958b3cced2cdce6b2c05390fc31ab902dcc48dca0f00d",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

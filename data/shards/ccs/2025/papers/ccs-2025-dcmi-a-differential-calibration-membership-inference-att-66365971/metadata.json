@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2025-dcmi-a-differential-calibration-membership-inference-att-66365971",
   "title": "DCMI: A Differential Calibration Membership Inference Attack Against Retrieval-Augmented Generation",
+  "abstract": "While Retrieval-Augmented Generation (RAG) effectively reduces hallucinations by integrating external knowledge bases, it introduces vulnerabilities to membership inference attacks (MIAs), particularly in systems handling sensitive data. Existing MIAs targeting RAG's external databases often rely on model responses but ignore the interference of non-member-retrieved documents on RAG outputs, limiting their effectiveness. To address this, we propose DCMI, a differential calibration MIA that mitigates the negative impact of non-member-retrieved documents. Specifically, DCMI leverages the sensitivity gap between member and non-member retrieved documents under query perturbation. It generates perturbed queries for calibration to isolate the contribution of member-retrieved documents while minimizing the interference from non-member-retrieved documents. Experiments under progressively relaxed assumptions show that DCMI consistently outperforms baselines—for example, achieving 97.42% AUC and 94.35% Accuracy against the RAG system with Flan-T5, exceeding the MBA baseline by over 40%. Furthermore, on real-world RAG platforms such as Dify and MaxKB, DCMI maintains a 10%-20% advantage over the baseline. These results highlight significant privacy risks in RAG systems and emphasize the need for stronger protection mechanisms. We appeal to the community's consideration of deeper investigations, like ours, against the data leakage risks in rapidly evolving RAG systems.",
+  "abstract_source_id": "src-abstract-ccs-2025-66365971",
   "venue": "ccs",
   "year": 2025,
   "track_or_session": "Cycle 2",
@@ -169,6 +171,19 @@
         "published-order authors",
         "publication-time affiliations",
         "publication date and page span"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2025-66365971",
+      "url": "https://api.openalex.org/works/doi:10.1145/3719027.3765103?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "DCMI: A Differential Calibration Membership Inference Attack Against Retrieval-Augmented Generation",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:13:49Z",
+      "content_hash": "sha256:0109a2d6f9184d6dc28770a9edd8672e8b8fed5a613ebfe2d0e4a375cf5f6666",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

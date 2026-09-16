@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "atc-2024-monarch-a-fuzzing-framework-for-distributed-file-systems-ec5a8f61",
   "title": "Monarch: A Fuzzing Framework for Distributed File Systems",
+  "abstract": "Distributed file systems (DFSes) are prone to bugs. Although numerous bug-finding techniques have been applied to DFSes, static analysis does not scale well with the sheer complexity of DFS codebases while dynamic methods (e.g., regression testing) are limited by the quality of test cases. Although both can be improved by pouring in manual effort, they are less practical when facing a diverse set of real-world DFSes. Fuzzing, on the other hand, has shown great success in local systems. However, several problems exist if we apply existing fuzzers to DFSes as they 1) cannot test multiple components of DFSes holistically; 2) miss the critical testing aspects of DFSes (e.g., distributed faults); 3) have not yet explored the practical state representations as fuzzing feedback; and 4) lack checkers for asserting semantic bugs unique to DFSes.\n\nIn this paper, we introduce MONARCH, a multi-node fuzzing framework to test all POSIX-compliant DFSes under one umbrella. MONARCH pioneers push-button fuzzing for DFSes with a new set of building blocks to the fuzzing toolbox: 1) A multi-node fuzzing architecture for testing diverse DFSes from a holistic perspective; 2) A two-step mutator for testing DFSes with syscalls and faults; 3) Practical execution state representations with a unified coverage collection scheme across execution contexts; 4) A new DFSes semantic checker SYMSC. We applied MONARCH to six DFSes and uncovered a total of 48 bugs, including a bug whose existence can be traced back to the initial release of the DFSes.",
+  "abstract_source_id": "src-abstract-atc-2024-ec5a8f61",
   "venue": "atc",
   "year": 2024,
   "track_or_session": "Correctness",
@@ -243,6 +245,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-atc-2024-ec5a8f61",
+      "url": "https://www.usenix.org/conference/atc24/presentation/lyu",
+      "kind": "paper-page",
+      "title": "Monarch: A Fuzzing Framework for Distributed File Systems",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T21:58:52Z",
+      "content_hash": "sha256:003266ad912de8734de0245ba530ca1c650deca694298bd02bb01d8f89316b4c",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

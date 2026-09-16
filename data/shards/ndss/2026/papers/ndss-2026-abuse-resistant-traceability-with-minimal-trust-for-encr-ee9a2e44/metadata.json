@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2026-abuse-resistant-traceability-with-minimal-trust-for-encr-ee9a2e44",
   "title": "Abuse Resistant Traceability with Minimal Trust for Encrypted Messaging Systems",
+  "abstract": "Encrypted messaging systems provide end-to-end security for users but obstruct content moderation, making it difficult to combat online abuses. Traceability offers a promising solution by enabling platforms to identify the originator or spreader of messages, yet this capability can be abused for mass surveillance of innocent messages. To mitigate this risk, existing approaches restrict traceability to problematic messages that are reported by multiple users or are on a predefined blocklist. However, these solutions either over-trust a specific entity (e.g., the party defining the blocklist) or rely on the unrealistic assumption of non-collusion between servers run by a single platform.\n\nIn this paper, we propose an abuse-resistant source tracing scheme that distributes traceability across distinct real-world entities. Specifically, we formally define its syntax and prove its security properties. Our scheme realizes two essential principles: minimal trust, which ensures that traceability cannot be abused as long as a single participant involved in tracing is honest, even if all others collude; and minimal information disclosure, which prevents participants from acquiring any information (e.g., communication parties' identities) unnecessary for tracing. We implemented our scheme using techniques deployed by Signal, and our evaluation shows it offers comparable performance to state-of-the-art schemes that are vulnerable to abuse.",
+  "abstract_source_id": "src-abstract-ndss-2026-ee9a2e44",
   "venue": "ndss",
   "year": 2026,
   "track_or_session": "Fall submission cycle",
@@ -265,6 +267,19 @@
       "official": false,
       "supports": [
         "independent proceedings identity reconciliation"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2026-ee9a2e44",
+      "url": "https://www.ndss-symposium.org/ndss-paper/abuse-resistant-traceability-with-minimal-trust-for-encrypted-messaging-systems/",
+      "kind": "paper-page",
+      "title": "Abuse Resistant Traceability with Minimal Trust for Encrypted Messaging Systems",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:21:06Z",
+      "content_hash": "sha256:7f16488c4ac088b1b88a54caf5b1312478e970d1909af3b85d43b4d2c0ec1143",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -1,0 +1,34 @@
+<%-- One expandable list entry. Expects `paper`, `venueNames`, `paperPath`, and optional `showVenue` (default true). --%>
+<li class="paper" id="<c:out value='${paper.id}' />">
+  <details class="paper-details">
+    <summary class="paper-head">
+      <h2 class="paper-title"><c:out value="${paper.title}" /></h2>
+      <span class="paper-authors"><c:out value="${paper.authorLine}" /></span>
+      <c:if test="${paper.hasInstitutions}">
+        <span class="paper-institutions"><c:out value="${paper.institutionLine}" /></span>
+      </c:if>
+      <span class="paper-meta">
+        <c:if test="${empty showVenue or showVenue}">
+          <c:set var="venueLabel" value="${empty venueNames[paper.venue] ? paper.venue : venueNames[paper.venue]}" />
+          <span class="paper-venue"><c:out value="${venueLabel} ${paper.year}" /></span>
+        </c:if>
+        <c:if test="${paper.showRelevanceTag}">
+          <span class="tag tag-relevance"><c:out value="${paper.relevanceLabel}" /></span>
+        </c:if>
+        <c:if test="${paper.hasSummary}"><span class="tag tag-summary">Summary</span></c:if>
+        <c:if test="${paper.hasAbstract}"><span class="tag tag-summary">Abstract</span></c:if>
+        <c:forEach var="topic" items="${paper.topicLabels}">
+          <span class="tag"><c:out value="${topic}" /></span>
+        </c:forEach>
+        <span class="paper-toggle"><span class="when-closed">Show abstract &amp; summary</span><span class="when-open">Hide details</span></span>
+      </span>
+      <c:if test="${paper.hasTakeaway}">
+        <span class="paper-takeaway"><c:out value="${paper.takeaway}" /></span>
+      </c:if>
+    </summary>
+    <div class="paper-body">
+      <%@ include file="paper-body.jspf" %>
+    </div>
+  </details>
+  <%@ include file="paper-links.jspf" %>
+</li>

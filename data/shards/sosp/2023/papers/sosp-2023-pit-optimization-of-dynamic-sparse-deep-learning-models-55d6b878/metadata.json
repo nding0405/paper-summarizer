@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sosp-2023-pit-optimization-of-dynamic-sparse-deep-learning-models-55d6b878",
   "title": "PIT: Optimization of Dynamic Sparse Deep Learning Models via Permutation Invariant Transformation",
+  "abstract": "Dynamic sparsity, where the sparsity patterns are unknown until runtime, poses a significant challenge to deep learning. The state-of-the-art sparsity-aware deep learning solutions are restricted to pre-defined, static sparsity patterns due to significant overheads associated with preprocessing. Efficient execution of dynamic sparse computation often faces the misalignment between the GPU-friendly tile configuration for efficient execution and the sparsity-aware tile shape that minimizes coverage wastes (non-zero values in tensor). In this paper, we propose PIT, a deep-learning compiler for dynamic sparsity. PIT proposes a novel tiling mechanism that leverages Permutation Invariant Transformation (PIT), a mathematically proven property, to transform multiple sparsely located micro-tiles into a GPU-efficient dense tile without changing the computation results, thus achieving both high GPU utilization and low coverage waste. Given a model, PIT first finds feasible PIT rules for all its operators and generates efficient GPU kernels accordingly. At runtime, with the novel SRead and SWrite primitives, PIT rules can be executed extremely fast to support dynamic sparsity in an online manner. Extensive evaluation on diverse models shows that PIT can accelerate dynamic sparsity computation by up to 5.9x (average 2.43x) over state-of-the-art compilers.",
+  "abstract_source_id": "src-abstract-sosp-2023-55d6b878",
   "venue": "sosp",
   "year": 2023,
   "track_or_session": "Session 6: Learning I",
@@ -293,6 +295,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-sosp-2023-55d6b878",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "PIT: Optimization of Dynamic Sparse Deep Learning Models via Permutation Invariant Transformation",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:12Z",
+      "content_hash": "sha256:aa9c23a45f6ec9973f40e6c9520c69d42bb49fc1f526891570edfdb1976cff82",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

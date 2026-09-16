@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2024-eliminating-storage-management-overhead-of-deduplication-1be6796d",
   "title": "Eliminating Storage Management Overhead of Deduplication over SSD Arrays Through a Hardware/Software Co-Design",
+  "abstract": "This paper presents a hardware/software co-design solution to efficiently implement block-layer deduplication over SSD arrays. By introducing complex and varying dependency over the entire storage space, deduplication is infamously subject to high storage management overheads in terms of CPU/memory resource usage and I/O performance degradation. To fundamentally address this problem, one intuitive idea is to offload deduplication storage management from host into SSDs, which is motivated by the redundant dual address mapping in host-side deduplication layer and intra-SSD flash translation layer (FTL). The practical implementation of this idea is nevertheless challenging because of the array-wide deduplication vs. per-SSD FTL management scope mismatch. Aiming to tackle this challenge, this paper presents a solution, called ARM-Dedup, that makes SSD FTL deduplication-oriented and array-aware and accordingly re-architects deduplication software to achieve lightweight and high-performance deduplication over an SSD array. We implemented an ARM-Dedup prototype based on the Linux Dmdedup engine and mdraid software RAID over FEMU SSD emulators. Experimental results show that ARM-Dedup has good scalability and can improve system performance significantly, such as by up to 272% and 127% higher IOPS in synthetic and real-world workloads, respectively.",
+  "abstract_source_id": "src-abstract-asplos-2024-1be6796d",
   "venue": "asplos",
   "year": 2024,
   "track_or_session": "Session 9B: SSDs",
@@ -235,6 +237,19 @@
       "official": false,
       "supports": [
         "Indexed alternate-version and institutional-copy links; not used as the authoritative relevance source."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2024-1be6796d",
+      "url": "https://api.openalex.org/works/doi:10.1145/3620665.3640368?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Eliminating Storage Management Overhead of Deduplication over SSD Arrays Through a Hardware/Software Co-Design",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:00:03Z",
+      "content_hash": "sha256:f451c1a662379b0604c1e7860f60e986d0a3a0a99e28636425c87959b1a3706f",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

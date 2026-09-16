@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2025-pim-is-all-you-need-a-cxl-enabled-gpu-free-system-for-la-95f9e1cf",
   "title": "PIM Is All You Need: A CXL-Enabled GPU-Free System for Large Language Model Inference",
+  "abstract": "Large Language Model (LLM) inference uses an autoregressive manner to generate one token at a time, which exhibits notably lower operational intensity compared to earlier Machine Learning (ML) models such as encoder-only transformers and Convolutional Neural Networks. At the same time, LLMs possess large parameter sizes and use key-value caches to store context information. Modern LLMs support context windows with up to 1 million tokens to generate versatile text, audio, and video content. A large key-value cache unique to each prompt requires a large memory capacity, limiting the inference batch size. Both low operational intensity and limited batch size necessitate a high memory bandwidth. However, contemporary hardware systems for ML model deployment, such as GPUs and TPUs, are primarily optimized for compute throughput. This mismatch challenges the efficient deployment of advanced LLMs and makes users to pay for expensive compute resources that are poorly utilized for the memory-bound LLM inference tasks.",
+  "abstract_source_id": "src-abstract-asplos-2025-95f9e1cf",
   "venue": "asplos",
   "year": 2025,
   "track_or_session": "Session 9B: Processing in Memory",
@@ -249,6 +251,19 @@
       "official": true,
       "supports": [
         "Author-deposited archival artifact associated with the conference paper."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2025-95f9e1cf",
+      "url": "https://api.openalex.org/works/doi:10.1145/3676641.3716267?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "PIM Is All You Need: A CXL-Enabled GPU-Free System for Large Language Model Inference",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:02:41Z",
+      "content_hash": "sha256:ca7680a3fbf0fac68257120c51c4f7e3b54a19cde374d5bb1651946bd75c11f5",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

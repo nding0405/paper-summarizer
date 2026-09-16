@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2024-sirius-composing-network-function-chains-into-p4-capable-095f2e60",
   "title": "Sirius: Composing Network Function Chains into P4-Capable Edge Gateways",
+  "abstract": "Alibaba Cloud designs and deploys P4-capable gateway to accelerate the processing of the diverse business traffics in the edge cloud. Since the programmable ASIC in the gateway only accepts a monolithic, pipelined P4 program, the dozens network function chains for different business traffics have to be composed into one. This is non-trivial due to the contention between the complexity of network function chains and the limited resource in the programmable ASIC. In this paper, we present Sirius, a system that automates network function chain composition process. Sirius synthesizes tables to identify which business traffic the input packet belongs to, pipelines loops in the merged network function graph via recirculations, and partitions the graph between programmable ASIC and CPU when the required memory consumption exceeds the ASIC’s capability. So far, Sirius has automated network function arrangement in hundreds of gateways, and has effectively decreased our programmers’ workload by three orders of magnitude, from weeks to minutes.",
+  "abstract_source_id": "src-abstract-nsdi-2024-095f2e60",
   "venue": "nsdi",
   "year": 2024,
   "track_or_session": "Programming the Network: Part 1",
@@ -202,6 +204,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2024-095f2e60",
+      "url": "https://www.usenix.org/conference/nsdi24/presentation/gao-jiaqi",
+      "kind": "paper-page",
+      "title": "Sirius: Composing Network Function Chains into P4-Capable Edge Gateways",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:03:42Z",
+      "content_hash": "sha256:a5a4778f2ac3b1c5cbaea3bab879a8e59f0f2392dbf2ad8b157c06fb67ce3df5",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

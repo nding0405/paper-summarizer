@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2024-glitch-stopping-circuits-hardware-secure-masking-without-dff4241a",
   "title": "Glitch-Stopping Circuits: Hardware Secure Masking without Registers",
+  "abstract": "Masking is one of the most popular countermeasures to protect implementations against power and electromagnetic side-channel attacks because it offers provable security.Masking has been shown secure against d-threshold probing adversaries by Ishai et al. at CRYPTO'03, but this adversary's model doesn't consider any physical hardware defaults and thus such masking schemes were shown to be still vulnerable when implemented as hardware circuits.To address these limitations glitch-extended probing adversaries and correspondingly glitch-immune masking schemes have been introduced.This paper introduces glitch-stopping circuits, which coincide with circuits protected via glitch-immune masking when instantiated with registers.Then we show that one can instantiate glitch-stopping circuits without registers by using clocked logic gates or latches.This is illustrated for both ASIC and FPGA, offering a promising alternative to conventional register-based masked implementations.Compared to the traditional register-based approach, these register-free solutions can reduce the latency to a single cycle and achieve a lower area cost.We prove and experimentally confirm that the proposed solution is as secure as the register-based one.In summary, this paper proposes a novel method to address the latency of register-based hardware masking without jeopardizing their security.This method not only reduces the latency down to one clock cycle but also improves the area costs of the implementations. CCS CONCEPTS• Security and privacy → Side",
+  "abstract_source_id": "src-abstract-ccs-2024-dff4241a",
   "venue": "ccs",
   "year": 2024,
   "track_or_session": "Cycle 1",
@@ -138,6 +140,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2024-dff4241a",
+      "url": "https://api.openalex.org/works/doi:10.1145/3658644.3670335?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Glitch-Stopping Circuits: Hardware Secure Masking without Registers",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:10:08Z",
+      "content_hash": "sha256:9e99eb4b342841e592b05f3a95a46559f9333e09be3dc796fdb415f55eeecd16",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

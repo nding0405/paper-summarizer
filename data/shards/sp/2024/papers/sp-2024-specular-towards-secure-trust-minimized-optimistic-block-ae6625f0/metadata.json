@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2024-specular-towards-secure-trust-minimized-optimistic-block-ae6625f0",
   "title": "Specular: Towards Secure, Trust-minimized Optimistic Blockchain Execution",
+  "abstract": "An optimistic rollup (ORU) scales a blockchain’s throughput by delegating computation to an untrusted remote chain (L2), refereeing any state claim disagreements between mutually distrusting L2 operators via an interactive dispute resolution protocol. State-of-the-art ORUs employ a monolithic dispute resolution protocol that tightly couples an L1 referee with a specific L2 client binary—oblivious to the system’s higher-level semantics. We argue that this approach (1) magnifies monoculture failure risk, by precluding trust-minimized and permissionless participation using operator-chosen client software; (2) leads to an unnecessarily large and difficult-to-audit TCB; and, (3) suffers from a frequently-triggered, yet opaque upgrade process—both further increasing auditing overhead, and broadening the governance attack surface.To address these concerns, we outline a methodology for designing a secure and resilient ORU with a minimal TCB, by facilitating opportunistic 1-of-N-version programming. Due to its unique challenges and opportunities, we ground this work concretely in the context of the Ethereum ecosystem—where ORUs have gained significant traction. Specifically, we design a semantically-aware proof system, natively targeting the EVM and its instruction set. We present an implementation in a new ORU, Specular, that opportunistically leverages Ethereum’s existing client diversity with minimal source modification, demonstrating our approach’s feasibility.",
+  "abstract_source_id": "src-abstract-sp-2024-ae6625f0",
   "venue": "sp",
   "year": 2024,
   "track_or_session": "Summer cycle",
@@ -180,6 +182,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2024-ae6625f0",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Specular: Towards Secure, Trust-minimized Optimistic Blockchain Execution",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:42Z",
+      "content_hash": "sha256:d62dac834635b4cd1890a53da454ceae7aaa151189662d990ac591dfd5cb6b3e",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

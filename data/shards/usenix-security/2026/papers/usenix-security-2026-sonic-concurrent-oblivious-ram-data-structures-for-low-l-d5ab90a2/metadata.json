@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-sonic-concurrent-oblivious-ram-data-structures-for-low-l-d5ab90a2",
   "title": "SONIC: Concurrent Oblivious RAM & Data Structures for Low-Latency and High-Throughput",
+  "abstract": "Relying solely on encryption for privacy-preserving computations is prone to leakage-abuse/access-pattern attacks. TEEs, while cost-effective, are also vulnerable to side-channel attacks. Oblivious primitives, such as oblivious memory (ORAM) and data structures (ODS) are effective building blocks to mitigate these risks by concealing memory access patterns and side-channel information. Applications range from private contact discovery (Signal) to anonymous key transparency, encrypted email search, encrypted/oblivious databases, anonymous communication (Sparta/SP'25), private federated learning, LLM privacy (Compass/OSDI'25), and broader confidential computing efforts.\n\nTree-based ORAMs (EnigMap ( USENIX'23 ), GraphOS ( PVLDB'23 ), Oblix ( SP'18 )) offer low latency but limited parallelism, struggling to exceed 1K req/s throughput even for small datasets. Partition-based solutions like Snoopy ( SOSP'21 ) split data into multiple subORAMs, each parallel-scanning its shard via an oblivious hash table built from incoming requests, achieving high throughput by generously trading off latency—theoretically enabling linear scalability. In practice, Snoopy's performance hinges on how quickly each subORAM can complete its sequential scan before exceeding latency targets—constraining server utilization and throughput. While TB-scale datasets are theoretically feasible by adding servers, it requires 1000+ servers in practice.\n\nIn this work , we reconcile the aforementioned fractured landscape between low-latency and high-throughput ORAM solutions. We introduce SONIC : the first ORAM for hardware enclaves that replaces PathORAM (used by EnigMap, GraphOS, and Oblix) with RingORAM. Our design is the first low-latency ORAM achieving minimum throughput of 150K req/s and up to 2M req/s (with one server), tackling core challenges of all tree-ORAM constructions (including RingORAM) such as overcoming the sequential eviction bottleneck, enabling efficient batch evictions, and providing lock-free access, reshuffle, and stash operations. SONIC achieves 28-197× higher ORAM access throughput than the open-source EnigMap implementation, and 158-1065× higher than GraphOS (for N=2 27 and block size 64 bytes). SONIC offers various methods to leverage ORAM concurrency for building oblivious data structures, such as OMAPs. Finally, SONIC can serve as a drop-in replacement for Snoopy's subORAM to provide more practical scalability— 1TB can now be handled with just 32 servers instead of thousands .",
+  "abstract_source_id": "src-abstract-usenix-security-2026-d5ab90a2",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Applications of Cryptography 5",
@@ -92,6 +94,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-d5ab90a2",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/talur",
+      "kind": "paper-page",
+      "title": "SONIC: Concurrent Oblivious RAM & Data Structures for Low-Latency and High-Throughput",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:25:39Z",
+      "content_hash": "sha256:c8bf73f4ae3af2658574e35038c889fd77a8d60aa1314bae5551d792594996c5",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

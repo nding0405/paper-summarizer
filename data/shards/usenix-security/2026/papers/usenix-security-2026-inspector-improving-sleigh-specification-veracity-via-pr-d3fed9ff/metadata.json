@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-inspector-improving-sleigh-specification-veracity-via-pr-d3fed9ff",
   "title": "InSPECtor: Improving SLEIGH Specification Veracity via Proxy",
+  "abstract": "Processor specifications underpin critical security and program-analysis tools such as disassemblers, decompilers, and emulators, yet, their correctness is rarely examined. Errors in specifications distort program behaviour, obscure vulnerabilities, and enable analysis-evasion techniques. Validating processor specifications is a non-trivial task. Our study is a significant undertaking to enable, for the first time, the systematic validation of open-source SLEIGH language specifications, predominantly used by Ghidra. We design and implement a testing framework based on an automated oracle validation strategy by proxy . Our approach leverages the structure encoded in a specification itself to enumerate decodable instruction forms and generate targeted initial states. Then differentially test the successful decoding and emulation of those instructions by comparing emulators exercising the processor specification against hardware references.\n\nApplying InSPECtor across diverse, open-source specifications—x86-64, AArch64, ARM/Thumb, RISC-V, MSP430—embedding differences in specification styles, author preferences, and instruction set architecture designs, we uncovered over 38,900 discrepancies that led to 125 unique bugs with proposed fixes, identifying decoding and semantic defects as well as cross-vendor inconsistencies. We distill our findings into 8 concrete recommendations to drive future improvements. Our work underscores the importance of specification correctness and provides a practical tool to substantially improve the fidelity of SLEIGH processor specifications, strengthening the reliability of downstream security and analysis tools.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-d3fed9ff",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Software Security 4",
@@ -176,6 +178,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-d3fed9ff",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/chesser",
+      "kind": "paper-page",
+      "title": "InSPECtor: Improving SLEIGH Specification Veracity via Proxy",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:24:20Z",
+      "content_hash": "sha256:cd1b9984ab9552b415895fe0705e559e972d8dfff3cf5c6c04963e39e2a98f75",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

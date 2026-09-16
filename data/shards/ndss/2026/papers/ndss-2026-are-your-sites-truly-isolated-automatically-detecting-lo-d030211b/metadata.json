@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2026-are-your-sites-truly-isolated-automatically-detecting-lo-d030211b",
   "title": "Are your Sites Truly Isolated? Automatically Detecting Logic Bugs in Site Isolation Implementations",
+  "abstract": "Site Isolation is one of the core security mechanisms of a modern browser. By confining aspects such as the JavaScript Just-in-Time compiler or the HTML rendering to a sandboxed process, web browsers significantly reduce the impact of memory corruption errors. In addition, the mechanism protects against microarchitectural attacks such as Spectre. When using Site Isolation, the browser confines all processing related to a site to its own sandboxed process. All communication with the privileged browser process is done via exchanging IPC messages. This, however, requires the browser process to keep track of which renderer process belongs to which site, as otherwise, an attacker can abuse a memory corruption issue in the renderer to attack other sites by sending malicious IPC messages. This, in turn, would allow attackers to leak sensitive data, such as cookies, or even achieve Universal Cross-Site Scripting.\n\nThis work presents the first automatic approach to detect such vulnerabilities, called Site Isolation bypasses, in Firefox and Chrome. For this, we propose a novel oracle to detect the semantic bugs that cause Site Isolation bypass vulnerabilities by flagging cross-site data leaks on the process level. In addition, we design a fuzzer that simulates a compromised renderer process, trying to use the browser process as a confused deputy by hooking into the IPC communication. Our work uncovered four security vulnerabilities in Chrome and Firefox: three less severe bugs leak data cross-site while the fourth bug facilitates complete control over the victim site.",
+  "abstract_source_id": "src-abstract-ndss-2026-d030211b",
   "venue": "ndss",
   "year": 2026,
   "track_or_session": "Fall submission cycle",
@@ -139,6 +141,19 @@
       "official": false,
       "supports": [
         "independent proceedings identity reconciliation"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2026-d030211b",
+      "url": "https://www.ndss-symposium.org/ndss-paper/are-your-sites-truly-isolated-automatically-detecting-logic-bugs-in-site-isolation-implementations/",
+      "kind": "paper-page",
+      "title": "Are your Sites Truly Isolated? Automatically Detecting Logic Bugs in Site Isolation Implementations",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:21:16Z",
+      "content_hash": "sha256:6af5689d2db95748d3f03f70f62cbd4caecf7b09f3b9b41ea5e31f2f898c285a",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

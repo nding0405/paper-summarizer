@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2026-minbucket-mpsi-breaking-the-max-size-bottleneck-in-multi-12f8171f",
   "title": "MinBucket MPSI: Breaking the Max-Size Bottleneck in Multi-Party Private Set Intersection",
+  "abstract": "Multi-Party Private Set Intersection (Cardinality) protocol enables $T$ $(T > 2)$ parties, each holding a private set, to jointly compute the intersection (or its cardinality) without revealing any additional information to other parties. To date, all known MPSI (MPSI-Card) protocols require communication complexity that scales linearly with the size of the large set, fundamentally precluding their efficient deployment in real-world applications with heterogeneous input scales.\n\nIn this work, we present a new framework for MPSI based on newly proposed protocols: batched membership conditional randomness generation and joint private equality test. By instantiating this framework, we develop two MPSI protocols with communication complexities that are linear in the size of the small set and logarithmic in the size of the large set. One protocol offers security against an arbitrary number of colluding parties, while the other secures against $(T-2)$ colluding parties. Additionally, we develop a protocol called the joint permuted private equality test and propose the MPSI-Card framework. By instantiating this framework, we derive an MPSI-Card protocol with similar communication efficiency: linear in the small set and logarithmic in the large set, providing security against an arbitrary number of colluding parties.\n\nWe implement our protocols and conduct extensive experiments over both LAN and WAN networks. Experimental results demonstrate that our protocols achieve significantly better performance as the size difference between the sets or the number of participants holding the small set increases. For the setting, where $5$ parties holding large set (size $2^{20}$) and $5$ parties holding small set (size $2^{10}$) with a single thread and a $10$ Mbps bandwidth, our MPSI (MPSI-Card) protocol requires only $12.2$ ($12.2$) MB of communication and $129.86$ ($130.05$) seconds of runtime. Compared with the state-of-the-art MPSI by Wu et al. (USENIX Security 2024) and MPSI-Card by Gao et al. (PETS 2024), our protocol achieves a $157times$ $(76times)$ reduction in communication cost and a $12.7times$ $(3.1times)$ speedup in runtime.",
+  "abstract_source_id": "src-abstract-ndss-2026-12f8171f",
   "venue": "ndss",
   "year": 2026,
   "track_or_session": "Fall submission cycle",
@@ -225,6 +227,19 @@
       "official": false,
       "supports": [
         "independent proceedings identity reconciliation"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2026-12f8171f",
+      "url": "https://www.ndss-symposium.org/ndss-paper/minbucket-mpsi-breaking-the-max-size-bottleneck-in-multi-party-private-set-intersection/",
+      "kind": "paper-page",
+      "title": "MinBucket MPSI: Breaking the Max-Size Bottleneck in Multi-Party Private Set Intersection",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:22:31Z",
+      "content_hash": "sha256:2fab16cf7a648380cd3b271b56bcff42c0adabfb20628dc26a5fe56ca3be9a9c",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

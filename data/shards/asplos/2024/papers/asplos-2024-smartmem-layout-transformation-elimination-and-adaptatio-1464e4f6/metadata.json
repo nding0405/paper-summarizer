@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2024-smartmem-layout-transformation-elimination-and-adaptatio-1464e4f6",
   "title": "SmartMem: Layout Transformation Elimination and Adaptation for Efficient DNN Execution on Mobile",
+  "abstract": "This work is motivated by recent developments in Deep Neural Networks, particularly the Transformer architectures underlying applications such as ChatGPT, and the need for performing inference on mobile devices. Focusing on emerging transformers (specifically the ones with computationally efficient Swin-like architectures) and large models (e.g., Stable Diffusion and LLMs) based on transformers, we observe that layout transformations between the computational operators cause a significant slowdown in these applications. This paper presents SmartMem, a comprehensive framework for eliminating most layout transformations, with the idea that multiple operators can use the same tensor layout through careful choice of layout and implementation of operations. Our approach is based on classifying the operators into four groups, and considering combinations of producer-consumer edges between the operators. We develop a set of methods for searching such layouts. Another component of our work is developing efficient memory layouts for 2.5 dimensional memory commonly seen in mobile devices. Our experimental results show that SmartMem outperforms 5 state-of-the-art DNN execution frameworks on mobile devices across 18 varied neural networks, including CNNs, Transformers with both local and global attention, as well as LLMs. In particular, compared to DNNFusion, SmartMem achieves an average speedup of 2.8×, and outperforms TVM and MNN with speedups of 6.9× and 7.9×, respectively, on average.",
+  "abstract_source_id": "src-abstract-asplos-2024-1464e4f6",
   "venue": "asplos",
   "year": 2024,
   "track_or_session": "Session 9C: ML Systems and Optimizations",
@@ -249,6 +251,19 @@
       "official": false,
       "supports": [
         "Indexed alternate-version and institutional-copy links; not used as the authoritative relevance source."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2024-1464e4f6",
+      "url": "https://api.openalex.org/works/doi:10.1145/3620666.3651384?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "SmartMem: Layout Transformation Elimination and Adaptation for Efficient DNN Execution on Mobile",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:00:32Z",
+      "content_hash": "sha256:de2d82a67f0542b36989a642d2f62d08620fb4e9ea349e8d997b7988716a91d6",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

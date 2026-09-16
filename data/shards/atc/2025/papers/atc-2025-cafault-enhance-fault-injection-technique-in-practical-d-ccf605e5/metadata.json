@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "atc-2025-cafault-enhance-fault-injection-technique-in-practical-d-ccf605e5",
   "title": "CAFault: Enhance Fault Injection Technique in Practical Distributed Systems via Abundant Fault-Dependent Configurations.",
+  "abstract": "To ensure high reliability and availability, distributed systems are designed to be resilient to various faults in complex environments. Fault injection techniques are commonly used to test whether a distributed system can correctly handle different potential faults. However, existing fault injection testing is typically performed under a fixed default configuration, overlooking the impact of varying configurations (which can differ in real-world applications) on testing execution paths. This results in many vulnerabilities being overlooked.\n\nIn this work, we introduce CAFault ( C onfiguration A ware Fault ), a general testing framework for enhancing existing fault injection techniques via abundant fault-dependent configurations. Considering the vast combinatorial search space between fault inputs and configuration inputs, CAFault first constructs a Fault-Dependent model(FDModel) to prune the test input space and generate high-quality configurations. Second, to effectively explore the fault input space under each configuration, CAFault introduces fault-handling guided fuzzing, which constantly detects bugs hidden in deep paths. We implemented and evaluated CAFault on four widely used distributed systems, including HDFS, ZooKeeper, MySQL-Cluster, and IPFS. Compared with the state-of-the-art fault injection tools CrashFuzz, Mallory, and Chronos, CAFault covers 31.5%, 29.3%, and 81.5% more fault tolerance logic. Furthermore, CAFault has detected 16 serious previously unknown bugs.",
+  "abstract_source_id": "src-abstract-atc-2025-ccf605e5",
   "venue": "atc",
   "year": 2025,
   "track_or_session": "Finding Faults: Concurrency, Numerics, and Kernel Fuzzing",
@@ -180,6 +182,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-atc-2025-ccf605e5",
+      "url": "https://www.usenix.org/conference/atc25/presentation/chen-yuanliang",
+      "kind": "paper-page",
+      "title": "CAFault: Enhance Fault Injection Technique in Practical Distributed Systems via Abundant Fault-Dependent Configurations.",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T21:59:29Z",
+      "content_hash": "sha256:63721434a210b0d5ced360555c1aaa287eaf59ea65ffed2b74cdf83c78de9fec",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

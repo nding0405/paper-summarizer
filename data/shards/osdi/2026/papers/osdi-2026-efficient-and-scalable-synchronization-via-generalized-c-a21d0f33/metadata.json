@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2026-efficient-and-scalable-synchronization-via-generalized-c-a21d0f33",
   "title": "Efficient and Scalable Synchronization via Generalized Cache Coherence",
+  "abstract": "We explore the design of efficient and scalable synchronization for disaggregated shared memory. Porting existing synchronization primitives to such architectures results in poor performance scaling due to redundant inter-cache communications, exacerbated by high cache-coherence latency in disaggregated shared memory.\n\nDriven by our insight that synchronization is a generalization of cache coherence in time and space, we argue for minimally extending existing cache coherence protocols to support synchronization primitives, thereby eliminating the redundant inter-cache communication inherent in layered synchronization. We propose a novel G eneralized cache- C oherence P rotocol (GCP) that realizes this insight by leveraging wait queues and variable-size cache lines directly at the cache-coherence layer for temporal and spatial generalization, respectively. We have verified GCP’s correctness using model checking. We present Soul, an end-to-end system implementation of GCP atop a disaggregated shared-memory platform. Soul supports popular lock APIs through a user-space library that offers improved performance without requiring any changes to application code. Our evaluation of Soul against state-of-the-art locks shows that it improves the performance of unmodified real-world applications at scale by 1–2 orders of magnitude while incurring <8% storage overhead.",
+  "abstract_source_id": "src-abstract-osdi-2026-a21d0f33",
   "venue": "osdi",
   "year": 2026,
   "track_or_session": "Synchronization",
@@ -146,6 +148,19 @@
       "official": true,
       "supports": [
         "Official proceedings availability and canonical conference versions."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2026-a21d0f33",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/yu-yanpeng",
+      "kind": "paper-page",
+      "title": "Efficient and Scalable Synchronization via Generalized Cache Coherence",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:08:15Z",
+      "content_hash": "sha256:3fd93b650af2dc64f9f6374831f81e75e521c234485a2d9a7590b03d2f190b50",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

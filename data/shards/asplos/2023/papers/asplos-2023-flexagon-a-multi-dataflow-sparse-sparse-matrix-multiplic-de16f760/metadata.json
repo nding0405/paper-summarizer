@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2023-flexagon-a-multi-dataflow-sparse-sparse-matrix-multiplic-de16f760",
   "title": "Flexagon: A Multi-Dataflow Sparse-Sparse Matrix Multiplication Accelerator for Efficient DNN Processing",
+  "abstract": "Sparsity is a growing trend in modern DNN models. Existing Sparse-Sparse Matrix Multiplication (SpMSpM) accelerators are tailored to a particular SpMSpM dataflow (i.e., Inner Product, Outer Product or Gustavsons), that determines their overall efficiency. We demonstrate that this static decision inherently results in a suboptimal dynamic solution. This is because different SpMSpM kernels show varying features (i.e., dimensions, sparsity pattern, sparsity degree), which makes each dataflow better suited to different data sets. In this work we present Flexagon, the first SpMSpM reconfigurable accelerator that is capable of performing SpMSpM computation by using the particular dataflow that best matches each case. Flexagon accelerator is based on a novel Merger-Reduction Network (MRN) that unifies the concept of reducing and merging in the same substrate, increasing efficiency. Additionally, Flexagon also includes a 3-tier memory hierarchy, specifically tailored to the different access characteristics of the input and output compressed matrices. Using detailed cycle-level simulation of contemporary DNN models from a variety of application domains, we show that Flexagon achieves average performance benefits of 4.59x, 1.71x, and 1.35x with respect to the state-of-the-art SIGMA-like, Sparch-like and GAMMA-like accelerators (265% , 67% and 18%, respectively, in terms of average performance/area efficiency).",
+  "abstract_source_id": "src-abstract-asplos-2023-de16f760",
   "venue": "asplos",
   "year": 2023,
   "track_or_session": "Session 4C: Tensor Computation",
@@ -194,6 +196,19 @@
       "official": false,
       "supports": [
         "Indexed abstract used with the official technical-session context for relevance classification, plus alternate-copy and explicitly printed ancillary links."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2023-de16f760",
+      "url": "https://api.openalex.org/works?filter=title.search:Flexagon%3A%20A%20Multi-Dataflow%20Sparse-Sparse%20Matrix%20Multiplication%20Accelerator%20for%20Efficient%20DNN%20Processing&select=id,title,abstract_inverted_index&per-page=3&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Flexagon: A Multi-Dataflow Sparse-Sparse Matrix Multiplication Accelerator for Efficient DNN Processing",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T21:59:29Z",
+      "content_hash": "sha256:f2ebb929d18d5061193120e63272fac815ac45e3165ee947b45979e3f5bb82db",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

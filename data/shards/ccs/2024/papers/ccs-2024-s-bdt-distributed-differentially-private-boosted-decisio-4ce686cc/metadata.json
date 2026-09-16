@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2024-s-bdt-distributed-differentially-private-boosted-decisio-4ce686cc",
   "title": "S-BDT: Distributed Differentially Private Boosted Decision Trees",
+  "abstract": "We introduce S-BDT: a novel (𝜀, 𝛿)-differentially private distributed gradient boosted decision tree (GBDT) learner that improves the protection of single training data points (privacy) while achieving meaningful learning goals, such as accuracy or regression error (utility).S-BDT uses less noise by relying on non-spherical multivariate Gaussian noise, for which we show tight subsampling bounds for privacy amplification and incorporate that into a Rényi filter for individual privacy accounting.We experimentally reach the same utility while saving 50% in terms of epsilon for 𝜀 ≤ 0.5 on the Abalone regression dataset (dataset size ≈ 4𝐾), saving 30% in terms of epsilon for 𝜀 ≤ 0.08 for the Adult classification dataset (dataset size ≈ 50𝐾), and saving 30% in terms of epsilon for 𝜀 ≤ 0.03 for the Spambase classification dataset (dataset size ≈ 5𝐾).Moreover, we show that for situations where a GBDT is learning a stream of data that originates from different subpopulations (non-IID), S-BDT improves the saving of epsilon even further. CCS Concepts• Theory of computation → Theory of database privacy and security; • Computing methodologies → Boosting; Online learning settings.",
+  "abstract_source_id": "src-abstract-ccs-2024-4ce686cc",
   "venue": "ccs",
   "year": 2024,
   "track_or_session": "Cycle 2",
@@ -180,6 +182,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2024-4ce686cc",
+      "url": "https://api.openalex.org/works/doi:10.1145/3658644.3690301?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "S-BDT: Distributed Differentially Private Boosted Decision Trees",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:11:56Z",
+      "content_hash": "sha256:f643c9bc14b92702f46304970367a257e018bb2aa381bc08f0f185206103f167",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

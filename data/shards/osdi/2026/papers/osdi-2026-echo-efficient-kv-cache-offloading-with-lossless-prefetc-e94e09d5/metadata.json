@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2026-echo-efficient-kv-cache-offloading-with-lossless-prefetc-e94e09d5",
   "title": "ECHO: Efficient KV Cache Offloading with Lossless Prefetching for Serving Native Sparse Attention LLMs",
+  "abstract": "Native sparse attention has emerged as a promising approach for efficient long-context LLM inference without compromising accuracy. While it significantly reduces the attention computation and KV cache access costs, the KV cache size exhibits steeper linear growth with the context length. As a result, GPU HBM capacity becomes the bottleneck, limiting the concurrency of long-context requests and leading to poor hardware utilization and low generation throughput. We introduce ECHO, a serving system designed for native sparse-attention LLMs that employs KV cache offloading to overcome GPU HBM capacity limits. ECHO incorporates a graph-friendly cache manager that enables efficient dynamic KV cache eviction and recall entirely within GPU graphs, minimizing management overhead. Furthermore, by exploiting the numerical predictability of index scores and the sequential processing of queries, ECHO enables lossless intra-query prefetching for decoding and inter-query prefetching for prefill. By applying a fully pipelined fused GPU kernel, ECHO overlaps the recall overhead with indexer computation. Experiments show that ECHO delivers up to 2.1× higher generation throughput than state-of-the-art systems such as SGLang and vLLM under long-context workloads, while maintaining comparable latency under light load.",
+  "abstract_source_id": "src-abstract-osdi-2026-e94e09d5",
   "venue": "osdi",
   "year": 2026,
   "track_or_session": "KV Cache and Long Context",
@@ -272,6 +274,19 @@
       "official": true,
       "supports": [
         "Official proceedings availability and canonical conference versions."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2026-e94e09d5",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/liu-guangda",
+      "kind": "paper-page",
+      "title": "ECHO: Efficient KV Cache Offloading with Lossless Prefetching for Serving Native Sparse Attention LLMs",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:08:14Z",
+      "content_hash": "sha256:3625102c67715a20e1c5c427208a831514537034d425f9e8c87c2e550a933676",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

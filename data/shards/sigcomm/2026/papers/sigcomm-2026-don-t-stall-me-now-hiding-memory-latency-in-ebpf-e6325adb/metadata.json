@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sigcomm-2026-don-t-stall-me-now-hiding-memory-latency-in-ebpf-e6325adb",
   "title": "Don't Stall Me Now: Hiding Memory Latency in eBPF",
+  "abstract": "eBPF has emerged as a popular platform for building high-performance I/O programs. However, eBPF's programming model limits the use of commonly used performance optimizations, leaving programs vulnerable to cache-miss-induced performance overheads. Specifically, the programming model restricts the choice of data structures used by a program, thus limiting the programmers' ability to improve data locality. Furthermore, it also makes it hard for programmers to overlap computation with data movement. In this paper, we present Beeswax an approach that addresses both of these restrictions. This approach requires programmers to adopt multi-phase data structures and partition programs into multiple stages. It overlaps the execution of program stages, and thus hides cache miss overheads. We designed the approach so that it could be applied to existing programs without requiring significant change. We have applied Beeswax to Katran, a load balancer deployed in production data centers, and BMC, a key-value store accelerator. We show throughput improvements of up to 99%.",
+  "abstract_source_id": "src-abstract-sigcomm-2026-e6325adb",
   "venue": "sigcomm",
   "year": 2026,
   "track_or_session": "Research Session 12: Host Networking & Packet Processing — Research Paper",
@@ -149,6 +151,19 @@
       "official": true,
       "supports": [
         "official main-paper scope and track definitions"
+      ]
+    },
+    {
+      "id": "src-abstract-sigcomm-2026-e6325adb",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/search/match?query=Don%27t%20Stall%20Me%20Now%3A%20Hiding%20Memory%20Latency%20in%20eBPF&fields=title,abstract",
+      "kind": "semantic-scholar",
+      "title": "Don't Stall Me Now: Hiding Memory Latency in eBPF",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T23:00:02Z",
+      "content_hash": "sha256:ff950cf8a0a483f221169d944dcfc85c42e3b4dc392f0f4077779ebf6373fcec",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2026-oxbow-a-coordinated-architecture-for-multi-component-fil-4c054869",
   "title": "Oxbow: A Coordinated Architecture for Multi-Component File Systems",
+  "abstract": "Fast storage hardware and computational SSDs have outpaced the traditional kernel-centric or kernel-bypass file system designs, fragmenting modern storage stacks across library file systems, kernel subsystems, and in-device file systems. Each architecture offers only a subset of desired properties: userlevel designs deliver low latency but lose kernel services and isolation, kernel file systems retain rich functionality but become CPU-bound and slow, and device-resident logic reduces host load but suffers from PCIe latency and wimpy processors.\n\nThis paper presents Oxbow, a coordinated storage architecture that composes kernel, user-space, and device components to achieve all four goals simultaneously: high performance, strong kernel interoperability, low CPU consumption, and fast development velocity. Oxbow combines a kernel-based read path with a kernel-bypassing write path, shared-ownership metadata, and Split Journaling, a host–device journaling mechanism that decouples fsync from background commits using staging areas and DMA-based snapshots. We demonstrate that Oxbow delivers kernel-level protection and sharing semantics while matching or exceeding the performance of state-of-the-art user-level file systems and substantially reducing host CPU use through offload to computational SSDs.",
+  "abstract_source_id": "src-abstract-osdi-2026-4c054869",
   "venue": "osdi",
   "year": 2026,
   "track_or_session": "Filesystems and I/O Acceleration",
@@ -230,6 +232,19 @@
       "official": true,
       "supports": [
         "Official proceedings availability and canonical conference versions."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2026-4c054869",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/kim-jongyul",
+      "kind": "paper-page",
+      "title": "Oxbow: A Coordinated Architecture for Multi-Component File Systems",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:08:44Z",
+      "content_hash": "sha256:7f18fb2a3e4ca250aa9ff8bb135a48bf2c4b2449867f97e1fe28d2b62a832bcd",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

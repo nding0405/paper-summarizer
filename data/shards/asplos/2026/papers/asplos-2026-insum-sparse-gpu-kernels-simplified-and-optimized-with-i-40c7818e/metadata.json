@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2026-insum-sparse-gpu-kernels-simplified-and-optimized-with-i-40c7818e",
   "title": "Insum: Sparse GPU Kernels Simplified and Optimized with Indirect Einsums",
+  "abstract": "Programming high-performance sparse GPU kernels is notoriously difficult, requiring both substantial effort and deep expertise. Sparse compilers aim to simplify this process, but existing systems fall short in two key ways. First, they are primarily designed for CPUs and rarely produce high-performance GPU code. Second, when computations involve both sparse and dense regions, these compilers often fail to optimize the dense portions effectively. In this paper, we propose a new approach for expressing sparse computations. We start from format-agnostic Einsums over sparse tensors and rewrite them into format-conscious indirect Einsums, which explicitly encode format information by mapping sparse data and metadata onto dense tensor operations through indirect indexing. To execute indirect Einsums, we introduce the Insum compiler, which generates efficient GPU code for these Einsums by lowering to the PyTorch compiler, extended to better support Tensor Core–enabled indirect Einsums. We also present two fixed-length sparse formats, GroupCOO and BlockGroupCOO, designed to fit naturally with indirect Einsums. Our approach achieves 1.14×–3.81× speedups across a range of sparse GPU applications while reducing lines of code by 202×–4491× compared to hand-written implementations. The source code for Insum is publicly available at https://github.com/nullplay/IndirectEinsum.",
+  "abstract_source_id": "src-abstract-asplos-2026-40c7818e",
   "venue": "asplos",
   "year": 2026,
   "track_or_session": "Session 2C: GPU Systems & Scheduling",
@@ -152,6 +154,19 @@
       "official": false,
       "supports": [
         "Indexed abstract used for strict relevance classification and indexed arXiv identifier where available."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2026-40c7818e",
+      "url": "https://api.openalex.org/works/doi:10.1145/3779212.3790176?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Insum: Sparse GPU Kernels Simplified and Optimized with Indirect Einsums",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:05:31Z",
+      "content_hash": "sha256:fa8d9be389ade4c8a2c16c434a7a1cf60471e620321da7993d73fd0375148add",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

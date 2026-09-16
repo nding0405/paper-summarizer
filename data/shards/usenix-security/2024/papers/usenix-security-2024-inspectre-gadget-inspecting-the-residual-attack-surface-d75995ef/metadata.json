@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2024-inspectre-gadget-inspecting-the-residual-attack-surface-d75995ef",
   "title": "InSpectre Gadget: Inspecting the Residual Attack Surface of Cross-privilege Spectre v2",
+  "abstract": "Spectre v2 is one of the most severe transient execution vulnerabilities, as it allows an unprivileged attacker to lure a privileged (e.g., kernel) victim into speculatively jumping to a chosen gadget , which then leaks data back to the attacker. Spectre v2 is hard to eradicate. Even on last-generation Intel CPUs, security hinges on the unavailability of exploitable gadgets. Nonetheless, with (i) deployed mitigations—eIBRS, no-eBPF, (Fine)IBT—all aimed at hindering many usable gadgets, (ii) existing exploits relying on now-privileged features (eBPF), and (iii) recent Linux kernel gadget analysis studies reporting no exploitable gadgets, the common belief is that there is no residual attack surface of practical concern.\n\nIn this paper, we challenge this belief and uncover a significant residual attack surface for cross-privilege Spectre-v2 attacks. To this end, we present InSpectre Gadget , a new gadget analysis tool for in-depth inspection of Spectre gadgets. Unlike existing tools, ours performs generic constraint analysis and models knowledge of advanced exploitation techniques to accurately reason over gadget exploitability in an automated fashion. We show that our tool can not only uncover new (unconventionally) exploitable gadgets in the Linux kernel, but that those gadgets are sufficient to bypass all deployed Intel mitigations. As a demonstration, we present the first native Spectre-v2 exploit against the Linux kernel on last-generation Intel CPUs, based on the recent BHI variant and able to leak arbitrary kernel memory at 3.5 kB/sec. We also present a number of gadgets and exploitation techniques to bypass the recent FineIBT mitigation, along with a case study on a 13th Gen Intel CPU that can leak kernel memory at 18 bytes/sec.",
+  "abstract_source_id": "src-abstract-usenix-security-2024-d75995ef",
   "venue": "usenix-security",
   "year": 2024,
   "track_or_session": "Side Channel I: Transient Execution",
@@ -133,6 +135,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2024-d75995ef",
+      "url": "https://www.usenix.org/conference/usenixsecurity24/presentation/wiebing",
+      "kind": "paper-page",
+      "title": "InSpectre Gadget: Inspecting the Residual Attack Surface of Cross-privilege Spectre v2",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:15:48Z",
+      "content_hash": "sha256:c8c2cb51b0f21cb10792a1f061619f932bb82ec568407504f8d0e3cfe346d648",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

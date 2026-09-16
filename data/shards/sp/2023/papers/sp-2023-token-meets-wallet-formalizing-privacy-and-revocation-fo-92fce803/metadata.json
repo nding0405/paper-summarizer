@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2023-token-meets-wallet-formalizing-privacy-and-revocation-fo-92fce803",
   "title": "Token meets Wallet: Formalizing Privacy and Revocation for FIDO2",
+  "abstract": "The FIDO2 standard is a widely-used class of challenge-response type protocols that allows to authenticate to an online service using a hardware token. Barbosa et al. (CRYPTO ‘21) provided the first formal security model and analysis for the FIDO2 standard. However, their model has two shortcomings: (1) It does not include privacy, one of the key features claimed by FIDO2. (2) It only covers tokens that store all secret keys locally. In contrast, due to limited memory, most existing FIDO2 tokens either derive all secret keys from a common seed or store keys on the server (the latter approach is also known as key wrapping).In this paper, we revisit the security of the WebAuthn component of FIDO2 as implemented in practice. Our contributions are as follows. (1) We adapt the model of Barbosa et al. so as to capture authentication tokens using key derivation or key wrapping. (2) We provide the first formal definition of privacy for the WebAuthn component of FIDO2. We then prove the privacy of this component in common FIDO2 token implementations if the underlying building blocks are chosen appropriately. (3) We address the unsolved problem of global key revocation in FIDO2. To this end, we introduce and analyze a simple revocation procedure that builds on the popular BIP32 standard used in cryptocurrency wallets and can efficiently be implemented with existing FIDO2 servers.",
+  "abstract_source_id": "src-abstract-sp-2023-92fce803",
   "venue": "sp",
   "year": 2023,
   "track_or_session": "Session 5C: Applied cryptography",
@@ -151,6 +153,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2023-92fce803",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Token meets Wallet: Formalizing Privacy and Revocation for FIDO2",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:27Z",
+      "content_hash": "sha256:2c3c9cbfdcc9ef58a970a66aadb81bbaf8238409ab69d65565522a11e421be99",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

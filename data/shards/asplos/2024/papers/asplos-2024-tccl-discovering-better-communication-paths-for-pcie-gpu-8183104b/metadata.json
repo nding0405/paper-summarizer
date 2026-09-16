@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2024-tccl-discovering-better-communication-paths-for-pcie-gpu-8183104b",
   "title": "TCCL: Discovering Better Communication Paths for PCIe GPU Clusters",
+  "abstract": "Exploiting parallelism to train deep learning models requires GPUs to cooperate through collective communication primitives. While systems like DGX, equipped with proprietary interconnects, have been extensively studied, the systems where GPUs mainly communicate through PCIe have received limited attention. This paper introduces TCCL, a collective communication library designed explicitly for such systems. TCCL has three components: a profiler for multi-transfer performance measurement, a pathfinder to discover optimal communication paths, and a modified runtime of NCCL to utilize the identified paths. The focus is on ring-based collective communication algorithms that apply to popular communication operations in deep learning, such as AllReduce and AllGather. The evaluation results of TCCL on three different PCIe-dependent GPU clusters show that TCCL outperforms (up to ×2.07) the state-of-the-art communication libraries, NCCL and MSCCL. We also evaluate TCCL with DL training workloads with various combinations of parallelism types.",
+  "abstract_source_id": "src-abstract-asplos-2024-8183104b",
   "venue": "asplos",
   "year": 2024,
   "track_or_session": "Session 1B: Optimizing ML Communication",
@@ -138,6 +140,19 @@
       "official": false,
       "supports": [
         "Indexed alternate-version and institutional-copy links; not used as the authoritative relevance source."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2024-8183104b",
+      "url": "https://api.openalex.org/works/doi:10.1145/3620666.3651362?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "TCCL: Discovering Better Communication Paths for PCIe GPU Clusters",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:00:36Z",
+      "content_hash": "sha256:82aa619e71cb20323a89da11c0f285708ccae039f9427a18a28e438450476d45",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2024-toward-understanding-the-security-of-plugins-in-continuo-4c852bab",
   "title": "Toward Understanding the Security of Plugins in Continuous Integration Services",
+  "abstract": "Mainstream Continuous Integration (CI) platforms have provided the plugin functionality to accelerate the development of CI pipelines. Unfortunately, CI plugins, which are essentially reusable code snippets, also expose new attack surfaces as plugins might be developed by less trusted users. In this paper, we present an in-depth study to understand potential security risks in existing CI plugins. We conduct a comprehensive analysis of plugin implementations on four mainstream CI platforms (GitHub Actions, GitLab CI, CircleCI, and Azure Pipelines), and investigate several weak links in existing plugin distributions and isolation mechanisms. We investigate seven attack vectors that can enable attackers to hijack plugins and distribute malicious code without plugins users being aware, and further exploit hijacked plugins to manipulate the workflow execution. Additionally, we find that plugin dependency (a plugin references other plugins) might further amplify the attack impact of our disclosed attacks. To evaluate the potential impact, we conduct a large-scale measurement on GitHub and GitLab, covering a total of 1,328,912 repositories using the aforementioned CI platforms. Our measurement results show that a large number of repositories and existing plugins, including many widely used ones, are potentially vulnerable to the proposed attacks. We have duly reported the identified vulnerabilities and received positive responses.",
+  "abstract_source_id": "src-abstract-ccs-2024-4c852bab",
   "venue": "ccs",
   "year": 2024,
   "track_or_session": "Cycle 1",
@@ -243,6 +245,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2024-4c852bab",
+      "url": "https://api.openalex.org/works/doi:10.1145/3658644.3670366?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Toward Understanding the Security of Plugins in Continuous Integration Services",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:12:20Z",
+      "content_hash": "sha256:f409b3da944aefff84df1383fb310bdc7743434563247588e5fb8afa52b94cac",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

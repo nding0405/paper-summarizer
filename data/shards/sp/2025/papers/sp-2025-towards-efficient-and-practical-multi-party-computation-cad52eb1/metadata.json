@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2025-towards-efficient-and-practical-multi-party-computation-cad52eb1",
   "title": "Towards Efficient and Practical Multi-party Computation under Inconsistent Trust in TEEs",
+  "abstract": "Secure multi-party computation (MPC) allows joint computations on sensitive data while guaranteeing privacy and correctness. In recent years, a series of MPC protocols assisted by trusted execution environments (TEEs) have been proposed to reduce overhead brought by costly cryptographic techniques. However, existing protocols either generally assume consistent trust in TEEs among all participating parties, or require dedicated designs for different applications. This prevents the protocols from being deployed in practice. To address these challenges, in this work, we propose a generic MPC protocol without assuming consistent trust in TEEs while fully utilizing heterogeneous TEEs to improve efficiency. To this end, we propose a security model to capture parties' inconsistent trust in TEEs and prove the security of our protocol under a simpler variant of the UC framework (SUC framework). In addition, we instantiate our protocol for secure aggregation based on a state-of-the-art information-theoretically secure protocol SwiftAgg+. Evaluation results among 64 parties deployed on Azure virtual machines show that our protocol reduces the running time of SwiftAgg+ by 66%. The running time of parties in our protocol is reduced by at most 91% compared to that required in SwiftAgg+.",
+  "abstract_source_id": "src-abstract-sp-2025-cad52eb1",
   "venue": "sp",
   "year": 2025,
   "track_or_session": "Cycle 2",
@@ -133,6 +135,19 @@
       "official": true,
       "supports": [
         "DOI, authors, affiliations, abstract, publication date, pages, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2025-cad52eb1",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Towards Efficient and Practical Multi-party Computation under Inconsistent Trust in TEEs",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:52Z",
+      "content_hash": "sha256:b15ce02bcc49da611fdd791ecc56741e7d91d84154b58c1a7f72a5c6902e6e46",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

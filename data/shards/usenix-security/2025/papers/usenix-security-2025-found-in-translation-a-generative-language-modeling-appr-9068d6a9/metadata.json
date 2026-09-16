@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-found-in-translation-a-generative-language-modeling-appr-9068d6a9",
   "title": "Found in Translation: A Generative Language Modeling Approach to Memory Access Pattern Attacks",
+  "abstract": "Confidential computing environments (CCEs) provide a secure way for privacy-sensitive applications to ensure the confidentiality and integrity of data and computations offloaded to the cloud, relying on a hardware root of trust. However, the cloud provider-controlled Operating System (OS) stack still manages key memory management system services such as paging. Several recent works have demonstrated that these services can leverage side channels, specifically page access patterns, to reconstruct private application data. However, related attacks have primarily targeted applications with simple one-to-one mappings between application-level objects and OS-level pages, which is seldom true for most real-world cloud applications. Moreover, these attacks tend to overlook correlations in access patterns—a common occurrence in most real-world applications—leaving untapped critical side-channel information for improving attack accuracy.\n\nWe propose a novel attack approach that leverages access correlations across pages in cloud applications using generative language models . Our key insight is that there are strong parallels between application page access patterns and grammatical structures in natural languages, making language modeling an excellent fit for reconstructing sensitive application data with high accuracy. Our attack, named FIT, utilizes a recurrent encoder-decoder architecture to predict application-level object accesses from a sequence of page-level accesses. Our evaluations on popular AI/ML model inference services and semantic search applications show that FIT can predict object-level access sequences with an average accuracy ranging from 71.7% to 99.9%, significantly outperforming prior state-of-the-art approaches.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-9068d6a9",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "System Security 5: Securing Systems and Protocols",
@@ -112,6 +114,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-9068d6a9",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/jia-grace",
+      "kind": "paper-page",
+      "title": "Found in Translation: A Generative Language Modeling Approach to Memory Access Pattern Attacks",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:19:55Z",
+      "content_hash": "sha256:0f8e8573c6780603658f97c1908560f1fa1ed0b057e2c3ca6a6d4d5e1d98075d",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

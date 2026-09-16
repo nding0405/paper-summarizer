@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2024-dp-auditorium-a-large-scale-library-for-auditing-differe-3c41de7e",
   "title": "DP-Auditorium: a Large Scale Library for Auditing Differential Privacy",
+  "abstract": "New regulations and increased awareness of data privacy have led to the deployment of new and more efficient differentially private mechanisms across both public institutions and industries. With the growing adoption of differential privacy, there is also a risk of introducing bugs into both the derivation of new mechanisms and their implementation. Ensuring these mechanisms is therefore crucial to ensure proper protection of data. However since differential privacy is not a property of a single output of a mechanism but a property of the mechanism itself, testing whether a mechanism is differentially private is not a trivial task. While ad hoc testing techniques exist under specific assumptions, no concerted effort has been made by the research community to develop a flexible and extendable tool for testing differentially private mechanisms. This paper introduces DP-Auditorium as a step advancing research in this direction. The main idea behind DP-Auditorium is to abstract the problem of testing differential privacy into two steps: (1) measuring the distance between distributions, and (2) finding neighboring datasets where a mechanism generates output distributions maximizing such distance. From a technical point of view, we propose three new algorithms for evaluating the distance between distributions. While these algorithms are well-known in the statistics community, we provide new estimation guarantees by leveraging the fact that we are only interested in verifying whether a mechanism is differentially private, and not on obtaining an exact estimate of the distance between two distributions. DP-Auditorium is easily extensible, as demonstrated in this paper by implementing a well-known approximate differential privacy testing algorithm to our library. Finally, we provide an extensive comparison to date of multiple testers across varying sample sizes and differential privacy parameters, demonstrating that there is no single tester that dominates all others, and that in order to ensure proper testing of mechanisms, one requires a combination of different techniques.",
+  "abstract_source_id": "src-abstract-sp-2024-3c41de7e",
   "venue": "sp",
   "year": 2024,
   "track_or_session": "Winter cycle",
@@ -159,6 +161,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2024-3c41de7e",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "DP-Auditorium: A Large-Scale Library for Auditing Differential Privacy",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:32Z",
+      "content_hash": "sha256:be7515012a8c1ea1211f38a27ea4d2aa9cff6e0faac9417a2f58b1d64e91280e",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

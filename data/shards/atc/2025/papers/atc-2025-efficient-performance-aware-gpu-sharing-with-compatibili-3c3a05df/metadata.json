@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "atc-2025-efficient-performance-aware-gpu-sharing-with-compatibili-3c3a05df",
   "title": "Efficient Performance-Aware GPU Sharing with Compatibility and Isolation through Kernel Space Interception",
+  "abstract": "To support diverse GPU applications and ensure their performance, it is crucial to ensure compatibility, isolation, and maximizing utilization. However, existing approaches are limited to CUDA runtimes and have vulnerable isolation, where the misbehavior or crash of a single application disrupts all other applications sharing the same GPU. Moreover, existing solutions fail to efficiently orchestrate the applications.\n\nOur investigation reveals that the limitations in compatibility and isolation stem from the user-space design of existing GPU-sharing solutions. To address these issues, we propose KRYPTON, a kernel-space GPU-sharing scheme that ensures compatibility and isolation. KRYPTON intercepts GPU command buffers at the kernel level to provide virtual GPU devices. Rather than relying on fixed GPU resource allocation, it employs efficient spatio-temporal sharing, enabling performance guarantees while improving resource utilization. Experimental results show that KRYPTON reduces the required GPU number by 32.1% compared with SOTA baselines, while providing robust compatibility and isolation.",
+  "abstract_source_id": "src-abstract-atc-2025-3c3a05df",
   "venue": "atc",
   "year": 2025,
   "track_or_session": "Virtualization and Isolation: Security, Sharing, and Performance",
@@ -264,6 +266,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-atc-2025-3c3a05df",
+      "url": "https://www.usenix.org/conference/atc25/presentation/zhang-shulai",
+      "kind": "paper-page",
+      "title": "Efficient Performance-Aware GPU Sharing with Compatibility and Isolation through Kernel Space Interception",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T21:59:37Z",
+      "content_hash": "sha256:f6acfa7d2648ff139ba54fdf1424af19b0cdefc65d69d2388334e75ea07b20a3",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

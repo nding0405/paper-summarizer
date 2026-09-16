@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2024-00seven-re-enabling-virtual-machine-forensics-introspect-24038d25",
   "title": "00SEVen – Re-enabling Virtual Machine Forensics: Introspecting Confidential VMs Using Privileged in-VM Agents",
+  "abstract": "The security guarantees of confidential VMs (e.g., AMD's SEV) are a double-edged sword: Their protection against undesired VM inspection by malicious or compromised cloud operators inherently renders existing VM introspection (VMI) services infeasible. However, considering that these VMs particularly target sensitive workloads (e.g., finance), their customers demand secure forensic capabilities.\n\nIn this paper, we enable VM owners to remotely inspect their confidential VMs without weakening the VMs' protection against the cloud platform. In contrast to naïve in-VM memory aggregation tools, our approach (dubbed 00SEVen) is isolated from strong in-VM attackers and thus resistant against kernel-level attacks, and it provides VMI features beyond memory access. 00SEVen leverages the recent intra-VM privilege domains of AMD SEV-SNP—called VMPLs—and extends the QEMU/KVM hypervisor to provide VMPL-aware network I/O and VMI-assisting hypercalls. That way, we can serve VM owners with a protected in-VM forensic agent. The agent provides VM owners with attested remote memory and VM register introspection, secure pausing of the analysis target, and page access traps and function traps, all isolated from the cloud platform (incl. hypervisor) and in-VM rootkits.",
+  "abstract_source_id": "src-abstract-usenix-security-2024-24038d25",
   "venue": "usenix-security",
   "year": 2024,
   "track_or_session": "Forensics",
@@ -91,6 +93,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2024-24038d25",
+      "url": "https://www.usenix.org/conference/usenixsecurity24/presentation/schwarz",
+      "kind": "paper-page",
+      "title": "00SEVen – Re-enabling Virtual Machine Forensics: Introspecting Confidential VMs Using Privileged in-VM Agents",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:13:51Z",
+      "content_hash": "sha256:7020d09fdd909689f984998b23c3bebad66c51bb9e334c19b43cd4145dc9d396",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2025-divefuzz-enhancing-cpu-fuzzing-via-diverse-instruction-c-4f0771f5",
   "title": "DiveFuzz: Enhancing CPU Fuzzing via Diverse Instruction Construction",
+  "abstract": "Comprehensive exploration of the CPU architectural states in fuzzing is akin to generating diverse test cases, which include a reasonable distribution of opcode and diversity in instruction execution results (typically measured through write-back data). However, our analysis of state-of-the-art CPU fuzzers reveals that they exhibit high repetition in write-back data and an imbalanced distribution of opcodes during fuzzing. This paper presents DiveFuzz, which diversifies write-back data by finely controlling the operands of instructions at runtime, coupled with correlated contextual semantics, to generate instruction streams with diverse write-back data and semantic associations. Furthermore, DiveFuzz introduces a novel mutator that monitors the fuzzing process to dynamically adjust opcode distribution and accurately eliminate false positives. Our evaluations show that DiveFuzz significantly increases the diversity of instruction write-back data and achieves a more balanced opcode distribution compared to state-of-the-art fuzzers. Across five common coverage metrics, DiveFuzz achieves coverage 204× faster than DifuzzRTL and 114× faster than Cascade. We evaluated DiveFuzz on four well-known open-source RISC-V CPUs—XiangShan, CVA6, Rocket, and NutShell—uncovering 26 new bugs, 15 of which have CVE identifiers.",
+  "abstract_source_id": "src-abstract-ccs-2025-4f0771f5",
   "venue": "ccs",
   "year": 2025,
   "track_or_session": "Cycle 2",
@@ -190,6 +192,19 @@
         "published-order authors",
         "publication-time affiliations",
         "publication date and page span"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2025-4f0771f5",
+      "url": "https://api.openalex.org/works/doi:10.1145/3719027.3765167?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "DiveFuzz: Enhancing CPU Fuzzing via Diverse Instruction Construction",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:14:08Z",
+      "content_hash": "sha256:16ee9a36f515779f2622c16b289c5e8a79f341b4e69c1937257c21358777214f",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

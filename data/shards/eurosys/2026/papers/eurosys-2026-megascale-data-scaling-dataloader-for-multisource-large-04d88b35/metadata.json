@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "eurosys-2026-megascale-data-scaling-dataloader-for-multisource-large-04d88b35",
   "title": "MegaScale-Data: Scaling DataLoader for Multisource Large Foundation Model Training",
+  "abstract": "Modern frameworks for training large foundation models (LFMs) employ dataloaders in a data-parallel manner, with each loader processing a disjoint subset of training data. When preparing data for LFM training that originates from multiple, distinct sources, two fundamental challenges arise. First, due to the quadratic computational complexity of the attention operator, the non-uniform sample distribution over data-parallel ranks leads to significant workload imbalance among dataloaders, degrading the training efficiency. Second, supporting diverse data sources requires per-dataset file access states that are redundantly replicated across parallel loaders, consuming excessive memory. This also hinders dynamic data mixing (e.g., curriculum learning) and causes redundant access/memory overhead in hybrid parallelism.",
+  "abstract_source_id": "src-abstract-eurosys-2026-04d88b35",
   "venue": "eurosys",
   "year": 2026,
   "track_or_session": null,
@@ -411,6 +413,19 @@
       "official": false,
       "supports": [
         "Publisher-deposited proceedings identity and print publication date."
+      ]
+    },
+    {
+      "id": "src-abstract-eurosys-2026-04d88b35",
+      "url": "https://api.openalex.org/works/doi:10.1145/3767295.3803568?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "MegaScale-Data: Scaling DataLoader for Multisource Large Foundation Model Training",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:20:42Z",
+      "content_hash": "sha256:db40727fc216353503d46408f0bc86eed632224012ac3b0fed6980ffb171cccf",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

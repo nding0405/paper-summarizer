@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2023-tailcheck-a-lightweight-heap-overflow-detection-mechanis-40c029ca",
   "title": "TAILCHECK: A Lightweight Heap Overflow Detection Mechanism with Page Protection and Tagged Pointers",
+  "abstract": "A heap overflow vulnerability occurs when a program written in an unmanaged language such as C or C++ accesses a memory location beyond an object allocation boundary. Malicious users may exploit this vulnerability to corrupt an adjacent object in memory, creating an entry point for a security attack. Despite decades of research, unfortunately, it still remains challenging to detect heap overflow vulnerabilities in real-world programs at a low cost.\n\nWe present TAILCHECK, a new lightweight heap overflow detection scheme that leverages page protection and pointer tagging. When an object is created, TAILCHECK allocates an additional page-protected shadow object, called a TailObject, placing the distance from the object to its TailObject as a tag stored in the unused high-order bits of the object pointer. For every access to the original object, TAILCHECK performs an additional memory access to the TailObject, whose address is computed using the tag. Heap overflows are detected as page faults when an access occurs beyond the TailObject. We evaluated TAILCHECK with four server applications (apache, nginx, memached, redis) and the SPEC CPU2017 and SPEC CPU2006 benchmarks, successfully finding heap overflows in SPEC CPU2017 gcc. TAILCHECK experiences 4% and 2% run-time overhead for the average and tail (99%) latencies for server applications; and only 33% and 29% run-time overhead for SPEC CPU2017 and SPEC CPU2006, respectively, less than the state-of-the-art solution.",
+  "abstract_source_id": "src-abstract-osdi-2023-40c029ca",
   "venue": "osdi",
   "year": 2023,
   "track_or_session": "Manage Your Bits I",
@@ -159,6 +161,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2023-40c029ca",
+      "url": "https://www.usenix.org/conference/osdi23/presentation/gopal",
+      "kind": "paper-page",
+      "title": "TAILCHECK: A Lightweight Heap Overflow Detection Mechanism with Page Protection and Tagged Pointers",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:06:49Z",
+      "content_hash": "sha256:f36bc2673add9251901791da3e46113b9717a7105afcda1b823363ad6e7bec4b",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

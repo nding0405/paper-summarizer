@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2024-replicawatcher-training-less-anomaly-detection-in-contai-b14b4cb5",
   "title": "REPLICAWATCHER: Training-less Anomaly Detection in Containerized Microservices",
+  "abstract": "Despite its detection capabilities against previously unseen threats, anomaly detection suffers from critical limitations, which often prevent its deployment in real-world settings. In fact, anomaly-based intrusion detection systems rely on comprehensive pre-established baselines for effectively identifying suspicious activities. Unfortunately, prior research showed that these baselines age and gradually lose their effectiveness over time, especially in dynamic deployments such as microservices-based environments, where the concept of “normality” is frequently redefined due to shifting operational conditions. This scenario reinforces the need for periodic retraining to uphold optimal performance — a process that proves challenging, particularly in the context of security applications.\n\nWe propose a novel, training-less approach to monitoring microservices-based environments. Our system, REPLICAWATCHER, observes the behavior of identical container instances (i.e., replicas ) and detects anomalies without requiring prior training. Our key insight is that replicas, adopted for fault tolerance or scalability reasons, execute analogous tasks and exhibit similar behavioral patterns, which allow anomalous containers to stand out as a notable deviation from their corresponding replicas, thereby serving as a crucial indicator of security threats. The results of our experimental evaluation show that our approach is resilient against normality shifts and maintains its effectiveness without the necessity for retraining. Besides, despite not relying on a training phase, REPLICAWATCHER performs comparably to state-of-the-art, training-based solutions, achieving an average precision of 91.08% and recall of 98.35%.",
+  "abstract_source_id": "src-abstract-ndss-2024-b14b4cb5",
   "venue": "ndss",
   "year": 2024,
   "track_or_session": "Fall submission cycle",
@@ -147,6 +149,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2024-b14b4cb5",
+      "url": "https://www.ndss-symposium.org/ndss-paper/replicawatcher-training-less-anomaly-detection-in-containerized-microservices/",
+      "kind": "paper-page",
+      "title": "REPLICAWATCHER: Training-less Anomaly Detection in Containerized Microservices",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:18:35Z",
+      "content_hash": "sha256:773e9e2341011973484600843ce1886ee3918cfba029ef30d31f72036692364b",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

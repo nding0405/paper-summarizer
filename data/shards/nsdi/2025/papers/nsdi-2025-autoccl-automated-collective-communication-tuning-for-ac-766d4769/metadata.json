@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2025-autoccl-automated-collective-communication-tuning-for-ac-766d4769",
   "title": "AutoCCL: Automated Collective Communication Tuning for Accelerating Distributed and Parallel DNN Training",
+  "abstract": "The collective communication libraries are pivotal in optimizing the performance of distributed and parallel deep neural network (DNN) training. Most network optimizations are under the assumption that these libraries are well-tuned, ignoring their low-level parameter selection. In this paper, we present a novel automated tuning method AutoCCL that significantly improves communication performance without incurring additional costs. One of the primary challenges we tackle is the state explosion in searching for the optimal configuration. To overcome this, we decouple implementation-related parameters from those sensitive to the search space size and propose a divide-and-conquer algorithm, minimizing the requirement for exhaustive trials. We further propose an online tuning approach that accounts for communication-computation interference to enhance accuracy in finding optimal configurations, while hiding tuning overhead within early iterations of training jobs. We implement AutoCCL atop NCCL, a leading and widely-used communication library provided by NVIDIA. Our evaluation on both a 2-node cluster (16 A40 GPUs, intra-node NVLink, inter-node 2× 400Gbps InfiniBand) and a 4-node cluster (32 A40 GPUs, intra-node PCIe, inter-node 100Gbps InfiniBand) demonstrates that AutoCCL achieves 1.24-1.29× and 1.15-1.22× speedups on microbenchmarks compared to NCCL and another SOTA NCCL tuner, respectively, and up to 1.80× and 1.49× with concurrent computation. End-to-end evaluations on three large language models and one vision model show 1.07-1.32× improvements in periteration training time.",
+  "abstract_source_id": "src-abstract-nsdi-2025-766d4769",
   "venue": "nsdi",
   "year": 2025,
   "track_or_session": "Infra For ML",
@@ -203,6 +205,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2025-766d4769",
+      "url": "https://www.usenix.org/conference/nsdi25/presentation/xu-guanbin",
+      "kind": "paper-page",
+      "title": "AutoCCL: Automated Collective Communication Tuning for Accelerating Distributed and Parallel DNN Training",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:03:58Z",
+      "content_hash": "sha256:86e2b6398996b6a050ef30674d68e79e54f398e919c9051d119cc079195b8bc1",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

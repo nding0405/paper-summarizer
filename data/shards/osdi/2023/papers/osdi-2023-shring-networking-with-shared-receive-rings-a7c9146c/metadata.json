@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2023-shring-networking-with-shared-receive-rings-a7c9146c",
   "title": "ShRing: Networking with Shared Receive Rings",
+  "abstract": "Multicore systems parallelize to accommodate incoming Ethernet traffic, allocating one receive (Rx) ring with ≥1Ki entries per core by default. This ring size is sufficient to absorb packet bursts of single-core workloads. But the combined size of all Rx buffers (pointed to by all Rx rings) can exceed the size of the last-level cache. We observe that, in this case, NIC and CPU memory accesses are increasingly served by main memory, which might incur nonnegligible overheads when scaling to hundreds of incoming gigabits per second.\n\nTo alleviate this problem, we propose \"shRing,\" which shares each Rx ring among several cores when networking memory bandwidth consumption is high. ShRing thus adds software synchronization costs, but this overhead is offset by the smaller memory footprint. We show that, consequently, shRing increases the throughput of NFV workloads by up to 1.27x, and that it reduces their latency by up to 38x. The substantial latency reduction occurs when shRing shortens the per-packet processing time to a value smaller than the packet interarrival time, thereby preventing overload conditions.",
+  "abstract_source_id": "src-abstract-osdi-2023-a7c9146c",
   "venue": "osdi",
   "year": 2023,
   "track_or_session": "Transfer Your Bits",
@@ -138,6 +140,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2023-a7c9146c",
+      "url": "https://www.usenix.org/conference/osdi23/presentation/pismenny",
+      "kind": "paper-page",
+      "title": "ShRing: Networking with Shared Receive Rings",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:06:47Z",
+      "content_hash": "sha256:f2546dcd0ddf3de317d31022889b24456e1aa57ec307a2e224793c64bef64288",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

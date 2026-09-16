@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sosp-2024-vsoc-efficient-virtual-system-on-chip-on-heterogeneous-h-60f5d77e",
   "title": "vSoC: Efficient Virtual System-on-Chip on Heterogeneous Hardware",
+  "abstract": "Emerging mobile apps such as UHD video and AR/VR access diverse high-throughput hardware devices, e.g., video codecs, cameras, and image processors. However, today's mobile emulators exhibit poor performance when emulating these devices. We pinpoint the major reason to be the discrepancy between the guest's and host's memory architectures for hardware devices, i.e., the mobile guest's centralized memory on a system-on-chip (SoC) versus the PC/server's separated memory modules on individual hardware. Such a discrepancy makes the shared virtual memory (SVM) architecture of mobile emulators highly inefficient. To address this, we design and implement vSoC, the first virtual mobile SoC that enables virtual devices to efficiently share data through a unified SVM framework. We then build upon the SVM framework a prefetch engine that effectively hides the overhead of coherence maintenance (which guarantees that devices sharing the same virtual memory see the same data), a performance bottleneck in existing emulators. Compared to state-of-the-art emulators, vSoC brings 12%-49% higher frame rates to top popular mobile apps, while achieving 1.8--9.0× frame rates and 35%-62% lower motion-to-photon latency for emerging apps. vSoC is adopted by Huawei DevEco Studio, a major mobile IDE.",
+  "abstract_source_id": "src-abstract-sosp-2024-60f5d77e",
   "venue": "sosp",
   "year": 2024,
   "track_or_session": "Session 8: Data Center, Cloud, and Virtualization 9:00 - 10:30 Session Chair: Natacha Crooks",
@@ -293,6 +295,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-sosp-2024-60f5d77e",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "vSoC: Efficient Virtual System-on-Chip on Heterogeneous Hardware",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:19Z",
+      "content_hash": "sha256:b613162f9e7d53fac5fe410aff94d06ac71f23c6c31e2e9cc362b51e87d1bb79",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

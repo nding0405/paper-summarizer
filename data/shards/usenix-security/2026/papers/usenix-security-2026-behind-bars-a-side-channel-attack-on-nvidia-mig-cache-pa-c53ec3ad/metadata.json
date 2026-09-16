@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-behind-bars-a-side-channel-attack-on-nvidia-mig-cache-pa-c53ec3ad",
   "title": "Behind Bars: A Side-Channel Attack on NVIDIA MIG Cache Partitioning Using Memory Barriers",
+  "abstract": "NVIDIA Multi-Instance GPU (MIG) is a feature designed to enable isolation and secure multi-tenancy on large data center GPUs. MIG partitions a single GPU into multiple instances, each with dedicated hardware resources such as L2 cache slices. MIG is also documented to form the foundation of NVIDIA's confidential computing stack by providing hardware-isolated trusted execution environments. However, the security claims of MIG deserve closer investigation, especially given the complexity of the GPU memory system and its many (sparsely documented) memory instructions.\n\nIn this work, we empirically examine the behavior of GPU L2 cache with MIG enabled. We find that despite the partitioning design, cross-instance L2 cache interference still occurs. Specifically, memory barriers (membars) generated in one MIG instance have side effects that propagate across L2 partitions and affect the timing of certain load operations in other instances. We also find that these membars can be triggered by specific GPU activities, such as kernel launches. Building on these observations, we develop a new timing-based side-channel attack in which an attacker in one MIG instance can infer the kernel launch patterns of a victim in another instance. We show that this attack compromises the confidentiality of widely used GPU applications, such as large language model inference, because kernel launch patterns in these applications are correlated with sensitive information.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-c53ec3ad",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Hardware Security 4",
@@ -156,6 +158,19 @@
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening",
         "prepublication PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-c53ec3ad",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/gu-cheng",
+      "kind": "paper-page",
+      "title": "Behind Bars: A Side-Channel Attack on NVIDIA MIG Cache Partitioning Using Memory Barriers",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:23:09Z",
+      "content_hash": "sha256:0c6e3dc6ed92bf47211345ba59943f00d005025d581c49301d5bbd2b10400ed9",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

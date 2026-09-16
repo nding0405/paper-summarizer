@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-demystifying-the-in-security-of-qr-code-based-login-in-r-dbc757ed",
   "title": "Demystifying the (In)Security of QR Code-based Login in Real-world Deployments",
+  "abstract": "QR code-based Login (QRLogin) has emerged as a prevalent method for web account authentication, offering a more user-friendly alternative to traditional username and password entry. However, despite its growing popularity, the security of QRLogin has been overlooked. In particular, the lack of standardized QRLogin design and implementation guidelines, coupled with its wide deployment variability, raises significant concerns on the real-world deployments of QRLogin.\n\nThis paper presents the first systematic study on the security of QRLogin in real-world deployments. We begin our research with real-world studies to understand the deployment status of QRLogin and user perceptions of this novel authentication paradigm, which assists us in establishing a realistic threat model. We then proceed with a systematic security analysis by generalizing the typical workflow of QRLogin, examining how key variables adhere to common security principles, and ultimately exposing 6 potential flaws. We conduct security analysis on real-world QRLogin deployments with a semi-automatic detection pipeline, and reveal surprising results that 47 top websites (43% of tested) are vulnerable to at least one of the above flaws. These design and implementation flaws can lead to 5 types of attacks, including Authorization Hijacking, Double Login, Brute-force Login, Universal Account Takeover, and Privacy Abuse. We have responsibly reported all the identified issues and received 42 vulnerability IDs from official vulnerability repositories. We further provide an auditing tool and suggestions for developers and users, contributing a concerted step towards more secure implementations of QRLogin.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-dbc757ed",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Web and Mobile Security",
@@ -217,6 +219,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-dbc757ed",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/zhang-xin",
+      "kind": "paper-page",
+      "title": "Demystifying the (In)Security of QR Code-based Login in Real-world Deployments",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:19:17Z",
+      "content_hash": "sha256:61987b831cf985b51fd2de259d89f91a4f9900b1d3f7a5a1b07810cd1de97f21",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

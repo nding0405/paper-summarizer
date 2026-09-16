@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2025-concurrency-informed-orchestration-for-serverless-functi-dda7cf84",
   "title": "Concurrency-Informed Orchestration for Serverless Functions",
+  "abstract": "Cold start delays are a main pain point for today's FaaS (Function-as-a-Service) platforms. A widely used mitigation strategy is keeping recently invoked function containers alive in memory to enable warm starts with minimal overhead. This paper identifies new challenges that state-of-the-art FaaS keep-alive policies neglect. These challenges are caused by concurrent function invocations, a common FaaS workload behavior. First, concurrent requests present a tradeoff between reusing busy containers (delayed warm starts) versus cold-starting containers. Second, concurrent requests cause imbalanced evictions of containers that will be reused shortly thereafter. To tackle the challenges, we propose a novel serverless function container orchestration algorithm called CIDRE. CIDRE makes informed decisions to speculatively choose between a delayed warm start and a cold start under concurrency-driven function scaling. CIDRE uses both fine-grained container-level and coarse-grained concurrency information to make balanced eviction decisions. We evaluate CIDRE extensively using two production FaaS workloads. Results show that CIDRE reduces the cold start ratio and the average invocation overhead by up to 75.1% and 39.3% compared to state-of-the-art function keep-alive policies.",
+  "abstract_source_id": "src-abstract-asplos-2025-dda7cf84",
   "venue": "asplos",
   "year": 2025,
   "track_or_session": "Session 10C: Serverless Computing",
@@ -167,6 +169,19 @@
       "official": false,
       "supports": [
         "Indexed abstract and open-access links used for relevance classification and ancillary-link discovery."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2025-dda7cf84",
+      "url": "https://api.openalex.org/works/doi:10.1145/3676641.3716253?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Concurrency-Informed Orchestration for Serverless Functions",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:00:46Z",
+      "content_hash": "sha256:b9dafc27def4022e5568186ab5884c40ea23a9c86c386a98c9a08da85be291ad",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

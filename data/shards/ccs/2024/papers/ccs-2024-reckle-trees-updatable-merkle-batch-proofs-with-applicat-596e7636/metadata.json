@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2024-reckle-trees-updatable-merkle-batch-proofs-with-applicat-596e7636",
   "title": "Reckle Trees: Updatable Merkle Batch Proofs with Applications",
+  "abstract": "We propose Reckle trees, a new vector commitment based on succinct RECursive arguments and MerKLE trees. Reckle trees' distinguishing feature is their support for succinct batch proofs that are updatable - enabling new applications in the blockchain setting where a proof needs to be computed and efficiently maintained over a moving stream of blocks. Our technical approach is based on embedding the computation of the batch hash inside the recursive Merkle verification via a hash-based accumulator called canonical hashing. Due to this embedding, our batch proofs can be updated in logarithmic time, whenever a Merkle leaf (belonging to the batch or not) changes, by maintaining a data structure that stores previously-computed recursive proofs. Assuming enough parallelism, our batch proofs are also computable in O(log n) parallel time - independent of the size of the batch. As a natural extension of Reckle trees, we also introduce Reckle+ trees. Reckle+ trees provide updatable and succinct proofs for certain types of Map/Reduce computations. In this setting, a prover can commit to a memory M and produce a succinct proof for a Map/Reduce computation over a subset I of M. The proof can be efficiently updated whenever I or M changes.",
+  "abstract_source_id": "src-abstract-ccs-2024-596e7636",
   "venue": "ccs",
   "year": 2024,
   "track_or_session": "Cycle 1",
@@ -201,6 +203,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2024-596e7636",
+      "url": "https://api.openalex.org/works/doi:10.1145/3658644.3670354?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Reckle Trees: Updatable Merkle Batch Proofs with Applications",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:11:33Z",
+      "content_hash": "sha256:76748bb2b34518128aac28ebf7ddb3c7730dce1985de92620f76cd1053089291",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

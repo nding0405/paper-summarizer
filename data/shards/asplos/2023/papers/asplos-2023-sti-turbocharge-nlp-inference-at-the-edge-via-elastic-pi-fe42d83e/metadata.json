@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2023-sti-turbocharge-nlp-inference-at-the-edge-via-elastic-pi-fe42d83e",
   "title": "STI: Turbocharge NLP Inference at the Edge via Elastic Pipelining",
+  "abstract": "Natural Language Processing (NLP) inference is seeing increasing adoption by mobile applications, where on-device inference is desirable for crucially preserving user data privacy and avoiding network roundtrips. Yet, the unprecedented size of an NLP model stresses both latency and memory, creating a tension between the two key resources of a mobile device. To meet a target latency, holding the whole model in memory launches execution as soon as possible but increases one app’s memory footprints by several times, limiting its benefits to only a few inferences before being recycled by mobile memory management. On the other hand, loading the model from storage on demand incurs IO as long as a few seconds, far exceeding the delay range satisfying to a user; pipelining layerwise model loading and execution does not hide IO either, due to the high skewness between IO and computation delays.",
+  "abstract_source_id": "src-abstract-asplos-2023-fe42d83e",
   "venue": "asplos",
   "year": 2023,
   "track_or_session": "Session 1C: IoT/Embedded/Mobile",
@@ -131,6 +133,19 @@
       "official": false,
       "supports": [
         "Indexed abstract used with the official technical-session context for relevance classification, plus alternate-copy and explicitly printed ancillary links."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2023-fe42d83e",
+      "url": "https://api.openalex.org/works/doi:10.1145/3575693.3575698?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "STI: Turbocharge NLP Inference at the Edge via Elastic Pipelining",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T21:59:45Z",
+      "content_hash": "sha256:d32c055a4b5492c66b7b5bc91347a426a5277ba466e8625efe94cc0f29af376e",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

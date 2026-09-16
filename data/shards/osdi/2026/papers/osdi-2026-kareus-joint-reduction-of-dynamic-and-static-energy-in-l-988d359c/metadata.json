@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2026-kareus-joint-reduction-of-dynamic-and-static-energy-in-l-988d359c",
   "title": "Kareus: Joint Reduction of Dynamic and Static Energy in Large Model Training",
+  "abstract": "The computing demand of AI is growing at an unprecedented rate, but energy supply is not keeping pace. As a result, energy has become an expensive and contended resource that requires explicit management and optimization. Although recent works have made significant progress in large model training optimization, they focus on optimizing either dynamic or static energy consumption.\n\nWe find that fine-grained kernel scheduling and frequency scaling jointly and interdependently impact both dynamic and static energy consumption. Based on this finding, we design Kareus, a training system that pushes the time–energy tradeoff frontier by optimizing both aspects. Kareus decomposes the intractable joint optimization problem into local, partition-based subproblems. It then uses a multi-pass multi-objective optimization algorithm to find execution schedules that push the time–energy tradeoff frontier. Compared to the state of the art, Kareus reduces training energy by up to 28.3% at the same training time, or reduces training time by up to 27.5% at the same energy consumption.",
+  "abstract_source_id": "src-abstract-osdi-2026-988d359c",
   "venue": "osdi",
   "year": 2026,
   "track_or_session": "Power, Energy, Sustainability",
@@ -125,6 +127,19 @@
       "official": true,
       "supports": [
         "Official proceedings availability and canonical conference versions."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2026-988d359c",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/wu-ruofan",
+      "kind": "paper-page",
+      "title": "Kareus: Joint Reduction of Dynamic and Static Energy in Large Model Training",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:08:30Z",
+      "content_hash": "sha256:da341e65117db25b9325c047c13c21fe6ef772c13018680cbcd84056a2ae694d",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

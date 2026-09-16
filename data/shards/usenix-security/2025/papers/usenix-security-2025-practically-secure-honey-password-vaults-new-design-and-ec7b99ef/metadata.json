@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-practically-secure-honey-password-vaults-new-design-and-ec7b99ef",
   "title": "Practically Secure Honey Password Vaults: New Design and New Evaluation against Online Guessing",
+  "abstract": "Password vaults are used to manage multiple account passwords, encrypted with a master password. However, ciphertext stored on synchronization servers is vulnerable to leakage and offline guessing attacks, potentially compromising all accounts. Honey password vaults address this by generating decoy vaults for incorrect master passwords, making offline guessing infeasible and requiring online verification.\n\nExisting studies on honey vaults rely on a small dataset of only 276 vaults for model training and security evaluation, limiting their conclusions. More importantly, existing evaluations focus solely on the distinguishability between real and decoy vaults, overlooking practical security: How many accounts could be cracked via online guessing?\n\nIn this paper, we construct a large dataset of millions of vaults by aggregating numerous leaked password datasets. With the dataset, we employ advanced machine learning techniques for both decoy generation and identification. We show that various text classification algorithms, especially pre-trained models, significantly outperform existing attacks with distinguishing accuracy of 95.79%–83.75%. Further, we introduce a Transformer model that generates more plausible decoy vaults, no attacks achieve accuracy more than 64.35%.\n\nWe further assess the practical security of honey vaults against online guessing. Our new model achieves the best performance, only 0.51 accounts is cracked on average with 1,000 online attempts. By applying two simple measures, we enhance the scheme to a practical level: 1) using honey accounts for leakage detection, and 2) avoiding the encryption of passwords for websites with unlimited login attempts. These improvements reduce the cracked number to 0.11. We also offer new insights, such as that even a poor model can achieve notable practical security by using our measures.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-ec7b99ef",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Authentication",
@@ -154,6 +156,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-ec7b99ef",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/cheng-haibo",
+      "kind": "paper-page",
+      "title": "Practically Secure Honey Password Vaults: New Design and New Evaluation against Online Guessing",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:21:13Z",
+      "content_hash": "sha256:7928cc1bdafd9c7b1322c3bd2e8c4d278173d83ec47595676ff440b9fb5b43e8",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

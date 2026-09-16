@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2026-aletheia-automated-detection-of-data-integrity-violation-9c6d2972",
   "title": "Aletheia: Automated Detection of Data Integrity Violations in Microservices",
+  "abstract": "The decomposition of applications into microservices results in data being stored across heterogeneous systems, with data schemas partitioned and managed by separate services. As the size and complexity of microservice deployments grow, the consistency of data associations at the application level can be overlooked, and it becomes challenging to manually identify data integrity violations.\n\nIn this paper, we present a systematic approach for identifying semantic violations in microservice ecosystems, namely operations and service interactions that break data integrity. We formalize these violations by leveraging the Entity-Relationship model and relational algebra to characterize problematic operation patterns across distributed services. We then introduce Aletheia, a static analysis tool that operationalizes this framework, using the static single assignment (SSA) representation to track data flow and a novel abstract call graph to detect integrity violations. We evaluate Aletheia on 7 open-source applications, detecting 46 previously unreported integrity violations, and use production-scale synthetic applications to demonstrate scalability to large call graphs with up to 500 microservices.",
+  "abstract_source_id": "src-abstract-osdi-2026-9c6d2972",
   "venue": "osdi",
   "year": 2026,
   "track_or_session": "Program Analysis",
@@ -146,6 +148,19 @@
       "official": true,
       "supports": [
         "Official proceedings availability and canonical conference versions."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2026-9c6d2972",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/ferreira",
+      "kind": "paper-page",
+      "title": "Aletheia: Automated Detection of Data Integrity Violations in Microservices",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:08:00Z",
+      "content_hash": "sha256:485367a2c329945192633a434f207e5ec1934ae7168899b1ae2ef0301f01c6f2",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

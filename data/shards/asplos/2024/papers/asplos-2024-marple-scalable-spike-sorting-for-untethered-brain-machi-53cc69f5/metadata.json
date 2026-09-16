@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2024-marple-scalable-spike-sorting-for-untethered-brain-machi-53cc69f5",
   "title": "Marple: Scalable Spike Sorting for Untethered Brain-Machine Interfacing",
+  "abstract": "Spike sorting is the process of parsing electrophysiological signals from neurons to identify if, when, and which particular neurons fire. Spike sorting is a particularly difficult task in computational neuroscience due to the growing scale of recording technologies and complexity in traditional spike sorting algorithms. Previous spike sorters can be divided into software-based and hardware-based solutions. Software solutions are highly accurate but operate on recordings after-the-fact, and often require utilization of high-power GPUs to process in a timely fashion, and they cannot be used in portable applications. Hardware solutions suffer in terms of accuracy due to the simplification of mechanisms for implementation's sake and process only up to 128 inputs. This work answers the question: \"How much computation power and memory storage is needed to sort spikes from 1000s of channels to keep up with advances in probe technology?\" We analyze the computational and memory requirements for modern software spike sorters to identify their potential bottlenecks - namely in the template memory storage. We architect Marple, a highly optimized hardware pipeline for spike sorting which incorporates a novel mechanism to reduce the template memory storage from 8 - 11x. Marple is scalable, uses a flexible vector-based back-end to perform neuron identification, and a fixed-function front-end to filter the incoming streams into areas of interest. The implementation is projected to use just 79mW in 7nm, when spike sorting 10K channels at peak activity. We further demonstrate, for the first time, a machine learning replacement for the template matching stage.",
+  "abstract_source_id": "src-abstract-asplos-2024-53cc69f5",
   "venue": "asplos",
   "year": 2024,
   "track_or_session": "Session 9A: Accelerated Applications",
@@ -235,6 +237,19 @@
       "official": false,
       "supports": [
         "Indexed alternate-version and institutional-copy links; not used as the authoritative relevance source."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2024-53cc69f5",
+      "url": "https://api.openalex.org/works/doi:10.1145/3620665.3640357?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Marple: Scalable Spike Sorting for Untethered Brain-Machine Interfacing",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:00:18Z",
+      "content_hash": "sha256:c423da77ebc420259c9e360a86b15b05c5b297628c94e62d45a94aaea061ccaf",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

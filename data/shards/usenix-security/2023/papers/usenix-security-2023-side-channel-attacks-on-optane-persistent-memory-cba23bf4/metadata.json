@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2023-side-channel-attacks-on-optane-persistent-memory-cba23bf4",
   "title": "Side-Channel Attacks on Optane Persistent Memory",
+  "abstract": "There is a constant evolution of technology for cloud environments, including the development of new memory storage technology, such as persistent memory. The newly-released Intel Optane persistent memory provides high-performance, persistent, and byte-addressable access for storage-class applications in data centers. While Optane’s direct data management is fast and efficient, it is unclear whether it comes with undesirable security implications. This is problematic, as cloud tenants are physically co-located on the same hardware.\n\nIn this paper, we present the first side-channel security analysis of Intel Optane persistent memory. We reverse-engineer the internal cache hierarchy, cache sizes, associativity, replacement policies, and wear-leveling mechanism of the Optane memory. Based on this reverse-engineering, we construct four new attack primitives on Optane’s internal components. We then present four case studies using these attack primitives. First, we present local covert channels based on Optane’s internal caching. Second, we demonstrate a keystroke side-channel attack on a remote user via Intel’s Optane-optimized key-value store, pmemkv. Third, we study a fully remote covert channel through pmemkv. Fourth, we present our Note Board attack, also through pmemkv, enabling two parties to store and exchange messages covertly across long time gaps and even power cycles of the server. Finally, we discuss mitigations against our attacks.",
+  "abstract_source_id": "src-abstract-usenix-security-2023-cba23bf4",
   "venue": "usenix-security",
   "year": 2023,
   "track_or_session": "Side Channel Attacks",
@@ -175,6 +177,19 @@
       "official": true,
       "supports": [
         "authors, affiliations when published, abstract, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2023-cba23bf4",
+      "url": "https://www.usenix.org/conference/usenixsecurity23/presentation/liu-sihang",
+      "kind": "paper-page",
+      "title": "Side-Channel Attacks on Optane Persistent Memory",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:12:57Z",
+      "content_hash": "sha256:ab609d402e0d09b705a641e75785c5706410bb2958e09658e89494ca242c709d",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

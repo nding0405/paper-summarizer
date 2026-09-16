@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2023-hyrax-fail-in-place-server-operation-in-cloud-platforms-c472db72",
   "title": "Hyrax: Fail-in-Place Server Operation in Cloud Platforms",
+  "abstract": "Today’s cloud platforms handle server hardware failures by shutting down the affected server and only turning it back online once it has been repaired by a technician. At cloud scale, this all-or-nothing operating model is becoming increasingly unsustainable. This model is also at odds with technology trends, such as the need for new cooling technology.\n\nThis paper introduces Hyrax, a datacenter stack that enables compute servers with failed components to continue hosting VMs while hiding the underlying degraded capacity and performance. A key enabler of Hyrax is a novel model of changes in memory interleaving when deactivating faulty memory modules. Experiments on cloud production servers show that Hyrax overcomes common hardware failures without impacting peak VM performance. In large-scale simulations with production traces, Hyrax reduces server repair requirements by 50-60% without impacting VM scheduling.",
+  "abstract_source_id": "src-abstract-osdi-2023-c472db72",
   "venue": "osdi",
   "year": 2023,
   "track_or_session": "Expanding, Hardening, and Deploying Your Bits",
@@ -411,6 +413,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2023-c472db72",
+      "url": "https://www.usenix.org/conference/osdi23/presentation/lyu",
+      "kind": "paper-page",
+      "title": "Hyrax: Fail-in-Place Server Operation in Cloud Platforms",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:06:34Z",
+      "content_hash": "sha256:5e7e4c3dd68a3b8deaef688d2f8043c7682eddc0c58acec30b52fd2953439c2f",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2025-quake-adaptive-indexing-for-vector-search-c14d42d6",
   "title": "Quake: Adaptive Indexing for Vector Search",
+  "abstract": "Vector search, the task of finding the k-nearest neighbors of a query vector against a database of high-dimensional vectors, underpins many machine learning applications, including retrieval-augmented generation, recommendation systems, and information retrieval. However, existing approximate nearest neighbor (ANN) methods perform poorly under dynamic and skewed workloads where data distributions evolve. We introduce Quake, an adaptive indexing system that maintains low latency and high recall in such environments. Quake employs a multi-level partitioning scheme that adjusts to updates and changing access patterns, guided by a cost model that predicts query latency based on partition sizes and access frequencies. Quake also dynamically sets query execution parameters to meet recall targets using a novel recall estimation model. Furthermore, Quake utilizes NUMA-aware intra-query parallelism for improved memory bandwidth utilization during search. To evaluate Quake, we prepare a Wikipedia vector search workload and develop a workload generator to create vector search workloads with configurable access patterns. Our evaluation shows that on dynamic workloads, Quake achieves query latency reductions of 1.5–38× and update latency reductions of 4.5–126× compared to state-of-the-art indexes such as SVS, DiskANN, HNSW, and SCANN.",
+  "abstract_source_id": "src-abstract-osdi-2025-c14d42d6",
   "venue": "osdi",
   "year": 2025,
   "track_or_session": "Database Systems",
@@ -243,6 +245,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2025-c14d42d6",
+      "url": "https://www.usenix.org/conference/osdi25/presentation/mohoney",
+      "kind": "paper-page",
+      "title": "Quake: Adaptive Indexing for Vector Search",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:07:46Z",
+      "content_hash": "sha256:4aed27a7697a967086982dc719b33a67ff9d882209452799970b0df6dc3a7f2e",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

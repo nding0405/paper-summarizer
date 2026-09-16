@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2024-verisimplepir-verifiability-in-simplepir-at-no-online-co-b4d5f73f",
   "title": "VeriSimplePIR: Verifiability in SimplePIR at No Online Cost for Honest Servers",
+  "abstract": "We present VeriSimplePIR, a verifiable version of the state-of-the-art semi-honest SimplePIR protocol. VeriSimplePIR is a stateful verifiable PIR scheme guaranteeing that all queries are consistent with a fixed, well-formed database. It is the first efficient verifiable PIR scheme to not rely on an honest digest to ensure security; any digest, even one produced by a malicious server, is sufficient to commit to some database. This is due to our extractable verification procedure, which can extract the entire database from the consistency proof checked against each response.\n\nFurthermore, VeriSimplePIR ensures this strong security guarantee without compromising the performance of SimplePIR. The online communication overhead is roughly 1.1-1.5x SimplePIR, and the online computation time on the server is essentially the same. We achieve this low overhead via a novel one-time preprocessing protocol that generates a reusable proof that can verify any number of subsequent query-response pairs as long as no malicious behavior is detected. As soon as the verification procedure rejects a response from the server, the offline phase must be rerun to compute a new proof. VeriSimplePIR represents an approach to maliciously secure cryptography that is highly optimized for honest parties while maintaining security even in the presence of malicious adversaries.",
+  "abstract_source_id": "src-abstract-usenix-security-2024-b4d5f73f",
   "venue": "usenix-security",
   "year": 2024,
   "track_or_session": "Crypto V: Private Information Retrieval",
@@ -91,6 +93,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2024-b4d5f73f",
+      "url": "https://www.usenix.org/conference/usenixsecurity24/presentation/de-castro",
+      "kind": "paper-page",
+      "title": "VeriSimplePIR: Verifiability in SimplePIR at No Online Cost for Honest Servers",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:17:59Z",
+      "content_hash": "sha256:87bde851a9333e6407a88234ac2ff0e2c09872db0ee226351b1d8d43164030f2",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

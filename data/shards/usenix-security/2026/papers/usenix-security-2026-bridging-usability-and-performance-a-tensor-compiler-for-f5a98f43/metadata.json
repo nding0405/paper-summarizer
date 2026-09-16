@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-bridging-usability-and-performance-a-tensor-compiler-for-f5a98f43",
   "title": "Bridging Usability and Performance: A Tensor Compiler for Autovectorizing Homomorphic Encryption",
+  "abstract": "Homomorphic encryption (HE) offers strong privacy guarantees by enabling computation over encrypted data. However, the performance of tensor operations in HE is highly sensitive to how the plaintext data is packed into ciphertexts. Large tensor programs introduce numerous possible layout assignments, making it both challenging and tedious for users to manually write efficient HE programs.\n\nIn this paper, we present Rotom, a compilation framework that autovectorizes tensor programs into optimized HE programs. Rotom systematically explores a wide range of layout assignments, applies state-of-the-art optimizations, and automatically generates an equivalent, efficient HE program. At its core, Rotom utilizes a novel, lightweight ApplyRoll layout conversion operator to easily modify the underlying data layouts and unlock new avenues for performance gains. Our evaluation demonstrates Rotom scalably compiles all tensor workloads in under 5 minutes, reduces rotations in hand-tuned protocols by up to 3×, and achieves up to 80× performance improvement over prior autovectorization systems.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-f5a98f43",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Applications of Cryptography 1",
@@ -114,6 +116,19 @@
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening",
         "prepublication PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-f5a98f43",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/chen-edward",
+      "kind": "paper-page",
+      "title": "Bridging Usability and Performance: A Tensor Compiler for Autovectorizing Homomorphic Encryption",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:23:16Z",
+      "content_hash": "sha256:796d53a3ed8e28521f3304673c1a4038a11ebd28d109fc08287b8885f329de8d",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

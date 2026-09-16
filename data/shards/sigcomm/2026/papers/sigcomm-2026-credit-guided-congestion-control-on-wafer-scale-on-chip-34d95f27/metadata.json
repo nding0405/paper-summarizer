@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sigcomm-2026-credit-guided-congestion-control-on-wafer-scale-on-chip-34d95f27",
   "title": "Credit-Guided Congestion Control on Wafer-Scale On-Chip Networks for Molecular Dynamics",
+  "abstract": "Molecular dynamics (MD) is a cornerstone of scientific computing, but strong scaling often collapses at high parallelism because communication is bursty and highly sensitive to tail latency. MD advances by repeating a fixed timestep loop (one iteration of force computation and state update), and performance is largely determined by how quickly timesteps complete. A key reason is that each timestep contains short, synchronized communication phases, followed by a global dependency before the next timestep. Wafer-scale chips (WSCs) offer cycle-level latency and high on-chip bandwidth, yet their 2D mesh fabrics can still suffer burst-induced queue buildup; existing wavelet scheduling relies on a static stride that either over-injects (triggering credit backpressure) or over-throttles (wasting bandwidth) as conditions evolve. We present WaveCC, a credit-guided runtime that dynamically adapts wavelet injection to instantaneous fabric pressure. WaveCC leverages router credits—the native backpressure signal in lossless WSC fabrics—without modifying router microarchitecture. At coarse granularity, WaveCC uses phase-level credit statistics to adapt a global stride at phase boundaries; at fine granularity, it uses credit gradients to shape per-PE flit injection within burst windows. Across microbenchmarks and trace-driven evaluations, WaveCC can significantly reduce average and tail communication completion time and improves timestep throughput.",
+  "abstract_source_id": "src-abstract-sigcomm-2026-34d95f27",
   "venue": "sigcomm",
   "year": 2026,
   "track_or_session": "Research Session 17: Congestion, Rate & Schedule Control — Research Paper",
@@ -317,6 +319,19 @@
       "official": true,
       "supports": [
         "official main-paper scope and track definitions"
+      ]
+    },
+    {
+      "id": "src-abstract-sigcomm-2026-34d95f27",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/search/match?query=Credit-Guided%20Congestion%20Control%20on%20Wafer-Scale%20On-Chip%20Networks%20for%20Molecular%20Dynamics&fields=title,abstract",
+      "kind": "semantic-scholar",
+      "title": "Credit-Guided Congestion Control on Wafer-Scale On-Chip Networks for Molecular Dynamics",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:59:17Z",
+      "content_hash": "sha256:e762a0c0230e0599e50fa2c6baba3a4d3360cf18af98d11bfa0ad8c025975b24",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

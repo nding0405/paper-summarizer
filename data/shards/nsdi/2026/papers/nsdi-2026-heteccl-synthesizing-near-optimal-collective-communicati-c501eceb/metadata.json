@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2026-heteccl-synthesizing-near-optimal-collective-communicati-c501eceb",
   "title": "HeteCCL: Synthesizing Near-Optimal Collective Communication Schedules for Heterogeneous GPU Clusters",
+  "abstract": "Training large language models demands massive computing and networking resources. However, existing clusters often face shortages of homogeneous resources and vendor lock-in, forcing the use of heterogeneous hardware, which makes synchronizing training across nodes highly challenging. Current solutions to cluster heterogeneity suffer from low collective communication efficiency, with suboptimal scheduling and slow algorithm synthesis. We present HeteCCL, a unified method for generating near-optimal collective communication schedules on heterogeneous clusters. HeteCCL models the cluster topology and link bandwidth in detail, quantizes data chunks at the schedule-step level, and formulates the scheduling problem as a maximum parallel transfer problem on a weighted directed graph. To accelerate synthesis, HeteCCL encodes bandwidth and routing constraints as SMT formulas and applies counterexample-guided inductive synthesis to refine constraints and prune the search space iteratively. Experiments on heterogeneous testbeds, each consisting of 32 H20 and V100 GPUs, show that HeteCCL outperforms NCCL, TACCL, and TE-CCL, achieving up to 2.8×, 4.4×, and 2.6× higher bandwidth. It also accelerates synthesis by up to 2 orders of magnitude compared to state-of-the-art efforts, and improves end-to-end training efficiency by 23%–37%.",
+  "abstract_source_id": "src-abstract-nsdi-2026-c501eceb",
   "venue": "nsdi",
   "year": 2026,
   "track_or_session": "Cloud Systems, Shared and Scalable",
@@ -265,6 +267,19 @@
         "proceedings page range and page count",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2026-c501eceb",
+      "url": "https://www.usenix.org/conference/nsdi26/presentation/hei",
+      "kind": "paper-page",
+      "title": "HeteCCL: Synthesizing Near-Optimal Collective Communication Schedules for Heterogeneous GPU Clusters",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:05:26Z",
+      "content_hash": "sha256:80696018d3d0423e21075293e2e093bcfc64cd23972005cf90de6e6ca3b08bc3",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

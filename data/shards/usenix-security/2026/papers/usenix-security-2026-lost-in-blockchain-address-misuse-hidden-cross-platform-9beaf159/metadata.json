@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-lost-in-blockchain-address-misuse-hidden-cross-platform-9beaf159",
   "title": "Lost in Blockchain Address Misuse: Hidden Cross-Platform Risks and Their Security Impact",
+  "abstract": "Blockchain systems, such as Ethereum, employ an account-based model, where each account is uniquely identified by an address. As the fundamental interface for user interaction and asset security, addresses are critical but also pose significant risks when misused. In this paper, we systematically reveal and analyze a class of risks termed Address Misuse , which includes two categories: Contract Account (CA) Misuse and Externally Owned Account (EOA) Misuse . Specifically, CA Misuse arises when users mistakenly treat non-contract addresses (NCAs) as CAs, while EOA Misuse occurs when users interact with EOAs whose private keys are exposed. For each category, we reveal the underlying mechanisms and also introduce previously undisclosed attack vectors that enable attackers to exploit these vulnerabilities for profit. To evaluate their prevalence and impacts, we first construct a dataset from GitHub and Stack Exchange, which contains addresses of various blockchain networks. This dataset includes 10 million candidate addresses for misuse analysis and 16 million exposed private keys. We then perform a large-scale on-chain analysis of their associated transactions on Ethereum and BSC. By combining heuristic rules, transaction pattern analysis, and symbolic execution, we identify 65,340 high-risk address instances, with associated asset losses amounting to about 127k ETH and 17.7k BNB, equivalent to over $574.8M. We evaluate the accuracy of our detection methods to ensure the reliability of the results, achieving an overall precision of 99.11%. Besides, our empirical evaluation also reveals two novel, previously undisclosed attack vectors, providing real-world evidence of how attackers actively exploit users' address misuse for profit.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-9beaf159",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Software Security 1",
@@ -240,6 +242,19 @@
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening",
         "prepublication PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-9beaf159",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/shao-zhenzhe",
+      "kind": "paper-page",
+      "title": "Lost in Blockchain Address Misuse: Hidden Cross-Platform Risks and Their Security Impact",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:24:33Z",
+      "content_hash": "sha256:5cf424e3e8e736a0083c6f7e0a1e9ca650708e3589bf980ab1d123b46acdf5f6",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

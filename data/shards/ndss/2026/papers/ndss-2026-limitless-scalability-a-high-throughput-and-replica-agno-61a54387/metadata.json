@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2026-limitless-scalability-a-high-throughput-and-replica-agno-61a54387",
   "title": "Limitless Scalability: A High-Throughput and Replica-Agnostic BFT Consensus",
+  "abstract": "Traditional Byzantine Fault Tolerance (BFT) consensus protocols adopt a star topology with a leader to handle all message transmission, causing performance to degrade rapidly as replicas grow. Recently, many studies have sought to improve scalability by exploring multi-layer topology (e.g., tree structures) to reduce the leader's fanout. However, these approaches either depend on a polynomial fanout to preserve fault tolerance or are constrained by the impact of topology depth on throughput, ultimately leading to only modest scalability gains. To this end, we propose Tide, the first BFT consensus that maintains robust performance as replica count grows, which is enabled by our design of logarithmic-fanout topology and high-parallel pipelining. Tide utilizes redundant connections as key insight in topology, reducing fanout without compromising resilience. Tide further introduces a novel pipelining where inter-layer interactions dynamically determine the degree of proposal parallelism, thereby decoupling throughput from topology depth. Real-world experiments with 100 cloud servers demonstrate that as the replica count scales from 100 to 1,000, state-of-the-art protocols experience a 65% to 90% decrease in throughput and a 50× increase in latency.\n\nIn contrast, Tide maintains a replica-agnostic high throughput of around 50ktps, over 5x higher than others, while its latency remains at 0.3s-0.4s.",
+  "abstract_source_id": "src-abstract-ndss-2026-61a54387",
   "venue": "ndss",
   "year": 2026,
   "track_or_session": "Fall submission cycle",
@@ -223,6 +225,19 @@
       "official": false,
       "supports": [
         "independent proceedings identity reconciliation"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2026-61a54387",
+      "url": "https://www.ndss-symposium.org/ndss-paper/limitless-scalability-a-high-throughput-and-replica-agnostic-bft-consensus/",
+      "kind": "paper-page",
+      "title": "Limitless Scalability: A High-Throughput and Replica-Agnostic BFT Consensus",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:22:24Z",
+      "content_hash": "sha256:6590271358286bcd41f12215cf39a09c7f5755b6442e8b005e5c603ed46e3f54",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

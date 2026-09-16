@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2024-swiftrange-a-short-and-efficient-zero-knowledge-range-ar-7ae20396",
   "title": "SwiftRange: A Short and Efficient Zero-Knowledge Range Argument For Confidential Transactions and More",
+  "abstract": "Zero-knowledge range proofs play a critical role in confidential transactions (CT) on blockchain systems. They are used to prove the non-negativity of committed transaction payments without disclosing the exact values. Logarithmicsized range proofs with transparent setups, e.g., Bulletproofs, which aim to prove a committed value lies in the range [0, 2 -1] where is the bit length of the range, have gained growing popularity for communication-critical blockchain systems as they increase scalability by allowing a block to accommodate more transactions. In this paper, we propose SwiftRange, a new type of logarithmic-sized zero-knowledge range argument with a transparent setup in the discrete logarithm setting. Our argument can be a drop-in replacement for range proofs in blockchain-based confidential transactions. Compared with Bulletproofs, our argument has higher computational efficiency and lower round complexity while incurring comparable communication overheads for CT-friendly ranges, where N ∈ {32, 64}. Specifically, a single SwiftRange achieves 1.73× and 1.37× proving efficiency with no more than 1.1× communication costs for both ranges, respectively. More importantly, our argument is doubly efficient in verification efficiency. Furthermore, our argument has a smaller size when N ≤ 16, making it competitive for many other communication-critical applications. Our argument supports the aggregation of multiple single arguments for greater efficiency in communication and verification. Finally, we benchmarked our argument against the state-of-the-art range proofs to demonstrate its practicality.",
+  "abstract_source_id": "src-abstract-sp-2024-7ae20396",
   "venue": "sp",
   "year": 2024,
   "track_or_session": "Spring cycle",
@@ -180,6 +182,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2024-7ae20396",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "SwiftRange: A Short and Efficient Zero-Knowledge Range Argument For Confidential Transactions and More",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:42Z",
+      "content_hash": "sha256:d62dac834635b4cd1890a53da454ceae7aaa151189662d990ac591dfd5cb6b3e",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

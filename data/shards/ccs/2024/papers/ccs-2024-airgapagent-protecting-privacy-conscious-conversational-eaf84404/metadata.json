@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2024-airgapagent-protecting-privacy-conscious-conversational-eaf84404",
   "title": "AirGapAgent: Protecting Privacy-Conscious Conversational Agents",
+  "abstract": "The growing use of large language model (LLM)-based conversational agents to manage sensitive user data raises significant privacy concerns.While these agents excel at understanding and acting on context, this capability can be exploited by malicious actors.We introduce a novel threat model where adversarial third-party apps manipulate the context of interaction to trick LLM-based agents into revealing private information not relevant to the task at hand.Grounded in the framework of contextual integrity, we introduce AirGapAgent, a privacy-conscious agent designed to prevent unintended data leakage by restricting the agent's access to only the data necessary for a specific task.Extensive experiments using Gemini, GPT, and Mistral models as agents validate our approach's effectiveness in mitigating this form of context hijacking while maintaining core agent functionality.For example, we show that a single-query context hijacking attack on a Gemini Ultra agent reduces its ability to protect user data from 94% to 45%, while an AirGapAgent achieves 97% protection, rendering the same attack ineffective. CCS Concepts• Security and privacy → Information flow control.",
+  "abstract_source_id": "src-abstract-ccs-2024-eaf84404",
   "venue": "ccs",
   "year": 2024,
   "track_or_session": "Cycle 2",
@@ -243,6 +245,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2024-eaf84404",
+      "url": "https://api.openalex.org/works/doi:10.1145/3658644.3690350?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "AirGapAgent: Protecting Privacy-Conscious Conversational Agents",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:08:41Z",
+      "content_hash": "sha256:6a4e9157ce8233cc5476f11dd353417f35c6a3134241b9cd8b7f437ff650e308",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

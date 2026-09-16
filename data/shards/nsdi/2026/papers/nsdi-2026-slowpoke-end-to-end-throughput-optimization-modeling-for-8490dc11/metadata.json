@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2026-slowpoke-end-to-end-throughput-optimization-modeling-for-8490dc11",
   "title": "Slowpoke: End-to-end Throughput Optimization Modeling for Microservice Applications",
+  "abstract": "Slowpoke is a new system to accurately quantify the effects of hypothetical optimizations on end-to-end throughput for microservice applications, without relying on tracing or a priori knowledge of the call graph. Microservice operators can use Slowpoke to ask what-if performance analysis questions of the form \"What throughput could my retail application sustain if I optimized the shopping cart service from 10K req/s to 20K req/s?\" . Given a target service and its hypothetical optimization, Slowpoke employs a performance model that determines how to selectively slow down non-target services to preserve the relative effect of the optimization. It then performs profiling experiments to predict the end-to-end throughput, as if the optimization had been implemented. Applied to four real-world microservice applications, Slowpoke accurately quantifies optimization effects with a root mean squared error of only 2.07%. It is also effective in more complex scenarios, e.g., predicting throughput after scaling optimizations or when bottlenecks arise from mutex contention. Evaluated in large-scale deployments of 45 nodes and 108 synthetic benchmarks, Slowpoke further demonstrates its scalability and coverage of a wide range of microservice characteristics.",
+  "abstract_source_id": "src-abstract-nsdi-2026-8490dc11",
   "venue": "nsdi",
   "year": 2026,
   "track_or_session": "Managing Complexity at Scale",
@@ -181,6 +183,19 @@
         "proceedings page range and page count",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2026-8490dc11",
+      "url": "https://www.usenix.org/conference/nsdi26/presentation/xie",
+      "kind": "paper-page",
+      "title": "Slowpoke: End-to-end Throughput Optimization Modeling for Microservice Applications",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:06:03Z",
+      "content_hash": "sha256:4cdb6468221e05c3dc1535e8123e4b91e26edc283b627e2e366bba8b39ab6ba7",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

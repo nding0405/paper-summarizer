@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2026-batchgen-an-architecture-for-scalable-and-efficient-batc-205a8e33",
   "title": "BatchGen: An Architecture for Scalable and Efficient Batch Inference",
+  "abstract": "Batch inference has become a central mode of AI computation, yet existing inference engines still rely on execution models designed for interactive serving. When scaled to millions of sequences, batch workloads reveal two fundamental requirements: the ability to handle extreme inter- and intra-sequence load variation that emerges only at runtime, and the ability to sustain high utilization across large fleets of GPUs. Existing systems fail to meet these requirements, losing substantial fractions of achievable throughput.\n\nWe introduce a new architectural foundation for batch inference: the sequence coroutine compute model, which represents each sequence as a fine-grained, event-driven coroutine. This model exposes expressive primitives that allow the runtime to reorganize work dynamically, enabling larger expert-level batches, mitigating stragglers, reallocating work across devices, and maintaining utilization even on cost-effective or memory-constrained GPUs. Building on this abstraction, we implement BatchGen, a production-ready system that uses the coroutine model at cluster scale. On a 128-GPU cluster, BatchGen reduces batch completion time by up to 2.3×, and on memory-constrained accelerators it outperforms the strongest offloading baseline by up to 9.6×.",
+  "abstract_source_id": "src-abstract-osdi-2026-205a8e33",
   "venue": "osdi",
   "year": 2026,
   "track_or_session": "Expert Mixture",
@@ -272,6 +274,19 @@
       "official": true,
       "supports": [
         "Official proceedings availability and canonical conference versions."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2026-205a8e33",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/xu-tairan",
+      "kind": "paper-page",
+      "title": "BatchGen: An Architecture for Scalable and Efficient Batch Inference",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:08:02Z",
+      "content_hash": "sha256:fb6e90d0d5c7b31ef16823ad83fc1cf2675461c804c47705d2cbbb827984927d",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

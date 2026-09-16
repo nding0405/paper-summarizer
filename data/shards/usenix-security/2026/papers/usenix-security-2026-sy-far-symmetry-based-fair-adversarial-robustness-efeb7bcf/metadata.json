@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-sy-far-symmetry-based-fair-adversarial-robustness-efeb7bcf",
   "title": "Sy-FAR: Symmetry-based Fair Adversarial Robustness",
+  "abstract": "Security-critical machine-learning (ML) systems, such as face-recognition systems, are susceptible to adversarial examples, including real-world physically realizable attacks. Various means to boost ML's adversarial robustness have been proposed; however, they typically induce unfair robustness: It is often easier to attack from certain classes (e.g., individuals) or groups (e.g., genders) than from others. Several techniques have been developed to improve adversarial robustness while seeking perfect fairness between classes. Yet, prior work has focused on settings where security and fairness are less critical (e.g., classifying objects such as cars and ships).\n\nOur insight is that achieving perfect parity in realistic fairness-critical tasks, such as face recognition, is often infeasible—some classes (e.g., siblings) may be highly similar, leading to more misclassifications between them. Instead, we suggest that seeking symmetry—i.e., attacks from class i to j would be as successful as from j to i—is more tractable. Intuitively, symmetry is desirable because class resemblance is a symmetric relation in most domains. Additionally, as we prove theoretically, symmetry between individuals induces symmetry between any set of sub-groups, in contrast to other fairness notions where group-fairness is often elusive.\n\nWe develop Sy-FAR, a technique to encourage symmetry while also optimizing adversarial robustness and extensively evaluate it using five datasets, with three model architectures, including against targeted and untargeted realistic attacks. The results show Sy-FAR significantly improves fair adversarial robustness compared to state-of-the-art methods. Moreover, we find that Sy-FAR is faster and more consistent across runs. Notably, Sy-FAR also ameliorates another type of unfairness we discover in this work—target classes that adversarial examples are likely to be classified into become significantly less vulnerable after inducing symmetry.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-efeb7bcf",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Security of ML 6",
@@ -114,6 +116,19 @@
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening",
         "prepublication PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-efeb7bcf",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/najjar",
+      "kind": "paper-page",
+      "title": "Sy-FAR: Symmetry-based Fair Adversarial Robustness",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:25:45Z",
+      "content_hash": "sha256:a6d9e4aac2c0a11d22780409c70d2ea60f35c15ac67d41124aa88853fc395939",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2024-semalloc-semantics-informed-memory-allocator-f5e97fe1",
   "title": "SeMalloc: Semantics-Informed Memory Allocator",
+  "abstract": "Use-after-free (UAF) is a critical and prevalent problem in memory unsafe languages. While many solutions have been proposed, balancing security, run-time cost, and memory overhead (an impossible trinity) is hard. In this paper, we show one way to balance the trinity by passing more semantics about the heap object to the allocator for it to make informed allocation decisions. More specifically, we propose a new notion of thread-, context-, and flow-sensitive \"type\", SemaType, to capture the semantics and prototype a SemaType-based allocator that aims for the best trade-off amongst the impossible trinity. In SeMalloc, only heap objects allocated from the same call site and via the same function call stack can possibly share a virtual memory address, which effectively stops type-confusion attacks and makes UAF vulnerabilities harder to exploit. Through extensive empirical evaluation, we show that SeMalloc is realistic: (a) SeMalloc is effective in thwarting all real-world vulnerabilities we tested; (b) benchmark programs run even slightly faster with SeMalloc than the default heap allocator, at a memory overhead averaged from 41% to 84%; and (c) SeMalloc balances security and overhead strictly better than other closely related works.",
+  "abstract_source_id": "src-abstract-ccs-2024-f5e97fe1",
   "venue": "ccs",
   "year": 2024,
   "track_or_session": "Cycle 1",
@@ -138,6 +140,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2024-f5e97fe1",
+      "url": "https://api.openalex.org/works?filter=title.search:SeMalloc%3A%20Semantics-Informed%20Memory%20Allocator&select=id,title,abstract_inverted_index&per-page=3&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "SeMalloc: Semantics-Informed Memory Allocator",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:12:01Z",
+      "content_hash": "sha256:84e976b6322efc8efa6bdd977cf2248eaa204bb44dbd03a72c9ec617b158e44e",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

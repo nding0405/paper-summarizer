@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2026-frcc-towards-provably-fair-and-robust-congestion-control-ae6990d8",
   "title": "FRCC: Towards Provably Fair and Robust Congestion Control",
+  "abstract": "Congestion control algorithms (CCAs) play a critical role in network bandwidth allocation. Recent work (from SIGCOMM 2022) showed that a large class of CCAs, including BBR, Copa, and Reno, starve flows in the presence of network jitter. Starvation occurs because CCAs coordinate fairness by encoding fair rates into congestion signals. For example, Reno's throughput scales as 1/√loss rate. Even a small amount of noise in these signals leads to large errors in inferring fair rates.\n\nWe present FRCC (Fair and Robust Congestion Controller), the first CCA that provably bounds unfairness (avoids starvation) even under network jitter. Our key insight is to encode only the flow count (or equivalently, the fair link fraction) into the congestion signals, and independently estimate the link capacity to calculate the fair rate. In this way, we bound jitter's impact on fairness. We implement FRCC in the Linux kernel and evaluate it in a variety of network conditions, including synthetic jitter, heterogeneous RTTs, and multi-bottleneck settings. FRCC closely matches the bounds predicted by our theoretical analysis, and consistently achieves fairness, even when state-of-the-art CCAs exhibit starvation.",
+  "abstract_source_id": "src-abstract-nsdi-2026-ae6990d8",
   "venue": "nsdi",
   "year": 2026,
   "track_or_session": "Sandboxes, Containers, and Beyond",
@@ -118,6 +120,19 @@
         "proceedings page range and page count",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2026-ae6990d8",
+      "url": "https://www.usenix.org/conference/nsdi26/presentation/agarwal-anup",
+      "kind": "paper-page",
+      "title": "FRCC: Towards Provably Fair and Robust Congestion Control",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:05:20Z",
+      "content_hash": "sha256:537a3b13b674dd30623c96b967efaf34e7bf672ffc6aebbe45cd98ab65edd7b8",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2025-scrutinizer-towards-secure-forensics-on-compromised-trus-ae9db108",
   "title": "SCRUTINIZER: Towards Secure Forensics on Compromised TrustZone",
+  "abstract": "The number of vulnerabilities exploited in Arm TrustZone systems has been increasing recently. The absence of digital forensics tools prevents platform owners from incident response or periodic security scans. However, the area of secure forensics for compromised TrustZone remains unexplored and presents unresolved challenges. Traditional out-of-TrustZone forensics are inherently hindered by TrustZone protection, rendering them infeasible. In-TrustZone approaches are susceptible to attacks from privileged adversaries, undermining their security.\n\nTo fill these gaps, we introduce SCRUTINIZER, the first secure forensics solution for compromised TrustZone systems. SCRUTINIZER utilizes the highest privilege domain of the recent Arm Confidential Computing Architecture (CCA), called the Root world, and extends it to build a protected SCRUTINIZER Monitor. Our design proposes a protective layer in the Monitor that decouples the memory acquisition functionality from the Monitor and integrates it into an in-TrustZone agent. This ensures that the agent is isolated from TrustZone systems and helps to minimize the codebase expansion of the Root world. Furthermore, by grafting most of the target’s page tables in the agent, SCRUTINIZER reduces redundant translation and mapping operations during memory acquisition, ultimately reducing performance overhead. SCRUTINIZER leverages multiple standard hardware features to enable secure forensic capabilities beyond pure memory acquisition, such as memory access traps and instruction tracing, while making them impervious to hardware configuration tampering by the privileged adversary. We prototype SCRUTINIZER and evaluate it using extensive experiments. The results show that SCRUTINIZER effectively inspects TrustZone systems while immune against privileged adversaries.",
+  "abstract_source_id": "src-abstract-ndss-2025-ae9db108",
   "venue": "ndss",
   "year": 2025,
   "track_or_session": "Summer submission cycle",
@@ -252,6 +254,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2025-ae9db108",
+      "url": "https://www.ndss-symposium.org/ndss-paper/scrutinizer-towards-secure-forensics-on-compromised-trustzone/",
+      "kind": "paper-page",
+      "title": "SCRUTINIZER: Towards Secure Forensics on Compromised TrustZone",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:20:27Z",
+      "content_hash": "sha256:94ea205381ed971329228ac1e0b2373928bd79c5211c881b873d34e7e209ae6a",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2026-graphiti-formally-verified-out-of-order-execution-in-dat-3b6bb52f",
   "title": "Graphiti: Formally Verified Out-of-Order Execution in Dataflow Circuits",
+  "abstract": "High-level synthesis (HLS) tools automatically synthesise hardware from imperative programs and have seen a significant rise in adoption in both industry and academia. To deliver high-quality hardware designs for increasingly general purpose programs, HLS compilers have to become more aggressive. For the most irregular programs, HLS tools generating dataflow circuits show promising performance by adapting and specializing key ideas from processor architectures, like out-of-order execution and speculation. However, the complexity of these transformations makes them difficult to reason about, increasing the risk of subtle bugs and potentially delaying their adoption in a conservative industry where bugs can be extremely costly. This paper introduces Graphiti, a framework embedded in the Lean 4 proof assistant designed to formally reason about and manipulate dataflow circuits at the core of these HLS tools. We develop a metatheory of graph refinement that allows us to verify a general-purpose dataflow circuit rewriting algorithm. Using this framework, we formally verify a loop rewrite that introduces out-of-order execution into a dataflow circuit. Our evaluation shows that the resulting verified optimization pipeline achieves a 2.1× speedup over the in-order HLS flow and a 5.8× speedup over a verified HLS tool generating a static state machine. We also show that it achieves the same performance compared to an existing unverified approach which introduces out-of-order execution. Graphiti is a step toward a fully-verified HLS flow targeting dataflow circuits. In the interim, it can serve as an extensible, verified, optimizing engine that can be integrated into existing dataflow HLS compilers.",
+  "abstract_source_id": "src-abstract-asplos-2026-3b6bb52f",
   "venue": "asplos",
   "year": 2026,
   "track_or_session": "Session 5C: Formal Verification",
@@ -201,6 +203,19 @@
       "official": false,
       "supports": [
         "Author-deposited archival artifact matched by title, authors, linked DOI, or accompanying paper description."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2026-3b6bb52f",
+      "url": "https://api.openalex.org/works/doi:10.1145/3779212.3790166?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Graphiti: Formally Verified Out-of-Order Execution in Dataflow Circuits",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:05:28Z",
+      "content_hash": "sha256:c887ba4f5603b00170b170d61831a0801c8f3b742b1cdf2eba9fa98261cc3f99",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

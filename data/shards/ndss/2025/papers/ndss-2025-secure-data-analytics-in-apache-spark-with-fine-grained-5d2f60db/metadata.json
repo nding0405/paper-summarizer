@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2025-secure-data-analytics-in-apache-spark-with-fine-grained-5d2f60db",
   "title": "Secure Data Analytics in Apache Spark with Fine-grained Policy Enforcement and Isolated Execution",
+  "abstract": "Cloud based Spark platform is a tempting approach for sharing data, as it allows data users to easily analyze the data while the owners to efficiently share the large volume of data. However, the absence of a robust policy enforcement mechanism on Spark hinders the data owners from sharing their data due to the risk of private data breach. In this respect, we found that malicious data users and cloud managers can easily leak the data by constructing a policy violating physical plan, compromising the Spark libraries, or even compromising the Spark cluster itself. Nonetheless, current approaches fail to securely and generally enforce the policies on Spark, as they do not check the policies on physical plan level, and they do not protect the integrity of data analysis pipeline.\n\nThis paper presents Laputa, a secure policy enforcement framework on Spark. Specifically, Laputa designs a pattern matching based policy checking on the physical plans, which is generally applicable to Spark applications with more fine-grained policies. Then, Laputa compartmentalizes Spark applications based on confidential computing, by which the entire data analysis pipeline is protected from the malicious data users and cloud managers. Meanwhile, Laputa preserves the usability as the data users can run their Spark applications on Laputa with minimal modification. We implemented Laputa, and evaluated its security and performance aspects on TPC-H, Big Data benchmarks, and real world applications using ML models. The evaluation results demonstrated that Laputa correctly blocks malicious Spark applications while imposing moderate performance overheads.",
+  "abstract_source_id": "src-abstract-ndss-2025-5d2f60db",
   "venue": "ndss",
   "year": 2025,
   "track_or_session": "Fall submission cycle",
@@ -147,6 +149,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2025-5d2f60db",
+      "url": "https://www.ndss-symposium.org/ndss-paper/secure-data-analytics-in-apache-spark-with-fine-grained-policy-enforcement-and-isolated-execution/",
+      "kind": "paper-page",
+      "title": "Secure Data Analytics in Apache Spark with Fine-grained Policy Enforcement and Isolated Execution",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:20:28Z",
+      "content_hash": "sha256:18cd5e2bfaa30abfd66d6dd2bea0a5bceefc3d0ca7a80c580a94e7888023d592",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2024-sabre-hardware-accelerated-snapshot-compression-for-serv-feaf4b2b",
   "title": "Sabre: Hardware-Accelerated Snapshot Compression for Serverless MicroVMs",
+  "abstract": "MicroVM snapshotting significantly reduces the cold start overheads in serverless applications. Snapshotting enables storing part of the physical memory of a microVM guest into a file, and later restoring from it to avoid long cold start-up times. Prefetching memory pages from snapshots can further improve the effectiveness of snapshotting. However, the efficacy of prefetching depends on the size of the memory that needs to be restored. Lossless page compression is therefore a great way to improve the coverage of the memory footprint that snapshotting with prefetching achieves. Unfortunately, the high overhead and high CPU cost of software-based (de)compression makes this impractical. We introduce Sabre, a novel approach to snapshot page prefetching based on hardware-accelerated (de)compression. Sabre leverages an increasingly pervasive near-memory analytics accelerator available in modern datacenter processors. We show that by appropriately leveraging such accelerators, microVM snapshots of serverless applications can be compressed up to a factor of 4.5×, with nearly negligible decompression costs. We use this insight to build an efficient page prefetching library capable of speeding up memory restoration from snapshots by up to 55%. We integrate the library with the production-grade Firecracker microVMs and evaluate its end-to-end performance on a wide set of serverless applications.",
+  "abstract_source_id": "src-abstract-osdi-2024-feaf4b2b",
   "venue": "osdi",
   "year": 2024,
   "track_or_session": "Memory Management",
@@ -222,6 +224,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2024-feaf4b2b",
+      "url": "https://www.usenix.org/conference/osdi24/presentation/lazarev",
+      "kind": "paper-page",
+      "title": "Sabre: Hardware-Accelerated Snapshot Compression for Serverless MicroVMs",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:07:18Z",
+      "content_hash": "sha256:0e0a15032b7194cc07a73b6992738161c5636d119d5282cac31cad352b61fa45",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

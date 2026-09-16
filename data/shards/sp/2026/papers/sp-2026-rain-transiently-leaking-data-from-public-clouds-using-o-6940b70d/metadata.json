@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2026-rain-transiently-leaking-data-from-public-clouds-using-o-6940b70d",
   "title": "Rain: Transiently Leaking Data from Public Clouds Using Old Vulnerabilities",
+  "abstract": "Given their vital importance for governments and enterprises around the world, we need to trust public clouds to provide strong security guarantees even in the face of advanced attacks and hardware vulnerabilities. While transient execution vulnerabilities, such as Spectre, have been in the spotlight since 2018, until now there have been no reports of realistic attacks on real-world clouds, leading to an assumption that such attacks are not practical in noisy real-world settings and without knowledge about the (host or guest) victim. In particular, given that today's clouds have large fleets of older CPUs that lack comprehensive, in-silicon fixes to a variety of transient execution vulnerabilities, the question arises whether sufficient software-based defenses have been deployed to stop realistic attacks-especially those using older, supposedly mitigated vulnerabilities. In this paper, we answer this question in the negative. We show that the practice of mitigating vulnerabilities in isolation, without removing the root cause, leaves systems vulnerable. By combining such “mitigated” (and by themselves harmless) vulnerabilities, attackers may still craft an end-to-end attack that is more than the sum of its parts. In particular, we show that attackers can use L1TF, one of the oldest known transient execution vulnerabilities (discovered in January 2018), in combination with a simple speculative out-of-bounds load, to leak data from other guests in a commercial cloud computing platform. Moreover, with an average end-to-end duration of 15 hours to leak the TLS key of an Nginx server in a victim VM under noisy conditions, without detailed knowledge of either host or guest, the attack is realistic even in one of today's biggest and most important commercial clouds.",
+  "abstract_source_id": "src-abstract-sp-2026-6940b70d",
   "venue": "sp",
   "year": 2026,
   "track_or_session": "Cycle 1",
@@ -196,6 +198,19 @@
       "official": true,
       "supports": [
         "DOI, published-order authors and affiliations, abstract, publication date, page span, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2026-6940b70d",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Rain: Transiently Leaking Data from Public Clouds Using Old Vulnerabilities",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:58:02Z",
+      "content_hash": "sha256:4204efad9387253e2c70bd18217fac7c5220b9cd43ecd6179fdc27c5a043343e",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

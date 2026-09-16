@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2026-roce-balboa-service-enhanced-rdma-offload-engine-for-dat-5f3bfeb1",
   "title": "RoCE BALBOA: Service-Enhanced RDMA Offload Engine for Data Center SmartNICs",
+  "abstract": "Remote Direct Memory Access (RDMA) has become the de facto standard for high-performance data center networking. However, current deployments rely heavily on fixed-function, commercial NICs. These \"black box\" commercial hardware implementations prevent researchers and system architects from modifying the transport layer for specialized tasks. In parallel, research on NICs often lacks offloaded networking stacks or uses simplified protocol implementations, limiting insight into novel networking solutions in realistic settings. In this paper, we bridge this gap by introducing BALBOA, an open-source, 100 Gbps RDMA offload engine designed for research on networking and fully compatible with commercial RNICs. Unlike prior stack implementations which lack scalability and bandwidth, or struggle with data center interoperability and miss strict protocol compliance, BALBOA supports hundreds of Queue Pairs in switched network environments and allows for line-rate offloads, making it a viable platform for realistic data center research. We describe the system architecture, detailing how BALBOA overcomes FPGA memory and timing bottlenecks through a decoupled state architecture and streaming control-data separation. We evaluate BALBOA on a hardware cluster with FPGAs, RNICs, and switches, showing that it matches the performance of commercial ASICs while offering full customization. Finally, we showcase BALBOA’s potential through novel case studies: protocol enhancements for infrastructure purposes (encryption, deep packet inspection) and an offloaded preprocessing pipeline for deep learning recommender systems, which applies streaming transformations to the incoming data before feeding it directly to a GPU for model serving.",
+  "abstract_source_id": "src-abstract-osdi-2026-5f3bfeb1",
   "venue": "osdi",
   "year": 2026,
   "track_or_session": "Close to the Network",
@@ -209,6 +211,19 @@
       "official": true,
       "supports": [
         "Official proceedings availability and canonical conference versions."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2026-5f3bfeb1",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/heer",
+      "kind": "paper-page",
+      "title": "RoCE BALBOA: Service-Enhanced RDMA Offload Engine for Data Center SmartNICs",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:08:52Z",
+      "content_hash": "sha256:1fb34ab0112259c9f92b125573bc15fa9dbfaa29ff4220ae2b6d9e2fab2eab78",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

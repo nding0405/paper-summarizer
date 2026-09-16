@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2024-revisiting-black-box-ownership-verification-for-graph-ne-a915b2a5",
   "title": "Revisiting Black-box Ownership Verification for Graph Neural Networks",
+  "abstract": "Graph Neural Networks (GNNs) have emerged as powerful tools for processing graph-structured data, enabling applications in various domains. Yet, GNNs are vulnerable to model extraction attacks, imposing risks to intellectual property. To mitigate model extraction attacks, model ownership verification is considered an effective method. However, throughout a series of empirical studies, we found that the existing GNN ownership verification methods either mandate unrealistic conditions or present unsatisfactory accuracy under the most practical settings—the black-box setting where the verifier only requires access to the final output (e.g., posterior probability) of the target model and the suspect model.Inspired by the studies, we propose a new, black-box GNN ownership verification method that involves local independent models and shadow surrogate models to train a classifier for performing ownership verification. Our method boosts the verification accuracy by exploiting two insights: (1) We consider the overall behaviors of the target model for decision-making, better utilizing its holistic fingerprinting; (2) We enrich the fingerprinting of the target model by masking a subset of features of its training data, injecting extra information to facilitate ownership verification.To assess the effectiveness of our proposed method, we perform an intensive series of evaluations with 5 popular datasets, 5 mainstream GNN architectures, and 16 different settings. Our method achieves nearly perfect accuracy with a marginal impact on the target model in all cases, significantly outperforming the existing methods and enlarging their practicality. We also demonstrate that our method maintains robustness against adversarial attempts to evade the verification.",
+  "abstract_source_id": "src-abstract-sp-2024-a915b2a5",
   "venue": "sp",
   "year": 2024,
   "track_or_session": "Winter cycle",
@@ -180,6 +182,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2024-a915b2a5",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Revisiting Black-box Ownership Verification for Graph Neural Networks",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:37Z",
+      "content_hash": "sha256:d186972817127125a98a71b907d7b283fa37f2e757aaf5b9ae232aa389caabc0",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

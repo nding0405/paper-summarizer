@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2026-symphony-enabling-compute-memory-disaggregation-in-llm-s-c1c824ab",
   "title": "SYMPHONY: Enabling Compute-Memory Disaggregation in LLM Serving Systems",
+  "abstract": "Large Language Models (LLMs) power AI applications such as chatbots and agents, which maintain conversational state across multiple turns. Serving these workloads is inherently stateful: each request generates a KV cache storing token-level state. Existing systems either recompute caches or offload them to host memory—both approaches incur high latency, cause load imbalance, and limit scalability. We present SYMPHONY, a disaggregated memory management layer that decouples compute from KV cache storage while meeting strict latency requirements. To enable disaggregation, SYMPHONY employs advisory requests—prefetching hints derived from user interactions or workload structure—to move caches off the critical path and enable fine-grained, request-level load balancing. Since these predictive signals are often unreliable, SYMPHONY introduces two key techniques: priority-based KV cache management, which allocates memory based on neural network structure and request priority, and cooperative memory management, which dynamically coordinates GPU memory with the serving framework. Evaluations on LLaMA models with ShareGPT and Burst-GPT workloads show that SYMPHONY reduces end-to-end latency by 2.4× over vLLM and serves 4× more requests with minimal latency increase.",
+  "abstract_source_id": "src-abstract-nsdi-2026-c1c824ab",
   "venue": "nsdi",
   "year": 2026,
   "track_or_session": "Neurons Meet Routers",
@@ -160,6 +162,19 @@
         "proceedings page range and page count",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2026-c1c824ab",
+      "url": "https://www.usenix.org/conference/nsdi26/presentation/agarwal",
+      "kind": "paper-page",
+      "title": "SYMPHONY: Enabling Compute-Memory Disaggregation in LLM Serving Systems",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:06:08Z",
+      "content_hash": "sha256:15a83b82bee9a64fb3e3f225e0c6e7c9d32d682b3235d236ef8cf2a3bc244de9",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

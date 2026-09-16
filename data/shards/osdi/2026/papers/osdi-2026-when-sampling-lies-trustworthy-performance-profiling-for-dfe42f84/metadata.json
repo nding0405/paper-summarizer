@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2026-when-sampling-lies-trustworthy-performance-profiling-for-dfe42f84",
   "title": "When Sampling Lies: Trustworthy Performance Profiling for Flat Workloads with Blink (Operational Systems)",
+  "abstract": "Performance optimization of mobile systems is critical for achieving responsive user experiences. However, accurately measuring the effects of such optimizations is challenging. We found that real-world mobile workloads exhibit a flat profile, invoking thousands of short-lived routines that contribute evenly to overall performance with no dominant bottlenecks. Sampling-based profilers such as perf struggle in this setting: skid, shadow effects, and incomplete function coverage can yield systematically incorrect results, not just high variance.\n\nWe present Blink, a lightweight instrumentation framework that provides robust coverage for short-lived routines while maintaining low overhead. Blink inserts instrumentation into functions, enabling precise measurements. We show that Blink achieves 99.999% accuracy while incurring 1% overhead. Deployed in a variety of use cases at Huawei, Blink offers a practical and reliable alternative for mobile compiler performance analysis.",
+  "abstract_source_id": "src-abstract-osdi-2026-dfe42f84",
   "venue": "osdi",
   "year": 2026,
   "track_or_session": "Testing, Debugging, Root Causing",
@@ -230,6 +232,19 @@
       "official": true,
       "supports": [
         "Official proceedings availability and canonical conference versions."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2026-dfe42f84",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/devsot",
+      "kind": "paper-page",
+      "title": "When Sampling Lies: Trustworthy Performance Profiling for Flat Workloads with Blink (Operational Systems)",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:09:18Z",
+      "content_hash": "sha256:2e4f3990712f4390a7f7e11fe05d663d2297fd264e3af482b85f65ec0b57980d",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

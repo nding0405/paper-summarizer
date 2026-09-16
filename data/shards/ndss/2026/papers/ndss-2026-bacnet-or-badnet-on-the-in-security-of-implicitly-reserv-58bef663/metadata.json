@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2026-bacnet-or-badnet-on-the-in-security-of-implicitly-reserv-58bef663",
   "title": "BACnet or “BADnet”? On the (In)Security of Implicitly Reserved Fields in BACnet",
+  "abstract": "Building Automation Systems (BASs) are crucial for managing essential functions like heating, ventilation, air conditioning, and refrigeration (HVAC&R), as well as lighting and security in modern buildings. BACnet, a widely adopted open standard for BASs, enables integration and interoperability among heterogeneous devices. However, traditional BACnet implementations remain vulnerable to various security threats. While existing fuzzers have been applied to BACnet, their efficiency is limited, particularly due to the slow bus-based communication medium with low throughput. To address these challenges, we propose BACsFuzz, a behavior-driven fuzzer aimed at uncovering vulnerabilities in BACnet systems. Unlike traditional fuzzing approaches focused on input diversity and execution path coverage, BACsFuzz introduces the token-seize-assisted fuzzing technique, which leverages the token-passing mechanism of BACnet for improved fuzzing efficiency. The token-seize-assisted fuzzing technique proves highly effective in uncovering vulnerabilities caused by the misuse of implicitly reserved fields. We identify this issue as a common vulnerability affecting both BACnet and KNX, another major BAS protocol. Notably, the BACnet Association (ASHRAE) confirmed the presence of a protocol-level token-seize vulnerability, further validating the significance of this finding. We evaluated BACSFUZZ on 15 BAC-net and 5 KNX implementations from leading manufacturers, including Siemens, Honeywell, and Johnson Controls. BACS-FUZZ improves fuzzing throughput by 272.49% to 776.01%over state-of-the-art (SOTA) methods. In total, 26 vulnerabilities were uncovered—18 in BACnet and 8 in KNX—each related to implicitly reserved fields. Of these, 24 vulnerabilities were confirmed by manufacturers, with 9 assigned CVEs.",
+  "abstract_source_id": "src-abstract-ndss-2026-58bef663",
   "venue": "ndss",
   "year": 2026,
   "track_or_session": "Summer submission cycle",
@@ -223,6 +225,19 @@
       "official": false,
       "supports": [
         "independent proceedings identity reconciliation"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2026-58bef663",
+      "url": "https://www.ndss-symposium.org/ndss-paper/bacnet-or-badnet-on-the-insecurity-of-implicitly-reserved-fields-in-bacnet/",
+      "kind": "paper-page",
+      "title": "BACnet or “BADnet”? On the (In)Security of Implicitly Reserved Fields in BACnet",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:21:19Z",
+      "content_hash": "sha256:9dfba9ac3a88d7fea9b3ce5ff36c48dda96987905164cc8071760e6a51086131",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

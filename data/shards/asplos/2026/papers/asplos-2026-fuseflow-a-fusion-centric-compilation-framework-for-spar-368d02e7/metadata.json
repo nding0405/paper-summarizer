@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2026-fuseflow-a-fusion-centric-compilation-framework-for-spar-368d02e7",
   "title": "FuseFlow: A Fusion-Centric Compilation Framework for Sparse Deep Learning on Streaming Dataflow",
+  "abstract": "As deep learning models scale, sparse deep learning (DL) models that exploit sparsity in weights, activations, or inputs and specialized dataflow hardware have emerged as powerful solutions to address efficiency. We propose FuseFlow, a compiler that converts sparse machine learning models written in PyTorch to fused sparse dataflow graphs for reconfigurable dataflow architectures (RDAs). FuseFlow is the first compiler to support general cross-expression fusion of sparse operations. In addition to fusion across kernels (expressions), FuseFlow also supports optimizations like parallelization, dataflow ordering, and sparsity blocking. It targets a cycle-accurate dataflow simulator for microarchitectural analysis of fusion strategies. We use FuseFlow for design-space exploration across four real-world machine learning applications with sparsity, showing that full fusion (entire cross-expression fusion across all computation in an end-to-end model) is not always optimal for sparse models—fusion granularity depends on the model itself. FuseFlow also provides a heuristic to identify and prune suboptimal configurations. Using FuseFlow, we achieve performance improvements, including a ~2.7x speedup over an unfused baseline for GPT-3 with BigBird block-sparse attention.",
+  "abstract_source_id": "src-abstract-asplos-2026-368d02e7",
   "venue": "asplos",
   "year": 2026,
   "track_or_session": "Session 4B: ML Compilers & Tensor Programs",
@@ -215,6 +217,19 @@
       "official": false,
       "supports": [
         "Indexed abstract used for strict relevance classification and indexed arXiv identifier where available."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2026-368d02e7",
+      "url": "https://api.openalex.org/works/doi:10.1145/3779212.3790165?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "FuseFlow: A Fusion-Centric Compilation Framework for Sparse Deep Learning on Streaming Dataflow",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:05:28Z",
+      "content_hash": "sha256:7541992be80cba431554c8592b57786625b88c9b72c6c3e2afd01874313b49a1",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2024-insight-attacking-industry-adopted-learning-resilient-lo-991c1851",
   "title": "INSIGHT: Attacking Industry-Adopted Learning Resilient Logic Locking Techniques Using Explainable Graph Neural Network",
+  "abstract": "Logic locking is a hardware-based solution that protects against hardware intellectual property (IP) piracy. With the advent of powerful machine learning (ML)-based attacks, in the last 5 years, researchers have developed several learning resilient locking techniques claiming superior security guarantees. However, these security guarantees are the result of evaluation against existing ML-based attacks having critical limitations, including (i) black-box operation, i.e., does not provide any explanations, (ii) are not practical, i.e., nonconsideration of approaches followed by the semiconductor industry, and (iii) are not broadly applicable, i.e., evaluate the security of a specific logic locking technique.\n\nIn this work, we question the security provided by learning resilient locking techniques by developing an attack (INSIGHT) using an explainable graph neural network (GNN). INSIGHT recovers the secret key without requiring scan-access, i.e., in an oracle-less setting for 7 unbroken learning resilient locking techniques, including 2 industry-adopted logic locking techniques. INSIGHT achieves an average key-prediction accuracy (KPA) of2.87×,1.75×,and1.67× higher than existing ML-based attacks. We demonstrate the efficacy of INSIGHT by evaluating locked designs ranging from widely used academic suites (ISCAS-85, ITC-99) to larger designs, such as MIPS, Google IBEX, and mor1kx processors. We perform 2 practical case studies: (i) recovering secret keys of locking techniques used in a widely used commercial EDA tool (Synopsys TestMAX) and (ii) showcasing the ramifications of leaking the secret key for an image processing application. We will open-source our artifacts to foster research on developing learning resilient locking techniques.",
+  "abstract_source_id": "src-abstract-usenix-security-2024-991c1851",
   "venue": "usenix-security",
   "year": 2024,
   "track_or_session": "Hardware Security I: Attacks and Defense",
@@ -112,6 +114,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2024-991c1851",
+      "url": "https://www.usenix.org/conference/usenixsecurity24/presentation/mankali",
+      "kind": "paper-page",
+      "title": "INSIGHT: Attacking Industry-Adopted Learning Resilient Logic Locking Techniques Using Explainable Graph Neural Network",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:15:47Z",
+      "content_hash": "sha256:1c2bbe3a8f0b03164f780ad46b1767d2ce05f3ab14ef951b2609224ad2aa5b30",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

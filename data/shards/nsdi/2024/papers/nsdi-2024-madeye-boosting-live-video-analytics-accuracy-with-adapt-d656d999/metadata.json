@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2024-madeye-boosting-live-video-analytics-accuracy-with-adapt-d656d999",
   "title": "MadEye: Boosting Live Video Analytics Accuracy with Adaptive Camera Configurations",
+  "abstract": "Camera orientations (i.e., rotation and zoom) govern the content that a camera captures in a given scene, which in turn heavily influences the accuracy of live video analytics pipelines. However, existing analytics approaches leave this crucial adaptation knob untouched, instead opting to only alter the way that captured images from fixed orientations are encoded, streamed, and analyzed. We present MadEye, a camera-server system that automatically and continually adapts orientations to maximize accuracy for the workload and resource constraints at hand. To realize this using commodity pan-tilt-zoom (PTZ) cameras, MadEye embeds (1) a search algorithm that rapidly explores the massive space of orientations to identify a fruitful subset at each time, and (2) a novel knowledge distillation strategy to efficiently (with only camera resources) select the ones that maximize workload accuracy. Experiments on diverse workloads show that MadEye boosts accuracy by 2.9-25.7% for the same resource usage, or achieves the same accuracy with 2-3.7× lower resource costs.",
+  "abstract_source_id": "src-abstract-nsdi-2024-d656d999",
   "venue": "nsdi",
   "year": 2024,
   "track_or_session": "Video",
@@ -139,6 +141,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2024-d656d999",
+      "url": "https://www.usenix.org/conference/nsdi24/presentation/wong",
+      "kind": "paper-page",
+      "title": "MadEye: Boosting Live Video Analytics Accuracy with Adaptive Camera Configurations",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:03:23Z",
+      "content_hash": "sha256:fad36b3b644c4c101aa5133f0167d36e80c5d5a647e487ed143555bdcd472bb0",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

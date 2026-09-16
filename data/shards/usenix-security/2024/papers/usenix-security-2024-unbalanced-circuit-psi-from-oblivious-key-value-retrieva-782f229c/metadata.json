@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2024-unbalanced-circuit-psi-from-oblivious-key-value-retrieva-782f229c",
   "title": "Unbalanced Circuit-PSI from Oblivious Key-Value Retrieval",
+  "abstract": "Circuit-based Private Set Intersection (circuit-PSI) empowers two parties, a client and a server, each with input sets X and Y, to securely compute a function f on the intersection X∩Y while preserving the confidentiality of X∩Y from both parties. Despite the recent proposals of computationally efficient circuit-PSI protocols, they primarily focus on the balanced scenario where |X| is similar to |Y|. However, in many practical situations, a circuit-PSI protocol may be applied in an unbalanced context, where |X| is significantly smaller than |Y|. Directly applying existing protocols to this scenario poses notable efficiency challenges due to the communication complexity of these protocols scaling at least linearly with the size of the larger set, i.e., max(|X|,|Y|).\n\nIn this work, we put forth efficient constructions for unbalanced circuit-PSI, demonstrating sublinear communication complexity in the size of the larger set. Our key insight lies in formalizing unbalanced circuit-PSI as the process of obliviously retrieving values corresponding to keys from a set of key-value pairs. To achieve this, we propose a new functionality named Oblivious Key-Value Retrieval (OKVR) and design the OKVR protocol based on a new notion termed sparse Oblivious Key-Value Store (sparse OKVS). We conduct comprehensive experiments and the results showcase substantial improvements over the state-of-the-art circuit-PSI schemes, i.e., 1.84∼48.86x communication improvement and 1.50∼39.81x faster computation. Compared to a very recent unbalanced circuit-PSI work, our constructions outperform them by 1.18∼15.99x and 1.22∼10.44x in communication and computation overhead, respectively, depending on set sizes and network environments.",
+  "abstract_source_id": "src-abstract-usenix-security-2024-782f229c",
   "venue": "usenix-security",
   "year": 2024,
   "track_or_session": "Crypto VII: Private Set Operations",
@@ -196,6 +198,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2024-782f229c",
+      "url": "https://www.usenix.org/conference/usenixsecurity24/presentation/hao-meng-unbalanced",
+      "kind": "paper-page",
+      "title": "Unbalanced Circuit-PSI from Oblivious Key-Value Retrieval",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:17:51Z",
+      "content_hash": "sha256:b9afb0362a5466619d1824f6620ae18c52602c0449412e1e21d9220466ebea4f",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

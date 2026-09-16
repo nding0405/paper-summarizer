@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2025-energy-aware-scheduling-and-input-buffer-overflow-preven-9f11b923",
   "title": "Energy-aware Scheduling and Input Buffer Overflow Prevention for Energy-harvesting Systems",
+  "abstract": "Modern energy-harvesting devices use on-device compute to discard data uninteresting to the application, improving energy availability. These devices capture data at fixed rate, and process captured data at a rate that varies with environmental factors like input power and event activity. If capture rate exceeds processing rate, new inputs are stored in a small on-device input buffer (hundreds of kBs). When the input buffer fills up, the device discards newer inputs, missing potentially interesting events. Energy-harvesting devices must avoid such input buffer overflows (IBO) to avoid missing interesting events. A static solution to IBOs is impossible given dynamic variations in processing rate, and prior research fails to provide a suitable dynamic solution. We propose Quetzal, a new hardware-software solution targeted at avoiding IBOs. Quetzal's software has two parts: a new energy-aware scheduler that selects jobs with the lowest end-to-end latency (including energy recharging), and a runtime which uses queueing-theory to predict if the selected job will cause IBOs. Quetzal reacts to imminent IBOs by degrading the scheduled job. Quetzal's scheduler and runtime use a simple, system-agnostic hardware circuit to measure power at runtime. Quetzal reduces events missed due to IBOs by up to 4.2× compared to several baselines.",
+  "abstract_source_id": "src-abstract-asplos-2025-9f11b923",
   "venue": "asplos",
   "year": 2025,
   "track_or_session": "Session 1C: Edge Computing",
@@ -125,6 +127,19 @@
       "official": false,
       "supports": [
         "Indexed abstract and open-access links used for relevance classification and ancillary-link discovery."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2025-9f11b923",
+      "url": "https://api.openalex.org/works/doi:10.1145/3676641.3715995?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Energy-aware Scheduling and Input Buffer Overflow Prevention for Energy-harvesting Systems",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:01:44Z",
+      "content_hash": "sha256:6b2678ffc2601e08b61608494e41fc08f9a6d2f1cbb56695c4f60355027b5f67",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

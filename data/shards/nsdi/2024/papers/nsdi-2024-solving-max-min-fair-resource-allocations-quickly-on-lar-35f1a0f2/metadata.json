@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2024-solving-max-min-fair-resource-allocations-quickly-on-lar-35f1a0f2",
   "title": "Solving Max-Min Fair Resource Allocations Quickly on Large Graphs",
+  "abstract": "We consider the max-min fair resource allocation problem. The best-known solutions use either a sequence of optimizations or waterfilling, which only applies to a narrow set of cases. These solutions have become a practical bottleneck in WAN traffic engineering and cluster scheduling, especially at larger problem sizes. We improve both approaches: (1) we show how to convert the optimization sequence into a single fast optimization, and (2) we generalize waterfilling to the multi-path case. We empirically show our new algorithms Pareto-dominate prior techniques: they produce faster, fairer, and more efficient allocations. Some of our allocators also have theoretical guarantees: they trade off a bounded amount of unfairness for faster allocation. We have deployed our allocators in Azure's WAN traffic engineering pipeline, where we preserve solution quality and achieve a roughly 3× speedup.",
+  "abstract_source_id": "src-abstract-nsdi-2024-35f1a0f2",
   "venue": "nsdi",
   "year": 2024,
   "track_or_session": "Cloud Systems",
@@ -223,6 +225,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2024-35f1a0f2",
+      "url": "https://www.usenix.org/conference/nsdi24/presentation/namyar-solving",
+      "kind": "paper-page",
+      "title": "Solving Max-Min Fair Resource Allocations Quickly on Large Graphs",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:03:43Z",
+      "content_hash": "sha256:4fba623cf75f8614cfbef52b27c82a66578d6892bc1efdd7559986ede860a06b",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

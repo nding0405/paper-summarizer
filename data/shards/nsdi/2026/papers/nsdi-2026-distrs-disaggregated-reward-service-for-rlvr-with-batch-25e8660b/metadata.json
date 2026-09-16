@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2026-distrs-disaggregated-reward-service-for-rlvr-with-batch-25e8660b",
   "title": "DistRS: Disaggregated Reward Service for RLVR with Batch-Level Constraint",
+  "abstract": "Reinforcement Learning with Verifiable Rewards (RLVR) has emerged as a key post-training paradigm for enhancing the capabilities of large language models (LLMs). As the complexity increases and resource consumption grows, reward computation is becoming a critical workload in the RLVR training process.\n\nWe present DistRS, a disaggregated reward service framework designed to provide resource-efficient reward computation for RLVR training. Through the analysis of a real RLVR training task, we observe that the reward service faces a highly dynamic workload, motivating the need for elasticity and multi-tenancy. DistRS leverages request-level flexibility from the request-in, batch-out characteristic of reward computation to design more resource-efficient scaling and scheduling policies. Specifically, DistRS establishes a batch-level constraint for each training task that relaxes latency requirements at the request level. Building on this foundation, we design a history-based resource scaling policy and a batch-level priority-based request scheduling policy. In addition, DistRS incorporates a timeout-aware mechanism to adjust resource allocation, thereby mitigating the impact of deviations between history and actual execution. We evaluate DistRS with real-world RLVR training tasks and the results demonstrate that DistRS reduces resource consumption by up to 3.79× while incurring minimal overhead on training progress.",
+  "abstract_source_id": "src-abstract-nsdi-2026-25e8660b",
   "venue": "nsdi",
   "year": 2026,
   "track_or_session": "Clouds, Carefully Engineered",
@@ -181,6 +183,19 @@
         "proceedings page range and page count",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2026-25e8660b",
+      "url": "https://www.usenix.org/conference/nsdi26/presentation/zhu-ruidong",
+      "kind": "paper-page",
+      "title": "DistRS: Disaggregated Reward Service for RLVR with Batch-Level Constraint",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:05:08Z",
+      "content_hash": "sha256:3871fbac0f0d7b1dbd0e84c849cfae3b7da40a5b0d489d5ed266320ca078379f",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

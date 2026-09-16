@@ -1,0 +1,13 @@
+<%-- Corpus statistics shown at the bottom of every page. Expects `stats`. --%>
+<footer class="site-footer">
+  <dl class="stats">
+    <div><dt>Papers</dt><dd><fmt:formatNumber value="${stats.papers}" /></dd></div>
+    <div><dt>Conferences</dt><dd>${stats.conferences} <span class="muted">(${stats.venueYears} conference-years)</span></dd></div>
+    <div><dt>Abstracts</dt><dd><fmt:formatNumber value="${stats.withAbstract}" /> <span class="muted">(${stats.abstractPercent}%)</span></dd></div>
+    <div><dt>LLM summaries</dt><dd><fmt:formatNumber value="${stats.withSummary}" /> <span class="muted">(${stats.summaryPercent}%)</span></dd></div>
+    <div><dt>Independent reviews</dt><dd><fmt:formatNumber value="${stats.withReview}" /> <span class="muted">(${stats.reviewPercent}%)</span></dd></div>
+    <div><dt>Code links</dt><dd><fmt:formatNumber value="${stats.withCode}" /></dd></div>
+    <div><dt>Artifacts</dt><dd><fmt:formatNumber value="${stats.withArtifact}" /></dd></div>
+    <div><dt>Excluded by relevance</dt><dd><fmt:formatNumber value="${stats.excluded}" /> <span class="muted">(hidden unless selected)</span></dd></div>
+  </dl>
+</footer>

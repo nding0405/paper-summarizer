@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2023-rr-a-fault-model-for-efficient-tee-replication-0d6f0123",
   "title": "RR: A Fault Model for Efficient TEE Replication",
+  "abstract": "Trusted Execution Environments (TEEs) ensure the confidentiality and integrity of computations in hardware. Subject to the TEE's threat model, the hardware shields a computation from most externally induced fault behavior except crashes. As a result, a crash-fault tolerant (CFT) replication protocol should be sufficient when replicating trusted code inside TEEs. However, TEEs do not provide efficient and general means of ensuring the freshness of external, persistent state. Therefore, CFT replication is insufficient for TEE computations with external state, as this state could be rolled back to an earlier version when a TEE restarts. Furthermore, using BFT protocols in this setting is too conservative, because these protocols are designed to tolerate arbitrary behavior, not just rollback during a restart.\n\nIn this paper, we propose the restart-rollback (RR) fault model for replicating TEEs, which precisely captures the possible fault behaviors of TEEs with external state. Then, we show that existing replication protocols can be easily adapted to this fault model with few changes, while retaining their original performance. We adapted two widely used crash fault tolerant protocols - the ABD read/write register protocol and the Paxos consensus protocol - to the RR model. Furthermore, we leverage these protocols to build a replicated metadata service called emph{TEEMS}, and then show that it can be used to add TEE-grade confidentiality, integrity, and freshness to untrusted cloud storage services. Our evaluation shows that our protocols perform significantly better than their BFT counterparts (between $1.25$ and $55times$ better throughput), while performing identically to the CFT versions, which do not protect against rollback attacks.",
+  "abstract_source_id": "src-abstract-ndss-2023-0d6f0123",
   "venue": "ndss",
   "year": 2023,
   "track_or_session": "Trustworthy Computing",
@@ -126,6 +128,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2023-0d6f0123",
+      "url": "https://www.ndss-symposium.org/ndss-paper/rr-a-fault-model-for-efficient-tee-replication/",
+      "kind": "paper-page",
+      "title": "RR: A Fault Model for Efficient TEE Replication",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:17:23Z",
+      "content_hash": "sha256:5db55529c002e37275a75f2d8656ac90d30d4c02ebba0820fe3dd95157a4559d",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

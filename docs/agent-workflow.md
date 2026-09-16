@@ -51,17 +51,13 @@ limitations.
 During collection:
 
 ```sh
-PYTHONPATH=src python3 -m systems_phd_explorer.cli validate \
-  --root data/shards/<venue>/<year> \
-  --profile draft
+./mvnw -q compile exec:java -Dexec.args="validate --root data/shards/<venue>/<year>"
 ```
 
 Before release:
 
 ```sh
-PYTHONPATH=src python3 -m systems_phd_explorer.cli validate \
-  --root data/shards \
-  --profile release
+./mvnw -q compile exec:java -Dexec.args="validate --root data/shards"
 ```
 
 ## 6. Hand off, then merge centrally
@@ -76,8 +72,7 @@ The handoff report lists:
 - validator result; and
 - collector version.
 
-A designated merger validates all shards and generates SQLite, exports, and
-the site index. If duplicate IDs, titles, people, or institutions are detected,
+A designated merger validates all shards and generates the site export. If duplicate IDs, titles, people, or institutions are detected,
 the merger creates review issues rather than mutating agent records silently.
 
 ## Suggested role allocation
@@ -95,4 +90,4 @@ the merger creates review issues rather than mutating agent records silently.
 | Agent I | frontend and client-side search |
 
 Branches are still useful, but the file boundaries are the primary conflict
-control. Never allow multiple agents to write the canonical SQLite database.
+control. Never allow multiple agents to write the generated export.

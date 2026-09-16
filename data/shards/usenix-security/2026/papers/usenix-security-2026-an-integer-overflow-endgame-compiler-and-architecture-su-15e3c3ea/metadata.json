@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-an-integer-overflow-endgame-compiler-and-architecture-su-15e3c3ea",
   "title": "An Integer Overflow Endgame: Compiler and Architecture Support for Default-On Integer Overflow Mitigation",
+  "abstract": "Integer overflow checks are off-by-default in most production settings due to their high overheads. Consequently, many serious vulnerabilities remain unmitigated. We analyze the source of these overheads---in compilers including LLVM (UBSan, Rust), and in processors including x86-64, ARM64, and RISC-V---and show how to eliminate them.\n\nOverheads in LLVM stem from how overflow semantics are expressed in LLVM IR. LLVM's current approach, based on intrinsics and branches, interferes with a variety of middle end optimizations. We develop an alternative approach that tracks overflow semantics with metadata, but otherwise leaves LLVM IR unchanged, eliminating this overhead. Overheads in hardware primarily result from current ISA designs, that require doubling the number of μops for checked vs. unchecked arithmetic, stressing the processor pipeline. We show how simple ISA extensions can alleviate this stress, enabling overflow-checked arithmetic to issue as a single μop.\n\nWe evaluate these extensions through compiler-based emulation on real hardware and simulation in gem5. Our work offers a path to significantly reducing the cost of overflow checks in existing compilers, and demonstrates that integer overflow mitigation can be cheap enough for default-on use in future hardware.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-15e3c3ea",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Hardware Security 1",
@@ -197,6 +199,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-15e3c3ea",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/zhang-zheng",
+      "kind": "paper-page",
+      "title": "An Integer Overflow Endgame: Compiler and Architecture Support for Default-On Integer Overflow Mitigation",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:22:57Z",
+      "content_hash": "sha256:f77757f67b7745b203993205ac085ad55d9e0ed6310eb0ca418266ae82ef4485",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

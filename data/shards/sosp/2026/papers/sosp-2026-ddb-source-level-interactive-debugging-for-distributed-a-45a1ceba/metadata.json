@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sosp-2026-ddb-source-level-interactive-debugging-for-distributed-a-45a1ceba",
   "title": "DDB: Source-Level Interactive Debugging for Distributed Applications",
+  "abstract": "Interactive debugging is an effective tool for understanding program behavior at the source level, allowing developers to pause execution, navigate the call stack, and inspect runtime state. However, interactive debuggers are designed for single-process execution, and interactive debugging has been widely considered impractical for distributed systems. Call stacks stop at process boundaries, debugging state fails to survive infrastructure dynamics, and, most critically, debugger-induced execution pauses trigger catastrophic timeout cascades that destroy the intended debug flow. Consequently, developers are forced to abandon live hypothesis testing in favor of unwieldy and iterative log-and-redeploy cycles. We present DDB, a source-level interactive debugger that extends interactive debugging capabilities to distributed applications. We show that each of these challenges admits a targeted solution. To bridge disjoint processes, Distributed Backtrace (DBT) embeds compact causality metadata in every RPC and reconstructs a unified call stack across RPC boundaries. To manage the lifecycle of a distributed session, an intent-preserving control plane automatically coordinates and propagates breakpoints across dynamic process sets. To make pausing safe, Pause-Erased Time (PET) virtualizes each process's clock, decoupling logical time from physical pauses and preventing timeout cascades. DDB integrates with an RPC framework in 20-60 lines of code. Evaluated on gRPC, ServiceWeaver, Nu, and Quicksand across up to 122 processes, DDB achieves 30ms median cross-RPC backtrace latency, sub-5 ms time jump under repeated execution pauses, and adds 1-5% throughput overhead, comparable to attaching a single-process debugger. In a controlled user study, DDB achieves a 100% fault localization success rate (compared to 38.5% for baseline tools) with a median localization time of ~8 minutes.",
+  "abstract_source_id": "src-abstract-45a1ceba",
   "venue": "sosp",
   "year": 2026,
   "track_or_session": null,
@@ -112,6 +114,19 @@
       "official": true,
       "supports": [
         "Official camera-ready deadline and shepherd-approval requirements supporting accepted-papers-only status."
+      ]
+    },
+    {
+      "id": "src-abstract-45a1ceba",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/search/match?query=DDB%3A%20Source-Level%20Interactive%20Debugging%20for%20Distributed%20Applications&fields=title,abstract",
+      "kind": "semantic-scholar",
+      "title": "DDB: Source-Level Interactive Debugging for Distributed Applications",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T23:12:40Z",
+      "content_hash": "sha256:f43a0ce68cea73c05e2f4fa60d950f47c32919ab3afd6cba7a4869fb14e4fcf1",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

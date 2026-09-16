@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2024-reqsminer-automated-discovery-of-cdn-forwarding-request-e75afa95",
   "title": "ReqsMiner: Automated Discovery of CDN Forwarding Request Inconsistencies and DoS Attacks with Grammar-based Fuzzing",
+  "abstract": "Content Delivery Networks (CDNs) are ubiquitous middleboxes designed to enhance the performance of hosted websites and shield them from various attacks. Numerous notable studies show that CDNs modify a client's request when forwarding it to the original server. Multiple inconsistencies in this forwarding operation have been found to potentially result in security vulnerabilities like DoS attacks. Nonetheless, existing research lacks a systematic approach to studying CDN forwarding request inconsistencies.\n\nIn this work, we present ReqsMiner, an innovative fuzzing framework developed to discover previously unexamined inconsistencies in CDN forwarding requests. The framework uses techniques derived from reinforcement learning to generate valid test cases, even with minimal feedback, and incorporates real field values into the grammar-based fuzzer. With the help of ReqsMiner, we comprehensively test 22 major CDN providers and uncover a wealth of hitherto unstudied CDN forwarding request inconsistencies. Moreover, the application of specialized analyzers enables ReqsMiner to extend its capabilities, evolving into a framework capable of detecting specific types of attacks. By extension, our work further identifies three novel types of HTTP amplification DoS attacks and uncovers 74 new potential DoS vulnerabilities with an amplification factor that can reach up to 2,000 generally, and even 1,920,000 under specific conditions. The vulnerabilities detected were responsibly disclosed to the affected CDN vendors, and mitigation suggestions were proposed. Our work contributes to fortifying CDN security, thereby enhancing their resilience against malicious attacks and preventing misuse.",
+  "abstract_source_id": "src-abstract-ndss-2024-e75afa95",
   "venue": "ndss",
   "year": 2024,
   "track_or_session": "Fall submission cycle",
@@ -270,6 +272,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2024-e75afa95",
+      "url": "https://www.ndss-symposium.org/ndss-paper/reqsminer-automated-discovery-of-cdn-forwarding-request-inconsistencies-and-dos-attacks-with-grammar-based-fuzzing/",
+      "kind": "paper-page",
+      "title": "ReqsMiner: Automated Discovery of CDN Forwarding Request Inconsistencies and DoS Attacks with Grammar-based Fuzzing",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:18:36Z",
+      "content_hash": "sha256:b875149c0f254923787a28b364049fa607a25a51c67c2ca15d0f39dc511ab818",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

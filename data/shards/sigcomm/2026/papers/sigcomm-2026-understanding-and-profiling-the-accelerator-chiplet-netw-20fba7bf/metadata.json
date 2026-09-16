@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sigcomm-2026-understanding-and-profiling-the-accelerator-chiplet-netw-20fba7bf",
   "title": "Understanding and Profiling the Accelerator Chiplet Network Using PingPoint",
+  "abstract": "Emerging chiplet-based accelerators introduce a new class of intrahost networks—the Accelerator Chiplet Network (ACN)—that links compute chiplets, IO chiplets, and memory modules and increasingly governs application performance. Yet ACN behavior remains largely opaque: existing tools overlook on-package communication and instead attribute overheads to compute or memory subsystems, while ACN-induced latency, bandwidth heterogeneity, and congestion are hard to observe due to proprietary microarchitectures, tight coupling with the execution pipeline, and complex mappings between application activity and hardware. To overcome this challenge, we build an ACN characterization framework that enables fine-grained, topology-aware probing of paths and links. We then use it to uncover fundamental ACN performance properties on multi-chiplet GPUs. Guided by these insights, we design PingPoint, a lightweight utility for ACN-native profiling. Our key insight is that modeling the ACN as a logical, hose-based graph with queueing abstractions, combined with in-situ software probing, makes systematic dissection of the otherwise opaque ACN possible. It injects latency and bandwidth probes while co-executing target kernels, captures cycle-level link- and path-granular distributions, and applies differential attribution to localize congestion to individual ACN links. Across diverse workloads and hardware, it exposes hidden bottlenecks, guides kernel placement and traffic shaping, quantifies the performance impact of ACN contention, and enables practical optimization with marginal overhead.",
+  "abstract_source_id": "src-abstract-20fba7bf",
   "venue": "sigcomm",
   "year": 2026,
   "track_or_session": "Research Session 8: Scale-Up Fabrics: Measurement & Design — Research Paper",
@@ -128,6 +130,19 @@
       "official": true,
       "supports": [
         "official main-paper scope and track definitions"
+      ]
+    },
+    {
+      "id": "src-abstract-20fba7bf",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/search/match?query=Understanding%20and%20Profiling%20the%20Accelerator%20Chiplet%20Network%20Using%20PingPoint&fields=title,abstract",
+      "kind": "semantic-scholar",
+      "title": "Understanding and Profiling the Accelerator Chiplet Network Using PingPoint",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T23:09:17Z",
+      "content_hash": "sha256:2c02b39c0664f36be6af474490e29b294279262317b6f8a0635abafdba2b8b71",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

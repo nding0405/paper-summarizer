@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sigcomm-2026-connecting-100k-gpus-building-the-communication-stack-fo-1df864d3",
   "title": "Connecting 100K+ GPUs: Building the Communication Stack for Large-Scale LLM Training",
+  "abstract": "The arrival of 100K+ GPU clusters marks a new frontier in AI infrastructure. Standard communication stack meets new challenges as physical topologies span multiple datacenter buildings, introducing high bandwidth-delay product links where latency increases by up to 30× compared to intra-rack traffic. Furthermore, the transition toward Mixture-of-Experts architectures generating bursty all-to-all patterns that create transient congestion hotspots. These constraints, combined with an operational environment where hardware failures shift from anomalies to frequent occurrences, renders traditionally lightweight operations like initialization and resource management challenging. We present Meta's network architecture and software stack designed to support one of the world's largest RoCE fabrics, currently connecting over 100,000 GPUs across multiple datacenter buildings. To overcome scaling barriers, we introduce a scalable initialization strategy that reduces startup times by 11× via eager process group creation and O(N) topology discovery, alongside a resource management system that cuts GPU memory usage by 2× through on-demand allocation. We further detail a custom transport layer utilizing Dynamic Queue Pair Load Balancing to saturate links, and a set of operation toolings. These innovations have been deployed in production, providing the foundational communication fabric for training state-of-the-art Large Language Models.",
+  "abstract_source_id": "src-abstract-sigcomm-2026-1df864d3",
   "venue": "sigcomm",
   "year": 2026,
   "track_or_session": "Experience Session 1: AI Datacenter Networks & Communication — Experience Paper",
@@ -926,6 +928,19 @@
       "official": true,
       "supports": [
         "official main-paper scope and track definitions"
+      ]
+    },
+    {
+      "id": "src-abstract-sigcomm-2026-1df864d3",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/search/match?query=Connecting%20100K%2B%20GPUs%3A%20Building%20the%20Communication%20Stack%20for%20Large-Scale%20LLM%20Training&fields=title,abstract",
+      "kind": "semantic-scholar",
+      "title": "Connecting 100K+ GPUs: Building the Communication Stack for Large-Scale LLM Training",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:59:07Z",
+      "content_hash": "sha256:391f37ffe5750888d53122839f314f8af2ec7757211b7a23980a9b71891124a9",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

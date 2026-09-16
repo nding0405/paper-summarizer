@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2026-leakylinks-measuring-the-security-and-privacy-risks-of-u-841587c4",
   "title": "LeakyLinks: Measuring the Security and Privacy Risks of URL Scanning Services",
+  "abstract": "URL scanning services are widely used in security workflows to detect malicious websites and protect users from online threats. However, their common practice of publicly indexing scanned URLs may unintentionally expose sensitive user information through URL-embedded access credentials. Although isolated accounts of such privacy incidents exist, a systematic assessment of their prevalence is still lacking. We present leakylinks, an automated analysis pipeline that combines URL filtering with LLM-driven semantic classification to identify URLs exposing Sensitive Personal Information (SPI). Using LEAKYLINKS, we analyze URLs collected from public feeds of six prominent URL scanning services over a period of three weeks. With the framework, we visited 332k URLs, identifying over 4 k URLs which leak SPI with a precision of 97 %. To further assess the extent to which published URLs are actively accessed by third parties, we deploy honeypages and submit their links to the selected URL scanning services. Our measurements confirm that external entities access URLs submitted to these scanners, often from potentially suspicious IPs exhibiting behavior commonly associated with reconnaissance or opportunistic probing. Taken together, these findings indicate that URL scanning services represent a valuable target for web adversaries and may already be subject to active exploitation in the wild.",
+  "abstract_source_id": "src-abstract-sp-2026-841587c4",
   "venue": "sp",
   "year": 2026,
   "track_or_session": "Cycle 2",
@@ -175,6 +177,19 @@
       "official": true,
       "supports": [
         "DOI, published-order authors and affiliations, abstract, publication date, page span, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2026-841587c4",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "LEAKYLINKS: Measuring the Security and Privacy Risks of URL Scanning Services",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:58:02Z",
+      "content_hash": "sha256:4204efad9387253e2c70bd18217fac7c5220b9cd43ecd6179fdc27c5a043343e",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

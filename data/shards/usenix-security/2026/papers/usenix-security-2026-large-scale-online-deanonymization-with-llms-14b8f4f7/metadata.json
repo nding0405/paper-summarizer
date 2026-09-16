@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-large-scale-online-deanonymization-with-llms-14b8f4f7",
   "title": "Large-scale online deanonymization with LLMs",
+  "abstract": "We show that large language models can be used to perform at-scale deanonymization. With full Internet access, our agent can re-identify Hacker News users and Anthropic Interviewer participants at high precision, given pseudonymous online profiles and conversations alone, matching what would take hours for a dedicated human investigator. We then design attacks for the closed-world setting. Given two databases of pseudonymous individuals, each containing unstructured text written by or about that individual, we implement a scalable attack pipeline that uses LLMs to: (1) extract identity-relevant features, (2) search for candidate matches via semantic embeddings, and (3) reason over top candidates to verify matches and reduce false positives. Compared to classical deanonymization work (e.g., on the Netflix prize) that required structured data, our approach works directly on raw user content across arbitrary platforms. We construct three datasets with known ground-truth data to evaluate our attacks. The first links Hacker News to LinkedIn profiles, using cross-platform references that appear in the profiles. Our second dataset matches users across Reddit movie discussion communities; and the third splits a single user's Reddit history in time to create two pseudonymous profiles to be matched. In each setting, LLM-based methods substantially outperform classical baselines, achieving up to 55% recall at 90% precision compared to near 0% for the best non-LLM method. Our results show that the cost of deanonymizing pseudonymous users online has fallen sharply, and threat models for online privacy should account for this shift.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-14b8f4f7",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Privacy Anonymity 2",
@@ -176,6 +178,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-14b8f4f7",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/lermen",
+      "kind": "paper-page",
+      "title": "Large-scale online deanonymization with LLMs",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:24:29Z",
+      "content_hash": "sha256:c377e941b87d7a04cff2721ca671c24435ef3243706ff7528338b40862805371",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

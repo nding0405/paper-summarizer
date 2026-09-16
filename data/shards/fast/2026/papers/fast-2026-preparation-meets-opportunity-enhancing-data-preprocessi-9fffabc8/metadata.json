@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "fast-2026-preparation-meets-opportunity-enhancing-data-preprocessi-9fffabc8",
   "title": "Preparation Meets Opportunity: Enhancing Data Preprocessing for ML Training With Seneca",
+  "abstract": "Input data preprocessing is a common bottleneck when concurrently training multimedia machine learning (ML) models in modern systems. To alleviate these bottlenecks and reduce the training time for concurrent jobs, we present Seneca, a data loading system that optimizes cache partitioning and data sampling for the data storage and ingestion (DSI) pipeline. The design of Seneca contains two key techniques. First, Seneca uses a performance model for the data pipeline to optimally partition the cache for three different forms of data (encoded, decoded, and augmented). Second, Seneca opportunistically serves cached data over uncached ones during random batch sampling so that concurrent jobs benefit from each other. We implement Seneca by modifying PyTorch and demonstrate its effectiveness by comparing it against several state-of-the-art caching systems for DNN training. Seneca reduces the makespan by 45.23% compared to PyTorch and increases data processing throughput by up to 3.45× compared to the next best dataloader.",
+  "abstract_source_id": "src-abstract-fast-2026-9fffabc8",
   "venue": "fast",
   "year": 2026,
   "track_or_session": "AI and LLMs II",
@@ -160,6 +162,19 @@
         "proceedings page range and page count",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-fast-2026-9fffabc8",
+      "url": "https://www.usenix.org/conference/fast26/presentation/desai",
+      "kind": "paper-page",
+      "title": "Preparation Meets Opportunity: Enhancing Data Preprocessing for ML Training With Seneca",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:01:38Z",
+      "content_hash": "sha256:df8385c7379a1162bffdb1a590985dbb76019f12ed3be1bf6c31035be99f3995",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-breaking-the-layer-barrier-remodeling-private-transforme-fb426448",
   "title": "Breaking the Layer Barrier: Remodeling Private Transformer Inference with Hybrid CKKS and MPC",
+  "abstract": "This paper presents an efficient framework for private Transformer inference that combines Homomorphic Encryption (HE) and Secure Multi-party Computation (MPC) to protect data privacy. Existing methods often leverage HE for linear layers (e.g., matrix multiplications) and MPC for non-linear layers (e.g., Softmax activation functions), but the conversion between HE and MPC introduces significant communication costs. The proposed framework, dubbed BLB, overcomes this by breaking down layers into fine-grained operators and further fusing adjacent linear operators, reducing the need for HE/MPC conversions. To manage the increased ciphertext bit width from the fused linear operators, BLB proposes the first secure conversion protocol between CKKS and MPC and enables CKKS-based computation of the fused operators. Additionally, BLB proposes an efficient matrix multiplication protocol for fused computation in Transformers. Extensive evaluations on BERT-base, BERT-large, and GPT2-base show that BLB achieves a 21x reduction in communication overhead compared to BOLT (S&P '24) and a 2x reduction compared to Bumblebee (NDSS '25), along with latency reductions of 13x and 1.8x, respectively, when leveraging GPU acceleration.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-fb426448",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Privacy 1: Differential Privacy and Audit",
@@ -196,6 +198,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-fb426448",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/xu-tianshi",
+      "kind": "paper-page",
+      "title": "Breaking the Layer Barrier: Remodeling Private Transformer Inference with Hybrid CKKS and MPC",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:18:57Z",
+      "content_hash": "sha256:839b850979f72ae1d5ccb4d9a8055c2965e2c6b04faf07d9d54576fae99f673b",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

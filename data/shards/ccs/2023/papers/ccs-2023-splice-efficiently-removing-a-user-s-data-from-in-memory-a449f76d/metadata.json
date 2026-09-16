@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2023-splice-efficiently-removing-a-user-s-data-from-in-memory-a449f76d",
   "title": "Splice: Efficiently Removing a User's Data from In-memory Application State",
+  "abstract": "Splice is a new programming framework that allows security-conscious applications to efficiently locate and delete a user's in-memory state. The core technical challenge is determining how to delete a user's memory values without breaking application-specific semantic invariants involving the memory state of remaining users. Splice solves this problem using three techniques: taint tracking (which traces how a user's data flows through memory), deletion by synthesis (which overwrites each user-owned memory value in place, replacing it with a value that preserves the symbolic constraints of enclosing data structures), and a novel type system (which forces applications to employ defensive programming to avoid computing over synthesize-deleted values in unsafe ways). Using four realistic applications that we ported to Splice, we show that Splice's type system and defensive programming requirements are not onerous for developers. We also demonstrate that Splice's run-time overheads are similar to those of prior taint tracking systems, while enabling strong deletion semantics.",
+  "abstract_source_id": "src-abstract-ccs-2023-a449f76d",
   "venue": "ccs",
   "year": 2023,
   "track_or_session": "Privacy in Systems (Privacy and Anonymity)",
@@ -151,6 +153,19 @@
       "official": false,
       "supports": [
         "published title, author order, and page span"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2023-a449f76d",
+      "url": "https://api.openalex.org/works/doi:10.1145/3576915.3623070?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Splice: Efficiently Removing a User's Data from In-memory Application State",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:08:26Z",
+      "content_hash": "sha256:a2b3588a5f4572c46e54dfe6c4f9823f1cd7f5d1d5a77043aed3e56cf1f95a6f",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

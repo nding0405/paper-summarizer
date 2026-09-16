@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2026-unknown-target-uncovering-and-detecting-novel-in-flight-a7efa310",
   "title": "Unknown Target: Uncovering and Detecting Novel In-Flight Attacks to Collision Avoidance (TCAS)",
+  "abstract": "The Traffic alert and Collision Avoidance System (TCAS) is a mandatory last-resort safeguard against mid-air collisions. Despite its critical safety role, the system's unauthenticated and unencrypted communication protocols present a long-identified security risk. Although researchers have previously demonstrated practical injection attacks, official advisories have assessed these vulnerabilities as confined to laboratory environments, also stating that no mitigation is currently available. In this paper, we challenge both assertions. We present compelling evidence suggesting that an in-flight cyber-attack targeting TCAS has already occurred. Through a detailed analysis of public flight and communications data from a series of anomalous events involving multiple aircraft, we identify a distinct signature consistent with a ghost plane injection attack. We detail how this novel attack exploits legacy protocol features and describe three strategies of increasing sophistication; the most aggressive of these can reduce a target's perceived range by over 3.5 kilometers, sufficient to trigger collision avoidance advisories on victim aircraft from a significant standoff distance. We implement and experimentally evaluate the attack strategy most consistent with the observed incident, achieving a spoofed range reduction of 1.9 km, confirming its feasibility. Furthermore, to provide a basis for responding to such threats, we propose a novel, backward-compatible methodology to geographically localize the source of such attacks by repurposing the TCAS alert data broadcast by victims. In simulated scenarios of the most plausible attack variant, our approach achieves a median localization accuracy of 855 meters. Applying this technique to real-world incident data, we were able to identify the anomaly and the likely origin of the observed ghost plane injection attack.",
+  "abstract_source_id": "src-abstract-ndss-2026-a7efa310",
   "venue": "ndss",
   "year": 2026,
   "track_or_session": "Fall submission cycle",
@@ -160,6 +162,19 @@
       "official": false,
       "supports": [
         "independent proceedings identity reconciliation"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2026-a7efa310",
+      "url": "https://www.ndss-symposium.org/ndss-paper/unknown-target-uncovering-and-detecting-novel-in-flight-attacks-to-collision-avoidance-tcas/",
+      "kind": "paper-page",
+      "title": "Unknown Target: Uncovering and Detecting Novel In-Flight Attacks to Collision Avoidance (TCAS)",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:23:29Z",
+      "content_hash": "sha256:88f105bd0e5c273a920c35e0e3dbbb6e1952a7367ac614d452191ca639b3c740",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

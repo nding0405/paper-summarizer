@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2023-reaas-enabling-adversarially-robust-downstream-classifie-87ee59b2",
   "title": "REaaS: Enabling Adversarially Robust Downstream Classifiers via Robust Encoder as a Service",
+  "abstract": "Encoder as a service is an emerging cloud service. Specifically, a service provider first pre-trains an encoder (i.e., a general-purpose feature extractor) via either supervised learning or self-supervised learning and then deploys it as a cloud service API. A client queries the cloud service API to obtain feature vectors for its training/testing inputs when training/testing its classifier (called downstream classifier). A downstream classifier is vulnerable to adversarial examples, which are testing inputs with carefully crafted perturbation that the downstream classifier misclassifies. Therefore, in safety and security critical applications, a client aims to build a robust downstream classifier and certify its robustness guarantees against adversarial examples.\n\nWhat APIs should the cloud service provide, such that a client can use any certification method to certify the robustness of its downstream classifier against adversarial examples while minimizing the number of queries to the APIs? How can a service provider pre-train an encoder such that clients can build more certifiably robust downstream classifiers? We aim to answer the two questions in this work. For the first question, we show that the cloud service only needs to provide two APIs, which we carefully design, to enable a client to certify the robustness of its downstream classifier with a minimal number of queries to the APIs. For the second question, we show that an encoder pre-trained using a spectral-norm regularization term enables clients to build more robust downstream classifiers.",
+  "abstract_source_id": "src-abstract-ndss-2023-87ee59b2",
   "venue": "ndss",
   "year": 2023,
   "track_or_session": "ML and AI I",
@@ -126,6 +128,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2023-87ee59b2",
+      "url": "https://www.ndss-symposium.org/ndss-paper/reaas-enabling-adversarially-robust-downstream-classifiers-via-robust-encoder-as-a-service/",
+      "kind": "paper-page",
+      "title": "REaaS: Enabling Adversarially Robust Downstream Classifiers via Robust Encoder as a Service",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:17:20Z",
+      "content_hash": "sha256:21f05ae46fdf90acfbf5c8576af452dfe46242c5673e9d43f269a69ca2153dae",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

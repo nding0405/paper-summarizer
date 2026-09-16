@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2024-mononn-enabling-a-new-monolithic-optimization-space-for-b28fdc43",
   "title": "MonoNN: Enabling a New Monolithic Optimization Space for Neural Network Inference Tasks on Modern GPU-Centric Architectures",
+  "abstract": "In this work, we reveal that the kernel-by-kernel execution scheme in the existing machine learning optimizing compilers is no longer effective in fully utilizing hardware resources provided by the advances of modern GPU architectures. Specifically, such scheme suffers from severe non-computation overhead and off-chip memory traffic, making the optimization efforts from the state-of-the-art compiler techniques greatly attenuated on the newer generations of GPUs. To address this emerging challenge, we propose MonoNN, the first machine learning optimizing compiler that enables a new monolithic design and optimization space for common static neural network (NN) inference tasks on a single GPU. MonoNN can accommodate an entire neural network into a single GPU kernel, drastically reducing non-computation overhead and providing further fine-grained optimization opportunities from the newly formed monolithic optimization space. Most importantly, MonoNN identifies the resource incompatibility issue between various NN operators as the key design bottleneck for creating such a monolithic optimization space. Then MonoNN effectively tackles it by systematically exploring and exploiting the parallelism compensation strategy and resource trade-offs across different types of NN computations, and by proposing a novel schedule-independent group tuning technique to significantly shrink the extremely large tuning space. Finally, MonoNN provides a compiler implementation that incorporates our proposed optimizations and automatically generates highly efficient kernel code. Extensive evaluation on a set of popular production inference tasks demonstrates that MonoNN achieves an average speedup of 2.01× over the state-of-the-art frameworks and compilers. Specifically, MonoNN outperforms TVM, TensorRT, XLA, and AStitch by up to 7.3×, 5.9×, 1.7× and 2.9× in terms of end-to-end inference performance, respectively. MonoNN source code is publicly available at https://github.com/AlibabaResearch/mononn .",
+  "abstract_source_id": "src-abstract-osdi-2024-b28fdc43",
   "venue": "osdi",
   "year": 2024,
   "track_or_session": "ML Scheduling",
@@ -222,6 +224,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2024-b28fdc43",
+      "url": "https://www.usenix.org/conference/osdi24/presentation/zhuang",
+      "kind": "paper-page",
+      "title": "MonoNN: Enabling a New Monolithic Optimization Space for Neural Network Inference Tasks on Modern GPU-Centric Architectures",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:07:14Z",
+      "content_hash": "sha256:07037534d4977f1ea01a5a7a2d26564cf234ed2ee5016e297b950e27d4cb41ae",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

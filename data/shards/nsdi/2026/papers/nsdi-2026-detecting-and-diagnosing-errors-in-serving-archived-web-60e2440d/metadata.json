@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2026-detecting-and-diagnosing-errors-in-serving-archived-web-60e2440d",
   "title": "Detecting and Diagnosing Errors in Serving Archived Web Pages",
+  "abstract": "Web archives crawl and save copies of pages from the web, enabling users to interact with web pages in the form they existed in the past. Prior to serving any archived page, an archive rewrites the page’s source so that users’ browsers fetch the page’s resources from the archive, not from the servers which originally hosted them. But, on many modern pages, an archive’s edits to crawled scripts result in a loss of fidelity, i.e., an archived copy fails to accurately mimic the original page even when the archive had crawled all resources on the page.\n\nTo help the developers of archival systems identify and fix the bugs which result in incorrect rewrites of crawled pages, we present FidEx. First, FidEx enables accurate identification of the pages on which an archive violates fidelity. It does so by tracking and comparing the execution of scripts between when a page is crawled and when its copy is loaded. In comparison to existing methods which compare the two loads using either screenshots or the errors reported by the browser, FidEx reduces the false positive rate from around 70% to less than 10%. Second, on every page on which it identifies a loss of fidelity, FidEx pinpoints which subset of the archive’s edits to the page are erroneous. Leveraging this input to fix bugs in the most widely used archival system, we reduced the fraction of archived pages which violate fidelity from 15% to 9%.",
+  "abstract_source_id": "src-abstract-nsdi-2026-60e2440d",
   "venue": "nsdi",
   "year": 2026,
   "track_or_session": "Managing Complexity at Scale",
@@ -118,6 +120,19 @@
         "proceedings page range and page count",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2026-60e2440d",
+      "url": "https://www.usenix.org/conference/nsdi26/presentation/zhu-jingyuan",
+      "kind": "paper-page",
+      "title": "Detecting and Diagnosing Errors in Serving Archived Web Pages",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:05:07Z",
+      "content_hash": "sha256:244eaea59baff6a567b0c5586a1cc4cf6bdf1460ec08ee607d6d8a06551af597",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

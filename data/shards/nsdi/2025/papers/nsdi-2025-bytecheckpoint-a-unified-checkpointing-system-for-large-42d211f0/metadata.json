@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2025-bytecheckpoint-a-unified-checkpointing-system-for-large-42d211f0",
   "title": "ByteCheckpoint: A Unified Checkpointing System for Large Foundation Model Development",
+  "abstract": "Checkpointing to preserve training states is crucial during the development of Large Foundation Models (LFMs), for training resumption upon various failures or changes in GPU resources and parallelism configurations. In addition, saved checkpoints are dispatched to evaluation tasks or transferred across different training stages (e.g., from pre-training to post-training). All these scenarios require resharding distributed checkpoints from one parallelism to another. In production environments, different LFMs are trained with various frameworks and storage backends, depending on model sizes and training scales. A high performance checkpointing system is needed to enable efficient checkpoint management at scale throughout the lifecycle of LFM development. We introduce ByteCheckpoint, an industrial-grade checkpointing system for large-scale LFM training. ByteCheckpoint features: a parallelism-agnostic checkpoint representation that enables efficient load-time checkpoint resharding; a generic checkpoint saving/loading workflow to accommodate multiple training frameworks and support different storage backends; full-stack optimizations to ensure high I/O efficiency and scalability; a suite of monitoring tools to streamline large-scale performance analysis and bottleneck detection. Compared to existing open-source checkpointing systems [51, 57], ByteCheckpoint significantly reduces runtime checkpoint stalls, achieving an average reduction of 54.20×. For saving and loading times, ByteCheckpoint achieves improvements of up to 9.96× and 8.80×, respectively.",
+  "abstract_source_id": "src-abstract-nsdi-2025-42d211f0",
   "venue": "nsdi",
   "year": 2025,
   "track_or_session": "LLM Training and Resilience",
@@ -308,6 +310,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2025-42d211f0",
+      "url": "https://www.usenix.org/conference/nsdi25/presentation/wan-borui",
+      "kind": "paper-page",
+      "title": "ByteCheckpoint: A Unified Checkpointing System for Large Foundation Model Development",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:04:01Z",
+      "content_hash": "sha256:3402d6c83e00791d5df0961c892d9feef0e7019cceec08d109e109dba6453e7a",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

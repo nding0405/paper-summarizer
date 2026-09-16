@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-from-length-to-content-token-length-side-channel-attacks-37e7d9ba",
   "title": "From Length to Content: Token-Length Side-Channel Attacks on LLM API Merged Outputs",
+  "abstract": "Large Language Models (LLMs) are increasingly accessed via remote APIs over encrypted channels. While previous studies have shown that fine-grained side channels can leak information under token-by-token processing, modern LLM services typically stream outputs in multi-token chunks, seemingly mitigating such token-level leakage. However, in this paper, we demonstrate that token aggregation does not eliminate privacy risks. Instead, it introduces a merged token-length side channel. In this channel, the sizes of encrypted response chunks inadvertently expose character-length patterns of merged token groups. To study the practical implications of this leakage, we propose PromptEcho , a passive eavesdropping attack that reconstructs semantically meaningful portions of natural-language responses from observations of merged token lengths. PromptEcho frames the reconstruction task as a constrained sequence recovery problem, leveraging semantics-aware reasoning to resolve the ambiguity caused by merged token transmission. Specifically, PromptEcho first applies semantics-aware reasoning to decompose merged-token length observations, then uses probabilistic semantic alignment with a fine-tuned language model's linguistic priors to infer the most likely underlying tokens.\n\nWe evaluate PromptEcho on real-world API interaction traffic from multiple commercial LLM services, correctly inferring the topic for 42.5% of sessions and reconstructing 25.5% of responses with a cosine similarity above 0.9 on OpenAI's GPT-4o and DeepSeek-V3. These findings demonstrate that merged-token transmission remains vulnerable to token-length side-channel attacks, indicating practical privacy risks from encrypted traffic observations under the evaluated API-based LLM settings.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-37e7d9ba",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Security of ML 3",
@@ -218,6 +220,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-37e7d9ba",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/li-sijia",
+      "kind": "paper-page",
+      "title": "From Length to Content: Token-Length Side-Channel Attacks on LLM API Merged Outputs",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:24:04Z",
+      "content_hash": "sha256:8b898411808e6a891d8c4702d0c2763e83b161580a139c6a693d5ba0a61967bb",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

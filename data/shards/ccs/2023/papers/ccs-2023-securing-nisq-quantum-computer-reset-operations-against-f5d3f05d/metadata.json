@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2023-securing-nisq-quantum-computer-reset-operations-against-f5d3f05d",
   "title": "Securing NISQ Quantum Computer Reset Operations Against Higher Energy State Attacks",
+  "abstract": "Enabling the sharing of quantum computers among different users requires a secure reset operation that can reset the state of a qubit to ground state |0> and prevent leakage of the state to a post-reset circuit. This work highlights that the existing reset operations available in superconducting qubit NISQ quantum computers are not fully secure. In particular, this work demonstrates for the first time a new type of higher-energy state attack. Although NISQ quantum computers are typically abstracted as working with only energy states |0> and |1>, this work shows that it is possible for unprivileged users to set the qubit state to |2 or |3>. By breaking the abstraction of a two-level system, the new higher-energy state attack can be deployed to affect the operation of circuits or for covert communication between circuits. This work shows that common reset protocols are ineffective in resetting a qubit from a higher-energy state. To provide a defense, this work proposes a new Cascading Secure Reset (CSR) operation. CSR, without hardware modifications, is able to efficiently and reliably reset higher-energy states back to |0>. CSR achieves a reduction in |3> -initialized state leakage channel capacity by between 1 and 2 orders of magnitude, and does so with a 25x speedup compared with the default decoherence reset.",
+  "abstract_source_id": "src-abstract-ccs-2023-f5d3f05d",
   "venue": "ccs",
   "year": 2023,
   "track_or_session": "Quantum & Space (Hardware, Side Channels, and CyberPhysical Systems)",
@@ -172,6 +174,19 @@
       "official": false,
       "supports": [
         "published title, author order, and page span"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2023-f5d3f05d",
+      "url": "https://api.openalex.org/works/doi:10.1145/3576915.3623104?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Securing NISQ Quantum Computer Reset Operations Against Higher Energy State Attacks",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:08:23Z",
+      "content_hash": "sha256:d7f3703cc1db55ec75a0b99cf3a41c1a726a26230015b7d41887eeee399efc87",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

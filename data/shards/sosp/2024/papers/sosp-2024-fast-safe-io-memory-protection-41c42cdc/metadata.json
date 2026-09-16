@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sosp-2024-fast-safe-io-memory-protection-41c42cdc",
   "title": "Fast & Safe IO Memory Protection",
+  "abstract": "IO Memory protection mechanisms prevent malicious and/or buggy IO devices from executing errant transfers into memory. Modern servers achieve this using an IOMMU---IO devices operate on virtual addresses, and IOMMU translates virtual addresses to physical addresses (potentially speeding up translations using a cache called IOTLB) before executing memory transfers. Despite their importance, design of memory protection mechanisms that can provide strong safety properties while achieving high performance has remained elusive. Indeed, recent studies from production datacenters demonstrate that inefficiencies within state-of-the-art memory protection mechanisms result in significant throughput degradation, orders-of-magnitude tail latency inflation, and violation of isolation guarantees. We present Fast & Safe (F&S), a simple modification to existing memory protection mechanisms that enables them to provide the strongest safety property, and yet, near-completely eliminates their overheads. The key insight in F&S design is that, rather than solely focusing on minimizing IOTLB miss rates, we should focus on reducing the cost of each IOTLB miss. We demonstrate that this change of perspective enables a simple F&S design that requires no modifications in host hardware and minimal modifications within the operating system.",
+  "abstract_source_id": "src-abstract-sosp-2024-41c42cdc",
   "venue": "sosp",
   "year": 2024,
   "track_or_session": "Session 2: Memory 11:00 - 12:30 Session Chair: Sudarsun Kannan",
@@ -146,6 +148,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-sosp-2024-41c42cdc",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Fast & Safe IO Memory Protection",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:19Z",
+      "content_hash": "sha256:b613162f9e7d53fac5fe410aff94d06ac71f23c6c31e2e9cc362b51e87d1bb79",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

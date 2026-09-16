@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "fast-2023-unsafe-at-any-copy-name-collisions-from-mixing-case-sens-19af1e87",
   "title": "Unsafe at Any Copy: Name Collisions from Mixing Case Sensitivities",
+  "abstract": "File name confusion attacks, such as malicious symlinks and file squatting, have long been studied as sources of security vulnerabilities. However, a recently emerged type, i.e., case-sensitivity-induced name collisions, has not been scrutinized. These collisions are introduced by differences in name resolution under case-sensitive and case-insensitive file systems or directories. A prominent example is the recent Git vulnerability (CVE-2021-21300) which can lead to code execution on a victim client when it clones a maliciously crafted repository onto a case-insensitive file system. With trends including ext4 adding support for per-directory case-insensitivity and the broad deployment of the Windows Subsystem for Linux, the prerequisites for such vulnerabilities are increasingly likely to exist even in a single system.\n\nIn this paper, we make a first effort to investigate how and where the lack of any uniform approach to handling name collisions leads to a diffusion of responsibility and resultant vulnerabilities. Interestingly, we demonstrate the existence of a range of novel security challenges arising from name collisions and their inconsistent handling by low-level utilities and applications. Specifically, our experiments show that utilities handle many name collision scenarios unsafely, leaving the responsibility to applications whose developers are unfortunately not yet aware of the threats. We examine three case studies as a first step towards systematically understanding the emerging type of name collision vulnerability.",
+  "abstract_source_id": "src-abstract-fast-2023-19af1e87",
   "venue": "fast",
   "year": 2023,
   "track_or_session": "File Systems",
@@ -140,6 +142,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-fast-2023-19af1e87",
+      "url": "https://www.usenix.org/conference/fast23/presentation/basu",
+      "kind": "paper-page",
+      "title": "Unsafe at Any Copy: Name Collisions from Mixing Case Sensitivities",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:00:42Z",
+      "content_hash": "sha256:5f31f0df6424c833755ce33566c442e522480b9d722c2461f936769e0f323b14",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

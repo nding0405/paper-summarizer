@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-not-so-refreshing-attacking-gpus-using-rfm-rowhammer-mit-b91bfa93",
   "title": "Not so Refreshing: Attacking GPUs using RFM Rowhammer Mitigation",
+  "abstract": "Graphics Processing Units (GPUs) have become a critical part of computing systems at all scales. In this paper, we demonstrate new side channel attacks targeting the Graphics DDR (GDDR) memory chips. While several studies have demonstrated attacks on CPU memory chips, revealing potential security vulnerabilities, these attacks do not easily transfer to GPU memories, due to differences in the microarchitecture and operational characteristics of GDDR memory and GPU memory controllers, as well as the distinct computational model of GPUs. We reverse-engineer the mapping of physical addresses to GDDR physical bank addresses and show that existing row buffer timing attacks on these systems are ineffective due to row buffer management policies. Instead, our attacks target the Refresh Management (RFM) feature engineered into modern memories to mitigate Rowhammer vulnerabilities. We identify RFM-based timing leakage where repeated accesses to the same bank trigger refresh events, leading to measurable differences in access times. We exploit this leakage to first construct covert channel attacks on a shared GPU, achieving a bandwidth of over 50 KBps per bank with a low error rate of 0.03%. We demonstrate two end-to-end side-channel attacks on discrete GPUs with GDDR6: application fingerprinting and 3D object rendering fingerprinting within Blender, achieving F1 scores of up to 95% and 98%, respectively. Additionally, we implement three side-channel attacks on GPU-based SoCs using LPDDR5 memory: application fingerprinting, web fingerprinting, and video fingerprinting, achieving high F1 scores. Finally, we present a Denial of Service (DoS) attack, where the attacker leverages the RFM blocking to slow down applications by over 4.8× on average.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-b91bfa93",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Hardware Security 3: Side-Channel and Fault Injection Attacks",
@@ -175,6 +177,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-b91bfa93",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/nazaraliyev",
+      "kind": "paper-page",
+      "title": "Not so Refreshing: Attacking GPUs using RFM Rowhammer Mitigation",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:20:53Z",
+      "content_hash": "sha256:9acfc045503b70c371391b0ab7aef55c947ee65167f985c69ba6ea8374db4fc6",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

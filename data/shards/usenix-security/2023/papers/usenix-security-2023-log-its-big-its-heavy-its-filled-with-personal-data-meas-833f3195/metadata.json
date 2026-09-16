@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2023-log-its-big-its-heavy-its-filled-with-personal-data-meas-833f3195",
   "title": "Log: It’s Big, It’s Heavy, It’s Filled with Personal Data! Measuring the Logging of Sensitive Information in the Android Ecosystem",
+  "abstract": "Android offers a shared system that multiplexes all logged data from all system components, including both the operating system and the console output of apps that run on it. A security mechanism ensures that user-space apps can only read the log entries that they create, though many \"privileged\" apps are exempt from this restriction. This includes preloaded system apps provided by Google, the phone manufacturer, the cellular carrier, as well as those sharing the same signature. Consequently, Google advises developers to not log sensitive information to the system log.\n\nIn this work, we examined the logging of sensitive data in the Android ecosystem. Using a field study, we show that most devices log some amount of user-identifying information. We show that the logging of \"activity\" names can inadvertently reveal information about users through their app usage. We also tested whether different smartphones log personal identifiers by default, examined preinstalled apps that access the system logs, and analyzed the privacy policies of manufacturers that report collecting system logs.",
+  "abstract_source_id": "src-abstract-usenix-security-2023-833f3195",
   "venue": "usenix-security",
   "year": 2023,
   "track_or_session": "Private Data Leaks",
@@ -196,6 +198,19 @@
       "official": true,
       "supports": [
         "authors, affiliations when published, abstract, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2023-833f3195",
+      "url": "https://www.usenix.org/conference/usenixsecurity23/presentation/lyons",
+      "kind": "paper-page",
+      "title": "Log: It’s Big, It’s Heavy, It’s Filled with Personal Data! Measuring the Logging of Sensitive Information in the Android Ecosystem",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:11:54Z",
+      "content_hash": "sha256:3fba92b7dad8b3039a02820a9a7841e8acd6083cee5062cc10d34c6e7e969afc",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

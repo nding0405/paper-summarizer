@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2024-trojanpuzzle-covertly-poisoning-code-suggestion-models-20e48ff5",
   "title": "TROJANPUZZLE: Covertly Poisoning Code-Suggestion Models",
+  "abstract": "With tools like GitHub Copilot, automatic code suggestion is no longer a dream in software engineering. These tools, based on large language models, are typically trained on massive corpora of code mined from unvetted public sources. As a result, these models are susceptible to data poisoning attacks where an adversary manipulates the model’s training by injecting malicious data. Poisoning attacks could be designed to influence the model’s suggestions at run time for chosen contexts, such as inducing the model into suggesting insecure code payloads. To achieve this, prior attacks explicitly inject the insecure code payload into the training data, making the poison data detectable by static analysis tools that can remove such malicious data from the training set. In this work, we demonstrate two novel attacks, Covert and TrojanPuzzle, that can bypass static analysis by planting malicious poison data in out-of-context regions such as docstrings. Our most novel attack, TrojanPuzzle, goes one step further in generating less suspicious poison data by never explicitly including certain (suspicious) parts of the payload in the poison data, while still inducing a model that suggests the entire payload when completing code (i.e., outside docstrings). This makes TrojanPuzzle robust against signature-based dataset-cleansing methods that can filter out suspicious sequences from the training data. Our evaluation against models of two sizes demonstrates that both Covert and TrojanPuzzle have significant implications for practitioners when selecting code used to train or tune code-suggestion models.",
+  "abstract_source_id": "src-abstract-sp-2024-20e48ff5",
   "venue": "sp",
   "year": 2024,
   "track_or_session": "Summer cycle",
@@ -285,6 +287,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2024-20e48ff5",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "TrojanPuzzle: Covertly Poisoning Code-Suggestion Models",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:42Z",
+      "content_hash": "sha256:d62dac834635b4cd1890a53da454ceae7aaa151189662d990ac591dfd5cb6b3e",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

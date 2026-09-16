@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2024-t3-transparent-tracking-triggering-for-fine-grained-over-008a8a4e",
   "title": "T3: Transparent Tracking & Triggering for Fine-grained Overlap of Compute & Collectives",
+  "abstract": "Large Language Models increasingly rely on distributed techniques for their training and inference. These techniques require communication across devices which can reduce scaling efficiency as the number of devices increases. While some distributed techniques can overlap, and thus, hide this communication with independent computations, techniques such as Tensor Parallelism (TP) inherently serialize communication with model execution. One approach to hide this serialized communication is to interleave it with the producer operation (of the communicated data) in a fine-grained manner. However, this fine-grained interleaving of communication and computation in software can be difficult. Furthermore, as with any concurrent execution, it requires compute and memory resources to be shared between computation and communication, causing resource contention that reduces overlapping efficacy.",
+  "abstract_source_id": "src-abstract-asplos-2024-008a8a4e",
   "venue": "asplos",
   "year": 2024,
   "track_or_session": "Session 1B: Optimizing ML Communication",
@@ -212,6 +214,19 @@
       "official": false,
       "supports": [
         "Indexed alternate-version and institutional-copy links; not used as the authoritative relevance source."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2024-008a8a4e",
+      "url": "https://api.openalex.org/works/doi:10.1145/3620665.3640410?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "T3: Transparent Tracking & Triggering for Fine-grained Overlap of Compute & Collectives",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:00:35Z",
+      "content_hash": "sha256:8db2da512b306da0c29a03c317d083e3bd9c95d2e154a66c776e45303a62b634",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

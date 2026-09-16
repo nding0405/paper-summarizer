@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2026-weave-efficient-co-scheduling-for-disaggregated-rl-post-e6bc9c43",
   "title": "Weave: Efficient Co-Scheduling for Disaggregated RL Post-Training",
+  "abstract": "Rollout–training disaggregation is emerging as the standard architecture for Reinforcement Learning (RL) post-training, where memory-bound rollout and compute-bound training are physically disaggregated onto purpose-built clusters to maximize hardware efficiency. However, the strict synchronization required by on-policy algorithms introduces severe dependency bubbles, forcing one cluster to idle while the dependent phase is running on the other. We present WEAVE, a cluster scheduling framework that reclaims these bubbles through cross-cluster orchestration. WEAVE is built on the insight that the structural idleness of one job can be effectively utilized by the active phase of another. To realize this, we introduce the co-execution group abstraction, which partitions the cluster into isolated locality domains. This abstraction enables a two-tier scheduling architecture: an inter-group scheduler that optimizes job placement using conservative stochastic planning, and an intra-group scheduler that orchestrates a provably optimal round-robin schedule. The group abstraction also imposes a residency constraint, ensuring that massive model states remain cached in host memory to enable “warm-start” context switching. We evaluate WEAVE on a production-scale testbed with 328 H20 and 328 H800 GPUs. WEAVE improves cost efficiency by 1.84× over standard disaggregation and 1.38× over state-of-the-art co-located baselines, all while achieving 100% SLO attainment.",
+  "abstract_source_id": "src-abstract-osdi-2026-e6bc9c43",
   "venue": "osdi",
   "year": 2026,
   "track_or_session": "RL Training at Scale",
@@ -356,6 +358,19 @@
       "official": true,
       "supports": [
         "Official proceedings availability and canonical conference versions."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2026-e6bc9c43",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/wu-tianyuan",
+      "kind": "paper-page",
+      "title": "Weave: Efficient Co-Scheduling for Disaggregated RL Post-Training",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:09:16Z",
+      "content_hash": "sha256:e67d2ca6b97cc3fe1d233bc144f258634a895347b8c889b80143f80cda951c7e",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

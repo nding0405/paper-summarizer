@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2024-less-defined-knowledge-and-more-true-alarms-reference-ba-34ba71ca",
   "title": "Less Defined Knowledge and More True Alarms: Reference-based Phishing Detection without a Pre-defined Reference List",
+  "abstract": "Phishing, a pervasive form of social engineering attack that compromises user credentials, has led to significant financial losses and undermined public trust. Modern phishing detection has gravitated to reference-based methods for their explainability and robustness against zero-day phishing attacks. These methods maintain and update predefined reference lists to specify domain-brand relationships, alarming phishing websites by the inconsistencies between their domain (e.g., payp0l.com) and intended brand (e.g., PayPal). However, the curated lists are largely limited by their lack of comprehensiveness and high maintenance costs in practice.\n\nIn this work, we present PhishLLM as a novel reference-based phishing detector that operates without an explicit pre-defined reference list. Our rationale lies in that modern LLMs have encoded far more extensive brand-domain information than any predefined list. Further, the detection of many webpage semantics such as credential-taking intention analysis is more like a linguistic problem, but they are processed as a vision problem now. Thus, we design PhishLLM to decode (or retrieve) the domain-brand relationships from LLM and effectively parse the credential-taking intention of a webpage, without the cost of maintaining and updating an explicit reference list. Moreover, to control the hallucination of LLMs, we introduce a search-engine-based validation mechanism to remove the misinformation. Our extensive experiments show that PhishLLM significantly outperforms state-of-the-art solutions such as Phishpedia and PhishIntention, improving the recall by 21% to 66%, at the cost of negligible precision. Our field studies show that PhishLLM discovers (1) 6 times more zero-day phishing webpages compared to existing approaches such as PhishIntention and (2) close to 2 times more zero-day phishing webpages even if it is enhanced by DynaPhish. Our code is available at https://github.com/code-philia/PhishLLM/ .",
+  "abstract_source_id": "src-abstract-usenix-security-2024-34ba71ca",
   "venue": "usenix-security",
   "year": 2024,
   "track_or_session": "Social Issues I: Phishing and Password",
@@ -175,6 +177,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2024-34ba71ca",
+      "url": "https://www.usenix.org/conference/usenixsecurity24/presentation/liu-ruofan",
+      "kind": "paper-page",
+      "title": "Less Defined Knowledge and More True Alarms: Reference-based Phishing Detection without a Pre-defined Reference List",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:16:02Z",
+      "content_hash": "sha256:0cc144be5335b374703b89c19930adf9a569a5fec22440172372e5534583156a",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2026-mae-more-adaptive-video-encoder-for-consistent-low-laten-501b9ef3",
   "title": "MAE: More Adaptive Video Encoder for Consistent Low Latency in High-Quality Real-Time Communication",
+  "abstract": "Real-time communication (RTC) is integral to modern digital life. However, high-quality RTC services still experience tail latency spikes. A primary cause of this issue is the sender’s slow adaptation to network fluctuations—when network bandwidth drops, the sender needs to quickly reduce the sending rate to avoid bufferbloat. Existing solutions focus on accelerating reactions in the network, transport layer, or sender-side buffer management, but often overlook a critical component: the reaction of the video encoder. The encoder serves as the content source, where slow convergence to new bitrates can still result in bufferbloat after the encoder. With the increasing video bitrate in high-quality RTC, our measurement shows that the encoder’s reaction is critical. To address this limitation, we propose M ore A daptive E ncoder (MAE), a framework that enables encoders to dynamically adapt to network changes with finer-grained network information. On the encoder side, MAE adaptively adjusts the internal encoding parameters to quickly converge to the target bitrate without affecting the video quality. On the network side, MAE probes the internal state of current congestion control algorithms to preemptively react to potential bandwidth drops, without waiting for the late, backpressured bitrate updates. Trace-driven emulation and real-world experiments demonstrate that our solution, MAE, reduces stall rates by 86.2% while maintaining superior visual quality compared to the state of the art.",
+  "abstract_source_id": "src-abstract-nsdi-2026-501b9ef3",
   "venue": "nsdi",
   "year": 2026,
   "track_or_session": "Reliability Through Verification",
@@ -160,6 +162,19 @@
         "proceedings page range and page count",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2026-501b9ef3",
+      "url": "https://www.usenix.org/conference/nsdi26/presentation/meng",
+      "kind": "paper-page",
+      "title": "MAE: More Adaptive Video Encoder for Consistent Low Latency in High-Quality Real-Time Communication",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:05:36Z",
+      "content_hash": "sha256:a9a229237ea53e99ced65d8747dff299c2194587ae9dc86b0850ca5e619f88eb",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

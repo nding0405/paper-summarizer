@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-comprehensive-deniability-analysis-of-signal-handshake-p-4f9496e2",
   "title": "Comprehensive Deniability Analysis of Signal Handshake Protocols: X3DH, PQXDH to Fully Post-Quantum with Deniable Ring Signatures",
+  "abstract": "The Signal protocol relies on a handshake protocol, formerly X3DH and now PQXDH, to set up secure conversations. One of its privacy properties, of value to Signal, is deniability, allowing users to deny participation in communications. Prior analyses of deniability for these protocols, including post-quantum variants, use models highly tailored to the individual protocols and generally make ad-hoc adaptations to \"standard\" AKE definitions, obscuring the concrete deniability guarantees and complicating comparisons across protocols. Building on Hashimoto et al.'s abstraction for Signal handshake protocols (USENIX '25), we address this gap by presenting a unified framework for analyzing their deniability.\n\nWe analyze Signal's classically secure X3DH and harvest-now-decrypt-later-secure PQXDH, and show that PQXDH is deniable against harvest-now-judge-later attacks, where a quantum judge retrospectively assesses the participation of classical users. We further analyze post-quantum alternatives like RingXKEM, whose deniability relies on ring signatures (RS). By introducing a novel metric inspired by differential privacy, we provide relaxed, pragmatic guarantees for deniability. We also use this metric to define deniability for RS, a relaxation of anonymity, allowing us to build an efficient RS from NIST-standardized Falcon (and MAYO), which is not anonymous, but is provably deniable.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-4f9496e2",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Crypto 4: Systems and Protocols",
@@ -133,6 +135,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-4f9496e2",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/katsumata",
+      "kind": "paper-page",
+      "title": "Comprehensive Deniability Analysis of Signal Handshake Protocols: X3DH, PQXDH to Fully Post-Quantum with Deniable Ring Signatures",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:19:08Z",
+      "content_hash": "sha256:259370c405d4f9dd78347f361c90c76a5ffdf6202cea2ac633f5f88f4b3315f7",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

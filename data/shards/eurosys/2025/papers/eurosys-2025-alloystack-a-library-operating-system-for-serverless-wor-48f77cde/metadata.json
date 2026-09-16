@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "eurosys-2025-alloystack-a-library-operating-system-for-serverless-wor-48f77cde",
   "title": "AlloyStack: A Library Operating System for Serverless Workflow Applications",
+  "abstract": "Serverless workflow applications, composed of multiple serverless functions, are increasingly popular in production. However, inter-function communication and cold start latency remain key performance bottlenecks. This paper introduces AlloyStack, a library operating system (LibOS) tailored for serverless workflows. AlloyStack addresses two major challenges: (1) reducing cold start latency through on-demand OS component loading and (2) minimizing data transfer overhead by enabling functions within the same workflow to share a single address space, eliminating unnecessary data copying. To ensure secure isolation, AlloyStack uses Memory Protection Keys (MPK) to separate user functions from the LibOS while maintaining efficient data sharing. Our evaluation shows that AlloyStack reduces cold start times by 98.5% to just 1.3ms. Compared to SOTA systems, AlloyStack achieves a 7.3× to 38.7× speedup in Rust end-to-end latency and a 4.8× to 78.3× speedup in other languages for intermediate data-intensive workflows.",
+  "abstract_source_id": "src-abstract-eurosys-2025-48f77cde",
   "venue": "eurosys",
   "year": 2025,
   "track_or_session": "Session-7.1: Cloud and Serverless Computing - Location: Rotterdam hall 1B - Chair: Martin Kleppmann",
@@ -272,6 +274,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-eurosys-2025-48f77cde",
+      "url": "https://api.openalex.org/works/doi:10.1145/3689031.3717490?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "AlloyStack: A Library Operating System for Serverless Workflow Applications",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:19:01Z",
+      "content_hash": "sha256:1ced00091d7df5f121781b3c777f9053a6ff29f0b62432cf38854d081ebd3c48",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

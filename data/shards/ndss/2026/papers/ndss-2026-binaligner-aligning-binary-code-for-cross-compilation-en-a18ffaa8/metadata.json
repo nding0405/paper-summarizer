@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2026-binaligner-aligning-binary-code-for-cross-compilation-en-a18ffaa8",
   "title": "BINALIGNER: Aligning Binary Code for Cross-Compilation Environment Diffing",
+  "abstract": "Binary diffing aims to align portions of control flow graphs corresponding to the same source code snippets between two binaries for software security analyses, such as vulnerability and plagiarism detection tasks. Previous works have limited effectiveness and inflexible support for cross-compilation environment scenarios. The main reason is that they perform matching based on the similarity comparison of basic blocks. In our work, we propose a novel diffing approach BINALIGNER to alleviate the above limitations at the binary level. To reduce the likelihood of false and missed matches corresponding to the same source code snippets, we present conditional relaxation strategies to find candidate subgraph pairs. To support a more flexible binary diffing in cross-compilation environment scenarios, we use instruction-independent basic block features for subgraph embedding generation. We implement BINALIGNER and conduct experiments across four cross-compilation environment scenarios (i.e., cross-version, cross-compiler, cross-optimization level, and cross-architecture) to evaluate its effectiveness and support ability for different scenarios. Experimental results show that BINALIGNER significantly outperforms the state-of-the-art methods in most scenarios. Especially in the cross-architecture scenario and multiple combinations of cross-compilation environment scenarios, BINALIGNER exhibits F1-scores that are on average 65% higher than the baselines. Two case studies using real-world vulnerabilities and patches further demonstrate the utility of BINALIGNER.",
+  "abstract_source_id": "src-abstract-ndss-2026-a18ffaa8",
   "venue": "ndss",
   "year": 2026,
   "track_or_session": "Summer submission cycle",
@@ -228,6 +230,19 @@
       "official": false,
       "supports": [
         "independent proceedings identity reconciliation"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2026-a18ffaa8",
+      "url": "https://www.ndss-symposium.org/ndss-paper/binaligner-aligning-binary-code-for-cross-compilation-environment-diffing/",
+      "kind": "paper-page",
+      "title": "BINALIGNER: Aligning Binary Code for Cross-Compilation Environment Diffing",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:21:23Z",
+      "content_hash": "sha256:df48fbe0884928b7fb68435d2633f28e26a71b52c7bb2ea0c117b94962762c8f",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

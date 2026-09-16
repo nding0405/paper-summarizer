@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2023-exploring-the-unknown-dtls-universe-analysis-of-the-dtls-148efa07",
   "title": "Exploring the Unknown DTLS Universe: Analysis of the DTLS Server Ecosystem on the Internet",
+  "abstract": "DTLS aims to bring the same security guarantees as TLS to UDP. It is used for latency-sensitive applications such as VPN, VoIP, video conferencing, and online gaming that can suffer from the overhead of a reliable transport protocol like TCP. While researchers and developers invested significant effort in improving the security of TLS, DTLS implementations have not received the same scrutiny despite their importance and similarity. It is thus an open question whether vulnerabilities discovered in TLS have been fixed in DTLS and whether DTLS-specific features open possibilities for new attacks.\n\nTo fill this gap, we extended the open-source tool TLS-Scanner with support for DTLS and implemented additional tests for DTLS-exclusive features. We evaluated twelve open-source DTLS server implementations and uncovered eleven security vulnerabilities, including a padding oracle vulnerability in PionDTLS and DoS amplification vulnerabilities in wolfSSL, Scandium, and JSSE. We then proceeded to scan publicly available servers. We discovered and analyzed more than 500,000 DTLS servers across eight ports providing detailed insights into the publicly accessible DTLS server landscape. Beyond cryptographic vulnerabilities and compatibility issues, our analysis showed that 4.4% of the evaluated servers could be used for DoS amplification attacks due to insufficient care when handling anti-DoS cookies.",
+  "abstract_source_id": "src-abstract-usenix-security-2023-148efa07",
   "venue": "usenix-security",
   "year": 2023,
   "track_or_session": "Network Cryptographic Protocols",
@@ -154,6 +156,19 @@
       "official": true,
       "supports": [
         "authors, affiliations when published, abstract, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2023-148efa07",
+      "url": "https://www.usenix.org/conference/usenixsecurity23/presentation/erinola",
+      "kind": "paper-page",
+      "title": "Exploring the Unknown DTLS Universe: Analysis of the DTLS Server Ecosystem on the Internet",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:10:53Z",
+      "content_hash": "sha256:a3d6adca35c5afa96ce2f84399d9a16ef3fe9fdf1a0f8d184fcc4a7cbeb24f93",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

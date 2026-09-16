@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-flexway-o-sort-enclave-friendly-and-optimal-oblivious-so-35fcfbf5",
   "title": "Flexway O-Sort: Enclave-Friendly and Optimal Oblivious Sorting",
+  "abstract": "Oblivious algorithms are being deployed at large scale in real world to enable privacy-preserving applications such as Signal's private contact discovery. Oblivious sorting is a fundamental building block in the design of oblivious algorithms for numerous computation tasks. Unfortunately, there is still a theory-practice gap for oblivious sort. The commonly implemented bitonic sorting algorithm is not asymptotically optimal, whereas known asymptotically optimal algorithms suffer from large constants.\n\nIn this paper, we construct a new oblivious sorting algorithm called flexway o-sort, which is asymptotically optimal, concretely efficient, and suitable for implementation in hardware enclaves such as Intel SGX. For moderately large inputs of 12 GB, our flexway o-sort algorithm outperforms known oblivious sorting algorithms by 1.32x to $28.8x when the data fits within the hardware enclave, and by 4.1x to 208x when the data does not fit within the hardware enclave. We also implemented various applications of oblivious sorting, including histogram, database join, and initialization of an ORAM data structure. For these applications and data sets from 8GB to 32GB, we achieve 1.44 ∼ 2.3x speedup over bitonic sort when the data fits within the enclave, and 4.9 ∼ 5.5x speedup when the data does not fit within the enclave.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-35fcfbf5",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Privacy 4: Privacy-Preserving Computation",
@@ -175,6 +177,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-35fcfbf5",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/gu-tianyao",
+      "kind": "paper-page",
+      "title": "Flexway O-Sort: Enclave-Friendly and Optimal Oblivious Sorting",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:19:52Z",
+      "content_hash": "sha256:709aa20e42698b7060bad9aef379eaf5e80963e8d335ca011099d840fa12a1b1",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

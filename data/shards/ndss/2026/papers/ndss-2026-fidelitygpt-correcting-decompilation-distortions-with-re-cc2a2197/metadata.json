@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2026-fidelitygpt-correcting-decompilation-distortions-with-re-cc2a2197",
   "title": "FidelityGPT: Correcting Decompilation Distortions with Retrieval Augmented Generation",
+  "abstract": "Decompilation is a crucial technique that converts machine code into a human-readable format, facilitating analysis and debugging in the absence of source code. However, this process is hindered by fidelity issues, which can significantly impair the readability and accuracy of the decompiled output. Existing approaches partially addressed these, such as variable renaming and structural simplification, but typically fail to provide adequate detection and correction, especially in complex but practical closed-source binary scenarios.\n\nTo address this, we introduce FidelityGPT, a novel framework to improve the accuracy and readability of decompiled code by systematically detecting and correcting discrepancies between decompiled code and its original source. FidelityGPT defines distortion prompt templates tailored to closed-source environments and incorporates Retrieval-Augmented Generation (RAG) with a dynamic semantic intensity algorithm. The algorithm identifies distorted lines based on semantic intensity, retrieving similar code from a database. Additionally, a variable dependency algorithm is designed to overcome the limitations of long-context inputs by analyzing redundant variables through their dependencies and integrating redundant variable names into prompt context. These combined techniques establish FidelityGPT as the first framework capable of effectively addressing decompilation distortion issues in LLM-based decompilation optimization.\n\nWe evaluated FidelityGPT on 620 function pairs from a binary similarity benchmark, achieving an average detection accuracy of 89% and a precision of 83%. Compared to the current state-of-the-art model, DeGPT, which achieved an average Fix Rate (FR) of 83% and an average Corrected Fix Rate (CFR) of 37%, FidelityGPT demonstrated superior performance. With an average FR of 94% and an average CFR of 64%, FidelityGPTsignificantly improves both accuracy and readability, underscoring its effectiveness in enhancing decompilation and its potential to drive advancements in reverse engineering.",
+  "abstract_source_id": "src-abstract-ndss-2026-cc2a2197",
   "venue": "ndss",
   "year": 2026,
   "track_or_session": "Summer submission cycle",
@@ -244,6 +246,19 @@
       "official": false,
       "supports": [
         "independent proceedings identity reconciliation"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2026-cc2a2197",
+      "url": "https://www.ndss-symposium.org/ndss-paper/fidelitygpt-correcting-decompilation-distortions-with-retrieval-augmented-generation/",
+      "kind": "paper-page",
+      "title": "FidelityGPT: Correcting Decompilation Distortions with Retrieval Augmented Generation",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:22:01Z",
+      "content_hash": "sha256:aaf228fa3e4e1140f2c339e77c6563739dee180382a756a8b3f90a3b8eb47914",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

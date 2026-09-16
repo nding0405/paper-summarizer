@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2023-understanding-rdma-microarchitecture-resources-for-perfo-232feb1c",
   "title": "Understanding RDMA Microarchitecture Resources for Performance Isolation",
+  "abstract": "Recent years have witnessed the wide adoption of RDMA in the cloud to accelerate first-party workloads and achieve cost savings by freeing up CPU cycles. Now cloud providers are working towards supporting RDMA in general-purpose guest VMs to benefit third-party workloads. To this end, cloud providers must provide strong performance isolation so that the RDMA workloads of one tenant do not adversely impact the RDMA performance of another tenant. Despite many efforts on network performance isolation in the public cloud, we find that RDMA brings unique challenges due to its complex NIC microarchitecture resources (e.g., the NIC cache).\n\nIn this paper, we aim to systematically understand the impact of RNIC microarchitecture resources on performance isolation. We present a model that represents how RDMA operations use RNIC resources. Using this model, we develop a test suite to evaluate RDMA performance isolation solutions. Our test suite can break all existing solutions in various scenarios. Our results are acknowledged and reproduced by one of the largest RDMA NIC vendors. Finally, based on the test results, we summarize new insights on designing future RDMA performance isolation solutions.",
+  "abstract_source_id": "src-abstract-nsdi-2023-232feb1c",
   "venue": "nsdi",
   "year": 2023,
   "track_or_session": "RDMA",
@@ -245,6 +247,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2023-232feb1c",
+      "url": "https://www.usenix.org/conference/nsdi23/presentation/kong",
+      "kind": "paper-page",
+      "title": "Understanding RDMA Microarchitecture Resources for Performance Isolation",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:02:43Z",
+      "content_hash": "sha256:804f9d7a6f6a30b585ccccf6531f297327b71b6f7c1aa863245b65b05a1d608c",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

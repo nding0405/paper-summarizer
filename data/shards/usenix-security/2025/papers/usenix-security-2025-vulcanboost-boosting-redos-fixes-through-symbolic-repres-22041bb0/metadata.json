@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-vulcanboost-boosting-redos-fixes-through-symbolic-repres-22041bb0",
   "title": "VULCANBOOST: Boosting ReDoS Fixes through Symbolic Representation and Feature Normalization",
+  "abstract": "Regular expressions (regexes) are widely used in modern programming languages but are susceptible to ReDoS attacks due to the inefficiencies introduced by backtracking algorithms. Existing approaches for repairing ReDoS-vulnerable regexes struggle with supporting diverse character classes and extended features, often relying on test cases for repair guidance. In this paper, we introduce VULCANBOOST, a novel framework for repairing ReDoS-vulnerable regexes that addresses these challenges. VULCANBOOST leverages symbolic representation and feature normalization to simplify regex structures and repair them through DFA (Deterministic Finite Automaton) transformations, eliminating the need for test case-based repair. Our evaluation, conducted on a large dataset of 6,360 ReDoS-vulnerable regexes from real-world NPM projects, demonstrates that VULCANBOOST achieves a Test Coverage Repair Success Rate (TCRSR) of 93.95% and an Equivalence Repair Success Rate (ERSR) of 93.05%, outperforming existing methods. Moreover, we identify common vulnerability patterns from over 5,000 repaired regexes and summarize the top 100 repair patterns as open-source resources, offering valuable guidance to developers in enhancing the security and correctness of their regexes.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-22041bb0",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Software Security 2: Patching and Repair",
@@ -301,6 +303,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-22041bb0",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/li-yeting",
+      "kind": "paper-page",
+      "title": "VULCANBOOST: Boosting ReDoS Fixes through Symbolic Representation and Feature Normalization",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:22:39Z",
+      "content_hash": "sha256:91b6a12a89f0050171b6bfbf446381804fc5d885706a8efd93b9361a99b5f92e",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-bgp-vortex-update-message-floods-can-create-internet-ins-e81d54ea",
   "title": "BGP Vortex: Update Message Floods Can Create Internet Instabilities",
+  "abstract": "The Border Gateway Protocol (BGP), while essential for Internet connectivity, faces many stability and convergence challenges in today's evolving routing ecosystem.\n\nIn this paper, we present the discovery of the BGP Vortex, a configuration where just three legitimate BGP UPDATE messages can trigger persistent instability. We demonstrate that this vulnerability can be weaponized as an attack vector, potentially causing widespread Internet connectivity issues through router overload and forwarding loops. Crucially, a BGP Vortex cannot be prevented by existing security mechanisms such as BGPSEC or RPKI, because the protocol messages involved are legitimate. All major router implementations we could experiment with are susceptible to this threat.\n\nAt its root, the BGP Vortex is caused by standards-compliant BGP extensions—BGP Communities in this case—that allow the modification of route preferences for traffic engineering purposes. Therefore, to aid the mitigation of this attack as well as its potential future variations, we propose a framework to determine which BGP extensions are problematic, and which are safe to deploy. Our findings highlight the need to carefully balance network operators' traffic engineering capabilities with routing stability requirements.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-e81d54ea",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Network Security 2: Routing and DoS",
@@ -154,6 +156,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-e81d54ea",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/stoeger",
+      "kind": "paper-page",
+      "title": "BGP Vortex: Update Message Floods Can Create Internet Instabilities",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:18:51Z",
+      "content_hash": "sha256:50ebc8729823759c9a5d01602f43bcf4a61dad79b812e117b5bbe80bb4c6ea16",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

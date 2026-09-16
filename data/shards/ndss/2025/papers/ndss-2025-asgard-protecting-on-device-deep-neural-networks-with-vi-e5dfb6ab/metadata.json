@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2025-asgard-protecting-on-device-deep-neural-networks-with-vi-e5dfb6ab",
   "title": "ASGARD: Protecting On-Device Deep Neural Networks with Virtualization-Based Trusted Execution Environments",
+  "abstract": "On-device deep learning, increasingly popular for enhancing user privacy, now poses a serious risk to the privacy of deep neural network (DNN) models. Researchers have proposed to leverage Arm TrustZone's trusted execution environment (TEE) to protect models from attacks originating in the rich execution environment (REE). Existing solutions, however, fall short: (i) those that fully contain DNN inference within a TEE either support inference on CPUs only, or require substantial modifications to closed-source proprietary software for incorporating accelerators; (ii) those that offload part of DNN inference to the REE either leave a portion of DNNs unprotected, or incur large run-time overheads due to frequent model (de)obfuscation and TEE-to-REE exits.\n\nWe present ASGARD, the first virtualization-based TEE solution designed to protect on-device DNNs on legacy Armv8-A SoCs. Unlike prior work that uses TrustZone-based TEEs for model protection, ASGARD's TEEs remain compatible with existing proprietary software, maintain the trusted computing base (TCB) minimal, and incur near-zero run-time overhead. To this end, ASGARD (i) securely extends the boundaries of an existing TEE to incorporate an SoC-integrated accelerator via secure I/O passthrough, (ii) tightly controls the size of the TCB via our aggressive yet security-preserving platform- and application-level TCB debloating techniques, and (iii) mitigates the number of costly TEE-to-REE exits via our exit-coalescing DNN execution planning. We implemented ASGARD on RK3588S, an Armv8.2-A-based commodity Android platform equipped with a Rockchip NPU, without modifying Rockchip- nor Arm-proprietary software. Our evaluation demonstrates that ASGARD effectively protects on-device DNNs in legacy SoCs with a minimal TCB size and negligible inference latency overhead.",
+  "abstract_source_id": "src-abstract-ndss-2025-e5dfb6ab",
   "venue": "ndss",
   "year": 2025,
   "track_or_session": "Fall submission cycle",
@@ -147,6 +149,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2025-e5dfb6ab",
+      "url": "https://www.ndss-symposium.org/ndss-paper/asgard-protecting-on-device-deep-neural-networks-with-virtualization-based-trusted-execution-environments/",
+      "kind": "paper-page",
+      "title": "ASGARD: Protecting On-Device Deep Neural Networks with Virtualization-Based Trusted Execution Environments",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:19:04Z",
+      "content_hash": "sha256:fd8d6947352e5ec638de1956d7173b760c3c282e3b4bedce1ddbcf2be87b207a",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

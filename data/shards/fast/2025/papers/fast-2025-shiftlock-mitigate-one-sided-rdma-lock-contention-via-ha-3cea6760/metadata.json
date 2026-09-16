@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "fast-2025-shiftlock-mitigate-one-sided-rdma-lock-contention-via-ha-3cea6760",
   "title": "ShiftLock: Mitigate One-sided RDMA Lock Contention via Handover",
+  "abstract": "Lock is a basic building block of distributed storage systems. With the extensive deployment of the Remote Direct Memory Access (RDMA) network, RDMA lock has been brought into increasing focus since it can leverage RDMA one-sided verbs to acquire and release locks, achieving high performance without any intervention of server-side CPUs. However, existing RDMA locks are suboptimal under high contention, mainly because clients are likely to fail to acquire a locked lock and must retry. Excessive retries incur high latencies for clients and decrease the overall goodput as they devour the lock server's network inbound IOPS resources.\n\nThe MCS lock inspired us that instead of contending, clients can coordinate with each other by directly handing over locks; thus, they can wait locally without retrying. We present ShiftLock, an RDMA lock supporting lock handover among arbitrary clients. At its core is a non-blocking direct client-to-client coordination mechanism with CPU efficiency, scalability, and fault tolerance, realized with proper software design and exertion of RDMA features. Based on it, ShiftLock employs a crafted protocol with reader-writer semantics, starvation-freedom, and low latency or high goodput under low or high contention. Compared to existing locks, ShiftLock improves goodput by up to 3.62× and reduces tail latencies by up to 76.6% in microbenchmarks, respectively, while also improving transaction goodput by up to 2.85×.",
+  "abstract_source_id": "src-abstract-fast-2025-3cea6760",
   "venue": "fast",
   "year": 2025,
   "track_or_session": "Hardware Assist",
@@ -119,6 +121,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-fast-2025-3cea6760",
+      "url": "https://www.usenix.org/conference/fast25/presentation/gao",
+      "kind": "paper-page",
+      "title": "ShiftLock: Mitigate One-sided RDMA Lock Contention via Handover",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:01:17Z",
+      "content_hash": "sha256:440a3a50cd0e738d0567cb441d42d9e9e10e22163ff8a0960c3649478ab1e463",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

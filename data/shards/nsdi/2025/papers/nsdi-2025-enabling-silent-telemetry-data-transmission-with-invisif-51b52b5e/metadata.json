@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2025-enabling-silent-telemetry-data-transmission-with-invisif-51b52b5e",
   "title": "Enabling Silent Telemetry Data Transmission with InvisiFlow",
+  "abstract": "Network applications from traffic engineering to path tracing often rely on the ability to transmit fine-grained telemetry data from network devices to a set of collectors. Unfortunately, prior work has observed—and we validate—that existing transmission methods for such data can result in significant overhead to user traffic and/or loss of telemetry data, particularly when the network is heavily loaded.\n\nIn this paper, we introduce InvisiFlow, a novel communication substrate to collect network telemetry data, silently. In contrast to previous systems that always push telemetry packets to collectors based on the shortest path, InvisiFlow dynamically seeks out spare network capacity by leveraging opportunistic sending and congestion gradients, thus minimizing both the loss rate of telemetry data and overheads on user traffic. In a FatTree topology, InvisiFlow can achieve near-zero loss rate even under high-load scenarios (around 33.8× lower loss compared to the state-of-the-art transmission methods used by systems like Everflow and Planck).",
+  "abstract_source_id": "src-abstract-nsdi-2025-51b52b5e",
   "venue": "nsdi",
   "year": 2025,
   "track_or_session": "Data Plane Programmability 1",
@@ -161,6 +163,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2025-51b52b5e",
+      "url": "https://www.usenix.org/conference/nsdi25/presentation/zhang-yinda",
+      "kind": "paper-page",
+      "title": "Enabling Silent Telemetry Data Transmission with InvisiFlow",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:04:08Z",
+      "content_hash": "sha256:33b626bc711117116fdcf22ac856abb693881200b1569f6649265be5cd19cf88",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

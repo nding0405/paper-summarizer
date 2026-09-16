@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-low-cost-hard-label-adversarial-attack-with-theoretical-16178f55",
   "title": "Low-Cost Hard-Label Adversarial Attack with Theoretical Foundations",
+  "abstract": "Hard-label black-box attacks, relying solely on top-1 predictions, represent one of the most challenging yet practically threat models. Despite recent progress, existing approaches face two key limitations: (1) they overlook the critical role of initialization, focusing primarily on optimization strategies; and (2) they rely heavily on empirical heuristics without theoretical guarantees. To bridge this gap, we establish a unified theoretical framework showing that existing sign-flipping hard-label attacks can be understood as approximating the true gradient sign. Guided by this {principled analysis}, we propose a novel attack framework featuring a zero-query initialization strategy and a Pattern-Driven Optimization (PDO) algorithm. We provide theoretical guarantees that our initialization yields higher cosine similarity to the true gradient sign than random baselines, and our PDO module achieves significantly lower query complexity than baseline search methods. Extensive experiments across CIFAR-10, ImageNet, and ObjectNet—covering standard and adversarially trained models, commercial APIs, and CLIP models—demonstrate that our method consistently outperforms SOTA hard-label attacks in both success rate and efficiency, particularly under low query budgets. Furthermore, our method demonstrates robust generalization across corrupted data (ImageNet-C), biomedical images (PathMNIST), and dense prediction tasks such as segmentation. Notably, it bypasses the stateful defense Blacklight, achieving a 0% detection rate.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-16178f55",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Security of ML 5",
@@ -155,6 +157,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-16178f55",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/liu-jun",
+      "kind": "paper-page",
+      "title": "Low-Cost Hard-Label Adversarial Attack with Theoretical Foundations",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:24:35Z",
+      "content_hash": "sha256:4e382775f4fbdabb6955ba154d2fe3dfccdb8800cd20759f3923c0a884c0093e",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

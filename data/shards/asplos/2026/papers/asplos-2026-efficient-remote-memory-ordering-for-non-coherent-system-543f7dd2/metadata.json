@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2026-efficient-remote-memory-ordering-for-non-coherent-system-543f7dd2",
   "title": "Efficient Remote Memory Ordering for Non-Coherent Systems",
+  "abstract": "Software using non-coherent interconnects like PCI Express requires fine-grained memory ordering, but current hardware mandates the use of costly source-side serialization. We show that this architectural mismatch severely limits the performance of two critical applications: (1) the transmission of network packets from a CPU to a NIC (requiring write-to-write ordering) and (2) key-value store lookups by an RDMA-enabled NIC (requiring read-to-read ordering). We address this by proposing a new destination-based ordering model and the hardware-software co-design comprising PCIe extensions and ISA extensions that allow software to express ordering intent efficiently. Novel microarchitecture at the Root Complex enforces these expressed semantics, eliminating source-side stalls. Our approach significantly improves the throughput of these application kernels and enables new, simpler protocols that outperform the state-of-the-art.",
+  "abstract_source_id": "src-abstract-asplos-2026-543f7dd2",
   "venue": "asplos",
   "year": 2026,
   "track_or_session": "Session 6D: Disaggregated Memory Systems",
@@ -167,6 +169,19 @@
       "official": false,
       "supports": [
         "Indexed abstract used for strict relevance classification and indexed arXiv identifier where available."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2026-543f7dd2",
+      "url": "https://api.openalex.org/works/doi:10.1145/3779212.3790156?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Efficient Remote Memory Ordering for Non-Coherent Systems",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:05:25Z",
+      "content_hash": "sha256:c668818bb6a8e7dc2a91a2488a618df217175db61af280b5fd8701cd0bac25fd",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

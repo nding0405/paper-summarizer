@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "fast-2026-how-soon-is-now-preloading-images-for-virtual-disks-with-3792f59b",
   "title": "How Soon is Now? Preloading Images for Virtual Disks with ThinkAhead",
+  "abstract": "Efficient cloud computing relies on high-performance Elastic Block Storage (EBS) services, where virtual disk (VD) image loading significantly affects user experience. While the commonly used \"lazy loading\" approach reduces cold-start time from minutes to sub-seconds, our trace analysis of around 160,000 real-world image loading events in Alibaba EBS reveals that slow I/Os during initial block access constitute the primary performance bottleneck, accounting for 40% of all slow I/Os. We propose ThinkAhead, a data-driven image preloading system for VDs. ThinkAhead comprises various techniques to predict efficient block preloading sequences for images with historical traces based on runtime conditions and address corner cases with limited or no historical traces. Trace-driven simulation and cluster experiments show that ThinkAhead improves the data block hit rate by up to 7.27× and reduces tail waiting time by up to 98.7% across various image types compared to lazy loading and various baselines.",
+  "abstract_source_id": "src-abstract-fast-2026-3792f59b",
   "venue": "fast",
   "year": 2026,
   "track_or_session": "Virtualization",
@@ -412,6 +414,19 @@
         "proceedings page range and page count",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-fast-2026-3792f59b",
+      "url": "https://www.usenix.org/conference/fast26/presentation/chen",
+      "kind": "paper-page",
+      "title": "How Soon is Now? Preloading Images for Virtual Disks with ThinkAhead",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:01:34Z",
+      "content_hash": "sha256:2aa1f4bf0ba50cbeaa700ef0fc8f53015b253122e1907bcc802b0689aa3b922c",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

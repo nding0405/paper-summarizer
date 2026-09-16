@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-corecrisis-threat-guided-and-context-aware-iterative-lea-33fedd14",
   "title": "CoreCrisis: Threat-Guided and Context-Aware Iterative Learning and Fuzzing of 5G Core Networks",
+  "abstract": "We develop CoreCrisis, a stateful black-box fuzz-testing framework for 5G core network (5GC) implementations. Unlike previous stateful security analysis efforts of cellular networks which rely on manually-crafted, static test inputs and are limited to identifying only logical errors, CoreCrisis employs a dynamic two-step approach. Initially, CoreCrisis builds an initial finite state machine (FSM) representation of the 5GC's implementation using only benign (i.e., positive) inputs with its efficient and scalable divide-and-conquer and property-driven equivalence checking learning. During fuzzing, it utilizes the learned FSM to target underexplored states and introduces state-aware mutations to generate and test attacking (i.e., negative) inputs. Based on the responses observed from the core network, CoreCrisis continuously refines the FSM to better guide its exploration and find vulnerabilities. Evaluating CoreCrisis on three open-source and one commercial 5GC implementations, we identified 7 categories of deviations from the technical specifications and 13 crashing vulnerabilities. These logical and crashing vulnerabilities lead to denial-of-service, authentication bypass, and billing fraud.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-33fedd14",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Network Security 3: BLE and Cellular",
@@ -238,6 +240,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-33fedd14",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/dong-yilu",
+      "kind": "paper-page",
+      "title": "CoreCrisis: Threat-Guided and Context-Aware Iterative Learning and Fuzzing of 5G Core Networks",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:19:10Z",
+      "content_hash": "sha256:7674f79bb082002af9ca2b9f5c92189cfc6db206b9955f1615d051db6698fa2e",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

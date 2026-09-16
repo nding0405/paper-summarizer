@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-amortizing-randomness-cost-efficient-masked-implementati-2e2a271d",
   "title": "Amortizing Randomness Cost: Efficient Masked Implementation of SDitH Signatures with Common Shares",
+  "abstract": "MPC-in-the-Head (MPCitH) signatures are attractive for postquantum deployment, but they are structurally vulnerable to side-channel leakage: verification opens almost all simulated views, so any leakage correlated with the remaining unopened view(s) can be amplified and exploited to recover the witness. Among the MPCitH-based signature candidates considered in NIST’s additional-signature round, Syndrome-Decodingin-the-Head (SDitH)-Hypercube is particularly susceptible to this concern, since its signing process combines: (i) offline last-party completion involving nonlinear arithmetic computations, (ii) online Baum–Nof (BN) arithmetic checking, and (iii) Keccak sponge calls that generate or absorb secretbearing values.\n\nTo the best of our knowledge, this is the first protocol-compatible masked implementation-level protection architecture for SDitH-Hypercube on Cortex-M4. Our implementation combines three techniques, each protecting one attackcritical hotspot: (i) Common Shares to amortize the masking randomness required by masked multiplications in the offline phase, (ii) a Sec/Pub typing discipline that reconstructs transcript-public and verifier-reconstructible values early to avoid costly Sec×Sec gadgets in the online BN kernels, and (iii) selective masked Keccak backends applied only to secretbearing sponge call sites.\n\nOn the L1 parameter set, Common Shares reduces arithmetic masking randomness from 8.37 KiB/signature of the Strong Non-Interference (SNI) profile to 16 B/signature, while the Sec/Pub-typed optimization removes 3,264 B/signature from the online BN kernels. When Keccak is masked, masking randomness is dominated by the sponge: 41,118.75 KiB/signature with DOM-Keccak and 82,237.50 KiB/signature with SNI-Keccak, motivating selective masked hashing and tunable backends. We implement a low-stack reference signer and all protected signers on Cortex-M4. Across protected profiles, signing takes 913.7–1,542.0 Mcycles (1.84×–3.10× over the *Corresponding Author. reference), and fits within 155.6 KiB flash, 136.7 KiB static RAM, and 7.96 KiB signing stack. A 1M-trace first-order fixed-vs-random Test Vector Leakage Assessment (TVLA) experiment on Cortex-M4 no longer detects the previously observed leakage peaks after protection.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-2e2a271d",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Hardware Security 1",
@@ -197,6 +199,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-2e2a271d",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/liu-guowei",
+      "kind": "paper-page",
+      "title": "Amortizing Randomness Cost: Efficient Masked Implementation of SDitH Signatures with Common Shares",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:22:56Z",
+      "content_hash": "sha256:32cc325fc06faa55f39379cad84ebddaf36cce5a0cc42ffd8f083778201bc1f2",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "atc-2024-scalacache-scalable-user-space-page-cache-management-wit-a4f87d24",
   "title": "ScalaCache: Scalable User-Space Page Cache Management with Software-Hardware Coordination",
+  "abstract": "Due to the host-centric design principle, the existing page cache management suffers from CPU consumption, communication costs, and garbage collection (GC) interference. To address these challenges, we propose ScalaCache, a scalable user-space page cache with software-hardware coordination. Specifically, to reduce the host CPU overhead, we offload the cache management into computational storage drives (CSDs) and further merge the indirection layers in both the cache and flash firmware, which facilitates lightweight cache management. To further boost scalability, we build a lockless resource management framework that allows multiple CSD internal cores to manage the cache space concurrently. ScalaCache also aggregates the computing power of multiple CSDs to deliver scalable I/O performance. Moreover, ScalaCache reduces communication costs by trimming the I/O control path while mitigating GC interference via a GC-aware replacement policy, thereby enhancing its efficiency and performance stability. Our evaluation results reveal that ScalaCache exhibits 5.12× and 1.70× bandwidth improvements, respectively, compared to kernel page cache and the state-of-the-art user-space one. ScalaCache is open source and available at https://github.com/ChaseLab-PKU/ScalaCache .",
+  "abstract_source_id": "src-abstract-atc-2024-a4f87d24",
   "venue": "atc",
   "year": 2024,
   "track_or_session": "Hardware",
@@ -222,6 +224,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-atc-2024-a4f87d24",
+      "url": "https://www.usenix.org/conference/atc24/presentation/peng",
+      "kind": "paper-page",
+      "title": "ScalaCache: Scalable User-Space Page Cache Management with Software-Hardware Coordination",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T21:59:03Z",
+      "content_hash": "sha256:1a43a7365da9cf906f26b6daf51aa0b5087c4483e77151517997e975ec159b23",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

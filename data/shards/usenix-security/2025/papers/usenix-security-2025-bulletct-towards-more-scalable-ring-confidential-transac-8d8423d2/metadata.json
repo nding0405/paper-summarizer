@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-bulletct-towards-more-scalable-ring-confidential-transac-8d8423d2",
   "title": "BulletCT: Towards More Scalable Ring Confidential Transactions With Transparent Setup",
+  "abstract": "RingCT signatures are essential components of Ring Confidential Transaction (RingCT) schemes on blockchain platforms, enabling anonymous transaction spending and significantly impacting the scalability of these schemes. This paper makes two primary contributions:\n\nWe provide the first thorough analysis of a recently developed Any-out-of-N proof in the discrete logarithm (DLOG) setting and the associated RingCT scheme, introduced by ZGSX23 (S&P '23). The proof conceals the number of the secrets to offer greater anonymity than K-out-of-N proofs and uses an efficient \"K-Weight\" technique for its construction. However, we identify for the first time several limitations of using Any-out-of-N proofs, such as increased transaction sizes, heightened cryptographic complexities and potential security risks. These limitations prevent them from effectively mitigating the longstanding scalability bottleneck.\n\nWe then continue to explore the potential of using K-out-of-N proofs to enhance scalability of RingCT schemes. Our primary innovation is a new DLOG-based RingCT signature that integrates a refined \"K-Weight\"-based K-out-of-N proof and an entirely new tag proof. The latter is the first to efficiently enable the linkability of RingCT signatures derived from the former, effectively resisting double-spending attacks.\n\nFinally, we identify and patch a linkability flaw in ZGSX23's signature. We benchmark our scheme against this patched one to show that our scheme achieves a boost in scalability, marking a promising step forward.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-8d8423d2",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Crypto 2: Private Information Retrieval and Computation",
@@ -154,6 +156,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-8d8423d2",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/wang-nan",
+      "kind": "paper-page",
+      "title": "BulletCT: Towards More Scalable Ring Confidential Transactions With Transparent Setup",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:18:59Z",
+      "content_hash": "sha256:4d24d34dd8be6bd479a488f2d57a706c9c500290d02f5b13293b380cc413e7f9",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

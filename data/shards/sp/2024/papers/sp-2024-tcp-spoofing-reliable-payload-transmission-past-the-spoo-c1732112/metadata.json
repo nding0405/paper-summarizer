@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2024-tcp-spoofing-reliable-payload-transmission-past-the-spoo-c1732112",
   "title": "TCP Spoofing: Reliable Payload Transmission Past the Spoofed TCP Handshake",
+  "abstract": "TCP spoofing—the attack to establish an IP-spoofed TCP connection by bruteforcing a 32-bit server-chosen initial sequence number (ISN)—has been known for decades. However, TCP spoofing has had limited impact in practice. One limiting factor is that attackers not only have to guess the ISN to complete the handshake but also have to model the server’s send window to reliably transmit subsequent payload segments. While known bruteforcing attacks include payloads during the handshake already, this cannot correctly model interactive TCP dialogs and is also prohibitively expensive (if not impossible) for larger payloads. Relying on the impracticality of TCP spoofing, several services still rely on the source IP address to make security-critical decisions, such as for firewalling, spam classification or network-based authentication in databases.We show that attackers cannot only establish spoofed TCP connections but also reliably send spoofed TCP payloads over these connections. We introduce two such sending primitives. First, we show how attackers can abuse the permissive handling of the TCP send window to inject payloads via efficient bruteforce attacks. Second, we introduce feedback-guided TCP spoofing that enables attackers to leak the server-chosen ISN. We introduce three feedback channels; one exploiting TCP SYN cookies and two leveraging operations specific to email and database applications. We find that such sending primitives can reliably transfer payload over spoofed connections and show their prevalence. We conclude with a discussion on countermeasures and our disclosure process.",
+  "abstract_source_id": "src-abstract-sp-2024-c1732112",
   "venue": "sp",
   "year": 2024,
   "track_or_session": "Summer cycle",
@@ -117,6 +119,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2024-c1732112",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "TCP Spoofing: Reliable Payload Transmission Past the Spoofed TCP Handshake",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:42Z",
+      "content_hash": "sha256:d62dac834635b4cd1890a53da454ceae7aaa151189662d990ac591dfd5cb6b3e",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sigcomm-2023-memory-management-in-activermt-towards-runtime-programma-405f2696",
   "title": "Memory Management in ActiveRMT: Towards Runtime-programmable Switches",
+  "abstract": "A wide variety of in-network services have been developed for RMT-based switching hardware, almost exclusively through the P4 language and ecosystem. Many of these applications maintain state in switch memory, a scarce shared resource. As with any other network resource, varying traffic demands necessitate reallocations, yet the P4 ecosystem is not well suited for dynamic resource management: Modifying the set of services deployed on a switch using P4 requires the network operator to prepare a new binary image and re-provision the switch, disrupting all existing traffic. We present an alternate approach---using techniques from capsule-based active networking---to programming RMT devices that enables non-disruptive (re)allocation of switch memory at time scales that are much faster than P4 compilation without operator intervention. We use P4 to implement a single, shared runtime on commodity RMT hardware that interprets instructions received via the switch data plane to deliver a variety of exemplar services including caching, load balancing, and network telemetry. Our prototype implementation is able to dynamically provision dozens-to-hundreds of instances of simultaneous stateful services at the timescale of seconds.",
+  "abstract_source_id": "src-abstract-sigcomm-2023-405f2696",
   "venue": "sigcomm",
   "year": 2023,
   "track_or_session": "Offloading — Research Paper",
@@ -109,6 +111,19 @@
         "publisher-deposited ORCIDs",
         "proceedings page range and print publication date",
         "empty publisher relation metadata for alternate-version checks"
+      ]
+    },
+    {
+      "id": "src-abstract-sigcomm-2023-405f2696",
+      "url": "https://api.openalex.org/works/doi:10.1145/3603269.3604864?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Memory Management in ActiveRMT: Towards Runtime-programmable Switches",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:22:55Z",
+      "content_hash": "sha256:5ada6b1e17ed34875520b6a5c84dce1ba96af3195e026e61e04e796c58fc14a5",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

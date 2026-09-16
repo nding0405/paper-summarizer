@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2026-hierarchical-integration-of-webassembly-in-serverless-fo-93bee698",
   "title": "Hierarchical Integration of WebAssembly in Serverless for Efficiency and Interoperability",
+  "abstract": "Modern serverless systems suffer from low resource efficiency, which maps to high per-unit costs. This comes from the high isolation overhead (e.g., low resource sharing, slow startup, etc.), as well as resource wastage incurred by conservative resource scaling (e.g., keep-alive). Language runtimes such as WebAssembly (Wasm) can reduce isolation overhead without compromising security. Existing Wasm-based serverless approaches fall into one of these categories: supporting only Wasm workloads, failing to leverage existing capabilities of modern serverless and cloud platforms, or falling short of leveraging Wasm’s true potential. This work introduces a dense hierarchical architecture to securely co-locate Wasm-based applications from different customers within the same container sandbox. We show how this design preserves the container-based serving model, which allows leveraging existing platform capabilities and supporting non-Wasm-based workloads. Our system, Wasabi, leverages this architecture alongside resource-aware scaling, queuing, and overbooking to offer much higher density than state-of-the-art serverless systems with similar or better performance.",
+  "abstract_source_id": "src-abstract-nsdi-2026-93bee698",
   "venue": "nsdi",
   "year": 2026,
   "track_or_session": "Virtualization Revisited",
@@ -160,6 +162,19 @@
         "proceedings page range and page count",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2026-93bee698",
+      "url": "https://www.usenix.org/conference/nsdi26/presentation/baqershahi",
+      "kind": "paper-page",
+      "title": "Hierarchical Integration of WebAssembly in Serverless for Efficiency and Interoperability",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:05:27Z",
+      "content_hash": "sha256:8240470a6e9b23bf277a0ef2960af3f1d1dd3a06f5f1eb1bbeef4ebec98b3283",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2024-ihunter-hunting-privacy-violations-at-scale-in-the-softw-1534e068",
   "title": "iHunter: Hunting Privacy Violations at Scale in the Software Supply Chain on iOS",
+  "abstract": "Privacy violations and compliance issues in mobile apps are serious concerns for users, developers, and regulators. With many off-the-shelf tools on Android, prior works extensively studied various privacy issues for Android apps. Privacy risks and compliance issues can be equally expected in iOS apps, but have been little studied. In particular, a prominent recent privacy concern was due to diverse third-party libraries widely integrated into mobile apps whose privacy practices are non-transparent. Such a critical supply chain problem, however, was never systematically studied for iOS apps, at least partially due to the lack of the necessary tools.\n\nThis paper presents the first large-scale study, based on our new taint analysis system named iHunter, to analyze privacy violations in the iOS software supply chain. iHunter performs static taint analysis on iOS SDKs to extract taint traces representing privacy data collection and leakage practices. It is characterized by an innovative iOS-oriented symbolic execution that tackles dynamic features of Objective-C and Swift and an NLP-powered generator for taint sources and taint rules. iHunter identified non-compliance in 2,585 SDKs (accounting for 40.4%) out of 6,401 iOS SDKs, signifying a substantial presence of SDKs that fail to adhere to compliance standards. We further found a high proportion (47.2% in 32,478) of popular iOS apps using these SDKs, with practical non-compliance risks violating Apple policies and major privacy laws. These results shed light on the pervasiveness and severity of privacy violations in iOS apps' supply chain. iHunter is thoroughly evaluated for its high effectiveness and efficiency. We are responsibly reporting the results to relevant stakeholders.",
+  "abstract_source_id": "src-abstract-usenix-security-2024-1534e068",
   "venue": "usenix-security",
   "year": 2024,
   "track_or_session": "Mobile Privacy",
@@ -196,6 +198,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2024-1534e068",
+      "url": "https://www.usenix.org/conference/usenixsecurity24/presentation/liu-dexin",
+      "kind": "paper-page",
+      "title": "iHunter: Hunting Privacy Violations at Scale in the Software Supply Chain on iOS",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:15:41Z",
+      "content_hash": "sha256:b9f9b57712e3b504c429f633e6142877cd4067351d83ea151a5c808a191d2001",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

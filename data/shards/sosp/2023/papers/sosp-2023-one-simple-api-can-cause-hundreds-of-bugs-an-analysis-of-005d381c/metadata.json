@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sosp-2023-one-simple-api-can-cause-hundreds-of-bugs-an-analysis-of-005d381c",
   "title": "One Simple API Can Cause Hundreds of Bugs An Analysis of Refcounting Bugs in All Modern Linux Kernels",
+  "abstract": "Reference counting (refcounting) is widely used in Linux kernel. However, it requires manual operations on the related APIs. In practice, missing or improperly invoking these APIs has introduced too many bugs, known as refcounting bugs. To evaluate the severity of these bugs in history and in future, this paper presents a comprehensive study on them. In detail, we study 1,033 refcounting bugs in Linux kernels and present a set of characters and find that most of the bugs can finally cause severe security impacts. Besides, we analyze the root causes at implementation and developer's sides (i.e., human factors), which shows that the careless usages of find-like refcounting-embedded APIs can usually introduce hundreds of bugs. Finally, we propose a set of anti-patterns to summarize and to expose them. On the latest kernel releases, we totally found 351 new bugs and 240 of them have been confirmed. We believe this study can motivate more proactive researches on refcounting problems and improve the quality of Linux kernel.",
+  "abstract_source_id": "src-abstract-sosp-2023-005d381c",
   "venue": "sosp",
   "year": 2023,
   "track_or_session": "Session 1: Kernel Design and Testing",
@@ -167,6 +169,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-sosp-2023-005d381c",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "One Simple API Can Cause Hundreds of Bugs An Analysis of Refcounting Bugs in All Modern Linux Kernels",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:12Z",
+      "content_hash": "sha256:aa9c23a45f6ec9973f40e6c9520c69d42bb49fc1f526891570edfdb1976cff82",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

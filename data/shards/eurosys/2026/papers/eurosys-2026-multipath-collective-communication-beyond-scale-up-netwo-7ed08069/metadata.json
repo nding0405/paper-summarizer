@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "eurosys-2026-multipath-collective-communication-beyond-scale-up-netwo-7ed08069",
   "title": "Multipath Collective Communication Beyond Scale-up Networks in GPU Clouds",
+  "abstract": "Hardware vendors introduce scale-up networks interconnecting accelerators to speed up communication in distributed training. We argue that in the context of GPU clouds, the scale-out network can be a good complement to the collective communication that is originally performed on scale-up networks. We build a system named MPCCS to enable multipath transmission of collectives on both networks. MPCCS essentially splits the traffic of collective flows to two networks. MPCCS overcomes three challenges caused by the progress of hardware-offloaded networks and the diversity of collective communication. First, it devises a dual-window protocol to enable the runtime traffic splitting over rigid hardware-offloaded interfaces. Second, it devises a bandwidth-delay product (BDP) estimation algorithm to enable bandwidth-adaptive traffic splitting, overcoming the difficulty of invisibility of transmission states (RTT and throughput) due to hardware encapsulation. Third, it devises coflow-synchronized multipath transmission for collective flows, which achieves universal applicability for diverse collectives in terms of correctness and performance optimality. We implement MPCCS and conduct extensive experiments both on the testbed and in simulation. MPCCS achieves a 23%~54% speedup compared with vanilla NCCL on communication microbenchmarks and above 10% acceleration for LLM training.",
+  "abstract_source_id": "src-abstract-eurosys-2026-7ed08069",
   "venue": "eurosys",
   "year": 2026,
   "track_or_session": null,
@@ -453,6 +455,19 @@
       "official": false,
       "supports": [
         "Publisher-deposited proceedings identity and print publication date."
+      ]
+    },
+    {
+      "id": "src-abstract-eurosys-2026-7ed08069",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Multipath Collective Communication Beyond Scale-up Networks in GPU Clouds",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:12Z",
+      "content_hash": "sha256:aa9c23a45f6ec9973f40e6c9520c69d42bb49fc1f526891570edfdb1976cff82",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

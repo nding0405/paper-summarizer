@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2025-sheeps-clothing-wolfs-data-detecting-server-induced-clie-c0598dd1",
   "title": "Sheep’s Clothing, Wolf’s Data: Detecting Server-Induced Client Vulnerabilities in Windows Remote IPC",
+  "abstract": "The Windows operating system employs various inter-process communication (IPC) mechanisms, typically involving a privileged server and a less privileged client. However, scenarios exist where the client has higher privileges, such as a performance monitor running as a domain controller obtaining data from a domain member via IPC. In these cases, the server can be compromised and send crafted data to the client.\n\nDespite the increase in Windows client applications, existing research has overlooked potential client-side vulnerabilities, which can be equally harmful. This paper introduces GLEIPNIR, the first vulnerability detection tool for Windows remote IPC clients. GLEIPNIR identifies client-side vulnerabilities by fuzzing IPC call return values and introduces a snapshot technology to enhance testing efficiency. Experiments on 76 client applications demonstrate that GLEIPNIR can identify 25 vulnerabilities within 7 days, resulting in 14 CVEs and a bounty of $36,000.",
+  "abstract_source_id": "src-abstract-ndss-2025-c0598dd1",
   "venue": "ndss",
   "year": 2025,
   "track_or_session": "Fall submission cycle",
@@ -231,6 +233,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2025-c0598dd1",
+      "url": "https://www.ndss-symposium.org/ndss-paper/sheeps-clothing-wolfs-data-detecting-server-induced-client-vulnerabilities-in-windows-remote-ipc/",
+      "kind": "paper-page",
+      "title": "Sheep’s Clothing, Wolf’s Data: Detecting Server-Induced Client Vulnerabilities in Windows Remote IPC",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:20:31Z",
+      "content_hash": "sha256:893b058711226c52cd57ab4d86e6568f66876e41196a331344a4dc8f28ee3268",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

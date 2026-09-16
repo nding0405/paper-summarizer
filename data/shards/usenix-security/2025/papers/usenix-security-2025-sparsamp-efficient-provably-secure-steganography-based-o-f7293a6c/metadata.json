@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-sparsamp-efficient-provably-secure-steganography-based-o-f7293a6c",
   "title": "SparSamp: Efficient Provably Secure Steganography Based on Sparse Sampling",
+  "abstract": "Steganography embeds confidential data within seemingly innocuous communications. Provable security in steganography, a long-sought goal, has become feasible with deep generative models. However, existing methods face a critical trade-off between security and efficiency. This paper introduces SparSamp, an efficient provably secure steganography method based on sparse sampling. SparSamp embeds messages by combining them with pseudo-random numbers to obtain message-derived random numbers for sampling. It enhances extraction accuracy and embedding capacity by increasing the sampling intervals and making the sampling process sparse. SparSamp preserves the original probability distribution of the generative model, thus ensuring security. It introduces only $O(1)$ additional complexity per sampling step, enabling the fastest embedding speed without compromising generation speed. SparSamp is designed to be plug-and-play; message embedding can be achieved by simply replacing the sampling component of an existing generative model with SparSamp. We implemented SparSamp in text, image, and audio generation models. It can achieve embedding speeds of up to 755 bits/second with GPT-2, 5046 bits/second with DDPM, and 9,223 bits/second with WaveRNN.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-f7293a6c",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Crypto 4: Systems and Protocols",
@@ -217,6 +219,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-f7293a6c",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/wang-yaofei",
+      "kind": "paper-page",
+      "title": "SparSamp: Efficient Provably Secure Steganography Based on Sparse Sampling",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:21:59Z",
+      "content_hash": "sha256:3519ae93bb45e395a7c72fc49b3881382c9f02b5fc898947afb5cdab02a91a89",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

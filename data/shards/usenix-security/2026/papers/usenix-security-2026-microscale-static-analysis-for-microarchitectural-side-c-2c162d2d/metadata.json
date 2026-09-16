@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-microscale-static-analysis-for-microarchitectural-side-c-2c162d2d",
   "title": "microSCALE: Static Analysis for Microarchitectural Side-channel Leakage Evaluation",
+  "abstract": "Developing cryptographic implementations that are resistant to side-channel attacks is challenging in modern CPUs. Data-dependent switching activity induces subtle transitions deep in the microarchitecture that can cause sensitive information to leak through the CPU's power consumption. Existing leakage detection tools largely rely on simulation-based testing, which is not only time-consuming but is also limited to the explored execution scenarios.\n\nWe present microSCALE, a fully automated framework for detecting power side-channel leakages that occur due to transitions in the CPU's microarchitecture. By statically analyzing the CPU's RTL, microSCALE enables systematic exploration of microarchitectural leakage sources within seconds. It precisely localizes the origin of leakage in the hardware and traces it back to the corresponding software instructions. We evaluate microSCALE on several protected crypto-implementations, including GIFT, ASCON, PRESENT, and AES, running on an open-source RISC-V processor, and identify several leakage sources. For instance, we identify that a protected implementation of the GIFT cipher has about 80% of its instructions that leak on the Rocket Core. We show how microSCALE can help in hardening this implementation, reducing the side-channel leakage around 90.3%.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-2c162d2d",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Hardware Security 4",
@@ -176,6 +178,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-2c162d2d",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/kumar-e",
+      "kind": "paper-page",
+      "title": "microSCALE: Static Analysis for Microarchitectural Side-channel Leakage Evaluation",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:24:44Z",
+      "content_hash": "sha256:17c20e7aa5cd60dfb04d3cf0b14be03479c450ac1c125fff3fbfbf9a11a9954c",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

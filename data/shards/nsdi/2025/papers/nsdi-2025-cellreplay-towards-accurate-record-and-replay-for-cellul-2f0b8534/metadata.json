@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2025-cellreplay-towards-accurate-record-and-replay-for-cellul-2f0b8534",
   "title": "CellReplay: Towards accurate record-and-replay for cellular networks",
+  "abstract": "The inherent variability of real-world cellular networks makes it hard to evaluate, reproduce, and debug the performance of networked applications running on these networks. A common approach is to record and replay a trace of observed cellular network performance. However, we show that the state-of-the-art record-and-replay technique produces empirically inaccurate results that can cause evaluation bias. This paper presents the design and implementation of CellReplay, a tool that records the time-varying performance of a live cellular network into traces using preset workloads and faithfully replays the observed performance for other workloads through an emulated network interface. The key challenge in achieving high accuracy is to replay varying network behavior in a way that captures its sensitivity to the workload. CellReplay records network behavior under two predefined workloads simultaneously and interpolates upon replay for other workloads. Across various challenging network conditions, our evaluation shows that real-world networked applications (e.g., web browsing or video streaming) running on CellReplay achieve similar performance (e.g., page load time or bitrate selection) to their live network counterparts, with significantly reduced error compared to the prior method.",
+  "abstract_source_id": "src-abstract-nsdi-2025-2f0b8534",
   "venue": "nsdi",
   "year": 2025,
   "track_or_session": "Cellular and Wireless",
@@ -140,6 +142,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2025-2f0b8534",
+      "url": "https://www.usenix.org/conference/nsdi25/presentation/sentosa",
+      "kind": "paper-page",
+      "title": "CellReplay: Towards accurate record-and-replay for cellular networks",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:04:03Z",
+      "content_hash": "sha256:ef4e3740acf9971a147fae0c983d853be8fbbdee53fa041f6f80ac421cd7d95e",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

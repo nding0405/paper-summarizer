@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-pvmark-enabling-public-verifiability-for-llm-watermarkin-e066b318",
   "title": "PVMark: Enabling Public Verifiability for LLM Watermarking Schemes",
+  "abstract": "Watermarking schemes for large language models (LLMs) have been proposed to identify the source of the generated text. However, current watermarking solutions hardly resolve the trust issue: the watermark detection often relies on the secret key and thus remains opaque to the public; otherwise any adversary may launch removal attacks if the secret key is exposed. To resolve the dilemma, we propose PVMark, a plugin based on zero-knowledge proof (ZKP), enabling the watermark detection process to be publicly verifiable by third parties without disclosing any secret key. PVMark novelly hinges upon the proof of `correct execution' of watermark detection on which a set of constraints are built, and is optimized according to the structural nature of the detection process. Developed for three representative watermarking schemes, we implement multiple variants of PVMark in Python, Rust and Circom, covering combinations of three hash functions and four ZKP protocols, showing our approach effectively works under a variety of circumstances. By experimental results, PVMark efficiently enables public verifiability on the state-of-the-art LLM watermarking schemes yet without compromising the watermarking performance, and hence is promising for practical deployment.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-e066b318",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Privacy Anonymity 2",
@@ -155,6 +157,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-e066b318",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/duan",
+      "kind": "paper-page",
+      "title": "PVMark: Enabling Public Verifiability for LLM Watermarking Schemes",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:25:06Z",
+      "content_hash": "sha256:9ccc47655a2b2e2b9fd51a46d551be293e0e6088939dc42be08322f5d838f14e",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

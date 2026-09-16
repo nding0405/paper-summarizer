@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2025-scheduled-disclosure-turning-power-into-timing-without-f-fb98e4c7",
   "title": "Scheduled Disclosure: Turning Power Into Timing Without Frequency Scaling",
+  "abstract": "Power side-channel attacks are seeing a resurgence of interest in computer security research. An emerging class of these attacks exploits remote methods to monitor power consumption-most notably by observing power-dependent CPU frequency variations. However, existing methods have only been demonstrated on (older) x86 CPU architectures where frequency scaling is the primary-if not only-mechanism utilized to keep the system within safe operating conditions. It remains unclear whether remote power side-channel attacks are still feasible on modern x86 CPU architectures with additional, more sophisticated such mechanisms. We demonstrate that not only do remote power-side channel attacks remain feasible on modern x86 CPU architectures, but that they are also more effective and work even in the absence of frequency side-channel leakage. Our attacks take advantage of Thread Director, a hardware optimization that provides scheduling “hints” to enhance performance and energy efficiency on modern Intel processors. We demonstrate that these hints depend on the processor's power consumption, leading to power-dependent scheduling behaviors-such as variations in the number of active cores-that can be observed purely from software and even via remote-timing analysis. We show the efficacy of our attacks by leaking keys from constant-time cryptographic code (5 x faster than prior attacks on older x86 CPUs) and mounting cross-origin pixel stealing attacks.",
+  "abstract_source_id": "src-abstract-sp-2025-fb98e4c7",
   "venue": "sp",
   "year": 2025,
   "track_or_session": "Cycle 2",
@@ -112,6 +114,19 @@
       "official": true,
       "supports": [
         "DOI, authors, affiliations, abstract, publication date, pages, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2025-fb98e4c7",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Scheduled Disclosure: Turning Power into Timing Without Frequency Scaling",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:52Z",
+      "content_hash": "sha256:b15ce02bcc49da611fdd791ecc56741e7d91d84154b58c1a7f72a5c6902e6e46",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

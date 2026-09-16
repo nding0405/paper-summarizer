@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2026-distributed-broadcast-encryption-for-confidential-intero-3e78514e",
   "title": "Distributed Broadcast Encryption for Confidential Interoperability across Private Blockchains",
+  "abstract": "Interoperation across distributed ledger technology (DLT) networks hinges upon the secure transmission of ledger state from one network to another. This is especially challenging for private networks whose ledger access is limited to enrolled members. Existing approaches rely on a trusted centralized proxy that receives encrypted ledger state of a network, decrypts it, and sends it to members of another network. Though effective, this approach goes against the founding principle of DLT, namely avoiding single points of failure (or single sources of trust).\n\nIn this paper, we leverage fully-distributed broadcast encryption (FDBE in short) to build a fully decentralized protocol for confidential information-sharing across private networks. Compared to\n\ntraditional broadcast encryption (BE), FDBE is characterized by distributed setup and key generation, where mutually distrusting parties agree on a BE’s public key without a trusted setup, and securely derive their decryption keys. Given any FDBE, two private networks can securely share information as follows: a sender in one network uses the other network’s FDBE public key to encrypt a message for its members. The resulting construction is secure in the simplified universal composability (UC) framework.\n\nTo further demonstrate the practicality of our approach, we present the first instantiation of an FDBE that enjoys constant-sized decryption keys and ciphertexts, and evaluate the resulting performances through a reference implementation that considers two private Hyperledger Fabric networks within the Hyperledger Cacti interoperation framework.",
+  "abstract_source_id": "src-abstract-ndss-2026-3e78514e",
   "venue": "ndss",
   "year": 2026,
   "track_or_session": "Fall submission cycle",
@@ -181,6 +183,19 @@
       "official": false,
       "supports": [
         "independent proceedings identity reconciliation"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2026-3e78514e",
+      "url": "https://www.ndss-symposium.org/ndss-paper/distributed-broadcast-encryption-for-confidential-interoperability-across-private-blockchains/",
+      "kind": "paper-page",
+      "title": "Distributed Broadcast Encryption for Confidential Interoperability across Private Blockchains",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:21:52Z",
+      "content_hash": "sha256:5e52a3ac9665b608c9af8be2a31ef6060c580f57d47bcb58b237a2ca17faaecf",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

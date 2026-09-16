@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "eurosys-2026-million-scale-text-to-video-retrieval-with-hyperdimensio-e1eda9dc",
   "title": "Million-Scale Text-to-Video Retrieval with Hyperdimensional Computing",
+  "abstract": "Scalable video retrieval is increasingly challenging as datasets reach tens of millions of videos. Current text-to-video retrieval (T2VR) methods either compress videos into single dense vectors, losing segment-level detail, or expand them into multi-frame representations, incurring prohibitive storage and search costs. We propose a binary hyperdimensional representation that encodes each video into a compact 3,072-dimension hypervector, preserving semantic fidelity while reducing memory via bit-packing. To leverage the properties of hypervectors for sublinear search, we introduce Hypervector Retrieval (HVR), a frequency-aware inverted index that prioritizes rare informative positions and refines candidates using GPU-accelerated Hamming search. Experiments show that our approach matches or exceeds dense baselines for T2VR and surpasses state-of-the-art partially relevant video retrieval (PRVR) by over 5% Recall@ 10 on ActivityNet. At scale, HVR processes over 2,000 queries per second on 10M videos, maintains recall within 1% of exact search, and achieves 5.3× greater storage capacity than CLIP4Clip and over 2,116× over MS-SL.",
+  "abstract_source_id": "src-abstract-eurosys-2026-e1eda9dc",
   "venue": "eurosys",
   "year": 2026,
   "track_or_session": null,
@@ -180,6 +182,19 @@
       "official": false,
       "supports": [
         "Publisher-deposited proceedings identity and print publication date."
+      ]
+    },
+    {
+      "id": "src-abstract-eurosys-2026-e1eda9dc",
+      "url": "https://api.openalex.org/works/doi:10.1145/3767295.3803610?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Million-Scale Text-to-Video Retrieval with Hyperdimensional Computing",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:20:44Z",
+      "content_hash": "sha256:2d4250c50ea02f86109bd328bbe37805097a50fe4a5669fe44fe1578c866df75",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

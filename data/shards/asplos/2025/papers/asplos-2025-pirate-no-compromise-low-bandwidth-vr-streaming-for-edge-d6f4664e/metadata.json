@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2025-pirate-no-compromise-low-bandwidth-vr-streaming-for-edge-d6f4664e",
   "title": "Pirate: No Compromise Low-Bandwidth VR Streaming for Edge Devices",
+  "abstract": "Due to the limited compute power and storage capabilities of edge platforms, ''streaming'' often provides a better VR experience compared to ''rendering''. Yet, achieving high-quality VR streaming faces two significant challenges, namely, bandwidth limitations and the need for real-time operation with high frames per second (FPS). Previous efforts have tended to prioritize either conserving bandwidth without real-time performance or ensuring real-time operation without substantial bandwidth savings. In this work, we incorporate the concept of ''stereo similarity'' to develop a novel real-time stereo video compression framework for streaming, called Pirate. Unlike the previously proposed approaches that rely on large machine learning-based models for synthesizing stereo pairs from both eyes with disparity maps (which can be impractical for most edge platforms due to their high computational cost), Pirate iteratively synthesizes the target eye view using only a single eye view and its corresponding disparity and optical flow information, with alternating left or right eye transmission. This enables us to generate target view at an extremely low computational cost, even under bandwidth constraints as low as 0.1 bits per pixel (bpp), while maintaining a high frame rate of 90 FPS. Our evaluations also reveal that, the proposed approach not only achieves real-time VR streaming with a 20%-40% reduction in bandwidth usage, but also maintains similar superior quality standards.",
+  "abstract_source_id": "src-abstract-asplos-2025-d6f4664e",
   "venue": "asplos",
   "year": 2025,
   "track_or_session": "Session 1C: Edge Computing",
@@ -272,6 +274,19 @@
       "official": false,
       "supports": [
         "Indexed abstract and open-access links used for relevance classification and ancillary-link discovery."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2025-d6f4664e",
+      "url": "https://api.openalex.org/works/doi:10.1145/3676641.3716268?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Pirate: No Compromise Low-Bandwidth VR Streaming for Edge Devices",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:02:42Z",
+      "content_hash": "sha256:b360b025ea72cc53836c41eedb3edc102bf0995409b4677a73c7e17a6f758103",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

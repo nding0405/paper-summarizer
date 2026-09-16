@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2024-popstar-lightweight-threshold-reporting-with-reduced-lea-6a37e47b",
   "title": "POPSTAR: Lightweight Threshold Reporting with Reduced Leakage",
+  "abstract": "This paper proposes POPSTAR, a new lightweight protocol for the private computation of heavy hitters, also known as a private threshold reporting system. In such a protocol, the users provide input measurements, and a report server learns which measurements appear more than a pre-specified threshold. POPSTAR follows the same architecture as STAR (Davidson et al., CCS 2022) by relying on a helper randomness server in addition to a main server computing the aggregate heavy hitter statistics. While STAR is extremely lightweight, it leaks a substantial amount of information, consisting of an entire histogram of the provided measurements (but only reveals the actual measurements that appear beyond the threshold). POPSTAR shows that this leakage can be reduced at a modest cost (∼7× longer aggregation time). Our leakage is closer to that of Poplar (Boneh et al., S&P 2021), which relies however on distributed point functions and a different model which requires interactions of two non-colluding servers to compute the heavy hitters.",
+  "abstract_source_id": "src-abstract-usenix-security-2024-6a37e47b",
   "venue": "usenix-security",
   "year": 2024,
   "track_or_session": "Cryptographic Protocols III",
@@ -112,6 +114,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2024-6a37e47b",
+      "url": "https://www.usenix.org/conference/usenixsecurity24/presentation/li-hanjun",
+      "kind": "paper-page",
+      "title": "POPSTAR: Lightweight Threshold Reporting with Reduced Leakage",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:16:42Z",
+      "content_hash": "sha256:5389dca707665d881400863a5c5ff00b0333c49e1fffc860dd1ee27a3945d349",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "eurosys-2024-optimus-warming-serverless-ml-inference-via-inter-functi-22eefc84",
   "title": "Optimus: Warming Serverless ML Inference via Inter-Function Model Transformation",
+  "abstract": "Serverless ML inference is an emerging cloud computing paradigm for low-cost, easy-to-manage inference services. In serverless ML inference, each call is executed in a container; however, the cold start of containers results in long inference delays. Unfortunately, most existing works do not work well because they still need to load models into containers from scratch, which is the bottleneck based on our observations. Therefore, this paper proposes a low-latency serverless ML inference system called Optimus via a new container management scheme. Our key insight is that the loading of a new model can be significantly accelerated when using an existing model with a similar structure in a warm but idle container. We thus develop a novel idea of inter-function model transformation for serverless ML inference, which delves into models within containers at a finer granularity of operations, designs a set of in-container meta-operators for both CNN and transformer model transformation, and develops an efficient scheduling algorithm with linear complexity for a low-cost transformation strategy. Our evaluations on thousands of models show that Optimus reduces inference latency by 24.00% ~ 47.56% in both simulated and real-world workloads compared to state-of-the-art work.",
+  "abstract_source_id": "src-abstract-eurosys-2024-22eefc84",
   "venue": "eurosys",
   "year": 2024,
   "track_or_session": null,
@@ -209,6 +211,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-eurosys-2024-22eefc84",
+      "url": "https://api.openalex.org/works/doi:10.1145/3627703.3629567?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Optimus: Warming Serverless ML Inference via Inter-Function Model Transformation",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:18:54Z",
+      "content_hash": "sha256:4f72fe0e7d0cda0874d2a98f637c69113b74914562cdc9b9f0774b864d9d5b56",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

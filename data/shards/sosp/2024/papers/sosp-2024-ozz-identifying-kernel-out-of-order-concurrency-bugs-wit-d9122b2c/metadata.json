@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sosp-2024-ozz-identifying-kernel-out-of-order-concurrency-bugs-wit-d9122b2c",
   "title": "OZZ: Identifying Kernel Out-of-Order Concurrency Bugs with In-Vivo Memory Access Reordering",
+  "abstract": "Kernel concurrency bugs are notoriously difficult to identify, while their consequences severely threaten the reliability and security of the entire system. Especially in the kernel, developers should consider not only locks but also memory barriers to prevent out-of-order execution from breaking the correctness of concurrent execution. Incorrect use of memory barriers may cause non-intuitive concurrency bugs that manifest due to out-of-order execution, which we refer to as OoO bugs. This paper aims to identify OoO bugs in the kernel. We devise a mechanism to emulate out-of-order execution while kernel code is executed, called OEMU. Inspired by how a processor reorders memory accesses, OEMU makes the subtle and non-deterministic behavior of out-of-order execution systematically controllable. Based on OEMU, we propose Ozz, a new testing tool designed to effectively identify kernel OoO bugs. The key feature of Ozz is its ability to deterministically control both out-of-order execution and concurrent execution caused by thread interleavings, enabling comprehensive testing of their combined effects. Our evaluation shows that OEMU is effective in reproducing previously-reported kernel OoO bugs, demonstrating its strong capability of controlling out-of-order execution. Furthermore, with Ozz, we identify 11 new OoO bugs in the latest version of the Linux kernel, subsequently confirmed and patched by kernel developers.",
+  "abstract_source_id": "src-abstract-sosp-2024-d9122b2c",
   "venue": "sosp",
   "year": 2024,
   "track_or_session": "Session 4: Kernels 9:00 - 10:30 Session Chair: Malte Schwarzkopf",
@@ -167,6 +169,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-sosp-2024-d9122b2c",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "OZZ: Identifying Kernel Out-of-Order Concurrency Bugs with In-Vivo Memory Access Reordering",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:19Z",
+      "content_hash": "sha256:b613162f9e7d53fac5fe410aff94d06ac71f23c6c31e2e9cc362b51e87d1bb79",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

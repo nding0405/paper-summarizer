@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2025-low-end-to-end-latency-atop-a-speculative-shared-log-wit-be1c37cd",
   "title": "Low End-to-End Latency atop a Speculative Shared Log with Fix-Ante Ordering",
+  "abstract": "Today’s shared logs incur expensive coordination to globally order records across storage shards before they can deliver records to applications. This makes them unsuitable for many modern applications that must process ingested data as early as possible and realize low end-to-end (e2e) latencies. We propose SpecLog , a new shared log abstraction that delivers records by speculating the global order, allowing the application’s computation and shared-log coordination to be overlapped, thus reducing e2e latency. To enable accurate speculations, we introduce fix-ante ordering , a novel ordering mechanism that predetermines the global order and makes the shards adhere to the predetermined order. With fix-ante ordering, shards, except in rare cases, can accurately predict where their records will sit in the total order before global coordination. We build Belfast, an implementation of the SpecLog abstraction and fix-ante ordering. Our experiments show that Belfast offers lower e2e latencies than current shared logs while preserving their elasticity, flexibility, and scalability.",
+  "abstract_source_id": "src-abstract-osdi-2025-be1c37cd",
   "venue": "osdi",
   "year": 2025,
   "track_or_session": "Distributed Systems and Data Centers II",
@@ -201,6 +203,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2025-be1c37cd",
+      "url": "https://www.usenix.org/conference/osdi25/presentation/bhat",
+      "kind": "paper-page",
+      "title": "Low End-to-End Latency atop a Speculative Shared Log with Fix-Ante Ordering",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:07:37Z",
+      "content_hash": "sha256:df04b9922e46c0d75f6a6af81de3bee44ea53a8402663f296985c20aea61b12f",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

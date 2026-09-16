@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2024-multifuzz-a-multi-stream-fuzzer-for-testing-monolithic-f-88d31161",
   "title": "MultiFuzz: A Multi-Stream Fuzzer For Testing Monolithic Firmware",
+  "abstract": "Rapid embedded device proliferation is creating new targets and opportunities for adversaries. However, the complex interactions between firmware and hardware pose challenges to applying automated testing, such as fuzzing. State-of-the-art methods re-host firmware in emulators and facilitate complex interactions with hardware by provisioning for inputs from a diversity of methods (such as interrupts) from a plethora of devices (such as modems). We recognize a significant disconnect between how a fuzzer generates inputs (as a monolithic file) and how the inputs are consumed during re-hosted execution (as a stream, in slices, per peripheral). We demonstrate the disconnect to significantly impact a fuzzer's effectiveness at discovering inputs that explore deeper code and bugs.\n\nWe rethink the input generation process for fuzzing monolithic firmware and propose a new approach—multi-stream input generation and representation; inputs are now a collection of independent streams, one for each peripheral. We demonstrate the versatility and effectiveness of our approach by implementing: i) stream specific mutation strategies; ii) efficient methods for generating useful values for peripherals; iii) enhancing the use of information learned during fuzzing; and iv) improving a fuzzer's ability to handle roadblocks. We design and build a new fuzzer, MULTIFUZZ, for testing monolithic firmware and evaluate our approach on synthetic and real-world targets. MULTIFUZZ passes all 66 unit tests from a benchmark consisting of 46 synthetic binaries targeting a diverse set of microcontrollers. On an evaluation with 23 real-world firmware targets, MULTIFUZZ outperforms the state-of-the-art fuzzers Fuzzware and Ember-IO. MULTIFUZZ reaches significantly more code on 14 out of the 23 firmware targets and similar coverage on the remainder. Further, MULTIFUZZ discovered 18 new bugs on real-world targets, many thoroughly tested by previous fuzzers.",
+  "abstract_source_id": "src-abstract-usenix-security-2024-88d31161",
   "venue": "usenix-security",
   "year": 2024,
   "track_or_session": "Fuzzing IV: Hardware and Firmware",
@@ -112,6 +114,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2024-88d31161",
+      "url": "https://www.usenix.org/conference/usenixsecurity24/presentation/chesser",
+      "kind": "paper-page",
+      "title": "MultiFuzz: A Multi-Stream Fuzzer For Testing Monolithic Firmware",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:16:18Z",
+      "content_hash": "sha256:d9d679f01c3c6acf64f7682839bbc6308fac4dbad4caf597d2ea8a82e93b71b4",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "atc-2025-optimus-accelerating-large-scale-multi-modal-llm-trainin-632f9cf1",
   "title": "Optimus: Accelerating Large-Scale Multi-Modal LLM Training by Bubble Exploitation",
+  "abstract": "Multimodal large language models (MLLMs) have extended the success of large language models (LLMs) to multiple data types, such as image, text and audio, achieving significant performance in various domains, including multimodal translation, visual question answering and content generation. Nonetheless, existing systems are inefficient to train MLLMs due to substantial GPU bubbles caused by the heterogeneous modality models and complex data dependencies in 3D parallelism.\n\nThis paper proposes Optimus, a distributed MLLM training system that reduces end-to-end MLLM training time. Optimus is based on our principled analysis that scheduling the encoder computation within the LLM bubbles can reduce bubbles in MLLM training.\n\nTo enable scheduling encoder computation for all GPUs, Optimus searches for separate parallel plans for the encoder and LLM, and adopts a bubble scheduling algorithm to exploit LLM bubbles without breaking the original data dependencies in the MLLM model architecture. We further decompose the encoder layer computation into a series of kernels and analyze the common bubble pattern of 3D parallelism to carefully optimize the sub-millisecond bubble scheduling, minimizing the overall training time. Our experiments in a production cluster show that Optimus accelerates MLLM training by 20.5%-21.3% with ViT-22B and GPT-175B model over 3072 GPUs compared to baselines.",
+  "abstract_source_id": "src-abstract-atc-2025-632f9cf1",
   "venue": "atc",
   "year": 2025,
   "track_or_session": "Accelerating ML Training: Parallelism, Tuning, and Modalities",
@@ -201,6 +203,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-atc-2025-632f9cf1",
+      "url": "https://www.usenix.org/conference/atc25/presentation/feng",
+      "kind": "paper-page",
+      "title": "Optimus: Accelerating Large-Scale Multi-Modal LLM Training by Bubble Exploitation",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:00:00Z",
+      "content_hash": "sha256:b2055fc11eb7badda2ef96194457c5a0bb1435f6dc5b0715893e4392d3f9e158",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

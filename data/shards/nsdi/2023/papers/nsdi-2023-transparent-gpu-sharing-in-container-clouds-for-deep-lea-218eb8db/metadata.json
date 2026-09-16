@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2023-transparent-gpu-sharing-in-container-clouds-for-deep-lea-218eb8db",
   "title": "Transparent GPU Sharing in Container Clouds for Deep Learning Workloads",
+  "abstract": "Containers are widely used for resource management in datacenters. A common practice to support deep learning (DL) training in container clouds is to statically bind GPUs to containers in entirety. Due to the diverse resource demands of DL jobs in production, a significant number of GPUs are underutilized. As a result, GPU clusters have low GPU utilization, which leads to a long job completion time because of queueing.\n\nWe present TGS (Transparent GPU Sharing), a system that provides transparent GPU sharing to DL training in container clouds. In stark contrast to recent application-layer solutions for GPU sharing, TGS operates at the OS layer beneath containers. Transparency allows users to use any software to develop models and run jobs in their containers. TGS leverages adaptive rate control and transparent unified memory to simultaneously achieve high GPU utilization and performance isolation. It ensures that production jobs are not greatly affected by opportunistic jobs on shared GPUs. We have built TGS and integrated it with Docker and Kubernetes. Experiments show that (i) TGS has little impact on the throughput of production jobs; (ii) TGS provides similar throughput for opportunistic jobs as the state-of-the-art application-layer solution AntMan, and improves their throughput by up to 15× compared to the existing OS-layer solution MPS.",
+  "abstract_source_id": "src-abstract-nsdi-2023-218eb8db",
   "venue": "nsdi",
   "year": 2023,
   "track_or_session": "Learning with GPUs",
@@ -161,6 +163,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2023-218eb8db",
+      "url": "https://www.usenix.org/conference/nsdi23/presentation/wu",
+      "kind": "paper-page",
+      "title": "Transparent GPU Sharing in Container Clouds for Deep Learning Workloads",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:02:42Z",
+      "content_hash": "sha256:64c5750943339d09e6a25b9a45417003aa121609a917e730244727f17e62c0d7",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

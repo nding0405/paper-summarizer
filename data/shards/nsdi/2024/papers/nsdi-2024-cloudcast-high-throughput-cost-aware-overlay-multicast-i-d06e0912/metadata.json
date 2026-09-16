@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2024-cloudcast-high-throughput-cost-aware-overlay-multicast-i-d06e0912",
   "title": "Cloudcast: High-Throughput, Cost-Aware Overlay Multicast in the Cloud",
+  "abstract": "Bulk data replication across multiple cloud regions and providers is essential for large organizations to support data analytics, disaster recovery, and geo-distributed model serving. However, data multicast in the cloud can be expensive due to network egress costs and slow due to cloud network constraints. In this paper, we study the design of high-throughput, cost-optimized overlay multicast for bulk cloud data replication that exploits trends in modern provider pricing models along with techniques like ephemeral waypoints to minimize cloud networking costs.\n\nTo that end, we design an optimization algorithm that uses information about cloud network throughput and pricing to identify cost-minimizing multicast replication trees under user-given runtime budgets. Our open-source implementation, Cloudcast, is used for cloud overlay multicast that supports pluggable algorithms for determining the multicast tree structure. Our evaluations show that Cloudcast achieves 61.5% cost reduction and 2.3× replication speedup compared to both academic and commercial baselines (e.g., AWS multi-region bucket) for multi-region replication.",
+  "abstract_source_id": "src-abstract-nsdi-2024-d06e0912",
   "venue": "nsdi",
   "year": 2024,
   "track_or_session": "Network Protocols",
@@ -216,6 +218,19 @@
       "supports": [
         "canonical author line and publication-time affiliations",
         "resolution of conflicting or malformed citation metadata on the official paper page"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2024-d06e0912",
+      "url": "https://www.usenix.org/conference/nsdi24/presentation/wooders",
+      "kind": "paper-page",
+      "title": "Cloudcast: High-Throughput, Cost-Aware Overlay Multicast in the Cloud",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:03:02Z",
+      "content_hash": "sha256:059f23a4fa387d497fc9aeb077a2a0a0362d95be164024f91bba21cdad83c73b",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

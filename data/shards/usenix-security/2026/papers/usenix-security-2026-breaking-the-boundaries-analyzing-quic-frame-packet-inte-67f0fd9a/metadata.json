@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-breaking-the-boundaries-analyzing-quic-frame-packet-inte-67f0fd9a",
   "title": "Breaking the Boundaries: Analyzing QUIC Frame-Packet Interactions With QUIC-Attacker",
+  "abstract": "QUIC is a new network protocol based on UDP that replaces TCP and TLS with an integrated protocol. It provides multiplexing of streams over a single encrypted and authenticated connection. The QUIC standard allows many different combinations of UDP datagrams, and QUIC packets, frames, and streams to transport the same information. This implies that testing the receiving side of QUIC is difficult.\n\nWe develop probes to explore how different QUIC server implementations handle the coalescence and fragmentation of payloads, covering both valid and invalid combinations of datagrams, packets, and frames. Already at this basic level, we observe significant differences between implementations, some of which pointing towards exploitable vulnerabilities. Previous QUIC research tools were not designed to implement such probes. To address this limitation, we present QUIC-Attacker, a testing framework that allows maximum freedom on the sending side of QUIC.\n\nWe present our results on these probes when applied to 15 QUIC server libraries, uncovering eight DoS vulnerabilities caused by unhandled exceptions and exploitable injection vulnerabilities in Kwik and Alibaba's XQUIC.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-67f0fd9a",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Network Security 1",
@@ -134,6 +136,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-67f0fd9a",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/erinola",
+      "kind": "paper-page",
+      "title": "Breaking the Boundaries: Analyzing QUIC Frame-Packet Interactions With QUIC-Attacker",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:23:13Z",
+      "content_hash": "sha256:1f58c185f427fc45cec0101499b4d6fe95295d417e780c2e79a18a8f121dda81",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

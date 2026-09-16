@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2026-formal-analysis-of-ble-secure-connection-pairing-and-rev-6456f72c",
   "title": "Formal Analysis of BLE Secure Connection Pairing and Revelation of the PE Confusion Attack",
+  "abstract": "The Secure Connection (SC) pairing is the latest version of the security protocol designed to protect sensitive information transmitted over Bluetooth Low Energy (BLE) channels. A formal and rigorous analysis of this protocol is essential for improving security assurances and identifying potential vulnerabilities. However, the complexity of the protocol flow, difficulties in formalizing pairing method selection, and overly idealized user assumptions present significant obstacles to such analysis. In this paper, we address these challenges and present an accurate and comprehensive formal analysis of the BLE-SC pairing protocol using Tamarin. We extract state machines for each participant as the blueprint for modeling the protocol, and we use an equational theory to formalize the pairing method selection logic. Our model incorporates subtle user behaviors and considers stronger adversary capabilities, including the potential compromise of private channels such as the temporary out-of-band channel. We develop a verification strategy to automate protocol analysis and implement a script to parallelize verification tasks across multiple servers. We verify 84 pairing cases and identify the minimal security assumptions required for the protocol. Moreover, our results reveal a new Man-in-the-Middle (MitM) attack, which we call the PE confusion attack. We provide tools and Proof-of-Concept (PoC) exploits for simulating and understanding this attack within a controlled environment. Finally, we propose countermeasures to defend against this attack, improving the security of the BLE-SC pairing protocol.",
+  "abstract_source_id": "src-abstract-ndss-2026-6456f72c",
   "venue": "ndss",
   "year": 2026,
   "track_or_session": "Fall submission cycle",
@@ -202,6 +204,19 @@
       "official": false,
       "supports": [
         "independent proceedings identity reconciliation"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2026-6456f72c",
+      "url": "https://www.ndss-symposium.org/ndss-paper/formal-analysis-of-ble-secure-connection-pairing-and-revelation-of-the-pe-confusion-attack/",
+      "kind": "paper-page",
+      "title": "Formal Analysis of BLE Secure Connection Pairing and Revelation of the PE Confusion Attack",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:22:04Z",
+      "content_hash": "sha256:770e033c86fcbd03f874270d8a27d4eddb51dc0a4ecff72f291c15e07e052bc7",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

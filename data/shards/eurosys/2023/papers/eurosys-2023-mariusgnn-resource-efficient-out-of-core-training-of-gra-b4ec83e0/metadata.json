@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "eurosys-2023-mariusgnn-resource-efficient-out-of-core-training-of-gra-b4ec83e0",
   "title": "MariusGNN: Resource-Efficient Out-of-Core Training of Graph Neural Networks",
+  "abstract": "We study training of Graph Neural Networks (GNNs) for large-scale graphs. We revisit the premise of using distributed training for billion-scale graphs and show that for graphs that fit in main memory or the SSD of a single machine, out-of-core pipelined training with a single GPU can outperform state-of-the-art (SoTA) multi-GPU solutions. We introduce MariusGNN, the first system that utilizes the entire storage hierarchy---including disk---for GNN training. MariusGNN introduces a series of data organization and algorithmic contributions that 1) minimize the end-to-end time required for training and 2) ensure that models learned with disk-based training exhibit accuracy similar to those fully trained in memory. We evaluate MariusGNN against SoTA systems for learning GNN models and find that single-GPU training in MariusGNN achieves the same level of accuracy up to 8× faster than multi-GPU training in these systems, thus, introducing an order of magnitude monetary cost reduction. MariusGNN is open-sourced at www.marius-project.org.",
+  "abstract_source_id": "src-abstract-eurosys-2023-b4ec83e0",
   "venue": "eurosys",
   "year": 2023,
   "track_or_session": null,
@@ -146,6 +148,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-eurosys-2023-b4ec83e0",
+      "url": "https://api.openalex.org/works/doi:10.1145/3552326.3567501?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "MariusGNN: Resource-Efficient Out-of-Core Training of Graph Neural Networks",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:18:36Z",
+      "content_hash": "sha256:eeb4cba30e43e96efd2b04e5fd48efbee7bc79c895f04b11786f1e439539f6a2",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

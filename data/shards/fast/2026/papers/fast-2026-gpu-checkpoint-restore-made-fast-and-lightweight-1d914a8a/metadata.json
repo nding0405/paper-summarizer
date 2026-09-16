@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "fast-2026-gpu-checkpoint-restore-made-fast-and-lightweight-1d914a8a",
   "title": "GPU Checkpoint/Restore Made Fast and Lightweight",
+  "abstract": "System-level GPU checkpoint/restore (C/R) enables several critical features such as elastic scaling, task switching, and fault tolerance, for modern GPU workloads in a unified and application-transparent manner. However, existing approaches present fundamental limitations: they fail to simultaneously achieve low C/R latency and low overhead imposed on normal GPU execution, while also lacking efficient support for incremental checkpointing. We propose GCR, a GPU checkpoint/restore system that addresses all these limitations simultaneously. GCR employs a hybrid C/R scheme through control/data separation to deliver low C/R latency and negligible overhead imposed on normal GPU execution. To efficiently support incremental checkpointing, GCR introduces shadow execution on the CPU to reduce the overhead of dirty buffer identification, utilizing dirty templates for both lightweight CPU shadow execution and identification at a fine-grained instruction level.\n\nOur evaluations demonstrate that GCR reduces GPU checkpointing latency by 72.1% and 63.6% compared to cuda-ckpt (NVIDIA’s official solution) and PhOS (the current state-of-the-art), respectively, and restoration latency by 54.2% and 87.1%, while imposing negligible overhead (less than 1%). GCR also supports efficient incremental checkpointing, which reduces checkpoint sizes by 86.6% and latency by 43.8%.",
+  "abstract_source_id": "src-abstract-fast-2026-1d914a8a",
   "venue": "fast",
   "year": 2026,
   "track_or_session": "AI and LLMs II",
@@ -138,6 +140,19 @@
         "official paper page and PDF",
         "proceedings page range and page count",
         "official BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-fast-2026-1d914a8a",
+      "url": "https://www.usenix.org/conference/fast26/presentation/zeng",
+      "kind": "paper-page",
+      "title": "GPU Checkpoint/Restore Made Fast and Lightweight",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:01:32Z",
+      "content_hash": "sha256:03268e581d8aa6b89c8d6a0372326d0e9f2028d622fc0ad37896c11bde5cb31e",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2024-on-the-lack-of-code-confidentiality-in-trusted-execution-11f81cd9",
   "title": "On (the Lack of) Code Confidentiality in Trusted Execution Environments",
+  "abstract": "Trusted Execution Environments (TEEs) have been proposed as a solution to protect code confidentiality in scenarios where computation is outsourced to an untrusted operator. We study the resilience of such solutions to side-channel attacks in two commonly deployed scenarios: when the confidential code is a native binary that is shipped and executed within a TEE and when the confidential code is an intermediate representation (IR) executed on top of a runtime within a TEE. We show that executing IR code such as WASM bytecode on a runtime executing in a TEE leaks most IR instructions with high accuracy and therefore reveals the confidential code. Contrary to IR execution, native execution is much less susceptible to leakage and largely resists even the most powerful side-channel attacks. We evaluate native execution leakage in Intel SGX and AMD SEV and experimentally demonstrate end-to-end instruction extraction on Intel SGX, with WASM bytecode as IR executed within two popular WASM runtimes: WAMR and wasmi. Our experiments show that IR code leakage from such systems is practical and therefore question the security claims of several commercial solutions which rely on TEEs+WASM for code confidentiality.",
+  "abstract_source_id": "src-abstract-sp-2024-11f81cd9",
   "venue": "sp",
   "year": 2024,
   "track_or_session": "Winter cycle",
@@ -180,6 +182,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2024-11f81cd9",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "On (the Lack of) Code Confidentiality in Trusted Execution Environments",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:37Z",
+      "content_hash": "sha256:d186972817127125a98a71b907d7b283fa37f2e757aaf5b9ae232aa389caabc0",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

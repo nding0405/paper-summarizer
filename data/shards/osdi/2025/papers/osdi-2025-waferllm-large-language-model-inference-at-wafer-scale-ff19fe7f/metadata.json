@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2025-waferllm-large-language-model-inference-at-wafer-scale-ff19fe7f",
   "title": "WaferLLM: Large Language Model Inference at Wafer Scale",
+  "abstract": "Emerging AI accelerators increasingly adopt wafer-scale manufacturing technologies, integrating hundreds of thousands of AI cores in a mesh architecture with large distributed on-chip memory (tens of GB in total) and ultra-high on-chip memory bandwidth (tens of PB/s). However, current LLM inference systems, optimized for shared memory architectures like GPUs, fail to exploit these accelerators fully.\n\nWe introduce WaferLLM, the first wafer-scale LLM inference system. WaferLLM is guided by a novel PLMR model (pronounced as \"Plummer\") that captures the unique hardware characteristics of wafer-scale architectures. Leveraging this model, WaferLLM pioneers wafer-scale LLM parallelism, optimizing the utilization of hundreds of thousands of on-chip cores. It also introduces MeshGEMM and MeshGEMV, the first GEMM and GEMV implementations designed to scale effectively on wafer-scale accelerators.\n\nEvaluations show that WaferLLM achieves up to 200× higher accelerator utilization than state-of-the-art methods. Leveraging a wafer-scale accelerator (Cerebras WSE2), WaferLLM delivers GEMV operations 606× faster and 16× more energy-efficient than on an NVIDIA A100 GPU. For full LLM inference, WaferLLM achieves 10-20× speedups over A100 GPU clusters running SGLang and vLLM. These advantages are expected to grow as wafer-scale AI models, software, and hardware continue to mature. WaferLLM is open-sourced at https://github.com/MeshInfra/WaferLLM .",
+  "abstract_source_id": "src-abstract-osdi-2025-ff19fe7f",
   "venue": "osdi",
   "year": 2025,
   "track_or_session": "AI + Systems I",
@@ -243,6 +245,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2025-ff19fe7f",
+      "url": "https://www.usenix.org/conference/osdi25/presentation/he",
+      "kind": "paper-page",
+      "title": "WaferLLM: Large Language Model Inference at Wafer Scale",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:07:54Z",
+      "content_hash": "sha256:2bdf9b4b99be4845a549d147e05f344f0a9eb1ba2f99bcc3c89897411e93ccb8",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

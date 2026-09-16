@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2025-pyrrha-congestion-root-based-flow-control-to-eliminate-h-fdd321bb",
   "title": "Pyrrha: Congestion-Root-Based Flow Control to Eliminate Head-of-Line Blocking in Datacenter",
+  "abstract": "In modern datacenters, the effectiveness of end-to-end congestion control (CC) is quickly diminishing with the rapid bandwidth evolution. Per-hop flow control (FC) can react to congestion more promptly. However, a coarse-grained FC can result in Head-Of-Line (HOL) blocking. A fine-grained, per-flow FC can eliminate HOL blocking caused by flow control, however, it does not scale well. This paper presents Pyrrha, a scalable flow control approach that provably eliminates HOL blocking while using a minimum number of queues. In Pyrrha, flow control first takes effect on the root of the congestion, i.e., the port where congestion occurs. And then flows are controlled according to their contributed congestion roots. A prototype of Pyrrha is implemented on Tofino2 switches. Compared with state-of-the-art approaches, the average FCT of uncongested flows is reduced by 42%-98%, and 99th-tail latency can be 1.6×-215× lower, without compromising the performance of congested flows.",
+  "abstract_source_id": "src-abstract-nsdi-2025-fdd321bb",
   "venue": "nsdi",
   "year": 2025,
   "track_or_session": "All Things Transport",
@@ -455,6 +457,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2025-fdd321bb",
+      "url": "https://www.usenix.org/conference/nsdi25/presentation/liu-kexin",
+      "kind": "paper-page",
+      "title": "Pyrrha: Congestion-Root-Based Flow Control to Eliminate Head-of-Line Blocking in Datacenter",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:04:30Z",
+      "content_hash": "sha256:a4163e2906ff54714a6c4d812d7cf769af57357827ef95c3313a08dd7d8c1b2b",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-smash-scalable-maliciously-secure-hybrid-multi-party-com-4610f26c",
   "title": "SMASH: Scalable Maliciously Secure Hybrid Multi-party Computation Framework for Privacy-Preserving Large Language Models",
+  "abstract": "The meteoric rise of Large Language Models (LLMs) has sparked an urgent need for privacy-preserving inference. However, existing maliciously secure multi-party computation (MPC) frameworks face a \"performance collapse\" when scaling to large models, primarily due to the quadratic (O(n 2 )) communication overhead of nonlinear operators and expensive share conversions. This paper presents SMASH, a highly scalable, maliciously secure hybrid MPC framework that shatters these bottlenecks. SMASH introduces a novel DFT-based rotation technique and a lightweight zero-knowledge proof of knowledge (ZKPoK) construction to evaluate nonlinear operations. For the first time, this approach achieves linear communication complexity (O(n)) relative to the party count, independent of function complexity. Furthermore, SMASH provides a suite of high-efficiency conversion protocols (A2L/L2A and SM-LUT-based A2B/B2A) that bridge arithmetic and Boolean domains without relying on costly cryptographic primitives. Extensive benchmarks demonstrate that SMASH outperforms state-of-the-art frameworks (e.g., MP-SPDZ, MD-ML) by up to 18.9× in runtime and achieves a communication reduction of up to 10 3 ×. With its constant-round online phase and low WAN sensitivity, SMASH paves the way for secure, geographically distributed LLM deployments, achieving an unprecedented balance between adversarial robustness and practical efficiency.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-4610f26c",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Privacy Anonymity 2",
@@ -219,6 +221,19 @@
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening",
         "prepublication PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-4610f26c",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/lv",
+      "kind": "paper-page",
+      "title": "SMASH: Scalable Maliciously Secure Hybrid Multi-party Computation Framework for Privacy-Preserving Large Language Models",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:25:31Z",
+      "content_hash": "sha256:b29c1a093e3dec1ccbfc77223101850417dd4246bda0bb097d1d41e3770e20b7",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

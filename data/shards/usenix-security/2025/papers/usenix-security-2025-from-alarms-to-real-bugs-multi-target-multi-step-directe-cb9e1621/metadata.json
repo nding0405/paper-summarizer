@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-from-alarms-to-real-bugs-multi-target-multi-step-directe-cb9e1621",
   "title": "From Alarms to Real Bugs: Multi-target Multi-step Directed Greybox Fuzzing for Static Analysis Result Verification",
+  "abstract": "Effective verification of the true positives from false positives is crucial for improving the usability of static analysis tools and bolstering software security. Directed greybox fuzzing (DGF), based on dynamic execution, can confirm real vulnerabilities and provide proof-of-concept exploits, offering a promising solution. However, existing DGF tools are ineffective in verifying static analysis results because they are unaware of the semantic information about individual alarms and the correlations among multiple alarms.\n\nIn this paper, we fill this gap and present Lyso, the first multi-target, multi-step guided fuzzer that leverages semantic information (i.e., program flows) and correlations (i.e., shared root causes) derived from static analysis. By concurrently handling multiple alarms and prioritizing seeds that cover these root causes, Lyso efficiently explores multiple alarms. For each alarm, Lyso breaks down the goal of reaching an alarm into a sequence of manageable steps. By progressively following these steps, Lyso refines its search to reach the final step, significantly improving its ability to trigger challenging alarms.\n\nWe compared Lyso to eight state-of-the-art (directed) fuzzers. Our evaluation demonstrates that Lyso outperforms existing approaches, achieving an average 12.17x speedup while finding the highest absolute number of bugs. Additionally, we applied Lyso to verify static analysis results for real-world programs, and it successfully discovered eighteen new vulnerabilities.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-cb9e1621",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Software Security 4: Fuzzing and Other Software Analysis",
@@ -175,6 +177,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-cb9e1621",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/bao-andrew",
+      "kind": "paper-page",
+      "title": "From Alarms to Real Bugs: Multi-target Multi-step Directed Greybox Fuzzing for Static Analysis Result Verification",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:19:56Z",
+      "content_hash": "sha256:a21c7720629e3b129cd5d2d244df3a381582215235fdc460ef843e3978b127a7",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

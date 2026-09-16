@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2026-arctic-a-practical-lock-free-adaptive-radix-tree-369c1813",
   "title": "Arctic: A Practical Lock-Free Adaptive Radix Tree",
+  "abstract": "Indexing data structures are vital to the modern systems ecosystem, but there are no indexes that offer high performance, lock freedom, and range scans. Arctic is a lock-free adaptive radix tree that achieves all three: Arctic outcompetes lock-based indexes, including a concurrent hash map, on many YCSB configurations, guarantees non-blocking operation through careful metadata layout and an (eponymous) freezing-based coordination protocol, and offers non-linearizable range and prefix scans. Arctic also contributes a novel safe memory reclamation scheme that uses operation keys to approximate reachable pointers. We integrate Arctic into RocksDB and Turso, improving throughput up to 40% and 12% on their write-heavy benchmarks relative to their default skiplist indexes.",
+  "abstract_source_id": "src-abstract-osdi-2026-369c1813",
   "venue": "osdi",
   "year": 2026,
   "track_or_session": "Synchronization",
@@ -188,6 +190,19 @@
       "official": true,
       "supports": [
         "Official proceedings availability and canonical conference versions."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2026-369c1813",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/ni",
+      "kind": "paper-page",
+      "title": "Arctic: A Practical Lock-Free Adaptive Radix Tree",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:08:01Z",
+      "content_hash": "sha256:ca50239b90c52c61d643372fa66625fcd5ec84ff1efce55e707a4895f2ad4cab",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

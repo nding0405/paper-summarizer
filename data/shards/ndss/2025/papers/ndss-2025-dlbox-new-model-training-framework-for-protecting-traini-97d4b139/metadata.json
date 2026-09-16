@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2025-dlbox-new-model-training-framework-for-protecting-traini-97d4b139",
   "title": "DLBox: New Model Training Framework for Protecting Training Data",
+  "abstract": "Sharing training data for deep learning raises critical concerns about data leakage, as third-party AI developers take full control over the data once it is handed over to them. The problem becomes even worse if the model trained using the data should be returned to the third-party AI developers - e.g., healthcare startup training its own model using the medical data rented from a hospital. In this case, the malicious developers can easily leak the training data through the model as he can construct an arbitrary data flow between them - e.g., directly encoding raw training data into the model, or stealthily biasing the model to resemble the training data. However, current model training frameworks do not provide any protection to prevent such training data leakage, allowing the untrusted AI developers to leak the data without any restriction.\n\nThis paper proposes DLBox, a new model training framework to minimize the attack vectors raised by untrusted AI developers. Since it is infeasible to completely prevent data leakage through the model, the goal of DLBox is to allow only a benign model training such that the data leakage through invalid paths are minimized. The key insight of DLBox is that the model training is a statistical process of learning common patterns from a dataset. Based on it, DLBox defines DGM-Rules, which determine whether a model training code from a developer is benign or not. Then, DLBox leverages confidential computing to redesign current model training framework, enforcing only DGM-Rules-based training. Therefore, untrusted AI developers are strictly limited to obtain only the benignly trained model, prohibited from intentionally leaking the data. We implemented the prototype of DLBox on PyTorch with AMD SEV-SNP, and demonstrated that DLBox eliminates large attack vectors by preventing previous attacks (e.g., data encoding, and gradient inversion) while imposing minimal performance overhead.",
+  "abstract_source_id": "src-abstract-ndss-2025-97d4b139",
   "venue": "ndss",
   "year": 2025,
   "track_or_session": "Fall submission cycle",
@@ -189,6 +191,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2025-97d4b139",
+      "url": "https://www.ndss-symposium.org/ndss-paper/dlbox-new-model-training-framework-for-protecting-training-data/",
+      "kind": "paper-page",
+      "title": "DLBox: New Model Training Framework for Protecting Training Data",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:19:28Z",
+      "content_hash": "sha256:6039e4f88641d0f856def908f08835ce6fd5f57acc0f36cb77f284c6d5026331",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

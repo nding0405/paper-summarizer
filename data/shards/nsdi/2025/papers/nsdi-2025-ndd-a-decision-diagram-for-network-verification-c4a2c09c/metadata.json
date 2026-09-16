@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2025-ndd-a-decision-diagram-for-network-verification-c4a2c09c",
   "title": "NDD: A Decision Diagram for Network Verification",
+  "abstract": "State-of-the-art network verifiers extensively use Binary Decision Diagram (BDD) as the underlying data structure to represent the network state and equivalence classes. Despite its wide usage, we find BDD is not ideal for network verification: verifiers need to handle the low-level computation of equivalence classes, and still face scalability issues when the network state has a lot of bits.\n\nTo this end, this paper introduces Network Decision Diagram (NDD), a new decision diagram customized for network verification. In a nutshell, NDD wraps BDD with another layers of decision diagram, such that each NDD node represents a field of the network, and each edge is labeled with a BDD encoding the values of that field. We designed and implemented a library for NDD, which features a native support for equivalence classes, and higher efficiency in memory and computation. Using the NDD library, we re-implemented five BDD-based verifiers with minor modifications to their original codes, and observed a 100× reduction in memory cost and 100× speedup. This indicates that NDD provides a drop-in replacement of BDD for network verifiers.",
+  "abstract_source_id": "src-abstract-nsdi-2025-c4a2c09c",
   "venue": "nsdi",
   "year": 2025,
   "track_or_session": "Verification 1",
@@ -140,6 +142,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2025-c4a2c09c",
+      "url": "https://www.usenix.org/conference/nsdi25/presentation/li-zechun",
+      "kind": "paper-page",
+      "title": "NDD: A Decision Diagram for Network Verification",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:04:22Z",
+      "content_hash": "sha256:555eab2059bd7a6650feacca6a73a1a2c6fa1d025c64981bb3955262a8e4f237",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

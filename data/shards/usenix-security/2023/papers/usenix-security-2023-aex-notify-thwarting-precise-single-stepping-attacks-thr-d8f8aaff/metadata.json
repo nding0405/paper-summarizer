@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2023-aex-notify-thwarting-precise-single-stepping-attacks-thr-d8f8aaff",
   "title": "AEX-Notify: Thwarting Precise Single-Stepping Attacks through Interrupt Awareness for Intel SGX Enclaves",
+  "abstract": "Intel® Software Guard Extensions (Intel® SGX) supports the creation of shielded enclaves within unprivileged processes. While enclaves are architecturally protected against malicious system software, Intel SGX's privileged attacker model could potentially expose enclaves to new powerful side-channel attacks. In this paper, we consider hardware-software co-design countermeasures to an important class of single-stepping attacks that use privileged timer interrupts to precisely step through enclave execution exactly one instruction at a time, as supported, e.g., by the open-source SGX-Step framework. This is a powerful deterministic attack primitive that has been employed in a broad range of high-resolution Intel SGX attacks, but so far remains unmitigated.\n\nWe propose AEX-Notify, a flexible hardware ISA extension that makes enclaves interrupt aware: enclaves can register a trusted handler to be run after an interrupt or exception. AEX-Notify can be used as a building block for implementing countermeasures against different types of interrupt-based attacks in software. With our primary goal to thwart deterministic single-stepping, we first diagnose the underlying hardware behavior to determine the root cause that enables it. We then apply the learned insights to remove this root cause by building an efficient software handler and constant-time disassembler to transparently determine and atomically prefetch the working set of the next enclave application instruction.\n\nThe ISA extension we propose in this paper has been incorporated into a revised version of the Intel SGX specification.",
+  "abstract_source_id": "src-abstract-usenix-security-2023-d8f8aaff",
   "venue": "usenix-security",
   "year": 2023,
   "track_or_session": "Enclaves and Serverless Computing",
@@ -259,6 +261,19 @@
       "official": true,
       "supports": [
         "authors, affiliations when published, abstract, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2023-d8f8aaff",
+      "url": "https://www.usenix.org/conference/usenixsecurity23/presentation/constable",
+      "kind": "paper-page",
+      "title": "AEX-Notify: Thwarting Precise Single-Stepping Attacks through Interrupt Awareness for Intel SGX Enclaves",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:09:36Z",
+      "content_hash": "sha256:3b4c42938f25d1d61c4eae01958ce9f32608beeb9c805a7848f4cec3d6ebce88",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

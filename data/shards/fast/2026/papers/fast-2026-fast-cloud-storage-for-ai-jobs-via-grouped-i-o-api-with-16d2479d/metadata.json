@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "fast-2026-fast-cloud-storage-for-ai-jobs-via-grouped-i-o-api-with-16d2479d",
   "title": "Fast Cloud Storage for AI Jobs via Grouped I/O API with Transparent Read/Write Optimizations",
+  "abstract": "The emergence of AI workloads has placed rigorous bandwidth requirements on cloud storage, which are challenging to meet due to inherent hardware restrictions in cost-efficient disaggregated storage architectures, as well as the non-triviality of implementing application-tailored optimizations.\n\nThis paper presents AITURBO, a cloud storage system for AI jobs with high bandwidth demands. AITURBO first utilizes the high-bandwidth compute fabric between accelerators to meet AI applications’ bandwidth demands without incurring additional storage cost. AITURBO further introduces a simple yet powerful grouped I/O API that allows AITURBO to automatically derive optimized read and write plans at the storage layer. These plans enable optimizations that are comparable or better than application-level ones, because they capture common I/O patterns in AI workloads and have a holistic view from the storage layer’s perspective. Under common AI workloads such as checkpoint reads and writes and KV-cache reads, AITURBO achieves comparable or better performance than state-of-the-art systems, with and without application-level optimizations, including systems such as Megatron, Gemini, and Mooncake, typically with minimal application-level code changes. AITURBO has been deployed in training jobs in HUAWEI’s production cloud to support efficient training workloads.",
+  "abstract_source_id": "src-abstract-fast-2026-16d2479d",
   "venue": "fast",
   "year": 2026,
   "track_or_session": "AI and LLMs II",
@@ -244,6 +246,19 @@
         "proceedings page range and page count",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-fast-2026-16d2479d",
+      "url": "https://www.usenix.org/conference/fast26/presentation/hao",
+      "kind": "paper-page",
+      "title": "Fast Cloud Storage for AI Jobs via Grouped I/O API with Transparent Read/Write Optimizations",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:01:31Z",
+      "content_hash": "sha256:d4ee10e44de279b4b51627dc2f99179061b3df77ec6818d03bd97a79e8b3eec6",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

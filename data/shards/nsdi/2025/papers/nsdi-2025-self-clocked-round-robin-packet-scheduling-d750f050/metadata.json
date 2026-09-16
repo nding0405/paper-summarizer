@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2025-self-clocked-round-robin-packet-scheduling-d750f050",
   "title": "Self-Clocked Round-Robin Packet Scheduling",
+  "abstract": "Deficit Round Robin (DRR) is the de facto fair packet scheduler in the Internet due to its superior fairness and scalability. We show that DRR can perform poorly due to its assumptions about packet size distributions and traffic bursts. Concretely, DRR performs best if (1) packet size distributions are known in advance; its optimal performance depends on tuning a parameter based on the largest packet, and (2) all bursts are long and create backlogged queues. We show that neither of these assumptions holds in today's Internet: packet size distributions are varied and dynamic, complicating the tuning of DRR. Plus, Internet traffic consists of many short, latency-sensitive flows, creating small bursts. These flows can experience high latency under DRR as it serves a potentially large number of flows in a round-robin fashion.\n\nTo address these shortcomings while retaining the fairness and scalability of DRR, we introduce Self-Clocked Round-Robin Scheduling (SCRR), a parameter-less, low-latency, and scalable packet scheduler that boosts short latency-sensitive flows through careful adjustments to their virtual times without violating their fair share guarantees. We evaluate SCRR using theoretical models and a Linux implementation on a physical testbed. Our results demonstrate that while performing on an equal footing with DRR on achieving flow fairness, SCRR reduces the average CPU overhead by 23% compared to DRR with a small quantum while improving the application latency by 71% compared to DRR with a large quantum.",
+  "abstract_source_id": "src-abstract-nsdi-2025-d750f050",
   "venue": "nsdi",
   "year": 2025,
   "track_or_session": "Data Plane Programmability 2",
@@ -161,6 +163,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2025-d750f050",
+      "url": "https://www.usenix.org/conference/nsdi25/presentation/sharafzadeh",
+      "kind": "paper-page",
+      "title": "Self-Clocked Round-Robin Packet Scheduling",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:04:35Z",
+      "content_hash": "sha256:7bd096ad85efdf51231a28bc316d6834037563078effca3a01c0a6c976ee19df",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

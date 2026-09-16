@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2026-mac-metadata-acceleration-for-sustainable-performance-in-da956bdb",
   "title": "MAC: Metadata Acceleration for Sustainable Performance in Big-Data Systems with CXL DRAM",
+  "abstract": "Compute Express Link (CXL) DRAM has emerged as a promising solution to address the capacity constraints of conventional systems using DDR DRAM. By decoupling memory expansion from the DDR interface generation imposed by the host CPU’s memory controller, CXL DRAM allows cost-effective scaling of system memory capacity. However, as memory capacity grows, memory management metadata can become too large to fit entirely in DDR DRAM, necessitating that part or all of it to be placed in CXL DRAM. Moreover, since the OS views CXL DRAM as a CPU-less remote node, the host CPU manages metadata in CXL DRAM, thereby increasing metadata management latency. We find that this overhead significantly reduces memory reclamation efficiency and causes considerable increases in the tail latency of latency-sensitive applications. In this work, we investigate the performance impact of metadata placement in CXL DRAM and propose MAC, a near-memory processing (NMP) solution that accelerates memory-intensive components of metadata management directly within CXL DRAM to improve memory reclamation efficiency. Compared to conventional OS-based memory reclamation, MAC reduces application tail latency by up to 98%.",
+  "abstract_source_id": "src-abstract-osdi-2026-da956bdb",
   "venue": "osdi",
   "year": 2026,
   "track_or_session": "Memory Tiering and CXL",
@@ -230,6 +232,19 @@
       "official": true,
       "supports": [
         "Official proceedings availability and canonical conference versions."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2026-da956bdb",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/lee",
+      "kind": "paper-page",
+      "title": "MAC: Metadata Acceleration for Sustainable Performance in Big-Data Systems with CXL DRAM",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:08:33Z",
+      "content_hash": "sha256:1b16e5e2fb20c40cd0dec4ea6bb307ff68121df349a6d54bd7b15df59cb30628",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2026-bifrost-alibaba-s-next-generation-vpc-network-with-high-f96d8881",
   "title": "Bifrost: Alibaba's Next-Generation VPC Network with High-Performance Multipath Reliable Transport",
+  "abstract": "Virtual Private Cloud (VPC) has become an increasingly important infrastructure-level service that provides isolated virtual networking environments for cloud tenants. In Alibaba Cloud, over 80% of tenant applications require reliable data transport, which is currently implemented in VPC networks through guest-side TCP. However, TCP often suffers significant performance degradation when facing network instabilities in production clouds, especially for tail-latency sensitive applications such as Redis and Nginx. In this paper, we present Bifrost, the next-generation VPC network in Alibaba Cloud that provides high-performance multipath reliable transport. Bifrost employs RTT-aware multipath packet spraying to bypass failures and mitigate elephant flows, ensures in-order delivery via in-place guest reordering, achieves end-to-end reliability with delayed bitmap ACKs, and performs efficient reliability state management to support large-scale deployment. Extensive evaluation shows that Bifrost reduces tail latency by up to 307× for Redis and 66× for Nginx, achieves millisecond-level failure recovery, and supports O(100k) concurrent connections per SmartNIC.",
+  "abstract_source_id": "src-abstract-nsdi-2026-f96d8881",
   "venue": "nsdi",
   "year": 2026,
   "track_or_session": "Clouds with Benefits",
@@ -643,6 +645,19 @@
         "proceedings page range and page count",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2026-f96d8881",
+      "url": "https://www.usenix.org/conference/nsdi26/presentation/fan",
+      "kind": "paper-page",
+      "title": "Bifrost: Alibaba's Next-Generation VPC Network with High-Performance Multipath Reliable Transport",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:04:52Z",
+      "content_hash": "sha256:ca94ef16d5ba3d7c6850b806cd57399c503fce47820aa6c48a5b64f795dab736",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

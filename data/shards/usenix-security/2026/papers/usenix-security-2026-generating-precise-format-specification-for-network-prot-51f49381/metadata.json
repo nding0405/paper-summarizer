@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-generating-precise-format-specification-for-network-prot-51f49381",
   "title": "Generating Precise Format Specification for Network Protocols Through Adversarial LLM Interactions",
+  "abstract": "This paper aims to address a significant gap in inferring precise format specifications for network protocols, particularly regarding the exact constraints on network packet fields. That is, while current methods can often derive accurate syntactic structures that divide a network packet into multiple fields, they typically struggle to capture the semantic dependencies or constraints among those fields. To address this issue, our central insight is that large language models (LLMs) have proven effective across various tasks, and adversarial interactions among these tasks can significantly alleviate the hallucination problem. Based on the insight, we propose a novel approach to generating precise protocol formats by adversarially combining LLM-based specification inference and code generation. By inputting the structured RFC documents of network protocols into LLMs, we generate both packet formats and reference packet parsers that iteratively refine one another to reduce hallucinations: the packet formats allow us to create a variety of network packets for parser testing, while runtime checks in the parsers help identify format errors. Our evaluation of 8 protocols shows a significant increase in precision and recall, achieving a 326% improvement over the state of the art in inferring field constraints. Furthermore, the improved format specifications enable effective fuzzing, leading to the discovery of 24 zero-day vulnerabilities in widely used protocol implementations.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-51f49381",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Software Security 3",
@@ -176,6 +178,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-51f49381",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/ye",
+      "kind": "paper-page",
+      "title": "Generating Precise Format Specification for Network Protocols Through Adversarial LLM Interactions",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:24:09Z",
+      "content_hash": "sha256:526139ef58388e98819c2d658da171c3c476a4d982c044c24ebc0c14414d0085",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

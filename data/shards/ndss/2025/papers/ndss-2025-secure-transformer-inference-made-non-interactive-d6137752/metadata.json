@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2025-secure-transformer-inference-made-non-interactive-d6137752",
   "title": "Secure Transformer Inference Made Non-interactive",
+  "abstract": "Secure transformer inference has emerged as a prominent research topic following the proliferation of ChatGPT. Existing solutions are typically interactive, involving substantial communication load and numerous interaction rounds between the client and the server.\n\nIn this paper, we propose NEXUS, the first non-interactive protocol for secure transformer inference. The protocol requires the client to engage in just one round of communication with the server during the whole inference process: submitting an encrypted input and receiving an encrypted result.\n\nNEXUS introduces several novel primitives, including SIMD ciphertext compression/decompression, SIMD slot folding, and secure Argmax, which enable it to significantly surpass the state-of-the-art in communication while maintaining comparable runtime. Specifically, it reduces bandwidth consumption by 372.5$times$ compared to BOLT (Oakland~'24) and 53.6$times$ compared to Bumblebee (NDSS~'25). Furthermore, its non-interactive property allows for optimal hardware acceleration, with the GPU version achieving a 42.3$times$ speedup in runtime. This enables NEXUS to run inference on a BERT-based model in just 37.3 seconds, consuming only 164~MB of bandwidth.",
+  "abstract_source_id": "src-abstract-ndss-2025-d6137752",
   "venue": "ndss",
   "year": 2025,
   "track_or_session": "Summer submission cycle",
@@ -273,6 +275,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2025-d6137752",
+      "url": "https://www.ndss-symposium.org/ndss-paper/secure-transformer-inference-made-non-interactive/",
+      "kind": "paper-page",
+      "title": "Secure Transformer Inference Made Non-interactive",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:20:29Z",
+      "content_hash": "sha256:112498e3d827249721841405cd9407c43a08247db27004a57316b823834d4683",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

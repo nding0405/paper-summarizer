@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2024-burstable-cloud-block-storage-with-data-processing-units-d8a594fa",
   "title": "Burstable Cloud Block Storage with Data Processing Units",
+  "abstract": "Cloud block storage (CBS) is a key pillar of public clouds. Today's CBS distinguishes itself from physical counterparts (e.g., SSDs) by offering unique burst capability as well as enhanced throughput, capacity, and availability. We conduct an initial characterization of our CBS product, a globally deployed cloud block storage service at public cloud provider Alibaba Cloud. A key observation is that the storage agent (SA) running on a data processing unit (DPU) which connects user VMs to the backend storage is the major source of performance fluctuation with burst capability provided. In this paper, we propose a hardware-software co-designed I/O scheduling system BurstCBS to address load imbalance and tenant interference at SA. BurstCBS exploits high-performance queue scaling to achieve near-perfect load balancing at line rate. To mitigate tenant interference, we design a novel burstable I/O scheduler that prioritizes resource allocation for base-level usage while supporting bursts. We employ a vectorized I/O cost estimator for comprehensive measurements of the consumed resources of different types of I/Os. Our evaluation shows that BurstCBS reduces average latency by up to 85% and provides up to 5× throughput for base-level tenants under congestion with minimal overhead. We verify the benefits brought by BurstCBS with a database service that internally relies on CBS, and show that up to 83% latency reduction is observed on customer workloads.",
+  "abstract_source_id": "src-abstract-osdi-2024-d8a594fa",
   "venue": "osdi",
   "year": 2024,
   "track_or_session": "Data Management",
@@ -180,6 +182,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2024-d8a594fa",
+      "url": "https://www.usenix.org/conference/osdi24/presentation/shu",
+      "kind": "paper-page",
+      "title": "Burstable Cloud Block Storage with Data Processing Units",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:06:57Z",
+      "content_hash": "sha256:a6f0a4e88d0428715c4f1dddd5819562d250a70ce231b227a9ea3ff314ffc948",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

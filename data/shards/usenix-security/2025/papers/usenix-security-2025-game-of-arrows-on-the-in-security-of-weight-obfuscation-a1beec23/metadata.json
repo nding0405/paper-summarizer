@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-game-of-arrows-on-the-in-security-of-weight-obfuscation-a1beec23",
   "title": "Game of Arrows: On the (In-)Security of Weight Obfuscation for On-Device TEE-Shielded LLM Partition Algorithms",
+  "abstract": "Utilizing Trusted Execution Environments (TEEs) to protect Large Language Models (LLMs) on users' devices is a practical solution for model owners. To alleviate the computation burden on TEEs, researchers have proposed TEE-Shielded LLM Partition (TSLP) to offload heavy computation layers to co-operating untrusted GPUs, while lightweight layers are shielded in TEE. TSLP utilizes various lightweight obfuscation schemes to protect offloaded weights from various attacks meanwhile not introducing large computation overhead. However, existing lightweight obfuscation algorithms have one vital vulnerability in common: the direction similarity of obfuscated vectors. In this paper, we propose a novel attack, ArrowMatch, that utilizes direction similarity to recover obfuscated private weights. To achieve this, ArrowMatch compares direction distances between obfuscated model weights and public pre-trained model weights. To mitigate this vulnerability, we propose a novel obfuscation scheme, ArrowCloak, which leverages lightweight matrix-vector multiplication to protect vector directions and private weights. We evaluate ArrowMatch and ArrowCloak on four representative LLMs, using seven datasets, along with five obfuscation schemes. The results show that ArrowMatch can break the protection of all existing lightweight obfuscation schemes with high accuracy (similar to no protection) and effectively recover the private weights (with over 98% accuracy). In addition, ArrowCloak can effectively defend against ArrowMatch (6.5X better than state of the art) and protect direction information by increasing the direction distance over 900X. We also evaluate the performance of ArrowCloak on a real-world Intel SGX device and show that ArrowCloak can reduce total overhead by 2.83X compared to shield-the-whole baseline.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-a1beec23",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "LLM Security and Attacks",
@@ -238,6 +240,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-a1beec23",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/wang-pengli",
+      "kind": "paper-page",
+      "title": "Game of Arrows: On the (In-)Security of Weight Obfuscation for On-Device TEE-Shielded LLM Partition Algorithms",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:20:01Z",
+      "content_hash": "sha256:e18151c9c44473fa1b1a13943591fee0bbff43eea223e4c1c939255e810b5ed8",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

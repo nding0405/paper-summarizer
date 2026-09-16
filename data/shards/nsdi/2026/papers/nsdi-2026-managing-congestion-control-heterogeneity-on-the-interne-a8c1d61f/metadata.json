@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2026-managing-congestion-control-heterogeneity-on-the-interne-a8c1d61f",
   "title": "Managing Congestion Control Heterogeneity on the Internet with Approximate Performance Isolation",
+  "abstract": "The Internet hosts a diverse mix of congestion control algorithms (CCAs) optimized for specific throughput-delay tradeoffs. However, traditional queuing disciplines and AQMs struggle to manage this heterogeneity and often lead to unfairness and suboptimal performance. In this paper, we explore isolation techniques that can allow competing CCAs to make their desired throughput-delay trade-offs independent of who they compete with. More specifically, we motivate Approximate Performance Isolation between competing flows by grouping flows with similar desired throughput-delay trade-offs in the same queue. We also present Santa, a new practical and scalable multi-queue AQM built on the principles of approximate performance isolation. Santa infers each flow’s throughput-delay preferences by comparing their buffer occupancy, and shuffles aggressive (\"naughty\") and passive (\"nice\") flows into appropriate queues over time. We prototype Santa on a programmable switch to demonstrate that it is practical, scalable, and can approximate the isolation benefits of Fair Queuing (FQ) with a handful of of queues.",
+  "abstract_source_id": "src-abstract-nsdi-2026-a8c1d61f",
   "venue": "nsdi",
   "year": 2026,
   "track_or_session": "Virtualization Meets the Network",
@@ -181,6 +183,19 @@
         "proceedings page range and page count",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2026-a8c1d61f",
+      "url": "https://www.usenix.org/conference/nsdi26/presentation/mishra",
+      "kind": "paper-page",
+      "title": "Managing Congestion Control Heterogeneity on the Internet with Approximate Performance Isolation",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:05:38Z",
+      "content_hash": "sha256:f1db601949cdbb696c95ad1edc92f3c599352cc99e01bbf60fac86eabb7b971c",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

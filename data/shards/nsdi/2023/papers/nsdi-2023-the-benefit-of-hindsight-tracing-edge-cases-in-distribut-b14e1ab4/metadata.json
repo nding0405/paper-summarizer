@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2023-the-benefit-of-hindsight-tracing-edge-cases-in-distribut-b14e1ab4",
   "title": "The Benefit of Hindsight: Tracing Edge-Cases in Distributed Systems",
+  "abstract": "Today's distributed tracing frameworks are ill-equipped to troubleshoot rare edge-case requests. The crux of the problem is a trade-off between specificity and overhead. On the one hand, frameworks can indiscriminately select requests to trace when they enter the system (head sampling), but this is unlikely to capture a relevant edge-case trace because the framework cannot know which requests will be problematic until after-the-fact. On the other hand, frameworks can trace everything and later keep only the interesting edge-case traces (tail sampling), but this has high overheads on the traced application and enormous data ingestion costs.\n\nIn this paper we circumvent this trade-off for any edge-case with symptoms that can be programmatically detected, such as high tail latency, errors, and bottlenecked queues. We propose a lightweight and always-on distributed tracing system, Hindsight, which implements a retroactive sampling abstraction: instead of eagerly ingesting and processing traces, Hindsight lazily retrieves trace data only after symptoms of a problem are detected. Hindsight is analogous to a car dash-cam that, upon detecting a sudden jolt in momentum, persists the last hour of footage. Developers using Hindsight receive the exact edge-case traces they desire without undue overhead or dependence on luck. Our evaluation shows that Hindsight scales to millions of requests per second, adds nanosecondlevel overhead to generate trace data, handles GB/s of data per node, transparently integrates with existing distributed tracing systems, and successfully persists full, detailed traces in real-world use cases when edge-case problems are detected.",
+  "abstract_source_id": "src-abstract-nsdi-2023-b14e1ab4",
   "venue": "nsdi",
   "year": 2023,
   "track_or_session": "Distributed Systems",
@@ -161,6 +163,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2023-b14e1ab4",
+      "url": "https://www.usenix.org/conference/nsdi23/presentation/zhang-lei",
+      "kind": "paper-page",
+      "title": "The Benefit of Hindsight: Tracing Edge-Cases in Distributed Systems",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:02:41Z",
+      "content_hash": "sha256:7cb601ca170ad215a0ea3432b01e6672323f06ec851741d4daec70abf3933250",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

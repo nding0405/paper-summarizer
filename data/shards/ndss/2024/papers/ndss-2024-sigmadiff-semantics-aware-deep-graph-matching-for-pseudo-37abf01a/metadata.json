@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2024-sigmadiff-semantics-aware-deep-graph-matching-for-pseudo-37abf01a",
   "title": "SigmaDiff: Semantics-Aware Deep Graph Matching for Pseudocode Diffing",
+  "abstract": "Pseudocode diffing precisely locates similar parts and captures differences between the decompiled pseudocode of two given binaries. It is particularly useful in many security scenarios such as code plagiarism detection, lineage analysis, patch, vulnerability analysis, etc. However, existing pseudocode diffing and binary diffing tools suffer from low accuracy and poor scalability, since they either rely on manually-designed heuristics (e.g., Diaphora) or heavy computations like matrix factorization (e.g., DeepBinDiff). To address the limitations, in this paper, we propose a semantics-aware, deep neural network-based model called SigmaDiff. SigmaDiff first constructs IR (Intermediate Representation) level interprocedural program dependency graphs (IPDGs). Then it uses a lightweight symbolic analysis to extract initial node features and locate training nodes for the neural network model. SigmaDiff then leverages the state-of-the-art graph matching model called Deep Graph Matching Consensus (DGMC) to match the nodes in IPDGs. SigmaDiff also introduces several important updates to the design of DGMC such as the pre-training and fine-tuning schema. Experimental results show that SigmaDiff significantly outperforms the state-of-the-art heuristic-based and deep learning-based techniques in terms of both accuracy and efficiency. It is able to precisely pinpoint eight vulnerabilities in a widely-used video conferencing application.",
+  "abstract_source_id": "src-abstract-ndss-2024-37abf01a",
   "venue": "ndss",
   "year": 2024,
   "track_or_session": "Summer submission cycle",
@@ -168,6 +170,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2024-37abf01a",
+      "url": "https://www.ndss-symposium.org/ndss-paper/sigmadiff-semantics-aware-deep-graph-matching-for-pseudocode-diffing/",
+      "kind": "paper-page",
+      "title": "SigmaDiff: Semantics-Aware Deep Graph Matching for Pseudocode Diffing",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:18:41Z",
+      "content_hash": "sha256:7b98c05851aaee1d419fb7e14e463102cb0608d198efee5b933fbd7934cf2722",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2026-xkernel-principled-performance-tunability-of-operating-s-aed56b44",
   "title": "Xkernel: Principled Performance Tunability of Operating System Kernels",
+  "abstract": "The Linux kernel is permeated with constant values that are critical to system performance. Many of these constants, referred to as perf-consts , are magic numbers with brittle assumptions on hardware and workloads. Unfortunately, there is no capability of in-situ tuning of perf-const values on deployed kernels. This paper rethinks OS performance tunability. We present Xkernel, a system that offers a safe, efficient, and programmable interface for in-situ tuning of any perf-consts directly on a running kernel. Xkernel transforms any perf-const into a tunable knob on demand using a novel approach called Scoped Indirect Execution (SIE). SIE captures precise binary boundaries where a perf-const enters system state and redirects control to synthesized instructions that update the state as if new values were used. Xkernel goes beyond version atomicity when updating perf-consts to guarantee side-effect safety, a property notably absent in existing kernel update mechanisms. Case studies on various OS subsystems demonstrate significant performance benefits of tuning perf-consts which is made possible by Xkernel.",
+  "abstract_source_id": "src-abstract-osdi-2026-aed56b44",
   "venue": "osdi",
   "year": 2026,
   "track_or_session": "Kernel Scheduling and Tail Latency",
@@ -222,6 +224,19 @@
       "official": true,
       "supports": [
         "Final proceedings title page and canonical author name Jing Liu."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2026-aed56b44",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/chen-zhongjie",
+      "kind": "paper-page",
+      "title": "Xkernel: Principled Performance Tunability of Operating System Kernels",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:09:20Z",
+      "content_hash": "sha256:82daa9d242efb64dbd1cf3688520cd772d0629a31075ad7d9829d7fa3dee8ece",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

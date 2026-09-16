@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2025-horcrux-synthesize-split-shift-and-stay-alive-preventing-f79d595d",
   "title": "Horcrux: Synthesize, Split, Shift and Stay Alive; Preventing Channel Depletion via Universal and Enhanced Multi-hop Payments",
+  "abstract": "Payment Channel Networks (PCNs) have been highlighted as viable solutions to address the scalability issues in current permissionless blockchains. They facilitate off-chain transactions, significantly reducing the load on the blockchain. However, the extensive reuse of multi-hop routes in the same direction poses a risk of channel depletion, resulting in involved channels becoming unidirectional or even closing, thereby compromising the sustainability and scalability of PCNs. Even more concerning, existing rebalancing protocol solutions heavily rely on trust assumptions and scripting languages, resulting in compromised universality and reliability.\n\nIn this paper, we present Horcrux, a universal and efficient multi-party virtual channel protocol without relying on extra trust assumptions, scripting languages, or the perpetual online requirement. Horcrux fundamentally addresses the channel depletion problem using a novel approach termed textit{flow neutrality}, which minimizes the impact on channel balance allocations during multi-hop payments (MHPs). Additionally, we formalize the security properties of Horcrux by modeling it within the Global Universal Composability framework and provide a formal security proof.\n\nWe implement Horcrux on a real Lightning Network dataset, comprising 10,529 nodes and 38,910 channels, and compare it to the state-of-the-art rebalancing schemes such as Shaduf [NDSS'22], Thora [CCS'22], and Revive [CCS'17]. The experimental results demonstrate that (1) the entire process of Horcrux costs less than 1 USD, significantly lower than Shaduf; (2) Horcrux achieves a $12%$-$30%$ increase in payment success ratio and reduces user deposits required for channels by $70%$-$91%$; (3) the performance of Horcrux improves by $1.2x$-$1.5x$ under long-term operation; and (4) Horcrux maintains a nearly zero channel depletion rate, whereas both Revive and Shaduf result in thousands of depleted channels.",
+  "abstract_source_id": "src-abstract-ndss-2025-f79d595d",
   "venue": "ndss",
   "year": 2025,
   "track_or_session": "Summer submission cycle",
@@ -199,6 +201,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2025-f79d595d",
+      "url": "https://www.ndss-symposium.org/ndss-paper/horcrux-synthesize-split-shift-and-stay-alive-preventing-channel-depletion-via-universal-and-enhanced-multi-hop-payments/",
+      "kind": "paper-page",
+      "title": "Horcrux: Synthesize, Split, Shift and Stay Alive; Preventing Channel Depletion via Universal and Enhanced Multi-hop Payments",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:19:43Z",
+      "content_hash": "sha256:13a7db4da87dfffd2393610a185712ae2bb6c659b50cd1b700ae80881972cc33",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

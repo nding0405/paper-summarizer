@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2026-invertune-a-backdoor-defense-method-for-multimodal-contr-89c98c04",
   "title": "InverTune: A Backdoor Defense Method for Multimodal Contrastive Learning via Backdoor-Adversarial Correlation Analysis",
+  "abstract": "Multimodal contrastive learning models like CLIP have demonstrated remarkable vision-language alignment capabilities and now serve as foundational components in many large-scale multimodal systems. However, their vulnerability to backdoor attacks poses critical security risks. Attackers can implant latent triggers that persist through downstream tasks, enabling malicious control of model behavior upon trigger presentation. Despite great success in recent defense mechanisms, they remain impractical due to strong assumptions about attacker knowledge or excessive clean data requirements.\n\nIn this paper, we introduce InverTune, the first backdoor defense framework for multimodal models under minimal attacker assumptions, requiring neither prior knowledge of attack targets nor access to the poisoned dataset. Unlike existing defense methods that rely on the same dataset used in the poisoning stage, InverTune effectively identifies and removes backdoor artifacts through three key components, achieving robust protection against backdoor attacks. Specifically, (1) InverTune first exposes attack signatures through adversarial simulation, probabilistically identifying the target label by analyzing model response patterns. (2) Building on this, we develop a gradient inversion technique to reconstruct latent triggers through activation pattern analysis. (3) Finally, a clustering-guided fine-tuning strategy is employed to erase the backdoor function with only a small amount of arbitrary clean data, while preserving the original model capabilities. Experimental results show that InverTune reduces the average attack success rate (ASR) by 97.87% against the state-of-the-art (SOTA) attacks while limiting clean accuracy (CA) degradation to just 3.07%. This work establishes a new paradigm for securing multimodal systems, advancing security in foundation model deployment without compromising performance.",
+  "abstract_source_id": "src-abstract-ndss-2026-89c98c04",
   "venue": "ndss",
   "year": 2026,
   "track_or_session": "Fall submission cycle",
@@ -202,6 +204,19 @@
       "official": false,
       "supports": [
         "independent proceedings identity reconciliation"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2026-89c98c04",
+      "url": "https://www.ndss-symposium.org/ndss-paper/invertune-a-backdoor-defense-method-for-multimodal-contrastive-learning-via-backdoor-adversarial-correlation-analysis/",
+      "kind": "paper-page",
+      "title": "InverTune: A Backdoor Defense Method for Multimodal Contrastive Learning via Backdoor-Adversarial Correlation Analysis",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:22:15Z",
+      "content_hash": "sha256:880d92e113cec50c672ed495e4efa6d640e41a552b1349cfe59c36258147bf0b",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

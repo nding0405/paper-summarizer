@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-mcsee-evaluating-advanced-rowhammer-attacks-and-defenses-feee8988",
   "title": "McSee: Evaluating Advanced Rowhammer Attacks and Defenses via Automated DRAM Traffic Analysis",
+  "abstract": "Rowhammer attacks and defenses are continuously evolving. Recent attacks rely on hammering multiple banks or keeping rows activated for long durations. On the defense side, DDR5 standard requires memory controllers to send Refresh Management (RFM) commands when a specific DRAM bank receives too many activations. Are advanced Rowhammer attacks adequately exploiting their target features and do memory controllers send RFM commands adequately? This paper answers these questions by building an automated software platform, called McSee , on top of a highfrequency oscilloscope for studying the behavior of DDR4 and DDR5 memory controllers under Rowhammer attacks. Leveraging a series of hardware and software optimizations, McSee is capable of reliably capturing and efficiently decoding single-cycle DDR4 and multi-cycle DDR5 traffic on the DRAM bus. We make a number of key discoveries using McSee: first, we show that hammering too many banks in parallel can actually be detrimental to the performance of Rowhammer attacks. Second, rows remain active far shorter than assumed when considering the recent Rowpress attack. Third, we show that neither Intel nor AMD CPUs send RFM commands even though a third of the DDR5 devices in our test pool require RFM for properly mitigating Rowhammer. Fourth, we uncover that instead of RFM, the memory controllers of Intel platforms rely on additional mitigative activations which we characterize for the first time. We conclude by discussing the implications of our findings on the landscape of Rowhammer attacks and defenses",
+  "abstract_source_id": "src-abstract-usenix-security-2025-feee8988",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Hardware Security 3: Side-Channel and Fault Injection Attacks",
@@ -175,6 +177,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-feee8988",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/jattke",
+      "kind": "paper-page",
+      "title": "McSee: Evaluating Advanced Rowhammer Attacks and Defenses via Automated DRAM Traffic Analysis",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:20:43Z",
+      "content_hash": "sha256:b0f0442bf18e99638979c4a7e504cd3ef1ff7a3dfcc68dacf02265902dad8d32",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

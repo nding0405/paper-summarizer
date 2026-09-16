@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-fuzzing-open-source-gpu-hardware-with-simt-program-gener-389b8117",
   "title": "Fuzzing Open-Source GPU Hardware with SIMT Program Generation",
+  "abstract": "GPUs have become critical components in computing systems. In the post-Moore's Law era, the demand for performance is driving increasing GPU microarchitectural complexity, which in turn gives rise to new vulnerabilities.\n\nIn this paper, we present the first framework for fuzzing GPU hardware designs at the Register Transfer Level (RTL) to automatically discover vulnerabilities. At the core of FuzzGPU is a novel generator that randomly constructs valid SIMT test programs with complex data and control flow, explicitly exercising the GPU execution model and thereby triggering diverse hardware behaviors. This bridges a key gap: prior processor fuzzers predominantly target CPUs and largely ignore GPU hardware. FuzzGPU further implements a GPU-specific differential testing harness. It tackles microarchitectural non-determinism (e.g., caches and memory timing) and enables trace-driven differential testing against an ISA-level oracle. This technique unlocks vulnerability detection and localization with instruction-level precision. We evaluated FuzzGPU on two real-world open-source GPUs, Vortex and Ventus OpenGPGPU, uncovering 20 previously unknown bugs, including 17 RTL bugs and 3 ISS bugs, 10 of which were assigned CVE identifiers.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-389b8117",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Hardware Security 2",
@@ -197,6 +199,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-389b8117",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/gao-zibo",
+      "kind": "paper-page",
+      "title": "Fuzzing Open-Source GPU Hardware with SIMT Program Generation",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:24:07Z",
+      "content_hash": "sha256:d147bb541ee62ca64d25a913127e0086331974a7fa6e56d90b28ad0915c97d98",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

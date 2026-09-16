@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2026-firmcross-detecting-taint-style-vulnerabilities-in-moder-540d5416",
   "title": "FirmCross: Detecting Taint-style Vulnerabilities in Modern C-Lua Hybrid Web Services of Linux-based Firmware",
+  "abstract": "Static taint analysis has become a fundamental technique to detect vulnerabilities implied in web services of Linux-based firmware. However, existing works commonly oversimplify the composition of firmware web services. Specifically, only C binaries (i.e., those extracted from the target firmware) are considered within the scope of vulnerability detection. In this work, we observe that modern firmware extensively combines Lua scripts/bytecode and C binaries to implement hybrid web services, and obviously, those C-binary-oriented vulnerability detection techniques can hardly achieve satisfactory performance. In light of this, we propose FirmCross, an automated taint-style vulnerability detector dedicated for C-Lua hybrid web services. Compared to existing detectors, FirmCross can automatically de-obfuscate the Lua bytecode in target firmware, additionally identify distinctive taint sources in Lua codespace, and systematically capture the C-Lua cross-language taint flow. In the evaluation, FirmCross detects 6.82X ~ 14.5X more vulnerabilities than SoTA approaches (i.e., MangoDFA and LuaTaint) in a dataset containing 73 firmware images from 11 vendors. Notably, FirmCross helps identify 610 0-day vulnerabilities among target firmware images. After reporting these vulnerabilities to vendors, till now, 31 vulnerability IDs have been assigned.",
+  "abstract_source_id": "src-abstract-ndss-2026-540d5416",
   "venue": "ndss",
   "year": 2026,
   "track_or_session": "Summer submission cycle",
@@ -265,6 +267,19 @@
       "official": false,
       "supports": [
         "independent proceedings identity reconciliation"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2026-540d5416",
+      "url": "https://www.ndss-symposium.org/ndss-paper/firmcross-detecting-taint-style-vulnerabilities-in-modern-c-lua-hybrid-web-services-of-linux-based-firmware/",
+      "kind": "paper-page",
+      "title": "FirmCross: Detecting Taint-style Vulnerabilities in Modern C-Lua Hybrid Web Services of Linux-based Firmware",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:22:03Z",
+      "content_hash": "sha256:76054f60c042e909022a30d3e40aacae107a063950bbb3171d8f0eef658e2e36",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

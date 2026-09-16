@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2023-fits-matching-camera-fingerprints-subject-to-software-no-44c846fb",
   "title": "FITS: Matching Camera Fingerprints Subject to Software Noise Pollution",
+  "abstract": "Physically unclonable hardware fingerprints can be used for device authentication. The photo-response non-uniformity (PRNU) is the most reliable hardware fingerprint of digital cameras and can be conveniently extracted from images. However, we find image post-processing software may introduce extra noise into images. Part of this noise remains in the extracted PRNU fingerprints and is hard to be eliminated by traditional approaches, such as denoising filters. We define this noise as software noise, which pollutes PRNU fingerprints and interferes with authenticating a camera armed device. In this paper, we propose novel approaches for fingerprint matching, a critical step in device authentication, in the presence of software noise. We calculate the cross correlation between PRNU fingerprints of different cameras using a test statistic such as the Peak to Correlation Energy (PCE) so as to estimate software noise correlation. During fingerprint matching, we derive the ratio of the test statistic on two PRNU fingerprints of interest over the estimated software noise correlation. We denote this ratio as the fingerprint to software noise ratio (FITS), which allows us to detect the PRNU hardware noise correlation component in the test statistic for fingerprint matching. Extensive experiments over 10,000 images taken by more than 90 smartphones are conducted to validate our approaches, which outperform the state-of-the-art approaches significantly for polluted fingerprints. We are the first to study fingerprint matching with the existence of software noise.",
+  "abstract_source_id": "src-abstract-ccs-2023-44c846fb",
   "venue": "ccs",
   "year": 2023,
   "track_or_session": "Crypto & side-channels (Hardware, Side Channels, and CyberPhysical Systems)",
@@ -412,6 +414,19 @@
       "official": false,
       "supports": [
         "published title, author order, and page span"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2023-44c846fb",
+      "url": "https://api.openalex.org/works/doi:10.1145/3576915.3616600?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "FITS: Matching Camera Fingerprints Subject to Software Noise Pollution",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:07:42Z",
+      "content_hash": "sha256:a4be4e67841e5881a957515fd880f3ce9db67b920a2b8e74439be56959dde6fc",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

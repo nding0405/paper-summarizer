@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2026-radshield-software-radiation-protection-for-commodity-ha-4dead47b",
   "title": "Radshield: Software Radiation Protection for Commodity Hardware in Space",
+  "abstract": "Exponentially-declining launch costs have led to an explosion of inexpensive satellites launched to space, often equipped with off-the-shelf chips. These chips, however, lack hardware radiation protection, leaving them vulnerable to space radiation. We thus design Radshield, a software system protecting against the two most ubiquitous and costly radiation fault scenarios: (a) radiation-induced short-circuits that lead to permanent hardware failure; and (b) radiation-induced transient charges that result in single-bit silent data corruption (SDC). Radshield counters these failure scenarios with two components. First, it uses a short-circuit detector that can detect tiny increases in the device's current draw by estimating the normal current draw when resource utilization is low. Second, it duplicates the execution of spacecraft workloads in a CPU and memory-efficient manner, and catches SDCs even when they affect the CPU's pipeline or cache. In our experiments, we show Radshield is very effective at preventing both errors, and is 1.4-35.5× more power-efficient than the state-of-the-art protection mechanisms in detecting SDC. Radshield is deployed on missions in low-earth orbit and in deep space.",
+  "abstract_source_id": "src-abstract-asplos-2026-4dead47b",
   "venue": "asplos",
   "year": 2026,
   "track_or_session": "Session 9C: Reliability & Fault Tolerance",
@@ -188,6 +190,19 @@
       "official": false,
       "supports": [
         "Indexed abstract used for strict relevance classification and indexed arXiv identifier where available."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2026-4dead47b",
+      "url": "https://api.openalex.org/works/doi:10.1145/3760250.3762218?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Radshield: Software Radiation Protection for Commodity Hardware in Space",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:05:59Z",
+      "content_hash": "sha256:0c0892078800e93c6d068b816240536d25a6fa3301c79c325e8ecdcdfcef25d2",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

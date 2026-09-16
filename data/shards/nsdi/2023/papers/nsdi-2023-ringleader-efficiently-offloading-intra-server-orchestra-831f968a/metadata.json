@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2023-ringleader-efficiently-offloading-intra-server-orchestra-831f968a",
   "title": "RingLeader: Efficiently Offloading Intra-Server Orchestration to NICs",
+  "abstract": "Careful orchestration of requests at a datacenter server is crucial to meet tight tail latency requirements and ensure high throughput and optimal CPU utilization. Orchestration is multi-pronged and involves load balancing and scheduling requests belonging to different services across CPU resources, and adapting CPU allocation to request bursts. Centralized intra-server orchestration offers ideal load balancing performance, scheduling precision, and burst-tolerant CPU re-allocation. However, existing software-only approaches fail to achieve ideal orchestration because they have limited scalability and waste CPU resources. We argue for a new approach that offloads intra-server orchestration entirely to the NIC. We present RingLeader, a new programmable NIC with novel hardware units for software-informed request load balancing and programmable scheduling and a new light-weight OS-NIC interface that enables close NIC-CPU coordination and supports NIC-assisted CPU scheduling. Detailed experiments with a 100 Gbps FPGA-based prototype show that we obtain better scalability, efficiency, latency, and throughput than state-of-the-art software-only orchestrators including Shinjuku and Caladan.",
+  "abstract_source_id": "src-abstract-nsdi-2023-831f968a",
   "venue": "nsdi",
   "year": 2023,
   "track_or_session": "Programming the Network",
@@ -203,6 +205,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2023-831f968a",
+      "url": "https://www.usenix.org/conference/nsdi23/presentation/lin",
+      "kind": "paper-page",
+      "title": "RingLeader: Efficiently Offloading Intra-Server Orchestration to NICs",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:02:27Z",
+      "content_hash": "sha256:34a910a5196de8cb2f42ea6c97862f3bc3ad77df541131a64c15ac8265b63add",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2024-toss-a-fault-to-bpfchecker-revealing-implementation-flaw-ff22fcbc",
   "title": "Toss a Fault to BpfChecker: Revealing Implementation Flaws for eBPF runtimes with Differential Fuzzing",
+  "abstract": "eBPF is a revolutionary technology that can run sandboxed programs in a privileged context and has an extensive range of applications, such as network monitoring on Linux kernel, denial-of-service protection on Windows, and the execution mechanism of smart contracts on blockchain. However, implementation flaws in eBPF have broad-reaching impact and serious consequences. Prior studies primarily focus on the memory safety of the eBPF runtimes, but few can detect implementation flaws (i.e., whether the implementation is correct). Meanwhile, existing implementation flaws detecting methods predominantly address bugs in the verifier, neglecting bugs in other components (i.e., the interpreter and the JIT compiler). In this paper, we present BpfChecker, a differential fuzzing framework to detect implementation flaws in the eBPF runtimes. It utilizes eBPF programs as input, performing differential testing for the critical states across various eBPF runtimes to uncover implementation flaws. To enhance the semantics of generated programs, we devise a lightweight intermediate representation and perform constrained mutations under the guidance of error messages. We have implemented a prototype of BpfChecker and extensively evaluated it on the three eBPF runtimes (i.e., Solana rBPF, vanilla rBPF, Windows eBPF). As a result, we have uncovered 28 new implementation flaws, received 2 CVEs and 800,000 bounty with developers' acknowledgment. More importantly, 2 of the newly found bugs can be used to create divergences in the execution layer of the Solana network.",
+  "abstract_source_id": "src-abstract-ccs-2024-ff22fcbc",
   "venue": "ccs",
   "year": 2024,
   "track_or_session": "Cycle 2",
@@ -159,6 +161,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2024-ff22fcbc",
+      "url": "https://api.openalex.org/works/doi:10.1145/3658644.3690237?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Toss a Fault to BpfChecker: Revealing Implementation Flaws for eBPF runtimes with Differential Fuzzing",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:12:20Z",
+      "content_hash": "sha256:9a42bb1a18a3b9bba45bfa98d64863e901404a671e3c514a6484caaaf699d44f",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

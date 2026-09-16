@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2025-protecting-cryptographic-code-against-spectre-rsb-and-in-a6b7d7f2",
   "title": "Protecting Cryptographic Code Against Spectre-RSB: (and, in Fact, All Known Spectre Variants)",
+  "abstract": "Spectre attacks void the guarantees of constant-time cryptographic code by leaking secrets during speculative execution. Recent research shows that such code can be protected from Spectre-v1 attacks with minimal overhead, but leaves open the question of protecting against other Spectre variants. In this work, we design, validate, implement, and verify a new approach to protect cryptographic code against all known classes of Spectre attacks, in particular Spectre-RSB. Our approach combines a new value-dependent information-flow type system that ensures that no secrets leak even under speculative execution and a compiler transformation that enables it on the generated low-level code. We first prove the soundness of the type system and the correctness of the compiler transformation using the Coq proof assistant. We then implement our approach in the Jasmin framework for high-assurance cryptography and demonstrate that the overhead incurred by all Spectre protections is below 2% for most cryptographic primitives and reaches only about 5--7% for the more complex post-quantum key-encapsulationkmechanism Kyber.",
+  "abstract_source_id": "src-abstract-asplos-2025-a6b7d7f2",
   "venue": "asplos",
   "year": 2025,
   "track_or_session": "Session 7C: Side Channels",
@@ -251,6 +253,19 @@
       "official": false,
       "supports": [
         "Indexed abstract and open-access links used for relevance classification and ancillary-link discovery."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2025-a6b7d7f2",
+      "url": "https://api.openalex.org/works/doi:10.1145/3676641.3716015?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Protecting Cryptographic Code Against Spectre-RSB: (and, in Fact, All Known Spectre Variants)",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:02:43Z",
+      "content_hash": "sha256:4a6dea00bc22bf2b8a498e3d7ed2391f77264ad50c894a766a0c335230687473",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

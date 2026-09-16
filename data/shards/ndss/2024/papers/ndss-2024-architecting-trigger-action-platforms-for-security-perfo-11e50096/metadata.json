@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2024-architecting-trigger-action-platforms-for-security-perfo-11e50096",
   "title": "Architecting Trigger-Action Platforms for Security, Performance and Functionality",
+  "abstract": "A Trigger-action platform (TAP) is a type of distributed system that allows end-users to create programs that stitch their web-based services together to achieve useful automation. For example, a program can be triggered when a new spreadsheet row is added, it can compute on that data and invoke an action, such as sending a message on Slack. Current TAP architectures require users to place complete trust in their secure operation. Experience has shown that unconditional trust in cloud services is unwarranted --- an attacker who compromises the TAP cloud service will gain access to sensitive data and devices for millions of users. In this work, we re-architect TAPs so that users have to place minimal trust in the cloud. Specifically, we design and implement TAPDance, a TAP that guarantees confidentiality and integrity of program execution in the presence of an untrustworthy TAP service. We utilize RISC-V Keystone enclaves to enable these security guarantees while minimizing the trusted software and hardware base. Performance results indicate that TAPDance outperforms a baseline TAP implementation using Node.js with 32% lower latency and 33% higher throughput on average.",
+  "abstract_source_id": "src-abstract-ndss-2024-11e50096",
   "venue": "ndss",
   "year": 2024,
   "track_or_session": "Summer submission cycle",
@@ -126,6 +128,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2024-11e50096",
+      "url": "https://www.ndss-symposium.org/ndss-paper/architecting-trigger-action-platforms-for-security-performance-and-functionality/",
+      "kind": "paper-page",
+      "title": "Architecting Trigger-Action Platforms for Security, Performance and Functionality",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:17:40Z",
+      "content_hash": "sha256:b843ffccb42a0109e96e6c231536123440feb2cfcc85eb8e25854070ba700090",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

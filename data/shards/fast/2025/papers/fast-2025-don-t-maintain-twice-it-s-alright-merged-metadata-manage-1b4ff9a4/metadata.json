@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "fast-2025-don-t-maintain-twice-it-s-alright-merged-metadata-manage-1b4ff9a4",
   "title": "Don't Maintain Twice, It's Alright: Merged Metadata Management in Deduplication File System with GogetaFS",
+  "abstract": "Emerging storage technologies, such as persistent memory and ultra-low latency SSD, enable the deduplication file system (DedupFS) to use non-cryptographic hash for fast fingerprinting. However, we find that the accelerated computation exposes another major performance penalty: the seemingly innocuous in-storage deduplication metadata maintenance incurs up to 38% overhead in the I/O path.\n\nWe find the root cause is that DedupFSes maintain dedup-specific fingerprint-to-physical mappings, which incurs additional crash consistency overheads. However, this overhead is unnecessary. Our insight is that the deduplication mapping can be merged with the file system logical-to-physical mapping, forming a logical-fingerprint-physical (LFP) mapping. Thus, we can persist deduplication metadata alongside file system metadata in a single I/O. We propose GOGETAFS to realize the efficiency of LFP. Using a series of techniques to manage data and metadata atop LFP, GOGETAFS achieves compatible, effective, and memory-efficient deduplication within the file system. Experiments across a range of workloads show that GOGETAFS consistently outperforms existing DedupFSes and can minimize metadata maintenance overheads.",
+  "abstract_source_id": "src-abstract-fast-2025-1b4ff9a4",
   "venue": "fast",
   "year": 2025,
   "track_or_session": "Compression and Deduplication",
@@ -182,6 +184,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-fast-2025-1b4ff9a4",
+      "url": "https://www.usenix.org/conference/fast25/presentation/pan",
+      "kind": "paper-page",
+      "title": "Don't Maintain Twice, It's Alright: Merged Metadata Management in Deduplication File System with GogetaFS",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:01:03Z",
+      "content_hash": "sha256:baa9c0ab91ee511fc82fb9c261c4d9b485208a41bfd060137cfc835f18ae60ff",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

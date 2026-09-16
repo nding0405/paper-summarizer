@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sosp-2023-automated-verification-of-an-in-production-dns-authorita-e83d835c",
   "title": "Automated Verification of an In-Production DNS Authoritative Engine",
+  "abstract": "This paper presents DNS-V, a verification framework for our in-production DNS authoritative engine, which is the core of our DNS service. The key idea for automated verification in general is based on the layered verification principle. However, we face the challenge that our in-production DNS authoritative engine lacks modularity, more specifically, as can be seen with unclean interfaces and poor data structure encapsulation. This makes the layered verification hard to apply. To address this challenge, we propose a summarization approach that performs full-path symbolic execution to accumulate all path conditions and computation effects, and then represents a module's behavior in an abstract form as a set of input-effect pairs. In addition, for portability to future iterated versions of our DNS authoritative engine, we identify common dependency library modules that remain stable across different versions, and carefully design their abstractions to make them amenable to automated reasoning. Our framework has been successful in identifying and preventing tens of critical bugs in different versions of our DNS authoritative engine from reaching production, with a porting effort of less than one person-week.",
+  "abstract_source_id": "src-abstract-sosp-2023-e83d835c",
   "venue": "sosp",
   "year": 2023,
   "track_or_session": "Session 2: Reliability",
@@ -335,6 +337,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-sosp-2023-e83d835c",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Automated Verification of an In-Production DNS Authoritative Engine",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:12Z",
+      "content_hash": "sha256:aa9c23a45f6ec9973f40e6c9520c69d42bb49fc1f526891570edfdb1976cff82",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

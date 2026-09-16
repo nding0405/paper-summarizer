@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-leveraging-cryptographic-simulator-synthesis-for-formall-756af734",
   "title": "Leveraging Cryptographic Simulator Synthesis for Formally Verifying the FOO E-Voting Protocol",
+  "abstract": "Cryptographic proofs proceed in large part by reductions to cryptographic assumptions expressed as games. These reductions rely on simulators which are often tedious to write and involve a significant amount of trivial code. Thus, simulators are only sketched in pen-and-paper proofs, which is error-prone. Mechanized cryptographic proofs remove the risk of errors, but requiring users to explicitly write simulators is an unreasonable burden.\n\nIn this paper, we consider the problem of simulator synthesis in Squirrel, where cryptographic simulation is expressed as bi-deduction. Although the seminal work on bi-deduction provides a proof system and a simple proof-search procedure for it, we show that it suffers from systematic failures when working with games such as IND-CCA2. We provide a significantly improved procedure, that can re-use oracle calls across recursive iterations, and generates precise invariants to justify it. We implement this procedure in Squirrel and validate it in a proof of ballot privacy for the FOO e-voting protocol, which is the first computational mechanized proof for FOO, and the most complex Squirrel proof to date.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-756af734",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Software Security 2",
@@ -114,6 +116,19 @@
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening",
         "prepublication PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-756af734",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/baelde",
+      "kind": "paper-page",
+      "title": "Leveraging Cryptographic Simulator Synthesis for Formally Verifying the FOO E-Voting Protocol",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:24:30Z",
+      "content_hash": "sha256:9ddee164b485f202c213d22779a6d4327d6ad4c5153af3012606baca18cf356c",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

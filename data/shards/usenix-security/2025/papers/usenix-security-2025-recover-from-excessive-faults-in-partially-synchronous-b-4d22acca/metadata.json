@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-recover-from-excessive-faults-in-partially-synchronous-b-4d22acca",
   "title": "Recover from Excessive Faults in Partially-Synchronous BFT SMR",
+  "abstract": "Byzantine fault-tolerant (BFT) state machine replication (SMR) protocols form the basis of modern blockchains as they maintain a consistent state across all blockchain nodes while tolerating a bounded number of Byzantine faults. We analyze BFT SMR in the excessive fault setting where the actual number of Byzantine faults surpasses a protocol's tolerance.\n\nWe start by devising the very first repair algorithm for linearly chained and quorum-based partially synchronous SMR to recover from faulty states caused by excessive faults. Such a procedure can be realized using any commission fault detection module—an algorithm that identifies the faulty replicas without falsely locating any correct replica. We achieve this with a slightly weaker liveness guarantee, as the original security notion is impossible to satisfy given excessive faults.\n\nWe implement recoverable HotStuff in Rust. The throughput resumes to the normal level (without excessive faults) after recovery routines terminate for 7 replicas and is slightly reduced by leq 4.3% for 30 replicas. On average, it increases the latency by 12.87% for 7 replicas and 8.85% for 30 replicas.\n\nAside from adopting existing detection modules, we also establish the sufficient condition for a general BFT SMR protocol to allow for complete and sound fault detection when up to (n-2) Byzantine replicas (out of n total replicas) attack safety. We start by providing the first closed-box fault detection algorithm for any SMR protocol without any extra rounds of communication. We then describe open-box instantiations of our fault detection routines in Tendermint and Hotstuff, further reducing the overhead, both asymptotically and concretely.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-4d22acca",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Blockchain Security 2: Infrastructure, Protocol Design, and Governance",
@@ -154,6 +156,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-4d22acca",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/gong-tiantian",
+      "kind": "paper-page",
+      "title": "Recover from Excessive Faults in Partially-Synchronous BFT SMR",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:21:24Z",
+      "content_hash": "sha256:ce67c36bdcc5fc585ce34b1bf6ec219a072436c0fea0ada6358ed9cc1c77c40e",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

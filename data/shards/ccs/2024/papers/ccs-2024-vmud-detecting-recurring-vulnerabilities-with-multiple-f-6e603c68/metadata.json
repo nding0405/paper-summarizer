@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2024-vmud-detecting-recurring-vulnerabilities-with-multiple-f-6e603c68",
   "title": "VMud: Detecting Recurring Vulnerabilities with Multiple Fixing Functions via Function Selection and Semantic Equivalent Statement Matching",
+  "abstract": "The widespread use of open-source software (OSS) has led to extensive code reuse, making vulnerabilities in OSS significantly pervasive.The vulnerabilities due to code reuse in OSS are commonly known as vulnerable code clones (VCCs) or recurring vulnerabilities.Existing approaches primarily employ clone-based techniques to detect recurring vulnerabilities by matching vulnerable functions in software projects.These techniques do not incorporate specially designed mechanisms for vulnerabilities with multiple fixing functions (VM).Typically, they generate a signature for each fixing function and report VM using a matching-one-in-all approach.However, the variation in vulnerability context across diverse fixing functions results in varying accuracy levels in detecting VM, potentially limiting the effectiveness of existing methods.In this paper, we introduce VMud, a novel approach for detecting Vulnerabilities with Multiple Fixing Functions.VMud identifies vulnerable function clones (VCCs) through function matching similar to existing methods.However, VMud takes a different approach by only selecting the critical functions from VM for signature generation, which are a subset of the fixing functions.This step ensures that VMud focuses on fixing functions that offer sufficient knowledge about the VM.To cope with the potential decrease in recall due to excluding the remaining fixing functions, VMud employs semantic equivalent statement matching using these critical functions.It aims to uncover more VM by creating two signatures of each critical function and matching precisely by contextual semantic equivalent statement mapping on the two signatures.Our evaluation has demonstrated that VMud surpasses state-of-the-art vulnerability detection approaches by 30.30% in terms of F1-Score.Furthermore,",
+  "abstract_source_id": "src-abstract-ccs-2024-6e603c68",
   "venue": "ccs",
   "year": 2024,
   "track_or_session": "Cycle 2",
@@ -180,6 +182,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2024-6e603c68",
+      "url": "https://api.openalex.org/works/doi:10.1145/3658644.3690372?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "VMud: Detecting Recurring Vulnerabilities with Multiple Fixing Functions via Function Selection and Semantic Equivalent Statement Matching",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:12:27Z",
+      "content_hash": "sha256:3bfbd690f116592d5bb59f979b45db0a99b52fb930f15ab94a667b9f9e7dc29f",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

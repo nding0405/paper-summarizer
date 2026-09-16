@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "eurosys-2025-jabas-joint-adaptive-batching-and-automatic-scaling-for-d83e271d",
   "title": "JABAS: Joint Adaptive Batching and Automatic Scaling for DNN Training on Heterogeneous GPUs",
+  "abstract": "Adaptive batching is a promising technique to reduce the communication and synchronization overhead for training Deep Neural Network (DNN) models. In this paper, we study how to speed up the training of a DNN model using adaptive batching, without degrading the convergence performance in a heterogeneous GPU cluster. We propose a novel DNN training system, called JABAS (Joint Adaptive Batching and Automatic Scaling). In JABAS, a DNN training job is executed on a DNN training framework called IIDP, which provides the same theoretical convergence rate of distributed SGD in a heterogeneous GPU cluster. To maximize the performance of the job with adaptive batching, JABAS employs adaptive batching and automatic resource scaling jointly. JABAS changes a global batch size every p iterations in a fine-grained manner within an epoch, while auto-scaling to the best GPU allocation for the next epoch in a coarse-grained manner. Using three heterogeneous GPU clusters, we evaluate JABAS for seven DNN models including large language models. Our experimental results demonstrate that JABAS provides 33.3% shorter training time and 54.2% lower training cost than the state-of-the-art adaptive training techniques, on average, without any accuracy loss.",
+  "abstract_source_id": "src-abstract-eurosys-2025-d83e271d",
   "venue": "eurosys",
   "year": 2025,
   "track_or_session": "Session-6.1: ML systems - Location: Mees - Chair: Haibo Chen",
@@ -188,6 +190,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-eurosys-2025-d83e271d",
+      "url": "https://api.openalex.org/works/doi:10.1145/3689031.3696078?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "JABAS: Joint Adaptive Batching and Automatic Scaling for DNN Training on Heterogeneous GPUs",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:19:28Z",
+      "content_hash": "sha256:efcfc5072c00e4ee01e6998cdef2e186a2082e0f4c2250d2d1c91a749e950e1c",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

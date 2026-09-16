@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "fast-2023-madfs-per-file-virtualization-for-userspace-persistent-m-cfae41eb",
   "title": "MadFS: Per-File Virtualization for Userspace Persistent Memory Filesystems",
+  "abstract": "Persistent memory (PM) can be accessed directly from userspace without kernel involvement, but most PM filesystems still perform metadata operations in the kernel for security and rely on the kernel for cross-process synchronization.\n\nWe present per-file virtualization, where a virtualization layer implements a complete set of file functionalities, including metadata management, crash consistency, and concurrency control, in userspace. We observe that not all file metadata need to be maintained by the kernel and propose embedding insensitive metadata into the file for userspace management. For crash consistency, copy-on-write (CoW) benefits from the embedding of the block mapping since the mapping can be efficiently updated without kernel involvement. For cross-process synchronization, we introduce lock-free optimistic concurrency control (OCC) at user level, which tolerates process crashes and provides better scalability.\n\nBased on per-file virtualization, we implement MadFS, a library PM filesystem that maintains the embedded metadata as a compact log. Experimental results show that on concurrent workloads, MadFS achieves up to 3.6× the throughput of ext4-DAX. For real-world applications, MadFS provides up to 48% speedup for YCSB on LevelDB and 85% for TPC-C on SQLite compared to NOVA.",
+  "abstract_source_id": "src-abstract-fast-2023-cfae41eb",
   "venue": "fast",
   "year": 2023,
   "track_or_session": "Persistent Memory Systems",
@@ -203,6 +205,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-fast-2023-cfae41eb",
+      "url": "https://www.usenix.org/conference/fast23/presentation/zhong",
+      "kind": "paper-page",
+      "title": "MadFS: Per-File Virtualization for Userspace Persistent Memory Filesystems",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:00:33Z",
+      "content_hash": "sha256:186861dd5bed257b322586ce7ddf07335e2ebb52755e612bbdad8d2deafddcfb",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2026-one-email-many-faces-a-deep-dive-into-identity-confusion-d538de77",
   "title": "One Email, Many Faces: A Deep Dive into Identity Confusion in Email Aliases",
+  "abstract": "Email addresses serve as a universal identifier for online account management, however, their aliasing mechanisms introduce significant identity confusion between email providers and external platforms. This paper presents the first systematic analysis of the inconsistencies arising from email aliasing, where providers view alias addresses ( e.g., [email protected] , [email protected] ) as additional entrances of the base email ( [email protected] ), while platforms often treat them as distinct identities.\n\nThrough empirical evaluations the alias mechanisms of 28 email providers and 18 online platforms, we reveal critical gaps: (1) Only Gmail fully documents its aliasing rules, while 11 providers silently support undocumented alias behaviors; (2) Due to lack of standardization documentation and de facto implementation, platforms either failed to distinguish alias addresses or over aggressive excluded all emails containing specific symbol. Real-world abuse cases demonstrate attackers exploiting aliases to create up to 139 accounts from a single base email in npm for spam campaigns. Our user study further highlights security risks, showing 31.65% of participants with alias knowledge mistake phishing emails as legitimate emails alias due to inconsistent provider implementations. Users who believe they understand email aliasing, especially those highly educated, male, and technical participants, are more susceptible to being phished. Our findings underscore the urgent need for standardization and transparency in email aliasing. We contribute the OriginMail tool to help platforms resolve alias confusion and disclose vulnerabilities to affected stakeholders.",
+  "abstract_source_id": "src-abstract-ndss-2026-d538de77",
   "venue": "ndss",
   "year": 2026,
   "track_or_session": "Summer submission cycle",
@@ -202,6 +204,19 @@
       "official": false,
       "supports": [
         "independent proceedings identity reconciliation"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2026-d538de77",
+      "url": "https://www.ndss-symposium.org/ndss-paper/one-email-many-faces-a-deep-dive-into-identity-confusion-in-email-aliases/",
+      "kind": "paper-page",
+      "title": "One Email, Many Faces: A Deep Dive into Identity Confusion in Email Aliases",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:22:40Z",
+      "content_hash": "sha256:5135832a9e45642536bac484d625c5095bd049b914e9e9e815b6e78a52db838a",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

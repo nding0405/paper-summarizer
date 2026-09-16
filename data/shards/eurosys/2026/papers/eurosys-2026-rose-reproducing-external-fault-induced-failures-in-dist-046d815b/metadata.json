@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "eurosys-2026-rose-reproducing-external-fault-induced-failures-in-dist-046d815b",
   "title": "Rose: Reproducing External-Fault-Induced Failures in Distributed Systems with Lightweight Instrumentation",
+  "abstract": "Distributed systems form the backbone of critical infrastructures, yet remain vulnerable to external-fault-induced bugs that manifest only when specific external events occur during specific application states. Existing approaches to reproducing these bugs require fine-grained information about the application, which might not be available in production, and operate within a limited fault model. Rose is a novel approach that collects traces from production and systematically generates fault schedules that reproduce these bugs. By leveraging the insight that external faults are observable through system interfaces, Rose uses lightweight tracing (2.6% overhead) to capture essential application-environment interactions. Then, it identifies the application states when faults must occur to trigger bugs, and generates schedules that consistently reproduce these bugs. Rose reproduced 20 bugs across eight production systems implemented in diverse languages (C, C++, Java, Go, Scala), including widely-used systems such as Zookeeper, MongoDB, and HBase.",
+  "abstract_source_id": "src-abstract-eurosys-2026-046d815b",
   "venue": "eurosys",
   "year": 2026,
   "track_or_session": null,
@@ -138,6 +140,19 @@
       "official": false,
       "supports": [
         "Publisher-deposited proceedings identity and print publication date."
+      ]
+    },
+    {
+      "id": "src-abstract-eurosys-2026-046d815b",
+      "url": "https://api.openalex.org/works/doi:10.1145/3767295.3803625?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Rose: Reproducing External-Fault-Induced Failures in Distributed Systems with Lightweight Instrumentation",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:21:26Z",
+      "content_hash": "sha256:5ea1b3298dd148ecdf0ade55b8e267852a9579a86be3eb938344f49d10a303b3",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

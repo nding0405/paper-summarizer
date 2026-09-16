@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-high-accuracy-poisoning-resilient-frequency-estimation-i-078327fc",
   "title": "High-Accuracy, Poisoning-Resilient Frequency Estimation in the Shuffle Model",
+  "abstract": "We study frequency estimation in the shuffle model of differential privacy under poisoning attacks, where corrupted users may deviate from the local randomizer to inject crafted in-domain messages. Existing shuffle-model protocols face a core tension: achieving low estimation error relies on flexible multi-message noise generation, which can amplify poisoning influence once messages are anonymized by shuffling.\n\nTo address this tension, we propose a symmetric binomial-sum noise distribution (i.e., Bin(n/2, p)+Bin(n/2,1− p)), which preserves high accuracy while limiting the impact of crafted in-domain messages. We realize this distribution via preprocessing-guided noise generation, which routes a balanced collection of mode flags through the shuffler so that each user receives a randomly assigned mode flag that fixes their noise-sampling behavior prior to shuffling. For binary estimation, our protocol requires a single Bernoulli trial per user and at most 2 messages per user(1.5 on average),while bounding the worst-case poisoning influence of a single corrupted user by O(1/n). We extend the protocol to histograms, including large domains via hashing, and provide formal privacy, accuracy, and robustness guarantees. Experiments on real datasets show that our protocols remain resilient under poisoning and reduce MAE by up to nearly 2× over the strongest baseline at comparable per-user communication on small domains, and match it on large domains.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-078327fc",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Privacy Anonymity 1",
@@ -176,6 +178,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-078327fc",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/wu-shaoqiang",
+      "kind": "paper-page",
+      "title": "High-Accuracy, Poisoning-Resilient Frequency Estimation in the Shuffle Model",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:24:13Z",
+      "content_hash": "sha256:15e7e05641a5d8b81816c7bb1626770c21bd8ae5d47b041e2f152d6c0de6500f",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

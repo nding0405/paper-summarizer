@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "atc-2025-generalsparse-bridging-the-gap-in-spmm-for-pruned-large-05a36223",
   "title": "GeneralSparse: Bridging the Gap in SpMM for Pruned Large Language Model Inference on GPUs",
+  "abstract": "The rapid growth of generative model parameters poses challenges in deployment, especially regarding weight storage and inference latency. The weight pruning is an effective technique to reduce the computational and memory overhead of Large Language Models (LLMs) while maintaining accuracy, which transforms the matmuls to Sparse Matrix Multiplication (SpMM) computation. However, the diverse pruning methods introduce varying sparsity patterns that challenge high-performance SpMM on GPUs. Existing solutions are limited with adaptability to these patterns, flexibility in handling different sparsity levels, and support for efficient optimizations.\n\nIn this work, we present GeneralSparse, a novel solution that bridges this gap by leveraging the abstraction of memory access and reduction spaces. GeneralSparse designs the process of dividing box to adapt dynamically to diverse pruning patterns and proposes hierarchical reduction algorithms tailored to GPU hierarchies. Through evaluations on pruned LLM weight matrices and the SuiteSparse collection, GeneralSparse achieves up to 20.82× speedup over cuSPARSE libraries. At end-to-end inference time on LLMs, GeneralSparse achieves up to 2.33× speedup over counterparts.",
+  "abstract_source_id": "src-abstract-atc-2025-05a36223",
   "venue": "atc",
   "year": 2025,
   "track_or_session": "Performance: Benchmarking, Caching, and Workload Characterization",
@@ -180,6 +182,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-atc-2025-05a36223",
+      "url": "https://www.usenix.org/conference/atc25/presentation/wang-yaoyu",
+      "kind": "paper-page",
+      "title": "GeneralSparse: Bridging the Gap in SpMM for Pruned Large Language Model Inference on GPUs",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T21:59:42Z",
+      "content_hash": "sha256:11209b8a34c4088aefa2c5b07f48bc5e1e4c4e0a232334eb0bfb3e2009fa26d4",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

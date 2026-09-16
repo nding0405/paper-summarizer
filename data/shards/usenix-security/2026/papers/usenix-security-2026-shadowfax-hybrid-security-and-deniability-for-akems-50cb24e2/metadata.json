@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-shadowfax-hybrid-security-and-deniability-for-akems-50cb24e2",
   "title": "Shadowfax: Hybrid Security and Deniability for AKEMs",
+  "abstract": "As cryptographic protocols transition to post-quantum security, most adopt hybrid solutions combining classical and post-quantum assumptions. This shift often sacrifices efficiency, compactness, or even security. One such property is deniability , which enables users to plausibly deny authorship of potentially incriminating messages. While classical protocols like X3DH key agreement (used in Signal and WhatsApp) provide deniability, post-quantum protocols like PQXDH and Apple's iMessage with PQ3 do not.\n\nThis work addresses this gap by investigating how to efficiently preserve deniability in post-quantum protocols. Specifically, we propose two hybrid schemes for authenticated key encapsulation mechanisms (AKEMs). The first is a black-box construction that preserves deniability when both constituent AKEMs are deniable. The second is Shadowfax, a non-black-box AKEM that achieves hybrid security, integrating a classical non-interactive key exchange, a post-quantum key encapsulation mechanism, and a post-quantum ring signature. Shadowfax satisfies deniability in both dishonest and honest receiver settings, relying on statistical security in the former and on a single pre- or post-quantum assumption in the latter.\n\nFinally, we provide several portable implementations of Shadowfax. When instantiated with standardised components (ML-KEM and Falcon), Shadowfax yields ciphertexts of 1728 bytes and public keys of 2036 bytes, with encapsulation and decapsulation costs of 1.8M and 0.7M cycles on an Apple M1 Pro.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-50cb24e2",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Applications of Cryptography 5",
@@ -114,6 +116,19 @@
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening",
         "prepublication PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-50cb24e2",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/gajland",
+      "kind": "paper-page",
+      "title": "Shadowfax: Hybrid Security and Deniability for AKEMs",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:25:25Z",
+      "content_hash": "sha256:ccacab4e47bd3d77459d38e0d65c21c4adddf9c6027d056231b94cc32170e8d8",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

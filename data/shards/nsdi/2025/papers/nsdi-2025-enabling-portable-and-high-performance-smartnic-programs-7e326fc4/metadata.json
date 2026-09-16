@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2025-enabling-portable-and-high-performance-smartnic-programs-7e326fc4",
   "title": "Enabling Portable and High-Performance SmartNIC Programs with Alkali",
+  "abstract": "Trends indicate that emerging SmartNICs, either from different vendors or generations from the same vendor, exhibit substantial differences in hardware parallelism and memory interconnects. These variations make porting programs across NICs highly complex and time-consuming, requiring programmers to significantly refactor code for performance based on each target NIC’s hardware characteristics.\n\nWe argue that an ideal SmartNIC compilation framework should allow developers to write target-independent programs, with the compiler automatically managing cross-NIC porting and performance optimization. We present such a framework, Alkali, that achieves this by (1) proposing a new intermediate representation for building flexible compiler infrastructure for multiple NIC targets and (2) developing a new iterative parallelism optimization algorithm that automatically ports and parallelizes the input programs based on the target NIC’s hardware characteristics.\n\nExperiments across a wide range of NIC applications demonstrate that Alkali enables developers to easily write portable, high-performance NIC programs. Our compiler optimization passes can automatically port these programs and make them run efficiently across all targets, achieving performance within 9.8% of hand-tuned expert implementations.",
+  "abstract_source_id": "src-abstract-nsdi-2025-7e326fc4",
   "venue": "nsdi",
   "year": 2025,
   "track_or_session": "Data Plane Programmability 1",
@@ -203,6 +205,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2025-7e326fc4",
+      "url": "https://www.usenix.org/conference/nsdi25/presentation/lin-jiaxin",
+      "kind": "paper-page",
+      "title": "Enabling Portable and High-Performance SmartNIC Programs with Alkali",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:04:07Z",
+      "content_hash": "sha256:319f1072772ae04190dfa7a5772d4aad760543442c7749cfaac66ed6d334299b",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

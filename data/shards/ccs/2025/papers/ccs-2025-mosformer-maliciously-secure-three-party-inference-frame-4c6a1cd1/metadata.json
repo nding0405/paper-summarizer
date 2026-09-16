@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2025-mosformer-maliciously-secure-three-party-inference-frame-4c6a1cd1",
   "title": "Mosformer: Maliciously Secure Three-Party Inference Framework for Large Transformers",
+  "abstract": "Transformer-based models like BERT and GPT have achieved state-of-the-art performance across a wide range of AI tasks but raise serious privacy concerns when deployed as cloud inference services. To address this, secure multi-party computation (MPC) is commonly employed, encrypting both user inputs and model parameters to enable inference without revealing any private information. However, existing MPC-based secure transformer inference protocols are predominantly designed under the semi-honest security model. Extending these protocols to support malicious security remains a significant challenge, primarily due to the substantial overhead introduced by securely evaluating complex non-linear functions required for adversarial resilience. We introduce Mosformer, the first maliciously secure three-party (3PC) inference framework that efficiently supports large transformers such as BERT and GPT. We first design constant-round comparison and lookup table protocols with malicious security, leveraging verifiable distributed point functions (VDPFs). Building on these, we develop a suite of 3PC protocols for efficient and secure evaluation of complex non-linear functions in transformers. Together with optimized modulus conversion, our approach substantially reduces the overhead of secure transformer inference while preserving model accuracy. Experimental results on the vanilla transformer block show that Mosformer achieves up to a 5.3× speedup and a 4.3× reduction in communication over prior maliciously secure protocols. Despite offering stronger security guarantees, Mosformer achieves comparable or even superior online performance to state-of-the-art semi-honest 2PC and 3PC frameworks, including BOLT (Oakland 2024), BumbleBee (NDSS 2025), SHAFT (NDSS 2025), and Ditto (ICML 2024), on full-scale models such as BERT and GPT-2.",
+  "abstract_source_id": "src-abstract-ccs-2025-4c6a1cd1",
   "venue": "ccs",
   "year": 2025,
   "track_or_session": "Cycle 2",
@@ -211,6 +213,19 @@
         "published-order authors",
         "publication-time affiliations",
         "publication date and page span"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2025-4c6a1cd1",
+      "url": "https://api.openalex.org/works/doi:10.1145/3719027.3765028?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Mosformer: Maliciously Secure Three-Party Inference Framework for Large Transformers",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:15:12Z",
+      "content_hash": "sha256:949ebc07a24a47aae442d57a43fe35c8b6549f9f2e24034683c6e4de7aab64f7",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sigcomm-2023-fathom-understanding-datacenter-application-network-perf-77e67da3",
   "title": "Fathom: Understanding Datacenter Application Network Performance",
+  "abstract": "We describe our experience with Fathom, a system for identifying the network performance bottlenecks of any service running in the Google fleet. Fathom passively samples RPCs, the principal unit of work for services. It segments the overall latency into host and network components with kernel and RPC stack instrumentation. It records these detailed latency metrics, along with detailed transport connection state, for every sampled RPC. This lets us determine if the completion is constrained by the client, network or server. To scale while enabling analysis, we also aggregate samples into distributions that retain multi-dimensional breakdowns. This provides us with a macroscopic view of individual services. Fathom runs globally in our datacenters for all production traffic, where it monitors billions of TCP connections 24x7. For five years Fathom has been our primary tool for troubleshooting service network issues and assessing network infrastructure changes. We present case studies to show how it has helped us improve our production services.",
+  "abstract_source_id": "src-abstract-sigcomm-2023-77e67da3",
   "venue": "sigcomm",
   "year": 2023,
   "track_or_session": "Application Analytics — Experience Paper",
@@ -298,6 +300,19 @@
         "publisher-deposited ORCIDs",
         "proceedings page range and print publication date",
         "empty publisher relation metadata for alternate-version checks"
+      ]
+    },
+    {
+      "id": "src-abstract-sigcomm-2023-77e67da3",
+      "url": "https://api.openalex.org/works/doi:10.1145/3603269.3604815?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Fathom: Understanding Datacenter Application Network Performance",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:22:51Z",
+      "content_hash": "sha256:b8986dd2e04988809e1fbe42e934fd9eb99d006a9571c4eda0aee5587f27618c",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

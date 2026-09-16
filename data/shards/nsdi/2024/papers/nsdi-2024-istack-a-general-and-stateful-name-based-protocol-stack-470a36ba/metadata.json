@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2024-istack-a-general-and-stateful-name-based-protocol-stack-470a36ba",
   "title": "iStack: A General and Stateful Name-based Protocol Stack for Named Data Networking",
+  "abstract": "Named Data Networking (NDN) shifts the network from host-centric to data-centric with a clean-slate design, in which packet forwarding is based on names, and the data plane maintains per-packet state. Different forwarders have been implemented to provide NDN capabilities for various scenarios, however, there is a lack of a network stack that is integrated with operating systems (OS) for general purpose. Designing a stateful and entirely name-based protocol stack in OS kernel remains a challenge due to three factors: (i) an in-kernel name resolution architecture for packet demultiplexing is necessary, (ii) an entirely name-based stack requires to be compatible with the current address (MAC/IP/port)-based architecture in OS kernel, and (iii) maintaining per-packet state introduces a trade-off between performance and resource consumption.\n\nIn this paper, for the first time, we take NDN into OS kernel by proposing iStack, an Information-Centric Networking (ICN) protocol stack. The main innovations of iStack are threefold. First, we propose a name resolution architecture to support both network-layer forwarding and local packet demultiplexing. Second, a two-layer face system is proposed to provide abstraction of address-based network interfaces. Third, we design socket-compatible interfaces to keep the uniformity of current network stack in OS. Besides, we design compact forwarding data structures for fast packet processing with low memory footprint. We have implemented prototypes on multiple platforms. The evaluation results show that iStack achieves 6.50 Gbps throughput, outperforming the NDN-testbed forwarder by a factor of 16.25x, and reduces 46.08% forwarding latency for cached packets with its inkernel packet caching. iStack is not just another forwarder for NDN, but a step forward for practical development of ICN.",
+  "abstract_source_id": "src-abstract-nsdi-2024-470a36ba",
   "venue": "nsdi",
   "year": 2024,
   "track_or_session": "Network Protocols",
@@ -118,6 +120,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2024-470a36ba",
+      "url": "https://www.usenix.org/conference/nsdi24/presentation/li-tianlong",
+      "kind": "paper-page",
+      "title": "iStack: A General and Stateful Name-based Protocol Stack for Named Data Networking",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:03:16Z",
+      "content_hash": "sha256:2023aaaaab996424b24c0481822360297e73d024a28edaca2ae4c512ce517a34",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

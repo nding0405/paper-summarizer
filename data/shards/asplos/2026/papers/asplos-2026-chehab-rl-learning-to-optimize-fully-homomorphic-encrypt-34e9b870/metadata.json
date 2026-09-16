@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2026-chehab-rl-learning-to-optimize-fully-homomorphic-encrypt-34e9b870",
   "title": "CHEHAB RL: Learning to Optimize Fully Homomorphic Encryption Computations",
+  "abstract": "Fully Homomorphic Encryption (FHE) enables computations directly on encrypted data, but its high computational cost remains a significant barrier. Writing efficient FHE code is a complex task requiring cryptographic expertise, and finding the optimal sequence of program transformations is often intractable. In this paper, we propose CHEHAB RL, a novel framework that leverages deep reinforcement learning (RL) to automate FHE code optimization. Instead of relying on predefined heuristics or combinatorial search, our method trains an RL agent to learn an effective policy for applying a sequence of rewriting rules to automatically vectorize scalar FHE code while reducing instruction latency and noise growth. The proposed approach supports the optimization of both structured and unstructured code. To train the agent, we synthesize a diverse dataset of computations using a large language model (LLM). We integrate our proposed approach into the CHEHAB FHE compiler and evaluate it on a suite of benchmarks, comparing its performance against Coyote, a state-of-the-art vectorizing FHE compiler. The results show that our approach generates code that is 5.3× faster in execution, accumulates 2.54× less noise, while the compilation process itself is 27.9× faster than Coyote (geometric means).",
+  "abstract_source_id": "src-abstract-asplos-2026-34e9b870",
   "venue": "asplos",
   "year": 2026,
   "track_or_session": "Session 9B: Quantum & Emerging Computing",
@@ -215,6 +217,19 @@
       "official": false,
       "supports": [
         "Author-posted abstract and alternate-version identifier used for relevance classification."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2026-34e9b870",
+      "url": "https://api.openalex.org/works/doi:10.1145/3779212.3790138?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "CHEHAB RL: Learning to Optimize Fully Homomorphic Encryption Computations",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:04:46Z",
+      "content_hash": "sha256:e52182f4da7cd01e4ba879cc9ec1f47973986d24a5e4d6904f49a2a1e31fa3cc",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

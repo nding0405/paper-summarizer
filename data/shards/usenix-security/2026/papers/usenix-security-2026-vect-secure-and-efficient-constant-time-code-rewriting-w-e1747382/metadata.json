@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-vect-secure-and-efficient-constant-time-code-rewriting-w-e1747382",
   "title": "VeCT: Secure and Efficient Constant-Time Code Rewriting with Vector Extensions",
+  "abstract": "Timing channels allow attackers to extract secrets by analyzing the execution time of a victim program. Constant-time (CT) disciplines enforce security against timing attacks via data-flow/control-flow linearization (DFL/CFL). However, the rewritten constant-time code typically considerably increases the memory footprint of the original code, causing significant overhead. We present VeCT, a compiler-based code rewriter that leverages vector extensions to retain constant-time guarantees while improving performance. We first apply rigorous statistical tests to derive practical \"safe-use\" rules for AVX-512 instructions whose implementation details are proprietary; this analysis also reveals a previously unknown vulnerability in a state-of-the-art constant-time rewriter. Guided by these rules, VeCT introduces a novel strategy that eliminates unnecessary data loads in rewritten code, and enables vectorization to further improve efficiency. We implement VeCT based on LLVM to automatically transform code into AVX-512-based constant-time equivalents. On real-world applications like AES and Blowfish, VeCT reduces the overhead of transformed code by up to 98.9% compared to the state-of-the-art, while preserving constant-time behavior.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-e1747382",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Software Security 4",
@@ -93,6 +95,19 @@
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening",
         "prepublication PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-e1747382",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/jiang-qisheng",
+      "kind": "paper-page",
+      "title": "VeCT: Secure and Efficient Constant-Time Code Rewriting with Vector Extensions",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:26:05Z",
+      "content_hash": "sha256:728d636cd1e89d70b9bdeecfb3ffb04517cc8f685792a9b46a5ba69c1f9aa7f0",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

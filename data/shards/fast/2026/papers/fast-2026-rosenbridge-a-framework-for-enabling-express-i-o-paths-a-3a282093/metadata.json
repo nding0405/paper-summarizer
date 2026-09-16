@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "fast-2026-rosenbridge-a-framework-for-enabling-express-i-o-paths-a-3a282093",
   "title": "RosenBridge: A Framework for Enabling Express I/O Paths Across the Virtualization Boundary",
+  "abstract": "With the emergence of high-performance storage devices, the overhead of the storage stack has become a major I/O performance bottleneck. To alleviate this problem, a number of express I/O paths have been proposed based on the concept of near-data processing (NDP), such as query I/O resubmission (XRP) and GPU-direct storage (GDS). Unfortunately, in virtualized environments, none of these bare-metal express I/O paths can cross the virtualization boundary between the guest virtual machines (VMs) and the host, leaving applications inside guest VMs unable to benefit from them.\n\nThis paper presents RosenBridge, a framework for enabling express I/O paths across the virtualization boundary. At the core of RosenBridge is a new paravirtualized I/O device called virtio-ndp, which allows the guest to offload NDP optimizations to the hypervisor in the host userspace based on uBPF (userspace Berkeley Packet Filter). We connect the virtio-ndp backend with the host kernel’s asynchronous I/O stack for efficient I/O scheduling, and provide a set of helper functions for convenient guest-host address translation. We strictly limit the memory access scope of uBPF programs to guarantee security and collaboratively throttle the multi-path I/O to ensure fairness among guest VMs. We demonstrate the effectiveness of RosenBridge through two use cases, respectively supporting XRP and GDS in virtualized environments. Evaluation shows that RosenBridge significantly outperforms the state-of-the-art I/O paravirtualization frameworks (virtio and vhost) in I/O performance, while effectively reducing CPU usage. Compared to the bare-metal express I/O paths (XRP and GDS), RosenBridge only incurs a slight performance degradation.",
+  "abstract_source_id": "src-abstract-fast-2026-3a282093",
   "venue": "fast",
   "year": 2026,
   "track_or_session": "Virtualization",
@@ -286,6 +288,19 @@
         "proceedings page range and page count",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-fast-2026-3a282093",
+      "url": "https://www.usenix.org/conference/fast26/presentation/qiu",
+      "kind": "paper-page",
+      "title": "RosenBridge: A Framework for Enabling Express I/O Paths Across the Virtualization Boundary",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:01:40Z",
+      "content_hash": "sha256:93ac8b1dd510473269e117cab0a2ccc2a698f8ae0204cabb5f2378eb663f25d8",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

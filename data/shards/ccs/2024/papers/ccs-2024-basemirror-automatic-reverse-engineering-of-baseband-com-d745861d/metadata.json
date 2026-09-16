@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2024-basemirror-automatic-reverse-engineering-of-baseband-com-d745861d",
   "title": "BaseMirror: Automatic Reverse Engineering of Baseband Commands from Android's Radio Interface Layer",
+  "abstract": "In modern mobile devices, baseband is an integral component running on top of cellular processors to handle crucial radio communications. However, recent research reveals significant vulnerabilities in these basebands, posing serious security risks like remote code execution. Yet, effectively scrutinizing basebands remains a daunting task, as they run closed-source and proprietary software on vendor-specific chipsets. Existing analysis methods are limited by their dependence on manual processes and heuristic approaches, reducing their scalability. This paper introduces a novel approach to unveil security issues in basebands from a unique perspective: to uncover vendor-specific baseband commands from the Radio Interface Layer (RIL), a hardware abstraction layer interfacing with basebands. To demonstrate this concept, we have designed and developed BaseMirror, a static binary analysis tool to automatically reverse engineer baseband commands from vendor-specific RIL binaries. It utilizes a bidirectional taint analysis algorithm to adeptly identify baseband commands from an enhanced control flow graph enriched with reconstructed virtual function calls. Our methodology has been applied to 28 vendor RIL libraries, encompassing a wide range of Samsung Exynos smartphone models on the market. Remarkably, BaseMirror has uncovered 873 unique baseband commands undisclosed to the public. Based on these results, we develop an automated attack discovery framework to successfully derive and validate 8 zero-day vulnerabilities that trigger denial of cellular service and arbitrary file access on a Samsung Galaxy A53 device. These findings have been reported and confirmed by Samsung and a bug bounty was awarded to us.",
+  "abstract_source_id": "src-abstract-ccs-2024-d745861d",
   "venue": "ccs",
   "year": 2024,
   "track_or_session": "Cycle 2",
@@ -138,6 +140,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2024-d745861d",
+      "url": "https://api.openalex.org/works/doi:10.1145/3658644.3690254?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "BaseMirror: Automatic Reverse Engineering of Baseband Commands from Android's Radio Interface Layer",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:09:01Z",
+      "content_hash": "sha256:278ccdf84ab678b963a84761f0941ba2397aabda25d8fef79f0f23bfb65a6a97",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

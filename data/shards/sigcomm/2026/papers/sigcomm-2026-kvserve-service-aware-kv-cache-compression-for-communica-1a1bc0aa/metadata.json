@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sigcomm-2026-kvserve-service-aware-kv-cache-compression-for-communica-1a1bc0aa",
   "title": "KVServe: Service-Aware KV Cache Compression for Communication-Efficient Disaggregated LLM Serving",
+  "abstract": "LLMs are widely adopted in production, pushing inference systems to their limits. Disaggregated LLM serving (e.g., PD separation and KV state disaggregation) improves scalability and cost efficiency, but it also turns KV into an explicit payload crossing network and storage boundaries, making KV a dominant end-to-end bottle-neck. Existing KV compression are typically statically configured at runtime, despite production service context varies over time in workload mix, bandwidth, and SLO/quality budgets. As a result, a fixed choice can be suboptimal or even increase latency. We present KVServe, the first service-aware and adaptive KV communication compression framework for disaggregated LLM serving: KVServe (1) unifies KV compression into a modular strategy space with new components and cross-method recomposition; (2) introduces Bayesian Profiling Engine that efficiently searches this space and distills a 3D Pareto candidate set, reducing 50x offline search overhead; and (3) deploys a Service-Aware Online Controller that combines an analytical latency model with a lightweight bandit to select profiles under constraints and correct offline-to-online mismatch. Integrated into vLLM and evaluated across datasets, models, GPUs and networks, KVServe achieves up to 9.13x JCT speedup in PD-separated serving and up to 32.8x TTFT reduction in KV-disaggregated serving.",
+  "abstract_source_id": "src-abstract-1a1bc0aa",
   "venue": "sigcomm",
   "year": 2026,
   "track_or_session": "Research Session 1: LLM Inference & Serving — Research Paper",
@@ -317,6 +319,19 @@
       "official": true,
       "supports": [
         "official main-paper scope and track definitions"
+      ]
+    },
+    {
+      "id": "src-abstract-1a1bc0aa",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/search/match?query=KVServe%3A%20Service-Aware%20KV%20Cache%20Compression%20for%20Communication-Efficient%20Disaggregated%20LLM%20Serving&fields=title,abstract",
+      "kind": "semantic-scholar",
+      "title": "KVServe: Service-Aware KV Cache Compression for Communication-Efficient Disaggregated LLM Serving",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T23:02:37Z",
+      "content_hash": "sha256:de1ecc9f78d744e5255f876c1d259fe9cd5cd35e170950963ea9e025489d7fcc",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "fast-2023-cjfs-concurrent-journaling-for-better-scalability-0f8145e3",
   "title": "CJFS: Concurrent Journaling for Better Scalability",
+  "abstract": "In this paper, we propose CJFS, \\emph{Concurrent Journaling Filesystem}. CJFS extends EXT4 filesystem and addresses the fundamental limitations of the EXT4 journaling design, which are the main cause for the poor scalability of EXT4 filesystem. The heavy-weight EXT4 journal suffers from two limitations. First, the journal commit is a strictly serial activity. Second, the journal commit uses the original page cache entry, not the copy of it, and subsequently any access to the in-flight page cache entry is blocked. To address these limitations, we propose four techniques, namely Dual Thread Journaling, Multi-version Shadow Paging, Opportunistic Coalescing, and Compound Flush. With Dual Thread design, CJFS can commit a transaction before the preceding journal commit finishes. With Multi-version Shadow Paging, CJFS can be free from the transaction conflict even though there can exist multiple committing transactions. With Opportunistic Coalescing, CJFS can mitigate the transaction lock-up overhead in journal commit so that it can increase the coalescing degree -- i.e., the number of system calls associated with a single transaction -- of a running transaction. With Compound Flush, CJFS minimizes the number of flush calls. CJFS improves the throughput by 81%, 68% and 125% in filebench varmail, dbench, and OLTP-Insert on MySQL, respectively, against EXT4 by removing the transaction conflict and lock-up overhead.",
+  "abstract_source_id": "src-abstract-fast-2023-0f8145e3",
   "venue": "fast",
   "year": 2023,
   "track_or_session": "File Systems",
@@ -161,6 +163,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-fast-2023-0f8145e3",
+      "url": "https://www.usenix.org/conference/fast23/presentation/oh",
+      "kind": "paper-page",
+      "title": "CJFS: Concurrent Journaling for Better Scalability",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:00:26Z",
+      "content_hash": "sha256:0639aa1670325be8d3ced65f621edf8f08edc3f1fa8841478cb103aa0fa2a537",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2026-controlling-arbitrary-internet-queues-with-titrate-67f81102",
   "title": "Controlling Arbitrary Internet Queues with Titrate",
+  "abstract": "Router buffers are critical to networks for absorbing short-lived congestion and allowing full throughput. However, excessive buffering can lead to high queuing delay, poor burst absorption, and even low throughput for queues sharing the buffer memory. Existing queue management schemes designed for Internet routers (e.g., CoDel, PIE) prevent such excessive buffering only under stringent assumptions about the queue composition (flows in the queue), while more recent approaches (e.g., L4S) require end-host collaboration. In this work, we revisit queue management for Internet routers from first principles and introduce Titrate, a closed-loop controller that senses queue dynamics and adjusts thresholds for any given queue to achieve high throughput, low latency and effective burst absorption. To balance convergence speed and stability, Titrate draws inspiration from TCP’s control loop, combining a multiplicative-increase-additive-decrease approach with an ssthresh-like variable.\n\nWe evaluate Titrate’s performance via simulation and Internet experiments. Across a wide range of realistic traffic mixes, Titrate increases minimum throughput by 39%, 14% compared to CoDel, PIE, while keeping 59% lower queuing latency compared to static-threshold baselines of on-par throughput. It also improves end-user quality of experience over static-threshold baselines. We further show that Titrate reacts swiftly to bandwidth and traffic changes and offers device-wide benefits.",
+  "abstract_source_id": "src-abstract-nsdi-2026-67f81102",
   "venue": "nsdi",
   "year": 2026,
   "track_or_session": "Virtualization Meets the Network",
@@ -139,6 +141,19 @@
         "proceedings page range and page count",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2026-67f81102",
+      "url": "https://www.usenix.org/conference/nsdi26/presentation/zhou-titrate",
+      "kind": "paper-page",
+      "title": "Controlling Arbitrary Internet Queues with Titrate",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:05:00Z",
+      "content_hash": "sha256:e05391187969e62853f1ebadbfa17ce126c5a388fa8e5bda3f5717d5de07058a",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

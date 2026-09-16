@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-branch-privilege-injection-compromising-spectre-v2-hardw-2ad073b2",
   "title": "Branch Privilege Injection: Compromising Spectre v2 Hardware Mitigations by Exploiting Branch Predictor Race Conditions",
+  "abstract": "Modern branch predictors prevent Spectre v2 attacks by associating predictions with the privilege domain they should be restricted to, or by providing barriers for invalidating predictions when switching contexts. Such branch predictors receive branch resolution and privilege domain feedback asynchronously, but it is unclear whether they always consider the correct order of events. In this paper, we introduce Branch Predictor Race Conditions (BPRC) , a class of vulnerabilities where asynchronous branch predictor operations violate hardware-enforced privilege and context separation mechanisms in all recent Intel CPUs. Our analysis reveals three variants, breaching the security boundaries between user and kernel, guest and hypervisor, and across indirect branch predictor barriers. Leveraging BPRC, we introduce Branch Privilege Injection (BPI) , a new Spectre v2 primitive that injects arbitrary branch predictions tagged with kernel privilege from user mode. Our end-to-end BPI exploit leaks arbitrary kernel memory from up-to-date Linux systems across six generations of Intel CPUs, at 5.6KiB/s on Intel Raptor Cove.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-2ad073b2",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Hardware Security 1: Microarchitectures",
@@ -112,6 +114,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-2ad073b2",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/ruegge",
+      "kind": "paper-page",
+      "title": "Branch Privilege Injection: Compromising Spectre v2 Hardware Mitigations by Exploiting Branch Predictor Race Conditions",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:18:56Z",
+      "content_hash": "sha256:fe30c170e22f98f16a08d4b94b35c0dbd6105f295a05bd4d2686e9277d490d58",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

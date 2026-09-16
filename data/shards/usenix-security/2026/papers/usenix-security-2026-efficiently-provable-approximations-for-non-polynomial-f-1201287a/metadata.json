@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-efficiently-provable-approximations-for-non-polynomial-f-1201287a",
   "title": "Efficiently Provable Approximations for Non-Polynomial Functions",
+  "abstract": "Zero-Knowledge Proofs (ZKPs) are now widely used to verify the correctness of various types of computations. However, despite phenomenal advancements, current ZKPs are inefficient for applications that need accurate evaluation of non-polynomial functions over floating-point numbers, such as machine learning, decentralized finance, scientific computing, and geolocation. Current state-of-the-art approaches typically emulate floating-point numbers using fixed-point representations (via quantization), and handle non-polynomial functions using lookup tables, piece-wise or low-degree polynomial approximations, which lead to sub-optimal performance and/or loss in accuracy or generality, limiting their potential for adoption in practice.\n\nIn this work, we present a general framework for approximating a large class of non-polynomial functions using Gauss-Legendre quadrature, which supports efficient ZKPs of correct computation. We show that our approach can scale to decrease the error up to the inherent limits imposed by quantization, without increasing the multiplicative circuit depth beyond a small constant (≤ 4). This is a strong deviation from prior approximation techniques, where decreasing the error leads to increased multiplicative depth– the main factor determining the error growth of an approximation. We implement and evaluate our approach in Noir/Barretenberg, and we obtain absolute errors 2−256× lower than comparable baselines for most non-polynomial functions with low prover overhead. We also demonstrate an efficient prover and low errors for high-accuracy applications in DeFi and astronomy that require non-polynomial functions, again obtaining errors 4−64× lower than the baseline approximations.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-1201287a",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Applications of Cryptography 6",
@@ -134,6 +136,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-1201287a",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/sridhar",
+      "kind": "paper-page",
+      "title": "Efficiently Provable Approximations for Non-Polynomial Functions",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:23:51Z",
+      "content_hash": "sha256:8f0d6a018f26e50158ed09a49ee0d5a22ab9fa2ec16cdba486c1f0f2c9ede071",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

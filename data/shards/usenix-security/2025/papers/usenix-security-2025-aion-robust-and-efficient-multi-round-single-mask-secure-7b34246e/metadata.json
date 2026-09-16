@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-aion-robust-and-efficient-multi-round-single-mask-secure-7b34246e",
   "title": "Aion: Robust and Efficient Multi-Round Single-Mask Secure Aggregation Against Malicious Participants",
+  "abstract": "Federated learning enables multiple clients to collaboratively train a model without sharing their data. Secure aggregation (SA) allows for the computation of aggregated models while protecting the private models of clients from disclosure, making it highly promising in large-scale real-world applications. Masking-based SA stands out due to its higher efficiency and accuracy. However, existing masking-based SA methods face issues such as high overhead, loss of correctness under poisoning attacks, and inability to tolerate malicious participants. In this paper, we propose Aion, a robust and efficient multi-round single-mask SA tolerating malicious participants. We introduce an aggregatable SA pattern in which each client only adds a single mask and performs only one secret sharing operation, while each aggregator only reconstructs a total secret or mask. Compared to Flamingo (S&P '23), this reduces the secret sharing times from rq to q (r for training round number and q for client number per round) and lowers n aggregators' mask reconstruction overhead from O(n^2) to O(n). Furthermore, we design a lightweight evolving input validation mechanism that efficiently filters out malicious client models by dynamically updating the mask range and overall bound, thereby improving model accuracy. Besides, we present robustness enhancements that tolerate malicious clients and aggregators. These constructions support aggregator share verification and asynchronous client model utilization. Finally, experiments demonstrate that Aion outperforms Flamingo by a factor of 563.64 in speed while achieving a 97.98% reduction in message overhead with 4096 clients and 8 aggregators, effectively defending against poisoning attacks with low overhead.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-7b34246e",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "ML and AI Privacy 1: Federated Learning and Protecting Data",
@@ -196,6 +198,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-7b34246e",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/liu-yizhong",
+      "kind": "paper-page",
+      "title": "Aion: Robust and Efficient Multi-Round Single-Mask Secure Aggregation Against Malicious Participants",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:18:31Z",
+      "content_hash": "sha256:9431bfc47296ddde6cbaf9eae6a435bdb117ccb0d1dc4538c4471c60eb4b5f17",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

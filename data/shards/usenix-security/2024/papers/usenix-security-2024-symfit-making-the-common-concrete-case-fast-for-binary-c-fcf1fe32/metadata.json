@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2024-symfit-making-the-common-concrete-case-fast-for-binary-c-fcf1fe32",
   "title": "SymFit: Making the Common (Concrete) Case Fast for Binary-Code Concolic Execution",
+  "abstract": "Concolic execution is a powerful technique in software testing, as it can systematically explore the code paths and is capable of traversing complex branches. It combines concrete execution for environment modeling and symbolic execution for path exploration. While significant research efforts in concolic execution have been directed toward the improvement of symbolic execution and constraint solving, our study pivots toward the often overlooked yet most common aspect: concrete execution. Our analysis shows that state-of-the-art binary concolic executors have largely overlooked the overhead in the execution of concrete instructions. In light of this observation, we propose optimizations to make the common (concrete) case fast. To validate this idea, we develop the prototype, SymFit, and evaluate it on standard benchmarks and real-world applications. The results showed that the performance of pure concrete execution is much faster than the baseline SymQEMU, and is comparable to the vanilla QEMU. Moreover, we showed that the fast symbolic tracing capability of SymFit can significantly improve the efficiency of crash deduplication.",
+  "abstract_source_id": "src-abstract-usenix-security-2024-fcf1fe32",
   "venue": "usenix-security",
   "year": 2024,
   "track_or_session": "Security Analysis I: Source Code and Binary",
@@ -133,6 +135,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2024-fcf1fe32",
+      "url": "https://www.usenix.org/conference/usenixsecurity24/presentation/qi",
+      "kind": "paper-page",
+      "title": "SymFit: Making the Common (Concrete) Case Fast for Binary-Code Concolic Execution",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:17:32Z",
+      "content_hash": "sha256:c6048cc0ac0935293d587e62d6edb5a97f318bcc913567d9f4728cfe52143199",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

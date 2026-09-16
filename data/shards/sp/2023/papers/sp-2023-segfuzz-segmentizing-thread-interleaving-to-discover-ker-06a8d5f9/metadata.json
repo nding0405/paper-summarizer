@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2023-segfuzz-segmentizing-thread-interleaving-to-discover-ker-06a8d5f9",
   "title": "SEGFUZZ: Segmentizing Thread Interleaving to Discover Kernel Concurrency Bugs through Fuzzing",
+  "abstract": "Discovering kernel concurrency bugs through fuzzing is challenging. Identifying kernel concurrency bugs, as opposed to non-concurrency bugs, necessitates an analysis of possible interleavings between two or more threads. However, because the search space of thread interleaving is vast, it is impractical to investigate all conceivable thread interleavings. To explore the vast search space, most previous approaches perform random or simple heuristic searches without having coverage for thread interleaving or with an insufficient form of coverage. As a result, they either conduct wasteful searches with redundant executions or overlook concurrent bugs that their coverage cannot address.To overcome such limitations, we propose SegFuzz, a fuzzing framework for kernel concurrency bugs. When exploring the search space of thread interleavings, SegFuzz decomposes an entire thread interleaving into a set of segments, each of which represents an interleaving of the small number of instructions, and utilizes individual segments as interleaving coverage, called interleaving segment coverage. When searching for thread interleavings, SegFuzz mutates interleavings in explored interleaving segments to construct new thread interleavings that have not yet been explored. With SegFuzz, we discover new 21 concurrency bugs in Linux kernels, and demonstrate the efficiency of SegFuzz by showing that SegFuzz can identify known bugs on average 4.1 times quickly than the state-of-the-art approaches.",
+  "abstract_source_id": "src-abstract-sp-2023-06a8d5f9",
   "venue": "sp",
   "year": 2023,
   "track_or_session": "Session 8A: Low-level software security",
@@ -172,6 +174,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2023-06a8d5f9",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "SegFuzz: Segmentizing Thread Interleaving to Discover Kernel Concurrency Bugs through Fuzzing",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:27Z",
+      "content_hash": "sha256:2c3c9cbfdcc9ef58a970a66aadb81bbaf8238409ab69d65565522a11e421be99",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "eurosys-2026-handling-network-faults-in-distributed-ai-training-failo-81832adb",
   "title": "Handling Network Faults in Distributed AI Training: Failover is Now an Option",
+  "abstract": "Distributed AI training often suffers from network faults. Network faults, especially at the last hop between a switch and a host, result in loss of connectivity, resulting in training job stalls and eventual failure. This is typically managed through a fail-stop mechanism, followed by a restart, incurring significant inefficiencies. We present ReCCL, the first network fault-tolerant collective communication library (CCL) that allows training progress to be preserved by seamlessly failing over to alternate paths when a network fault occurs. During failover, ReCCL keeps communication states synchronized while using dynamic channel load balancing and intra-host GPU routing to improve communication performance. Our evaluations demonstrate that ReCCL can perform failover seamlessly with minimal performance losses. Additionally, our simulations also demonstrate that failover can be effectively used to achieve significant savings in GPU hours for large-scale distributed AI training workloads.",
+  "abstract_source_id": "src-abstract-eurosys-2026-81832adb",
   "venue": "eurosys",
   "year": 2026,
   "track_or_session": null,
@@ -600,6 +602,19 @@
       "official": false,
       "supports": [
         "Publisher-deposited proceedings identity and print publication date."
+      ]
+    },
+    {
+      "id": "src-abstract-eurosys-2026-81832adb",
+      "url": "https://api.openalex.org/works/doi:10.1145/3767295.3769322?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Handling Network Faults in Distributed AI Training: Failover is Now an Option",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:20:22Z",
+      "content_hash": "sha256:dd6902e1e2ee56c7c97734049cd4cfc4ac4440e7bd169dd08a3a66fa8098ce3e",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

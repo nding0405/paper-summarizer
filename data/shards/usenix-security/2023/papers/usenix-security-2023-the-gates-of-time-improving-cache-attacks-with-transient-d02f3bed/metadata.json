@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2023-the-gates-of-time-improving-cache-attacks-with-transient-d02f3bed",
   "title": "The Gates of Time: Improving Cache Attacks with Transient Execution",
+  "abstract": "For over two decades, cache attacks have been shown to pose a significant risk to the security of computer systems. In particular, a large number of works show that cache attacks provide a stepping stone for implementing transient-execution attacks. However, much less effort has been expended investigating the reverse direction—how transient execution can be exploited for cache attacks. In this work, we answer this question.\n\nWe first show that using transient execution, we can perform arbitrary manipulations of the cache state. Specifically, we design versatile logical gates whose inputs and outputs are the caching state of memory addresses. Our gates are generic enough that we can implement them in WebAssembly. Moreover, the gates work on processors from multiple vendors, including Intel, AMD, Apple, and Samsung. We demonstrate that these gates are Turing complete and allow arbitrary computation on cache states, without exposing the logical values to the architectural state of the program.\n\nWe then show two use cases for our gates in cache attacks. The first use case is to amplify the cache state, allowing us to create timing differences of over 100 millisecond between the cases that a specific memory address is cached or not. We show how we can use this capability to build eviction sets in WebAssembly, using only a low-resolution (0.1 millisecond) timer. For the second use case, we present the Prime+Scope attack, a variant of Prime+Probe that decouples the sampling of cache states from the measurement of said state. Prime+Store is the first timing-based cache attack that can sample the cache state at a rate higher than the clock rate. We show how to use Prime+Store to obtain bits from a concurrently executing modular exponentiation, when the only timing signal is at a resolution of 0.1 millisecond.",
+  "abstract_source_id": "src-abstract-usenix-security-2023-d02f3bed",
   "venue": "usenix-security",
   "year": 2023,
   "track_or_session": "Cache Attacks",
@@ -154,6 +156,19 @@
       "official": true,
       "supports": [
         "authors, affiliations when published, abstract, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2023-d02f3bed",
+      "url": "https://www.usenix.org/conference/usenixsecurity23/presentation/katzman",
+      "kind": "paper-page",
+      "title": "The Gates of Time: Improving Cache Attacks with Transient Execution",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:13:13Z",
+      "content_hash": "sha256:f10cfc103982b6ee3b86cd122089c43c8d5d9067cf03d3dfe427cd7af27d4315",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

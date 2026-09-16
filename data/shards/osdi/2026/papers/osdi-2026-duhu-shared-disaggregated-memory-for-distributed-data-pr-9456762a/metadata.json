@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2026-duhu-shared-disaggregated-memory-for-distributed-data-pr-9456762a",
   "title": "Duhu: Shared Disaggregated Memory for Distributed Data Processing Frameworks",
+  "abstract": "Today’s distributed data processing frameworks (DDFs) have large memory and network transfer overheads because these frameworks require that each node (server or VM) copy objects into local memory before processing. Emerging shared disaggregated memory (SDM) clusters enable an alternate approach because they allow nodes to access data in a shared memory. However, using SDMs for DDFs is challenging: current SDM clusters provide weak coherence guarantees, and even for emerging SDMs coherence poses a scalability and complexity challenge. Thus, to adopt SDMs, a DDF would need to modify its logic and implement software coordination. In this paper, we describe Duhu, an SDM-based object store that is designed to allow DDFs to use SDMs without these changes, simplifying their adoption. We have integrated Duhu with Ray, and evaluated our system on an SDM cluster with a prototype CXL-attached memory pool. We show that Duhu can improve job completion time (JCT) by up to 3.39× on a shuffle workload.",
+  "abstract_source_id": "src-abstract-osdi-2026-9456762a",
   "venue": "osdi",
   "year": 2026,
   "track_or_session": "Disaggregated Memory Systems",
@@ -209,6 +211,19 @@
       "official": true,
       "supports": [
         "Official proceedings availability and canonical conference versions."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2026-9456762a",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/men",
+      "kind": "paper-page",
+      "title": "Duhu: Shared Disaggregated Memory for Distributed Data Processing Frameworks",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:08:12Z",
+      "content_hash": "sha256:480d38c3c26d4b674c53613d04f8ead94a752305e9d9911cb84d88b46cccce23",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "eurosys-2026-lorafusion-efficient-lora-fine-tuning-for-llms-9cead93f",
   "title": "LoRAFusion: Efficient LoRA Fine-Tuning for LLMs",
+  "abstract": "Low-Rank Adaptation (LoRA) has become the leading Parameter-Efficient Fine-Tuning (PEFT) method for Large Language Models (LLMs), as it significantly reduces GPU memory usage while maintaining competitive fine-tuned model quality on downstream tasks. However, existing LLM LoRA fine-tuning systems mainly reuse optimizations from traditional full-model fine-tuning, and therefore cannot take full advantage of LoRA's unique characteristics. We identify two key inefficiencies of existing works. First, existing LoRA fine-tuning systems incur substantial runtime overhead due to redundant memory accesses on large activation tensors. Second, they miss the opportunity to concurrently fine-tune multiple independent LoRA adapters that share the same base model on the same set of GPUs. This leads to missed performance gains such as reduced pipeline bubbles, better communication overlap, and improved GPU load balance.",
+  "abstract_source_id": "src-abstract-eurosys-2026-9cead93f",
   "venue": "eurosys",
   "year": 2026,
   "track_or_session": null,
@@ -201,6 +203,19 @@
       "official": false,
       "supports": [
         "Publisher-deposited proceedings identity and print publication date."
+      ]
+    },
+    {
+      "id": "src-abstract-eurosys-2026-9cead93f",
+      "url": "https://api.openalex.org/works/doi:10.1145/3767295.3769331?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "LoRAFusion: Efficient LoRA Fine-Tuning for LLMs",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:20:41Z",
+      "content_hash": "sha256:7165ae9c07b1b79b0b33054d0e7d5e70d541f0f4a82fb07e1573647059f19ef5",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

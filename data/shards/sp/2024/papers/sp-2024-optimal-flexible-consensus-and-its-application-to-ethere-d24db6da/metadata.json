@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2024-optimal-flexible-consensus-and-its-application-to-ethere-d24db6da",
   "title": "Optimal Flexible Consensus and its Application to Ethereum",
+  "abstract": "Classic BFT consensus protocols guarantee safety and liveness for all clients if fewer than one-third of replicas are faulty. However, in applications such as high-value payments, some clients may want to prioritize safety over liveness. Flexible consensus allows each client to opt for higher safety resilience, albeit at the expense of reduced liveness resilience. We present the first construction that allows optimal safety–liveness tradeoff for every client simultaneously. This construction is modular and is realized as an add-on applied on top of an existing consensus protocol. The add-on consists of an additional round of voting and permanent locking done by the replicas, to sidestep a sub-optimal quorum-intersection-based constraint present in previous solutions. We adapt our construction to the existing Ethereum protocol to derive optimal flexible confirmation rules that clients can adopt unilaterally without requiring system-wide changes. This is possible because existing Ethereum protocol features can double as the extra voting and locking. We show an implementation using Ethereum’s consensus API.",
+  "abstract_source_id": "src-abstract-sp-2024-d24db6da",
   "venue": "sp",
   "year": 2024,
   "track_or_session": "Summer cycle",
@@ -159,6 +161,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2024-d24db6da",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Optimal Flexible Consensus and its Application to Ethereum",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:37Z",
+      "content_hash": "sha256:d186972817127125a98a71b907d7b283fa37f2e757aaf5b9ae232aa389caabc0",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

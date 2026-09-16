@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sigcomm-2026-towards-efficient-verification-of-distributed-in-network-458065ef",
   "title": "Towards Efficient Verification of Distributed In-Network Computing Programs",
+  "abstract": "Distributed in-network programs are increasingly deployed in data centers for their performance benefits, but shifting application logic to switches also enlarges the failure domain. Ensuring their correctness before deployment is thus critical for reliability. While prior verification frameworks can efficiently verify programs running on a single switch, they overlook the common interactive behaviors in distributed settings, thereby missing related bugs that can cause system failures. This paper presents Procurator, a verification framework that efficiently captures interactive behaviors in distributed in-network programs. Procurator models each P4 pipeline as a reactive actor and unifies their interactions as message passing to capture interactive behaviors under an event-driven paradigm. To improve the verification efficiency, Procurator employs an intermediate representation (IR) pruner to reduce the execution space and a schedule-replay-based acceleration approach to avoid explicit exploration of long execution traces. Evaluation shows that Procurator uncovers 28 distinct bugs in twelve real-world distributed in-network systems, and achieves up to a 9.1X speedup over the state-of-the-art framework.",
+  "abstract_source_id": "src-abstract-458065ef",
   "venue": "sigcomm",
   "year": 2026,
   "track_or_session": "Research Session 2: Network Verification & Formal Methods — Research Paper",
@@ -338,6 +340,19 @@
       "official": true,
       "supports": [
         "official main-paper scope and track definitions"
+      ]
+    },
+    {
+      "id": "src-abstract-458065ef",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/search/match?query=Towards%20Efficient%20Verification%20of%20Distributed%20In-Network%20Computing%20Programs&fields=title,abstract",
+      "kind": "semantic-scholar",
+      "title": "Towards Efficient Verification of Distributed In-Network Computing Programs",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T23:07:51Z",
+      "content_hash": "sha256:374f377338af0a73c18a92fa2caa83bc10086769b0a1e91d7b044b2a29997c04",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

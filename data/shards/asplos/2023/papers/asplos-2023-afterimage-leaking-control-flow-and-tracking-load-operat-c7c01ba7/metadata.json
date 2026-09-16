@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2023-afterimage-leaking-control-flow-and-tracking-load-operat-c7c01ba7",
   "title": "AfterImage: Leaking Control Flow and Tracking Load Operations via the Hardware Prefetcher",
+  "abstract": "Research into processor-based side-channels has seen both a large number and a large variety of disclosed vulnerabilities that can leak critical, private data to malicious attackers. While most previous works require speculative execution and the use of cache primitives to transmit data, our new approach, called AfterImage, requires neither, capitalizing on vulnerabilities in Intel’s IP-stride prefetcher to both expose and transmit victim data. By training this prefetcher with attacker-known values, and watching for changes to the prefetcher state when execution returns to the attacker, it is now possible to monitor and leak critical data from a large number of common userspace applications and kernel routines without speculation and additional cache accesses. To demonstrate the novel capabilities of AfterImage, we (1) present proof-of-concept attacks that leak data across different isolation levels, (2) present an end-to-end attack that leaks an entire RSA key from a modern, timing-balanced algorithm, and also (3) show how AfterImage can significantly improve the effectiveness of other attacks, such as power side-channel attacks, by using this technique as a high-precision marker.",
+  "abstract_source_id": "src-abstract-asplos-2023-c7c01ba7",
   "venue": "asplos",
   "year": 2023,
   "track_or_session": "Session 9C: Hardware Security",
@@ -125,6 +127,19 @@
       "official": false,
       "supports": [
         "Indexed abstract used with the official technical-session context for relevance classification, plus alternate-copy and explicitly printed ancillary links."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2023-c7c01ba7",
+      "url": "https://api.openalex.org/works/doi:10.1145/3575693.3575719?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "AfterImage: Leaking Control Flow Data and Tracking Load Operations via the Hardware Prefetcher",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T21:59:20Z",
+      "content_hash": "sha256:6edea1e5907935a84c13873c2e620f78a11cd1bee4a3ac928136f20c508fa892",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

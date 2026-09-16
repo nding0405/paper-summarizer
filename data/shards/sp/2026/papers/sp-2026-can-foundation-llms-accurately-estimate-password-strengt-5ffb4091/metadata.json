@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2026-can-foundation-llms-accurately-estimate-password-strengt-5ffb4091",
   "title": "Can Foundation LLMs Accurately Estimate Password Strength and Provide Appropriate Password Feedback?",
+  "abstract": "Password-strength models help users choose strong passwords. These models typically identify predictable passwords by training on millions of stolen passwords. We instead investigate if pretrained large language models (LLMs) can assess a password's strength based on semantic properties. We adapt LLMs in two distinct ways. First, mirroring LLMs' typical usage, we directly prompt four LLMs to estimate password strength. Second, mirroring prior probabilistic password models, we explicitly calculate the probability of passwords using lLMs fine-tuned on password data. We uncover technical challenges with doing so, developing strategies to reduce computational costs by a median of $25-97 \\%$ depending on a password's length. We also perform an ablation study to gauge how key design dimensions (e.g., pretraining, data quantity) impact fine-tuned LLMs' accuracy. We find many fine-tuned models outperform prompted models despite being far smaller. Across both prompting and fine-tuning, LLMs modeled wordlike passwords well-including for out-of-distribution passwords (e.g., with recent cultural references)-yet struggled on more complex passwords. We also prompted LLMs to suggest how to improve specific passwords. The LLMs often gave poor or predictable feedback (e.g., making common substitutions, appending an exclamation point, or inserting “blue”).",
+  "abstract_source_id": "src-abstract-sp-2026-5ffb4091",
   "venue": "sp",
   "year": 2026,
   "track_or_session": "Cycle 2",
@@ -196,6 +198,19 @@
       "official": true,
       "supports": [
         "DOI, published-order authors and affiliations, abstract, publication date, page span, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2026-5ffb4091",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Can Foundation LLMs Accurately Estimate Password Strength and Provide Appropriate Password Feedback?",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:57Z",
+      "content_hash": "sha256:303a9b5e5ef8908a3cfe67f02eb8a87be978a5fe3281c7ecec8c0cdb512517e0",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

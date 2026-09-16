@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2025-impact-tracing-identifying-the-culprit-of-misinformation-de3a6ebb",
   "title": "Impact Tracing: Identifying the Culprit of Misinformation in Encrypted Messaging Systems",
+  "abstract": "Encrypted messaging systems obstruct content moderation, although they provide end-to-end security. As a result, misinformation proliferates in these systems, thereby exacerbating online hate and harassment. The paradigm of ``Reporting-then-Tracing\" shows great potential in mitigating the spread of misinformation. For instance, textit{message traceback} (CCS'19) traces all the dissemination paths of a message, while textit{source tracing} (CCS'21) traces its originator.\n\nHowever, message traceback lacks privacy preservation for non-influential users (e.g., users who only receive the message once), while source tracing maintains privacy but only provides limited traceability.\n\nIn this paper, we initiate the study of textit{impact tracing}. Intuitively, impact tracing traces influential spreaders central to disseminating misinformation while providing privacy protection for non-influential users. We introduce noises to hide non-influential users and demonstrate that these noises do not hinder the identification of influential spreaders. Then, we formally prove our scheme's security and show it achieves differential privacy protection for non-influential users.\n\nAdditionally, we define three metrics to evaluate its traceability, correctness, and privacy using real-world datasets. The experimental results show that our scheme identifies the most influential spreaders with accuracy from 82% to 99% as the amount of noise varies. Meanwhile, our scheme requires only a 6-byte platform storage overhead for each message while maintaining a low messaging latency ($",
+  "abstract_source_id": "src-abstract-ndss-2025-de3a6ebb",
   "venue": "ndss",
   "year": 2025,
   "track_or_session": "Fall submission cycle",
@@ -210,6 +212,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2025-de3a6ebb",
+      "url": "https://www.ndss-symposium.org/ndss-paper/impact-tracing-identifying-the-culprit-of-misinformation-in-encrypted-messaging-systems/",
+      "kind": "paper-page",
+      "title": "Impact Tracing: Identifying the Culprit of Misinformation in Encrypted Messaging Systems",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:19:46Z",
+      "content_hash": "sha256:6a0ecfc1a566b8d7b43dabd640155af29b807be125a1faf757120e0975aa573b",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

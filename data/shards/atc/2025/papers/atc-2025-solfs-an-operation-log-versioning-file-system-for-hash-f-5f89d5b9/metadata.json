@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "atc-2025-solfs-an-operation-log-versioning-file-system-for-hash-f-5f89d5b9",
   "title": "SolFS: An Operation-Log Versioning File System for Hash-free Efficient Mobile Cloud Backup",
+  "abstract": "Mobile cloud backup applications are widely used to safeguard user data. This paper found that current cloud backup is inefficient on resource-limited mobile devices because it consumes excessive CPU resources for delta synchronization that requires intensive hash computation to identify the modified ranges of file data. To address this issue, this paper presents SolFS, an operation log versioning file system to optimize mobile cloud backup efficiency. The core idea is that if the cloud backup application knows the modified offset and length of each write since the last backup, it will be able to identify the new modified data and upload them only, avoiding data hashing throughout the entire file. SolFS proposes a series of designs to achieve this design goal. First, SolFS introduces per-file mergeable operation logging that allows each file to manage its write operation logs (i.e., offset and length) in an extent tree and merge operation logs with contiguous or overlapping modified ranges of file data. Then, SolFS proposes the operation log persistence and versioning mechanism that allows different cloud backup applications to manage their own file versions without interfering with each other. In addition, SolFS incorporates techniques such as compact log and dynamic granularity, to optimize the memory and storage overhead to the system. Finally, SolFS achieves hash-free file difference identification with minimum additional overhead and extends the ability of cloud backup applications. The experimental results show that SolFS can significantly reduce the computational overhead of both APP-side or server-side over 90% on average and the total cloud synchronization time by over 88.8% when files are updated.",
+  "abstract_source_id": "src-abstract-atc-2025-5f89d5b9",
   "venue": "atc",
   "year": 2025,
   "track_or_session": "Storage Innovations: Logs, Tiers, and Modern Flash",
@@ -201,6 +203,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-atc-2025-5f89d5b9",
+      "url": "https://www.usenix.org/conference/atc25/presentation/pan",
+      "kind": "paper-page",
+      "title": "SolFS: An Operation-Log Versioning File System for Hash-free Efficient Mobile Cloud Backup",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:00:12Z",
+      "content_hash": "sha256:d5c3abb8422b545fbaa9998b6e1caac1b83a798e7958d3168aa666590cd5f2f9",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sosp-2026-a-few-gpus-a-whole-lotta-scale-faithful-llm-training-emu-1858206b",
   "title": "A Few GPUs, A Whole Lotta Scale: Faithful LLM Training Emulation with CrystalLLM",
+  "abstract": "Large language model (LLM) training today runs on clusters spanning thousands of GPUs. While this scale enables rapid model advances, developing, debugging, and performance-tuning the training framework inevitably becomes complex and costly. This is because engineers often need to reproduce production behaviors to diagnose failures or evaluate optimizations, thereby demanding frequent and even exclusive access to production-scale clusters -- which becomes increasingly hard given that the majority of GPUs are already committed to production workloads. Simulation relies on complex performance models that are difficult to maintain, and downscaled experiments often fail to capture scale-dependent behaviors. We present PrismLLM to decouple large-scale execution from the need to access large clusters, enabling engineers to run and observe ranks of interest under faithful large-scale behavior using only a few GPUs. PrismLLM constructs a high-fidelity execution graph via a slicing-based approach that captures computation, communication, and dependencies of the target scale. Then, PrismLLM performs hybrid emulation where selected ranks execute the original program while the remaining ranks are replayed as virtual participants. Experiments on large-scale LLM training workloads show that PrismLLM accurately reproduces performance and memory behavior, achieving only 0.58\\% average error in iteration time and less than 0.01\\% error in peak GPU memory usage. PrismLLM can emulate clusters of up to 8192 GPUs using fewer than 1\\% of the physical GPUs required by the original deployment.",
+  "abstract_source_id": "src-abstract-1858206b",
   "venue": "sosp",
   "year": 2026,
   "track_or_session": null,
@@ -343,6 +345,19 @@
       "official": true,
       "supports": [
         "Official camera-ready deadline and shepherd-approval requirements supporting accepted-papers-only status."
+      ]
+    },
+    {
+      "id": "src-abstract-1858206b",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/search/match?query=A%20Few%20GPUs%2C%20A%20Whole%20Lotta%20Scale%3A%20Faithful%20LLM%20Training%20Emulation%20with%20CrystalLLM&fields=title,abstract",
+      "kind": "semantic-scholar",
+      "title": "A Few GPUs, A Whole Lotta Scale: Faithful LLM Training Emulation with PrismLLM",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T23:10:38Z",
+      "content_hash": "sha256:3c0c295038ee2cb00bc435df7b6478d8c1d7ba739817c1ac6f1eca105058b196",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

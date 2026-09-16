@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2024-atomic-and-fair-data-exchange-via-blockchain-27653a19",
   "title": "Atomic and Fair Data Exchange via Blockchain",
+  "abstract": "We introduce a blockchain Fair Data Exchange (FDE) protocol, enabling a storage server to transfer a data file to a client atomically: the client receives the file if and only if the server receives an agreed-upon payment. We put forth a new definition for a cryptographic scheme that we name verifiable encryption under committed key (VECK), and we propose two instantiations for this scheme. Our protocol relies on a blockchain to enforce the atomicity of the exchange and uses VECK to ensure that the client receives the correct data (matching an agreed-upon commitment) before releasing the payment for the decrypting key. Our protocol is trust-minimized and requires only constant-sized on-chain communication, concretely 3 signatures, 1 verification key, and 1 secret key, with most of the data stored and communicated off-chain. It also supports exchanging only a subset of the data, can amortize the server's work across multiple clients, and offers a general framework to design alternative FDE protocols using different commitment schemes. A prominent application of our protocol is the Danksharding data availability scheme on Ethereum, which commits to data via KZG polynomial commitments. We also provide an open-source implementation for our protocol with both instantiations for VECK, demonstrating our protocol's efficiency and practicality on Ethereum.",
+  "abstract_source_id": "src-abstract-ccs-2024-27653a19",
   "venue": "ccs",
   "year": 2024,
   "track_or_session": "Cycle 2",
@@ -222,6 +224,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2024-27653a19",
+      "url": "https://api.openalex.org/works/doi:10.1145/3658644.3690248?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Atomic and Fair Data Exchange via Blockchain",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:08:43Z",
+      "content_hash": "sha256:6ea2f6b658321a638f9b0220cb79318a5b6381245b64570a71737b5be0c7dbf8",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

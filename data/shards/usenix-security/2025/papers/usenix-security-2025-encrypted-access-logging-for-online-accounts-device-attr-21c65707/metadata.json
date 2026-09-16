@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-encrypted-access-logging-for-online-accounts-device-attr-21c65707",
   "title": "Encrypted Access Logging for Online Accounts: Device Attributions without Device Tracking",
+  "abstract": "Despite improvements in authentication mechanisms, compromise of online accounts remains prevalent. Therefore, technologies to detect compromise retroactively are also necessary. Service providers try to help users diagnose the security status of their accounts via account security interfaces (ASIs) that display recent logins or other activity. Recent work showed how major services' ASIs are untrustworthy because they rely on easily manipulated client-provided values. The reason is a seemingly fundamental tension between accurately attributing accesses to particular devices and the need to prevent online services from tracking devices.\n\nWe propose client-side encrypted access logging (CSAL) as a new approach that navigates the tension between tracking privacy and ASI utility. The key idea is to add to account activity logs end-to-end (E2E) encrypted device identification information, leveraging OS support and FIDO2-style attestations. We detail a full proposal for a CSAL protocol that works alongside existing authentication mechanisms and provide a formal analysis of integrity, privacy, and unlinkability in the face of honest-but-curious adversaries. Interestingly, a key challenge is characterizing what is feasible in terms of logging in this setting. We discuss security against active adversaries, provide a proof-of-concept implementation, and overall show feasibility of how OS vendors and service providers can work together towards improved account security and user safety.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-21c65707",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Crypto 4: Systems and Protocols",
@@ -91,6 +93,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-21c65707",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/ortega-perez",
+      "kind": "paper-page",
+      "title": "Encrypted Access Logging for Online Accounts: Device Attributions without Device Tracking",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:19:38Z",
+      "content_hash": "sha256:68496a1ef50b695b7f70313f1337f04ce58f14a8cb6b9ee108246bed66cc31a0",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

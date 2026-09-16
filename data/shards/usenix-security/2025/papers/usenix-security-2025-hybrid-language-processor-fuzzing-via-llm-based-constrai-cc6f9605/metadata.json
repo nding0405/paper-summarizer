@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-hybrid-language-processor-fuzzing-via-llm-based-constrai-cc6f9605",
   "title": "Hybrid Language Processor Fuzzing via LLM-Based Constraint Solving",
+  "abstract": "Language processors, such as compilers and interpreters, play a crucial role in modern cyberspace. Faulty language processors can lead to severe consequences such as incorrect functionalities or malicious attacks. It is non-trivial to automatically test language processors to detect faulty behaviors, because language processors are multistaged and require various complex constraints to reach deep program states. Existing testing (fuzzing) approaches either fail to effectively generate inputs that satisfy the complex constraints or fail to generalize due to their heavy reliance on target-specific constraint modeling heuristics. In this paper, we explore the potential of using LLMs for constraint solving to address these limitations and identify two challenges regarding constraint prioritization and context construction. To effectively address these challenges, we propose two novel solutions, hybrid centrality prioritization and iterative context construction. We implement the solutions in a hybrid fuzzing framework, HLPFuzz, which leverages an LLM to overcome complex constraints and reach deep program states. In our evaluation, HLPFuzz successfully discovers 52 bugs in 9 popular language processors, of which 37 are confirmed and 14 are fixed. HLPFuzz also outperforms state-of-the-art solutions by up to 190% in code coverage and discovers 5x more bugs than the second-best fuzzer, with minimal reliance on target-specific heuristics.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-cc6f9605",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Software Security 3: Fuzzing",
@@ -133,6 +135,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-cc6f9605",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/yang-yupeng",
+      "kind": "paper-page",
+      "title": "Hybrid Language Processor Fuzzing via LLM-Based Constraint Solving",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:20:18Z",
+      "content_hash": "sha256:ee4fab51962a5aefc66af83a2dc4cb1f58a58b388c961abadae0cac3e629bbcf",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

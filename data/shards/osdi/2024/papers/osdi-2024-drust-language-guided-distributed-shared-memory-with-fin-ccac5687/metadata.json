@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2024-drust-language-guided-distributed-shared-memory-with-fin-ccac5687",
   "title": "DRust: Language-Guided Distributed Shared Memory with Fine Granularity, Full Transparency, and Ultra Efficiency",
+  "abstract": "Despite being a powerful concept, distributed shared memory (DSM) has not been made practical due to the extensive synchronization needed between servers to implement memory coherence. This paper shows a practical DSM implementation based on the insight that the ownership model embedded in programming languages such as Rust automatically constrains the order of read and write, providing opportunities for significantly simplifying the coherence implementation if the ownership semantics can be exposed to and leveraged by the runtime. This paper discusses the design and implementation of DRust, a Rust-based DSM system that outperforms the two state-of-the-art DSM systems GAM and Grappa by up to 2.64× and 29.16× in throughput, and scales much better with the number of servers.",
+  "abstract_source_id": "src-abstract-osdi-2024-ccac5687",
   "venue": "osdi",
   "year": 2024,
   "track_or_session": "Memory Management",
@@ -285,6 +287,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2024-ccac5687",
+      "url": "https://www.usenix.org/conference/osdi24/presentation/ma-haoran",
+      "kind": "paper-page",
+      "title": "DRust: Language-Guided Distributed Shared Memory with Fine Granularity, Full Transparency, and Ultra Efficiency",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:07:01Z",
+      "content_hash": "sha256:5437a77e09f23298a02136ffa0856227502d4bb221155939d2bd23cf90c0c9f9",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2023-drone-security-and-the-mysterious-case-of-djis-droneid-0221085c",
   "title": "Drone Security and the Mysterious Case of DJI’s DroneID",
+  "abstract": "Consumer drones enable high-class aerial video photography, promise to reform the logistics industry, and are already used for humanitarian rescue operations and during armed conflicts. Contrasting their widespread adoption and high popularity, the low entry barrier for air mobility---a traditionally heavily regulated sector---poses many risks to safety, security, and privacy. Malicious parties could, for example, (mis-)use drones for surveillance, transportation of illegal goods, or cause economic damage by intruding the closed airspace above airports. To prevent harm, drone manufacturers employ several countermeasures to enforce safe and secure use of drones, e.g., they impose software limits regarding speed and altitude, or use geofencing to implement no-fly zones around airports or prisons. Complementing traditional countermeasures, drones from the market leader DJI implement a tracking protocol called DroneID, which is designed to transmit the position of both the drone and its operator to authorized entities such as law enforcement or operators of critical infrastructures.\n\nIn this paper, we analyze security and privacy claims for drones, focusing on the leading manufacturer DJI with a market share of 94%. We first systemize the drone attack surface and investigate an attacker capable of eavesdropping on the drone's over-the-air data traffic. Based on reverse engineering of DJI firmware, we design and implement a decoder for DJI's proprietary tracking protocol DroneID, using only cheap COTS hardware. We show that the transmitted data is not encrypted, but accessible to anyone, compromising the drone operator's privacy. Second, we conduct a comprehensive analysis of drone security: Using a combination of reverse engineering, a novel fuzzing approach tailored to DJI's communication protocol, and hardware analysis, we uncover several critical flaws in drone firmware that allow attackers to gain elevated privileges on two different DJI drones and their remote control. Such root access paves the way to disable or bypass countermeasures and abuse drones. In total, we found 16 vulnerabilities, ranging from denial of service to arbitrary code execution. 14 of these bugs can be triggered remotely via the operator's smartphone, allowing us to crash the drone mid-flight.",
+  "abstract_source_id": "src-abstract-ndss-2023-0221085c",
   "venue": "ndss",
   "year": 2023,
   "track_or_session": "Software Security II",
@@ -252,6 +254,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2023-0221085c",
+      "url": "https://www.ndss-symposium.org/ndss-paper/drone-security-and-the-mysterious-case-of-djis-droneid/",
+      "kind": "paper-page",
+      "title": "Drone Security and the Mysterious Case of DJI’s DroneID",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:16:54Z",
+      "content_hash": "sha256:32fc62582bd2127729594daa802a6d27898bd474d331e4a3ac6072a682fded15",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

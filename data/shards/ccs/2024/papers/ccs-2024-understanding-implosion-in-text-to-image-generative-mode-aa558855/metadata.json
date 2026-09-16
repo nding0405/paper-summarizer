@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2024-understanding-implosion-in-text-to-image-generative-mode-aa558855",
   "title": "Understanding Implosion in Text-to-Image Generative Models",
+  "abstract": "Recent works show that text-to-image generative models are surprisingly vulnerable to a variety of poisoning attacks. Empirical results find that these models can be corrupted by altering associations between individual text prompts and associated visual features. Furthermore, a number of concurrent poisoning attacks can induce \"model implosion,\" where the model becomes unable to produce meaningful images for unpoisoned prompts. These intriguing findings highlight the absence of an intuitive framework to understand poisoning attacks on these models. In this work, we establish the first analytical framework on robustness of image generative models to poisoning attacks, by modeling and analyzing the behavior of the cross-attention mechanism in latent diffusion models. We model cross-attention training as an abstract problem of \"supervised graph alignment\" and formally quantify the impact of training data by the hardness of alignment, measured by an Alignment Difficulty (AD) metric. The higher the AD, the harder the alignment. We prove that AD increases with the number of individual prompts (or concepts) poisoned. As AD grows, the alignment task becomes increasingly difficult, yielding highly distorted outcomes that frequently map meaningful text prompts to undefined or meaningless visual representations. As a result, the generative model implodes and outputs random, incoherent images at large. We validate our analytical framework through extensive experiments, and we confirm and explain the unexpected (and unexplained) effect of model implosion while producing new, unforeseen insights. Our work provides a useful tool for studying poisoning attacks against diffusion models and their defenses.",
+  "abstract_source_id": "src-abstract-ccs-2024-aa558855",
   "venue": "ccs",
   "year": 2024,
   "track_or_session": "Cycle 2",
@@ -180,6 +182,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2024-aa558855",
+      "url": "https://api.openalex.org/works/doi:10.1145/3658644.3690205?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Understanding Implosion in Text-to-Image Generative Models",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:12:24Z",
+      "content_hash": "sha256:c531238e9346447d830d62847b21c7e5a455d5985528a34d14c8a2983a4542c6",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

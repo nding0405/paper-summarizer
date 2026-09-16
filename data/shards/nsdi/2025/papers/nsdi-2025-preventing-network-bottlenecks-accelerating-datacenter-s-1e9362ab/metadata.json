@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2025-preventing-network-bottlenecks-accelerating-datacenter-s-1e9362ab",
   "title": "Preventing Network Bottlenecks: Accelerating Datacenter Services with Hotspot-Aware Placement for Compute and Storage",
+  "abstract": "Datacenter network hotspots, defined as links with persistently high utilization, can lead to performance bottlenecks.In this work, we study hotspots in Google’s datacenter networks. We find that these hotspots occur most frequently at ToR switches and can persist for hours. They are caused mainly by bandwidth demand-supply imbalance, largely due to high demand from network-intensive services, or demand exceeding available bandwidth when compute/storage upgrades outpace ToR bandwidth upgrades. Compounding this issue is bandwidth-independent task/data placement by data-center compute and storage schedulers. We quantify the performance impact of hotspots, and find that they can degrade the end-to-end latency of some distributed applications by over 2× relative to low utilization levels. Finally, we describe simple improvements we deployed. In our cluster scheduler, adding hotspot-aware task placement reduced the number of hot ToRs by 90%; in our distributed file system, adding hotspot-aware data placement reduced p95 network latency by more than 50%. While congestion control, load balancing, and traffic engineering can efficiently utilize paths for a fixed placement, we find hotspot-aware placement – placing tasks and data under ToRs with higher available bandwidth – is crucial for achieving consistently good performance.",
+  "abstract_source_id": "src-abstract-nsdi-2025-1e9362ab",
   "venue": "nsdi",
   "year": 2025,
   "track_or_session": "Failure and Diagnosis",
@@ -350,6 +352,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2025-1e9362ab",
+      "url": "https://www.usenix.org/conference/nsdi25/presentation/bazzaz",
+      "kind": "paper-page",
+      "title": "Preventing Network Bottlenecks: Accelerating Datacenter Services with Hotspot-Aware Placement for Compute and Storage",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:04:29Z",
+      "content_hash": "sha256:6d2d9870fd7d3d60af758c43cbc8aca2fcef54e9ea296702a81176b5dca4a5fa",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

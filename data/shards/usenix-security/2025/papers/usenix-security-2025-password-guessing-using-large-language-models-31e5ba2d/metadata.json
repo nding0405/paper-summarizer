@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-password-guessing-using-large-language-models-31e5ba2d",
   "title": "Password Guessing Using Large Language Models",
+  "abstract": "Passwords are ubiquitously used for authentication/encryption, and password guessing attacks are the most effective technique for evaluating password strength. While large language models (LLMs) like ChatGPT-4o have demonstrated remarkable capabilities in text comprehension and reasoning across various general natural language processing tasks, they face limitations due to their static knowledge (e.g., fixed training data that lacks domain adaptability), especially in specialized tasks such as generating accurate password guesses.\n\nThis work provides a brand new technical route for password guessing, by proposing an LLM-based guessing framework, namely PassLLM, that leverages low-rank adaptation techniques. PassLLM systematically addresses four major password guessing scenarios, each of which is based on varied kinds of information available to the attacker. To reduce the high computation costs in password generation with LLMs, we propose two generation algorithms tailored for trawling and targeted guessing, respectively, enabling efficient password generation at scale (e.g., 1,000 guesses per user). Further, we apply model distillation to improve the generation speed by 11.5 times in trawling guessing scenarios without significantly reducing the success rate. Particularly, our generation algorithms are applicable to a wide range of decoder-only-based LLMs (e.g., Mistral, Llama-2/3, and Qwen-2).\n\nExtensive experiments on 11 real-world password datasets demonstrate the effectiveness of our framework: (1) PassLLM for trawling guessing scenarios, whose guessing success rates are generally 2.87%-17.07% higher than its foremost counterpart; (2) PassLLM-I for targeted guessing based on personally identifiable information (PII), which guesses 12.54%-31.63% of common users within 100 guesses, outperforming its foremost counterpart by 15.10%-45.98%; (3) PassLLM-II for targeted guessing based on users' password reuse behaviors, which outperforms its foremost counterpart by 6.31%-13.87%; and (4) PassLLM-III for targeted guessing based on users' PII and sister password(s), which outperforms its foremost counterpart by 13.44%-36.14%. We believe this work makes a substantial step toward introducing LLMs into the password guessing domain.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-31e5ba2d",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Authentication",
@@ -112,6 +114,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-31e5ba2d",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/zou-yunkai",
+      "kind": "paper-page",
+      "title": "Password Guessing Using Large Language Models",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:21:02Z",
+      "content_hash": "sha256:1f29db895a90073198c1c0669a7cae25231745993c675fb7d8c8c02939403ac9",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

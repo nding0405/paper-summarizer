@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2024-gofetch-breaking-constant-time-cryptographic-implementat-4551b2ab",
   "title": "GoFetch: Breaking Constant-Time Cryptographic Implementations Using Data Memory-Dependent Prefetchers",
+  "abstract": "Microarchitectural side-channel attacks have shaken the foundations of modern processor design. The cornerstone defense against these attacks has been to ensure that security-critical programs do not use secret-dependent data as addresses. Put simply: do not pass secrets as addresses to, e.g., data memory instructions. Yet, the discovery of data memory-dependent prefetchers (DMPs)—which turn program data into addresses directly from within the memory system—calls into question whether this approach will continue to remain secure.\n\nThis paper shows that the security threat from DMPs is significantly worse than previously thought and demonstrates the first end-to-end attacks on security-critical software using the Apple m-series DMP. Undergirding our attacks is a new understanding of how DMPs behave which shows, among other things, that the Apple DMP will activate on behalf of any victim program and attempt to \"leak\" any cached data that resembles a pointer. From this understanding, we design a new type of chosen-input attack that uses the DMP to perform end-to-end key extraction on popular constant-time implementations of classical (OpenSSL Diffie-Hellman Key Exchange, Go RSA decryption) and post-quantum cryptography (CRYSTALS-Kyber and CRYSTALS-Dilithium).",
+  "abstract_source_id": "src-abstract-usenix-security-2024-4551b2ab",
   "venue": "usenix-security",
   "year": 2024,
   "track_or_session": "Hardware Security II: Architecture and Microarchitecture",
@@ -196,6 +198,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2024-4551b2ab",
+      "url": "https://www.usenix.org/conference/usenixsecurity24/presentation/chen-boru",
+      "kind": "paper-page",
+      "title": "GoFetch: Breaking Constant-Time Cryptographic Implementations Using Data Memory-Dependent Prefetchers",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:15:26Z",
+      "content_hash": "sha256:05bd4245b53eebc8ea80e5b4c60db5a99c2db78c2a76e7c818e7ffaa3920ccd2",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

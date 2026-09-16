@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2025-oreo-protecting-aslr-against-microarchitectural-attacks-6e053187",
   "title": "Oreo: Protecting ASLR Against Microarchitectural Attacks",
+  "abstract": "Address Space Layout Randomization (ASLR) is one of the most prominently deployed mitigations against memory corruption attacks. ASLR randomly shuffles program virtual addresses to prevent attackers from knowing the location of program contents in memory. Microarchitectural side channels have been shown to defeat ASLR through various hardware mechanisms. We systematically analyze existing microarchitectural attacks and identify multiple leakage paths. Given the vast attack surface exposed by ASLR, it is challenging to effectively prevent leaking the ASLR secret against microarchitectural attacks.\n\nMotivated by this, we present Oreo, a software-hardware co-design mitigation that strengthens ASLR against these attacks. Oreo uses a new memory mapping interface to remove secret randomized bits in virtual addresses before translating them to their corresponding physical addresses. This extra step hides randomized virtual addresses from microarchitecture structures, preventing side channels from leaking ASLR secrets. Oreo is transparent to user programs and incurs low overhead. We prototyped and evaluated our design on Linux using the hardware simulator gem5.",
+  "abstract_source_id": "src-abstract-ndss-2025-6e053187",
   "venue": "ndss",
   "year": 2025,
   "track_or_session": "Fall submission cycle",
@@ -126,6 +128,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2025-6e053187",
+      "url": "https://www.ndss-symposium.org/ndss-paper/oreo-protecting-aslr-against-microarchitectural-attacks/",
+      "kind": "paper-page",
+      "title": "Oreo: Protecting ASLR Against Microarchitectural Attacks",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:20:05Z",
+      "content_hash": "sha256:434380ac6772d275f04e9641fa2e2c7ff450dd890271dd0ede4719e82f6d2b13",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

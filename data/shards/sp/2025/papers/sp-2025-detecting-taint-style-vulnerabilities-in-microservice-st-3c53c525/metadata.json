@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2025-detecting-taint-style-vulnerabilities-in-microservice-st-3c53c525",
   "title": "Detecting Taint-Style Vulnerabilities in Microservice-Structured Web Applications",
+  "abstract": "Microservice architecture has been becoming increasingly popular for building scalable and maintainable applications. A microservice-structured web application (shortened to microservice application) enhances security by providing a loose-coupling design and enforcing the security isolation between different microservices. However, in this paper, our study shows microservice applications still suffer from taint-style vulnerability, one of the most serious vulnerabilities. We propose a novel security analysis approach, named MScan, that can effectively detect taint-style vulnerabilities in real-world evolving-fast microservice applications. Our approach mainly consists of three phases. First, MScan identifies the entry points accessible to external malicious users by applying a gateway-centric analysis. Second, MScan utilizes a new data structure, i.e. service dependence graph, to bridge inter-service communication. Finally, MScan employs a distance-guided strategy for selective context-sensitive taint analysis to detect vulnerabilities. By applying MScan on 25 open-source microservice applications and 5 industrial microservice applications from a world-leading fintech company, we found MScan can effectively vet these applications with the discovery of 59 high-risk 0-day vulnerabilities. We have conducted responsible vulnerability disclosure. Up to now, 31 CVE identifiers have been issued.",
+  "abstract_source_id": "src-abstract-sp-2025-3c53c525",
   "venue": "sp",
   "year": 2025,
   "track_or_session": "Cycle 2",
@@ -238,6 +240,19 @@
       "official": true,
       "supports": [
         "DOI, authors, affiliations, abstract, publication date, pages, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2025-3c53c525",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Detecting Taint-Style Vulnerabilities in Microservice-Structured Web Applications",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:47Z",
+      "content_hash": "sha256:d48e5e27e72297ce02860f066764bd9c5cd6e8191e2ebf4b4f15da0fffb6959f",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2023-acorn-input-validation-for-secure-aggregation-4bf58b5c",
   "title": "ACORN: Input Validation for Secure Aggregation",
+  "abstract": "Secure aggregation enables a server to learn the sum of client-held vectors in a privacy-preserving way, and has been applied to distributed statistical analysis and machine learning. In this paper, we both introduce a more efficient secure aggregation protocol and extend secure aggregation by enabling input validation, in which the server can check that clients' inputs satisfy constraints such as L 0 , L 2 , and Linfinity bounds. This prevents malicious clients from gaining disproportionate influence on the aggregate statistics or machine learning model. Our new secure aggregation protocol improves the computational efficiency of the state-of-the-art protocol of Bell et al. (CCS 2020) both asymptotically and concretely: we show via experimental evaluation that it results in 2-8X speedups in client computation in practical scenarios. Likewise, our extended protocol with input validation improves on prior work by more than 30X in terms of client communication (with comparable computation costs). Compared to the base protocols without input validation, the extended protocols incur only 0.1X additional communication, and can process binary indicator vectors of length 1M, or 16-bit dense vectors of length 250K, in under 80s of computation per client.",
+  "abstract_source_id": "src-abstract-usenix-security-2023-4bf58b5c",
   "venue": "usenix-security",
   "year": 2023,
   "track_or_session": "Towards Robust Learning",
@@ -195,6 +197,19 @@
       "official": true,
       "supports": [
         "published author list checked; one author affiliation is not stated"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2023-4bf58b5c",
+      "url": "https://www.usenix.org/conference/usenixsecurity23/presentation/bell",
+      "kind": "paper-page",
+      "title": "ACORN: Input Validation for Secure Aggregation",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:09:33Z",
+      "content_hash": "sha256:be3703e1344383ce79278e02926b992b1b863738279d5ce3f3261d6d1c42259b",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

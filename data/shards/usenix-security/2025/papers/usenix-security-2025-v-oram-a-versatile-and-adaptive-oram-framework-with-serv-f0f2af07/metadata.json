@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-v-oram-a-versatile-and-adaptive-oram-framework-with-serv-f0f2af07",
   "title": "V-ORAM: A Versatile and Adaptive ORAM Framework with Service Transformation for Dynamic Workloads",
+  "abstract": "Oblivious RAM (ORAM) has been attracting significant attention for building encrypted data storage systems due to its strong security guarantees and communities' continuing effort in improving its efficiency. Despite great potential, a specific ORAM scheme is normally designed and optimized for a certain type of client workloads, given the nature of its complicated cryptographic construction. Once deployed, a single ORAM service can hardly serve dynamic workloads in an efficient and cost-effective manner. To bridge the gap, in this paper, we propose a versatile ORAM framework named V-ORAM, which can efficiently and securely switch between different ORAM services to adaptively serve dynamic workloads in the real-world. In particular, V-ORAM is equipped with a service transformation protocol that leverages a base ORAM as an intermedia of transformation and can synchronize the states of tree-based ORAMs without downloading and rebuilding the ORAM by the client. We formalize the security of V-ORAM, and prove that V-ORAM holds the security of ORAMs, including the process of service transformation. V-ORAM also provides a planner to recommend the ORAM service type and ORAM parameters for adapting to the client workloads, server resources and monetary expenses. We implement V-ORAM and evaluate the cost of transformation. We also conduct real-world case studies over three medical datasets and different workloads. Compared with directly rebuilding ORAMs, V-ORAM saves up to 10^4.12x processing time and communication cost, up to 33.1% of monetary costs in real-world workloads, and generates constant impact to employed ORAM services, i.e., < 5ms in processing and < 50KB in communication.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-f0f2af07",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "System Security 5: Securing Systems and Protocols",
@@ -154,6 +156,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-f0f2af07",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/zhang-bo-voram",
+      "kind": "paper-page",
+      "title": "V-ORAM: A Versatile and Adaptive ORAM Framework with Service Transformation for Dynamic Workloads",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:22:35Z",
+      "content_hash": "sha256:202d0f34eed43b05c719076e481fa63210a8525c1179ed60ac4db38e0cdc1d5c",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

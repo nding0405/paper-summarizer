@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2026-m3u-scalable-kernel-memory-management-for-efficient-post-4ffee8c1",
   "title": "M3U: Scalable Kernel Memory Management for Efficient Post-Copy Live Migration of High-End Virtual Machines",
+  "abstract": "High-end virtual machines (VMs) have become essential in public clouds for supporting large-scale guest applications. While conventional pre-copy live migration cannot reliably migrate such high-end VMs due to convergence problems, post-copy migration offers a viable alternative. However, high-end post-copy migration suffers from significant performance penalties, including extended downtime, prolonged post-copy duration and degraded guest performance, which stem from scalability bottlenecks in kernel memory management.\n\nWe identify the unnecessary overuse of lock protection as the root cause of scalability bottlenecks in existing approaches, which can be effectively resolved through strategic lock relaxation. To address this challenge, we propose M3U, a scalable kernel memory management approach for post-copy live migration of high-end VMs. M3U customizes lock-protected memory management operations, reducing operation overhead and minimizing critical sections. Additionally, M3U employs lock-reduced parallelism to decrease dirty page registration overhead. M3U also implements a decoupled fault handling pipeline to maximize page transfer efficiency, and utilizes fault-aware page size determination to meet minimum fault latency requirements. For pass-through devices, M3U further provides proactive identification and pre-transmission of device states, effectively eliminating 98.5% of hardware I/O page faults. Our evaluation demonstrates that M3U achieves a 47.0% reduction in downtime, an 89.6% reduction in post-copy duration, and a 4.1× improvement in guest performance.",
+  "abstract_source_id": "src-abstract-osdi-2026-4ffee8c1",
   "venue": "osdi",
   "year": 2026,
   "track_or_session": "Virtualization and Live Migration",
@@ -335,6 +337,19 @@
       "official": true,
       "supports": [
         "Official proceedings availability and canonical conference versions."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2026-4ffee8c1",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/xu-yizhe",
+      "kind": "paper-page",
+      "title": "M3U: Scalable Kernel Memory Management for Efficient Post-Copy Live Migration of High-End Virtual Machines",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:08:32Z",
+      "content_hash": "sha256:16aa8c2a8678881b3200b72a69504f94e3b6139045cf20f9f610a9c9f4c26e52",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

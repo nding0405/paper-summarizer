@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2023-you-ve-got-report-measurement-and-security-implications-ab09019c",
   "title": "You've Got Report: Measurement and Security Implications of DMARC Reporting",
+  "abstract": "Email, since its invention, has become the most widely used communication system and SMTP is the standard for email transmission on the Internet. However, SMTP lacks built-in security features, such as sender authentication, making it vulnerable to attacks, including sender spoofing. To address the threat of spoofing, several security extensions, such as SPF or DKIM, have been proposed. Domain-based Message Authentication Reporting and Conformance (DMARC) was introduced in 2012 as a way for domain name owners to publish desired actions for email receivers to take through a DNS record if SPF or DKIM validation fails. The DMARC record can also request email receivers to send machine-generated reports back to the specified addresses to aid domain name owners in detecting and evaluating the risk of spoofed emails. However, DMARC's complexity creates opportunities for mismanagement that can be exploited by attackers. This paper presents a large-scale and comprehensive measurement study of DMARC reporting deployment and management. We collected data for all second-level domains under the .com, .net, .org, and .se TLDs over 13 months to analyze deployment and management from the domain name owner's perspective. Additionally, we investigated 7 popular email hosting services and 2 open-source DMARC reporting software to understand their reporting practices. Our study reveals pervasive mismanagement and missing security considerations in DMARC reporting. For example, we found that a single email from an attacker can make a victim SMTP server receive a large number of reports with a high amplification factor (e.g., 1,460×) by exploiting misconfigured SMTP servers. Based on our findings of several operational misconfigurations for DMARC reporting, we provide recommendations for improvement.",
+  "abstract_source_id": "src-abstract-usenix-security-2023-ab09019c",
   "venue": "usenix-security",
   "year": 2023,
   "track_or_session": "Email and Phishing",
@@ -133,6 +135,19 @@
       "official": true,
       "supports": [
         "authors, affiliations when published, abstract, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2023-ab09019c",
+      "url": "https://www.usenix.org/conference/usenixsecurity23/presentation/ashiq",
+      "kind": "paper-page",
+      "title": "You've Got Report: Measurement and Security Implications of DMARC Reporting",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:13:48Z",
+      "content_hash": "sha256:2e2c5aad2486ee7a685fad3515484c22f2d38fb46004d6244288f5964a090513",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

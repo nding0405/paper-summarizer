@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2025-optimizing-deep-learning-inference-efficiency-through-bl-9de16a2a",
   "title": "Optimizing Deep Learning Inference Efficiency through Block Dependency Analysis",
+  "abstract": "Inter-operator optimization in deep neural networks (DNNs) relies on accurate data dependency analysis. Traditional machine learning compilers (MLCs) perform static data dependency analysis at the element and operator levels, leading to two key limitations: complex dependencies that hinder efficient inter-operator optimizations, and overlooked parallelizable computations that underutilize GPU resources. We introduce BlockDepend, a novel MLC framework that addresses these issues through block-level dependency analysis. By examining the lower-level phases of compilation, BlockDepend extracts crucial block-level dependency information, simplifying complex relationships between operators and uncovering hidden parallelization opportunities. This allows for targeted optimization strategies that enhance memory access efficiency and improve GPU utilization. Our experiments demonstrate BlockDepend's effectiveness, achieving speedups of 1.71× and 2.88× compared to NVIDIA TensorRT and AMD MIGraphX, respectively, across various workloads.",
+  "abstract_source_id": "src-abstract-asplos-2025-9de16a2a",
   "venue": "asplos",
   "year": 2025,
   "track_or_session": "Session 9A: ML Compilers",
@@ -272,6 +274,19 @@
       "official": false,
       "supports": [
         "Indexed abstract and open-access links used for relevance classification and ancillary-link discovery."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2025-9de16a2a",
+      "url": "https://api.openalex.org/works/doi:10.1145/3676641.3716264?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Optimizing Deep Learning Inference Efficiency through Block Dependency Analysis",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:02:38Z",
+      "content_hash": "sha256:650a40aaec3212f0577c9426dd87867d6b42f891cb9426a6022c27f5c5c838c1",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

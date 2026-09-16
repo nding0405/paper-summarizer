@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-lethe-purifying-backdoored-large-language-models-with-kn-32debae1",
   "title": "Lethe: Purifying Backdoored Large Language Models with Knowledge Dilution",
+  "abstract": "Large language models (LLMs) have seen significant advancements, achieving superior performance in various Natural Language Processing (NLP) tasks. However, they remain vulnerable to backdoor attacks, where models behave normally for standard queries but generate harmful responses or unintended output when specific triggers are activated. Existing backdoor defenses either lack comprehensiveness in practice, focusing on narrow trigger settings, detection-only mechanisms, and limited domains, or fail to withstand advanced scenarios like model-editing-based, multi-trigger, and triggerless attacks. In this paper, we present LETHE, a novel method to eliminate backdoor behaviors from LLMs through knowledge dilution using both internal and external mechanisms. Internally, LETHE leverages a lightweight dataset to train a clean model, which is then merged with the backdoored model to neutralize malicious behaviors by diluting the backdoor impact within the model's parametric memory. Externally, LETHE incorporates benign and semantically relevant evidence into the prompt to distract LLM's attention from backdoor features. Experimental results on classification and generation domains across 5 widely used LLMs demonstrate that LETHE outperforms 8 state-of-the-art defense baselines against 8 backdoor attacks. LETHE reduces the attack success rate of advanced backdoor attacks by up to 98% while maintaining model utility. Furthermore, LETHE has proven to be cost-efficient and robust against adaptive backdoor attacks. The code is provided at https://github.com/Xxxxsir/Lethe . Disclaimer: This paper contains potentially offensive content.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-32debae1",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Security of ML 1",
@@ -219,6 +221,19 @@
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening",
         "prepublication PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-32debae1",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/chen-chen",
+      "kind": "paper-page",
+      "title": "Lethe: Purifying Backdoored Large Language Models with Knowledge Dilution",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:24:30Z",
+      "content_hash": "sha256:db874d2d38f978302ab62886f40efe40dbe560a32d9674f760bac520a1e16fc2",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

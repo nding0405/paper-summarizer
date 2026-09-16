@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "atc-2025-colocating-ml-inference-and-training-with-fast-gpu-memor-49d851fd",
   "title": "Colocating ML Inference and Training with Fast GPU Memory Handover",
+  "abstract": "This paper presents SIRIUS, an efficient colocation system that enables spatial sharing of GPU resources between machine learning (ML) inference and training tasks. To meet strict latency SLOs, SIRIUS prioritizes inference tasks, allowing them to utilize all GPU resources without restriction and interference. Meanwhile, it concurrently runs training tasks on leftover resources to improve throughput and GPU utilization. SIRIUS is novel in three ways. First, it leverages the characteristics of gradient computation in a batch to adjust the memory consumption of training tasks in a few milliseconds. Second, it explicitly manages memory reclamation for training, ensuring a thorough and safe memory handover process. Third, it employs an SLO-aware memory reallocation strategy to mitigate memory initialization overhead and prevent thrashing when facing frequently fluctuating workloads. Our evaluation shows that SIRIUS outperforms existing state-of-the-art colocation approaches, improving inference SLO compliance by an average of 57.0% (up to 97.0%) and training throughput by 2.2× (up to 13.7×).",
+  "abstract_source_id": "src-abstract-atc-2025-49d851fd",
   "venue": "atc",
   "year": 2025,
   "track_or_session": "Intelligent Resource Management: Federation, Colocation, and ML for Systems",
@@ -159,6 +161,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-atc-2025-49d851fd",
+      "url": "https://www.usenix.org/conference/atc25/presentation/wang-jiali",
+      "kind": "paper-page",
+      "title": "Colocating ML Inference and Training with Fast GPU Memory Handover",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T21:59:31Z",
+      "content_hash": "sha256:8e8707e1dd0bfc36b41dfda41033158722a72003c307d63f949ec3147b2260ca",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2025-fsmoe-a-flexible-and-scalable-training-system-for-sparse-7abd8c8c",
   "title": "FSMoE: A Flexible and Scalable Training System for Sparse Mixture-of-Experts Models",
+  "abstract": "Recent large language models (LLMs) have tended to leverage sparsity to reduce computations, employing the sparsely activated mixture-of-experts (MoE) technique. MoE introduces four modules, including token routing, token communication, expert computation, and expert parallelism, that impact model quality and training efficiency. To enable ver- satile usage of MoE models, we introduce FSMoE, a flexible training system optimizing task scheduling with three novel techniques: 1) Unified abstraction and online profiling of MoE modules for task scheduling across various MoE implementations. 2) Co-scheduling intra-node and inter-node communications with computations to minimize communication overheads. 3) To support near-optimal task scheduling, we design an adaptive gradient partitioning method for gradient aggregation and a schedule to adaptively pipeline communications and computations. We conduct extensive experiments with configured MoE layers and real-world MoE models on two GPU clusters. Experimental results show that 1) our FSMoE supports four popular types of MoE routing functions and is more efficient than existing implementations (with up to a 1.42× speedup), and 2) FSMoE outperforms the state-of-the-art MoE training systems (DeepSpeed-MoE and Tutel) by 1.18×-1.22× on 1458 MoE layers and 1.19×-3.01× on real-world MoE models based on GPT-2 and Mixtral using a popular routing function. In this work, we present a flexible training system named FSMoE to optimize task scheduling. To achieve this goal: 1) we design unified abstraction and online profiling of MoE modules across various MoE implementations, 2) we co-schedule intra-node and inter-node communications with computations to minimize communication overhead, and 3) we design an adaptive gradient partitioning method for gradient aggregation and a schedule to adaptively pipeline communications and computations. Experimental results on two clusters up to 48 GPUs show that our FSMoE outperforms the state-of-the-art MoE training systems (DeepSpeed-MoE and Tutel) with speedups of 1.18x-1.22x on 1458 customized MoE layers and 1.19x-3.01x on real-world MoE models based on GPT-2 and Mixtral.",
+  "abstract_source_id": "src-abstract-asplos-2025-7abd8c8c",
   "venue": "asplos",
   "year": 2025,
   "track_or_session": "Session 6C: Mixture of Experts",
@@ -236,6 +238,19 @@
       "official": false,
       "supports": [
         "Indexed abstract and open-access links used for relevance classification and ancillary-link discovery."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2025-7abd8c8c",
+      "url": "https://api.openalex.org/works/doi:10.1145/3669940.3707272?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "FSMoE: A Flexible and Scalable Training System for Sparse Mixture-of-Experts Models",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:01:49Z",
+      "content_hash": "sha256:f4d510df4c54d76f58c7c10cf30e3fd7c572b5c8ab75f829a7cadbe339052a2c",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

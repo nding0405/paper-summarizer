@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2025-nebula-efficient-private-and-accurate-histogram-estimati-7ccfae49",
   "title": "Nebula: Efficient, Private and Accurate Histogram Estimation",
+  "abstract": "We present Nebula, a system for differentially private histogram estimation on data distributed among clients. Nebula allows clients to independently decide whether to participate in the system, and locally encode their data so that an untrusted server only learns data values whose multiplicity exceeds a predefined aggregation threshold, with (ε,δ) differential privacy guarantees. Compared to existing systems, Nebula uniquely achieves: i) a strict upper bound on client privacy leakage; ii) significantly higher utility than standard local differential privacy systems; and iii) no requirement for trusted third-parties, multi-party computation, or trusted hardware. We provide a formal evaluation of Nebula 's privacy, utility and efficiency guarantees, along with an empirical assessment on three real-world datasets. On the United States Census dataset, clients can submit their data in just 0.0036 seconds and 0.0016 MB (efficient), under strong (ε=1,δ=10-8) differential privacy guarantees (private), enabling Nebula's untrusted aggregation server to estimate histograms with over 88% better utility than existing local differential privacy deployments (accurate). Additionally, we describe a variant that allows clients to submit multi-dimensional data, with similar privacy, utility, and performance. Finally, we provide an implementation of Nebula.",
+  "abstract_source_id": "src-abstract-ccs-2025-7ccfae49",
   "venue": "ccs",
   "year": 2025,
   "track_or_session": "Cycle 1",
@@ -169,6 +171,19 @@
         "published-order authors",
         "publication-time affiliations",
         "publication date and page span"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2025-7ccfae49",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1145%2F3719027.3744789?fields=title,abstract",
+      "kind": "semantic-scholar",
+      "title": "Nebula: Efficient, Private and Accurate Histogram Estimation",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:15:17Z",
+      "content_hash": "sha256:c6c8187bb15f848257c754971f60c8aac7e8a4d4d6c82f3d0fc9bf0f5de9f780",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

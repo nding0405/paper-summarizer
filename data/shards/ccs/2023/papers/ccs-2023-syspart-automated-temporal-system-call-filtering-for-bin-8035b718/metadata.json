@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2023-syspart-automated-temporal-system-call-filtering-for-bin-8035b718",
   "title": "SysPart: Automated Temporal System Call Filtering for Binaries",
+  "abstract": "Restricting the system calls available to applications reduces the attack surface of the kernel and limits the functionality available to compromised applications. Recent approaches automatically identify the system calls required by programs to block unneeded ones. For servers, they even consider different phases of execution to tighten restrictions after initialization completes. However, they require access to the source code for applications and libraries, depend on users identifying when the server transitions from initialization to serving clients, or do not account for dynamically-loaded libraries. This paper introduces SYSPART, an automatic system-call filtering system designed for binary-only server programs that addresses the above limitations. Using a novel algorithm that combines static and dynamic analysis, SYSPART identifies the serving phases of all working threads of a server. Static analysis is used to compute the system calls required during the various serving phases in a sound manner, and dynamic observations are only used to complement static resolution of dynamically-loaded libraries when necessary. We evaluated SYSPART using six popular servers on x86-64 Linux to demonstrate its effectiveness in automatically identifying serving phases, generating accurate system-call filters, and mitigating attacks. Our results show that SYSPART outperforms prior binary-only approaches and performs comparably to source-code approaches.",
+  "abstract_source_id": "src-abstract-ccs-2023-8035b718",
   "venue": "ccs",
   "year": 2023,
   "track_or_session": "Kernel & Syscalls (Software Security)",
@@ -206,6 +208,19 @@
       "official": false,
       "supports": [
         "published title, author order, and page span"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2023-8035b718",
+      "url": "https://api.openalex.org/works/doi:10.1145/3576915.3623207?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "SysPart: Automated Temporal System Call Filtering for Binaries",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:08:27Z",
+      "content_hash": "sha256:67b1ad1e17d3709d73bcf50d366e098cb68e287a19a741a18ce6764363e93ec9",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

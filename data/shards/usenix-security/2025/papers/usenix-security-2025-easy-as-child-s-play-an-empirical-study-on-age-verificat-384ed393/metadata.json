@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-easy-as-child-s-play-an-empirical-study-on-age-verificat-384ed393",
   "title": "Easy As Child's Play: An Empirical Study on Age Verification of Adult-Oriented Android Apps",
+  "abstract": "The rapid growth of mobile apps has provided convenience and entertainment, including adult-oriented apps for users 18 and older. Despite various strategies to prevent minors from accessing such content, the effectiveness of these measures remains uncertain. This paper investigates these mechanisms and proposes a novel detection solution: GUARD (Guarding Underage Access Restriction Detection). GUARD determines relevant components (e.g., those that can accept the user's age or birthdate) based on the spatial relationships of the components in a layout and tracks the data flows through taint analysis. Recognizing static analysis limitations, GUARD also dynamically interacts with apps to identify age-related input components, which are then used for precise taint analysis. Our analysis of 31,750 adult-only apps (out of 693,334 apps on Google Play) reveals that only 1,165 (3.67%) implement age verification, with the majority relying on the weakest method, the age gate (which simply asks users if they are over 18). Even apps with stronger age verification (e.g., document uploads, online ID verification) can be bypassed using simple methods like false IDs or fake documents. They can also be circumvented through accounts from services without age checks (e.g., OAuth abuse) or by exploiting regional differences via VPNs. This paper also proposes countermeasures to enhance the effectiveness of age verification methods, which received positive feedback from Google through our email exchanges.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-384ed393",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Social Issues and Usable Security and Privacy",
@@ -133,6 +135,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-384ed393",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/yao-yifan",
+      "kind": "paper-page",
+      "title": "Easy As Child's Play: An Empirical Study on Age Verification of Adult-Oriented Android Apps",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:19:29Z",
+      "content_hash": "sha256:255a786ce85819d50b1d6df192570aba3fc6dc6fc1c9a126a904c72e994d2f6e",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

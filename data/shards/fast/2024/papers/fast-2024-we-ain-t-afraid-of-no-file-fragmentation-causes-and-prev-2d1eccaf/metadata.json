@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "fast-2024-we-ain-t-afraid-of-no-file-fragmentation-causes-and-prev-2d1eccaf",
   "title": "We Ain't Afraid of No File Fragmentation: Causes and Prevention of Its Performance Impact on Modern Flash SSDs",
+  "abstract": "A few studies reported that fragmentation still adversely affects the performance of flash solid-state disks (SSDs) particularly through request splitting. This research investigates the fragmentation-induced performance degradation across three levels: kernel I/O path, host-storage interface, and flash memory accesses in SSDs. Our analysis reveals that, contrary to assertions in existing literature, the primary cause of the degraded performance is not due to request splitting but stems from a significant increase in die-level collisions. In SSDs, when other writes come between writes of neighboring file blocks, the file blocks are not placed on consecutive dies, resulting in random die allocation. This randomness escalates the chances of die-level collisions, causing deteriorated read performance later. We also reveal that this may happen when a file is overwritten. To counteract this, we propose an NVMe command extension combined with a page-to-die allocation algorithm designed to ensure that contiguous blocks always land on successive dies, even in the face of file fragmentation or overwrites. Evaluations with commercial SSDs and an SSD emulator indicate that our approach effectively curtails the read performance drop arising from both fragmentation and overwrites, all without the need for defragmentation. Representatively, when a 162 MB SQLite database was fragmented into 10,011 pieces, our approach limited the performance drop to 3.5%, while the conventional system experienced a 40% decline.",
+  "abstract_source_id": "src-abstract-fast-2024-2d1eccaf",
   "venue": "fast",
   "year": 2024,
   "track_or_session": "Flash Storage",
@@ -160,6 +162,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-fast-2024-2d1eccaf",
+      "url": "https://www.usenix.org/conference/fast24/presentation/jun",
+      "kind": "paper-page",
+      "title": "We Ain't Afraid of No File Fragmentation: Causes and Prevention of Its Performance Impact on Modern Flash SSDs",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:00:55Z",
+      "content_hash": "sha256:5267b08101eb026dd476c0e880a989fc0c8bd0ab7266904d48779de54995e477",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

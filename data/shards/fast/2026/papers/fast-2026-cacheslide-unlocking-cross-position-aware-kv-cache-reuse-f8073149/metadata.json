@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "fast-2026-cacheslide-unlocking-cross-position-aware-kv-cache-reuse-f8073149",
   "title": "CacheSlide: Unlocking Cross Position-Aware KV Cache Reuse for Accelerating LLM Serving",
+  "abstract": "Large Language Models (LLMs) are increasingly deployed in agent-based applications with complex prompt structures comprising both invariant and dynamic segments. Existing KV cache reuse strategies—Position\u0002Dependent Caching (PDC) and Position-Independent Caching (PIC)—inadequately address these scenarios, imposing either strict positional constraints or introducing significant computational overhead due to Positionally Misaligned KV Drift (PMKD) and window padding problems. We identify a distinct pattern in agent workflows termed Relative-Position-Dependent Caching (RPDC), where reusable segments maintain consistent relative ordering despite absolute position shifts. To address this pattern, we propose CacheSlide, a novel KV cache management system that enhances positional-encoding similarity for fixed segments, computes attention for only a minimal subset of tokens, combines new and cached KVs using learned weights, and implements layer-wise and spill-aware KV-cache optimizations. Our implementation extends vLLM’s KV cache management with Chunked Contextual Position Encoding and Weighted Correction Attention. Experimental evaluation across multiple LLMs and agent benchmarks demonstrates that CacheSlide significantly outperforms state-of-the-art baselines, achieving 3.11-4.3× reduction in latency and 3.5-5.8× improvement in throughput, establishing a new efficiency frontier for agent-based LLM applications.",
+  "abstract_source_id": "src-abstract-fast-2026-f8073149",
   "venue": "fast",
   "year": 2026,
   "track_or_session": "AI and LLMs I",
@@ -244,6 +246,19 @@
         "proceedings page range and page count",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-fast-2026-f8073149",
+      "url": "https://www.usenix.org/conference/fast26/presentation/liu-yang",
+      "kind": "paper-page",
+      "title": "CacheSlide: Unlocking Cross Position-Aware KV Cache Reuse for Accelerating LLM Serving",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:01:24Z",
+      "content_hash": "sha256:e178c143ba37ed70beac80265099334c53240f1b51467e10e3bfbad82a1ac8ef",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

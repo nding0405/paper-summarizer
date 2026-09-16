@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2023-rethinking-system-audit-architectures-for-high-event-cov-f96acb4a",
   "title": "Rethinking System Audit Architectures for High Event Coverage and Synchronous Log Availability",
+  "abstract": "Once an attacker compromises the operating system, the integrity and availability of unprotected system audit logs still kept on the computer becomes uncertain. In this paper, we ask the question: can recently proposed audit systems aimed at tackling such an attacker provide enough information for forensic analysis? Our findings suggest that the answer is no, because the inefficient logging pipelines of existing audit systems prohibit generating log entries for a vast majority of attack events and protecting logs as soon as they are created (i.e., synchronously). This leads to a low attack event coverage within generated logs, while allowing attackers to tamper with unprotected logs after a compromise. To counter these limitations, we present OMNILOG, a system audit architecture that composes an end-to-end efficient logging pipeline where logs are rapidly generated and protected using a set of platform-agnostic security abstractions. This allows OMNILOG to enable high attack event coverage and synchronous log availability, while even outperforming the state-of-the-art audit systems that achieve neither property.",
+  "abstract_source_id": "src-abstract-usenix-security-2023-f96acb4a",
   "venue": "usenix-security",
   "year": 2023,
   "track_or_session": "Logs and Auditing",
@@ -175,6 +177,19 @@
       "official": true,
       "supports": [
         "authors, affiliations when published, abstract, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2023-f96acb4a",
+      "url": "https://www.usenix.org/conference/usenixsecurity23/presentation/gandhi",
+      "kind": "paper-page",
+      "title": "Rethinking System Audit Architectures for High Event Coverage and Synchronous Log Availability",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:12:47Z",
+      "content_hash": "sha256:5e338c4fdcc3daaef9a715d3f7b2bb48732f5e9974359aa3c164439278db049c",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

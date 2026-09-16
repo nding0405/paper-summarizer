@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2024-swiftpaxos-fast-geo-replicated-state-machines-8b3117d6",
   "title": "SwiftPaxos: Fast Geo-Replicated State Machines",
+  "abstract": "Cloud services improve their availability by replicating data across sites in different geographical regions. A variety of state-machine replication protocols have been proposed for this setting that reduce the latency under workloads with low contention. However, when contention increases, these protocols may deliver lower performance than Paxos. This paper introduces SwiftPaxos—a protocol that lowers the best-case latency in comparison to Paxos without hurting the worst-case one. SwiftPaxos executes a command in 2 message delays if there is no contention, and in 3 message delays otherwise. To achieve this, the protocol allows replicas to vote on the order in which they receive state-machine commands. Differently from previous protocols, SwiftPaxos permits a replica to vote twice: first for its own ordering proposal, and then to follow the leader. This mechanism avoids restarting the voting process when a disagreement occurs among replicas, saving computation time and message delays. Our evaluation shows that the throughput of SwiftPaxos is up to 2.9x better than state-of-the-art alternatives.",
+  "abstract_source_id": "src-abstract-nsdi-2024-8b3117d6",
   "venue": "nsdi",
   "year": 2024,
   "track_or_session": "Distributed Systems: Part 1",
@@ -118,6 +120,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2024-8b3117d6",
+      "url": "https://www.usenix.org/conference/nsdi24/presentation/ryabinin",
+      "kind": "paper-page",
+      "title": "SwiftPaxos: Fast Geo-Replicated State Machines",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:03:45Z",
+      "content_hash": "sha256:fd9b25db08a4441ad1e1a704dced0814f5b33bc36af593f7cc9734cede18da81",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

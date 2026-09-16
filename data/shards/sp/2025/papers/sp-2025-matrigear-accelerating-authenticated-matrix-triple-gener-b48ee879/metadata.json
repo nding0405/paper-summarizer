@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2025-matrigear-accelerating-authenticated-matrix-triple-gener-b48ee879",
   "title": "MatriGear: Accelerating Authenticated Matrix Triple Generation with Scalable Prime Fields via Optimized HE Packing",
+  "abstract": "The SPDZ protocol family is a popular choice for secure multi-party computation (MPC) in a dishonest majority setting with active adversaries. Over the past decade, a series of studies have focused on improving its offline phase, where special additive shares called authenticated triples are gener-ated. However, to accommodate recent demands for matrix operations in secure machine learning and big integer arith-metic in distributed RSA key generation, updates to the offline phase are required. In this work, we propose a new protocol for the SPDZ offline phase, MatriGear, which improves upon the previous state-of-the-art construction, TopGear (Baum et al., SAC '19), and its variant for matrix triples (Chen et al., Asiacrypt '20). Our protocol aims to achieve a speedup in matrix triple generation and support for larger prime fields up to 4096 bits in size. To achieve this, we devise a variant of the BFV scheme and a new homomorphic matrix multiplication algorithm optimized for our purpose. As a result, our protocol achieves about 3.6x speedup for generating scalar triples in a 1024-bit prime field and about 34x speedup for generating 128x128 matrix triples. In addition, we reduce the size of evaluation keys from 27.4 GB to 0.22 GB and the communication cost for MAC key generation from 816 MB to 16.6 MB.",
+  "abstract_source_id": "src-abstract-sp-2025-b48ee879",
   "venue": "sp",
   "year": 2025,
   "track_or_session": "Cycle 2",
@@ -154,6 +156,19 @@
       "official": true,
       "supports": [
         "DOI, authors, affiliations, abstract, publication date, pages, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2025-b48ee879",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "MatriGear: Accelerating Authenticated Matrix Triple Generation with Scalable Prime Fields via Optimized HE Packing",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:47Z",
+      "content_hash": "sha256:d48e5e27e72297ce02860f066764bd9c5cd6e8191e2ebf4b4f15da0fffb6959f",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

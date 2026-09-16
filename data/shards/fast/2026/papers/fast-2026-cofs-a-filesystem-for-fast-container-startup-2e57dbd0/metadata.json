@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "fast-2026-cofs-a-filesystem-for-fast-container-startup-2e57dbd0",
   "title": "CoFS: A Filesystem for Fast Container Startup",
+  "abstract": "The running of applications in containers has emerged as a popular trend in the industry. The cold start of a container involves a sequential time-consuming process of image downloading and image unpacking. The high cold-start latency significantly prolongs the startup time of containerized applications and could potentially violate responsiveness SLAs in serverless computing or during service automatic scaling to handle burst requests. To accelerate container startup, state-of-the-art systems pull the container image on demand. Unfortunately, they suffer from userspace I/O interposition overhead, maintainability, and/or performance fluctuation.\n\nThis paper presents CoFS, a novel filesystem based on extended FUSE for fast container startup. The insight is that the container image is built only once with a fixed read-only filesystem tree from the perspective of containers. This motivates CoFS to construct a minimal perfect hash function (MPHF) at image building time and to store metadata of files in a container image in a dense array indexed by their hash value. MPHF is collision-free and space-optimal. Leveraging the excellent properties of MPHF, CoFS accomplishes lookup request through less than one single I/O operation in most cases (unless the filename is excessively long) from kernel space, effectively avoiding the costly userspace lookup process in FUSE. Furthermore, CoFS constructs another MPHF that enables parallel lookup based on full path hashing, so as to further accelerate the path resolution. For data access, CoFS leverages sparse files provided by the in-kernel host filesystem to implement fine-grained data caching, and accesses cached data from kernel space. The evaluation shows that CoFS outperforms state-of-the-art systems that achieve fast container startup, and compared to fuse-loopback, a FUSE-based loopback filesystem, the lookup performance improves by up to 86%.",
+  "abstract_source_id": "src-abstract-fast-2026-2e57dbd0",
   "venue": "fast",
   "year": 2026,
   "track_or_session": "Virtualization",
@@ -181,6 +183,19 @@
         "proceedings page range and page count",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-fast-2026-2e57dbd0",
+      "url": "https://www.usenix.org/conference/fast26/presentation/wang-li",
+      "kind": "paper-page",
+      "title": "CoFS: A Filesystem for Fast Container Startup",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:01:25Z",
+      "content_hash": "sha256:ccf994f2944f26b8e2e7051bc69346ce24316877564ea7877b30738e67138569",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

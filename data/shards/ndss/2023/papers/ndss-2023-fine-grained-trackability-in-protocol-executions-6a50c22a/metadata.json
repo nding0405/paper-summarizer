@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2023-fine-grained-trackability-in-protocol-executions-6a50c22a",
   "title": "Fine-Grained Trackability in Protocol Executions",
+  "abstract": "We introduce a new framework, TrackDev, for encoding and analysing the tracing or \"tracking\" of an entity (e.g., a device) via its executions of a protocol or its usages of a system. TrackDev considers multiple dimensions combined: whether the attacker is active or passive, whether an entity is trackable in its every single appearances or just in a compound set thereof, and whether the entity can be explicitly or implicitly identified. TrackDev can be applied to most identification-based systems. TrackDev is to be applied in practice, over actual executions of systems; to this end, we test TrackDev on real-life traffic for two well-known protocols, the LoRaWAN Join and the 5G handovers, showing new trackability attacks therein and proposing countermeasures. We study the strength of TrackDev's various trackability properties and show that many of our notions are incomparable amongst each other, thus justifying the fine-grained nature of TrackDev. Finally, we detail how the main thrust of TrackDev can be mechanised in formal-verification tools, without any loss; we exemplify this fully on the LoRaWAN Join, in the Tamarin prover. In this process, we also uncover and discuss within two important aspects: (a) TrackDev’s separation between \"explicit\" and \"implicit\" trackability offers new formal-verification insights; (b) our analyses of the LoRaWAN Join protocol in Tamarin against TrackDev as well as against existing approximations of unlinkability by Baelde et al. concretely show that the latter approximations can be coarser than our notions.",
+  "abstract_source_id": "src-abstract-ndss-2023-6a50c22a",
   "venue": "ndss",
   "year": 2023,
   "track_or_session": "Usable Security and Privacy",
@@ -231,6 +233,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2023-6a50c22a",
+      "url": "https://www.ndss-symposium.org/ndss-paper/fine-grained-trackability-in-protocol-executions/",
+      "kind": "paper-page",
+      "title": "Fine-Grained Trackability in Protocol Executions",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:16:58Z",
+      "content_hash": "sha256:3b5cd9c75047ef5337c2762d104aa823261ebbd9bbbc48edc050ace75f113cd0",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-death-by-a-thousand-drips-uncovering-critical-resource-l-c0f85604",
   "title": "Death by a Thousand Drips: Uncovering Critical Resource Leaks in the Windows Ecosystem",
+  "abstract": "Windows remote services are a critical attack surface due to their privileged execution and widespread deployment. Under the shared service-host model (svchost.exe), a single resource-exhaustion bug can trigger fate-sharing failures across co-resident services. Yet most vulnerability discovery remains crash-centric and is thus blind to silent, long-horizon resource leaks (e.g., memory/handle exhaustion) that do not cause immediate exceptions, while the closed-source Windows ecosystem limits the applicability of source-level sanitizers. We present REDOSPECTOR, a fuzzing framework for discovering resource-oriented Denial-of-Service (DoS) vulnerabilities in opaque Windows binaries. REDOSPECTOR combines (1) lightweight in-process hook-based telemetry by intercepting native ntdll heap routines, (2) an amplification-based oracle that identifies persistent leaks via repeated execution and growth-trend analysis, and (3) a hybrid seed-generation pipeline that leverages static binary analysis and Large Language Models (LLMs) to reach deep protocol states. Evaluated on the latest builds of Windows 11 (24H2) and Windows Server Preview, REDOSPECTOR uncovers 19 vulnerabilities in core services (including MSMQ, Remote Desktop Gateway, and CDP), leading to 12 assigned CVEs. Microsoft confirmed seven pre-authentication DoS issues in CDP and performed architectural adjustments, demonstrating that REDOSPECTOR can expose resource-mismanagement flaws that evade conventional fuzzing.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-c0f85604",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Software Security 3",
@@ -218,6 +220,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-c0f85604",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/dong-feng",
+      "kind": "paper-page",
+      "title": "Death by a Thousand Drips: Uncovering Critical Resource Leaks in the Windows Ecosystem",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:23:37Z",
+      "content_hash": "sha256:39cf1f93719f0812441b16ee303725b1ecb0cc85c2544d95263c6c67a9213c8f",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

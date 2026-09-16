@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2025-the-benefits-and-limitations-of-user-interrupts-for-pree-1589493d",
   "title": "The Benefits and Limitations of User Interrupts for Preemptive Userspace Scheduling",
+  "abstract": "Preemptive scheduling promises to mitigate head-of-line blocking and enable flexible scheduling while retaining a simple programming model. Despite this, preemption is underutilized in server-side software today. Instead, high-performance datacenter systems and language runtimes often rely on cooperative concurrency, or else use preemption only at very coarse timescales, limiting its effectiveness. A key reason that preemption is underutilized today is that existing preemption mechanisms have high and unpredictable overheads.\n\nIntel recently introduced support for user interrupts, a new feature that offers an opportunity to change this. By enabling interrupts to be sent and received entirely in user space, user interrupts can significantly lower the overhead of preemption. In this paper, we shed light on how user interrupts impact the landscape of preemption mechanisms. We build two user-level schedulers that leverage user interrupts for low-overhead preemption. We find that user interrupts are not a panacea. For example, they provide limited benefits when other software layers constrain the kinds of scheduling policies that can be used. Still, user interrupts can match or exceed the performance of existing mechanisms for all but the highest preemption rates, while achieving much more consistent overheads and retaining a user friendly programming model.",
+  "abstract_source_id": "src-abstract-nsdi-2025-1589493d",
   "venue": "nsdi",
   "year": 2025,
   "track_or_session": "Rethinking Data Center Efficiency",
@@ -140,6 +142,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2025-1589493d",
+      "url": "https://www.usenix.org/conference/nsdi25/presentation/guo",
+      "kind": "paper-page",
+      "title": "The Benefits and Limitations of User Interrupts for Preemptive Userspace Scheduling",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:04:40Z",
+      "content_hash": "sha256:eb087a3eaa7e13b93d07224871f2eae51fd8f1f5f03d8931258be3c00eec81ed",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

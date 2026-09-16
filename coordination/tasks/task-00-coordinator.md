@@ -49,20 +49,16 @@ make check
 ```
 
 ```sh
-PYTHONPATH=src python3 -m systems_phd_explorer.cli build-manifest \
-  --root data/shards \
-  --output data/venue-year-manifest.generated.json
+# (build-manifest was retired with the Python tooling; the coverage manifest is produced by `make export`)
 ```
 
 ```sh
-PYTHONPATH=src python3 -m systems_phd_explorer.cli validate \
-  --root data/shards \
-  --profile release
+./mvnw -q compile exec:java -Dexec.args="validate --root data/shards"
 ```
 
 ```sh
 make build-db
-make site-data
+make export
 ```
 
 ## Merge rejection conditions

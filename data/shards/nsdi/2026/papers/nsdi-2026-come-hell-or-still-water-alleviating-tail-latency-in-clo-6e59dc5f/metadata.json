@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2026-come-hell-or-still-water-alleviating-tail-latency-in-clo-6e59dc5f",
   "title": "Come Hell or Still Water: Alleviating Tail Latency in Cloud Block Store",
+  "abstract": "Maintaining low tail latency is crucial for cloud storage services. In ALIBABA CLOUD, our Elastic Block Storage (EBS), like many others, adopts layers of load balancing to avoid hot-spot I/Os, a dominant contributor to tail latency.\n\nHowever, in the field, EBS has still been suffering from tail latency spikes. Through extensive analysis of production workloads, we have identified the root cause: the workload bursts caused by a small group of Virtual Disks (VDs), which fundamentally influence the tail latency of the entire cluster. We hence propose a lightweight dual-bucket throttling mechanism to effectively mitigate the issue while maintaining fairness. In addition, we discover that, even under underloaded scenarios, the tail latency remains suboptimal due to the event-loop thread model. We propose a priority-based scheduling mechanism to separate I/O-related tasks from I/O-unrelated ones. Our evaluation shows that the proposed mechanisms can reduce the tail latency by up to 97% in burst and 43% in underloaded scenarios. Our mechanisms have been deployed across dozens of clusters for more than three months, and have served hundreds of trillions of I/O requests. They reduce the P99999 tail latency of steady segments by 59.7% under burst scenarios and of all I/Os by 22% in underloaded scenarios.",
+  "abstract_source_id": "src-abstract-nsdi-2026-6e59dc5f",
   "venue": "nsdi",
   "year": 2026,
   "track_or_session": "Scalable Storage Systems",
@@ -265,6 +267,19 @@
         "proceedings page range and page count",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2026-6e59dc5f",
+      "url": "https://www.usenix.org/conference/nsdi26/presentation/hu-chaolei",
+      "kind": "paper-page",
+      "title": "Come Hell or Still Water: Alleviating Tail Latency in Cloud Block Store",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:04:59Z",
+      "content_hash": "sha256:0d2996703c1b1a78e1dd77752f685fffe287cfb6957f915797597edd3a311fd4",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

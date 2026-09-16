@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sigcomm-2026-pegasus-a-data-center-network-for-bare-metal-ai-cloud-1dee09ae",
   "title": "Pegasus: A Data Center Network for Bare-Metal AI Cloud",
+  "abstract": "Today, AI cloud is key to serving diverse users with AI services, where cloud networking forms the basis. In this paper, we share our experience in designing, deploying, and operating Pegasus, a data center network tailored for the AI cloud, along with operational lessons learned from its deployment. The key designs of Pegasus include: 1) Network virtualization: a DPU-RNIC decoupled collaborative hardware architecture to enable a single DPU to virtualize multiple RNICs while reducing the power consumption. We design two-level flow tables on both DPU and RNICs to support underlay-overlay IP address translation and ensure isolation. For DPU-RNIC communication, we introduce a per-RNIC communication state machine to reduce communication overhead. 2) Network transport: customized and transparent transport offloading in the RNIC for low-latency and high-throughput communication performance for various AI workloads. We carefully offload per-packet load balancing and credit-based congestion control in RNICs, optimizing reorder delay and eliminating the impacts of hardware jitter. Pegasus has been deployed in production for over two years, currently covering 8K GPUs and supporting a wide range of tenants' AI applications.",
+  "abstract_source_id": "src-abstract-1dee09ae",
   "venue": "sigcomm",
   "year": 2026,
   "track_or_session": "Experience Session 1: AI Datacenter Networks & Communication — Experience Paper",
@@ -667,6 +669,19 @@
       "official": true,
       "supports": [
         "official main-paper scope and track definitions"
+      ]
+    },
+    {
+      "id": "src-abstract-1dee09ae",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/search/match?query=Pegasus%3A%20A%20Data%20Center%20Network%20for%20Bare-Metal%20AI%20Cloud&fields=title,abstract",
+      "kind": "semantic-scholar",
+      "title": "Pegasus: A Data Center Network for Bare-Metal AI Cloud",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T23:04:39Z",
+      "content_hash": "sha256:511cf70d8ec96c9adb066bd220ae0357da41b5a14fea2d2b10368f72542e9cc9",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2023-efficient-scheduler-live-update-for-linux-kernel-with-mo-1337212d",
   "title": "Efficient Scheduler Live Update for Linux Kernel with Modularization",
+  "abstract": "The scheduler is a critical component of the operating system (OS)and is tightly coupled with Linux. Production-level clouds often host various workloads, and these workloads require different schedulers to achieve high performance. Thus the capability of updating the scheduler lively without rebooting the OS is crucial for the production environments. However, emerging live update techniques only apply for the fine-grained function-level updates or require extra constraints such as microkernel. It fails to update the entire heavy process scheduler subsystem lively. We therefore propose Plugsched to enable scheduler live update, and there are two key novelties. First of all, with the idea of modularization, Plugsched decouples the scheduler from the Linux kernel to be an independent module; Secondly, Plugsched uses the data rebuild technique to migrate the state from the old scheduler to the new one. This scheme can be directly applied to the Linux kernel scheduler in production environments without modifying kernel code. Unlike current function-level live update solutions, Plugsched allows developers to update the entire scheduler subsystem and modify internal scheduler data via the rebuilding technique. Moreover, an optimized stack inspection method is introduced to further effectively reduce the downtime due to the update. Experimental and production results show that Plugsched can effectively update kernel scheduler lively and the downtime is less than tens of milliseconds.",
+  "abstract_source_id": "src-abstract-asplos-2023-1337212d",
   "venue": "asplos",
   "year": 2023,
   "track_or_session": "Session 7C: OS/Virtualization",
@@ -209,6 +211,19 @@
       "official": false,
       "supports": [
         "Indexed abstract used with the official technical-session context for relevance classification, plus alternate-copy and explicitly printed ancillary links."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2023-1337212d",
+      "url": "https://api.openalex.org/works/doi:10.1145/3582016.3582054?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Efficient Scheduler Live Update for Linux Kernel with Modularization",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T21:59:26Z",
+      "content_hash": "sha256:4d233984fd6c87f399af6247f7ad0986c016b54b597d545bb569fe6e0ff5304f",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

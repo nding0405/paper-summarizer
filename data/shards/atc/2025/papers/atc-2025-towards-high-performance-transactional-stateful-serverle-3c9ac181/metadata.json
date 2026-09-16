@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "atc-2025-towards-high-performance-transactional-stateful-serverle-3c9ac181",
   "title": "Towards High-Performance Transactional Stateful Serverless Workflows with Affinity-Aware Leasing",
+  "abstract": "Function-as-a-Service (FaaS) is the most prevalent serverless computing paradigm, offering significant flexibility to develop, deploy, and operate cloud applications. However, traditional FaaS frameworks face significant challenges in operating transactional stateful workflows which often involve multiple functions with shared state. Previous solutions rely on external datastores to manage shared state, suffering from high communication overhead to guarantee transactional consistency for stateful workflows.\n\nIn this paper, we present RTSFaaS, an RDMA-capable transactional stateful FaaS framework that achieves high performance while guaranteeing transactional consistency. RTSFaaS exploits a lease-based concurrency control protocol to dynamically assign and transfer leases among workers to achieve concurrency control. Specifically, RTSFaaS incorporates two key designs: (1) an affinity-aware lease assignment mechanism that improves the benefit of caching by dynamically assigning data leases to selected workers according to the data function affinity, and (2) an RDMA-capable dynamic lease transferring mechanism to reduce the cost of locking by serializing concurrent data accesses with one-sided RDMA primitives. Experimental results show that RTSFaaS achieves up to 5× and 20× performance speedup compared with state-of-the-art transactional stateful FaaS platforms–Boki and Beldi, and up to 1.7× and 2.1× performance improvement when their concurrency control protocols implemented for RDMA networks are applied to RTSFaaS.",
+  "abstract_source_id": "src-abstract-atc-2025-3c9ac181",
   "venue": "atc",
   "year": 2025,
   "track_or_session": "Advanced Distributed Systems: ML, Data, and Performance Tuning",
@@ -243,6 +245,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-atc-2025-3c9ac181",
+      "url": "https://www.usenix.org/conference/atc25/presentation/zhao-jianjun",
+      "kind": "paper-page",
+      "title": "Towards High-Performance Transactional Stateful Serverless Workflows with Affinity-Aware Leasing",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:00:18Z",
+      "content_hash": "sha256:a907f55dd806d2d5ad2dd0443ecfecf92864bf96fb7a83414137b75a0f375f2c",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

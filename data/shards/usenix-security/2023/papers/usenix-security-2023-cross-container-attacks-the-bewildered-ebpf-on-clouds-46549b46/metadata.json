@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2023-cross-container-attacks-the-bewildered-ebpf-on-clouds-46549b46",
   "title": "Cross Container Attacks: The Bewildered eBPF on Clouds",
+  "abstract": "The extended Berkeley Packet Filter (eBPF) provides powerful and flexible kernel interfaces to extend the kernel functions for user space programs via running bytecode directly in the kernel space. It has been widely used by cloud services to enhance container security, network management, and system observability. However, we discover that the offensive eBPF that have been extensively discussed in Linux hosts can bring new attack surfaces to containers. With eBPF tracing features, attackers can break the container's isolation and attack the host, e.g., steal sensitive data, DoS, and even escape the container. In this paper, we study the eBPF-based cross container attacks and reveal their security impacts in real world services. With eBPF attacks, we successfully compromise five online Jupyter/Interactive Shell services and the Cloud Shell of Google Cloud Platform. Furthermore, we find that the Kubernetes services offered by three leading cloud vendors can be exploited to launch cross-node attacks after the attackers escape the container via eBPF. Specifically, in Alibaba's Kubernetes services, attackers can compromise the whole cluster by abusing their over-privileged cloud metrics or management Pods. Unfortunately, the eBPF attacks on containers are seldom known and can hardly be discovered by existing intrusion detection systems. Also, the existing eBPF permission model cannot confine the eBPF and ensure secure usage in shared-kernel container environments. To this end, we propose a new eBPF permission model to counter the eBPF attacks in containers.",
+  "abstract_source_id": "src-abstract-usenix-security-2023-46549b46",
   "venue": "usenix-security",
   "year": 2023,
   "track_or_session": "Cloud Insecurity",
@@ -217,6 +219,19 @@
       "official": true,
       "supports": [
         "authors, affiliations when published, abstract, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2023-46549b46",
+      "url": "https://www.usenix.org/conference/usenixsecurity23/presentation/he",
+      "kind": "paper-page",
+      "title": "Cross Container Attacks: The Bewildered eBPF on Clouds",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:10:21Z",
+      "content_hash": "sha256:84e877fdafd377c81cc2469e156df9cb4b27fe3558f05df7ff5d286e67b3b01f",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

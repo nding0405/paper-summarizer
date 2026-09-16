@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2023-sphincs-c-compressing-sphincs-with-almost-no-cost-dbe958b2",
   "title": "SPHINCS+C: Compressing SPHINCS+ With (Almost) No Cost",
+  "abstract": "SPHINCS+ [CCS ’19] is one of the selected post-quantum digital signature schemes of NIST’s post-quantum standardization process. The scheme is a hash-based signature and is considered one of the most secure and robust proposals. The proposal includes a fast (but larger) variant and a small (but slower) variant for each security level. The main problem that might hinder its adoption is its large signature size. Although SPHINCS+ supports a trade-off between signature size and the computational cost of signing, further reducing the signature size (below the small variants) results in a prohibitively high computational cost for the signer.This paper presents several novel methods for further compressing the signature size while requiring negligible added computational costs for the signer and further reducing verification time. Moreover, our approach enables a much more efficient trade-off curve between signature size and the computational costs of the signer. In many parameter settings, we achieve small signatures and faster running times simultaneously. For example, for 128-bit (classical) security, the small signature variant of SPHINCS+ is 7856 bytes long, while our variant is only 6304 bytes long: a compression of approximately 20% while still reducing the signer’s running time. However, other trade-offs that focus, e.g., on verification speed, are possible.The main insight behind our scheme is that there are predefined specific subsets of messages for which the WOTS+ and FORS signatures (that SPHINCS+ uses) can be compressed, and generation can be made faster while maintaining the same security guarantees. Although most messages will not come from these subsets, we can search for suitable hashed values to sign. We sign a hash of the message concatenated with a counter that was chosen such that the hashed value is in the subset. The resulting signature is both smaller and faster to sign and verify.Our schemes are simple to describe and implement. We provide an implementation, a theoretical analysis of speed and security, as well as benchmark results.",
+  "abstract_source_id": "src-abstract-sp-2023-dbe958b2",
   "venue": "sp",
   "year": 2023,
   "track_or_session": "Session 5C: Applied cryptography",
@@ -172,6 +174,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2023-dbe958b2",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "SPHINCS+C: Compressing SPHINCS+ With (Almost) No Cost",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:27Z",
+      "content_hash": "sha256:2c3c9cbfdcc9ef58a970a66aadb81bbaf8238409ab69d65565522a11e421be99",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

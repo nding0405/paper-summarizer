@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2023-betty-enabling-large-scale-gnn-training-with-batch-level-86537a15",
   "title": "Betty: Enabling Large-Scale GNN Training with Batch-Level Graph Partitioning",
+  "abstract": "The Graph Neural Network (GNN) is showing outstanding results in improving the performance of graph-based applications. Recent studies demonstrate that GNN performance can be boosted via using more advanced aggregators, deeper aggregation depth, larger sampling rate, etc. While leading to promising results, the improvements come at a cost of significantly increased memory footprint, easily exceeding GPU memory capacity. In this paper, we introduce a method, Betty, to make GNN training more scalable and accessible via batch-level partitioning. Different from DNN training, a mini-batch in GNN has complex dependencies between input features and output labels, making batch-level partitioning difficult. Betty introduces two noveltechniques, redundancy-embedded graph (REG) partitioning and memory-aware partitioning, to effectively mitigate the redundancy and load imbalances issues across the partitions. Our evaluation of large-scale real-world datasets shows that Betty can significantly mitigate the memory bottleneck, enabling scalable GNN training with much deeper aggregation depths, larger sampling rate, larger training batch sizes, together with more advanced aggregators, with a few as a single GPU.",
+  "abstract_source_id": "src-abstract-asplos-2023-86537a15",
   "venue": "asplos",
   "year": 2023,
   "track_or_session": "Session 5C: Machine Learning",
@@ -146,6 +148,19 @@
       "official": false,
       "supports": [
         "Indexed abstract used with the official technical-session context for relevance classification, plus alternate-copy and explicitly printed ancillary links."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2023-86537a15",
+      "url": "https://api.openalex.org/works/doi:10.1145/3575693.3575725?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Betty: Enabling Large-Scale GNN Training with Batch-Level Graph Partitioning",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T21:59:20Z",
+      "content_hash": "sha256:c9c953ff2c9d42e330dffb0a92f0944fbba7f3d192a4db0d7ad5545c21efea10",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

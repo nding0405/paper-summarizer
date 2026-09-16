@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2026-bitred-taming-non-uniform-bit-level-sparsity-with-a-prog-c2d3112d",
   "title": "BitRed: Taming Non-Uniform Bit-Level Sparsity with a Programmable RISC-V ISA for DNN Acceleration",
+  "abstract": "The non-uniform and dynamic nature of Bit-Level Sparsity (BLS) poses a critical load-imbalance challenge for parallel hardware accelerators. While the Bit-Interleaving paradigm, represented by state-of-the-art accelerators like Bitlet, shows promise, it is fundamentally constrained by a rigid datapath and severe inter-channel load imbalance. This paper introduces BitRed, an accelerator that embodies a new ''programmable adaptive bit-interleaving'' philosophy. Rather than a monolithic design, BitRed's core is an Adaptive-Sparse Processing Unit (ASPU) that deconstructs the acceleration process into a set of orthogonal RISC-V ISA extensions for pre-processing (cal.pre), adaptive distillation with dynamic load balancing (cal.adis), and PDP-optimal reduction (cal.red). By transforming a rigid hardware problem into a flexible scheduling problem, this ISA-based approach provides a fundamentally more adaptable and extensible solution. Empirical studies on a broad set of benchmarks highlight the following results (normalized to a SCNN baseline): (1) up to 9.4× speedup over the Bitlet, and 5.6× over the latest bit-serial SOTA BitWave; (2) up to 7.6× higher inference efficiency than Bitlet on representative models; (3) 5.072mm2 area and scalable power consumption from 550.43mW (float32) to 495.12mW (16b) and 457.90mW (8b) @28nm TSMC; and (4) high versatility across precisions, and up to 18.9×13.5× higher than NVIDIA A100 and Jetson Orin 32GB, demonstrating significant competitiveness against GPUs.",
+  "abstract_source_id": "src-abstract-asplos-2026-c2d3112d",
   "venue": "asplos",
   "year": 2026,
   "track_or_session": "Session 5B: On-Device & Edge AI",
@@ -314,6 +316,19 @@
       "official": false,
       "supports": [
         "Indexed abstract used for strict relevance classification and indexed arXiv identifier where available."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2026-c2d3112d",
+      "url": "https://api.openalex.org/works/doi:10.1145/3779212.3790132?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "BitRed: Taming Non-Uniform Bit-Level Sparsity with a Programmable RISC-V ISA for DNN Acceleration",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:04:44Z",
+      "content_hash": "sha256:277b7a7375d18df3e6c761966a99c051ae29fd464f15fc59afeab20b6855f22a",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

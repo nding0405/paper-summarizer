@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2026-portrush-detect-write-port-contention-side-channel-vulne-3110ba4d",
   "title": "PortRush: Detect Write Port Contention Side-Channel Vulnerabilities via Hardware Fuzzing",
+  "abstract": "CPU vulnerabilities pose ongoing security challenges in modern CPU architectures. Among the CPU vulnerabilities, write port contention—caused by multiple functional modules\n\nsimultaneously competing for a limited number of shared write ports—remains insufficiently studied. In this paper, we study write port contention side-channel vulnerabilities in CPUs and\n\npropose **PortRush**, a novel fuzzing framework designed to detect and validate such vulnerabilities at the register-transfer level (RTL). First, PortRush constructs a **Write Request Graph (WRG)** to statically identify potential write port contention instances by modeling write paths and priority relationships among functional modules that target shared storage elements.\n\nSecond, within the WRG, PortRush implements a **Hierarchical Aggregation and Decoding** method to efficiently detect write port contention by monitoring relevant hardware signals across design hierarchies. Third, PortRush employs a **Contention-guided\n\nHardware Fuzzing** approach to trigger write port contention and automatically combine contention-triggered instruction sequences with transient execution attack patterns, enabling validation of write port contention side-channel vulnerabilities. We evaluate\n\nPortRush on three RISC-V CPUs (BOOM, NutShell, and Rocket Core) and demonstrate its effectiveness in identifying and triggering write port contention. Furthermore, we validate that\n\nthe discovered vulnerabilities can be exploited in realistic write port contention attack scenarios. Based on these vulnerabilities, we present two novel attack vectors: *Birgus-variant*, which exploits contention at the physical register file in the Reorder Buffer, and *MSHRush*, which leverages contention between the *Load/Store Unit (LSU)* and the *Miss Status Handling Register (MSHR)*\n\nat the L1 data cache to induce secret-dependent execution delays. We also propose mitigation strategies for CPU developers to prevent such vulnerabilities.",
+  "abstract_source_id": "src-abstract-ndss-2026-3110ba4d",
   "venue": "ndss",
   "year": 2026,
   "track_or_session": "Fall submission cycle",
@@ -244,6 +246,19 @@
       "official": false,
       "supports": [
         "independent proceedings identity reconciliation"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2026-3110ba4d",
+      "url": "https://www.ndss-symposium.org/ndss-paper/portrush-detect-write-port-contention-side-channel-vulnerabilities-via-hardware-fuzzing/",
+      "kind": "paper-page",
+      "title": "PortRush: Detect Write Port Contention Side-Channel Vulnerabilities via Hardware Fuzzing",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:22:51Z",
+      "content_hash": "sha256:f5f2485b4e9b929d25c1cd907a29b989ce84a1f593064beadc7cdd772823e318",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

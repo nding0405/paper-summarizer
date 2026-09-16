@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2026-osavroute-advancing-outbound-source-address-validation-d-759d7aba",
   "title": "OSAVRoute: Advancing Outbound Source Address Validation Deployment Detection with Non-Cooperative Measurement",
+  "abstract": "Source IP address spoofing facilitates various malicious attacks, and Outbound Source Address Validation (OSAV) remains the best current practice for preventing spoofed packets from exiting a network. Accurately measuring OSAV deployment is essential for investigating the Internet’s vulnerability to IP spoofing. However, such measurements typically require sending spoofed packets from within the tested network, necessitating cooperation from network operators.\n\nThis paper introduces OSAVRoute, the first non-cooperative system capable of capturing fine-grained characteristics of OSAV deployment. Unlike existing non-cooperative methods that can only identify the absence of OSAV, OSAVRoute identifies both the presence and absence of OSAV, and further measure its blocking granularity and blocking depth, achieving capabilities previously limited to cooperative methods. OSAVRoute accomplishes this by explicitly tracing the forwarding paths of spoofed packets, enabling identification of their generation and propagation behavior. With an accuracy of 99.4% and coverage spanning 3.1× more ASes than CAIDA Spoofer, OSAVRoute reveals that 84.2% of the tested ASes do not deploy OSAV, particularly among ISP networks. Among networks that implement OSAV, 95.5% block spoofed packets within the first two IP hops but exhibit various blocking granularities, with /22 to /24 being the most common. Additionally, we reveal, for the first time, a positive correlation between MANRS participation and OSAV deployment.",
+  "abstract_source_id": "src-abstract-ndss-2026-759d7aba",
   "venue": "ndss",
   "year": 2026,
   "track_or_session": "Summer submission cycle",
@@ -202,6 +204,19 @@
       "official": false,
       "supports": [
         "independent proceedings identity reconciliation"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2026-759d7aba",
+      "url": "https://www.ndss-symposium.org/ndss-paper/osavroute-advancing-outbound-source-address-validation-deployment-detection-with-non-cooperative-measurement/",
+      "kind": "paper-page",
+      "title": "OSAVRoute: Advancing Outbound Source Address Validation Deployment Detection with Non-Cooperative Measurement",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:22:41Z",
+      "content_hash": "sha256:7aa90c5bd4fb2b22e0a764c8e428b8439de39917d4a22e4792b77e9db527ab38",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

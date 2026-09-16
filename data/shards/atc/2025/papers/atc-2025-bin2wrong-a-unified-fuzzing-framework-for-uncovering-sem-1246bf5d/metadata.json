@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "atc-2025-bin2wrong-a-unified-fuzzing-framework-for-uncovering-sem-1246bf5d",
   "title": "Bin2Wrong: a Unified Fuzzing Framework for Uncovering Semantic Errors in Binary-to-C Decompilers",
+  "abstract": "Binary decompilation is central to many systems tasks that rely on analyzing or modifying closed-source software, such as debugging, performance tuning, and security hardening. Decompilers translate executables into C code with the goal of reconstructing a semantically-equivalent form of the original program’s source. Unfortunately, when challenged by intricate program logic, data structures, and diverse executable layouts, decompilers often produce semantically-wrong code. Proactively detecting such decompilation defects is critical for ensuring the success of downstream tasks that depend on precise binary analysis. Yet, current methods for assessing decompiler correctness only narrowly explore the variety of source constructs, compilers, optimization levels, executable formats, and combinations thereof that influence binary code. Fully guaranteeing decompilation precision—and, by extension, supporting all tasks that hinge on accurate binary-to-source recovery—demands a testing approach that unifies all factors affecting binary code, extending practical, systematic correctness testing to all decompilers today.\n\nTo accelerate discovery of decompilation defects, this paper introduces BIN2WRONG: a general-purpose decompiler fuzzer combining systematic binary mutation with practical, decompiler-agnostic support. Our approach coalesces all factors of binary generation—source, compiler, optimization, and executable format—into a novel, unified testcase structure for mutation. Beyond enabling deeper exploration along these individual dimensions, BIN2WRONG finds unique combinations exposing complex, multi-dimensional errors that elude prior decompiler testing approaches. In evaluating BIN2WRONG alongside state-of-the-art decompiler fuzzers Cornucopia and DecFuzzer across seven free and commercial decompilers, BIN2WRONG achieves upwards of 10.39× and 17.18× higher binary diversity and 1.16× and 1.32× more decompiler code coverage, respectively, whilst uncovering the most decompilation bugs. Beyond finding 48 new bugs, with 30 confirmed, BIN2WRONG spurred a major redesign of the commercial decompiler Binary Ninja—showing its utility in uncovering critical defects in mainstream decompilers.",
+  "abstract_source_id": "src-abstract-atc-2025-1246bf5d",
   "venue": "atc",
   "year": 2025,
   "track_or_session": "Hunting Elusive Bugs: Verification and Analysis from Compilers to Hardware",
@@ -117,6 +119,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-atc-2025-1246bf5d",
+      "url": "https://www.usenix.org/conference/atc25/presentation/yang-zao",
+      "kind": "paper-page",
+      "title": "Bin2Wrong: a Unified Fuzzing Framework for Uncovering Semantic Errors in Binary-to-C Decompilers",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T21:59:27Z",
+      "content_hash": "sha256:a754e14d80efd2eca5cfc2a4c44e09df34d77d27f866ad868cfe7244f6fba39b",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

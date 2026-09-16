@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-bundled-authenticated-key-exchange-a-concrete-treatment-4376068f",
   "title": "Bundled Authenticated Key Exchange: A Concrete Treatment of Signal's Handshake Protocol and Post-Quantum Security",
+  "abstract": "The Signal protocol relies on a special handshake protocol, formerly X3DH and now PQXDH, to set up secure conversations. Prior analysis of these protocols (or proposals for post-quantum alternatives) have all used highly tailored models to the individual protocols and generally made ad-hoc adaptations to \"standard\" AKE definitions, making the concrete security attained unclear and hard to compare. Indeed, we observe that some natural Signal handshake protocols cannot be handled by these tailored models. In this work, we introduce Bundled Authenticated Key Exchange (BAKE), a concrete treatment of the Signal handshake protocol. We formally model prekey bundles and states, enabling us to define various levels of security in a unified model. We analyze Signal's classically secure X3DH and harvest-now-decrypt-later -secure PQXDH, and show that they do not achieve what we call optimal security (as is documented). Next, we introduce RingXKEM, a fully post-quantum Signal handshake protocol achieving optimal security; as RingXKEM shares states among many prekey bundles, it could not have been captured by prior models. Lastly, we provide security and efficiency comparison of X3DH, PQXDH, and RingXKEM.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-4376068f",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Crypto 4: Systems and Protocols",
@@ -112,6 +114,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-4376068f",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/hashimoto-key-exchange",
+      "kind": "paper-page",
+      "title": "Bundled Authenticated Key Exchange: A Concrete Treatment of Signal's Handshake Protocol and Post-Quantum Security",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:18:59Z",
+      "content_hash": "sha256:236eae5c371c1c7fdd07b78a5e0e971f2b570b891ef4eac8fbd80de1f9600d56",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

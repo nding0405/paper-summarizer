@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-email-spoofing-with-smtp-smuggling-how-the-shared-email-c35f642a",
   "title": "Email Spoofing with SMTP Smuggling: How the Shared Email Infrastructures Magnify this Vulnerability",
+  "abstract": "Email spoofing is a critical technique used in phishing attacks to impersonate a trusted sender. SMTP smuggling is a new vulnerability that allows adversaries to perform email spoofing while bypassing existing authentication protocols such as SPF and DMARC. While SMTP smuggling has been publicly disclosed since 2023, its impact has not been comprehensively evaluated and the effectiveness of the community's mitigation strategies is yet unknown. In this paper, we present an in-depth study of SMTP smuggling vulnerabilities, supported by empirical measurements of public email services, open-source email software, and email security gateways. More importantly, for the first time, we explored how to perform measurements on private email services ethically, with new methodologies combining user studies, a DKIM side channel, and a non-intrusive testing method. Collectively, we found that 19 public email services, 1,577 private email services, five open-source email software, and one email gateway were still vulnerable to SMTP smuggling (and/or our new variants). In addition, our results showed that the centralization of email infrastructures (e.g., shared SFP records, commonly used email software/gateways) has amplified the impact of SMTP smuggling. Adversaries can spoof highly reputable domains through free-to-register email accounts while bypassing sender authentication. We provided suggestions on short-term and long-term solutions to mitigate this threat. To further aid email administrators, we developed an online service to help self-diagnosis of SMTP smuggling vulnerabilities.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-c35f642a",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Network Security 1: Censorship, Evasion, and Trustworthy Infrastructure",
@@ -196,6 +198,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-c35f642a",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/wang-chuhan",
+      "kind": "paper-page",
+      "title": "Email Spoofing with SMTP Smuggling: How the Shared Email Infrastructures Magnify this Vulnerability",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:19:35Z",
+      "content_hash": "sha256:c6c278f3c6ddfb2f4567b7ce88a429a015009f8709577165bb8ee16993fc0571",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

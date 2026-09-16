@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sigcomm-2023-netclone-fast-scalable-and-dynamic-request-cloning-for-m-3556de19",
   "title": "NetClone: Fast, Scalable, and Dynamic Request Cloning for Microsecond-Scale RPCs",
+  "abstract": "Spawning duplicate requests, called cloning, is a powerful technique to reduce tail latency by masking service-time variability. However, traditional client-based cloning is static and harmful to performance under high load, while a recent coordinator-based approach is slow and not scalable. Both approaches are insufficient to serve modern microsecond-scale Remote Procedure Calls (RPCs). To this end, we present NetClone, a request cloning system that performs cloning decisions dynamically within nanoseconds at scale. Rather than the client or the coordinator, NetClone performs request cloning in the network switch by leveraging the capability of programmable switch ASICs. Specifically, NetClone replicates requests based on server states and blocks redundant responses using request fingerprints in the switch data plane. To realize the idea while satisfying the strict hardware constraints, we address several technical challenges when designing a custom switch data plane. NetClone can be integrated with emerging in-network request schedulers like RackSched. We implement a NetClone prototype with an Intel Tofino switch and a cluster of commodity servers. Our experimental results show that NetClone can improve the tail latency of microsecond-scale RPCs for synthetic and real-world application workloads and is robust to various system conditions.",
+  "abstract_source_id": "src-abstract-sigcomm-2023-3556de19",
   "venue": "sigcomm",
   "year": 2023,
   "track_or_session": "Well Optimized — Research Paper",
@@ -88,6 +90,19 @@
         "publisher-deposited ORCIDs",
         "proceedings page range and print publication date",
         "empty publisher relation metadata for alternate-version checks"
+      ]
+    },
+    {
+      "id": "src-abstract-sigcomm-2023-3556de19",
+      "url": "https://api.openalex.org/works/doi:10.1145/3603269.3604820?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "NetClone: Fast, Scalable, and Dynamic Request Cloning for Microsecond-Scale RPCs",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:22:56Z",
+      "content_hash": "sha256:5575ed3856f2e1d85e5e1ff2bfe1adaa5a46322b73cd83b77c395a021a2bea27",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2025-on-temporal-verification-of-stateful-p4-programs-5d6ee061",
   "title": "On Temporal Verification of Stateful P4 Programs",
+  "abstract": "Stateful P4 programs offload network states from the control plane to the data plane, enabling unprecedented network programmability. However, existing P4 verifiers overapproximate the stateful nature of P4 programs and are inherently inadequate for verifying network functions that require stateful decision-making.\n\nTo overcome this limitation, this paper introduces an innovative approach to verify P4 programs while accounting for their stateful feature. We propose a specification language named P4LTL, tailored for describing temporal properties of stateful P4 programs at the packet processing level. Additionally, we introduce a novel concept called the Büchi transaction, representing the product of the P4 program and the P4LTL specification. The P4 program verification problem can be reduced to determining the existence of any fair and feasible trace within the Büchi transaction. To the best of our knowledge, our approach represents the first endeavor in temporal verification of stateful P4 programs at the packet processing level. We implemented a prototype tool called p4tv. Evaluation results demonstrate p4tv’s effectiveness and efficiency in temporal verification of stateful P4 programs.",
+  "abstract_source_id": "src-abstract-nsdi-2025-5d6ee061",
   "venue": "nsdi",
   "year": 2025,
   "track_or_session": "Verification 1",
@@ -119,6 +121,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2025-5d6ee061",
+      "url": "https://www.usenix.org/conference/nsdi25/presentation/zhang-delong",
+      "kind": "paper-page",
+      "title": "On Temporal Verification of Stateful P4 Programs",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:04:23Z",
+      "content_hash": "sha256:921949e3d2e319863ead6fcbe9dee4e5e95352e2c2c55c7332d0d6e35df9aa8e",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

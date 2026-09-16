@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2024-fast-and-private-inference-of-deep-neural-networks-by-co-52fd1e24",
   "title": "Fast and Private Inference of Deep Neural Networks by Co-designing Activation Functions",
+  "abstract": "Machine Learning as a Service (MLaaS) is an increasingly popular design where a company with abundant computing resources trains a deep neural network and offers query access for tasks like image classification. The challenge with this design is that MLaaS requires the client to reveal their potentially sensitive queries to the company hosting the model. Multi-party computation (MPC) protects the client's data by allowing encrypted inferences. However, current approaches suffer from prohibitively large inference times. The inference time bottleneck in MPC is the evaluation of non-linear layers such as ReLU activation functions. Motivated by the success of previous work co-designing machine learning and MPC, we develop an activation function co-design. We replace all ReLUs with a polynomial approximation and evaluate them with single-round MPC protocols, which give state-of-theart inference times in wide-area networks. Furthermore, to address the accuracy issues previously encountered with polynomial activations, we propose a novel training algorithm that gives accuracy competitive with plaintext models. Our evaluation shows between 3 and 110× speedups in inference time on large models with up to 23 million parameters while maintaining competitive inference accuracy.",
+  "abstract_source_id": "src-abstract-usenix-security-2024-52fd1e24",
   "venue": "usenix-security",
   "year": 2024,
   "track_or_session": "ML III: Secure ML",
@@ -301,6 +303,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2024-52fd1e24",
+      "url": "https://www.usenix.org/conference/usenixsecurity24/presentation/diaa",
+      "kind": "paper-page",
+      "title": "Fast and Private Inference of Deep Neural Networks by Co-designing Activation Functions",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:15:11Z",
+      "content_hash": "sha256:8dd7cf639571fe66ce36c62de78c5636ca804e62acc1b2069aee76bbf097b1e4",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

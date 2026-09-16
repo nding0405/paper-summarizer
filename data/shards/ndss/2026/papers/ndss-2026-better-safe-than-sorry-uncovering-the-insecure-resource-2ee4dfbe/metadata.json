@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2026-better-safe-than-sorry-uncovering-the-insecure-resource-2ee4dfbe",
   "title": "Better Safe than Sorry: Uncovering the Insecure Resource Management in App-in-App Cloud Services",
+  "abstract": "In the app-in-app ecosystem, super-apps provide mini-app developers access to various sensitive cloud services, such as cloud database and cloud storage. These services enable mini-app developers to efficiently store and manage mini-app data in the super-app server. To protect these sensitive resources, super-apps implement an identity management mechanism, allowing mini-app developers to verify user identity and ensure that only authorized and trusted users can access specific resources. However, flaws exist in the implementation of resource management by mini-app developers, which can expose sensitive resources to attackers.\n\nIn this paper, we conduct the first systematic study of the insecure cloud resource management in the app-in-app ecosystem. We design and implement a tool, ICREMiner, that combines static analysis and dynamic probing to assess the security implications on 22,695 real-world mini-apps that access app-in-app cloud services in four super-app platforms. The results of our study reveal that 2,815 mini-apps (12.40%) are affected by the insecure resource management, involving 8,062 insecure cloud operations. We have identified that some mini-apps of prominent corporations are also vulnerable to these risks. Additionally, we conduct an in-depth analysis of the significant security hazards that can be caused by the vulnerability, such as allowing attackers to steal sensitive user information and pay for free. In response, we have engaged in responsible vulnerability disclosure to the super-app platforms and corresponding mini-app developers. We also provide several mitigation strategies to help them resolve the vulnerabilities.",
+  "abstract_source_id": "src-abstract-ndss-2026-2ee4dfbe",
   "venue": "ndss",
   "year": 2026,
   "track_or_session": "Summer submission cycle",
@@ -202,6 +204,19 @@
       "official": false,
       "supports": [
         "independent proceedings identity reconciliation"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2026-2ee4dfbe",
+      "url": "https://www.ndss-symposium.org/ndss-paper/better-safe-than-sorry-uncovering-the-insecure-resource-management-in-app-in-app-cloud-services/",
+      "kind": "paper-page",
+      "title": "Better Safe than Sorry: Uncovering the Insecure Resource Management in App-in-App Cloud Services",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:21:20Z",
+      "content_hash": "sha256:7fd8a8fa4deee662d0bbcbdefcc12c9aed14b99bc8a7fd94a3437bec49cc2c4c",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

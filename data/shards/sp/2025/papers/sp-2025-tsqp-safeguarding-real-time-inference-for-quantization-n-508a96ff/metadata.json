@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2025-tsqp-safeguarding-real-time-inference-for-quantization-n-508a96ff",
   "title": "TSQP: Safeguarding Real-Time Inference for Quantization Neural Networks on Edge Devices",
+  "abstract": "Quantization Neural Networks (QNNs) has been widely adopted in resource-constrained edge devices due to their real-time capabilities and low resource requirement. However, concerns have arisen regarding that deployed models are white-box available to model thefts. To address this issue, TEE-shielded secure inference has been introduced as a secure and efficient solution. Nevertheless, existing methods neglect the compatibility with 8-bit quantized computation, which leads to severe integer overflow issue during inference. This issue could result a disastrous degradation in QNNs (to random guessing level), completely destroying model utility. Moreover, the model confidentiality and inference integrity also face a substantial threat due to the limited data representation space. To safeguard accurate and efficient inference for QNNs, TEE-Shielded QNN Partition (TSQP) are proposed, which presents three key insights: Firstly, Quantization Manager is designed to convert white-box inference to black-box by shielding critical scales in TEE. Additionally, overflow concerns are effectively addressed using reduced-range approaches. Secondly, by leveraging the Information Bottleneck theory to enhance model training, we introduce Parameter De-Similarity to defend against powerful Model Stealing attacks that existing methods are vulnerable to. Thirdly, the Integrity Monitor is suggested to detect inference integrity breaches in an oblivious manner. In contrast, existing method can be bypassed due to the lack of obliviousness. Experimental results demonstrate that proposed TSQP maintains high accuracy and achieves accurate integrity breaches detection. Our method achieves more than $8\\times$ speedup compared to full TEE inference, while reducing Model Stealing attacks accuracy from $3.99\\times$ to $1.29\\times$. To our best knowledge, proposed method is the first TEE-shielded secure inference solution that achieves model confidentiality, inference integrity and model utility on QNNs.",
+  "abstract_source_id": "src-abstract-sp-2025-508a96ff",
   "venue": "sp",
   "year": 2025,
   "track_or_session": "Cycle 1",
@@ -154,6 +156,19 @@
       "official": true,
       "supports": [
         "DOI, authors, affiliations, abstract, publication date, pages, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2025-508a96ff",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "TSQP: Safeguarding Real-Time Inference for Quantization Neural Networks on Edge Devices",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:52Z",
+      "content_hash": "sha256:b15ce02bcc49da611fdd791ecc56741e7d91d84154b58c1a7f72a5c6902e6e46",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

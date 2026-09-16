@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2024-dvsorder-ballot-randomization-flaws-threaten-voter-priva-be50a720",
   "title": "DVSorder: Ballot Randomization Flaws Threaten Voter Privacy",
+  "abstract": "A trend towards publishing ballot-by-ballot election results has created new risks to voter privacy due to inadequate protections by election technology. These risks are manifested by a vulnerability we discovered in precinct-based ballot scanners made by Dominion Voting Systems, which are used in parts of 21 states and Canada. In a variety of scenarios, the flaw—which we call DVSorder—would allow attackers to link individuals with their votes and compromise ballot secrecy. The root cause is that the scanners assign pseudorandom ballot identifiers using a linear congruential generator, an approach known since the 1970s to be insecure. Dominion attempted to obfuscate the generator's output, but we show that it can be broken using only pen and paper to reveal the order in which all ballots were cast. Unlike past ballot randomization flaws, which typically required insider access to exploit or access to proprietary software to discover, DVSorder can be discovered and exploited using only public information.\n\nIn addition, the election sector's response to our findings provides a case study highlighting gaps in regulations and vulnerability management within this area of critical infrastructure. Although Dominion released a software update in response to DVSorder, some localities have continued to publish vulnerable data due to inadequate information sharing and mitigation planning, and at least one state has deferred addressing the flaw until after the 2024 presidential election, more than two years following our disclosure.",
+  "abstract_source_id": "src-abstract-usenix-security-2024-be50a720",
   "venue": "usenix-security",
   "year": 2024,
   "track_or_session": "Social Issues IV",
@@ -133,6 +135,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2024-be50a720",
+      "url": "https://www.usenix.org/conference/usenixsecurity24/presentation/crimmins",
+      "kind": "paper-page",
+      "title": "DVSorder: Ballot Randomization Flaws Threaten Voter Privacy",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:14:56Z",
+      "content_hash": "sha256:170342fe3f2abc6ffda5cbb6b60d8eb6534f1bebdc09b76665da3850710fbae3",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

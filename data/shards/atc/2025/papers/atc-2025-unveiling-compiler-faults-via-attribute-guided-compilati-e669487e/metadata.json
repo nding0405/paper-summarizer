@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "atc-2025-unveiling-compiler-faults-via-attribute-guided-compilati-e669487e",
   "title": "Unveiling Compiler Faults via Attribute-Guided Compilation Space Exploration",
+  "abstract": "Compiler testing is critically important, as compilers serve as the foundational infrastructure in system software development. A comprehensive exploration of the compilation space is essential for uncovering bugs in compilers. Existing methods primarily involve the utilization of various compilation options alongside test programs as inputs for stress-testing compilers. However, these compilation options are typically applied uniformly across all program elements-such as functions and variables–by default, limiting the ability to thoroughly explore the compilation space. In programming languages like C and C++, attributes such as the __attribute__((always_inline)) directive provide a mechanism for programmers to specify additional information for specific code elements to the compiler. These attributes allow for precise control over the compilation process, such as enforcing constraints and customizing optimization passes for particular elements. This flexibility in specifying attributes offers opportunities to investigate previously unexamined areas within compilers. Unfortunately, few studies have leveraged attributes for compiler testing. To this end, we propose ATLAS, an attribute-guided approach that strategically inserts attributes into test programs to facilitate a more thorough exploration of the compilation space. Our key insight is that attributes specified for individual program elements can provide a more flexible means of exploring the compilation space. Our extensive experiments on GCC and LLVM demonstrate the superiority of ATLAS over baseline testing techniques that do not employ attributes, particularly in terms of bug detection and code coverage. Furthermore, ATLAS has led to the discovery of 73 unique bugs in GCC and LLVM, 58 of which have already been confirmed or fixed, showcasing its practical utility.",
+  "abstract_source_id": "src-abstract-atc-2025-e669487e",
   "venue": "atc",
   "year": 2025,
   "track_or_session": "Hunting Elusive Bugs: Verification and Analysis from Compilers to Hardware",
@@ -159,6 +161,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-atc-2025-e669487e",
+      "url": "https://www.usenix.org/conference/atc25/presentation/wu-jiangchang",
+      "kind": "paper-page",
+      "title": "Unveiling Compiler Faults via Attribute-Guided Compilation Space Exploration",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:00:21Z",
+      "content_hash": "sha256:a0971d2cd7b069dd628b62b04fb17722a6a4bbccbfc14e6ee368b15103ff1a00",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

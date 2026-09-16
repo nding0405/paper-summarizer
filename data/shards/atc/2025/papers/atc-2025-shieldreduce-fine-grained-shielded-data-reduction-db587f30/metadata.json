@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "atc-2025-shieldreduce-fine-grained-shielded-data-reduction-db587f30",
   "title": "ShieldReduce: Fine-Grained Shielded Data Reduction",
+  "abstract": "Storage savings and data confidentiality are two primary yet conflicting goals in outsourced backup management. While deduplication-aware encryption has been extensively studied to make deduplication viable for encrypted data, it is incompatible with fine-grained delta and local compression for further storage savings. We present ShieldReduce, a secure outsourced storage system that aims for fine-grained shielded data reduction by applying deduplication, delta compression, and local compression to data in a trusted execution environment based on Intel SGX, so as to achieve high storage savings with security guarantees. To mitigate the I/Os of accessing base chunks for delta compression in SGX, ShieldReduce adopts bi-directional delta compression via a novel hybrid inline and offline compression design to maintain the physical locality of base chunks. Evaluation on various backup workloads shows that ShieldReduce achieves significant speedups over a shielded baseline without bi-directional delta compression, while maintaining comparable storage savings to fine-grained data reduction for plain data.",
+  "abstract_source_id": "src-abstract-atc-2025-db587f30",
   "venue": "atc",
   "year": 2025,
   "track_or_session": "Securing the Stack: Attestation, Memory Protection, and Privacy",
@@ -222,6 +224,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-atc-2025-db587f30",
+      "url": "https://www.usenix.org/conference/atc25/presentation/yang-jingyuan",
+      "kind": "paper-page",
+      "title": "ShieldReduce: Fine-Grained Shielded Data Reduction",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:00:11Z",
+      "content_hash": "sha256:7ac294ba71b90d42b3ab38fb1da39d22f1cdd726d5ca35459262f89ef2fb3b04",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

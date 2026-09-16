@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2025-training-solo-on-the-limitations-of-domain-isolation-aga-a4b353cd",
   "title": "Training Solo: On the Limitations of Domain Isolation Against Spectre-v2 Attacks",
+  "abstract": "Spectre-v2 vulnerabilities have been increasingly gaining momentum, as they enable particularly powerful cross-domain transient execution attacks. Attackers can train the indirect branch predictor in one protection domain (e.g., user process) in order to speculatively hijack control flow and disclose data in a victim domain (e.g., kernel). In response to these attacks, vendors have deployed increasingly strong domain isolation techniques (e.g., eIBRS and IBPB) to prevent the predictor in one domain from being influenced by another domain's execution. While recent attacks such as BHI and Post-barrier Spectre have evidenced (now patched) implementation flaws of such techniques, the common assumption is that, barring implementation issues, domain isolation can close the attack surface in the practical cases of interest. In this paper, we challenge this assumption and show that even perfect domain isolation is insufficient to deter practical attacks. To this end, we systematically analyze self-training Spectre-v2 attacks, where both training and speculative control-flow hijacking occur in the same (victim) domain. While self-training attacks are believed to be limited to the in-domain scenario–where attackers can run arbitrary code and inject their own disclosure gadgets in a (default-off) sandbox such as eBPF–our analysis shows cross-domain variants are possible in practice. Specifically, we describe three new classes of attacks against the Linux kernel and present two end-to-end exploits that leak kernel memory on recent Intel CPUs at up to 17 KB/sec. During our investigation, we also stumbled upon two Intel issues which completely break (user, guest, and hypervisor) isolation and re-enable classic Spectre-v2 attacks.",
+  "abstract_source_id": "src-abstract-sp-2025-a4b353cd",
   "venue": "sp",
   "year": 2025,
   "track_or_session": "Cycle 2",
@@ -91,6 +93,19 @@
       "official": true,
       "supports": [
         "DOI, authors, affiliations, abstract, publication date, pages, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2025-a4b353cd",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Training Solo: On the Limitations of Domain Isolation Against Spectre-v2 Attacks",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:52Z",
+      "content_hash": "sha256:b15ce02bcc49da611fdd791ecc56741e7d91d84154b58c1a7f72a5c6902e6e46",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

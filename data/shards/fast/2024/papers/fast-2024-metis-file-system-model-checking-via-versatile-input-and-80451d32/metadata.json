@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "fast-2024-metis-file-system-model-checking-via-versatile-input-and-80451d32",
   "title": "Metis: File System Model Checking via Versatile Input and State Exploration",
+  "abstract": "We present Metis , a model-checking framework designed for versatile, thorough, yet configurable file system testing in the form of input and state exploration. It uses a nondeterministic loop and a weighting scheme to decide which system calls and their arguments to execute. Metis features a new abstract state representation for file-system states in support of efficient and effective state exploration. While exploring states, it compares the behavior of a file system under test against a reference file system and reports any discrepancies; it also provides support to investigate and reproduce any that are found. We also developed RefFS, a small, fast file system that serves as a reference, with special features designed to accelerate model checking and enhance bug reproducibility. Experimental results show that Metis can flexibly generate test inputs; also the rate at which it explores file-system states scales nearly linearly across multiple nodes. RefFS explores states 3–28× faster than other, more mature file systems. Metis aided the development of RefFS, reporting 11 bugs that we subsequently fixed. Metis further identified 12 bugs from five other file systems, five of which were confirmed and with one fixed and integrated into Linux.",
+  "abstract_source_id": "src-abstract-fast-2024-80451d32",
   "venue": "fast",
   "year": 2024,
   "track_or_session": "File Systems",
@@ -223,6 +225,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-fast-2024-80451d32",
+      "url": "https://www.usenix.org/conference/fast24/presentation/liu-yifei",
+      "kind": "paper-page",
+      "title": "Metis: File System Model Checking via Versatile Input and State Exploration",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:00:48Z",
+      "content_hash": "sha256:e9a2b0d08807b9012b59229065a124ad3f58622bad4b1241495d3d99997a3a17",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

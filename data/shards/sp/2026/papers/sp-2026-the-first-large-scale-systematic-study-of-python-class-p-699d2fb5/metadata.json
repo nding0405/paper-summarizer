@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2026-the-first-large-scale-systematic-study-of-python-class-p-699d2fb5",
   "title": "The First Large-Scale Systematic Study of Python Class Pollution Vulnerability",
+  "abstract": "Class pollution is a recently discovered, yet underexplored Python vulnerability that allows attackers to pollute unintended runtime objects by exploiting the class-based inheritance model and reflection mechanism. Before this paper, only two real-world vulnerabilities related to class pollution—including one reported to the Common Vulnerabilities and Exposures (CVE) database—were discovered. Furthermore, there was no existing tool capable of detecting such vulnerabilities, let alone a systematic study of vulnerable code patterns, exploitation techniques, and real-world prevalence. In this paper, we design and implement Pyrl, the first framework for detecting class pollution vulnerabilities in realworld applications via a novel, static operational taint analysis. Our key insight is that class pollution consists of two types of vulnerable code primitives—“get” and “set”—for fetching and setting items and attributes. Different combinations of these primitives (two types of “get”s and three “set”s) further lead to six unique vulnerability types according to our first taxonomy of class pollution. Pyrl's operational taint analysis tracks attacker-controlled inputs on these primitives and their combinations using fine-grained, operational taint labels that are initiated, transformed, propagated, and merged according to the analysis context. We applied Pyrl to over half a million real-world Python programs from GitHub and PyPI, resulting in the detection of 47 zero-day, exploitable class pollutions. Our findings include critical vulnerabilities in widely used applications, such as Azure CLI by Microsoft and Mesop by Google, both of which have been acknowledged and patched. We have responsibly reported all identified vulnerabilities to the corresponding developers—who fixed five of them—and CVE Numbering Authorities (CNAs)—who assigned seven CVE identifiers.",
+  "abstract_source_id": "src-abstract-sp-2026-699d2fb5",
   "venue": "sp",
   "year": 2026,
   "track_or_session": "Cycle 1",
@@ -175,6 +177,19 @@
       "official": true,
       "supports": [
         "DOI, published-order authors and affiliations, abstract, publication date, page span, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2026-699d2fb5",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "The First Large-Scale Systematic Study of Python Class Pollution Vulnerability",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:58:06Z",
+      "content_hash": "sha256:5353b9384fd86d54ad3dc674f6041a164ea560a1a98a9c02cc1bb37e317e508e",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

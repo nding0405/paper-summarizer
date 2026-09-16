@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2024-camel-communication-efficient-and-maliciously-secure-fed-b38bfeba",
   "title": "Camel: Communication-Efficient and Maliciously Secure Federated Learning in the Shuffle Model of Differential Privacy",
+  "abstract": "Federated learning (FL) has rapidly become a compelling paradigm that enables multiple clients to jointly train a model by sharing only gradient updates for aggregation, without revealing their local private data. In order to protect the gradient updates which could also be privacy-sensitive, there has been a line of work studying local differential privacy (LDP) mechanisms to provide a formal privacy guarantee. With LDP mechanisms, clients locally perturb their gradient updates before sharing them out for aggregation. However, such approaches are known for greatly degrading the model utility, due to heavy noise addition. To enable a better privacy-utility trade-off, a recently emerging trend is to apply the shuffle model of DP in FL, which relies on an intermediate shuffling operation on the perturbed gradient updates to achieve privacy amplification. Following this trend, in this paper, we present Camel, a new communication-efficient and maliciously secure FL framework in the shuffle model of DP. Camel first departs from existing works by ambitiously supporting integrity check for the shuffle computation, achieving security against malicious adversary. Specifically, Camel builds on the trending cryptographic primitive of secret-shared shuffle, with custom techniques we develop for optimizing system-wide communication efficiency, and for lightweight integrity checks to harden the security of server-side computation. In addition, we also derive a significantly tighter bound on the privacy loss through analyzing the Rényi differential privacy (RDP) of the overall FL process. Extensive experiments demonstrate that Camel achieves better privacy-utility trade-offs than the state-of-the-art work, with promising performance.",
+  "abstract_source_id": "src-abstract-ccs-2024-b38bfeba",
   "venue": "ccs",
   "year": 2024,
   "track_or_session": "Cycle 2",
@@ -138,6 +140,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2024-b38bfeba",
+      "url": "https://api.openalex.org/works/doi:10.1145/3658644.3690200?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Camel: Communication-Efficient and Maliciously Secure Federated Learning in the Shuffle Model of Differential Privacy",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:09:06Z",
+      "content_hash": "sha256:afd735561a5bd8da299b75f0d7e4de3b56819d598100aed12b260f3d2cb5bdf0",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2025-shaft-secure-handy-accurate-and-fast-transformer-inferen-6796bcf3",
   "title": "SHAFT: Secure, Handy, Accurate and Fast Transformer Inference",
+  "abstract": "Adoption of transformer-based machine learning models is growing, raising concerns about sensitive data exposure. Nonetheless, current secure inference solutions incur substantial overhead due to their extensive reliance on non-linear protocols, such as softmax and Gaussian error linear unit (GELU). Driven by numerical stability needs, softmax approximations (e.g., NeurIPS 2021) typically extract the maximum element of an input vector, incurring logarithmic rounds (in the input length). Existing GELU protocols (e.g., S&P 2024) use piecewise approximations with high-degree polynomials that rely heavily on secure multiplications and comparisons, which are expensive. Such complexities also hinder model owners who are not familiar with cryptography from easily deploying their custom models.\n\nSHAFT, our proposed system, provides a secure, handy, accurate, and fast transformer inference framework for deployment. Highlights of our contributions include 1) the first constant-round softmax protocol for transformers, uniquely combining the benefits of input clipping and characteristics of ordinary differential equations, and 2) a highly accurate GELU protocol on a novel characterization designed for Fourier series approximation. Extending to broader contexts, our new protocols also apply to general neural networks using softmax as the final layer and to transformer architectures with different activation functions. Remarkably, SHAFT outperforms state-of-the-art SIGMA (PETS 2024), based on secret sharing, and BumbleBee (NDSS 2025), which additionally uses RLWE-based homomorphic encryption. More specifically, SHAFT minimizes communication by 25-41%. and matches SIGMA's running time while surpassing BumbleBee in running time by 4.6-5.3× on LANs and 2.9-4.4× on WANs. Alongside these improvements, SHAFT attains accuracy comparable to plaintext, confirming its numerical stability and accuracy. Next in this progression, SHAFT provides an accessible open-source framework for secure and handy deployment by smoothly integrating with the Hugging Face library (EMNLP Demos 2020).",
+  "abstract_source_id": "src-abstract-ndss-2025-6796bcf3",
   "venue": "ndss",
   "year": 2025,
   "track_or_session": "Fall submission cycle",
@@ -105,6 +107,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2025-6796bcf3",
+      "url": "https://www.ndss-symposium.org/ndss-paper/shaft-secure-handy-accurate-and-fast-transformer-inference/",
+      "kind": "paper-page",
+      "title": "SHAFT: Secure, Handy, Accurate and Fast Transformer Inference",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:20:31Z",
+      "content_hash": "sha256:73a3860cb0c597de1305304ecf85b763c7ef79f99ddef76b56e14db21540f2f5",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

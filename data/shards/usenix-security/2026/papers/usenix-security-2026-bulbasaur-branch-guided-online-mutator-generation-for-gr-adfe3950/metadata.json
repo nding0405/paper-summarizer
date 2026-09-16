@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-bulbasaur-branch-guided-online-mutator-generation-for-gr-adfe3950",
   "title": "Bulbasaur: Branch-Guided Online Mutator Generation for Greybox Fuzzing",
+  "abstract": "Coverage-guided greybox fuzzing (CGF) hinges on generating inputs that satisfy branch constraints in order to explore deep code regions. Existing CGF techniques propose various approaches to improve the probability of solving such constraints. However, they still rely on general-purpose mutators, which lack the ability to precisely manipulate relevant input bytes to satisfy complex constraints.\n\nOur analysis reveals that LLMs can more accurately solve branch constraints by generating tailored mutators. These mutators enable the fuzzer to perform localized and reusable modifications on inputs that reach target branches, producing precise mutations to satisfy target constraints. To achieve this, we propose Bulbasaur, a branch-guided framework for online LLM-based mutator generation. Bulbasaur employs hard frontier-guided branch selection to identify critical branches, continuously collects and organizes relevant static and dynamic context to support high-quality mutator generation, and adopts an efficient and adaptive strategy to apply generated mutators during fuzzing.\n\nWe evaluate Bulbasaur on the FuzzBench and UniFuzz benchmarks. The results show that Bulbasaur improves line and branch coverage by up to 23.18% and 24.46%, respectively, over state-of-the-art fuzzers, discovers 21 vulnerabilities missed by all baselines, and identifies 15 previously unknown vulnerabilities on OSS-Fuzz, all of which have been assigned CVE identifiers.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-adfe3950",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Software Security 3",
@@ -176,6 +178,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-adfe3950",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/wang-yiyi",
+      "kind": "paper-page",
+      "title": "Bulbasaur: Branch-Guided Online Mutator Generation for Greybox Fuzzing",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:23:17Z",
+      "content_hash": "sha256:fd27a2b68783eb5b49a712b2d12dda3e43f012a4fed575f32d5230a3ee8d1058",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

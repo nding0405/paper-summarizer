@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2025-sylva-tailoring-personalized-adversarial-defense-in-pre-4dde2a12",
   "title": "Sylva: Tailoring Personalized Adversarial Defense in Pre-trained Models via Collaborative Fine-tuning",
+  "abstract": "The growing adoption of large pre-trained models in edge computing has made deploying model inference on mobile clients both practical and popular. These devices are inherently vulnerable to direct adversarial attacks, which pose a substantial threat to the robustness and security of deployed models. Federated adversarial training (FAT) has emerged as an effective solution to enhance model robustness while preserving client privacy. However, FAT frequently produces a generalized global model, which struggles to address the diverse and heterogeneous data distributions across clients, resulting in insufficiently personalized performance, while also encountering substantial communication challenges during the training process. In this paper, we propose Sylva, a personalized collaborative adversarial training framework designed to deliver customized defense models for each client through a two-phase process. In Phase 1, Sylva employs LoRA for local adversarial fine-tuning, enabling clients to personalize model robustness while drastically reducing communication costs by uploading only LoRA parameters during federated aggregation. In Phase 2, a game-based layer selection strategy is introduced to enhance accuracy on benign data, further refining the personalized model. This approach ensures that each client receives a tailored defense model that balances robustness and accuracy effectively. Extensive experiments on benchmark datasets demonstrate that Sylva can achieve up to 50× improvements in communication efficiency compared to state-of-the-art algorithms, while achieving up to 29.5% and 50.4% enhancements in adversarial robustness and benign accuracy, respectively.",
+  "abstract_source_id": "src-abstract-ccs-2025-4dde2a12",
   "venue": "ccs",
   "year": 2025,
   "track_or_session": "Cycle 1",
@@ -148,6 +150,19 @@
         "published-order authors",
         "publication-time affiliations",
         "publication date and page span"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2025-4dde2a12",
+      "url": "https://api.openalex.org/works/doi:10.1145/3719027.3744805?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Sylva: Tailoring Personalized Adversarial Defense in Pre-trained Models via Collaborative Fine-tuning",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:17:08Z",
+      "content_hash": "sha256:0c77ff1822fdd99031fe19d714e5c0d2ed24e33235d48a2ef3b7db015a67dd7c",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

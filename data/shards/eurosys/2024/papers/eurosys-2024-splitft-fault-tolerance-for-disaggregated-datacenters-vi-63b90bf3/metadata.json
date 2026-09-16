@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "eurosys-2024-splitft-fault-tolerance-for-disaggregated-datacenters-vi-63b90bf3",
   "title": "SplitFT: Fault Tolerance for Disaggregated Datacenters via Remote Memory Logging",
+  "abstract": "We introduce SplitFt, a new fault-tolerance approach for storage-centric applications in disaggregated data centers. SplitFt uses a novel split architecture, where large writes are directly performed on the underlying disaggregated storage system, while small writes are made fault-tolerant within the compute layer. The split architecture enables applications to achieve strong durability guarantees without compromising performance. SplitFt makes small writes fault-tolerant using a new abstraction called near-compute logs or Ncl, which leverages underutilized memory on remote nodes to log small writes in a fast, cheap, and transparent manner. We port three POSIX applications (RocksDB, Redis, and SQLite) to SplitFt and show that they offer strong guarantees compared to weak versions of the applications that can lose data; SplitFt applications do so while approximating weak versions' performance (only 0.1%-10% overhead under YCSB). Compared to strong versions, SplitFt improves performance significantly (2.5× to 27× under write-heavy workloads).",
+  "abstract_source_id": "src-abstract-eurosys-2024-63b90bf3",
   "venue": "eurosys",
   "year": 2024,
   "track_or_session": null,
@@ -125,6 +127,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-eurosys-2024-63b90bf3",
+      "url": "https://api.openalex.org/works/doi:10.1145/3627703.3629561?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "SplitFT: Fault Tolerance for Disaggregated Datacenters via Remote Memory Logging",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:18:57Z",
+      "content_hash": "sha256:d539f6e91df35104897f58d58d76107da12d0f56168698681b867bb2c3822c09",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

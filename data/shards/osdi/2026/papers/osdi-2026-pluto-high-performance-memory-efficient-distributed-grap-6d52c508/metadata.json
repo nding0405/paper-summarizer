@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2026-pluto-high-performance-memory-efficient-distributed-grap-6d52c508",
   "title": "Pluto: High-Performance, Memory-Efficient Distributed Graph Analytics through Advanced Mirroring",
+  "abstract": "Inter-host communication poses a significant performance bottleneck in distributed graph analytics due to synchronization overheads. To mitigate this, state-of-the-art systems typically employ the full mirroring technique to replicate all potentially needed remote data and adopt a bulk-synchronous parallel execution model for coarse-grained communication. While effective for reducing network traffic, these approaches substantially increase memory footprint and constrain system parallelism. This paper introduces Pluto, a memory-efficient distributed graph analytics system based on two advanced mirroring designs: static partial mirroring and a mirror-free architecture. Nonproductive data duplication is avoided to reduce memory usage, while the work migration mechanism allows communication-computation overlap for performance improvement. For homogeneous graphs, Pluto achieves up to 3.8× speedup (harmonic mean 1.75×) compared to a full mirroring baseline and delivers up to 12× speedup (harmonic mean 1.75×) over existing open-source systems. For labeled property graphs, Pluto achieves up to 2.6× speedup (harmonic mean 1.37×) and lowers the minimum host requirement to 50%–90% of the baseline.",
+  "abstract_source_id": "src-abstract-osdi-2026-6d52c508",
   "venue": "osdi",
   "year": 2026,
   "track_or_session": "Graphs, ANN, and Vector Search",
@@ -125,6 +127,19 @@
       "official": true,
       "supports": [
         "Official proceedings availability and canonical conference versions."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2026-6d52c508",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/wu-ying-wei",
+      "kind": "paper-page",
+      "title": "Pluto: High-Performance, Memory-Efficient Distributed Graph Analytics through Advanced Mirroring",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:08:46Z",
+      "content_hash": "sha256:756ac1657bb06d138fe3ef33c95899141adc5c34819f03c87060e33b36c3c0f4",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "atc-2023-vectorvisor-a-binary-translation-scheme-for-throughput-o-f2767982",
   "title": "VectorVisor: A Binary Translation Scheme for Throughput-Oriented GPU Acceleration",
+  "abstract": "Beyond conventional graphics applications, general-purpose GPU acceleration has had significant impact on machine learning and scientific computing workloads. Yet, it has failed to see widespread use for server-side applications, which we argue is because GPU programming models offer a level of abstraction that is either too low-level (e.g., OpenCL, CUDA) or too high-level (e.g., TensorFlow, Halide), depending on the language. Not all applications fit into either category, resulting in lost opportunities for GPU acceleration.\n\nWe introduce VectorVisor, a vectorized binary translator that enables new opportunities for GPU acceleration by introducing a novel programming model for GPUs. With VectorVisor, many copies of the same server-side application are run concurrently on the GPU, where VectorVisor mimics the abstractions provided by CPU threads. To achieve this goal, we demonstrate how to (i) provide cross-platform support for system calls and recursion using continuations and (ii) make full use of the excess register file capacity and high memory bandwidth of GPUs. We then demonstrate that our binary translator is able to transparently accelerate certain classes of compute-bound workloads, gaining significant improvements in throughput-per-dollar of up to 2.9 × compared to Intel x86-64 VMs in the cloud, and in some cases match the throughput-per-dollar of native CUDA baselines.",
+  "abstract_source_id": "src-abstract-atc-2023-f2767982",
   "venue": "atc",
   "year": 2023,
   "track_or_session": "GPU",
@@ -138,6 +140,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-atc-2023-f2767982",
+      "url": "https://www.usenix.org/conference/atc23/presentation/ginzburg",
+      "kind": "paper-page",
+      "title": "VectorVisor: A Binary Translation Scheme for Throughput-Oriented GPU Acceleration",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T21:58:21Z",
+      "content_hash": "sha256:65ffdf484f11c0ca2256c7a69dfa080aced57f805a925eb20702fde55f528831",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2026-chypnosis-undervolting-based-static-side-channel-attacks-9608220b",
   "title": "Chypnosis: Undervolting-based Static Side-channel Attacks",
+  "abstract": "Static side-channel analysis attacks, which rely on a stopped clock to extract sensitive information, pose a growing threat to embedded systems' security. To protect against such attacks, several proposed defenses aim to detect unexpected variations in the clock signal and clear sensitive states. In this work, we present Chypnosis, an undervolting attack technique that indirectly stops the target circuit clock, while retaining stored data. Crucially, Chypnosis also blocks the state clearing stage of prior defenses, allowing recovery of secret information even in their presence. However, basic undervolting is not sufficient in the presence of voltage sensors designed to handle fault injection via voltage tampering. To overcome such defenses, we observe that rapidly dropping the supply voltage can disable the response mechanism of voltage sensor systems. We implement Chypnosis on various FPGAs, demonstrating the successful bypass of their sensors, both in the form of soft and hard intellectual property (IP) cores. To highlight the real-world applicability of Chypnosis, we show that the alert handler of the OpenTitan root-of-trust, responsible for invoking hardware responses to threats, can be bypassed. Furthermore, we demonstrate that by combining Chypnosis with static side-channel analysis techniques, namely laser logic state imaging (LLSI) and impedance analysis (IA), we can extract sensitive information from a side-channel protected cryptographic module used in OpenTitan, even in the presence of established clock and voltage sensors. Finally, we propose and implement an improvement to an established FPGAcompatible clock detection countermeasure, and we validate its resilience against Chypnosis.",
+  "abstract_source_id": "src-abstract-sp-2026-9608220b",
   "venue": "sp",
   "year": 2026,
   "track_or_session": "Cycle 1",
@@ -175,6 +177,19 @@
       "official": true,
       "supports": [
         "DOI, published-order authors and affiliations, abstract, publication date, page span, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2026-9608220b",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Chypnosis: Undervolting-based Static Side-channel Attacks",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:57Z",
+      "content_hash": "sha256:303a9b5e5ef8908a3cfe67f02eb8a87be978a5fe3281c7ecec8c0cdb512517e0",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

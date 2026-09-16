@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "eurosys-2023-safe-and-practical-gpu-computation-in-trustzone-e5c991f6",
   "title": "Safe and Practical GPU Computation in TrustZone",
+  "abstract": "For mobile devices, it is compelling to run sensitive GPU computation within a TrustZone trusted execution environment (TEE). To minimize GPU software deployed in TEE, the replay approach is promising: record CPU/GPU interactions on a full GPU stack outside the TEE; replay the interactions inside the TEE without the GPU stack. A key dilemma is that the recording process must both (1) occur in a safe environment and (2) access the exact GPU models to be used for replay. To this end, we present a novel recording architecture called GR-T: a mobile device possessing the GPU hardware collaborates with a GPU-less cloud service which runs the GPU software; the two parties exercise the GPU hardware/software jointly for recording. To overcome the resultant network delays, GR-T contributes optimizations: register access deferral, speculation, and meta-only synchronization. These techniques reduce the recording delay by 20x, from hundreds of seconds to tens of seconds. Replay-based GPU computation incurs 25% lower delays compared to native execution outside TEE. The code is available at https://github.com/bakhi/GPUReplay.",
+  "abstract_source_id": "src-abstract-eurosys-2023-e5c991f6",
   "venue": "eurosys",
   "year": 2023,
   "track_or_session": null,
@@ -104,6 +106,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-eurosys-2023-e5c991f6",
+      "url": "https://api.openalex.org/works/doi:10.1145/3552326.3567483?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Safe and Practical GPU Computation in TrustZone",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:18:39Z",
+      "content_hash": "sha256:50348745c43740ff8b59c9a0c7e11729b83c5cc5add210a924dbfac853e384b8",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

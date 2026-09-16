@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sigcomm-2023-chamelemon-shifting-measurement-attention-as-network-sta-cb82b388",
   "title": "ChameleMon: Shifting Measurement Attention as Network State Changes",
+  "abstract": "Network measurement is critical to many network applications. There are mainly two kinds of flow-level measurement tasks: 1) packet accumulation tasks and 2) packet loss tasks. In practice, the two kinds of tasks are often required at the same time, but existing works seldom handle both. In this paper, we design ChameleMon to support the two kinds of tasks simultaneously. The key design of ChameleMon is to shift measurement attention as network state changes, through two dimensions of dynamics: 1) dynamically allocating memory between the two kinds of tasks; 2) dynamically monitoring the flows of importance. To realize the key design, we propose a key technique, leveraging Fermat's little theorem to devise a flexible data structure, namely FermatSketch. FermatSketch is dividable, additive, and subtractive, supporting the two kinds of tasks. We have implemented a ChameleMon prototype on a testbed with a Fat-tree topology. We conduct extensive experiments and the results show ChameleMon supports the two kinds of tasks with low memory/bandwidth overhead, and more importantly, it can automatically shift measurement attention as network state changes.",
+  "abstract_source_id": "src-abstract-sigcomm-2023-cb82b388",
   "venue": "sigcomm",
   "year": 2023,
   "track_or_session": "Telemetry — Research Paper",
@@ -298,6 +300,19 @@
         "publisher-deposited ORCIDs",
         "proceedings page range and print publication date",
         "empty publisher relation metadata for alternate-version checks"
+      ]
+    },
+    {
+      "id": "src-abstract-sigcomm-2023-cb82b388",
+      "url": "https://api.openalex.org/works/doi:10.1145/3603269.3604850?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "ChameleMon: Shifting Measurement Attention as Network State Changes",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:22:46Z",
+      "content_hash": "sha256:78345c93d7e32dab738951b896e3a7d6e8253c1e57217b9847772fd3ff8468c6",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

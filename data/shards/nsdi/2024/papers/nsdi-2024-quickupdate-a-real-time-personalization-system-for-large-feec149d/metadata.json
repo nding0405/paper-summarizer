@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2024-quickupdate-a-real-time-personalization-system-for-large-feec149d",
   "title": "QuickUpdate: a Real-Time Personalization System for Large-Scale Recommendation Models",
+  "abstract": "Deep learning recommendation models play an important role in online companies and consume a major part of the AI infrastructure dedicated to training and inference. The accuracy of these models highly depends on how quickly they are published on the serving side. One of the main challenges in improving the model update latency and frequency is the model size, which has reached the order of Terabytes and is expected to further increase in the future. The large model size causes large latency (and write bandwidth) to update the model in geo-distributed servers. We present QuickUpdate, a system for real-time personalization of large-scale recommendation models, that publishes the model in high frequency as part of online training, providing serving accuracy that is comparable to that of a fully fresh model. The system employs novel techniques to minimize the required write bandwidth, including prioritized parameter updates, intermittent full model updates, model transformations, and relaxed consistency. We evaluate QuickUpdate using real-world data, on one of the largest production models in Meta. The results show that QuickUpdate provides serving accuracy that is comparable to a fully fresh model, while reducing the average published update size and the required bandwidth by over 13x. It provides a scalable solution for serving production models in real-time fashion, which is otherwise not feasible at scale due to the limited network and storage bandwidth.",
+  "abstract_source_id": "src-abstract-nsdi-2024-feec149d",
   "venue": "nsdi",
   "year": 2024,
   "track_or_session": "ML at Scale",
@@ -265,6 +267,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2024-feec149d",
+      "url": "https://www.usenix.org/conference/nsdi24/presentation/matam",
+      "kind": "paper-page",
+      "title": "QuickUpdate: a Real-Time Personalization System for Large-Scale Recommendation Models",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:03:36Z",
+      "content_hash": "sha256:ee09ef7cce99e56d63abc922744c11b72491bc9fcf950abda4f0064da7f83d77",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

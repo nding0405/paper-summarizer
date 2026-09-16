@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2024-sync-sync-a-covert-channel-built-on-fsync-with-storage-571f6a9b",
   "title": "Sync+Sync: A Covert Channel Built on fsync with Storage",
+  "abstract": "Scientists have built a variety of covert channels for secretive information transmission with CPU cache and main memory. In this paper, we turn to a lower level in the memory hierarchy, i.e., persistent storage. Most programs store intermediate or eventual results in the form of files and some of them call fsync to synchronously persist a file with storage device for orderly persistence. Our quantitative study shows that one program would undergo significantly longer response time for fsync call if the other program is concurrently calling fsync, although they do not share any data. We further find that, concurrent fsync calls contend at multiple levels of storage stack due to sharing software structures (e.g., Ext4's journal) and hardware resources (e.g., disk's I/O dispatch queue).\n\nWe accordingly build a covert channel named Sync+Sync. Sync+Sync delivers a transmission bandwidth of 20,000 bits per second at an error rate of about 0.40% with an ordinary solid-state drive. Sync+Sync can be conducted in cross-disk partition, cross-file system, cross-container, cross-virtual machine, and even cross-disk drive fashions, without sharing data between programs. Next, we launch side-channel attacks with Sync+Sync and manage to precisely detect operations of a victim database (e.g., insert/update and B-Tree node split). We also leverage Sync+Sync to distinguish applications and websites with high accuracy by detecting and analyzing their fsync frequencies and flushed data volumes. These attacks are useful to support further fine-grained information leakage.",
+  "abstract_source_id": "src-abstract-usenix-security-2024-571f6a9b",
   "venue": "usenix-security",
   "year": 2024,
   "track_or_session": "Side Channel IV",
@@ -91,6 +93,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2024-571f6a9b",
+      "url": "https://www.usenix.org/conference/usenixsecurity24/presentation/jiang-qisheng",
+      "kind": "paper-page",
+      "title": "Sync+Sync: A Covert Channel Built on fsync with Storage",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:17:33Z",
+      "content_hash": "sha256:ad5851c4d55ef2e79543e47a0b533a174323f2862cf6ff5e8879f02ce6125649",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

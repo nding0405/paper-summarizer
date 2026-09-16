@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2025-rethinking-trust-in-forge-based-git-security-1792ede9",
   "title": "Rethinking Trust in Forge-Based Git Security",
+  "abstract": "Git is the most popular version control system today, with Git forges such as GitHub, GitLab, and Bitbucket used to add functionality. Significantly, these forges are used to enforce security controls. However, due to the lack of an open protocol for ensuring a repository's integrity, forges cannot prove themselves to be trustworthy, and have to carry the responsibility of being non-verifiable trusted third parties in modern software supply chains.\n\nIn this paper, we present textbf{gittuf}, a system that decentralizes Git security and enables every user to contribute to collectively enforcing the repository's security. First, gittuf enables distributing of policy declaration and management responsibilities among more parties such that no single user is trusted entirely or unilaterally. Second, gittuf decentralizes the tracking of repository activity, ensuring that a single entity cannot manipulate repository events. Third, gittuf decentralizes policy enforcement by enabling all developers to independently verify the policy, eliminating the single point of trust placed in the forge as the only arbiter for whether a change in the repository is authorized. Thus, gittuf can provide strong security guarantees in the event of a compromise of the centralized forge, the underlying infrastructure, or a subset of privileged developers trusted to set policy. gittuf also implements policy features that can protect against unauthorized changes to branches and tags (emph{i.e.}, pushes) as well as files/folders (emph{i.e.}, commits). Our analysis of gittuf shows that its properties and policy features provide protections against previously seen version control system attacks. In addition, our evaluation of gittuf shows it is viable even for large repositories with a high volume of activity such as those of Git and Kubernetes (less than 4% storage overhead and under 0.59s of time to verify each push).\n\nCurrently, gittuf is an OpenSSF sandbox project hosted by the Linux Foundation. gittuf is being used in projects hosted by the OpenSSF and the CNCF, and an enterprise pilot at Bloomberg is underway.",
+  "abstract_source_id": "src-abstract-ndss-2025-1792ede9",
   "venue": "ndss",
   "year": 2025,
   "track_or_session": "Fall submission cycle",
@@ -147,6 +149,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2025-1792ede9",
+      "url": "https://www.ndss-symposium.org/ndss-paper/rethinking-trust-in-forge-based-git-security/",
+      "kind": "paper-page",
+      "title": "Rethinking Trust in Forge-Based Git Security",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:20:19Z",
+      "content_hash": "sha256:d14c0beb36a3b9f66fd65fdca10d0706f71667b84acfb2eb3f751222ee76f948",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

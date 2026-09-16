@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2026-i-o-analysis-is-all-you-need-an-i-o-analysis-for-long-se-9441307e",
   "title": "I/O Analysis is All You Need: An I/O Analysis for Long-Sequence Attention",
+  "abstract": "As GPUs and other accelerators become increasingly popular, optimizing I/O operations between on-chip and off-chip memory is increasingly critical. I/O analysis, however, is complex, requiring a deep understanding of application dataflow and memory hierarchy. Developing a practical I/O analysis methodology remains a timely challenge. Self-attention is employed extensively in transformer models, but its quadratic memory complexity poses significant challenges to modern memory systems. In this study, we explore how to use I/O analysis to develop optimal solutions for accelerating exact long-sequence self-attention. We first introduce a novel I/O analysis for tall-and-skinny matrix-matrix multiplication, which captures the dominant data movement behavior of long-sequence self-attention. Guided by systematic I/O analysis, we develop AttenIO, an I/O-driven accelerator for exact long-sequence self-attention with three key optimizations: (1) an analytically derived I/O-optimal tiling and scheduling to minimize I/O operations, (2) fine-grained three-level communication-computation overlapping to hide I/O stalls, and (3) parallel execution patterns for efficient softmax. Our evaluation shows that AttenIO achieves a 1.6×-8.8× speedup over the state-of-the-art solutions. Although AttenIO is designed for self-attention, it also highlights the broader potential of I/O analysis as a principled foundation for guiding high-performance I/O optimizations.",
+  "abstract_source_id": "src-abstract-asplos-2026-9441307e",
   "venue": "asplos",
   "year": 2026,
   "track_or_session": "Session 3A: LLM Attention & KV Cache",
@@ -167,6 +169,19 @@
       "official": false,
       "supports": [
         "Indexed abstract used for strict relevance classification and indexed arXiv identifier where available."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2026-9441307e",
+      "url": "https://api.openalex.org/works/doi:10.1145/3779212.3790174?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "I/O Analysis is All You Need: An I/O Analysis for Long-Sequence Attention",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:05:31Z",
+      "content_hash": "sha256:6951d8798570216b0d5acf0e5c46f051a4dcd043d01a52ce84cce291fed2a156",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

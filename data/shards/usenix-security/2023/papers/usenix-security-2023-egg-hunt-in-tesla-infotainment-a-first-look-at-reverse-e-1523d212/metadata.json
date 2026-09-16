@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2023-egg-hunt-in-tesla-infotainment-a-first-look-at-reverse-e-1523d212",
   "title": "Egg Hunt in Tesla Infotainment: A First Look at Reverse Engineering of Qt Binaries",
+  "abstract": "As one of the most popular C++ extensions for developing graphical user interface (GUI) based applications, Qt has been widely used in desktops, mobiles, IoTs, automobiles, etc. Although existing binary analysis platforms (e.g., angr and Ghidra) could help reverse engineer Qt binaries, they still need to address many fundamental challenges such as the recovery of control flow graphs and symbols. In this paper, we take a first look at understanding the unique challenges and opportunities in Qt binary analysis, developing enabling techniques, and demonstrating novel applications. In particular, although callbacks make control flow recovery challenging, we notice that Qt’s signal and slot mechanism can be used to recover function callbacks. More interestingly, Qt’s unique dynamic introspection can also be repurposed to recover semantic symbols. Based on these insights, we develop QtRE for function callback and semantic symbol recovery for Qt binaries. We have tested QtRE with two suites of Qt binaries: Linux KDE and the Tesla Model S firmware, where QtRE additionally recovered 10,867 callback instances and 24,973 semantic symbols from 123 binaries, which cannot be identified by existing tools. We demonstrate a novel application of using QtRE to extract hidden commands from a Tesla Model S firmware. QtRE discovered 12 hidden commands including five unknown to the public, which can potentially be exploited to manipulate vehicle settings.",
+  "abstract_source_id": "src-abstract-usenix-security-2023-1523d212",
   "venue": "usenix-security",
   "year": 2023,
   "track_or_session": "It’s All Fun and Games Until...",
@@ -91,6 +93,19 @@
       "official": true,
       "supports": [
         "authors, affiliations when published, abstract, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2023-1523d212",
+      "url": "https://www.usenix.org/conference/usenixsecurity23/presentation/wen",
+      "kind": "paper-page",
+      "title": "Egg Hunt in Tesla Infotainment: A First Look at Reverse Engineering of Qt Binaries",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:10:43Z",
+      "content_hash": "sha256:2f66cdd69d423fe9b0fa918631216736ab197183e394ba38d9a083d3462079f1",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

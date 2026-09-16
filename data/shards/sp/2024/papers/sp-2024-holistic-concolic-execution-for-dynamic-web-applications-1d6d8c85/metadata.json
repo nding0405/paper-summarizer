@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2024-holistic-concolic-execution-for-dynamic-web-applications-1d6d8c85",
   "title": "Holistic Concolic Execution for Dynamic Web Applications via Symbolic Interpreter Analysis",
+  "abstract": "Symbolic execution for dynamic web applications is challenging due to their multilingual nature. Prior solutions often fall short in limited syntax support and excessive engineering costs. We propose a novel approach called symbolic interpreter analysis (SIA) for web applications written in interpreted languages. SIA tackles the limitations by leveraging the comprehensive syntax support of language interpreters and incorporating established engineering from existing symbolic execution engines. Since web application logic is handled by the interpreter, SIA leverages an off-the-shelf symbolic execution engine to analyze the corresponding interpreter code to symbolically comprehend the behavior of the web application. Indeed, SIA entails solving several technical challenges in web application symbolic execution such as web application exploration, database interactions, etc.We have implemented our approach in SymPHP, a concolic execution engine for PHP-based web applications. Our extensive evaluation shows that SymPHP could effectively explore web application code with comprehensive PHP syntax support and high code coverage. It achieved high code coverage and successfully identified 77.23% of known vulnerabilities in our dataset, significantly outperforming prior approaches. The hybrid fuzzing framework built atop SymPHP significantly boosted fuzzing and detected ten new vulnerabilities.",
+  "abstract_source_id": "src-abstract-sp-2024-1d6d8c85",
   "venue": "sp",
   "year": 2024,
   "track_or_session": "Winter cycle",
@@ -201,6 +203,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2024-1d6d8c85",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Holistic Concolic Execution for Dynamic Web Applications via Symbolic Interpreter Analysis",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:32Z",
+      "content_hash": "sha256:be7515012a8c1ea1211f38a27ea4d2aa9cff6e0faac9417a2f58b1d64e91280e",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

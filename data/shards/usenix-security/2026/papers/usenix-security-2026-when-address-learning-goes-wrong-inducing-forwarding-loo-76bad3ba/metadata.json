@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-when-address-learning-goes-wrong-inducing-forwarding-loo-76bad3ba",
   "title": "When Address Learning Goes Wrong: Inducing Forwarding Loops and DoS Amplification in SDN",
+  "abstract": "Address learning is a fundamental SDN service that maintains a dynamic mapping from host addresses to switch ports, supporting many critical network applications. However, the address learning's core position makes it an attractive attack target. Meanwhile, unfortunately, it lacks security protection from a global view, resulting in the fact that individual, normal events can collectively cause damage. Based on it, this paper proposes LoopGen, a new attack targeting the address learning mechanism. LoopGen shows that adversaries who compromised hosts can induce the controller to create a data-plane forwarding loop by only sending crafted packets in a specific order. This loop makes LoopGen a cost-effective DoS amplifier that can be combined with different DoS attacks. We conduct extensive experiments, evaluating LoopGen using diverse real-world topologies, different open-source controllers, and heterogeneous switches. The results show that LoopGen has non-trivial feasibility, significant amplification effect, low attack cost, and high stealthiness under existing defenses. Finally, we propose two countermeasures to mitigate this attack.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-76bad3ba",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Network Security 4",
@@ -344,6 +346,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-76bad3ba",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/kong",
+      "kind": "paper-page",
+      "title": "When Address Learning Goes Wrong: Inducing Forwarding Loops and DoS Amplification in SDN",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:26:13Z",
+      "content_hash": "sha256:70bf1ae2f3abab60d848b51b327becd52f4d59124d9ab13c7888ae999448e3a3",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

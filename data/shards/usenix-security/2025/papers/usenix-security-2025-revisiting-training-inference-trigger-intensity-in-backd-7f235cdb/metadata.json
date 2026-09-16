@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-revisiting-training-inference-trigger-intensity-in-backd-7f235cdb",
   "title": "Revisiting Training-Inference Trigger Intensity in Backdoor Attacks",
+  "abstract": "Backdoor attacks typically place a specific trigger on certain training data, such that the model makes prediction errors on inputs with that trigger during inference. Despite the core role of the trigger, existing studies have commonly believed a perfect match between training-inference triggers is optimal. In this paper, for the first time, we systematically explore the training-inference trigger relation, particularly focusing on their mismatch, based on a Training-Inference Trigger Intensity Manipulation (TITIM) workflow. TITIM specifically investigates the training-inference trigger intensity, such as the size or the opacity of a trigger, and reveals new insights into trigger generalization and overfitting. These new insights challenge the above common belief by demonstrating that the training-inference trigger mismatch can facilitate attacks in two practical scenarios, posing more significant security threats than previously thought. First, when the inference trigger is fixed, using training triggers with mixed intensities leads to stronger attacks than using any single intensity. For example, on CIFAR-10 with ResNet18, mixing training triggers with 1.0 and 0.1 opacities improves the worst-case attack success rate (ASR) (over different testing opacities) of the best single-opacity attack from 10.61% to 92.77%. Second, intentionally using certain mismatched training-inference triggers can improve the attack stealthiness, i.e., better bypassing defenses. For example, compared to the training/inference intensity of 1.0/1.0, using 1.0/0.7 decreases the area under the curve (AUC) of the Scale-Up defense from 0.96 to 0.62, while maintaining a high attack ASR (99.65% vs. 91.62%).",
+  "abstract_source_id": "src-abstract-usenix-security-2025-7f235cdb",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "ML and AI Security 3: Backdoors, Poisoning, Unlearning",
@@ -175,6 +177,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-7f235cdb",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/lin-chenhao",
+      "kind": "paper-page",
+      "title": "Revisiting Training-Inference Trigger Intensity in Backdoor Attacks",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:21:29Z",
+      "content_hash": "sha256:e4a9cc68bef9785e5e4a17880713c5ed6c9cacb5769e9ac8421ad3cd6e618479",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

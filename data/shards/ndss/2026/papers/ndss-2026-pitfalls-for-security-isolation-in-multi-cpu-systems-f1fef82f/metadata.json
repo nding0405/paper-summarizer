@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2026-pitfalls-for-security-isolation-in-multi-cpu-systems-f1fef82f",
   "title": "Pitfalls for Security Isolation in Multi-CPU Systems",
+  "abstract": "In embedded systems, the integration of multiple CPUs into one system on a chip (SoC) allows greater performance, and separation of tasks into independent firmwares and optimized architectures. For example, an ARM Cortex-M4 core could run the main firmware, and a Cortex-M0 core could run a real-time operating system (RTOS). Security implications of such integrations are still unclear, e.g. if an attacker with code execution on one CPU can fully compromise the second CPU, or leak protected data.\n\nIn this work, we systematically identify security issues resulting from this integration, in particular related to memory and peripheral access control. These issues stem from re-use of single-CPU security mechanisms such as memory protection units (MPUs) in the new multi-CPU system. We identify four major attack vectors that can be present in such systems, and find that a significant number of systems on the market appear to be vulnerable. The attack vectors can lead to arbitrary read and write in protected memory of the other CPU, and even to code execution. In addition, we find that the communication mechanism of a popular open source RTOS, FreeRTOS [17], which is suggested as communication mechanism among firmwares on a multi-CPU system, introduces code execution vulnerabilities in the multi-CPU scenario. Then, we verify our theoretical predictions by implementing four attack vectors and demonstrate their practical efficacy. In addition, we find that in one case, the discovered attack surface may lead to the compromise of a custom trusted execution environment (TEE) implementation. We responsibly disclosed our findings to the vendors, resulting in a security advisory and a fix to a proprietary network stack implementation.",
+  "abstract_source_id": "src-abstract-ndss-2026-f1fef82f",
   "venue": "ndss",
   "year": 2026,
   "track_or_session": "Fall submission cycle",
@@ -118,6 +120,19 @@
       "official": false,
       "supports": [
         "independent proceedings identity reconciliation"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2026-f1fef82f",
+      "url": "https://www.ndss-symposium.org/ndss-paper/pitfalls-for-security-isolation-in-multi-cpu-systems/",
+      "kind": "paper-page",
+      "title": "Pitfalls for Security Isolation in Multi-CPU Systems",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:22:50Z",
+      "content_hash": "sha256:3339eeff0a597aac57b0c4c60f4d1e41280bf091ee8683b5eda732674e2e0e5c",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

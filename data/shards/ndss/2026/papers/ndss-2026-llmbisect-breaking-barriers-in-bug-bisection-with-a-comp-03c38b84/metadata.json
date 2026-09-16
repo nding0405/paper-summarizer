@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2026-llmbisect-breaking-barriers-in-bug-bisection-with-a-comp-03c38b84",
   "title": "LLMBisect: Breaking Barriers in Bug Bisection with A Comparative Analysis Pipeline",
+  "abstract": "Bug bisection has been an important security task that aims to understand the range of software versions impacted by a bug, i.e., identifying the commit that introduced the bug. However, traditional patch-based bisection methods are faced with several significant barriers: For example, they assume that the bug-inducing commit (BIC) and the patch commit modify the same functions, which is not always true. They often rely solely on code changes, while the commit message frequently contains a wealth of vulnerability-related information. They are also based on simple heuristics (e.g., assuming the BIC initializes lines deleted in the patch) and lack any logical analysis of the vulnerability.\n\nIn this paper, we make the observation that Large Language Models (LLMs) are well-positioned to break the barriers of existing solutions, e.g., comprehend both textual data and code in patches and commits. Unlike previous BIC identification approaches, which yield poor results, we propose a comprehensive multi-stage pipeline that leverages LLMs to: (1) fully utilize patch information, (2) compare multiple candidate commits in context, and (3) progressively narrow down the candidates through a series of down-selection steps. In our evaluation, we demonstrate that our approach achieves significantly better accuracy than the state-of-the-art solution by more than 38%. Our results further confirm that the comprehensive multi-stage pipeline is essential, as it improves accuracy by 60% over a baseline LLM-based bisection method.",
+  "abstract_source_id": "src-abstract-ndss-2026-03c38b84",
   "venue": "ndss",
   "year": 2026,
   "track_or_session": "Summer submission cycle",
@@ -181,6 +183,19 @@
       "official": false,
       "supports": [
         "independent proceedings identity reconciliation"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2026-03c38b84",
+      "url": "https://www.ndss-symposium.org/ndss-paper/llmbisect-breaking-barriers-in-bug-bisection-with-a-comparative-analysis-pipeline/",
+      "kind": "paper-page",
+      "title": "LLMBisect: Breaking Barriers in Bug Bisection with A Comparative Analysis Pipeline",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:22:25Z",
+      "content_hash": "sha256:c1b3941d53e910cb46e61db47bd574477716f4fe758c9d94b714b92b0ffdcd47",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

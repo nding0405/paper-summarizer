@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2025-guardain-protecting-emerging-generative-ai-workloads-on-2c6d65c6",
   "title": "GuardAIn: Protecting Emerging Generative AI Workloads on Heterogeneous NPU",
+  "abstract": "Driven by recent advances in large language models (LLMs), generative AI applications have become the dominant workload for the modern cloud. Specialized hardware accelerators, such as GPUs, NPUs, and TPUs, play a key role in AI adoption due to their superior performance over general-purpose CPUs. AI models and the data are often highly sensitive and come from mutually distrusting parties. Existing industry-standard CPU-based TEEs, such as Intel SGX or AMD SEV, do not adequately protect these accelerators. Device-TEEs like Nvidia-CC only address tightly coupled CPU-GPU systems with a proprietary solution requiring TEE on the host CPU side. On the other hand, existing academic proposals target specific CPU-TEE platforms. To address this gap, we propose Guardain,a confidential computing architecture for discrete NPU devices that requires no trust in the host system. Guardainsecures data, model parameters, and operator binaries through authenticated encryption. Guardainuses delegation-based memory semantics to ensure isolation from the host software stack, while task attestation guarantees strong model integrity. Our G Uardainimplementation and evaluation with state-of-the-art LLMs such as Llama2 and Llama3 shows that Guardainintroduces minimal overhead with no changes in the AI software stack.",
+  "abstract_source_id": "src-abstract-sp-2025-2c6d65c6",
   "venue": "sp",
   "year": 2025,
   "track_or_session": "Cycle 2",
@@ -133,6 +135,19 @@
       "official": true,
       "supports": [
         "DOI, authors, affiliations, abstract, publication date, pages, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2025-2c6d65c6",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Guardain: Protecting Emerging Generative AI Workloads on Heterogeneous NPU",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:47Z",
+      "content_hash": "sha256:d48e5e27e72297ce02860f066764bd9c5cd6e8191e2ebf4b4f15da0fffb6959f",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

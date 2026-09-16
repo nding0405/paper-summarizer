@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2023-selftune-tuning-cluster-managers-8e3dfae1",
   "title": "SelfTune: Tuning Cluster Managers",
+  "abstract": "Large-scale cloud providers rely on cluster managers for container allocation and load balancing (e.g., Kubernetes), VM provisioning (e.g., Protean), and other management tasks. These cluster managers use algorithms or heuristics whose behavior depends upon multiple configuration parameters. Currently, operators manually set these parameters using a combination of domain knowledge and limited testing. In very large-scale and dynamic environments, these manually-set parameters may lead to sub-optimal cluster states, adversely affecting important metrics such as latency and throughput.\n\nIn this paper we describe SelfTune, a framework that automatically tunes such parameters in deployment. SelfTune piggybacks on the iterative nature of cluster managers which, through multiple iterations, drives a cluster to a desired state. Using a simple interface, developers integrate SelfTune into the cluster manager code, which then uses a principled reinforcement learning algorithm to tune important parameters over time. We have deployed SelfTune on tens of thousands of machines that run a large-scale background task scheduler at Microsoft. SelfTune has improved throughput by as much as 20% in this deployment by continuously tuning a key configuration parameter that determines the number of jobs concurrently accessing CPU and disk on every machine. We also evaluate SelfTune with two Azure FaaS workloads, the Kubernetes Vertical Pod Autoscaler, and the DeathStar microservice benchmark. In all cases, SelfTune significantly improves cluster performance.",
+  "abstract_source_id": "src-abstract-nsdi-2023-8e3dfae1",
   "venue": "nsdi",
   "year": 2023,
   "track_or_session": "Making Systems Learn",
@@ -224,6 +226,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2023-8e3dfae1",
+      "url": "https://www.usenix.org/conference/nsdi23/presentation/karthikeyan",
+      "kind": "paper-page",
+      "title": "SelfTune: Tuning Cluster Managers",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:02:30Z",
+      "content_hash": "sha256:0c2781221b277473b61b15c7ec291ff5030999d39b1bd7622b01781f95d92458",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

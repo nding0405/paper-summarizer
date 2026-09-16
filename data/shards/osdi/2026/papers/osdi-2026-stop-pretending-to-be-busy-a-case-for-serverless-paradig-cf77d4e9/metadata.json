@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2026-stop-pretending-to-be-busy-a-case-for-serverless-paradig-cf77d4e9",
   "title": "Stop Pretending to Be Busy: A Case for Serverless Paradigms in Co-Located Batch Workloads (Operational Systems)",
+  "abstract": "High resource utilization is significant for cloud vendors. To achieve this, a common practice is to co-locate low-priority batch workloads (typically Spark-based analytics) with high-priority online services, while strictly maintaining Service Level Objectives (SLOs). This paper presents an empirical study of co-location and overcommitment in a production-scale datacenter. Specifically, within Ant Group, online services utilize only 22.0% of available CPU resources. By carefully overcommitting resources to deploy batch workloads, the system harvests an additional 26.8% of CPU capacity.\n\nDespite this increased density, we observe that batch workloads remain inefficient, with a useful computation ratio of only 67%. We identify the root causes of this low \"effective utilization\" as four types of idleness: (1) slot idle , arising from coarse-grained resource management in Spark; (2) gap idle , caused by hardware heterogeneity and interference; and (3/4) start/stop idles , resulting from the high latency of launching and destroying analytic instances. To address these inefficiencies, we propose Quark, a novel framework that integrates serverless paradigms into batch analytics. Quark eliminates these idles through fine-grained resource allocation, heterogeneity and skew-aware scheduling, and rapid instance provisioning. Experimental results show that Quark increases cluster utilization by about 37.37% and reduces the proportion of long-tail jobs from 15% to 2%. Quark has been deployed at scale within Ant Group, processing 350,000 offline query jobs daily across a deployment footprint of 600,000 CPU cores, processing between 7,500 TB and 10,000 TB of data daily, and saving more than 100,000 CPU cores.",
+  "abstract_source_id": "src-abstract-osdi-2026-cf77d4e9",
   "venue": "osdi",
   "year": 2026,
   "track_or_session": "Serverless Plus Resilence",
@@ -251,6 +253,19 @@
       "official": true,
       "supports": [
         "Official proceedings availability and canonical conference versions."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2026-cf77d4e9",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/chai",
+      "kind": "paper-page",
+      "title": "Stop Pretending to Be Busy: A Case for Serverless Paradigms in Co-Located Batch Workloads (Operational Systems)",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:09:00Z",
+      "content_hash": "sha256:a9d9b443b96cf88c14397e1d7f6cecb6bff000ca7ddddc6918be212ca4dc3c24",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

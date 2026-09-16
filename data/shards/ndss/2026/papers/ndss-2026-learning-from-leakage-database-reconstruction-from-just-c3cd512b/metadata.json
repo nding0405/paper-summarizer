@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2026-learning-from-leakage-database-reconstruction-from-just-c3cd512b",
   "title": "Learning from Leakage: Database Reconstruction from Just a Few Multidimensional Range Queries",
+  "abstract": "Searchable Encryption (SE) has shown a lot of promise towards enabling secure and efficient queries over encrypted data. In order to achieve this efficiency, SE inevitably leaks some information, and a big open question is how dangerous this leakage is. While prior reconstruction attacks have demonstrated effectiveness in one-dimensional range query settings, extending them to high-dimensional datasets remains challenging. Existing methods either demand excessive query information (e.g., an attacker that has observed all possible responses) or produce low-quality reconstructions in sparse databases. In this work, we present REMIN, a new leakage-abuse attack against SE schemes in multi-dimensional settings, exploiting access and search pattern leakage from range queries. REMIN leverages unsupervised representation learning to transform query co-occurrence frequencies into geometric signals, enabling an attacker to infer relative spatial relationships among encrypted records. This approach allows accurate and scalable reconstruction of high-dimensional datasets under minimal leakage. Furthermore, we introduce REMIN-P, an active variant of the attack that incorporates a practical poisoning strategy. By injecting a small number of auxiliary anchor points, REMIN-P significantly improves reconstruction quality, particularly in sparse or boundary regions of the data space. We evaluate our attacks extensively on both synthetic and real-world datasets. Compared to state-of-the-art reconstruction attacks, our reconstruction attack achieves up to 50% reduction in mean squared error (MSE), all while maintaining fast and scalable runtime. Our poisoning attack can further reduce MSE by an additional 50% on average, depending on the poisoning strategy.",
+  "abstract_source_id": "src-abstract-ndss-2026-c3cd512b",
   "venue": "ndss",
   "year": 2026,
   "track_or_session": "Fall submission cycle",
@@ -160,6 +162,19 @@
       "official": false,
       "supports": [
         "independent proceedings identity reconciliation"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2026-c3cd512b",
+      "url": "https://www.ndss-symposium.org/ndss-paper/learning-from-leakage-database-reconstruction-from-just-a-few-multidimensional-range-queries/",
+      "kind": "paper-page",
+      "title": "Learning from Leakage: Database Reconstruction from Just a Few Multidimensional Range Queries",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:22:21Z",
+      "content_hash": "sha256:78790e7c63de0ae13f3d45242b9c551b315f84b0cdc84cd6b19758e0e3516138",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

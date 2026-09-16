@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-distributed-vector-commitments-and-their-applications-9872f590",
   "title": "Distributed Vector Commitments and Their Applications",
+  "abstract": "Vector commitment (VC) schemes enable a prover to commit to a vector and later open any position with a short proof. However, existing VC schemes are designed for centralized settings, and cannot work in decentralized systems, where the input vector is distributed across multiple machines. Similarly, traditional VC schemes cannot leverage distributed parallel computation across multiple machines for acceleration.\n\nTo tackle this issue, we introduce a new notion—distributed VC (DVC), which allows multiple machines, each holding only a subvector of the input vector, to collectively commit to the entire vector and generate position proofs in a distributed manner. To the best of our knowledge, there is no prior work on DVCs and no existing work can trivially derive an efficient DVC scheme. The key challenge is that both commitments and proofs depend on the entire vector, while no single machine holds the complete vector in distributed settings.\n\nWe propose the first DVC scheme, HLE-DVC, which leverages M machines to process the distributed vector v of length N inparallel, with each machine holding a subvector of length N/M . HLE-DVC achieves compact proof size-O(logM) and allows each machine to generate all its position proofs in a single communication round,with communication cost O(logM) and computation cost O(NlogN/M). Moreover, HLE-DVC supports batch proving, proof aggregation, and efficient updates. W econduct the experiments and open-source the code. Using 256 machines to generate all proofs for a committed vector of length 230 takes 17,515 seconds. This achieves a 256× parallel speedup over HLE-DVC on a single machine, and is 142× faster than Hyperproofs (a famous single machine VC scheme). The communication cost per machine is 0.768 KB.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-9872f590",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Applications of Cryptography 7",
@@ -135,6 +137,19 @@
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening",
         "prepublication PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-9872f590",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/gao-rui",
+      "kind": "paper-page",
+      "title": "Distributed Vector Commitments and Their Applications",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:23:42Z",
+      "content_hash": "sha256:94c707f086259b67e73a8a4b51d8986b7e96f40df0e4cfe87d5d4d31f9a858b9",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

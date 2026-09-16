@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-libra-pattern-scheduling-co-optimization-for-cross-schem-5cf61e52",
   "title": "Libra: Pattern-Scheduling Co-Optimization for Cross-Scheme FHE Code Generation over GPGPU",
+  "abstract": "We propose Libra, a compiler framework that automates efficient code generation for cross-scheme fully homomorphic encryption (FHE) on highly parallel computing architectures. While it is known that leveraging multiple FHE schemes in a single application can improve the overall efficiency, the exact mapping of cross-scheme FHE operators onto high-performance architectures, such as general-purpose graphic processing units (GPGPUs), remains challenging. To address such challenge, Libra integrates both the FHE computational patterns and hardware-aware scheduling strategies to establish an algorithm-hardware co-optimization framework. Specifically, Libra defines a novel cross-scheme representation for FHE that abstracts common program patterns for each of the FHE schemes. Then, we dynamically optimize the output FHE program based on the combined execution costs of FHE primitives derived from multiple scheme switching patterns. Next, to accelerate inter-operator execution on GPUs, Libra introduces a computational scheduling strategy that bridges high-level computation characteristics with low-level execution plans. Through the proposed pattern-scheduling co-optimization process, Libra generates efficient codes for cross-scheme high-precision FHE computations on GPGPUs. Experiment results show that Libra achieves up to 270× speedup on microbenchmarks and 19× on the applications compared to state-of-the-art cross-scheme, while improving compute unit and memory bandwidth utilization by 44% and 36.1%.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-5cf61e52",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Applications of Cryptography 1",
@@ -177,6 +179,19 @@
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening",
         "prepublication PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-5cf61e52",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/bian-song",
+      "kind": "paper-page",
+      "title": "Libra: Pattern-Scheduling Co-Optimization for Cross-Scheme FHE Code Generation over GPGPU",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:24:31Z",
+      "content_hash": "sha256:30bb6ff646e25f5c02ac85a789ee79fae61e539d430a522ba3d97a5b06c97ef4",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

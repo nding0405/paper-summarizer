@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2024-spotproxy-rediscovering-the-cloud-for-censorship-circumv-1b578628",
   "title": "SpotProxy: Rediscovering the Cloud for Censorship Circumvention",
+  "abstract": "Censorship circumvention is often fueled by supporters out of goodwill. However, hosting circumvention proxies can be costly, especially when they are placed in the cloud. We argue for re-examining cloud features and leveraging them to achieve novel circumvention benefits, even though these features are not explicitly engineered for censorship circumvention. SpotProxy is inspired by Spot VMs—cloud instances backed with excess resources, sold at a fraction of the cost of regular instances, that can be taken away at a moment's notice if higher-paying requests arrive. We observe that for circumvention proxies, Spot VMs not only translate to cost savings, but also create a high churn rate since proxies are constantly re-spawned at different IP addresses—making them more difficult for a censor to enumerate and block. SpotProxy pushes this observation to the extreme and designs a circumvention infrastructure that constantly searches for cheaper VMs and refreshes the fleet for anti-blocking, for spot and regular VMs alike. We adapt Wireguard and Snowflake for use with SpotProxy, and demonstrate that our active migration mechanism allows clients to seamlessly move between proxies without degrading their performance or disrupting existing connections. We show that SpotProxy leads to significant cost savings, and that SpotProxy's rejuvenation mechanism enables proxies to be replenished frequently with new addresses.",
+  "abstract_source_id": "src-abstract-usenix-security-2024-1b578628",
   "venue": "usenix-security",
   "year": 2024,
   "track_or_session": "Social Issues II: Surveillance and Censorship",
@@ -196,6 +198,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2024-1b578628",
+      "url": "https://www.usenix.org/conference/usenixsecurity24/presentation/kon",
+      "kind": "paper-page",
+      "title": "SpotProxy: Rediscovering the Cloud for Censorship Circumvention",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:17:27Z",
+      "content_hash": "sha256:3bf7f5b2b2736d50cb25a5d0945821db0d60423e87423c0fbec1bf364243216c",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-a-formal-security-analysis-of-can-xl-a974d55b",
   "title": "A Formal Security Analysis of CAN XL",
+  "abstract": "For decades, the Controller Area Network (CAN) has been the backbone of in-vehicle communication. As modern vehicles integrate cameras, LiDARs, and AI components, classic CAN (CAN CC) faces growing limitations in bandwidth, functionality, and security. To fill these gaps, CAN XL was introduced as the next generation of CAN, aiming to offer longer payloads, higher bandwidth, and enhanced security.\n\nCAN XL makes significant standard-level changes across multiple stack layers. It also introduces several security features, but it is unclear whether these are mere add-on extensions or whether the standard redesign itself tackles CAN's chronic security weakness: the MAC sub-layer. This sub-layer governs frame formats and error handling and has historically enabled many CAN CC attacks. As the industry transitions to CAN XL, the security posture of its yet-unexplored MAC sub-layer must be understood before widespread deployment.\n\nThis paper presents the first security analysis of the CAN XL standard, focusing on its MAC sub-layer. We develop a bit-precise CAN XL formal model and release it to facilitate future research. We design a formal analysis workflow guided by CAN XL's field-oriented structure to uncover vulnerabilities. Contrary to expectations, our analysis shows that CAN XL remains vulnerable to all known CAN CC MAC sub-layer issues while introducing seven new vulnerabilities, arguably worsening security. We validate them using commercial CAN XL controllers and demonstrate exploitability via two multi-stage attacks on a testbed simulating real vehicle traffic. Finally, we propose mitigations including formally verifying standard revisions that could prevent several attacks.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-a974d55b",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Network Security 2",
@@ -176,6 +178,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-a974d55b",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/tang-zhaozhou",
+      "kind": "paper-page",
+      "title": "A Formal Security Analysis of CAN XL",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:22:52Z",
+      "content_hash": "sha256:dec31512ff5a3859f8fbf6bf26248ee06d6854e3df41d57cbb64168c9f89c2fe",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

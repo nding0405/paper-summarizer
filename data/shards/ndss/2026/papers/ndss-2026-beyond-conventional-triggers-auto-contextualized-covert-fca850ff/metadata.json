@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2026-beyond-conventional-triggers-auto-contextualized-covert-fca850ff",
   "title": "Beyond Conventional Triggers: Auto-Contextualized Covert Triggers for Android Logic Bombs",
+  "abstract": "Recent advances in static analysis, fuzzing, and learning-based detection have substantially improved the defense against trigger-based malware; however, these approaches mostly assume that trigger conditions are semantically explicit or distinguishable from normal application logic. In this paper, we present SensorBomb, a novel logic-bomb framework that exploits this assumption through auto-contextualized triggers and onboard sensor-actuator covert channels. Instead of relying on obscure or rare trigger conditions, SensorBomb constructs triggers tightly aligned with the host app’s legitimate sensor usage, actuator behaviors, and functional context so that they appear indistinguishable from benign behavior. To do so, SensorBomb automatically analyzes the host app to select context-compatible sensors, actuators, and sensitive operations, constructs covert trigger channels, and dynamically adapts trigger patterns to evade static analysis, fuzzing, sensor state anomaly detection, and user suspicion. We implement three representative prototypes of such triggers and evaluate them across diverse devices and environments. Our results show that SensorBomb consistently evades state-of-the-art detection techniques and achieves high trigger reliability with zero false positives. Large-scale injection experiments on real-world APKs further demonstrate that SensorBomb can be deployed without affecting normal app functionality. This work reveals a critical and previously underexplored attack surface in mobile malware defenses and calls for more advanced detection mechanisms.",
+  "abstract_source_id": "src-abstract-ndss-2026-fca850ff",
   "venue": "ndss",
   "year": 2026,
   "track_or_session": "Fall submission cycle",
@@ -139,6 +141,19 @@
       "official": false,
       "supports": [
         "independent proceedings identity reconciliation"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2026-fca850ff",
+      "url": "https://www.ndss-symposium.org/ndss-paper/beyond-conventional-triggers-auto-contextualized-covert-triggers-for-android-logic-bombs/",
+      "kind": "paper-page",
+      "title": "Beyond Conventional Triggers: Auto-Contextualized Covert Triggers for Android Logic Bombs",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:21:20Z",
+      "content_hash": "sha256:4a0f30398118033332a3d7e95baaaca285cdb41e181f7066dab6b46b94deee31",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2024-empower-programmable-pipeline-for-advanced-stateful-pack-36095558",
   "title": "Empower Programmable Pipeline for Advanced Stateful Packet Processing",
+  "abstract": "Programmable pipeline offers flexible and high-throughput packet processing capability, but only to some extent. When more advanced dataplane functions beyond basic packet processing and forwarding are desired, the pipeline becomes handicapped. The fundamental reason is that most stateful operations require backward cross-stage data passing and pipeline stalling for state update and consistency, which are anomalous to a standard pipeline. To solve the problem, we augment the pipeline with a low-cost, yet fast side ring to facilitate the backward data passing. We further apply the speculative execution technique to avoid pipeline stalling. The resulting architecture, RAPID, supports native and generic stateful function programming using the enhanced P4 language. We build an FPGA-based prototype to evaluate the system, and a software emulator to assess the cost and performance of an ASIC implementation. We realize several stateful applications enabled by RAPID to show how it extends a programmable dataplane's potential to a new level.",
+  "abstract_source_id": "src-abstract-nsdi-2024-36095558",
   "venue": "nsdi",
   "year": 2024,
   "track_or_session": "Programming the Network: Part 1",
@@ -307,6 +309,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2024-36095558",
+      "url": "https://www.usenix.org/conference/nsdi24/presentation/feng-yong",
+      "kind": "paper-page",
+      "title": "Empower Programmable Pipeline for Advanced Stateful Packet Processing",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:03:08Z",
+      "content_hash": "sha256:906791a1df2f916fce852ae4119065e61bf008b20b653e47acb8443b8a933f81",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-cutting-the-gordian-knot-detecting-malicious-pypi-packag-defe069a",
   "title": "Cutting the Gordian Knot: Detecting Malicious PyPI Packages via a Knowledge-Mining Framework",
+  "abstract": "The Python Package Index (PyPI) has become a target for malicious actors, yet existing detection tools generate false positive rates of 15-30%, incorrectly flagging one-third of legitimate packages as malicious. This problem arises because current tools rely on simple syntactic rules rather than semantic understanding, failing to distinguish between identical API calls serving legitimate versus malicious purposes. To solve this challenge, we propose PyGuard, a knowledge-driven framework that converts detection failures into useful behavioral knowledge by extracting patterns from existing tools' false positives and negatives. Our method uses hierarchical pattern mining to identify behavioral sequences that separate malicious from benign code, employs Large Language Models to create semantic abstractions beyond syntactic variations, and combines this knowledge into a detection system that merges exact patterns matching with contextual reasoning. PyGuard achieves 99.50% accuracy with only 2 false positives versus 1,927-2,117 in existing tools, maintains 98.28% accuracy on obfuscated code, and identified 219 previously unknown malicious packages in real-world deployment. The behavioral patterns show cross-ecosystem applicability with 98.07% accuracy on NPM packages, demonstrating that semantic understanding enables knowledge transfer across programming languages.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-defe069a",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Software Security 1",
@@ -219,6 +221,19 @@
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening",
         "prepublication PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-defe069a",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/guo-wenbo",
+      "kind": "paper-page",
+      "title": "Cutting the Gordian Knot: Detecting Malicious PyPI Packages via a Knowledge-Mining Framework",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:23:35Z",
+      "content_hash": "sha256:b1f2863edc74fe8445be585ca1bdc3211c5f24fec381c3aae0d9e22831412d8a",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sigcomm-2026-open-the-floodgates-in-a-digital-twin-experiences-of-bui-92439824",
   "title": "Open the Floodgates in a Digital Twin: Experiences of Building Spillway for 100M+-User Signaling Storms in Cellular Core Network",
+  "abstract": "Signaling storms threaten cellular core networks when synchronized reconnection attempts from massive numbers of devices trigger cascading, metastable overloads. Existing defenses rely on manual, static configurations of local overload controls, which ignore serial dependencies among heterogeneous network elements. We present Spillway, a digital-twin-driven system that automates global signaling-flood mitigation. Spillway introduces a hierarchical defense architecture that enforces altruistic throttling, allowing upstream nodes to shed load before downstream bottlenecks collapse. To evaluate candidate configurations, Spillway uses CN-DES, a domain-specific discrete-event simulator with a vectorized kernel. By aggregating users that share protocol states, CN-DES decouples simulation cost from user count and simulates regional-scale storms involving tens of millions of users in minutes, achieving a 60× speedup over traditional simulation while preserving fidelity. Spillway then uses heteroscedastic evolutionary Bayesian optimization to search a large, non-convex parameter space. We report on a five-year deployment in the world's largest 5G Standalone network. During real incidents, including application anomalies and RAN failures, networks using Spillway-optimized configurations experienced substantially fewer user fallbacks than predicted under legacy configurations; post-incident analysis confirms that pre-deployed parameters kept all network elements within safe operating bounds.",
+  "abstract_source_id": "src-abstract-92439824",
   "venue": "sigcomm",
   "year": 2026,
   "track_or_session": "Experience Session 4: Cloud Data Planes & Network Virtualization — Experience Paper",
@@ -254,6 +256,19 @@
       "official": true,
       "supports": [
         "official main-paper scope and track definitions"
+      ]
+    },
+    {
+      "id": "src-abstract-92439824",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/search/match?query=Open%20the%20Floodgates%20in%20a%20Digital%20Twin%3A%20Experiences%20of%20Building%20Spillway%20for%20100M%2B-User%20Signaling%20Storms%20in%20Cellular%20Core%20Network&fields=title,abstract",
+      "kind": "semantic-scholar",
+      "title": "Open the Floodgates in a Digital Twin: Experiences of Building Spillway for 100M+-User Signaling Storms in Cellular Core Network",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T23:04:03Z",
+      "content_hash": "sha256:b9520a0d59aa48c67bdea3c842b0a89df6639652340ba4721196cde1a39850e4",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

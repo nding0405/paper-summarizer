@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2023-boomerang-metadata-private-messaging-under-hardware-trus-b548c3a1",
   "title": "Boomerang: Metadata-Private Messaging under Hardware Trust",
+  "abstract": "In end-to-end encrypted (E2EE) messaging systems, protecting communication metadata, such as who is communicating with whom, at what time, etc., remains a challenging problem. Existing designs mostly fall into the balancing act among security, performance, and trust assumptions: 1) designs with cryptographic security often use hefty operations, incurring performance roadblocks and expensive operational costs for large-scale deployment; 2) more performant systems often follow a weaker security guarantee, like differential privacy, and generally demand more trust from the involved servers. So far, there has been no dominant solution. In this paper, we take a different technical route from prior art, and propose Boomerang, an alternative metadata-private messaging system leveraging the readily available trust assumption on secure enclaves (as those emerging in the cloud). Through a number of carefully tailored oblivious techniques on message shuffling, workload distribution, and proactive patching of the communication pattern, Boomerang brings together low latency, horizontal scalability, and cryptographic security, without prohibitive extra cost. With 32 machines, Boomerang achieves 99th percentile latency of 7.76 seconds for 2 20 clients. We hope Boomerang offers attractive alternative options to the current landscape of metadata-private messaging designs.",
+  "abstract_source_id": "src-abstract-nsdi-2023-b548c3a1",
   "venue": "nsdi",
   "year": 2023,
   "track_or_session": "Privacy and Security",
@@ -245,6 +247,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2023-b548c3a1",
+      "url": "https://www.usenix.org/conference/nsdi23/presentation/jiang",
+      "kind": "paper-page",
+      "title": "Boomerang: Metadata-Private Messaging under Hardware Trust",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:01:53Z",
+      "content_hash": "sha256:210d8df2d7193ca2fb99b1aeb36b909173e068440f4cf85b6d8ae984f1630e2b",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

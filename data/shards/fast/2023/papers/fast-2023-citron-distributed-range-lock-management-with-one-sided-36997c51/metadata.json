@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "fast-2023-citron-distributed-range-lock-management-with-one-sided-36997c51",
   "title": "Citron: Distributed Range Lock Management with One-sided RDMA",
+  "abstract": "Range lock enables concurrent accesses to disjoint parts of a shared storage. However, existing range lock managers rely on centralized CPU resources to process lock requests, which results in server-side CPU bottleneck and suboptimal performance when placed in a distributed scenario.\n\nWe propose Citron, an RDMA-enabled distributed range lock manager that bypasses server-side CPUs by using only one-sided RDMA in range lock acquisition and release paths. Citron manages range locks with a static data structure called segment tree, which effectively accommodates dynamically located and sized ranges but only requires limited and nearly constant synchronization costs from the clients. Citron can also scale up itself in microseconds to adapt to a shared storage of a growing size at runtime. Evaluation shows that under various workloads, Citron delivers up to 3.05× throughput and 76.4% lower tail latency than CPU-based approaches.",
+  "abstract_source_id": "src-abstract-fast-2023-36997c51",
   "venue": "fast",
   "year": 2023,
   "track_or_session": "Remote Memory",
@@ -161,6 +163,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-fast-2023-36997c51",
+      "url": "https://www.usenix.org/conference/fast23/presentation/gao",
+      "kind": "paper-page",
+      "title": "Citron: Distributed Range Lock Management with One-sided RDMA",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:00:26Z",
+      "content_hash": "sha256:d9b9c499772fbb5f0dab9ee0b4e4edc4b15b7ae680df1842370f549cb30c0db5",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

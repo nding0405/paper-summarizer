@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2024-accelerating-neural-recommendation-training-with-embeddi-098881a8",
   "title": "Accelerating Neural Recommendation Training with Embedding Scheduling",
+  "abstract": "Deep learning recommendation models (DLRM) are extensively adopted to support many online services. Typical DLRM training frameworks adopt the parameter server (PS) in CPU servers to maintain memory-intensive embedding tables, and leverage GPU workers with embedding cache to accelerate compute-intensive neural network computation and enable fast embedding lookups. However, such distributed systems suffer from significant communication overhead caused by the embedding transmissions between workers and PS. Prior work reduces the number of cache embedding transmissions by compromising model accuracy, including oversampling hot embeddings or applying staleness-tolerant updates.\n\nThis paper reveals that many of such transmissions can be avoided given the predictability and infrequency natures of in-cache embedding accesses in distributed training. Based on this observation, we explore a new direction to accelerate distributed DLRM training without compromising model accuracy, i.e., embedding scheduling—with the core idea of proactively determining \"where embeddings should be trained\" and \"which embeddings should be synchronized\" to increase the cache hit rate and decrease unnecessary updates, thus achieving a low communication overhead. To realize this idea, we design Herald, a real-time embedding scheduler consisting of two main components: an adaptive location-aware inputs allocator to determine where embeddings should be trained and an optimal communication plan generator to determine which embeddings should be synchronized. Our experiments with real-world workloads show that Herald reduces 48%-89% embedding transmissions, leading up to 2.11× and up to 1.61× better performance with TCP and RDMA, respectively, over 100 Gbps Ethernet for end-to-end DLRM training.",
+  "abstract_source_id": "src-abstract-nsdi-2024-098881a8",
   "venue": "nsdi",
   "year": 2024,
   "track_or_session": "ML but Faster",
@@ -202,6 +204,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2024-098881a8",
+      "url": "https://www.usenix.org/conference/nsdi24/presentation/zeng",
+      "kind": "paper-page",
+      "title": "Accelerating Neural Recommendation Training with Embedding Scheduling",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:02:49Z",
+      "content_hash": "sha256:d96ce7c1ccc574cfd15da249834f0883ae76b25772cf6498ec18cfb022a281fe",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-culpa-universal-detection-of-memory-safety-bugs-in-unsaf-f7c78d9e",
   "title": "CULPA: Universal Detection of Memory-Safety Bugs in Unsafe Rust Through the Lens of Safety Requirements",
+  "abstract": "Rust has emerged as a leading system programming language by providing strong compile-time guarantees for memory safety. However, these guarantees do not extend to unsafe Rust, where developers may bypass compiler checks and inadvertently introduce memory-safety vulnerabilities. Although prior static analyzers have made progress in detecting such bugs, existing approaches are often fragmented: they target specific coding patterns or bug classes without modeling the underlying causes of unsafety. In this paper, we present CULPA, a universal detector for memory-safety bugs in Rust programs. The key insight of CULPA is to detect the root cause of such bugs: the violation of safety requirements in unsafe Rust contexts. To do so, CULPA first transforms the safety requirements in the standard library documentation into machine-executable predicates. Then it constructs the distinct memory segments to comply with safety requirements. Finally, CULPA collects all safety-relevant safeguards to construct the Requirement Graph. Based on the requirement graph traversal, we can determine whether violations inside unsafe blocks can be triggered. CULPA covers existing bug classes addressed by four prior static analyzers and identifies additional memory-safety vulnerabilities beyond their scope. We evaluate CULPA on the top 1,000 Rust packages. CULPA uncovers 55 previously unknown (zero-day) memory-safety bugs, 29 of which have been confirmed by developers. Most of these vulnerabilities are missed by four state-of-the-art Rust static analyzers and one LLM-based tool. To date, we have received five RustSec IDs and one CVE ID.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-f7c78d9e",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Software Security 4",
@@ -155,6 +157,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-f7c78d9e",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/chen-hung-mao",
+      "kind": "paper-page",
+      "title": "CULPA: Universal Detection of Memory-Safety Bugs in Unsafe Rust Through the Lens of Safety Requirements",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:23:34Z",
+      "content_hash": "sha256:b988c960649b8f3e65d3e2ddc9696ce68e471c3814f115225f31eb3cffe74ec2",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

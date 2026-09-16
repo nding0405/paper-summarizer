@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2024-cascade-cpu-fuzzing-via-intricate-program-generation-816261c5",
   "title": "Cascade: CPU Fuzzing via Intricate Program Generation",
+  "abstract": "Generating interesting test cases for CPU fuzzing is akin to generating programs that exercise unusual states inside the CPU. The performance of CPU fuzzing is heavily influenced by the quality of these programs and by the overhead of bug detection. Our analysis of existing state-of-the-art CPU fuzzers shows that they generate programs that are either overly simple or execute a small fraction of their instructions due to invalid control flows. Combined with expensive instruction-granular bug detection mechanisms, this leads to inefficient fuzzing campaigns. We present Cascade, a new approach for generating valid RISC-V programs of arbitrary length with highly randomized and interdependent control and data flows. Cascade relies on a new technique called asymmetric ISA pre-simulation for entangling control flows with data flows when generating programs. This entanglement results in non-termination when a program triggers a bug in the target CPU, enabling Cascade to detect a CPU bug at program granularity without introducing any runtime overhead. Our evaluation shows that long Cascade programs are more effective in exercising the CPU's internal design. Cascade achieves 28.2x to 97x more coverage than the state-of-the-art CPU fuzzers and uncovers 37 new bugs (28 new CVEs) in 5 RISC-V CPUs with varying degrees of complexity. The programs that trigger these bugs are long and intricate, impeding triaging. To address this challenge, Cascade features an automated pruning method that reduces a program to a minimal number of instructions that trigger the bug.",
+  "abstract_source_id": "src-abstract-usenix-security-2024-816261c5",
   "venue": "usenix-security",
   "year": 2024,
   "track_or_session": "Fuzzing IV: Hardware and Firmware",
@@ -112,6 +114,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX when exposed"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2024-816261c5",
+      "url": "https://www.usenix.org/conference/usenixsecurity24/presentation/solt",
+      "kind": "paper-page",
+      "title": "Cascade: CPU Fuzzing via Intricate Program Generation",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:14:26Z",
+      "content_hash": "sha256:56f49d4d3a9f15fad201ba8e75e003a8848ab0b3eb2e6fbcdc7727f1a579b209",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

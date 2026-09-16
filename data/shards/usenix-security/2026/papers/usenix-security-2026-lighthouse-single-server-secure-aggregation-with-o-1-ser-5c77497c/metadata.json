@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-lighthouse-single-server-secure-aggregation-with-o-1-ser-5c77497c",
   "title": "Lighthouse: Single-Server Secure Aggregation with O(1) Server-Committee Communication at Scale",
+  "abstract": "Secure aggregation is a core primitive for privacy-preserving federated learning, enabling a server to compute aggregates of client updates without learning individual inputs. Recent protocols have explored committee-based designs to reduce client overhead and tolerate weakly connected participants. However, existing approaches still incur communication and computation costs that scale with the number of clients and/or the size of model updates. This becomes a serious bottleneck in interaction between the server and the committee, given that model updates are high-dimensional and the committee is a small set of clients.\n\nWe present Lighthouse, a new secure aggregation protocol that supports one-shot client communication and achieves constant committee computation and communication overhead with the server, independent of both the number of clients and the size of the input vector. Our protocol attains the best-known round complexity of two rounds, matching OPA (CRYPTO 2025) and TACITA (ePrint 2025) and improving upon Flamingo (S&amp;P 2023) and Willow (CRYPTO 2025). Our core technical contribution is a novel application of recent advances in batched threshold encryption, which enables succinct server–committee interaction while preserving security and correctness. Beyond asymptotic improvements over prior works, Lighthouse yields substantial concrete efficiency gains: For an aggregation with 1024 clients, we reduce server-to-committee communication by over 100× and committee-to-server communication by over 300× compared to Flamingo and Willow. Also, we present an extension that supports dynamic client participation, a critical requirement for practical deployments at scale, while preserving the asymptotic and concrete efficiency of the static protocol for clients.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-5c77497c",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Applications of Cryptography 3",
@@ -155,6 +157,19 @@
       "supports": [
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-5c77497c",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/garg-sanjam",
+      "kind": "paper-page",
+      "title": "Lighthouse: Single-Server Secure Aggregation with O(1) Server-Committee Communication at Scale",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:24:31Z",
+      "content_hash": "sha256:ea9e3a2e7d29629f5e4b80958822a079cd8ed1072f655b1c648e99fa75e44411",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

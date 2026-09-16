@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2025-eagleye-exposing-hidden-web-interfaces-in-iot-devices-vi-f54b4db7",
   "title": "EAGLEYE: Exposing Hidden Web Interfaces in IoT Devices via Routing Analysis",
+  "abstract": "Hidden web interfaces, i.e., undisclosed access channels in IoT devices, introduce great security risks and have resulted in severe attacks in recent years. However, the definition of such threats is vague, and few solutions are able to discover them. Due to their hidden nature, traditional bug detection solutions (e.g., taint analysis, fuzzing) are hard to detect them. In this paper, we present a novel solution EAGLEYE to automatically expose hidden web interfaces in IoT devices. By analyzing input requests to public interfaces, we first identify routing tokens within the requests, i.e., those values (e.g., actions or file names) that are referenced and used as index by the firmware code (routing mechanism) to find associated handler functions. Then, we utilize modern large language models to analyze the contexts of such routing tokens and deduce their common pattern, and then infer other candidate values (e.g., other actions or file names) of these tokens. Lastly, we perform a hidden-interface directed black-box fuzzing, which mutates the routing tokens in input requests with these candidate values as the high-quality dictionary. We have implemented a prototype of EAGLEYE and evaluated it on 13 different commercial IoT devices. EAGLEYE successfully found 79 hidden interfaces, 25X more than the state-of-the-art (SOTA) solution IoTScope. Among them, we further discovered 29 unknown vulnerabilities including backdoor, XSS (cross-site scripting), command injection, and information leakage, and have received 7 CVEs.",
+  "abstract_source_id": "src-abstract-ndss-2025-f54b4db7",
   "venue": "ndss",
   "year": 2025,
   "track_or_session": "Fall submission cycle",
@@ -252,6 +254,19 @@
       "official": false,
       "supports": [
         "DOI and main-proceedings membership"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2025-f54b4db7",
+      "url": "https://www.ndss-symposium.org/ndss-paper/eagleye-exposing-hidden-web-interfaces-in-iot-devices-via-routing-analysis/",
+      "kind": "paper-page",
+      "title": "EAGLEYE: Exposing Hidden Web Interfaces in IoT Devices via Routing Analysis",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:19:32Z",
+      "content_hash": "sha256:a78c8d187fa0c1ecfe601c8a83110adcf46f60691e4415a9e224428d8d215eb9",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2026-pallas-and-aegis-rollback-resilience-in-tee-aided-blockc-999069a6",
   "title": "Pallas and Aegis: Rollback Resilience in TEE-Aided Blockchain Consensus",
+  "abstract": "Several Byzantine Fault-Tolerant (BFT) consensus algorithms leverage trusted components to boost resilience and reduce communication overhead. However, recent findings expose a critical vulnerability to rollback attacks when trusted components crash, lose state, or be cloned. Existing defenses either treat crashed replicas as Byzantine, increasing replica count, or duplicate trusted state across components, incurring substantial performance costs and offering limited crash tolerance.\n\nWe propose a robust alternative: a secure state-preservation mechanism for trusted components that eliminates costly duplication of trusted states across replicas. At its core is Aegis, the first efficient view synchronizer specifically designed for BFT protocols that utilize trusted components. Aegis enforces that only one trusted component instance per replica may vote in any view, even when trusted components restart following a crash or are cloned by an adversary. On top of Aegis, we introduce Pallas, the first BFT consensus protocol that preserves safety against a strong adversary that controls a fixed set of Byzantine replicas and can cause a potentially unbounded and varying number of trusted components to crash. We determine the adversarial conditions under which Pallas ensure liveness under partial synchrony.\n\nExtensive geo-distributed evaluations on Amazon AWS show that Pallas delivers high performance with negligible overhead in stable conditions, outperforming existing protocols by up to 41% in throughput and 29% in latency. More importantly, it sustains liveness and graceful degradation under adversarial conditions where other protocols fail.",
+  "abstract_source_id": "src-abstract-ndss-2026-999069a6",
   "venue": "ndss",
   "year": 2026,
   "track_or_session": "Fall submission cycle",
@@ -160,6 +162,19 @@
       "official": false,
       "supports": [
         "independent proceedings identity reconciliation"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2026-999069a6",
+      "url": "https://www.ndss-symposium.org/ndss-paper/pallas-and-aegis-rollback-resilience-in-tee-aided-blockchain-consensus/",
+      "kind": "paper-page",
+      "title": "Pallas and Aegis: Rollback Resilience in TEE-Aided Blockchain Consensus",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:22:43Z",
+      "content_hash": "sha256:3946442002facf041e592a08f2897143f960a314cf7f8e59acc6848246054e6a",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

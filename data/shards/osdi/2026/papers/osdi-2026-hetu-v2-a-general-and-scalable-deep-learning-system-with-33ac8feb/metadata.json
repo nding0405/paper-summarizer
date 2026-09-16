@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2026-hetu-v2-a-general-and-scalable-deep-learning-system-with-33ac8feb",
   "title": "Hetu v2: A General and Scalable Deep Learning System with Hierarchical and Heterogeneous Single Program Multiple Data Annotations",
+  "abstract": "The Single-Program Multiple-Data (SPMD) paradigm provides a unified abstraction to annotate various parallel dimensions in distributed deep learning (DL) training. With SPMD, users can write training programs from the viewpoint of a single device, and the system will automatically deduce the tensor sharding and communication patterns. However, with the recent development in large-scale DL models, distributed training exhibits spatial and temporal workload heterogeneity, arising from both device disparities (e.g., mixed hardware, failures) and data variations (e.g., uneven sequence lengths). Such heterogeneity violates SPMD’s assumption of symmetric workload partitioning, which restricts its ability to express and optimize heterogeneous parallel strategies effectively.\n\nTo address this, we propose HSPMD within the Hetu v2 system to achieve general and scalable DL training. HSPMD extends SPMD’s declarative annotations to support asymmetric sharding and composes standard communication primitives for hierarchical communication, all while retaining the simplicity of a single-device programming model. HSPMD handles spatial heterogeneity through progressive graph specialization, enabling device-specific execution logic, and addresses temporal heterogeneity via dynamic graph switching. Evaluations on (a) heterogeneous devices, (b) unstable devices, and (c) mixed-length data scenarios show that HSPMD matches or outperforms specialized systems, providing a flexible and efficient solution for modern distributed DL training. Code is available: https://github.com/PKU-DAIR/Hetu .",
+  "abstract_source_id": "src-abstract-osdi-2026-33ac8feb",
   "venue": "osdi",
   "year": 2026,
   "track_or_session": "LLM Training at Scale",
@@ -251,6 +253,19 @@
       "official": true,
       "supports": [
         "Official proceedings availability and canonical conference versions."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2026-33ac8feb",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/li-haoyang",
+      "kind": "paper-page",
+      "title": "Hetu v2: A General and Scalable Deep Learning System with Hierarchical and Heterogeneous Single Program Multiple Data Annotations",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:08:23Z",
+      "content_hash": "sha256:f5e36fdcd52d24f68d471368bcd94544d50a380e06816522f2e2273ecbe783dc",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

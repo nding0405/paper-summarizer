@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "fast-2025-selective-on-device-execution-of-data-dependent-read-i-o-19146c9b",
   "title": "Selective On-Device Execution of Data-Dependent Read I/Os",
+  "abstract": "Recent studies have demonstrated the benefits of employing on-device and in-kernel storage functions. On-device functions are primarily used to preprocess data within storage devices, effectively reducing the amount of I/O. In contrast, in-kernel functions are proposed to expedite sequences of data-dependent read I/O requests, particularly useful for applications traversing on-disk data structures. In this work, we investigate the unexplored potential of using on-device functions for data-dependent read I/O requests on read-only on-disk data structures. The results are promising: on-device I/O functions enable applications to issue I/O requests more rapidly and integrate seamlessly with in-kernel functions to efficiently manage high volumes of requests. We developed a prototype of this on-device function atop NVMeVirt, a state-of-the-art storage emulator. We demonstrate that on-device function enhances performance through experiments utilizing a simple B+-tree key-value store and WiredTiger, a widely used log-structured merge tree-based key-value store. Use of the on-device function improves the throughput of the B+-tree key-value store by up to 41%, and reduces WiredTiger's 99-percentile tail latency on YCSB C by up to 3.85%, compared to the host-only in-kernel storage function.",
+  "abstract_source_id": "src-abstract-fast-2025-19146c9b",
   "venue": "fast",
   "year": 2025,
   "track_or_session": "Hardware Assist",
@@ -119,6 +121,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-fast-2025-19146c9b",
+      "url": "https://www.usenix.org/conference/fast25/presentation/park",
+      "kind": "paper-page",
+      "title": "Selective On-Device Execution of Data-Dependent Read I/Os",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:01:16Z",
+      "content_hash": "sha256:14ad275de495fcf6e623ebb853a7324cdf499e9307a7ab6bd2b03f1a413d5a99",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

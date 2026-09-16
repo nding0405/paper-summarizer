@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2024-application-level-service-assurance-with-5g-ran-slicing-09d053fb",
   "title": "Application-Level Service Assurance with 5G RAN Slicing",
+  "abstract": "This paper presents Zipper, a novel Radio Access Network (RAN) slicing system that provides assurances of application-level throughput and latency. Existing RAN slicing systems optimize for slice-level assurance, but these methods fail to provide predictable network performance to individual mobile apps. Extending the slice-level formulation to app-level introduces an intractable optimization problem with exploding state and action spaces. To simplify the search space, Zipper casts the problem as a model predictive controller, and explicitly tracks the network dynamics of each user. It uses an efficient algorithm to compute slice bandwidth allocations that meet each app's requirements. To assist operators with interfacing admission control policies, Zipper exposes a primitive that estimates if there is bandwidth available to accommodate an incoming app's requirements.\n\nWe implemented Zipper on a production-class 5G virtual RAN testbed integrated with hooks to control slice bandwidth, and we evaluated it on real workloads, including video conferencing and virtual reality apps. On a representative RAN workload, our real-time implementation supports up to 200 apps and over 70 slices on a 100 MHz channel. Relative to a slice-level service assurance system, Zipper reduces tail throughput and latency violations, measured as a ratio of violation of the app's request, by 9×.",
+  "abstract_source_id": "src-abstract-nsdi-2024-09d053fb",
   "venue": "nsdi",
   "year": 2024,
   "track_or_session": "Wide-Area and Edge",
@@ -118,6 +120,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2024-09d053fb",
+      "url": "https://www.usenix.org/conference/nsdi24/presentation/balasingam",
+      "kind": "paper-page",
+      "title": "Application-Level Service Assurance with 5G RAN Slicing",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:02:51Z",
+      "content_hash": "sha256:b18e8a5acfb78e95119a0be55159eb272770ac0ea8ed1e1242eda8628352255b",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

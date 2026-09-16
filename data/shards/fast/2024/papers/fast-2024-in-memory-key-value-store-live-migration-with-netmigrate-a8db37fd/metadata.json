@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "fast-2024-in-memory-key-value-store-live-migration-with-netmigrate-a8db37fd",
   "title": "In-Memory Key-Value Store Live Migration with NetMigrate",
+  "abstract": "Distributed key-value stores today require frequent key-value shard migration between nodes to react to dynamic workload changes for load balancing, data locality, and service elasticity. In this paper, we propose NetMigrate, a live migration approach for in-memory key-value stores based on programmable network data planes. NetMigrate migrates shards between nodes with zero service interruption and minimal performance impact. During migration, the switch data plane monitors the migration process in a fine-grained manner and directs client queries to the right server in real time, eliminating the overhead of pulling data between nodes. We implement a NetMigrate prototype on a testbed consisting of a programmable switch and several commodity servers running Redis, and evaluate it under YCSB workloads. Our experiments demonstrate that NetMigrate improves the query throughput from 6.5% to 416% and maintains low access latency during migration, compared to the state-of-the-art migration approaches.",
+  "abstract_source_id": "src-abstract-fast-2024-a8db37fd",
   "venue": "fast",
   "year": 2024,
   "track_or_session": "Key-Value Systems",
@@ -118,6 +120,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-fast-2024-a8db37fd",
+      "url": "https://www.usenix.org/conference/fast24/presentation/zhu",
+      "kind": "paper-page",
+      "title": "In-Memory Key-Value Store Live Migration with NetMigrate",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:00:46Z",
+      "content_hash": "sha256:fbad050f3b031446e535284597d90ea1e7b09160b583839abd4b15c524f0e321",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

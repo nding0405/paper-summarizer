@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2024-password-protected-key-retrieval-with-out-hsm-protection-d1b316b8",
   "title": "Password-Protected Key Retrieval with(out) HSM Protection",
+  "abstract": "Password-protected key retrieval (PPKR) enables users to store and retrieve high-entropy keys from a server securely. The process is bootstrapped from a human-memorizable password only, addressing the challenge of how end-users can manage cryptographic key material. The core security requirement is protection against a corrupt server, which should not be able to learn the key or offline- attack it through the password protection. PPKR is deployed at a large scale with the WhatsApp Backup Protocol (WBP), allowing users to access their encrypted messaging history when switching to a new device. Davies et al. (Crypto'23) formally analyzed the WBP, proving that it satisfies most of the desired security. The WBP uses the OPAQUE protocol for password-based key exchange as a building block and relies on the server using a hardware security module (HSM) for most of its protection. In fact, the security analysis assumes that the HSM is incorruptible - rendering most of the heavy cryptography in the WBP obsolete.",
+  "abstract_source_id": "src-abstract-ccs-2024-d1b316b8",
   "venue": "ccs",
   "year": 2024,
   "track_or_session": "Cycle 2",
@@ -180,6 +182,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2024-d1b316b8",
+      "url": "https://api.openalex.org/works/doi:10.1145/3658644.3690358?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Password-Protected Key Retrieval with(out) HSM Protection",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:11:08Z",
+      "content_hash": "sha256:081e18f4fc90c58af1668282a110b02709424dfab6bc022f867ad403e0b361ce",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

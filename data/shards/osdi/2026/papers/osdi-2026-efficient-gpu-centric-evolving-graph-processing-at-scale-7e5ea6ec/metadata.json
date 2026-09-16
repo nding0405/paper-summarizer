@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2026-efficient-gpu-centric-evolving-graph-processing-at-scale-7e5ea6ec",
   "title": "Efficient GPU-Centric Evolving Graph Processing at Scale",
+  "abstract": "Large-scale evolving graph analytics (EGA), which evaluates graph queries over sequences of snapshots, is facing growing demands for real-time insight extraction. While GPUs offer immense potential for accelerating graph workloads, they suffer from the memory capacity wall and poor hardware utilization when applied to EGA.\n\nTo bridge this gap, this work presents POEGA, a GPU-centric framework for efficient large-scale EGA. The core idea of POEGA is to leverage proxy graphs to minimize out-of-memory IO. It achieves this by first analyzing a compact in-memory graph abstraction to drive approximate results, thereby guiding the out-of-memory refinement. Although this approach incurs more computations, our key insight is that this cost can be amortized by exploiting the GPU’s massive parallelism to process multiple snapshots concurrently. This concurrency is supported by a carefully designed fused kernel and a novel bound-based pruning technique. Furthermore, we address a commonly overlooked memory bottleneck caused by multi-version vertex states, which arises when scaling concurrent analysis to a large number of snapshots, by introducing an adaptive state compaction format. Evaluation shows that POEGA yields 3.7-23.5× speedups over the state-of-the-art EGA solutions across a range of real-world datasets.",
+  "abstract_source_id": "src-abstract-osdi-2026-7e5ea6ec",
   "venue": "osdi",
   "year": 2026,
   "track_or_session": "Graphs, ANN, and Vector Search",
@@ -188,6 +190,19 @@
       "official": true,
       "supports": [
         "Official proceedings availability and canonical conference versions."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2026-7e5ea6ec",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/zhang-yunmo",
+      "kind": "paper-page",
+      "title": "Efficient GPU-Centric Evolving Graph Processing at Scale",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:08:16Z",
+      "content_hash": "sha256:f01a11185e56c5cebcd0ba63b9ce804de5e06203269c28952e49f615b08afffb",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

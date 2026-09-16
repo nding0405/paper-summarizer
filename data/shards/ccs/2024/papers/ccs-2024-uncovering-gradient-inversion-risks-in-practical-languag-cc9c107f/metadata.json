@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2024-uncovering-gradient-inversion-risks-in-practical-languag-cc9c107f",
   "title": "Uncovering Gradient Inversion Risks in Practical Language Model Training",
+  "abstract": "The gradient inversion attack has been demonstrated as a significant privacy threat to federated learning (FL), particularly in continuous domains such as vision models. In contrast, it is often considered less effective or highly dependent on impractical training settings when applied to language models, due to the challenges posed by the discrete nature of tokens in text data. As a result, its potential privacy threats remain largely underestimated, despite FL being an emerging training method for language models. In this work, we propose a domain-specific gradient inversion attack named GRAB (gradient inversion with hybrid optimization). GRAB features two alternating optimization processes to address the challenges caused by practical training settings, including a simultaneous optimization on dropout masks between layers for improved token recovery and a discrete optimization for effective token sequencing. GRAB can recover a significant portion (up to 92.9% recovery rate) of the private training data, outperforming the attack strategy of utilizing discrete optimization with an auxiliary model by notable improvements of up to 28.9% recovery rate in benchmark settings and 48.5% recovery rate in practical settings. GRAB provides a valuable step forward in understanding this privacy threat in the emerging FL training mode of language models.",
+  "abstract_source_id": "src-abstract-ccs-2024-cc9c107f",
   "venue": "ccs",
   "year": 2024,
   "track_or_session": "Cycle 2",
@@ -222,6 +224,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2024-cc9c107f",
+      "url": "https://api.openalex.org/works/doi:10.1145/3658644.3690292?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Uncovering Gradient Inversion Risks in Practical Language Model Training",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:12:23Z",
+      "content_hash": "sha256:57b2c80976c44c0174e3e4fcc07a53d9db67ad31926897caa6262ed81f3baa2d",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

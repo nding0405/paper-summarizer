@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2026-policycache-intra-flow-learning-in-congestion-control-60eba076",
   "title": "PolicyCache: Intra-flow Learning in Congestion Control",
+  "abstract": "TCP congestion control (CC) schemes must balance fast responsiveness, adaptability to diverse network conditions, and low computational overhead. Existing approaches fall short: heuristic-based algorithms are lightweight but brittle, learning-based schemes provide high responsiveness yet struggle with generalization, and exploration-based methods adapt well but converge slowly. We present PolicyCache, the first CC algorithm based on intra-flow learning , where both training and execution of the policy are confined to a single flow. Unlike prior inter-flow learning, this paradigm avoids cross-environment generalization pitfalls while maintaining high responsiveness. PolicyCache leverages a lightweight, non-parametric tree-based model coupled with online exploration and dynamic model switching to enable rapid and robust adaptation. We provide convergence analysis of PolicyCache and have built a fully functional Linux prototype. Extensive evaluations demonstrate that PolicyCache consistently achieves high throughput, low latency, and fairness across diverse emulated and real-world networks, while incurring minimal overhead. These results establish intra-flow learning as a practical and effective new direction for congestion control.",
+  "abstract_source_id": "src-abstract-nsdi-2026-60eba076",
   "venue": "nsdi",
   "year": 2026,
   "track_or_session": "All Your Networks Are Belong to ML",
@@ -307,6 +309,19 @@
         "proceedings page range and page count",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2026-60eba076",
+      "url": "https://www.usenix.org/conference/nsdi26/presentation/tian",
+      "kind": "paper-page",
+      "title": "PolicyCache: Intra-flow Learning in Congestion Control",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:05:52Z",
+      "content_hash": "sha256:ae4c4f876c6fc33c61706709d6909c568bde6d761c1ac9d678f9d02b3afe58ff",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

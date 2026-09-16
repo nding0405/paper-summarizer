@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sigcomm-2026-ubep-re-architecting-expert-parallelism-communication-li-b59ba8ff",
   "title": "UBEP: Re-architecting Expert Parallelism Communication Library for Production Superpods",
+  "abstract": "The deployment of Mixture-of-Experts (MoE) models on production high-bandwidth superpods, such as NVIDIA's NVL72/576 and Huawei's CloudMatrix384, introduces critical challenges beyond raw interconnect bandwidth. While these systems provide unified global address spaces and high-bandwidth fabrics, their full potential for sparse MoE communication is hindered by three fundamental bottlenecks: (1) Strict execution serialization imposed by coarse-grained Bulk Synchronous Parallel (BSP) orchestration of interdependent communication phases; (2) Prohibitive synchronization overhead that fails to scale alongside high interconnect bandwidth; and (3) Severe load imbalance resulting from distance-agnostic scheduling of irregular token traffic. To eliminate these bottlenecks, we introduce UBEP (Unified-Bus Expert Parallelism), a production-ready communication library that rethinks MoE's All-to-All primitives for modern superpod architectures. Through large-scale experiments, UBEP reduces All-to-All latency by up to 52.4% and MoE inference Time Per Output Token (TPOT) by up to 11.1%.",
+  "abstract_source_id": "src-abstract-b59ba8ff",
   "venue": "sigcomm",
   "year": 2026,
   "track_or_session": "Research Session 5: In-Network Aggregation for ML — Research Paper",
@@ -464,6 +466,19 @@
       "official": true,
       "supports": [
         "official main-paper scope and track definitions"
+      ]
+    },
+    {
+      "id": "src-abstract-b59ba8ff",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/search/match?query=UBEP%3A%20Re-architecting%20Expert%20Parallelism%20Communication%20Library%20for%20Production%20Superpods&fields=title,abstract",
+      "kind": "semantic-scholar",
+      "title": "UBEP: Re-architecting Expert Parallelism Communication Library for Production Superpods",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T23:09:12Z",
+      "content_hash": "sha256:46bd0e97f2ff0f3fa0ee4ae696af248ecc40369992d1a3d725f9e8e363d44de5",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

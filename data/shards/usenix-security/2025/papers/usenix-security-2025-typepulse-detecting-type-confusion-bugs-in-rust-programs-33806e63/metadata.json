@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-typepulse-detecting-type-confusion-bugs-in-rust-programs-33806e63",
   "title": "TYPEPULSE: Detecting Type Confusion Bugs in Rust Programs",
+  "abstract": "Rust supports type conversions and safe Rust guarantees the security of these conversions through robust static type checking and strict ownership guidelines. However, there are instances where programmers need to use unsafe Rust for certain type conversions, especially those involving pointers. Consequently, these conversions may cause severe memory corruption problems. Despite extensive research on type confusion bugs in C/C++, studies on type confusion bugs in Rust are still lacking. Also, due to Rust's new features in the type system, existing solutions in C/C++ cannot be directly applied to Rust. In this paper, we develop a static analysis tool called TYPEPULSE to detect three main categories of type confusion bugs in Rust including misalignment, inconsistent layout, and mismatched scope. TYPEPULSE first performs a type conversion analysis to collect and determine trait bounds for type pairs. Moreover, it performs a pointer alias analysis to resolve the alias relationship of pointers. Following the integration of information into the property graph, it constructs type patterns and detects each type of bug in various conversion scenarios. We run TYPEPULSE on the top 3,000 Rust packages and uncover 71 new type confusion bugs, exceeding the total number of type confusion bugs reported in RUSTSEC over the past five years. We have received 32 confirmations from developers, along with one CVE ID and six RUSTSEC IDs.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-33806e63",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Software Security 4: Fuzzing and Other Software Analysis",
@@ -154,6 +156,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-33806e63",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/chen-hung-mao",
+      "kind": "paper-page",
+      "title": "TYPEPULSE: Detecting Type Confusion Bugs in Rust Programs",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:22:31Z",
+      "content_hash": "sha256:641e780d3e2c811eb232f995edde480df1d0308d5dc4c9154310ea1589c08af5",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

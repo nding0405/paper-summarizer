@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "fast-2025-maat-analyzing-and-optimizing-overcharge-on-blockchain-s-545cf6c9",
   "title": "Maat: Analyzing and Optimizing Overcharge on Blockchain Storage",
+  "abstract": "Blockchain, such as Ethereum, relies on a transaction fee mechanism (TFM) to allocate the costs of on-chain resources, including storage, network, and computation. However, the inconsistency between the transaction fee and the storage workload results in overcharging issues for users.\n\nIn this paper, we present Maat, a tool designed to address these overcharging issues on blockchain storage. Maat employs three key techniques: (i) Fine-grained data collection, which captures detailed information on gas fees at the storage operation level (i.e., the operations interact with blockchain storage), enabling precise tracking of resource usage and charges for identifying overcharges; (ii) Consensus-oriented optimizations, which ensure that fee optimizations are consistent across all blockchain nodes by analyzing high-level storage semantics (e.g., accessing account and slot) of storage operations; and (iii) Resource pre-allocation, which ensures storage operation consistent across heterogeneous nodes and clients via preemptively specifying and allocating necessary resources. Extensive evaluations of Maat on Ethereum reveal a 32% reduction in transaction fees, amounting to 5.6M USD in weekly savings and nearly outperforming the baseline by nearly three times. Additionally, Maat achieves optimizations with a minimal performance overhead of 1.4% in block processing time and a 5.6% increase in memory consumption. Finally, Maat demonstrates its scalability, yielding a 31% reduction in transaction fees on Binance Smart Chain (1.54M USD per week).",
+  "abstract_source_id": "src-abstract-fast-2025-545cf6c9",
   "venue": "fast",
   "year": 2025,
   "track_or_session": "Cloud Storage",
@@ -287,6 +289,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-fast-2025-545cf6c9",
+      "url": "https://www.usenix.org/conference/fast25/presentation/he",
+      "kind": "paper-page",
+      "title": "Maat: Analyzing and Optimizing Overcharge on Blockchain Storage",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:01:09Z",
+      "content_hash": "sha256:9bb8333674a085ec3e6627e2c5b87247b5239d2e77ac6aec9a4d603fb047ec83",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "atc-2023-farreach-write-back-caching-in-programmable-switches-0e612ed4",
   "title": "FarReach: Write-back Caching in Programmable Switches",
+  "abstract": "Skewed write-intensive key-value storage workloads are increasingly observed in modern data centers, yet they also incur server overloads due to load imbalance. Programmable switches provide viable solutions for realizing load-balanced caching on the I/O path, and hence implementing write-back caching in programmable switches is a natural direction to absorb frequent writes for high write performance. However, enabling in-switch write-back caching is non-trivial, as it not only is challenged by the strict programming rules and limited stateful memory of programmable switches, but also necessitates reliable protection against data loss due to switch failures. We propose FarReach, a new caching framework that supports fast, available, and reliable in-switch write-back caching. FarReach carefully co-designs both the control and data planes for cache management in programmable switches, so as to achieve high data-plane performance with lightweight control-plane management. Experiments on a Tofino switch testbed show that FarReach achieves a throughput gain of up to 6.6× over a state-of-the-art in-switch caching approach under skewed write-intensive workloads.",
+  "abstract_source_id": "src-abstract-atc-2023-0e612ed4",
   "venue": "atc",
   "year": 2023,
   "track_or_session": "Networking",
@@ -180,6 +182,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-atc-2023-0e612ed4",
+      "url": "https://www.usenix.org/conference/atc23/presentation/sheng",
+      "kind": "paper-page",
+      "title": "FarReach: Write-back Caching in Programmable Switches",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T21:57:59Z",
+      "content_hash": "sha256:f381fd68e74ba1b5c8aa2864e424f0f00f628b5dfaafe7357544d8307378aa41",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

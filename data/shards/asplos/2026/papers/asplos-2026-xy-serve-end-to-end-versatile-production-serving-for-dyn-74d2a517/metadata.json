@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2026-xy-serve-end-to-end-versatile-production-serving-for-dyn-74d2a517",
   "title": "XY-Serve: End-to-End Versatile Production Serving for Dynamic LLM Workloads",
+  "abstract": "Meeting growing demands for low latency and cost efficiency in production-grade large language model (LLM) serving systems requires integrating advanced optimization techniques. However, dynamic and unpredictable input-output lengths of LLM, compounded by these optimizations, exacerbate the issues of workload variability, making it difficult to maintain high efficiency on AI accelerators, especially DSAs with tile-based programming models. To address this challenge, we introduce XY-Serve, a versatile, Ascend NPU native, end-to-end production LLM-serving system. The core idea is an abstraction mechanism that smooths out the workload variability by decomposing computations into unified, hardware-friendly, fine-grained meta primitives. Then, kernels can efficiently execute without concerning the irregularity of workload. After this abstraction mechanism, for Attention, we propose a meta-kernel that computes the basic pattern of GEMM-Softmax-GEMM with architectural-aware tile sizes. For Linear, we introduce a virtual padding scheme that adapts to dynamic shape changes while using highly efficient GEMM primitives with assorted fixed tile sizes. XY-Serve sits harmoniously with vLLM. Experimental results show up to 95% end-to-end throughput improvement compared with current publicly available baselines on Ascend NPUs. We also set a new performance record for Linear (average 14.6% faster) and Attention (average 21.5% faster) kernels relative to existing libraries. Lastly, we demonstrate the generality of our technologies on GPU platform.",
+  "abstract_source_id": "src-abstract-asplos-2026-74d2a517",
   "venue": "asplos",
   "year": 2026,
   "track_or_session": "Session 1A: LLM Serving: Throughput Optimization",
@@ -314,6 +316,19 @@
       "official": false,
       "supports": [
         "Indexed abstract used for strict relevance classification and indexed arXiv identifier where available."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2026-74d2a517",
+      "url": "https://api.openalex.org/works/doi:10.1145/3760250.3762228?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "XY-Serve: End-to-End Versatile Production Serving for Dynamic LLM Workloads",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:07:20Z",
+      "content_hash": "sha256:6757177cf3dd70186fb0587e39e1381d315c4a7b2e85f6c58cd2fa072c140526",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

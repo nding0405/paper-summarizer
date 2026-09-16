@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "fast-2024-cole-a-column-based-learned-storage-for-blockchain-syste-8d7363b1",
   "title": "COLE: A Column-based Learned Storage for Blockchain Systems",
+  "abstract": "Blockchain systems suffer from high storage costs as every node needs to store and maintain the entire blockchain data. After investigating Ethereum's storage, we find that the storage cost mostly comes from the index, i.e., Merkle Patricia Trie (MPT). To support provenance queries, MPT persists the index nodes during the data update, which adds too much storage overhead. To reduce the storage size, an initial idea is to leverage the emerging learned index technique, which has been shown to have a smaller index size and more efficient query performance. However, directly applying it to the blockchain storage results in even higher overhead owing to the requirement of persisting index nodes and the learned index's large node size. To tackle this, we propose COLE, a novel column-based learned storage for blockchain systems. We follow the column-based database design to contiguously store each state's historical values, which are indexed by learned models to facilitate efficient data retrieval and provenance queries. We develop a series of write-optimized strategies to realize COLE in disk environments. Extensive experiments are conducted to validate the performance of the proposed COLE system. Compared with MPT, COLE reduces the storage size by up to 94% while improving the system throughput by 1.4×-5.4×.",
+  "abstract_source_id": "src-abstract-fast-2024-8d7363b1",
   "venue": "fast",
   "year": 2024,
   "track_or_session": "AI and Storage",
@@ -139,6 +141,19 @@
         "proceedings page range",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-fast-2024-8d7363b1",
+      "url": "https://www.usenix.org/conference/fast24/presentation/zhang-ce",
+      "kind": "paper-page",
+      "title": "COLE: A Column-based Learned Storage for Blockchain Systems",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:00:43Z",
+      "content_hash": "sha256:ecb14afd64c17d04070e333bbfd1cab24c1500ab9a5af79cff2d75bfad8e572f",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

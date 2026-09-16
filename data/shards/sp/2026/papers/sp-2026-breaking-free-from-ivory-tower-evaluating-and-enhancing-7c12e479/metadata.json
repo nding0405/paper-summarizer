@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2026-breaking-free-from-ivory-tower-evaluating-and-enhancing-7c12e479",
   "title": "Breaking Free from Ivory Tower: Evaluating and Enhancing Real-world Chinese Underground Adversarial Jargon Detection",
+  "abstract": "Underground jargon in online ecosystems threatens platform safety and public trust by evading automated content moderation and thereby concealing criminal coordination across fraud, gambling, and illicit commerce, particularly in Chinese, given the language's unique graphophonemic properties and large user base. Despite machine learning-based content moderation, underground actors increasingly evade detection with human-crafted adversarial perturbations that differ fundamentally from budget-constrained algorithmic attacks, highlighting a research gap in understanding and debunking real-world evasion techniques. In collaboration with a leading security company, we annotate and release the first large-scale, in-the-wild dataset of adversarial Chinese underground jargon and uncover its distinct characteristics-higher perturbation intensity, greater diversity of perturbation forms, and severe structural disruption-resulting in readability degradation and tokenization collapse that exacerbate detection vulnerabilities. Our systematic measurement study across state-of-the-art large language models (LLMs) further confirms the challenges in recognizing real-world adversarial Chinese jargon: even advanced models (e. g., GPT-4o) exhibit notable limitations, achieving only 88.16% and 62.74% accuracy in jargon detection and restoration, respectively, and 76.05% accuracy in illicit content detection. To address these challenges, we propose JADE, an LLM-based detection framework grounded in a taxonomy of perturbation patterns systematically derived from annotated real-world data and designed to enable reasoning beyond explicitly observed variants. This taxonomy informs a realistic adversarial learning curriculum that combines data augmentation, external knowledge retrieval, and internal adaptation, aligning the model with real-world jargon semantics. Experiments show that JADE significantly outperforms both commercial and fine-tuned open-source LLMs, achieving 98.59%, 95.91% accuracy in jargon detection and restoration, and 97.99% accuracy in illicit content detection. Moreover, it generalizes well to other downstream applications threatened by adversarial text, with F1 scores of 93.25% and 94.33% on harmful text and fraud detection, respectively. Overall, our work takes a first step toward leveraging LLM reasoning and structured perturbation knowledge to defend against real-world adversarial jargon.",
+  "abstract_source_id": "src-abstract-sp-2026-7c12e479",
   "venue": "sp",
   "year": 2026,
   "track_or_session": "Cycle 2",
@@ -133,6 +135,19 @@
       "official": true,
       "supports": [
         "DOI, published-order authors and affiliations, abstract, publication date, page span, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2026-7c12e479",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Breaking Free from Ivory Tower: Evaluating and Enhancing Real-world Chinese Underground Adversarial Jargon Detection",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:57Z",
+      "content_hash": "sha256:303a9b5e5ef8908a3cfe67f02eb8a87be978a5fe3281c7ecec8c0cdb512517e0",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

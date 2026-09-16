@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2026-shell-a-microkernel-based-fpga-shell-architecture-0ce35c98",
   "title": "μShell: A Microkernel-based FPGA Shell Architecture",
+  "abstract": "FPGAs are widely adopted in cloud environments to meet the growing demand for high-performance, energy-efficient computing, thanks to their unique reconfigurability and programmability. However, the state-of-the-art design of FPGA shells is built for monolithic applications, creating a fundamental architectural mismatch with real-world applications that are highly modular and composable. Modern applications consist of diverse, independent tasks that are often instantiated as standalone hardware modules on FPGAs. The current FPGA shell design statically connects these modules to compose an application-specific, monolithic accelerator on a single virtual FPGA (vFPGA), leading to fundamental challenges such as limited flexibility, poor scalability, resource inefficiency, high scheduling overheads, and programmability issues.\n\nTo bridge this research gap, we introduce μShell, a new hardware-OS co-design that addresses these challenges by applying microkernel principles to FPGA acceleration. μShell treats accelerators as a collection of shareable, composable hardware modules, deploying them into distinct vFPGAs and dynamically linking them with a novel inter-process communication (IPC) mechanism. This approach is further supported by capability-enforced isolation and a component-aware task scheduler. Our implementation of a μShell prototype and its evaluation against a state-of-the-art monolithic shell demonstrate that it effectively deploys real-world applications with improved performance, flexibility, and resource efficiency.",
+  "abstract_source_id": "src-abstract-osdi-2026-0ce35c98",
   "venue": "osdi",
   "year": 2026,
   "track_or_session": "Accelerator and Device Virtualization",
@@ -167,6 +169,19 @@
       "official": true,
       "supports": [
         "Official proceedings availability and canonical conference versions."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2026-0ce35c98",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/chen-jiyang",
+      "kind": "paper-page",
+      "title": "μShell: A Microkernel-based FPGA Shell Architecture",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:08:57Z",
+      "content_hash": "sha256:c9b31e27d2453e6635745a9d8afeac9a9b6b0acdce2a76c3fbb64f86c967396e",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

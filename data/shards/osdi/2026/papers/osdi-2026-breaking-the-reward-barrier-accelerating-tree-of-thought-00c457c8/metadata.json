@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2026-breaking-the-reward-barrier-accelerating-tree-of-thought-00c457c8",
   "title": "Breaking the Reward Barrier: Accelerating Tree-of-Thought Reasoning via Speculative Exploration",
+  "abstract": "Tree-of-Thought (ToT) reasoning structures Large Language Model (LLM) inference as a tree-based search, demonstrating strong potential for solving complex mathematical and programming tasks. However, its efficiency is constrained by the reward dependency barrier —a synchronization bottleneck caused by sequential reward-guided exploration that limits search parallelism and introduces substantial latency. Prior system optimizations, mainly designed for linear Chain-of-Thought (CoT) reasoning, cannot address these challenges, leaving the efficiency of ToT underexplored.\n\nTo enhance ToT reasoning efficiency, we observe that the reasoning paths can be explored speculatively to break the reward synchronization barrier. Therefore, in this paper, we propose SPEX and introduce three key techniques: (i) intra-query speculative path selection to predict and expand high-potential branches of ToT, (ii) inter-query budget allocation to balance speculative resource allocation across queries dynamically, and (iii) adaptive early termination to prune deep and redundant branches for a skewed search tree.\n\nWe implement SPEX on top of the SGLang framework and evaluate it across diverse ToT algorithms and LLMs. Extensive experiments show that SPEX achieves 1.2 3 × speedup for different ToT reasoning algorithms. Moreover, SPEX synergizes with token-level speculative decoding, achieving cumulative speedups of up to 4.1×. Ablation studies further confirm the contributions of each technique. Overall, SPEX represents a significant step toward efficient and scalable ToT reasoning, unlocking the parallelism required for high-performance inference-time scaling for LLMs.",
+  "abstract_source_id": "src-abstract-osdi-2026-00c457c8",
   "venue": "osdi",
   "year": 2026,
   "track_or_session": "Testing, Debugging, Root Causing",
@@ -188,6 +190,19 @@
       "official": true,
       "supports": [
         "Official proceedings availability and canonical conference versions."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2026-00c457c8",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/zhong",
+      "kind": "paper-page",
+      "title": "Breaking the Reward Barrier: Accelerating Tree-of-Thought Reasoning via Speculative Exploration",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:08:05Z",
+      "content_hash": "sha256:7409e28b3432881d0941fd33b6f54f8dc8755183f8baafdda8d81052ce50b04a",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

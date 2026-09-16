@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2025-fast-and-synchronous-crash-consistency-with-metadata-wri-a37656ac",
   "title": "Fast and Synchronous Crash Consistency with Metadata Write-Once File System",
+  "abstract": "Low-latency persistent memory (PM) encourages file systems to pursue synchronous crash consistency. However, existing crash consistency approaches, such as journaling and log structure file system , incur many small, random, and ordered metadata I/Os, failing to exploit PM I/O potential. We propose a new file system model called metadata write-once file system (WOFS) to achieve fast and synchronous crash consistency. The key idea is to generate specific metadata for each file operation as a checksum-protected package and write it once with a single ordering point. The package is then managed to provide file abstractions through a package translation layer without extra writes. Using an array of techniques to generate, organize, and recover from packages, WOFS can provide practical, efficient, and reliable file system services. We implement WOLVES as a WOFS prototype in Linux kernel. Experiments using benchmarks and applications suggest that WOLVES can recover from crashes, improve operation throughput, and potentially reach PM I/O bandwidth limits.",
+  "abstract_source_id": "src-abstract-osdi-2025-a37656ac",
   "venue": "osdi",
   "year": 2025,
   "track_or_session": "File and Storage Systems",
@@ -222,6 +224,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2025-a37656ac",
+      "url": "https://www.usenix.org/conference/osdi25/presentation/pan",
+      "kind": "paper-page",
+      "title": "Fast and Synchronous Crash Consistency with Metadata Write-Once File System",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:07:33Z",
+      "content_hash": "sha256:4eacb289e19ed8f581a28ab092f2563e54db72179f1685c7fc8be9433199ea66",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

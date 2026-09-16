@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "atc-2024-fetchbpf-customizable-prefetching-policies-in-linux-with-8bd9bdaf",
   "title": "FetchBPF: Customizable Prefetching Policies in Linux with eBPF",
+  "abstract": "Monolithic operating systems are infamously complex. Linux in particular has a tendency to intermingle policy and mechanisms in a manner that hinders modularity. This is especially problematic when developers aim to finely optimize performance,since it is often the case that a default policy in Linux, while performing well on average, cannot achieve the optimal performance in all circumstances. However, developing and maintaining a bespoke kernel to satisfy the need of a specific application is usually an unrealistic endeavor due to the high software engineering cost. Therefore, we need a mechanism to easily customize kernel policies and its behavior. In this paper, we design a framework called FetchBPF that addresses this problem in the context of memory prefetching. FetchBPF extends the widely used eBPF framework to allow developers to easily express, develop, and deploy prefetching policies without modifying the kernel codebase. We implement various memory prefetching policies from the literature and demonstrate that our deployment model incurs negligible overhead as compared to the equivalent native kernel implementation.",
+  "abstract_source_id": "src-abstract-atc-2024-8bd9bdaf",
   "venue": "atc",
   "year": 2024,
   "track_or_session": "Operating Systems 1",
@@ -180,6 +182,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-atc-2024-8bd9bdaf",
+      "url": "https://www.usenix.org/conference/atc24/presentation/cao",
+      "kind": "paper-page",
+      "title": "FetchBPF: Customizable Prefetching Policies in Linux with eBPF",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T21:58:41Z",
+      "content_hash": "sha256:f5b29f0e8e4ea4b65a482c4fbc8eabc8b84816d986e2e8cc12dde58bd9b201b8",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

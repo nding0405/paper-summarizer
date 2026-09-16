@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2025-preventing-artificially-inflated-sms-attacks-through-lar-a1aac1c9",
   "title": "Preventing Artificially Inflated SMS Attacks through Large-Scale Traffic Inspection",
+  "abstract": "Artificially inflated traffic (AIT) attacks have become a prevalent threat for businesses that rely on SMS-based user verification systems: attackers use bot accounts to initiate intense volume of artificial SMS verification requests. Malicious telecommunication service providers or SMS aggregators are potential cheating entities. To date, however, there is no published literature formally characterizing AIT attacks or investigating attack detection techniques. Several online blogs provide traffic volume inspection suggestions without revealing implementation details and attack data. We bridge this gap, and for the first time formally characterize AIT attack techniques based on a large-scale dataset consisting of 9.4 million SMS request logs: our analysis reveals that attacks often use short-lived email services, and reuse common prefix values to rapidly generate unverified phone numbers and IMEI numbers. To bypass rate limit policies, bots are programmed to submit a few requests before switching to a different account, phone number or device. This distributed nature of the attack makes detection based on naive historical-event inspection extremely challenging.\n\nWe propose a novel AIT attack detection system that monitors such scattered attack orchestration from three different levels: machine learning features are extracted based on a single request information, multiple historical events associated with a user, phone number, or device, and country-wide suspicious traffic that has some ties to the request being inspected. A pivotal country-wide feature, for example, counts the number of distinct phone numbers associated with a given prefix value from the last 24 hour traffic. Based on this three-level feature engineering technique and a fixed threshold, we report 89.6% recall rate (false positive rate: 0.2%) on authentication requests initiated through the web client, and 91.1% recall rate (FPR: 0.1%) on the native application client traffic.",
+  "abstract_source_id": "src-abstract-usenix-security-2025-a1aac1c9",
   "venue": "usenix-security",
   "year": 2025,
   "track_or_session": "Network Security 3: BLE and Cellular",
@@ -217,6 +219,19 @@
       "official": true,
       "supports": [
         "authors, affiliations, abstract, page span, PDF, and BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2025-a1aac1c9",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/huh",
+      "kind": "paper-page",
+      "title": "Preventing Artificially Inflated SMS Attacks through Large-Scale Traffic Inspection",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:21:15Z",
+      "content_hash": "sha256:145ff5e933a2577b7df1328fdb9858375216495f98b4e1e4113998183d24de1a",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

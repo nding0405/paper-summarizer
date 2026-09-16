@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ndss-2026-a-causal-perspective-for-enhancing-jailbreak-attack-and-f519116a",
   "title": "A Causal Perspective for Enhancing Jailbreak Attack and Defense",
+  "abstract": "Uncovering the mechanisms behind \"jailbreaks\" in large language models (LLMs) is crucial for enhancing their safety and reliability, yet these mechanisms remain poorly understood.\n\nExisting studies predominantly analyze jailbreak prompts by probing latent representations, often overlooking the causal relationships between interpretable prompt features and jailbreak occurrences. In this work, we propose textbf{Causal Analyst}, a framework that integrates LLMs into data-driven causal discovery to identify the direct causes of jailbreaks and leverage them for both attack and defense. We introduce a comprehensive dataset comprising 35k jailbreak attempts across seven LLMs, systematically constructed from 100 attack templates and 50 harmful queries, annotated with 37 meticulously designed human-readable prompt features.\n\nBy jointly training LLM-based prompt encoding and GNN-based causal graph learning, we reconstruct causal pathways linking prompt features to jailbreak responses. Our analysis reveals that specific features, such as \"Positive Character\" and \"Number of Task Steps\", act as direct causal drivers of jailbreaks. We demonstrate the practical utility of these insights through two applications: (1) a textbf{Jailbreaking Enhancer} that targets identified causal features to significantly boost attack success rates on public benchmarks, and (2) a textbf{Guardrail Advisor} that utilizes the learned causal graph to extract true malicious intent from obfuscated queries.\n\nExtensive experiments, including baseline comparisons and causal structure validation, confirm the robustness of our causal analysis and its superiority over non-causal approaches.\n\nOur results suggest that analyzing jailbreak features from a causal perspective is an effective and interpretable approach for improving LLM reliability. Our code is available at https://github.com/Master-PLC/Causal-Analyst.",
+  "abstract_source_id": "src-abstract-ndss-2026-f519116a",
   "venue": "ndss",
   "year": 2026,
   "track_or_session": "Fall submission cycle",
@@ -244,6 +246,19 @@
       "official": false,
       "supports": [
         "independent proceedings identity reconciliation"
+      ]
+    },
+    {
+      "id": "src-abstract-ndss-2026-f519116a",
+      "url": "https://www.ndss-symposium.org/ndss-paper/a-causal-perspective-for-enhancing-jailbreak-attack-and-defense/",
+      "kind": "paper-page",
+      "title": "A Causal Perspective for Enhancing Jailbreak Attack and Defense",
+      "publisher": "NDSS",
+      "retrieved_at": "2026-09-15T23:21:04Z",
+      "content_hash": "sha256:71acf1d2aa5768a46368bac69b673e5fcb14f4a2b0131e25f48a16078b708204",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

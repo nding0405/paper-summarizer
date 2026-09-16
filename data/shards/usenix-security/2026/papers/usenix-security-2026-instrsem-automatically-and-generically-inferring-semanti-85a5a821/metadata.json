@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-instrsem-automatically-and-generically-inferring-semanti-85a5a821",
   "title": "InstrSem: Automatically and Generically Inferring Semantics of (Undocumented) CPU Instructions",
+  "abstract": "Modern CPUs implement complex Instruction Set Architectures (ISAs), yet machine-readable semantics are often incomplete. Worse, many CPUs support undocumented instructions, i.e., bitstrings that execute on hardware but are absent from specifications, leading to potential security vulnerabilities.\n\nIn this paper, we present InstrSem, an ISA-agnostic, modular, fully automated approach to infer instruction semantics from execution behavior alone and provide semantics that are understandable by both, humans and machines. Starting from a raw encoding, InstrSem executes it under systematically varied architectural states and synthesizes compact mathematical functions that explain every changed state component. By mutating encoding bits and correlating induced behavioral changes with bit positions, InstrSem then generalizes from a single encoding to a full instruction, recovering register and immediate fields. In contrast to prior work focusing on a single ISA, InstrSem is generic. It requires only a lightweight ISA model and a per-architecture user-space runner and supports fixed- and variable-length encodings (RISC and CISC), memory accesses, and conditional behavior. We evaluate InstrSem on RV64I, AArch64, and LA64, and additionally showcase CISC applicability on a Logitech macro language and partial x86-64. InstrSem automatically recovers correct semantics for over 97.81 % of the RV64I base instruction set, and 136 instructions covering 1 009 055 744 instruction encodings within 77 h for the LA64 instruction set. InstrSem discovers undocumented vector instructions, inconsistencies between QEMU and Loongson hardware, and instructions that crash QEMU. InstrSem enables scalable recovery of instruction semantics, substantially automating reverse engineering across commodity and niche targets and strengthening the foundations for emulation, verification, and security analysis. With minimal requirements to support new architectures, its modular design, and human-readable output, InstrSem can aid future security analysis.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-85a5a821",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Hardware Security 2",
@@ -135,6 +137,19 @@
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening",
         "prepublication PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-85a5a821",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/hetterich-lorenz-instrsem",
+      "kind": "paper-page",
+      "title": "InstrSem: Automatically and Generically Inferring Semantics of (Undocumented) CPU Instructions",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:24:22Z",
+      "content_hash": "sha256:65f66cb992b1f254befc534746827dc0271b14c0e7976ad14577421aad9b3e83",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

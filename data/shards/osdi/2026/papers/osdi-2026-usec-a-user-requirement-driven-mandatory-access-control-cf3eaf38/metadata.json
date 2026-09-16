@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2026-usec-a-user-requirement-driven-mandatory-access-control-cf3eaf38",
   "title": "USEC: A User-Requirement-Driven Mandatory Access Control Framework for Operating Systems (Operational Systems)",
+  "abstract": "Fine-grained access control over kernel resources is essential for containing compromised applications and protecting modern operating systems. However, mainstream mandatory access control (MAC) mechanisms such as SELinux are notoriously hard to configure, incur non-trivial performance overhead, and often break compatibility. In practice, many enterprise Linux deployments disable SELinux by default due to its complexity, configuration burden, and compatibility issues. In this paper, we present USEC, a new kernel access-control framework co-designed with security vendors to make strong MAC practical at scale. USEC introduces: (1) simpler configuration via resource-centric policy templates and semantic resource classes; (2) a demand-driven enforcement path with decision caching that reduces kernel overhead; and (3) binary-compatible LSM interfaces for process lifecycle, file I/O, and socket events that coexist with existing modules for compatibility. We implement USEC as a Linux security extension and evaluate it in terms of configuration simplicity, runtime overhead, and compatibility. Under the same security requirements,USEC policies contain up to 10× fewer lines of policy code than SELinux, while reducing runtime overhead by 3.4%–17.1% relative to SELinux across representative server and desktop workloads. USEC has been adopted by over 210 security vendors, including QiAnXin, 360, and NSFOCUS. As of early 2025, it has been deployed on more than 8,000,000 enterprise endpoints in production. These results demonstrate that USEC can provide strong, configurable kernel protection that is both efficient and widely deployable.",
+  "abstract_source_id": "src-abstract-osdi-2026-cf3eaf38",
   "venue": "osdi",
   "year": 2026,
   "track_or_session": "Sandboxing, Access Control, and Drivers",
@@ -251,6 +253,19 @@
       "official": true,
       "supports": [
         "Official proceedings availability and canonical conference versions."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2026-cf3eaf38",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/jiang-yu",
+      "kind": "paper-page",
+      "title": "USEC: A User-Requirement-Driven Mandatory Access Control Framework for Operating Systems (Operational Systems)",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:09:13Z",
+      "content_hash": "sha256:c8c7391eccdbfa97b5b985f05e72faf74d187085d4d00d2e02f0c99320dd2086",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

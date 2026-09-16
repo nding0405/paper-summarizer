@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2026-di-ps-system-algorithm-co-design-for-asynchronous-and-he-609c69eb",
   "title": "Di-PS: System-Algorithm Co-Design for Asynchronous and Heterogeneous Cross-cluster LLM Training at Scale",
+  "abstract": "Large language models (LLMs) have revolutionized artificial intelligence, exhibiting remarkable performance in various tasks. Training these models demands extensive computational resources, which are often economically and physically prohibitive. Cross-cluster training can balance infrastructure costs, alleviate physical and resource constraints, better match workload demands, and sustain higher efficiency through geo-distributed deployment. However, challenges arise from network variability, heterogeneous computational resources, and intrinsic training instability.\n\nTo address these issues, we present Di-PS, a novel framework for cross-cluster LLM training at scale. The core of Di-PS is the system-algorithm co-design of a parameter server paradigm, to achieve heterogeneous, asynchronous, and resilient training across decentralized clusters. We make several innovative contributions in Di-PS, including (i) an efficient parameter server design for cross-cluster communication of LLM parameters, (ii) a pseudo-gradient penalty strategy for convergence stability enhancement of asynchronous two-stage optimization, and (iii) a resilience mechanism for fault tolerance in cross-cluster training. Results from the controlled experimental setting demonstrate that Di-PS improves training efficiency by up to 4.67× over synchronous cross-cluster approaches while maintaining model quality, and achieving near-linear scalability in heterogeneous training resources. Di-PS has been deployed in the production environment, involving dynamic training scales with up to 9 clusters and more than 10,000 NPUs. At this scale, Di-PS enables successful cross-cluster training of a 100B-parameter LLM with only 6% overhead compared to single-cluster training, and effectively handles frequent failures and resource changes.",
+  "abstract_source_id": "src-abstract-nsdi-2026-609c69eb",
   "venue": "nsdi",
   "year": 2026,
   "track_or_session": "Cloudy with a Chance of Tenants",
@@ -328,6 +330,19 @@
         "proceedings page range and page count",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2026-609c69eb",
+      "url": "https://www.usenix.org/conference/nsdi26/presentation/li-shengwei",
+      "kind": "paper-page",
+      "title": "Di-PS: System-Algorithm Co-Design for Asynchronous and Heterogeneous Cross-cluster LLM Training at Scale",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:05:07Z",
+      "content_hash": "sha256:ecaa13429c8566251b6a9c4fc39137dd95dbe91ca6c83819c2f6caaf3755c79d",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

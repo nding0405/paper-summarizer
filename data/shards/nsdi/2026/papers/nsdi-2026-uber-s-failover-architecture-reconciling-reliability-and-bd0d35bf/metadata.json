@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2026-uber-s-failover-architecture-reconciling-reliability-and-bd0d35bf",
   "title": "Uber's Failover Architecture: Reconciling Reliability and Efficiency in Hyperscale Microservice Infrastructure",
+  "abstract": "Operating a global, real-time platform at Uber’s scale requires infrastructure that is both resilient and cost-efficient. Historically, reliability was ensured through a costly 2× capacity model—each service provisioned to handle global traffic independently across two regions—leaving half the fleet idle. We present Uber’s Failover Architecture (UFA), which replaces the uniform 2× model with a differentiated architecture aligned to business criticality. Critical services retain failover guarantees, while non-critical services opportunistically use failover buffer capacity reserved for critical services during steady state. During rare “full-peak” failovers, non-critical services are selectively preempted and rapidly restored, with differentiated Service-Level Agreements (SLAs) using on-demand capacity. Automated safeguards, including dependency analysis and regression gates, ensure critical services continue to function even while non-critical services are unavailable. The quantitative impact is significant: UFA reduces steady-state provisioning from 2× to 1.3×, raising utilization from 20% toward 30% while sustaining 99.97% availability. To date, UFA has hardened over 4,000 unsafe dependencies, eliminated 575K CPU cores, and projected to reduce over one million cores from a baseline of about 4 million cores.",
+  "abstract_source_id": "src-abstract-nsdi-2026-bd0d35bf",
   "venue": "nsdi",
   "year": 2026,
   "track_or_session": "Neurons Meet Routers",
@@ -559,6 +561,19 @@
         "proceedings page range and page count",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2026-bd0d35bf",
+      "url": "https://www.usenix.org/conference/nsdi26/presentation/bansal",
+      "kind": "paper-page",
+      "title": "Uber's Failover Architecture: Reconciling Reliability and Efficiency in Hyperscale Microservice Infrastructure",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:06:13Z",
+      "content_hash": "sha256:cc5b1c8470b48155b20235d0d7334bd1ac818722b0b719d51f3c41fda2a6970c",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2025-architectural-neural-backdoors-from-first-principles-bfcab868",
   "title": "Architectural Neural Backdoors from First Principles",
+  "abstract": "While previous research backdoored neural networks by changing their parameters, recent work uncovered a more insidious threat: backdoors embedded within the definition of the network's architecture. This involves injecting common architectural components, such as activation functions and pooling layers, to subtly introduce a model backdoor that persists even after (full re-)training, an impossible task for other backdoor types. Bober-Irlzar etal. [2023] introduced the first architectural backdoor design, specifically showing how to create a backdoor for a checkerboard pattern. Yet, the full scope and implications of architectural backdoors have remained largely unexplored, in part because of the limitations in the original design. Namely, it could not be used to target custom triggers, required human involvement for detector construction, and provided no performance guarantees. In this work we revisit architectural backdoors and demonstrate realistic threats that they pose. First, we improve on the original design and construct an arbitrary trigger detector which can be used to backdoor any architecture with no human supervision. Second, we taxonomise 12 distinct archi-tectural backdoor types, and provide an evaluation of their performance. Next, to gauge the difficulty of detecting such backdoors, we conduct a human study, revealing that ML developers can only identify suspicious components in common model definitions as backdoors in 37% of cases, while they surprisingly preferred backdoored models in 33% of cases. To contextualise these results, we find that language models outperform humans at the detection of backdoors. Finally, we discuss defenses against architectural backdoors, emphasising the need for robust and comprehensive strategies to safeguard the integrity of ML systems.",
+  "abstract_source_id": "src-abstract-sp-2025-bfcab868",
   "venue": "sp",
   "year": 2025,
   "track_or_session": "Cycle 1",
@@ -154,6 +156,19 @@
       "official": true,
       "supports": [
         "DOI, authors, affiliations, abstract, publication date, pages, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2025-bfcab868",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Architectural Neural Backdoors from First Principles",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:42Z",
+      "content_hash": "sha256:d62dac834635b4cd1890a53da454ceae7aaa151189662d990ac591dfd5cb6b3e",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

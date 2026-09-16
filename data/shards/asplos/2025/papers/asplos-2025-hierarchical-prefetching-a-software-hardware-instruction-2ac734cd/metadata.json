@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2025-hierarchical-prefetching-a-software-hardware-instruction-2ac734cd",
   "title": "Hierarchical Prefetching: A Software-Hardware Instruction Prefetcher for Server Applications",
+  "abstract": "The large working set of instructions in server-side applications causes a significant bottleneck in the front-end, even for high-performance processors equipped with fetch-directed instruction prefetching (FDIP). Prefetchers specifically designed for server scenarios typically rely on a record-and-replay mechanism that exploits the repetitiveness of instruction sequences. However, the efficacy of these techniques is compromised by discrepancies between actual and predicted control flows, resulting in loss of coverage and timeliness. This paper proposes Hierarchical Prefetching, a novel approach that tackles the limitations of existing prefetchers. It identifies common coarse-grained functionality blocks (called Bundles) within the server code and prefetches them as a whole. Bundles are significantly larger than typical prefetch targets, encompassing tens to hundreds of kilobytes of code. The approach combines simple software analysis of code for bundle formation and light-weight hardware for record-and-replay prefetching. The prefetcher requires under 2KB of on-chip storage by keeping most of the metadata in main memory. Experiments with 11 popular server workloads reveal that Hierarchical Prefetching significantly improves miss coverage and timeliness over prior techniques, achieving a 6.6% average performance gain over FDIP.",
+  "abstract_source_id": "src-abstract-asplos-2025-2ac734cd",
   "venue": "asplos",
   "year": 2025,
   "track_or_session": "Session 5B: Microarchitecture",
@@ -272,6 +274,19 @@
       "official": false,
       "supports": [
         "Indexed abstract and open-access links used for relevance classification and ancillary-link discovery."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2025-2ac734cd",
+      "url": "https://api.openalex.org/works/doi:10.1145/3676641.3716260?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Hierarchical Prefetching: A Software-Hardware Instruction Prefetcher for Server Applications",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:01:52Z",
+      "content_hash": "sha256:d0fecca77ec40b2dd51e10fb0dc5a7b0d320293c4497c74d422451484e3d78cb",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

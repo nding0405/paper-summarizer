@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2025-gpu-travelling-efficient-confidential-collaborative-trai-7fc709e4",
   "title": "GPU Travelling: Efficient Confidential Collaborative Training with TEE-Enabled GPUs",
+  "abstract": "Confidential collaborative machine learning (ML) enables multiple mutually distrusted data holders to jointly train an ML model while preserving the confidentiality of their private datasets due to regulatory or competitive reasons. However, existing works need frequent data and model exchanges during training via slower conventional links. They face increasing challenges due to the exponentially growing sizes of models and datasets in modern training workloads like large language models (LLMs), resulting in prohibitively high communication costs. In this paper, we propose a novel mechanism called GPU Travelling that leverages recently emerged confidential GPUs. With our rigorous design, the GPU can securely travel to the specific data holder to load the dataset directly into the GPU's protected memory and then return for training, eliminating the need for data transmission while ensuring confidentiality up to a data-centre level. We developed a prototype using Intel TDX and NVIDIA H100 and evaluated its performance on llm.c, a CUDA-based LLM training project, and demonstrated the performance and feasibility while maintaining strong security guarantees. The results showed at least 4x speed improvement when transmitting a 512 MiB dataset chunk versus conventional transmission.",
+  "abstract_source_id": "src-abstract-ccs-2025-7fc709e4",
   "venue": "ccs",
   "year": 2025,
   "track_or_session": "Cycle 2",
@@ -190,6 +192,19 @@
         "published-order authors",
         "publication-time affiliations",
         "publication date and page span"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2025-7fc709e4",
+      "url": "https://api.openalex.org/works/doi:10.1145/3719027.3765029?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "GPU Travelling: Efficient Confidential Collaborative Training with TEE-Enabled GPUs",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:14:42Z",
+      "content_hash": "sha256:7a2efa9f368e2fc2180d76b6c293170d6c3c3f1bf6473f290f130b2451df66f2",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

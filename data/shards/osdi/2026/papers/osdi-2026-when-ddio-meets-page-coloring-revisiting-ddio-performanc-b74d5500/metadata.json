@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "osdi-2026-when-ddio-meets-page-coloring-revisiting-ddio-performanc-b74d5500",
   "title": "When DDIO Meets Page Coloring: Revisiting DDIO Performance with Sepia",
+  "abstract": "In modern host network stacks, Direct Cache Access (DCA) technology, such as Intel’s Data Direct I/O (DDIO), plays a crucial role in packet processing by allowing received packet data to be accessed directly from the last-level cache (LLC) instead of host memory. However, DDIO performance is often constrained by the leaky DMA problem, where the packet data is evicted from the LLC before processing completes due to the limited capacity of the DDIO-reserved portion.\n\nIn this study, we revisit this issue and reveal that conflict misses, rather than capacity limitations alone, are the primary co-contributor to LLC misses in DDIO. Our in-depth analysis indicates that introducing page coloring to DDIO can increase the effective LLC capacity by 77.8–94.4% over Linux. Motivated by this insight, we present Sepia, a color-aware page allocator that reduces LLC misses during packet processing (including copy-to-user) by leveraging a deeper understanding of LLC behavior. Under configurations that jointly avoid capacity and conflict misses, our Linux kernel prototype saturates a 200Gbps link using only 3.5 CPU cores, 2.5 fewer than the default Linux stack, while maintaining low LLC miss rates (∼0.4%). This improves total throughput per unit of core utilization by ∼1.51× across diverse setups and real-world applications.",
+  "abstract_source_id": "src-abstract-osdi-2026-b74d5500",
   "venue": "osdi",
   "year": 2026,
   "track_or_session": "Close to the Network",
@@ -188,6 +190,19 @@
       "official": true,
       "supports": [
         "Official proceedings availability and canonical conference versions."
+      ]
+    },
+    {
+      "id": "src-abstract-osdi-2026-b74d5500",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/song",
+      "kind": "paper-page",
+      "title": "When DDIO Meets Page Coloring: Revisiting DDIO Performance with Sepia",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:09:17Z",
+      "content_hash": "sha256:24635dd0a773251b4c04aa56fdd450edc1b4eb3952c7bbac022efbf0e5064950",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

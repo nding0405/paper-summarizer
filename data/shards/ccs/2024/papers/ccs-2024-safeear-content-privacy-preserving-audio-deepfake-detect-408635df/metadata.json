@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2024-safeear-content-privacy-preserving-audio-deepfake-detect-408635df",
   "title": "SafeEar: Content Privacy-Preserving Audio Deepfake Detection",
+  "abstract": "Text-to-Speech (TTS) and Voice Conversion (VC) models have exhibited remarkable performance in generating realistic and natural audio. However, their dark side, audio deepfake poses a significant threat to both society and individuals. Existing countermeasures largely focus on determining the genuineness of speech based on complete original audio recordings, which however often contain private content. This oversight may refrain deepfake detection from many applications, particularly in scenarios involving sensitive information like business secrets. In this paper, we propose SafeEar, a novel framework that aims to detect deepfake audios without relying on accessing the speech content within. Our key idea is to devise a neural audio codec into a novel decoupling model that well separates the semantic and acoustic information from audio samples, and only use the acoustic information (e.g., prosody and timbre) for deepfake detection. In this way, no semantic content will be exposed to the detector. To overcome the challenge of identifying diverse deepfake audio without semantic clues, we enhance our deepfake detector with real-world codec augmentation. Extensive experiments conducted on four benchmark datasets demonstrate SafeEar's effectiveness in detecting various deepfake techniques with an equal error rate (EER) down to 2.02%. Simultaneously, it shields five-language speech content from being deciphered by both machine and human auditory analysis, demonstrated by word error rates (WERs) all above 93.93% and our user study. Furthermore, our benchmark constructed for anti-deepfake and anti-content recovery evaluation helps provide a basis for future research in the realms of audio privacy preservation and deepfake detection.",
+  "abstract_source_id": "src-abstract-ccs-2024-408635df",
   "venue": "ccs",
   "year": 2024,
   "track_or_session": "Cycle 1",
@@ -201,6 +203,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2024-408635df",
+      "url": "https://api.openalex.org/works?filter=title.search:SafeEar%3A%20Content%20Privacy-Preserving%20Audio%20Deepfake%20Detection&select=id,title,abstract_inverted_index&per-page=3&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "SafeEar: Content Privacy-Preserving Audio Deepfake Detection",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:11:56Z",
+      "content_hash": "sha256:cebc62dcb79136de3b87b663a21289048a40ed3538320c4c7407dd026a55b2e8",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

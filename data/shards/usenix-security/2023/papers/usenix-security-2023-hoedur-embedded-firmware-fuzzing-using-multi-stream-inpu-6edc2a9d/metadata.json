@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2023-hoedur-embedded-firmware-fuzzing-using-multi-stream-inpu-6edc2a9d",
   "title": "Hoedur: Embedded Firmware Fuzzing using Multi-Stream Inputs",
+  "abstract": "Embedded systems with their diverse, interconnected components form the backbone of our digital infrastructure. Despite their importance, analyzing their security in a scalable way has remained elusive and challenging. Recent firmware rehosting work has brought scalable, dynamic analyses to embedded systems, making fuzzing for automated vulnerability assessments feasible. As these works focus on modeling device behavior rather than fuzzing, they integrate with off-the-shelf fuzzers in an ad-hoc manner. They re-interpret traditional flat binary fuzzing input as a sequence of hardware responses. In practice, this presents the fuzzer with an input layout that is fragile, opaque, and hard to mutate effectively.\n\nOur work is based on the insight that while firmware emulation recently matured significantly, the input space is presented to the fuzzer in an ineffective manner. We propose a novel method for a firmware-aware fuzzing integration based on multi-stream inputs. We reorganize the previously flat, sequential, and opaque firmware fuzzing input into multiple strictly typed and cohesive streams. This allows our fuzzer, HOEDUR, to perform type-aware mutations and maintain its progress. It also enables firmware fuzzing to use state-of-theart mutation techniques. Overall, we find that these techniques significantly increase fuzzing effectiveness. Our evaluation shows that HOEDUR achieves up to 5x the coverage of stateof-the-art firmware fuzzers, finds bugs that other fuzzers do not, and discovers known bugs up to 550x faster. In total, HOEDUR uncovered 23 previously unknown bugs.",
+  "abstract_source_id": "src-abstract-usenix-security-2023-6edc2a9d",
   "venue": "usenix-security",
   "year": 2023,
   "track_or_session": "Fuzzing Firmware and Drivers",
@@ -188,6 +190,19 @@
       "official": false,
       "supports": [
         "page span when the official page omits BibTeX"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2023-6edc2a9d",
+      "url": "https://www.usenix.org/conference/usenixsecurity23/presentation/scharnowski",
+      "kind": "paper-page",
+      "title": "Hoedur: Embedded Firmware Fuzzing using Multi-Stream Inputs",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:11:25Z",
+      "content_hash": "sha256:05e4b60d89c28a9fafc98da361160c907bcb0af30b52830bb4f5baeb244d492b",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

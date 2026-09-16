@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "nsdi-2026-from-intention-to-practice-towards-systematic-validation-bfd6bbf8",
   "title": "From Intention to Practice: Towards Systematic Validation of NIDS Rule Enforcement",
+  "abstract": "Rule-based Network Intrusion Detection Systems (NIDS) are integral to contemporary cybersecurity, relying on the rule matching mechanism to identify malicious activities within network traffic. However, there is no inherent assurance that the deployed rules are enforced as intended due to factors regarding the composition of the rules and implementation flaws of NIDS. Unfortunately, administrators lack appropriate means to validate the gap between rule definition and enforcement as existing testing approaches towards NIDS are often rule irrelevant and lack systematic methodologies. To address this issue, this paper presents NIDSFuzz , a systematic fuzzing approach designed to validate the enforcement of rules within NIDS, which is rule-oriented so that it employs tailored mutation strategies to generate test traffic based on the very ruleset deployed. In this manner, it becomes feasible to validate the targeted rulesets with guarantee of coverage. An NIDS-specific fuzzing framework is proposed, incorporating an appropriate test traffic injection method to perform fuzzing and carefully designed approaches of sanitization and analysis to effectively identify rule enforcement issues. Experimental results show that NIDSFuzz is able to uncover over 10,000 rule enforcement issues. We classified the discovered issues into different categories and explored corresponding countermeasures in terms of both rules and NIDS implementation. Moreover, performance evaluation confirms the efficiency of NIDSFuzz and comparison to other tools highlights the significant advantage of NIDSFuzz in evaluating rules of NIDS. We have made our code publicly available.",
+  "abstract_source_id": "src-abstract-nsdi-2026-bfd6bbf8",
   "venue": "nsdi",
   "year": 2026,
   "track_or_session": "Trust but Verify",
@@ -223,6 +225,19 @@
         "proceedings page range and page count",
         "official BibTeX",
         "presentation media links"
+      ]
+    },
+    {
+      "id": "src-abstract-nsdi-2026-bfd6bbf8",
+      "url": "https://www.usenix.org/conference/nsdi26/presentation/liu-huan",
+      "kind": "paper-page",
+      "title": "From Intention to Practice: Towards Systematic Validation of NIDS Rule Enforcement",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:05:21Z",
+      "content_hash": "sha256:5f52dc91a56424445def41bed296fbf756c3e57b5914d5a05f3bfee3ea3c50a6",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

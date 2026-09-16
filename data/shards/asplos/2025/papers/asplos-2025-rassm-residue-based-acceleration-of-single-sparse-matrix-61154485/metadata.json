@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2025-rassm-residue-based-acceleration-of-single-sparse-matrix-61154485",
   "title": "RASSM: Residue-based Acceleration of Single Sparse Matrix Computation via Adaptive Tiling",
+  "abstract": "Single-Sparse-Matrix Kernels (SSMKs) such as SpMM, SDDMM, SpMV, and SpTS form the backbone of applications such as data analytics, graph processing, finite-element analysis, machine learning (including GNNs and LLMs), etc. This paper introduces Residue-based Acceleration of Single Sparse Matrix Computation via Adaptive Tiling (RASSM), an input-dependent, adaptive 2-dimensional tiling technique for SSMKs. The adaptation leverages the concept of a residue matrix: a data structure that compactly captures the pattern of non-zeros in the sparse matrix. With residues, we show it is possible to make intelligent decisions on adaptive tile sizes, resulting in increased cache occupancy. Residues allow for optimizations across both spatial and temporal locality. RASSM improves data movement and overall performance as compared to prior techniques. For example, using spatial analysis for SpMM on commodity server CPUs, RASSM has 1.30X speedup over MKL, 1.32X over J-Stream, 1.20X over ASpT, 1.11X over CSF-4 uniform-shape, and 1.10X over CSF-4 uniform-occupancy. RASSM with temporal analysis improves this to 1.36X (vs. MKL), 1.38X (vs. J-Stream), 1.26X (vs. ASpT), 1.17X (vs. CSF-4 uniform-shape), and 1.16X (vs. CSF-4 uniform-occupancy).",
+  "abstract_source_id": "src-abstract-asplos-2025-61154485",
   "venue": "asplos",
   "year": 2025,
   "track_or_session": "Session 1A: ML Acceleration",
@@ -125,6 +127,19 @@
       "official": false,
       "supports": [
         "Indexed abstract and open-access links used for relevance classification and ancillary-link discovery."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2025-61154485",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1145%2F3669940.3707219?fields=title,abstract",
+      "kind": "semantic-scholar",
+      "title": "RASSM: Residue-based Acceleration of Single Sparse Matrix Computation via Adaptive Tiling",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:03:12Z",
+      "content_hash": "sha256:f0f766308e574a21cfb3bb20c16c0048ad9b55991d5b19d4afe49a68c221f862",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

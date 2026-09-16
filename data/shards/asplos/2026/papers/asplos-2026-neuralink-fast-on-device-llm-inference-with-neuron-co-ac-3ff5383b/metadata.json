@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2026-neuralink-fast-on-device-llm-inference-with-neuron-co-ac-3ff5383b",
   "title": "Neuralink: Fast on-Device LLM Inference with Neuron Co-Activation Linking",
+  "abstract": "Large Language Models (LLMs) have achieved remarkable success across various domains, yet deploying them on mobile devices remains an arduous challenge due to their extensive computational and memory demands.While lightweight LLMs have been developed to fit mobile environments, they suffer from degraded model accuracy.In contrast, sparsitybased techniques minimize DRAM usage by selectively transferring only relevant neurons to DRAM while retaining the full model in external storage, such as flash.However, such approaches are critically limited by numerous I/O operations, particularly on smartphones with severe IOPS constraints.In this paper, we propose Neuralink, a novel approach that accelerates LLM inference on smartphones by optimizing neuron placement in flash memory.Neuralink leverages the concept of Neuron Co-Activation, where neurons frequently activated together are linked to facilitate continuous read access and optimize I/O efficiency.Our approach incorporates a two-stage solution: an offline stage that reorganizes neuron placement based on co-activation patterns, and an online stage that employs tailored data access and caching strategies to align well with hardware characteristics.Evaluations conducted on a variety of smartphones and LLMs demonstrate that Neuralink achieves on average 1.49× improvements in end-to-end latency compared to the state-of-the-art.As the first solution to optimize storage placement under sparsity, Neuralink explores a new * Both authors contributed equally to this research.",
+  "abstract_source_id": "src-abstract-asplos-2026-3ff5383b",
   "venue": "asplos",
   "year": 2026,
   "track_or_session": "Session 5B: On-Device & Edge AI",
@@ -257,6 +259,19 @@
       "official": false,
       "supports": [
         "Indexed abstract used for strict relevance classification and indexed arXiv identifier where available."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2026-3ff5383b",
+      "url": "https://api.openalex.org/works/doi:10.1145/3676642.3736114?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Neuralink: Fast on-Device LLM Inference with Neuron Co-Activation Linking",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:05:37Z",
+      "content_hash": "sha256:92ce8a5182e18fb0470382e1615a3b470ec5b83eb60af0138f4e5052e9ae015c",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

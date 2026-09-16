@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2025-what-we-talk-about-when-we-talk-about-logs-understanding-92610d90",
   "title": "What We Talk About When We Talk About Logs: Understanding the Effects of Dataset Quality on Endpoint Threat Detection Research",
+  "abstract": "Endpoint threat detection research hinges on the availability of worthwhile evaluation benchmarks, but experimenters' understanding of the contents of benchmark datasets is often limited. Typically, attention is only paid to the realism of attack behaviors, which comprises only a small percentage of the audit logs in the dataset, while other characteristics of the data are inscrutable and unknown. We propose a new set of questions for what to talk about when we talk about logs (i.e., datasets): What activities are in the dataset? We introduce a novel visualization that succinctly represents the totality of 100+ GB datasets by plotting the occurrence of provenance graph neighborhoods in a time series. How synthetic is the background activity? We perform autocorrelation analysis of provenance neighborhoods in the training split to identify process behaviors that occur at predictable intervals in the test split. Finally, How conspicuous is the malicious activity? We quantify the proportion of attack behaviors that are observed as benign neighborhoods in the training split as compared to previously-unseen attack neighborhoods. We then validate these questions by profiling the classification performance of state-of-the-art intrusion detection systems (R-CAID, FLASH, KAIROS, GNN) against a battery of public benchmark datasets (DARPA Transparent Computing and OpTC, ATLAS, ATLASv2). We demonstrate that synthetic background activities dramatically inflate True Negative Rates, while conspicuous malicious activities artificially boost True Positive Rates. Further, by explicitly controlling for these factors, we provide a more holistic picture of classifier performance. This work will elevate the dialogue surrounding threat detection datasets and will increase the rigor of threat detection experiments.",
+  "abstract_source_id": "src-abstract-sp-2025-92610d90",
   "venue": "sp",
   "year": 2025,
   "track_or_session": "Cycle 2",
@@ -175,6 +177,19 @@
       "official": true,
       "supports": [
         "DOI, authors, affiliations, abstract, publication date, pages, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2025-92610d90",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "What We Talk About When We Talk About Logs: Understanding the Effects of Dataset Quality on Endpoint Threat Detection Research",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:52Z",
+      "content_hash": "sha256:b15ce02bcc49da611fdd791ecc56741e7d91d84154b58c1a7f72a5c6902e6e46",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

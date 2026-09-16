@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "atc-2024-slimarchive-a-lightweight-architecture-for-ethereum-arch-f5f62a49",
   "title": "SlimArchive: A Lightweight Architecture for Ethereum Archive Nodes",
+  "abstract": "With the rapid development of Ethereum, archive nodes that record all historical states have become a critical component of the infrastructure. However, current archive nodes suffer enormous storage requirements and poor performance due to the inefficient authenticated Merkle Patricia Trie and coarse-grained state granularity.\n\nThis paper presents a lightweight and high-performance architecture for Ethereum archive nodes to address the two limitations mentioned earlier. The core idea of our approach is to maintain compacted, flattened, and fine-grained (i.e., transaction-level) historical states by flattening the minimum state changes of each transaction required for the world state. Our method maintains an archive node with minimum storage requirements while providing high-performance state access. We have implemented a prototype system named SLIMARCHIVE for Ethereum. The evaluation results demonstrate that our approach reduces storage requirements by 98.1%, improves state access throughput by 19.0×, and speeds up transaction execution by an average of 1112.5×, compared to vanilla Geth.",
+  "abstract_source_id": "src-abstract-atc-2024-f5f62a49",
   "venue": "atc",
   "year": 2024,
   "track_or_session": "Potpourri",
@@ -222,6 +224,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-atc-2024-f5f62a49",
+      "url": "https://www.usenix.org/conference/atc24/presentation/feng-hang",
+      "kind": "paper-page",
+      "title": "SlimArchive: A Lightweight Architecture for Ethereum Archive Nodes",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T21:59:04Z",
+      "content_hash": "sha256:8d2c907ac78fbbf48c73281cbb281beb1e23f36e3441feff8e803eeeb3eb4cc6",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

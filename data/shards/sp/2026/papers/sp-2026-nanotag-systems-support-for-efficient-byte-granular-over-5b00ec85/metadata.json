@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sp-2026-nanotag-systems-support-for-efficient-byte-granular-over-5b00ec85",
   "title": "NanoTag: Systems Support for Efficient Byte-Granular Overflow Detection on ARM MTE",
+  "abstract": "Memory safety bugs, such as buffer overflows and use-after-frees, are the leading causes of software safety issues in production. Software-based approaches, e.g., Address Sanitizer (ASAN), can detect such bugs with high precision, but with prohibitively high overhead. ARM's Memory Tagging Extension (MTE) offers a promising alternative to detect these bugs in hardware with a much lower overhead. In this paper, we perform a thorough investigation of the first production implementation of ARM MTE (Google Pixel 8) and observe that MTE can only achieve coarse precision in bug detection compared with software-based approaches such as ASAN, mainly due to its 16-byte tag granularity. To address this issue, we present nanotag11.We open-source our work at https://github.com/ice-rlab/NanoTag, a system to probabilistically detect buffer overflows at byte granularity in unmodified MTE-enabled binaries with minimal changes to memory allocators, introducing an explicit detectionperformance tradeoff for in-house testing. NanoTag detects buffer overflows at byte granularity by setting up a tripwire for tag granules that may require intra-granule overflow detection. The memory access to the tripwire causes additional overflow detection in the software while using MTE's hardware to detect bugs for the rest of the accesses. We implement nanotag based on the Scudo Hardened Allocator, the default memory allocator on Android since Android 11. Our evaluation results across popular benchmarks and real-world case studies show that NanoTag detects nearly as many memory safety bugs as ASAN while incurring similar run-time overhead to Scudo Hardened Allocator in MTE SYNC mode.",
+  "abstract_source_id": "src-abstract-sp-2026-5b00ec85",
   "venue": "sp",
   "year": 2026,
   "track_or_session": "Cycle 2",
@@ -154,6 +156,19 @@
       "official": true,
       "supports": [
         "DOI, published-order authors and affiliations, abstract, publication date, page span, and PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-sp-2026-5b00ec85",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "NanoTag: Systems Support for Efficient Byte-Granular Overflow Detection on ARM MTE",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:58:02Z",
+      "content_hash": "sha256:4204efad9387253e2c70bd18217fac7c5220b9cd43ecd6179fdc27c5a043343e",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

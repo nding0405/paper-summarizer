@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "sosp-2023-pushing-performance-isolation-boundaries-into-applicatio-67b07203",
   "title": "Pushing Performance Isolation Boundaries into Application with pBox",
+  "abstract": "Modern applications are highly concurrent with a diverse mix of activities. One activity can adversely impact the performance of other activities in an application, leading to intra-application interference. Providing fine-grained performance isolation is desirable. Unfortunately, the extensive performance isolation solutions today focus on mitigating coarse-grained interference among multiple applications. They cannot well address intra-app interference, because such issues are typically not caused by contention on hardware resources. This paper presents an abstraction called pBox for developers to systematically achieve strong performance isolation within an application. Our insight is that intra-app interference involves application-level virtual resources, which are often invisible to the OS. We define pBox APIs that allow an application to inform the OS about a few general types of state events. Leveraging this information, we design algorithms that effectively predict imminent interference and carefully apply penalties to the noisy pBoxes to achieve a specified isolation goal. We apply pBox on five large applications. We evaluate the pBox-enhanced applications with 16 real-world performance interference cases. pBox successfully mitigates 15 cases, with an average of 86.3% reduction of the interference.",
+  "abstract_source_id": "src-abstract-sosp-2023-67b07203",
   "venue": "sosp",
   "year": 2023,
   "track_or_session": "Session 4: Cloud",
@@ -125,6 +127,19 @@
       "official": false,
       "supports": [
         "Fallback DOI, ORCID, and page-range metadata reconciled against the official program."
+      ]
+    },
+    {
+      "id": "src-abstract-sosp-2023-67b07203",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,abstract,externalIds",
+      "kind": "semantic-scholar",
+      "title": "Pushing Performance Isolation Boundaries into Application with pBox",
+      "publisher": "Semantic Scholar",
+      "retrieved_at": "2026-09-15T22:57:12Z",
+      "content_hash": "sha256:aa9c23a45f6ec9973f40e6c9520c69d42bb49fc1f526891570edfdb1976cff82",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

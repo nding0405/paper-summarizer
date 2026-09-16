@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "asplos-2024-getting-a-handle-on-unmanaged-memory-1ead2292",
   "title": "Getting a Handle on Unmanaged Memory",
+  "abstract": "The inability to relocate objects in unmanaged languages brings with it a menagerie of problems. Perhaps the most impactful is memory fragmentation, which has long plagued applications such as databases and web servers. These issues either fester or require Herculean programmer effort to address on a per-application basis because, in general, heap objects cannot be moved in unmanaged languages. In contrast, managed languages like C# cleanly address fragmentation through the use of compacting garbage collection techniques built upon heap object movement. In this work, we bridge this gap between unmanaged and managed languages through the use of handles, a level of indirection allowing heap object movement. Handles open the door to seamlessly employing runtime features from managed languages in existing, unmodified code written in unmanaged languages. We describe a new compiler and runtime system, Alaska, that acts as a drop-in replacement for malloc. Without any programmer effort, the Alaska compiler transforms pointer-based code to utilize handles, with optimizations to minimize performance impact. A codesigned runtime system manages this new level of indirection and exploits heap object movement via an extensible service interface. We investigate the overheads of Alaska on large benchmarks and applications spanning multiple domains. To show the power and extensibility of handles, we use Alaska to eliminate fragmentation on the heap through defragmentation, reducing memory usage by up to 40% in Redis.",
+  "abstract_source_id": "src-abstract-asplos-2024-1ead2292",
   "venue": "asplos",
   "year": 2024,
   "track_or_session": "Session 5C: Memory: Allocation and Management",
@@ -165,6 +167,19 @@
       "official": false,
       "supports": [
         "Indexed alternate-version and institutional-copy links; not used as the authoritative relevance source."
+      ]
+    },
+    {
+      "id": "src-abstract-asplos-2024-1ead2292",
+      "url": "https://api.openalex.org/works/doi:10.1145/3620666.3651326?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Getting a Handle on Unmanaged Memory",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:00:10Z",
+      "content_hash": "sha256:508aa3507ab0a1cb2e46ed18d49e8559f89b265698f0497aa89dc1586b8418b1",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

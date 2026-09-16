@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "ccs-2024-almost-instance-optimal-clipping-for-summation-problems-d67fe900",
   "title": "Almost Instance-optimal Clipping for Summation Problems in the Shuffle Model of Differential Privacy",
+  "abstract": "Differentially private mechanisms achieving worst-case optimal error bounds (e.g., the classical Laplace mechanism) are well-studied in the literature. However, when typical data are far from the worst case, instance-specific error bounds---which depend on the largest value in the dataset---are more meaningful. For example, consider the sum estimation problem, where each user has an integer xi from the domain {0,1,...,U} and we wish to estimate ∑i xi. This has a worst-case optimal error of O(U/ε), while recent work has shown that the clipping mechanism can achieve an instance-optimal error of O(maxi xi ⋅ log log U /ε). Under the shuffle model, known instance-optimal protocols are less communication-efficient. The clipping mechanism also works in the shuffle model, but requires two rounds: Round one finds the clipping threshold, and round two does the clipping and computes the noisy sum of the clipped data. In this paper, we show how these two seemingly sequential steps can be done simultaneously in one round using just 1+o(1) messages per user, while maintaining the instance-optimal error bound. We also extend our technique to the high-dimensional sum estimation problem and sparse vector aggregation (a.k.a. frequency estimation under user-level differential privacy).",
+  "abstract_source_id": "src-abstract-ccs-2024-d67fe900",
   "venue": "ccs",
   "year": 2024,
   "track_or_session": "Cycle 2",
@@ -180,6 +182,19 @@
       "official": false,
       "supports": [
         "abstract used for relevance screening"
+      ]
+    },
+    {
+      "id": "src-abstract-ccs-2024-d67fe900",
+      "url": "https://api.openalex.org/works/doi:10.1145/3658644.3690225?select=id,title,abstract_inverted_index&mailto=asnicoria%40gmail.com",
+      "kind": "openalex",
+      "title": "Almost Instance-optimal Clipping for Summation Problems in the Shuffle Model of Differential Privacy",
+      "publisher": "OpenAlex",
+      "retrieved_at": "2026-09-15T22:08:42Z",
+      "content_hash": "sha256:277450505fe6a8e4c3173b1a56f15068471f203f35ba387c7ebad9071ca06499",
+      "official": false,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],

@@ -3,6 +3,8 @@
   "schema_version": "1.0.0",
   "paper_id": "usenix-security-2026-attacks-on-approximate-caches-in-text-to-image-diffusion-7957a023",
   "title": "Attacks on Approximate Caches in Text-to-Image Diffusion Models",
+  "abstract": "Diffusion models are a powerful class of generative models that produce images and other content from user prompts, but they are computationally intensive. To mitigate this cost, recent academic and industry work has adopted approximate caching, which reuses intermediate states from similar prompts in a cache. While efficient, this optimization introduces new security risks by breaking isolation among users. This paper provides a comprehensive assessment of the security vulnerabilities introduced by approximate caching. First, we demonstrate a remote covert channel established with the approximate cache, where a sender injects prompts with special keywords into the cache system and a receiver can recover that even after days, to exchange information. Second, we introduce a prompt stealing attack using the approximate cache, where an attacker can recover existing cached prompts from hits. Finally, we introduce a poisoning attack that embeds the attacker's logos into the previously stolen prompt, leading to unexpected logo rendering for the requests that hit the poisoned cache prompts. These attacks are all performed remotely through the serving system, demonstrating severe security vulnerabilities in approximate caching. The code for this work is available.",
+  "abstract_source_id": "src-abstract-usenix-security-2026-7957a023",
   "venue": "usenix-security",
   "year": 2026,
   "track_or_session": "Security of ML 5",
@@ -114,6 +116,19 @@
         "official title, published-order authors and affiliations, and session",
         "official abstract used for relevance screening",
         "prepublication PDF"
+      ]
+    },
+    {
+      "id": "src-abstract-usenix-security-2026-7957a023",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/sun-desen",
+      "kind": "paper-page",
+      "title": "Attacks on Approximate Caches in Text-to-Image Diffusion Models",
+      "publisher": "USENIX",
+      "retrieved_at": "2026-09-15T22:23:04Z",
+      "content_hash": "sha256:86b44b17f8ab5a23197f38539ed2ecfd798e4494d028590dff2c42d5800c7462",
+      "official": true,
+      "supports": [
+        "Published abstract text."
       ]
     }
   ],
